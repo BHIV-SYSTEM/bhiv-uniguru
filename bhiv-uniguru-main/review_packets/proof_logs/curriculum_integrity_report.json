@@ -1,0 +1,21 @@
+{
+  "canonical_authority_granted": false,
+  "curriculum_versions": {
+    "balbharti-2026-06": 2560
+  },
+  "duplicate_record_ids": [],
+  "generated_at": "2026-06-09T12:38:19.319968Z",
+  "invalid_rows": [],
+  "missing_chapter_detection": {
+    "groups_below_minimum": [],
+    "groups_below_minimum_count": 0,
+    "minimum_expected_chapters_per_grade_subject_medium": 4
+  },
+  "provenance_counts": {
+    "sample_seed": 2560
+  },
+  "record_count": 2560,
+  "schema": "UNIGURU_CURRICULUM_INTEGRITY_REPORT_V1",
+  "valid_record_count": 2560,
+  "validation_hash": "1972534f243c6254b960e0d605757b765a2991555ff76b6eb5814194ab98731d"
+}

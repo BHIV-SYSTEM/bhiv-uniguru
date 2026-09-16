@@ -1,0 +1,143 @@
+{
+  "answer": "I do not have verified knowledge to answer this question.",
+  "confidence": 0.0,
+  "confidence_breakdown": {
+    "accepted_count": 0,
+    "accepted_derivations": [],
+    "overall": 0.0,
+    "rejected_count": 4
+  },
+  "detected_domain": "ecology",
+  "domain_resolution": {
+    "confidence": 1.0,
+    "domain": "ecology",
+    "entities": [
+      {
+        "canonical": "Ganga",
+        "concepts": [
+          "sacred river",
+          "water"
+        ],
+        "domain": "ecology",
+        "entity_type": "river",
+        "matched_alias": "ganga"
+      }
+    ],
+    "method": "canonical_entity_majority"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 25,
+    "total_entries": 37,
+    "valid_entries": 12
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-05-06T04:08:36.288766Z",
+  "knowledge_ids_used": [],
+  "matched_signals": [],
+  "query": "How are rivers like Ganga described in Puranic texts?",
+  "reasoning": "No signals passed domain+tag+query validation.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "structured_signal_emission",
+    "deterministic_rejection"
+  ],
+  "rejected_signals": [
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.1266,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_da1bef76b148",
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.127",
+      "signal_id": "signal_da1bef76b148",
+      "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.08333333333333333,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_58cb7b7ad451",
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.083",
+      "signal_id": "signal_58cb7b7ad451",
+      "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.08333333333333333,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_47a8bdcd6c59",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.083",
+      "signal_id": "signal_47a8bdcd6c59",
+      "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0784,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_6a7ba6e3c10f",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.078",
+      "signal_id": "signal_6a7ba6e3c10f",
+      "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+    }
+  ],
+  "signals_found": 0,
+  "signals_rejected": 4,
+  "synthesis_mode": "REJECTED_NO_SYNTHESIS",
+  "trace_id": "trace_f8fb64c6578a5726",
+  "verification_status": "NO_VERIFIED_KNOWLEDGE"
+}

@@ -1,0 +1,48 @@
+{
+  "canonical_memory": {
+    "Governed Semantic Memory": {
+      "canonical": "Governed Semantic Memory",
+      "confidence": 0.8,
+      "lineage_event_hashes": [
+        "6903ddbe6a183802e016e0a8e7b5b50d9513bf5a1a7dda22a33b68c040b5f4ed",
+        "c5391a1915c79d18a8268e17e1d37516bba706ce1bfc6a290ba286303d630407"
+      ],
+      "source_signal_ids": [
+        "signal_1",
+        "signal_1"
+      ],
+      "trace_ids": [
+        "trace_1",
+        "trace_2"
+      ]
+    }
+  },
+  "contradiction_audit": [],
+  "event_count": 2,
+  "lineage": [
+    {
+      "classification": "canonical",
+      "event_hash": "6903ddbe6a183802e016e0a8e7b5b50d9513bf5a1a7dda22a33b68c040b5f4ed",
+      "interpretation_hash": "eae9f7b5bfe564e946305e80a17599fc493c5e2e4327d1fe7e29ae69afd7b23a",
+      "previous_event_hash": null,
+      "retrieval_truth_hash": "0be415a87866df2f0bb59d520f8538e3302e277fe04cbf05444b483de241f54b",
+      "trace_id": "trace_1"
+    },
+    {
+      "classification": "canonical",
+      "event_hash": "c5391a1915c79d18a8268e17e1d37516bba706ce1bfc6a290ba286303d630407",
+      "interpretation_hash": "eae9f7b5bfe564e946305e80a17599fc493c5e2e4327d1fe7e29ae69afd7b23a",
+      "previous_event_hash": "6903ddbe6a183802e016e0a8e7b5b50d9513bf5a1a7dda22a33b68c040b5f4ed",
+      "retrieval_truth_hash": "0be415a87866df2f0bb59d520f8538e3302e277fe04cbf05444b483de241f54b",
+      "trace_id": "trace_2"
+    }
+  ],
+  "replay_integrity": {
+    "hash_chain_ok": true,
+    "last_event_hash": "c5391a1915c79d18a8268e17e1d37516bba706ce1bfc6a290ba286303d630407",
+    "rollback_target": null
+  },
+  "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_RECONSTRUCTION_V1",
+  "state_hash": "1ddfc0f00d9d5424c37255d358613bced4ba2e335814def363fa808f03421d77",
+  "transient_memory": []
+}

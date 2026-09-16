@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-08-29T05:11:22.880906Z",
+  "overall_verdict": "PASS",
+  "benchmarks": {
+    "startup": {
+      "module_import_times_ms": {
+        "kosha.kosha_loader": 458.784,
+        "kosha.kosha_retriever": 0.007,
+        "kosha.deterministic_pipeline": 46.671,
+        "retrieval.ontology_retriever": 0.005,
+        "ontology.entity_resolver": 0.003,
+        "governance.source_governance": 0.003
+      },
+      "total_import_time_ms": 505.47
+    },
+    "ingestion": {
+      "entries_loaded": 37,
+      "elapsed_ms": 17.73,
+      "throughput_entries_per_sec": 2087.4,
+      "peak_memory_kb": 106.8,
+      "target_ms": 5000,
+      "pass": true
+    },
+    "single_query_latency": {
+      "queries": 20,
+      "latency_ms": {
+        "p50": 243.018,
+        "p95": 289.655,
+        "p99": 343.613,
+        "mean": 252.86
+      },
+      "verified_count": 5,
+      "verification_rate": 0.25,
+      "targets": {
+        "p50_ms": 500,
+        "p95_ms": 1000,
+        "p99_ms": 2000
+      },
+      "pass": true
+    },
+    "concurrent_throughput": {
+      "workers": 10,
+      "total_queries": 50,
+      "completed": 50,
+      "errors": 0,
+      "wall_time_ms": 14515.3,
+      "throughput_qps": 3.44,
+      "latency_ms": {
+        "p50": 2683.388,
+        "p95": 3840.026
+      },
+      "pass": true
+    },
+    "memory_usage": {
+      "peak_memory_mb": 7.51,
+      "net_allocation_kb": 125.5,
+      "queries_run": 20,
+      "pass": true
+    },
+    "replay_consistency": {
+      "query": "Explain the Upanishadic concept of Brahman",
+      "runs": [
+        {
+          "run": 1,
+          "verification_status": "VERIFIED",
+          "answer_length": 273,
+          "confidence": 0.6,
+          "signals_matched": 3
+        },
+        {
+          "run": 2,
+          "verification_status": "VERIFIED",
+          "answer_length": 273,
+          "confidence": 0.6,
+          "signals_matched": 3
+        },
+        {
+          "run": 3,
+          "verification_status": "VERIFIED",
+          "answer_length": 273,
+          "confidence": 0.6,
+          "signals_matched": 3
+        },
+        {
+          "run": 4,
+          "verification_status": "VERIFIED",
+          "answer_length": 273,
+          "confidence": 0.6,
+          "signals_matched": 3
+        },
+        {
+          "run": 5,
+          "verification_status": "VERIFIED",
+          "answer_length": 273,
+          "confidence": 0.6,
+          "signals_matched": 3
+        }
+      ],
+      "consistent_status": true,
+      "consistent_confidence": true,
+      "unique_statuses": [
+        "VERIFIED"
+      ],
+      "unique_confidences": [
+        0.6
+      ],
+      "pass": true
+    }
+  },
+  "summary_table": [
+    {
+      "benchmark": "Ingestion speed",
+      "result": "17.73 ms",
+      "target": "< 5000 ms",
+      "pass": true
+    },
+    {
+      "benchmark": "p50 latency",
+      "result": "243.018 ms",
+      "target": "< 500 ms",
+      "pass": true
+    },
+    {
+      "benchmark": "p95 latency",
+      "result": "289.655 ms",
+      "target": "< 1000 ms",
+      "pass": true
+    },
+    {
+      "benchmark": "Concurrent throughput",
+      "result": "3.44 qps",
+      "target": "> 1 qps",
+      "pass": true
+    },
+    {
+      "benchmark": "Concurrent errors",
+      "result": "0",
+      "target": "0",
+      "pass": true
+    },
+    {
+      "benchmark": "Peak memory",
+      "result": "7.51 MB",
+      "target": "< 512 MB",
+      "pass": true
+    },
+    {
+      "benchmark": "Replay consistency",
+      "result": "PASS",
+      "target": "Identical outputs",
+      "pass": true
+    }
+  ]
+}

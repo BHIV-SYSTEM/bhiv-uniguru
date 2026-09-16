@@ -1,0 +1,414 @@
+# %% [markdown
+]
+# # Robust RAG with FAISS + SQLite (with debug)
+
+# %% [code
+]
+!pip install -q groq sentence-transformers faiss-cpu tqdm
+
+# %% [code
+]
+import json
+import os
+import gc
+import sqlite3
+import numpy as np
+from tqdm.auto import tqdm
+from sentence_transformers import SentenceTransformer
+import faiss
+from groq import Groq
+from kaggle_secrets import UserSecretsClient
+
+# ============================================================
+# 1. Configuration
+# ============================================================
+CHUNK_SIZE = 2500
+CHUNK_OVERLAP = 200
+TOP_K_RETRIEVALS = 5
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+BATCH_SIZE = 32
+
+# ============================================================
+# 2. Text splitter
+# ============================================================
+def split_text(text, chunk_size=CHUNK_SIZE, overlap=CHUNK_OVERLAP):
+    if len(text) <= chunk_size:
+        return [text
+]
+    chunks = []
+    start = 0
+    while start < len(text):
+        end = start + chunk_size
+        if end >= len(text):
+            chunks.append(text[start:
+])
+            break
+        split_pos = text.rfind(' ', start, end)
+        if split_pos == -1 or split_pos <= start:
+            split_pos = end
+        chunks.append(text[start:split_pos
+])
+        start = split_pos - overlap
+    return chunks
+
+# ============================================================
+# 3. Setup SQLite database
+# ============================================================
+db_path = "/kaggle/working/chunks.db"
+conn = sqlite3.connect(db_path)
+cursor = conn.cursor()
+cursor.execute("DROP TABLE IF EXISTS chunks")  # fresh start
+cursor.execute("""
+    CREATE TABLE chunks (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        file_name TEXT,
+        page_number INTEGER,
+        chunk_id INTEGER,
+        text TEXT
+    )
+""")
+conn.commit()
+
+# ============================================================
+# 4. Load embedding model and FAISS (with ID mapping)
+# ============================================================
+print("Loading embedding model...")
+embedder = SentenceTransformer(EMBEDDING_MODEL)
+dim = embedder.get_sentence_embedding_dimension()
+
+# Use IndexFlatIP with IDMap
+index_flat = faiss.IndexFlatIP(dim)
+index = faiss.IndexIDMap(index_flat)
+
+def add_embeddings_with_ids(texts, ids): """Embed texts and add to FAISS with given IDs."""
+    if not texts:
+        return
+    embs = embedder.encode(texts, show_progress_bar=False)
+    faiss.normalize_L2(embs)
+    ids_array = np.array(ids, dtype=np.int64)
+    index.add_with_ids(embs, ids_array)
+    del embs
+    gc.collect()
+
+# ============================================================
+# 5. Process JSON files
+# ============================================================
+input_dir = "/kaggle/input"
+json_files = []
+for dirpath, _, filenames in os.walk(input_dir):
+    for fname in filenames:
+        if fname.endswith('.json'):
+            json_files.append(os.path.join(dirpath, fname))
+
+print(f"Found {len(json_files)} JSON file(s).")
+if not json_files:
+    raise FileNotFoundError("No JSON files in /kaggle/input")
+
+# Print first document structure for debugging
+sample_file = json_files[
+    0
+]
+with open(sample_file, 'r', encoding='utf-8') as f:
+    sample_data = json.load(f)
+print("\n=== Sample document structure ===")
+if isinstance(sample_data, dict) and "root" in sample_data:
+    print(f"Key 'root' found, first item keys: {list(sample_data['root'][0].keys()) if sample_data['root'] else 'empty'}")
+else:
+    print(f"Direct list or dict, keys: {list(sample_data.keys()) if isinstance(sample_data, dict) else 'list'}")
+print("================================\n")
+
+total_chunks = 0
+next_id = 1  # SQLite autoincrement starts at 1
+
+for json_path in json_files:
+    print(f"\nProcessing: {os.path.basename(json_path)}")
+    with open(json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    if isinstance(data, dict) and "root" in data:
+        docs = data[
+    "root"
+]
+    elif isinstance(data, list):
+        docs = data
+    else:
+        docs = [data
+]
+    
+    print(f"  Documents in this file: {len(docs)}")
+    
+    batch_texts = []
+    batch_ids = []
+    
+    for doc in tqdm(docs, desc=f"  Chunking"):
+        file_name = doc.get("file_name",
+"unknown")
+        pages = doc.get("pages",
+[])
+        full_text = doc.get("full_text")
+        
+        # Case 1: full_text
+        if full_text and isinstance(full_text, str) and full_text.strip():
+            chunks = split_text(full_text.strip())
+            for chunk_idx, chunk_text in enumerate(chunks):
+                cursor.execute(
+                    "INSERT INTO chunks (file_name, page_number, chunk_id, text) VALUES (?, ?, ?, ?)",
+                    (file_name,
+0, chunk_idx, chunk_text)
+                )
+                row_id = cursor.lastrowid
+                batch_texts.append(chunk_text)
+                batch_ids.append(row_id)
+                total_chunks += 1
+                if len(batch_texts) >= BATCH_SIZE:
+                    add_embeddings_with_ids(batch_texts, batch_ids)
+                    batch_texts, batch_ids = [],
+[]
+                    conn.commit()
+        
+        # Case 2: pages array
+        elif pages and isinstance(pages, list):
+            for page in pages:
+                page_num = page.get("page_number",
+0)
+                page_text = page.get("text",
+"").strip()
+                if not page_text:
+                    continue
+                chunks = split_text(page_text)
+                for chunk_idx, chunk_text in enumerate(chunks):
+                    cursor.execute(
+                        "INSERT INTO chunks (file_name, page_number, chunk_id, text) VALUES (?, ?, ?, ?)",
+                        (file_name, page_num, chunk_idx, chunk_text)
+                    )
+                    row_id = cursor.lastrowid
+                    batch_texts.append(chunk_text)
+                    batch_ids.append(row_id)
+                    total_chunks += 1
+                    if len(batch_texts) >= BATCH_SIZE:
+                        add_embeddings_with_ids(batch_texts, batch_ids)
+                        batch_texts, batch_ids = [],
+[]
+                        conn.commit()
+        
+        if total_chunks % 1000 == 0:
+            gc.collect()
+    
+    # Final batch
+    if batch_texts:
+        add_embeddings_with_ids(batch_texts, batch_ids)
+        conn.commit()
+    
+    del docs, data
+    gc.collect()
+    print(f"  Finished. Total chunks so far: {total_chunks}")
+
+conn.close()
+print(f"\n✅ FAISS index contains {index.ntotal} vectors.")
+print(f"✅ SQLite contains {total_chunks} chunks.")
+
+# ============================================================
+# 6. Verify retrieval (test with a known word)
+# ============================================================
+def test_retrieval(): """Test if we can retrieve any chunk."""
+    # Get first chunk text from SQLite
+    test_conn = sqlite3.connect(db_path)
+    test_cursor = test_conn.cursor()
+    test_cursor.execute("SELECT id, text FROM chunks LIMIT 1")
+    row = test_cursor.fetchone()
+    if row:
+        first_chunk_id, first_text = row
+        print(f"\n=== Test retrieval using first chunk text ===")
+        print(f"First chunk (id={first_chunk_id}): {first_text[:200]}...")
+        # Use a few words from that chunk as query
+        query_words = ' '.join(first_text.split()[
+    : 5
+])
+        print(f"Query: '{query_words}'")
+        
+        # Run retrieve
+        results = retrieve(query_words, k=1)
+        if results:
+            print(f"✅ Success! Retrieved chunk with score {results[0]['score']}")
+            print(f"   Text: {results[0]['text'][:200]}...")
+        else:
+            print("❌ No results. Something is wrong with embedding or FAISS.")
+    else:
+        print("❌ No chunks found in SQLite at all!")
+    test_conn.close()
+
+# Retrieval function (uses IDmap)
+def retrieve(query, k=TOP_K_RETRIEVALS):
+    query_emb = embedder.encode([query
+])
+    faiss.normalize_L2(query_emb)
+    scores, ids = index.search(query_emb, k)
+    
+    conn_ret = sqlite3.connect(db_path)
+    cursor_ret = conn_ret.cursor()
+    results = []
+    for score, doc_id in zip(scores[
+    0
+], ids[
+    0
+]):
+        if doc_id != -1:
+            cursor_ret.execute("SELECT file_name, page_number, text FROM chunks WHERE id = ?", (int(doc_id),))
+            row = cursor_ret.fetchone()
+            if row:
+                results.append({
+    "text": row[
+        2
+    ],
+    "metadata": {
+        "file_name": row[
+            0
+        ],
+        "page_number": row[
+            1
+        ]
+    },
+    "score": float(score)
+})
+    conn_ret.close()
+    return results
+
+# Run test
+test_retrieval()
+
+# ============================================================
+# 7. Groq setup and answer function
+# ============================================================
+user_secrets = UserSecretsClient()
+GROQ_API_KEY = user_secrets.get_secret("GROQ_API_KEY")
+client = Groq(api_key=GROQ_API_KEY)
+
+def answer_question(query, max_context_chars=4000):
+    retrieved = retrieve(query)
+    if not retrieved:
+        return "No relevant context found."
+    
+    context_parts = []
+    citations = []
+    for i, chunk in enumerate(retrieved):
+        meta = chunk[
+    "metadata"
+]
+        citations.append(f"[{i+1}] {meta['file_name']} (page {meta.get('page_number','?')})")
+        context_parts.append(f"--- [{i+1}] ---\n{chunk['text']}")
+    
+    context = "\n\n".join(context_parts)
+    if len(context) > max_context_chars:
+        context = context[
+    :max_context_chars
+] + "\n...[truncated]"
+    
+    system_prompt = (
+        "Answer based ONLY on the provided context. If not present, say 'I don't know'. ""Cite sources using numbers like [1], [2]."
+    )
+    user_prompt = f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"
+    
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=[
+    {
+        "role": "system",
+        "content": system_prompt
+    },
+    {
+        "role": "user",
+        "content": user_prompt
+    }
+],
+        temperature=0.2,
+        max_tokens=800
+    )
+    return response.choices[
+    0
+].message.content
+
+# ============================================================
+# 8. Ask your questions
+# ============================================================
+queries = [
+    "What are the main rituals described in the Agama texts?",
+    "Tell me about Mahabharat"
+]
+
+for q in queries:
+    print(f"\nQuery: {q}\nAnswering...\n")
+    print("="*60)
+    print(answer_question(q))
+    print("="*60)
+
+    import sqlite3
+import numpy as np
+import faiss
+from sentence_transformers import SentenceTransformer
+import json
+import gc
+
+# Configuration (must match original)
+CHUNK_SIZE = 2500
+CHUNK_OVERLAP = 200
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+BATCH_SIZE = 32
+
+# Load embedding model
+print("Loading embedding model...")
+embedder = SentenceTransformer(EMBEDDING_MODEL)
+dim = embedder.get_sentence_embedding_dimension()
+
+# Connect to SQLite
+conn = sqlite3.connect("/kaggle/working/chunks.db")
+cursor = conn.cursor()
+
+# Get all chunks with their IDs
+cursor.execute("SELECT id, text FROM chunks ORDER BY id")
+rows = cursor.fetchall()
+print(f"Loaded {len(rows)} chunks from SQLite.")
+
+# Prepare FAISS index with ID mapping
+index_flat = faiss.IndexFlatIP(dim)
+index = faiss.IndexIDMap(index_flat)
+
+# Process in batches
+batch_texts = []
+batch_ids = []
+for row_id, text in rows:
+    batch_texts.append(text)
+    batch_ids.append(row_id)
+    if len(batch_texts) >= BATCH_SIZE:
+        embs = embedder.encode(batch_texts, show_progress_bar=False)
+        faiss.normalize_L2(embs)
+        ids_array = np.array(batch_ids, dtype=np.int64)
+        index.add_with_ids(embs, ids_array)
+        batch_texts = []
+        batch_ids = []
+        gc.collect()
+
+# Final batch
+if batch_texts:
+    embs = embedder.encode(batch_texts, show_progress_bar=False)
+    faiss.normalize_L2(embs)
+    ids_array = np.array(batch_ids, dtype=np.int64)
+    index.add_with_ids(embs, ids_array)
+
+conn.close()
+print(f"FAISS index built with {index.ntotal} vectors.")
+
+# Save the index and metadata
+faiss.write_index(index,
+"/kaggle/working/faiss_index.bin")
+print("✅ Saved faiss_index.bin")
+
+metadata = {
+    "chunk_size": CHUNK_SIZE,
+    "chunk_overlap": CHUNK_OVERLAP,
+    "embedding_model": EMBEDDING_MODEL,
+    "total_chunks": len(rows)
+}
+with open("/kaggle/working/index_metadata.json",
+"w") as f:
+    json.dump(metadata, f)
+print("✅ Saved index_metadata.json")

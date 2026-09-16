@@ -1,0 +1,41 @@
+{
+  "deterministic_reconstruction_verified": true,
+  "proof_hash": "5b9db8e4190299717550595135bb6de906e56d016b1eb54ee28cc1ac1037af5d",
+  "reconstruction": {
+    "canonical_authority_granted": false,
+    "component_hashes": {
+      "contradiction_escalation": "a6e9e43f9e018248930124e5b3d23368058dd5be53d2ca5d6f3d6d1fa619440c",
+      "observability": "3d836c745be9b2d9248da87d74281bb10f1b1bf78fb2a767c4063b133d336e88",
+      "ontology_lineage": "ce996e956bd515baa79b71997a3e34ab895135e1a3a6456f87f986cf7343b3e5",
+      "semantic_governance": "5747d8b289930bdd6bcadf809333f36e13843e5389a8ef831f8d6309c318b183",
+      "trust_propagation": "499b43debbe87e8193c75f9f102ac076a5c1b918a95f3a8b7635f3a532f29d47",
+      "uncertainty_lineage": "743458d6d00081bda313fbbdf951f5c5b85eca3219871abc3cdc4804137c464f"
+    },
+    "event_count": 7,
+    "hash_chain_ok": true,
+    "last_event_hash": "f0fc345b31bf94487ded348d63e493b2664d28d4c68e68c1c4eac09d7b48818b",
+    "reconstruction_hash": "4a41cef618c8dd5dd7e14ac83f277b13a5b77db1342841dfa8552f66163dd8dd",
+    "runtime_id": "constitutional_cognition_runtime_v1",
+    "schema": "UNIGURU_DETERMINISTIC_RUNTIME_RECONSTRUCTION_V1"
+  },
+  "replay_reconstruction": {
+    "canonical_authority_granted": false,
+    "component_hashes": {
+      "contradiction_escalation": "a6e9e43f9e018248930124e5b3d23368058dd5be53d2ca5d6f3d6d1fa619440c",
+      "observability": "3d836c745be9b2d9248da87d74281bb10f1b1bf78fb2a767c4063b133d336e88",
+      "ontology_lineage": "ce996e956bd515baa79b71997a3e34ab895135e1a3a6456f87f986cf7343b3e5",
+      "semantic_governance": "5747d8b289930bdd6bcadf809333f36e13843e5389a8ef831f8d6309c318b183",
+      "trust_propagation": "499b43debbe87e8193c75f9f102ac076a5c1b918a95f3a8b7635f3a532f29d47",
+      "uncertainty_lineage": "743458d6d00081bda313fbbdf951f5c5b85eca3219871abc3cdc4804137c464f"
+    },
+    "event_count": 7,
+    "hash_chain_ok": true,
+    "last_event_hash": "f0fc345b31bf94487ded348d63e493b2664d28d4c68e68c1c4eac09d7b48818b",
+    "reconstruction_hash": "4a41cef618c8dd5dd7e14ac83f277b13a5b77db1342841dfa8552f66163dd8dd",
+    "runtime_id": "constitutional_cognition_runtime_v1",
+    "schema": "UNIGURU_DETERMINISTIC_RUNTIME_RECONSTRUCTION_V1"
+  },
+  "replay_runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "schema": "UNIGURU_RECONSTRUCTION_PROOF_V1"
+}

@@ -1,0 +1,39 @@
+{
+  "audio_fingerprints": {
+    "sample-hi.wav": {
+      "text": "ahimsa ka arth kya hai",
+      "language": "hi",
+      "confidence": 0.91
+    },
+    "sample-en.wav": {
+      "text": "what is a qubit",
+      "language": "en",
+      "confidence": 0.94
+    },
+    "sample-mr.wav": {
+      "text": "अहिंसेचा अर्थ काय आहे",
+      "language": "mr",
+      "confidence": 0.89
+    },
+    "sample-ta.wav": {
+      "text": "அகிம்சை என்றால் என்ன",
+      "language": "ta",
+      "confidence": 0.88
+    },
+    "sample-te.wav": {
+      "text": "అహింస అంటే ఏమిటి",
+      "language": "te",
+      "confidence": 0.87
+    },
+    "sample-kn.wav": {
+      "text": "ಅಹಿಂಸೆ ಎಂದರೇನು",
+      "language": "kn",
+      "confidence": 0.86
+    },
+    "sample-bn.wav": {
+      "text": "অহিংসা মানে কি",
+      "language": "bn",
+      "confidence": 0.85
+    }
+  }
+}

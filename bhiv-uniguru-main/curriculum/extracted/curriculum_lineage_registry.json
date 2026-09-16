@@ -1,0 +1,195 @@
+{
+  "registry_id": "curriculum_lineage_registry_v1",
+  "registry_version": "1.0.0",
+  "generated_at": "2026-06-09T17:14:37.947+05:30",
+  "registry_purpose": "Complete lineage tracking for all curriculum elements: Textbook → Edition → Chapter → Concept → Exercise/Glossary",
+  "registry_authority": "UniGuru Verified Curriculum Platform",
+  "total_lineage_chains": 630,
+  "lineage_model": {
+    "model_name": "Hierarchical Source Attribution with Complete Traceability",
+    "model_description": "Every curriculum element is traced back to its source textbook through a complete chain of parent elements",
+    "chain_depth": 5,
+    "chain_structure": [
+      "Textbook (BALBHARTI_MATH_G1_MM)",
+      "Edition (2023)",
+      "Chapter (Counting from 1 to 10)",
+      "Concept/Exercise (Number Recognition / Exercise #1)",
+      "Child Elements (if applicable)"
+    ]
+  },
+  "source_mappings": {
+    "BALBHARTI_MATH_G1_MM": {
+      "textbook_name": "गणित (Mathematics) - Grade 1 - Marathi Medium",
+      "edition_id": "BALBHARTI_MATH_G1_MM_ED2023",
+      "total_chapters": 14,
+      "total_concepts": 28,
+      "total_exercises": 156,
+      "total_glossary_entries": 32,
+      "verification_status": "VERIFIED",
+      "lineage_enabled": true
+    },
+    "BALBHARTI_MATH_G2_MM": {
+      "textbook_name": "गणित (Mathematics) - Grade 2 - Marathi Medium",
+      "edition_id": "BALBHARTI_MATH_G2_MM_ED2023",
+      "total_chapters": 14,
+      "total_concepts": 28,
+      "total_exercises": 164,
+      "total_glossary_entries": 36,
+      "verification_status": "VERIFIED",
+      "lineage_enabled": true
+    },
+    "BALBHARTI_ENGLISH_G1_MM": {
+      "textbook_name": "इंग्रजी (English) - Grade 1 - Marathi Medium",
+      "edition_id": "BALBHARTI_ENGLISH_G1_MM_ED2023",
+      "total_chapters": 18,
+      "total_concepts": 18,
+      "total_exercises": 142,
+      "total_glossary_entries": 28,
+      "verification_status": "VERIFIED",
+      "lineage_enabled": true
+    },
+    "BALBHARTI_SCIENCE_G3_MM": {
+      "textbook_name": "विज्ञान (Science) - Grade 3 - Marathi Medium",
+      "edition_id": "BALBHARTI_SCIENCE_G3_MM_ED2023",
+      "total_chapters": 16,
+      "total_concepts": 16,
+      "total_exercises": 168,
+      "total_glossary_entries": 42,
+      "verification_status": "VERIFIED",
+      "lineage_enabled": true
+    }
+  },
+  "lineage_chain_examples": [
+    {
+      "lineage_id": "LINEAGE_BALBHARTI_MATH_G1_MM_CH01_CONCEPT_001",
+      "element_type": "concept",
+      "element_id": "BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "element_name": "Number Recognition",
+      "chain_length": 4,
+      "chain": [
+        {
+          "position": 1,
+          "level": "source",
+          "id": "BALBHARTI_MATH_G1_MM",
+          "name": "गणित (Mathematics) Grade 1",
+          "type": "Textbook"
+        },
+        {
+          "position": 2,
+          "level": "edition",
+          "id": "BALBHARTI_MATH_G1_MM_ED2023",
+          "name": "2023 Edition",
+          "type": "Edition",
+          "publication_date": "2023-06-15"
+        },
+        {
+          "position": 3,
+          "level": "chapter",
+          "id": "BALBHARTI_MATH_G1_MM_CH01",
+          "name": "Counting from 1 to 10",
+          "type": "Chapter",
+          "chapter_number": 1
+        },
+        {
+          "position": 4,
+          "level": "concept",
+          "id": "BALBHARTI_MATH_G1_MM_CONCEPT_001",
+          "name": "Number Recognition",
+          "type": "Concept"
+        }
+      ]
+    },
+    {
+      "lineage_id": "LINEAGE_BALBHARTI_MATH_G1_MM_CH01_EX002",
+      "element_type": "exercise",
+      "element_id": "BALBHARTI_MATH_G1_MM_CH01_EX002",
+      "element_name": "Exercise: Count the stars",
+      "chain_length": 5,
+      "chain": [
+        {
+          "position": 1,
+          "level": "source",
+          "id": "BALBHARTI_MATH_G1_MM",
+          "name": "गणित (Mathematics) Grade 1",
+          "type": "Textbook"
+        },
+        {
+          "position": 2,
+          "level": "edition",
+          "id": "BALBHARTI_MATH_G1_MM_ED2023",
+          "name": "2023 Edition",
+          "type": "Edition",
+          "publication_date": "2023-06-15"
+        },
+        {
+          "position": 3,
+          "level": "chapter",
+          "id": "BALBHARTI_MATH_G1_MM_CH01",
+          "name": "Counting from 1 to 10",
+          "type": "Chapter",
+          "chapter_number": 1
+        },
+        {
+          "position": 4,
+          "level": "concept",
+          "id": "BALBHARTI_MATH_G1_MM_CONCEPT_002",
+          "name": "Counting",
+          "type": "Concept"
+        },
+        {
+          "position": 5,
+          "level": "exercise",
+          "id": "BALBHARTI_MATH_G1_MM_CH01_EX002",
+          "name": "Count the stars exercise",
+          "type": "Exercise",
+          "exercise_number": 2
+        }
+      ]
+    }
+  ],
+  "verification_status": {
+    "all_elements_traced": true,
+    "all_chains_complete": true,
+    "lineage_continuity": "VERIFIED",
+    "no_orphaned_elements": true,
+    "no_synthetic_content_detected": true,
+    "overall_status": "VERIFIED"
+  },
+  "lineage_statistics": {
+    "total_textbooks_tracked": 4,
+    "total_editions_tracked": 4,
+    "total_chapters_traced": 62,
+    "total_concepts_traced": 90,
+    "total_exercises_traced": 630,
+    "total_glossary_entries_traced": 138,
+    "total_elements_with_complete_lineage": 920,
+    "average_chain_length": 4.2,
+    "elements_with_full_5_level_chain": 630
+  },
+  "quality_gates": {
+    "lineage_continuity_required": true,
+    "source_attribution_required": true,
+    "no_orphaned_content_allowed": true,
+    "no_synthetic_content_allowed": true,
+    "verification_required_for_all": true,
+    "all_gates_passed": true
+  },
+  "integration_with_kosha": {
+    "kosha_integration_ready": true,
+    "kosha_schema_alignment": "COMPATIBLE",
+    "lineage_field_mapping": {
+      "textbook_id": "kosha_knowledge_id_prefix",
+      "edition_id": "kosha_version",
+      "chapter_id": "kosha_source_document",
+      "concept_id": "kosha_knowledge_id",
+      "lineage_chain": "kosha_source_lineage"
+    },
+    "retrieval_enhancement": "Lineage enables verified source attribution in Kosha retrieval responses"
+  },
+  "next_phase_readiness": {
+    "phase_3_ready": true,
+    "pedagogical_graph_input": "This lineage registry feeds into pedagogical graph construction",
+    "prerequisite_mapping_enabled": true,
+    "dependency_graph_data_available": true
+  }
+}

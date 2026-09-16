@@ -1,0 +1,29 @@
+{
+  "raw_candidates": [
+    {
+      "content": "Dharma is the sustaining order of life and duty.",
+      "source": "MASTERDB",
+      "concept": "dharma"
+    },
+    {
+      "content": "Dharma is the sustaining order of life and duty.",
+      "source": "FAISS_VECTOR_INDEX",
+      "concept": "dharma"
+    }
+  ],
+  "candidate_count": 2,
+  "deduplicated_candidate_count": 1,
+  "deduplicated_items": [
+    {
+      "canonical_object_id": "uko:dharma:006f7b061f4c",
+      "source_id": "MASTERDB",
+      "authority_tier": "CANONICAL",
+      "provenance_hash": "006f7b061f4c65c17f171e3b7c0669b82b8879a86150dc22b968243a7d014e21",
+      "ranking_score": 0.85,
+      "dedup_status": "unique",
+      "text_span": "Dharma is the sustaining order of life and duty.",
+      "domain": null,
+      "tradition_context": "general"
+    }
+  ]
+}

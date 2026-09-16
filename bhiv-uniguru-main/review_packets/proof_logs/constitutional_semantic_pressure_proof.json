@@ -1,0 +1,43 @@
+{
+  "hashes": {
+    "arbitration": "e256f5bfa85b0681d536ead29928d0d5ffe283c44b3d83df2aa08c2490be8aff",
+    "observability": "65aee6ca0c784b49760ac77615ccd1ae8274dfaa04a6f6532e525930540eb96a",
+    "ontology": "3876157039d933d38aefd2db91e12bea129b376ca89b5d02d8f85c02a69c8469",
+    "pressure": "066cced273388b4206e3f63f439c3deae1132e63525757daff07f0baca20b937",
+    "replay": "04220e3888d76772f58e0ba2b69f6a80e3eba6403a05ee0b63990bfc68339c7b"
+  },
+  "phase_outputs": {
+    "phase_1": [
+      "authority_pressure_logs.json",
+      "trust_decay_simulation.json",
+      "semantic_legitimacy_forecast.json"
+    ],
+    "phase_2": [
+      "contradiction_arbitration_trace.json",
+      "distributed_semantic_dispute_log.json",
+      "contradiction_replay_proof.json"
+    ],
+    "phase_3": [
+      "ontology_legitimacy_boundaries.json",
+      "semantic_drift_alerts.json",
+      "ontology_pressure_observability.json"
+    ],
+    "phase_4": [
+      "semantic_pressure_observability.json",
+      "authority_gravity_dashboard.json",
+      "uncertainty_continuity_trace.json"
+    ]
+  },
+  "proof_assertions": {
+    "authority_escalation_rejected": true,
+    "deterministic_replay_outputs_stable": true,
+    "distributed_contradictions_replay_safe": true,
+    "ontology_caps_enforced": true,
+    "semantic_drift_alerting": true,
+    "trust_decay_enforced": true,
+    "uncertainty_persistence": true,
+    "unresolved_contradictions_persist": true
+  },
+  "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_PRESSURE_PROOF_V1",
+  "summary_hash": "d951d1c22a820a7214c16da4a85656c3dfb9be4cea45b279febe57362d66255d"
+}

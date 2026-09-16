@@ -1,0 +1,20 @@
+{
+  "83103a485400e40f9ff5ea8c498966d957ce6137ed18526e6066586524cb9f6b": {
+    "checkpoint_id": "83103a485400e40f9ff5ea8c498966d957ce6137ed18526e6066586524cb9f6b",
+    "semantic_hash": "66535b7b2455356528e8f86c7a2e6e46a287e9893441a89876ba1bbd28d576a5",
+    "timestamp": 1788528290.2647219,
+    "trace_chain": [
+      "ingest_paper_1"
+    ],
+    "parent_checkpoint_id": null
+  },
+  "5562d76f2fa4e94102619c860690a134037733d9ecf3c1a8fb79075a9b0dbed6": {
+    "checkpoint_id": "5562d76f2fa4e94102619c860690a134037733d9ecf3c1a8fb79075a9b0dbed6",
+    "semantic_hash": "1e7f84d302f21b7ef648d9ec8bfd168bcb3a34567ff9f9816d5ae3ef57c77583",
+    "timestamp": 1788528290.2647219,
+    "trace_chain": [
+      "ingest_paper_2"
+    ],
+    "parent_checkpoint_id": "83103a485400e40f9ff5ea8c498966d957ce6137ed18526e6066586524cb9f6b"
+  }
+}

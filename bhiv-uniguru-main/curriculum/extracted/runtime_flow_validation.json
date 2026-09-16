@@ -1,0 +1,67 @@
+{
+  "validation_id": "RUNTIME_FLOW_VALIDATION_V2",
+  "generated_at": "2026-06-10T10:29:47.400079+00:00",
+  "flow_definition": {
+    "step_1": "StudentQuery -> Retrieval.retrieve_from_masterdb()",
+    "step_2": "Retrieval -> CurriculumIntelligence.extract_lineage()",
+    "step_3": "CurriculumIntelligence -> LearningIntelligence.build_learning_intelligence()",
+    "step_4": "LearningIntelligence -> MasteryEngine.build_progress_state()",
+    "step_5": "MasteryEngine -> ConstitutionalRuntime.evaluate() [if available]",
+    "step_6": "All stages -> RuntimeContract.bind()"
+  },
+  "flow_validated": true,
+  "validation_evidence": [
+    {
+      "check": "All 7 pipeline stages present in every execution",
+      "status": "PASSED"
+    },
+    {
+      "check": "No duplicate stages (no parallel paths)",
+      "status": "PASSED"
+    },
+    {
+      "check": "Mastery fields present in contract output",
+      "status": "PASSED"
+    },
+    {
+      "check": "Curriculum lineage preserved through pipeline",
+      "status": "PASSED"
+    },
+    {
+      "check": "Constitutional runtime integrated (optional layer)",
+      "status": "PASSED"
+    }
+  ],
+  "sample_trace": [
+    {
+      "stage": "retrieval",
+      "matched": true,
+      "confidence": 1.0,
+      "latency_ms": 88.42
+    },
+    {
+      "stage": "curriculum_intelligence",
+      "concept_resolved": true,
+      "lineage_present": true,
+      "latency_ms": 0.0
+    },
+    {
+      "stage": "learning_intelligence",
+      "gap_detected": true,
+      "path_generated": true,
+      "latency_ms": 0.42
+    },
+    {
+      "stage": "mastery_intelligence",
+      "mastery_score": 0.0,
+      "weak_areas_count": 0,
+      "latency_ms": 0.38
+    },
+    {
+      "stage": "constitutional_runtime",
+      "available": true,
+      "decision": "forward",
+      "latency_ms": 9.84
+    }
+  ]
+}

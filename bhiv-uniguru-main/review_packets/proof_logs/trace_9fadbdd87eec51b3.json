@@ -1,0 +1,605 @@
+{
+  "answer": "I do not have verified knowledge to answer this question.",
+  "confidence": 0.0,
+  "confidence_breakdown": {
+    "accepted_count": 0,
+    "accepted_derivations": [],
+    "overall": 0.0,
+    "rejected_count": 9
+  },
+  "detected_domain": "gitas",
+  "domain_resolution": {
+    "confidence": 1.0,
+    "domain": "gitas",
+    "entities": [
+      {
+        "canonical": "Bhagavad Gita",
+        "concepts": [
+          "dharma",
+          "karma yoga",
+          "jnana yoga",
+          "bhakti yoga"
+        ],
+        "domain": "gitas",
+        "entity_type": "text",
+        "matched_alias": "bhagavad gita"
+      },
+      {
+        "canonical": "Upanishads",
+        "concepts": [
+          "Brahman",
+          "Atman",
+          "liberation"
+        ],
+        "domain": "upanishads",
+        "entity_type": "text_group",
+        "matched_alias": "upanishads"
+      }
+    ],
+    "method": "canonical_text_entity"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 25,
+    "total_entries": 37,
+    "valid_entries": 12
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-05-06T04:08:36.478375Z",
+  "knowledge_ids_used": [],
+  "matched_signals": [],
+  "query": "Return Upanishads for Bhagavad Gita teachings",
+  "reasoning": "No signals passed domain+tag+query validation.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "structured_signal_emission",
+    "deterministic_rejection"
+  ],
+  "rejected_signals": [
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahma",
+            "concepts": [
+              "creation",
+              "cosmology"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "brahma"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          },
+          {
+            "canonical": "Vedas",
+            "concepts": [
+              "samhita",
+              "ritual",
+              "knowledge"
+            ],
+            "domain": "vedas",
+            "entity_type": "text_group",
+            "matched_alias": "vedas"
+          },
+          {
+            "canonical": "Yoga",
+            "concepts": [
+              "discipline",
+              "meditation"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "yoga"
+          }
+        ],
+        "concept_overlap": 0.4444,
+        "confidence": 0.3701,
+        "confidence_derivation": {
+          "content_overlap": 0.4,
+          "derived_confidence": 0.3442,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.5,
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "retrieval_confidence": 0.3701,
+          "semantic_score": 0.4057,
+          "tag_match_score": 0.2
+        },
+        "content_overlap": 0.4,
+        "contextual_proximity": 0.7512,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "gitas",
+          "entities": [
+            {
+              "canonical": "Bhagavad Gita",
+              "concepts": [
+                "dharma",
+                "karma yoga",
+                "jnana yoga",
+                "bhakti yoga"
+              ],
+              "domain": "gitas",
+              "entity_type": "text",
+              "matched_alias": "bhagavad gita"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.5,
+        "matched_tags": [
+          "upanishads"
+        ],
+        "missing_required_entities": [],
+        "query_entities": [
+          {
+            "canonical": "Bhagavad Gita",
+            "concepts": [
+              "dharma",
+              "karma yoga",
+              "jnana yoga",
+              "bhakti yoga"
+            ],
+            "domain": "gitas",
+            "entity_type": "text",
+            "matched_alias": "bhagavad gita"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          }
+        ],
+        "semantic_score": 0.4057,
+        "signal_id": "signal_2882d2a9eaa6",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "tag_match_score": 0.2
+      },
+      "rejection_reason": "domain_mismatch",
+      "signal_id": "signal_2882d2a9eaa6",
+      "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Taittiriya Upanishad",
+            "concepts": [
+              "Brahman",
+              "kosha"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text",
+            "matched_alias": "taittiriya upanishad"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          }
+        ],
+        "concept_overlap": 0.3333,
+        "confidence": 0.3336,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.1944,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.5,
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "retrieval_confidence": 0.3336,
+          "semantic_score": 0.3699,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.7819,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "gitas",
+          "entities": [
+            {
+              "canonical": "Bhagavad Gita",
+              "concepts": [
+                "dharma",
+                "karma yoga",
+                "jnana yoga",
+                "bhakti yoga"
+              ],
+              "domain": "gitas",
+              "entity_type": "text",
+              "matched_alias": "bhagavad gita"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.5,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [
+          {
+            "canonical": "Bhagavad Gita",
+            "concepts": [
+              "dharma",
+              "karma yoga",
+              "jnana yoga",
+              "bhakti yoga"
+            ],
+            "domain": "gitas",
+            "entity_type": "text",
+            "matched_alias": "bhagavad gita"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          }
+        ],
+        "semantic_score": 0.3699,
+        "signal_id": "signal_8c35d7cd1744",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_8c35d7cd1744",
+      "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          },
+          {
+            "canonical": "Vedas",
+            "concepts": [
+              "samhita",
+              "ritual",
+              "knowledge"
+            ],
+            "domain": "vedas",
+            "entity_type": "text_group",
+            "matched_alias": "vedas"
+          }
+        ],
+        "concept_overlap": 0.3333,
+        "confidence": 0.3122,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.187,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.5,
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "retrieval_confidence": 0.3122,
+          "semantic_score": 0.3632,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.7156,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "gitas",
+          "entities": [
+            {
+              "canonical": "Bhagavad Gita",
+              "concepts": [
+                "dharma",
+                "karma yoga",
+                "jnana yoga",
+                "bhakti yoga"
+              ],
+              "domain": "gitas",
+              "entity_type": "text",
+              "matched_alias": "bhagavad gita"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.5,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [
+          {
+            "canonical": "Bhagavad Gita",
+            "concepts": [
+              "dharma",
+              "karma yoga",
+              "jnana yoga",
+              "bhakti yoga"
+            ],
+            "domain": "gitas",
+            "entity_type": "text",
+            "matched_alias": "bhagavad gita"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          }
+        ],
+        "semantic_score": 0.3632,
+        "signal_id": "signal_47a8bdcd6c59",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_47a8bdcd6c59",
+      "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.118,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_7ed1dbfa67ee",
+        "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.118",
+      "signal_id": "signal_7ed1dbfa67ee",
+      "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.1065,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_4c8ebfa44448",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.106",
+      "signal_id": "signal_4c8ebfa44448",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.063,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_de441e6d0f79",
+        "source": "The Narada-Purana, Part 4_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.063",
+      "signal_id": "signal_de441e6d0f79",
+      "source": "The Narada-Purana, Part 4_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0427,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_786dcdefbe27",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.043",
+      "signal_id": "signal_786dcdefbe27",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0155,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_847a097d63b7",
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.015",
+      "signal_id": "signal_847a097d63b7",
+      "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0071,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_a0354de7b451",
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.007",
+      "signal_id": "signal_a0354de7b451",
+      "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+    }
+  ],
+  "signals_found": 0,
+  "signals_rejected": 9,
+  "synthesis_mode": "REJECTED_NO_SYNTHESIS",
+  "trace_id": "trace_9fadbdd87eec51b3",
+  "verification_status": "NO_VERIFIED_KNOWLEDGE"
+}

@@ -1,0 +1,2793 @@
+{
+  "answer": "I do not have verified knowledge to answer this question.",
+  "bucket_proof": {
+    "accepted_signals": [],
+    "confidence_derivation": {
+      "accepted_count": 0,
+      "accepted_derivations": [],
+      "consensus": {
+        "ambiguity_classification": "no_valid_signals",
+        "consensus_score": 0.0,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No valid signals available.",
+        "multi_source_reinforcement": 0.0
+      },
+      "overall": 0.0,
+      "rejected_count": 12
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "8914e439d8cafd7798795e96be7b4e35a60bb09e0b2900fd12feba18b7ea24a1",
+    "memory_event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "777d672278df90fef8b176d5b8150e70d8afcaf26c4ddc23b53249d0a97b925c",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_3eb918eb88a25f6d",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-07-10T18:08:14.848671Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [
+      "signal_137a59eae550",
+      "signal_cd3dd47d4021",
+      "signal_1b55dbccb8f7",
+      "signal_70020d40086f",
+      "signal_5bba5a47a7a7",
+      "signal_34d2e42dc03d",
+      "signal_60b38e626344",
+      "signal_c5654ac9fe29",
+      "signal_248ccce0b0a5",
+      "signal_cab73d94ce1c",
+      "signal_43ab8d3ac8de",
+      "signal_16517055e77e"
+    ],
+    "retrieval_truth_hash": "03b15b01e2d3a61cd15c33b787aeb3d65f8985ba416b1e8ba658c1fb481d7a89",
+    "semantic_path": [],
+    "timestamp": "2026-07-10T18:08:13.212769Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_3eb918eb88a25f6d",
+      "contract_emission": "trace_3eb918eb88a25f6d",
+      "downstream_execution": "trace_3eb918eb88a25f6d",
+      "immutable": true,
+      "retrieval": "trace_3eb918eb88a25f6d",
+      "synthesis": "trace_3eb918eb88a25f6d",
+      "validation": "trace_3eb918eb88a25f6d"
+    },
+    "trace_id": "trace_3eb918eb88a25f6d",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "confidence": 0.0,
+  "confidence_breakdown": {
+    "accepted_count": 0,
+    "accepted_derivations": [],
+    "consensus": {
+      "ambiguity_classification": "no_valid_signals",
+      "consensus_score": 0.0,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No valid signals available.",
+      "multi_source_reinforcement": 0.0
+    },
+    "overall": 0.0,
+    "rejected_count": 12
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "no_valid_signals",
+    "consensus_score": 0.0,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No valid signals available.",
+    "multi_source_reinforcement": 0.0
+  },
+  "detected_domain": "itihasa",
+  "domain_resolution": {
+    "confidence": 1.0,
+    "domain": "itihasa",
+    "entities": [
+      {
+        "canonical": "Dharma",
+        "concepts": [
+          "ethics",
+          "order",
+          "responsibility"
+        ],
+        "domain": "dharma_systems",
+        "entity_type": "concept",
+        "matched_alias": "dharma"
+      },
+      {
+        "canonical": "Mahabharata",
+        "concepts": [
+          "dharma",
+          "Kurukshetra",
+          "Pandavas"
+        ],
+        "domain": "itihasa",
+        "entity_type": "text",
+        "matched_alias": "mahabharata"
+      }
+    ],
+    "method": "canonical_text_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "REJECTED_NO_DOWNSTREAM_ACTION",
+    "trace_id": "trace_3eb918eb88a25f6d"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 25,
+    "total_entries": 37,
+    "valid_entries": 12
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-07-10T18:08:13.212769Z",
+  "interpretation_payload": {
+    "answer": "I do not have verified knowledge to answer this question.",
+    "artifact_hash": "8914e439d8cafd7798795e96be7b4e35a60bb09e0b2900fd12feba18b7ea24a1",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.0,
+    "confidence_breakdown": {
+      "accepted_count": 0,
+      "accepted_derivations": [],
+      "consensus": {
+        "ambiguity_classification": "no_valid_signals",
+        "consensus_score": 0.0,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No valid signals available.",
+        "multi_source_reinforcement": 0.0
+      },
+      "overall": 0.0,
+      "rejected_count": 12
+    },
+    "contradiction_state": {
+      "classification": "no_valid_signals",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [],
+      "retrieval_trace_id": "trace_3eb918eb88a25f6d",
+      "retrieval_truth_hash": "03b15b01e2d3a61cd15c33b787aeb3d65f8985ba416b1e8ba658c1fb481d7a89"
+    },
+    "trace_id": "trace_3eb918eb88a25f6d",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "knowledge_ids_used": [],
+  "matched_signals": [],
+  "multi_hop_traversal": {
+    "deterministic": true,
+    "max_hops": 5,
+    "paths": [
+      [
+        {
+          "node": "dharma",
+          "relationship": "start"
+        },
+        {
+          "node": "mahabharata",
+          "relationship": "canonical_concept_bridge"
+        }
+      ],
+      [
+        {
+          "node": "mahabharata",
+          "relationship": "start"
+        },
+        {
+          "node": "dharma",
+          "relationship": "has_concept"
+        }
+      ]
+    ],
+    "source": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru_v2-main-main/backend/ontology/seed_entities.json",
+    "start_nodes": [
+      "dharma",
+      "mahabharata"
+    ],
+    "target_nodes": [
+      "dharma",
+      "mahabharata"
+    ]
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_3eb918eb88a25f6d"
+  },
+  "query": "What does the Mahabharata say about dharma?",
+  "reasoning": "No signals passed domain+tag+query validation.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_rejection",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          },
+          {
+            "canonical": "Moksha",
+            "concepts": [
+              "freedom",
+              "realization"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "liberation"
+          }
+        ],
+        "concept_overlap": 0.3889,
+        "confidence": 0.5467529999999999,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.577,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.5,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5783,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8583,
+              "ontology_convergence": 0.7037,
+              "retrieval_strength": 0.5468,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.3983
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.577,
+            "why": [
+              "epistemic_score=0.5770",
+              "ceiling_applied=0.5783",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.32,
+          "retrieval_confidence": 0.5468,
+          "semantic_score": 0.6111,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 1.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "itihasa",
+          "entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.5,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Dharma"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Dharma",
+            "concepts": [
+              "ethics",
+              "order",
+              "responsibility"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "dharma"
+          },
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          }
+        ],
+        "semantic_score": 0.6111,
+        "signal_id": "signal_137a59eae550",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.3983,
+          "confidence_ceiling": 0.5783,
+          "lineage": {
+            "original_source": "The Complete Mahabharata_English_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1417,
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_137a59eae550",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.49888299999999997,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_cd3dd47d4021",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.2941,
+          "confidence_ceiling": 0.5141,
+          "lineage": {
+            "original_source": "The Complete Mahabharata_English_ocred.pdf",
+            "transformation_history": [
+              "retrieved_context",
+              "inferred_synthesis",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1259,
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_type": "inferred_synthesis",
+          "suppression_reason": "weak_source_authority:inferred_synthesis"
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "weak_source_authority:inferred_synthesis",
+      "signal_id": "signal_cd3dd47d4021",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Assembly",
+            "concepts": [
+              "deliberation",
+              "governance"
+            ],
+            "domain": "governance",
+            "entity_type": "concept",
+            "matched_alias": "council"
+          },
+          {
+            "canonical": "Dharma",
+            "concepts": [
+              "ethics",
+              "order",
+              "responsibility"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "dharma"
+          }
+        ],
+        "concept_overlap": 0.5,
+        "confidence": 0.41631700000000005,
+        "confidence_derivation": {
+          "content_overlap": 0.3333,
+          "derived_confidence": 0.5099,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.5,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5939,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8739,
+              "ontology_convergence": 0.3167,
+              "retrieval_strength": 0.4163,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.4139
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5099,
+            "why": [
+              "epistemic_score=0.5099",
+              "ceiling_applied=0.5939",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3057,
+          "retrieval_confidence": 0.4163,
+          "semantic_score": 0.45,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.3333,
+        "contextual_proximity": 1.0,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "itihasa",
+          "entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.5,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [
+          {
+            "canonical": "Dharma",
+            "concepts": [
+              "ethics",
+              "order",
+              "responsibility"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "dharma"
+          },
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          }
+        ],
+        "semantic_score": 0.45,
+        "signal_id": "signal_1b55dbccb8f7",
+        "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.4139,
+          "confidence_ceiling": 0.5939,
+          "lineage": {
+            "original_source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1261,
+          "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "domain_mismatch",
+      "signal_id": "signal_1b55dbccb8f7",
+      "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Brahmanda Purana",
+            "concepts": [
+              "cosmology",
+              "purana"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "brahmanda purana"
+          },
+          {
+            "canonical": "Ramayana",
+            "concepts": [
+              "Rama",
+              "dharma",
+              "forest exile"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "valmiki ramayana"
+          }
+        ],
+        "concept_overlap": 0.1111,
+        "confidence": 0.312992,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.3877,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.4667,
+              "retrieval_strength": 0.313,
+              "semantic_agreement": 0.1111,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.3877,
+            "why": [
+              "epistemic_score=0.3877",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1649,
+          "retrieval_confidence": 0.313,
+          "semantic_score": 0.2889,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "itihasa",
+          "entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Dharma"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Dharma",
+            "concepts": [
+              "ethics",
+              "order",
+              "responsibility"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "dharma"
+          },
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          }
+        ],
+        "semantic_score": 0.2889,
+        "signal_id": "signal_70020d40086f",
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_70020d40086f",
+      "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahma",
+            "concepts": [
+              "creation",
+              "cosmology"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "brahma"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          },
+          {
+            "canonical": "Vedas",
+            "concepts": [
+              "samhita",
+              "ritual",
+              "knowledge"
+            ],
+            "domain": "vedas",
+            "entity_type": "text_group",
+            "matched_alias": "vedas"
+          },
+          {
+            "canonical": "Yoga",
+            "concepts": [
+              "discipline",
+              "meditation"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "yoga"
+          }
+        ],
+        "concept_overlap": 0.1111,
+        "confidence": 0.19336799999999998,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.3868,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.0833,
+              "retrieval_strength": 0.1934,
+              "semantic_agreement": 0.1111,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.3868,
+            "why": [
+              "epistemic_score=0.3868",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.09,
+          "retrieval_confidence": 0.1934,
+          "semantic_score": 0.1389,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 1.0,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "itihasa",
+          "entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Dharma"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Dharma",
+            "concepts": [
+              "ethics",
+              "order",
+              "responsibility"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "dharma"
+          },
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          }
+        ],
+        "semantic_score": 0.1389,
+        "signal_id": "signal_5bba5a47a7a7",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_5bba5a47a7a7",
+      "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Manusmriti",
+            "concepts": [
+              "law",
+              "social duty"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "text",
+            "matched_alias": "manusmriti"
+          },
+          {
+            "canonical": "Smriti",
+            "concepts": [
+              "law",
+              "conduct"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "text_group",
+            "matched_alias": "smriti"
+          },
+          {
+            "canonical": "Yajnavalkya Smriti",
+            "concepts": [
+              "law",
+              "governance"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "text",
+            "matched_alias": "yajnavalkya"
+          }
+        ],
+        "concept_overlap": 0.1111,
+        "confidence": 0.15929300000000002,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.308,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5899,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8699,
+              "ontology_convergence": 0.0667,
+              "retrieval_strength": 0.1593,
+              "semantic_agreement": 0.1111,
+              "source_authority": 0.4099
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.308,
+            "why": [
+              "epistemic_score=0.3080",
+              "ceiling_applied=0.5899",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.0665,
+          "retrieval_confidence": 0.1593,
+          "semantic_score": 0.0889,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "itihasa",
+          "entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Dharma"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Dharma",
+            "concepts": [
+              "ethics",
+              "order",
+              "responsibility"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "dharma"
+          },
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          }
+        ],
+        "semantic_score": 0.0889,
+        "signal_id": "signal_34d2e42dc03d",
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.4099,
+          "confidence_ceiling": 0.5899,
+          "lineage": {
+            "original_source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1301,
+          "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_34d2e42dc03d",
+      "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.159024,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_60b38e626344",
+        "source": "The Narada-Purana, Part 1_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "low_contextual_overlap",
+      "signal_id": "signal_60b38e626344",
+      "source": "The Narada-Purana, Part 1_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Devi",
+            "concepts": [
+              "power",
+              "protection"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "shakti"
+          }
+        ],
+        "concept_overlap": 0.0556,
+        "confidence": 0.155784,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.2971,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.0417,
+              "retrieval_strength": 0.1558,
+              "semantic_agreement": 0.0556,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.2971,
+            "why": [
+              "epistemic_score=0.2971",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.0598,
+          "retrieval_confidence": 0.1558,
+          "semantic_score": 0.0694,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "itihasa",
+          "entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Dharma"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Dharma",
+            "concepts": [
+              "ethics",
+              "order",
+              "responsibility"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "dharma"
+          },
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          }
+        ],
+        "semantic_score": 0.0694,
+        "signal_id": "signal_c5654ac9fe29",
+        "source": "Shakti and Shakta_ocr.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Shakti and Shakta_ocr.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Shakti and Shakta_ocr.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_c5654ac9fe29",
+      "source": "Shakti and Shakta_ocr.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Taittiriya Upanishad",
+            "concepts": [
+              "Brahman",
+              "kosha"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text",
+            "matched_alias": "taittiriya upanishad"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          }
+        ],
+        "concept_overlap": 0.0556,
+        "confidence": 0.15110400000000002,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.2968,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.0417,
+              "retrieval_strength": 0.1511,
+              "semantic_agreement": 0.0556,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.2968,
+            "why": [
+              "epistemic_score=0.2968",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.0586,
+          "retrieval_confidence": 0.1511,
+          "semantic_score": 0.0694,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "itihasa",
+          "entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Dharma"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Dharma",
+            "concepts": [
+              "ethics",
+              "order",
+              "responsibility"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "dharma"
+          },
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          }
+        ],
+        "semantic_score": 0.0694,
+        "signal_id": "signal_248ccce0b0a5",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_248ccce0b0a5",
+      "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.149539,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_cab73d94ce1c",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.150",
+      "signal_id": "signal_cab73d94ce1c",
+      "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.135916,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_43ab8d3ac8de",
+        "source": "The Narada-Purana, Part 4_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.136",
+      "signal_id": "signal_43ab8d3ac8de",
+      "source": "The Narada-Purana, Part 4_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.131086,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_16517055e77e",
+        "source": "The Narada-Purana, Part 3_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.131",
+      "signal_id": "signal_16517055e77e",
+      "source": "The Narada-Purana, Part 3_ocred.pdf"
+    }
+  ],
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [],
+    "accepted_signals": [],
+    "artifact_hash": "03b15b01e2d3a61cd15c33b787aeb3d65f8985ba416b1e8ba658c1fb481d7a89",
+    "domain_resolution": {
+      "confidence": 1.0,
+      "domain": "itihasa",
+      "entities": [
+        {
+          "canonical": "Dharma",
+          "concepts": [
+            "ethics",
+            "order",
+            "responsibility"
+          ],
+          "domain": "dharma_systems",
+          "entity_type": "concept",
+          "matched_alias": "dharma"
+        },
+        {
+          "canonical": "Mahabharata",
+          "concepts": [
+            "dharma",
+            "Kurukshetra",
+            "Pandavas"
+          ],
+          "domain": "itihasa",
+          "entity_type": "text",
+          "matched_alias": "mahabharata"
+        }
+      ],
+      "method": "canonical_text_entity"
+    },
+    "generated_at": "2026-07-10T18:08:13.212769Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What does the Mahabharata say about dharma?",
+    "raw_signal_count": 12,
+    "rejected_signal_ids": [
+      "signal_137a59eae550",
+      "signal_cd3dd47d4021",
+      "signal_1b55dbccb8f7",
+      "signal_70020d40086f",
+      "signal_5bba5a47a7a7",
+      "signal_34d2e42dc03d",
+      "signal_60b38e626344",
+      "signal_c5654ac9fe29",
+      "signal_248ccce0b0a5",
+      "signal_cab73d94ce1c",
+      "signal_43ab8d3ac8de",
+      "signal_16517055e77e"
+    ],
+    "rejected_signals": [
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            },
+            {
+              "canonical": "Moksha",
+              "concepts": [
+                "freedom",
+                "realization"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "liberation"
+            }
+          ],
+          "concept_overlap": 0.3889,
+          "confidence": 0.5467529999999999,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.577,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.5,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5783,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8583,
+                "ontology_convergence": 0.7037,
+                "retrieval_strength": 0.5468,
+                "semantic_agreement": 0.5,
+                "source_authority": 0.3983
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.577,
+              "why": [
+                "epistemic_score=0.5770",
+                "ceiling_applied=0.5783",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.32,
+            "retrieval_confidence": 0.5468,
+            "semantic_score": 0.6111,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 1.0,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "itihasa",
+            "entities": [
+              {
+                "canonical": "Dharma",
+                "concepts": [
+                  "ethics",
+                  "order",
+                  "responsibility"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "dharma"
+              },
+              {
+                "canonical": "Mahabharata",
+                "concepts": [
+                  "dharma",
+                  "Kurukshetra",
+                  "Pandavas"
+                ],
+                "domain": "itihasa",
+                "entity_type": "text",
+                "matched_alias": "mahabharata"
+              }
+            ],
+            "method": "canonical_text_entity"
+          },
+          "entity_overlap": 0.5,
+          "matched_tags": [],
+          "missing_required_entities": [
+            "Dharma"
+          ],
+          "query_entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "semantic_score": 0.6111,
+          "signal_id": "signal_137a59eae550",
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.3983,
+            "confidence_ceiling": 0.5783,
+            "lineage": {
+              "original_source": "The Complete Mahabharata_English_ocred.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1417,
+            "source": "The Complete Mahabharata_English_ocred.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_137a59eae550",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.49888299999999997,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_cd3dd47d4021",
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.2941,
+            "confidence_ceiling": 0.5141,
+            "lineage": {
+              "original_source": "The Complete Mahabharata_English_ocred.pdf",
+              "transformation_history": [
+                "retrieved_context",
+                "inferred_synthesis",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1259,
+            "source": "The Complete Mahabharata_English_ocred.pdf",
+            "source_type": "inferred_synthesis",
+            "suppression_reason": "weak_source_authority:inferred_synthesis"
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "weak_source_authority:inferred_synthesis",
+        "signal_id": "signal_cd3dd47d4021",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Assembly",
+              "concepts": [
+                "deliberation",
+                "governance"
+              ],
+              "domain": "governance",
+              "entity_type": "concept",
+              "matched_alias": "council"
+            },
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            }
+          ],
+          "concept_overlap": 0.5,
+          "confidence": 0.41631700000000005,
+          "confidence_derivation": {
+            "content_overlap": 0.3333,
+            "derived_confidence": 0.5099,
+            "domain_consistency": 0.0,
+            "entity_overlap": 0.5,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5939,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8739,
+                "ontology_convergence": 0.3167,
+                "retrieval_strength": 0.4163,
+                "semantic_agreement": 0.5,
+                "source_authority": 0.4139
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.5099,
+              "why": [
+                "epistemic_score=0.5099",
+                "ceiling_applied=0.5939",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.3057,
+            "retrieval_confidence": 0.4163,
+            "semantic_score": 0.45,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.3333,
+          "contextual_proximity": 1.0,
+          "domain_consistency": 0.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "itihasa",
+            "entities": [
+              {
+                "canonical": "Dharma",
+                "concepts": [
+                  "ethics",
+                  "order",
+                  "responsibility"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "dharma"
+              },
+              {
+                "canonical": "Mahabharata",
+                "concepts": [
+                  "dharma",
+                  "Kurukshetra",
+                  "Pandavas"
+                ],
+                "domain": "itihasa",
+                "entity_type": "text",
+                "matched_alias": "mahabharata"
+              }
+            ],
+            "method": "canonical_text_entity"
+          },
+          "entity_overlap": 0.5,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "semantic_score": 0.45,
+          "signal_id": "signal_1b55dbccb8f7",
+          "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.4139,
+            "confidence_ceiling": 0.5939,
+            "lineage": {
+              "original_source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1261,
+            "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "domain_mismatch",
+        "signal_id": "signal_1b55dbccb8f7",
+        "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Brahmanda Purana",
+              "concepts": [
+                "cosmology",
+                "purana"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "brahmanda purana"
+            },
+            {
+              "canonical": "Ramayana",
+              "concepts": [
+                "Rama",
+                "dharma",
+                "forest exile"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "valmiki ramayana"
+            }
+          ],
+          "concept_overlap": 0.1111,
+          "confidence": 0.312992,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.3877,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.4667,
+                "retrieval_strength": 0.313,
+                "semantic_agreement": 0.1111,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.3877,
+              "why": [
+                "epistemic_score=0.3877",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1649,
+            "retrieval_confidence": 0.313,
+            "semantic_score": 0.2889,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.5,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "itihasa",
+            "entities": [
+              {
+                "canonical": "Dharma",
+                "concepts": [
+                  "ethics",
+                  "order",
+                  "responsibility"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "dharma"
+              },
+              {
+                "canonical": "Mahabharata",
+                "concepts": [
+                  "dharma",
+                  "Kurukshetra",
+                  "Pandavas"
+                ],
+                "domain": "itihasa",
+                "entity_type": "text",
+                "matched_alias": "mahabharata"
+              }
+            ],
+            "method": "canonical_text_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [
+            "Dharma"
+          ],
+          "query_entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "semantic_score": 0.2889,
+          "signal_id": "signal_70020d40086f",
+          "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.42,
+            "confidence_ceiling": 0.6,
+            "lineage": {
+              "original_source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.12,
+            "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_70020d40086f",
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "self"
+            },
+            {
+              "canonical": "Brahma",
+              "concepts": [
+                "creation",
+                "cosmology"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "brahma"
+            },
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            },
+            {
+              "canonical": "Vedas",
+              "concepts": [
+                "samhita",
+                "ritual",
+                "knowledge"
+              ],
+              "domain": "vedas",
+              "entity_type": "text_group",
+              "matched_alias": "vedas"
+            },
+            {
+              "canonical": "Yoga",
+              "concepts": [
+                "discipline",
+                "meditation"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "yoga"
+            }
+          ],
+          "concept_overlap": 0.1111,
+          "confidence": 0.19336799999999998,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.3868,
+            "domain_consistency": 0.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.0833,
+                "retrieval_strength": 0.1934,
+                "semantic_agreement": 0.1111,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.3868,
+              "why": [
+                "epistemic_score=0.3868",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.09,
+            "retrieval_confidence": 0.1934,
+            "semantic_score": 0.1389,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 1.0,
+          "domain_consistency": 0.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "itihasa",
+            "entities": [
+              {
+                "canonical": "Dharma",
+                "concepts": [
+                  "ethics",
+                  "order",
+                  "responsibility"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "dharma"
+              },
+              {
+                "canonical": "Mahabharata",
+                "concepts": [
+                  "dharma",
+                  "Kurukshetra",
+                  "Pandavas"
+                ],
+                "domain": "itihasa",
+                "entity_type": "text",
+                "matched_alias": "mahabharata"
+              }
+            ],
+            "method": "canonical_text_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [
+            "Dharma"
+          ],
+          "query_entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "semantic_score": 0.1389,
+          "signal_id": "signal_5bba5a47a7a7",
+          "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "source_governance": {
+            "authority_weight": 0.42,
+            "confidence_ceiling": 0.6,
+            "lineage": {
+              "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.12,
+            "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_5bba5a47a7a7",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Manusmriti",
+              "concepts": [
+                "law",
+                "social duty"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "text",
+              "matched_alias": "manusmriti"
+            },
+            {
+              "canonical": "Smriti",
+              "concepts": [
+                "law",
+                "conduct"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "text_group",
+              "matched_alias": "smriti"
+            },
+            {
+              "canonical": "Yajnavalkya Smriti",
+              "concepts": [
+                "law",
+                "governance"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "text",
+              "matched_alias": "yajnavalkya"
+            }
+          ],
+          "concept_overlap": 0.1111,
+          "confidence": 0.15929300000000002,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.308,
+            "domain_consistency": 0.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5899,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8699,
+                "ontology_convergence": 0.0667,
+                "retrieval_strength": 0.1593,
+                "semantic_agreement": 0.1111,
+                "source_authority": 0.4099
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.308,
+              "why": [
+                "epistemic_score=0.3080",
+                "ceiling_applied=0.5899",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.0665,
+            "retrieval_confidence": 0.1593,
+            "semantic_score": 0.0889,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.5,
+          "domain_consistency": 0.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "itihasa",
+            "entities": [
+              {
+                "canonical": "Dharma",
+                "concepts": [
+                  "ethics",
+                  "order",
+                  "responsibility"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "dharma"
+              },
+              {
+                "canonical": "Mahabharata",
+                "concepts": [
+                  "dharma",
+                  "Kurukshetra",
+                  "Pandavas"
+                ],
+                "domain": "itihasa",
+                "entity_type": "text",
+                "matched_alias": "mahabharata"
+              }
+            ],
+            "method": "canonical_text_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [
+            "Dharma"
+          ],
+          "query_entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "semantic_score": 0.0889,
+          "signal_id": "signal_34d2e42dc03d",
+          "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.4099,
+            "confidence_ceiling": 0.5899,
+            "lineage": {
+              "original_source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1301,
+            "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_34d2e42dc03d",
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.159024,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_60b38e626344",
+          "source": "The Narada-Purana, Part 1_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "low_contextual_overlap",
+        "signal_id": "signal_60b38e626344",
+        "source": "The Narada-Purana, Part 1_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "concept_overlap": 0.0556,
+          "confidence": 0.155784,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.2971,
+            "domain_consistency": 0.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.0417,
+                "retrieval_strength": 0.1558,
+                "semantic_agreement": 0.0556,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.2971,
+              "why": [
+                "epistemic_score=0.2971",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.0598,
+            "retrieval_confidence": 0.1558,
+            "semantic_score": 0.0694,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.5,
+          "domain_consistency": 0.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "itihasa",
+            "entities": [
+              {
+                "canonical": "Dharma",
+                "concepts": [
+                  "ethics",
+                  "order",
+                  "responsibility"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "dharma"
+              },
+              {
+                "canonical": "Mahabharata",
+                "concepts": [
+                  "dharma",
+                  "Kurukshetra",
+                  "Pandavas"
+                ],
+                "domain": "itihasa",
+                "entity_type": "text",
+                "matched_alias": "mahabharata"
+              }
+            ],
+            "method": "canonical_text_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [
+            "Dharma"
+          ],
+          "query_entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "semantic_score": 0.0694,
+          "signal_id": "signal_c5654ac9fe29",
+          "source": "Shakti and Shakta_ocr.pdf",
+          "source_governance": {
+            "authority_weight": 0.42,
+            "confidence_ceiling": 0.6,
+            "lineage": {
+              "original_source": "Shakti and Shakta_ocr.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.12,
+            "source": "Shakti and Shakta_ocr.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_c5654ac9fe29",
+        "source": "Shakti and Shakta_ocr.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "self"
+            },
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Taittiriya Upanishad",
+              "concepts": [
+                "Brahman",
+                "kosha"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text",
+              "matched_alias": "taittiriya upanishad"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            }
+          ],
+          "concept_overlap": 0.0556,
+          "confidence": 0.15110400000000002,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.2968,
+            "domain_consistency": 0.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.0417,
+                "retrieval_strength": 0.1511,
+                "semantic_agreement": 0.0556,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.2968,
+              "why": [
+                "epistemic_score=0.2968",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.0586,
+            "retrieval_confidence": 0.1511,
+            "semantic_score": 0.0694,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.5,
+          "domain_consistency": 0.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "itihasa",
+            "entities": [
+              {
+                "canonical": "Dharma",
+                "concepts": [
+                  "ethics",
+                  "order",
+                  "responsibility"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "dharma"
+              },
+              {
+                "canonical": "Mahabharata",
+                "concepts": [
+                  "dharma",
+                  "Kurukshetra",
+                  "Pandavas"
+                ],
+                "domain": "itihasa",
+                "entity_type": "text",
+                "matched_alias": "mahabharata"
+              }
+            ],
+            "method": "canonical_text_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [
+            "Dharma"
+          ],
+          "query_entities": [
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            }
+          ],
+          "semantic_score": 0.0694,
+          "signal_id": "signal_248ccce0b0a5",
+          "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "source_governance": {
+            "authority_weight": 0.42,
+            "confidence_ceiling": 0.6,
+            "lineage": {
+              "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.12,
+            "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_248ccce0b0a5",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.149539,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_cab73d94ce1c",
+          "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "confidence_below_threshold:0.150",
+        "signal_id": "signal_cab73d94ce1c",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.135916,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_43ab8d3ac8de",
+          "source": "The Narada-Purana, Part 4_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "confidence_below_threshold:0.136",
+        "signal_id": "signal_43ab8d3ac8de",
+        "source": "The Narada-Purana, Part 4_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.131086,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_16517055e77e",
+          "source": "The Narada-Purana, Part 3_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "confidence_below_threshold:0.131",
+        "signal_id": "signal_16517055e77e",
+        "source": "The Narada-Purana, Part 3_ocred.pdf"
+      }
+    ],
+    "source_lineage": [],
+    "trace_id": "trace_3eb918eb88a25f6d"
+  },
+  "semantic_memory": {
+    "canonical_authority_granted": false,
+    "constitutional_governance": {
+      "canonical_authority_granted": false,
+      "canonical_memory_keys": [
+        "Atman",
+        "Bhagavata Purana",
+        "Brahma",
+        "Brahman",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Taittiriya Upanishad",
+        "Upanishads",
+        "Vedas",
+        "Yoga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru_v2-main-main/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": false,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "transient",
+        "trace_id": "trace_3eb918eb88a25f6d",
+        "updated_at": "2026-07-10T18:08:13.972795Z"
+      },
+      "event_hash": "777d672278df90fef8b176d5b8150e70d8afcaf26c4ddc23b53249d0a97b925c",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru_v2-main-main/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": false,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "REJECT_CANONICAL_MUTATION",
+        "failure_states": [
+          "PARTIAL_REJECTION_PRESENT"
+        ],
+        "memory_classification": "transient",
+        "reasons": [
+          "verification_status_not_verified",
+          "no_accepted_signals",
+          "confidence_below_canonical_floor"
+        ],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "eedca345189b266107fd3f9bb265b445a5eeb81742094f249eef38f7c80b66c0",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru_v2-main-main/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "ef9b84ba1eeae6a326a3ced2eea9952c29fd485fd374d63128eb3a798c8e1ceb",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "4379a969323d098b4f472c34aa221051da783e6b61b75f4150e86f1a1aefa0e9",
+      "transient_event_count": 309
+    },
+    "entity_continuity": {},
+    "event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "777d672278df90fef8b176d5b8150e70d8afcaf26c4ddc23b53249d0a97b925c",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_3eb918eb88a25f6d",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-07-10T18:08:14.848671Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru_v2-main-main/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [
+      {
+        "contradiction_pressure": 0.0,
+        "query": "What does the Mahabharata say about dharma?",
+        "rejected_signal_count": 12,
+        "state": "open",
+        "trace_id": "trace_3eb918eb88a25f6d",
+        "updated_at": "2026-07-10T18:08:14.848671Z",
+        "user_id": "anonymous",
+        "verification_status": "NO_VERIFIED_KNOWLEDGE"
+      }
+    ],
+    "user_continuity": {
+      "continuity_score": 0.15,
+      "last_seen": "2026-07-10T18:08:14.848671Z",
+      "queries": 1,
+      "trace_ids": [
+        "trace_3eb918eb88a25f6d"
+      ]
+    }
+  },
+  "semantic_path": [],
+  "signals_found": 0,
+  "signals_rejected": 12,
+  "synthesis_mode": "REJECTED_NO_SYNTHESIS",
+  "trace_id": "trace_3eb918eb88a25f6d",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "8914e439d8cafd7798795e96be7b4e35a60bb09e0b2900fd12feba18b7ea24a1",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "03b15b01e2d3a61cd15c33b787aeb3d65f8985ba416b1e8ba658c1fb481d7a89",
+    "trace_id": "trace_3eb918eb88a25f6d"
+  },
+  "verification_status": "NO_VERIFIED_KNOWLEDGE"
+}

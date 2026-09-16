@@ -1,0 +1,152 @@
+{
+  "ontology_pressure": {
+    "alert_count": 3,
+    "boundary_count": 3,
+    "drift": {
+      "accepted": false,
+      "current_snapshot_version": 7,
+      "previous_snapshot_version": 7,
+      "rejected": true,
+      "version_bumped": false,
+      "violations": [
+        {
+          "concept_id": "governed_claim",
+          "current_canonical_name": "Self-Legitimized Semantic Claim",
+          "previous_canonical_name": "Governed Semantic Claim",
+          "type": "canonical_name_change_requires_version_bump"
+        },
+        {
+          "concept_id": "replay_trust",
+          "current": {
+            "canonical_name": "Replay Trust Authority",
+            "domain": "replay",
+            "parent_id": "governed_claim",
+            "truth_level": 3
+          },
+          "fields": [
+            "canonical_name_change",
+            "truth_downgrade"
+          ],
+          "previous": {
+            "canonical_name": "Replay Trust Integrity",
+            "domain": "replay",
+            "parent_id": "governed_claim",
+            "truth_level": 4
+          },
+          "type": "immutable_concept_violation"
+        }
+      ]
+    },
+    "mutation_pressure_score": 1.0,
+    "pressure_hash": "4320ab83d6e5eff53e7983d7e05e00fde4a7ac712705c7aaa4402d5b4367eee2",
+    "schema": "UNIGURU_ONTOLOGY_PRESSURE_OBSERVABILITY_V1"
+  },
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "runtime_hash_local": "e382de768808930c893923237b365c1cdd002b7bc6ee79be52a97969cd502c5f",
+  "schema": "UNIGURU_SEMANTIC_DRIFT_RUNTIME_V1",
+  "semantic_governance": {
+    "authority_gravity": {
+      "authority_gravity_detected": true,
+      "diagnostic_inputs": {
+        "confidence_pressure_score": 1.0,
+        "continuity_pressure_score": 0.8,
+        "contradiction_pressure": 0.78,
+        "ontology_violation_count": 2,
+        "reinforcement_pressure_score": 1.0
+      },
+      "governance_response": "ESCALATE_OBSERVABILITY",
+      "score": 0.8959
+    },
+    "canonical_authority_granted": false,
+    "confidence_pressure": {
+      "event_count": 4,
+      "high_confidence_count": 2,
+      "inflation_detected": true,
+      "max_delta": 0.56,
+      "score": 1.0
+    },
+    "observable_only": true,
+    "observed_at": "2026-06-09T12:27:03.730310Z",
+    "ontology_drift": {
+      "accepted": false,
+      "current_snapshot_version": 7,
+      "previous_snapshot_version": 7,
+      "rejected": true,
+      "version_bumped": false,
+      "violations": [
+        {
+          "concept_id": "governed_claim",
+          "current_canonical_name": "Self-Legitimized Semantic Claim",
+          "previous_canonical_name": "Governed Semantic Claim",
+          "type": "canonical_name_change_requires_version_bump"
+        },
+        {
+          "concept_id": "replay_trust",
+          "current": {
+            "canonical_name": "Replay Trust Authority",
+            "domain": "replay",
+            "parent_id": "governed_claim",
+            "truth_level": 3
+          },
+          "fields": [
+            "canonical_name_change",
+            "truth_downgrade"
+          ],
+          "previous": {
+            "canonical_name": "Replay Trust Integrity",
+            "domain": "replay",
+            "parent_id": "governed_claim",
+            "truth_level": 4
+          },
+          "type": "immutable_concept_violation"
+        }
+      ]
+    },
+    "ontology_mutation_lineage": [
+      {
+        "changed_fields": [
+          "canonical_name"
+        ],
+        "concept_id": "governed_claim",
+        "current_hash": "ab4fb368952174a33bcfb2e43c69fb084b90e0fccd4f05dc66a2a546f8a75529",
+        "mutation_type": "concept_changed",
+        "previous_hash": "f5014dfc4f5a0cdd3870d8530e925155d850415a956eef08f85e815780302148"
+      },
+      {
+        "changed_fields": [
+          "canonical_name",
+          "truth_level"
+        ],
+        "concept_id": "replay_trust",
+        "current_hash": "89650d24efcb509e681cc7371efccd87f5fa5be0d5fbfb7128782c505090c654",
+        "mutation_type": "concept_changed",
+        "previous_hash": "4748e347237ceebc0fce09b8886e9d883299aeb5d9807975acd6b0a74aafcf26"
+      }
+    ],
+    "reinforcement_pressure": {
+      "authority_accumulation_detected": true,
+      "claim_reinforcement_counts": {
+        "governed_claim": 7,
+        "replay_trust": 5,
+        "runtime_observability": 2
+      },
+      "max_reinforcement_count": 7,
+      "score": 1.0
+    },
+    "rules": [
+      "drift_observation_never_mutates_ontology",
+      "confidence_growth_is_pressure_not_legitimacy",
+      "reinforcement_frequency_is_not_truth_authority",
+      "continuity_does_not_grant_canonical_authority"
+    ],
+    "schema": "UNIGURU_SEMANTIC_DRIFT_OBSERVABILITY_V1",
+    "semantic_continuity_pressure": {
+      "bounded_continuity_required": true,
+      "event_count": 4,
+      "score": 0.8,
+      "trace_count": 4,
+      "unresolved_event_count": 3
+    },
+    "telemetry_hash": "af2b601972c80de5160a99d9e80dd9461730b481fbd964125d3256e7b5df6ff8"
+  }
+}

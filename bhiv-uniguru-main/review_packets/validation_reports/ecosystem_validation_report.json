@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-02T06:26:09Z",
+  "test_command": ".venv\\Scripts\\python.exe -m pytest backend/tests/test_constitutional_runtime.py backend/tests/test_ecosystem_integration.py -q",
+  "test_result": "5 passed in 0.46s",
+  "endpoint_smoke_test": "HTTP 200 from /runtime/ecosystem/execute",
+  "runtime_trace_id": "ecosystem_410b3e2be8f1",
+  "replay_safe": true,
+  "bucket_emitted": true,
+  "schema_compatible": true,
+  "authority_enforced": true,
+  "trace_complete": true
+}

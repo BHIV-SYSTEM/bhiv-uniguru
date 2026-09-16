@@ -1,0 +1,249 @@
+{
+  "generated_at": "2026-06-29T08:22:51.122656Z",
+  "pipeline_version": "signal_first_ontology_kosha_v3",
+  "evaluation_queries": 8,
+  "summary": {
+    "baseline_keyword_retrieval": {
+      "precision_at_1": 1.0,
+      "precision_at_3": 0.9167,
+      "recall_at_1": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "avg_keyword_score": 0.3573
+    },
+    "enhanced_ontology_retrieval": {
+      "precision_at_1": 1.0,
+      "precision_at_3": 0.9167,
+      "recall_at_1": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "avg_ontology_score": 0.6085
+    },
+    "improvement_deltas": {
+      "precision_at_1": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_3": 0.0
+    },
+    "cross_domain_rejection_pass_rate": 1.0,
+    "average_retrieval_latency_ms": 63.11,
+    "verdict": "IMPROVEMENT_CONFIRMED"
+  },
+  "per_query_results": [
+    {
+      "query": "What does the Bhagavad Gita teach about Karma Yoga?",
+      "description": "Domain-specific retrieval \u2014 Gita content",
+      "expected_domain": "gitas",
+      "detected_domain": "gitas",
+      "top_domain_baseline": "gitas",
+      "top_domain_enhanced": "gitas",
+      "retrieval_latency_ms": 76.83,
+      "signals_retrieved": 37,
+      "cross_domain_rejection_pass": true,
+      "baseline_keyword_score_avg": 0.3333,
+      "enhanced_ontology_score_avg": 0.5129,
+      "metrics_baseline": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      },
+      "metrics_enhanced": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      }
+    },
+    {
+      "query": "Tell me about Vishnu in the Narada Purana",
+      "description": "Domain-specific retrieval \u2014 Puranas content",
+      "expected_domain": "puranas",
+      "detected_domain": "puranas",
+      "top_domain_baseline": "puranas",
+      "top_domain_enhanced": "puranas",
+      "retrieval_latency_ms": 57.16,
+      "signals_retrieved": 37,
+      "cross_domain_rejection_pass": true,
+      "baseline_keyword_score_avg": 0.4,
+      "enhanced_ontology_score_avg": 0.8262,
+      "metrics_baseline": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      },
+      "metrics_enhanced": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      }
+    },
+    {
+      "query": "Explain the Upanishadic concept of Brahman",
+      "description": "Domain-specific retrieval \u2014 Upanishads content",
+      "expected_domain": "upanishads",
+      "detected_domain": "upanishads",
+      "top_domain_baseline": "upanishads",
+      "top_domain_enhanced": "upanishads",
+      "retrieval_latency_ms": 63.36,
+      "signals_retrieved": 37,
+      "cross_domain_rejection_pass": true,
+      "baseline_keyword_score_avg": 0.32,
+      "enhanced_ontology_score_avg": 0.5722,
+      "metrics_baseline": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      },
+      "metrics_enhanced": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      }
+    },
+    {
+      "query": "Return Upanishads for Bhagavad Gita teachings",
+      "description": "Cross-domain rejection test \u2014 must prefer gitas not upanishads",
+      "expected_domain": "gitas",
+      "detected_domain": "gitas",
+      "top_domain_baseline": "gitas",
+      "top_domain_enhanced": "gitas",
+      "retrieval_latency_ms": 59.9,
+      "signals_retrieved": 37,
+      "cross_domain_rejection_pass": true,
+      "baseline_keyword_score_avg": 0.3,
+      "enhanced_ontology_score_avg": 0.5119,
+      "metrics_baseline": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      },
+      "metrics_enhanced": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      }
+    },
+    {
+      "query": "Give an Ahimsa answer from the Narada Purana",
+      "description": "Cross-domain rejection test \u2014 must reject dharma_systems",
+      "expected_domain": "puranas",
+      "detected_domain": "puranas",
+      "top_domain_baseline": "puranas",
+      "top_domain_enhanced": "puranas",
+      "retrieval_latency_ms": 60.28,
+      "signals_retrieved": 37,
+      "cross_domain_rejection_pass": true,
+      "baseline_keyword_score_avg": 0.3429,
+      "enhanced_ontology_score_avg": 0.6219,
+      "metrics_baseline": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      },
+      "metrics_enhanced": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      }
+    },
+    {
+      "query": "What is the Padma Purana?",
+      "description": "Direct text retrieval \u2014 Puranas",
+      "expected_domain": "puranas",
+      "detected_domain": "puranas",
+      "top_domain_baseline": "puranas",
+      "top_domain_enhanced": "puranas",
+      "retrieval_latency_ms": 69.92,
+      "signals_retrieved": 37,
+      "cross_domain_rejection_pass": true,
+      "baseline_keyword_score_avg": 0.5,
+      "enhanced_ontology_score_avg": 0.8203,
+      "metrics_baseline": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      },
+      "metrics_enhanced": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      }
+    },
+    {
+      "query": "Explain temple construction in the Agni Purana",
+      "description": "Specific topic within domain",
+      "expected_domain": "puranas",
+      "detected_domain": "puranas",
+      "top_domain_baseline": "puranas",
+      "top_domain_enhanced": "puranas",
+      "retrieval_latency_ms": 60.36,
+      "signals_retrieved": 37,
+      "cross_domain_rejection_pass": true,
+      "baseline_keyword_score_avg": 0.4333,
+      "enhanced_ontology_score_avg": 0.4334,
+      "metrics_baseline": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      },
+      "metrics_enhanced": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      }
+    },
+    {
+      "query": "What does the Mahabharata say about dharma?",
+      "description": "Broad dharma question anchored to Gita context",
+      "expected_domain": "gitas",
+      "detected_domain": "itihasa",
+      "top_domain_baseline": "gitas",
+      "top_domain_enhanced": "gitas",
+      "retrieval_latency_ms": 57.07,
+      "signals_retrieved": 37,
+      "cross_domain_rejection_pass": true,
+      "baseline_keyword_score_avg": 0.2286,
+      "enhanced_ontology_score_avg": 0.5691,
+      "metrics_baseline": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.3333,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      },
+      "metrics_enhanced": {
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.3333,
+        "recall_at_1": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_3": 1.0
+      }
+    }
+  ]
+}

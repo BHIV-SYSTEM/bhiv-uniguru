@@ -1,0 +1,78 @@
+{
+  "date": "2026-03-18",
+  "source_pdf": "TASK14_sharmavijay_integration_fix.pdf",
+  "scenario_a_without_configured_token": [
+    {
+      "query": "Who is Mahavira?",
+      "status_code": 503,
+      "body": "{\"detail\":\"Service token auth is required but no tokens are configured.\"}"
+    },
+    {
+      "query": "What is quantum entanglement?",
+      "status_code": 503,
+      "body": "{\"detail\":\"Service token auth is required but no tokens are configured.\"}"
+    },
+    {
+      "query": "What is Swaminarayan's Shikshapatri?",
+      "status_code": 503,
+      "body": "{\"detail\":\"Service token auth is required but no tokens are configured.\"}"
+    },
+    {
+      "query": "What is Python programming?",
+      "status_code": 503,
+      "body": "{\"detail\":\"Service token auth is required but no tokens are configured.\"}"
+    },
+    {
+      "query": "What is 2+2?",
+      "status_code": 503,
+      "body": "{\"detail\":\"Service token auth is required but no tokens are configured.\"}"
+    }
+  ],
+  "scenario_b_with_configured_token": [
+    {
+      "query": "Who is Mahavira?",
+      "status_code": 200,
+      "decision": "answer",
+      "verification_status": "VERIFIED",
+      "route": "ROUTE_UNIGURU",
+      "answer_preview": "Based on verified source: mahavira_life.md\n\nUniGuru Deterministic Knowledge Retrieval:\n\n# Jain Knowledge Base — Mahavira: Life and Teachings\n\n---\ntitle: Mahavira — Life, Renunciation, and Enlightenment\nsource: Jain Agama",
+      "answer_empty": false
+    },
+    {
+      "query": "What is quantum entanglement?",
+      "status_code": 200,
+      "decision": "answer",
+      "verification_status": "VERIFIED",
+      "route": "ROUTE_UNIGURU",
+      "answer_preview": "Based on verified source: entanglement.md\n\nUniGuru Deterministic Knowledge Retrieval:\n\nTitle: Nielsen & Chuang Core Concepts\nSource(s): Nielsen, M. A. & Chuang, I. L., \"Quantum Computation and Quantum Information\" (2010)",
+      "answer_empty": false
+    },
+    {
+      "query": "What is Swaminarayan's Shikshapatri?",
+      "status_code": 200,
+      "decision": "answer",
+      "verification_status": "VERIFIED",
+      "route": "ROUTE_UNIGURU",
+      "answer_preview": "Based on verified source: shikshapatri.md\n\nUniGuru Deterministic Knowledge Retrieval:\n\n# Swaminarayan Knowledge Base — Shikshapatri\n\n---\ntitle: Shikshapatri — Code of Conduct Written by Bhagwan Swaminarayan\nsource: Shiks",
+      "answer_empty": false
+    },
+    {
+      "query": "What is Python programming?",
+      "status_code": 200,
+      "decision": "block",
+      "verification_status": "UNVERIFIED",
+      "route": "ROUTE_UNIGURU",
+      "answer_preview": "Verification status: UNVERIFIED. I cannot verify this information from current knowledge.",
+      "answer_empty": false
+    },
+    {
+      "query": "What is 2+2?",
+      "status_code": 200,
+      "decision": "block",
+      "verification_status": "UNVERIFIED",
+      "route": "ROUTE_UNIGURU",
+      "answer_preview": "Verification status: UNVERIFIED. I cannot verify this information from current knowledge.",
+      "answer_empty": false
+    }
+  ]
+}

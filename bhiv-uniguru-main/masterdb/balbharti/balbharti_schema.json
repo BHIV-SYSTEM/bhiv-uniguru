@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UniGuru Balbharti Governed Curriculum Record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "grade",
+    "medium",
+    "subject",
+    "chapter",
+    "concept",
+    "definition",
+    "examples",
+    "questions",
+    "language_variant",
+    "source_lineage",
+    "curriculum_version"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "medium": {
+      "type": "string",
+      "enum": ["Marathi Medium", "English Medium"]
+    },
+    "subject": {
+      "type": "string"
+    },
+    "chapter": {
+      "type": "string"
+    },
+    "concept": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "string"
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "language_variant": {
+      "type": "string"
+    },
+    "source_lineage": {
+      "type": "object",
+      "required": ["publisher", "source_type", "source_reference", "ingestion_method", "provenance_status"],
+      "properties": {
+        "publisher": {
+          "type": "string"
+        },
+        "source_type": {
+          "type": "string"
+        },
+        "source_reference": {
+          "type": "string"
+        },
+        "page_or_section": {
+          "type": "string"
+        },
+        "ingestion_method": {
+          "type": "string"
+        },
+        "provenance_status": {
+          "type": "string",
+          "enum": ["sample_seed", "verified_source_required", "verified"]
+        }
+      }
+    },
+    "curriculum_version": {
+      "type": "string"
+    },
+    "governance": {
+      "type": "object",
+      "properties": {
+        "canonical_authority_granted": {
+          "type": "boolean"
+        },
+        "review_required": {
+          "type": "boolean"
+        },
+        "replay_safe": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

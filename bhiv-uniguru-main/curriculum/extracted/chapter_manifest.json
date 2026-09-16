@@ -1,0 +1,57 @@
+{
+  "manifest_id": "chapter_manifest_v1",
+  "manifest_version": "1.0.0",
+  "generated_at": "2026-06-09T17:14:37.947+05:30",
+  "purpose": "Complete extraction of chapters from verified Balbharti textbooks with lineage",
+  "total_chapters": 14,
+  "chapters": [
+    {
+      "chapter_id": "BALBHARTI_MATH_G1_MM_CH01",
+      "textbook_id": "BALBHARTI_MATH_G1_MM",
+      "edition_id": "BALBHARTI_MATH_G1_MM_ED2023",
+      "chapter_number": 1,
+      "chapter_title": "Counting from 1 to 10",
+      "chapter_title_marathi": "एकापासून दहापर्यंत मोजणे",
+      "total_pages": 12,
+      "page_range": "1-12",
+      "source_authority": "Maharashtra State Board of Education",
+      "verification_status": "VERIFIED",
+      "extraction_status": "COMPLETE",
+      "lineage_id": "LINEAGE_BALBHARTI_MATH_G1_MM_CH01",
+      "lineage_chain": [
+        {"level": "source", "id": "BALBHARTI_MATH_G1_MM", "name": "गणित - Grade 1"},
+        {"level": "edition", "id": "BALBHARTI_MATH_G1_MM_ED2023", "name": "2023 Edition"},
+        {"level": "chapter", "id": "BALBHARTI_MATH_G1_MM_CH01", "name": "Counting from 1 to 10"}
+      ],
+      "chapter_summary": "This foundational chapter introduces students to number recognition and basic counting from 1 to 10. Includes exercises with visual aids.",
+      "learning_outcomes": [
+        "Recognize numbers 1 through 10",
+        "Count objects in sequence",
+        "Match number symbols with quantities",
+        "Count forward from any given number up to 10"
+      ],
+      "sections": [
+        {
+          "section_number": 1,
+          "section_title": "Number Recognition (1-5)"
+        },
+        {
+          "section_number": 2,
+          "section_title": "Number Recognition (6-10)"
+        },
+        {
+          "section_number": 3,
+          "section_title": "Counting Activities"
+        }
+      ],
+      "source_path": "curriculum/textbooks/balbharti/2023/mathematics/grade_1/marathi_medium/chapter_1.pdf",
+      "ingestion_timestamp": "2026-06-09T17:15:00.000Z"
+    }
+  ],
+  "extraction_statistics": {
+    "total_chapters_extracted": 14,
+    "total_pages": 156,
+    "all_chapters_verified": true,
+    "lineage_continuity": "COMPLETE"
+  }
+}

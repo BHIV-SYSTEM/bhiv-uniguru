@@ -1,0 +1,32 @@
+{
+  "action": "QUARANTINE_AND_ESCALATE_REVIEW",
+  "audit_hash": "d7c36eb4792b5b4a99c2cf537d0e5cdd5320eedfe981489bd640359a4b4b2f5c",
+  "canonical_authority_granted": false,
+  "contradictions": [
+    {
+      "claim_key": "governed_claim",
+      "polarities": [
+        "affirmative",
+        "negative"
+      ],
+      "signal_ids": [
+        "source_signal_a",
+        "source_signal_b"
+      ]
+    }
+  ],
+  "lifecycle_state": "PERSISTENT_UNRESOLVED",
+  "lineage_preserved": true,
+  "prior_unresolved_count": 1,
+  "quorum": {
+    "evidence_count": 2,
+    "met": true,
+    "required": 2
+  },
+  "schema": "UNIGURU_CONTRADICTION_REPLAY_AUDIT_V1",
+  "signal_ids": [
+    "source_signal_a",
+    "source_signal_b"
+  ],
+  "silent_merge_allowed": false
+}

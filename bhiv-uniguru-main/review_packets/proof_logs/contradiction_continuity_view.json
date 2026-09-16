@@ -1,0 +1,71 @@
+{
+  "contradictions": {
+    "arbitration_hash": "c3487b436f31e4a45d19e7c9a26606c9bbf144211ee57e3d3949359c4fd3ecfd",
+    "arbitrator_node_ids": [
+      "tester_replay_validation",
+      "vijay_replay_integrity",
+      "yashika_observability_runtime"
+    ],
+    "contradiction_arbitration_trace": [
+      {
+        "action": "QUARANTINE_AND_ESCALATE_REVIEW",
+        "arbitrator_node_ids": [
+          "tester_replay_validation",
+          "vijay_replay_integrity",
+          "yashika_observability_runtime"
+        ],
+        "canonical_authority_granted": false,
+        "claim_key": "governed_claim",
+        "contradiction_pressure": 0.78,
+        "dispute_hash": "c439575b7bcf8a51c2d7c68c7111c75b2c8319fdf9064280182f7b55538db931",
+        "index": 0,
+        "lifecycle_state": "PERSISTENT_UNRESOLVED",
+        "lineage_preserved": true,
+        "previous_dispute_hash": null,
+        "severity": "high"
+      },
+      {
+        "action": "QUARANTINE_AND_ESCALATE_REVIEW",
+        "arbitrator_node_ids": [
+          "tester_replay_validation",
+          "vijay_replay_integrity",
+          "yashika_observability_runtime"
+        ],
+        "canonical_authority_granted": false,
+        "claim_key": "replay_trust",
+        "contradiction_pressure": 0.62,
+        "dispute_hash": "ea86fbb14b677c49404ac74e515c80908eb450cb1c746d5a9dffb3da925e38d7",
+        "index": 1,
+        "lifecycle_state": "PERSISTENT_UNRESOLVED",
+        "lineage_preserved": true,
+        "previous_dispute_hash": "c439575b7bcf8a51c2d7c68c7111c75b2c8319fdf9064280182f7b55538db931",
+        "severity": "medium"
+      }
+    ],
+    "last_dispute_hash": "ea86fbb14b677c49404ac74e515c80908eb450cb1c746d5a9dffb3da925e38d7",
+    "replay_safe": true,
+    "schema": "UNIGURU_DISTRIBUTED_CONTRADICTION_ARBITRATION_V1",
+    "silent_merge_allowed": false,
+    "unresolved_contradiction_persistence": [
+      {
+        "claim_key": "governed_claim",
+        "dispute_hash": "c439575b7bcf8a51c2d7c68c7111c75b2c8319fdf9064280182f7b55538db931",
+        "next_required_action": "QUARANTINE_AND_ESCALATE_REVIEW",
+        "persistence_state": "open",
+        "prior_unresolved_count": 1
+      },
+      {
+        "claim_key": "replay_trust",
+        "dispute_hash": "ea86fbb14b677c49404ac74e515c80908eb450cb1c746d5a9dffb3da925e38d7",
+        "next_required_action": "QUARANTINE_AND_ESCALATE_REVIEW",
+        "persistence_state": "open",
+        "prior_unresolved_count": 1
+      }
+    ]
+  },
+  "lineage_preserved": true,
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "schema": "UNIGURU_CONTRADICTION_CONTINUITY_VIEW_V1",
+  "silent_merge_allowed": false,
+  "view_hash": "28e2bab2be73d96368809cf44359bbffca222187eda6db4e6dc966cdbe79fbbd"
+}

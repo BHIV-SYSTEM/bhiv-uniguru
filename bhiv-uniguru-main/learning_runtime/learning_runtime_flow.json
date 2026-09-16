@@ -1,0 +1,80 @@
+{
+  "schema": "UNIGURU_LEARNING_RUNTIME_FLOW_V1",
+  "flow": [
+    "Student Question",
+    "Retrieval",
+    "Concept Match",
+    "Curriculum Mapping",
+    "Explanation",
+    "Follow-up Concepts",
+    "Learning Outcome",
+    "Trace Artifact"
+  ],
+  "examples": [
+    {
+      "subject": "Mathematics",
+      "grade": 1,
+      "medium": "English Medium",
+      "question": "What are counting numbers?",
+      "concept_match": "Counting numbers",
+      "learning_outcome": "Recognize and use counting numbers to enumerate objects from 1 to 10.",
+      "follow_up": [
+        "Practice counting objects in the classroom",
+        "Relate counting numbers to daily items",
+        "Draw numbers and count them aloud"
+      ]
+    },
+    {
+      "subject": "Science",
+      "grade": 6,
+      "medium": "English Medium",
+      "question": "What is a balanced diet?",
+      "concept_match": "Balanced diet",
+      "learning_outcome": "Understand the components of a balanced diet and identify examples of healthy meals.",
+      "follow_up": [
+        "List energy, growth and protective foods",
+        "Explain why variety matters in meals",
+        "Compare balanced and unbalanced diets"
+      ]
+    },
+    {
+      "subject": "History",
+      "grade": 5,
+      "medium": "English Medium",
+      "question": "Who is an important historical leader in Maharashtra?",
+      "concept_match": "Historical leader mapping",
+      "learning_outcome": "Map historical leaders to local history themes and create a simple leadership timeline.",
+      "follow_up": [
+        "Identify local freedom movement figures",
+        "Explain why leadership matters in history",
+        "Connect leaders to events"
+      ]
+    },
+    {
+      "subject": "Geography",
+      "grade": 4,
+      "medium": "Marathi Medium",
+      "question": "What is a river?",
+      "concept_match": "River definition",
+      "learning_outcome": "Describe river features and their role in the local environment.",
+      "follow_up": [
+        "Name rivers in Maharashtra",
+        "Explain how rivers help farming",
+        "Draw a river and label its parts"
+      ]
+    },
+    {
+      "subject": "Language",
+      "grade": 2,
+      "medium": "Marathi Medium",
+      "question": "What is a sentence?",
+      "concept_match": "Sentence structure",
+      "learning_outcome": "Recognize a complete sentence and practice building simple sentences in Marathi.",
+      "follow_up": [
+        "Write three short sentences",
+        "Identify subjects and verbs",
+        "Read sentences aloud"
+      ]
+    }
+  ]
+}

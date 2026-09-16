@@ -1,0 +1,295 @@
+{
+  "demo_id": "teacher_runtime_demo_v1",
+  "demo_version": "1.0.0",
+  "generated_at": "2026-06-09T17:14:37.947+05:30",
+  "demo_scenario": "Sample teacher intelligence report for Grade 1 class",
+  "class_info": {
+    "class_id": "CLASS_1A",
+    "class_name": "Grade 1-A",
+    "teacher_id": "TEACHER_001",
+    "teacher_name": "Ms. Priya Sharma",
+    "grade": 1,
+    "subject": "Mathematics",
+    "textbook": "BALBHARTI_MATH_G1_MM",
+    "current_chapter": "Counting from 1 to 10"
+  },
+  "class_view": {
+    "view_id": "CLASS_VIEW_DEMO_001",
+    "view_type": "AGGREGATE_CLASS_METRICS",
+    "generated_at": "2026-06-09T17:14:37.947+05:30",
+    "class_metrics": {
+      "average_mastery_score": 0.72,
+      "students_mastered": 3,
+      "students_developing": 15,
+      "students_struggling": 7,
+      "total_exercises_completed": 145,
+      "average_learning_velocity": 0.082
+    },
+    "performance_distribution": {
+      "mastered_percentage": 12.0,
+      "developing_percentage": 60.0,
+      "struggling_percentage": 28.0
+    },
+    "interventions_needed": 12,
+    "class_status": "NEEDS_SUPPORT",
+    "recommendation": "Class should continue with current unit; provide targeted remediation for struggling students"
+  },
+  "student_progress_view": [
+    {
+      "student_id": "STUDENT_001",
+      "student_name": "Aarav Kumar",
+      "mastery_level": "MASTERY",
+      "mastery_score": 0.91,
+      "concepts_attempted": 4,
+      "concepts_mastered": 3,
+      "weak_areas_count": 0,
+      "learning_velocity": 0.095,
+      "exercises_completed": 12,
+      "intervention_needed": false,
+      "status": "READY_FOR_ADVANCED",
+      "recommended_action": "Ready to advance to place value concepts"
+    },
+    {
+      "student_id": "STUDENT_002",
+      "student_name": "Bhavi Singh",
+      "mastery_level": "DEVELOPING",
+      "mastery_score": 0.72,
+      "concepts_attempted": 3,
+      "concepts_mastered": 0,
+      "weak_areas_count": 1,
+      "learning_velocity": 0.08,
+      "exercises_completed": 7,
+      "intervention_needed": true,
+      "top_weak_area": "CONCEPT_PLACE_VALUE",
+      "estimated_time_to_mastery_weeks": 1.5,
+      "status": "ON_TRACK_WITH_SUPPORT",
+      "recommended_action": "Provide targeted practice on place value with concrete aids"
+    },
+    {
+      "student_id": "STUDENT_003",
+      "student_name": "Chinky Patel",
+      "mastery_level": "DEVELOPING",
+      "mastery_score": 0.58,
+      "concepts_attempted": 3,
+      "concepts_mastered": 0,
+      "weak_areas_count": 2,
+      "learning_velocity": 0.07,
+      "exercises_completed": 5,
+      "intervention_needed": true,
+      "top_weak_area": "CONCEPT_PLACE_VALUE",
+      "estimated_time_to_mastery_weeks": 2.5,
+      "status": "NEEDS_INTERVENTION",
+      "recommended_action": "Provide foundational review; focus on counting before place value"
+    },
+    {
+      "student_id": "STUDENT_004",
+      "student_name": "Devesh Nair",
+      "mastery_level": "DEVELOPING",
+      "mastery_score": 0.8,
+      "concepts_attempted": 3,
+      "concepts_mastered": 1,
+      "weak_areas_count": 0,
+      "learning_velocity": 0.085,
+      "exercises_completed": 9,
+      "intervention_needed": false,
+      "status": "ON_TRACK",
+      "recommended_action": "Continue with current pace"
+    },
+    {
+      "student_id": "STUDENT_005",
+      "student_name": "Esha Verma",
+      "mastery_level": "NOVICE",
+      "mastery_score": 0.45,
+      "concepts_attempted": 2,
+      "concepts_mastered": 0,
+      "weak_areas_count": 2,
+      "learning_velocity": 0.06,
+      "exercises_completed": 4,
+      "intervention_needed": true,
+      "top_weak_area": "CONCEPT_COUNTING",
+      "estimated_time_to_mastery_weeks": 3.5,
+      "status": "CRITICAL",
+      "recommended_action": "Immediate intervention required; review number recognition and counting"
+    }
+  ],
+  "curriculum_view": {
+    "view_id": "CURRICULUM_VIEW_DEMO_001",
+    "view_type": "CURRICULUM_COMPLETION_STATUS",
+    "generated_at": "2026-06-09T17:14:37.947+05:30",
+    "chapter": "Counting from 1 to 10",
+    "chapter_id": "BALBHARTI_MATH_G1_MM_CH01",
+    "concepts_in_chapter": [
+      {
+        "concept_id": "CONCEPT_NUMBER_RECOGNITION",
+        "concept_name": "Number Recognition",
+        "average_mastery": 0.89,
+        "students_mastered": 20,
+        "students_developing": 4,
+        "students_struggling": 1,
+        "completion_percentage": 80.0,
+        "status": "STRONG_PROGRESS"
+      },
+      {
+        "concept_id": "CONCEPT_COUNTING",
+        "concept_name": "Counting",
+        "average_mastery": 0.72,
+        "students_mastered": 5,
+        "students_developing": 15,
+        "students_struggling": 5,
+        "completion_percentage": 20.0,
+        "status": "NEEDS_ATTENTION"
+      },
+      {
+        "concept_id": "CONCEPT_NUMBER_SEQUENCE",
+        "concept_name": "Number Sequence",
+        "average_mastery": 0.65,
+        "students_mastered": 2,
+        "students_developing": 10,
+        "students_struggling": 13,
+        "completion_percentage": 8.0,
+        "status": "CRITICAL"
+      }
+    ],
+    "overall_chapter_completion": 36.0,
+    "pacing_recommendation": "Class is slightly behind expected pace; consider additional practice time"
+  },
+  "remediation_view": {
+    "view_id": "REMEDIATION_VIEW_DEMO_001",
+    "view_type": "INTERVENTION_RECOMMENDATIONS",
+    "generated_at": "2026-06-09T17:14:37.947+05:30",
+    "total_interventions_needed": 12,
+    "interventions_by_priority": {
+      "CRITICAL": 2,
+      "HIGH": 4,
+      "MEDIUM": 4,
+      "LOW": 2
+    },
+    "remediation_items": [
+      {
+        "remediation_id": "STUDENT_005_CONCEPT_COUNTING",
+        "student_id": "STUDENT_005",
+        "student_name": "Esha Verma",
+        "concept_id": "CONCEPT_COUNTING",
+        "current_mastery": 0.35,
+        "priority": "CRITICAL",
+        "attempts": 2,
+        "accuracy": 0.0,
+        "confidence": 0.35,
+        "recommended_action": "Provide foundational review with concrete manipulatives",
+        "estimated_intervention_hours": 3.0,
+        "suggested_activities": [
+          "Counting with physical objects (beads, blocks)",
+          "One-to-one correspondence exercises",
+          "Small group instruction (30 minutes daily)"
+        ]
+      },
+      {
+        "remediation_id": "STUDENT_003_CONCEPT_PLACE_VALUE",
+        "student_id": "STUDENT_003",
+        "student_name": "Chinky Patel",
+        "concept_id": "CONCEPT_PLACE_VALUE",
+        "current_mastery": 0.35,
+        "priority": "CRITICAL",
+        "attempts": 2,
+        "accuracy": 0.0,
+        "confidence": 0.4,
+        "recommended_action": "Provide foundational review with concrete manipulatives",
+        "estimated_intervention_hours": 3.0,
+        "suggested_activities": [
+          "Review number sequence first (prerequisite)",
+          "Use tens/ones blocks for decomposition",
+          "Guided practice with teacher support"
+        ]
+      },
+      {
+        "remediation_id": "STUDENT_003_CONCEPT_COUNTING",
+        "student_id": "STUDENT_003",
+        "student_name": "Chinky Patel",
+        "concept_id": "CONCEPT_COUNTING",
+        "current_mastery": 0.55,
+        "priority": "HIGH",
+        "attempts": 3,
+        "accuracy": 0.667,
+        "confidence": 0.6,
+        "recommended_action": "Review prerequisites and provide guided practice",
+        "estimated_intervention_hours": 2.0,
+        "suggested_activities": [
+          "Count familiar objects daily",
+          "Backward counting practice",
+          "Peer practice with proficient student"
+        ]
+      },
+      {
+        "remediation_id": "STUDENT_002_CONCEPT_PLACE_VALUE",
+        "student_id": "STUDENT_002",
+        "student_name": "Bhavi Singh",
+        "concept_id": "CONCEPT_PLACE_VALUE",
+        "current_mastery": 0.42,
+        "priority": "HIGH",
+        "attempts": 2,
+        "accuracy": 0.0,
+        "confidence": 0.475,
+        "recommended_action": "Provide foundational review with concrete manipulatives",
+        "estimated_intervention_hours": 3.0,
+        "suggested_activities": [
+          "Tens/ones decomposition exercises",
+          "Use visual aids and base-10 blocks",
+          "Small group remediation (45 minutes, 3x/week)"
+        ]
+      }
+    ],
+    "total_intervention_hours_needed": 26.0,
+    "recommended_class_focus": "Focus on foundational concepts for entire class; provide small group instruction",
+    "intervention_schedule": {
+      "small_group_1": {
+        "students": ["STUDENT_003", "STUDENT_005"],
+        "focus": "Number recognition and basic counting",
+        "frequency": "Daily (30 minutes)",
+        "duration_weeks": 2
+      },
+      "small_group_2": {
+        "students": ["STUDENT_002"],
+        "focus": "Counting and place value preparation",
+        "frequency": "3 times per week (45 minutes)",
+        "duration_weeks": 2
+      }
+    }
+  },
+  "summary_and_recommendations": {
+    "overall_class_status": "DEVELOPING",
+    "key_metrics": {
+      "average_class_mastery": 0.72,
+      "mastery_gap_to_target": 0.08,
+      "students_on_track": 15,
+      "students_needing_intervention": 10,
+      "total_intervention_hours_needed": 26.0,
+      "estimated_completion_weeks": 3.5
+    },
+    "actionable_insights": [
+      "PRIORITY 1: Address number recognition gaps for struggling students (Esha, Chinky)",
+      "PRIORITY 2: Introduce place value concepts only after counting mastery achieved",
+      "PRIORITY 3: Use concrete manipulatives more consistently in all instruction",
+      "PRIORITY 4: Allocate 30 minutes daily for small group remediation",
+      "PRIORITY 5: Consider peer tutoring pairing advanced students with struggling students"
+    ],
+    "recommended_pacing": {
+      "current_status": "Chapter completion at 36% (expected: 50%)",
+      "recommendation": "Slow down to consolidate foundational skills",
+      "rationale": "Too many students struggling with basic concepts; advancing too quickly will create gaps"
+    },
+    "teacher_next_steps": [
+      "Review and categorize students into 3 groups: Advanced, On-Track, Struggling",
+      "Schedule 30-minute small group sessions daily for struggling students",
+      "Use concrete materials (blocks, beads) for all instruction this week",
+      "Assess prerequisite skills for students showing place value difficulty",
+      "Plan peer tutoring sessions between advanced and developing students"
+    ],
+    "expected_outcomes": {
+      "timeframe": "2-3 weeks",
+      "target_class_mastery": 0.82,
+      "expected_on_track_percentage": 85.0
+    },
+    "confidence_level": 0.78,
+    "notes": "Class shows strong engagement and willingness to practice. Main challenge is abstract thinking required for place value concepts. Concrete manipulatives and more practice time should address gaps."
+  }
+}

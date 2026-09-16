@@ -1,0 +1,21 @@
+{
+  "boundary_decision": "REJECT_LEGITIMACY_ESCALATION",
+  "canonical_authority_granted": false,
+  "confidence": 0.93,
+  "confidence_delta": 0.53,
+  "confidence_inflation_detected": true,
+  "discipline": {
+    "confidence_is_not_legitimacy": true,
+    "contradiction_blocks_legitimacy_escalation": true,
+    "reinforcement_is_not_truth_authority": true,
+    "uncertainty_reduces_trust_ceiling": true
+  },
+  "legitimacy_ceiling": 0.0,
+  "prior_confidence": 0.4,
+  "reinforcement_abuse_detected": true,
+  "reinforcement_pressure": 1.0,
+  "schema": "UNIGURU_TRUST_BOUND_SEMANTIC_WEIGHTING_V1",
+  "trust_score": 0.0,
+  "uncertainty_preserved": true,
+  "weighting_hash": "e820b2b6ad96b89a182865ee30edd317b7539c6f5f1cced60588439402f12f6d"
+}

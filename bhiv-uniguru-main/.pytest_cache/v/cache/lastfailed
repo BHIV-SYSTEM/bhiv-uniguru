@@ -1,0 +1,5 @@
+{
+  "backend/test_queries.py": true,
+  "backend/tests/test_sanskrit_decoder.py::test_decode_sanskrit_concept_builds_deterministic_pipeline": true,
+  "backend/tests/test_sanskrit_decoder.py::test_sanskrit_runtime_endpoint_returns_decoded_payload": true
+}

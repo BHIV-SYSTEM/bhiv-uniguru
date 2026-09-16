@@ -1,0 +1,2475 @@
+{
+  "answer": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything . It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible .",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_77dd0bc08fc2"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 0.3333,
+          "derived_confidence": 0.6,
+          "domain_consistency": 1.0,
+          "entity_overlap": 1.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.9741,
+              "retrieval_strength": 0.7357,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6,
+            "why": [
+              "epistemic_score=0.6000",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.5272,
+          "retrieval_confidence": 0.7357,
+          "semantic_score": 0.9222,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.6,
+      "rejected_count": 11
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "993a8d99b97b525664e8b618df986c6b6de68a7eb0e3d7e7d951b1b547feca7b",
+    "memory_event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "24150f0bd91036a044150489e517ba36f4dd61170902d83f127cd50953edcef3",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Atman",
+        "Brahman",
+        "Taittiriya Upanishad",
+        "Upanishads"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "ecosystem_ff5262118c8c",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-08-29T05:11:10.543597Z",
+      "user_id": "ecosystem_runtime"
+    },
+    "rejected_signals": [
+      "signal_7b34ed7826f5",
+      "signal_47a8bdcd6c59",
+      "signal_30f9241d53f4",
+      "signal_2699f2907aaf",
+      "signal_fb70a947e4e1",
+      "signal_b920dceb8457",
+      "signal_8b149d2efef4",
+      "signal_6e44e110a23a",
+      "signal_1f2cfcedd7ea",
+      "signal_9ad658d56ead",
+      "signal_580ef5a34a5b"
+    ],
+    "retrieval_truth_hash": "18fcbc8108212a03e2a692168763dbf224fb68395f1e37af62f26d40aebd93e7",
+    "semantic_path": [
+      {
+        "domain": "upanishads",
+        "embedding_trace": {
+          "candidate_feature_count": 42,
+          "dimensions": 256,
+          "provider": "LocalHashEmbeddingProvider",
+          "query_feature_count": 9,
+          "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+          "similarity_score": 0.402,
+          "vector_source": "local_hash_expanded_canonical_terms"
+        },
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "signal_id": "signal_77dd0bc08fc2",
+        "source_lineage": {
+          "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-08-29T05:11:10.283305Z",
+    "trace_continuity": {
+      "bucket_proof": "ecosystem_ff5262118c8c",
+      "contract_emission": "ecosystem_ff5262118c8c",
+      "downstream_execution": "ecosystem_ff5262118c8c",
+      "immutable": true,
+      "retrieval": "ecosystem_ff5262118c8c",
+      "synthesis": "ecosystem_ff5262118c8c",
+      "validation": "ecosystem_ff5262118c8c"
+    },
+    "trace_id": "ecosystem_ff5262118c8c",
+    "verification_status": "VERIFIED"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:upanishads:6285486b08ec",
+      "claim_id": "claim_1_f49457d2",
+      "claim_text": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything",
+      "confidence": 0.735704,
+      "provenance_hash": "6285486b08ec780a1b4dec860abcf756e2d2857ecb1794adb33ad71ed445be2b",
+      "source_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+      "text_span": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "canonical_object_id": "uko:upanishads:6285486b08ec",
+      "claim_id": "claim_2_5a6dd432",
+      "claim_text": "It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible .",
+      "confidence": 0.735704,
+      "provenance_hash": "6285486b08ec780a1b4dec860abcf756e2d2857ecb1794adb33ad71ed445be2b",
+      "source_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+      "text_span": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "confidence": 0.6,
+  "confidence_breakdown": {
+    "accepted_count": 1,
+    "accepted_derivations": [
+      {
+        "content_overlap": 0.3333,
+        "derived_confidence": 0.6,
+        "domain_consistency": 1.0,
+        "entity_overlap": 1.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.6,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 0.88,
+            "ontology_convergence": 0.9741,
+            "retrieval_strength": 0.7357,
+            "semantic_agreement": 1.0,
+            "source_authority": 0.42
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.6,
+          "why": [
+            "epistemic_score=0.6000",
+            "ceiling_applied=0.6000",
+            "source_type=ocr_derivative"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.5272,
+        "retrieval_confidence": 0.7357,
+        "semantic_score": 0.9222,
+        "tag_match_score": 0.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "single_source_verified",
+      "claim_group_count": 1,
+      "consensus_score": 0.5,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+      "multi_source_reinforcement": 0.0,
+      "source_count": 1
+    },
+    "overall": 0.6,
+    "rejected_count": 11
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "single_source_verified",
+    "claim_group_count": 1,
+    "consensus_score": 0.5,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+    "multi_source_reinforcement": 0.0,
+    "source_count": 1
+  },
+  "detected_domain": "upanishads",
+  "domain_resolution": {
+    "confidence": 1.0,
+    "domain": "upanishads",
+    "entities": [
+      {
+        "canonical": "Atman",
+        "concepts": [
+          "Brahman",
+          "liberation"
+        ],
+        "domain": "upanishads",
+        "entity_type": "concept",
+        "matched_alias": "atman"
+      }
+    ],
+    "method": "canonical_entity_majority"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "ecosystem_ff5262118c8c"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 25,
+    "total_entries": 37,
+    "valid_entries": 12
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-08-29T05:11:10.283305Z",
+  "interpretation_payload": {
+    "answer": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything . It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible .",
+    "artifact_hash": "993a8d99b97b525664e8b618df986c6b6de68a7eb0e3d7e7d951b1b547feca7b",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.6,
+    "confidence_breakdown": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 0.3333,
+          "derived_confidence": 0.6,
+          "domain_consistency": 1.0,
+          "entity_overlap": 1.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.9741,
+              "retrieval_strength": 0.7357,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6,
+            "why": [
+              "epistemic_score=0.6000",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.5272,
+          "retrieval_confidence": 0.7357,
+          "semantic_score": 0.9222,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.6,
+      "rejected_count": 11
+    },
+    "contradiction_state": {
+      "classification": "single_source_verified",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_77dd0bc08fc2"
+      ],
+      "retrieval_trace_id": "ecosystem_ff5262118c8c",
+      "retrieval_truth_hash": "18fcbc8108212a03e2a692168763dbf224fb68395f1e37af62f26d40aebd93e7"
+    },
+    "trace_id": "ecosystem_ff5262118c8c",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_9a8183e951a4"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 0.3333,
+          "derived_confidence": 0.6,
+          "domain_consistency": 1.0,
+          "entity_overlap": 1.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.9741,
+              "retrieval_strength": 0.7357,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6,
+            "why": [
+              "epistemic_score=0.6000",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.5272,
+          "retrieval_confidence": 0.7357,
+          "semantic_score": 0.9222,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 77.78,
+          "content": 33.33,
+          "entity": 100.0
+        },
+        "signal_id": "signal_77dd0bc08fc2",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "self"
+            },
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Taittiriya Upanishad",
+              "concepts": [
+                "Brahman",
+                "kosha"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text",
+              "matched_alias": "taittiriya upanishad"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            }
+          ],
+          "query_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "atman"
+            }
+          ],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.6,
+      "content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+      "domain": "upanishads",
+      "knowledge_id": "KOSHA_9a8183e951a4",
+      "signal_id": "signal_77dd0bc08fc2",
+      "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+      "source_governance": {
+        "authority_weight": 0.42,
+        "confidence_ceiling": 0.6,
+        "lineage": {
+          "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.12,
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "source_type": "ocr_derivative",
+        "suppression_reason": null
+      },
+      "tags": [
+        "taittiriya",
+        "upanishad"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "upanishads",
+          "entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "atman"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "embedding_trace": {
+          "candidate_feature_count": 42,
+          "dimensions": 256,
+          "provider": "LocalHashEmbeddingProvider",
+          "query_feature_count": 9,
+          "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+          "similarity_score": 0.402,
+          "vector_source": "local_hash_expanded_canonical_terms"
+        },
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "ecosystem_ff5262118c8c"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "deterministic": true,
+    "max_hops": 5,
+    "paths": [],
+    "source": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/ontology/seed_entities.json",
+    "start_nodes": [
+      "atman"
+    ],
+    "target_nodes": [
+      "atman"
+    ]
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "ecosystem_ff5262118c8c"
+  },
+  "query": "What is atman in Upanishadic thought?",
+  "reasoning": "Accepted signal because tags [], content overlap 0.33, entity overlap 1.00, domain consistency 1.00, and derived confidence 0.600 met deterministic thresholds.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahma",
+            "concepts": [
+              "creation",
+              "cosmology"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "brahma"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          },
+          {
+            "canonical": "Vedas",
+            "concepts": [
+              "samhita",
+              "ritual",
+              "knowledge"
+            ],
+            "domain": "vedas",
+            "entity_type": "text_group",
+            "matched_alias": "vedas"
+          },
+          {
+            "canonical": "Yoga",
+            "concepts": [
+              "discipline",
+              "meditation"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "yoga"
+          }
+        ],
+        "concept_overlap": 0.6667,
+        "confidence": 0.705392,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.6,
+          "domain_consistency": 1.0,
+          "entity_overlap": 1.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.9611,
+              "retrieval_strength": 0.7054,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6,
+            "why": [
+              "epistemic_score=0.6000",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4413,
+          "retrieval_confidence": 0.7054,
+          "semantic_score": 0.8833,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 1.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "upanishads",
+          "entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "atman"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "entity_overlap": 1.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "atman"
+          }
+        ],
+        "semantic_score": 0.8833,
+        "signal_id": "signal_7b34ed7826f5",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_7b34ed7826f5",
+      "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          },
+          {
+            "canonical": "Vedas",
+            "concepts": [
+              "samhita",
+              "ritual",
+              "knowledge"
+            ],
+            "domain": "vedas",
+            "entity_type": "text_group",
+            "matched_alias": "vedas"
+          }
+        ],
+        "concept_overlap": 0.6667,
+        "confidence": 0.6860430000000001,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.5957,
+          "domain_consistency": 1.0,
+          "entity_overlap": 1.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5957,
+            "dimensions": {
+              "contextual_consistency": 0.8281,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8757,
+              "ontology_convergence": 0.9554,
+              "retrieval_strength": 0.686,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.4157
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5957,
+            "why": [
+              "epistemic_score=0.5957",
+              "ceiling_applied=0.5957",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4313,
+          "retrieval_confidence": 0.686,
+          "semantic_score": 0.8661,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.8281,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "upanishads",
+          "entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "atman"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "entity_overlap": 1.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "atman"
+          }
+        ],
+        "semantic_score": 0.8661,
+        "signal_id": "signal_47a8bdcd6c59",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+        "source_governance": {
+          "authority_weight": 0.4157,
+          "confidence_ceiling": 0.5957,
+          "lineage": {
+            "original_source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1243,
+          "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_47a8bdcd6c59",
+      "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          },
+          {
+            "canonical": "Moksha",
+            "concepts": [
+              "freedom",
+              "realization"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "liberation"
+          }
+        ],
+        "concept_overlap": 0.1111,
+        "confidence": 0.17160899999999998,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.305,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5783,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8583,
+              "ontology_convergence": 0.0667,
+              "retrieval_strength": 0.1716,
+              "semantic_agreement": 0.1111,
+              "source_authority": 0.3983
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.305,
+            "why": [
+              "epistemic_score=0.3050",
+              "ceiling_applied=0.5783",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.0696,
+          "retrieval_confidence": 0.1716,
+          "semantic_score": 0.0889,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "upanishads",
+          "entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "atman"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Atman"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "atman"
+          }
+        ],
+        "semantic_score": 0.0889,
+        "signal_id": "signal_30f9241d53f4",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.3983,
+          "confidence_ceiling": 0.5783,
+          "lineage": {
+            "original_source": "The Complete Mahabharata_English_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1417,
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_30f9241d53f4",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0966,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_2699f2907aaf",
+        "source": "Shakti and Shakta_ocr.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.097",
+      "signal_id": "signal_2699f2907aaf",
+      "source": "Shakti and Shakta_ocr.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0966,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_fb70a947e4e1",
+        "source": "The Narada-Purana, Part 1_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "low_contextual_overlap",
+      "signal_id": "signal_fb70a947e4e1",
+      "source": "The Narada-Purana, Part 1_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0966,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_b920dceb8457",
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.097",
+      "signal_id": "signal_b920dceb8457",
+      "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.09595600000000001,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_8b149d2efef4",
+        "source": "The Narada-Purana, Part 4_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.096",
+      "signal_id": "signal_8b149d2efef4",
+      "source": "The Narada-Purana, Part 4_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.095197,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_6e44e110a23a",
+        "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.095",
+      "signal_id": "signal_6e44e110a23a",
+      "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.094277,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_1f2cfcedd7ea",
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.094",
+      "signal_id": "signal_1f2cfcedd7ea",
+      "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.091126,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_9ad658d56ead",
+        "source": "The Narada-Purana, Part 3_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.091",
+      "signal_id": "signal_9ad658d56ead",
+      "source": "The Narada-Purana, Part 3_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.067643,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_580ef5a34a5b",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.068",
+      "signal_id": "signal_580ef5a34a5b",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    }
+  ],
+  "retrieval_run_record": {
+    "candidate_count": 12,
+    "canonical_concept_id": "upanishads",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:upanishads:6285486b08ec",
+        "claim_id": "claim_1_f49457d2",
+        "claim_text": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything",
+        "confidence": 0.735704,
+        "provenance_hash": "6285486b08ec780a1b4dec860abcf756e2d2857ecb1794adb33ad71ed445be2b",
+        "source_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "text_span": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "canonical_object_id": "uko:upanishads:6285486b08ec",
+        "claim_id": "claim_2_5a6dd432",
+        "claim_text": "It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible .",
+        "confidence": 0.735704,
+        "provenance_hash": "6285486b08ec780a1b4dec860abcf756e2d2857ecb1794adb33ad71ed445be2b",
+        "source_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "text_span": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "deduplicated_candidate_count": 12,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_8624be47074a",
+    "replay_id": "replay_94b702d684d432f3",
+    "replay_safe": true,
+    "retrieval_run_id": "run_10b22828b4d0",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:upanishads:6285486b08ec",
+        "dedup_status": "unique",
+        "domain": "upanishads",
+        "provenance_hash": "6285486b08ec780a1b4dec860abcf756e2d2857ecb1794adb33ad71ed445be2b",
+        "ranking_score": 0.735704,
+        "source_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "text_span": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:upanishads:ceac6ab19d86",
+        "dedup_status": "unique",
+        "domain": "upanishads",
+        "provenance_hash": "ceac6ab19d867d93ddc4248e63c5985e2461be8a37d158d4c454d59bb2ae8d71",
+        "ranking_score": 0.705392,
+        "source_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "text_span": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to [2]. They are considered the crowning part of the Veda, providing knowledge about the ultimate reality and the self. [1] also mentions the importance of being properly instructed by knowers of the Brahman, implying that the Upanishads contain teachings on spiritual growth and self-realization.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:upanishads:ed4f4e3af3a3",
+        "dedup_status": "unique",
+        "domain": "upanishads",
+        "provenance_hash": "ed4f4e3af3a3e3497ce7b9cdcef90494c8de697d6c41041ede63bf648b0aeb18",
+        "ranking_score": 0.6860430000000001,
+        "source_id": "Svetasvatara Upanishad - sanskrit and English.pdf",
+        "text_span": "The meaning of \"\u092c\u094d\u0930\u0939\u094d\u092e (Brahman)\" is the Supreme or Ultimate Reality, which is described in the Vedas as the absolute and imperishable essence of the universe [1]. It can refer to the visible universe inclusive of individual souls or to the Ultimate Reality behind it, experienced in Samadhi as the Self of ourselves [1]. According to the Advaitic explanation, Brahman is above the world of cause and effect [1].",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:itihasa:fb929c948bc9",
+        "dedup_status": "unique",
+        "domain": "itihasa",
+        "provenance_hash": "fb929c948bc91b0f55240b3c3da789e6d053c33f4b074b0475df4e234b6271b5",
+        "ranking_score": 0.17160899999999998,
+        "source_id": "The Complete Mahabharata_English_ocred.pdf",
+        "text_span": "Moksha translates to \"liberation\" in English. [1]",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:general:8b32c3be23ea",
+        "dedup_status": "unique",
+        "domain": "general",
+        "provenance_hash": "8b32c3be23ea6cd680f3dffdeb01d4ad81f4481ee96d04a126da9a0776f35e46",
+        "ranking_score": 0.0966,
+        "source_id": "Shakti and Shakta_ocr.pdf",
+        "text_span": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:puranas:a82d688ccefb",
+        "dedup_status": "unique",
+        "domain": "puranas",
+        "provenance_hash": "a82d688ccefbd6a2024b5fcbeedb6a1c45d08a4ed2468bada2db992ada654a2a",
+        "ranking_score": 0.0966,
+        "source_id": "The Narada-Purana, Part 1_ocred.pdf",
+        "text_span": "According to the Narada-Purana [1], the opposite of Ahimsa (Non-Violence) is not explicitly mentioned. However, it can be inferred that the opposite of Ahimsa is Adharma (unrighteousness) or Himsa (violence), which is mentioned in the context of Ahimsa being the bestower of Yogic achievements.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:itihasa:e82b0fdadd51",
+        "dedup_status": "unique",
+        "domain": "itihasa",
+        "provenance_hash": "e82b0fdadd51590fa303ad6c7312ae1715d8fa31a7057553e34f17d2d54bfaaf",
+        "ranking_score": 0.0966,
+        "source_id": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "text_span": "The texts that describe stories of gods and creation are the Valmiki-Ramayana and the Brahmanda Purana Part 4. The Valmiki-Ramayana mentions various gods and their interactions, while the Brahmanda Purana Part 4 discusses the creation of the cosmic egg and the activities of various gods and beings.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:puranas:6d6183d0fe38",
+        "dedup_status": "unique",
+        "domain": "puranas",
+        "provenance_hash": "6d6183d0fe38422b578a3799ccdd78a39de1ac983659ae447cb560580ac09a48",
+        "ranking_score": 0.09595600000000001,
+        "source_id": "The Narada-Purana, Part 4_ocred.pdf",
+        "text_span": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:general:dafb4202df49",
+        "dedup_status": "unique",
+        "domain": "general",
+        "provenance_hash": "dafb4202df4948fa68dd08f6d518a958e5550914e9b9054d3c83de3e9a6f3d4e",
+        "ranking_score": 0.095197,
+        "source_id": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+        "text_span": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:smriti:5166fadfaf2b",
+        "dedup_status": "unique",
+        "domain": "smriti",
+        "provenance_hash": "5166fadfaf2b36d7e713012e57ec89bba3537b48e7c23a1bd917e00067b4604a",
+        "ranking_score": 0.094277,
+        "source_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "text_span": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:puranas:731b6b48e773",
+        "dedup_status": "unique",
+        "domain": "puranas",
+        "provenance_hash": "731b6b48e77359a84eb3ae881988398ec365987440b0457adf3edbe431739f13",
+        "ranking_score": 0.091126,
+        "source_id": "The Narada-Purana, Part 3_ocred.pdf",
+        "text_span": "Satyam vada translates to \"Speak the truth\". [1]",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:itihasa:1fe05c2df736",
+        "dedup_status": "unique",
+        "domain": "itihasa",
+        "provenance_hash": "1fe05c2df736f1ee5d649f12c2251ce1f8c5fb7d2f41c04044617ad3355aac8a",
+        "ranking_score": 0.067643,
+        "source_id": "The Complete Mahabharata_English_ocred.pdf",
+        "text_span": "The context provided appears to be an excerpt from the Mahabharat, an ancient Indian epic. It mentions various characters and events from the story, including Arjuna, Bhima, Draupadi, and Krishna. The narrative describes the Pandavas' accomplishments and the speaker's realization that they cannot be defeated. It also mentions the Rajasuya yagna, the game of dice, and the abduction of Draupadi. Additionally, it highlights the strengths and achievements of individual characters, such as Arjuna's archery skills and Bhima's physical strength. However, the context does not provide a comprehensive overview of the Mahabharat as a whole.",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "ecosystem_ff5262118c8c",
+    "verification_status": "VERIFIED"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_77dd0bc08fc2"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 0.3333,
+            "derived_confidence": 0.6,
+            "domain_consistency": 1.0,
+            "entity_overlap": 1.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.9741,
+                "retrieval_strength": 0.7357,
+                "semantic_agreement": 1.0,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.6,
+              "why": [
+                "epistemic_score=0.6000",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.5272,
+            "retrieval_confidence": 0.7357,
+            "semantic_score": 0.9222,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 77.78,
+            "content": 33.33,
+            "entity": 100.0
+          },
+          "signal_id": "signal_77dd0bc08fc2",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Atman",
+                "concepts": [
+                  "Brahman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "self"
+              },
+              {
+                "canonical": "Brahman",
+                "concepts": [
+                  "ultimate reality",
+                  "Atman"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "brahman"
+              },
+              {
+                "canonical": "Taittiriya Upanishad",
+                "concepts": [
+                  "Brahman",
+                  "kosha"
+                ],
+                "domain": "upanishads",
+                "entity_type": "text",
+                "matched_alias": "taittiriya upanishad"
+              },
+              {
+                "canonical": "Upanishads",
+                "concepts": [
+                  "Brahman",
+                  "Atman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "text_group",
+                "matched_alias": "upanishads"
+              }
+            ],
+            "query_entities": [
+              {
+                "canonical": "Atman",
+                "concepts": [
+                  "Brahman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "atman"
+              }
+            ],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.6,
+        "content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+        "domain": "upanishads",
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "signal_id": "signal_77dd0bc08fc2",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tags": [
+          "taittiriya",
+          "upanishad"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "upanishads",
+            "entities": [
+              {
+                "canonical": "Atman",
+                "concepts": [
+                  "Brahman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "atman"
+              }
+            ],
+            "method": "canonical_entity_majority"
+          },
+          "embedding_trace": {
+            "candidate_feature_count": 42,
+            "dimensions": 256,
+            "provider": "LocalHashEmbeddingProvider",
+            "query_feature_count": 9,
+            "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+            "similarity_score": 0.402,
+            "vector_source": "local_hash_expanded_canonical_terms"
+          },
+          "knowledge_id": "KOSHA_9a8183e951a4",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "ecosystem_ff5262118c8c"
+        }
+      }
+    ],
+    "artifact_hash": "18fcbc8108212a03e2a692168763dbf224fb68395f1e37af62f26d40aebd93e7",
+    "domain_resolution": {
+      "confidence": 1.0,
+      "domain": "upanishads",
+      "entities": [
+        {
+          "canonical": "Atman",
+          "concepts": [
+            "Brahman",
+            "liberation"
+          ],
+          "domain": "upanishads",
+          "entity_type": "concept",
+          "matched_alias": "atman"
+        }
+      ],
+      "method": "canonical_entity_majority"
+    },
+    "generated_at": "2026-08-29T05:11:10.283305Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What is atman in Upanishadic thought?",
+    "raw_signal_count": 12,
+    "rejected_signal_ids": [
+      "signal_7b34ed7826f5",
+      "signal_47a8bdcd6c59",
+      "signal_30f9241d53f4",
+      "signal_2699f2907aaf",
+      "signal_fb70a947e4e1",
+      "signal_b920dceb8457",
+      "signal_8b149d2efef4",
+      "signal_6e44e110a23a",
+      "signal_1f2cfcedd7ea",
+      "signal_9ad658d56ead",
+      "signal_580ef5a34a5b"
+    ],
+    "rejected_signals": [
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "self"
+            },
+            {
+              "canonical": "Brahma",
+              "concepts": [
+                "creation",
+                "cosmology"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "brahma"
+            },
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            },
+            {
+              "canonical": "Vedas",
+              "concepts": [
+                "samhita",
+                "ritual",
+                "knowledge"
+              ],
+              "domain": "vedas",
+              "entity_type": "text_group",
+              "matched_alias": "vedas"
+            },
+            {
+              "canonical": "Yoga",
+              "concepts": [
+                "discipline",
+                "meditation"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "yoga"
+            }
+          ],
+          "concept_overlap": 0.6667,
+          "confidence": 0.705392,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.6,
+            "domain_consistency": 1.0,
+            "entity_overlap": 1.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.9611,
+                "retrieval_strength": 0.7054,
+                "semantic_agreement": 1.0,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.6,
+              "why": [
+                "epistemic_score=0.6000",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.4413,
+            "retrieval_confidence": 0.7054,
+            "semantic_score": 0.8833,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 1.0,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "upanishads",
+            "entities": [
+              {
+                "canonical": "Atman",
+                "concepts": [
+                  "Brahman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "atman"
+              }
+            ],
+            "method": "canonical_entity_majority"
+          },
+          "entity_overlap": 1.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "atman"
+            }
+          ],
+          "semantic_score": 0.8833,
+          "signal_id": "signal_7b34ed7826f5",
+          "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "source_governance": {
+            "authority_weight": 0.42,
+            "confidence_ceiling": 0.6,
+            "lineage": {
+              "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.12,
+            "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_7b34ed7826f5",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "self"
+            },
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            },
+            {
+              "canonical": "Vedas",
+              "concepts": [
+                "samhita",
+                "ritual",
+                "knowledge"
+              ],
+              "domain": "vedas",
+              "entity_type": "text_group",
+              "matched_alias": "vedas"
+            }
+          ],
+          "concept_overlap": 0.6667,
+          "confidence": 0.6860430000000001,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.5957,
+            "domain_consistency": 1.0,
+            "entity_overlap": 1.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5957,
+              "dimensions": {
+                "contextual_consistency": 0.8281,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8757,
+                "ontology_convergence": 0.9554,
+                "retrieval_strength": 0.686,
+                "semantic_agreement": 1.0,
+                "source_authority": 0.4157
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.5957,
+              "why": [
+                "epistemic_score=0.5957",
+                "ceiling_applied=0.5957",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.4313,
+            "retrieval_confidence": 0.686,
+            "semantic_score": 0.8661,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.8281,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "upanishads",
+            "entities": [
+              {
+                "canonical": "Atman",
+                "concepts": [
+                  "Brahman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "atman"
+              }
+            ],
+            "method": "canonical_entity_majority"
+          },
+          "entity_overlap": 1.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "atman"
+            }
+          ],
+          "semantic_score": 0.8661,
+          "signal_id": "signal_47a8bdcd6c59",
+          "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+          "source_governance": {
+            "authority_weight": 0.4157,
+            "confidence_ceiling": 0.5957,
+            "lineage": {
+              "original_source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1243,
+            "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_47a8bdcd6c59",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            },
+            {
+              "canonical": "Moksha",
+              "concepts": [
+                "freedom",
+                "realization"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "liberation"
+            }
+          ],
+          "concept_overlap": 0.1111,
+          "confidence": 0.17160899999999998,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.305,
+            "domain_consistency": 0.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5783,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8583,
+                "ontology_convergence": 0.0667,
+                "retrieval_strength": 0.1716,
+                "semantic_agreement": 0.1111,
+                "source_authority": 0.3983
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.305,
+              "why": [
+                "epistemic_score=0.3050",
+                "ceiling_applied=0.5783",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.0696,
+            "retrieval_confidence": 0.1716,
+            "semantic_score": 0.0889,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.5,
+          "domain_consistency": 0.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "upanishads",
+            "entities": [
+              {
+                "canonical": "Atman",
+                "concepts": [
+                  "Brahman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "atman"
+              }
+            ],
+            "method": "canonical_entity_majority"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [
+            "Atman"
+          ],
+          "query_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "atman"
+            }
+          ],
+          "semantic_score": 0.0889,
+          "signal_id": "signal_30f9241d53f4",
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.3983,
+            "confidence_ceiling": 0.5783,
+            "lineage": {
+              "original_source": "The Complete Mahabharata_English_ocred.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1417,
+            "source": "The Complete Mahabharata_English_ocred.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_30f9241d53f4",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.0966,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_2699f2907aaf",
+          "source": "Shakti and Shakta_ocr.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "confidence_below_threshold:0.097",
+        "signal_id": "signal_2699f2907aaf",
+        "source": "Shakti and Shakta_ocr.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.0966,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_fb70a947e4e1",
+          "source": "The Narada-Purana, Part 1_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "low_contextual_overlap",
+        "signal_id": "signal_fb70a947e4e1",
+        "source": "The Narada-Purana, Part 1_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.0966,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_b920dceb8457",
+          "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "confidence_below_threshold:0.097",
+        "signal_id": "signal_b920dceb8457",
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.09595600000000001,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_8b149d2efef4",
+          "source": "The Narada-Purana, Part 4_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "confidence_below_threshold:0.096",
+        "signal_id": "signal_8b149d2efef4",
+        "source": "The Narada-Purana, Part 4_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.095197,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_6e44e110a23a",
+          "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "confidence_below_threshold:0.095",
+        "signal_id": "signal_6e44e110a23a",
+        "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.094277,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_1f2cfcedd7ea",
+          "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "confidence_below_threshold:0.094",
+        "signal_id": "signal_1f2cfcedd7ea",
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.091126,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_9ad658d56ead",
+          "source": "The Narada-Purana, Part 3_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "confidence_below_threshold:0.091",
+        "signal_id": "signal_9ad658d56ead",
+        "source": "The Narada-Purana, Part 3_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.067643,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_580ef5a34a5b",
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "confidence_below_threshold:0.068",
+        "signal_id": "signal_580ef5a34a5b",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      }
+    ],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_77dd0bc08fc2",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "source_lineage": {
+          "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "ecosystem_ff5262118c8c"
+      }
+    ],
+    "trace_id": "ecosystem_ff5262118c8c"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:upanishads:6285486b08ec",
+      "dedup_status": "unique",
+      "domain": "upanishads",
+      "provenance_hash": "6285486b08ec780a1b4dec860abcf756e2d2857ecb1794adb33ad71ed445be2b",
+      "ranking_score": 0.735704,
+      "source_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+      "text_span": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:upanishads:ceac6ab19d86",
+      "dedup_status": "unique",
+      "domain": "upanishads",
+      "provenance_hash": "ceac6ab19d867d93ddc4248e63c5985e2461be8a37d158d4c454d59bb2ae8d71",
+      "ranking_score": 0.705392,
+      "source_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+      "text_span": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to [2]. They are considered the crowning part of the Veda, providing knowledge about the ultimate reality and the self. [1] also mentions the importance of being properly instructed by knowers of the Brahman, implying that the Upanishads contain teachings on spiritual growth and self-realization.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:upanishads:ed4f4e3af3a3",
+      "dedup_status": "unique",
+      "domain": "upanishads",
+      "provenance_hash": "ed4f4e3af3a3e3497ce7b9cdcef90494c8de697d6c41041ede63bf648b0aeb18",
+      "ranking_score": 0.6860430000000001,
+      "source_id": "Svetasvatara Upanishad - sanskrit and English.pdf",
+      "text_span": "The meaning of \"\u092c\u094d\u0930\u0939\u094d\u092e (Brahman)\" is the Supreme or Ultimate Reality, which is described in the Vedas as the absolute and imperishable essence of the universe [1]. It can refer to the visible universe inclusive of individual souls or to the Ultimate Reality behind it, experienced in Samadhi as the Self of ourselves [1]. According to the Advaitic explanation, Brahman is above the world of cause and effect [1].",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:itihasa:fb929c948bc9",
+      "dedup_status": "unique",
+      "domain": "itihasa",
+      "provenance_hash": "fb929c948bc91b0f55240b3c3da789e6d053c33f4b074b0475df4e234b6271b5",
+      "ranking_score": 0.17160899999999998,
+      "source_id": "The Complete Mahabharata_English_ocred.pdf",
+      "text_span": "Moksha translates to \"liberation\" in English. [1]",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:general:8b32c3be23ea",
+      "dedup_status": "unique",
+      "domain": "general",
+      "provenance_hash": "8b32c3be23ea6cd680f3dffdeb01d4ad81f4481ee96d04a126da9a0776f35e46",
+      "ranking_score": 0.0966,
+      "source_id": "Shakti and Shakta_ocr.pdf",
+      "text_span": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:puranas:a82d688ccefb",
+      "dedup_status": "unique",
+      "domain": "puranas",
+      "provenance_hash": "a82d688ccefbd6a2024b5fcbeedb6a1c45d08a4ed2468bada2db992ada654a2a",
+      "ranking_score": 0.0966,
+      "source_id": "The Narada-Purana, Part 1_ocred.pdf",
+      "text_span": "According to the Narada-Purana [1], the opposite of Ahimsa (Non-Violence) is not explicitly mentioned. However, it can be inferred that the opposite of Ahimsa is Adharma (unrighteousness) or Himsa (violence), which is mentioned in the context of Ahimsa being the bestower of Yogic achievements.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:itihasa:e82b0fdadd51",
+      "dedup_status": "unique",
+      "domain": "itihasa",
+      "provenance_hash": "e82b0fdadd51590fa303ad6c7312ae1715d8fa31a7057553e34f17d2d54bfaaf",
+      "ranking_score": 0.0966,
+      "source_id": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+      "text_span": "The texts that describe stories of gods and creation are the Valmiki-Ramayana and the Brahmanda Purana Part 4. The Valmiki-Ramayana mentions various gods and their interactions, while the Brahmanda Purana Part 4 discusses the creation of the cosmic egg and the activities of various gods and beings.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:puranas:6d6183d0fe38",
+      "dedup_status": "unique",
+      "domain": "puranas",
+      "provenance_hash": "6d6183d0fe38422b578a3799ccdd78a39de1ac983659ae447cb560580ac09a48",
+      "ranking_score": 0.09595600000000001,
+      "source_id": "The Narada-Purana, Part 4_ocred.pdf",
+      "text_span": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:general:dafb4202df49",
+      "dedup_status": "unique",
+      "domain": "general",
+      "provenance_hash": "dafb4202df4948fa68dd08f6d518a958e5550914e9b9054d3c83de3e9a6f3d4e",
+      "ranking_score": 0.095197,
+      "source_id": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+      "text_span": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:smriti:5166fadfaf2b",
+      "dedup_status": "unique",
+      "domain": "smriti",
+      "provenance_hash": "5166fadfaf2b36d7e713012e57ec89bba3537b48e7c23a1bd917e00067b4604a",
+      "ranking_score": 0.094277,
+      "source_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+      "text_span": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:puranas:731b6b48e773",
+      "dedup_status": "unique",
+      "domain": "puranas",
+      "provenance_hash": "731b6b48e77359a84eb3ae881988398ec365987440b0457adf3edbe431739f13",
+      "ranking_score": 0.091126,
+      "source_id": "The Narada-Purana, Part 3_ocred.pdf",
+      "text_span": "Satyam vada translates to \"Speak the truth\". [1]",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:itihasa:1fe05c2df736",
+      "dedup_status": "unique",
+      "domain": "itihasa",
+      "provenance_hash": "1fe05c2df736f1ee5d649f12c2251ce1f8c5fb7d2f41c04044617ad3355aac8a",
+      "ranking_score": 0.067643,
+      "source_id": "The Complete Mahabharata_English_ocred.pdf",
+      "text_span": "The context provided appears to be an excerpt from the Mahabharat, an ancient Indian epic. It mentions various characters and events from the story, including Arjuna, Bhima, Draupadi, and Krishna. The narrative describes the Pandavas' accomplishments and the speaker's realization that they cannot be defeated. It also mentions the Rajasuya yagna, the game of dice, and the abduction of Draupadi. Additionally, it highlights the strengths and achievements of individual characters, such as Arjuna's archery skills and Bhima's physical strength. However, the context does not provide a comprehensive overview of the Mahabharat as a whole.",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": true,
+    "constitutional_governance": {
+      "canonical_authority_granted": true,
+      "canonical_memory_keys": [
+        "Assembly",
+        "Atman",
+        "Bhagavata Purana",
+        "Brahma",
+        "Brahman",
+        "Dharma",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Taittiriya Upanishad",
+        "Upanishads",
+        "Vedas",
+        "Yoga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": true,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [
+          "Atman",
+          "Brahman",
+          "Taittiriya Upanishad",
+          "Upanishads"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "canonical",
+        "trace_id": "ecosystem_ff5262118c8c",
+        "updated_at": "2026-08-29T05:11:10.348533Z"
+      },
+      "event_hash": "24150f0bd91036a044150489e517ba36f4dd61170902d83f127cd50953edcef3",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": true,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "ACCEPT_CANONICAL_MUTATION",
+        "failure_states": [
+          "PARTIAL_REJECTION_PRESENT"
+        ],
+        "memory_classification": "canonical",
+        "reasons": [],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "830d9b07fcdf300a5f79b94bcee80b7ce222ae9b3c570553a5e031d8b09e28a6",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "24150f0bd91036a044150489e517ba36f4dd61170902d83f127cd50953edcef3",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "1f1ca1f1d1e8dc9caf37e733762e65459868746b6a65ac99bdbd93fdd12f2f63",
+      "transient_event_count": 491
+    },
+    "entity_continuity": {
+      "Atman": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-08-29T05:11:10.543597Z",
+        "reinforcement_score": 0.5625,
+        "source_ids": [
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Svetasvatara Upanishad - sanskrit and English.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_b47954192a92",
+          "ecosystem_ff5262118c8c"
+        ]
+      },
+      "Brahman": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-08-29T05:11:10.543597Z",
+        "reinforcement_score": 0.5625,
+        "source_ids": [
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Svetasvatara Upanishad - sanskrit and English.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_b47954192a92",
+          "ecosystem_ff5262118c8c"
+        ]
+      },
+      "Taittiriya Upanishad": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-08-29T05:11:10.543597Z",
+        "reinforcement_score": 0.3125,
+        "source_ids": [
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_b47954192a92",
+          "ecosystem_ff5262118c8c"
+        ]
+      },
+      "Upanishads": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-08-29T05:11:10.543597Z",
+        "reinforcement_score": 0.5625,
+        "source_ids": [
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Svetasvatara Upanishad - sanskrit and English.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_b47954192a92",
+          "ecosystem_ff5262118c8c"
+        ]
+      }
+    },
+    "event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "24150f0bd91036a044150489e517ba36f4dd61170902d83f127cd50953edcef3",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Atman",
+        "Brahman",
+        "Taittiriya Upanishad",
+        "Upanishads"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "ecosystem_ff5262118c8c",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-08-29T05:11:10.543597Z",
+      "user_id": "ecosystem_runtime"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [
+      {
+        "contradiction_pressure": 0.0,
+        "query": "What is atman in Upanishadic thought?",
+        "rejected_signal_count": 11,
+        "state": "open",
+        "trace_id": "ecosystem_ff5262118c8c",
+        "updated_at": "2026-08-29T05:11:10.543597Z",
+        "user_id": "ecosystem_runtime",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "user_continuity": {
+      "continuity_score": 0.65,
+      "last_seen": "2026-08-29T05:11:10.543597Z",
+      "queries": 11,
+      "trace_ids": [
+        "ecosystem_81b0e8013622",
+        "ecosystem_c928b7617b43",
+        "ecosystem_3981f31e6ede",
+        "ecosystem_bbe95214b5c5",
+        "ecosystem_fefcaaff7d6d",
+        "ecosystem_b47954192a92",
+        "ecosystem_7618e32fe4f4",
+        "ecosystem_b94a5b17c2aa",
+        "ecosystem_567017d0719e",
+        "ecosystem_8bfc06bdaa4a",
+        "ecosystem_ff5262118c8c"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "upanishads",
+      "embedding_trace": {
+        "candidate_feature_count": 42,
+        "dimensions": 256,
+        "provider": "LocalHashEmbeddingProvider",
+        "query_feature_count": 9,
+        "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+        "similarity_score": 0.402,
+        "vector_source": "local_hash_expanded_canonical_terms"
+      },
+      "knowledge_id": "KOSHA_9a8183e951a4",
+      "signal_id": "signal_77dd0bc08fc2",
+      "source_lineage": {
+        "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "transformation_history": [
+          "source_text",
+          "ocr_extraction",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 1,
+  "signals_rejected": 11,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "ecosystem_ff5262118c8c",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "993a8d99b97b525664e8b618df986c6b6de68a7eb0e3d7e7d951b1b547feca7b",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "18fcbc8108212a03e2a692168763dbf224fb68395f1e37af62f26d40aebd93e7",
+    "trace_id": "ecosystem_ff5262118c8c"
+  },
+  "verification_status": "VERIFIED"
+}

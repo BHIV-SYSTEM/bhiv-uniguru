@@ -1,0 +1,4435 @@
+{
+  "canonical_concept": {
+    "shabda": "आकाश",
+    "canonical_name": "akasha",
+    "sanskrit": "आकाश",
+    "transliteration": "Ākāśa",
+    "beeja": "हं (Haṃ) — the bīja of the space element (ākāśa) in Tantric traditions. Associated with the Viśuddha chakra (throat — the space center).",
+    "vyakarana": "Ākāśa is a masculine noun derived from the prefix ā- and the root kāś (to shine). The word conveys both the sense of \"space\" and \"luminosity\" — space is not empty but luminous.",
+    "functional_meaning": "Ākāśa is the subtlest of the five elements — the space in which all other elements and all phenomena exist. It is the medium of sound (śabda) — sound travels through ākāśa. In Vedānta, ākāśa is the first element to emerge from Brahman in the process of creation. The Chāndogya Upaniṣad teaches that Brahman is ākāśa — the infinite space of consciousness.",
+    "dhatu": "आ + काश् (Ā + Kāś) — Ā (towards, completely) + Kāś (to shine, to be luminous). That which shines completely; the luminous space.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:akasha",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Ākāśate iti ākāśaḥ\" — that which shines. Space is not mere emptiness but the luminous ground of all existence.",
+    "related_concepts": [
+      "brahman",
+      "prana",
+      "agni",
+      "shabda (sound — the quality of akasha)",
+      "kosha"
+    ],
+    "tattva": "Ākāśa-Tattva — the space principle. The first and subtlest of the five mahābhūtas (great elements): Ākāśa (space), Vāyu (air), Agni (fire), Āp (water), Pṛthvī (earth). Ākāśa is the substratum of all other elements — they all exist within space."
+  },
+  "civilizational_knowledge": {
+    "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
+    "concept_id": "sanskar:sanskrit:akasha",
+    "canonical_name": "akasha",
+    "lexical_record": {
+      "shabda": "आकाश",
+      "canonical_name": "akasha",
+      "sanskrit": "आकाश",
+      "transliteration": "Ākāśa",
+      "beeja": "हं (Haṃ) — the bīja of the space element (ākāśa) in Tantric traditions. Associated with the Viśuddha chakra (throat — the space center).",
+      "vyakarana": "Ākāśa is a masculine noun derived from the prefix ā- and the root kāś (to shine). The word conveys both the sense of \"space\" and \"luminosity\" — space is not empty but luminous.",
+      "functional_meaning": "Ākāśa is the subtlest of the five elements — the space in which all other elements and all phenomena exist. It is the medium of sound (śabda) — sound travels through ākāśa. In Vedānta, ākāśa is the first element to emerge from Brahman in the process of creation. The Chāndogya Upaniṣad teaches that Brahman is ākāśa — the infinite space of consciousness.",
+      "dhatu": "आ + काश् (Ā + Kāś) — Ā (towards, completely) + Kāś (to shine, to be luminous). That which shines completely; the luminous space.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:akasha",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Ākāśate iti ākāśaḥ\" — that which shines. Space is not mere emptiness but the luminous ground of all existence.",
+      "related_concepts": [
+        "brahman",
+        "prana",
+        "agni",
+        "shabda (sound — the quality of akasha)",
+        "kosha"
+      ],
+      "tattva": "Ākāśa-Tattva — the space principle. The first and subtlest of the five mahābhūtas (great elements): Ākāśa (space), Vāyu (air), Agni (fire), Āp (water), Pṛthvī (earth). Ākāśa is the substratum of all other elements — they all exist within space."
+    },
+    "layers": {
+      "sanskrit": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "आकाश",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "shabda": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "आकाश",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "acoustic_phonetics": {
+          "status": "EVIDENCE_BACKED",
+          "claims": [
+            {
+              "value": {
+                "iast": "haṁ",
+                "ipa": "hã",
+                "varna_class": "kaṇṭhya ūṣman + anusvāra",
+                "sthana": "kaṇṭha (throat) — open space articulation",
+                "prayatna": "ūṣman (fricative), ghoṣa (voiced), with anusvāra",
+                "vedic_pitch": "anudātta — expansive, spacious quality",
+                "mantra_frequency_note": "Haṁ is the ākāśa-bīja — space is the subtlest element, and ha being the lightest consonant (keval prāṇa/breath) represents empty space. Viśuddha chakra bīja.",
+                "siksha_source": "Pāṇinīya-Śikṣā 3.9; Taittirīya Prātiśākhya 2.47"
+              },
+              "classification": "SOURCE_SCOPED",
+              "provenance": [
+                {
+                  "source_id": "cc20bccdae7a589d",
+                  "evidence_type": "VEDA",
+                  "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+                  "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+                  "retrieval_system": "uniguru_vedanga_shiksha"
+                }
+              ]
+            }
+          ],
+          "provenance": [
+            {
+              "source_id": "cc20bccdae7a589d",
+              "evidence_type": "VEDA",
+              "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+              "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+              "retrieval_system": "uniguru_vedanga_shiksha"
+            }
+          ],
+          "source": "Pāṇinīya-Śikṣā; Taittirīya Prātiśākhya; Ṛgveda-Prātiśākhya"
+        }
+      },
+      "dhatu": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "आ + काश् (Ā + Kāś) — Ā (towards, completely) + Kāś (to shine, to be luminous). That which shines completely; the luminous space.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "vyakarana": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Ākāśa is a masculine noun derived from the prefix ā- and the root kāś (to shine). The word conveys both the sense of \"space\" and \"luminosity\" — space is not empty but luminous.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "panini_grammar": {
+          "status": "NO_RETRIEVED_EVIDENCE",
+          "dhatu_root_key": "",
+          "panini_sutras": [],
+          "provenance": [
+            {
+              "source_id": "ef4cd468d4f41d7c",
+              "evidence_type": "PANINI",
+              "source_path": "knowledge/gurukul/sanskrit/grammar.md",
+              "content_hash": "299f9fb5707fc2cd60a56d5d4da0e8c077d32a2419edaadb5b0051e4aff11733",
+              "retrieval_system": "uniguru_vedanga_grammar"
+            }
+          ],
+          "source": "Pāṇini Ashtadhyayi via UniGuru Gurukul grammar.md"
+        }
+      },
+      "nirukta": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "\"Ākāśate iti ākāśaḥ\" — that which shines. Space is not mere emptiness but the luminous ground of all existence.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "beeja": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "हं (Haṃ) — the bīja of the space element (ākāśa) in Tantric traditions. Associated with the Viśuddha chakra (throat — the space center).",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "acoustic_phonetics": {
+          "status": "EVIDENCE_BACKED",
+          "claims": [
+            {
+              "value": {
+                "iast": "haṁ",
+                "ipa": "hã",
+                "varna_class": "kaṇṭhya ūṣman + anusvāra",
+                "sthana": "kaṇṭha (throat) — open space articulation",
+                "prayatna": "ūṣman (fricative), ghoṣa (voiced), with anusvāra",
+                "vedic_pitch": "anudātta — expansive, spacious quality",
+                "mantra_frequency_note": "Haṁ is the ākāśa-bīja — space is the subtlest element, and ha being the lightest consonant (keval prāṇa/breath) represents empty space. Viśuddha chakra bīja.",
+                "siksha_source": "Pāṇinīya-Śikṣā 3.9; Taittirīya Prātiśākhya 2.47"
+              },
+              "classification": "SOURCE_SCOPED",
+              "provenance": [
+                {
+                  "source_id": "cc20bccdae7a589d",
+                  "evidence_type": "VEDA",
+                  "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+                  "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+                  "retrieval_system": "uniguru_vedanga_shiksha"
+                }
+              ]
+            }
+          ],
+          "provenance": [
+            {
+              "source_id": "cc20bccdae7a589d",
+              "evidence_type": "VEDA",
+              "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+              "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+              "retrieval_system": "uniguru_vedanga_shiksha"
+            }
+          ],
+          "source": "Pāṇinīya-Śikṣā; Taittirīya Prātiśākhya; Ṛgveda-Prātiśākhya"
+        }
+      },
+      "tattva": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Ākāśa-Tattva — the space principle. The first and subtlest of the five mahābhūtas (great elements): Ākāśa (space), Vāyu (air), Agni (fire), Āp (water), Pṛthvī (earth). Ākāśa is the substratum of all other elements — they all exist within space.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "shakti": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "literal_meaning": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Space; ether; sky; the luminous void.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "functional_meaning": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Ākāśa is the subtlest of the five elements — the space in which all other elements and all phenomena exist. It is the medium of sound (śabda) — sound travels through ākāśa. In Vedānta, ākāśa is the first element to emerge from Brahman in the process of creation. The Chāndogya Upaniṣad teaches that Brahman is ākāśa — the infinite space of consciousness.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "ontology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Vaiśeṣika: Ākāśa is one of the nine dravyas (substances) — it is eternal, all-pervading, and the substratum of sound. In Advaita: Ākāśa is the first manifestation of Brahman — \"ākāśo ha vai nāma nāmarūpayor nirvahitā\" (Chāndogya Upaniṣad 8.14.1). In Sāṃkhya: Ākāśa is the first tanmātra (subtle element) — śabda-tanmātra (sound-essence) — from which the gross space element emerges.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "cosmology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Vedic cosmology: Ākāśa is the first element created — from Brahman comes ākāśa, from ākāśa comes vāyu, from vāyu comes agni, from agni comes āp, from āp comes pṛthvī (Taittirīya Upaniṣad 2.1). The concept of cidākāśa (consciousness-space) — the infinite space of pure awareness that is Brahman.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "psychology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Ākāśa as psychological principle: the mind (manas) is like ākāśa — it provides the space in which thoughts arise and dissolve. The concept of cidākāśa (consciousness-space) — the pure awareness that is the ground of all mental activity. The practice of ākāśa-dhāraṇā (concentration on space) leads to the experience of infinite consciousness.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "governance": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The concept of ākāśa in governance: the ruler who governs from the space of ākāśa (non-attachment, equanimity) governs wisely. The concept of rāja-ākāśa (the space of the king) — the king's court as the space where all voices are heard.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "medicine": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Āyurveda: Ākāśa is the element associated with the vāta doṣa (along with vāyu). The concept of ākāśa in the body: the spaces within the body (channels, cavities) are the body's ākāśa. Ākāśa imbalance leads to vāta disorders — anxiety, dryness, instability.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "engineering": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "mathematics": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The concept of ākāśa in mathematics: the concept of infinite space (ananta-ākāśa) is the philosophical basis for the Indian mathematical concept of infinity. The concept of śūnya (zero) as the mathematical ākāśa — the empty space from which all numbers emerge.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "astronomy": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Jyotiṣa: Ākāśa is the space in which all celestial bodies move. The concept of ākāśa-gaṅgā (the Milky Way — the river of space). The nakṣatra system maps the ākāśa into 27 divisions.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "metallurgy": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In alchemical traditions: ākāśa is the space in which alchemical transformations occur. The concept of ākāśa as the medium of subtle influences — the alchemist works with the ākāśa of the laboratory.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "ritual": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The concept of ākāśa in ritual: the ritual space (yajña-śālā) is a consecrated ākāśa — a space set apart from ordinary space. The concept of maṇḍala (sacred circle) as a bounded ākāśa. The concept of ākāśa-dīpa (sky lamp) — a lamp offered to the infinite space.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "symbolism": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The sky (ākāśa) symbolizes infinite space, freedom, and the divine. The blue color symbolizes ākāśa — the sky's color. The void (śūnya) symbolizes ākāśa's nature as the ground of all existence. The mirror symbolizes ākāśa — it reflects all without being affected.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_deities": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Viṣṇu (Vaikuṇṭha — Viṣṇu's realm is the highest ākāśa)\n- Śiva (Cidambaram — the space of consciousness — Śiva's primary form is ākāśa)\n- Indra (the lord of the sky — the cosmic ākāśa)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_lokas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- All lokas exist within ākāśa\n- Brahmaloka (the highest ākāśa — the space of Brahman)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_koshas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- All five koshas exist within ākāśa\n- Ānandamaya Kosha (bliss sheath) — the subtlest kosha, closest to ākāśa",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_chakras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Viśuddha (throat chakra) — the ākāśa chakra; the seat of space and sound\n- Sahasrāra (crown chakra) — the infinite ākāśa of pure consciousness",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_yantras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Ākāśa Yantra (circular — the circle represents infinite space)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_mantras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- \"Haṃ\" (the bīja of ākāśa)\n- \"Sarvam khalv idaṃ brahma\" (All this is Brahman — the ākāśa of Brahman)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_vidyas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Ākāśa Vidyā (the science of space — Chāndogya Upaniṣad 8.14)\n- Cidākāśa Vidyā (the science of consciousness-space)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_shastras": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "traditional_interpretations": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Vaiśeṣika: Ākāśa is an eternal, all-pervading substance — the substratum of sound\n- Advaita: Ākāśa is the first manifestation of Brahman; cidākāśa (consciousness-space) is Brahman itself\n- Sāṃkhya: Ākāśa emerges from the śabda-tanmātra (sound-essence)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "historical_evolution": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Ṛgvedic period: Ākāśa as the sky and cosmic space\n- Upaniṣadic period: Ākāśa as the first element and as Brahman\n- Vaiśeṣika period: Ākāśa systematized as one of nine substances\n- Tantric period: Ākāśa as the space of consciousness (cidākāśa)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "cross_references": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": [
+              "agni",
+              "brahman",
+              "kosha",
+              "prana",
+              "shabda (sound — the quality of akasha)"
+            ],
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "open_research_questions": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- What is the relationship between the Vaiśeṣika concept of ākāśa as a substance and the modern concept of spacetime?\n- How does the concept of cidākāśa (consciousness-space) relate to modern theories of consciousness?",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "experimental_hypotheses": {
+        "status": "EXPLICITLY_MARKED_EXPERIMENTAL",
+        "claims": [
+          {
+            "value": "[EXPERIMENTAL — NOT CANONICAL] Some physicists propose that the quantum vacuum (the ground state of quantum field theory) has structural similarities to the Vedic concept of ākāśa as the luminous ground of all existence. This remains a philosophical analogy.",
+            "classification": "EXPERIMENTAL",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "policy": "Marked EXPERIMENTAL in source document."
+      },
+      "comparative_hermeneutics": {
+        "status": "EVIDENCE_BACKED",
+        "darshana_matrix": {
+          "advaita": {
+            "position": "Ākāśa is the first manifestation of Brahman; cidākāśa (consciousness-space) is Brahman itself",
+            "key_terms": "Advaita",
+            "source_text": "Advaita: Ākāśa is the first manifestation of Brahman; cidākāśa (consciousness-space) is Brahman itself",
+            "evidence_type": "COMMENTARY",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          },
+          "dvaita": {
+            "position": "Ākāśa is the first manifestation of Brahman; cidākāśa (consciousness-space) is Brahman itself",
+            "key_terms": "Advaita",
+            "source_text": "Advaita: Ākāśa is the first manifestation of Brahman; cidākāśa (consciousness-space) is Brahman itself",
+            "evidence_type": "COMMENTARY",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        },
+        "traditions_represented": [
+          "advaita",
+          "dvaita"
+        ],
+        "claims": [
+          {
+            "value": {
+              "advaita": {
+                "position": "Ākāśa is the first manifestation of Brahman; cidākāśa (consciousness-space) is Brahman itself",
+                "key_terms": "Advaita",
+                "source_text": "Advaita: Ākāśa is the first manifestation of Brahman; cidākāśa (consciousness-space) is Brahman itself",
+                "evidence_type": "COMMENTARY",
+                "provenance": [
+                  {
+                    "source_id": "023a018d25c57b02",
+                    "evidence_type": "UPANISHAD",
+                    "provenance": {
+                      "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/akasha.md",
+                    "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "d14c2859a41945ab",
+                    "evidence_type": "UPANISHAD",
+                    "provenance": {
+                      "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/akasha.md",
+                    "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "65dde0549be4eca9",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/akasha.md",
+                    "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "a68d7c929cb8a44a",
+                    "evidence_type": "BHAGAVAD_GITA",
+                    "provenance": {
+                      "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/akasha.md",
+                    "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  }
+                ]
+              },
+              "dvaita": {
+                "position": "Ākāśa is the first manifestation of Brahman; cidākāśa (consciousness-space) is Brahman itself",
+                "key_terms": "Advaita",
+                "source_text": "Advaita: Ākāśa is the first manifestation of Brahman; cidākāśa (consciousness-space) is Brahman itself",
+                "evidence_type": "COMMENTARY",
+                "provenance": [
+                  {
+                    "source_id": "023a018d25c57b02",
+                    "evidence_type": "UPANISHAD",
+                    "provenance": {
+                      "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/akasha.md",
+                    "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "d14c2859a41945ab",
+                    "evidence_type": "UPANISHAD",
+                    "provenance": {
+                      "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/akasha.md",
+                    "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "65dde0549be4eca9",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/akasha.md",
+                    "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "a68d7c929cb8a44a",
+                    "evidence_type": "BHAGAVAD_GITA",
+                    "provenance": {
+                      "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/akasha.md",
+                    "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  }
+                ]
+              }
+            },
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "023a018d25c57b02",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "d14c2859a41945ab",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "65dde0549be4eca9",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "a68d7c929cb8a44a",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/akasha.md",
+                "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "retrieved_evidence": [],
+    "retrieval": {
+      "system": "uniguru_kosha",
+      "strategy": "deterministic_token_overlap",
+      "records_found": 0
+    },
+    "coverage": {
+      "total_layers": 35,
+      "evidence_backed_layers": 31,
+      "coverage_pct": 88.6
+    }
+  },
+  "pipeline": [
+    {
+      "stage": "śabda",
+      "schema_field": "shabda",
+      "value": "आकाश",
+      "evidence": [
+        {
+          "source_id": "023a018d25c57b02",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "d14c2859a41945ab",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "65dde0549be4eca9",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "a68d7c929cb8a44a",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "UPANISHAD",
+        "UPANISHAD",
+        "PRIMARY_CANON",
+        "BHAGAVAD_GITA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:akasha",
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b"
+      }
+    },
+    {
+      "stage": "dhātu",
+      "schema_field": "dhatu",
+      "value": "आ + काश् (Ā + Kāś) — Ā (towards, completely) + Kāś (to shine, to be luminous). That which shines completely; the luminous space.",
+      "evidence": [
+        {
+          "source_id": "023a018d25c57b02",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "d14c2859a41945ab",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "65dde0549be4eca9",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "a68d7c929cb8a44a",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "UPANISHAD",
+        "UPANISHAD",
+        "PRIMARY_CANON",
+        "BHAGAVAD_GITA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:akasha",
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b"
+      }
+    },
+    {
+      "stage": "vyākaraṇa",
+      "schema_field": "vyakarana",
+      "value": "Ākāśa is a masculine noun derived from the prefix ā- and the root kāś (to shine). The word conveys both the sense of \"space\" and \"luminosity\" — space is not empty but luminous.",
+      "evidence": [
+        {
+          "source_id": "023a018d25c57b02",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "d14c2859a41945ab",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "65dde0549be4eca9",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "a68d7c929cb8a44a",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "UPANISHAD",
+        "UPANISHAD",
+        "PRIMARY_CANON",
+        "BHAGAVAD_GITA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:akasha",
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b"
+      }
+    },
+    {
+      "stage": "nirukta",
+      "schema_field": "nirukta",
+      "value": "\"Ākāśate iti ākāśaḥ\" — that which shines. Space is not mere emptiness but the luminous ground of all existence.",
+      "evidence": [
+        {
+          "source_id": "023a018d25c57b02",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "d14c2859a41945ab",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "65dde0549be4eca9",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "a68d7c929cb8a44a",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "UPANISHAD",
+        "UPANISHAD",
+        "PRIMARY_CANON",
+        "BHAGAVAD_GITA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:akasha",
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b"
+      }
+    },
+    {
+      "stage": "bīja",
+      "schema_field": "beeja",
+      "value": "हं (Haṃ) — the bīja of the space element (ākāśa) in Tantric traditions. Associated with the Viśuddha chakra (throat — the space center).",
+      "evidence": [
+        {
+          "source_id": "023a018d25c57b02",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "d14c2859a41945ab",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "65dde0549be4eca9",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "a68d7c929cb8a44a",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "UPANISHAD",
+        "UPANISHAD",
+        "PRIMARY_CANON",
+        "BHAGAVAD_GITA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:akasha",
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b"
+      }
+    },
+    {
+      "stage": "tattva",
+      "schema_field": "tattva",
+      "value": "Ākāśa-Tattva — the space principle. The first and subtlest of the five mahābhūtas (great elements): Ākāśa (space), Vāyu (air), Agni (fire), Āp (water), Pṛthvī (earth). Ākāśa is the substratum of all other elements — they all exist within space.",
+      "evidence": [
+        {
+          "source_id": "023a018d25c57b02",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "d14c2859a41945ab",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "65dde0549be4eca9",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "a68d7c929cb8a44a",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "UPANISHAD",
+        "UPANISHAD",
+        "PRIMARY_CANON",
+        "BHAGAVAD_GITA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:akasha",
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b"
+      }
+    },
+    {
+      "stage": "śakti",
+      "schema_field": "shakti",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "023a018d25c57b02",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "d14c2859a41945ab",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "65dde0549be4eca9",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "a68d7c929cb8a44a",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "UPANISHAD",
+        "UPANISHAD",
+        "PRIMARY_CANON",
+        "BHAGAVAD_GITA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:akasha",
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b"
+      }
+    },
+    {
+      "stage": "functional_meaning",
+      "schema_field": "functional_meaning",
+      "value": "Ākāśa is the subtlest of the five elements — the space in which all other elements and all phenomena exist. It is the medium of sound (śabda) — sound travels through ākāśa. In Vedānta, ākāśa is the first element to emerge from Brahman in the process of creation. The Chāndogya Upaniṣad teaches that Brahman is ākāśa — the infinite space of consciousness.",
+      "evidence": [
+        {
+          "source_id": "023a018d25c57b02",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "d14c2859a41945ab",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "65dde0549be4eca9",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "a68d7c929cb8a44a",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/akasha.md",
+          "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "UPANISHAD",
+        "UPANISHAD",
+        "PRIMARY_CANON",
+        "BHAGAVAD_GITA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:akasha",
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b"
+      }
+    }
+  ],
+  "cross_references": [
+    {
+      "target": "agni",
+      "claim": "akasha is cross-referenced with agni by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/akasha.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "brahman",
+      "claim": "akasha is cross-referenced with brahman by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/akasha.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "kosha",
+      "claim": "akasha is cross-referenced with kosha by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/akasha.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "prana",
+      "claim": "akasha is cross-referenced with prana by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/akasha.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "shabda (sound — the quality of akasha)",
+      "claim": "akasha is cross-referenced with shabda (sound — the quality of akasha) by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/akasha.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    }
+  ],
+  "cross_text_synthesis": {
+    "status": "RETRIEVED_SOURCE_RECORDS_ONLY",
+    "canonical_claims": [
+      {
+        "claim": "Ākāśa is the subtlest of the five elements — the space in which all other elements and all phenomena exist. It is the medium of sound (śabda) — sound travels through ākāśa. In Vedānta, ākāśa is the first element to emerge from Brahman in the process of creation. The Chāndogya Upaniṣad teaches that Brahman is ākāśa — the infinite space of consciousness.",
+        "classification": [
+          "UPANISHAD",
+          "UPANISHAD",
+          "PRIMARY_CANON",
+          "BHAGAVAD_GITA"
+        ],
+        "source_path": "knowledge/sanskrit/akasha.md"
+      }
+    ],
+    "retrieved_records": [],
+    "conflicts": [],
+    "uncertainty": "Retrieved records are preserved as source-scoped evidence; the decoder does not merge them into an untraceable summary."
+  },
+  "knowledge_graph": {
+    "graph_id": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_GRAPH_V3",
+    "schema_version": "3.0.0",
+    "nodes": [
+      {
+        "id": "sanskar:sanskrit:akasha",
+        "type": "sanskrit_concept",
+        "label": "akasha",
+        "address": "knowledge/sanskrit/akasha.md",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "sanskar:sanskrit:agni",
+        "type": "sanskrit_concept",
+        "label": "agni",
+        "address": "backend/knowledge/sanskrit/agni.md"
+      },
+      {
+        "id": "sanskar:sanskrit:brahman",
+        "type": "sanskrit_concept",
+        "label": "brahman",
+        "address": "backend/knowledge/sanskrit/brahman.md"
+      },
+      {
+        "id": "sanskar:sanskrit:prana",
+        "type": "sanskrit_concept",
+        "label": "prana",
+        "address": "backend/knowledge/sanskrit/prana.md"
+      },
+      {
+        "id": "deity:visnu",
+        "type": "deity",
+        "label": "Viṣṇu",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "deity:siva",
+        "type": "deity",
+        "label": "Śiva",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "deity:indra",
+        "type": "deity",
+        "label": "Indra",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "loka:all_lokas_exist_within_akasa",
+        "type": "loka",
+        "label": "All lokas exist within ākāśa",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "loka:brahmaloka",
+        "type": "loka",
+        "label": "Brahmaloka",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "kosha_ref:all_five_koshas_exist_within_akasa",
+        "type": "kosha",
+        "label": "All five koshas exist within ākāśa",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "kosha_ref:anandamaya_kosha",
+        "type": "kosha",
+        "label": "Ānandamaya Kosha",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "chakra_ref:visuddha",
+        "type": "chakra",
+        "label": "Viśuddha",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "chakra_ref:sahasrara",
+        "type": "chakra",
+        "label": "Sahasrāra",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "yantra:akasa_yantra",
+        "type": "yantra",
+        "label": "Ākāśa Yantra",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "vidya:akasa_vidya",
+        "type": "vidya",
+        "label": "Ākāśa Vidyā",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "id": "vidya:cidakasa_vidya",
+        "type": "vidya",
+        "label": "Cidākāśa Vidyā",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      }
+    ],
+    "edges": [
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "sanskar:sanskrit:agni",
+        "type": "canonical_cross_reference",
+        "evidence_type": "DERIVED",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "sanskar:sanskrit:brahman",
+        "type": "canonical_cross_reference",
+        "evidence_type": "DERIVED",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "sanskar:sanskrit:prana",
+        "type": "canonical_cross_reference",
+        "evidence_type": "DERIVED",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "deity:visnu",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "deity:siva",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "deity:indra",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "loka:all_lokas_exist_within_akasa",
+        "type": "related_loka",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "loka:brahmaloka",
+        "type": "related_loka",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "kosha_ref:all_five_koshas_exist_within_akasa",
+        "type": "related_kosha",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "kosha_ref:anandamaya_kosha",
+        "type": "related_kosha",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "chakra_ref:visuddha",
+        "type": "related_chakra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "chakra_ref:sahasrara",
+        "type": "related_chakra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "yantra:akasa_yantra",
+        "type": "related_yantra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "vidya:akasa_vidya",
+        "type": "related_vidya",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      },
+      {
+        "from": "sanskar:sanskrit:akasha",
+        "to": "vidya:cidakasa_vidya",
+        "type": "related_vidya",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/akasha.md"
+      }
+    ],
+    "metadata": {
+      "adapter": "uniguru_civilizational_enrichment_v3",
+      "consistency_valid": true,
+      "orphaned_nodes": [],
+      "source_snapshot_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+      "node_count": 16,
+      "edge_count": 15
+    }
+  },
+  "functional_meaning": {
+    "summary": "Ākāśa is the subtlest of the five elements — the space in which all other elements and all phenomena exist. It is the medium of sound (śabda) — sound travels through ākāśa. In Vedānta, ākāśa is the first element to emerge from Brahman in the process of creation. The Chāndogya Upaniṣad teaches that Brahman is ākāśa — the infinite space of consciousness.",
+    "classification": "SOURCE_SCOPED_CANONICAL_TEXT"
+  },
+  "provenance": {
+    "registry_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "schema_version": "uniguru_civilizational_enrichment_v3",
+    "source_documents": [
+      {
+        "source_id": "023a018d25c57b02",
+        "evidence_type": "UPANISHAD",
+        "provenance": {
+          "source_text": "Taittirīya Upaniṣad 2.1.1 (ākāśa as the first element)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "d14c2859a41945ab",
+        "evidence_type": "UPANISHAD",
+        "provenance": {
+          "source_text": "Chāndogya Upaniṣad 8.14.1 (Brahman as ākāśa)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "65dde0549be4eca9",
+        "evidence_type": "PRIMARY_CANON",
+        "provenance": {
+          "source_text": "Vaiśeṣika Sūtras 2.1.27 (ākāśa as a substance)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "a68d7c929cb8a44a",
+        "evidence_type": "BHAGAVAD_GITA",
+        "provenance": {
+          "source_text": "Bhagavad Gītā 9.6 (all beings exist in ākāśa like the wind in space)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/akasha.md",
+        "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b",
+        "retrieval_system": "sanskrit_lexical_records"
+      }
+    ],
+    "retrieved_records": [],
+    "lineage": {
+      "concept_id": "sanskar:sanskrit:akasha",
+      "source_path": "knowledge/sanskrit/akasha.md",
+      "content_hash": "2de81d47f543f48995f889e399250b0093e78e7e22a6e04a69f9bbc82dcda20b"
+    },
+    "replay_safe": true
+  },
+  "governed_response": {
+    "evidence_classification": {
+      "classification": "SOURCE_SCOPED",
+      "evidence_types": [
+        "BHAGAVAD_GITA",
+        "PRIMARY_CANON",
+        "UPANISHAD"
+      ],
+      "notes": "Claims are either lexical source fields or verbatim retrieved UniGuru records; no generative canonical summary is used."
+    },
+    "research_classification": "civilizational_knowledge",
+    "governance_state": "read_only_observation"
+  },
+  "result_hash": "e48bf938dcd2f8e6783a55032637ee76500d085341fe90456bd602844fcd7b02"
+}

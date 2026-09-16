@@ -1,0 +1,25 @@
+{
+  "forward_verification": {
+    "failure_count": 0,
+    "failures": [],
+    "hash_chain_ok": true,
+    "last_event_hash": "f0fc345b31bf94487ded348d63e493b2664d28d4c68e68c1c4eac09d7b48818b"
+  },
+  "lineage_disciplines": {
+    "contradiction_escalation": "persistent_unresolved_audit",
+    "observability": "non_authoritative",
+    "ontology_lineage": "mutation_sensitive",
+    "semantic_governance": "hash_chained",
+    "trust_propagation": "bounded_by_legitimacy_ceiling"
+  },
+  "lineage_proof_hash": "2fdfa2522b7fd068aa1f66ea454bf225af01686336ae560598ff433a13e172c0",
+  "registry_hash": "e90ce8bb269ad6c9e305281af8f9da887454ba4e32c2a608eaaa90855f11a957",
+  "rollback_authenticity": {
+    "rollback_event_count": 4,
+    "rollback_hash_chain_ok": true,
+    "rollback_last_event_hash": "7da31931575a8d4da781a5a9d2ce43a6ef644c486391d206e1aa7c1ad62804cb",
+    "target_event_hash": "7da31931575a8d4da781a5a9d2ce43a6ef644c486391d206e1aa7c1ad62804cb"
+  },
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "schema": "UNIGURU_RUNTIME_LINEAGE_PROOF_V1"
+}

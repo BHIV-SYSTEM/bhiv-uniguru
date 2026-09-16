@@ -1,0 +1,97 @@
+{
+  "rows": [
+    {
+      "authority_gravity": {
+        "authority_gravity_detected": true,
+        "diagnostic_inputs": {
+          "confidence_pressure_score": 0.35,
+          "continuity_pressure_score": 0.525,
+          "contradiction_pressure": 0.64,
+          "ontology_violation_count": 2,
+          "reinforcement_pressure_score": 1.0
+        },
+        "governance_response": "ESCALATE_OBSERVABILITY",
+        "score": 0.6393
+      },
+      "authority_pressure_score": 0.622,
+      "canonical_authority_granted": false,
+      "claim_key": "civilizational_memory",
+      "confidence_pressure": {
+        "event_count": 1,
+        "high_confidence_count": 1,
+        "inflation_detected": false,
+        "max_delta": 0.0,
+        "score": 0.35
+      },
+      "continuity_pressure": {
+        "bounded_continuity_required": true,
+        "event_count": 1,
+        "score": 0.525,
+        "trace_count": 1,
+        "unresolved_event_count": 1
+      },
+      "contradiction_pressure": 0.64,
+      "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+      "ontology_ceiling": 0.46,
+      "pressure_hash": "9e95d556db6a851d9e54aab7c5e102acbfabdddacc98064170a89a1baa9ad07c",
+      "reinforcement_pressure": {
+        "authority_accumulation_detected": true,
+        "claim_reinforcement_counts": {
+          "civilizational_memory": 7
+        },
+        "max_reinforcement_count": 7,
+        "score": 1.0
+      },
+      "risk_band": "high",
+      "trust_ceiling": 0.0,
+      "uncertainty": 0.47
+    },
+    {
+      "authority_gravity": {
+        "authority_gravity_detected": true,
+        "diagnostic_inputs": {
+          "confidence_pressure_score": 0.959,
+          "continuity_pressure_score": 0.65,
+          "contradiction_pressure": 0.72,
+          "ontology_violation_count": 1,
+          "reinforcement_pressure_score": 1.0
+        },
+        "governance_response": "ESCALATE_OBSERVABILITY",
+        "score": 0.8127
+      },
+      "authority_pressure_score": 0.8623,
+      "canonical_authority_granted": false,
+      "claim_key": "governed_claim",
+      "confidence_pressure": {
+        "event_count": 2,
+        "high_confidence_count": 1,
+        "inflation_detected": true,
+        "max_delta": 0.49,
+        "score": 0.959
+      },
+      "continuity_pressure": {
+        "bounded_continuity_required": true,
+        "event_count": 2,
+        "score": 0.65,
+        "trace_count": 2,
+        "unresolved_event_count": 2
+      },
+      "contradiction_pressure": 0.72,
+      "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+      "ontology_ceiling": 0.38,
+      "pressure_hash": "0310828a2e47f29eb53d307d3d3d554182871ef8a5bafcc92379f4c2f67fdefb",
+      "reinforcement_pressure": {
+        "authority_accumulation_detected": true,
+        "claim_reinforcement_counts": {
+          "governed_claim": 6
+        },
+        "max_reinforcement_count": 6,
+        "score": 1.0
+      },
+      "risk_band": "critical",
+      "trust_ceiling": 0.0,
+      "uncertainty": 0.51
+    }
+  ],
+  "schema": "UNIGURU_AUTHORITY_PRESSURE_LOGS_V1"
+}

@@ -1,0 +1,3106 @@
+{
+  "answer": "The texts that describe stories of gods and creation are the Valmiki-Ramayana and the Brahmanda Purana Part 4. The Valmiki-Ramayana mentions various gods and their interactions, while the Brahmanda Purana Part 4 discusses the creation of the cosmic egg and the activities of various gods and beings.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_8cd846563a7b",
+      "signal_45cec39e37e9"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 2,
+      "accepted_derivations": [
+        {
+          "content_overlap": 0.2,
+          "derived_confidence": 0.4263,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.481,
+              "retrieval_strength": 0.2785,
+              "semantic_agreement": 0.1429,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4263,
+            "why": [
+              "epistemic_score=0.4263",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1996,
+          "retrieval_confidence": 0.2785,
+          "semantic_score": 0.3,
+          "tag_match_score": 0.0
+        },
+        {
+          "content_overlap": 0.2,
+          "derived_confidence": 0.4219,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5899,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 0.8699,
+              "ontology_convergence": 0.481,
+              "retrieval_strength": 0.2671,
+              "semantic_agreement": 0.1429,
+              "source_authority": 0.4099
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4219,
+            "why": [
+              "epistemic_score=0.4219",
+              "ceiling_applied=0.5899",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1968,
+          "retrieval_confidence": 0.2671,
+          "semantic_score": 0.3,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+        "claim_group_count": 2,
+        "consensus_score": 0.8333,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+        "multi_source_reinforcement": 0.3333,
+        "source_count": 2
+      },
+      "overall": 0.4263,
+      "rejected_count": 10
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "7aacd7c100cdbf31a93f2ac4d18ed93bc61b1a6f21ed64de749cc5af274df13d",
+    "memory_event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "bdca8e8ee4b57a903d7b87ab9b6b310e8008dae3031f8806e2b17cbbabdf081d",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Brahmanda Purana",
+        "Manusmriti",
+        "Ramayana",
+        "Smriti",
+        "Yajnavalkya Smriti"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_2b0b3b3935335e22",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-06-29T08:23:09.936626Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [
+      "signal_6c02e930de3f",
+      "signal_6f913e536412",
+      "signal_ca9ee5c793fc",
+      "signal_b2dc6d42dcef",
+      "signal_60b38e626344",
+      "signal_8b149d2efef4",
+      "signal_9e648122f652",
+      "signal_dec825b0eed2",
+      "signal_6baaefddac51",
+      "signal_16517055e77e"
+    ],
+    "retrieval_truth_hash": "4e1351afba62fe131ce538ac24bc99a48ad062f3ea5e1b11b6b3bd2eee91f27e",
+    "semantic_path": [
+      {
+        "domain": "itihasa",
+        "embedding_trace": {
+          "candidate_feature_count": 36,
+          "dimensions": 256,
+          "provider": "LocalHashEmbeddingProvider",
+          "query_feature_count": 7,
+          "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+          "similarity_score": 0.063,
+          "vector_source": "local_hash_expanded_canonical_terms"
+        },
+        "knowledge_id": "KOSHA_19f643951084",
+        "signal_id": "signal_8cd846563a7b",
+        "source_lineage": {
+          "original_source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        }
+      },
+      {
+        "domain": "smriti",
+        "embedding_trace": {
+          "candidate_feature_count": 47,
+          "dimensions": 256,
+          "provider": "LocalHashEmbeddingProvider",
+          "query_feature_count": 7,
+          "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+          "similarity_score": 0.0,
+          "vector_source": "local_hash_expanded_canonical_terms"
+        },
+        "knowledge_id": "KOSHA_c99f33b95d6f",
+        "signal_id": "signal_45cec39e37e9",
+        "source_lineage": {
+          "original_source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-06-29T08:23:09.260404Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_2b0b3b3935335e22",
+      "contract_emission": "trace_2b0b3b3935335e22",
+      "downstream_execution": "trace_2b0b3b3935335e22",
+      "immutable": true,
+      "retrieval": "trace_2b0b3b3935335e22",
+      "synthesis": "trace_2b0b3b3935335e22",
+      "validation": "trace_2b0b3b3935335e22"
+    },
+    "trace_id": "trace_2b0b3b3935335e22",
+    "verification_status": "VERIFIED"
+  },
+  "confidence": 0.4263,
+  "confidence_breakdown": {
+    "accepted_count": 2,
+    "accepted_derivations": [
+      {
+        "content_overlap": 0.2,
+        "derived_confidence": 0.4263,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.6,
+          "dimensions": {
+            "contextual_consistency": 0.5,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.3333,
+            "ocr_integrity": 0.88,
+            "ontology_convergence": 0.481,
+            "retrieval_strength": 0.2785,
+            "semantic_agreement": 0.1429,
+            "source_authority": 0.42
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.4263,
+          "why": [
+            "epistemic_score=0.4263",
+            "ceiling_applied=0.6000",
+            "source_type=ocr_derivative"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.1996,
+        "retrieval_confidence": 0.2785,
+        "semantic_score": 0.3,
+        "tag_match_score": 0.0
+      },
+      {
+        "content_overlap": 0.2,
+        "derived_confidence": 0.4219,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.5899,
+          "dimensions": {
+            "contextual_consistency": 0.5,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.3333,
+            "ocr_integrity": 0.8699,
+            "ontology_convergence": 0.481,
+            "retrieval_strength": 0.2671,
+            "semantic_agreement": 0.1429,
+            "source_authority": 0.4099
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.4219,
+          "why": [
+            "epistemic_score=0.4219",
+            "ceiling_applied=0.5899",
+            "source_type=ocr_derivative"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.1968,
+        "retrieval_confidence": 0.2671,
+        "semantic_score": 0.3,
+        "tag_match_score": 0.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+      "claim_group_count": 2,
+      "consensus_score": 0.8333,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+      "multi_source_reinforcement": 0.3333,
+      "source_count": 2
+    },
+    "overall": 0.4263,
+    "rejected_count": 10
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+    "claim_group_count": 2,
+    "consensus_score": 0.8333,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+    "multi_source_reinforcement": 0.3333,
+    "source_count": 2
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_2b0b3b3935335e22"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 25,
+    "total_entries": 37,
+    "valid_entries": 12
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-06-29T08:23:09.260404Z",
+  "interpretation_payload": {
+    "answer": "The texts that describe stories of gods and creation are the Valmiki-Ramayana and the Brahmanda Purana Part 4. The Valmiki-Ramayana mentions various gods and their interactions, while the Brahmanda Purana Part 4 discusses the creation of the cosmic egg and the activities of various gods and beings.",
+    "artifact_hash": "7aacd7c100cdbf31a93f2ac4d18ed93bc61b1a6f21ed64de749cc5af274df13d",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.4263,
+    "confidence_breakdown": {
+      "accepted_count": 2,
+      "accepted_derivations": [
+        {
+          "content_overlap": 0.2,
+          "derived_confidence": 0.4263,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.481,
+              "retrieval_strength": 0.2785,
+              "semantic_agreement": 0.1429,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4263,
+            "why": [
+              "epistemic_score=0.4263",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1996,
+          "retrieval_confidence": 0.2785,
+          "semantic_score": 0.3,
+          "tag_match_score": 0.0
+        },
+        {
+          "content_overlap": 0.2,
+          "derived_confidence": 0.4219,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5899,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 0.8699,
+              "ontology_convergence": 0.481,
+              "retrieval_strength": 0.2671,
+              "semantic_agreement": 0.1429,
+              "source_authority": 0.4099
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4219,
+            "why": [
+              "epistemic_score=0.4219",
+              "ceiling_applied=0.5899",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1968,
+          "retrieval_confidence": 0.2671,
+          "semantic_score": 0.3,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+        "claim_group_count": 2,
+        "consensus_score": 0.8333,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+        "multi_source_reinforcement": 0.3333,
+        "source_count": 2
+      },
+      "overall": 0.4263,
+      "rejected_count": 10
+    },
+    "contradiction_state": {
+      "classification": "interpretive_or_weak_evidence_zone",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_8cd846563a7b",
+        "signal_45cec39e37e9"
+      ],
+      "retrieval_trace_id": "trace_2b0b3b3935335e22",
+      "retrieval_truth_hash": "4e1351afba62fe131ce538ac24bc99a48ad062f3ea5e1b11b6b3bd2eee91f27e"
+    },
+    "trace_id": "trace_2b0b3b3935335e22",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_19f643951084",
+    "KOSHA_c99f33b95d6f"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 0.2,
+          "derived_confidence": 0.4263,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.481,
+              "retrieval_strength": 0.2785,
+              "semantic_agreement": 0.1429,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4263,
+            "why": [
+              "epistemic_score=0.4263",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1996,
+          "retrieval_confidence": 0.2785,
+          "semantic_score": 0.3,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 14.29,
+          "content": 20.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_8cd846563a7b",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Brahmanda Purana",
+              "concepts": [
+                "cosmology",
+                "purana"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "brahmanda purana"
+            },
+            {
+              "canonical": "Ramayana",
+              "concepts": [
+                "Rama",
+                "dharma",
+                "forest exile"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "valmiki ramayana"
+            }
+          ],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.4263,
+      "content": "The texts that describe stories of gods and creation are the Valmiki-Ramayana and the Brahmanda Purana Part 4. The Valmiki-Ramayana mentions various gods and their interactions, while the Brahmanda Purana Part 4 discusses the creation of the cosmic egg and the activities of various gods and beings.",
+      "domain": "itihasa",
+      "knowledge_id": "KOSHA_19f643951084",
+      "signal_id": "signal_8cd846563a7b",
+      "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+      "source_governance": {
+        "authority_weight": 0.42,
+        "confidence_ceiling": 0.6,
+        "lineage": {
+          "original_source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.12,
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "source_type": "ocr_derivative",
+        "suppression_reason": null
+      },
+      "tags": [
+        "creation",
+        "describe",
+        "gods"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {
+          "candidate_feature_count": 36,
+          "dimensions": 256,
+          "provider": "LocalHashEmbeddingProvider",
+          "query_feature_count": 7,
+          "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+          "similarity_score": 0.063,
+          "vector_source": "local_hash_expanded_canonical_terms"
+        },
+        "knowledge_id": "KOSHA_19f643951084",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_2b0b3b3935335e22"
+      }
+    },
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 0.2,
+          "derived_confidence": 0.4219,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5899,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 0.8699,
+              "ontology_convergence": 0.481,
+              "retrieval_strength": 0.2671,
+              "semantic_agreement": 0.1429,
+              "source_authority": 0.4099
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4219,
+            "why": [
+              "epistemic_score=0.4219",
+              "ceiling_applied=0.5899",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1968,
+          "retrieval_confidence": 0.2671,
+          "semantic_score": 0.3,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 14.29,
+          "content": 20.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_45cec39e37e9",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Manusmriti",
+              "concepts": [
+                "law",
+                "social duty"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "text",
+              "matched_alias": "manusmriti"
+            },
+            {
+              "canonical": "Smriti",
+              "concepts": [
+                "law",
+                "conduct"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "text_group",
+              "matched_alias": "smriti"
+            },
+            {
+              "canonical": "Yajnavalkya Smriti",
+              "concepts": [
+                "law",
+                "governance"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "text",
+              "matched_alias": "yajnavalkya"
+            }
+          ],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.4219,
+      "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+      "domain": "smriti",
+      "knowledge_id": "KOSHA_c99f33b95d6f",
+      "signal_id": "signal_45cec39e37e9",
+      "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+      "source_governance": {
+        "authority_weight": 0.4099,
+        "confidence_ceiling": 0.5899,
+        "lineage": {
+          "original_source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.1301,
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "source_type": "ocr_derivative",
+        "suppression_reason": null
+      },
+      "tags": [
+        "smriti"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {
+          "candidate_feature_count": 47,
+          "dimensions": 256,
+          "provider": "LocalHashEmbeddingProvider",
+          "query_feature_count": 7,
+          "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+          "similarity_score": 0.0,
+          "vector_source": "local_hash_expanded_canonical_terms"
+        },
+        "knowledge_id": "KOSHA_c99f33b95d6f",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_2b0b3b3935335e22"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_2b0b3b3935335e22"
+  },
+  "query": "What guidance do ancient texts provide about kingship?",
+  "reasoning": "Accepted signal because tags [], content overlap 0.20, entity overlap 0.00, domain consistency 1.00, and derived confidence 0.426 met deterministic thresholds.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.30437899999999996,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_6c02e930de3f",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.2941,
+          "confidence_ceiling": 0.5141,
+          "lineage": {
+            "original_source": "The Complete Mahabharata_English_ocred.pdf",
+            "transformation_history": [
+              "retrieved_context",
+              "inferred_synthesis",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1259,
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_type": "inferred_synthesis",
+          "suppression_reason": "weak_source_authority:inferred_synthesis"
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "weak_source_authority:inferred_synthesis",
+      "signal_id": "signal_6c02e930de3f",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahma",
+            "concepts": [
+              "creation",
+              "cosmology"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "brahma"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          },
+          {
+            "canonical": "Vedas",
+            "concepts": [
+              "samhita",
+              "ritual",
+              "knowledge"
+            ],
+            "domain": "vedas",
+            "entity_type": "text_group",
+            "matched_alias": "vedas"
+          },
+          {
+            "canonical": "Yoga",
+            "concepts": [
+              "discipline",
+              "meditation"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "yoga"
+          }
+        ],
+        "concept_overlap": 0.1429,
+        "confidence": 0.276456,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.3928,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.481,
+              "retrieval_strength": 0.2765,
+              "semantic_agreement": 0.1429,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.3928,
+            "why": [
+              "epistemic_score=0.3928",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1591,
+          "retrieval_confidence": 0.2765,
+          "semantic_score": 0.3,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.3,
+        "signal_id": "signal_6f913e536412",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_6f913e536412",
+      "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Taittiriya Upanishad",
+            "concepts": [
+              "Brahman",
+              "kosha"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text",
+            "matched_alias": "taittiriya upanishad"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          }
+        ],
+        "concept_overlap": 0.0,
+        "confidence": 0.2118,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.2789,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.4,
+              "retrieval_strength": 0.2118,
+              "semantic_agreement": 0.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.2789,
+            "why": [
+              "epistemic_score=0.2789",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1129,
+          "retrieval_confidence": 0.2118,
+          "semantic_score": 0.2,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.2,
+        "signal_id": "signal_ca9ee5c793fc",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_ca9ee5c793fc",
+      "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Devi",
+            "concepts": [
+              "power",
+              "protection"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "shakti"
+          }
+        ],
+        "concept_overlap": 0.0,
+        "confidence": 0.2118,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.2789,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.4,
+              "retrieval_strength": 0.2118,
+              "semantic_agreement": 0.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.2789,
+            "why": [
+              "epistemic_score=0.2789",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1129,
+          "retrieval_confidence": 0.2118,
+          "semantic_score": 0.2,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.2,
+        "signal_id": "signal_b2dc6d42dcef",
+        "source": "Shakti and Shakta_ocr.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Shakti and Shakta_ocr.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Shakti and Shakta_ocr.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_b2dc6d42dcef",
+      "source": "Shakti and Shakta_ocr.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.2118,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_60b38e626344",
+        "source": "The Narada-Purana, Part 1_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "low_contextual_overlap",
+      "signal_id": "signal_60b38e626344",
+      "source": "The Narada-Purana, Part 1_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Bhagavata Purana",
+            "concepts": [
+              "Krishna",
+              "devotion",
+              "purana"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "srimad bhagavata"
+          },
+          {
+            "canonical": "Narada Purana",
+            "concepts": [
+              "purana",
+              "devotion",
+              "pilgrimage"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "narada purana"
+          },
+          {
+            "canonical": "Narayana",
+            "concepts": [
+              "preservation",
+              "cosmic person"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "vishnu"
+          },
+          {
+            "canonical": "Padma Purana",
+            "concepts": [
+              "purana",
+              "Vishnu",
+              "creation"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "padma purana"
+          }
+        ],
+        "concept_overlap": 0.0,
+        "confidence": 0.211156,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.2779,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5972,
+            "dimensions": {
+              "contextual_consistency": 0.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8772,
+              "ontology_convergence": 0.4,
+              "retrieval_strength": 0.2112,
+              "semantic_agreement": 0.0,
+              "source_authority": 0.4172
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.2779,
+            "why": [
+              "epistemic_score=0.2779",
+              "ceiling_applied=0.5972",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1128,
+          "retrieval_confidence": 0.2112,
+          "semantic_score": 0.2,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.2,
+        "signal_id": "signal_8b149d2efef4",
+        "source": "The Narada-Purana, Part 4_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.4172,
+          "confidence_ceiling": 0.5972,
+          "lineage": {
+            "original_source": "The Narada-Purana, Part 4_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1228,
+          "source": "The Narada-Purana, Part 4_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_8b149d2efef4",
+      "source": "The Narada-Purana, Part 4_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          },
+          {
+            "canonical": "Vedas",
+            "concepts": [
+              "samhita",
+              "ritual",
+              "knowledge"
+            ],
+            "domain": "vedas",
+            "entity_type": "text_group",
+            "matched_alias": "vedas"
+          }
+        ],
+        "concept_overlap": 0.0,
+        "confidence": 0.210811,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.2774,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5957,
+            "dimensions": {
+              "contextual_consistency": 0.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8757,
+              "ontology_convergence": 0.4,
+              "retrieval_strength": 0.2108,
+              "semantic_agreement": 0.0,
+              "source_authority": 0.4157
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.2774,
+            "why": [
+              "epistemic_score=0.2774",
+              "ceiling_applied=0.5957",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1127,
+          "retrieval_confidence": 0.2108,
+          "semantic_score": 0.2,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.2,
+        "signal_id": "signal_9e648122f652",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+        "source_governance": {
+          "authority_weight": 0.4157,
+          "confidence_ceiling": 0.5957,
+          "lineage": {
+            "original_source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1243,
+          "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_9e648122f652",
+      "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Assembly",
+            "concepts": [
+              "deliberation",
+              "governance"
+            ],
+            "domain": "governance",
+            "entity_type": "concept",
+            "matched_alias": "council"
+          },
+          {
+            "canonical": "Dharma",
+            "concepts": [
+              "ethics",
+              "order",
+              "responsibility"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "dharma"
+          }
+        ],
+        "concept_overlap": 0.0,
+        "confidence": 0.210397,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.2768,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5939,
+            "dimensions": {
+              "contextual_consistency": 0.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8739,
+              "ontology_convergence": 0.4,
+              "retrieval_strength": 0.2104,
+              "semantic_agreement": 0.0,
+              "source_authority": 0.4139
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.2768,
+            "why": [
+              "epistemic_score=0.2768",
+              "ceiling_applied=0.5939",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1126,
+          "retrieval_confidence": 0.2104,
+          "semantic_score": 0.2,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.2,
+        "signal_id": "signal_dec825b0eed2",
+        "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.4139,
+          "confidence_ceiling": 0.5939,
+          "lineage": {
+            "original_source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1261,
+          "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_dec825b0eed2",
+      "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          },
+          {
+            "canonical": "Moksha",
+            "concepts": [
+              "freedom",
+              "realization"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "liberation"
+          }
+        ],
+        "concept_overlap": 0.0,
+        "confidence": 0.206809,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.2712,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5783,
+            "dimensions": {
+              "contextual_consistency": 0.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8583,
+              "ontology_convergence": 0.4,
+              "retrieval_strength": 0.2068,
+              "semantic_agreement": 0.0,
+              "source_authority": 0.3983
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.2712,
+            "why": [
+              "epistemic_score=0.2712",
+              "ceiling_applied=0.5783",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1117,
+          "retrieval_confidence": 0.2068,
+          "semantic_score": 0.2,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.2,
+        "signal_id": "signal_6baaefddac51",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.3983,
+          "confidence_ceiling": 0.5783,
+          "lineage": {
+            "original_source": "The Complete Mahabharata_English_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1417,
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_6baaefddac51",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Narada Purana",
+            "concepts": [
+              "purana",
+              "devotion",
+              "pilgrimage"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "narada purana"
+          }
+        ],
+        "concept_overlap": 0.0,
+        "confidence": 0.206326,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.2704,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5762,
+            "dimensions": {
+              "contextual_consistency": 0.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8562,
+              "ontology_convergence": 0.4,
+              "retrieval_strength": 0.2063,
+              "semantic_agreement": 0.0,
+              "source_authority": 0.3962
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.2704,
+            "why": [
+              "epistemic_score=0.2704",
+              "ceiling_applied=0.5762",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1116,
+          "retrieval_confidence": 0.2063,
+          "semantic_score": 0.2,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.2,
+        "signal_id": "signal_16517055e77e",
+        "source": "The Narada-Purana, Part 3_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.3962,
+          "confidence_ceiling": 0.5762,
+          "lineage": {
+            "original_source": "The Narada-Purana, Part 3_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1438,
+          "source": "The Narada-Purana, Part 3_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_16517055e77e",
+      "source": "The Narada-Purana, Part 3_ocred.pdf"
+    }
+  ],
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_8cd846563a7b",
+      "signal_45cec39e37e9"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 0.2,
+            "derived_confidence": 0.4263,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.3333,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.481,
+                "retrieval_strength": 0.2785,
+                "semantic_agreement": 0.1429,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.4263,
+              "why": [
+                "epistemic_score=0.4263",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1996,
+            "retrieval_confidence": 0.2785,
+            "semantic_score": 0.3,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 14.29,
+            "content": 20.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_8cd846563a7b",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Brahmanda Purana",
+                "concepts": [
+                  "cosmology",
+                  "purana"
+                ],
+                "domain": "puranas",
+                "entity_type": "text",
+                "matched_alias": "brahmanda purana"
+              },
+              {
+                "canonical": "Ramayana",
+                "concepts": [
+                  "Rama",
+                  "dharma",
+                  "forest exile"
+                ],
+                "domain": "itihasa",
+                "entity_type": "text",
+                "matched_alias": "valmiki ramayana"
+              }
+            ],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.4263,
+        "content": "The texts that describe stories of gods and creation are the Valmiki-Ramayana and the Brahmanda Purana Part 4. The Valmiki-Ramayana mentions various gods and their interactions, while the Brahmanda Purana Part 4 discusses the creation of the cosmic egg and the activities of various gods and beings.",
+        "domain": "itihasa",
+        "knowledge_id": "KOSHA_19f643951084",
+        "signal_id": "signal_8cd846563a7b",
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tags": [
+          "creation",
+          "describe",
+          "gods"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {
+            "candidate_feature_count": 36,
+            "dimensions": 256,
+            "provider": "LocalHashEmbeddingProvider",
+            "query_feature_count": 7,
+            "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+            "similarity_score": 0.063,
+            "vector_source": "local_hash_expanded_canonical_terms"
+          },
+          "knowledge_id": "KOSHA_19f643951084",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_2b0b3b3935335e22"
+        }
+      },
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 0.2,
+            "derived_confidence": 0.4219,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5899,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.3333,
+                "ocr_integrity": 0.8699,
+                "ontology_convergence": 0.481,
+                "retrieval_strength": 0.2671,
+                "semantic_agreement": 0.1429,
+                "source_authority": 0.4099
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.4219,
+              "why": [
+                "epistemic_score=0.4219",
+                "ceiling_applied=0.5899",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1968,
+            "retrieval_confidence": 0.2671,
+            "semantic_score": 0.3,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 14.29,
+            "content": 20.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_45cec39e37e9",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Manusmriti",
+                "concepts": [
+                  "law",
+                  "social duty"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "text",
+                "matched_alias": "manusmriti"
+              },
+              {
+                "canonical": "Smriti",
+                "concepts": [
+                  "law",
+                  "conduct"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "text_group",
+                "matched_alias": "smriti"
+              },
+              {
+                "canonical": "Yajnavalkya Smriti",
+                "concepts": [
+                  "law",
+                  "governance"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "text",
+                "matched_alias": "yajnavalkya"
+              }
+            ],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.4219,
+        "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+        "domain": "smriti",
+        "knowledge_id": "KOSHA_c99f33b95d6f",
+        "signal_id": "signal_45cec39e37e9",
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.4099,
+          "confidence_ceiling": 0.5899,
+          "lineage": {
+            "original_source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1301,
+          "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tags": [
+          "smriti"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {
+            "candidate_feature_count": 47,
+            "dimensions": 256,
+            "provider": "LocalHashEmbeddingProvider",
+            "query_feature_count": 7,
+            "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+            "similarity_score": 0.0,
+            "vector_source": "local_hash_expanded_canonical_terms"
+          },
+          "knowledge_id": "KOSHA_c99f33b95d6f",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_2b0b3b3935335e22"
+        }
+      }
+    ],
+    "artifact_hash": "4e1351afba62fe131ce538ac24bc99a48ad062f3ea5e1b11b6b3bd2eee91f27e",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-06-29T08:23:09.260404Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What guidance do ancient texts provide about kingship?",
+    "raw_signal_count": 12,
+    "rejected_signal_ids": [
+      "signal_6c02e930de3f",
+      "signal_6f913e536412",
+      "signal_ca9ee5c793fc",
+      "signal_b2dc6d42dcef",
+      "signal_60b38e626344",
+      "signal_8b149d2efef4",
+      "signal_9e648122f652",
+      "signal_dec825b0eed2",
+      "signal_6baaefddac51",
+      "signal_16517055e77e"
+    ],
+    "rejected_signals": [
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.30437899999999996,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_6c02e930de3f",
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.2941,
+            "confidence_ceiling": 0.5141,
+            "lineage": {
+              "original_source": "The Complete Mahabharata_English_ocred.pdf",
+              "transformation_history": [
+                "retrieved_context",
+                "inferred_synthesis",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1259,
+            "source": "The Complete Mahabharata_English_ocred.pdf",
+            "source_type": "inferred_synthesis",
+            "suppression_reason": "weak_source_authority:inferred_synthesis"
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "weak_source_authority:inferred_synthesis",
+        "signal_id": "signal_6c02e930de3f",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "self"
+            },
+            {
+              "canonical": "Brahma",
+              "concepts": [
+                "creation",
+                "cosmology"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "brahma"
+            },
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            },
+            {
+              "canonical": "Vedas",
+              "concepts": [
+                "samhita",
+                "ritual",
+                "knowledge"
+              ],
+              "domain": "vedas",
+              "entity_type": "text_group",
+              "matched_alias": "vedas"
+            },
+            {
+              "canonical": "Yoga",
+              "concepts": [
+                "discipline",
+                "meditation"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "yoga"
+            }
+          ],
+          "concept_overlap": 0.1429,
+          "confidence": 0.276456,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.3928,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.481,
+                "retrieval_strength": 0.2765,
+                "semantic_agreement": 0.1429,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.3928,
+              "why": [
+                "epistemic_score=0.3928",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1591,
+            "retrieval_confidence": 0.2765,
+            "semantic_score": 0.3,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.5,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.3,
+          "signal_id": "signal_6f913e536412",
+          "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "source_governance": {
+            "authority_weight": 0.42,
+            "confidence_ceiling": 0.6,
+            "lineage": {
+              "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.12,
+            "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_6f913e536412",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "self"
+            },
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Taittiriya Upanishad",
+              "concepts": [
+                "Brahman",
+                "kosha"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text",
+              "matched_alias": "taittiriya upanishad"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            }
+          ],
+          "concept_overlap": 0.0,
+          "confidence": 0.2118,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.2789,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 0.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.4,
+                "retrieval_strength": 0.2118,
+                "semantic_agreement": 0.0,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.2789,
+              "why": [
+                "epistemic_score=0.2789",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1129,
+            "retrieval_confidence": 0.2118,
+            "semantic_score": 0.2,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.2,
+          "signal_id": "signal_ca9ee5c793fc",
+          "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "source_governance": {
+            "authority_weight": 0.42,
+            "confidence_ceiling": 0.6,
+            "lineage": {
+              "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.12,
+            "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_ca9ee5c793fc",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "concept_overlap": 0.0,
+          "confidence": 0.2118,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.2789,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 0.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.4,
+                "retrieval_strength": 0.2118,
+                "semantic_agreement": 0.0,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.2789,
+              "why": [
+                "epistemic_score=0.2789",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1129,
+            "retrieval_confidence": 0.2118,
+            "semantic_score": 0.2,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.2,
+          "signal_id": "signal_b2dc6d42dcef",
+          "source": "Shakti and Shakta_ocr.pdf",
+          "source_governance": {
+            "authority_weight": 0.42,
+            "confidence_ceiling": 0.6,
+            "lineage": {
+              "original_source": "Shakti and Shakta_ocr.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.12,
+            "source": "Shakti and Shakta_ocr.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_b2dc6d42dcef",
+        "source": "Shakti and Shakta_ocr.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.2118,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_60b38e626344",
+          "source": "The Narada-Purana, Part 1_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "low_contextual_overlap",
+        "signal_id": "signal_60b38e626344",
+        "source": "The Narada-Purana, Part 1_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Bhagavata Purana",
+              "concepts": [
+                "Krishna",
+                "devotion",
+                "purana"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "srimad bhagavata"
+            },
+            {
+              "canonical": "Narada Purana",
+              "concepts": [
+                "purana",
+                "devotion",
+                "pilgrimage"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "narada purana"
+            },
+            {
+              "canonical": "Narayana",
+              "concepts": [
+                "preservation",
+                "cosmic person"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "vishnu"
+            },
+            {
+              "canonical": "Padma Purana",
+              "concepts": [
+                "purana",
+                "Vishnu",
+                "creation"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "padma purana"
+            }
+          ],
+          "concept_overlap": 0.0,
+          "confidence": 0.211156,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.2779,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5972,
+              "dimensions": {
+                "contextual_consistency": 0.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8772,
+                "ontology_convergence": 0.4,
+                "retrieval_strength": 0.2112,
+                "semantic_agreement": 0.0,
+                "source_authority": 0.4172
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.2779,
+              "why": [
+                "epistemic_score=0.2779",
+                "ceiling_applied=0.5972",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1128,
+            "retrieval_confidence": 0.2112,
+            "semantic_score": 0.2,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.2,
+          "signal_id": "signal_8b149d2efef4",
+          "source": "The Narada-Purana, Part 4_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.4172,
+            "confidence_ceiling": 0.5972,
+            "lineage": {
+              "original_source": "The Narada-Purana, Part 4_ocred.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1228,
+            "source": "The Narada-Purana, Part 4_ocred.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_8b149d2efef4",
+        "source": "The Narada-Purana, Part 4_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "self"
+            },
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            },
+            {
+              "canonical": "Vedas",
+              "concepts": [
+                "samhita",
+                "ritual",
+                "knowledge"
+              ],
+              "domain": "vedas",
+              "entity_type": "text_group",
+              "matched_alias": "vedas"
+            }
+          ],
+          "concept_overlap": 0.0,
+          "confidence": 0.210811,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.2774,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5957,
+              "dimensions": {
+                "contextual_consistency": 0.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8757,
+                "ontology_convergence": 0.4,
+                "retrieval_strength": 0.2108,
+                "semantic_agreement": 0.0,
+                "source_authority": 0.4157
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.2774,
+              "why": [
+                "epistemic_score=0.2774",
+                "ceiling_applied=0.5957",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1127,
+            "retrieval_confidence": 0.2108,
+            "semantic_score": 0.2,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.2,
+          "signal_id": "signal_9e648122f652",
+          "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+          "source_governance": {
+            "authority_weight": 0.4157,
+            "confidence_ceiling": 0.5957,
+            "lineage": {
+              "original_source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1243,
+            "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_9e648122f652",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Assembly",
+              "concepts": [
+                "deliberation",
+                "governance"
+              ],
+              "domain": "governance",
+              "entity_type": "concept",
+              "matched_alias": "council"
+            },
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "dharma"
+            }
+          ],
+          "concept_overlap": 0.0,
+          "confidence": 0.210397,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.2768,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5939,
+              "dimensions": {
+                "contextual_consistency": 0.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8739,
+                "ontology_convergence": 0.4,
+                "retrieval_strength": 0.2104,
+                "semantic_agreement": 0.0,
+                "source_authority": 0.4139
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.2768,
+              "why": [
+                "epistemic_score=0.2768",
+                "ceiling_applied=0.5939",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1126,
+            "retrieval_confidence": 0.2104,
+            "semantic_score": 0.2,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.2,
+          "signal_id": "signal_dec825b0eed2",
+          "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.4139,
+            "confidence_ceiling": 0.5939,
+            "lineage": {
+              "original_source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1261,
+            "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_dec825b0eed2",
+        "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            },
+            {
+              "canonical": "Moksha",
+              "concepts": [
+                "freedom",
+                "realization"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "liberation"
+            }
+          ],
+          "concept_overlap": 0.0,
+          "confidence": 0.206809,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.2712,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5783,
+              "dimensions": {
+                "contextual_consistency": 0.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8583,
+                "ontology_convergence": 0.4,
+                "retrieval_strength": 0.2068,
+                "semantic_agreement": 0.0,
+                "source_authority": 0.3983
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.2712,
+              "why": [
+                "epistemic_score=0.2712",
+                "ceiling_applied=0.5783",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1117,
+            "retrieval_confidence": 0.2068,
+            "semantic_score": 0.2,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.2,
+          "signal_id": "signal_6baaefddac51",
+          "source": "The Complete Mahabharata_English_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.3983,
+            "confidence_ceiling": 0.5783,
+            "lineage": {
+              "original_source": "The Complete Mahabharata_English_ocred.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1417,
+            "source": "The Complete Mahabharata_English_ocred.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_6baaefddac51",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Narada Purana",
+              "concepts": [
+                "purana",
+                "devotion",
+                "pilgrimage"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "narada purana"
+            }
+          ],
+          "concept_overlap": 0.0,
+          "confidence": 0.206326,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.2704,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5762,
+              "dimensions": {
+                "contextual_consistency": 0.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8562,
+                "ontology_convergence": 0.4,
+                "retrieval_strength": 0.2063,
+                "semantic_agreement": 0.0,
+                "source_authority": 0.3962
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.2704,
+              "why": [
+                "epistemic_score=0.2704",
+                "ceiling_applied=0.5762",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1116,
+            "retrieval_confidence": 0.2063,
+            "semantic_score": 0.2,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.2,
+          "signal_id": "signal_16517055e77e",
+          "source": "The Narada-Purana, Part 3_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.3962,
+            "confidence_ceiling": 0.5762,
+            "lineage": {
+              "original_source": "The Narada-Purana, Part 3_ocred.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.1438,
+            "source": "The Narada-Purana, Part 3_ocred.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_16517055e77e",
+        "source": "The Narada-Purana, Part 3_ocred.pdf"
+      }
+    ],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_19f643951084",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_8cd846563a7b",
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "source_lineage": {
+          "original_source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_2b0b3b3935335e22"
+      },
+      {
+        "knowledge_id": "KOSHA_c99f33b95d6f",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_45cec39e37e9",
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "source_lineage": {
+          "original_source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_2b0b3b3935335e22"
+      }
+    ],
+    "trace_id": "trace_2b0b3b3935335e22"
+  },
+  "semantic_memory": {
+    "canonical_authority_granted": false,
+    "constitutional_governance": {
+      "canonical_authority_granted": false,
+      "canonical_memory_keys": [
+        "Atman",
+        "Bhagavata Purana",
+        "Brahma",
+        "Brahman",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Taittiriya Upanishad",
+        "Upanishads",
+        "Vedas",
+        "Yoga"
+      ],
+      "checkpoint_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": false,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [
+          "Brahmanda Purana",
+          "Manusmriti",
+          "Ramayana",
+          "Smriti",
+          "Yajnavalkya Smriti"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "transient",
+        "trace_id": "trace_2b0b3b3935335e22",
+        "updated_at": "2026-06-29T08:23:09.415809Z"
+      },
+      "event_hash": "bdca8e8ee4b57a903d7b87ab9b6b310e8008dae3031f8806e2b17cbbabdf081d",
+      "event_log_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": false,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "REJECT_CANONICAL_MUTATION",
+        "failure_states": [
+          "PARTIAL_REJECTION_PRESENT"
+        ],
+        "memory_classification": "transient",
+        "reasons": [
+          "confidence_below_canonical_floor"
+        ],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "ddb7de696bf75309bb6ab649bc158cf75dd48a5f96f8d634f7c4dbc2d3dde583",
+      "observability_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "bdca8e8ee4b57a903d7b87ab9b6b310e8008dae3031f8806e2b17cbbabdf081d",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "685e1589b9526e6f0d0dfd1435a5f52d531803bdcf0baa49323e36e8aecfde64",
+      "transient_event_count": 253
+    },
+    "entity_continuity": {
+      "Brahmanda Purana": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-06-29T08:23:09.936626Z",
+        "reinforcement_score": 0.25,
+        "source_ids": [
+          "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf"
+        ],
+        "trace_ids": [
+          "trace_1597fe3d53af5243",
+          "trace_2b0b3b3935335e22"
+        ]
+      },
+      "Manusmriti": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-06-29T08:23:09.936626Z",
+        "reinforcement_score": 0.25,
+        "source_ids": [
+          "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+        ],
+        "trace_ids": [
+          "trace_1597fe3d53af5243",
+          "trace_2b0b3b3935335e22"
+        ]
+      },
+      "Ramayana": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-06-29T08:23:09.936626Z",
+        "reinforcement_score": 0.25,
+        "source_ids": [
+          "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf"
+        ],
+        "trace_ids": [
+          "trace_1597fe3d53af5243",
+          "trace_2b0b3b3935335e22"
+        ]
+      },
+      "Smriti": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-06-29T08:23:09.936626Z",
+        "reinforcement_score": 0.25,
+        "source_ids": [
+          "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+        ],
+        "trace_ids": [
+          "trace_1597fe3d53af5243",
+          "trace_2b0b3b3935335e22"
+        ]
+      },
+      "Yajnavalkya Smriti": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-06-29T08:23:09.936626Z",
+        "reinforcement_score": 0.25,
+        "source_ids": [
+          "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+        ],
+        "trace_ids": [
+          "trace_1597fe3d53af5243",
+          "trace_2b0b3b3935335e22"
+        ]
+      }
+    },
+    "event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "bdca8e8ee4b57a903d7b87ab9b6b310e8008dae3031f8806e2b17cbbabdf081d",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Brahmanda Purana",
+        "Manusmriti",
+        "Ramayana",
+        "Smriti",
+        "Yajnavalkya Smriti"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_2b0b3b3935335e22",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-06-29T08:23:09.936626Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [
+      {
+        "contradiction_pressure": 0.0,
+        "query": "What guidance do ancient texts provide about kingship?",
+        "rejected_signal_count": 10,
+        "state": "open",
+        "trace_id": "trace_2b0b3b3935335e22",
+        "updated_at": "2026-06-29T08:23:09.936626Z",
+        "user_id": "anonymous",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "user_continuity": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-06-29T08:23:09.936626Z",
+      "queries": 35,
+      "trace_ids": [
+        "trace_a548f97a9ec65ac4",
+        "trace_e415b3463bc45a00",
+        "trace_1af22154460d5417",
+        "trace_18f6f0191be55a9d",
+        "trace_1597fe3d53af5243",
+        "trace_9803f72a196c5017",
+        "trace_6b969ced55dd5d81",
+        "trace_e59ac7a1e75e5a7c",
+        "trace_5d5cfb8bee2257cb",
+        "trace_ace424cc11535e76",
+        "trace_46163daa0073574c",
+        "trace_0d56cb25145253e1",
+        "trace_7aa34f8c19495115",
+        "trace_8d3bfbc13eae5ff5",
+        "trace_0fecce4e25a75704",
+        "trace_b577fae98a1b5615",
+        "trace_56636a987e8e5eb3",
+        "trace_650652c3c0965174",
+        "trace_7585fb44e46d5c38",
+        "trace_5d2769b0bea85d9d",
+        "trace_c474e840ac885ff3",
+        "trace_1c9a24d1aba1584f",
+        "trace_2c4b9ca48aed5214",
+        "trace_08461936c992508f",
+        "trace_cf7c54c946775c3e",
+        "trace_25aa7e561f305b5e",
+        "trace_a012f83c53865b6c",
+        "trace_9a65887def7b5cc6",
+        "trace_f98524f132075ded",
+        "trace_3470e62aec4a5bdb",
+        "trace_4bf82da7247e54f9",
+        "trace_bcdc3f5748025709",
+        "trace_861a82823b5053dd",
+        "trace_d722ef2a111a53e4",
+        "trace_2b0b3b3935335e22"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "itihasa",
+      "embedding_trace": {
+        "candidate_feature_count": 36,
+        "dimensions": 256,
+        "provider": "LocalHashEmbeddingProvider",
+        "query_feature_count": 7,
+        "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+        "similarity_score": 0.063,
+        "vector_source": "local_hash_expanded_canonical_terms"
+      },
+      "knowledge_id": "KOSHA_19f643951084",
+      "signal_id": "signal_8cd846563a7b",
+      "source_lineage": {
+        "original_source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "transformation_history": [
+          "source_text",
+          "ocr_extraction",
+          "kosha_structuring"
+        ]
+      }
+    },
+    {
+      "domain": "smriti",
+      "embedding_trace": {
+        "candidate_feature_count": 47,
+        "dimensions": 256,
+        "provider": "LocalHashEmbeddingProvider",
+        "query_feature_count": 7,
+        "retrieval_reasoning": "Offline deterministic semantic similarity over canonical term expansion.",
+        "similarity_score": 0.0,
+        "vector_source": "local_hash_expanded_canonical_terms"
+      },
+      "knowledge_id": "KOSHA_c99f33b95d6f",
+      "signal_id": "signal_45cec39e37e9",
+      "source_lineage": {
+        "original_source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "transformation_history": [
+          "source_text",
+          "ocr_extraction",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 2,
+  "signals_rejected": 10,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_2b0b3b3935335e22",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "7aacd7c100cdbf31a93f2ac4d18ed93bc61b1a6f21ed64de749cc5af274df13d",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "4e1351afba62fe131ce538ac24bc99a48ad062f3ea5e1b11b6b3bd2eee91f27e",
+    "trace_id": "trace_2b0b3b3935335e22"
+  },
+  "verification_status": "VERIFIED"
+}

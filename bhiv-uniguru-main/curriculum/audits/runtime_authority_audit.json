@@ -1,0 +1,38 @@
+{
+  "audit_timestamp": "2026-06-20T18:07:40.002552+00:00",
+  "audit_status": "VERIFIED",
+  "textbook_authorities": [
+    {
+      "textbook_id": "BALBHARTI_MATH_G1_MM",
+      "subject": "Mathematics",
+      "grade": 1,
+      "authority_status": "VERIFIED_AUTHORITY",
+      "signature": "819cb44a83f0ca22dbdee4a21776f62d5cc98952aee3663d05127f33a13b7c17",
+      "source_hash": "e7f23a18a99478f24419ad24f6828a2a078fa46b3f9b80ce27d14896a202a0a2"
+    },
+    {
+      "textbook_id": "BALBHARTI_MATH_G2_MM",
+      "subject": "Mathematics",
+      "grade": 2,
+      "authority_status": "VERIFIED_AUTHORITY",
+      "signature": "8ecaa04e002b34a311e5833f16f09d2c5cce426ee7b983d4ea12188506b0981b",
+      "source_hash": "b376c6d2673d3283281290378ea2ea8271e82bb2c38abfefab89228cfb028723"
+    },
+    {
+      "textbook_id": "BALBHARTI_ENGLISH_G1_MM",
+      "subject": "English",
+      "grade": 1,
+      "authority_status": "VERIFIED_AUTHORITY",
+      "signature": "ab7c28f13eac630504c5131b60f4504448efa50790d4d776dd2eeb30f5493186",
+      "source_hash": "fd0192e21b1b88aa092ee028723fa871e82bb2c38abfefab89228cfb02812739"
+    },
+    {
+      "textbook_id": "BALBHARTI_SCIENCE_G3_MM",
+      "subject": "Science",
+      "grade": 3,
+      "authority_status": "VERIFIED_AUTHORITY",
+      "signature": "490f38ab210918bd4d0073181803f4aaacaff342712b854f3dea39cf6589c908",
+      "source_hash": "cc36c9d2673d3283281290378ea2ea8271e82bb2c38abfefab89228cfb028711"
+    }
+  ]
+}

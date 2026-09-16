@@ -1,0 +1,487 @@
+{
+  "answer": "I do not have verified knowledge to answer this question.",
+  "confidence": 0.0,
+  "confidence_breakdown": {
+    "accepted_count": 0,
+    "accepted_derivations": [],
+    "overall": 0.0,
+    "rejected_count": 10
+  },
+  "detected_domain": "governance",
+  "domain_resolution": {
+    "confidence": 1.0,
+    "domain": "governance",
+    "entities": [
+      {
+        "canonical": "Rajadharma",
+        "concepts": [
+          "governance",
+          "justice"
+        ],
+        "domain": "governance",
+        "entity_type": "concept",
+        "matched_alias": "rajadharma"
+      }
+    ],
+    "method": "canonical_entity_majority"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 25,
+    "total_entries": 37,
+    "valid_entries": 12
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-05-06T04:08:36.318756Z",
+  "knowledge_ids_used": [],
+  "matched_signals": [],
+  "query": "What guidance do ancient texts provide about kingship and Rajadharma?",
+  "reasoning": "No signals passed domain+tag+query validation.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "structured_signal_emission",
+    "deterministic_rejection"
+  ],
+  "rejected_signals": [
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Assembly",
+            "concepts": [
+              "deliberation",
+              "governance"
+            ],
+            "domain": "governance",
+            "entity_type": "concept",
+            "matched_alias": "council"
+          },
+          {
+            "canonical": "Dharma",
+            "concepts": [
+              "ethics",
+              "order",
+              "responsibility"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "dharma"
+          }
+        ],
+        "concept_overlap": 0.2,
+        "confidence": 0.2702,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.1636,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "retrieval_confidence": 0.2702,
+          "semantic_score": 0.32,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "governance",
+          "entities": [
+            {
+              "canonical": "Rajadharma",
+              "concepts": [
+                "governance",
+                "justice"
+              ],
+              "domain": "governance",
+              "entity_type": "concept",
+              "matched_alias": "rajadharma"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Rajadharma"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Rajadharma",
+            "concepts": [
+              "governance",
+              "justice"
+            ],
+            "domain": "governance",
+            "entity_type": "concept",
+            "matched_alias": "rajadharma"
+          }
+        ],
+        "semantic_score": 0.32,
+        "signal_id": "signal_f83cddef0988",
+        "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_f83cddef0988",
+      "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Manusmriti",
+            "concepts": [
+              "law",
+              "social duty"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "text",
+            "matched_alias": "manusmriti"
+          },
+          {
+            "canonical": "Smriti",
+            "concepts": [
+              "law",
+              "conduct"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "text_group",
+            "matched_alias": "smriti"
+          },
+          {
+            "canonical": "Yajnavalkya Smriti",
+            "concepts": [
+              "law",
+              "governance"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "text",
+            "matched_alias": "yajnavalkya"
+          }
+        ],
+        "concept_overlap": 0.2667,
+        "confidence": 0.1841,
+        "confidence_derivation": {
+          "content_overlap": 0.1667,
+          "derived_confidence": 0.1374,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "retrieval_confidence": 0.1841,
+          "semantic_score": 0.1933,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.1667,
+        "contextual_proximity": 1.0,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "governance",
+          "entities": [
+            {
+              "canonical": "Rajadharma",
+              "concepts": [
+                "governance",
+                "justice"
+              ],
+              "domain": "governance",
+              "entity_type": "concept",
+              "matched_alias": "rajadharma"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Rajadharma"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Rajadharma",
+            "concepts": [
+              "governance",
+              "justice"
+            ],
+            "domain": "governance",
+            "entity_type": "concept",
+            "matched_alias": "rajadharma"
+          }
+        ],
+        "semantic_score": 0.1933,
+        "signal_id": "signal_58cb7b7ad451",
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "entity_conflict",
+      "signal_id": "signal_58cb7b7ad451",
+      "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Arjuna",
+            "concepts": [
+              "Gita dialogue",
+              "warrior duty"
+            ],
+            "domain": "itihasa",
+            "entity_type": "person",
+            "matched_alias": "arjuna"
+          },
+          {
+            "canonical": "Krishna",
+            "concepts": [
+              "Gita teacher",
+              "Vishnu avatar"
+            ],
+            "domain": "itihasa",
+            "entity_type": "person",
+            "matched_alias": "krishna"
+          },
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          },
+          {
+            "canonical": "Yajna",
+            "concepts": [
+              "ritual",
+              "offering"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "yagna"
+          }
+        ],
+        "concept_overlap": 0.2667,
+        "confidence": 0.1787,
+        "confidence_derivation": {
+          "content_overlap": 0.3333,
+          "derived_confidence": 0.1693,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "retrieval_confidence": 0.1787,
+          "semantic_score": 0.1933,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.3333,
+        "contextual_proximity": 1.0,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "governance",
+          "entities": [
+            {
+              "canonical": "Rajadharma",
+              "concepts": [
+                "governance",
+                "justice"
+              ],
+              "domain": "governance",
+              "entity_type": "concept",
+              "matched_alias": "rajadharma"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Rajadharma"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Rajadharma",
+            "concepts": [
+              "governance",
+              "justice"
+            ],
+            "domain": "governance",
+            "entity_type": "concept",
+            "matched_alias": "rajadharma"
+          }
+        ],
+        "semantic_score": 0.1933,
+        "signal_id": "signal_6137270e3e6e",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "entity_conflict",
+      "signal_id": "signal_6137270e3e6e",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.1432,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_70020d40086f",
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.143",
+      "signal_id": "signal_70020d40086f",
+      "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.1308,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_5bba5a47a7a7",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.131",
+      "signal_id": "signal_5bba5a47a7a7",
+      "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0742,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_5a58fbc9edb2",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.074",
+      "signal_id": "signal_5a58fbc9edb2",
+      "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0661,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_ce8454ca17f9",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.066",
+      "signal_id": "signal_ce8454ca17f9",
+      "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0586,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_c5654ac9fe29",
+        "source": "Shakti and Shakta_ocr.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.059",
+      "signal_id": "signal_c5654ac9fe29",
+      "source": "Shakti and Shakta_ocr.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0586,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_dc1ea506fb2b",
+        "source": "The Narada-Purana, Part 4_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.059",
+      "signal_id": "signal_dc1ea506fb2b",
+      "source": "The Narada-Purana, Part 4_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.0122,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_724b9f22abdb",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.012",
+      "signal_id": "signal_724b9f22abdb",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    }
+  ],
+  "signals_found": 0,
+  "signals_rejected": 10,
+  "synthesis_mode": "REJECTED_NO_SYNTHESIS",
+  "trace_id": "trace_090a4525f541555a",
+  "verification_status": "NO_VERIFIED_KNOWLEDGE"
+}

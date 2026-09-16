@@ -1,0 +1,179 @@
+{
+  "collected_at": "2026-06-24T08:33:01.863739+00:00",
+  "groups": [
+    {
+      "group_label": "Book Types",
+      "group_name": "book_type",
+      "options": [
+        {
+          "label": "Text Books",
+          "site_option_id": "101"
+        },
+        {
+          "label": "Teachers Handbooks",
+          "site_option_id": "102"
+        },
+        {
+          "label": "Work Books",
+          "site_option_id": "103"
+        },
+        {
+          "label": "Other Books",
+          "site_option_id": "107"
+        },
+        {
+          "label": "Kishor Khand",
+          "site_option_id": "108"
+        }
+      ],
+      "site_group_code": 100
+    },
+    {
+      "group_label": "Standards",
+      "group_name": "standard",
+      "options": [
+        {
+          "label": "1 st",
+          "site_option_id": "201"
+        },
+        {
+          "label": "2 nd",
+          "site_option_id": "202"
+        },
+        {
+          "label": "3 rd",
+          "site_option_id": "203"
+        },
+        {
+          "label": "4 th",
+          "site_option_id": "204"
+        },
+        {
+          "label": "5 th",
+          "site_option_id": "205"
+        },
+        {
+          "label": "6 th",
+          "site_option_id": "206"
+        },
+        {
+          "label": "7 th",
+          "site_option_id": "207"
+        },
+        {
+          "label": "8 th",
+          "site_option_id": "208"
+        },
+        {
+          "label": "9 th",
+          "site_option_id": "209"
+        },
+        {
+          "label": "10 th",
+          "site_option_id": "210"
+        },
+        {
+          "label": "11 th",
+          "site_option_id": "211"
+        },
+        {
+          "label": "12 th",
+          "site_option_id": "212"
+        }
+      ],
+      "site_group_code": 200
+    },
+    {
+      "group_label": "Mediums",
+      "group_name": "medium",
+      "options": [
+        {
+          "label": "Marathi",
+          "site_option_id": "301"
+        },
+        {
+          "label": "Hindi",
+          "site_option_id": "302"
+        },
+        {
+          "label": "English",
+          "site_option_id": "303"
+        },
+        {
+          "label": "Urdu",
+          "site_option_id": "304"
+        },
+        {
+          "label": "Gujarati",
+          "site_option_id": "305"
+        },
+        {
+          "label": "Kannada",
+          "site_option_id": "306"
+        },
+        {
+          "label": "Sindhi",
+          "site_option_id": "307"
+        },
+        {
+          "label": "Telugu",
+          "site_option_id": "309"
+        },
+        {
+          "label": "Tamil",
+          "site_option_id": "310"
+        },
+        {
+          "label": "Bengali",
+          "site_option_id": "311"
+        }
+      ],
+      "site_group_code": 300
+    },
+    {
+      "group_label": "Subjects",
+      "group_name": "subject",
+      "options": [
+        {
+          "label": "Languages",
+          "site_option_id": "401"
+        },
+        {
+          "label": "Mathematics",
+          "site_option_id": "402"
+        },
+        {
+          "label": "Science",
+          "site_option_id": "403"
+        },
+        {
+          "label": "History",
+          "site_option_id": "407"
+        },
+        {
+          "label": "Geography",
+          "site_option_id": "408"
+        },
+        {
+          "label": "Civics",
+          "site_option_id": "409"
+        },
+        {
+          "label": "Environmental Studies",
+          "site_option_id": "410"
+        },
+        {
+          "label": "Others",
+          "site_option_id": "411"
+        },
+        {
+          "label": "Ekatmik Books",
+          "site_option_id": "412"
+        }
+      ],
+      "site_group_code": 400
+    }
+  ],
+  "schema": "UNIGURU_BALBHARTI_SITE_TAXONOMY_V1",
+  "source_site": "https://books.ebalbharati.in/"
+}

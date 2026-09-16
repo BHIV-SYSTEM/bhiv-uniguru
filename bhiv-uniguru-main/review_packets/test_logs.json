@@ -1,0 +1,1773 @@
+[
+    {
+        "endpoint": "/new_query",
+        "query": "Name any one Upanishad.",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_f9b0efe7d593",
+                    "type": "string",
+                    "content": "The Bhagavad Gita guides decision-making in morally complex situations by advising individuals to consider the concept of oneness and the Law of Karma [1]. It suggests that when we realize all of life is one, we stop hurting ourselves by hurting others, and what we do to others will one day be done to us. This principle, also known as \"Do unto others as you would have others do unto you,\" promotes treating others with love, compassion, and kindness [1]. Additionally, the Tripura Rahasya considers the Bhagavad Gita as a valuable resource for emancipation and recommends reading it every day with love and care [2].",
+                    "source": "vigyan-bhairava-tantra_ocr.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "vigyan-bhairava-tantra_ocr.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_abee700a25c4",
+                    "type": "string",
+                    "content": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without attachment to their outcomes [1]. It states that action is higher than inactivity and that one must always do their duty, as inaction will not even allow one to sustain their body. The Gita also advises individuals to act dispassionately and offer their actions as a sacrifice, which will help them attain freedom from the cycle of rebirth. Additionally, it highlights the interdependence of individuals and the divine, suggesting that by performing their duties and offering their actions as a sacrifice, they will receive the support and nourishment they need [1].",
+                    "source": "The Complete Mahabharata_English_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Complete Mahabharata_English_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The Taittiriya Upanishad [1], [2] is one of the Upanishads mentioned in the provided context.",
+            "verse_sanskrit": null,
+            "english_explanation": "The Taittiriya Upanishad [1], [2] is one of the Upanishads mentioned in the provided context.",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_122f307b4208",
+                "domain": "upanishads",
+                "content": "The Taittiriya Upanishad [1], [2] is one of the Upanishads mentioned in the provided context.",
+                "source": "vigyan-bhairava-tantra_ocr.pdf",
+                "confidence": 0.25,
+                "timestamp": "2026-04-30T11:35:23.104578+00:00",
+                "tags": [
+                    "any",
+                    "name",
+                    "one"
+                ],
+                "clean_content": "The Taittiriya Upanishad [1], [2] is one of the Upanishads mentioned in the provided context."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "Which text is related to Ayurveda?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_cb7d75921bac",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_558551ca8608",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_ed128650c1b4",
+                    "type": "string",
+                    "content": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+                    "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_de441e6d0f79",
+                    "type": "string",
+                    "content": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+                    "source": "The Narada-Purana, Part 4_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 4_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The texts related to Ayurveda mentioned in the provided context are:\n\n1. Charaka Samhita [1]\n2. Cikitsasthana [1]\n3. Nidanasthana [1]\n4. Kalpasthana [1]\n5. Ayurveda [2]\n\nThese texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, therapeutic management of diseases, and pharmaceutical preparations.",
+            "verse_sanskrit": null,
+            "english_explanation": "The texts related to Ayurveda mentioned in the provided context are:\n\n1. Charaka Samhita [1]\n2. Cikitsasthana [1]\n3. Nidanasthana [1]\n4. Kalpasthana [1]\n5. Ayurveda [2]\n\nThese texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, therapeutic management of diseases, and pharmaceutical preparations.",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_1faeb838cb67",
+                "domain": "vedas",
+                "content": "The texts related to Ayurveda mentioned in the provided context are:\n\n1. Charaka Samhita [1]\n2. Cikitsasthana [1]\n3. Nidanasthana [1]\n4. Kalpasthana [1]\n5. Ayurveda [2]\n\nThese texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, therapeutic management of diseases, and pharmaceutical preparations.",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.3333333333333333,
+                "timestamp": "2026-04-30T11:35:53.360636+00:00",
+                "tags": [
+                    "ayurveda",
+                    "related",
+                    "text"
+                ],
+                "clean_content": "The texts related to Ayurveda mentioned in the provided context are: 1. Charaka Samhita [1] 2. Cikitsasthana [1] 3. Nidanasthana [1] 4. Kalpasthana [1] 5. Ayurveda [2] These texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, therapeutic management of diseases, and pharmaceutical preparations."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "What type of text is the Kama Sutra?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_f83cddef0988",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_58cb7b7ad451",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_ed128650c1b4",
+                    "type": "string",
+                    "content": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+                    "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_de441e6d0f79",
+                    "type": "string",
+                    "content": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+                    "source": "The Narada-Purana, Part 4_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 4_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [1][2]. It is considered a masterly yet condensed version of the materials of the earlier tradition [1]. The text approaches the subject of love and sex as a part of humanity with objectivity, understanding, and balanced thinking [2].",
+            "verse_sanskrit": null,
+            "english_explanation": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [1][2]. It is considered a masterly yet condensed version of the materials of the earlier tradition [1]. The text approaches the subject of love and sex as a part of humanity with objectivity, understanding, and balanced thinking [2].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_5098e0f8222a",
+                "domain": "general",
+                "content": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [1][2]. It is considered a masterly yet condensed version of the materials of the earlier tradition [1]. The text approaches the subject of love and sex as a part of humanity with objectivity, understanding, and balanced thinking [2].",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.25,
+                "timestamp": "2026-04-30T11:36:05.776042+00:00",
+                "tags": [
+                    "kama",
+                    "sutra",
+                    "text"
+                ],
+                "clean_content": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [1][2]. It is considered a masterly yet condensed version of the materials of the earlier tradition [1]. The text approaches the subject of love and sex as a part of humanity with objectivity, understanding, and balanced thinking [2]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "Which texts describe stories of gods and creation?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_da1bef76b148",
+                    "type": "string",
+                    "content": "The texts that describe stories of gods and creation are the Valmiki-Ramayana and the Brahmanda Purana Part 4. The Valmiki-Ramayana mentions various gods and their interactions, while the Brahmanda Purana Part 4 discusses the creation of the cosmic egg and the activities of various gods and beings.",
+                    "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+                    "confidence": 1.0,
+                    "trace": {
+                        "knowledge_id": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf [1] and [2]. \n\nFootnotes 243:1-243:4 mention various gods such as Agni (The God of fire), Kuera (The God of riches), Surya (The Sun), and Brahma (The creator). \n\nAdditionally, footnotes 393:1-393:2 mention Vishnu (The God of the Three Steps) and Narayan (He who moved upon the waters), which are also related to the creation myth.",
+            "verse_sanskrit": null,
+            "english_explanation": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf [1] and [2]. \n\nFootnotes 243:1-243:4 mention various gods such as Agni (The God of fire), Kuera (The God of riches), Surya (The Sun), and Brahma (The creator). \n\nAdditionally, footnotes 393:1-393:2 mention Vishnu (The God of the Three Steps) and Narayan (He who moved upon the waters), which are also related to the creation myth.",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_9779c8ae6791",
+                "domain": "itihasa",
+                "content": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf [1] and [2]. \n\nFootnotes 243:1-243:4 mention various gods such as Agni (The God of fire), Kuera (The God of riches), Surya (The Sun), and Brahma (The creator). \n\nAdditionally, footnotes 393:1-393:2 mention Vishnu (The God of the Three Steps) and Narayan (He who moved upon the waters), which are also related to the creation myth.",
+                "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+                "confidence": 1.0,
+                "timestamp": "2026-04-30T11:36:18.201241+00:00",
+                "tags": [
+                    "creation",
+                    "describe",
+                    "gods"
+                ],
+                "clean_content": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf [1] and [2]. Footnotes 243:1-243:4 mention various gods such as Agni (The God of fire), Kuera (The God of riches), Surya (The Sun), and Brahma (The creator). Additionally, footnotes 393:1-393:2 mention Vishnu (The God of the Three Steps) and Narayan (He who moved upon the waters), which are also related to the creation myth."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "Name one Smriti text.",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_cb7d75921bac",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_558551ca8608",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_7db049e8db37",
+                    "type": "string",
+                    "content": "The Bhagavad Gita guides decision-making in morally complex situations by advising individuals to consider the concept of oneness and the Law of Karma [1]. It suggests that when we realize all of life is one, we stop hurting ourselves by hurting others, and what we do to others will one day be done to us. This principle, also known as \"Do unto others as you would have others do unto you,\" promotes treating others with love, compassion, and kindness [1]. Additionally, the Tripura Rahasya considers the Bhagavad Gita as a valuable resource for emancipation and recommends reading it every day with love and care [2].",
+                    "source": "vigyan-bhairava-tantra_ocr.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "vigyan-bhairava-tantra_ocr.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_442f0fd369a4",
+                    "type": "string",
+                    "content": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without attachment to their outcomes [1]. It states that action is higher than inactivity and that one must always do their duty, as inaction will not even allow one to sustain their body. The Gita also advises individuals to act dispassionately and offer their actions as a sacrifice, which will help them attain freedom from the cycle of rebirth. Additionally, it highlights the interdependence of individuals and the divine, suggesting that by performing their duties and offering their actions as a sacrifice, they will receive the support and nourishment they need [1].",
+                    "source": "The Complete Mahabharata_English_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Complete Mahabharata_English_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_5c78fd323de3",
+                    "type": "string",
+                    "content": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+                    "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_dc1ea506fb2b",
+                    "type": "string",
+                    "content": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+                    "source": "The Narada-Purana, Part 4_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 4_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "One Smriti text mentioned is the Brihaspati Smriti [1].",
+            "verse_sanskrit": null,
+            "english_explanation": "One Smriti text mentioned is the Brihaspati Smriti [1].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_b9196fe8bf2e",
+                "domain": "smriti",
+                "content": "One Smriti text mentioned is the Brihaspati Smriti [1].",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.25,
+                "timestamp": "2026-04-30T11:36:30.705790+00:00",
+                "tags": [
+                    "name",
+                    "one",
+                    "smriti"
+                ],
+                "clean_content": "One Smriti text mentioned is the Brihaspati Smriti [1]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "Translate “अहिंसा परमो धर्मः”",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_5504c676a6f4",
+                    "type": "string",
+                    "content": "Satyam vada translates to \"Speak the truth\". [1]",
+                    "source": "The Narada-Purana, Part 3_ocred.pdf",
+                    "confidence": 0.5,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 3_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n28.\n29.\n30.\n31.\n32.\n33.\n33.\n34.\n35.\n36.\n37.\n38.\n39.\n40.\n41.\n42.\n43.\n44.\n45.\n46.\n47.\n48.\n49.\n50.\n51.\n52.\n53.\n53.\n54.\n55.\n56.\n57.\n58.\n59.\n60.\n61.\n62.\n63.\n64.\n65.\n66.\n67.\n68.\n69.\n70.\n71.\n72.\n73.\n74.\n75.\n76.\n77.\n78.\n79.\n80.\n81.\n82.\n83.\n84.\n85.\n86.\n87.\n87.\n88.\n89.\n90.\n91.\n92.\n93.\n94.\n95.\n96.\n97.\n98.\n99.\n100.\n101.\n102.\n103.\n104.\n105.\n106.\n107.\n108.\n109.\n110.\n111.\n112.\n113.\n114.\n115.\n116.\n117.\n118.\n119.\n120.\n121.\n122.\n123.\n124.\n125.\n126.\n127.\n128.\n129.\n130.\n131.\n132.\n133.\n134.\n135.\n136.\n137.\n138.\n139.\n140.\n141.\n142.\n143.\n143.\n144.\n145.\n145.\n146.\n147.\n148.\n149.\n150.\n151.\n152.\n153.\n154.\n155.\n156.\n157.\n158.\n159.\n160.\n161.\n162.\n163.\n164.\n165.\n166.\n167.\n168.\n169.\n170.\n171.\n172.\n173.\n174.\n175.\n176.\n177.\n178.\n179.\n180.\n181.\n182.\n183.\n184.\n185.\n186.\n187.\n188.\n189.\n190.\n191.\n192.\n193.\n194.\n195.\n196.\n197.\n198.\n199.\n200.\n201.\n202.\n203.\n204.\n205.\n206.\n207.\n208.\n209.\n210.\n211.\n212.\n213.\n214.\n215.\n216.\n217.\n218.\n219.\n220.\n221.\n222.\n223.\n224.\n225.\n226.\n227.\n228.\n229.\n230.\n231.\n232.\n233.\n234.\n235.\n236.\n237.\n238.\n239.\n240.\n241.\n242.\n243.\n244.\n245.\n246.\n247.\n248.\n249.\n250.\n251.\n252.\n253.\n254.\n255.\n256.\n257.\n258.\n259.\n260.\n261.\n262.\n263.\n264.\n265.\n266.\n267.\n268.\n269.\n270.\n271.\n272.\n273.\n274.\n275.\n276.\n277.\n278.\n279.\n280.\n281.\n282.\n283.\n284.\n285.\n286.\n287.\n288.\n289.\n290.\n291.\n292.\n293.\n294.\n295.\n296.\n297.\n298.\n299.\n300.\n301.\n302.\n303.\n304.\n305.\n306.\n307.\n308.\n309.\n310.\n311.\n312.\n313.\n314.\n315.\n316.\n317.\n318.\n319.\n320.\n321.\n322.\n323.\n324.\n325.\n326.\n327.\n328.\n329.\n330.\n331.\n332.\n333.\n334.\n335.\n336.\n337.\n338.\n339.\n340.\n341.\n341.\n342.\n343.\n344.\n345.\n346.\n347.\n348.\n349.\n350.\n351.\n352.\n353.\n354.\n355.\n356.\n357.\n358.\n359.\n360.\n361.\n362.\n363.\n364.\n365.\n366.\n367.\n368.\n369.\n370.\n371.\n372.\n373.\n374.\n375.\n376.\n377.\n378.\n379.\n380.\n381.\n382.\n383.\n383.\n384.\n385.\n386.\n387.\n388.\n389.\n390.\n391.\n392.\n393.\n394.\n395.",
+            "verse_sanskrit": "्वंपापविनिधैक्तस्स्वगलोके मीयते ॥ १६ ॥ \nइति शखत्मतों अष्टदरोऽभ्यायः ॥ १८॥ \nजो बुद्धिमान्‌ मनुष्य We ऋषिके कहे हुए Mast पदता है वह सम्पूणं पापोंसे छूट कर \nस्वगेलोकर्मे पूजित होता है ॥ १६ ॥ \nइति शसस्मतौ भाषाटीकायाम पष्टादशोड्ष्याय) १८ ॥ \nइति शखस्मातिः समाप्ता॥ १३॥",
+            "english_explanation": "3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n28.\n29.\n30.\n31.\n32.\n33.\n33.\n34.\n35.\n36.\n37.\n38.\n39.\n40.\n41.\n42.\n43.\n44.\n45.\n46.\n47.\n48.\n49.\n50.\n51.\n52.\n53.\n53.\n54.\n55.\n56.\n57.\n58.\n59.\n60.\n61.\n62.\n63.\n64.\n65.\n66.\n67.\n68.\n69.\n70.\n71.\n72.\n73.\n74.\n75.\n76.\n77.\n78.\n79.\n80.\n81.\n82.\n83.\n84.\n85.\n86.\n87.\n87.\n88.\n89.\n90.\n91.\n92.\n93.\n94.\n95.\n96.\n97.\n98.\n99.\n100.\n101.\n102.\n103.\n104.\n105.\n106.\n107.\n108.\n109.\n110.\n111.\n112.\n113.\n114.\n115.\n116.\n117.\n118.\n119.\n120.\n121.\n122.\n123.\n124.\n125.\n126.\n127.\n128.\n129.\n130.\n131.\n132.\n133.\n134.\n135.\n136.\n137.\n138.\n139.\n140.\n141.\n142.\n143.\n143.\n144.\n145.\n145.\n146.\n147.\n148.\n149.\n150.\n151.\n152.\n153.\n154.\n155.\n156.\n157.\n158.\n159.\n160.\n161.\n162.\n163.\n164.\n165.\n166.\n167.\n168.\n169.\n170.\n171.\n172.\n173.\n174.\n175.\n176.\n177.\n178.\n179.\n180.\n181.\n182.\n183.\n184.\n185.\n186.\n187.\n188.\n189.\n190.\n191.\n192.\n193.\n194.\n195.\n196.\n197.\n198.\n199.\n200.\n201.\n202.\n203.\n204.\n205.\n206.\n207.\n208.\n209.\n210.\n211.\n212.\n213.\n214.\n215.\n216.\n217.\n218.\n219.\n220.\n221.\n222.\n223.\n224.\n225.\n226.\n227.\n228.\n229.\n230.\n231.\n232.\n233.\n234.\n235.\n236.\n237.\n238.\n239.\n240.\n241.\n242.\n243.\n244.\n245.\n246.\n247.\n248.\n249.\n250.\n251.\n252.\n253.\n254.\n255.\n256.\n257.\n258.\n259.\n260.\n261.\n262.\n263.\n264.\n265.\n266.\n267.\n268.\n269.\n270.\n271.\n272.\n273.\n274.\n275.\n276.\n277.\n278.\n279.\n280.\n281.\n282.\n283.\n284.\n285.\n286.\n287.\n288.\n289.\n290.\n291.\n292.\n293.\n294.\n295.\n296.\n297.\n298.\n299.\n300.\n301.\n302.\n303.\n304.\n305.\n306.\n307.\n308.\n309.\n310.\n311.\n312.\n313.\n314.\n315.\n316.\n317.\n318.\n319.\n320.\n321.\n322.\n323.\n324.\n325.\n326.\n327.\n328.\n329.\n330.\n331.\n332.\n333.\n334.\n335.\n336.\n337.\n338.\n339.\n340.\n341.\n341.\n342.\n343.\n344.\n345.\n346.\n347.\n348.\n349.\n350.\n351.\n352.\n353.\n354.\n355.\n356.\n357.\n358.\n359.\n360.\n361.\n362.\n363.\n364.\n365.\n366.\n367.\n368.\n369.\n370.\n371.\n372.\n373.\n374.\n375.\n376.\n377.\n378.\n379.\n380.\n381.\n382.\n383.\n383.\n384.\n385.\n386.\n387.\n388.\n389.\n390.\n391.\n392.\n393.\n394.\n395.\n\nVerse Translation: In the celestial world, the one who is devoted to the supreme self is revered. \nThus ends the eighth chapter of the treatise on the philosophy of the sage. \nA wise person who follows the words of the sage is completely freed from all sins and is revered in the celestial world. \nThus ends the commentary on the eighteenth chapter. \nThus ends the treatise.",
+            "note": null,
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_f66087af73d7",
+                "domain": "puranas",
+                "content": "3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n28.\n29.\n30.\n31.\n32.\n33.\n33.\n34.\n35.\n36.\n37.\n38.\n39.\n40.\n41.\n42.\n43.\n44.\n45.\n46.\n47.\n48.\n49.\n50.\n51.\n52.\n53.\n53.\n54.\n55.\n56.\n57.\n58.\n59.\n60.\n61.\n62.\n63.\n64.\n65.\n66.\n67.\n68.\n69.\n70.\n71.\n72.\n73.\n74.\n75.\n76.\n77.\n78.\n79.\n80.\n81.\n82.\n83.\n84.\n85.\n86.\n87.\n87.\n88.\n89.\n90.\n91.\n92.\n93.\n94.\n95.\n96.\n97.\n98.\n99.\n100.\n101.\n102.\n103.\n104.\n105.\n106.\n107.\n108.\n109.\n110.\n111.\n112.\n113.\n114.\n115.\n116.\n117.\n118.\n119.\n120.\n121.\n122.\n123.\n124.\n125.\n126.\n127.\n128.\n129.\n130.\n131.\n132.\n133.\n134.\n135.\n136.\n137.\n138.\n139.\n140.\n141.\n142.\n143.\n143.\n144.\n145.\n145.\n146.\n147.\n148.\n149.\n150.\n151.\n152.\n153.\n154.\n155.\n156.\n157.\n158.\n159.\n160.\n161.\n162.\n163.\n164.\n165.\n166.\n167.\n168.\n169.\n170.\n171.\n172.\n173.\n174.\n175.\n176.\n177.\n178.\n179.\n180.\n181.\n182.\n183.\n184.\n185.\n186.\n187.\n188.\n189.\n190.\n191.\n192.\n193.\n194.\n195.\n196.\n197.\n198.\n199.\n200.\n201.\n202.\n203.\n204.\n205.\n206.\n207.\n208.\n209.\n210.\n211.\n212.\n213.\n214.\n215.\n216.\n217.\n218.\n219.\n220.\n221.\n222.\n223.\n224.\n225.\n226.\n227.\n228.\n229.\n230.\n231.\n232.\n233.\n234.\n235.\n236.\n237.\n238.\n239.\n240.\n241.\n242.\n243.\n244.\n245.\n246.\n247.\n248.\n249.\n250.\n251.\n252.\n253.\n254.\n255.\n256.\n257.\n258.\n259.\n260.\n261.\n262.\n263.\n264.\n265.\n266.\n267.\n268.\n269.\n270.\n271.\n272.\n273.\n274.\n275.\n276.\n277.\n278.\n279.\n280.\n281.\n282.\n283.\n284.\n285.\n286.\n287.\n288.\n289.\n290.\n291.\n292.\n293.\n294.\n295.\n296.\n297.\n298.\n299.\n300.\n301.\n302.\n303.\n304.\n305.\n306.\n307.\n308.\n309.\n310.\n311.\n312.\n313.\n314.\n315.\n316.\n317.\n318.\n319.\n320.\n321.\n322.\n323.\n324.\n325.\n326.\n327.\n328.\n329.\n330.\n331.\n332.\n333.\n334.\n335.\n336.\n337.\n338.\n339.\n340.\n341.\n341.\n342.\n343.\n344.\n345.\n346.\n347.\n348.\n349.\n350.\n351.\n352.\n353.\n354.\n355.\n356.\n357.\n358.\n359.\n360.\n361.\n362.\n363.\n364.\n365.\n366.\n367.\n368.\n369.\n370.\n371.\n372.\n373.\n374.\n375.\n376.\n377.\n378.\n379.\n380.\n381.\n382.\n383.\n383.\n384.\n385.\n386.\n387.\n388.\n389.\n390.\n391.\n392.\n393.\n394.\n395.",
+                "source": "The Narada-Purana, Part 3_ocred.pdf",
+                "confidence": 0.5,
+                "timestamp": "2026-04-30T11:36:43.016478+00:00",
+                "tags": [
+                    "translate"
+                ],
+                "clean_content": "3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52. 53. 53. 54. 55. 56. 57. 58. 59. 60. 61. 62. 63. 64. 65. 66. 67. 68. 69. 70. 71. 72. 73. 74. 75. 76. 77. 78. 79. 80. 81. 82. 83. 84. 85. 86. 87. 87. 88. 89. 90. 91. 92. 93. 94. 95. 96. 97. 98. 99. 100. 101. 102. 103. 104. 105. 106. 107. 108. 109. 110. 111. 112. 113. 114. 115. 116. 117. 118. 119. 120. 121. 122. 123. 124. 125. 126. 127. 128. 129. 130. 131. 132. 133. 134. 135. 136. 137. 138. 139. 140. 141. 142. 143. 143. 144. 145. 145. 146. 147. 148. 149. 150. 151. 152. 153. 154. 155. 156. 157. 158. 159. 160. 161. 162. 163. 164. 165. 166. 167. 168. 169. 170. 171. 172. 173. 174. 175. 176. 177. 178. 179. 180. 181. 182. 183. 184. 185. 186. 187. 188. 189. 190. 191. 192. 193. 194. 195. 196. 197. 198. 199. 200. 201. 202. 203. 204. 205. 206. 207. 208. 209. 210. 211. 212. 213. 214. 215. 216. 217. 218. 219. 220. 221. 222. 223. 224. 225. 226. 227. 228. 229. 230. 231. 232. 233. 234. 235. 236. 237. 238. 239. 240. 241. 242. 243. 244. 245. 246. 247. 248. 249. 250. 251. 252. 253. 254. 255. 256. 257. 258. 259. 260. 261. 262. 263. 264. 265. 266. 267. 268. 269. 270. 271. 272. 273. 274. 275. 276. 277. 278. 279. 280. 281. 282. 283. 284. 285. 286. 287. 288. 289. 290. 291. 292. 293. 294. 295. 296. 297. 298. 299. 300. 301. 302. 303. 304. 305. 306. 307. 308. 309. 310. 311. 312. 313. 314. 315. 316. 317. 318. 319. 320. 321. 322. 323. 324. 325. 326. 327. 328. 329. 330. 331. 332. 333. 334. 335. 336. 337. 338. 339. 340. 341. 341. 342. 343. 344. 345. 346. 347. 348. 349. 350. 351. 352. 353. 354. 355. 356. 357. 358. 359. 360. 361. 362. 363. 364. 365. 366. 367. 368. 369. 370. 371. 372. 373. 374. 375. 376. 377. 378. 379. 380. 381. 382. 383. 383. 384. 385. 386. 387. 388. 389. 390. 391. 392. 393. 394. 395."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "Translate “कर्म करो”",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_5504c676a6f4",
+                    "type": "string",
+                    "content": "Satyam vada translates to \"Speak the truth\". [1]",
+                    "source": "The Narada-Purana, Part 3_ocred.pdf",
+                    "confidence": 1.0,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 3_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "\"कर्म करो\" translates to \"do the work\" or \"perform the action\".",
+            "verse_sanskrit": "्वंपापविनिधैक्तस्स्वगलोके मीयते ॥ १६ ॥ \nइति शखत्मतों अष्टदरोऽभ्यायः ॥ १८॥ \nजो बुद्धिमान्‌ मनुष्य We ऋषिके कहे हुए Mast पदता है वह सम्पूणं पापोंसे छूट कर \nस्वगेलोकर्मे पूजित होता है ॥ १६ ॥ \nइति शसस्मतौ भाषाटीकायाम पष्टादशोड्ष्याय) १८ ॥ \nइति शखस्मातिः समाप्ता॥ १३॥",
+            "english_explanation": "Do the work.\n\nVerse Translation: In the celestial world, the one who is devoted to the supreme being is revered. \nThus ends the eighth chapter of the treatise on the philosophy of the sage. \nA wise man who follows the words of the sage is completely freed from all sins and is revered in the celestial world. \nThus ends the commentary on the eighteenth chapter. \nThus ends the treatise.",
+            "note": null,
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_15d52aeeb7f1",
+                "domain": "puranas",
+                "content": "\"कर्म करो\" translates to \"do the work\" or \"perform the action\".",
+                "source": "The Narada-Purana, Part 3_ocred.pdf",
+                "confidence": 1.0,
+                "timestamp": "2026-04-30T11:36:56.777471+00:00",
+                "tags": [
+                    "translate"
+                ],
+                "clean_content": "\"कर्म करो\" translates to \"do the work\" or \"perform the action\"."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "Name one text related to Dharma Shastra.",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_f83cddef0988",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_abee700a25c4",
+                    "type": "string",
+                    "content": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without attachment to their outcomes [1]. It states that action is higher than inactivity and that one must always do their duty, as inaction will not even allow one to sustain their body. The Gita also advises individuals to act dispassionately and offer their actions as a sacrifice, which will help them attain freedom from the cycle of rebirth. Additionally, it highlights the interdependence of individuals and the divine, suggesting that by performing their duties and offering their actions as a sacrifice, they will receive the support and nourishment they need [1].",
+                    "source": "The Complete Mahabharata_English_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Complete Mahabharata_English_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "One text related to Dharma Shastra is the Brihaspati Smriti [2].",
+            "verse_sanskrit": null,
+            "english_explanation": "One text related to Dharma Shastra is the Brihaspati Smriti [2].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_4225b86c20b1",
+                "domain": "general",
+                "content": "One text related to Dharma Shastra is the Brihaspati Smriti [2].",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.3333333333333333,
+                "timestamp": "2026-04-30T11:37:10.616755+00:00",
+                "tags": [
+                    "dharma",
+                    "name",
+                    "one"
+                ],
+                "clean_content": "One text related to Dharma Shastra is the Brihaspati Smriti [2]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "Which text explains law and social rules?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_f83cddef0988",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 1.0,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+            "verse_sanskrit": null,
+            "english_explanation": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_046f0b728b84",
+                "domain": "general",
+                "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 1.0,
+                "timestamp": "2026-04-30T11:37:22.966737+00:00",
+                "tags": [
+                    "explains",
+                    "law",
+                    "rules"
+                ],
+                "clean_content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "Name one Agama text.",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_cb7d75921bac",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_558551ca8608",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_7db049e8db37",
+                    "type": "string",
+                    "content": "The Bhagavad Gita guides decision-making in morally complex situations by advising individuals to consider the concept of oneness and the Law of Karma [1]. It suggests that when we realize all of life is one, we stop hurting ourselves by hurting others, and what we do to others will one day be done to us. This principle, also known as \"Do unto others as you would have others do unto you,\" promotes treating others with love, compassion, and kindness [1]. Additionally, the Tripura Rahasya considers the Bhagavad Gita as a valuable resource for emancipation and recommends reading it every day with love and care [2].",
+                    "source": "vigyan-bhairava-tantra_ocr.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "vigyan-bhairava-tantra_ocr.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_e4fc41c628fd",
+                    "type": "string",
+                    "content": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana [1] and Kamika Agama [2], which provide guidelines for building temples. According to these scriptures, constructing a temple can bring spiritual benefits and destroy sins. The architecture of a temple, including its base, pedestal, and door orientation, is also considered important. The influence of these scriptures on society can be seen in the careful planning and construction of temples, with attention to detail and adherence to traditional guidelines.",
+                    "source": "Agni Purana Unabridged English Motilal.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Agni Purana Unabridged English Motilal.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_05fe0341d9ee",
+                    "type": "string",
+                    "content": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without attachment to their outcomes [1]. It states that action is higher than inactivity and that one must always do their duty, as inaction will not even allow one to sustain their body. The Gita also advises individuals to act dispassionately and offer their actions as a sacrifice, which will help them attain freedom from the cycle of rebirth. Additionally, it highlights the interdependence of individuals and the divine, suggesting that by performing their duties and offering their actions as a sacrifice, they will receive the support and nourishment they need [1].",
+                    "source": "The Complete Mahabharata_English_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Complete Mahabharata_English_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_2a5f764926bd",
+                    "type": "string",
+                    "content": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+                    "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_0a775da12718",
+                    "type": "string",
+                    "content": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+                    "source": "The Narada-Purana, Part 4_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 4_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "One Agama text mentioned in the context is the Sahasragama [1], [2].",
+            "verse_sanskrit": null,
+            "english_explanation": "One Agama text mentioned in the context is the Sahasragama [1], [2].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_bbffa331cf9a",
+                "domain": "agamas",
+                "content": "One Agama text mentioned in the context is the Sahasragama [1], [2].",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.25,
+                "timestamp": "2026-04-30T11:37:35.207014+00:00",
+                "tags": [
+                    "agama",
+                    "name",
+                    "one"
+                ],
+                "clean_content": "One Agama text mentioned in the context is the Sahasragama [1], [2]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "Which text is related to Vedas?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_1b55dbccb8f7",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_45cec39e37e9",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_5bba5a47a7a7",
+                    "type": "string",
+                    "content": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to [2]. They are considered the crowning part of the Veda, providing knowledge about the ultimate reality and the self. [1] also mentions the importance of being properly instructed by knowers of the Brahman, implying that the Upanishads contain teachings on spiritual growth and self-realization.",
+                    "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_1bb5feb73287",
+                    "type": "string",
+                    "content": "The meaning of \"ब्रह्म (Brahman)\" is the Supreme or Ultimate Reality, which is described in the Vedas as the absolute and imperishable essence of the universe [1]. It can refer to the visible universe inclusive of individual souls or to the Ultimate Reality behind it, experienced in Samadhi as the Self of ourselves [1]. According to the Advaitic explanation, Brahman is above the world of cause and effect [1].",
+                    "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Svetasvatara Upanishad - sanskrit and English.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_3afedffab1ca",
+                    "type": "string",
+                    "content": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+                    "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_8b149d2efef4",
+                    "type": "string",
+                    "content": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+                    "source": "The Narada-Purana, Part 4_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 4_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The text related to Vedas is the Brahma Purana - Parts I-IV_ocred.pdf, specifically mentioning \"Vedangas\" which are certain classes of works regarded as auxiliary to the Vedas [1].",
+            "verse_sanskrit": null,
+            "english_explanation": "The text related to Vedas is the Brahma Purana - Parts I-IV_ocred.pdf, specifically mentioning \"Vedangas\" which are certain classes of works regarded as auxiliary to the Vedas [1].",
+            "note": null,
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_6bc2ad381d6e",
+                "domain": "vedas",
+                "content": "The text related to Vedas is the Brahma Purana - Parts I-IV_ocred.pdf, specifically mentioning \"Vedangas\" which are certain classes of works regarded as auxiliary to the Vedas [1].",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.3333333333333333,
+                "timestamp": "2026-04-30T11:37:47.596536+00:00",
+                "tags": [
+                    "related",
+                    "text",
+                    "vedas"
+                ],
+                "clean_content": "The text related to Vedas is the Brahma Purana - Parts I-IV_ocred.pdf, specifically mentioning \"Vedangas\" which are certain classes of works regarded as auxiliary to the Vedas [1]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "How is disease defined in Charaka Samhita?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": true,
+            "fallback_reason": "zero_valid_kosha_match",
+            "signals": [
+                {
+                    "signal_id": "signal_1",
+                    "type": "string",
+                    "content": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+                    "source": "Shakti and Shakta_ocr.pdf",
+                    "confidence": 0.6061035394668579,
+                    "trace": {
+                        "knowledge_id": "Shakti and Shakta_ocr.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+            "verse_sanskrit": null,
+            "english_explanation": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_af7f56640546",
+                "domain": "general",
+                "content": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+                "source": "Shakti and Shakta_ocr.pdf",
+                "confidence": 0.6061035394668579,
+                "timestamp": "2026-04-30T11:37:59.888814+00:00",
+                "tags": [
+                    "charaka",
+                    "defined",
+                    "disease"
+                ],
+                "clean_content": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "Which text discusses both law and punishment systems?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_f83cddef0988",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_58cb7b7ad451",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "Both Manu Samhita [1] and Yajnavalkya Samhita [2] discuss law and punishment systems. Manu Samhita outlines the measures of punishment for repeat offenders and the enumeration of weights and measures, while Yajnavalkya Samhita describes the responsibility of individuals who commit crimes and the punishment for various offenses.",
+            "verse_sanskrit": null,
+            "english_explanation": "Both Manu Samhita [1] and Yajnavalkya Samhita [2] discuss law and punishment systems. Manu Samhita outlines the measures of punishment for repeat offenders and the enumeration of weights and measures, while Yajnavalkya Samhita describes the responsibility of individuals who commit crimes and the punishment for various offenses.",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_bbb6db614f77",
+                "domain": "general",
+                "content": "Both Manu Samhita [1] and Yajnavalkya Samhita [2] discuss law and punishment systems. Manu Samhita outlines the measures of punishment for repeat offenders and the enumeration of weights and measures, while Yajnavalkya Samhita describes the responsibility of individuals who commit crimes and the punishment for various offenses.",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.3333333333333333,
+                "timestamp": "2026-04-30T11:38:12.405043+00:00",
+                "tags": [
+                    "both",
+                    "discusses",
+                    "law"
+                ],
+                "clean_content": "Both Manu Samhita [1] and Yajnavalkya Samhita [2] discuss law and punishment systems. Manu Samhita outlines the measures of punishment for repeat offenders and the enumeration of weights and measures, while Yajnavalkya Samhita describes the responsibility of individuals who commit crimes and the punishment for various offenses."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "How do Agamas differ from Vedas?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_2882d2a9eaa6",
+                    "type": "string",
+                    "content": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to [2]. They are considered the crowning part of the Veda, providing knowledge about the ultimate reality and the self. [1] also mentions the importance of being properly instructed by knowers of the Brahman, implying that the Upanishads contain teachings on spiritual growth and self-realization.",
+                    "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_8ce5f34495e7",
+                    "type": "string",
+                    "content": "The meaning of \"ब्रह्म (Brahman)\" is the Supreme or Ultimate Reality, which is described in the Vedas as the absolute and imperishable essence of the universe [1]. It can refer to the visible universe inclusive of individual souls or to the Ultimate Reality behind it, experienced in Samadhi as the Self of ourselves [1]. According to the Advaitic explanation, Brahman is above the world of cause and effect [1].",
+                    "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Svetasvatara Upanishad - sanskrit and English.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "According to the provided context, Agamas differ from Vedas in several ways. Firstly, while Vedas are restricted to the three varnas, Agamas are open to all. Secondly, Vedas consist of three parts - Stotras, Braihmanas, and Aranyakas, whereas Agamas consist of four divisions - Carya, Kriya, Yoga, and Jnana. Additionally, Agamas proclaim that Siva is the only god that exists, whereas Vedas pray to many gods. Lastly, Agamas are mostly in the form of verses, whereas Vedas are mostly in the form of aphorisms [1].",
+            "verse_sanskrit": null,
+            "english_explanation": "According to the provided context, Agamas differ from Vedas in several ways. Firstly, while Vedas are restricted to the three varnas, Agamas are open to all. Secondly, Vedas consist of three parts - Stotras, Braihmanas, and Aranyakas, whereas Agamas consist of four divisions - Carya, Kriya, Yoga, and Jnana. Additionally, Agamas proclaim that Siva is the only god that exists, whereas Vedas pray to many gods. Lastly, Agamas are mostly in the form of verses, whereas Vedas are mostly in the form of aphorisms [1].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_69ce9049f808",
+                "domain": "upanishads",
+                "content": "According to the provided context, Agamas differ from Vedas in several ways. Firstly, while Vedas are restricted to the three varnas, Agamas are open to all. Secondly, Vedas consist of three parts - Stotras, Braihmanas, and Aranyakas, whereas Agamas consist of four divisions - Carya, Kriya, Yoga, and Jnana. Additionally, Agamas proclaim that Siva is the only god that exists, whereas Vedas pray to many gods. Lastly, Agamas are mostly in the form of verses, whereas Vedas are mostly in the form of aphorisms [1].",
+                "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+                "confidence": 0.3333333333333333,
+                "timestamp": "2026-04-30T11:38:24.982725+00:00",
+                "tags": [
+                    "agamas",
+                    "differ",
+                    "how"
+                ],
+                "clean_content": "According to the provided context, Agamas differ from Vedas in several ways. Firstly, while Vedas are restricted to the three varnas, Agamas are open to all. Secondly, Vedas consist of three parts - Stotras, Braihmanas, and Aranyakas, whereas Agamas consist of four divisions - Carya, Kriya, Yoga, and Jnana. Additionally, Agamas proclaim that Siva is the only god that exists, whereas Vedas pray to many gods. Lastly, Agamas are mostly in the form of verses, whereas Vedas are mostly in the form of aphorisms [1]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_query",
+        "query": "How does the Taittiriya Upanishad explain Brahman?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": true,
+            "fallback_reason": "zero_valid_kosha_match",
+            "signals": [
+                {
+                    "signal_id": "signal_1",
+                    "type": "string",
+                    "content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+                    "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+                    "confidence": 0.6858912706375122,
+                    "trace": {
+                        "knowledge_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+            "verse_sanskrit": null,
+            "english_explanation": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_9a8183e951a4",
+                "domain": "upanishads",
+                "content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+                "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+                "confidence": 0.6858912706375122,
+                "timestamp": "2026-04-30T11:38:37.501867+00:00",
+                "tags": [
+                    "taittiriya",
+                    "upanishad"
+                ],
+                "clean_content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Name any one Upanishad.",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_8c35d7cd1744",
+                    "type": "string",
+                    "content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+                    "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_f5042a70add7",
+                    "type": "string",
+                    "content": "The Bhagavad Gita guides decision-making in morally complex situations by advising individuals to consider the concept of oneness and the Law of Karma [1]. It suggests that when we realize all of life is one, we stop hurting ourselves by hurting others, and what we do to others will one day be done to us. This principle, also known as \"Do unto others as you would have others do unto you,\" promotes treating others with love, compassion, and kindness [1]. Additionally, the Tripura Rahasya considers the Bhagavad Gita as a valuable resource for emancipation and recommends reading it every day with love and care [2].",
+                    "source": "vigyan-bhairava-tantra_ocr.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "vigyan-bhairava-tantra_ocr.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_5b46dea0acdf",
+                    "type": "string",
+                    "content": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without attachment to their outcomes [1]. It states that action is higher than inactivity and that one must always do their duty, as inaction will not even allow one to sustain their body. The Gita also advises individuals to act dispassionately and offer their actions as a sacrifice, which will help them attain freedom from the cycle of rebirth. Additionally, it highlights the interdependence of individuals and the divine, suggesting that by performing their duties and offering their actions as a sacrifice, they will receive the support and nourishment they need [1].",
+                    "source": "The Complete Mahabharata_English_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Complete Mahabharata_English_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The Taittiriya Upanishad is one of the important Upanishads [1].",
+            "verse_sanskrit": null,
+            "english_explanation": "The Taittiriya Upanishad is one of the important Upanishads [1].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_76673b0ef536",
+                "domain": "upanishads",
+                "content": "The Taittiriya Upanishad is one of the important Upanishads [1].",
+                "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+                "confidence": 0.25,
+                "timestamp": "2026-04-30T11:38:49.973246+00:00",
+                "tags": [
+                    "upanishad"
+                ],
+                "clean_content": "The Taittiriya Upanishad is one of the important Upanishads [1]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Which text is related to Ayurveda?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_cb7d75921bac",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_558551ca8608",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_ed128650c1b4",
+                    "type": "string",
+                    "content": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+                    "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_de441e6d0f79",
+                    "type": "string",
+                    "content": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+                    "source": "The Narada-Purana, Part 4_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 4_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The texts related to Ayurveda mentioned in the provided context are:\n\n1. Charaka Samhita [1]\n2. Cikitsasthana [1]\n3. Rasayana [1]\n4. Vagbhata [1]\n5. Ayurveda [2]\n\nThese texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, principles, and practices.",
+            "verse_sanskrit": null,
+            "english_explanation": "The texts related to Ayurveda mentioned in the provided context are:\n\n1. Charaka Samhita [1]\n2. Cikitsasthana [1]\n3. Rasayana [1]\n4. Vagbhata [1]\n5. Ayurveda [2]\n\nThese texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, principles, and practices.",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_5e5a3c93f02b",
+                "domain": "vedas",
+                "content": "The texts related to Ayurveda mentioned in the provided context are:\n\n1. Charaka Samhita [1]\n2. Cikitsasthana [1]\n3. Rasayana [1]\n4. Vagbhata [1]\n5. Ayurveda [2]\n\nThese texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, principles, and practices.",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.3333333333333333,
+                "timestamp": "2026-04-30T11:39:02.374710+00:00",
+                "tags": [
+                    "ayurveda",
+                    "related",
+                    "text"
+                ],
+                "clean_content": "The texts related to Ayurveda mentioned in the provided context are: 1. Charaka Samhita [1] 2. Cikitsasthana [1] 3. Rasayana [1] 4. Vagbhata [1] 5. Ayurveda [2] These texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, principles, and practices."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "What type of text is the Kama Sutra?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_f83cddef0988",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_58cb7b7ad451",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_ed128650c1b4",
+                    "type": "string",
+                    "content": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+                    "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_de441e6d0f79",
+                    "type": "string",
+                    "content": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+                    "source": "The Narada-Purana, Part 4_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 4_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and systematic work on the subject of love and relationships [1]. It is a formal exposition of a particular science in dogmatic enunciations accompanied by a discussion, similar to other Indian works such as the grammatical works of Patanjali and the Arthashastra of Chanakya [2].",
+            "verse_sanskrit": null,
+            "english_explanation": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and systematic work on the subject of love and relationships [1]. It is a formal exposition of a particular science in dogmatic enunciations accompanied by a discussion, similar to other Indian works such as the grammatical works of Patanjali and the Arthashastra of Chanakya [2].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_fdd676131848",
+                "domain": "general",
+                "content": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and systematic work on the subject of love and relationships [1]. It is a formal exposition of a particular science in dogmatic enunciations accompanied by a discussion, similar to other Indian works such as the grammatical works of Patanjali and the Arthashastra of Chanakya [2].",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.25,
+                "timestamp": "2026-04-30T11:39:14.849764+00:00",
+                "tags": [
+                    "kama",
+                    "sutra",
+                    "text"
+                ],
+                "clean_content": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and systematic work on the subject of love and relationships [1]. It is a formal exposition of a particular science in dogmatic enunciations accompanied by a discussion, similar to other Indian works such as the grammatical works of Patanjali and the Arthashastra of Chanakya [2]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Which texts describe stories of gods and creation?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_da1bef76b148",
+                    "type": "string",
+                    "content": "The texts that describe stories of gods and creation are the Valmiki-Ramayana and the Brahmanda Purana Part 4. The Valmiki-Ramayana mentions various gods and their interactions, while the Brahmanda Purana Part 4 discusses the creation of the cosmic egg and the activities of various gods and beings.",
+                    "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+                    "confidence": 1.0,
+                    "trace": {
+                        "knowledge_id": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf. Footnotes 243:1 to 243:12 mention various gods, including Agni (the God of fire), Kuera (the God of riches), Siva, the Wind-God, the God of the sea, and the War-God. Additionally, footnotes 393:1 to 393:2 mention Vishnu, the God of the Three Steps, and Narayan, who is also Vishnu. These references suggest that the texts are drawing from Hindu mythology and the creation stories of the Vedas.",
+            "verse_sanskrit": null,
+            "english_explanation": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf. Footnotes 243:1 to 243:12 mention various gods, including Agni (the God of fire), Kuera (the God of riches), Siva, the Wind-God, the God of the sea, and the War-God. Additionally, footnotes 393:1 to 393:2 mention Vishnu, the God of the Three Steps, and Narayan, who is also Vishnu. These references suggest that the texts are drawing from Hindu mythology and the creation stories of the Vedas.",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_7d153915bb2f",
+                "domain": "itihasa",
+                "content": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf. Footnotes 243:1 to 243:12 mention various gods, including Agni (the God of fire), Kuera (the God of riches), Siva, the Wind-God, the God of the sea, and the War-God. Additionally, footnotes 393:1 to 393:2 mention Vishnu, the God of the Three Steps, and Narayan, who is also Vishnu. These references suggest that the texts are drawing from Hindu mythology and the creation stories of the Vedas.",
+                "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+                "confidence": 1.0,
+                "timestamp": "2026-04-30T11:39:27.227712+00:00",
+                "tags": [
+                    "creation",
+                    "describe",
+                    "gods"
+                ],
+                "clean_content": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf. Footnotes 243:1 to 243:12 mention various gods, including Agni (the God of fire), Kuera (the God of riches), Siva, the Wind-God, the God of the sea, and the War-God. Additionally, footnotes 393:1 to 393:2 mention Vishnu, the God of the Three Steps, and Narayan, who is also Vishnu. These references suggest that the texts are drawing from Hindu mythology and the creation stories of the Vedas."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Name one Smriti text.",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_cb7d75921bac",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_558551ca8608",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_7db049e8db37",
+                    "type": "string",
+                    "content": "The Bhagavad Gita guides decision-making in morally complex situations by advising individuals to consider the concept of oneness and the Law of Karma [1]. It suggests that when we realize all of life is one, we stop hurting ourselves by hurting others, and what we do to others will one day be done to us. This principle, also known as \"Do unto others as you would have others do unto you,\" promotes treating others with love, compassion, and kindness [1]. Additionally, the Tripura Rahasya considers the Bhagavad Gita as a valuable resource for emancipation and recommends reading it every day with love and care [2].",
+                    "source": "vigyan-bhairava-tantra_ocr.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "vigyan-bhairava-tantra_ocr.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_442f0fd369a4",
+                    "type": "string",
+                    "content": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without attachment to their outcomes [1]. It states that action is higher than inactivity and that one must always do their duty, as inaction will not even allow one to sustain their body. The Gita also advises individuals to act dispassionately and offer their actions as a sacrifice, which will help them attain freedom from the cycle of rebirth. Additionally, it highlights the interdependence of individuals and the divine, suggesting that by performing their duties and offering their actions as a sacrifice, they will receive the support and nourishment they need [1].",
+                    "source": "The Complete Mahabharata_English_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Complete Mahabharata_English_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_5c78fd323de3",
+                    "type": "string",
+                    "content": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+                    "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_dc1ea506fb2b",
+                    "type": "string",
+                    "content": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+                    "source": "The Narada-Purana, Part 4_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 4_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "One Smriti text mentioned is the Brihaspati Smriti [1].",
+            "verse_sanskrit": null,
+            "english_explanation": "One Smriti text mentioned is the Brihaspati Smriti [1].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_9663104b80f5",
+                "domain": "smriti",
+                "content": "One Smriti text mentioned is the Brihaspati Smriti [1].",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.25,
+                "timestamp": "2026-04-30T11:39:39.771727+00:00",
+                "tags": [
+                    "name",
+                    "one",
+                    "smriti"
+                ],
+                "clean_content": "One Smriti text mentioned is the Brihaspati Smriti [1]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Translate “अहिंसा परमो धर्मः”",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_5504c676a6f4",
+                    "type": "string",
+                    "content": "Satyam vada translates to \"Speak the truth\". [1]",
+                    "source": "The Narada-Purana, Part 3_ocred.pdf",
+                    "confidence": 0.5,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 3_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1",
+            "verse_sanskrit": "्वंपापविनिधैक्तस्स्वगलोके मीयते ॥ १६ ॥ \nइति शखत्मतों अष्टदरोऽभ्यायः ॥ १८॥ \nजो बुद्धिमान्‌ मनुष्य We ऋषिके कहे हुए Mast पदता है वह सम्पूणं पापोंसे छूट कर \nस्वगेलोकर्मे पूजित होता है ॥ १६ ॥ \nइति शसस्मतौ भाषाटीकायाम पष्टादशोड्ष्याय) १८ ॥ \nइति शखस्मातिः समाप्ता॥ १३॥",
+            "english_explanation": "1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n\nVerse Translation: In the celestial world, the one who is devoted to the supreme being is revered. \nThus ends the eighth chapter of the treatise on the essence of the universe. \nA wise person who follows the words of the sage is completely liberated from all sins and is revered in the celestial world. \nThus ends the commentary on the eighteenth chapter. \nThus ends the treatise.",
+            "note": null,
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_a9430e4b8740",
+                "domain": "puranas",
+                "content": "1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1",
+                "source": "The Narada-Purana, Part 3_ocred.pdf",
+                "confidence": 0.5,
+                "timestamp": "2026-04-30T11:39:52.124520+00:00",
+                "tags": [
+                    "translate"
+                ],
+                "clean_content": "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Translate “कर्म करो”",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_5504c676a6f4",
+                    "type": "string",
+                    "content": "Satyam vada translates to \"Speak the truth\". [1]",
+                    "source": "The Narada-Purana, Part 3_ocred.pdf",
+                    "confidence": 1.0,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 3_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The translation of \"कर्म करो\" is \"do your duty\" or \"perform your actions\".",
+            "verse_sanskrit": "्वंपापविनिधैक्तस्स्वगलोके मीयते ॥ १६ ॥ \nइति शखत्मतों अष्टदरोऽभ्यायः ॥ १८॥ \nजो बुद्धिमान्‌ मनुष्य We ऋषिके कहे हुए Mast पदता है वह सम्पूणं पापोंसे छूट कर \nस्वगेलोकर्मे पूजित होता है ॥ १६ ॥ \nइति शसस्मतौ भाषाटीकायाम पष्टादशोड्ष्याय) १८ ॥ \nइति शखस्मातिः समाप्ता॥ १३॥",
+            "english_explanation": "Do your duty or perform your actions.\n\nVerse Translation: In the celestial world, the one who is devoted to the supreme being is revered. \nThus ends the eighth chapter of the treatise on the essence of the shastras. \nA wise person who follows the words of the sage is completely liberated from all sins and is revered in the celestial world. \nThus ends the commentary on the shastras in eighteen chapters. \nThus ends the treatise.",
+            "note": null,
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_1841f64c8b5c",
+                "domain": "puranas",
+                "content": "The translation of \"कर्म करो\" is \"do your duty\" or \"perform your actions\".",
+                "source": "The Narada-Purana, Part 3_ocred.pdf",
+                "confidence": 1.0,
+                "timestamp": "2026-04-30T11:40:06.047457+00:00",
+                "tags": [
+                    "translate"
+                ],
+                "clean_content": "The translation of \"कर्म करो\" is \"do your duty\" or \"perform your actions\"."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Name one text related to Dharma Shastra.",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_f83cddef0988",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_abee700a25c4",
+                    "type": "string",
+                    "content": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without attachment to their outcomes [1]. It states that action is higher than inactivity and that one must always do their duty, as inaction will not even allow one to sustain their body. The Gita also advises individuals to act dispassionately and offer their actions as a sacrifice, which will help them attain freedom from the cycle of rebirth. Additionally, it highlights the interdependence of individuals and the divine, suggesting that by performing their duties and offering their actions as a sacrifice, they will receive the support and nourishment they need [1].",
+                    "source": "The Complete Mahabharata_English_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Complete Mahabharata_English_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "One text related to Dharma Shastra mentioned in the context is the \"Brihaspati Smriti\" [2].",
+            "verse_sanskrit": null,
+            "english_explanation": "One text related to Dharma Shastra mentioned in the context is the \"Brihaspati Smriti\" [2].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_64dbf9c9b898",
+                "domain": "general",
+                "content": "One text related to Dharma Shastra mentioned in the context is the \"Brihaspati Smriti\" [2].",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.3333333333333333,
+                "timestamp": "2026-04-30T11:40:20.140090+00:00",
+                "tags": [
+                    "dharma",
+                    "name",
+                    "one"
+                ],
+                "clean_content": "One text related to Dharma Shastra mentioned in the context is the \"Brihaspati Smriti\" [2]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Which text explains law and social rules?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_f83cddef0988",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 1.0,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+            "verse_sanskrit": null,
+            "english_explanation": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_85e2a405c49c",
+                "domain": "general",
+                "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 1.0,
+                "timestamp": "2026-04-30T11:40:32.558598+00:00",
+                "tags": [
+                    "explains",
+                    "law",
+                    "rules"
+                ],
+                "clean_content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Name one Agama text.",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_cb7d75921bac",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_558551ca8608",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_7db049e8db37",
+                    "type": "string",
+                    "content": "The Bhagavad Gita guides decision-making in morally complex situations by advising individuals to consider the concept of oneness and the Law of Karma [1]. It suggests that when we realize all of life is one, we stop hurting ourselves by hurting others, and what we do to others will one day be done to us. This principle, also known as \"Do unto others as you would have others do unto you,\" promotes treating others with love, compassion, and kindness [1]. Additionally, the Tripura Rahasya considers the Bhagavad Gita as a valuable resource for emancipation and recommends reading it every day with love and care [2].",
+                    "source": "vigyan-bhairava-tantra_ocr.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "vigyan-bhairava-tantra_ocr.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_e4fc41c628fd",
+                    "type": "string",
+                    "content": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana [1] and Kamika Agama [2], which provide guidelines for building temples. According to these scriptures, constructing a temple can bring spiritual benefits and destroy sins. The architecture of a temple, including its base, pedestal, and door orientation, is also considered important. The influence of these scriptures on society can be seen in the careful planning and construction of temples, with attention to detail and adherence to traditional guidelines.",
+                    "source": "Agni Purana Unabridged English Motilal.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Agni Purana Unabridged English Motilal.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_05fe0341d9ee",
+                    "type": "string",
+                    "content": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without attachment to their outcomes [1]. It states that action is higher than inactivity and that one must always do their duty, as inaction will not even allow one to sustain their body. The Gita also advises individuals to act dispassionately and offer their actions as a sacrifice, which will help them attain freedom from the cycle of rebirth. Additionally, it highlights the interdependence of individuals and the divine, suggesting that by performing their duties and offering their actions as a sacrifice, they will receive the support and nourishment they need [1].",
+                    "source": "The Complete Mahabharata_English_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Complete Mahabharata_English_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_2a5f764926bd",
+                    "type": "string",
+                    "content": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+                    "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_0a775da12718",
+                    "type": "string",
+                    "content": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+                    "source": "The Narada-Purana, Part 4_ocred.pdf",
+                    "confidence": 0.25,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 4_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The Sahasragama is one of the Agama texts, specifically the eighth in the series of ten Sivabheda-agamas [1].",
+            "verse_sanskrit": null,
+            "english_explanation": "The Sahasragama is one of the Agama texts, specifically the eighth in the series of ten Sivabheda-agamas [1].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_b66295d2ffad",
+                "domain": "agamas",
+                "content": "The Sahasragama is one of the Agama texts, specifically the eighth in the series of ten Sivabheda-agamas [1].",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.25,
+                "timestamp": "2026-04-30T11:40:44.915236+00:00",
+                "tags": [
+                    "agama",
+                    "name",
+                    "one"
+                ],
+                "clean_content": "The Sahasragama is one of the Agama texts, specifically the eighth in the series of ten Sivabheda-agamas [1]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Which text is related to Vedas?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_1b55dbccb8f7",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_45cec39e37e9",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_5bba5a47a7a7",
+                    "type": "string",
+                    "content": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to [2]. They are considered the crowning part of the Veda, providing knowledge about the ultimate reality and the self. [1] also mentions the importance of being properly instructed by knowers of the Brahman, implying that the Upanishads contain teachings on spiritual growth and self-realization.",
+                    "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_1bb5feb73287",
+                    "type": "string",
+                    "content": "The meaning of \"ब्रह्म (Brahman)\" is the Supreme or Ultimate Reality, which is described in the Vedas as the absolute and imperishable essence of the universe [1]. It can refer to the visible universe inclusive of individual souls or to the Ultimate Reality behind it, experienced in Samadhi as the Self of ourselves [1]. According to the Advaitic explanation, Brahman is above the world of cause and effect [1].",
+                    "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Svetasvatara Upanishad - sanskrit and English.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_3afedffab1ca",
+                    "type": "string",
+                    "content": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+                    "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_8b149d2efef4",
+                    "type": "string",
+                    "content": "The main deity praised in the Padma Purana is Vishnu. [1] The Purana contains stories and descriptions of Vishnu's greatness, as well as the greatness of Srimad Bhagavata, which is also associated with Vishnu. Additionally, the text mentions that listening to the Padma Purana can lead to attaining the abode of Vishnu.",
+                    "source": "The Narada-Purana, Part 4_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Narada-Purana, Part 4_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The text related to Vedas is the Brahma Purana - Parts I-IV [1]. It mentions Vedangas, which are certain classes of works regarded as auxiliary to the Vedas [2].",
+            "verse_sanskrit": null,
+            "english_explanation": "The text related to Vedas is the Brahma Purana - Parts I-IV [1]. It mentions Vedangas, which are certain classes of works regarded as auxiliary to the Vedas [2].",
+            "note": null,
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_18cb83ebdb01",
+                "domain": "vedas",
+                "content": "The text related to Vedas is the Brahma Purana - Parts I-IV [1]. It mentions Vedangas, which are certain classes of works regarded as auxiliary to the Vedas [2].",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.3333333333333333,
+                "timestamp": "2026-04-30T11:40:58.366636+00:00",
+                "tags": [
+                    "related",
+                    "text",
+                    "vedas"
+                ],
+                "clean_content": "The text related to Vedas is the Brahma Purana - Parts I-IV [1]. It mentions Vedangas, which are certain classes of works regarded as auxiliary to the Vedas [2]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "How is disease defined in Charaka Samhita?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_e5c4debb7542",
+                    "type": "string",
+                    "content": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+                    "source": "Shakti and Shakta_ocr.pdf",
+                    "confidence": 1.0,
+                    "trace": {
+                        "knowledge_id": "Shakti and Shakta_ocr.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+            "verse_sanskrit": null,
+            "english_explanation": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+            "note": null,
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_bb1ee984afbe",
+                "domain": "general",
+                "content": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+                "source": "Shakti and Shakta_ocr.pdf",
+                "confidence": 1.0,
+                "timestamp": "2026-04-30T11:41:10.768886+00:00",
+                "tags": [
+                    "charaka",
+                    "defined",
+                    "disease"
+                ],
+                "clean_content": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "Which text discusses both law and punishment systems?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_f83cddef0988",
+                    "type": "string",
+                    "content": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+                    "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_58cb7b7ad451",
+                    "type": "string",
+                    "content": "The correspondence of Yajnavalkya's words with the text of Manu is very close, suggesting that Yajnavalkya had the Manusmriti before him and attempted to abridge Manu's expressions [1]. This indicates that both texts share similar content and ideas, with Yajnavalkya's work possibly building upon or responding to Manu's.",
+                    "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "Both Manu Samhita [1] and Yajnavalkya Samhita [2] discuss law and punishment systems. Manu Samhita outlines the measures of punishment for various crimes, including the repetition of offenses and the severity of the punishment based on the circumstances. Yajnavalkya Samhita, on the other hand, describes the responsibility of individuals who commit crimes, such as theft and murder, and outlines the punishments for these offenses, including physical mutilation and pecuniary penalties.",
+            "verse_sanskrit": null,
+            "english_explanation": "Both Manu Samhita [1] and Yajnavalkya Samhita [2] discuss law and punishment systems. Manu Samhita outlines the measures of punishment for various crimes, including the repetition of offenses and the severity of the punishment based on the circumstances. Yajnavalkya Samhita, on the other hand, describes the responsibility of individuals who commit crimes, such as theft and murder, and outlines the punishments for these offenses, including physical mutilation and pecuniary penalties.",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_a95fb8b8feac",
+                "domain": "general",
+                "content": "Both Manu Samhita [1] and Yajnavalkya Samhita [2] discuss law and punishment systems. Manu Samhita outlines the measures of punishment for various crimes, including the repetition of offenses and the severity of the punishment based on the circumstances. Yajnavalkya Samhita, on the other hand, describes the responsibility of individuals who commit crimes, such as theft and murder, and outlines the punishments for these offenses, including physical mutilation and pecuniary penalties.",
+                "source": "The Uddhava-gītā_sanskrit_English_Hindi_ocred.pdf",
+                "confidence": 0.3333333333333333,
+                "timestamp": "2026-04-30T11:41:23.133847+00:00",
+                "tags": [
+                    "both",
+                    "discusses",
+                    "law"
+                ],
+                "clean_content": "Both Manu Samhita [1] and Yajnavalkya Samhita [2] discuss law and punishment systems. Manu Samhita outlines the measures of punishment for various crimes, including the repetition of offenses and the severity of the punishment based on the circumstances. Yajnavalkya Samhita, on the other hand, describes the responsibility of individuals who commit crimes, such as theft and murder, and outlines the punishments for these offenses, including physical mutilation and pecuniary penalties."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "How do Agamas differ from Vedas?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_2882d2a9eaa6",
+                    "type": "string",
+                    "content": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to [2]. They are considered the crowning part of the Veda, providing knowledge about the ultimate reality and the self. [1] also mentions the importance of being properly instructed by knowers of the Brahman, implying that the Upanishads contain teachings on spiritual growth and self-realization.",
+                    "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                },
+                {
+                    "signal_id": "signal_8ce5f34495e7",
+                    "type": "string",
+                    "content": "The meaning of \"ब्रह्म (Brahman)\" is the Supreme or Ultimate Reality, which is described in the Vedas as the absolute and imperishable essence of the universe [1]. It can refer to the visible universe inclusive of individual souls or to the Ultimate Reality behind it, experienced in Samadhi as the Self of ourselves [1]. According to the Advaitic explanation, Brahman is above the world of cause and effect [1].",
+                    "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+                    "confidence": 0.3333333333333333,
+                    "trace": {
+                        "knowledge_id": "Svetasvatara Upanishad - sanskrit and English.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "According to the provided context, Agamas differ from Vedas in several ways. Firstly, while Vedas are restricted to the three varnas, Agamas are open to all. Secondly, Vedas consist of three parts - Stotras, Brahmanas, and Aranyakas, whereas Agamas consist of four divisions - Carya, Kriya, Yoga, and Jnana. Additionally, Agamas do not have the Stotras corresponding to the Samhitas of the Vedas, as these hymns are taken as part of the Agamas to be used at prescribed occasions [1]. Furthermore, while Vedas pray to many gods, Agamas proclaim that Siva is the only god that exists [1].",
+            "verse_sanskrit": null,
+            "english_explanation": "According to the provided context, Agamas differ from Vedas in several ways. Firstly, while Vedas are restricted to the three varnas, Agamas are open to all. Secondly, Vedas consist of three parts - Stotras, Brahmanas, and Aranyakas, whereas Agamas consist of four divisions - Carya, Kriya, Yoga, and Jnana. Additionally, Agamas do not have the Stotras corresponding to the Samhitas of the Vedas, as these hymns are taken as part of the Agamas to be used at prescribed occasions [1]. Furthermore, while Vedas pray to many gods, Agamas proclaim that Siva is the only god that exists [1].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_e78a914297c5",
+                "domain": "upanishads",
+                "content": "According to the provided context, Agamas differ from Vedas in several ways. Firstly, while Vedas are restricted to the three varnas, Agamas are open to all. Secondly, Vedas consist of three parts - Stotras, Brahmanas, and Aranyakas, whereas Agamas consist of four divisions - Carya, Kriya, Yoga, and Jnana. Additionally, Agamas do not have the Stotras corresponding to the Samhitas of the Vedas, as these hymns are taken as part of the Agamas to be used at prescribed occasions [1]. Furthermore, while Vedas pray to many gods, Agamas proclaim that Siva is the only god that exists [1].",
+                "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+                "confidence": 0.3333333333333333,
+                "timestamp": "2026-04-30T11:41:35.658452+00:00",
+                "tags": [
+                    "agamas",
+                    "differ",
+                    "how"
+                ],
+                "clean_content": "According to the provided context, Agamas differ from Vedas in several ways. Firstly, while Vedas are restricted to the three varnas, Agamas are open to all. Secondly, Vedas consist of three parts - Stotras, Brahmanas, and Aranyakas, whereas Agamas consist of four divisions - Carya, Kriya, Yoga, and Jnana. Additionally, Agamas do not have the Stotras corresponding to the Samhitas of the Vedas, as these hymns are taken as part of the Agamas to be used at prescribed occasions [1]. Furthermore, while Vedas pray to many gods, Agamas proclaim that Siva is the only god that exists [1]."
+            }
+        }
+    },
+    {
+        "endpoint": "/new_rag",
+        "query": "How does the Taittiriya Upanishad explain Brahman?",
+        "response": {
+            "kosha_attempted": true,
+            "fallback_to_llm": false,
+            "fallback_reason": null,
+            "signals": [
+                {
+                    "signal_id": "signal_77dd0bc08fc2",
+                    "type": "string",
+                    "content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+                    "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+                    "confidence": 0.6,
+                    "trace": {
+                        "knowledge_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+                        "method": "kosha_retrieval"
+                    }
+                }
+            ],
+            "final_answer": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+            "verse_sanskrit": null,
+            "english_explanation": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+            "note": "Sanskrit text detected but low quality OCR",
+            "kosha_entry": {
+                "knowledge_id": "KOSHA_ed0ac67aa824",
+                "domain": "upanishads",
+                "content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+                "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+                "confidence": 0.6,
+                "timestamp": "2026-04-30T11:41:48.151186+00:00",
+                "tags": [
+                    "taittiriya",
+                    "upanishad"
+                ],
+                "clean_content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2]."
+            }
+        }
+    }
+]

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UniGuru Curriculum Knowledge Graph",
+  "type": "object",
+  "required": [
+    "graph_id",
+    "schema_version",
+    "nodes",
+    "edges",
+    "metadata"
+  ],
+  "properties": {
+    "graph_id": {
+      "const": "UNIGURU_CURRICULUM_KNOWLEDGE_GRAPH_V2"
+    },
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "label",
+          "address"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "enum": [
+              "publisher",
+              "board",
+              "textbook",
+              "edition",
+              "chapter",
+              "section",
+              "concept",
+              "exercise",
+              "learning_outcome",
+              "assessment",
+              "mastery_node",
+              "learning_path"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "address": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from",
+          "to",
+          "type"
+        ],
+        "properties": {
+          "from": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

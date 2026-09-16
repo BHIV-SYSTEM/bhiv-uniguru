@@ -1,0 +1,22 @@
+{
+  "failure_modes": [
+    {
+      "mode": "missing_evidence",
+      "query": "What is the stock price of Apple?",
+      "result_status": "NO_VERIFIED_KNOWLEDGE",
+      "claim_status": "UNVERIFIED_FALLBACK"
+    },
+    {
+      "mode": "homonym_collision",
+      "query": "What is Kala?",
+      "result_status": "VERIFIED",
+      "resolution": "tradition_context_separation"
+    },
+    {
+      "mode": "unverified_llm_fallback",
+      "query": "Speculative theory",
+      "result_status": "UNVERIFIED_FALLBACK",
+      "authority_tier": "FALLBACK"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "canonical_memory": {
+    "Governed Semantic Memory": {
+      "canonical": "Governed Semantic Memory",
+      "confidence": 0.8,
+      "lineage_event_hashes": [
+        "55ec433f8d2959f70398224e67dc3e474a0dcad0727dd61184c6669b81dd01f5"
+      ],
+      "source_signal_ids": [
+        "signal_1"
+      ],
+      "trace_ids": [
+        "test_trace"
+      ]
+    }
+  },
+  "contradiction_audit": [],
+  "event_count": 1,
+  "lineage": [
+    {
+      "classification": "canonical",
+      "event_hash": "55ec433f8d2959f70398224e67dc3e474a0dcad0727dd61184c6669b81dd01f5",
+      "interpretation_hash": "eae9f7b5bfe564e946305e80a17599fc493c5e2e4327d1fe7e29ae69afd7b23a",
+      "previous_event_hash": null,
+      "retrieval_truth_hash": "0be415a87866df2f0bb59d520f8538e3302e277fe04cbf05444b483de241f54b",
+      "trace_id": "test_trace"
+    }
+  ],
+  "replay_integrity": {
+    "hash_chain_ok": true,
+    "last_event_hash": "55ec433f8d2959f70398224e67dc3e474a0dcad0727dd61184c6669b81dd01f5",
+    "rollback_target": null
+  },
+  "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_RECONSTRUCTION_V1",
+  "state_hash": "4e03b7e502b3fb1eb485f64553489cb86cdb8bae9afee696e5a0ba197948802d",
+  "transient_memory": []
+}

@@ -1,0 +1,1092 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure black background is maintained */
+html, body {
+  background-color: #000000 !important;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+/* Global layout improvements */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure proper centering for main content */
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Fix for content that should be centered */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Improved chat layout */
+.chat-layout {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 4rem); /* Account for navbar */
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/* Better responsive containers */
+.responsive-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-container {
+    padding: 0 2rem;
+  }
+}
+
+/* Fix for sidebar layout issues */
+.sidebar-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0; /* Important for flex shrinking */
+}
+
+/* Z-index layering system */
+.z-navbar {
+  z-index: 40;
+}
+
+.z-sidebar {
+  z-index: 60;
+}
+
+.z-modal {
+  z-index: 100;
+}
+
+.z-tooltip {
+  z-index: 200;
+}
+
+/* Ensure tooltips and modals appear above everything */
+[role="tooltip"],
+.tooltip,
+.modal,
+.popover {
+  z-index: 200 !important;
+}
+
+/* Fix for any browser tooltips or extension popups */
+*[title]:hover::after,
+*[title]:focus::after {
+  z-index: 300 !important;
+}
+
+/* Chat container specific fixes */
+.chat-container {
+  height: calc(100vh - 4rem); /* Full height minus navbar */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.chat-messages-area {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.chat-input-area {
+  flex-shrink: 0;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  width: 100%;
+}
+
+/* Hide scrollbars utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+/* Sidebar scrollbar styles */
+.sidebar-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.6) rgba(139, 92, 246, 0.1);
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 4px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.6), rgba(124, 58, 237, 0.8));
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.8), rgba(124, 58, 237, 1));
+}
+
+/* Prevent page scrolling on chat page */
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+/* Ensure white text in auth cards */
+.bg-glass-card,
+.bg-glass-card * {
+  color: #ffffff !important;
+}
+
+/* Override for buttons that should have dark text */
+.bg-white,
+.bg-white * {
+  color: #080710 !important;
+}
+
+/* Enhanced Chat Input Styles */
+.enhanced-chat-input textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.enhanced-chat-input textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.enhanced-chat-input textarea::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed, #a855f7);
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.enhanced-chat-input textarea::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #a78bfa, #9333ea, #7c3aed);
+}
+
+/* Chat Messages Scrollbar - Enhanced visibility and positioned at right */
+.chat-messages-container {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Force scrollbar to always be visible and positioned correctly */
+  scrollbar-gutter: stable;
+}
+
+.chat-messages-container::-webkit-scrollbar {
+  width: 12px;
+  /* Make scrollbar more prominent and visible */
+  background: transparent;
+}
+
+.chat-messages-container::-webkit-scrollbar-track {
+  background: rgba(55, 65, 81, 0.5);
+  border-radius: 6px;
+  margin: 4px 0;
+  /* Add subtle border for better visibility */
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  /* Add subtle shadow */
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.chat-messages-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  /* Add subtle shadow for better visibility */
+  box-shadow: 0 2px 6px rgba(139, 92, 246, 0.4);
+  /* Minimum height to ensure visibility */
+  min-height: 30px;
+  /* Add border for better definition */
+  border: 1px solid rgba(139, 92, 246, 0.6);
+}
+
+.chat-messages-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.6);
+  transform: scaleX(1.1);
+  border: 1px solid rgba(167, 139, 250, 0.8);
+}
+
+.chat-messages-container::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(135deg, #c4b5fd, #a78bfa);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.8);
+}
+
+/* Firefox scrollbar styling */
+.chat-messages-container {
+  scrollbar-width: thin;
+  scrollbar-color: #8b5cf6 rgba(55, 65, 81, 0.5);
+}
+
+/* Remove all focus outlines from chat input */
+.enhanced-chat-input textarea,
+.enhanced-chat-input textarea:focus,
+.enhanced-chat-input textarea:active,
+.enhanced-chat-input *:focus,
+.enhanced-chat-input *:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Prevent any browser-specific focus styles */
+.enhanced-chat-input textarea::-moz-focus-inner {
+  border: 0;
+}
+
+.enhanced-chat-input textarea::-webkit-outer-spin-button,
+.enhanced-chat-input textarea::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Typing animation */
+@keyframes typing-glow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.typing-animation {
+  background: linear-gradient(90deg,
+    rgba(232, 121, 249, 0.1) 0%,
+    rgba(192, 132, 252, 0.2) 25%,
+    rgba(168, 85, 247, 0.2) 50%,
+    rgba(147, 51, 234, 0.2) 75%,
+    rgba(232, 121, 249, 0.1) 100%);
+  background-size: 200% 200%;
+  animation: typing-glow 2s ease-in-out infinite;
+}
+
+/* Placeholder cursor animation */
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: cursor-blink 1s infinite;
+}
+
+/* Focus glow effect */
+.enhanced-chat-input.focused {
+  box-shadow: 0 0 6px rgba(139, 92, 246, 0.1);
+  border-color: rgba(139, 92, 246, 0.2);
+}
+
+/* Smooth transitions for all interactive elements */
+.enhanced-chat-input * {
+  transition: all 0.3s ease;
+}
+
+/* Hover effects for icons */
+.chat-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Gradient borders for toggle buttons with border radius */
+.tools-gradient-border {
+  border: 2px solid transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) padding-box,
+              linear-gradient(135deg, #fbbf24, #f59e0b, #d97706) border-box;
+}
+
+.tools-gradient-border:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) padding-box,
+              linear-gradient(135deg, #fcd34d, #fbbf24, #f59e0b) border-box;
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
+}
+
+.guru-gradient-border {
+  border: 2px solid transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) padding-box,
+              linear-gradient(135deg, #a855f7, #9333ea, #7c3aed, #6366f1) border-box;
+}
+
+.guru-gradient-border:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) padding-box,
+              linear-gradient(135deg, #7c3aed, #a855f7, #9333ea, #7c3aed) border-box;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+}
+
+/* Enhanced Send Button Styles */
+.send-button {
+  position: relative;
+  overflow: visible;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  outline: none;
+}
+
+.send-button:hover:not(:disabled) {
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 25px rgba(97, 172, 239, 0.5), 0 0 40px rgba(168, 85, 247, 0.3) !important;
+}
+
+.send-button:active:not(:disabled) {
+  transform: scale(0.98) !important;
+}
+
+.send-button:disabled {
+  cursor: not-allowed;
+  transform: scale(0.95) !important;
+  opacity: 0.6;
+}
+
+/* Send button pulse animation when enabled */
+@keyframes send-button-pulse {
+  0% {
+    box-shadow: 0 4px 20px rgba(97, 172, 239, 0.4), 0 0 30px rgba(168, 85, 247, 0.2);
+  }
+  50% {
+    box-shadow: 0 6px 25px rgba(97, 172, 239, 0.6), 0 0 40px rgba(168, 85, 247, 0.4);
+  }
+  100% {
+    box-shadow: 0 4px 20px rgba(97, 172, 239, 0.4), 0 0 30px rgba(168, 85, 247, 0.2);
+  }
+}
+
+.send-button:not(:disabled) {
+  animation: send-button-pulse 2s ease-in-out infinite;
+}
+
+/* Send button icon animation */
+.send-button .fa-arrow-up {
+  transition: all 0.3s ease;
+}
+
+.send-button:hover:not(:disabled) .fa-arrow-up {
+  transform: translateY(-2px);
+}
+
+.send-button:active:not(:disabled) .fa-arrow-up {
+  transform: translateY(0px);
+}
+
+/* Modern floating animation for hero logo */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(-1deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Enhanced gradient text animation */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 4s ease-in-out infinite;
+}
+
+/* Pulse glow effect for cards */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(147, 51, 234, 0.3), 0 0 60px rgba(59, 130, 246, 0.2);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* MAXIMUM BUTTON STYLING ANIMATIONS */
+
+/* Shimmer effect for button */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+/* Advanced gradient animation */
+@keyframes gradient-shift-advanced {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+}
+
+/* Enhanced pulse glow for button */
+@keyframes mega-pulse-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 20px rgba(147, 51, 234, 0.5),
+      0 0 40px rgba(59, 130, 246, 0.3),
+      0 0 60px rgba(6, 182, 212, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 40px rgba(147, 51, 234, 0.8),
+      0 0 80px rgba(59, 130, 246, 0.6),
+      0 0 120px rgba(6, 182, 212, 0.4),
+      0 0 160px rgba(236, 72, 153, 0.3);
+  }
+}
+
+/* Floating sparkle animation */
+@keyframes sparkle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-10px) rotate(180deg);
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+
+/* Text glow effect */
+@keyframes text-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow:
+      0 0 20px rgba(255, 255, 255, 0.8),
+      0 0 30px rgba(147, 51, 234, 0.5),
+      0 0 40px rgba(59, 130, 246, 0.3);
+  }
+}
+
+/* Animation delay utilities */
+.animation-delay-100 {
+  animation-delay: 0.1s;
+}
+.animation-delay-150 {
+  animation-delay: 0.15s;
+}
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+.animation-delay-500 {
+  animation-delay: 0.5s;
+}
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+.animation-delay-800 {
+  animation-delay: 0.8s;
+}
+
+/* Beautiful loading spinner animations */
+@keyframes spinner-gradient {
+  0% {
+    transform: rotate(0deg);
+    background: linear-gradient(45deg, #a855f7, #3b82f6, #06b6d4, #a855f7);
+  }
+  25% {
+    background: linear-gradient(45deg, #3b82f6, #06b6d4, #a855f7, #3b82f6);
+  }
+  50% {
+    transform: rotate(180deg);
+    background: linear-gradient(45deg, #06b6d4, #a855f7, #3b82f6, #06b6d4);
+  }
+  75% {
+    background: linear-gradient(45deg, #a855f7, #3b82f6, #06b6d4, #a855f7);
+  }
+  100% {
+    transform: rotate(360deg);
+    background: linear-gradient(45deg, #a855f7, #3b82f6, #06b6d4, #a855f7);
+  }
+}
+
+@keyframes loading-orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.6), 0 0 60px rgba(59, 130, 246, 0.4);
+  }
+}
+
+.animate-spinner-gradient {
+  animation: spinner-gradient 2s linear infinite;
+}
+
+.animate-loading-orbit {
+  animation: loading-orbit 1.5s linear infinite;
+}
+
+.animate-loading-pulse-glow {
+  animation: loading-pulse-glow 2s ease-in-out infinite;
+}
+
+/* Button hover state enhancements */
+.mega-button:hover {
+  animation:
+    gradient-shift-advanced 3s ease infinite,
+    mega-pulse-glow 2s ease-in-out infinite,
+    text-glow 1.5s ease-in-out infinite;
+}
+
+/* ===== MOBILE-SPECIFIC UTILITIES ===== */
+
+/* Mobile HomePage Optimizations */
+@media (max-width: 640px) {
+  .welcome-container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Enhanced mobile touch targets */
+  .touch-target {
+    min-height: 48px !important;
+    min-width: 48px !important;
+  }
+
+  /* Mobile-specific card hover effects */
+  .mobile-card-hover:active {
+    transform: scale(0.98);
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  /* Mobile typography improvements */
+  .mobile-heading {
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .mobile-text {
+    line-height: 1.5;
+  }
+
+  /* Mobile-specific spacing improvements */
+  .mobile-spacing {
+    margin-bottom: 2rem;
+  }
+
+  /* Prevent horizontal scroll on mobile */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Optimize mobile viewport */
+  .min-h-screen {
+    min-height: 100vh;
+    min-height: 100dvh;
+    min-height: -webkit-fill-available;
+  }
+
+  /* Mobile menu safe area - for navbar mobile menu */
+  .mobile-menu-safe-area {
+    padding-top: max(env(safe-area-inset-top), 0);
+    padding-bottom: max(env(safe-area-inset-bottom), 1rem);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - 4rem);
+    background: linear-gradient(180deg, rgba(17, 24, 39, 0.98) 0%, rgba(0, 0, 0, 0.95) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(147, 51, 234, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    z-index: 40;
+  }
+
+  /* Mobile menu content overlay for better readability */
+  .mobile-menu-safe-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Auth card safe area - for login/register pages */
+  .auth-safe-area {
+    padding-top: max(env(safe-area-inset-top), 1rem);
+    padding-bottom: max(env(safe-area-inset-bottom), 1rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  /* Mobile-safe button styling */
+  .mobile-button {
+    -webkit-tap-highlight-color: rgba(147, 51, 234, 0.2);
+    tap-highlight-color: rgba(147, 51, 234, 0.2);
+  }
+}
+
+/* Mobile-specific animations */
+@keyframes mobile-slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes mobile-slide-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes mobile-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes mobile-menu-item-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mobile-menu-stagger {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-mobile-slide-up {
+  animation: mobile-slide-up 0.3s ease-out;
+}
+
+.animate-mobile-slide-down {
+  animation: mobile-slide-down 0.3s ease-out;
+}
+
+.animate-mobile-fade-in {
+  animation: mobile-fade-in 0.2s ease-out;
+}
+
+.animate-mobile-menu-item {
+  animation: mobile-menu-item-fade-in 0.4s ease-out;
+}
+
+.animate-mobile-stagger-1 {
+  animation: mobile-menu-stagger 0.5s ease-out 0.1s both;
+}
+
+.animate-mobile-stagger-2 {
+  animation: mobile-menu-stagger 0.5s ease-out 0.2s both;
+}
+
+.animate-mobile-stagger-3 {
+  animation: mobile-menu-stagger 0.5s ease-out 0.3s both;
+}
+
+/* Mobile-specific responsive utilities */
+@media (max-width: 640px) {
+  /* Mobile-specific sidebar adjustments */
+  .guru-sidebar {
+    top: 0 !important;
+    height: 100vh !important;
+    width: 100% !important;
+    border-left: none !important;
+  }
+
+  .tools-sidebar {
+    top: 0 !important;
+    height: 100vh !important;
+    width: 100% !important;
+    border-right: none !important;
+  }
+}
+
+/* Tablet-specific utilities */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .tablet-hidden { display: none !important; }
+  .tablet-block { display: block !important; }
+  .tablet-flex { display: flex !important; }
+  .tablet-grid { display: grid !important; }
+}
+
+/* Mobile-specific utility classes */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+.mobile-safe-area {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+.mobile-scroll {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.2) transparent;
+}
+
+.mobile-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.mobile-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mobile-scroll::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.2);
+  border-radius: 2px;
+}
+
+.mobile-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.3);
+}
+
+/* Global mobile optimizations */
+@media (max-width: 640px) {
+  /* Improve scrolling performance */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent zoom on input focus */
+  input, textarea, select {
+    font-size: 16px !important;
+  }
+
+  /* Optimize touch interactions */
+  button, a, [role="button"] {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    tap-highlight-color: rgba(0, 0, 0, 0.1);
+    touch-action: manipulation;
+  }
+
+  /* Prevent text selection on UI elements */
+  .navbar, .sidebar, .button, button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Improve performance for animations */
+  .animate-float, .animate-pulse-glow, .animate-gradient {
+    will-change: transform;
+  }
+
+  /* Ensure touch targets are large enough */
+  .touch-target {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  /* Mobile navbar sidebar improvements */
+  .mobile-sidebar-content {
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+  }
+
+  .mobile-sidebar-section {
+    padding: 0.5rem;
+  }
+
+  .mobile-guru-list {
+    max-height: 14rem;
+    overflow-y: auto;
+  }
+
+  .mobile-chat-list {
+    max-height: 14rem;
+    overflow-y: auto;
+  }
+
+  /* Mobile scroll improvements */
+  .mobile-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(147, 51, 234, 0.3) transparent;
+  }
+
+  .mobile-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .mobile-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .mobile-scroll::-webkit-scrollbar-thumb {
+    background: rgba(147, 51, 234, 0.3);
+    border-radius: 2px;
+  }
+
+  .mobile-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(147, 51, 234, 0.5);
+  }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .drop-shadow-2xl {
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+  }
+}
+
+/* Enhanced Chat Input Styles */
+.enhanced-chat-input {
+  position: relative;
+}
+
+.enhanced-chat-input.drag-over {
+  transform: scale(1.01);
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.15);
+}
+
+.enhanced-chat-input.drag-over::before {
+  content: "Drop files here to upload";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(168, 85, 247, 0.9);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.typing-animation {
+  animation: typing-pulse 2s ease-in-out infinite;
+}
+
+@keyframes typing-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Line clamp utilities */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+
+/* File attachment animations */
+.file-attachment-enter {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+}
+
+.file-attachment-enter-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.file-attachment-exit {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.file-attachment-exit-active {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+  transition: opacity 200ms ease-in, transform 200ms ease-in;
+}
+
+/* Loading dots animation */
+@keyframes loading-dots {
+  0%, 20% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  80%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+}
+

@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "gc_authority_enforcement_stable": true,
+    "mdu_lineage_hash_stable": true,
+    "tantra_contract_schema_stable": true,
+    "tantra_trace_continuity_stable": true,
+    "trace_id_stable": true,
+    "vijay_last_event_hash_stable": true,
+    "vijay_runtime_hash_stable": true
+  },
+  "generated_at": "2026-07-21T06:12:29.369585Z",
+  "query_hash": "c0b9c389c7579cd8",
+  "replay_verified": true,
+  "schema": "UNIGURU_ECOSYSTEM_REPLAY_VERIFICATION_V1",
+  "stable_fields": {
+    "contract_schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "last_event_hash": "d82a788ed6c5b2de3b6f166f9779bb5cc7d44bf46d8a9708338e9bc9ea27c720",
+    "lineage_hash": "6a24c02b70fdba6ff563696b67859f0cc377bde21f0599930f4bd7564e9d41f8",
+    "runtime_hash": "e7bd70dc0bb04093cf928bc4ab01c0f0c0ab252e93dab894f591e5e3bd1cd4cb"
+  },
+  "trace_id": "ecosystem_replay_31fc143dd84a",
+  "verification_hash": "0f3524e467e641e56c1a4cf59ee8e65ee20c11cd6947b06d4265caac8e893091"
+}

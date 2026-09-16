@@ -1,0 +1,1460 @@
+{
+  "answer": "I do not have verified knowledge to answer this question.",
+  "bucket_proof": {
+    "accepted_signals": [],
+    "confidence_derivation": {
+      "accepted_count": 0,
+      "accepted_derivations": [],
+      "consensus": {
+        "ambiguity_classification": "no_valid_signals",
+        "consensus_score": 0.0,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No valid signals available.",
+        "multi_source_reinforcement": 0.0
+      },
+      "overall": 0.0,
+      "rejected_count": 11
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "rejected_signals": [
+      "signal_15c23a4dedd5",
+      "signal_1f2412a66c91",
+      "signal_8c50f9a8bd55",
+      "signal_70020d40086f",
+      "signal_5bba5a47a7a7",
+      "signal_b2dc6d42dcef",
+      "signal_ce8454ca17f9",
+      "signal_0f2b81e3b8b2",
+      "signal_248ccce0b0a5",
+      "signal_dec825b0eed2",
+      "signal_6baaefddac51"
+    ],
+    "semantic_path": [],
+    "timestamp": "2026-05-07T04:46:14.769059Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_5138bd6c3dd55744",
+      "contract_emission": "trace_5138bd6c3dd55744",
+      "downstream_execution": "trace_5138bd6c3dd55744",
+      "immutable": true,
+      "retrieval": "trace_5138bd6c3dd55744",
+      "synthesis": "trace_5138bd6c3dd55744",
+      "validation": "trace_5138bd6c3dd55744"
+    },
+    "trace_id": "trace_5138bd6c3dd55744",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "confidence": 0.0,
+  "confidence_breakdown": {
+    "accepted_count": 0,
+    "accepted_derivations": [],
+    "consensus": {
+      "ambiguity_classification": "no_valid_signals",
+      "consensus_score": 0.0,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No valid signals available.",
+      "multi_source_reinforcement": 0.0
+    },
+    "overall": 0.0,
+    "rejected_count": 11
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "no_valid_signals",
+    "consensus_score": 0.0,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No valid signals available.",
+    "multi_source_reinforcement": 0.0
+  },
+  "detected_domain": "puranas",
+  "domain_resolution": {
+    "confidence": 1.0,
+    "domain": "puranas",
+    "entities": [
+      {
+        "canonical": "Agni",
+        "concepts": [
+          "fire",
+          "yajna"
+        ],
+        "domain": "vedas",
+        "entity_type": "deity",
+        "matched_alias": "agni"
+      },
+      {
+        "canonical": "Agni Purana",
+        "concepts": [
+          "purana",
+          "ritual",
+          "architecture"
+        ],
+        "domain": "puranas",
+        "entity_type": "text",
+        "matched_alias": "agni purana"
+      },
+      {
+        "canonical": "Temple",
+        "concepts": [
+          "ritual",
+          "architecture"
+        ],
+        "domain": "governance",
+        "entity_type": "structure",
+        "matched_alias": "temple"
+      }
+    ],
+    "method": "canonical_text_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "REJECTED_NO_DOWNSTREAM_ACTION",
+    "trace_id": "trace_5138bd6c3dd55744"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 25,
+    "total_entries": 37,
+    "valid_entries": 12
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-05-07T04:46:14.769059Z",
+  "knowledge_ids_used": [],
+  "matched_signals": [],
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_5138bd6c3dd55744"
+  },
+  "query": "Explain temple construction in the Agni Purana",
+  "reasoning": "No signals passed domain+tag+query validation.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_rejection",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Bhagavata Purana",
+            "concepts": [
+              "Krishna",
+              "devotion",
+              "purana"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "srimad bhagavata"
+          },
+          {
+            "canonical": "Narada Purana",
+            "concepts": [
+              "purana",
+              "devotion",
+              "pilgrimage"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "narada purana"
+          },
+          {
+            "canonical": "Narayana",
+            "concepts": [
+              "preservation",
+              "cosmic person"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "vishnu"
+          },
+          {
+            "canonical": "Padma Purana",
+            "concepts": [
+              "purana",
+              "Vishnu",
+              "creation"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "padma purana"
+          }
+        ],
+        "concept_overlap": 0.2308,
+        "confidence": 0.395076,
+        "confidence_derivation": {
+          "content_overlap": 0.25,
+          "derived_confidence": 0.4962,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5972,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8772,
+              "ontology_convergence": 0.5372,
+              "retrieval_strength": 0.3951,
+              "semantic_agreement": 0.2308,
+              "source_authority": 0.4172
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4962,
+            "why": [
+              "epistemic_score=0.4962",
+              "ceiling_applied=0.5972",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3255,
+          "retrieval_confidence": 0.3951,
+          "semantic_score": 0.3808,
+          "tag_match_score": 0.25
+        },
+        "content_overlap": 0.25,
+        "contextual_proximity": 1.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Agni",
+              "concepts": [
+                "fire",
+                "yajna"
+              ],
+              "domain": "vedas",
+              "entity_type": "deity",
+              "matched_alias": "agni"
+            },
+            {
+              "canonical": "Agni Purana",
+              "concepts": [
+                "purana",
+                "ritual",
+                "architecture"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "agni purana"
+            },
+            {
+              "canonical": "Temple",
+              "concepts": [
+                "ritual",
+                "architecture"
+              ],
+              "domain": "governance",
+              "entity_type": "structure",
+              "matched_alias": "temple"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [
+          "purana"
+        ],
+        "missing_required_entities": [
+          "Agni",
+          "Temple"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Agni",
+            "concepts": [
+              "fire",
+              "yajna"
+            ],
+            "domain": "vedas",
+            "entity_type": "deity",
+            "matched_alias": "agni"
+          },
+          {
+            "canonical": "Agni Purana",
+            "concepts": [
+              "purana",
+              "ritual",
+              "architecture"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "agni purana"
+          },
+          {
+            "canonical": "Temple",
+            "concepts": [
+              "ritual",
+              "architecture"
+            ],
+            "domain": "governance",
+            "entity_type": "structure",
+            "matched_alias": "temple"
+          }
+        ],
+        "semantic_score": 0.3808,
+        "signal_id": "signal_15c23a4dedd5",
+        "source": "The Narada-Purana, Part 4_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.4172,
+          "confidence_ceiling": 0.5972,
+          "lineage": {
+            "original_source": "The Narada-Purana, Part 4_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1228,
+          "source": "The Narada-Purana, Part 4_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.25
+      },
+      "rejection_reason": "entity_conflict",
+      "signal_id": "signal_15c23a4dedd5",
+      "source": "The Narada-Purana, Part 4_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.364328,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_1f2412a66c91",
+        "source": "The Narada-Purana, Part 1_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "low_contextual_overlap",
+      "signal_id": "signal_1f2412a66c91",
+      "source": "The Narada-Purana, Part 1_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Narada Purana",
+            "concepts": [
+              "purana",
+              "devotion",
+              "pilgrimage"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "narada purana"
+          }
+        ],
+        "concept_overlap": 0.1538,
+        "confidence": 0.36374999999999996,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.4671,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5762,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8562,
+              "ontology_convergence": 0.5025,
+              "retrieval_strength": 0.3637,
+              "semantic_agreement": 0.1538,
+              "source_authority": 0.3962
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4671,
+            "why": [
+              "epistemic_score=0.4671",
+              "ceiling_applied=0.5762",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1971,
+          "retrieval_confidence": 0.3637,
+          "semantic_score": 0.3538,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 1.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Agni",
+              "concepts": [
+                "fire",
+                "yajna"
+              ],
+              "domain": "vedas",
+              "entity_type": "deity",
+              "matched_alias": "agni"
+            },
+            {
+              "canonical": "Agni Purana",
+              "concepts": [
+                "purana",
+                "ritual",
+                "architecture"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "agni purana"
+            },
+            {
+              "canonical": "Temple",
+              "concepts": [
+                "ritual",
+                "architecture"
+              ],
+              "domain": "governance",
+              "entity_type": "structure",
+              "matched_alias": "temple"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Agni",
+          "Temple"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Agni",
+            "concepts": [
+              "fire",
+              "yajna"
+            ],
+            "domain": "vedas",
+            "entity_type": "deity",
+            "matched_alias": "agni"
+          },
+          {
+            "canonical": "Agni Purana",
+            "concepts": [
+              "purana",
+              "ritual",
+              "architecture"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "agni purana"
+          },
+          {
+            "canonical": "Temple",
+            "concepts": [
+              "ritual",
+              "architecture"
+            ],
+            "domain": "governance",
+            "entity_type": "structure",
+            "matched_alias": "temple"
+          }
+        ],
+        "semantic_score": 0.3538,
+        "signal_id": "signal_8c50f9a8bd55",
+        "source": "The Narada-Purana, Part 3_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.3962,
+          "confidence_ceiling": 0.5762,
+          "lineage": {
+            "original_source": "The Narada-Purana, Part 3_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1438,
+          "source": "The Narada-Purana, Part 3_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_8c50f9a8bd55",
+      "source": "The Narada-Purana, Part 3_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Brahmanda Purana",
+            "concepts": [
+              "cosmology",
+              "purana"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "brahmanda purana"
+          },
+          {
+            "canonical": "Ramayana",
+            "concepts": [
+              "Rama",
+              "dharma",
+              "forest exile"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "valmiki ramayana"
+          }
+        ],
+        "concept_overlap": 0.1538,
+        "confidence": 0.320376,
+        "confidence_derivation": {
+          "content_overlap": 0.25,
+          "derived_confidence": 0.4717,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.5025,
+              "retrieval_strength": 0.3204,
+              "semantic_agreement": 0.1538,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4717,
+            "why": [
+              "epistemic_score=0.4717",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.2362,
+          "retrieval_confidence": 0.3204,
+          "semantic_score": 0.3538,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.25,
+        "contextual_proximity": 1.0,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Agni",
+              "concepts": [
+                "fire",
+                "yajna"
+              ],
+              "domain": "vedas",
+              "entity_type": "deity",
+              "matched_alias": "agni"
+            },
+            {
+              "canonical": "Agni Purana",
+              "concepts": [
+                "purana",
+                "ritual",
+                "architecture"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "agni purana"
+            },
+            {
+              "canonical": "Temple",
+              "concepts": [
+                "ritual",
+                "architecture"
+              ],
+              "domain": "governance",
+              "entity_type": "structure",
+              "matched_alias": "temple"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Agni",
+          "Temple"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Agni",
+            "concepts": [
+              "fire",
+              "yajna"
+            ],
+            "domain": "vedas",
+            "entity_type": "deity",
+            "matched_alias": "agni"
+          },
+          {
+            "canonical": "Agni Purana",
+            "concepts": [
+              "purana",
+              "ritual",
+              "architecture"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "agni purana"
+          },
+          {
+            "canonical": "Temple",
+            "concepts": [
+              "ritual",
+              "architecture"
+            ],
+            "domain": "governance",
+            "entity_type": "structure",
+            "matched_alias": "temple"
+          }
+        ],
+        "semantic_score": 0.3538,
+        "signal_id": "signal_70020d40086f",
+        "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "entity_conflict",
+      "signal_id": "signal_70020d40086f",
+      "source": "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahma",
+            "concepts": [
+              "creation",
+              "cosmology"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "brahma"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          },
+          {
+            "canonical": "Vedas",
+            "concepts": [
+              "samhita",
+              "ritual",
+              "knowledge"
+            ],
+            "domain": "vedas",
+            "entity_type": "text_group",
+            "matched_alias": "vedas"
+          },
+          {
+            "canonical": "Yoga",
+            "concepts": [
+              "discipline",
+              "meditation"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "yoga"
+          }
+        ],
+        "concept_overlap": 0.1538,
+        "confidence": 0.303456,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.4388,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.7825,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.4953,
+              "retrieval_strength": 0.3035,
+              "semantic_agreement": 0.1538,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4388,
+            "why": [
+              "epistemic_score=0.4388",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1755,
+          "retrieval_confidence": 0.3035,
+          "semantic_score": 0.3321,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.7825,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Agni",
+              "concepts": [
+                "fire",
+                "yajna"
+              ],
+              "domain": "vedas",
+              "entity_type": "deity",
+              "matched_alias": "agni"
+            },
+            {
+              "canonical": "Agni Purana",
+              "concepts": [
+                "purana",
+                "ritual",
+                "architecture"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "agni purana"
+            },
+            {
+              "canonical": "Temple",
+              "concepts": [
+                "ritual",
+                "architecture"
+              ],
+              "domain": "governance",
+              "entity_type": "structure",
+              "matched_alias": "temple"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Agni",
+          "Temple"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Agni",
+            "concepts": [
+              "fire",
+              "yajna"
+            ],
+            "domain": "vedas",
+            "entity_type": "deity",
+            "matched_alias": "agni"
+          },
+          {
+            "canonical": "Agni Purana",
+            "concepts": [
+              "purana",
+              "ritual",
+              "architecture"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "agni purana"
+          },
+          {
+            "canonical": "Temple",
+            "concepts": [
+              "ritual",
+              "architecture"
+            ],
+            "domain": "governance",
+            "entity_type": "structure",
+            "matched_alias": "temple"
+          }
+        ],
+        "semantic_score": 0.3321,
+        "signal_id": "signal_5bba5a47a7a7",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_5bba5a47a7a7",
+      "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Devi",
+            "concepts": [
+              "power",
+              "protection"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "shakti"
+          }
+        ],
+        "concept_overlap": 0.0769,
+        "confidence": 0.262056,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.375,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.4513,
+              "retrieval_strength": 0.2621,
+              "semantic_agreement": 0.0769,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.375,
+            "why": [
+              "epistemic_score=0.3750",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1486,
+          "retrieval_confidence": 0.2621,
+          "semantic_score": 0.2769,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Agni",
+              "concepts": [
+                "fire",
+                "yajna"
+              ],
+              "domain": "vedas",
+              "entity_type": "deity",
+              "matched_alias": "agni"
+            },
+            {
+              "canonical": "Agni Purana",
+              "concepts": [
+                "purana",
+                "ritual",
+                "architecture"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "agni purana"
+            },
+            {
+              "canonical": "Temple",
+              "concepts": [
+                "ritual",
+                "architecture"
+              ],
+              "domain": "governance",
+              "entity_type": "structure",
+              "matched_alias": "temple"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Agni",
+          "Temple"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Agni",
+            "concepts": [
+              "fire",
+              "yajna"
+            ],
+            "domain": "vedas",
+            "entity_type": "deity",
+            "matched_alias": "agni"
+          },
+          {
+            "canonical": "Agni Purana",
+            "concepts": [
+              "purana",
+              "ritual",
+              "architecture"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "agni purana"
+          },
+          {
+            "canonical": "Temple",
+            "concepts": [
+              "ritual",
+              "architecture"
+            ],
+            "domain": "governance",
+            "entity_type": "structure",
+            "matched_alias": "temple"
+          }
+        ],
+        "semantic_score": 0.2769,
+        "signal_id": "signal_b2dc6d42dcef",
+        "source": "Shakti and Shakta_ocr.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Shakti and Shakta_ocr.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Shakti and Shakta_ocr.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_b2dc6d42dcef",
+      "source": "Shakti and Shakta_ocr.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Atman",
+            "concepts": [
+              "Brahman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "self"
+          },
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          },
+          {
+            "canonical": "Vedas",
+            "concepts": [
+              "samhita",
+              "ritual",
+              "knowledge"
+            ],
+            "domain": "vedas",
+            "entity_type": "text_group",
+            "matched_alias": "vedas"
+          }
+        ],
+        "concept_overlap": 0.1538,
+        "confidence": 0.166963,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.3213,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5957,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8757,
+              "ontology_convergence": 0.0859,
+              "retrieval_strength": 0.167,
+              "semantic_agreement": 0.1538,
+              "source_authority": 0.4157
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.3213,
+            "why": [
+              "epistemic_score=0.3213",
+              "ceiling_applied=0.5957",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.0729,
+          "retrieval_confidence": 0.167,
+          "semantic_score": 0.1038,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Agni",
+              "concepts": [
+                "fire",
+                "yajna"
+              ],
+              "domain": "vedas",
+              "entity_type": "deity",
+              "matched_alias": "agni"
+            },
+            {
+              "canonical": "Agni Purana",
+              "concepts": [
+                "purana",
+                "ritual",
+                "architecture"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "agni purana"
+            },
+            {
+              "canonical": "Temple",
+              "concepts": [
+                "ritual",
+                "architecture"
+              ],
+              "domain": "governance",
+              "entity_type": "structure",
+              "matched_alias": "temple"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Agni",
+          "Temple"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Agni",
+            "concepts": [
+              "fire",
+              "yajna"
+            ],
+            "domain": "vedas",
+            "entity_type": "deity",
+            "matched_alias": "agni"
+          },
+          {
+            "canonical": "Agni Purana",
+            "concepts": [
+              "purana",
+              "ritual",
+              "architecture"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "agni purana"
+          },
+          {
+            "canonical": "Temple",
+            "concepts": [
+              "ritual",
+              "architecture"
+            ],
+            "domain": "governance",
+            "entity_type": "structure",
+            "matched_alias": "temple"
+          }
+        ],
+        "semantic_score": 0.1038,
+        "signal_id": "signal_ce8454ca17f9",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+        "source_governance": {
+          "authority_weight": 0.4157,
+          "confidence_ceiling": 0.5957,
+          "lineage": {
+            "original_source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1243,
+          "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_ce8454ca17f9",
+      "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Manusmriti",
+            "concepts": [
+              "law",
+              "social duty"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "text",
+            "matched_alias": "manusmriti"
+          },
+          {
+            "canonical": "Smriti",
+            "concepts": [
+              "law",
+              "conduct"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "text_group",
+            "matched_alias": "smriti"
+          },
+          {
+            "canonical": "Yajnavalkya Smriti",
+            "concepts": [
+              "law",
+              "governance"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "text",
+            "matched_alias": "yajnavalkya"
+          }
+        ],
+        "concept_overlap": 0.0769,
+        "confidence": 0.150005,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.2986,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5899,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8699,
+              "ontology_convergence": 0.0513,
+              "retrieval_strength": 0.15,
+              "semantic_agreement": 0.0769,
+              "source_authority": 0.4099
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.2986,
+            "why": [
+              "epistemic_score=0.2986",
+              "ceiling_applied=0.5899",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.0606,
+          "retrieval_confidence": 0.15,
+          "semantic_score": 0.0769,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Agni",
+              "concepts": [
+                "fire",
+                "yajna"
+              ],
+              "domain": "vedas",
+              "entity_type": "deity",
+              "matched_alias": "agni"
+            },
+            {
+              "canonical": "Agni Purana",
+              "concepts": [
+                "purana",
+                "ritual",
+                "architecture"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "agni purana"
+            },
+            {
+              "canonical": "Temple",
+              "concepts": [
+                "ritual",
+                "architecture"
+              ],
+              "domain": "governance",
+              "entity_type": "structure",
+              "matched_alias": "temple"
+            }
+          ],
+          "method": "canonical_text_entity"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Agni",
+          "Temple"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Agni",
+            "concepts": [
+              "fire",
+              "yajna"
+            ],
+            "domain": "vedas",
+            "entity_type": "deity",
+            "matched_alias": "agni"
+          },
+          {
+            "canonical": "Agni Purana",
+            "concepts": [
+              "purana",
+              "ritual",
+              "architecture"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "agni purana"
+          },
+          {
+            "canonical": "Temple",
+            "concepts": [
+              "ritual",
+              "architecture"
+            ],
+            "domain": "governance",
+            "entity_type": "structure",
+            "matched_alias": "temple"
+          }
+        ],
+        "semantic_score": 0.0769,
+        "signal_id": "signal_0f2b81e3b8b2",
+        "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.4099,
+          "confidence_ceiling": 0.5899,
+          "lineage": {
+            "original_source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1301,
+          "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_0f2b81e3b8b2",
+      "source": "Brihaspati Smriti (Reconstructed) - Rangaswami Aiyangar 1941 (GOS)_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.146928,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_248ccce0b0a5",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.147",
+      "signal_id": "signal_248ccce0b0a5",
+      "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.13947700000000002,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_dec825b0eed2",
+        "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.139",
+      "signal_id": "signal_dec825b0eed2",
+      "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.13588899999999998,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_6baaefddac51",
+        "source": "The Complete Mahabharata_English_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "confidence_below_threshold:0.136",
+      "signal_id": "signal_6baaefddac51",
+      "source": "The Complete Mahabharata_English_ocred.pdf"
+    }
+  ],
+  "semantic_path": [],
+  "signals_found": 0,
+  "signals_rejected": 11,
+  "synthesis_mode": "REJECTED_NO_SYNTHESIS",
+  "trace_id": "trace_5138bd6c3dd55744",
+  "verification_status": "NO_VERIFIED_KNOWLEDGE"
+}

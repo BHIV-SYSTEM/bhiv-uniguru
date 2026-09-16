@@ -1,0 +1,30 @@
+{
+  "event_count": 2,
+  "last_lineage_hash": "967cbca46ea25934dc7b673a2e3ccec5f08f7b05d6b055b7c8192ef6d076e626",
+  "lineage": [
+    {
+      "ambiguity_class": "interpretive_or_weak_evidence_zone",
+      "claim_key": "governed_claim",
+      "contradiction_pressure": 0.0,
+      "index": 0,
+      "lineage_hash": "e86758d4fdc611a90a8f86da2fe35f921d84fac0af69a94ec3f4a52157e792ff",
+      "previous_lineage_hash": null,
+      "trace_id": "authority_pressure_a",
+      "uncertainty": 0.46
+    },
+    {
+      "ambiguity_class": "conflicting_claims",
+      "claim_key": "governed_claim",
+      "contradiction_pressure": 0.8,
+      "index": 1,
+      "lineage_hash": "967cbca46ea25934dc7b673a2e3ccec5f08f7b05d6b055b7c8192ef6d076e626",
+      "previous_lineage_hash": "e86758d4fdc611a90a8f86da2fe35f921d84fac0af69a94ec3f4a52157e792ff",
+      "trace_id": "authority_pressure_b",
+      "uncertainty": 0.53
+    }
+  ],
+  "lineage_id": "semantic_authority_pressure_fixture",
+  "lineage_state_hash": "535c55063e54ba6289707080411f943a7a0614a310cf5549442d18d94a764bd3",
+  "replay_safe": true,
+  "schema": "UNIGURU_UNCERTAINTY_LINEAGE_V1"
+}

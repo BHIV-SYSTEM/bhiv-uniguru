@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "claim_key": "civilizational_memory",
+      "confidence_not_legitimacy": true,
+      "escalation_required": true,
+      "forecast_hash": "5badd81727c04f5ab8ff06e4950d218c5b1b565e8fa3d346d560de9d9c5dff4b",
+      "forecast_score": 0.622,
+      "legitimacy_accumulation_forecast": "high",
+      "reinforcement_not_authority": true,
+      "trust_ceiling_enforced": 0.0
+    },
+    {
+      "claim_key": "governed_claim",
+      "confidence_not_legitimacy": true,
+      "escalation_required": true,
+      "forecast_hash": "252114e16616eb98f67ccf0eb3f33cac3723c6534eecc2893fb42369eac266df",
+      "forecast_score": 0.8623,
+      "legitimacy_accumulation_forecast": "critical",
+      "reinforcement_not_authority": true,
+      "trust_ceiling_enforced": 0.0
+    }
+  ],
+  "schema": "UNIGURU_SEMANTIC_LEGITIMACY_FORECAST_V1"
+}

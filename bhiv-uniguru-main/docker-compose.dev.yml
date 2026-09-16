@@ -1,0 +1,56 @@
+version: "3.9"
+
+services:
+  uniguru-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uniguru-api-dev
+    restart: unless-stopped
+    env_file:
+      - .env.production
+    environment:
+      UNIGURU_HOST: "0.0.0.0"
+      UNIGURU_PORT: "8000"
+    ports:
+      - "8007:8000"
+    volumes:
+      - uniguru_metrics:/var/lib/uniguru
+    networks:
+      - uniguru_net
+
+  uniguru-bridge:
+    build:
+      context: .
+      dockerfile: Dockerfile.bridge
+    container_name: uniguru-bridge-dev
+    restart: unless-stopped
+    ports:
+      - "8009:8002"
+    networks:
+      - uniguru_net
+
+  uniguru-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL}
+        VITE_BACKEND_URL_V1: ${VITE_BACKEND_URL_V1}
+        VITE_APP__BACKEND_GOOGLE_OAUTH_URL: ${VITE_APP__BACKEND_GOOGLE_OAUTH_URL}
+        VITE_GOOGLE_CLIENT_ID: ${VITE_GOOGLE_CLIENT_ID}
+    container_name: uniguru-frontend-dev
+    restart: unless-stopped
+    env_file:
+      - .env.frontend
+    ports:
+      - "3006:3000"
+    networks:
+      - uniguru_net
+
+volumes:
+  uniguru_metrics:
+
+networks:
+  uniguru_net:
+    driver: bridge

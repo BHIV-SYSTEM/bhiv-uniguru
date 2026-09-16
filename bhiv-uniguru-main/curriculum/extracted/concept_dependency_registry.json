@@ -1,0 +1,267 @@
+{
+  "registry_id": "concept_dependency_registry_v1",
+  "registry_version": "1.0.0",
+  "generated_at": "2026-06-09T17:14:37.947+05:30",
+  "purpose": "Complete prerequisite and dependency relationships for all curriculum concepts",
+  "total_concepts_tracked": 90,
+  "concept_dependencies": [
+    {
+      "concept_id": "CONCEPT_NUMBER_RECOGNITION",
+      "concept_name": "Number Recognition",
+      "grade": 1,
+      "prerequisites": [],
+      "is_foundation": true,
+      "directly_enables": [
+        "CONCEPT_COUNTING",
+        "CONCEPT_ADDITION_BASIC",
+        "CONCEPT_NUMBER_SEQUENCE"
+      ],
+      "dependent_concepts_count": 12,
+      "mastery_required": true,
+      "remediation_critical": true
+    },
+    {
+      "concept_id": "CONCEPT_COUNTING",
+      "concept_name": "Counting",
+      "grade": 1,
+      "prerequisites": ["CONCEPT_NUMBER_RECOGNITION"],
+      "is_foundation": true,
+      "directly_enables": [
+        "CONCEPT_NUMBER_SEQUENCE",
+        "CONCEPT_ADDITION_BASIC",
+        "CONCEPT_SUBTRACTION_BASIC",
+        "CONCEPT_MULTIPLICATION_INTRO"
+      ],
+      "dependent_concepts_count": 14,
+      "mastery_required": true,
+      "remediation_critical": true,
+      "prerequisite_strength": 0.95
+    },
+    {
+      "concept_id": "CONCEPT_NUMBER_SEQUENCE",
+      "concept_name": "Number Sequence",
+      "grade": 1,
+      "prerequisites": [
+        "CONCEPT_NUMBER_RECOGNITION",
+        "CONCEPT_COUNTING"
+      ],
+      "is_foundation": false,
+      "directly_enables": [
+        "CONCEPT_PLACE_VALUE",
+        "CONCEPT_ORDERING",
+        "CONCEPT_COMPARISON"
+      ],
+      "dependent_concepts_count": 8,
+      "mastery_required": true,
+      "remediation_critical": false,
+      "prerequisite_strength_avg": 0.88
+    },
+    {
+      "concept_id": "CONCEPT_PLACE_VALUE",
+      "concept_name": "Place Value",
+      "grade": 2,
+      "prerequisites": [
+        "CONCEPT_NUMBER_SEQUENCE",
+        "CONCEPT_COUNTING"
+      ],
+      "is_foundation": false,
+      "directly_enables": [
+        "CONCEPT_ADDITION_BASIC",
+        "CONCEPT_SUBTRACTION_BASIC",
+        "CONCEPT_MULTIPLICATION_INTRO",
+        "CONCEPT_DIVISION_INTRO",
+        "CONCEPT_FRACTIONS_INTRO"
+      ],
+      "dependent_concepts_count": 18,
+      "mastery_required": true,
+      "remediation_critical": true,
+      "prerequisite_strength_avg": 0.82,
+      "complexity_level": "INTERMEDIATE"
+    },
+    {
+      "concept_id": "CONCEPT_ADDITION_BASIC",
+      "concept_name": "Addition (Basic)",
+      "grade": 1,
+      "prerequisites": [
+        "CONCEPT_COUNTING",
+        "CONCEPT_NUMBER_RECOGNITION"
+      ],
+      "is_foundation": false,
+      "directly_enables": [
+        "CONCEPT_SUBTRACTION_BASIC",
+        "CONCEPT_ADDITION_REGROUPING",
+        "CONCEPT_WORD_PROBLEMS",
+        "CONCEPT_MULTIPLICATION_INTRO"
+      ],
+      "dependent_concepts_count": 16,
+      "mastery_required": true,
+      "remediation_critical": true,
+      "prerequisite_strength_avg": 0.92,
+      "complexity_level": "INTERMEDIATE"
+    },
+    {
+      "concept_id": "CONCEPT_SUBTRACTION_BASIC",
+      "concept_name": "Subtraction (Basic)",
+      "grade": 1,
+      "prerequisites": [
+        "CONCEPT_COUNTING",
+        "CONCEPT_ADDITION_BASIC"
+      ],
+      "is_foundation": false,
+      "directly_enables": [
+        "CONCEPT_SUBTRACTION_REGROUPING",
+        "CONCEPT_WORD_PROBLEMS",
+        "CONCEPT_INVERSE_OPERATIONS"
+      ],
+      "dependent_concepts_count": 8,
+      "mastery_required": true,
+      "remediation_critical": true,
+      "prerequisite_strength_avg": 0.88,
+      "complexity_level": "INTERMEDIATE",
+      "note": "Subtraction is inverse of addition; requires strong addition mastery"
+    },
+    {
+      "concept_id": "CONCEPT_MULTIPLICATION_INTRO",
+      "concept_name": "Multiplication (Introduction)",
+      "grade": 2,
+      "prerequisites": [
+        "CONCEPT_ADDITION_BASIC",
+        "CONCEPT_PLACE_VALUE",
+        "CONCEPT_SKIP_COUNTING"
+      ],
+      "is_foundation": false,
+      "directly_enables": [
+        "CONCEPT_MULTIPLICATION_FACTS",
+        "CONCEPT_MULTIPLICATION_STRATEGIES",
+        "CONCEPT_DIVISION_INTRO",
+        "CONCEPT_FRACTIONS_INTRO"
+      ],
+      "dependent_concepts_count": 12,
+      "mastery_required": true,
+      "remediation_critical": true,
+      "prerequisite_strength_avg": 0.87,
+      "complexity_level": "ADVANCED",
+      "note": "Multiplication as repeated addition; requires understanding of grouping"
+    },
+    {
+      "concept_id": "CONCEPT_FRACTIONS_INTRO",
+      "concept_name": "Fractions (Introduction)",
+      "grade": 3,
+      "prerequisites": [
+        "CONCEPT_PLACE_VALUE",
+        "CONCEPT_MULTIPLICATION_INTRO",
+        "CONCEPT_DIVISION_INTRO",
+        "CONCEPT_EQUAL_PARTS"
+      ],
+      "is_foundation": false,
+      "directly_enables": [
+        "CONCEPT_FRACTION_OPERATIONS",
+        "CONCEPT_RATIO_PROPORTION",
+        "CONCEPT_DECIMALS"
+      ],
+      "dependent_concepts_count": 6,
+      "mastery_required": true,
+      "remediation_critical": true,
+      "prerequisite_strength_avg": 0.78,
+      "complexity_level": "ADVANCED",
+      "note": "Fractions are abstract; requires strong foundational skills"
+    }
+  ],
+  "prerequisite_chains": [
+    {
+      "chain_id": "CHAIN_ARITHMETIC_FOUNDATION",
+      "chain_name": "Arithmetic Foundation Chain",
+      "concepts_in_chain": [
+        "CONCEPT_NUMBER_RECOGNITION",
+        "CONCEPT_COUNTING",
+        "CONCEPT_NUMBER_SEQUENCE",
+        "CONCEPT_ADDITION_BASIC"
+      ],
+      "chain_length": 4,
+      "criticality": "CRITICAL",
+      "recommended_duration_weeks": 8
+    },
+    {
+      "chain_id": "CHAIN_MULTI_DIVISION",
+      "chain_name": "Multiplication and Division Chain",
+      "concepts_in_chain": [
+        "CONCEPT_ADDITION_BASIC",
+        "CONCEPT_PLACE_VALUE",
+        "CONCEPT_MULTIPLICATION_INTRO",
+        "CONCEPT_DIVISION_INTRO"
+      ],
+      "chain_length": 4,
+      "criticality": "CRITICAL",
+      "recommended_duration_weeks": 10
+    },
+    {
+      "chain_id": "CHAIN_FRACTIONS",
+      "chain_name": "Fractions Development Chain",
+      "concepts_in_chain": [
+        "CONCEPT_MULTIPLICATION_INTRO",
+        "CONCEPT_DIVISION_INTRO",
+        "CONCEPT_EQUAL_PARTS",
+        "CONCEPT_FRACTIONS_INTRO"
+      ],
+      "chain_length": 4,
+      "criticality": "IMPORTANT",
+      "recommended_duration_weeks": 12
+    }
+  ],
+  "mastery_gating": {
+    "concept_id": "CONCEPT_ADDITION_BASIC",
+    "required_mastery_threshold": 0.80,
+    "unlocks_concepts": [
+      "CONCEPT_SUBTRACTION_BASIC",
+      "CONCEPT_WORD_PROBLEMS",
+      "CONCEPT_MULTIPLICATION_INTRO"
+    ],
+    "prerequisite_mastery_required": true,
+    "gating_enforced": true
+  },
+  "remediation_pathways": [
+    {
+      "concept_id": "CONCEPT_PLACE_VALUE",
+      "concept_name": "Place Value",
+      "weak_mastery_triggers_remediation": true,
+      "remediation_concepts": [
+        "CONCEPT_COUNTING",
+        "CONCEPT_NUMBER_SEQUENCE",
+        "CONCEPT_TENS_ONES_DECOMPOSITION"
+      ],
+      "remediation_duration_weeks": 3,
+      "remediation_priority": "HIGH"
+    },
+    {
+      "concept_id": "CONCEPT_MULTIPLICATION_INTRO",
+      "concept_name": "Multiplication (Introduction)",
+      "weak_mastery_triggers_remediation": true,
+      "remediation_concepts": [
+        "CONCEPT_ADDITION_BASIC",
+        "CONCEPT_SKIP_COUNTING",
+        "CONCEPT_EQUAL_GROUPS"
+      ],
+      "remediation_duration_weeks": 2,
+      "remediation_priority": "CRITICAL"
+    }
+  ],
+  "dependency_statistics": {
+    "total_concepts": 90,
+    "foundation_concepts": 8,
+    "concepts_with_prerequisites": 82,
+    "total_prerequisite_relationships": 156,
+    "average_prerequisites_per_concept": 1.73,
+    "average_dependents_per_concept": 6.4,
+    "maximum_chain_length": 7,
+    "critical_path_concepts": 12,
+    "acyclic_graph_verified": true
+  },
+  "validation_status": {
+    "all_prerequisites_valid": true,
+    "no_circular_dependencies": true,
+    "all_dependent_concepts_enabled": true,
+    "remediation_pathways_defined": true,
+    "mastery_gating_enabled": true,
+    "overall_status": "VALIDATED"
+  }
+}

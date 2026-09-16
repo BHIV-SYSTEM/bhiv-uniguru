@@ -1,0 +1,40 @@
+{
+  "event_count": 3,
+  "last_lineage_hash": "18d607b31aa7e5b03b705aceb80907cb7bc501a0c32d4c9df82bedafa55675a0",
+  "lineage": [
+    {
+      "ambiguity_class": "interpretive_or_weak_evidence_zone",
+      "claim_key": "governed_claim",
+      "contradiction_pressure": 0.0,
+      "index": 0,
+      "lineage_hash": "58ebeebcaa4b79ba052be04154e768c053cf122c4b90c56cb94444a4c8f3fae2",
+      "previous_lineage_hash": null,
+      "trace_id": "pressure_trace_001",
+      "uncertainty": 0.44
+    },
+    {
+      "ambiguity_class": "conflicting_claims",
+      "claim_key": "governed_claim",
+      "contradiction_pressure": 0.72,
+      "index": 1,
+      "lineage_hash": "ac26590ab9b65edd77b079f8643d97be5d98637e9800625982512ed12d2d2442",
+      "previous_lineage_hash": "58ebeebcaa4b79ba052be04154e768c053cf122c4b90c56cb94444a4c8f3fae2",
+      "trace_id": "pressure_trace_002",
+      "uncertainty": 0.51
+    },
+    {
+      "ambiguity_class": "distributed_dispute",
+      "claim_key": "civilizational_memory",
+      "contradiction_pressure": 0.64,
+      "index": 2,
+      "lineage_hash": "18d607b31aa7e5b03b705aceb80907cb7bc501a0c32d4c9df82bedafa55675a0",
+      "previous_lineage_hash": "ac26590ab9b65edd77b079f8643d97be5d98637e9800625982512ed12d2d2442",
+      "trace_id": "pressure_trace_003",
+      "uncertainty": 0.47
+    }
+  ],
+  "lineage_id": "semantic_pressure_governance_fixture",
+  "lineage_state_hash": "817a9920633429d67735b8b4b316966152579e3106ed3fdba654dd6f3a34ab3f",
+  "replay_safe": true,
+  "schema": "UNIGURU_UNCERTAINTY_LINEAGE_V1"
+}

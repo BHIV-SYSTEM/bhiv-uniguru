@@ -1,0 +1,69 @@
+{
+  "audit_timestamp": "2026-06-15T12:00:00+05:30",
+  "audit_status": "FLAGGED",
+  "summary": {
+    "total_files_audited": 8,
+    "total_records_scanned": 7839,
+    "total_synthetic_elements_detected": 2560,
+    "synthetic_ratio": 0.3266
+  },
+  "findings": [
+    {
+      "file": "masterdb/balbharti/sample_ingestion_dataset.json",
+      "total_elements_scanned": 7680,
+      "synthetic_elements_detected": 2560,
+      "examples": [
+        {
+          "id": "balbharti_en_g1_mathematics_numbers_1_01",
+          "reasons": [
+            "provenance_status: 'sample_seed'",
+            "source_type: 'curriculum_sample_seed'",
+            "ingestion_method: 'synthetic_expansion_seed'",
+            "generic concept name: 'Numbers concept 1'"
+          ],
+          "trace": "[0]"
+        },
+        {
+          "id": "balbharti_en_g1_mathematics_numbers_1_02",
+          "reasons": [
+            "provenance_status: 'sample_seed'",
+            "source_type: 'curriculum_sample_seed'",
+            "ingestion_method: 'synthetic_expansion_seed'",
+            "generic concept name: 'Numbers concept 2'"
+          ],
+          "trace": "[1]"
+        },
+        {
+          "id": "balbharti_en_g1_mathematics_shapes_2_01",
+          "reasons": [
+            "provenance_status: 'sample_seed'",
+            "source_type: 'curriculum_sample_seed'",
+            "ingestion_method: 'synthetic_expansion_seed'",
+            "generic concept name: 'Shapes concept 1'"
+          ],
+          "trace": "[2]"
+        },
+        {
+          "id": "balbharti_en_g1_mathematics_shapes_2_02",
+          "reasons": [
+            "provenance_status: 'sample_seed'",
+            "source_type: 'curriculum_sample_seed'",
+            "ingestion_method: 'synthetic_expansion_seed'",
+            "generic concept name: 'Shapes concept 2'"
+          ],
+          "trace": "[3]"
+        },
+        {
+          "id": "balbharti_en_g1_mathematics_patterns_3_01",
+          "reasons": [
+            "provenance_status: 'sample_seed'",
+            "source_type: 'curriculum_sample_seed'",
+            "ingestion_method: 'synthetic_expansion_seed'",
+            "generic concept name: 'Patterns concept 1'"
+          ],
+          "trace": "[4]"
+        }
+      ]
+    }
+  ]
+}

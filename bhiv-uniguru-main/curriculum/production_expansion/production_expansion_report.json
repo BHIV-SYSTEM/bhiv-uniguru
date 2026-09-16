@@ -1,0 +1,53 @@
+{
+  "assigned_textbooks_manifest": "curriculum/production_expansion/assigned_textbooks_manifest.json",
+  "canonical_dataset_hash": "376bacf1f1a844cd5c3d3acebb1f151f2598f7fa5d20fc1173af64fffe3b92bf",
+  "canonical_dataset_path": "masterdb/balbharti/canonical_dataset.json",
+  "canonical_dataset_signature": "ca1ba1c5d7544213f50857ddac2d72df3fbafbb48ca73c1653c9703ceab2af35",
+  "canonical_record_count": 42,
+  "confidentiality": "No licensed textbook binary content is emitted by this report.",
+  "expansion_status": "BLOCKED_PENDING_ASSIGNED_LICENSED_TEXTBOOK_DOWNLOADS",
+  "generated_at": "2026-07-10T18:04:50.067275+00:00",
+  "licensed_textbook_drop_root": "masterdb/balbharti/licensed_textbooks/",
+  "production_gates": {
+    "authority_integrity": true,
+    "codex_validation_complete": true,
+    "evidence_integrity": true,
+    "new_licensed_downloads_present": false,
+    "no_synthetic_or_placeholder_records": true,
+    "provenance_integrity": true,
+    "vijay_cross_validation_complete": false
+  },
+  "report_hash": "1a7980e8b2528897e7bcb25d8e3b9c36e941e2ea246a7bc0c71e73af69254dd3",
+  "schema": "UNIGURU_PRODUCTION_EXPANSION_REPORT_V1",
+  "status": "CERTIFIED_CURRENT_CANONICAL_SNAPSHOT",
+  "textbook_rows": [
+    {
+      "canonical_record_count": 10,
+      "issue_count": 0,
+      "issues": [],
+      "status": "CERTIFIED",
+      "textbook_id": "BALBHARTI_ENGLISH_G1_MM"
+    },
+    {
+      "canonical_record_count": 13,
+      "issue_count": 0,
+      "issues": [],
+      "status": "CERTIFIED",
+      "textbook_id": "BALBHARTI_MATH_G1_MM"
+    },
+    {
+      "canonical_record_count": 11,
+      "issue_count": 0,
+      "issues": [],
+      "status": "CERTIFIED",
+      "textbook_id": "BALBHARTI_MATH_G2_MM"
+    },
+    {
+      "canonical_record_count": 8,
+      "issue_count": 0,
+      "issues": [],
+      "status": "CERTIFIED",
+      "textbook_id": "BALBHARTI_SCIENCE_G3_MM"
+    }
+  ]
+}

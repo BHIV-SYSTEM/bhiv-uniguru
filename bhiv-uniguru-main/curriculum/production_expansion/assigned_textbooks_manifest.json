@@ -1,0 +1,67 @@
+{
+  "assigned_to_codex": [
+    {
+      "board": "Maharashtra State Board",
+      "class": 1,
+      "edition": "2023",
+      "medium": "Marathi Medium",
+      "publisher": "Maharashtra State Board of Education (Balbharti)",
+      "source": "curriculum/authority/verified_textbook_authority_registry.json",
+      "status": "already_in_canonical_snapshot",
+      "subject": "Mathematics",
+      "textbook_id": "BALBHARTI_MATH_G1_MM"
+    },
+    {
+      "board": "Maharashtra State Board",
+      "class": 2,
+      "edition": "2023",
+      "medium": "Marathi Medium",
+      "publisher": "Maharashtra State Board of Education (Balbharti)",
+      "source": "curriculum/authority/verified_textbook_authority_registry.json",
+      "status": "already_in_canonical_snapshot",
+      "subject": "Mathematics",
+      "textbook_id": "BALBHARTI_MATH_G2_MM"
+    },
+    {
+      "board": "Maharashtra State Board",
+      "class": 1,
+      "edition": "2023",
+      "medium": "Marathi Medium",
+      "publisher": "Maharashtra State Board of Education (Balbharti)",
+      "source": "curriculum/authority/verified_textbook_authority_registry.json",
+      "status": "already_in_canonical_snapshot",
+      "subject": "English",
+      "textbook_id": "BALBHARTI_ENGLISH_G1_MM"
+    },
+    {
+      "board": "Maharashtra State Board",
+      "class": 3,
+      "edition": "2023",
+      "medium": "Marathi Medium",
+      "publisher": "Maharashtra State Board of Education (Balbharti)",
+      "source": "curriculum/authority/verified_textbook_authority_registry.json",
+      "status": "already_in_canonical_snapshot",
+      "subject": "Science",
+      "textbook_id": "BALBHARTI_SCIENCE_G3_MM"
+    }
+  ],
+  "assigned_to_vijay": [],
+  "assignment_hash": "c7858f3227f94da3b54d06d91c48acde292bf28212fc5086ed2c9df0c65b81cc",
+  "confidentiality": "Licensed curriculum assets remain outside committed source control.",
+  "generated_at": "2026-06-25T08:35:10.120486+00:00",
+  "known_unknowns": [
+    "Remaining licensed textbooks pending ingestion",
+    "OCR quality variations",
+    "Cross-medium validation completion"
+  ],
+  "licensed_textbook_drop_root": "masterdb/balbharti/licensed_textbooks/",
+  "production_merge_policy": {
+    "requires_certification_pipeline_pass": true,
+    "requires_codex_validation": true,
+    "requires_no_synthetic_or_placeholder_records": true,
+    "requires_textbook_evidence": true,
+    "requires_vijay_validation": true
+  },
+  "schema": "UNIGURU_PRODUCTION_EXPANSION_ASSIGNMENT_MANIFEST_V1",
+  "sprint_id": "AI_NORMALIZED_CURRICULUM_EXPANSION_2026_06_25"
+}

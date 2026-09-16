@@ -1,0 +1,193 @@
+{
+  "concepts": [
+    {
+      "canonical_name": "Superposition",
+      "concept_id": "1f460503-ebf7-4f5a-a0f0-c0f17d0fa6f5",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "quantum",
+      "immutable": true,
+      "parent_id": "2200072c-5a0d-4f68-a56a-a0c807f6cf5e",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/quantum/superposition.md",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Qubit",
+      "concept_id": "2200072c-5a0d-4f68-a56a-a0c807f6cf5e",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "quantum",
+      "immutable": true,
+      "parent_id": "ac1320c6-08f2-42a2-8ff2-841f7b263ad5",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/quantum/qubit.md",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Ahimsa",
+      "concept_id": "2fdd0676-f275-4190-b90c-0ef344f35ca6",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "jain",
+      "immutable": true,
+      "parent_id": "7676764d-7f7d-4bc2-8c80-f689e113baec",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/jain/acharanga_sutra.md",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Anekantavada",
+      "concept_id": "495fe91d-d5c8-4a89-b3f0-5e16e001ec9a",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "jain",
+      "immutable": true,
+      "parent_id": "2fdd0676-f275-4190-b90c-0ef344f35ca6",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/jain/anekantavada_syadvada.md",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Entanglement",
+      "concept_id": "70c47ad2-e0ee-499e-9065-c3a31f1e0e9d",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "quantum",
+      "immutable": true,
+      "parent_id": "1f460503-ebf7-4f5a-a0f0-c0f17d0fa6f5",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/quantum/entanglement.md",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Gurukul Knowledge Domain",
+      "concept_id": "70dedec2-fc86-41a0-ab4f-30299e4a5fb7",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "gurukul",
+      "immutable": true,
+      "parent_id": "8cb2fa29-2d7e-4bd0-af9d-080f3dd0459d",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/gurukul",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Akshar Purushottam Darshan",
+      "concept_id": "720137eb-f204-44b0-a45d-d8b4ad73c9f0",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "swaminarayan",
+      "immutable": true,
+      "parent_id": "f172f859-a04f-44dd-a94a-2e5b6bef4de8",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/swaminarayan/akshar_purushottam_darshan.md",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Jain Root",
+      "concept_id": "7676764d-7f7d-4bc2-8c80-f689e113baec",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "jain",
+      "immutable": true,
+      "parent_id": "ceb14ea2-d665-4ebf-ab6a-8dcaed4bd793",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/jain",
+      "truth_level": 4
+    },
+    {
+      "canonical_name": "UniGuru Canonical Root",
+      "concept_id": "8cb2fa29-2d7e-4bd0-af9d-080f3dd0459d",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "core",
+      "immutable": true,
+      "parent_id": null,
+      "snapshot_version": 1,
+      "source_reference": "uniguru/ontology/schema.py",
+      "truth_level": 4
+    },
+    {
+      "canonical_name": "Quantum Algorithms",
+      "concept_id": "8e362941-2580-4c5f-b273-7dfeb9c62046",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "quantum",
+      "immutable": true,
+      "parent_id": "70c47ad2-e0ee-499e-9065-c3a31f1e0e9d",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/quantum/Quantum_Algorithms/quantum_algorithms_overview.md",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Swaminarayan Root",
+      "concept_id": "a1648e74-dceb-4816-b47e-33db755626b8",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "swaminarayan",
+      "immutable": true,
+      "parent_id": "eb517fbb-1585-4f83-8532-42489d0975d5",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/swaminarayan",
+      "truth_level": 4
+    },
+    {
+      "canonical_name": "Quantum Root",
+      "concept_id": "ac1320c6-08f2-42a2-8ff2-841f7b263ad5",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "quantum",
+      "immutable": true,
+      "parent_id": "adf9434a-c8b9-4f5d-9d4b-8b7e3c286028",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/quantum/README.md",
+      "truth_level": 4
+    },
+    {
+      "canonical_name": "Quantum Knowledge Domain",
+      "concept_id": "adf9434a-c8b9-4f5d-9d4b-8b7e3c286028",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "quantum",
+      "immutable": true,
+      "parent_id": "8cb2fa29-2d7e-4bd0-af9d-080f3dd0459d",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/quantum/README.md",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Jain Knowledge Domain",
+      "concept_id": "ceb14ea2-d665-4ebf-ab6a-8dcaed4bd793",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "jain",
+      "immutable": true,
+      "parent_id": "8cb2fa29-2d7e-4bd0-af9d-080f3dd0459d",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/jain",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Swaminarayan Knowledge Domain",
+      "concept_id": "eb517fbb-1585-4f83-8532-42489d0975d5",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "swaminarayan",
+      "immutable": true,
+      "parent_id": "8cb2fa29-2d7e-4bd0-af9d-080f3dd0459d",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/swaminarayan",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "Vachanamrut",
+      "concept_id": "f172f859-a04f-44dd-a94a-2e5b6bef4de8",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "swaminarayan",
+      "immutable": true,
+      "parent_id": "a1648e74-dceb-4816-b47e-33db755626b8",
+      "snapshot_version": 1,
+      "source_reference": "backend/knowledge/swaminarayan/vachanamrut_core.md",
+      "truth_level": 3
+    },
+    {
+      "canonical_name": "UniGuru Unresolved Concept",
+      "concept_id": "f5e3a359-9ad5-4fcb-b483-598d0917f865",
+      "created_at": "2026-03-04T00:00:00Z",
+      "domain": "core",
+      "immutable": true,
+      "parent_id": "8cb2fa29-2d7e-4bd0-af9d-080f3dd0459d",
+      "snapshot_version": 1,
+      "source_reference": "uniguru/ontology/registry.py",
+      "truth_level": 0
+    }
+  ],
+  "snapshot_hash": "b8bb3597eb25470d5eb9ee69abb2eded2cb741410731a1a7d3d31c1b020c1b71",
+  "snapshot_version": 1
+}

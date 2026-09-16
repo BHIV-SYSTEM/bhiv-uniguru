@@ -1,0 +1,4568 @@
+{
+  "canonical_concept": {
+    "shabda": "संस्कार",
+    "canonical_name": "samskara",
+    "sanskrit": "संस्कार",
+    "transliteration": "Saṃskāra",
+    "beeja": "सं (Saṃ) — the prefix itself carries the bīja energy of completeness and perfection.",
+    "vyakarana": "Saṃskāra is a masculine noun derived from the prefix sam- (together, completely) and the root kṛ (to do) with the suffix -a. The word carries the sense of \"making perfect,\" \"refining,\" and \"purifying.\"",
+    "functional_meaning": "Saṃskāra operates at two levels: (1) Psychological: the mental impressions (vāsanās) left by past experiences that shape present behavior and future tendencies. These are the karmic residues stored in the causal body. (2) Sociological: the sixteen (or more) life-cycle rituals (ṣoḍaśa-saṃskāras) that mark and sanctify the major transitions of human life from conception to death.",
+    "dhatu": "सम् + कृ (Sam + Kṛ) — Sam (together, completely, perfectly) + Kṛ (to do, to make). That which is perfectly made; that which refines and purifies.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:samskara",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Saṃskriyate anena iti saṃskāraḥ\" — that by which one is refined/purified. Saṃskāra has three meanings: (1) mental impression (psychological), (2) life-cycle ritual (sociological), (3) refinement/purification (philosophical).",
+    "related_concepts": [
+      "karma",
+      "vasana (latent tendencies)",
+      "dharma",
+      "kosha (causal body as saṃskāra storehouse)"
+    ],
+    "tattva": "Saṃskāra-Tattva — the principle of refinement, impression, and ritual transformation. Saṃskāras operate at two levels: the psychological (mental impressions that shape character) and the sociological (life-cycle rituals that mark transitions)."
+  },
+  "civilizational_knowledge": {
+    "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
+    "concept_id": "sanskar:sanskrit:samskara",
+    "canonical_name": "samskara",
+    "lexical_record": {
+      "shabda": "संस्कार",
+      "canonical_name": "samskara",
+      "sanskrit": "संस्कार",
+      "transliteration": "Saṃskāra",
+      "beeja": "सं (Saṃ) — the prefix itself carries the bīja energy of completeness and perfection.",
+      "vyakarana": "Saṃskāra is a masculine noun derived from the prefix sam- (together, completely) and the root kṛ (to do) with the suffix -a. The word carries the sense of \"making perfect,\" \"refining,\" and \"purifying.\"",
+      "functional_meaning": "Saṃskāra operates at two levels: (1) Psychological: the mental impressions (vāsanās) left by past experiences that shape present behavior and future tendencies. These are the karmic residues stored in the causal body. (2) Sociological: the sixteen (or more) life-cycle rituals (ṣoḍaśa-saṃskāras) that mark and sanctify the major transitions of human life from conception to death.",
+      "dhatu": "सम् + कृ (Sam + Kṛ) — Sam (together, completely, perfectly) + Kṛ (to do, to make). That which is perfectly made; that which refines and purifies.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:samskara",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Saṃskriyate anena iti saṃskāraḥ\" — that by which one is refined/purified. Saṃskāra has three meanings: (1) mental impression (psychological), (2) life-cycle ritual (sociological), (3) refinement/purification (philosophical).",
+      "related_concepts": [
+        "karma",
+        "vasana (latent tendencies)",
+        "dharma",
+        "kosha (causal body as saṃskāra storehouse)"
+      ],
+      "tattva": "Saṃskāra-Tattva — the principle of refinement, impression, and ritual transformation. Saṃskāras operate at two levels: the psychological (mental impressions that shape character) and the sociological (life-cycle rituals that mark transitions)."
+    },
+    "layers": {
+      "sanskrit": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "संस्कार",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "shabda": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "संस्कार",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "acoustic_phonetics": {
+          "status": "EVIDENCE_BACKED",
+          "claims": [
+            {
+              "value": {
+                "iast": "saṃ",
+                "ipa": "sã",
+                "varna_class": "dantya (dental) ūṣman + anusvāra",
+                "sthana": "danta (teeth) with nasalization",
+                "prayatna": "ūṣman (fricative), aghoṣa (unvoiced), with anusvāra",
+                "vedic_pitch": "svarita — balanced; saṃ = together, perfectly formed",
+                "mantra_frequency_note": "Saṃ is the prefix-bīja of completeness and perfection. The prefix saṃ appears in saṃskāra (perfectly made), saṃskṛta (perfectly constructed language), saṃnyāsa (perfect renunciation). Pāṇinīya-Śikṣā classifies sa as the lightest of the ūṣman group.",
+                "siksha_source": "Pāṇinīya-Śikṣā 3.10; Taittirīya Prātiśākhya 2.49"
+              },
+              "classification": "SOURCE_SCOPED",
+              "provenance": [
+                {
+                  "source_id": "8169ab974eb48ee0",
+                  "evidence_type": "VEDA",
+                  "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+                  "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+                  "retrieval_system": "uniguru_vedanga_shiksha"
+                }
+              ]
+            }
+          ],
+          "provenance": [
+            {
+              "source_id": "8169ab974eb48ee0",
+              "evidence_type": "VEDA",
+              "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+              "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+              "retrieval_system": "uniguru_vedanga_shiksha"
+            }
+          ],
+          "source": "Pāṇinīya-Śikṣā; Taittirīya Prātiśākhya; Ṛgveda-Prātiśākhya"
+        }
+      },
+      "dhatu": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "सम् + कृ (Sam + Kṛ) — Sam (together, completely, perfectly) + Kṛ (to do, to make). That which is perfectly made; that which refines and purifies.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "vyakarana": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Saṃskāra is a masculine noun derived from the prefix sam- (together, completely) and the root kṛ (to do) with the suffix -a. The word carries the sense of \"making perfect,\" \"refining,\" and \"purifying.\"",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "panini_grammar": {
+          "status": "NO_RETRIEVED_EVIDENCE",
+          "dhatu_root_key": "",
+          "panini_sutras": [],
+          "provenance": [
+            {
+              "source_id": "ef4cd468d4f41d7c",
+              "evidence_type": "PANINI",
+              "source_path": "knowledge/gurukul/sanskrit/grammar.md",
+              "content_hash": "299f9fb5707fc2cd60a56d5d4da0e8c077d32a2419edaadb5b0051e4aff11733",
+              "retrieval_system": "uniguru_vedanga_grammar"
+            }
+          ],
+          "source": "Pāṇini Ashtadhyayi via UniGuru Gurukul grammar.md"
+        }
+      },
+      "nirukta": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "\"Saṃskriyate anena iti saṃskāraḥ\" — that by which one is refined/purified. Saṃskāra has three meanings: (1) mental impression (psychological), (2) life-cycle ritual (sociological), (3) refinement/purification (philosophical).",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "beeja": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "सं (Saṃ) — the prefix itself carries the bīja energy of completeness and perfection.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "acoustic_phonetics": {
+          "status": "EVIDENCE_BACKED",
+          "claims": [
+            {
+              "value": {
+                "iast": "saṃ",
+                "ipa": "sã",
+                "varna_class": "dantya (dental) ūṣman + anusvāra",
+                "sthana": "danta (teeth) with nasalization",
+                "prayatna": "ūṣman (fricative), aghoṣa (unvoiced), with anusvāra",
+                "vedic_pitch": "svarita — balanced; saṃ = together, perfectly formed",
+                "mantra_frequency_note": "Saṃ is the prefix-bīja of completeness and perfection. The prefix saṃ appears in saṃskāra (perfectly made), saṃskṛta (perfectly constructed language), saṃnyāsa (perfect renunciation). Pāṇinīya-Śikṣā classifies sa as the lightest of the ūṣman group.",
+                "siksha_source": "Pāṇinīya-Śikṣā 3.10; Taittirīya Prātiśākhya 2.49"
+              },
+              "classification": "SOURCE_SCOPED",
+              "provenance": [
+                {
+                  "source_id": "8169ab974eb48ee0",
+                  "evidence_type": "VEDA",
+                  "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+                  "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+                  "retrieval_system": "uniguru_vedanga_shiksha"
+                }
+              ]
+            }
+          ],
+          "provenance": [
+            {
+              "source_id": "8169ab974eb48ee0",
+              "evidence_type": "VEDA",
+              "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+              "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+              "retrieval_system": "uniguru_vedanga_shiksha"
+            }
+          ],
+          "source": "Pāṇinīya-Śikṣā; Taittirīya Prātiśākhya; Ṛgveda-Prātiśākhya"
+        }
+      },
+      "tattva": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Saṃskāra-Tattva — the principle of refinement, impression, and ritual transformation. Saṃskāras operate at two levels: the psychological (mental impressions that shape character) and the sociological (life-cycle rituals that mark transitions).",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "shakti": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "literal_meaning": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Refinement; purification; mental impression; life-cycle ritual; rite of passage.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "functional_meaning": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Saṃskāra operates at two levels: (1) Psychological: the mental impressions (vāsanās) left by past experiences that shape present behavior and future tendencies. These are the karmic residues stored in the causal body. (2) Sociological: the sixteen (or more) life-cycle rituals (ṣoḍaśa-saṃskāras) that mark and sanctify the major transitions of human life from conception to death.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "ontology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Yoga philosophy: saṃskāras are the residual impressions in the citta (mind-stuff) that create habitual patterns of thought and behavior. They are the mechanism through which karma operates across lifetimes. In Vaiśeṣika: saṃskāra is one of the twenty-four qualities (guṇas) — the quality of elasticity or residual impression. In Mīmāṃsā: saṃskāra is the purificatory ritual that makes a person fit for Vedic study and ritual.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "cosmology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Purāṇic cosmology: saṃskāras are the impressions accumulated across multiple lifetimes that determine the soul's next birth. The concept of janma-saṃskāra (birth impressions) — the soul carries its saṃskāras from life to life.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "psychology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Yoga psychology: saṃskāras are the seeds of future mental activity. They create vāsanās (latent tendencies) that drive behavior. The goal of yoga is to burn all saṃskāras through the fire of knowledge (jñāna-agni) and meditation. The concept of saṃskāra-śuddhi (purification of impressions) is the psychological goal of spiritual practice.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "governance": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The concept of saṃskāra in governance: the ruler's saṃskāras (character formed by upbringing and education) determine the quality of governance. The Arthaśāstra prescribes specific saṃskāras (educational rituals) for the prince. The concept of rāja-saṃskāra (royal consecration) — the coronation ritual that transforms a person into a king.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "medicine": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Āyurveda: saṃskāras (mental impressions) are a cause of mental disease. The concept of saṃskāra-cikitsā (treatment through ritual purification). The prenatal saṃskāras (garbhādhāna, puṃsavana, sīmantonnayana) are considered important for the child's health.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "engineering": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "mathematics": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The concept of saṃskāra in mathematics: the refinement of mathematical knowledge through successive approximations. The concept of saṃskṛta (refined) language — Sanskrit itself is the \"refined\" (saṃskṛta) language, as opposed to Prakrit (natural/unrefined).",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "astronomy": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Jyotiṣa: the birth chart (janma-kuṇḍali) reflects the saṃskāras brought from past lives. The concept of saṃskāra-yoga (combinations indicating strong past-life impressions) in Jyotiṣa.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "metallurgy": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In metallurgy: saṃskāra is the process of refining metals — removing impurities to reveal the pure metal. The concept of dhātu-saṃskāra (metal refinement) mirrors the spiritual concept of self-refinement.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "ritual": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The sixteen saṃskāras (ṣoḍaśa-saṃskāras): Garbhādhāna (conception), Puṃsavana (fetal rite), Sīmantonnayana (hair-parting), Jātakarma (birth), Nāmakaraṇa (naming), Niṣkramaṇa (first outing), Annaprāśana (first solid food), Cūḍākaraṇa (first haircut), Karṇavedha (ear-piercing), Vidyārambha (beginning of education), Upanayana (sacred thread), Vedarambha (beginning of Vedic study), Keśānta (first shaving), Samāvartana (graduation), Vivāha (marriage), Antyeṣṭi (funeral rites).",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "symbolism": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The potter's wheel symbolizes saṃskāra — the clay (raw human being) is shaped by the potter's hands (saṃskāras). The fire symbolizes saṃskāra's purifying function. The seed symbolizes saṃskāra's potential — impressions are seeds that will bear fruit.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_deities": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Brahmā (the creator who instills saṃskāras in creation)\n- Viṣṇu (the preserver of saṃskāras across lifetimes)\n- Gaṇeśa (the remover of obstacles in saṃskāra rituals)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_lokas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- All lokas are shaped by the saṃskāras of their inhabitants",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_koshas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Kāraṇa Śarīra (causal body) — the storehouse of saṃskāras\n- Manomaya Kosha (mind sheath) — where saṃskāras manifest as thoughts and tendencies",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_chakras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Mūlādhāra (root chakra) — the seat of deep ancestral saṃskāras\n- Svādhiṣṭhāna (sacral chakra) — the seat of emotional saṃskāras",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_yantras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Saṃskāra Yantra (used in life-cycle rituals)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_mantras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Gāyatrī Mantra (the mantra of the Upanayana saṃskāra)\n- Maṅgalāṣṭaka (the eight auspicious verses recited at the Vivāha saṃskāra)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_vidyas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Saṃskāra Vidyā (the science of life-cycle rituals)\n- Dharmaśāstra Vidyā (the legal framework of saṃskāras)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_shastras": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "traditional_interpretations": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Mīmāṃsā: Saṃskāra is the purificatory ritual that makes a person fit for Vedic life\n- Yoga: Saṃskāra is the mental impression that drives habitual behavior\n- Advaita: Saṃskāras are ultimately unreal — they belong to the apparent self, not the true Self",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "historical_evolution": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Vedic period: Saṃskāra as ritual purification\n- Dharmaśāstra period: Sixteen saṃskāras codified\n- Yoga period: Saṃskāra as psychological impression\n- Modern: Saṃskāra as cultural values and upbringing",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "cross_references": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": [
+              "dharma",
+              "karma",
+              "kosha (causal body as saṃskāra storehouse)",
+              "vasana (latent tendencies)"
+            ],
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "open_research_questions": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- How do the psychological saṃskāras (mental impressions) relate to modern concepts of memory, habit, and neural plasticity?\n- What is the relationship between the Yoga concept of saṃskāra and the Buddhist concept of saṅkhāra?",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "experimental_hypotheses": {
+        "status": "EXPLICITLY_MARKED_EXPERIMENTAL",
+        "claims": [
+          {
+            "value": "[EXPERIMENTAL — NOT CANONICAL] Some researchers propose that saṃskāras correspond to long-term potentiation (LTP) in neuroscience — the strengthening of neural pathways through repeated activation. This remains under scientific investigation.",
+            "classification": "EXPERIMENTAL",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "policy": "Marked EXPERIMENTAL in source document."
+      },
+      "comparative_hermeneutics": {
+        "status": "EVIDENCE_BACKED",
+        "darshana_matrix": {
+          "mimamsa": {
+            "position": "Saṃskāra is the purificatory ritual that makes a person fit for Vedic life",
+            "key_terms": "Mīmāṃsā",
+            "source_text": "Mīmāṃsā: Saṃskāra is the purificatory ritual that makes a person fit for Vedic life",
+            "evidence_type": "COMMENTARY",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          },
+          "advaita": {
+            "position": "Saṃskāras are ultimately unreal — they belong to the apparent self, not the true Self",
+            "key_terms": "Advaita",
+            "source_text": "Advaita: Saṃskāras are ultimately unreal — they belong to the apparent self, not the true Self",
+            "evidence_type": "COMMENTARY",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          },
+          "dvaita": {
+            "position": "Saṃskāras are ultimately unreal — they belong to the apparent self, not the true Self",
+            "key_terms": "Advaita",
+            "source_text": "Advaita: Saṃskāras are ultimately unreal — they belong to the apparent self, not the true Self",
+            "evidence_type": "COMMENTARY",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        },
+        "traditions_represented": [
+          "advaita",
+          "dvaita",
+          "mimamsa"
+        ],
+        "claims": [
+          {
+            "value": {
+              "mimamsa": {
+                "position": "Saṃskāra is the purificatory ritual that makes a person fit for Vedic life",
+                "key_terms": "Mīmāṃsā",
+                "source_text": "Mīmāṃsā: Saṃskāra is the purificatory ritual that makes a person fit for Vedic life",
+                "evidence_type": "COMMENTARY",
+                "provenance": [
+                  {
+                    "source_id": "29a610463c1da639",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "06c0da8a1bd8bb00",
+                    "evidence_type": "TRADITION",
+                    "provenance": {
+                      "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "658c9c7f08bef4a3",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "4c1af3eb0d18aa4e",
+                    "evidence_type": "UPANISHAD",
+                    "provenance": {
+                      "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  }
+                ]
+              },
+              "advaita": {
+                "position": "Saṃskāras are ultimately unreal — they belong to the apparent self, not the true Self",
+                "key_terms": "Advaita",
+                "source_text": "Advaita: Saṃskāras are ultimately unreal — they belong to the apparent self, not the true Self",
+                "evidence_type": "COMMENTARY",
+                "provenance": [
+                  {
+                    "source_id": "29a610463c1da639",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "06c0da8a1bd8bb00",
+                    "evidence_type": "TRADITION",
+                    "provenance": {
+                      "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "658c9c7f08bef4a3",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "4c1af3eb0d18aa4e",
+                    "evidence_type": "UPANISHAD",
+                    "provenance": {
+                      "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  }
+                ]
+              },
+              "dvaita": {
+                "position": "Saṃskāras are ultimately unreal — they belong to the apparent self, not the true Self",
+                "key_terms": "Advaita",
+                "source_text": "Advaita: Saṃskāras are ultimately unreal — they belong to the apparent self, not the true Self",
+                "evidence_type": "COMMENTARY",
+                "provenance": [
+                  {
+                    "source_id": "29a610463c1da639",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "06c0da8a1bd8bb00",
+                    "evidence_type": "TRADITION",
+                    "provenance": {
+                      "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "658c9c7f08bef4a3",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "4c1af3eb0d18aa4e",
+                    "evidence_type": "UPANISHAD",
+                    "provenance": {
+                      "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/samskara.md",
+                    "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  }
+                ]
+              }
+            },
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "29a610463c1da639",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "06c0da8a1bd8bb00",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "658c9c7f08bef4a3",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "4c1af3eb0d18aa4e",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/samskara.md",
+                "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "retrieved_evidence": [],
+    "retrieval": {
+      "system": "uniguru_kosha",
+      "strategy": "deterministic_token_overlap",
+      "records_found": 0
+    },
+    "coverage": {
+      "total_layers": 35,
+      "evidence_backed_layers": 31,
+      "coverage_pct": 88.6
+    }
+  },
+  "pipeline": [
+    {
+      "stage": "śabda",
+      "schema_field": "shabda",
+      "value": "संस्कार",
+      "evidence": [
+        {
+          "source_id": "29a610463c1da639",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "06c0da8a1bd8bb00",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "658c9c7f08bef4a3",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "4c1af3eb0d18aa4e",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "PRIMARY_CANON",
+        "TRADITION",
+        "PRIMARY_CANON",
+        "UPANISHAD"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:samskara",
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56"
+      }
+    },
+    {
+      "stage": "dhātu",
+      "schema_field": "dhatu",
+      "value": "सम् + कृ (Sam + Kṛ) — Sam (together, completely, perfectly) + Kṛ (to do, to make). That which is perfectly made; that which refines and purifies.",
+      "evidence": [
+        {
+          "source_id": "29a610463c1da639",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "06c0da8a1bd8bb00",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "658c9c7f08bef4a3",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "4c1af3eb0d18aa4e",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "PRIMARY_CANON",
+        "TRADITION",
+        "PRIMARY_CANON",
+        "UPANISHAD"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:samskara",
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56"
+      }
+    },
+    {
+      "stage": "vyākaraṇa",
+      "schema_field": "vyakarana",
+      "value": "Saṃskāra is a masculine noun derived from the prefix sam- (together, completely) and the root kṛ (to do) with the suffix -a. The word carries the sense of \"making perfect,\" \"refining,\" and \"purifying.\"",
+      "evidence": [
+        {
+          "source_id": "29a610463c1da639",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "06c0da8a1bd8bb00",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "658c9c7f08bef4a3",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "4c1af3eb0d18aa4e",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "PRIMARY_CANON",
+        "TRADITION",
+        "PRIMARY_CANON",
+        "UPANISHAD"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:samskara",
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56"
+      }
+    },
+    {
+      "stage": "nirukta",
+      "schema_field": "nirukta",
+      "value": "\"Saṃskriyate anena iti saṃskāraḥ\" — that by which one is refined/purified. Saṃskāra has three meanings: (1) mental impression (psychological), (2) life-cycle ritual (sociological), (3) refinement/purification (philosophical).",
+      "evidence": [
+        {
+          "source_id": "29a610463c1da639",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "06c0da8a1bd8bb00",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "658c9c7f08bef4a3",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "4c1af3eb0d18aa4e",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "PRIMARY_CANON",
+        "TRADITION",
+        "PRIMARY_CANON",
+        "UPANISHAD"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:samskara",
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56"
+      }
+    },
+    {
+      "stage": "bīja",
+      "schema_field": "beeja",
+      "value": "सं (Saṃ) — the prefix itself carries the bīja energy of completeness and perfection.",
+      "evidence": [
+        {
+          "source_id": "29a610463c1da639",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "06c0da8a1bd8bb00",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "658c9c7f08bef4a3",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "4c1af3eb0d18aa4e",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "PRIMARY_CANON",
+        "TRADITION",
+        "PRIMARY_CANON",
+        "UPANISHAD"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:samskara",
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56"
+      }
+    },
+    {
+      "stage": "tattva",
+      "schema_field": "tattva",
+      "value": "Saṃskāra-Tattva — the principle of refinement, impression, and ritual transformation. Saṃskāras operate at two levels: the psychological (mental impressions that shape character) and the sociological (life-cycle rituals that mark transitions).",
+      "evidence": [
+        {
+          "source_id": "29a610463c1da639",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "06c0da8a1bd8bb00",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "658c9c7f08bef4a3",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "4c1af3eb0d18aa4e",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "PRIMARY_CANON",
+        "TRADITION",
+        "PRIMARY_CANON",
+        "UPANISHAD"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:samskara",
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56"
+      }
+    },
+    {
+      "stage": "śakti",
+      "schema_field": "shakti",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "29a610463c1da639",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "06c0da8a1bd8bb00",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "658c9c7f08bef4a3",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "4c1af3eb0d18aa4e",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "PRIMARY_CANON",
+        "TRADITION",
+        "PRIMARY_CANON",
+        "UPANISHAD"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:samskara",
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56"
+      }
+    },
+    {
+      "stage": "functional_meaning",
+      "schema_field": "functional_meaning",
+      "value": "Saṃskāra operates at two levels: (1) Psychological: the mental impressions (vāsanās) left by past experiences that shape present behavior and future tendencies. These are the karmic residues stored in the causal body. (2) Sociological: the sixteen (or more) life-cycle rituals (ṣoḍaśa-saṃskāras) that mark and sanctify the major transitions of human life from conception to death.",
+      "evidence": [
+        {
+          "source_id": "29a610463c1da639",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "06c0da8a1bd8bb00",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "658c9c7f08bef4a3",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "4c1af3eb0d18aa4e",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/samskara.md",
+          "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "PRIMARY_CANON",
+        "TRADITION",
+        "PRIMARY_CANON",
+        "UPANISHAD"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:samskara",
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56"
+      }
+    }
+  ],
+  "cross_references": [
+    {
+      "target": "dharma",
+      "claim": "samskara is cross-referenced with dharma by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/samskara.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "karma",
+      "claim": "samskara is cross-referenced with karma by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/samskara.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "kosha (causal body as saṃskāra storehouse)",
+      "claim": "samskara is cross-referenced with kosha (causal body as saṃskāra storehouse) by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/samskara.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "vasana (latent tendencies)",
+      "claim": "samskara is cross-referenced with vasana (latent tendencies) by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/samskara.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    }
+  ],
+  "cross_text_synthesis": {
+    "status": "RETRIEVED_SOURCE_RECORDS_ONLY",
+    "canonical_claims": [
+      {
+        "claim": "Saṃskāra operates at two levels: (1) Psychological: the mental impressions (vāsanās) left by past experiences that shape present behavior and future tendencies. These are the karmic residues stored in the causal body. (2) Sociological: the sixteen (or more) life-cycle rituals (ṣoḍaśa-saṃskāras) that mark and sanctify the major transitions of human life from conception to death.",
+        "classification": [
+          "PRIMARY_CANON",
+          "TRADITION",
+          "PRIMARY_CANON",
+          "UPANISHAD"
+        ],
+        "source_path": "knowledge/sanskrit/samskara.md"
+      }
+    ],
+    "retrieved_records": [],
+    "conflicts": [],
+    "uncertainty": "Retrieved records are preserved as source-scoped evidence; the decoder does not merge them into an untraceable summary."
+  },
+  "knowledge_graph": {
+    "graph_id": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_GRAPH_V3",
+    "schema_version": "3.0.0",
+    "nodes": [
+      {
+        "id": "sanskar:sanskrit:samskara",
+        "type": "sanskrit_concept",
+        "label": "samskara",
+        "address": "knowledge/sanskrit/samskara.md",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "sanskar:sanskrit:dharma",
+        "type": "sanskrit_concept",
+        "label": "dharma",
+        "address": "backend/knowledge/sanskrit/dharma.md"
+      },
+      {
+        "id": "sanskar:sanskrit:karma",
+        "type": "sanskrit_concept",
+        "label": "karma",
+        "address": "backend/knowledge/sanskrit/karma.md"
+      },
+      {
+        "id": "deity:brahma",
+        "type": "deity",
+        "label": "Brahmā",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "deity:visnu",
+        "type": "deity",
+        "label": "Viṣṇu",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "deity:ganesa",
+        "type": "deity",
+        "label": "Gaṇeśa",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "loka:all_lokas_are_shaped_by_the_samskaras_of_their_inhabitants",
+        "type": "loka",
+        "label": "All lokas are shaped by the saṃskāras of their inhabitants",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "kosha_ref:karana_sarira",
+        "type": "kosha",
+        "label": "Kāraṇa Śarīra",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "kosha_ref:manomaya_kosha",
+        "type": "kosha",
+        "label": "Manomaya Kosha",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "chakra_ref:muladhara",
+        "type": "chakra",
+        "label": "Mūlādhāra",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "chakra_ref:svadhisthana",
+        "type": "chakra",
+        "label": "Svādhiṣṭhāna",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "yantra:samskara_yantra",
+        "type": "yantra",
+        "label": "Saṃskāra Yantra",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "vidya:samskara_vidya",
+        "type": "vidya",
+        "label": "Saṃskāra Vidyā",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "id": "vidya:dharmasastra_vidya",
+        "type": "vidya",
+        "label": "Dharmaśāstra Vidyā",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      }
+    ],
+    "edges": [
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "sanskar:sanskrit:dharma",
+        "type": "canonical_cross_reference",
+        "evidence_type": "DERIVED",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "sanskar:sanskrit:karma",
+        "type": "canonical_cross_reference",
+        "evidence_type": "DERIVED",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "deity:brahma",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "deity:visnu",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "deity:ganesa",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "loka:all_lokas_are_shaped_by_the_samskaras_of_their_inhabitants",
+        "type": "related_loka",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "kosha_ref:karana_sarira",
+        "type": "related_kosha",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "kosha_ref:manomaya_kosha",
+        "type": "related_kosha",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "chakra_ref:muladhara",
+        "type": "related_chakra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "chakra_ref:svadhisthana",
+        "type": "related_chakra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "yantra:samskara_yantra",
+        "type": "related_yantra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "vidya:samskara_vidya",
+        "type": "related_vidya",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      },
+      {
+        "from": "sanskar:sanskrit:samskara",
+        "to": "vidya:dharmasastra_vidya",
+        "type": "related_vidya",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/samskara.md"
+      }
+    ],
+    "metadata": {
+      "adapter": "uniguru_civilizational_enrichment_v3",
+      "consistency_valid": true,
+      "orphaned_nodes": [],
+      "source_snapshot_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+      "node_count": 14,
+      "edge_count": 13
+    }
+  },
+  "functional_meaning": {
+    "summary": "Saṃskāra operates at two levels: (1) Psychological: the mental impressions (vāsanās) left by past experiences that shape present behavior and future tendencies. These are the karmic residues stored in the causal body. (2) Sociological: the sixteen (or more) life-cycle rituals (ṣoḍaśa-saṃskāras) that mark and sanctify the major transitions of human life from conception to death.",
+    "classification": "SOURCE_SCOPED_CANONICAL_TEXT"
+  },
+  "provenance": {
+    "registry_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "schema_version": "uniguru_civilizational_enrichment_v3",
+    "source_documents": [
+      {
+        "source_id": "29a610463c1da639",
+        "evidence_type": "PRIMARY_CANON",
+        "provenance": {
+          "source_text": "Gṛhyasūtras (Āśvalāyana, Pāraskara — primary texts on saṃskāra rituals)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "06c0da8a1bd8bb00",
+        "evidence_type": "TRADITION",
+        "provenance": {
+          "source_text": "Manusmṛti 2.26-67 (saṃskāras)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "658c9c7f08bef4a3",
+        "evidence_type": "PRIMARY_CANON",
+        "provenance": {
+          "source_text": "Yoga Sūtras 1.50, 3.9-10 (saṃskāra as psychological impression)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "4c1af3eb0d18aa4e",
+        "evidence_type": "UPANISHAD",
+        "provenance": {
+          "source_text": "Bṛhadāraṇyaka Upaniṣad 4.4.5 (saṃskāra and rebirth)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/samskara.md",
+        "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56",
+        "retrieval_system": "sanskrit_lexical_records"
+      }
+    ],
+    "retrieved_records": [],
+    "lineage": {
+      "concept_id": "sanskar:sanskrit:samskara",
+      "source_path": "knowledge/sanskrit/samskara.md",
+      "content_hash": "cca18f50858e20b05a697068114cecd380351f99210b173809bdcdc7d9f81f56"
+    },
+    "replay_safe": true
+  },
+  "governed_response": {
+    "evidence_classification": {
+      "classification": "SOURCE_SCOPED",
+      "evidence_types": [
+        "PRIMARY_CANON",
+        "TRADITION",
+        "UPANISHAD"
+      ],
+      "notes": "Claims are either lexical source fields or verbatim retrieved UniGuru records; no generative canonical summary is used."
+    },
+    "research_classification": "civilizational_knowledge",
+    "governance_state": "read_only_observation"
+  },
+  "result_hash": "ab57cddba2561980628b84fc50fd72e3b7558f515ce8da434f17978f0c1dc361"
+}

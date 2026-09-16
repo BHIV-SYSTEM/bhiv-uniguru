@@ -1,0 +1,289 @@
+{
+  "contract_id": "teacher_contract_v1",
+  "contract_version": "1.0.0",
+  "contract_generated_at": "2026-06-09T17:14:37.947+05:30",
+  "contract_purpose": "API contract for teacher-facing intelligence outputs",
+  "contract_authority": "UniGuru Teacher Runtime Platform",
+  "views": {
+    "class_view": {
+      "view_type": "AGGREGATE_CLASS_METRICS",
+      "purpose": "Aggregate metrics across all students in the class",
+      "required_fields": [
+        "class_id",
+        "teacher_id",
+        "grade",
+        "total_students",
+        "average_mastery_score",
+        "students_mastered",
+        "students_developing",
+        "students_struggling"
+      ],
+      "sample_output": {
+        "view_id": "CLASS_VIEW_001",
+        "class_info": {
+          "class_id": "CLASS_1A",
+          "teacher_id": "TEACHER_001",
+          "grade": 1,
+          "total_students": 25
+        },
+        "class_metrics": {
+          "average_mastery_score": 0.78,
+          "students_mastered": 5,
+          "students_developing": 15,
+          "students_struggling": 5,
+          "total_exercises_completed": 195,
+          "average_learning_velocity": 0.082
+        },
+        "performance_distribution": {
+          "mastered_percentage": 20.0,
+          "developing_percentage": 60.0,
+          "struggling_percentage": 20.0
+        },
+        "interventions_needed": 8
+      }
+    },
+    "student_progress_view": {
+      "view_type": "PER_STUDENT_METRICS",
+      "purpose": "Individual student progress metrics for quick overview",
+      "items": [
+        {
+          "student_id": "STUDENT_001",
+          "student_name": "Aarav Kumar",
+          "mastery_level": "PROFICIENT",
+          "mastery_score": 0.85,
+          "concepts_attempted": 4,
+          "concepts_mastered": 2,
+          "weak_areas_count": 0,
+          "learning_velocity": 0.09,
+          "exercises_completed": 8,
+          "intervention_needed": false,
+          "top_weak_area": null,
+          "estimated_time_to_mastery_weeks": 0.5
+        },
+        {
+          "student_id": "STUDENT_002",
+          "student_name": "Bhavi Singh",
+          "mastery_level": "DEVELOPING",
+          "mastery_score": 0.72,
+          "concepts_attempted": 3,
+          "concepts_mastered": 0,
+          "weak_areas_count": 1,
+          "learning_velocity": 0.08,
+          "exercises_completed": 7,
+          "intervention_needed": true,
+          "top_weak_area": "CONCEPT_PLACE_VALUE",
+          "estimated_time_to_mastery_weeks": 1.5
+        }
+      ]
+    },
+    "curriculum_view": {
+      "view_type": "CURRICULUM_COMPLETION_STATUS",
+      "purpose": "Chapter/unit completion status across class",
+      "required_fields": [
+        "chapter_id",
+        "chapter",
+        "concepts_in_chapter",
+        "overall_chapter_completion"
+      ],
+      "sample_output": {
+        "view_id": "CURRICULUM_VIEW_001",
+        "chapter": "Counting from 1 to 10",
+        "chapter_id": "BALBHARTI_MATH_G1_MM_CH01",
+        "concepts_in_chapter": [
+          {
+            "concept_id": "CONCEPT_NUMBER_RECOGNITION",
+            "average_mastery": 0.89,
+            "students_mastered": 20,
+            "students_developing": 4,
+            "students_struggling": 1,
+            "completion_percentage": 80.0
+          },
+          {
+            "concept_id": "CONCEPT_COUNTING",
+            "average_mastery": 0.72,
+            "students_mastered": 5,
+            "students_developing": 15,
+            "students_struggling": 5,
+            "completion_percentage": 20.0
+          }
+        ],
+        "overall_chapter_completion": 50.0
+      }
+    },
+    "remediation_view": {
+      "view_type": "INTERVENTION_RECOMMENDATIONS",
+      "purpose": "Prioritized list of students needing intervention",
+      "required_fields": [
+        "total_interventions_needed",
+        "interventions_by_priority",
+        "remediation_items"
+      ],
+      "sample_output": {
+        "view_id": "REMEDIATION_VIEW_001",
+        "total_interventions_needed": 8,
+        "interventions_by_priority": {
+          "CRITICAL": 2,
+          "HIGH": 3,
+          "MEDIUM": 2,
+          "LOW": 1
+        },
+        "remediation_items": [
+          {
+            "remediation_id": "STUDENT_003_CONCEPT_PLACE_VALUE",
+            "student_id": "STUDENT_003",
+            "student_name": "Chinky Patel",
+            "concept_id": "CONCEPT_PLACE_VALUE",
+            "current_mastery": 0.35,
+            "priority": "CRITICAL",
+            "attempts": 2,
+            "accuracy": 0.0,
+            "confidence": 0.475,
+            "recommended_action": "Provide foundational review with concrete manipulatives",
+            "estimated_intervention_hours": 3.0
+          }
+        ],
+        "total_intervention_hours_needed": 12.5,
+        "recommended_class_focus": "Focus on foundational concepts for entire class"
+      }
+    }
+  },
+  "api_endpoints": [
+    {
+      "endpoint": "/teachers/{teacher_id}/classes/{class_id}/view/class",
+      "method": "GET",
+      "description": "Get aggregate class-level metrics",
+      "response_schema": "#/views/class_view",
+      "access": "TEACHER_OR_ADMIN",
+      "response_time_ms": 100
+    },
+    {
+      "endpoint": "/teachers/{teacher_id}/classes/{class_id}/view/students",
+      "method": "GET",
+      "description": "Get per-student progress overview",
+      "response_schema": "#/views/student_progress_view",
+      "pagination": true,
+      "sort_options": ["mastery_score", "student_name", "exercises_completed"],
+      "access": "TEACHER_OR_ADMIN",
+      "response_time_ms": 150
+    },
+    {
+      "endpoint": "/teachers/{teacher_id}/classes/{class_id}/view/curriculum",
+      "method": "GET",
+      "description": "Get chapter/unit completion status",
+      "response_schema": "#/views/curriculum_view",
+      "query_parameters": [
+        "chapter_id (optional)",
+        "subject (optional)"
+      ],
+      "access": "TEACHER_OR_ADMIN",
+      "response_time_ms": 120
+    },
+    {
+      "endpoint": "/teachers/{teacher_id}/classes/{class_id}/view/remediation",
+      "method": "GET",
+      "description": "Get intervention recommendations",
+      "response_schema": "#/views/remediation_view",
+      "query_parameters": [
+        "priority (optional)",
+        "concept_id (optional)"
+      ],
+      "access": "TEACHER_OR_ADMIN",
+      "response_time_ms": 150
+    },
+    {
+      "endpoint": "/teachers/{teacher_id}/classes/{class_id}/report/full",
+      "method": "GET",
+      "description": "Get comprehensive teacher intelligence report",
+      "response_schema": "ComprehensiveTeacherReport",
+      "includes": [
+        "class_view",
+        "student_progress_view",
+        "curriculum_view",
+        "remediation_view",
+        "summary_and_recommendations"
+      ],
+      "access": "TEACHER_OR_ADMIN",
+      "response_time_ms": 300,
+      "caching": "RECOMMENDED (update frequency: 1 hour)"
+    }
+  ],
+  "data_structures": {
+    "ClassView": {
+      "type": "object",
+      "properties": {
+        "class_metrics": {
+          "type": "object",
+          "properties": {
+            "average_mastery_score": {"type": "number", "range": [0, 1]},
+            "students_mastered": {"type": "integer"},
+            "students_developing": {"type": "integer"},
+            "students_struggling": {"type": "integer"},
+            "total_exercises_completed": {"type": "integer"},
+            "average_learning_velocity": {"type": "number"}
+          }
+        }
+      }
+    },
+    "RemediationItem": {
+      "type": "object",
+      "properties": {
+        "student_id": {"type": "string"},
+        "student_name": {"type": "string"},
+        "concept_id": {"type": "string"},
+        "current_mastery": {"type": "number", "range": [0, 1]},
+        "priority": {
+          "type": "string",
+          "enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+        },
+        "recommended_action": {"type": "string"},
+        "estimated_intervention_hours": {"type": "number"}
+      }
+    },
+    "ConceptStatus": {
+      "type": "object",
+      "properties": {
+        "concept_id": {"type": "string"},
+        "average_mastery": {"type": "number", "range": [0, 1]},
+        "students_mastered": {"type": "integer"},
+        "students_developing": {"type": "integer"},
+        "students_struggling": {"type": "integer"},
+        "completion_percentage": {"type": "number", "range": [0, 100]}
+      }
+    }
+  },
+  "contract_guarantees": {
+    "data_accuracy": "All metrics computed from actual student exercise data",
+    "data_freshness": "Updated real-time as students complete exercises",
+    "priority_ordering": "Interventions ordered by urgency and student mastery level",
+    "actionable_insights": "All recommendations include specific, actionable steps",
+    "pedagogical_alignment": "All recommendations aligned with curriculum prerequisites",
+    "teacher_optimized": "Views designed for quick teacher decision-making",
+    "no_synthetic_metrics": "All data sourced from verified curriculum and actual student work"
+  },
+  "teacher_use_cases": [
+    {
+      "use_case": "Morning Class Review",
+      "endpoint": "/teachers/{teacher_id}/classes/{class_id}/report/full",
+      "time_required_minutes": 5,
+      "typical_action": "Review class status, identify interventions needed"
+    },
+    {
+      "use_case": "Student Individual Review",
+      "endpoint": "/teachers/{teacher_id}/classes/{class_id}/view/students",
+      "time_required_minutes": 3,
+      "typical_action": "Review individual student progress, plan next lesson"
+    },
+    {
+      "use_case": "Curriculum Pacing Decision",
+      "endpoint": "/teachers/{teacher_id}/classes/{class_id}/view/curriculum",
+      "time_required_minutes": 5,
+      "typical_action": "Decide whether to advance or remediate"
+    },
+    {
+      "use_case": "Intervention Prioritization",
+      "endpoint": "/teachers/{teacher_id}/classes/{class_id}/view/remediation",
+      "time_required_minutes": 10,
+      "typical_action": "Plan small group instruction schedule"
+    }
+  ]
+}

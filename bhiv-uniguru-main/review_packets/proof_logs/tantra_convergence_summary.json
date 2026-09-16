@@ -1,0 +1,84 @@
+{
+  "all_replay_hashes_stable": true,
+  "proof_logs": [
+    "replay_trace.json",
+    "contradiction_trace.json",
+    "memory_continuity_trace.json",
+    "downstream_contract_trace.json"
+  ],
+  "replay_checks": [
+    {
+      "contract_schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+      "downstream_status": "REJECTED_NO_DOWNSTREAM_ACTION",
+      "interpretation_hash_stable": true,
+      "name": "replay_trace",
+      "retrieval_truth_hash_stable": true,
+      "trace_continuity": {
+        "bucket_proof": "tantra_replay_qubit",
+        "contract_emission": "tantra_replay_qubit",
+        "downstream_execution": "tantra_replay_qubit",
+        "immutable": true,
+        "retrieval": "tantra_replay_qubit",
+        "synthesis": "tantra_replay_qubit",
+        "validation": "tantra_replay_qubit"
+      },
+      "trace_id": "tantra_replay_qubit",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    {
+      "contract_schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+      "downstream_status": "REJECTED_NO_DOWNSTREAM_ACTION",
+      "interpretation_hash_stable": true,
+      "name": "contradiction_trace",
+      "retrieval_truth_hash_stable": true,
+      "trace_continuity": {
+        "bucket_proof": "tantra_contradiction_governance",
+        "contract_emission": "tantra_contradiction_governance",
+        "downstream_execution": "tantra_contradiction_governance",
+        "immutable": true,
+        "retrieval": "tantra_contradiction_governance",
+        "synthesis": "tantra_contradiction_governance",
+        "validation": "tantra_contradiction_governance"
+      },
+      "trace_id": "tantra_contradiction_governance",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    {
+      "contract_schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+      "downstream_status": "REJECTED_NO_DOWNSTREAM_ACTION",
+      "interpretation_hash_stable": true,
+      "name": "memory_continuity_trace",
+      "retrieval_truth_hash_stable": true,
+      "trace_continuity": {
+        "bucket_proof": "tantra_memory_gita_governance",
+        "contract_emission": "tantra_memory_gita_governance",
+        "downstream_execution": "tantra_memory_gita_governance",
+        "immutable": true,
+        "retrieval": "tantra_memory_gita_governance",
+        "synthesis": "tantra_memory_gita_governance",
+        "validation": "tantra_memory_gita_governance"
+      },
+      "trace_id": "tantra_memory_gita_governance",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    {
+      "contract_schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+      "downstream_status": "READY_FOR_CONSUMPTION",
+      "interpretation_hash_stable": true,
+      "name": "downstream_contract_trace",
+      "retrieval_truth_hash_stable": true,
+      "trace_continuity": {
+        "bucket_proof": "tantra_downstream_vishnu",
+        "contract_emission": "tantra_downstream_vishnu",
+        "downstream_execution": "tantra_downstream_vishnu",
+        "immutable": true,
+        "retrieval": "tantra_downstream_vishnu",
+        "synthesis": "tantra_downstream_vishnu",
+        "validation": "tantra_downstream_vishnu"
+      },
+      "trace_id": "tantra_downstream_vishnu",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "schema": "TANTRA_CONVERGENCE_PROOF_SUMMARY_V1"
+}
