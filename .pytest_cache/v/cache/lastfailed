@@ -2,19 +2,5 @@
   "backend/test_queries.py": true,
   "backend/tests/test_sanskrit_decoder.py::test_decode_sanskrit_concept_builds_deterministic_pipeline": true,
   "backend/tests/test_sanskrit_decoder.py::test_sanskrit_runtime_endpoint_returns_decoded_payload": true,
-  "backend/tests/test_phase2_sanskrit_decoder_knowledge_graph.py::test_all_graph_nodes_have_provenance": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_mantra_md_exists_in_sanskrit_kb": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_yantra_md_exists_in_sanskrit_kb": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_mantra_md_has_required_sections": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_yantra_md_has_required_sections": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_mantra_experimental_hypotheses_are_marked": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_yantra_experimental_hypotheses_are_marked": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_graph_expansion_file_exists": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_graph_expansion_schema_version": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_graph_expansion_has_edges": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_graph_expansion_all_edges_have_required_fields": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_graph_expansion_no_invented_associations": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_graph_expansion_mantra_yantra_cross_reference": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_graph_expansion_darsana_cross_references_present": true,
-  "backend/tests/test_knowledge_enrichment_convergence.py::test_graph_expansion_darsana_all_have_primary_shastra": true
+  "backend/tests/test_phase2_sanskrit_decoder_knowledge_graph.py::test_all_graph_nodes_have_provenance": true
 }
