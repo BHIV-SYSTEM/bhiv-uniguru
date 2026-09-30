@@ -255,6 +255,69 @@ class AnswerSynthesizer:
     No raw text dumping. No broken formatting. No hallucinated Sanskrit.
     """
 
+    SYNTHESIS_STOPWORDS = STOPWORDS | {
+        "name", "any", "one", "translate", "translation", "text", "related", "purpose",
+    }
+
+    @staticmethod
+    def _token_forms(token: str) -> set[str]:
+        forms = {token}
+        if token.isascii() and token.isalpha() and len(token) > 3:
+            if token.endswith("ies") and len(token) > 4:
+                forms.add(token[:-3] + "y")
+            elif token.endswith("s"):
+                forms.add(token[:-1])
+            else:
+                forms.add(token + "s")
+        return forms
+
+    @classmethod
+    def _relevant_sentences(cls, query: str, content: str) -> List[str]:
+        query_terms = {
+            term for term in SignalValidator.tokenize(query)
+            if term not in cls.SYNTHESIS_STOPWORDS
+        }
+        if not query_terms:
+            return []
+
+        translation_query = "translate" in query.casefold() or "translation" in query.casefold()
+        text = re.sub(r"\[\d+\]", "", str(content or ""))
+        sentences = re.split(r"(?<=[.!?\u0964\u0965])\s+|\n+", text)
+        relevant = []
+        for raw_sentence in sentences:
+            sentence = re.sub(r"^\s*(?:[-*]|\d+[.)])\s*", "", raw_sentence).strip()
+            sentence = re.sub(r"\s+", " ", sentence)
+            if len(sentence) < 12:
+                continue
+            if re.match(r"(?:also|additionally|furthermore)\b", sentence, re.IGNORECASE):
+                continue
+            sentence_terms = SignalValidator.tokenize(sentence)
+            sentence_forms = set().union(*(cls._token_forms(term) for term in sentence_terms))
+            matched_terms = {
+                term for term in query_terms
+                if cls._token_forms(term) & sentence_forms
+            }
+            if translation_query:
+                is_relevant = matched_terms == query_terms
+            else:
+                is_relevant = bool(matched_terms)
+            if is_relevant:
+                relevant.append(sentence)
+        return relevant
+
+    @staticmethod
+    def _is_duplicate_sentence(sentence: str, previous: List[str]) -> bool:
+        tokens = SignalValidator.tokenize(sentence)
+        for existing in previous:
+            existing_tokens = SignalValidator.tokenize(existing)
+            if tokens == existing_tokens:
+                return True
+            if tokens and existing_tokens:
+                overlap = len(tokens & existing_tokens) / max(len(tokens), len(existing_tokens))
+                if overlap >= 0.9:
+                    return True
+        return False
+
     @staticmethod
     def synthesize(
         query: str,
@@ -279,29 +342,55 @@ class AnswerSynthesizer:
                 "reasoning": "No signals passed domain+tag+query validation.",
             }
 
-        # Use top signal (highest confidence)
-        best = accepted[0]
-        content = str(best.get("content") or "").strip()
-        confidence = float(best.get("confidence") or 0.0)
-        source = str(best.get("source") or "unknown")
-        validation = best.get("_validation", {})
+        used_signals = []
+        answer_sentences = []
+        for signal in accepted:
+            for sentence in AnswerSynthesizer._relevant_sentences(
+                query=query,
+                content=str(signal.get("content") or ""),
+            ):
+                if not AnswerSynthesizer._is_duplicate_sentence(sentence, answer_sentences):
+                    answer_sentences.append(sentence)
+                    if signal not in used_signals:
+                        used_signals.append(signal)
+                if len(answer_sentences) >= 6:
+                    break
+            if len(answer_sentences) >= 6:
+                break
 
-        # Clean the content for output
-        answer = AnswerSynthesizer._format_answer(content)
+        if not used_signals:
+            return {
+                "answer": NO_KNOWLEDGE_RESPONSE,
+                "verification_status": "NO_VERIFIED_KNOWLEDGE",
+                "confidence": 0.0,
+                "signals_used": 0,
+                "evidence_signal_ids": [],
+                "signals_rejected": len(rejected),
+                "rejection_reasons": [r["rejection_reason"] for r in rejected],
+                "source": None,
+                "reasoning": "No accepted Kosha record contains evidence relevant to the query.",
+            }
+
+        answer = AnswerSynthesizer._format_answer(" ".join(answer_sentences))
+        best = used_signals[0]
+        confidence = max(float(signal.get("confidence") or 0.0) for signal in used_signals)
+        source = str(best.get("source") or "unknown")
+        evidence_refs = [
+            f"{signal.get('trace', {}).get('knowledge_id', 'unknown')} ({signal.get('source') or 'unknown'})"
+            for signal in used_signals
+        ]
 
         return {
             "answer": answer,
             "verification_status": "VERIFIED",
             "confidence": round(confidence, 4),
-            "signals_used": len(accepted),
+            "signals_used": len(used_signals),
+            "evidence_signal_ids": [signal.get("signal_id") for signal in used_signals],
             "signals_rejected": len(rejected),
             "source": source,
             "reasoning": (
-                f"Accepted signal because tags {validation.get('matched_tags', [])}, "
-                f"content overlap {validation.get('content_overlap', 0):.2f}, "
-                f"entity overlap {validation.get('entity_overlap', 0):.2f}, "
-                f"domain consistency {validation.get('domain_consistency', 0):.2f}, "
-                f"and derived confidence {confidence:.3f} met deterministic thresholds."
+                f"Answer uses {len(used_signals)} accepted evidence record(s): "
+                f"{'; '.join(evidence_refs)}. Sentences are extracted from retrieved content."
             ),
         }
 
@@ -316,6 +405,7 @@ class AnswerSynthesizer:
 
         # Normalize whitespace
         text = re.sub(r'\s+', ' ', text).strip()
+        text = re.sub(r'\s+([.!?])', r'\1', text)
 
         # Remove trailing incomplete sentences
         if text and not text[-1] in '.!?':
