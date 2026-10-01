@@ -112,15 +112,54 @@ def _try_kosha(query: str, subject: Optional[str] = None) -> Tuple[Optional[str]
 
 
 def _clean_candidate_text(text: str) -> str:
-    text = re.sub(r"\s+", " ", str(text or "")).strip()
+    text = str(text or "")
+    text = re.sub(r"(?is)---\s*(?:title|source|url|verification_status|category)\s*:.*?---", " ", text)
     text = re.sub(r"\s*\[[0-9]+\]\s*", " ", text)
-    return text.strip()
+    text = re.sub(r"(?m)^\s*#{1,6}\s*", "", text)
+    text = re.sub(r"(?m)^\s*(?:[-*+]\s+|\d+[.)]\s+)", "", text)
+    text = re.sub(r"\*{1,2}([^*]+)\*{1,2}", r"\1", text)
+    text = re.sub(r"\[([^]]+)\]\([^)]+\)", r"\1", text)
+    paragraphs = []
+    seen_paragraphs = set()
+    for paragraph in re.split(r"\n\s*\n", text):
+        paragraph = re.sub(r"[ \t]+", " ", paragraph).strip()
+        key = paragraph.lower()
+        if paragraph and key not in seen_paragraphs:
+            seen_paragraphs.add(key)
+            paragraphs.append(paragraph)
+    return "\n\n".join(paragraphs)
 
 
 def synthesize_retrieval_answer(query: str, candidates: List[Dict[str, Any]]) -> str:
     if not candidates:
         return ""
 
+    stopwords = {
+        "the", "a", "an", "and", "or", "but", "is", "are", "was", "were", "be", "to", "of",
+        "in", "on", "for", "from", "with", "what", "which", "who", "how", "why", "any", "one",
+        "name", "text", "related", "purpose", "translate",
+    }
+    query_terms = {
+        token.lower()
+        for token in re.findall(r"[a-zA-Z0-9\u0900-\u097F]+", query)
+        if len(token) > 1 and token.lower() not in stopwords
+    }
+    if "ayurveda" in query_terms:
+        query_terms.update({"ayurvedic", "charaka", "sushruta"})
+    if "\u0905\u0939\u093f\u0902\u0938\u093e" in query_terms:
+        query_terms.update({"ahimsa", "nonviolence", "violence"})
+
+    def paragraph_matches(paragraph: str) -> bool:
+        paragraph_terms = {
+            token.lower()
+            for token in re.findall(r"[a-zA-Z0-9\u0900-\u097F]+", paragraph)
+        }
+        return any(
+            term in paragraph_terms or term.rstrip("s") in paragraph_terms
+            for term in query_terms
+        )
+
+    seen_paragraphs = set()
     seen_sentences = set()
     selected_sentences: List[str] = []
     ranked = sorted(
@@ -135,23 +174,34 @@ def synthesize_retrieval_answer(query: str, candidates: List[Dict[str, Any]]) ->
             continue
         if re.search(r"\bi don't know\b|not explicitly|provided context does not", content, re.IGNORECASE):
             continue
-        for sentence in re.split(r"(?<=[.!?])\s+", content):
-            sentence = sentence.strip()
-            if not sentence:
+        candidate_sentence_count = 0
+        for paragraph in content.split("\n\n"):
+            paragraph_key = re.sub(r"\s+", " ", paragraph).strip().lower()
+            if not paragraph_key or paragraph_key in seen_paragraphs or not paragraph_matches(paragraph):
                 continue
-            normalized = re.sub(r"\s+", " ", sentence).strip()
-            key = normalized.lower()
-            if key in seen_sentences:
-                continue
-            seen_sentences.add(key)
-            selected_sentences.append(normalized)
-            if len(selected_sentences) >= 6:
+            seen_paragraphs.add(paragraph_key)
+            for sentence in re.split(r"(?<=[.!?])\s+|\n+", paragraph):
+                sentence = sentence.strip()
+                if not sentence:
+                    continue
+                normalized = re.sub(r"\s+([,.!?;:])", r"\1", re.sub(r"\s+", " ", sentence)).strip()
+                key = normalized.lower()
+                if key.startswith("also mentions ") or re.search(r"\b(?:according to|and|or|of)$", key):
+                    continue
+                if key in seen_sentences:
+                    continue
+                seen_sentences.add(key)
+                selected_sentences.append(normalized)
+                candidate_sentence_count += 1
+                if candidate_sentence_count >= 2:
+                    break
+                if len(selected_sentences) >= 6:
+                    break
+            if candidate_sentence_count >= 2 or len(selected_sentences) >= 6:
                 break
         if len(selected_sentences) >= 6:
             break
 
-    if len(selected_sentences) < 3:
-        return ""
     return " ".join(selected_sentences[:6]).strip()
 
 
@@ -166,6 +216,14 @@ def _try_keyword_kb(query: str, subject: Optional[str] = None) -> Tuple[Optional
             result = kb_retrieve_with_candidates(query)
         latency = (time.perf_counter() - start) * 1000
         answer = str(result.get("answer") or "").strip()
+        candidates = result.get("candidates") or []
+        if candidates:
+            try:
+                synthesized = synthesize_retrieval_answer(query, candidates)
+                if synthesized:
+                    answer = synthesized
+            except Exception as exc:
+                logger.warning("Candidate synthesis failed; preserving the existing KB answer: %s", exc)
         confidence = float(result.get("confidence_level") or 0.0)
         verified = bool(result.get("verified")) and answer != NO_KNOWLEDGE_ANSWER
 
