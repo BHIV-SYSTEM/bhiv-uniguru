@@ -201,3 +201,6 @@
 {"timestamp":"2026-09-09T09:52:14.396223Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"df17c259-c67a-42f3-97bc-f883e3e14559","method":"POST","route":"/chat/new","status_code":200,"latency_ms":38.647}
 {"timestamp":"2026-09-09T09:52:20.094156Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"73d8f30f-6e76-4345-8386-10131e2af1fb","method":"POST","route":"/chat/new","status_code":200,"latency_ms":30.738}
 {"timestamp":"2026-09-09T09:52:24.837636Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"55930b6c-543d-4e3c-8c15-4c56e40f2263","method":"POST","route":"/chat/new","status_code":200,"latency_ms":4.678}
+{"timestamp":"2026-10-01T10:49:39.526745Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"24275f29-e8c4-41bc-88ca-9a10c0bfd2a9","method":"POST","route":"/api/retrieval/debug","status_code":200,"latency_ms":7009.962}
+{"timestamp":"2026-10-01T10:50:20.116189Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"43aa2d80-1dbd-48d8-8d05-a1376217c127","method":"POST","route":"/api/sanskrit/chant","status_code":200,"latency_ms":269.202}
+{"timestamp":"2026-10-01T10:50:20.128159Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"8a71878d-acef-44cd-a596-aae3a86e3c3f","method":"GET","route":"/api/audio/chant_1c9bf7f763c92dd0","status_code":200,"latency_ms":5.74}

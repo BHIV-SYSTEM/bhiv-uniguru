@@ -186,7 +186,7 @@ def synthesize_retrieval_answer(query: str, candidates: List[Dict[str, Any]]) ->
                     continue
                 normalized = re.sub(r"\s+([,.!?;:])", r"\1", re.sub(r"\s+", " ", sentence)).strip()
                 key = normalized.lower()
-                if key.startswith("also mentions ") or re.search(r"\b(?:according to|and|or|of)$", key):
+                if key.startswith("also mentions ") or re.search(r"\b(?:according to|and|or|of)[.!?]?$", key):
                     continue
                 if key in seen_sentences:
                     continue

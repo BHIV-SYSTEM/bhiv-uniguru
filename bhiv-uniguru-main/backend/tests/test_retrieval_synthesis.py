@@ -41,6 +41,10 @@ def test_keyword_kb_synthesizes_top_candidates_and_deduplicates_paragraphs(monke
             "score": 7,
             "content": "Brahman is beyond speech and mind.",
         },
+        {
+            "score": 6,
+            "content": "Brahman is described in the Vedas, according to.",
+        },
     ]
     monkeypatch.setattr(
         "backend.retrieval.retriever.kb_retrieve_with_candidates",
@@ -58,6 +62,7 @@ def test_keyword_kb_synthesizes_top_candidates_and_deduplicates_paragraphs(monke
     assert answer.count("Brahman is the ultimate reality") == 1
     assert "Brahman as eternal" in answer
     assert "beyond speech and mind" in answer
+    assert "according to" not in answer
     assert 3 <= len(answer.split(". ")) <= 6
 
 

@@ -42,6 +42,8 @@
   "backend/tests/test_rag_retrieval.py::test_rag_retrieval_returns_top_relevant_chunks",
   "backend/tests/test_rag_retrieval.py::test_rag_retrieval_threshold_blocks_irrelevant_chunks",
   "backend/tests/test_retrieval_evaluation.py::test_balbharati_retrieval_benchmark_metrics",
+  "backend/tests/test_retrieval_synthesis.py::test_keyword_kb_preserves_existing_answer_if_synthesis_fails",
+  "backend/tests/test_retrieval_synthesis.py::test_keyword_kb_synthesizes_top_candidates_and_deduplicates_paragraphs",
   "backend/tests/test_retrieval_synthesis.py::test_out_of_domain_queries_return_no_relevant_match",
   "backend/tests/test_retrieval_synthesis.py::test_synthesize_retrieval_answer_deduplicates_and_keeps_it_concise",
   "backend/tests/test_retrieval_synthesis.py::test_topic_aware_scoring_prefers_direct_matches",

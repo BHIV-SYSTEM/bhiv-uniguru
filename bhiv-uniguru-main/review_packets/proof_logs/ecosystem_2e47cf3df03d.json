@@ -17,17 +17,17 @@
       "rejected_count": 12
     },
     "event": "tantra_uniguru_intelligence_contract",
-    "interpretation_hash": "83a3145041045b00abaa8628f6e2f4d511d0888a3f006817c64c0066d8aad7e2",
+    "interpretation_hash": "c50b4012145533fc0f0ecc1acd4d3e20554aaac85f5b31c0ded2c42c4dd55784",
     "memory_event": {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
+      "constitutional_event_hash": "9b9c46be91d7101bc01a985206695e97441bf05aadc1ee9e9a7ba65f18ebcd51",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
-      "trace_id": "tantra_sdk_runtime_test",
+      "trace_id": "ecosystem_2e47cf3df03d",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-01T10:50:17.631786Z",
+      "updated_at": "2026-10-01T10:49:40.660441Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -44,19 +44,19 @@
       "signal_eb60a8e8b4c2",
       "signal_16517055e77e"
     ],
-    "retrieval_truth_hash": "c621411b9cf33ae50475394da8f4f7230bac033102788f29bc95aa522233bc38",
+    "retrieval_truth_hash": "3c04d71e0a1e82c5c488d9c1ff9b76fa3f9e623fdbdd12a6dc11e1529ddf0d6a",
     "semantic_path": [],
-    "timestamp": "2026-10-01T10:50:17.399557Z",
+    "timestamp": "2026-10-01T10:49:39.933096Z",
     "trace_continuity": {
-      "bucket_proof": "tantra_sdk_runtime_test",
-      "contract_emission": "tantra_sdk_runtime_test",
-      "downstream_execution": "tantra_sdk_runtime_test",
+      "bucket_proof": "ecosystem_2e47cf3df03d",
+      "contract_emission": "ecosystem_2e47cf3df03d",
+      "downstream_execution": "ecosystem_2e47cf3df03d",
       "immutable": true,
-      "retrieval": "tantra_sdk_runtime_test",
-      "synthesis": "tantra_sdk_runtime_test",
-      "validation": "tantra_sdk_runtime_test"
+      "retrieval": "ecosystem_2e47cf3df03d",
+      "synthesis": "ecosystem_2e47cf3df03d",
+      "validation": "ecosystem_2e47cf3df03d"
     },
-    "trace_id": "tantra_sdk_runtime_test",
+    "trace_id": "ecosystem_2e47cf3df03d",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
   },
   "claim_evidence_bindings": [
@@ -117,7 +117,7 @@
   "downstream_execution": {
     "consumer": "TANTRA_EXECUTION_CHAIN",
     "status": "REJECTED_NO_DOWNSTREAM_ACTION",
-    "trace_id": "tantra_sdk_runtime_test"
+    "trace_id": "ecosystem_2e47cf3df03d"
   },
   "enforcement_stats": {
     "rejected_entries": 25,
@@ -125,10 +125,10 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-10-01T10:50:17.399557Z",
+  "generated_at": "2026-10-01T10:49:39.933096Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
-    "artifact_hash": "83a3145041045b00abaa8628f6e2f4d511d0888a3f006817c64c0066d8aad7e2",
+    "artifact_hash": "c50b4012145533fc0f0ecc1acd4d3e20554aaac85f5b31c0ded2c42c4dd55784",
     "authority_boundary": {
       "free_form_output": false,
       "may_introduce_unreferenced_claims": false,
@@ -157,10 +157,10 @@
     "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
     "references": {
       "accepted_signal_ids": [],
-      "retrieval_trace_id": "tantra_sdk_runtime_test",
-      "retrieval_truth_hash": "c621411b9cf33ae50475394da8f4f7230bac033102788f29bc95aa522233bc38"
+      "retrieval_trace_id": "ecosystem_2e47cf3df03d",
+      "retrieval_truth_hash": "3c04d71e0a1e82c5c488d9c1ff9b76fa3f9e623fdbdd12a6dc11e1529ddf0d6a"
     },
-    "trace_id": "tantra_sdk_runtime_test",
+    "trace_id": "ecosystem_2e47cf3df03d",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
   },
   "knowledge_ids_used": [],
@@ -182,7 +182,7 @@
     "downstream_consumable": true,
     "free_form_output": false,
     "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
-    "trace_id": "tantra_sdk_runtime_test"
+    "trace_id": "ecosystem_2e47cf3df03d"
   },
   "query": "What is the Bhagavad Gita?",
   "reasoning": "No signals passed domain+tag+query validation.",
@@ -1068,9 +1068,9 @@
     "deduplicated_candidate_count": 12,
     "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
     "query_id": "query_28aa99ee6ce5",
-    "replay_id": "replay_5b02c1e17c82b3cf",
+    "replay_id": "replay_dde285c3a8eb77c9",
     "replay_safe": true,
-    "retrieval_run_id": "run_266540cbd013",
+    "retrieval_run_id": "run_405c3a30f634",
     "selected_evidence": [
       {
         "authority_tier": "CANONICAL",
@@ -1206,13 +1206,13 @@
       }
     ],
     "semantic_scope": "general",
-    "trace_id": "tantra_sdk_runtime_test",
+    "trace_id": "ecosystem_2e47cf3df03d",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
   },
   "retrieval_truth_payload": {
     "accepted_signal_ids": [],
     "accepted_signals": [],
-    "artifact_hash": "c621411b9cf33ae50475394da8f4f7230bac033102788f29bc95aa522233bc38",
+    "artifact_hash": "3c04d71e0a1e82c5c488d9c1ff9b76fa3f9e623fdbdd12a6dc11e1529ddf0d6a",
     "domain_resolution": {
       "confidence": 1.0,
       "domain": "gitas",
@@ -1232,7 +1232,7 @@
       ],
       "method": "canonical_text_entity"
     },
-    "generated_at": "2026-10-01T10:50:17.399557Z",
+    "generated_at": "2026-10-01T10:49:39.933096Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -2104,7 +2104,7 @@
       }
     ],
     "source_lineage": [],
-    "trace_id": "tantra_sdk_runtime_test"
+    "trace_id": "ecosystem_2e47cf3df03d"
   },
   "selected_evidence": [
     {
@@ -2274,10 +2274,10 @@
         "entities_touched": [],
         "event_type": "semantic_mutation_evaluated",
         "memory_classification": "transient",
-        "trace_id": "tantra_sdk_runtime_test",
-        "updated_at": "2026-08-17T07:33:43.960846Z"
+        "trace_id": "ecosystem_2e47cf3df03d",
+        "updated_at": "2026-10-01T10:49:40.076736Z"
       },
-      "event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
+      "event_hash": "9b9c46be91d7101bc01a985206695e97441bf05aadc1ee9e9a7ba65f18ebcd51",
       "event_log_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/bhiv-uniguru-main/review_packets/proof_logs/constitutional_semantic_events.jsonl",
       "governance_decision": {
         "canonical_authority_granted": false,
@@ -2302,9 +2302,9 @@
         ],
         "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
       },
-      "idempotent_replay": true,
+      "idempotent_replay": false,
       "lineage_traceable": true,
-      "mutation_id": "3d8bebc08be18b8341c94b9f0019d972b8022018af4f742928d0e0134318c638",
+      "mutation_id": "cadc20423077c4c091aa24e18f171f284a238d4e005593e6dea82a643c9ffc22",
       "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/bhiv-uniguru-main/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
@@ -2321,14 +2321,14 @@
     "entity_continuity": {},
     "event": {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
+      "constitutional_event_hash": "9b9c46be91d7101bc01a985206695e97441bf05aadc1ee9e9a7ba65f18ebcd51",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
-      "trace_id": "tantra_sdk_runtime_test",
+      "trace_id": "ecosystem_2e47cf3df03d",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-01T10:50:17.631786Z",
+      "updated_at": "2026-10-01T10:49:40.660441Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
@@ -2341,16 +2341,16 @@
         "query": "What is the Bhagavad Gita?",
         "rejected_signal_count": 12,
         "state": "open",
-        "trace_id": "tantra_sdk_runtime_test",
-        "updated_at": "2026-10-01T10:50:17.631786Z",
+        "trace_id": "ecosystem_2e47cf3df03d",
+        "updated_at": "2026-10-01T10:49:40.660441Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-10-01T10:50:17.631786Z",
-      "queries": 117,
+      "last_seen": "2026-10-01T10:49:40.660441Z",
+      "queries": 110,
       "trace_ids": [
         "ecosystem_81b0e8013622",
         "ecosystem_c928b7617b43",
@@ -2408,13 +2408,13 @@
   "signals_found": 0,
   "signals_rejected": 12,
   "synthesis_mode": "REJECTED_NO_SYNTHESIS",
-  "trace_id": "tantra_sdk_runtime_test",
+  "trace_id": "ecosystem_2e47cf3df03d",
   "truth_interpretation_link": {
     "boundary_status": "ENFORCED",
-    "interpretation_hash": "83a3145041045b00abaa8628f6e2f4d511d0888a3f006817c64c0066d8aad7e2",
+    "interpretation_hash": "c50b4012145533fc0f0ecc1acd4d3e20554aaac85f5b31c0ded2c42c4dd55784",
     "interpretation_references_retrieval": true,
-    "retrieval_truth_hash": "c621411b9cf33ae50475394da8f4f7230bac033102788f29bc95aa522233bc38",
-    "trace_id": "tantra_sdk_runtime_test"
+    "retrieval_truth_hash": "3c04d71e0a1e82c5c488d9c1ff9b76fa3f9e623fdbdd12a6dc11e1529ddf0d6a",
+    "trace_id": "ecosystem_2e47cf3df03d"
   },
   "verification_status": "NO_VERIFIED_KNOWLEDGE"
 }
