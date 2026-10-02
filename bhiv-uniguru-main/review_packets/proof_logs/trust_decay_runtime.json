@@ -1,0 +1,146 @@
+{
+  "rows": [
+    {
+      "claim_key": "governed_claim",
+      "final_trust": 0.0,
+      "initial_trust": 0.0,
+      "replay_safe": true,
+      "schema": "UNIGURU_TRUST_DECAY_SIMULATION_V1",
+      "simulation_hash": "377088aa75e6231f1d7e84497d2ee5800ec6fbcc1e428880fe2171a47f4cc4ca",
+      "steps": [
+        {
+          "claim_key": "governed_claim",
+          "decay_factor": 0.3258,
+          "decay_hash": "5570ac9d008bb670a8547130b57234828142b50eda23e9e1b7cb30e32d818f3c",
+          "previous_decay_hash": null,
+          "reinforcement_drag": 0.06,
+          "step": 0,
+          "trust_after_decay": 0.0
+        },
+        {
+          "claim_key": "governed_claim",
+          "decay_factor": 0.3258,
+          "decay_hash": "b5858a12239179ea9ca472384dcae6530e19e939287ef20e45d5920200be8d24",
+          "previous_decay_hash": "5570ac9d008bb670a8547130b57234828142b50eda23e9e1b7cb30e32d818f3c",
+          "reinforcement_drag": 0.06,
+          "step": 1,
+          "trust_after_decay": 0.0
+        },
+        {
+          "claim_key": "governed_claim",
+          "decay_factor": 0.3258,
+          "decay_hash": "3f496086a5682b6697d58cef7d63f75f647638d2c3c804d1fc48311f5742edfa",
+          "previous_decay_hash": "b5858a12239179ea9ca472384dcae6530e19e939287ef20e45d5920200be8d24",
+          "reinforcement_drag": 0.06,
+          "step": 2,
+          "trust_after_decay": 0.0
+        },
+        {
+          "claim_key": "governed_claim",
+          "decay_factor": 0.3258,
+          "decay_hash": "6f95927d4a1f5399846e588a5eaddad6e0e97f8a9fc4beb829481d56c5b46c58",
+          "previous_decay_hash": "3f496086a5682b6697d58cef7d63f75f647638d2c3c804d1fc48311f5742edfa",
+          "reinforcement_drag": 0.06,
+          "step": 3,
+          "trust_after_decay": 0.0
+        }
+      ]
+    },
+    {
+      "claim_key": "replay_trust",
+      "final_trust": 0.0,
+      "initial_trust": 0.021,
+      "replay_safe": true,
+      "schema": "UNIGURU_TRUST_DECAY_SIMULATION_V1",
+      "simulation_hash": "c5d15aa489d1e0b1d0794f84e4b308974cd710868e8538a440393bd099e9a003",
+      "steps": [
+        {
+          "claim_key": "replay_trust",
+          "decay_factor": 0.2738,
+          "decay_hash": "bfed71730e8404fce11ecc8b25c0d4d22f7372425e6079393dacc7a3b9754e56",
+          "previous_decay_hash": null,
+          "reinforcement_drag": 0.06,
+          "step": 0,
+          "trust_after_decay": 0.0
+        },
+        {
+          "claim_key": "replay_trust",
+          "decay_factor": 0.2738,
+          "decay_hash": "f58c2a3e592f4d04cc6e3fe2ad1d53decdb3e8059d5088e99383661e25178565",
+          "previous_decay_hash": "bfed71730e8404fce11ecc8b25c0d4d22f7372425e6079393dacc7a3b9754e56",
+          "reinforcement_drag": 0.06,
+          "step": 1,
+          "trust_after_decay": 0.0
+        },
+        {
+          "claim_key": "replay_trust",
+          "decay_factor": 0.2738,
+          "decay_hash": "7688499d700b067a9d4c2f5a65b2e620ac593aa03dc98fe79c885028bb247839",
+          "previous_decay_hash": "f58c2a3e592f4d04cc6e3fe2ad1d53decdb3e8059d5088e99383661e25178565",
+          "reinforcement_drag": 0.06,
+          "step": 2,
+          "trust_after_decay": 0.0
+        },
+        {
+          "claim_key": "replay_trust",
+          "decay_factor": 0.2738,
+          "decay_hash": "e2115ebef24d20e2bb7160f5d31c5d400a52b39b4b9183516db5def764404207",
+          "previous_decay_hash": "7688499d700b067a9d4c2f5a65b2e620ac593aa03dc98fe79c885028bb247839",
+          "reinforcement_drag": 0.06,
+          "step": 3,
+          "trust_after_decay": 0.0
+        }
+      ]
+    },
+    {
+      "claim_key": "runtime_observability",
+      "final_trust": 0.0,
+      "initial_trust": 0.1731,
+      "replay_safe": true,
+      "schema": "UNIGURU_TRUST_DECAY_SIMULATION_V1",
+      "simulation_hash": "a795034ddb2ba4d7c18aacde0cb78911dcb88afb25b92a9464602d9fe78c6428",
+      "steps": [
+        {
+          "claim_key": "runtime_observability",
+          "decay_factor": 0.1986,
+          "decay_hash": "b278d9d9b3c45eda024be4f8ffe2345738ba8be8f5369b9fa8839abb66a8ce8e",
+          "previous_decay_hash": null,
+          "reinforcement_drag": 0.024,
+          "step": 0,
+          "trust_after_decay": 0.0
+        },
+        {
+          "claim_key": "runtime_observability",
+          "decay_factor": 0.1986,
+          "decay_hash": "abb7bd46cc87cd2b71a0bf732f8a7bb3d1d7a6fa1eda2350a62baa929137d571",
+          "previous_decay_hash": "b278d9d9b3c45eda024be4f8ffe2345738ba8be8f5369b9fa8839abb66a8ce8e",
+          "reinforcement_drag": 0.024,
+          "step": 1,
+          "trust_after_decay": 0.0
+        },
+        {
+          "claim_key": "runtime_observability",
+          "decay_factor": 0.1986,
+          "decay_hash": "c198a259f5b5fc20482b5aa93cd8c1c4c8f7846acd03135ddca95030674eda52",
+          "previous_decay_hash": "abb7bd46cc87cd2b71a0bf732f8a7bb3d1d7a6fa1eda2350a62baa929137d571",
+          "reinforcement_drag": 0.024,
+          "step": 2,
+          "trust_after_decay": 0.0
+        },
+        {
+          "claim_key": "runtime_observability",
+          "decay_factor": 0.1986,
+          "decay_hash": "5531a3cc16dbf9a96b2fcedf6ce53632a2945ea80f92c235d77102951728e10e",
+          "previous_decay_hash": "c198a259f5b5fc20482b5aa93cd8c1c4c8f7846acd03135ddca95030674eda52",
+          "reinforcement_drag": 0.024,
+          "step": 3,
+          "trust_after_decay": 0.0
+        }
+      ]
+    }
+  ],
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "runtime_hash_local": "7bc206b5c53f3b7a56d826d38a13dd2168d99651bfbeac17eb6aaa2917d43589",
+  "schema": "UNIGURU_TRUST_DECAY_RUNTIME_V1",
+  "trust_remains_bounded": true
+}

@@ -1,0 +1,135 @@
+{
+  "report_id": "RUNTIME_CONVERGENCE_REPORT_V2",
+  "report_version": "2.0.0",
+  "generated_at": "2026-06-10T10:29:47.400079+00:00",
+  "report_authority": "UniGuru Curriculum Intelligence Platform",
+  "convergence_status": "CONVERGED",
+  "canonical_pipeline": [
+    "StudentQuery",
+    "Retrieval",
+    "CurriculumIntelligence",
+    "LearningIntelligence",
+    "MasteryIntelligence",
+    "ConstitutionalRuntime",
+    "RuntimeContract"
+  ],
+  "no_parallel_paths_validated": true,
+  "sample_executions": [
+    {
+      "query": "What is counting?",
+      "stages_executed": [
+        "StudentQuery",
+        "Retrieval",
+        "CurriculumIntelligence",
+        "LearningIntelligence",
+        "MasteryIntelligence",
+        "ConstitutionalRuntime",
+        "RuntimeContract"
+      ],
+      "mastery_score": 0.0,
+      "convergence_validated": true
+    },
+    {
+      "query": "What is place value?",
+      "stages_executed": [
+        "StudentQuery",
+        "Retrieval",
+        "CurriculumIntelligence",
+        "LearningIntelligence",
+        "MasteryIntelligence",
+        "ConstitutionalRuntime",
+        "RuntimeContract"
+      ],
+      "mastery_score": 0.0,
+      "convergence_validated": true
+    },
+    {
+      "query": "What is addition?",
+      "stages_executed": [
+        "StudentQuery",
+        "Retrieval",
+        "CurriculumIntelligence",
+        "LearningIntelligence",
+        "MasteryIntelligence",
+        "ConstitutionalRuntime",
+        "RuntimeContract"
+      ],
+      "mastery_score": 0.0,
+      "convergence_validated": true
+    }
+  ],
+  "pipeline_trace_samples": [
+    [
+      {
+        "stage": "retrieval",
+        "matched": true,
+        "confidence": 1.0,
+        "latency_ms": 88.42
+      },
+      {
+        "stage": "curriculum_intelligence",
+        "concept_resolved": true,
+        "lineage_present": true,
+        "latency_ms": 0.0
+      },
+      {
+        "stage": "learning_intelligence",
+        "gap_detected": true,
+        "path_generated": true,
+        "latency_ms": 0.42
+      },
+      {
+        "stage": "mastery_intelligence",
+        "mastery_score": 0.0,
+        "weak_areas_count": 0,
+        "latency_ms": 0.38
+      },
+      {
+        "stage": "constitutional_runtime",
+        "available": true,
+        "decision": "forward",
+        "latency_ms": 9.84
+      }
+    ],
+    [
+      {
+        "stage": "retrieval",
+        "matched": true,
+        "confidence": 0.9,
+        "latency_ms": 84.32
+      },
+      {
+        "stage": "curriculum_intelligence",
+        "concept_resolved": true,
+        "lineage_present": true,
+        "latency_ms": 0.0
+      },
+      {
+        "stage": "learning_intelligence",
+        "gap_detected": true,
+        "path_generated": true,
+        "latency_ms": 0.4
+      },
+      {
+        "stage": "mastery_intelligence",
+        "mastery_score": 0.0,
+        "weak_areas_count": 0,
+        "latency_ms": 0.06
+      },
+      {
+        "stage": "constitutional_runtime",
+        "available": true,
+        "decision": "forward",
+        "latency_ms": 7.74
+      }
+    ]
+  ],
+  "validation_checks": {
+    "single_retrieval_path": true,
+    "mastery_intelligence_active": true,
+    "curriculum_intelligence_active": true,
+    "constitutional_runtime_integrated": true,
+    "no_web_retrieval": true,
+    "lineage_preserved": true
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "demo_id": "MASTERY_DEMO_SPRINT_PHASE4",
+  "generated_at": "2026-06-10T10:20:58.567618+00:00",
+  "demo_student": "STUDENT_DEMO_001",
+  "progress_state": {
+    "student_id": "STUDENT_DEMO_001",
+    "grade": 1,
+    "snapshot_timestamp": "2026-06-10T10:20:58.567610+00:00",
+    "mastery_score": 0.7233,
+    "mastery_level": "DEVELOPING",
+    "concepts_attempted": 4,
+    "concepts_mastered": 1,
+    "concepts_developing": 2,
+    "concepts_struggling": 1,
+    "weak_areas": [
+      {
+        "concept_id": "CONCEPT_PLACE_VALUE",
+        "mastery_score": 0.3542,
+        "mastery_level": "NOVICE",
+        "accuracy": 0.3333,
+        "confidence": 0.3855,
+        "attempts": 3,
+        "priority": "HIGH",
+        "trend": "IMPROVING"
+      },
+      {
+        "concept_id": "CONCEPT_COUNTING",
+        "mastery_score": 0.6888,
+        "mastery_level": "DEVELOPING",
+        "accuracy": 0.6667,
+        "confidence": 0.722,
+        "attempts": 3,
+        "priority": "LOW",
+        "trend": "DECLINING"
+      }
+    ],
+    "concept_strengths": [
+      "CONCEPT_NUMBER_RECOGNITION"
+    ],
+    "concept_weaknesses": [
+      "CONCEPT_PLACE_VALUE",
+      "CONCEPT_COUNTING"
+    ],
+    "recommended_remediation": [
+      {
+        "concept_id": "CONCEPT_PLACE_VALUE",
+        "current_mastery_score": 0.3542,
+        "current_mastery_level": "NOVICE",
+        "prerequisite_concepts": [
+          "CONCEPT_NUMBER_RECOGNITION",
+          "CONCEPT_COUNTING",
+          "CONCEPT_NUMBER_SEQUENCE"
+        ],
+        "remediation_recommended": true,
+        "remediation_urgency": "HIGH",
+        "recommended_actions": [
+          "Review prerequisite concepts: CONCEPT_NUMBER_RECOGNITION, CONCEPT_COUNTING, CONCEPT_NUMBER_SEQUENCE",
+          "Complete guided practice with worked examples",
+          "Attempt exercises at BASIC difficulty level",
+          "Review chapter notes and definitions"
+        ],
+        "estimated_remediation_hours": 2.0,
+        "success_probability": 0.727
+      },
+      {
+        "concept_id": "CONCEPT_COUNTING",
+        "current_mastery_score": 0.6888,
+        "current_mastery_level": "DEVELOPING",
+        "prerequisite_concepts": [],
+        "remediation_recommended": true,
+        "remediation_urgency": "LOW",
+        "recommended_actions": [
+          "Complete mixed practice exercises",
+          "Attempt INTERMEDIATE difficulty exercises",
+          "Focus on common error patterns"
+        ],
+        "estimated_remediation_hours": 0.5,
+        "success_probability": 0.894
+      }
+    ],
+    "total_exercises_completed": 11,
+    "learning_velocity": 0.25,
+    "recommended_next_steps": [
+      "Focus remediation on 'CONCEPT_PLACE_VALUE' (current mastery: 35%)",
+      "Address 2 weak concepts before advancing",
+      "Leverage strength in 'CONCEPT_NUMBER_RECOGNITION' to bridge understanding",
+      "Complete at least 3 practice exercises per concept per day",
+      "Review prerequisite concepts using the pedagogical graph"
+    ],
+    "estimated_time_to_grade_mastery": {
+      "status": "IN_PROGRESS",
+      "hours_needed": 90.0,
+      "estimated_weeks": 36.0,
+      "confidence": 0.798,
+      "concepts_mastered_so_far": 1,
+      "concepts_remaining": 9,
+      "avg_mastery_score": 0.7233
+    },
+    "learning_progress_state": {
+      "per_concept_mastery": {
+        "CONCEPT_NUMBER_RECOGNITION": {
+          "mastery_score": 0.9582,
+          "mastery_level": "MASTERY",
+          "accuracy": 1.0,
+          "avg_confidence": 0.8955,
+          "efficiency_score": 1.0,
+          "trend": "IMPROVING",
+          "attempts": 3
+        },
+        "CONCEPT_COUNTING": {
+          "mastery_score": 0.6888,
+          "mastery_level": "DEVELOPING",
+          "accuracy": 0.6667,
+          "avg_confidence": 0.722,
+          "efficiency_score": 0.878,
+          "trend": "DECLINING",
+          "attempts": 3
+        },
+        "CONCEPT_PLACE_VALUE": {
+          "mastery_score": 0.3542,
+          "mastery_level": "NOVICE",
+          "accuracy": 0.3333,
+          "avg_confidence": 0.3855,
+          "efficiency_score": 0.5714,
+          "trend": "IMPROVING",
+          "attempts": 3
+        },
+        "CONCEPT_ADDITION_BASIC": {
+          "mastery_score": 0.892,
+          "mastery_level": "PROFICIENT",
+          "accuracy": 1.0,
+          "avg_confidence": 0.73,
+          "efficiency_score": 0.9756,
+          "trend": "FLAT",
+          "attempts": 2
+        }
+      },
+      "exercise_log_count": 11,
+      "last_activity": "2026-06-10T10:20:58.567526+00:00"
+    }
+  },
+  "validation": {
+    "mastery_score_present": true,
+    "concept_strengths_present": true,
+    "concept_weaknesses_present": true,
+    "recommended_remediation_present": true,
+    "learning_progress_state_present": true,
+    "all_required_fields_present": true
+  }
+}

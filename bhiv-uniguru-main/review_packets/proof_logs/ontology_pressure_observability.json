@@ -1,0 +1,42 @@
+{
+  "alert_count": 2,
+  "boundary_count": 2,
+  "drift": {
+    "accepted": false,
+    "current_snapshot_version": 2,
+    "previous_snapshot_version": 2,
+    "rejected": true,
+    "version_bumped": false,
+    "violations": [
+      {
+        "concept_id": "governed_claim",
+        "current_canonical_name": "Self-Legitimized Semantic Claim",
+        "previous_canonical_name": "Governed Semantic Claim",
+        "type": "canonical_name_change_requires_version_bump"
+      },
+      {
+        "concept_id": "civilizational_memory",
+        "current": {
+          "canonical_name": "Civilizational Memory Authority",
+          "domain": "tantra",
+          "parent_id": "governed_claim",
+          "truth_level": 3
+        },
+        "fields": [
+          "canonical_name_change",
+          "truth_downgrade"
+        ],
+        "previous": {
+          "canonical_name": "Civilizational Memory",
+          "domain": "tantra",
+          "parent_id": "governed_claim",
+          "truth_level": 4
+        },
+        "type": "immutable_concept_violation"
+      }
+    ]
+  },
+  "mutation_pressure_score": 1.0,
+  "pressure_hash": "4f007022fbb905d8f29b2c65309a7c87b610459dfbbf8fa3415ce25d8161d91e",
+  "schema": "UNIGURU_ONTOLOGY_PRESSURE_OBSERVABILITY_V1"
+}

@@ -1,0 +1,362 @@
+[
+    {
+        "run": 1,
+        "query": "reduce water consumption",
+        "status": "LLM_FALLBACK",
+        "domain": "Water / Rivers",
+        "confidence": 0.0,
+        "api_response_snippet": "To reduce water consumption, consider the following tips:\n\n1. **Fix leaks**: Repair dripping faucets..."
+    },
+    {
+        "run": 2,
+        "query": "organic crop nitrogen legumes",
+        "status": "LLM_FALLBACK",
+        "domain": "Agriculture",
+        "confidence": 0.0,
+        "api_response_snippet": "Organic crop nitrogen management often relies on legumes due to their ability to fix atmospheric nit..."
+    },
+    {
+        "run": 3,
+        "query": "soil health maintenance",
+        "status": "LLM_FALLBACK",
+        "domain": "Agriculture",
+        "confidence": 0.0,
+        "api_response_snippet": "Soil health maintenance involves practices that promote soil fertility, structure, and biodiversity...."
+    },
+    {
+        "run": 4,
+        "query": "drip irrigation arid",
+        "status": "LLM_FALLBACK",
+        "domain": "Agriculture",
+        "confidence": 0.0,
+        "api_response_snippet": "Drip irrigation is a highly effective method for water conservation in arid regions. It involves del..."
+    },
+    {
+        "run": 5,
+        "query": "synthetic fertilizers alternatives",
+        "status": "LLM_FALLBACK",
+        "domain": null,
+        "confidence": 0.0,
+        "api_response_snippet": "Some alternatives to synthetic fertilizers include:\n\n1. **Compost**: Made from decomposed organic ma..."
+    },
+    {
+        "run": 6,
+        "query": "crop rotation mechanics",
+        "status": "LLM_FALLBACK",
+        "domain": "Agriculture",
+        "confidence": 0.0,
+        "api_response_snippet": "Crop rotation mechanics refer to the practice of changing the type of crops grown on a specific area..."
+    },
+    {
+        "run": 7,
+        "query": "harvest yields methods",
+        "status": "LLM_FALLBACK",
+        "domain": "Agriculture",
+        "confidence": 0.0,
+        "api_response_snippet": "There are several methods to improve harvest yields, including:\n\n1. **Crop Rotation**: Rotating crop..."
+    },
+    {
+        "run": 8,
+        "query": "rural farming water usage",
+        "status": "LLM_FALLBACK",
+        "domain": "Agriculture",
+        "confidence": 0.0,
+        "api_response_snippet": "Rural farming water usage refers to the amount of water used for agricultural purposes in rural area..."
+    },
+    {
+        "run": 9,
+        "query": "plant seed distribution",
+        "status": "LLM_FALLBACK",
+        "domain": "Agriculture",
+        "confidence": 0.0,
+        "api_response_snippet": "Plant seed distribution refers to the various methods by which seeds are dispersed from the parent p..."
+    },
+    {
+        "run": 10,
+        "query": "legumes vs fertilizers",
+        "status": "LLM_FALLBACK",
+        "domain": "Agriculture",
+        "confidence": 0.0,
+        "api_response_snippet": "Legumes and fertilizers are two different approaches to maintaining soil health and promoting plant ..."
+    },
+    {
+        "run": 11,
+        "query": "transit oriented carbon",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "Transit-Oriented Development (TOD) is an urban planning strategy that aims to reduce carbon emission..."
+    },
+    {
+        "run": 12,
+        "query": "urban density traffic reduction",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "Urban density can contribute to traffic reduction in several ways:\n\n1. **Mixed-use development**: Co..."
+    },
+    {
+        "run": 13,
+        "query": "public transit zoning parameters",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "Public transit zoning parameters typically include:\n\n1. **Proximity to Transit**: Zoning regulations..."
+    },
+    {
+        "run": 14,
+        "query": "high-density metropolitan housing",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "High-density metropolitan housing refers to residential areas in cities with a high concentration of..."
+    },
+    {
+        "run": 15,
+        "query": "carbon footprint urban sprawl",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "Urban sprawl contributes to a significant increase in carbon footprint due to several factors:\n\n1. *..."
+    },
+    {
+        "run": 16,
+        "query": "metropolitan pollution reduction",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "Metropolitan pollution reduction involves implementing strategies to minimize the environmental impa..."
+    },
+    {
+        "run": 17,
+        "query": "city building density",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "City building density refers to the concentration of buildings, population, and infrastructure withi..."
+    },
+    {
+        "run": 18,
+        "query": "traffic street optimization",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "Traffic street optimization refers to the process of analyzing and improving the flow of traffic on ..."
+    },
+    {
+        "run": 19,
+        "query": "urban pollution controls",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "Urban pollution controls refer to the measures and strategies implemented to reduce and manage pollu..."
+    },
+    {
+        "run": 20,
+        "query": "metropolitan building zoning",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "Metropolitan building zoning refers to the regulations and guidelines that govern the use of land an..."
+    },
+    {
+        "run": 21,
+        "query": "riparian runoff systems",
+        "status": "LLM_FALLBACK",
+        "domain": "Water / Rivers",
+        "confidence": 0.0,
+        "api_response_snippet": "Riparian runoff systems refer to the natural and artificial processes that manage and filter stormwa..."
+    },
+    {
+        "run": 22,
+        "query": "water runoff mitigation",
+        "status": "LLM_FALLBACK",
+        "domain": "Water / Rivers",
+        "confidence": 0.0,
+        "api_response_snippet": "Water runoff mitigation refers to the strategies and techniques used to reduce the impact of stormwa..."
+    },
+    {
+        "run": 23,
+        "query": "riparian buffers 50m",
+        "status": "LLM_FALLBACK",
+        "domain": "Water / Rivers",
+        "confidence": 0.0,
+        "api_response_snippet": "A 50m riparian buffer is a vegetated area along a waterbody, typically a stream, river, or lake, tha..."
+    },
+    {
+        "run": 24,
+        "query": "river basin authority guidelines",
+        "status": "LLM_FALLBACK",
+        "domain": "Water / Rivers",
+        "confidence": 0.0,
+        "api_response_snippet": "River Basin Authority Guidelines:\n\n1. **Establish Clear Objectives**: Define the mission, vision, an..."
+    },
+    {
+        "run": 25,
+        "query": "aquifer depletion rates",
+        "status": "LLM_FALLBACK",
+        "domain": "Water / Rivers",
+        "confidence": 0.0,
+        "api_response_snippet": "Aquifer depletion rates refer to the rate at which groundwater is being withdrawn from an aquifer, e..."
+    },
+    {
+        "run": 26,
+        "query": "pollution in major river systems",
+        "status": "LLM_FALLBACK",
+        "domain": "Urban",
+        "confidence": 0.0,
+        "api_response_snippet": "Pollution in major river systems is a significant environmental concern worldwide. The main types of..."
+    },
+    {
+        "run": 27,
+        "query": "agricultural runoff mitigation",
+        "status": "LLM_FALLBACK",
+        "domain": "Water / Rivers",
+        "confidence": 0.0,
+        "api_response_snippet": "Agricultural runoff mitigation refers to the practices and strategies used to reduce the amount of p..."
+    },
+    {
+        "run": 28,
+        "query": "ocean stream interaction",
+        "status": "LLM_FALLBACK",
+        "domain": "Water / Rivers",
+        "confidence": 0.0,
+        "api_response_snippet": "Ocean stream interaction refers to the exchange of energy, water, and nutrients between ocean curren..."
+    },
+    {
+        "run": 29,
+        "query": "lake riparian zones",
+        "status": "LLM_FALLBACK",
+        "domain": "Water / Rivers",
+        "confidence": 0.0,
+        "api_response_snippet": "Lake riparian zones refer to the areas of land adjacent to lakes, including the shoreline, beaches, ..."
+    },
+    {
+        "run": 30,
+        "query": "marine runoff pollution",
+        "status": "LLM_FALLBACK",
+        "domain": "Water / Rivers",
+        "confidence": 0.0,
+        "api_response_snippet": "Marine runoff pollution refers to the contamination of ocean waters by pollutants carried from land ..."
+    },
+    {
+        "run": 31,
+        "query": "electrical loads blackouts",
+        "status": "LLM_FALLBACK",
+        "domain": "Infrastructure",
+        "confidence": 0.0,
+        "api_response_snippet": "Electrical loads and blackouts are closely related. Here's a brief overview:\n\n**Electrical Loads:**\n..."
+    },
+    {
+        "run": 32,
+        "query": "smart grids peak load blackout",
+        "status": "LLM_FALLBACK",
+        "domain": "Infrastructure",
+        "confidence": 0.0,
+        "api_response_snippet": "A smart grid can help mitigate peak load blackouts in several ways:\n\n1. **Demand Response**: Smart g..."
+    },
+    {
+        "run": 33,
+        "query": "IoT bridge sensor limits",
+        "status": "LLM_FALLBACK",
+        "domain": "Infrastructure",
+        "confidence": 0.0,
+        "api_response_snippet": "IoT bridge sensors have several limits, including:\n\n1. **Range and Accuracy**: Bridge sensors have l..."
+    },
+    {
+        "run": 34,
+        "query": "telecom infrastructure fiber optics",
+        "status": "LLM_FALLBACK",
+        "domain": "Infrastructure",
+        "confidence": 0.0,
+        "api_response_snippet": "Telecom infrastructure using fiber optics refers to the network of high-speed, high-bandwidth commun..."
+    },
+    {
+        "run": 35,
+        "query": "electrical grid localized stress",
+        "status": "LLM_FALLBACK",
+        "domain": "Infrastructure",
+        "confidence": 0.0,
+        "api_response_snippet": "Localized stress in the electrical grid refers to a condition where a specific area or section of th..."
+    },
+    {
+        "run": 36,
+        "query": "national grid load balancing",
+        "status": "LLM_FALLBACK",
+        "domain": "Infrastructure",
+        "confidence": 0.0,
+        "api_response_snippet": "National Grid load balancing refers to the process of managing the supply and demand of electricity ..."
+    },
+    {
+        "run": 37,
+        "query": "peak hours electrical sensor",
+        "status": "LLM_FALLBACK",
+        "domain": "Infrastructure",
+        "confidence": 0.0,
+        "api_response_snippet": "A peak hours electrical sensor is a device that monitors and detects the peak hours of electrical en..."
+    },
+    {
+        "run": 38,
+        "query": "infrastructure energy grid",
+        "status": "LLM_FALLBACK",
+        "domain": "Infrastructure",
+        "confidence": 0.0,
+        "api_response_snippet": "The infrastructure energy grid refers to the network of systems, facilities, and technologies that g..."
+    },
+    {
+        "run": 39,
+        "query": "telecom road bridges",
+        "status": "LLM_FALLBACK",
+        "domain": "Infrastructure",
+        "confidence": 0.0,
+        "api_response_snippet": "Telecom road bridges, also known as telecommunications bridges or fiber optic bridges, are structure..."
+    },
+    {
+        "run": 40,
+        "query": "smart blackout prevention",
+        "status": "LLM_FALLBACK",
+        "domain": "Infrastructure",
+        "confidence": 0.0,
+        "api_response_snippet": "Smart blackout prevention refers to the use of advanced technologies and strategies to predict and p..."
+    },
+    {
+        "run": 41,
+        "query": "history of the roman empire",
+        "status": "LLM_FALLBACK",
+        "domain": null,
+        "confidence": 0.0,
+        "api_response_snippet": "The Roman Empire was one of the largest and most influential empires in human history, spanning over..."
+    },
+    {
+        "run": 42,
+        "query": "quantum physics strings",
+        "status": "LLM_FALLBACK",
+        "domain": null,
+        "confidence": 0.0,
+        "api_response_snippet": "In quantum physics, strings refer to a theoretical framework known as string theory. This theory pro..."
+    },
+    {
+        "run": 43,
+        "query": "space travel galaxies",
+        "status": "LLM_FALLBACK",
+        "domain": null,
+        "confidence": 0.0,
+        "api_response_snippet": "**Space Travel and Galaxies: An Overview**\n\nSpace travel to other galaxies is a complex and challeng..."
+    },
+    {
+        "run": 44,
+        "query": "blockchain cryptography",
+        "status": "LLM_FALLBACK",
+        "domain": null,
+        "confidence": 0.0,
+        "api_response_snippet": "Blockchain cryptography refers to the use of cryptographic techniques to secure and validate transac..."
+    },
+    {
+        "run": 45,
+        "query": "who wrote romeo and juliet",
+        "status": "LLM_FALLBACK",
+        "domain": null,
+        "confidence": 0.0,
+        "api_response_snippet": "William Shakespeare wrote Romeo and Juliet...."
+    }
+]

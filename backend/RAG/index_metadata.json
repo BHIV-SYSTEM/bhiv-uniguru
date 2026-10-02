@@ -1,1 +1,15 @@
-{"chunk_size": 2500, "chunk_overlap": 200, "embedding_model": "all-MiniLM-L6-v2", "total_chunks": 94215}
+{
+  "chunk_overlap": 200,
+  "chunk_size": 2500,
+  "created_at": "2026-10-02T07:25:50.654960+00:00",
+  "embedding_dimension": 384,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "index_type": "IndexIDMap2(IndexFlatIP)",
+  "index_version": "rag-20261002T072515Z-7a726e3948",
+  "indexed_documents": 75,
+  "metric": "cosine_similarity_normalized_inner_product",
+  "source_documents": 75,
+  "source_manifest_sha256": "7a726e394838254120c9e9e03de56f9d80dd42c447835cb4585c0a644769f725",
+  "source_root": "C:\\Users\\vijay\\OneDrive\\Desktop\\bhiv-uniguru-main (1)\\backend\\knowledge",
+  "total_chunks": 160
+}

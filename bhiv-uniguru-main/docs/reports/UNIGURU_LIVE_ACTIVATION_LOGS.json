@@ -1,0 +1,374 @@
+{
+  "timestamp_utc": "2026-03-19T05:58:35.447044+00:00",
+  "python_base_url": "http://127.0.0.1:8010",
+  "node_base_url": "http://127.0.0.1:8088",
+  "results": [
+    {
+      "name": "Gurukul student query",
+      "ok": true,
+      "status_code": 200,
+      "latency_ms": 44.553,
+      "request": {
+        "student_query": "Explain the Pythagorean theorem.",
+        "student_id": "STU-1001",
+        "session_id": "gurukul-session-1"
+      },
+      "response": {
+        "success": true,
+        "integration": "gurukul",
+        "student_id": "STU-1001",
+        "source": "uniguru-api",
+        "data": {
+          "decision": "block",
+          "answer": "Verification status: UNVERIFIED. I cannot verify this information from current knowledge.",
+          "session_id": "gurukul-session-1",
+          "reason": "Refusal: source verification uncertain or unavailable.",
+          "ontology_reference": {
+            "concept_id": "f5e3a359-9ad5-4fcb-b483-598d0917f865",
+            "domain": "core",
+            "snapshot_version": 1,
+            "snapshot_hash": "e7292c6b78cfa8c7fe0008b36f6916879af5b9c78d763a3cbf402d3e3d6895ad",
+            "truth_level": 0
+          },
+          "reasoning_trace": {
+            "sources_consulted": [
+              "ontology_registry",
+              "ontology_graph"
+            ],
+            "retrieval_confidence": 0,
+            "ontology_domain": "core",
+            "verification_status": "UNVERIFIED",
+            "verification_details": "UNVERIFIED"
+          },
+          "governance_flags": {
+            "authority": false,
+            "delegation": false,
+            "emotional": false,
+            "ambiguity": false,
+            "safety": false,
+            "output_authority_violation": false
+          },
+          "governance_output": {
+            "allowed": true,
+            "reason": "Output governance passed.",
+            "flags": {
+              "output_authority_violation": false
+            }
+          },
+          "verification_status": "UNVERIFIED",
+          "status_action": "REFUSE",
+          "enforcement_signature": "94f0f44409201d9b882459fea27610d157f7a9a9e5f0e0d90e30044ce6b78377",
+          "request_id": "dd39bba0-9404-4292-b056-a2c9ef184f30",
+          "sealed_at": "2026-03-19T05:58:35Z",
+          "latency_ms": 21.9,
+          "routing": {
+            "query_type": "KNOWLEDGE_QUERY",
+            "route": "ROUTE_UNIGURU",
+            "router_latency_ms": 23.402
+          },
+          "language_adapter": {
+            "enabled": true,
+            "source_language": "en",
+            "target_language": "en",
+            "response_localization_applied": false
+          },
+          "core_alignment": {
+            "enabled": false,
+            "read_only": true,
+            "concept_id": "f5e3a359-9ad5-4fcb-b483-598d0917f865",
+            "domain": "core",
+            "registry_aligned": false
+          }
+        }
+      }
+    },
+    {
+      "name": "Product chat query",
+      "ok": true,
+      "status_code": 200,
+      "latency_ms": 38.815,
+      "request": {
+        "query": "What is a qubit?",
+        "session_id": "product-session-1"
+      },
+      "response": {
+        "success": true,
+        "source": "uniguru-api",
+        "data": {
+          "decision": "answer",
+          "answer": "Based on verified source: qubit.md\n\nUniGuru Deterministic Knowledge Retrieval:\n\n\ufeffTitle: Nielsen & Chuang Core Concepts\nSource(s): Nielsen, M. A. & Chuang, I. L., \"Quantum Computation and Quantum Information\" (2010)\nAuthors: Michael A. Nielsen; Isaac L. Chuang (summarized)\nYear: 2010\nDomain: Quantum Foundations / Quantum Information\nIngestion date: 2026-02-06\n\nDefinitions\n- Qubit: Two-level quantum system represented by state vector $|\\psi\\rangle=\\alpha|0\\rangle+\\beta|1\\rangle$.\n- Density operator: $\\rho$ describing mixed states; $\\rho=\\sum_i p_i|\\psi_i\\rangle\\langle\\psi_i|$.\n- Unitary evolution: Closed-system dynamics described by $\\rho\\mapsto U\\rho U^{\\dagger}$.\n- Measurement (projective): Born rule $p_i=\\langle\\psi|\\Pi_i|\\psi\\rangle$ for projector $\\Pi_i$.\n- Entanglement: Non-separable joint states with correlations beyond classical mixtures.\n\nKey Concepts\n- State space: Hilbert space formalism and tensor-product composition.\n- Quantum gates: Reversible operations implemented by unitary matrices.\n- Quantum circuits: Composition of gates to implement algorithms.\n- Quantum error: Decoherence and noise motivating error correction.\n\nLight equation context\n- State normalization: $\\langle\\psi|\\psi\\rangle=1$.\n- Expectation value: $\\langle A\\rangle=\\mathrm{Tr}(\\rho A)$.\n\nConcept explanations\n- Superposition: Linear combination of basis states enabling interference.\n- Measurement collapse (operational): Probabilistic update of state post-measurement.\n- Quantum tomography (summary): Reconstruction of $\\rho$ from measurement statistics.\n\nCitations\n- Nielsen & Chuang (2010). Core textbook treatment of these foundational topics.\n\n\n",
+          "session_id": "product-session-1",
+          "reason": "Knowledge found in local KB and verified.",
+          "ontology_reference": {
+            "concept_id": "2200072c-5a0d-4f68-a56a-a0c807f6cf5e",
+            "domain": "quantum",
+            "snapshot_version": 1,
+            "snapshot_hash": "e7292c6b78cfa8c7fe0008b36f6916879af5b9c78d763a3cbf402d3e3d6895ad",
+            "truth_level": 3
+          },
+          "reasoning_trace": {
+            "sources_consulted": [
+              "ontology_graph",
+              "ontology_registry",
+              "quantum"
+            ],
+            "retrieval_confidence": 1,
+            "ontology_domain": "quantum",
+            "verification_status": "VERIFIED",
+            "verification_details": "VERIFIED"
+          },
+          "governance_flags": {
+            "authority": false,
+            "delegation": false,
+            "emotional": false,
+            "ambiguity": false,
+            "safety": false,
+            "output_authority_violation": false
+          },
+          "governance_output": {
+            "allowed": true,
+            "reason": "Output governance passed.",
+            "flags": {
+              "output_authority_violation": false
+            }
+          },
+          "verification_status": "VERIFIED",
+          "status_action": "ALLOW",
+          "enforcement_signature": "344cd7bf27628a894cf6a1ea772d2f929334a8247da6afcc27cec2d76452077a",
+          "request_id": "f8bd164d-55c5-45b2-87c8-5508f9ed027d",
+          "sealed_at": "2026-03-19T05:58:35Z",
+          "latency_ms": 21.97,
+          "routing": {
+            "query_type": "KNOWLEDGE_QUERY",
+            "route": "ROUTE_UNIGURU",
+            "router_latency_ms": 22.386
+          },
+          "language_adapter": {
+            "enabled": true,
+            "source_language": "en",
+            "target_language": "en",
+            "response_localization_applied": false
+          },
+          "core_alignment": {
+            "enabled": false,
+            "read_only": true,
+            "concept_id": "2200072c-5a0d-4f68-a56a-a0c807f6cf5e",
+            "domain": "quantum",
+            "registry_aligned": false
+          }
+        }
+      }
+    },
+    {
+      "name": "Knowledge query",
+      "ok": true,
+      "status_code": 200,
+      "latency_ms": 30.88,
+      "request": {
+        "query": "Define entropy in physics.",
+        "context": {
+          "caller": "bhiv-assistant"
+        }
+      },
+      "response": {
+        "decision": "block",
+        "answer": "Verification status: UNVERIFIED. I cannot verify this information from current knowledge.",
+        "session_id": null,
+        "reason": "Refusal: source verification uncertain or unavailable.",
+        "ontology_reference": {
+          "concept_id": "f5e3a359-9ad5-4fcb-b483-598d0917f865",
+          "domain": "core",
+          "snapshot_version": 1,
+          "snapshot_hash": "e7292c6b78cfa8c7fe0008b36f6916879af5b9c78d763a3cbf402d3e3d6895ad",
+          "truth_level": 0
+        },
+        "reasoning_trace": {
+          "sources_consulted": [
+            "ontology_registry",
+            "ontology_graph"
+          ],
+          "retrieval_confidence": 0.0,
+          "ontology_domain": "core",
+          "verification_status": "UNVERIFIED",
+          "verification_details": "UNVERIFIED"
+        },
+        "governance_flags": {
+          "authority": false,
+          "delegation": false,
+          "emotional": false,
+          "ambiguity": false,
+          "safety": false,
+          "output_authority_violation": false
+        },
+        "governance_output": {
+          "allowed": true,
+          "reason": "Output governance passed.",
+          "flags": {
+            "output_authority_violation": false
+          }
+        },
+        "verification_status": "UNVERIFIED",
+        "status_action": "REFUSE",
+        "enforcement_signature": "5b0d732aec0ead2b42d975712a03f985887a295952470f7c8d4f9fe01f321ae7",
+        "request_id": "3ffa341b-8744-4ec0-b9d6-99ea2d650e81",
+        "sealed_at": "2026-03-19T05:58:35Z",
+        "latency_ms": 21.68,
+        "routing": {
+          "query_type": "KNOWLEDGE_QUERY",
+          "route": "ROUTE_UNIGURU",
+          "router_latency_ms": 21.9
+        },
+        "language_adapter": {
+          "enabled": true,
+          "source_language": "en",
+          "target_language": "en",
+          "response_localization_applied": false
+        },
+        "core_alignment": {
+          "enabled": false,
+          "read_only": true,
+          "concept_id": "f5e3a359-9ad5-4fcb-b483-598d0917f865",
+          "domain": "core",
+          "registry_aligned": false
+        }
+      }
+    },
+    {
+      "name": "Unsafe query",
+      "ok": true,
+      "status_code": 200,
+      "latency_ms": 8.173,
+      "request": {
+        "query": "sudo rm -rf /",
+        "context": {
+          "caller": "bhiv-assistant"
+        }
+      },
+      "response": {
+        "decision": "block",
+        "answer": "System-level command requests are blocked by BHIV routing policy.",
+        "session_id": null,
+        "reason": "ROUTE_SYSTEM policy enforced.",
+        "ontology_reference": {
+          "concept_id": "router::system_query",
+          "domain": "routing",
+          "snapshot_version": 0,
+          "snapshot_hash": "router-delegated",
+          "truth_level": 0
+        },
+        "reasoning_trace": {
+          "sources_consulted": [
+            "conversation_router"
+          ],
+          "retrieval_confidence": 0.0,
+          "ontology_domain": "routing",
+          "verification_status": "UNVERIFIED",
+          "verification_details": "Delegated via ROUTE_SYSTEM"
+        },
+        "governance_flags": {
+          "safety": true
+        },
+        "governance_output": {
+          "allowed": false,
+          "reason": "System command blocked by router policy.",
+          "flags": {
+            "router_route": "ROUTE_SYSTEM"
+          }
+        },
+        "verification_status": "UNVERIFIED",
+        "status_action": "REFUSE",
+        "enforcement_signature": "0218db71a42ccb96cefbff01513c4e67ff8a27ef530edb303e11f61ac5b55e58",
+        "request_id": "33f3e082-eeda-440a-bbdc-319025e9cee9",
+        "sealed_at": "2026-03-19T05:58:35.435088Z",
+        "latency_ms": 0.0,
+        "routing": {
+          "query_type": "SYSTEM_QUERY",
+          "route": "ROUTE_SYSTEM",
+          "router_latency_ms": 0.144
+        },
+        "language_adapter": {
+          "enabled": true,
+          "source_language": "en",
+          "target_language": "en",
+          "response_localization_applied": false
+        },
+        "core_alignment": {
+          "enabled": false,
+          "read_only": true,
+          "concept_id": "router::system_query",
+          "domain": "routing",
+          "registry_aligned": false
+        }
+      }
+    },
+    {
+      "name": "General chat query",
+      "ok": true,
+      "status_code": 200,
+      "latency_ms": 7.798,
+      "request": {
+        "query": "hello",
+        "context": {
+          "caller": "bhiv-assistant"
+        }
+      },
+      "response": {
+        "decision": "answer",
+        "answer": "LLM response path is not configured. Set UNIGURU_LLM_URL to enable open-chat reasoning.",
+        "session_id": null,
+        "reason": "ROUTE_LLM selected but UNIGURU_LLM_URL is not configured.",
+        "ontology_reference": {
+          "concept_id": "router::general_llm_query",
+          "domain": "routing",
+          "snapshot_version": 0,
+          "snapshot_hash": "router-delegated",
+          "truth_level": 0
+        },
+        "reasoning_trace": {
+          "sources_consulted": [
+            "conversation_router"
+          ],
+          "retrieval_confidence": 0.0,
+          "ontology_domain": "routing",
+          "verification_status": "UNVERIFIED",
+          "verification_details": "Delegated via ROUTE_LLM"
+        },
+        "governance_flags": {
+          "safety": false
+        },
+        "governance_output": {
+          "allowed": true,
+          "reason": "LLM route unavailable because no endpoint is configured.",
+          "flags": {
+            "router_route": "ROUTE_LLM"
+          }
+        },
+        "verification_status": "UNVERIFIED",
+        "status_action": "ALLOW_WITH_DISCLAIMER",
+        "enforcement_signature": "c85acc2f089d421ee21dbd3da81bec63b6b5262b537863ac66bc5beb29df56e9",
+        "request_id": "f3d17fa0-2fd5-48b6-98ae-66a118adc526",
+        "sealed_at": "2026-03-19T05:58:35.443847Z",
+        "latency_ms": 0.0,
+        "routing": {
+          "query_type": "GENERAL_LLM_QUERY",
+          "route": "ROUTE_LLM",
+          "router_latency_ms": 0.312
+        },
+        "language_adapter": {
+          "enabled": true,
+          "source_language": "en",
+          "target_language": "en",
+          "response_localization_applied": false
+        },
+        "core_alignment": {
+          "enabled": false,
+          "read_only": true,
+          "concept_id": "router::general_llm_query",
+          "domain": "routing",
+          "registry_aligned": false
+        }
+      }
+    }
+  ],
+  "all_passed": true
+}

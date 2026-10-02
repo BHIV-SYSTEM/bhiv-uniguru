@@ -1,0 +1,17 @@
+{
+  "contradiction_continuity_preserved": true,
+  "forged_replay_rejected": true,
+  "ontology_lineage_continuity_preserved": true,
+  "report_hash": "0f1b4d2a4d9fc16c8f02b09c26f168bedcddab81179ccfe48f7484995cf4b85c",
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "schema": "UNIGURU_FAILURE_SIMULATION_REPORT_V1",
+  "semantic_corruption_detected": true,
+  "tester_validation_scope": [
+    "deterministic_reconstruction",
+    "semantic_drift_visibility",
+    "replay_continuity",
+    "rollback_integrity",
+    "contradiction_escalation",
+    "trust_bound_cognition_continuity"
+  ]
+}

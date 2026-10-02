@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UniGuru Curriculum Record Schema v1",
+  "type": "object",
+  "required": [
+    "record_id",
+    "grade",
+    "medium",
+    "subject",
+    "chapter",
+    "concept",
+    "learning_outcome",
+    "examples",
+    "difficulty",
+    "source_lineage",
+    "version"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Unique identifier for the curriculum record."
+    },
+    "grade": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10,
+      "description": "School grade for the curriculum item."
+    },
+    "medium": {
+      "type": "string",
+      "enum": ["Marathi Medium", "English Medium"],
+      "description": "Medium of instruction."
+    },
+    "subject": {
+      "type": "string",
+      "description": "Curriculum subject name."
+    },
+    "chapter": {
+      "type": "string",
+      "description": "Chapter or unit title."
+    },
+    "concept": {
+      "type": "string",
+      "description": "Primary concept or learning item." 
+    },
+    "learning_outcome": {
+      "type": "string",
+      "description": "Expected student learning outcome for the concept."
+    },
+    "definition": {
+      "type": "string",
+      "description": "Concept definition or explanation."
+    },
+    "examples": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Examples or worked illustrations for the concept."
+    },
+    "questions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Practice questions linked to the concept."
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard"],
+      "description": "Difficulty band for the concept."
+    },
+    "language_variant": {
+      "type": "string",
+      "description": "Language variant code, e.g. en-IN, mr-IN."
+    },
+    "source_lineage": {
+      "type": "object",
+      "required": ["publisher", "source_type", "source_reference", "ingestion_method", "provenance_status"],
+      "properties": {
+        "publisher": { "type": "string" },
+        "source_type": { "type": "string" },
+        "source_reference": { "type": "string" },
+        "page_or_section": { "type": "string" },
+        "ingestion_method": { "type": "string" },
+        "provenance_status": {
+          "type": "string",
+          "enum": ["sample_seed", "verified_source_required", "verified"]
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "description": "Curriculum version or release tag." 
+    },
+    "governance": {
+      "type": "object",
+      "properties": {
+        "canonical_authority_granted": { "type": "boolean" },
+        "review_required": { "type": "boolean" },
+        "replay_safe": { "type": "boolean" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

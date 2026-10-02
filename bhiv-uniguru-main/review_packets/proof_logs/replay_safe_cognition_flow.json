@@ -1,0 +1,19 @@
+{
+  "canonical_authority_granted": false,
+  "event_registry_hash": "e90ce8bb269ad6c9e305281af8f9da887454ba4e32c2a608eaaa90855f11a957",
+  "flow": [
+    "semantic_event_ingestion",
+    "semantic_governance_observation",
+    "trust_bound_pressure_scoring",
+    "contradiction_arbitration",
+    "ontology_legitimacy_boundary",
+    "uncertainty_lineage_reconstruction",
+    "read_only_observability",
+    "event_registry_attestation"
+  ],
+  "flow_hash": "0a35dfbe2eaa2beeae56f91a3f6786e26ede6e63d2295b40a5addb42dc90497d",
+  "hash_chain_ok": true,
+  "last_event_hash": "f0fc345b31bf94487ded348d63e493b2664d28d4c68e68c1c4eac09d7b48818b",
+  "replay_safe": true,
+  "schema": "UNIGURU_REPLAY_SAFE_COGNITION_FLOW_V1"
+}

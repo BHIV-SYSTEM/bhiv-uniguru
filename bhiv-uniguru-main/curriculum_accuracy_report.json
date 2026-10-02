@@ -1,0 +1,58 @@
+{
+  "report_id": "UNIGURU_CURRICULUM_ACCURACY_REPORT_V1",
+  "generated_at": "2026-06-29T07:36:57.602856+00:00",
+  "query_count": 100000,
+  "deterministic_query_generation": {
+    "source": "canonical_dataset.json",
+    "strategy": "cycle canonical records and validate all required evidence fields"
+  },
+  "pass_rate": 1.0,
+  "status": "PASSED",
+  "checks": {
+    "correct_textbook": {
+      "passed": 100000,
+      "failed": 0
+    },
+    "correct_page": {
+      "passed": 100000,
+      "failed": 0
+    },
+    "correct_section": {
+      "passed": 100000,
+      "failed": 0
+    },
+    "correct_chapter": {
+      "passed": 100000,
+      "failed": 0
+    },
+    "correct_learning_outcome": {
+      "passed": 100000,
+      "failed": 0
+    },
+    "correct_exercise": {
+      "passed": 100000,
+      "failed": 0
+    },
+    "correct_mastery_recommendation": {
+      "passed": 100000,
+      "failed": 0
+    },
+    "correct_remediation": {
+      "passed": 100000,
+      "failed": 0
+    },
+    "correct_authority": {
+      "passed": 100000,
+      "failed": 0
+    },
+    "correct_lineage": {
+      "passed": 100000,
+      "failed": 0
+    },
+    "correct_hashes": {
+      "passed": 100000,
+      "failed": 0
+    }
+  },
+  "failures": []
+}

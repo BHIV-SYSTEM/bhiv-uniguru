@@ -1,0 +1,167 @@
+{
+  "contradiction_replay_audit": {
+    "action": "QUARANTINE_AND_ESCALATE_REVIEW",
+    "audit_hash": "d7c36eb4792b5b4a99c2cf537d0e5cdd5320eedfe981489bd640359a4b4b2f5c",
+    "canonical_authority_granted": false,
+    "contradictions": [
+      {
+        "claim_key": "governed_claim",
+        "polarities": [
+          "affirmative",
+          "negative"
+        ],
+        "signal_ids": [
+          "source_signal_a",
+          "source_signal_b"
+        ]
+      }
+    ],
+    "lifecycle_state": "PERSISTENT_UNRESOLVED",
+    "lineage_preserved": true,
+    "prior_unresolved_count": 1,
+    "quorum": {
+      "evidence_count": 2,
+      "met": true,
+      "required": 2
+    },
+    "schema": "UNIGURU_CONTRADICTION_REPLAY_AUDIT_V1",
+    "signal_ids": [
+      "source_signal_a",
+      "source_signal_b"
+    ],
+    "silent_merge_allowed": false
+  },
+  "proof_assertions": {
+    "authority_accumulation_detected": true,
+    "canonical_authority_never_granted": true,
+    "confidence_inflation_rejected": true,
+    "contradiction_escalated": true,
+    "ontology_drift_audited": true,
+    "uncertainty_lineage_replay_safe": true
+  },
+  "schema": "UNIGURU_SEMANTIC_AUTHORITY_GOVERNANCE_PROOF_V1",
+  "semantic_drift_telemetry": {
+    "authority_gravity": {
+      "authority_gravity_detected": true,
+      "diagnostic_inputs": {
+        "confidence_pressure_score": 1.0,
+        "continuity_pressure_score": 0.65,
+        "contradiction_pressure": 0.8,
+        "ontology_violation_count": 1,
+        "reinforcement_pressure_score": 1.0
+      },
+      "governance_response": "ESCALATE_OBSERVABILITY",
+      "score": 0.8353
+    },
+    "canonical_authority_granted": false,
+    "confidence_pressure": {
+      "event_count": 2,
+      "high_confidence_count": 1,
+      "inflation_detected": true,
+      "max_delta": 0.53,
+      "score": 1.0
+    },
+    "observable_only": true,
+    "observed_at": "2026-06-29T07:40:04.575366Z",
+    "ontology_drift": {
+      "accepted": false,
+      "current_snapshot_version": 1,
+      "previous_snapshot_version": 1,
+      "rejected": false,
+      "version_bumped": false,
+      "violations": [
+        {
+          "concept_id": "governed_claim",
+          "current_canonical_name": "Self-Legitimized Semantic Claim",
+          "previous_canonical_name": "Governed Semantic Claim",
+          "type": "canonical_name_change_requires_version_bump"
+        }
+      ]
+    },
+    "ontology_mutation_lineage": [
+      {
+        "changed_fields": [
+          "canonical_name"
+        ],
+        "concept_id": "governed_claim",
+        "current_hash": "a6c1d53efa480c8794eb85c4bc0c84a848b817282791f38a7c2901d10962339e",
+        "mutation_type": "concept_changed",
+        "previous_hash": "494465fe7a5c17bcc92e5637c1bc3445a1b0d825bfc161882dafaa94ec7f3f0d"
+      }
+    ],
+    "reinforcement_pressure": {
+      "authority_accumulation_detected": true,
+      "claim_reinforcement_counts": {
+        "governed_claim": 7
+      },
+      "max_reinforcement_count": 7,
+      "score": 1.0
+    },
+    "rules": [
+      "drift_observation_never_mutates_ontology",
+      "confidence_growth_is_pressure_not_legitimacy",
+      "reinforcement_frequency_is_not_truth_authority",
+      "continuity_does_not_grant_canonical_authority"
+    ],
+    "schema": "UNIGURU_SEMANTIC_DRIFT_OBSERVABILITY_V1",
+    "semantic_continuity_pressure": {
+      "bounded_continuity_required": true,
+      "event_count": 2,
+      "score": 0.65,
+      "trace_count": 2,
+      "unresolved_event_count": 2
+    },
+    "telemetry_hash": "81992d65786885af0e307ad37590c89e2c2fb0736b258b2c212252288fce8c3c"
+  },
+  "trust_bound_weighting": {
+    "boundary_decision": "REJECT_LEGITIMACY_ESCALATION",
+    "canonical_authority_granted": false,
+    "confidence": 0.93,
+    "confidence_delta": 0.53,
+    "confidence_inflation_detected": true,
+    "discipline": {
+      "confidence_is_not_legitimacy": true,
+      "contradiction_blocks_legitimacy_escalation": true,
+      "reinforcement_is_not_truth_authority": true,
+      "uncertainty_reduces_trust_ceiling": true
+    },
+    "legitimacy_ceiling": 0.0,
+    "prior_confidence": 0.4,
+    "reinforcement_abuse_detected": true,
+    "reinforcement_pressure": 1.0,
+    "schema": "UNIGURU_TRUST_BOUND_SEMANTIC_WEIGHTING_V1",
+    "trust_score": 0.0,
+    "uncertainty_preserved": true,
+    "weighting_hash": "e820b2b6ad96b89a182865ee30edd317b7539c6f5f1cced60588439402f12f6d"
+  },
+  "uncertainty_lineage_reconstruction": {
+    "event_count": 2,
+    "last_lineage_hash": "967cbca46ea25934dc7b673a2e3ccec5f08f7b05d6b055b7c8192ef6d076e626",
+    "lineage": [
+      {
+        "ambiguity_class": "interpretive_or_weak_evidence_zone",
+        "claim_key": "governed_claim",
+        "contradiction_pressure": 0.0,
+        "index": 0,
+        "lineage_hash": "e86758d4fdc611a90a8f86da2fe35f921d84fac0af69a94ec3f4a52157e792ff",
+        "previous_lineage_hash": null,
+        "trace_id": "authority_pressure_a",
+        "uncertainty": 0.46
+      },
+      {
+        "ambiguity_class": "conflicting_claims",
+        "claim_key": "governed_claim",
+        "contradiction_pressure": 0.8,
+        "index": 1,
+        "lineage_hash": "967cbca46ea25934dc7b673a2e3ccec5f08f7b05d6b055b7c8192ef6d076e626",
+        "previous_lineage_hash": "e86758d4fdc611a90a8f86da2fe35f921d84fac0af69a94ec3f4a52157e792ff",
+        "trace_id": "authority_pressure_b",
+        "uncertainty": 0.53
+      }
+    ],
+    "lineage_id": "semantic_authority_pressure_fixture",
+    "lineage_state_hash": "535c55063e54ba6289707080411f943a7a0614a310cf5549442d18d94a764bd3",
+    "replay_safe": true,
+    "schema": "UNIGURU_UNCERTAINTY_LINEAGE_V1"
+  }
+}

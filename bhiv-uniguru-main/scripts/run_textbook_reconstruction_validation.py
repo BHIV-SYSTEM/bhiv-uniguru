@@ -1,0 +1,167 @@
+import json
+import sys
+import uuid
+import hashlib
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from learning_runtime.canonical_runtime import execute_query
+
+def stable_hash(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+def reconstruct_lineage(query: str, student_id: str = "VALIDATOR_USER") -> dict:
+    # 1. Execute query to get runtime response
+    result = execute_query(query=query, student_id=student_id)
+    
+    # 2. Extract evidence contract fields
+    evidence_id = result.get("evidence_id")
+    textbook_id = result.get("textbook_id")
+    edition = result.get("edition")
+    chapter = result.get("chapter")
+    section = result.get("section")
+    page_numbers = result.get("page_numbers") or []
+    source_hash = result.get("source_hash")
+    retrieval_hash = result.get("retrieval_hash")
+    lineage_hash = result.get("lineage_hash")
+    verification_status = result.get("verification_status")
+
+    # 3. Load Registries
+    provenance_dir = ROOT / "curriculum" / "provenance"
+    authority_dir = ROOT / "curriculum" / "authority"
+    
+    auth_reg_path = authority_dir / "verified_textbook_authority_registry.json"
+    page_reg_path = provenance_dir / "page_registry.json"
+    sec_reg_path = provenance_dir / "section_registry.json"
+
+    # Validate Textbook
+    textbook_verified = False
+    publisher = "Unknown"
+    if auth_reg_path.exists():
+        with open(auth_reg_path, "r", encoding="utf-8") as f:
+            auth_reg = json.load(f)
+        for tb in auth_reg.get("textbooks", []):
+            if tb.get("textbook_id") == textbook_id and tb.get("authority_status") == "VERIFIED_AUTHORITY":
+                textbook_verified = True
+                publisher = tb.get("publisher")
+                break
+
+    # Validate Pages
+    pages_valid = False
+    registered_source_hash = None
+    source_pages_detail = []
+    if page_reg_path.exists() and page_numbers:
+        with open(page_reg_path, "r", encoding="utf-8") as f:
+            page_reg = json.load(f)
+        matched_pages = [p for p in page_reg if p.get("textbook_id") == textbook_id and p.get("page_number") in page_numbers]
+        if len(matched_pages) == len(page_numbers):
+            pages_valid = True
+            registered_source_hash = matched_pages[0].get("content_hash")
+            for mp in matched_pages:
+                source_pages_detail.append({
+                    "page_number": mp.get("page_number"),
+                    "content_hash": mp.get("content_hash"),
+                    "verification_timestamp": mp.get("verification_timestamp")
+                })
+
+    # Validate Section & Chapter
+    section_valid = False
+    if sec_reg_path.exists():
+        with open(sec_reg_path, "r", encoding="utf-8") as f:
+            sec_reg = json.load(f)
+        for s in sec_reg:
+            if s.get("textbook_id") == textbook_id and s.get("section_title") == section:
+                section_valid = True
+                break
+
+    # Reconstruct lineage string and verify lineage hash
+    reconstructed_lineage_str = f"{textbook_id}::{edition}::{chapter}::{section}::{page_numbers}"
+    computed_lineage_hash = stable_hash(reconstructed_lineage_str)
+    lineage_hash_valid = (computed_lineage_hash == lineage_hash)
+
+    # Compute Reconstruction Confidence
+    confidence = 0.0
+    if textbook_verified:
+        confidence += 0.3
+    if pages_valid:
+        confidence += 0.3
+    if source_hash == registered_source_hash:
+        confidence += 0.2
+    if lineage_hash_valid:
+        confidence += 0.2
+
+    confidence = round(confidence, 2)
+
+    # Build Reconstructed Lineage Chain list
+    lineage_chain = [
+        {"level": "publisher", "value": publisher},
+        {"level": "textbook", "value": textbook_id, "verified": textbook_verified},
+        {"level": "edition", "value": edition},
+        {"level": "chapter", "value": chapter},
+        {"level": "section", "value": section, "verified": section_valid},
+        {"level": "pages", "value": page_numbers, "verified": pages_valid}
+    ]
+
+    answer = result.get("learning_intelligence", {}).get("learning_outcome") or "No learning outcome available."
+
+    return {
+        "reconstruction_id": str(uuid.uuid4()),
+        "query": query,
+        "answer": answer,
+        "source_pages": source_pages_detail,
+        "source_chapters": [chapter],
+        "lineage_chain": lineage_chain,
+        "reconstruction_confidence": confidence
+    }
+
+def main():
+    queries = [
+        "What is counting?",
+        "What is place value?",
+        "What is English medium alphabet introduction?"
+    ]
+    
+    proofs = []
+    for q in queries:
+        print(f"Reconstructing source lineage for query: '{q}'...")
+        proof = reconstruct_lineage(q)
+        proofs.append(proof)
+
+    # Output to TEXTBOOK_RECONSTRUCTION_PROOF.md
+    md_content = """# Textbook Reconstruction Proof
+
+This file contains the validation proofs generated by the reconstruction validation engine. It independently verifies that runtime answers trace back correctly to source pages and chapters, and computes the validation confidence.
+
+"""
+    for i, proof in enumerate(proofs):
+        md_content += f"""## Proof Execution #{i+1}
+
+- **Query**: `{proof['query']}`
+- **Answer (Outcome)**: *"{proof['answer']}"*
+- **Reconstruction ID**: `{proof['reconstruction_id']}`
+- **Reconstruction Confidence**: `{proof['reconstruction_confidence'] * 100}%`
+
+### Source Lineage Chain
+
+"""
+        for item in proof["lineage_chain"]:
+            verified_str = " (Verified)" if item.get("verified") is True else ""
+            md_content += f"- **{item['level'].capitalize()}**: `{item['value']}`{verified_str}\n"
+
+        md_content += "\n### Originating Pages\n\n"
+        for page in proof["source_pages"]:
+            md_content += f"- **Page {page['page_number']}**: Hash `{page['content_hash']}` (Verified at {page['verification_timestamp']})\n"
+        
+        md_content += "\n---\n\n"
+
+    # Write to workspace
+    workspace_proof_path = ROOT / "TEXTBOOK_RECONSTRUCTION_PROOF.md"
+    with open(workspace_proof_path, "w", encoding="utf-8") as f:
+        f.write(md_content)
+    print(f"Textbook reconstruction proof generated at {workspace_proof_path}.")
+
+if __name__ == "__main__":
+    main()

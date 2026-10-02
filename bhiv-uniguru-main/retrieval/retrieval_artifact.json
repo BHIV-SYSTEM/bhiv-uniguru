@@ -1,0 +1,77 @@
+{
+  "trace_id": "0e5a33dd4f7ee828",
+  "query": "Grade 2 Marathi Medium: how do numbers help us count objects?",
+  "grade": 2,
+  "medium": "Marathi Medium",
+  "subject": "Mathematics",
+  "retrieved_record_id": "balbharti_mr_g2_mathematics_numbers_1_01",
+  "retrieved_concepts": [
+    "Numbers concept 1"
+  ],
+  "curriculum_version": "balbharti-2026-06",
+  "version": "balbharti-2026-06",
+  "knowledge_hash": "93bab147ae316dbd5492a562d5e07131bced46c99c16bcd74c3b2f31986944aa",
+  "source_lineage": {
+    "publisher": "Maharashtra State Bureau of Textbook Production and Curriculum Research",
+    "source_type": "curriculum_sample_seed",
+    "source_reference": "Balbharti Marathi Medium Class 2 Mathematics",
+    "page_or_section": "Numbers mapping",
+    "ingestion_method": "synthetic_expansion_seed",
+    "provenance_status": "sample_seed"
+  },
+  "confidence_state": {
+    "confidence": 1.0,
+    "matched_chapter": "Numbers",
+    "matched_subject": "Mathematics"
+  },
+  "matched_record": {
+    "record_id": "balbharti_mr_g2_mathematics_numbers_1_01",
+    "grade": 2,
+    "medium": "Marathi Medium",
+    "subject": "Mathematics",
+    "chapter": "Numbers",
+    "concept": "Numbers concept 1",
+    "definition": "This concept explains Numbers within the Mathematics curriculum for grade 2. It is presented with age-appropriate examples and guided practice for Marathi Medium.",
+    "learning_outcome": "Students will learn the key idea of Numbers in Mathematics for grade 2, build foundational understanding, and apply it through curriculum exercises.",
+    "examples": [
+      "Example 1: Use Numbers to solve a simple grade-level problem.",
+      "Example 2: Observe how Numbers appears in everyday life."
+    ],
+    "questions": [
+      "What is one important idea from Numbers?",
+      "How does Numbers relate to grade 2 mathematics learning?"
+    ],
+    "difficulty": "hard",
+    "language_variant": "mr-IN",
+    "source_lineage": {
+      "publisher": "Maharashtra State Bureau of Textbook Production and Curriculum Research",
+      "source_type": "curriculum_sample_seed",
+      "source_reference": "Balbharti Marathi Medium Class 2 Mathematics",
+      "page_or_section": "Numbers mapping",
+      "ingestion_method": "synthetic_expansion_seed",
+      "provenance_status": "sample_seed"
+    },
+    "curriculum_version": "balbharti-2026-06",
+    "version": "balbharti-2026-06",
+    "governance": {
+      "canonical_authority_granted": false,
+      "review_required": true,
+      "replay_safe": true
+    }
+  },
+  "related_records": [
+    "balbharti_en_g1_mathematics_numbers_1_01",
+    "balbharti_mr_g1_mathematics_numbers_1_01",
+    "balbharti_en_g3_mathematics_numbers_1_01",
+    "balbharti_mr_g3_mathematics_numbers_1_01",
+    "balbharti_en_g1_mathematics_numbers_1_02"
+  ],
+  "chapter_recommendations": [
+    "Numbers"
+  ],
+  "learning_objectives": [
+    "Students will learn the key idea of Numbers in Mathematics for grade 2, build foundational understanding, and apply it through curriculum exercises."
+  ],
+  "retrieval_hash": "a32146d8aceaf86950bbe84c361239533d1a7152a2d408d6c6eb04de32121054",
+  "dataset_path": "masterdb/balbharti/sample_ingestion_dataset.json"
+}

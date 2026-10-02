@@ -1,0 +1,49 @@
+{
+  "query_id": "query_3804b599fd04",
+  "trace_id": "trace_018db529b975cc70",
+  "canonical_concept_id": "unclassified",
+  "semantic_scope": "general",
+  "retrieval_run_id": "run_c1a14a844620",
+  "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+  "candidate_count": 2,
+  "deduplicated_candidate_count": 2,
+  "selected_evidence": [
+    {
+      "canonical_object_id": "uko:dharma:006f7b061f4c",
+      "source_id": "MASTERDB",
+      "authority_tier": "CANONICAL",
+      "provenance_hash": "006f7b061f4c65c17f171e3b7c0669b82b8879a86150dc22b968243a7d014e21",
+      "ranking_score": 0.85,
+      "dedup_status": "unique",
+      "text_span": "Dharma is the sustaining order of life and duty.",
+      "domain": null,
+      "tradition_context": "general"
+    },
+    {
+      "canonical_object_id": "uko:dharma:45417a7538a4",
+      "source_id": "AKASHIC",
+      "authority_tier": "CANONICAL",
+      "provenance_hash": "45417a7538a4c7e013a2f074413a5e19eaa04e48b861a1e7347fb4f35a3a3ea3",
+      "ranking_score": 0.85,
+      "dedup_status": "unique",
+      "text_span": "Dharma governs cosmic and moral conduct.",
+      "domain": null,
+      "tradition_context": "general"
+    }
+  ],
+  "claim_bindings": [
+    {
+      "claim_id": "claim_1_b921477f",
+      "claim_text": "Dharma is the sustaining order of life and duty.",
+      "canonical_object_id": "uko:dharma:006f7b061f4c",
+      "source_id": "MASTERDB",
+      "text_span": "Dharma is the sustaining order of life and duty.",
+      "verification_status": "VERIFIED",
+      "confidence": 0.85,
+      "provenance_hash": "006f7b061f4c65c17f171e3b7c0669b82b8879a86150dc22b968243a7d014e21"
+    }
+  ],
+  "verification_status": "VERIFIED",
+  "replay_id": "replay_95c2954eacb2a455",
+  "replay_safe": true
+}

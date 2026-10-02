@@ -1,0 +1,3323 @@
+{
+  "entities": [
+    {
+      "canonical": "Agriculture",
+      "domain": "ecology",
+      "entity_type": "concept",
+      "concepts": [
+        "soil",
+        "food",
+        "season"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+      ]
+    },
+    {
+      "canonical": "Ahimsa",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "ethics",
+        "restraint"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\acharanga_sutra.md",
+        "backend/knowledge/jain\\anekantavada_syadvada.md",
+        "backend/knowledge/jain\\jain_shravaka_ethics.md",
+        "backend/knowledge/swaminarayan\\mandirs_akshardham.md",
+        "backend/knowledge/swaminarayan\\panch_vartman.md"
+      ]
+    },
+    {
+      "canonical": "Atman",
+      "domain": "upanishads",
+      "entity_type": "concept",
+      "concepts": [
+        "Brahman",
+        "liberation"
+      ],
+      "sources": [
+        "backend/knowledge/quantum\\Quantum_Mathematics\\quantum_math_foundations.md",
+        "backend/knowledge/jain\\jain_cosmology.md"
+      ]
+    },
+    {
+      "canonical": "Bhagavata Purana",
+      "domain": "puranas",
+      "entity_type": "text",
+      "concepts": [
+        "Krishna",
+        "devotion",
+        "purana"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+      ]
+    },
+    {
+      "canonical": "Bhakti",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "worship",
+        "surrender"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md",
+        "backend/knowledge/swaminarayan\\mandirs_akshardham.md",
+        "backend/knowledge/swaminarayan\\panch_vartman.md",
+        "backend/knowledge/swaminarayan\\satpurush_doctrine.md",
+        "backend/knowledge/swaminarayan\\swamini_vato.md",
+        "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+      ]
+    },
+    {
+      "canonical": "Brahma",
+      "domain": "puranas",
+      "entity_type": "deity",
+      "concepts": [
+        "creation",
+        "cosmology"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\swaminarayan_theology.md",
+        "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+      ]
+    },
+    {
+      "canonical": "Brahman",
+      "domain": "upanishads",
+      "entity_type": "concept",
+      "concepts": [
+        "ultimate reality",
+        "Atman"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md",
+        "backend/knowledge/swaminarayan\\satpurush_doctrine.md",
+        "backend/knowledge/swaminarayan\\swaminarayan_theology.md",
+        "backend/knowledge/swaminarayan\\swamini_vato.md"
+      ]
+    },
+    {
+      "canonical": "Decision Making",
+      "domain": "governance",
+      "entity_type": "concept",
+      "concepts": [
+        "dharma",
+        "judgement"
+      ],
+      "sources": [
+        "backend/knowledge/quantum\\Quantum_Mathematics\\quantum_math_foundations.md"
+      ]
+    },
+    {
+      "canonical": "Dharma",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "ethics",
+        "order",
+        "responsibility"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\jain_shravaka_ethics.md",
+        "backend/knowledge/jain\\tattvartha_sutra.md",
+        "backend/knowledge/jain\\uttaradhyayana_sutra.md",
+        "backend/knowledge/swaminarayan\\mandirs_akshardham.md",
+        "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+      ]
+    },
+    {
+      "canonical": "Ecology",
+      "domain": "ecology",
+      "entity_type": "concept",
+      "concepts": [
+        "nature",
+        "sustainability"
+      ],
+      "sources": [
+        "backend/knowledge/quantum\\Quantum_Biology\\quantum_biology_overview.md"
+      ]
+    },
+    {
+      "canonical": "Enforcement",
+      "domain": "governance",
+      "entity_type": "concept",
+      "concepts": [
+        "law",
+        "decision systems"
+      ],
+      "sources": [
+        "backend/knowledge/quantum\\Quantum_Hardware\\quantum_hardware_overview.md"
+      ]
+    },
+    {
+      "canonical": "Governance",
+      "domain": "governance",
+      "entity_type": "concept",
+      "concepts": [
+        "law",
+        "responsibility"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+      ]
+    },
+    {
+      "canonical": "Guru",
+      "domain": "dharma_systems",
+      "entity_type": "role",
+      "concepts": [
+        "instruction",
+        "lineage"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\mahavira_life.md",
+        "backend/knowledge/jain\\tattvartha_sutra.md",
+        "backend/knowledge/swaminarayan\\satpurush_doctrine.md",
+        "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+      ]
+    },
+    {
+      "canonical": "Indra",
+      "domain": "vedas",
+      "entity_type": "deity",
+      "concepts": [
+        "rain",
+        "kingship"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\jain_cosmology.md"
+      ]
+    },
+    {
+      "canonical": "Justice",
+      "domain": "governance",
+      "entity_type": "concept",
+      "concepts": [
+        "law",
+        "dharma"
+      ],
+      "sources": [
+        "backend/knowledge/gurukul\\logic\\nyaya_logic.md",
+        "backend/knowledge/gurukul\\logic\\panchavayava_argument.md",
+        "backend/knowledge/swaminarayan\\shikshapatri.md"
+      ]
+    },
+    {
+      "canonical": "Karma",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "cause",
+        "effect",
+        "duty"
+      ],
+      "sources": [
+        "backend/knowledge/quantum\\Quantum_Computing\\quantum_information_core.md",
+        "backend/knowledge/jain\\anekantavada_syadvada.md",
+        "backend/knowledge/jain\\jain_cosmology.md",
+        "backend/knowledge/jain\\jain_karma_doctrine.md",
+        "backend/knowledge/jain\\jain_shravaka_ethics.md",
+        "backend/knowledge/jain\\sutrakritanga.md",
+        "backend/knowledge/jain\\tattvartha_sutra.md",
+        "backend/knowledge/jain\\uttaradhyayana_sutra.md",
+        "backend/knowledge/swaminarayan\\panch_vartman.md",
+        "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+      ]
+    },
+    {
+      "canonical": "King",
+      "domain": "governance",
+      "entity_type": "role",
+      "concepts": [
+        "governance",
+        "duty"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\mahavira_life.md",
+        "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+      ]
+    },
+    {
+      "canonical": "Moksha",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "freedom",
+        "realization"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\jain_shravaka_ethics.md",
+        "backend/knowledge/jain\\mahavira_life.md",
+        "backend/knowledge/jain\\tattvartha_sutra.md",
+        "backend/knowledge/jain\\uttaradhyayana_sutra.md",
+        "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md",
+        "backend/knowledge/swaminarayan\\swaminarayan_theology.md",
+        "backend/knowledge/swaminarayan\\swamini_vato.md"
+      ]
+    },
+    {
+      "canonical": "Narayana",
+      "domain": "puranas",
+      "entity_type": "deity",
+      "concepts": [
+        "preservation",
+        "cosmic person"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\rishabhadeva_adinatha.md",
+        "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+      ]
+    },
+    {
+      "canonical": "Pilgrimage",
+      "domain": "puranas",
+      "entity_type": "concept",
+      "concepts": [
+        "sacred place",
+        "ritual"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+      ]
+    },
+    {
+      "canonical": "Prakriti",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "matter",
+        "gunas"
+      ],
+      "sources": [
+        "backend/knowledge/quantum\\Quantum_Applications\\quantum_applications_overview.md",
+        "backend/knowledge/gurukul\\sciences\\physics_concepts.md",
+        "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md",
+        "backend/knowledge/swaminarayan\\nishkulanand_swami.md",
+        "backend/knowledge/swaminarayan\\swaminarayan_theology.md",
+        "backend/knowledge/swaminarayan\\swamini_vato.md"
+      ]
+    },
+    {
+      "canonical": "Rain",
+      "domain": "ecology",
+      "entity_type": "concept",
+      "concepts": [
+        "agriculture",
+        "water"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+      ]
+    },
+    {
+      "canonical": "Ramayana",
+      "domain": "itihasa",
+      "entity_type": "text",
+      "concepts": [
+        "Rama",
+        "dharma",
+        "forest exile"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\nishkulanand_swami.md"
+      ]
+    },
+    {
+      "canonical": "Road",
+      "domain": "governance",
+      "entity_type": "infrastructure",
+      "concepts": [
+        "infrastructure",
+        "movement"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\jain_shravaka_ethics.md",
+        "backend/knowledge/jain\\tattvartha_sutra.md",
+        "backend/knowledge/jain\\uttaradhyayana_sutra.md",
+        "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md",
+        "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+      ]
+    },
+    {
+      "canonical": "Samsara",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "karma",
+        "moksha"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+      ]
+    },
+    {
+      "canonical": "Sattva",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "guna",
+        "balance"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\panch_vartman.md"
+      ]
+    },
+    {
+      "canonical": "Shiva",
+      "domain": "puranas",
+      "entity_type": "deity",
+      "concepts": [
+        "destruction",
+        "yoga"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+      ]
+    },
+    {
+      "canonical": "Soil",
+      "domain": "ecology",
+      "entity_type": "concept",
+      "concepts": [
+        "agriculture",
+        "fertility"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md",
+        "backend/knowledge/swaminarayan\\satpurush_doctrine.md",
+        "backend/knowledge/swaminarayan\\swaminarayan_theology.md",
+        "backend/knowledge/swaminarayan\\swamini_vato.md"
+      ]
+    },
+    {
+      "canonical": "Temple",
+      "domain": "governance",
+      "entity_type": "structure",
+      "concepts": [
+        "ritual",
+        "architecture"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\mandirs_akshardham.md",
+        "backend/knowledge/swaminarayan\\swamini_vato.md"
+      ]
+    },
+    {
+      "canonical": "Upanishads",
+      "domain": "upanishads",
+      "entity_type": "text_group",
+      "concepts": [
+        "Brahman",
+        "Atman",
+        "liberation"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+      ]
+    },
+    {
+      "canonical": "Varna",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "duty",
+        "society"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+      ]
+    },
+    {
+      "canonical": "Yajna",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "ritual",
+        "offering"
+      ],
+      "sources": [
+        "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+      ]
+    },
+    {
+      "canonical": "Yoga",
+      "domain": "dharma_systems",
+      "entity_type": "concept",
+      "concepts": [
+        "discipline",
+        "meditation"
+      ],
+      "sources": [
+        "backend/knowledge/jain\\jain_karma_doctrine.md",
+        "backend/knowledge/jain\\rishabhadeva_adinatha.md",
+        "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Atman",
+      "to": "Decision Making",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/quantum\\Quantum_Mathematics\\quantum_math_foundations.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\anekantavada_syadvada.md"
+    },
+    {
+      "from": "Atman",
+      "to": "Indra",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_cosmology.md"
+    },
+    {
+      "from": "Atman",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_cosmology.md"
+    },
+    {
+      "from": "Indra",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_cosmology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Yoga",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_karma_doctrine.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Dharma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Guru",
+      "to": "King",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\mahavira_life.md"
+    },
+    {
+      "from": "Guru",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\mahavira_life.md"
+    },
+    {
+      "from": "King",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\mahavira_life.md"
+    },
+    {
+      "from": "Agriculture",
+      "to": "Bhagavata Purana",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Agriculture",
+      "to": "Governance",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Agriculture",
+      "to": "Narayana",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Agriculture",
+      "to": "Rain",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Agriculture",
+      "to": "Varna",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Agriculture",
+      "to": "Yoga",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Bhagavata Purana",
+      "to": "Governance",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Bhagavata Purana",
+      "to": "Narayana",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Bhagavata Purana",
+      "to": "Rain",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Bhagavata Purana",
+      "to": "Varna",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Bhagavata Purana",
+      "to": "Yoga",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Governance",
+      "to": "Narayana",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Governance",
+      "to": "Rain",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Governance",
+      "to": "Varna",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Governance",
+      "to": "Yoga",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "Rain",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "Varna",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "Yoga",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Rain",
+      "to": "Varna",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Rain",
+      "to": "Yoga",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Varna",
+      "to": "Yoga",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Guru",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Guru",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Guru",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Guru",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "King",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Samsara",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "King",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Samsara",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "King",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "King",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "King",
+      "to": "Samsara",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Samsara",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Road",
+      "to": "Samsara",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Brahman",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Road",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Bhakti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Dharma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Temple",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Dharma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Temple",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "Temple",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "Ramayana",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\nishkulanand_swami.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Bhakti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "Sattva",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Sattva",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Sattva",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Brahman",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Guru",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Guru",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Guru",
+      "to": "Road",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Guru",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Road",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Guru",
+      "to": "Pilgrimage",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Guru",
+      "to": "Yajna",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Guru",
+      "to": "Yoga",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Pilgrimage",
+      "to": "Yajna",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Pilgrimage",
+      "to": "Yoga",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Yajna",
+      "to": "Yoga",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "Brahman",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "Narayana",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "Shiva",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "Upanishads",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Karma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Narayana",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Shiva",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Upanishads",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Narayana",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Shiva",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "Upanishads",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Narayana",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Shiva",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Upanishads",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "Shiva",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "Upanishads",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "Shiva",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "Upanishads",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Shiva",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Shiva",
+      "to": "Upanishads",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Soil",
+      "to": "Upanishads",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Brahman",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Temple",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Moksha",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Temple",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Prakriti",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "Temple",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "Soil",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "Temple",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Soil",
+      "to": "Temple",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Brahma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "Dharma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "Dharma",
+      "relationship": "CO_OCCURS_IN_SOURCE",
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+    }
+  ],
+  "semantic_edges": [
+    {
+      "from": "Prakriti",
+      "to": "matter",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Applications\\quantum_applications_overview.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "gunas",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Applications\\quantum_applications_overview.md"
+    },
+    {
+      "from": "Ecology",
+      "to": "nature",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Biology\\quantum_biology_overview.md"
+    },
+    {
+      "from": "Ecology",
+      "to": "sustainability",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Biology\\quantum_biology_overview.md"
+    },
+    {
+      "from": "Karma",
+      "to": "cause",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Computing\\quantum_information_core.md"
+    },
+    {
+      "from": "Karma",
+      "to": "effect",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Computing\\quantum_information_core.md"
+    },
+    {
+      "from": "Karma",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Computing\\quantum_information_core.md"
+    },
+    {
+      "from": "Enforcement",
+      "to": "law",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Hardware\\quantum_hardware_overview.md"
+    },
+    {
+      "from": "Enforcement",
+      "to": "decision systems",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Hardware\\quantum_hardware_overview.md"
+    },
+    {
+      "from": "Atman",
+      "to": "Brahman",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Mathematics\\quantum_math_foundations.md"
+    },
+    {
+      "from": "Atman",
+      "to": "liberation",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Mathematics\\quantum_math_foundations.md"
+    },
+    {
+      "from": "Decision Making",
+      "to": "dharma",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Mathematics\\quantum_math_foundations.md"
+    },
+    {
+      "from": "Decision Making",
+      "to": "judgement",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/quantum\\Quantum_Mathematics\\quantum_math_foundations.md"
+    },
+    {
+      "from": "Justice",
+      "to": "law",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/gurukul\\logic\\nyaya_logic.md"
+    },
+    {
+      "from": "Justice",
+      "to": "dharma",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/gurukul\\logic\\nyaya_logic.md"
+    },
+    {
+      "from": "Justice",
+      "to": "law",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/gurukul\\logic\\panchavayava_argument.md"
+    },
+    {
+      "from": "Justice",
+      "to": "dharma",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/gurukul\\logic\\panchavayava_argument.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "matter",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/gurukul\\sciences\\physics_concepts.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "gunas",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/gurukul\\sciences\\physics_concepts.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "ethics",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\acharanga_sutra.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "restraint",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\acharanga_sutra.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "ethics",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\anekantavada_syadvada.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "restraint",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\anekantavada_syadvada.md"
+    },
+    {
+      "from": "Karma",
+      "to": "cause",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\anekantavada_syadvada.md"
+    },
+    {
+      "from": "Karma",
+      "to": "effect",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\anekantavada_syadvada.md"
+    },
+    {
+      "from": "Karma",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\anekantavada_syadvada.md"
+    },
+    {
+      "from": "Atman",
+      "to": "Brahman",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_cosmology.md"
+    },
+    {
+      "from": "Atman",
+      "to": "liberation",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_cosmology.md"
+    },
+    {
+      "from": "Indra",
+      "to": "rain",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_cosmology.md"
+    },
+    {
+      "from": "Indra",
+      "to": "kingship",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_cosmology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "cause",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_cosmology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "effect",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_cosmology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_cosmology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "cause",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_karma_doctrine.md"
+    },
+    {
+      "from": "Karma",
+      "to": "effect",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_karma_doctrine.md"
+    },
+    {
+      "from": "Karma",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_karma_doctrine.md"
+    },
+    {
+      "from": "Yoga",
+      "to": "discipline",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_karma_doctrine.md"
+    },
+    {
+      "from": "Yoga",
+      "to": "meditation",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_karma_doctrine.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "ethics",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "restraint",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "ethics",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "order",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "responsibility",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Karma",
+      "to": "cause",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Karma",
+      "to": "effect",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Karma",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "freedom",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "realization",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Road",
+      "to": "infrastructure",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Road",
+      "to": "movement",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md"
+    },
+    {
+      "from": "Guru",
+      "to": "instruction",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\mahavira_life.md"
+    },
+    {
+      "from": "Guru",
+      "to": "lineage",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\mahavira_life.md"
+    },
+    {
+      "from": "King",
+      "to": "governance",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\mahavira_life.md"
+    },
+    {
+      "from": "King",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\mahavira_life.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "freedom",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\mahavira_life.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "realization",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\mahavira_life.md"
+    },
+    {
+      "from": "Agriculture",
+      "to": "soil",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Agriculture",
+      "to": "food",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Agriculture",
+      "to": "season",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Bhagavata Purana",
+      "to": "Krishna",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Bhagavata Purana",
+      "to": "devotion",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Bhagavata Purana",
+      "to": "purana",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Governance",
+      "to": "law",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Governance",
+      "to": "responsibility",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "preservation",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "cosmic person",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Rain",
+      "to": "agriculture",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Rain",
+      "to": "water",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Varna",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Varna",
+      "to": "society",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Yoga",
+      "to": "discipline",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Yoga",
+      "to": "meditation",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md"
+    },
+    {
+      "from": "Karma",
+      "to": "cause",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\sutrakritanga.md"
+    },
+    {
+      "from": "Karma",
+      "to": "effect",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\sutrakritanga.md"
+    },
+    {
+      "from": "Karma",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\sutrakritanga.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "ethics",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "order",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "responsibility",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Guru",
+      "to": "instruction",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Guru",
+      "to": "lineage",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "cause",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "effect",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "freedom",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "realization",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Road",
+      "to": "infrastructure",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Road",
+      "to": "movement",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "ethics",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "order",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "responsibility",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "cause",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "effect",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Karma",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "King",
+      "to": "governance",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "King",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "freedom",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "realization",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Road",
+      "to": "infrastructure",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Road",
+      "to": "movement",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Samsara",
+      "to": "karma",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Samsara",
+      "to": "moksha",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "worship",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "surrender",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "ultimate reality",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Atman",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "freedom",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "realization",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "matter",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "gunas",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Road",
+      "to": "infrastructure",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Road",
+      "to": "movement",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Soil",
+      "to": "agriculture",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Soil",
+      "to": "fertility",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "ethics",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "restraint",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "worship",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "surrender",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "ethics",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "order",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "responsibility",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Temple",
+      "to": "ritual",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Temple",
+      "to": "architecture",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "matter",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\nishkulanand_swami.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "gunas",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\nishkulanand_swami.md"
+    },
+    {
+      "from": "Ramayana",
+      "to": "Rama",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\nishkulanand_swami.md"
+    },
+    {
+      "from": "Ramayana",
+      "to": "dharma",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\nishkulanand_swami.md"
+    },
+    {
+      "from": "Ramayana",
+      "to": "forest exile",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\nishkulanand_swami.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "ethics",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Ahimsa",
+      "to": "restraint",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "worship",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "surrender",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Karma",
+      "to": "cause",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Karma",
+      "to": "effect",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Karma",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Sattva",
+      "to": "guna",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Sattva",
+      "to": "balance",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "worship",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "surrender",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "ultimate reality",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Atman",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Guru",
+      "to": "instruction",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Guru",
+      "to": "lineage",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Road",
+      "to": "infrastructure",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Road",
+      "to": "movement",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Soil",
+      "to": "agriculture",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Soil",
+      "to": "fertility",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md"
+    },
+    {
+      "from": "Justice",
+      "to": "law",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\shikshapatri.md"
+    },
+    {
+      "from": "Justice",
+      "to": "dharma",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\shikshapatri.md"
+    },
+    {
+      "from": "Guru",
+      "to": "instruction",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Guru",
+      "to": "lineage",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Pilgrimage",
+      "to": "sacred place",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Pilgrimage",
+      "to": "ritual",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Yajna",
+      "to": "ritual",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Yajna",
+      "to": "offering",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Yoga",
+      "to": "discipline",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Yoga",
+      "to": "meditation",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "creation",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "cosmology",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "ultimate reality",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Atman",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "cause",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "effect",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Karma",
+      "to": "duty",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "freedom",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "realization",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "preservation",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Narayana",
+      "to": "cosmic person",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "matter",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "gunas",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Shiva",
+      "to": "destruction",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Shiva",
+      "to": "yoga",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Soil",
+      "to": "agriculture",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Soil",
+      "to": "fertility",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Upanishads",
+      "to": "Brahman",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Upanishads",
+      "to": "Atman",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Upanishads",
+      "to": "liberation",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "worship",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "surrender",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "ultimate reality",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Brahman",
+      "to": "Atman",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "freedom",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Moksha",
+      "to": "realization",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "matter",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Prakriti",
+      "to": "gunas",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Soil",
+      "to": "agriculture",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Soil",
+      "to": "fertility",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Temple",
+      "to": "ritual",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Temple",
+      "to": "architecture",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "worship",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+    },
+    {
+      "from": "Bhakti",
+      "to": "surrender",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "creation",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+    },
+    {
+      "from": "Brahma",
+      "to": "cosmology",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "ethics",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "order",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+    },
+    {
+      "from": "Dharma",
+      "to": "responsibility",
+      "relationship": "HAS_ASSOCIATED_CONCEPT",
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md"
+    }
+  ],
+  "hierarchical_concepts": [
+    {
+      "source": "backend/knowledge/quantum\\Quantum_Applications\\quantum_applications_overview.md",
+      "category": "quantum",
+      "chain": [
+        "Prakriti"
+      ]
+    },
+    {
+      "source": "backend/knowledge/quantum\\Quantum_Biology\\quantum_biology_overview.md",
+      "category": "quantum",
+      "chain": [
+        "Ecology"
+      ]
+    },
+    {
+      "source": "backend/knowledge/quantum\\Quantum_Computing\\quantum_information_core.md",
+      "category": "quantum",
+      "chain": [
+        "Karma"
+      ]
+    },
+    {
+      "source": "backend/knowledge/quantum\\Quantum_Hardware\\quantum_hardware_overview.md",
+      "category": "quantum",
+      "chain": [
+        "Enforcement"
+      ]
+    },
+    {
+      "source": "backend/knowledge/quantum\\Quantum_Mathematics\\quantum_math_foundations.md",
+      "category": "quantum",
+      "chain": [
+        "Atman",
+        "Decision Making"
+      ]
+    },
+    {
+      "source": "backend/knowledge/gurukul\\logic\\nyaya_logic.md",
+      "category": "gurukul",
+      "chain": [
+        "Justice"
+      ]
+    },
+    {
+      "source": "backend/knowledge/gurukul\\logic\\panchavayava_argument.md",
+      "category": "gurukul",
+      "chain": [
+        "Justice"
+      ]
+    },
+    {
+      "source": "backend/knowledge/gurukul\\sciences\\physics_concepts.md",
+      "category": "gurukul",
+      "chain": [
+        "Prakriti"
+      ]
+    },
+    {
+      "source": "backend/knowledge/jain\\acharanga_sutra.md",
+      "category": "jain",
+      "chain": [
+        "Ahimsa"
+      ]
+    },
+    {
+      "source": "backend/knowledge/jain\\anekantavada_syadvada.md",
+      "category": "jain",
+      "chain": [
+        "Ahimsa",
+        "Karma"
+      ]
+    },
+    {
+      "source": "backend/knowledge/jain\\jain_cosmology.md",
+      "category": "jain",
+      "chain": [
+        "Atman",
+        "Indra",
+        "Karma"
+      ]
+    },
+    {
+      "source": "backend/knowledge/jain\\jain_karma_doctrine.md",
+      "category": "jain",
+      "chain": [
+        "Karma",
+        "Yoga"
+      ]
+    },
+    {
+      "source": "backend/knowledge/jain\\jain_shravaka_ethics.md",
+      "category": "jain",
+      "chain": [
+        "Ahimsa",
+        "Dharma",
+        "Karma",
+        "Moksha",
+        "Road"
+      ]
+    },
+    {
+      "source": "backend/knowledge/jain\\mahavira_life.md",
+      "category": "jain",
+      "chain": [
+        "Guru",
+        "King",
+        "Moksha"
+      ]
+    },
+    {
+      "source": "backend/knowledge/jain\\rishabhadeva_adinatha.md",
+      "category": "jain",
+      "chain": [
+        "Agriculture",
+        "Bhagavata Purana",
+        "Governance",
+        "Narayana",
+        "Rain",
+        "Varna",
+        "Yoga"
+      ]
+    },
+    {
+      "source": "backend/knowledge/jain\\sutrakritanga.md",
+      "category": "jain",
+      "chain": [
+        "Karma"
+      ]
+    },
+    {
+      "source": "backend/knowledge/jain\\tattvartha_sutra.md",
+      "category": "jain",
+      "chain": [
+        "Dharma",
+        "Guru",
+        "Karma",
+        "Moksha",
+        "Road"
+      ]
+    },
+    {
+      "source": "backend/knowledge/jain\\uttaradhyayana_sutra.md",
+      "category": "jain",
+      "chain": [
+        "Dharma",
+        "Karma",
+        "King",
+        "Moksha",
+        "Road",
+        "Samsara"
+      ]
+    },
+    {
+      "source": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md",
+      "category": "swaminarayan",
+      "chain": [
+        "Bhakti",
+        "Brahman",
+        "Moksha",
+        "Prakriti",
+        "Road",
+        "Soil"
+      ]
+    },
+    {
+      "source": "backend/knowledge/swaminarayan\\mandirs_akshardham.md",
+      "category": "swaminarayan",
+      "chain": [
+        "Ahimsa",
+        "Bhakti",
+        "Dharma",
+        "Temple"
+      ]
+    },
+    {
+      "source": "backend/knowledge/swaminarayan\\nishkulanand_swami.md",
+      "category": "swaminarayan",
+      "chain": [
+        "Prakriti",
+        "Ramayana"
+      ]
+    },
+    {
+      "source": "backend/knowledge/swaminarayan\\panch_vartman.md",
+      "category": "swaminarayan",
+      "chain": [
+        "Ahimsa",
+        "Bhakti",
+        "Karma",
+        "Sattva"
+      ]
+    },
+    {
+      "source": "backend/knowledge/swaminarayan\\satpurush_doctrine.md",
+      "category": "swaminarayan",
+      "chain": [
+        "Bhakti",
+        "Brahman",
+        "Guru",
+        "Road",
+        "Soil"
+      ]
+    },
+    {
+      "source": "backend/knowledge/swaminarayan\\shikshapatri.md",
+      "category": "swaminarayan",
+      "chain": [
+        "Justice"
+      ]
+    },
+    {
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_biography.md",
+      "category": "swaminarayan",
+      "chain": [
+        "Guru",
+        "Pilgrimage",
+        "Yajna",
+        "Yoga"
+      ]
+    },
+    {
+      "source": "backend/knowledge/swaminarayan\\swaminarayan_theology.md",
+      "category": "swaminarayan",
+      "chain": [
+        "Brahma",
+        "Brahman",
+        "Karma",
+        "Moksha",
+        "Narayana",
+        "Prakriti",
+        "Shiva",
+        "Soil",
+        "Upanishads"
+      ]
+    },
+    {
+      "source": "backend/knowledge/swaminarayan\\swamini_vato.md",
+      "category": "swaminarayan",
+      "chain": [
+        "Bhakti",
+        "Brahman",
+        "Moksha",
+        "Prakriti",
+        "Soil",
+        "Temple"
+      ]
+    },
+    {
+      "source": "backend/knowledge/swaminarayan\\vachanamrut_core.md",
+      "category": "swaminarayan",
+      "chain": [
+        "Bhakti",
+        "Brahma",
+        "Dharma"
+      ]
+    }
+  ],
+  "source_lineage": [
+    {
+      "original_path": "backend/knowledge/quantum\\density_matrix.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\entanglement.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\grover_algorithm.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\KB_INDEX.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\qubit.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\README.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\shor_algorithm.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\superposition.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Algorithms\\quantum_algorithms_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Applications\\quantum_applications_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Biology\\quantum_biology_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Chemistry\\quantum_chemistry_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Computing\\nielsen_chuang_core.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Computing\\quantum_computing_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Computing\\quantum_information_core.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Hardware\\quantum_hardware_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Mathematics\\quantum_math_foundations.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Physics\\quantum_physics_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/quantum\\Quantum_Software\\quantum_software_stack.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/gurukul\\logic\\nyaya_logic.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/gurukul\\logic\\panchavayava_argument.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/gurukul\\mathematics\\geometry.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/gurukul\\mathematics\\vedic_math.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/gurukul\\sanskrit\\grammar.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/gurukul\\sciences\\physics_concepts.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/jain\\acharanga_sutra.md",
+      "category": "jain",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/jain\\anekantavada_syadvada.md",
+      "category": "jain",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/jain\\jain_cosmology.md",
+      "category": "jain",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/jain\\jain_karma_doctrine.md",
+      "category": "jain",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/jain\\jain_shravaka_ethics.md",
+      "category": "jain",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/jain\\mahavira_life.md",
+      "category": "jain",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/jain\\rishabhadeva_adinatha.md",
+      "category": "jain",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/jain\\sutrakritanga.md",
+      "category": "jain",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/jain\\tattvartha_sutra.md",
+      "category": "jain",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/jain\\uttaradhyayana_sutra.md",
+      "category": "jain",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/swaminarayan\\mandirs_akshardham.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/swaminarayan\\nishkulanand_swami.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/swaminarayan\\panch_vartman.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/swaminarayan\\satpurush_doctrine.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/swaminarayan\\shikshapatri.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/swaminarayan\\swaminarayan_biography.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/swaminarayan\\swaminarayan_theology.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/swaminarayan\\swamini_vato.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    },
+    {
+      "original_path": "backend/knowledge/swaminarayan\\vachanamrut_core.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED",
+      "transformation_history": [
+        "file_parse",
+        "keyword_index",
+        "semantic_memory_index"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "claims": [
+    {
+      "authority_pressure_score": 0.622,
+      "claim_key": "civilizational_memory",
+      "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+      "risk_band": "high"
+    },
+    {
+      "authority_pressure_score": 0.8623,
+      "claim_key": "governed_claim",
+      "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+      "risk_band": "critical"
+    }
+  ],
+  "dashboard_mode": "json_only"
+}

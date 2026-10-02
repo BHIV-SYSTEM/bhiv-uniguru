@@ -1,0 +1,64 @@
+{
+  "arbitration_hash": "e256f5bfa85b0681d536ead29928d0d5ffe283c44b3d83df2aa08c2490be8aff",
+  "arbitrator_node_ids": [
+    "akash_constitutional_direction",
+    "tester_replay_validation",
+    "vijay_replay_integrity"
+  ],
+  "contradiction_arbitration_trace": [
+    {
+      "action": "QUARANTINE_AND_ESCALATE_REVIEW",
+      "arbitrator_node_ids": [
+        "akash_constitutional_direction",
+        "tester_replay_validation",
+        "vijay_replay_integrity"
+      ],
+      "canonical_authority_granted": false,
+      "claim_key": "civilizational_memory",
+      "contradiction_pressure": 0.64,
+      "dispute_hash": "06934a9e206b3a17c59e35892baa2ba3fe78fa54675f29012b1cde29452a42f5",
+      "index": 0,
+      "lifecycle_state": "PERSISTENT_UNRESOLVED",
+      "lineage_preserved": true,
+      "previous_dispute_hash": null,
+      "severity": "high"
+    },
+    {
+      "action": "QUARANTINE_AND_ESCALATE_REVIEW",
+      "arbitrator_node_ids": [
+        "akash_constitutional_direction",
+        "tester_replay_validation",
+        "vijay_replay_integrity"
+      ],
+      "canonical_authority_granted": false,
+      "claim_key": "governed_claim",
+      "contradiction_pressure": 0.72,
+      "dispute_hash": "20e04c4f64ffbf841e864244e7250dbd572c962227f9f3cdbac9d411d0a8ccde",
+      "index": 1,
+      "lifecycle_state": "PERSISTENT_UNRESOLVED",
+      "lineage_preserved": true,
+      "previous_dispute_hash": "06934a9e206b3a17c59e35892baa2ba3fe78fa54675f29012b1cde29452a42f5",
+      "severity": "high"
+    }
+  ],
+  "last_dispute_hash": "20e04c4f64ffbf841e864244e7250dbd572c962227f9f3cdbac9d411d0a8ccde",
+  "replay_safe": true,
+  "schema": "UNIGURU_DISTRIBUTED_CONTRADICTION_ARBITRATION_V1",
+  "silent_merge_allowed": false,
+  "unresolved_contradiction_persistence": [
+    {
+      "claim_key": "civilizational_memory",
+      "dispute_hash": "06934a9e206b3a17c59e35892baa2ba3fe78fa54675f29012b1cde29452a42f5",
+      "next_required_action": "QUARANTINE_AND_ESCALATE_REVIEW",
+      "persistence_state": "open",
+      "prior_unresolved_count": 2
+    },
+    {
+      "claim_key": "governed_claim",
+      "dispute_hash": "20e04c4f64ffbf841e864244e7250dbd572c962227f9f3cdbac9d411d0a8ccde",
+      "next_required_action": "QUARANTINE_AND_ESCALATE_REVIEW",
+      "persistence_state": "open",
+      "prior_unresolved_count": 1
+    }
+  ]
+}

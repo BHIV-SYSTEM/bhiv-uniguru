@@ -1,0 +1,34 @@
+{
+  "canonical_memory": {},
+  "contradiction_audit": [],
+  "event_count": 1,
+  "lineage": [
+    {
+      "classification": "transient",
+      "event_hash": "460138d8157401499e20448181013c4218bb0c929e1959004aeb54bbfc6ef340",
+      "interpretation_hash": "eae9f7b5bfe564e946305e80a17599fc493c5e2e4327d1fe7e29ae69afd7b23a",
+      "previous_event_hash": null,
+      "retrieval_truth_hash": null,
+      "trace_id": "poison_trace"
+    }
+  ],
+  "replay_integrity": {
+    "hash_chain_ok": true,
+    "last_event_hash": "460138d8157401499e20448181013c4218bb0c929e1959004aeb54bbfc6ef340",
+    "rollback_target": null
+  },
+  "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_RECONSTRUCTION_V1",
+  "state_hash": "5d684632a3b2f548eed95869a0281a3f6d3650781f6723e3cefa05ab07126deb",
+  "transient_memory": [
+    {
+      "classification": "transient",
+      "event_hash": "460138d8157401499e20448181013c4218bb0c929e1959004aeb54bbfc6ef340",
+      "reasons": [
+        "missing_retrieval_truth_hash",
+        "truth_interpretation_boundary_not_enforced",
+        "interpretation_does_not_reference_retrieval_truth"
+      ],
+      "trace_id": "poison_trace"
+    }
+  ]
+}

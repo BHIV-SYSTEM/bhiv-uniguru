@@ -1,0 +1,226 @@
+{
+  "answer": "I do not have verified knowledge to answer this question.",
+  "bucket_telemetry": {
+    "bucket_path": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru\\review_packets\\integration_proof\\bucket_ecosystem_314a53f405b0.json",
+    "decision": "block",
+    "emitted": true,
+    "event": "ecosystem_runtime_execution",
+    "live_emitted": false,
+    "live_endpoint": null,
+    "ontology_reference": {
+      "domain": "ecology",
+      "trace_id": "ecosystem_314a53f405b0"
+    },
+    "query_hash": "c0b9c389c7579cd8",
+    "route": "TANTRA_ECOSYSTEM",
+    "timestamp": "2026-07-21T06:12:29.005481Z",
+    "trace_id": "ecosystem_314a53f405b0",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "confidence": 0.0,
+  "execution_hash": "0816878f2ca768c37b69af2c1c71f4a293fa292f492664da6d9312fc8fa7de20",
+  "gc_validation": {
+    "authority_enforced": true,
+    "canonical_authority_granted": false,
+    "governance_note": "Constitutional authority remains read-only and enforcement is preserved through replay-safe hashing.",
+    "live_authority_validation": {
+      "live": false,
+      "path": "/gc/validate/authority",
+      "reason": "not_configured"
+    },
+    "live_hidden_state_validation": {
+      "live": false,
+      "path": "/gc/validate/hidden-state",
+      "reason": "not_configured"
+    },
+    "trace_id": "ecosystem_314a53f405b0"
+  },
+  "insightflow_observability": {
+    "live_decision": {
+      "live": false,
+      "path": "/decisions",
+      "reason": "not_configured"
+    },
+    "live_trace": {
+      "live": false,
+      "path": "/traces",
+      "reason": "not_configured"
+    },
+    "observability_state": "live_runtime_trace_complete",
+    "pipeline_status": "NO_VERIFIED_KNOWLEDGE",
+    "replay_safe": true,
+    "trace_complete": true,
+    "trace_hash": "166597ac682ef36bf523f9f0207b71458650bab004695ece7f85d754f633218a",
+    "trace_id": "ecosystem_314a53f405b0"
+  },
+  "mdu_validation": {
+    "evidence_payload": {
+      "chapter": "ecology",
+      "edition": "2026",
+      "evidence_id": "9217ead3-bb8c-5cd4-8949-16a6115680bd",
+      "lineage_hash": "1befee912ac5e7466cf929de9bf2cd684b862a1e7efa4515728d2244f2024ae7",
+      "page_numbers": [
+        1
+      ],
+      "retrieval_hash": "682be68ca2f4ef0bd151b9d6835e564ac166f521ca79e506d3de9e6cf55e2c90",
+      "section": "runtime_convergence",
+      "source_hash": "521b096edf2d42f3b558084d2345ac6791a7fe6b888bdb49af7bc723f1078a24",
+      "textbook_id": "bhiv_internal_intelligence_platform",
+      "verification_status": "UNVERIFIED"
+    },
+    "live_provenance_validation": {
+      "lineage_hash": null,
+      "live": false,
+      "path": "/api/v1/datasets/canonical/BHIV-DS-UNIGURU-RUNTIME-001",
+      "reason": "not_configured",
+      "runtime_hash": "35645db515fa385eb22bd44a0fc4cd3a222f0fca85b616a7861e1e12a8fb880a",
+      "trace_id": "ecosystem_314a53f405b0"
+    },
+    "live_schema_validation": {
+      "canonical_id": "BHIV-DS-UNIGURU-RUNTIME-001",
+      "dataset_id": "dc02d460-8ee7-4643-88cb-8f891d991301",
+      "live": false,
+      "path": "/api/v1/schemas/37c845cb-0846-4e09-93b9-62b07655ad9f",
+      "reason": "not_configured",
+      "schema_id": "37c845cb-0846-4e09-93b9-62b07655ad9f",
+      "trace_id": "9217ead3-bb8c-5cd4-8949-16a6115680bd"
+    },
+    "missing_fields": [],
+    "provenance_continuity": true,
+    "required_fields": [
+      "evidence_id",
+      "textbook_id",
+      "edition",
+      "chapter",
+      "section",
+      "page_numbers",
+      "source_hash",
+      "retrieval_hash",
+      "lineage_hash",
+      "verification_status"
+    ],
+    "schema_compatible": true,
+    "trace_id": "ecosystem_314a53f405b0"
+  },
+  "pipeline_summary": {
+    "domain": "ecology",
+    "matched_signals": 0,
+    "reasoning_path": [
+      "query_received",
+      "kosha_schema_enforced",
+      "canonical_entities_extracted",
+      "ontology_aware_retrieval",
+      "signal_validation",
+      "epistemic_confidence_derivation",
+      "contradiction_consensus_analysis",
+      "structured_signal_emission",
+      "deterministic_rejection",
+      "governance_contract_emission",
+      "bucket_proof_ready"
+    ],
+    "rejected_signals": 12
+  },
+  "query": "What is drip irrigation?",
+  "tantra_contract": {
+    "bucket_proof_ready": true,
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_continuity": {
+      "bucket_proof": "ecosystem_314a53f405b0",
+      "retrieval": "ecosystem_314a53f405b0",
+      "synthesis": "ecosystem_314a53f405b0",
+      "validation": "ecosystem_314a53f405b0"
+    },
+    "trace_id": "ecosystem_314a53f405b0",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "tantra_ecosystem_fabric": {
+    "karma_intelligence": {
+      "adaptation_level": "NEUTRAL",
+      "recommended_tactic": "OBSERVE"
+    },
+    "prana_verified": true,
+    "status": "SUCCESS",
+    "trace_id": "ecosystem_314a53f405b0"
+  },
+  "tantra_sdk_contracts": {
+    "execution_event": {
+      "command": "What is drip irrigation?",
+      "compatibility": {
+        "adapter": "TantraSdkAdapter",
+        "supported_schema": "execution_event.v1.0.0"
+      },
+      "duration_ms": 12,
+      "execution_id": "exec_ecosystem_314a53f405b0",
+      "outcome": {
+        "answer": "I do not have verified knowledge to answer this question.",
+        "domain": "ecology",
+        "verification_status": "NO_VERIFIED_KNOWLEDGE"
+      },
+      "ownership": "uniguru",
+      "provenance": {
+        "environment": "local",
+        "schema_source": "C:\\Users\\Isha Singh\\Desktop\\vijay\\tantara_ecosystem-main\\execution_sdk\\v1\\schemas\\execution_event.v1.0.0.json",
+        "source_system": "uniguru_backend",
+        "version": "1.0.0"
+      },
+      "related_trace_ids": [
+        "ecosystem_314a53f405b0"
+      ],
+      "schema_version": "execution_event.v1.0.0",
+      "status": "completed",
+      "subject_id": "uniguru_runtime",
+      "timestamp": "2026-07-21T06:12:29.007478Z",
+      "trace_id": "ecosystem_314a53f405b0",
+      "validation_status": "valid"
+    },
+    "live_authority_validation": {
+      "live": false,
+      "path": "/runtime/authority/validate",
+      "reason": "not_configured"
+    },
+    "live_execution_submission": {
+      "live": false,
+      "path": "/runtime/execution-event",
+      "reason": "not_configured"
+    },
+    "live_trace_submission": {
+      "live": false,
+      "path": "/runtime/trace",
+      "reason": "not_configured"
+    },
+    "tantra_sdk_live": false
+  },
+  "timestamp": "2026-07-21T06:12:29.007478Z",
+  "trace_id": "ecosystem_314a53f405b0",
+  "verification_status": "NO_VERIFIED_KNOWLEDGE",
+  "vijay_validation": {
+    "canonical_authority_granted": false,
+    "component_hashes": {
+      "contradiction_escalation": "076f30e55e2624f1c9688cb37bcba8286cc20c4d8cfc507102f052b2be7f5db2",
+      "observability": "d486cf3633c4cc1413e56d8c749c2169f605c89f2df296283c11084b59e389dc",
+      "ontology_lineage": "7139ad7684f3c5ebac1e5d8f06d3f1533f2075911df2d4abd04814440f40dfe1",
+      "semantic_governance": "2d5e78fc3f3f4a5896bbd5f8a8f2429357ed6b3d8e43c9477afdd8ec9d78139c",
+      "trust_propagation": "d7647c71bdae7cb7689556a290919554f36934b9ef7caccef44714ab0c6118d6",
+      "uncertainty_lineage": "34cd3de670fd4dd1943a6b0697ad37686db2d73ba587432b223d4bb0ca46d62d"
+    },
+    "hash_chain_ok": true,
+    "last_event_hash": "885d48c3a2b7c9efbecaf4abef1ea7ddc5a177d10855a14cda35c7deba771745",
+    "replay_safe": true,
+    "runtime_hash": "35645db515fa385eb22bd44a0fc4cd3a222f0fca85b616a7861e1e12a8fb880a",
+    "semantic_event": {
+      "ambiguity_class": "no_verified_knowledge",
+      "claim_key": "ecosystem_execution",
+      "confidence": 0.0,
+      "contradiction_pressure": 0.35,
+      "legitimacy_evidence": 0.0,
+      "provenance_weight": 0.0,
+      "reinforcement_count": 0,
+      "trace_id": "ecosystem_314a53f405b0",
+      "uncertainty": 1.0,
+      "unresolved": true
+    },
+    "trace_id": "ecosystem_314a53f405b0"
+  }
+}

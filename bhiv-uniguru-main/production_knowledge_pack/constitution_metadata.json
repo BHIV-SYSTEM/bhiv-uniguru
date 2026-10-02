@@ -1,0 +1,13 @@
+{
+  "safety_gates": [
+    "authority",
+    "evidence",
+    "lineage",
+    "hash",
+    "version",
+    "dataset_signature",
+    "constitution",
+    "runtime_contract"
+  ],
+  "failure_policy": "refuse canonical execution"
+}

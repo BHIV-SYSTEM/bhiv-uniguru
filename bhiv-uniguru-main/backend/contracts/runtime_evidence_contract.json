@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract_id": "runtime_evidence_contract_v1",
+  "title": "UniGuru Runtime Evidence Contract",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "textbook_id",
+    "edition",
+    "chapter",
+    "section",
+    "page_numbers",
+    "source_hash",
+    "retrieval_hash",
+    "lineage_hash",
+    "verification_status"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique cryptographic transaction identifier for this specific validation execution."
+    },
+    "textbook_id": {
+      "type": "string",
+      "description": "Unique identifier of the verified textbook authority."
+    },
+    "edition": {
+      "type": "string",
+      "description": "The specific edition/year of the verified textbook."
+    },
+    "chapter": {
+      "type": "string",
+      "description": "The title of the originating chapter."
+    },
+    "section": {
+      "type": "string",
+      "description": "The title of the originating section."
+    },
+    "page_numbers": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "description": "The exact page numbers where the concept or exercise resides."
+    },
+    "source_hash": {
+      "type": "string",
+      "description": "SHA-256 hash of the page content from the page registry."
+    },
+    "retrieval_hash": {
+      "type": "string",
+      "description": "SHA-256 hash representing the query retrieval state from the database."
+    },
+    "lineage_hash": {
+      "type": "string",
+      "description": "SHA-256 hash of the full lineage trace of the response."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "UNVERIFIED",
+        "PARTIAL_VERIFIED_SAMPLE"
+      ],
+      "description": "The verification classification of the source material."
+    }
+  }
+}

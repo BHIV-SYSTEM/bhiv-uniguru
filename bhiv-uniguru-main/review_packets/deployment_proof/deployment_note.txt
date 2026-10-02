@@ -1,0 +1,2 @@
+UniGuru ecosystem runtime integration is available through the new /runtime/ecosystem/execute endpoint.
+The endpoint writes proof artifacts to review_packets/integration_proof and is covered by backend/tests/test_ecosystem_integration.py.

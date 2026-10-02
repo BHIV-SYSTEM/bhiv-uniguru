@@ -1,0 +1,98 @@
+{
+  "non_authoritative": true,
+  "observability": {
+    "authority_gravity_dashboard": {
+      "claims": [
+        {
+          "authority_pressure_score": 0.8805,
+          "claim_key": "governed_claim",
+          "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+          "risk_band": "critical"
+        },
+        {
+          "authority_pressure_score": 0.6209,
+          "claim_key": "replay_trust",
+          "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+          "risk_band": "high"
+        },
+        {
+          "authority_pressure_score": 0.1709,
+          "claim_key": "runtime_observability",
+          "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+          "risk_band": "low"
+        }
+      ],
+      "dashboard_mode": "json_only"
+    },
+    "observability_hash": "669c6e1eef9b8a768ad05b622ea349f1649ccc7862db30f4838bffb4856b48bf",
+    "replay_safe": true,
+    "schema": "UNIGURU_SEMANTIC_PRESSURE_OBSERVABILITY_V1",
+    "semantic_pressure_observability": {
+      "canonical_authority_granted": false,
+      "governance_state": "ESCALATED",
+      "max_authority_pressure": 0.8805,
+      "ontology_alert_count": 3,
+      "uncertainty_event_count": 4,
+      "unresolved_contradiction_count": 2
+    },
+    "trust_lineage_observability": {
+      "arbitration_hash": "c3487b436f31e4a45d19e7c9a26606c9bbf144211ee57e3d3949359c4fd3ecfd",
+      "ontology_boundary_hash": "2d65e9d157d7d072ab8bc4fcaa1fc05d32beef102f72485f74eefcde40ac51c1",
+      "pressure_hash": "0454b02ed12327b6daba06b1c66e5d96b232510013271b76c169d42725ee7585",
+      "uncertainty_lineage_hash": "74db85ff57a2f54b2e556c7ed7e15722a3214bee45de9f2fe961ca1b25921c96"
+    },
+    "uncertainty_continuity_trace": {
+      "event_count": 4,
+      "last_lineage_hash": "72dcebb8b6e2ca6d8a513537a5d8e9289c3a588770b46f9931c59fe87ba6fc07",
+      "lineage": [
+        {
+          "ambiguity_class": "weak_provenance",
+          "claim_key": "governed_claim",
+          "contradiction_pressure": 0.0,
+          "index": 0,
+          "lineage_hash": "2f05dc5c91178eb5b8d9c96ae49ccb1c0b97b31039d333a447e9132cbbe9268c",
+          "previous_lineage_hash": null,
+          "trace_id": "unified_runtime_001",
+          "uncertainty": 0.48
+        },
+        {
+          "ambiguity_class": "conflicting_claims",
+          "claim_key": "governed_claim",
+          "contradiction_pressure": 0.78,
+          "index": 1,
+          "lineage_hash": "53590bbecd8f10958e4e6a1ed94d0ec130a0577f27f0da5fbdad2e338744a433",
+          "previous_lineage_hash": "2f05dc5c91178eb5b8d9c96ae49ccb1c0b97b31039d333a447e9132cbbe9268c",
+          "trace_id": "unified_runtime_002",
+          "uncertainty": 0.53
+        },
+        {
+          "ambiguity_class": "rollback_authenticity_dispute",
+          "claim_key": "replay_trust",
+          "contradiction_pressure": 0.62,
+          "index": 2,
+          "lineage_hash": "30134a536f2bef6be52a8f53dc870e04f5d79650e59c75a5b829cb1bfbd83a4d",
+          "previous_lineage_hash": "53590bbecd8f10958e4e6a1ed94d0ec130a0577f27f0da5fbdad2e338744a433",
+          "trace_id": "unified_runtime_003",
+          "uncertainty": 0.41
+        },
+        {
+          "ambiguity_class": "non_authoritative_telemetry",
+          "claim_key": "runtime_observability",
+          "contradiction_pressure": 0.31,
+          "index": 3,
+          "lineage_hash": "72dcebb8b6e2ca6d8a513537a5d8e9289c3a588770b46f9931c59fe87ba6fc07",
+          "previous_lineage_hash": "30134a536f2bef6be52a8f53dc870e04f5d79650e59c75a5b829cb1bfbd83a4d",
+          "trace_id": "unified_runtime_004",
+          "uncertainty": 0.36
+        }
+      ],
+      "lineage_id": "constitutional_runtime_uncertainty_lineage",
+      "lineage_state_hash": "74db85ff57a2f54b2e556c7ed7e15722a3214bee45de9f2fe961ca1b25921c96",
+      "replay_safe": true,
+      "schema": "UNIGURU_UNCERTAINTY_LINEAGE_V1"
+    }
+  },
+  "observability_hash_local": "b8658f897998eeb77a7d7d121c0e9f71db6ffd92dc81731e9a7e6e98e43b2cea",
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "schema": "UNIGURU_CONSTITUTIONAL_OBSERVABILITY_V1"
+}

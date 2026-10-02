@@ -1,0 +1,85 @@
+{
+  "constitutional_reasoning_summary": {
+    "canonical_authority_granted": false,
+    "flow": [
+      "query",
+      "masterdb_lookup",
+      "semantic_interpretation",
+      "constitutional_evaluation",
+      "trust_contradiction_ontology_evaluation",
+      "bounded_response_generation",
+      "explanation_layer",
+      "replay_artifact_emission"
+    ],
+    "observability_state": "ESCALATED",
+    "verification_status": "PARTIAL_VERIFIED_SAMPLE"
+  },
+  "contract_hash": "0bb10f59c24d26d260171bb31531b64d0c8c73fee7ea7939411536ea0f4b601f",
+  "contradiction_state": {
+    "arbitration_hash": "0de83cff6d5f28227056398a155a31367df25164eb9d144f1a791505142cea42",
+    "silent_merge_allowed": false,
+    "unresolved_count": 0
+  },
+  "ontology_boundary_state": {
+    "alert_count": 1,
+    "boundary_state_hash": "14565dd2a1ea4ee1cc0ec0acad6e82a15833258b79c4743ab85cfde0f70c0b35",
+    "canonical_authority_granted": false
+  },
+  "response_payload": {
+    "answer": "Balanced diet: A balanced diet provides the body with energy, growth nutrients, and protective nutrients in proper amounts. Example: Rice, dal, vegetables, fruit, and milk can form a balanced meal. Practice: What is a balanced diet?",
+    "matched_record": {
+      "chapter": "Food",
+      "concept": "Balanced diet",
+      "curriculum_version": "starter-2026-05",
+      "definition": "A balanced diet provides the body with energy, growth nutrients, and protective nutrients in proper amounts.",
+      "examples": [
+        "Rice, dal, vegetables, fruit, and milk can form a balanced meal.",
+        "Too much of only one food group is not balanced."
+      ],
+      "governance": {
+        "canonical_authority_granted": false,
+        "replay_safe": true,
+        "review_required": true
+      },
+      "grade": 6,
+      "language_variant": "en-IN",
+      "medium": "English Medium",
+      "questions": [
+        "What is a balanced diet?",
+        "Name one energy-giving food and one protective food."
+      ],
+      "record_id": "balbharti_en_g6_science_food_001",
+      "source_lineage": {
+        "ingestion_method": "manual_structured_seed",
+        "page_or_section": "Food starter mapping",
+        "provenance_status": "sample_seed",
+        "publisher": "Maharashtra State Bureau of Textbook Production and Curriculum Research",
+        "source_reference": "Balbharti English Medium Class 6 Science",
+        "source_type": "curriculum_sample_seed"
+      },
+      "subject": "Science"
+    },
+    "retrieval_confidence": 1.0,
+    "source_lineage": {
+      "ingestion_method": "manual_structured_seed",
+      "page_or_section": "Food starter mapping",
+      "provenance_status": "sample_seed",
+      "publisher": "Maharashtra State Bureau of Textbook Production and Curriculum Research",
+      "source_reference": "Balbharti English Medium Class 6 Science",
+      "source_type": "curriculum_sample_seed"
+    }
+  },
+  "runtime_hash": "57f0be64dda0a2a7f8d1acca5a024eeab7f8382eeffd60cf47770ebea670ae6e",
+  "schema_version": "UNIGURU_RUNTIME_RESPONSE_CONTRACT_V1",
+  "trace_id": "14fc53010fd6456b",
+  "trust_state": {
+    "authority_pressure_score": 0.4346,
+    "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+    "trust_score": 0.3104
+  },
+  "uncertainty_state": {
+    "classification": "sample_seed_requires_review",
+    "preserved": true,
+    "score": 0.0
+  }
+}

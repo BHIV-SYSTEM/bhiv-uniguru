@@ -1,0 +1,677 @@
+[
+    {
+        "event_id": "f846a64c-ef35-49f0-8994-ca02766ac760",
+        "query": "What is the meaning of \u201c\u092c\u094d\u0930\u0939\u094d\u092e (Brahman)\u201d?",
+        "signals_used": 2,
+        "final_answer": "The meaning of \"\u092c\u094d\u0930\u0939\u094d\u092e (Brahman)\" refers to the Supreme or Ultimate Reality, which is described in the Upanishads as the absolute and imperishable essence of the universe [1]. It is also referred to as the non-qualified and non-relative Brahman, which is beyond the range of speech and the mind [2]. According to the texts, Brahman is the firm support and the inner essence of the universe, and it is attainable only through knowledge and realization.",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:37:09.769378+00:00"
+    },
+    {
+        "event_id": "0d3e7e19-2890-4ded-a27d-97a4612f1969",
+        "query": "Translate \u201c\u092e\u093e\u092f\u093e (Maya)\u201d.",
+        "signals_used": 1,
+        "final_answer": "Maya is translated to 'illusion' or 'delusion', but according to the context, it is defined as \"Indestructible, formless, one, seed of all the worlds, non-intelligent, all pervasive, a sakti, of the Perfect Ong, cause of the soul's body, senses and worlds, one of the three m.las, cause also of delusion\" [1]. In another context, Maya refers to the inscrutable power of performing miracles or supernatural knowledge [2].",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:37:22.166746+00:00"
+    },
+    {
+        "event_id": "a436c0f8-9495-49d8-8470-b4a51b33481c",
+        "query": "What is the main purpose of Puranas?",
+        "signals_used": 3,
+        "final_answer": "The main purpose of Puranas is to narrate the details of religious duties, accounts of various incidents, and anecdotes, and to bestow great merit on those who read and listen to them, as they are considered destructive of sins and provide a means to attain spiritual goals.",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:37:34.951164+00:00"
+    },
+    {
+        "event_id": "ba131240-5784-407e-ad49-12b005f22b1d",
+        "query": "Which texts give rules for society and behavior?",
+        "signals_used": 1,
+        "final_answer": "The scriptures mentioned in the text give rules for society and behavior, including pious activities, fame, sense gratification, truthfulness, self-control, peacefulness, law, order, morality, and political influence.",
+        "confidence": 0.4,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:37:48.594419+00:00"
+    },
+    {
+        "event_id": "0cc2bd3a-a5e2-49fd-b8ac-7fad7d04fe77",
+        "query": "Which texts talk about self-realization?",
+        "signals_used": 6,
+        "final_answer": "The texts that talk about self-realization are Tripura Rahasya [1] and The Narada-Purana [2]. These texts discuss the concept of realizing the Inner Self and its unity with the Universal Self, leading to the destruction of ignorance and attainment of peace and tranquillity.",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:38:01.472749+00:00"
+    },
+    {
+        "event_id": "cd70ffe2-5021-49db-91e8-2fac995d098b",
+        "query": "What is the meaning of \u201c\u0906\u0924\u094d\u092e\u093e (Atman)\u201d?",
+        "signals_used": 2,
+        "final_answer": "The meaning of \"\u0906\u0924\u094d\u092e\u093e (Atman)\" is described as the ultimate reality that is beyond all relativities of life, and is referred to as being devoid of existence, consciousness, and bliss, and is considered to be the eternal and unchanging Brahman, who is the Sanatana (eternal) Atman, and is also known as the Brahman alone.",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:38:18.166060+00:00"
+    },
+    {
+        "event_id": "0637b16f-b9cf-476a-967f-5c335c4c959f",
+        "query": "What does \u201c\u092f\u094b\u0917 (Yoga)\u201d mean?",
+        "signals_used": 2,
+        "final_answer": "According to the provided context [1], the word \"\u092f\u094b\u0917 (Yoga)\" means \"linking up\". It is described that unless we link ourselves with the Absolute Truth, we remain covered by the darkness of ignorance.",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:38:36.502250+00:00"
+    },
+    {
+        "event_id": "2ea0c53b-fdc0-4c82-a0ce-e0a2fb33b9af",
+        "query": "Translate \u201c\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903\u201d",
+        "signals_used": 1,
+        "final_answer": "Satyam vada translates to \"Speak the truth\". [1]",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:54:47.892885+00:00"
+    },
+    {
+        "event_id": "62409cfd-1e70-4938-893d-a4138ad6c775",
+        "query": "Name any one Upanishad.",
+        "signals_used": 2,
+        "final_answer": "The ISAVASYOPANISHAD",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:55:54.942990+00:00"
+    },
+    {
+        "event_id": "654a5bd5-a7f2-4300-b0d6-027addaa1fc2",
+        "query": "Which text is related to Ayurveda?",
+        "signals_used": 3,
+        "final_answer": "The texts related to Ayurveda mentioned in the provided context are:\n\n1. Charaka Samhita [1]\n2. Cikitsasthana [1]\n3. Rasayana [1]\n4. Ayurveda [2]",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:56:22.690927+00:00"
+    },
+    {
+        "event_id": "8073d130-fe20-4c55-927e-e3d8613e8321",
+        "query": "What type of text is the Kama Sutra?",
+        "signals_used": 3,
+        "final_answer": "The Kama Sutra is a scientific treatise on erotics [1], a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [2]. It is considered a masterly yet condensed version of the materials of the earlier tradition [1].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:56:48.217748+00:00"
+    },
+    {
+        "event_id": "7e0ce904-7935-4059-b6f3-5c8816d9a15b",
+        "query": "Which texts describe stories of gods and creation?",
+        "signals_used": 1,
+        "final_answer": "The texts that describe stories of gods and creation are the Valmiki-Ramayana and the Brahmanda Purana Part 4. The Valmiki-Ramayana mentions various gods and their interactions, while the Brahmanda Purana Part 4 discusses the creation of the cosmic egg and the activities of various gods and beings.",
+        "confidence": 0.5128938555717468,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:57:17.886238+00:00"
+    },
+    {
+        "event_id": "038eee71-4cda-4f02-8461-ca26b032bf48",
+        "query": "Name one Smriti text.",
+        "signals_used": 5,
+        "final_answer": "One Smriti text mentioned is the Brihaspati Smriti [1].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:57:42.641993+00:00"
+    },
+    {
+        "event_id": "d7e1d8e4-076c-4dcc-8536-336f90e6349a",
+        "query": "Translate \u201c\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903\u201d",
+        "signals_used": 1,
+        "final_answer": "1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:57:57.910935+00:00"
+    },
+    {
+        "event_id": "9b9ea24e-758a-4cbf-938b-e199d3388e74",
+        "query": "Translate \u201c\u0915\u0930\u094d\u092e \u0915\u0930\u094b\u201d",
+        "signals_used": 1,
+        "final_answer": "Satyam vada translates to \"Speak the truth\". [1]",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:58:45.438727+00:00"
+    },
+    {
+        "event_id": "a5a66a5d-b505-40ad-a015-879b112e4549",
+        "query": "Name any one Upanishad.",
+        "signals_used": 2,
+        "final_answer": "The Taittiriya Upanishad is one of the Upanishads mentioned in the provided context [2].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:59:14.681976+00:00"
+    },
+    {
+        "event_id": "68ff332d-e75c-4527-81e7-793b5e562c1d",
+        "query": "Name one text related to Dharma Shastra.",
+        "signals_used": 1,
+        "final_answer": "One text related to Dharma Shastra is the Brihaspati Smriti [2].",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T10:59:27.421128+00:00"
+    },
+    {
+        "event_id": "b575e5b5-2055-47e9-9847-225f80ae9f30",
+        "query": "Which text explains law and social rules?",
+        "signals_used": 1,
+        "final_answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+        "confidence": 0.39559823274612427,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:00:00.586323+00:00"
+    },
+    {
+        "event_id": "4bc14ce9-04c8-4ff5-9196-4a8f7cf482b0",
+        "query": "What type of text is the Kama Sutra?",
+        "signals_used": 3,
+        "final_answer": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [1][2]. It is considered a masterly and condensed version of the earlier tradition of Kama teachings [1].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:00:13.305483+00:00"
+    },
+    {
+        "event_id": "624961cf-b1e7-4341-8514-867b1fab26a3",
+        "query": "Name one Agama text.",
+        "signals_used": 7,
+        "final_answer": "One Agama text is the Sahasragama [1], which is the eighth in the series of ten Sivabheda-agamas.",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:00:41.636886+00:00"
+    },
+    {
+        "event_id": "9ae81ae4-3c25-4536-b909-7ed50645d02d",
+        "query": "Which text is related to Vedas?",
+        "signals_used": 6,
+        "final_answer": "The text related to Vedas is the Brahma Purana - Parts I-IV [1]. It mentions Vedangas, which are certain classes of works regarded as auxiliary to the Vedas [2].",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:00:51.211782+00:00"
+    },
+    {
+        "event_id": "fa5e3e2c-97d0-48dd-a3e2-5a6cab030fdd",
+        "query": "Which texts describe stories of gods and creation?",
+        "signals_used": 1,
+        "final_answer": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf, specifically in footnotes 243:1-243:12 and 393:1-393:2, which mention various gods and their roles, as well as the creation of the Milky Way.",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:01:17.295247+00:00"
+    },
+    {
+        "event_id": "62d2ea9d-05a9-49dc-9d18-3b34ebcfe5f0",
+        "query": "Name one Smriti text.",
+        "signals_used": 6,
+        "final_answer": "One Smriti text mentioned is the Narada Smriti.",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:01:44.451490+00:00"
+    },
+    {
+        "event_id": "660726c0-1470-4664-97d8-31e279c746c5",
+        "query": "Translate \u201c\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903\u201d",
+        "signals_used": 1,
+        "final_answer": "3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n28.\n29.\n30.\n31.\n32.\n33.\n33.\n34.\n35.\n36.\n37.\n38.\n39.\n40.\n41.\n42.\n43.\n44.\n45.\n46.\n47.\n48.\n49.\n50.\n51.\n52.\n53.\n53.\n54.\n55.\n56.\n57.\n58.\n59.\n60.\n61.\n62.\n63.\n64.\n65.\n66.\n67.\n68.\n69.\n70.\n71.\n72.\n73.\n74.\n75.\n76.\n77.\n78.\n79.\n80.\n81.\n82.\n83.\n84.\n85.\n86.\n87.\n88.\n89.\n90.\n91.\n92.\n93.\n94.\n95.\n96.\n97.\n98.\n99.\n100.\n101.\n102.\n103.\n104.\n105.\n106.\n107.\n108.\n109.\n110.\n111.\n112.\n113.\n114.\n115.\n116.\n117.\n118.\n119.\n120.\n121.\n122.\n123.\n124.\n125.\n126.\n127.\n128.\n129.\n130.\n131.\n132.\n133.\n134.\n135.\n136.\n137.\n138.\n139.\n140.\n141.\n142.\n143.\n144.\n145.\n146.\n147.\n148.\n149.\n150.\n151.\n152.\n153.\n153.\n154.\n155.\n156.\n157.\n158.\n159.\n160.\n161.\n162.\n163.\n164.\n165.\n166.\n167.\n168.\n169.\n170.\n171.\n172.\n173.\n174.\n175.\n176.\n177.\n178.\n179.\n180.\n181.\n182.\n183.\n184.\n185.\n186.\n187.\n188.\n189.\n190.\n191.\n192.\n193.\n194.\n195.\n196.\n197.\n198.\n199.\n200.\n201.\n202.\n203.\n204.\n205.\n206.\n207.\n208.\n209.\n210.\n211.\n212.\n213.\n214.\n215.\n216.\n217.\n218.\n219.\n220.\n221.\n222.\n223.\n224.\n225.\n226.\n227.\n228.\n229.\n230.\n231.\n232.\n233.\n234.\n235.\n236.\n237.\n238.\n239.\n240.\n241.\n242.\n243.\n244.\n245.\n246.\n247.\n248.\n249.\n250.\n251.\n252.\n253.\n254.\n255.\n256.\n257.\n258.\n259.\n260.\n261.\n262.\n263.\n264.\n265.\n266.\n267.\n268.\n269.\n270.\n271.\n272.\n273.\n274.\n275.\n276.\n277.\n278.\n279.\n280.\n281.\n282.\n283.\n284.\n285.\n286.\n287.\n283.\n288.\n289.\n290.\n291.\n292.\n293.\n294.\n295.\n296.\n297.\n298.\n299.\n300.\n301.\n302.\n303.\n304.\n305.\n306.\n307.\n308.\n309.\n310.\n311.\n312.\n313.\n314.\n315.\n316.\n317.\n318.\n319.\n320.\n321.\n322.\n323.\n324.\n325.\n326.\n327.\n328.\n329.\n330.\n331.\n332.\n333.\n334.\n335.\n336.\n337.\n338.\n339.\n340.\n341.\n341.\n342.\n343.\n344.\n345.\n346.\n347.\n348.\n349.\n350.\n351.\n352.\n353.\n354.\n355.\n356.\n357.\n357.\n358.\n359.\n360.\n361.\n362.\n363.\n364.\n365.\n366.\n367.\n368.\n369.\n370.\n371.\n372.\n373.\n374.\n375.\n376.\n377.\n378.\n379.\n380.\n381.\n382.\n383.\n384.\n385.\n386.\n387.\n388.\n389.\n390.\n391.\n392.\n393.\n384.\n394.\n395.",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:02:19.726792+00:00"
+    },
+    {
+        "event_id": "c703534f-340e-44ee-8cad-f71b019c4d3b",
+        "query": "Translate \u201c\u0915\u0930\u094d\u092e \u0915\u0930\u094b\u201d",
+        "signals_used": 1,
+        "final_answer": "\"\u0915\u0930\u094d\u092e \u0915\u0930\u094b\" translates to \"do your duty\" or \"perform your action\".",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:02:53.655014+00:00"
+    },
+    {
+        "event_id": "6ff0de1b-84c5-47e0-9b2c-4a02e7985f35",
+        "query": "What type of text is the Kama Sutra?",
+        "signals_used": 4,
+        "final_answer": "The Kama Sutra is a scientific treatise on erotics [1], a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [2]. It is considered a masterly and condensed version of the materials of the earlier tradition [1].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:03:31.757800+00:00"
+    },
+    {
+        "event_id": "5548b18c-06eb-4c61-821d-6da2e5915aa0",
+        "query": "What type of text is the Kama Sutra?",
+        "signals_used": 4,
+        "final_answer": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [1][2]. It is considered a masterly and condensed version of the materials of the earlier tradition [1].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:03:42.405204+00:00"
+    },
+    {
+        "event_id": "ba275c3a-557d-4dcf-b639-09498f764e12",
+        "query": "Which texts describe stories of gods and creation?",
+        "signals_used": 1,
+        "final_answer": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf. Footnotes 243:1-243:12 mention various gods such as Agni (the God of fire), Kuera (the God of riches), Siva, the Wind-God, the God of the sea, and the War-God, among others. Additionally, footnotes 393:1-393:2 mention Vishnu, Narayan, and the Milky Way, which are also related to the stories of gods and creation.",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:04:09.470511+00:00"
+    },
+    {
+        "event_id": "2bca4966-9621-401f-8f3c-97f73a521a44",
+        "query": "Which texts describe stories of gods and creation?",
+        "signals_used": 1,
+        "final_answer": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf. Specifically, footnotes 243:1-243:12 mention various gods such as Agni (the God of fire), Kuera (the God of riches), Siva, and others, which are associated with Hindu mythology and creation stories. Additionally, footnotes 393:1-393:2 mention Vishnu, the God of the Three Steps, and Narayan, which are also associated with Hindu mythology and creation stories.",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:04:22.902888+00:00"
+    },
+    {
+        "event_id": "4e844fd2-2fb7-4cbb-8678-b43154e26242",
+        "query": "Translate \u201c\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903\u201d",
+        "signals_used": 1,
+        "final_answer": "3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n28.\n29.\n30.\n31.\n32.\n33.\n34.\n35.\n36.\n37.\n38.\n39.\n40.\n41.\n42.\n43.\n44.\n45.\n46.\n47.\n48.\n49.\n50.\n51.\n52.\n53.\n54.\n55.\n56.\n57.\n58.\n59.\n60.\n61.\n62.\n63.\n64.\n65.\n66.\n67.\n68.\n69.\n70.\n71.\n71.\n72.\n73.\n74.\n75.\n76.\n77.\n78.\n79.\n80.\n81.\n82.\n83.\n84.\n85.\n86.\n87.\n87.\n88.\n89.\n90.\n91.\n92.\n93.\n94.\n95.\n96.\n97.\n98.\n99.\n100.\n101.\n102.\n103.\n104.\n105.\n106.\n107.\n108.\n109.\n110.\n111.\n112.\n113.\n114.\n115.\n116.\n117.\n118.\n119.\n120.\n121.\n122.\n123.\n124.\n125.\n126.\n127.\n128.\n129.\n130.\n131.\n132.\n133.\n134.\n135.\n136.\n137.\n138.\n139.\n140.\n141.\n142.\n143.\n144.\n145.\n146.\n147.\n148.\n149.\n150.\n151.\n152.\n153.\n154.\n155.\n156.\n157.\n158.\n159.\n160.\n161.\n162.\n163.\n164.\n165.\n166.\n167.\n168.\n169.\n170.\n171.\n172.\n173.\n174.\n175.\n176.\n177.\n178.\n179.\n180.\n181.\n182.\n183.\n184.\n185.\n186.\n187.\n188.\n189.\n190.\n191.\n192.\n193.\n194.\n195.\n196.\n197.\n198.\n199.\n200.\n201.\n202.\n203.\n204.\n205.\n206.\n207.\n208.\n209.\n210.\n211.\n212.\n213.\n214.\n215.\n216.\n217.\n218.\n219.\n220.\n221.\n222.\n223.\n224.\n225.\n226.\n227.\n228.\n229.\n230.\n231.\n232.\n233.\n234.\n235.\n236.\n237.\n238.\n239.\n240.\n241.\n242.\n243.\n244.\n245.\n246.\n247.\n248.\n249.\n250.\n251.\n252.\n253.\n254.\n255.\n256.\n257.\n258.\n259.\n260.\n261.\n262.\n263.\n264.\n265.\n266.\n267.\n268.\n269.\n270.\n271.\n272.\n273.\n274.\n275.\n276.\n277.\n278.\n279.\n280.\n281.\n282.\n283.\n284.\n285.\n286.\n287.\n288.\n289.\n290.\n291.\n292.\n293.\n284.\n294.\n295.\n296.\n297.\n298.\n299.\n300.\n301.\n302.\n303.\n304.\n305.\n306.\n307.\n308.\n309.\n310.\n311.\n312.\n313.\n314.\n315.\n316.\n317.\n318.\n319.\n320.\n321.\n322.\n323.\n324.\n325.\n326.\n327.\n328.\n329.\n330.\n331.\n332.\n333.\n334.\n335.\n336.\n337.\n338.\n339.\n340.\n341.\n342.\n343.\n344.\n345.\n346.\n347.\n348.\n349.\n350.\n351.\n352.\n353.\n354.\n355.\n356.\n357.\n358.\n359.\n360.\n361.\n362.\n363.\n364.\n365.\n366.\n367.\n368.\n369.\n370.\n371.\n372.\n373.\n373.\n374.\n375.\n376.\n377.\n378.\n379.\n380.\n381.\n382.\n383.\n384.\n385.\n384.\n386.\n387.\n388.\n389.\n390.\n391.\n392.\n393.\n394.\n395.\n396.\n397.",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:04:46.485557+00:00"
+    },
+    {
+        "event_id": "3e2ea14c-d88a-43c1-ac70-240b1d3ccc6e",
+        "query": "Which text is related to Vedas?",
+        "signals_used": 6,
+        "final_answer": "The text related to Vedas is the Brahma Purana - Parts I-IV [1], specifically mentioning \"auxiliary to those mentioned in the Vedas\" in section 32.",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:04:49.556388+00:00"
+    },
+    {
+        "event_id": "b169f050-b9cf-4cf6-b4f6-045372404f35",
+        "query": "Translate \u201c\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903\u201d",
+        "signals_used": 1,
+        "final_answer": "1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:04:59.366754+00:00"
+    },
+    {
+        "event_id": "7052b2f4-1a78-42e6-91ae-991d51afeae6",
+        "query": "Name one text related to Dharma Shastra.",
+        "signals_used": 2,
+        "final_answer": "One text related to Dharma Shastra is the Brihaspati Smriti [2].",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:06:06.313888+00:00"
+    },
+    {
+        "event_id": "c37c9323-913c-4964-bc1e-72c7d4a8b69e",
+        "query": "Which text explains law and social rules?",
+        "signals_used": 1,
+        "final_answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:06:14.075165+00:00"
+    },
+    {
+        "event_id": "e1823681-f13f-44a8-a9c3-bab2a76d85fa",
+        "query": "Name one Agama text.",
+        "signals_used": 7,
+        "final_answer": "The Sahasragama is one of the Agama texts, specifically the eighth in the series of ten Sivabheda-agamas [1].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:06:40.689469+00:00"
+    },
+    {
+        "event_id": "653e9168-c81b-456b-9cc2-f8277e22df2c",
+        "query": "Which text is related to Vedas?",
+        "signals_used": 6,
+        "final_answer": "The text related to Vedas is the Vedangas [2].",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:06:53.056794+00:00"
+    },
+    {
+        "event_id": "e892fbf0-e844-4625-acff-46d5180ba4d6",
+        "query": "Name any one Upanishad.",
+        "signals_used": 2,
+        "final_answer": "The Taittiriya Upanishad [1], [2].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:15:27.676307+00:00"
+    },
+    {
+        "event_id": "1fa9ecea-8a89-40a8-895d-a349709fbc03",
+        "query": "Name any one Upanishad.",
+        "signals_used": 2,
+        "final_answer": "The Taittiriya Upanishad [1], [2].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:18:30.369103+00:00"
+    },
+    {
+        "event_id": "22a676e8-1603-4a6a-b003-77f17da56773",
+        "query": "Which text is related to Ayurveda?",
+        "signals_used": 4,
+        "final_answer": "The texts related to Ayurveda mentioned in the provided context are:\n\n1. Charaka Samhita [1]\n2. Cikitsasthana [1]\n3. Rasayana [1]\n4. Ayurveda [2]\n\nThese texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, principles, and practices.",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:18:37.005277+00:00"
+    },
+    {
+        "event_id": "e46e623e-07d1-4da3-97c5-9b42a2d869f5",
+        "query": "Name any one Upanishad.",
+        "signals_used": 2,
+        "final_answer": "The Taittiriya Upanishad is one of the Upanishads mentioned in the provided context.",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:18:38.544943+00:00"
+    },
+    {
+        "event_id": "0fe3c6d0-2178-46ca-95b6-08d33fbd480d",
+        "query": "What type of text is the Kama Sutra?",
+        "signals_used": 4,
+        "final_answer": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [1][2]. It is a masterly yet condensed version of the materials of the earlier tradition, and its spirit and method in approaching the problem of procreation are astonishingly modern [1].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:18:44.637579+00:00"
+    },
+    {
+        "event_id": "bbe4919e-f955-4b4d-a587-e7d3e42f0787",
+        "query": "Which text is related to Ayurveda?",
+        "signals_used": 4,
+        "final_answer": "The texts related to Ayurveda mentioned in the provided context are:\n\n1. Charaka Samhita [1]\n2. Cikitsasthana [1]\n3. Rasayana [1]\n4. Ayurveda [2]\n\nThese texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, therapeutic management of diseases, and pharmaceutical preparations.",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:18:52.852692+00:00"
+    },
+    {
+        "event_id": "d138a4e3-1967-4d5b-990e-ef23928636dd",
+        "query": "Which texts describe stories of gods and creation?",
+        "signals_used": 1,
+        "final_answer": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf. Specifically, they mention the following gods and their roles:\n\n- Agni, the God of fire [1]\n- Kuera, the God of riches [2]\n- Surya, the Sun [3]\n- Brahma, the creator [4]\n- Siva [5]\n- Vayu, the Wind-God [6]\n- Varuna, the God of the sea [7]\n- The eight Vasus, a class of demi-gods [8]\n- The Vedas, the holiest text of the Vedas, deified [9]\n- Vasuki, a serpent deity [10]\n- Garuda, a bird-like deity [11]\n- Kartikeya, the War-God [12]\n\nThese texts also mention other mythological beings and concepts, such as the three steps of Vishnu [13] and the Milky Way [14].",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:19:04.781651+00:00"
+    },
+    {
+        "event_id": "a124d28d-3469-490c-af41-b22d3664cf4f",
+        "query": "What type of text is the Kama Sutra?",
+        "signals_used": 4,
+        "final_answer": "The Kama Sutra is a scientific treatise on erotics [1], a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [2]. It is considered a masterly yet condensed version of the earlier tradition of Kama teachings [1].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:19:16.726464+00:00"
+    },
+    {
+        "event_id": "505c5108-7bfb-42cf-83fa-25aa70ccdf16",
+        "query": "Which texts describe stories of gods and creation?",
+        "signals_used": 1,
+        "final_answer": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf. Footnotes 243:1-243:4 mention various gods and their roles, such as Agni (the God of fire), Kuera (the God of riches), the Sun, and Brahma (the creator). Additionally, footnotes 243:5-243:12 list various gods and their roles, including Siva, the Wind-God, the God of the sea, and the War-God.",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:19:32.292904+00:00"
+    },
+    {
+        "event_id": "411581dc-4615-4eb6-b8b7-6c53a89b4d2d",
+        "query": "Translate \u201c\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903\u201d",
+        "signals_used": 1,
+        "final_answer": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n17\n18\n19\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n53\n54\n55\n55\n56\n57\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n67\n68\n69\n70\n71\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n87\n88\n89\n90\n91\n91\n92\n93\n93\n94\n95\n96\n97\n98\n99\n100\n101\n102\n103\n104\n105\n106\n107\n108\n109\n110\n111\n112\n113\n114\n115\n116\n117\n118\n119\n120\n121\n122\n123\n124\n125\n126\n127\n128\n129\n130\n131\n132\n133\n134\n135\n136\n137\n138\n139\n140\n141\n142\n143\n143\n144\n145\n146\n147\n148\n149\n150\n151\n152\n153\n153\n154\n155\n156\n157\n158\n159\n160\n161\n162\n163\n164\n165\n166\n167\n168\n169\n170\n171\n172\n173\n174\n175\n176\n177\n178\n179\n180\n181\n182\n183\n184\n185\n186\n187\n188\n189\n190\n191\n192\n193\n194\n195\n196\n197\n198\n199\n200\n201\n202\n203\n204\n205\n206\n207\n208\n209\n210\n211\n212\n213\n214\n215\n216\n217\n218\n219\n220\n221\n222\n223\n224\n225\n226\n227\n228\n229\n230\n231\n232\n233\n233\n234\n235\n236\n237\n238\n239\n240\n241\n242\n243\n244\n245\n246\n247\n248\n249\n250\n251\n252\n253\n254\n255\n256\n257\n258\n259\n260\n261\n262\n263\n264\n265\n266\n267\n268\n269\n270\n271\n272\n273\n274\n275\n276\n277\n278\n279\n280\n281\n282\n283\n284\n285\n286\n287\n288\n289\n290\n291\n292\n293\n294\n295\n295\n296\n297\n298\n299\n300\n301\n302\n303\n304\n305\n306\n307\n308\n309\n310\n311\n312\n313\n314\n315\n316\n317\n318\n319\n320\n321\n322\n323\n324\n325\n326\n327\n328\n329\n330\n331\n332\n333\n334\n335\n336\n337\n338\n339\n340\n341\n341\n342\n343\n343\n344\n345\n346\n347\n348\n349\n350\n351\n352\n353\n354\n355\n356\n357\n358\n359\n360\n361\n362\n363\n364\n365\n366\n367\n368\n369\n370\n371\n372\n373\n373\n374\n375\n376\n377\n378\n379\n380\n381\n382\n383",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:19:45.274161+00:00"
+    },
+    {
+        "event_id": "0c60abf4-eb38-482a-a28b-cfebb4838330",
+        "query": "Translate \u201c\u0915\u0930\u094d\u092e \u0915\u0930\u094b\u201d",
+        "signals_used": 1,
+        "final_answer": "The translation of \"\u0915\u0930\u094d\u092e \u0915\u0930\u094b\" is \"do your work\" or \"perform your duty\".",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:20:01.758526+00:00"
+    },
+    {
+        "event_id": "c52767bc-e4e4-4331-a20d-c671b5b71641",
+        "query": "Translate \u201c\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903\u201d",
+        "signals_used": 1,
+        "final_answer": "3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n28.\n29.\n30.\n31.\n32.\n33.\n33.\n34.\n35.\n36.\n37.\n38.\n39.\n40.\n41.\n42.\n43.\n44.\n45.\n46.\n47.\n48.\n49.\n50.\n51.\n52.\n53.\n53.\n54.\n55.\n56.\n57.\n58.\n59.\n60.\n61.\n62.\n63.\n64.\n65.\n66.\n67.\n68.\n69.\n70.\n71.\n72.\n73.\n74.\n75.\n76.\n77.\n78.\n79.\n80.\n81.\n82.\n83.\n84.\n85.\n86.\n87.\n87.\n88.\n89.\n90.\n91.\n92.\n93.\n94.\n95.\n96.\n97.\n98.\n99.\n100.\n101.\n102.\n103.\n104.\n105.\n106.\n107.\n108.\n109.\n110.\n111.\n112.\n113.\n114.\n115.\n116.\n117.\n118.\n119.\n120.\n121.\n122.\n123.\n124.\n125.\n126.\n127.\n128.\n129.\n130.\n131.\n132.\n133.\n134.\n135.\n136.\n137.\n138.\n139.\n140.\n141.\n142.\n143.\n143.\n144.\n145.\n145.\n146.\n147.\n148.\n149.\n150.\n151.\n152.\n153.\n154.\n155.\n156.\n157.\n158.\n159.\n160.\n161.\n162.\n163.\n164.\n165.\n166.\n167.\n168.\n169.\n170.\n171.\n172.\n173.\n174.\n175.\n176.\n177.\n178.\n179.\n180.\n181.\n182.\n183.\n184.\n185.\n186.\n187.\n188.\n189.\n190.\n191.\n192.\n193.\n194.\n195.\n196.\n197.\n198.\n199.\n200.\n201.\n202.\n203.\n204.\n205.\n206.\n207.\n208.\n209.\n210.\n211.\n212.\n213.\n214.\n215.\n216.\n217.\n218.\n219.\n220.\n221.\n222.\n223.\n224.\n225.\n226.\n227.\n228.\n229.\n230.\n231.\n232.\n233.\n234.\n235.\n236.\n237.\n238.\n239.\n240.\n241.\n242.\n243.\n244.\n245.\n246.\n247.\n248.\n249.\n250.\n251.\n252.\n253.\n254.\n255.\n256.\n257.\n258.\n259.\n260.\n261.\n262.\n263.\n264.\n265.\n266.\n267.\n268.\n269.\n270.\n271.\n272.\n273.\n274.\n275.\n276.\n277.\n278.\n279.\n280.\n281.\n282.\n283.\n284.\n285.\n286.\n287.\n288.\n289.\n290.\n291.\n292.\n293.\n294.\n295.\n296.\n297.\n298.\n299.\n300.\n301.\n302.\n303.\n304.\n305.\n306.\n307.\n308.\n309.\n310.\n311.\n312.\n313.\n314.\n315.\n316.\n317.\n318.\n319.\n320.\n321.\n322.\n323.\n324.\n325.\n326.\n327.\n328.\n329.\n330.\n331.\n332.\n333.\n334.\n335.\n336.\n337.\n338.\n339.\n340.\n341.\n341.\n342.\n343.\n344.\n345.\n346.\n347.\n348.\n349.\n350.\n351.\n352.\n353.\n354.\n355.\n356.\n357.\n358.\n359.\n360.\n361.\n362.\n363.\n364.\n365.\n366.\n367.\n368.\n369.\n370.\n371.\n372.\n373.\n374.\n375.\n376.\n377.\n378.\n379.\n380.\n381.\n382.\n383.\n384.\n385.\n386.\n387.\n388.\n389.\n390.\n391.\n392.\n393.\n384.\n395.\n396.",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:20:11.590311+00:00"
+    },
+    {
+        "event_id": "491a586d-d8a5-4d81-8793-cda1a6ca82ba",
+        "query": "Name one text related to Dharma Shastra.",
+        "signals_used": 2,
+        "final_answer": "One text related to Dharma Shastra is the Brihaspati Smriti [2].",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:20:32.241406+00:00"
+    },
+    {
+        "event_id": "1396950b-9623-4a4f-9dac-2ba7cee32e73",
+        "query": "Which text explains law and social rules?",
+        "signals_used": 1,
+        "final_answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:20:41.590870+00:00"
+    },
+    {
+        "event_id": "b9fab296-d292-4f09-ac7f-e8ae39e313e1",
+        "query": "Name one Agama text.",
+        "signals_used": 7,
+        "final_answer": "One Agama text mentioned is the Sahasragama [1], [2].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:20:52.968399+00:00"
+    },
+    {
+        "event_id": "c37adfc3-8f33-4a23-815b-2378da4c265e",
+        "query": "Which text is related to Vedas?",
+        "signals_used": 6,
+        "final_answer": "The text related to Vedas is the Brahma Purana - Parts I-IV [1]. It mentions Vedangas, which are certain classes of works regarded as auxiliary to the Vedas [2].",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:21:00.718644+00:00"
+    },
+    {
+        "event_id": "ba6a1318-465e-47b7-8dc6-e0d5d0bb6169",
+        "query": "Name any one Upanishad.",
+        "signals_used": 2,
+        "final_answer": "The Taittiriya Upanishad [1] and the Isavasya Upanishad [2] are mentioned in the provided context.",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:21:57.621875+00:00"
+    },
+    {
+        "event_id": "459500c5-b761-4520-b43a-44069a5d733b",
+        "query": "What type of text is the Kama Sutra?",
+        "signals_used": 4,
+        "final_answer": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [1, 2]. It is a masterly yet condensed version of the materials of the earlier tradition on the subject of love and relationships [1]. The text approaches the subject with objectivity, understanding, and balanced thinking, making it a serious and scientific composition [2].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:22:55.453544+00:00"
+    },
+    {
+        "event_id": "31294ea7-9587-489c-857c-5433f9944050",
+        "query": "Which texts describe stories of gods and creation?",
+        "signals_used": 1,
+        "final_answer": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf. Footnotes 243:1-243:12 mention various gods, such as Agni (the God of fire), Siva, the Wind-God, the God of the sea, and the War-God, among others. Additionally, footnotes 393:1-393:2 mention Vishnu, the God of the Three Steps, and Narayan, who is also referred to as Vishnu. These references suggest that the texts are drawing from Hindu mythology and the creation stories of the Vedas.",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:23:09.076019+00:00"
+    },
+    {
+        "event_id": "62465d6e-901a-4946-8473-03fac229f2cd",
+        "query": "Name one Smriti text.",
+        "signals_used": 6,
+        "final_answer": "One Smriti text mentioned is the Brihaspati Smriti [1].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:23:21.480160+00:00"
+    },
+    {
+        "event_id": "00d28faf-ea6c-4677-9933-f28b29324dfe",
+        "query": "Translate \u201c\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903\u201d",
+        "signals_used": 1,
+        "final_answer": "3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n28.\n29.\n30.\n31.\n32.\n33.\n34.\n35.\n36.\n37.\n38.\n39.\n40.\n41.\n42.\n43.\n44.\n45.\n46.\n47.\n48.\n49.\n50.\n51.\n52.\n53.\n54.\n55.\n56.\n57.\n58.\n59.\n60.\n61.\n62.\n63.\n64.\n65.\n66.\n67.\n68.\n69.\n70.\n71.\n71.\n72.\n73.\n74.\n75.\n76.\n77.\n78.\n79.\n80.\n81.\n82.\n83.\n84.\n85.\n86.\n87.\n87.\n88.\n89.\n90.\n91.\n92.\n93.\n94.\n95.\n96.\n97.\n98.\n99.\n100.\n101.\n102.\n103.\n104.\n105.\n106.\n107.\n108.\n109.\n110.\n111.\n112.\n113.\n114.\n115.\n116.\n117.\n118.\n119.\n120.\n121.\n122.\n123.\n124.\n125.\n126.\n127.\n128.\n129.\n130.\n131.\n132.\n133.\n134.\n135.\n136.\n137.\n138.\n139.\n140.\n141.\n142.\n143.\n144.\n145.\n146.\n147.\n148.\n149.\n150.\n151.\n152.\n153.\n154.\n155.\n156.\n157.\n158.\n159.\n160.\n161.\n162.\n163.\n164.\n165.\n166.\n167.\n168.\n169.\n170.\n171.\n172.\n173.\n174.\n175.\n176.\n177.\n178.\n179.\n180.\n181.\n182.\n183.\n184.\n185.\n186.\n187.\n188.\n189.\n190.\n191.\n192.\n193.\n194.\n195.\n196.\n197.\n198.\n199.\n200.\n201.\n202.\n203.\n204.\n205.\n206.\n207.\n208.\n209.\n210.\n211.\n212.\n213.\n214.\n215.\n216.\n217.\n218.\n219.\n220.\n221.\n222.\n223.\n224.\n225.\n226.\n227.\n228.\n229.\n230.\n231.\n232.\n233.\n234.\n235.\n236.\n237.\n238.\n239.\n240.\n241.\n242.\n243.\n244.\n245.\n246.\n247.\n248.\n249.\n250.\n251.\n252.\n253.\n254.\n255.\n256.\n257.\n258.\n259.\n260.\n261.\n262.\n263.\n264.\n265.\n266.\n267.\n268.\n269.\n270.\n271.\n272.\n273.\n274.\n275.\n276.\n277.\n278.\n279.\n280.\n281.\n282.\n283.\n284.\n285.\n286.\n287.\n288.\n289.\n290.\n291.\n292.\n293.\n284.\n295.\n296.\n297.\n298.\n299.\n300.\n301.\n302.\n303.\n304.\n305.\n306.\n307.\n308.\n309.\n310.\n311.\n312.\n313.\n314.\n315.\n316.\n317.\n318.\n319.\n320.\n321.\n322.\n323.\n324.\n325.\n326.\n327.\n328.\n329.\n330.\n331.\n332.\n333.\n334.\n335.\n336.\n337.\n338.\n339.\n340.\n341.\n342.\n343.\n334.\n345.\n346.\n347.\n348.\n349.\n350.\n351.\n352.\n353.\n354.\n355.\n356.\n357.\n358.\n359.\n360.\n361.\n362.\n363.\n364.\n365.\n366.\n367.\n368.\n369.\n370.\n371.\n372.\n373.\n374.\n375.\n376.\n377.\n378.\n379.\n380.\n381.\n382.\n383.\n384.\n385.\n386.\n387.\n388.\n389.\n390.\n391.\n392.\n393.\n394.\n395.\n396.\n397.\n398.\n399.\n400.",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:23:35.471605+00:00"
+    },
+    {
+        "event_id": "string",
+        "query": "What is the opposite of Ahimsa?",
+        "signals_used": 1,
+        "final_answer": "According to the Narada-Purana [1], the opposite of Ahimsa (Non-Violence) is not explicitly mentioned. However, it can be inferred that the opposite of Ahimsa is Adharma (unrighteousness) or Himsa (violence), which is mentioned in the context of Ahimsa being the bestower of Yogic achievements.",
+        "confidence": 0.5604461431503296,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:27:44.343051+00:00"
+    },
+    {
+        "event_id": "f74f3695-0411-4838-9ad0-fdf8c30937d1",
+        "query": "Name any one Upanishad.",
+        "signals_used": 2,
+        "final_answer": "The Taittiriya Upanishad [1], [2] is one of the Upanishads mentioned in the provided context.",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:35:41.345292+00:00"
+    },
+    {
+        "event_id": "ee218c2e-32bf-426a-b1da-312b79b2eb82",
+        "query": "Which text is related to Ayurveda?",
+        "signals_used": 4,
+        "final_answer": "The texts related to Ayurveda mentioned in the provided context are:\n\n1. Charaka Samhita [1]\n2. Cikitsasthana [1]\n3. Nidanasthana [1]\n4. Kalpasthana [1]\n5. Ayurveda [2]\n\nThese texts are part of the Ayurvedic tradition and contain information on various aspects of Ayurveda, including its history, therapeutic management of diseases, and pharmaceutical preparations.",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:35:53.765221+00:00"
+    },
+    {
+        "event_id": "27629d20-8856-4286-bddf-7fd8125c3077",
+        "query": "What type of text is the Kama Sutra?",
+        "signals_used": 4,
+        "final_answer": "The Kama Sutra is a scientific treatise on erotics, a comprehensive and formal exposition of a particular science in dogmatic enunciations accompanied by a discussion [1][2]. It is considered a masterly yet condensed version of the materials of the earlier tradition [1]. The text approaches the subject of love and sex as a part of humanity with objectivity, understanding, and balanced thinking [2].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:36:06.192134+00:00"
+    },
+    {
+        "event_id": "e0ad2287-589a-4803-a5fe-26741bcc11a7",
+        "query": "Which texts describe stories of gods and creation?",
+        "signals_used": 1,
+        "final_answer": "The texts describe stories of gods and creation in the footnotes of the Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf [1] and [2]. \n\nFootnotes 243:1-243:4 mention various gods such as Agni (The God of fire), Kuera (The God of riches), Surya (The Sun), and Brahma (The creator). \n\nAdditionally, footnotes 393:1-393:2 mention Vishnu (The God of the Three Steps) and Narayan (He who moved upon the waters), which are also related to the creation myth.",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:36:18.692865+00:00"
+    },
+    {
+        "event_id": "8387c330-9064-4890-9f54-ba63b5054974",
+        "query": "Name one Smriti text.",
+        "signals_used": 6,
+        "final_answer": "One Smriti text mentioned is the Brihaspati Smriti [1].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:36:31.002053+00:00"
+    },
+    {
+        "event_id": "eefec1ed-fd99-4f3c-a317-54fc299b96c2",
+        "query": "Translate \u201c\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903\u201d",
+        "signals_used": 1,
+        "final_answer": "3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n28.\n29.\n30.\n31.\n32.\n33.\n33.\n34.\n35.\n36.\n37.\n38.\n39.\n40.\n41.\n42.\n43.\n44.\n45.\n46.\n47.\n48.\n49.\n50.\n51.\n52.\n53.\n53.\n54.\n55.\n56.\n57.\n58.\n59.\n60.\n61.\n62.\n63.\n64.\n65.\n66.\n67.\n68.\n69.\n70.\n71.\n72.\n73.\n74.\n75.\n76.\n77.\n78.\n79.\n80.\n81.\n82.\n83.\n84.\n85.\n86.\n87.\n87.\n88.\n89.\n90.\n91.\n92.\n93.\n94.\n95.\n96.\n97.\n98.\n99.\n100.\n101.\n102.\n103.\n104.\n105.\n106.\n107.\n108.\n109.\n110.\n111.\n112.\n113.\n114.\n115.\n116.\n117.\n118.\n119.\n120.\n121.\n122.\n123.\n124.\n125.\n126.\n127.\n128.\n129.\n130.\n131.\n132.\n133.\n134.\n135.\n136.\n137.\n138.\n139.\n140.\n141.\n142.\n143.\n143.\n144.\n145.\n145.\n146.\n147.\n148.\n149.\n150.\n151.\n152.\n153.\n154.\n155.\n156.\n157.\n158.\n159.\n160.\n161.\n162.\n163.\n164.\n165.\n166.\n167.\n168.\n169.\n170.\n171.\n172.\n173.\n174.\n175.\n176.\n177.\n178.\n179.\n180.\n181.\n182.\n183.\n184.\n185.\n186.\n187.\n188.\n189.\n190.\n191.\n192.\n193.\n194.\n195.\n196.\n197.\n198.\n199.\n200.\n201.\n202.\n203.\n204.\n205.\n206.\n207.\n208.\n209.\n210.\n211.\n212.\n213.\n214.\n215.\n216.\n217.\n218.\n219.\n220.\n221.\n222.\n223.\n224.\n225.\n226.\n227.\n228.\n229.\n230.\n231.\n232.\n233.\n234.\n235.\n236.\n237.\n238.\n239.\n240.\n241.\n242.\n243.\n244.\n245.\n246.\n247.\n248.\n249.\n250.\n251.\n252.\n253.\n254.\n255.\n256.\n257.\n258.\n259.\n260.\n261.\n262.\n263.\n264.\n265.\n266.\n267.\n268.\n269.\n270.\n271.\n272.\n273.\n274.\n275.\n276.\n277.\n278.\n279.\n280.\n281.\n282.\n283.\n284.\n285.\n286.\n287.\n288.\n289.\n290.\n291.\n292.\n293.\n294.\n295.\n296.\n297.\n298.\n299.\n300.\n301.\n302.\n303.\n304.\n305.\n306.\n307.\n308.\n309.\n310.\n311.\n312.\n313.\n314.\n315.\n316.\n317.\n318.\n319.\n320.\n321.\n322.\n323.\n324.\n325.\n326.\n327.\n328.\n329.\n330.\n331.\n332.\n333.\n334.\n335.\n336.\n337.\n338.\n339.\n340.\n341.\n341.\n342.\n343.\n344.\n345.\n346.\n347.\n348.\n349.\n350.\n351.\n352.\n353.\n354.\n355.\n356.\n357.\n358.\n359.\n360.\n361.\n362.\n363.\n364.\n365.\n366.\n367.\n368.\n369.\n370.\n371.\n372.\n373.\n374.\n375.\n376.\n377.\n378.\n379.\n380.\n381.\n382.\n383.\n383.\n384.\n385.\n386.\n387.\n388.\n389.\n390.\n391.\n392.\n393.\n394.\n395.",
+        "confidence": 0.5,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:36:44.760788+00:00"
+    },
+    {
+        "event_id": "fc1a11e1-3584-4aa5-bfcf-d93a21ad389c",
+        "query": "Translate \u201c\u0915\u0930\u094d\u092e \u0915\u0930\u094b\u201d",
+        "signals_used": 1,
+        "final_answer": "\"\u0915\u0930\u094d\u092e \u0915\u0930\u094b\" translates to \"do the work\" or \"perform the action\".",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:36:58.601777+00:00"
+    },
+    {
+        "event_id": "2e4503d3-00a6-487e-87aa-36c072e7fa90",
+        "query": "Name one text related to Dharma Shastra.",
+        "signals_used": 2,
+        "final_answer": "One text related to Dharma Shastra is the Brihaspati Smriti [2].",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:37:10.955068+00:00"
+    },
+    {
+        "event_id": "7e1d5f74-7ea4-4324-b34a-1fe62b8aa2ba",
+        "query": "Which text explains law and social rules?",
+        "signals_used": 1,
+        "final_answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+        "confidence": 1.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:37:23.198069+00:00"
+    },
+    {
+        "event_id": "e50bd4ed-4afc-4cd9-9c31-24d063fa5d3a",
+        "query": "Name one Agama text.",
+        "signals_used": 7,
+        "final_answer": "One Agama text mentioned in the context is the Sahasragama [1], [2].",
+        "confidence": 0.25,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:37:35.586871+00:00"
+    },
+    {
+        "event_id": "ee39d7d0-1c25-4745-8434-9ad43af08ecb",
+        "query": "Which text is related to Vedas?",
+        "signals_used": 6,
+        "final_answer": "The text related to Vedas is the Brahma Purana - Parts I-IV_ocred.pdf, specifically mentioning \"Vedangas\" which are certain classes of works regarded as auxiliary to the Vedas [1].",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:37:47.876511+00:00"
+    },
+    {
+        "event_id": "020b7e3d-22ee-4ba4-901e-170f10c15cf5",
+        "query": "How is disease defined in Charaka Samhita?",
+        "signals_used": 1,
+        "final_answer": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+        "confidence": 0.6061035394668579,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:38:00.388811+00:00"
+    },
+    {
+        "event_id": "15024eb0-4cac-48dc-8ac5-d89b162c0a61",
+        "query": "Which text discusses both law and punishment systems?",
+        "signals_used": 2,
+        "final_answer": "Both Manu Samhita [1] and Yajnavalkya Samhita [2] discuss law and punishment systems. Manu Samhita outlines the measures of punishment for repeat offenders and the enumeration of weights and measures, while Yajnavalkya Samhita describes the responsibility of individuals who commit crimes and the punishment for various offenses.",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:38:12.967466+00:00"
+    },
+    {
+        "event_id": "8b0c19a3-2b36-4efb-a08a-469527c5900c",
+        "query": "How do Agamas differ from Vedas?",
+        "signals_used": 2,
+        "final_answer": "According to the provided context, Agamas differ from Vedas in several ways. Firstly, while Vedas are restricted to the three varnas, Agamas are open to all. Secondly, Vedas consist of three parts - Stotras, Braihmanas, and Aranyakas, whereas Agamas consist of four divisions - Carya, Kriya, Yoga, and Jnana. Additionally, Agamas proclaim that Siva is the only god that exists, whereas Vedas pray to many gods. Lastly, Agamas are mostly in the form of verses, whereas Vedas are mostly in the form of aphorisms [1].",
+        "confidence": 0.3333333333333333,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:38:25.472005+00:00"
+    },
+    {
+        "event_id": "ca8099a0-e945-48df-a2da-87edb84bc7c8",
+        "query": "How does the Taittiriya Upanishad explain Brahman?",
+        "signals_used": 1,
+        "final_answer": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+        "confidence": 0.6858912706375122,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-04-30T11:38:37.957566+00:00"
+    },
+    {
+        "event_id": "mitra-local-new-query-001",
+        "query": "What is the significance of the Bhagavad Gita?",
+        "signals_used": 0,
+        "final_answer": "I do not have verified knowledge to answer this question.",
+        "confidence": 0.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-06-25T08:51:46.140721+00:00"
+    },
+    {
+        "event_id": "mitra-live-new-query-001",
+        "query": "What is the significance of the Bhagavad Gita?",
+        "signals_used": 0,
+        "final_answer": "I do not have verified knowledge to answer this question.",
+        "confidence": 0.0,
+        "system_path": "/new_query_6phase_pipeline",
+        "timestamp": "2026-06-25T09:00:51.033264+00:00"
+    }
+]

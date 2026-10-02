@@ -11,6 +11,8 @@ RUN pip install --no-cache-dir -r /app/backend/requirements.txt
 
 COPY . /app
 
+RUN python /app/backend/scripts/build_rag_index.py
+
 EXPOSE 8000
 
 CMD ["sh", "-c", "uvicorn service.api:app --host ${UNIGURU_HOST:-0.0.0.0} --port ${UNIGURU_PORT:-8000} --workers ${UNIGURU_WORKERS:-1}"]

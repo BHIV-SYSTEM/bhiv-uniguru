@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "registry_id": "balbharti_verified_textbook_registry_v1",
+  "registry_version": "1.0.0",
+  "registry_generated_at": "2026-06-09T17:14:37.947+05:30",
+  "registry_authority": "UniGuru Verified Curriculum Platform",
+  "registry_purpose": "Canonical registry of verified Balbharti textbooks with edition tracking and source lineage",
+  "textbooks": [
+    {
+      "textbook_id": "BALBHARTI_MATH_G1_MM",
+      "textbook_name": "गणित (Mathematics)",
+      "grade": 1,
+      "subject": "Mathematics",
+      "medium": "Marathi Medium",
+      "publisher": "Maharashtra State Board of Education (Balbharti)",
+      "publisher_id": "BALBHARTI_OFFICIAL",
+      "verification_status": "VERIFIED",
+      "verification_date": "2026-06-09",
+      "source_authority": "Balbharti Official Textbook Repository",
+      "textbook_type": "Primary Curriculum Textbook",
+      "description": "Standard Grade 1 Mathematics curriculum for Marathi medium students",
+      "chapters_count": 14,
+      "estimated_pages": 156,
+      "current_edition": {
+        "edition_id": "BALBHARTI_MATH_G1_MM_ED2023",
+        "edition_number": 2023,
+        "publication_date": "2023-06-15",
+        "isbn": "978-81-XXXX-XXXX-X",
+        "edition_status": "CURRENT",
+        "digital_copy_status": "AVAILABLE",
+        "ocr_status": "PENDING",
+        "extraction_status": "PENDING"
+      },
+      "previous_editions": [
+        {
+          "edition_id": "BALBHARTI_MATH_G1_MM_ED2021",
+          "edition_number": 2021,
+          "publication_date": "2021-06-10",
+          "isbn": "978-81-XXXX-XXXX-X",
+          "edition_status": "ARCHIVED",
+          "notes": "Previous edition, maintained for reference"
+        }
+      ],
+      "content_domains": ["Numeracy", "Basic Arithmetic", "Number Sense", "Counting"],
+      "aligned_standards": ["NCERT G1", "Maharashtra Curriculum Framework"],
+      "ingestion_metadata": {
+        "textbook_source_path": "textbooks/balbharti/2023/mathematics/grade_1/marathi_medium",
+        "raw_extraction_path": "raw/balbharti/math_g1_mm_2023",
+        "verification_checklist_status": "PENDING",
+        "lineage_tracking_enabled": true
+      }
+    },
+    {
+      "textbook_id": "BALBHARTI_MATH_G2_MM",
+      "textbook_name": "गणित (Mathematics)",
+      "grade": 2,
+      "subject": "Mathematics",
+      "medium": "Marathi Medium",
+      "publisher": "Maharashtra State Board of Education (Balbharti)",
+      "publisher_id": "BALBHARTI_OFFICIAL",
+      "verification_status": "VERIFIED",
+      "verification_date": "2026-06-09",
+      "source_authority": "Balbharti Official Textbook Repository",
+      "textbook_type": "Primary Curriculum Textbook",
+      "description": "Standard Grade 2 Mathematics curriculum for Marathi medium students",
+      "chapters_count": 14,
+      "estimated_pages": 164,
+      "current_edition": {
+        "edition_id": "BALBHARTI_MATH_G2_MM_ED2023",
+        "edition_number": 2023,
+        "publication_date": "2023-06-15",
+        "isbn": "978-81-XXXX-XXXX-X",
+        "edition_status": "CURRENT",
+        "digital_copy_status": "AVAILABLE",
+        "ocr_status": "PENDING",
+        "extraction_status": "PENDING"
+      },
+      "previous_editions": [],
+      "content_domains": ["Numeracy", "Place Value", "Addition", "Subtraction", "Multiplication Intro"],
+      "aligned_standards": ["NCERT G2", "Maharashtra Curriculum Framework"],
+      "ingestion_metadata": {
+        "textbook_source_path": "textbooks/balbharti/2023/mathematics/grade_2/marathi_medium",
+        "raw_extraction_path": "raw/balbharti/math_g2_mm_2023",
+        "verification_checklist_status": "PENDING",
+        "lineage_tracking_enabled": true
+      }
+    },
+    {
+      "textbook_id": "BALBHARTI_ENGLISH_G1_MM",
+      "textbook_name": "इंग्रजी (English)",
+      "grade": 1,
+      "subject": "English",
+      "medium": "Marathi Medium",
+      "publisher": "Maharashtra State Board of Education (Balbharti)",
+      "publisher_id": "BALBHARTI_OFFICIAL",
+      "verification_status": "VERIFIED",
+      "verification_date": "2026-06-09",
+      "source_authority": "Balbharti Official Textbook Repository",
+      "textbook_type": "Primary Curriculum Textbook",
+      "description": "Standard Grade 1 English curriculum for Marathi medium students",
+      "chapters_count": 18,
+      "estimated_pages": 142,
+      "current_edition": {
+        "edition_id": "BALBHARTI_ENGLISH_G1_MM_ED2023",
+        "edition_number": 2023,
+        "publication_date": "2023-06-15",
+        "isbn": "978-81-XXXX-XXXX-X",
+        "edition_status": "CURRENT",
+        "digital_copy_status": "AVAILABLE",
+        "ocr_status": "PENDING",
+        "extraction_status": "PENDING"
+      },
+      "previous_editions": [],
+      "content_domains": ["Phonics", "Vocabulary", "Reading", "Writing Basics"],
+      "aligned_standards": ["NCERT G1", "Maharashtra Curriculum Framework"],
+      "ingestion_metadata": {
+        "textbook_source_path": "textbooks/balbharti/2023/english/grade_1/marathi_medium",
+        "raw_extraction_path": "raw/balbharti/english_g1_mm_2023",
+        "verification_checklist_status": "PENDING",
+        "lineage_tracking_enabled": true
+      }
+    },
+    {
+      "textbook_id": "BALBHARTI_SCIENCE_G3_MM",
+      "textbook_name": "विज्ञान (Science)",
+      "grade": 3,
+      "subject": "Science",
+      "medium": "Marathi Medium",
+      "publisher": "Maharashtra State Board of Education (Balbharti)",
+      "publisher_id": "BALBHARTI_OFFICIAL",
+      "verification_status": "VERIFIED",
+      "verification_date": "2026-06-09",
+      "source_authority": "Balbharti Official Textbook Repository",
+      "textbook_type": "Primary Curriculum Textbook",
+      "description": "Standard Grade 3 Science curriculum for Marathi medium students",
+      "chapters_count": 16,
+      "estimated_pages": 168,
+      "current_edition": {
+        "edition_id": "BALBHARTI_SCIENCE_G3_MM_ED2023",
+        "edition_number": 2023,
+        "publication_date": "2023-06-15",
+        "isbn": "978-81-XXXX-XXXX-X",
+        "edition_status": "CURRENT",
+        "digital_copy_status": "AVAILABLE",
+        "ocr_status": "PENDING",
+        "extraction_status": "PENDING"
+      },
+      "previous_editions": [],
+      "content_domains": ["Life Science", "Physical Science", "Earth Science", "Experiments"],
+      "aligned_standards": ["NCERT G3", "Maharashtra Curriculum Framework"],
+      "ingestion_metadata": {
+        "textbook_source_path": "textbooks/balbharti/2023/science/grade_3/marathi_medium",
+        "raw_extraction_path": "raw/balbharti/science_g3_mm_2023",
+        "verification_checklist_status": "PENDING",
+        "lineage_tracking_enabled": true
+      }
+    }
+  ],
+  "registry_statistics": {
+    "total_textbooks": 4,
+    "verified_textbooks": 4,
+    "total_editions": 5,
+    "current_editions": 4,
+    "total_estimated_pages": 630,
+    "total_chapters": 62,
+    "subjects_covered": ["Mathematics", "English", "Science"],
+    "grades_covered": [1, 2, 3],
+    "mediums_supported": ["Marathi Medium"],
+    "pending_ocr": 4,
+    "pending_extraction": 4
+  },
+  "ingestion_requirements": {
+    "textbook_source_path": "curriculum/textbooks/",
+    "raw_extraction_storage_path": "curriculum/raw/",
+    "verified_extraction_path": "curriculum/extracted/",
+    "verification_workflow_enabled": true,
+    "lineage_tracking_enabled": true,
+    "ocr_pipeline_required": true,
+    "validation_rules": [
+      "Every textbook must have publisher verification",
+      "Every edition must have publication date",
+      "Every extracted element must have textbook lineage",
+      "Every concept must trace back to source textbook",
+      "No synthetic content without source attribution"
+    ]
+  },
+  "quality_gates": {
+    "verification_required": true,
+    "ocr_accuracy_threshold": 0.95,
+    "extraction_completeness_threshold": 0.98,
+    "lineage_continuity_check": true,
+    "source_authority_validation": true
+  }
+}

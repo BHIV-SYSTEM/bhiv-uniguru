@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: uniguru-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    envVars:
+      - key: PYTHONPATH
+        value: /app/backend
+      - key: UNIGURU_HOST
+        value: 0.0.0.0
+      - key: UNIGURU_PORT
+        value: "8000"
+      - key: UNIGURU_WORKERS
+        value: "1"
+      - key: UNIGURU_API_AUTH_REQUIRED
+        value: "false"
+      - key: UNIGURU_API_TOKEN
+        value: tlX6iLMQJheFs1gDCqPN3Yp0aOo9z8SH
+      - key: UNIGURU_API_TOKENS
+        value: tlX6iLMQJheFs1gDCqPN3Yp0aOo9z8SH
+      - key: UNIGURU_ALLOWED_CALLERS
+        value: "*"
+      - key: EXTERNAL_API_SECRET_KEY
+        value: uniguru_secret_123
+      - key: UNIGURU_ROUTER_QUEUE_LIMIT
+        value: "100"
+      - key: UNIGURU_ROUTER_UNVERIFIED_FALLBACK
+        value: "false"
+      - key: ENABLE_BUCKET_TELEMETRY
+        value: "false"
+      - key: ENABLE_CORE_READER
+        value: "false"
+      - key: ENABLE_STT
+        value: "true"
+      - key: LOG_LEVEL
+        value: INFO
+    healthCheckPath: /health

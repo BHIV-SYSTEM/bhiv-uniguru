@@ -1,0 +1,3961 @@
+{
+  "canonical_concept": {
+    "shabda": "ऋत",
+    "canonical_name": "rta",
+    "sanskrit": "ऋत",
+    "transliteration": "Ṛta",
+    "beeja": "ऋ (Ṛ) — the vowel ṛ itself is the bīja of cosmic order and right movement.",
+    "vyakarana": "Ṛta is a neuter noun derived from the past passive participle of the root ṛ (to go/flow). It means \"that which has gone rightly\" — the right order, the truth, the cosmic law.",
+    "functional_meaning": "Ṛta is the Vedic concept of cosmic truth and right order. It governs the movements of the celestial bodies, the cycle of seasons, the moral order of human society, and the efficacy of ritual. Varuṇa is the primary guardian of Ṛta — he punishes those who violate it. Ṛta is the foundation from which Dharma (ethical order) later developed. The concept of Ṛta underlies the Vedic understanding of truth (satya) — to speak truth is to align with Ṛta.",
+    "dhatu": "ऋ (Ṛ) — To go, to move, to flow. Ṛta is \"that which has moved/flowed in the right way\" — the right order of things.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:rta",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska: \"ṛtam — satyam\" — Ṛta is truth. The cosmic truth that underlies all existence. Ṛta is both the cosmic order and the truth that expresses it.",
+    "related_concepts": [
+      "dharma",
+      "satya (truth)",
+      "yajna",
+      "varuna (the guardian of rta)"
+    ],
+    "tattva": "Ṛta-Tattva — the principle of cosmic truth and right order. Ṛta is the Vedic precursor to Dharma — the cosmic law that governs all existence before it was articulated as ethical principle."
+  },
+  "civilizational_knowledge": {
+    "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
+    "concept_id": "sanskar:sanskrit:rta",
+    "canonical_name": "rta",
+    "lexical_record": {
+      "shabda": "ऋत",
+      "canonical_name": "rta",
+      "sanskrit": "ऋत",
+      "transliteration": "Ṛta",
+      "beeja": "ऋ (Ṛ) — the vowel ṛ itself is the bīja of cosmic order and right movement.",
+      "vyakarana": "Ṛta is a neuter noun derived from the past passive participle of the root ṛ (to go/flow). It means \"that which has gone rightly\" — the right order, the truth, the cosmic law.",
+      "functional_meaning": "Ṛta is the Vedic concept of cosmic truth and right order. It governs the movements of the celestial bodies, the cycle of seasons, the moral order of human society, and the efficacy of ritual. Varuṇa is the primary guardian of Ṛta — he punishes those who violate it. Ṛta is the foundation from which Dharma (ethical order) later developed. The concept of Ṛta underlies the Vedic understanding of truth (satya) — to speak truth is to align with Ṛta.",
+      "dhatu": "ऋ (Ṛ) — To go, to move, to flow. Ṛta is \"that which has moved/flowed in the right way\" — the right order of things.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:rta",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska: \"ṛtam — satyam\" — Ṛta is truth. The cosmic truth that underlies all existence. Ṛta is both the cosmic order and the truth that expresses it.",
+      "related_concepts": [
+        "dharma",
+        "satya (truth)",
+        "yajna",
+        "varuna (the guardian of rta)"
+      ],
+      "tattva": "Ṛta-Tattva — the principle of cosmic truth and right order. Ṛta is the Vedic precursor to Dharma — the cosmic law that governs all existence before it was articulated as ethical principle."
+    },
+    "layers": {
+      "sanskrit": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "ऋत",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "shabda": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "ऋत",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "acoustic_phonetics": {
+          "status": "EVIDENCE_BACKED",
+          "claims": [
+            {
+              "value": {
+                "iast": "ṛ",
+                "ipa": "r̩",
+                "varna_class": "mūrdhanya (retroflex) svara (vowel)",
+                "sthana": "mūrdhā (cerebral/retroflex)",
+                "prayatna": "svara (vowel), hrasva (short), vocalic r",
+                "vedic_pitch": "svarita — the cosmic resonance tone; Ṛgveda itself is named from this vowel",
+                "mantra_frequency_note": "Ṛ is unique in Sanskrit — a vocalic retroflex. The Ṛgveda's name derives from ṛc (hymn) + veda. Ṛ represents the cosmic resonance of truth (ṛta). Taittirīya Prātiśākhya gives ṛ special status as the svara of ṛṣis.",
+                "siksha_source": "Pāṇinīya-Śikṣā 1.4 (ṛ-kāra); Taittirīya Prātiśākhya 2.3"
+              },
+              "classification": "SOURCE_SCOPED",
+              "provenance": [
+                {
+                  "source_id": "c61f09edf90c0e83",
+                  "evidence_type": "VEDA",
+                  "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+                  "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+                  "retrieval_system": "uniguru_vedanga_shiksha"
+                }
+              ]
+            }
+          ],
+          "provenance": [
+            {
+              "source_id": "c61f09edf90c0e83",
+              "evidence_type": "VEDA",
+              "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+              "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+              "retrieval_system": "uniguru_vedanga_shiksha"
+            }
+          ],
+          "source": "Pāṇinīya-Śikṣā; Taittirīya Prātiśākhya; Ṛgveda-Prātiśākhya"
+        }
+      },
+      "dhatu": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "ऋ (Ṛ) — To go, to move, to flow. Ṛta is \"that which has moved/flowed in the right way\" — the right order of things.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "vyakarana": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Ṛta is a neuter noun derived from the past passive participle of the root ṛ (to go/flow). It means \"that which has gone rightly\" — the right order, the truth, the cosmic law.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "panini_grammar": {
+          "status": "NO_RETRIEVED_EVIDENCE",
+          "dhatu_root_key": "",
+          "panini_sutras": [],
+          "provenance": [
+            {
+              "source_id": "ef4cd468d4f41d7c",
+              "evidence_type": "PANINI",
+              "source_path": "knowledge/gurukul/sanskrit/grammar.md",
+              "content_hash": "299f9fb5707fc2cd60a56d5d4da0e8c077d32a2419edaadb5b0051e4aff11733",
+              "retrieval_system": "uniguru_vedanga_grammar"
+            }
+          ],
+          "source": "Pāṇini Ashtadhyayi via UniGuru Gurukul grammar.md"
+        }
+      },
+      "nirukta": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Yāska: \"ṛtam — satyam\" — Ṛta is truth. The cosmic truth that underlies all existence. Ṛta is both the cosmic order and the truth that expresses it.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "beeja": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "ऋ (Ṛ) — the vowel ṛ itself is the bīja of cosmic order and right movement.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "acoustic_phonetics": {
+          "status": "EVIDENCE_BACKED",
+          "claims": [
+            {
+              "value": {
+                "iast": "ṛ",
+                "ipa": "r̩",
+                "varna_class": "mūrdhanya (retroflex) svara (vowel)",
+                "sthana": "mūrdhā (cerebral/retroflex)",
+                "prayatna": "svara (vowel), hrasva (short), vocalic r",
+                "vedic_pitch": "svarita — the cosmic resonance tone; Ṛgveda itself is named from this vowel",
+                "mantra_frequency_note": "Ṛ is unique in Sanskrit — a vocalic retroflex. The Ṛgveda's name derives from ṛc (hymn) + veda. Ṛ represents the cosmic resonance of truth (ṛta). Taittirīya Prātiśākhya gives ṛ special status as the svara of ṛṣis.",
+                "siksha_source": "Pāṇinīya-Śikṣā 1.4 (ṛ-kāra); Taittirīya Prātiśākhya 2.3"
+              },
+              "classification": "SOURCE_SCOPED",
+              "provenance": [
+                {
+                  "source_id": "c61f09edf90c0e83",
+                  "evidence_type": "VEDA",
+                  "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+                  "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+                  "retrieval_system": "uniguru_vedanga_shiksha"
+                }
+              ]
+            }
+          ],
+          "provenance": [
+            {
+              "source_id": "c61f09edf90c0e83",
+              "evidence_type": "VEDA",
+              "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+              "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+              "retrieval_system": "uniguru_vedanga_shiksha"
+            }
+          ],
+          "source": "Pāṇinīya-Śikṣā; Taittirīya Prātiśākhya; Ṛgveda-Prātiśākhya"
+        }
+      },
+      "tattva": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Ṛta-Tattva — the principle of cosmic truth and right order. Ṛta is the Vedic precursor to Dharma — the cosmic law that governs all existence before it was articulated as ethical principle.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "shakti": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "literal_meaning": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Cosmic order; truth; right; the law of the universe.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "functional_meaning": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Ṛta is the Vedic concept of cosmic truth and right order. It governs the movements of the celestial bodies, the cycle of seasons, the moral order of human society, and the efficacy of ritual. Varuṇa is the primary guardian of Ṛta — he punishes those who violate it. Ṛta is the foundation from which Dharma (ethical order) later developed. The concept of Ṛta underlies the Vedic understanding of truth (satya) — to speak truth is to align with Ṛta.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "ontology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Vedic ontology: Ṛta is the cosmic law that precedes and underlies all existence. It is not created by the gods but is the principle by which the gods themselves operate. In later philosophy: Ṛta becomes Dharma (ethical order) and Satya (truth) — the two primary expressions of cosmic law.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "cosmology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Vedic cosmology: Ṛta governs the movements of the sun (Sūrya follows Ṛta), the cycle of seasons (ṛtu — season — derives from Ṛta), the flow of rivers, and the moral order of the universe. The concept of Ṛta-dhāman (the abode of Ṛta) — the cosmic realm where Ṛta is perfectly expressed.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "psychology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Ṛta as psychological principle: the person who lives in alignment with Ṛta experiences inner harmony. The violation of Ṛta (anṛta — untruth, adharma) creates psychological disturbance. The concept of ṛta-cit (Ṛta-consciousness) — the mind that perceives and aligns with cosmic truth.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "governance": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Ṛta as the foundation of governance: the king who governs according to Ṛta maintains cosmic order. The concept of rāja-dharma (royal duty) is the application of Ṛta to governance. Varuṇa's role as the guardian of Ṛta is the model for the king's role as the guardian of dharma.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "medicine": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Āyurveda: Ṛta as the right order of the body — health is the body's alignment with Ṛta. The concept of ṛtu-caryā (seasonal regimen) — living according to the seasonal Ṛta for optimal health.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "engineering": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "mathematics": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The concept of Ṛta in mathematics: mathematical truth (satya) is a form of Ṛta — the right order of numbers and relationships. The Vedic concept of mathematical precision in ritual (Śulbasūtras) is an expression of Ṛta.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "astronomy": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Ṛta is most directly expressed in astronomy — the right movements of celestial bodies. The concept of ṛtu (season) derives from Ṛta — the seasons are the cosmic Ṛta expressed in time. Vedic astronomy (Jyotiṣa) is the science of tracking Ṛta in the sky.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "metallurgy": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The concept of Ṛta in metallurgy: the right order of metallurgical processes — following the dharma of each metal is following its Ṛta.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "ritual": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Yajña (sacrifice) is the primary ritual expression of Ṛta — it maintains and reinforces cosmic order. The concept of ṛta-yajña (sacrifice according to Ṛta) — ritual performed in alignment with cosmic truth. The Vedic concept of ṛtvij (the priest who performs the ritual at the right time — ṛtu + ij) — the priest who aligns ritual with Ṛta.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "symbolism": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The sun symbolizes Ṛta — it follows its ordained path without deviation. The river symbolizes Ṛta — it flows in its right course. The seasons symbolize Ṛta — they follow their right order.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_deities": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Varuṇa (the primary guardian of Ṛta — he punishes violations of cosmic order)\n- Mitra (Varuṇa's companion — together they uphold Ṛta)\n- Sūrya (the sun — the most visible expression of Ṛta in the cosmos)\n- Agni (the fire — the ritual medium of Ṛta)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_lokas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Ṛta-dhāman (the abode of Ṛta — the cosmic realm of perfect order)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_koshas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Vijñānamaya Kosha (intellect sheath) — the seat of ṛta-cit (Ṛta-consciousness)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_chakras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Ājñā (third eye) — the seat of perception of cosmic order",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_yantras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Varuṇa Yantra (for aligning with cosmic order)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_mantras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Varuṇa Sūkta (Ṛgveda 7.86-89 — hymns to the guardian of Ṛta)\n- \"Ṛtam vada, satyam vada\" (Speak Ṛta, speak truth)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_vidyas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Ṛta Vidyā (the science of cosmic order — the foundation of all Vedic knowledge)\n- Jyotiṣa Vidyā (the science of tracking Ṛta in the sky)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_shastras": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "traditional_interpretations": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Vedic: Ṛta is the cosmic law that governs all existence — the foundation of dharma\n- Later Vedānta: Ṛta becomes Satya (truth) and Dharma (ethical order)\n- Comparative: Ṛta is related to Iranian Asha (truth/order) and possibly Greek Themis",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "historical_evolution": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Ṛgvedic period: Ṛta as the primary cosmic principle — the most important concept in the Ṛgveda\n- Atharvaveda: Ṛta begins to be replaced by Dharma\n- Upaniṣadic period: Ṛta becomes Satya (truth) — \"satyam eva jayate\" (truth alone triumphs)\n- Post-Vedic: Dharma replaces Ṛta as the primary ethical-cosmic concept",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "cross_references": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": [
+              "dharma",
+              "satya (truth)",
+              "varuna (the guardian of rta)",
+              "yajna"
+            ],
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "open_research_questions": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- What is the precise relationship between Vedic Ṛta and Iranian Asha? Is there a common Proto-Indo-Iranian source?\n- How did Ṛta evolve into Dharma? What was the transition mechanism?",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "experimental_hypotheses": {
+        "status": "EXPLICITLY_MARKED_EXPERIMENTAL",
+        "claims": [
+          {
+            "value": "[EXPERIMENTAL — NOT CANONICAL] Some comparative linguists propose that Vedic Ṛta, Iranian Asha, and Latin rectus (right) all derive from a common Proto-Indo-European root meaning \"right order.\" This remains under scholarly investigation.",
+            "classification": "EXPERIMENTAL",
+            "provenance": [
+              {
+                "source_id": "5a88483bf844b3f8",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "17da47b823702719",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "2d3ee69f98154a68",
+                "evidence_type": "UPANISHAD",
+                "provenance": {
+                  "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "87fe09ffcb487a1b",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/rta.md",
+                "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "policy": "Marked EXPERIMENTAL in source document."
+      },
+      "comparative_hermeneutics": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "darshana_matrix": {},
+        "traditions_represented": [],
+        "claims": []
+      }
+    },
+    "retrieved_evidence": [],
+    "retrieval": {
+      "system": "uniguru_kosha",
+      "strategy": "deterministic_token_overlap",
+      "records_found": 0
+    },
+    "coverage": {
+      "total_layers": 35,
+      "evidence_backed_layers": 30,
+      "coverage_pct": 85.7
+    }
+  },
+  "pipeline": [
+    {
+      "stage": "śabda",
+      "schema_field": "shabda",
+      "value": "ऋत",
+      "evidence": [
+        {
+          "source_id": "5a88483bf844b3f8",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "17da47b823702719",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "2d3ee69f98154a68",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "87fe09ffcb487a1b",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "VEDA",
+        "VEDA",
+        "UPANISHAD",
+        "VEDA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:rta",
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0"
+      }
+    },
+    {
+      "stage": "dhātu",
+      "schema_field": "dhatu",
+      "value": "ऋ (Ṛ) — To go, to move, to flow. Ṛta is \"that which has moved/flowed in the right way\" — the right order of things.",
+      "evidence": [
+        {
+          "source_id": "5a88483bf844b3f8",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "17da47b823702719",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "2d3ee69f98154a68",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "87fe09ffcb487a1b",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "VEDA",
+        "VEDA",
+        "UPANISHAD",
+        "VEDA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:rta",
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0"
+      }
+    },
+    {
+      "stage": "vyākaraṇa",
+      "schema_field": "vyakarana",
+      "value": "Ṛta is a neuter noun derived from the past passive participle of the root ṛ (to go/flow). It means \"that which has gone rightly\" — the right order, the truth, the cosmic law.",
+      "evidence": [
+        {
+          "source_id": "5a88483bf844b3f8",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "17da47b823702719",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "2d3ee69f98154a68",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "87fe09ffcb487a1b",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "VEDA",
+        "VEDA",
+        "UPANISHAD",
+        "VEDA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:rta",
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0"
+      }
+    },
+    {
+      "stage": "nirukta",
+      "schema_field": "nirukta",
+      "value": "Yāska: \"ṛtam — satyam\" — Ṛta is truth. The cosmic truth that underlies all existence. Ṛta is both the cosmic order and the truth that expresses it.",
+      "evidence": [
+        {
+          "source_id": "5a88483bf844b3f8",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "17da47b823702719",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "2d3ee69f98154a68",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "87fe09ffcb487a1b",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "VEDA",
+        "VEDA",
+        "UPANISHAD",
+        "VEDA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:rta",
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0"
+      }
+    },
+    {
+      "stage": "bīja",
+      "schema_field": "beeja",
+      "value": "ऋ (Ṛ) — the vowel ṛ itself is the bīja of cosmic order and right movement.",
+      "evidence": [
+        {
+          "source_id": "5a88483bf844b3f8",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "17da47b823702719",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "2d3ee69f98154a68",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "87fe09ffcb487a1b",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "VEDA",
+        "VEDA",
+        "UPANISHAD",
+        "VEDA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:rta",
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0"
+      }
+    },
+    {
+      "stage": "tattva",
+      "schema_field": "tattva",
+      "value": "Ṛta-Tattva — the principle of cosmic truth and right order. Ṛta is the Vedic precursor to Dharma — the cosmic law that governs all existence before it was articulated as ethical principle.",
+      "evidence": [
+        {
+          "source_id": "5a88483bf844b3f8",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "17da47b823702719",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "2d3ee69f98154a68",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "87fe09ffcb487a1b",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "VEDA",
+        "VEDA",
+        "UPANISHAD",
+        "VEDA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:rta",
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0"
+      }
+    },
+    {
+      "stage": "śakti",
+      "schema_field": "shakti",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "5a88483bf844b3f8",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "17da47b823702719",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "2d3ee69f98154a68",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "87fe09ffcb487a1b",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "VEDA",
+        "VEDA",
+        "UPANISHAD",
+        "VEDA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:rta",
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0"
+      }
+    },
+    {
+      "stage": "functional_meaning",
+      "schema_field": "functional_meaning",
+      "value": "Ṛta is the Vedic concept of cosmic truth and right order. It governs the movements of the celestial bodies, the cycle of seasons, the moral order of human society, and the efficacy of ritual. Varuṇa is the primary guardian of Ṛta — he punishes those who violate it. Ṛta is the foundation from which Dharma (ethical order) later developed. The concept of Ṛta underlies the Vedic understanding of truth (satya) — to speak truth is to align with Ṛta.",
+      "evidence": [
+        {
+          "source_id": "5a88483bf844b3f8",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "17da47b823702719",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "2d3ee69f98154a68",
+          "evidence_type": "UPANISHAD",
+          "provenance": {
+            "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "87fe09ffcb487a1b",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/rta.md",
+          "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "VEDA",
+        "VEDA",
+        "UPANISHAD",
+        "VEDA"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:rta",
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0"
+      }
+    }
+  ],
+  "cross_references": [
+    {
+      "target": "dharma",
+      "claim": "rta is cross-referenced with dharma by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/rta.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "satya (truth)",
+      "claim": "rta is cross-referenced with satya (truth) by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/rta.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "varuna (the guardian of rta)",
+      "claim": "rta is cross-referenced with varuna (the guardian of rta) by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/rta.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "yajna",
+      "claim": "rta is cross-referenced with yajna by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/rta.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    }
+  ],
+  "cross_text_synthesis": {
+    "status": "RETRIEVED_SOURCE_RECORDS_ONLY",
+    "canonical_claims": [
+      {
+        "claim": "Ṛta is the Vedic concept of cosmic truth and right order. It governs the movements of the celestial bodies, the cycle of seasons, the moral order of human society, and the efficacy of ritual. Varuṇa is the primary guardian of Ṛta — he punishes those who violate it. Ṛta is the foundation from which Dharma (ethical order) later developed. The concept of Ṛta underlies the Vedic understanding of truth (satya) — to speak truth is to align with Ṛta.",
+        "classification": [
+          "VEDA",
+          "VEDA",
+          "UPANISHAD",
+          "VEDA"
+        ],
+        "source_path": "knowledge/sanskrit/rta.md"
+      }
+    ],
+    "retrieved_records": [],
+    "conflicts": [],
+    "uncertainty": "Retrieved records are preserved as source-scoped evidence; the decoder does not merge them into an untraceable summary."
+  },
+  "knowledge_graph": {
+    "graph_id": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_GRAPH_V3",
+    "schema_version": "3.0.0",
+    "nodes": [
+      {
+        "id": "sanskar:sanskrit:rta",
+        "type": "sanskrit_concept",
+        "label": "rta",
+        "address": "knowledge/sanskrit/rta.md",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "id": "sanskar:sanskrit:dharma",
+        "type": "sanskrit_concept",
+        "label": "dharma",
+        "address": "backend/knowledge/sanskrit/dharma.md"
+      },
+      {
+        "id": "sanskar:sanskrit:yajna",
+        "type": "sanskrit_concept",
+        "label": "yajna",
+        "address": "backend/knowledge/sanskrit/yajna.md"
+      },
+      {
+        "id": "deity:varuna",
+        "type": "deity",
+        "label": "Varuṇa",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "id": "deity:mitra",
+        "type": "deity",
+        "label": "Mitra",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "id": "deity:surya",
+        "type": "deity",
+        "label": "Sūrya",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "id": "deity:agni",
+        "type": "deity",
+        "label": "Agni",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "id": "loka:rta-dhaman",
+        "type": "loka",
+        "label": "Ṛta-dhāman",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "id": "kosha_ref:vijnanamaya_kosha",
+        "type": "kosha",
+        "label": "Vijñānamaya Kosha",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "id": "chakra_ref:ajna",
+        "type": "chakra",
+        "label": "Ājñā",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "id": "yantra:varuna_yantra",
+        "type": "yantra",
+        "label": "Varuṇa Yantra",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "id": "vidya:rta_vidya",
+        "type": "vidya",
+        "label": "Ṛta Vidyā",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "id": "vidya:jyotisa_vidya",
+        "type": "vidya",
+        "label": "Jyotiṣa Vidyā",
+        "provenance": "knowledge/sanskrit/rta.md"
+      }
+    ],
+    "edges": [
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "sanskar:sanskrit:dharma",
+        "type": "canonical_cross_reference",
+        "evidence_type": "DERIVED",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "sanskar:sanskrit:yajna",
+        "type": "canonical_cross_reference",
+        "evidence_type": "DERIVED",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "deity:varuna",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "deity:mitra",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "deity:surya",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "deity:agni",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "loka:rta-dhaman",
+        "type": "related_loka",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "kosha_ref:vijnanamaya_kosha",
+        "type": "related_kosha",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "chakra_ref:ajna",
+        "type": "related_chakra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "yantra:varuna_yantra",
+        "type": "related_yantra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "vidya:rta_vidya",
+        "type": "related_vidya",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/rta.md"
+      },
+      {
+        "from": "sanskar:sanskrit:rta",
+        "to": "vidya:jyotisa_vidya",
+        "type": "related_vidya",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/rta.md"
+      }
+    ],
+    "metadata": {
+      "adapter": "uniguru_civilizational_enrichment_v3",
+      "consistency_valid": true,
+      "orphaned_nodes": [],
+      "source_snapshot_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+      "node_count": 13,
+      "edge_count": 12
+    }
+  },
+  "functional_meaning": {
+    "summary": "Ṛta is the Vedic concept of cosmic truth and right order. It governs the movements of the celestial bodies, the cycle of seasons, the moral order of human society, and the efficacy of ritual. Varuṇa is the primary guardian of Ṛta — he punishes those who violate it. Ṛta is the foundation from which Dharma (ethical order) later developed. The concept of Ṛta underlies the Vedic understanding of truth (satya) — to speak truth is to align with Ṛta.",
+    "classification": "SOURCE_SCOPED_CANONICAL_TEXT"
+  },
+  "provenance": {
+    "registry_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "schema_version": "uniguru_civilizational_enrichment_v3",
+    "source_documents": [
+      {
+        "source_id": "5a88483bf844b3f8",
+        "evidence_type": "VEDA",
+        "provenance": {
+          "source_text": "Ṛgveda 1.22.18, 1.105.12, 4.23.8 (Ṛta passages)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "17da47b823702719",
+        "evidence_type": "VEDA",
+        "provenance": {
+          "source_text": "Ṛgveda 7.86-89 (Varuṇa hymns — guardian of Ṛta)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "2d3ee69f98154a68",
+        "evidence_type": "UPANISHAD",
+        "provenance": {
+          "source_text": "Taittirīya Upaniṣad 1.11.1 (Ṛtam vada, satyam vada)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "87fe09ffcb487a1b",
+        "evidence_type": "VEDA",
+        "provenance": {
+          "source_text": "Atharvaveda 12.1.1 (Ṛta as cosmic truth)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/rta.md",
+        "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0",
+        "retrieval_system": "sanskrit_lexical_records"
+      }
+    ],
+    "retrieved_records": [],
+    "lineage": {
+      "concept_id": "sanskar:sanskrit:rta",
+      "source_path": "knowledge/sanskrit/rta.md",
+      "content_hash": "88b56bda655f1b963df1d5ac3510a37d641be712fdd05890f60c5509fd7d4df0"
+    },
+    "replay_safe": true
+  },
+  "governed_response": {
+    "evidence_classification": {
+      "classification": "SOURCE_SCOPED",
+      "evidence_types": [
+        "UPANISHAD",
+        "VEDA"
+      ],
+      "notes": "Claims are either lexical source fields or verbatim retrieved UniGuru records; no generative canonical summary is used."
+    },
+    "research_classification": "civilizational_knowledge",
+    "governance_state": "read_only_observation"
+  },
+  "result_hash": "aa5d86d2a7b051f1dcb107763f3b48a738de95bc3801608a39fed057a3de640b"
+}

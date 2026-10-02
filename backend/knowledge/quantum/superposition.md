@@ -25,6 +25,10 @@ Light equation context
 Concept explanations
 - Superposition: Linear combination of basis states enabling interference.
 - Measurement collapse (operational): Probabilistic update of state post-measurement.
+
+## Marathi Summary
+
+क्वांटम सुपरपोझिशन म्हणजे मोजमाप होण्यापूर्वी क्वांटम प्रणाली अनेक संभाव्य अवस्थांच्या मिश्रणात असू शकते. मोजमाप केल्यावर त्यापैकी एक परिणाम दिसतो.
 - Quantum tomography (summary): Reconstruction of $\rho$ from measurement statistics.
 
 Citations

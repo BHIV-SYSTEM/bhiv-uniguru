@@ -1,6 +1,10 @@
+import json
+import hashlib
 import os
+import math
 import re
 import unicodedata
+import threading
 from typing import Any, Dict, List, Optional, Tuple
 
 from reasoning.concept_resolver import ConceptResolver
@@ -16,7 +20,150 @@ KB_PATHS: Dict[str, str] = {
     "swaminarayan": os.path.normpath(os.path.join(_KB_ROOT, "swaminarayan")),
     "gurukul": os.path.normpath(os.path.join(_KB_ROOT, "gurukul")),
     "sanskrit": os.path.normpath(os.path.join(_KB_ROOT, "sanskrit")),
+    "programming": os.path.normpath(os.path.join(_KB_ROOT, "programming")),
+    "history": os.path.normpath(os.path.join(_KB_ROOT, "history")),
 }
+
+_DENSE_STATE: Optional[Dict[str, Any]] = None
+_DENSE_STATE_KEY: Optional[Tuple[str, str, float, str]] = None
+_DENSE_STATE_LOCK = threading.Lock()
+
+
+def _active_index_paths() -> Tuple[Any, Any, Any]:
+    from pathlib import Path
+
+    rag_root = Path(_MODULE_DIR).parent / "RAG"
+    pointer_path = rag_root / "active_index.json"
+    pointer = {}
+    if pointer_path.is_file():
+        try:
+            pointer = json.loads(pointer_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            pointer = {}
+    database_path = Path(os.getenv("UNIGURU_RAG_DB_PATH", rag_root / pointer.get("database_path", "chunks.db")))
+    index_path = Path(os.getenv("UNIGURU_RAG_INDEX_PATH", rag_root / pointer.get("index_path", "faiss_index.bin")))
+    metadata_path = Path(os.getenv("UNIGURU_RAG_METADATA_PATH", rag_root / pointer.get("metadata_path", "index_metadata.json")))
+    return database_path, index_path, metadata_path
+
+
+def _current_source_manifest_hash() -> str:
+    from pathlib import Path
+
+    manifest = hashlib.sha256()
+    for path in sorted(Path(_KB_ROOT).rglob("*.md")):
+        if not path.is_file():
+            continue
+        relative_path = path.relative_to(_KB_ROOT).as_posix()
+        file_hash = hashlib.sha256(path.read_text(encoding="utf-8").encode("utf-8")).hexdigest()
+        manifest.update(f"{relative_path}:{file_hash}\n".encode("utf-8"))
+    return manifest.hexdigest()
+
+
+def _load_dense_state() -> Optional[Dict[str, Any]]:
+    global _DENSE_STATE, _DENSE_STATE_KEY
+    database_path, index_path, metadata_path = _active_index_paths()
+    if not database_path.is_file() or not index_path.is_file() or not metadata_path.is_file():
+        return None
+    source_manifest_hash = _current_source_manifest_hash()
+    state_key = (str(database_path), str(index_path), index_path.stat().st_mtime, source_manifest_hash)
+    if _DENSE_STATE_KEY == state_key:
+        return _DENSE_STATE
+    with _DENSE_STATE_LOCK:
+        if _DENSE_STATE_KEY == state_key:
+            return _DENSE_STATE
+        try:
+            import faiss
+            import sqlite3
+            from sentence_transformers import SentenceTransformer
+
+            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+            if metadata.get("source_manifest_sha256") != source_manifest_hash:
+                _DENSE_STATE = None
+                _DENSE_STATE_KEY = state_key
+                return None
+            index = faiss.read_index(str(index_path))
+            with sqlite3.connect(str(database_path)) as connection:
+                row_ids = {
+                    int(row[0])
+                    for row in connection.execute("SELECT id FROM chunks")
+                }
+            index_ids = {
+                int(value)
+                for value in faiss.vector_to_array(index.id_map)
+            } if hasattr(index, "id_map") else set()
+            if int(index.ntotal) != len(row_ids) or index_ids != row_ids:
+                _DENSE_STATE = None
+                _DENSE_STATE_KEY = state_key
+                return None
+            model_name = str(metadata.get("embedding_model") or "all-MiniLM-L6-v2")
+            model = SentenceTransformer(model_name)
+            if int(index.d) != int(model.get_embedding_dimension()):
+                _DENSE_STATE = None
+                _DENSE_STATE_KEY = state_key
+                return None
+            _DENSE_STATE = {
+                "database_path": str(database_path),
+                "index": index,
+                "metadata": metadata,
+                "model": model,
+            }
+            _DENSE_STATE_KEY = state_key
+            return _DENSE_STATE
+        except Exception:
+            _DENSE_STATE = None
+            _DENSE_STATE_KEY = state_key
+            return None
+
+
+def warm_rag_index() -> bool:
+    """Load the active vector index and model before serving user requests."""
+    return _load_dense_state() is not None
+
+
+def _dense_search(query: str, top_k: int = 30) -> List[Dict[str, Any]]:
+    state = _load_dense_state()
+    if state is None:
+        return []
+    try:
+        import numpy as np
+        import sqlite3
+
+        vector = state["model"].encode(
+            [query],
+            convert_to_numpy=True,
+            normalize_embeddings=True,
+            show_progress_bar=False,
+        )
+        scores, ids = state["index"].search(np.asarray(vector, dtype="float32"), top_k)
+        results = []
+        with sqlite3.connect(state["database_path"]) as connection:
+            for score, chunk_id in zip(scores[0], ids[0]):
+                if int(chunk_id) < 0:
+                    continue
+                row = connection.execute(
+                    """SELECT file_name, page_number, text, domain, category, topic,
+                              chapter, source, language, chunk_number
+                       FROM chunks WHERE id = ?""",
+                    (int(chunk_id),),
+                ).fetchone()
+                if row:
+                    results.append({
+                        "file_name": row[0],
+                        "page_number": row[1],
+                        "text": row[2],
+                        "domain": row[3],
+                        "category": row[4],
+                        "topic": row[5],
+                        "chapter": row[6],
+                        "source": row[7],
+                        "language": row[8],
+                        "chunk_number": row[9],
+                        "score": float(score),
+                        "chunk_id": int(chunk_id),
+                    })
+        return results
+    except Exception:
+        return []
 
 STOPWORDS = {
     "a",
@@ -41,7 +188,6 @@ STOPWORDS = {
     "of",
     "and",
     "or",
-    "me",
     "tell",
     "explain",
     "name",
@@ -54,6 +200,17 @@ STOPWORDS = {
     "please",
     "give",
     "list",
+    "it",
+    "simply",
+    "can",
+    "you",
+    "your",
+    "my",
+    "i",
+    "me",
+    "could",
+    "would",
+    "should",
 }
 
 
@@ -68,27 +225,31 @@ class AdvancedRetriever:
         self.knowledge_map: Dict[str, str] = {}
         self.source_map: Dict[str, str] = {}
         self.file_map: Dict[str, str] = {}
+        self.path_map: Dict[str, str] = {}
         self._load_memory()
 
     def _load_memory(self) -> None:
-        for kb_name, kb_path in KB_PATHS.items():
-            if not os.path.exists(kb_path):
-                continue
-            for root, _, files in os.walk(kb_path):
-                for file_name in files:
-                    if not file_name.endswith(".md"):
-                        continue
-                    full_path = os.path.join(root, file_name)
-                    keyword = os.path.splitext(file_name)[0].lower().replace("_", " ")
-                    try:
-                        with open(full_path, "r", encoding="utf-8") as f:
-                            content = f.read()
-                    except OSError:
-                        # Demo-safety mode: unreadable KB files are skipped, not fatal.
-                        continue
-                    self.knowledge_map[keyword] = content
-                    self.source_map[keyword] = kb_name
-                    self.file_map[keyword] = file_name
+        if not os.path.isdir(_KB_ROOT):
+            return
+        for root, _, files in os.walk(_KB_ROOT):
+            for file_name in files:
+                if not file_name.lower().endswith(".md"):
+                    continue
+                full_path = os.path.join(root, file_name)
+                relative_path = os.path.relpath(full_path, _KB_ROOT).replace(os.sep, "/")
+                keyword = os.path.splitext(file_name)[0].lower().replace("_", " ")
+                try:
+                    with open(full_path, "r", encoding="utf-8") as handle:
+                        content = handle.read()
+                except OSError:
+                    continue
+                key = keyword
+                if key in self.knowledge_map:
+                    key = os.path.splitext(relative_path)[0].replace("/", " ").lower()
+                self.knowledge_map[key] = content
+                self.source_map[key] = relative_path.split("/", 1)[0]
+                self.file_map[key] = file_name
+                self.path_map[key] = relative_path
 
     @staticmethod
     def _tokens(text: str) -> List[str]:
@@ -98,6 +259,10 @@ class AdvancedRetriever:
     @staticmethod
     def _token_forms(token: str) -> set[str]:
         forms = {token}
+        if token == "agriculture":
+            forms.add("agricultural")
+        elif token == "agricultural":
+            forms.add("agriculture")
         if token.isascii() and token.isalpha() and len(token) > 3:
             if token.endswith("ies") and len(token) > 4:
                 forms.add(token[:-3] + "y")
@@ -114,58 +279,200 @@ class AdvancedRetriever:
             if token not in STOPWORDS
         ))
 
+    @staticmethod
+    def _source_entity_terms(query: str) -> set[str]:
+        source_suffixes = r"purana|purāṇa|sutra|sūtra|gita|gītā|upanishad|veda"
+        matches = re.findall(rf"\b([\w]+)\s+({source_suffixes})\b", query.casefold())
+        return {
+            term
+            for match in matches
+            for term in match
+            if term not in STOPWORDS
+        }
+
     def retrieve_multi(self, query: str) -> List[Dict[str, Any]]:
-        """Retrieves top N documents matching the query."""
+        """Retrieve topic-supported documents and honor explicit source entities."""
         tokens = self._query_terms(query)
         if not tokens:
             return []
 
-        matches = []
-        for keyword, content in self.knowledge_map.items():
-            kw_tokens = self._tokens(keyword)
-            content_counts: Dict[str, int] = {}
-            for content_token in self._tokens(content):
-                content_counts[content_token] = content_counts.get(content_token, 0) + 1
-
-            keyword_match = sum(
-                1 for keyword_token in kw_tokens
-                if any(self._token_forms(keyword_token) & self._token_forms(query_token) for query_token in tokens)
-            )
-            matched_terms = [
-                token for token in tokens
-                if any(form in content_counts for form in self._token_forms(token))
+        source_terms = self._source_entity_terms(query)
+        topic_terms = [token for token in tokens if not (self._token_forms(token) & source_terms)]
+        query_forms = {token: self._token_forms(token) for token in tokens}
+        document_rows = []
+        dense_by_key: Dict[str, Dict[str, Any]] = {}
+        dense_candidates = _dense_search(query, top_k=30) if getattr(self, "path_map", None) else []
+        for chunk in dense_candidates:
+            source_path = str(chunk.get("source") or chunk.get("file_name") or "").replace("\\", "/")
+            chunk_tokens = set(self._tokens(chunk.get("text", "")))
+            source_tokens = set(self._tokens(f"{source_path} {chunk.get('topic') or ''} {chunk.get('chapter') or ''}"))
+            combined_tokens = chunk_tokens | source_tokens
+            if source_terms and not all(
+                any(form in combined_tokens for form in self._token_forms(term))
+                for term in source_terms
+            ):
+                continue
+            matched_topics = [
+                term for term in topic_terms
+                if self._token_forms(term) & chunk_tokens
             ]
+            minimum_dense_score = float(os.getenv("UNIGURU_DENSE_SCORE_MIN", "0.35"))
+            if source_terms and topic_terms and not matched_topics:
+                continue
+            if not matched_topics and float(chunk["score"]) < minimum_dense_score:
+                continue
+            lexical_key = next(
+                (key for key, path in getattr(self, "path_map", {}).items() if path.casefold() == source_path.casefold()),
+                None,
+            )
+            dense_key = lexical_key or os.path.splitext(source_path)[0].casefold()
+            current = dense_by_key.get(dense_key)
+            if current is None or chunk["score"] > current["dense_score"]:
+                dense_by_key[dense_key] = {
+                    "content": chunk["text"],
+                    "tokens": self._tokens(chunk["text"]),
+                    "counts": {},
+                    "title_tokens": source_tokens,
+                    "matched_terms": matched_topics,
+                    "matched_topics": matched_topics,
+                    "keyword": dense_key,
+                    "dense_score": chunk["score"],
+                    "chunk": chunk,
+                    "source_path": source_path,
+                    "source": chunk.get("domain") or "unknown",
+                    "file": os.path.basename(source_path),
+                }
 
-            if keyword_match == 0 and not matched_terms:
+        for dense_key, row in dense_by_key.items():
+            row["counts"] = {token: row["tokens"].count(token) for token in set(row["tokens"])}
+            row["dense_chunk"] = row["chunk"]
+            document_rows.append(row)
+
+        for keyword, content in self.knowledge_map.items():
+            content_tokens = self._tokens(content)
+            title = f"{keyword} {self.file_map.get(keyword, '')} {getattr(self, 'path_map', {}).get(keyword, '')}"
+            title_tokens = set(self._tokens(title))
+            content_token_set = set(content_tokens)
+            document_forms = content_token_set | title_tokens
+            if source_terms and not all(
+                any(form in document_forms for form in self._token_forms(term))
+                for term in source_terms
+            ):
                 continue
 
-            keyword_coverage = keyword_match / len(kw_tokens) if kw_tokens else 0.0
-            content_density = len(matched_terms) / len(tokens)
-            frequency_density = sum(
-                min(sum(content_counts.get(form, 0) for form in self._token_forms(token)), 3)
-                for token in tokens
-            ) / (3 * len(tokens))
-            confidence = min(
-                max(
-                    (0.7 * keyword_coverage) + (0.3 * content_density),
-                    (0.45 * content_density) + (0.15 * frequency_density),
-                ),
-                1.0,
-            )
-            matches.append(
+            matched_terms = [token for token in tokens if query_forms[token] & document_forms]
+            matched_topics = [token for token in topic_terms if query_forms[token] & content_token_set]
+            if not matched_terms or (source_terms and topic_terms and not matched_topics):
+                continue
+
+            source_path = getattr(self, "path_map", {}).get(keyword)
+            if source_path and any(
+                row.get("source_path", "").casefold() == source_path.casefold()
+                for row in document_rows
+            ):
+                continue
+
+            token_counts: Dict[str, int] = {}
+            for token in content_tokens:
+                token_counts[token] = token_counts.get(token, 0) + 1
+            document_rows.append(
                 {
-                    "content": content,
-                    "confidence": confidence,
                     "keyword": keyword,
-                    "keyword_match_count": keyword_match,
-                    "query_token_count": len(tokens),
-                    "source": self.source_map.get(keyword, "unknown"),
-                    "file": self.file_map.get(keyword, "unknown"),
+                    "content": content,
+                    "tokens": content_tokens,
+                    "counts": token_counts,
+                    "title_tokens": title_tokens,
+                    "matched_terms": matched_terms,
+                    "matched_topics": matched_topics,
                 }
             )
 
-        matches.sort(key=lambda x: x["confidence"], reverse=True)
-        return matches[0 : self.top_n]
+        if not document_rows:
+            return []
+
+        document_frequency: Dict[str, int] = {token: 0 for token in tokens}
+        for row in document_rows:
+            content_tokens = set(row["tokens"])
+            for token in tokens:
+                if query_forms[token] & content_tokens:
+                    document_frequency[token] += 1
+
+        average_length = sum(len(row["tokens"]) for row in document_rows) / len(document_rows) or 1.0
+        lexical_scores: Dict[str, float] = {}
+        entity_scores: Dict[str, float] = {}
+        dense_scores: Dict[str, float] = {}
+        for row in document_rows:
+            keyword = row["keyword"]
+            length = max(len(row["tokens"]), 1)
+            bm25_score = 0.0
+            for token in tokens:
+                term_frequency = sum(row["counts"].get(form, 0) for form in query_forms[token])
+                if not term_frequency:
+                    continue
+                document_count = len(document_rows)
+                document_freq = document_frequency[token]
+                inverse_document_frequency = math.log1p(
+                    (document_count - document_freq + 0.5) / (document_freq + 0.5)
+                )
+                bm25_score += inverse_document_frequency * (
+                    term_frequency * 2.5
+                    / (term_frequency + 1.5 * (0.25 + 0.75 * length / average_length))
+                )
+            lexical_scores[keyword] = bm25_score
+            entity_scores[keyword] = (
+                (len(source_terms) * 2 if source_terms else 0)
+                + len(set(tokens) & row["title_tokens"])
+                + int(" ".join(tokens) in " ".join(row["tokens"]))
+            )
+            dense_scores[keyword] = float(row.get("dense_score", 0.0))
+
+        fused_scores: Dict[str, float] = {}
+        for ranking in (
+            sorted(lexical_scores, key=lexical_scores.get, reverse=True),
+            sorted(entity_scores, key=entity_scores.get, reverse=True),
+            sorted(dense_scores, key=dense_scores.get, reverse=True),
+        ):
+            for rank, keyword in enumerate(ranking, start=1):
+                fused_scores[keyword] = fused_scores.get(keyword, 0.0) + 1.0 / (60 + rank)
+
+        rows_by_key = {row["keyword"]: row for row in document_rows}
+        results = []
+        for keyword in sorted(fused_scores, key=fused_scores.get, reverse=True)[: self.top_n]:
+            row = rows_by_key[keyword]
+            coverage = (
+                len(row["matched_topics"]) / len(topic_terms)
+                if topic_terms else len(row["matched_terms"]) / len(tokens)
+            )
+            results.append(
+                {
+                    "content": row["content"],
+                    "confidence": coverage,
+                    "retrieval_score": fused_scores[keyword],
+                    "fusion_score": fused_scores[keyword],
+                    "bm25_score": lexical_scores[keyword],
+                    "entity_score": entity_scores[keyword],
+                    "dense_score": dense_scores[keyword],
+                    "evidence_coverage": coverage,
+                    "keyword": keyword,
+                    "keyword_match_count": len(set(tokens) & row["title_tokens"]),
+                    "query_token_count": len(tokens),
+                    "source": row.get("source", self.source_map.get(keyword, "unknown")),
+                    "file": row.get("file", self.file_map.get(keyword, "unknown")),
+                    "path": row.get("source_path", getattr(self, "path_map", {}).get(keyword, keyword)),
+                    "matched_terms": row["matched_terms"],
+                    "dense_chunk": row.get("dense_chunk"),
+                }
+            )
+        results.sort(
+            key=lambda row: (
+                row["evidence_coverage"],
+                row["entity_score"],
+                row["bm25_score"],
+                row["fusion_score"],
+            ),
+            reverse=True,
+        )
+        return results
 
     @staticmethod
     def _combine_evidence(results: List[Dict[str, Any]], max_chars: int = 6000) -> str:
@@ -406,6 +713,25 @@ class AdvancedRetriever:
                 "keyword_match_count": primary.get("keyword_match_count", 0),
                 "query_token_count": primary.get("query_token_count", 0),
                 "top_confidence": primary.get("confidence", 0.0),
+                "retrieval_score": primary.get("fusion_score", 0.0),
+                "evidence_coverage": primary.get("evidence_coverage", 0.0),
+                "evidence_sources": [
+                    {
+                        "source": result.get("source", "unknown"),
+                        "file": result.get("file", "unknown"),
+                        "path": result.get("path", result.get("file", "unknown")),
+                        "chunk_id": (result.get("dense_chunk") or {}).get("chunk_id"),
+                        "page_number": (result.get("dense_chunk") or {}).get("page_number"),
+                        "chapter": (result.get("dense_chunk") or {}).get("chapter"),
+                        "excerpt": str(
+                            (result.get("dense_chunk") or {}).get("text")
+                            or result.get("content")
+                            or ""
+                        )[:1200],
+                        "evidence_coverage": result.get("evidence_coverage", 0.0),
+                    }
+                    for result in results
+                ],
                 "docs_combined": num_docs,
             },
         }
@@ -448,10 +774,15 @@ def retrieve_knowledge_with_trace(query: str) -> Tuple[Optional[str], Dict[str, 
             "kb_path": _KB_ROOT,
             "match_found": True,
             "confidence": float(metadata.get("top_confidence", 0.0)),
+            "retrieval_score": float(metadata.get("retrieval_score", 0.0)),
+            "reranker_score": float(metadata.get("evidence_coverage", 0.0)),
+            "evidence_coverage": float(metadata.get("evidence_coverage", 0.0)),
+            "answer_confidence": None,
             "kb_file": metadata.get("top_match"),
             "matched_keyword": metadata.get("top_keyword"),
             "keyword_match_count": int(metadata.get("keyword_match_count", 0)),
             "query_token_count": int(metadata.get("query_token_count", 0)),
+            "evidence_sources": metadata.get("evidence_sources", []),
             "sources_consulted": metadata.get("sources_consulted", []),
         }
         concept_resolution = ConceptResolver().resolve(query=query, retrieval_trace=trace)
@@ -477,3 +808,82 @@ def retrieve_knowledge_with_trace(query: str) -> Tuple[Optional[str], Dict[str, 
         "sources_consulted": ["ontology_registry", "ontology_graph"],
     }
     return None, trace
+
+
+def get_rag_health() -> Dict[str, Any]:
+    """Report only artifacts used by this checkout's active retrieval path."""
+    from pathlib import Path
+
+    rag_root = Path(_MODULE_DIR).parent / "RAG"
+    database_path, index_path, metadata_path = _active_index_paths()
+    source_files = [
+        path for path in Path(_KB_ROOT).rglob("*.md")
+        if path.is_file()
+    ] if Path(_KB_ROOT).is_dir() else []
+    retriever = AdvancedRetriever()
+    database_chunks = 0
+    vector_chunks = 0
+    metadata_available = database_path.is_file()
+    metadata = {}
+    if metadata_path.is_file():
+        try:
+            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            metadata = {}
+    current_source_manifest_hash = _current_source_manifest_hash()
+    if metadata_available:
+        try:
+            import sqlite3
+
+            with sqlite3.connect(str(database_path)) as connection:
+                database_chunks = int(connection.execute("SELECT COUNT(*) FROM chunks").fetchone()[0])
+        except (OSError, sqlite3.Error):
+            metadata_available = False
+
+    index_available = index_path.is_file()
+    index_type = None
+    embedding_dimension = None
+    if index_available:
+        try:
+            import faiss
+
+            index = faiss.read_index(str(index_path))
+            index_type = type(index).__name__
+            embedding_dimension = int(index.d)
+            vector_chunks = int(index.ntotal)
+        except Exception:
+            index_available = False
+
+    index_loaded = (
+        index_available
+        and metadata_available
+        and database_chunks > 0
+        and vector_chunks == database_chunks
+        and metadata.get("source_manifest_sha256") == current_source_manifest_hash
+        and _load_dense_state() is not None
+    )
+    return {
+        "status": "healthy" if index_loaded else ("degraded" if retriever.knowledge_map else "unavailable"),
+        "active_retrieval": "FAISS dense + BM25 + exact-title/entity RRF",
+        "source_root": str(Path(_KB_ROOT)),
+        "source_documents": len(source_files),
+        "lexical_documents_loaded": len(retriever.knowledge_map),
+        "index": "loaded" if index_loaded else "missing_or_invalid",
+        "index_path": str(index_path),
+        "index_type": index_type,
+        "index_version": metadata.get("index_version") or metadata.get("created_at"),
+        "embedding_model": metadata.get("embedding_model") if index_loaded else None,
+        "embedding_dimension": embedding_dimension,
+        "indexed_chunks": vector_chunks if index_loaded else 0,
+        "metadata_available": metadata_available,
+        "metadata_database": str(database_path),
+        "metadata_chunk_count": database_chunks if metadata_available else 0,
+        "vector_count": vector_chunks,
+        "metadata_claimed_chunks": metadata.get("total_chunks"),
+        "source_manifest_current": metadata.get("source_manifest_sha256") == current_source_manifest_hash,
+        "indexed_documents": metadata.get("indexed_documents", 0) if index_loaded else 0,
+        "chunking": (
+            f"Character windows of {metadata.get('chunk_size')} with {metadata.get('chunk_overlap')} overlap."
+            if index_loaded else "No active vector chunks; lexical retrieval scans Markdown documents."
+        ),
+    }

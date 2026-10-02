@@ -1,0 +1,29 @@
+{
+  "dashboard": {
+    "claims": [
+      {
+        "authority_pressure_score": 0.8805,
+        "claim_key": "governed_claim",
+        "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+        "risk_band": "critical"
+      },
+      {
+        "authority_pressure_score": 0.6209,
+        "claim_key": "replay_trust",
+        "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+        "risk_band": "high"
+      },
+      {
+        "authority_pressure_score": 0.1709,
+        "claim_key": "runtime_observability",
+        "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+        "risk_band": "low"
+      }
+    ],
+    "dashboard_mode": "json_only"
+  },
+  "dashboard_hash": "f3c71c61567ea844347c6f7cc2e087111ea7c9fff15bfe29fb120f3f6700f757",
+  "dashboard_mode": "json_only_read_only",
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "schema": "UNIGURU_SEMANTIC_PRESSURE_DASHBOARD_V1"
+}

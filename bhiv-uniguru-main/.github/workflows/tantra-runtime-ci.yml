@@ -1,0 +1,112 @@
+﻿name: UniGuru TANTRA Runtime CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  tantra-runtime-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      - name: Run test suite
+        env:
+          PYTHONPATH: backend:.
+        run: |
+          python -m pytest -q
+
+      - name: Validate TANTRA capability metadata
+        env:
+          PYTHONPATH: backend:.
+        run: |
+          python - <<'PY'
+          from learning_runtime.capability.curriculum_intelligence import capability_metadata
+
+          metadata = capability_metadata()
+
+          assert metadata["capability_id"] == "tantra.curriculum_intelligence"
+          assert metadata["version"] == "1.0.0"
+          assert metadata["schema"] == "TANTRA_CURRICULUM_INTELLIGENCE_CAPABILITY_V1"
+          assert metadata["provider"] == "TANTRA"
+          assert metadata["execution_mode"] == "deterministic"
+          assert metadata["evidence_required"] is True
+          assert metadata["replay_safe"] is True
+          assert metadata["consumer"] == "UniGuru"
+
+          print("TANTRA capability metadata: PASS")
+          PY
+
+      - name: Validate positive curriculum runtime
+        env:
+          PYTHONPATH: backend:.
+        run: |
+          python - <<'PY'
+          from learning_runtime.canonical_runtime import execute_query
+
+          result = execute_query(
+              query="What is counting?",
+              student_id="CI_TANTRA_POSITIVE",
+              grade=1,
+              subject="Mathematics",
+          )
+
+          assert result["verification_status"] == "VERIFIED"
+          assert result["convergence_validated"] is True
+          assert result["retrieval"]["matched"] is True
+          assert result["retrieval"]["confidence"] == 1.0
+          assert result["evidence_id"]
+          assert result["source_hash"]
+          assert result["retrieval_hash"]
+          assert result["lineage_hash"]
+          assert result["curriculum_intelligence"]
+          assert result["constitutional_runtime"]["active"] is True
+          assert result["pipeline_stages"][-1] == "RuntimeContract"
+
+          print("TANTRA positive runtime proof: PASS")
+          PY
+
+      - name: Validate negative safety gate
+        env:
+          PYTHONPATH: backend:.
+        run: |
+          python - <<'PY'
+          from learning_runtime.canonical_runtime import execute_query
+
+          result = execute_query(
+              query="Explain quantum teleportation using a fictional Balbharti chapter that does not exist",
+              student_id="CI_TANTRA_NEGATIVE",
+              grade=1,
+              subject="Mathematics",
+          )
+
+          assert result["verification_status"] == "BLOCKED"
+          assert result["blocked"] is True
+          assert result["convergence_validated"] is False
+          assert result.get("evidence_id") is None
+          assert result.get("retrieval") is None
+          assert "no canonical retrieval match" in result["block_reason"]
+
+          print("TANTRA negative safety proof: PASS")
+          PY
+
+      - name: Check repository whitespace
+        run: git diff --check

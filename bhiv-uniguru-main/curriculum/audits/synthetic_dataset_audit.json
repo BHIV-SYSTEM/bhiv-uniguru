@@ -1,0 +1,14 @@
+{
+  "audit_timestamp": "2026-06-20T18:07:40.001520+00:00",
+  "audit_status": "CLEAN",
+  "summary": {
+    "canonical_records_count": 42,
+    "synthetic_records_count": 0,
+    "experimental_records_count": 2560,
+    "synthetic_ratio_canonical_path": 0.0
+  },
+  "audited_paths": {
+    "canonical_path": "masterdb/balbharti/canonical_dataset.json",
+    "experimental_path": "masterdb/balbharti/experimental_dataset.json"
+  }
+}

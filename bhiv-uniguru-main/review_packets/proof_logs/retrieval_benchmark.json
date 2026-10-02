@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-29T08:22:50.172862Z",
+  "metrics": {
+    "precision": 1.0,
+    "rejection_correctness": 1.0,
+    "semantic_accuracy": 1.0
+  },
+  "rows": [
+    {
+      "detected_domain": "gitas",
+      "expected_domain": "gitas",
+      "new_ontology_score": 0.8469,
+      "old_keyword_score": 0.3333,
+      "precision_hit": true,
+      "query": "What does the Bhagavad Gita teach about Karma Yoga?",
+      "rejection_correct": true,
+      "top_domain": "gitas",
+      "top_domain_raw": "bhagavad gita"
+    },
+    {
+      "detected_domain": "puranas",
+      "expected_domain": "puranas",
+      "new_ontology_score": 0.9281,
+      "old_keyword_score": 0.3333,
+      "precision_hit": true,
+      "query": "Tell me about Vishnu in the Narada Purana",
+      "rejection_correct": true,
+      "top_domain": "puranas",
+      "top_domain_raw": "puranas"
+    },
+    {
+      "detected_domain": "upanishads",
+      "expected_domain": "upanishads",
+      "new_ontology_score": 0.8073,
+      "old_keyword_score": 0.4,
+      "precision_hit": true,
+      "query": "Explain the Upanishadic concept of Brahman",
+      "rejection_correct": true,
+      "top_domain": "upanishads",
+      "top_domain_raw": "upanishads"
+    },
+    {
+      "detected_domain": "gitas",
+      "expected_domain": "gitas",
+      "new_ontology_score": 0.5694,
+      "old_keyword_score": 0.5,
+      "precision_hit": true,
+      "query": "Return Upanishads for Bhagavad Gita teachings",
+      "rejection_correct": true,
+      "top_domain": "gitas",
+      "top_domain_raw": "gita + decision making"
+    },
+    {
+      "detected_domain": "puranas",
+      "expected_domain": "puranas",
+      "new_ontology_score": 0.8424,
+      "old_keyword_score": 0.2857,
+      "precision_hit": true,
+      "query": "Give an Ahimsa answer from the Narada Purana",
+      "rejection_correct": true,
+      "top_domain": "puranas",
+      "top_domain_raw": "puranas"
+    }
+  ]
+}

@@ -176,6 +176,53 @@ def test_synthesis_uses_multiple_relevant_records_and_deduplicates_sentences():
     assert "Ayurveda" not in synthesis["answer"]
 
 
+def test_explicit_purana_query_requires_matching_source_and_agriculture_evidence(valid_entries):
+    query = "What agricultural practices are mentioned in the Padma Purana?"
+
+    signals, _domain = KoshaRetriever(valid_entries).retrieve(query)
+    validation = SignalValidator.validate_all(signals, query)
+
+    assert signals == []
+    assert validation["accepted_signals"] == []
+
+
+def test_validator_rejects_wrong_purana_source_even_when_content_mentions_padma():
+    signal = {
+        "signal_id": "wrong-purana-source",
+        "source": "The Narada-Purana, Part 4_ocred.pdf",
+        "content": "The main deity praised in the Padma Purana is Vishnu.",
+        "tags": ["padma", "purana", "vishnu"],
+        "confidence": 0.8,
+    }
+
+    valid, reason, details = SignalValidator.validate_signal(
+        signal,
+        "What agricultural practices are mentioned in the Padma Purana?",
+    )
+
+    assert not valid
+    assert reason == "source_entity_mismatch"
+    assert "padma" in details["missing_source_entities"]
+
+
+def test_validator_rejects_correct_source_without_requested_topic():
+    signal = {
+        "signal_id": "missing-topic",
+        "source": "Padma Purana, Part 4_ocred.pdf",
+        "content": "The main deity praised in the Padma Purana is Vishnu.",
+        "tags": ["padma", "purana", "vishnu"],
+        "confidence": 0.8,
+    }
+
+    valid, reason, _details = SignalValidator.validate_signal(
+        signal,
+        "What agricultural practices are mentioned in the Padma Purana?",
+    )
+
+    assert not valid
+    assert reason == "no_topic_evidence_for_named_source"
+
+
 def test_one_relevant_record_is_used_without_unrelated_accepted_record():
     accepted = [
         _accepted_signal(
@@ -224,7 +271,7 @@ def test_accepted_records_without_relevant_evidence_keep_existing_refusal():
     assert synthesis["evidence_signal_ids"] == []
 
 
-def test_chat_new_still_delegates_to_existing_kosha_pipeline(monkeypatch):
+def test_chat_new_uses_shared_verified_rag_service(monkeypatch):
     from service import api
 
     chat_id = "kosha-pipeline-route-test"
@@ -233,11 +280,20 @@ def test_chat_new_still_delegates_to_existing_kosha_pipeline(monkeypatch):
     monkeypatch.setattr(api, "_serialize_chat_session", lambda *_args, **_kwargs: {"id": chat_id})
     calls = []
 
-    def fake_kosha_pipeline(**kwargs):
+    def fake_ask(**kwargs):
         calls.append(kwargs)
-        return {"answer": "deterministic Kosha response", "verification_status": "VERIFIED"}
+        return {
+            "answer": "verified shared RAG response",
+            "verification_status": "VERIFIED",
+            "retrieval_trace": {"match_found": True},
+        }
 
-    monkeypatch.setattr(api, "_execute_kosha_pipeline", fake_kosha_pipeline)
+    monkeypatch.setattr(api.service, "ask", fake_ask)
+    monkeypatch.setattr(
+        api,
+        "_execute_kosha_pipeline",
+        lambda **_kwargs: (_ for _ in ()).throw(AssertionError("chat must not use Kosha-only retrieval")),
+    )
     request = Request(
         scope={
             "type": "http",
@@ -256,13 +312,10 @@ def test_chat_new_still_delegates_to_existing_kosha_pipeline(monkeypatch):
         request,
     )
 
-    assert response["aiResponse"]["content"] == "deterministic Kosha response"
-    assert calls == [
-        {
-            "query": "What is Brahman?",
-            "domain_hint": None,
-            "top_k": 5,
-            "trace_id": calls[0]["trace_id"],
-            "user_id": "test-user",
-        }
-    ]
+    assert response["aiResponse"]["content"] == "verified shared RAG response"
+    assert calls == [{
+        "user_query": "What is Brahman?",
+        "session_id": chat_id,
+        "context": {"caller": "test-user", "source_language": "en"},
+        "allow_web_retrieval": False,
+    }]

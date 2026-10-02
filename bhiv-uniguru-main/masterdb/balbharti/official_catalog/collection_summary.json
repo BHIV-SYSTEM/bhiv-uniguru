@@ -1,0 +1,137 @@
+{
+  "collected_at": "2026-06-24T08:36:53.611534+00:00",
+  "dataset_hash": "526a6a633eeacc093c26c8f5ce528ff16f50b2b69cf978d2e7c33b0bd8c247d2",
+  "enriched_years": [
+    "2026"
+  ],
+  "filter_groups": [
+    {
+      "group_label": "Book Types",
+      "group_name": "book_type",
+      "option_count": 5
+    },
+    {
+      "group_label": "Standards",
+      "group_name": "standard",
+      "option_count": 12
+    },
+    {
+      "group_label": "Mediums",
+      "group_name": "medium",
+      "option_count": 10
+    },
+    {
+      "group_label": "Subjects",
+      "group_name": "subject",
+      "option_count": 9
+    }
+  ],
+  "output_dir": "masterdb/balbharti/official_catalog",
+  "schema": "UNIGURU_BALBHARTI_OFFICIAL_SITE_COLLECTION_SUMMARY_V1",
+  "source_site": "https://books.ebalbharati.in/",
+  "taxonomy_file": "site_taxonomy.json",
+  "total_books_collected_across_years": 5461,
+  "year_summaries": [
+    {
+      "book_count_collected": 554,
+      "books_file": "year_2026_catalog.json",
+      "books_on_site": 554,
+      "dataset_hash": "f56cbb762801d0cd77cec86905206ef759e33f8210e1afbe2736d2dd2ef074a7",
+      "pages_on_site": 47,
+      "year": "2026"
+    },
+    {
+      "book_count_collected": 881,
+      "books_file": "year_2025_catalog.json",
+      "books_on_site": 881,
+      "dataset_hash": "dbd03fe3e19a69f13b106be6f48dec567297369ee0d1ee36fe9ab2f31fade6cd",
+      "pages_on_site": 74,
+      "year": "2025"
+    },
+    {
+      "book_count_collected": 900,
+      "books_file": "year_2022_catalog.json",
+      "books_on_site": 900,
+      "dataset_hash": "2606824d693ab155e84162ebf376fd5d785161f90866d38496cc17f017ab99d6",
+      "pages_on_site": 75,
+      "year": "2022"
+    },
+    {
+      "book_count_collected": 815,
+      "books_file": "year_2020_catalog.json",
+      "books_on_site": 815,
+      "dataset_hash": "5488311bae49698ad27167d727cc0db3e55ab1d72e1a642bc5c9e56532eb5aa5",
+      "pages_on_site": 68,
+      "year": "2020"
+    },
+    {
+      "book_count_collected": 414,
+      "books_file": "year_2018_catalog.json",
+      "books_on_site": 414,
+      "dataset_hash": "353b6f65f7780cec582ea9e0474769dddaa659188404e713f788165f0db9eb30",
+      "pages_on_site": 35,
+      "year": "2018"
+    },
+    {
+      "book_count_collected": 298,
+      "books_file": "year_2016_catalog.json",
+      "books_on_site": 298,
+      "dataset_hash": "76b0c1e00d398fbe82e4f36a38b42377a0f6efbacacfb8bbba04de31ce41d3e1",
+      "pages_on_site": 25,
+      "year": "2016"
+    },
+    {
+      "book_count_collected": 311,
+      "books_file": "year_2014_catalog.json",
+      "books_on_site": 311,
+      "dataset_hash": "069b7fafa0eceb1b3cd91a00687676e5b4e34687ece71ec036bbec08be412b33",
+      "pages_on_site": 26,
+      "year": "2014"
+    },
+    {
+      "book_count_collected": 435,
+      "books_file": "year_2012_catalog.json",
+      "books_on_site": 435,
+      "dataset_hash": "9298369b04d6e5716f5d6d1d2176dd2188745a98c41163673c98e4eb576c1bed",
+      "pages_on_site": 37,
+      "year": "2012"
+    },
+    {
+      "book_count_collected": 434,
+      "books_file": "year_2010_catalog.json",
+      "books_on_site": 434,
+      "dataset_hash": "48cf7dca05ba8a899ff1ad67b3671682f212c3857b308f12e9c63a4aa981a1d2",
+      "pages_on_site": 37,
+      "year": "2010"
+    },
+    {
+      "book_count_collected": 330,
+      "books_file": "year_2008_catalog.json",
+      "books_on_site": 330,
+      "dataset_hash": "0a3dd350fc604ec0eade1859b564a1b7f116c594991d15ee19126d09d9b07137",
+      "pages_on_site": 28,
+      "year": "2008"
+    },
+    {
+      "book_count_collected": 89,
+      "books_file": "year_2006_catalog.json",
+      "books_on_site": 89,
+      "dataset_hash": "978353a1198dbf8f16a45165fb529dbc05f7bd2e812684b8da9b5f53c2cc9e11",
+      "pages_on_site": 8,
+      "year": "2006"
+    }
+  ],
+  "years_collected": [
+    "2026",
+    "2025",
+    "2022",
+    "2020",
+    "2018",
+    "2016",
+    "2014",
+    "2012",
+    "2010",
+    "2008",
+    "2006"
+  ]
+}

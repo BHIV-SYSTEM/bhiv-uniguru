@@ -1,0 +1,21 @@
+{
+  "canonical_packages": {
+    "governance": "backend/governance",
+    "ontology": "backend/ontology",
+    "proof_outputs": "review_packets/proof_logs",
+    "replay_hashing": "backend/memory/constitutional_semantic_memory.py"
+  },
+  "canonical_runtime": "backend/governance/constitutional_runtime.py",
+  "parallel_architectures_allowed": false,
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "schema": "UNIGURU_RUNTIME_STRUCTURE_V1",
+  "single_runtime_paths": {
+    "contradiction_escalation_flow": "DistributedContradictionArbitrator",
+    "observability_structure": "SemanticPressureObservabilityEngine",
+    "ontology_lineage_discipline": "OntologyLegitimacyBoundaryEngine",
+    "replay_lineage_flow": "constitutional_event_registry",
+    "semantic_governance_pipeline": "SemanticDriftObservabilityEngine",
+    "trust_propagation_layer": "AuthorityPressureGovernanceEngine"
+  },
+  "structure_hash": "06fe40265fd4113bca878286279e835ab47ceacc81a6cdea156874f2defe2a07"
+}

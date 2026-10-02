@@ -1,0 +1,51 @@
+{
+  "decoder_result": {
+    "canonical_concept": null,
+    "civilizational_knowledge": null,
+    "cross_text_synthesis": {
+      "claims": [],
+      "status": "NO_CANONICAL_EVIDENCE"
+    },
+    "governed_response": {
+      "evidence_classification": {
+        "classification": "UNVERIFIED",
+        "evidence_types": [],
+        "notes": "No source-backed Sanskrit lexical record matched this query."
+      },
+      "governance_state": "no_inference",
+      "research_classification": "UNVERIFIED"
+    },
+    "knowledge_graph": {
+      "edges": [],
+      "metadata": {
+        "consistency_valid": true,
+        "orphaned_nodes": []
+      },
+      "nodes": []
+    },
+    "pipeline": [],
+    "provenance": {
+      "lineage": [],
+      "registry_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "replay_safe": true
+    },
+    "result_hash": "7ab247b6cbe7c267cb339b6df1b22d4890411e994f80fed0af0c21e69035d6e2"
+  },
+  "governed_response": {
+    "evidence_classification": {
+      "classification": "UNVERIFIED",
+      "evidence_types": [],
+      "notes": "No source-backed Sanskrit lexical record matched this query."
+    },
+    "governance_state": "no_inference",
+    "research_classification": "UNVERIFIED"
+  },
+  "replay": {
+    "input_trace_id_accepted": true,
+    "replay_key": "7ab247b6cbe7c267cb339b6df1b22d4890411e994f80fed0af0c21e69035d6e2",
+    "replay_safe": true
+  },
+  "response_hash": "c837eccd360842876bf792bbc494f66c9c789843f15b889bc2f5ddc2bf4f51b8",
+  "schema_version": "UNIGURU_SANSKRIT_DECODER_RESPONSE_V1",
+  "trace_id": "sanskrit_3f7380036e5c8090"
+}

@@ -2,5 +2,6 @@
   "backend/test_queries.py": true,
   "backend/tests/test_sanskrit_decoder.py::test_decode_sanskrit_concept_builds_deterministic_pipeline": true,
   "backend/tests/test_sanskrit_decoder.py::test_sanskrit_runtime_endpoint_returns_decoded_payload": true,
-  "backend/tests/test_phase2_sanskrit_decoder_knowledge_graph.py::test_all_graph_nodes_have_provenance": true
+  "backend/tests/test_phase2_sanskrit_decoder_knowledge_graph.py::test_all_graph_nodes_have_provenance": true,
+  "backend/tests/test_rag_health.py::test_rag_health_reports_active_markdown_corpus_and_missing_vector_index": true
 }

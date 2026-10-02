@@ -1,0 +1,444 @@
+{
+  "all_deterministic_replay_outputs_stable": true,
+  "contradiction_resolution_example": {
+    "request": {
+      "accepted_signals": [
+        {
+          "_validation": {
+            "candidate_entities": [
+              {
+                "canonical": "Injected Governance Claim"
+              }
+            ]
+          },
+          "domain": "core",
+          "signal_id": "injected_signal_a",
+          "source": "governance_fixture"
+        },
+        {
+          "_validation": {
+            "candidate_entities": [
+              {
+                "canonical": "Injected Governance Claim"
+              }
+            ]
+          },
+          "domain": "core",
+          "signal_id": "injected_signal_b",
+          "source": "governance_fixture"
+        }
+      ],
+      "authority_boundary": {
+        "boundary_status": "ENFORCED",
+        "interpretation_references_retrieval": true
+      },
+      "confidence": 0.91,
+      "consensus": {
+        "ambiguity_classification": "conflicting_claims",
+        "contradiction_pressure": 1.0,
+        "contradictions": [
+          {
+            "claim_key": "Injected Governance Claim",
+            "polarities": [
+              "affirmative",
+              "negative"
+            ],
+            "signal_ids": [
+              "injected_signal_a",
+              "injected_signal_b"
+            ]
+          }
+        ]
+      },
+      "interpretation_hash": "016c37339c9df0a1f96f272861c480ef4fed8306ab3b18b1c577c817d614eb68",
+      "ontology_lineage": [
+        {
+          "fixture": "contradiction"
+        }
+      ],
+      "query": "Injected contradiction should not become canonical.",
+      "rejected_signals": [],
+      "retrieval_truth_hash": "61eedbeae214f19fc18df1e57eba1624f5532b56f2106e4b2cb9a75037060277",
+      "trace_id": "constitutional_contradiction_injection",
+      "user_id": "constitutional-demo-user",
+      "verification_status": "VERIFIED"
+    },
+    "result": {
+      "canonical_authority_granted": false,
+      "canonical_memory_keys": [
+        "Atman",
+        "Bhagavata Purana",
+        "Brahma",
+        "Brahman",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Taittiriya Upanishad",
+        "Upanishads",
+        "Vedas",
+        "Yoga"
+      ],
+      "checkpoint_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": false,
+        "contradiction_pressure": 1.0,
+        "entities_touched": [
+          "Injected Governance Claim"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "quarantined",
+        "trace_id": "constitutional_contradiction_injection",
+        "updated_at": "2026-05-13T14:06:48.360704Z"
+      },
+      "event_hash": "96cdac46b61e4d8f9bb074e96d174d057ae2c5d43fae099df836662b9cb11980",
+      "event_log_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": false,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 1.0,
+        "decision": "REJECT_CANONICAL_MUTATION",
+        "failure_states": [
+          "CONTRADICTION_INJECTION"
+        ],
+        "memory_classification": "quarantined",
+        "reasons": [
+          "contradiction_requires_audit"
+        ],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": true,
+      "lineage_traceable": true,
+      "mutation_id": "8a96bf39adb9d2beeb2a38704e9a8995937675d01c1fd5a11636fec38e37a989",
+      "observability_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": true,
+        "last_event_hash": "72499fddff766cc6a54ce496aca5973a61e2ef0dfa8680af8a673e260bf98f59",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "1cad035e4e4d9ce622d3d83cbaa8e88a9c0b4e50d65067f09e9c7bcaa791548c",
+      "transient_event_count": 18
+    }
+  },
+  "lineage_reconstruction_sample": {
+    "event_count": 23,
+    "lineage_tail": [
+      {
+        "classification": "transient",
+        "event_hash": "0ed0feb38eddce58d6af336c4c703aca7fe3d7e65e833cd95b3b2c923c17ca69",
+        "interpretation_hash": "d1da9c06237db8a471679b01c38c42164c10f438086d586bb86b12a5be98649a",
+        "previous_event_hash": "1be5ddbd2725bdac7976939b21996c9bcc211ac92c9ad85d565d2581e77b4051",
+        "retrieval_truth_hash": "7deeeb3589e4c46891a8891c07863e6f4f5d5c184cedf61903a066d5911a1eaf",
+        "trace_id": "trace_fe7bd4816ff250a5"
+      },
+      {
+        "classification": "transient",
+        "event_hash": "eba7ad2312ad677ad9c54a7a60a65f0ee3ba67570742d13a9554e85d0ee4d820",
+        "interpretation_hash": "661c0fb3522add01158f8aaac5a60dee83951f6badfbf89411bc0a785d6debc7",
+        "previous_event_hash": "0ed0feb38eddce58d6af336c4c703aca7fe3d7e65e833cd95b3b2c923c17ca69",
+        "retrieval_truth_hash": "0bcb56741e7fdf7a03f5a09732a7214b98f115b424e3e89039031894e613d4e4",
+        "trace_id": "trace_fb64b9d071d75f03"
+      },
+      {
+        "classification": "transient",
+        "event_hash": "15813ee93724a961ce2ae6a2f603eba6baf799a548fc4caa2cdb0e4025d60f2d",
+        "interpretation_hash": "9e5d39bc479da8347c7b3162c5b4096b4c24064d88eba69bb4592f2e27ee9244",
+        "previous_event_hash": "eba7ad2312ad677ad9c54a7a60a65f0ee3ba67570742d13a9554e85d0ee4d820",
+        "retrieval_truth_hash": "ab6a63bf843434c5514e527daaae1e366030e393f07d462615807d735f9bd1b8",
+        "trace_id": "trace_f71cee6b567455b3"
+      },
+      {
+        "classification": "transient",
+        "event_hash": "f7012012c5ce8c0ef6411d3c4e81e1959e1a9ad3e80a3c745cc0e58977e86d63",
+        "interpretation_hash": "ba27843e6cbcf215316e8aa3a15b0541eb48ebe87b9b269a2cc710f2f331ffc4",
+        "previous_event_hash": "15813ee93724a961ce2ae6a2f603eba6baf799a548fc4caa2cdb0e4025d60f2d",
+        "retrieval_truth_hash": "58dc62e6d1121c10ab3a6b90d050ae3efa18900e1b8ec2263df02d97b772f43e",
+        "trace_id": "trace_65734151b34156e3"
+      },
+      {
+        "classification": "canonical",
+        "event_hash": "72499fddff766cc6a54ce496aca5973a61e2ef0dfa8680af8a673e260bf98f59",
+        "interpretation_hash": "872f2f881558bbdbae529ed0bfb393831514a8cb3a4819f7b50177340159be7a",
+        "previous_event_hash": "f7012012c5ce8c0ef6411d3c4e81e1959e1a9ad3e80a3c745cc0e58977e86d63",
+        "retrieval_truth_hash": "77ce340121ab510d9d89269e423e5989e953f232f7d86e35dc9a683a8fd544cb",
+        "trace_id": "constitutional_lineage_vishnu"
+      }
+    ],
+    "replay_integrity": {
+      "hash_chain_ok": true,
+      "last_event_hash": "72499fddff766cc6a54ce496aca5973a61e2ef0dfa8680af8a673e260bf98f59",
+      "rollback_target": null
+    },
+    "state_hash": "1cad035e4e4d9ce622d3d83cbaa8e88a9c0b4e50d65067f09e9c7bcaa791548c"
+  },
+  "memory_poisoning_example": {
+    "request": {
+      "accepted_signals": [
+        {
+          "_validation": {
+            "candidate_entities": [
+              {
+                "canonical": "Unreviewed Runtime Authority"
+              }
+            ]
+          },
+          "domain": "core",
+          "signal_id": "poison_signal",
+          "source": "untrusted_runtime_prompt"
+        }
+      ],
+      "authority_boundary": {
+        "boundary_status": "BYPASSED",
+        "interpretation_references_retrieval": false
+      },
+      "confidence": 0.99,
+      "consensus": {
+        "contradiction_pressure": 0.0,
+        "contradictions": []
+      },
+      "interpretation_hash": "a667d44940b449af0a9bac1435d9cf34f4fa0e3f702c7382f2b50fd3c59e11bc",
+      "ontology_lineage": [],
+      "query": "Poisoning attempt bypassing retrieval truth.",
+      "rejected_signals": [],
+      "retrieval_truth_hash": null,
+      "trace_id": "constitutional_poisoning_attempt",
+      "user_id": "constitutional-demo-user",
+      "verification_status": "VERIFIED"
+    },
+    "result": {
+      "canonical_authority_granted": false,
+      "canonical_memory_keys": [
+        "Atman",
+        "Bhagavata Purana",
+        "Brahma",
+        "Brahman",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Taittiriya Upanishad",
+        "Upanishads",
+        "Vedas",
+        "Yoga"
+      ],
+      "checkpoint_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": false,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [
+          "Unreviewed Runtime Authority"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "transient",
+        "trace_id": "constitutional_poisoning_attempt",
+        "updated_at": "2026-05-13T14:06:48.381724Z"
+      },
+      "event_hash": "53fa6dab62136ae066fb9b00e43c7799b9ab97f12213c26b22457da6e997437d",
+      "event_log_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": false,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "REJECT_CANONICAL_MUTATION",
+        "failure_states": [],
+        "memory_classification": "transient",
+        "reasons": [
+          "missing_retrieval_truth_hash",
+          "truth_interpretation_boundary_not_enforced",
+          "interpretation_does_not_reference_retrieval_truth"
+        ],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": true,
+      "lineage_traceable": true,
+      "mutation_id": "5866c3edf53d63b7b30d619aaa79708a55be8330589c802dd7bd32da52d4a1fe",
+      "observability_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": true,
+        "last_event_hash": "72499fddff766cc6a54ce496aca5973a61e2ef0dfa8680af8a673e260bf98f59",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "1cad035e4e4d9ce622d3d83cbaa8e88a9c0b4e50d65067f09e9c7bcaa791548c",
+      "transient_event_count": 18
+    }
+  },
+  "observability_outputs": {
+    "canonical_entity_count": 11,
+    "contradiction_event_count": 1,
+    "event_count": 23,
+    "generated_at": "2026-06-29T07:39:45.541447Z",
+    "hash_chain_ok": true,
+    "last_event_hash": "72499fddff766cc6a54ce496aca5973a61e2ef0dfa8680af8a673e260bf98f59",
+    "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_OBSERVABILITY_V1",
+    "state_hash": "1cad035e4e4d9ce622d3d83cbaa8e88a9c0b4e50d65067f09e9c7bcaa791548c",
+    "transient_event_count": 18
+  },
+  "proof_logs": [
+    "constitutional_replay_qubit.json",
+    "constitutional_lineage_vishnu.json",
+    "constitutional_transient_governance.json"
+  ],
+  "replay_checks": [
+    {
+      "canonical_authority_granted": false,
+      "idempotent_replay_observed": true,
+      "interpretation_hash_stable": true,
+      "memory_classification": "transient",
+      "retrieval_truth_hash_stable": true,
+      "semantic_event_hash_stable": true,
+      "semantic_mutation_id_stable": true,
+      "trace_id": "constitutional_replay_qubit"
+    },
+    {
+      "canonical_authority_granted": true,
+      "idempotent_replay_observed": true,
+      "interpretation_hash_stable": true,
+      "memory_classification": "canonical",
+      "retrieval_truth_hash_stable": true,
+      "semantic_event_hash_stable": true,
+      "semantic_mutation_id_stable": true,
+      "trace_id": "constitutional_lineage_vishnu"
+    },
+    {
+      "canonical_authority_granted": false,
+      "idempotent_replay_observed": true,
+      "interpretation_hash_stable": true,
+      "memory_classification": "transient",
+      "retrieval_truth_hash_stable": true,
+      "semantic_event_hash_stable": true,
+      "semantic_mutation_id_stable": true,
+      "trace_id": "constitutional_transient_governance"
+    }
+  ],
+  "rollback_demonstration": {
+    "rollback_event_count": 1,
+    "rollback_hash_chain_ok": true,
+    "rollback_state_hash": "dbdf09ad8ea757433a488761143b0c72c235a35d578bfbf2688c9bbe469d20b6",
+    "target_event_hash": "ee885e7b53760604fa12610a511526ccd8098b5ee3451eda8022e6b1cf1d131f"
+  },
+  "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_PROOF_V1",
+  "semantic_corruption_test": {
+    "corrupt_path": "C:/Users/Yass0/OneDrive/Desktop/uniguru_3/uniguru_v2-main/review_packets/proof_logs/constitutional_corruption_fixture.jsonl",
+    "corruption_tested": true,
+    "expected_detection": true,
+    "hash_chain_ok": false,
+    "state_hash": "532b0d4a9c495c0d698f8d7598726e1aa613cb6258540716ddba1c625f236073"
+  },
+  "semantic_mutation_traces": [
+    {
+      "decision": {
+        "canonical_authority_granted": false,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "REJECT_CANONICAL_MUTATION",
+        "failure_states": [
+          "PARTIAL_REJECTION_PRESENT"
+        ],
+        "memory_classification": "transient",
+        "reasons": [
+          "verification_status_not_verified",
+          "no_accepted_signals",
+          "confidence_below_canonical_floor"
+        ],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "event_hash": "ee885e7b53760604fa12610a511526ccd8098b5ee3451eda8022e6b1cf1d131f",
+      "mutation_id": "fd7bb693eac05fd526beda85edd8e83b0425777de03aa2b2c222b73a49cb45a9",
+      "state_hash": "fac69a2d1a8465d438f136e4d2ace56daf121e1b46a4eec879cf0da0ea96538b",
+      "trace_id": "constitutional_replay_qubit"
+    },
+    {
+      "decision": {
+        "canonical_authority_granted": true,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "ACCEPT_CANONICAL_MUTATION",
+        "failure_states": [
+          "PARTIAL_REJECTION_PRESENT"
+        ],
+        "memory_classification": "canonical",
+        "reasons": [],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "event_hash": "72499fddff766cc6a54ce496aca5973a61e2ef0dfa8680af8a673e260bf98f59",
+      "mutation_id": "0ec3c64440fe969e294edfa3021619622dbdacb46c92408c06881c71cb5c2d51",
+      "state_hash": "1cad035e4e4d9ce622d3d83cbaa8e88a9c0b4e50d65067f09e9c7bcaa791548c",
+      "trace_id": "constitutional_lineage_vishnu"
+    },
+    {
+      "decision": {
+        "canonical_authority_granted": false,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "REJECT_CANONICAL_MUTATION",
+        "failure_states": [
+          "PARTIAL_REJECTION_PRESENT"
+        ],
+        "memory_classification": "transient",
+        "reasons": [
+          "verification_status_not_verified",
+          "no_accepted_signals",
+          "confidence_below_canonical_floor"
+        ],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "event_hash": "7c588607585b5403e108e0c971f444bd03a11c0fff3cc1718c73f6c668679b52",
+      "mutation_id": "c2f56c78ce76294952c5fccf49b343e2f795425c2483a0fa8c8e2bf424ff1ab4",
+      "state_hash": "1cad035e4e4d9ce622d3d83cbaa8e88a9c0b4e50d65067f09e9c7bcaa791548c",
+      "trace_id": "constitutional_transient_governance"
+    }
+  ],
+  "vinayak_testing_matrix": {
+    "contradiction_injection_tests": true,
+    "lineage_continuity_validation": true,
+    "memory_poisoning_tests": true,
+    "observability_verification": true,
+    "ontology_mutation_tests": "covered by backend/tests/test_constitutional_semantic_memory.py",
+    "replay_reconstruction_tests": true,
+    "rollback_validation": true,
+    "semantic_corruption_tests": true
+  }
+}

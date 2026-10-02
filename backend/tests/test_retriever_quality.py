@@ -114,3 +114,60 @@ def test_synthesis_failure_falls_back_to_primary_document():
         response = retriever.reason_and_compare(results, "What is Brahman?")
 
     assert response["content"] == primary_content
+
+
+def test_specific_source_and_topic_must_both_have_evidence():
+    retriever = AdvancedRetriever()
+
+    results = retriever.retrieve_multi(
+        "What agricultural practices are mentioned in the Padma Purana?"
+    )
+
+    assert results == []
+
+
+def test_conversational_filler_does_not_retrieve_unrelated_documents():
+    retriever = AdvancedRetriever()
+
+    assert retriever.retrieve_multi("Explain it simply.") == []
+
+
+def test_exact_concept_title_is_ranked_first():
+    retriever = AdvancedRetriever()
+
+    results = retriever.retrieve_multi("What is Dharma?")
+
+    assert results
+    assert results[0]["file"] == "dharma.md"
+    assert results[0]["evidence_coverage"] == 1.0
+
+
+def test_duplicate_basename_documents_are_not_overwritten():
+    retriever = AdvancedRetriever()
+
+    assert len(retriever.knowledge_map) == 75
+
+
+def test_python_and_its_history_are_retrievable_from_active_kb():
+    retriever = AdvancedRetriever()
+
+    overview = retriever.retrieve_multi("What is Python?")
+    history = retriever.retrieve_multi("What is the history of Python?")
+
+    assert overview
+    assert overview[0]["path"] == "programming/python.md"
+    assert "high-level programming language" in overview[0]["content"]
+    assert history
+    assert history[0]["path"] == "programming/python.md"
+    assert "late 1980s" in history[0]["content"]
+
+
+def test_india_prime_minister_query_returns_officially_sourced_history():
+    retriever = AdvancedRetriever()
+
+    results = retriever.retrieve_multi("india prime minister")
+
+    assert results
+    assert results[0]["path"] == "history/india_government_and_history.md"
+    assert "Narendra Modi" in results[0]["content"]
+    assert "9 June 2024" in results[0]["content"]

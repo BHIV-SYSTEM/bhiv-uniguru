@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-08-29T05:11:57.313278Z",
+  "passed": 6,
+  "schema": "UNIGURU_FAULT_INJECTION_REPORT_V1",
+  "tests": [
+    {
+      "description": "Whitespace-only query must be rejected with 4xx",
+      "elapsed_ms": 22.11,
+      "name": "empty_query",
+      "note": "Pydantic min_length=1 or normalise validator expected to reject",
+      "passed": true,
+      "status_code": 422
+    },
+    {
+      "description": "Query >2000 chars must be rejected with 4xx",
+      "elapsed_ms": 4.14,
+      "name": "oversized_query",
+      "note": "Pydantic max_length=2000 expected to reject",
+      "passed": true,
+      "status_code": 422
+    },
+    {
+      "description": "Out-of-domain query must return 200 with valid replay-safe vijay_validation",
+      "elapsed_ms": 1518.24,
+      "name": "out_of_domain_query",
+      "passed": true,
+      "status_code": 200,
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "vijay_replay_safe": true
+    },
+    {
+      "description": "Same trace_id must yield identical vijay_validation.runtime_hash",
+      "hashes_match": true,
+      "name": "replay_determinism",
+      "passed": true,
+      "run1_hash": "eda229bd92a3cf6eb25e1cb7f448603070b05785aa7acce463120ef6d81dbe0f",
+      "run1_status": 200,
+      "run2_hash": "eda229bd92a3cf6eb25e1cb7f448603070b05785aa7acce463120ef6d81dbe0f",
+      "run2_status": 200
+    },
+    {
+      "all_200": true,
+      "all_replay_safe": true,
+      "description": "5 concurrent requests must all return 200 with replay_safe=true",
+      "latencies_ms": [
+        2577.92,
+        2650.71,
+        2664.07,
+        2672.62,
+        2693.61
+      ],
+      "name": "concurrent_execution",
+      "passed": true,
+      "total_requests": 5
+    },
+    {
+      "description": "GET /health must return 200 ok with sub-100ms latency",
+      "elapsed_ms": 10.33,
+      "name": "health_under_load",
+      "passed": true,
+      "status_code": 200,
+      "status_field": "ok"
+    }
+  ],
+  "total": 6,
+  "verdict": "ALL_PASS"
+}

@@ -1,0 +1,23 @@
+{
+  "rows": [
+    {
+      "alert": "CONSTITUTIONAL_ONTOLOGY_DRIFT_OR_CAP_EXCEEDED",
+      "alert_hash": "33ebc989961fa88885f48995374d3558e5feb5ed6a7d735fe77edbe2f9bac60f",
+      "claim_key": "civilizational_memory",
+      "ontology_drift_accepted": false,
+      "requested_legitimacy": 0.9,
+      "semantic_legitimacy_cap": 0.1374,
+      "violation_count": 2
+    },
+    {
+      "alert": "CONSTITUTIONAL_ONTOLOGY_DRIFT_OR_CAP_EXCEEDED",
+      "alert_hash": "350e182a8652f1750836d59f93b8c3c32ac25175f6b3e079bec7f91f1ea24b48",
+      "claim_key": "governed_claim",
+      "ontology_drift_accepted": false,
+      "requested_legitimacy": 0.82,
+      "semantic_legitimacy_cap": 0.1062,
+      "violation_count": 2
+    }
+  ],
+  "schema": "UNIGURU_SEMANTIC_DRIFT_ALERTS_V1"
+}

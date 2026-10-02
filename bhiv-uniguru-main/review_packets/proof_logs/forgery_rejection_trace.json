@@ -1,0 +1,23 @@
+{
+  "accepted": false,
+  "rejected": true,
+  "verification": {
+    "failure_count": 2,
+    "failures": [
+      {
+        "actual_previous_hash": "forged_previous_hash",
+        "expected_previous_hash": "ff176c26646656ba7ab596ae44246577bb48edcdc0e17062e4021ff9fb29989c",
+        "index": 6,
+        "type": "previous_hash_mismatch"
+      },
+      {
+        "actual_event_hash": "f0fc345b31bf94487ded348d63e493b2664d28d4c68e68c1c4eac09d7b48818b",
+        "expected_event_hash": "0e2a288636b56d6617712741e917978eaee847ed4160009695d55b9fa5f3b94a",
+        "index": 6,
+        "type": "event_hash_mismatch"
+      }
+    ],
+    "hash_chain_ok": false,
+    "last_event_hash": "f0fc345b31bf94487ded348d63e493b2664d28d4c68e68c1c4eac09d7b48818b"
+  }
+}

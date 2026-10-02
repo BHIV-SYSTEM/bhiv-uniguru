@@ -1,0 +1,4647 @@
+{
+  "canonical_concept": {
+    "shabda": "काल",
+    "canonical_name": "kala",
+    "sanskrit": "काल",
+    "transliteration": "Kāla",
+    "beeja": "क्रीं (Krīm) — the bīja of Kālī (the Goddess of time and death). Also कं (Kaṃ) — the bīja of Brahmā (the creator who operates within time).",
+    "vyakarana": "Kāla is a masculine noun. It has two distinct meanings: (1) time (the cosmic principle), (2) death/Yama (the lord of time). The same word means both \"time\" and \"death\" — time is the force that leads all things to death.",
+    "functional_meaning": "Kāla is the universal principle of time that governs all change, growth, decay, and death. It operates at multiple levels: Kṣaṇa (moment), Muhūrta (48 minutes), Ahorātra (day-night), Pakṣa (fortnight), Māsa (month), Ṛtu (season), Ayana (half-year), Saṃvatsara (year), Yuga (cosmic age), Kalpa (cosmic cycle). The Bhagavad Gītā (11.32) identifies Kāla with Kṛṣṇa himself: \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" — I am time, the destroyer of worlds.",
+    "dhatu": "कल् (Kal) — To count, to calculate; also connected to कल् (Kal) — to drive, to impel. Time is that which counts/measures and that which drives all things forward.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:kala",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Kalayati iti kālaḥ\" — that which counts/measures. Also: \"kālayati sarvam iti kālaḥ\" — that which drives everything forward. Time is the universal driver.",
+    "related_concepts": [
+      "dharma",
+      "karma",
+      "maya",
+      "brahman (beyond time)",
+      "atman (beyond time)"
+    ],
+    "tattva": "Kāla-Tattva — the principle of time. In Sāṃkhya: Kāla is not a separate tattva but the mode of Prakṛti's activity. In Kashmir Śaivism: Kāla is one of the five kañcukas (coverings) that limit the universal consciousness — it limits the soul's experience to a particular time."
+  },
+  "civilizational_knowledge": {
+    "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
+    "concept_id": "sanskar:sanskrit:kala",
+    "canonical_name": "kala",
+    "lexical_record": {
+      "shabda": "काल",
+      "canonical_name": "kala",
+      "sanskrit": "काल",
+      "transliteration": "Kāla",
+      "beeja": "क्रीं (Krīm) — the bīja of Kālī (the Goddess of time and death). Also कं (Kaṃ) — the bīja of Brahmā (the creator who operates within time).",
+      "vyakarana": "Kāla is a masculine noun. It has two distinct meanings: (1) time (the cosmic principle), (2) death/Yama (the lord of time). The same word means both \"time\" and \"death\" — time is the force that leads all things to death.",
+      "functional_meaning": "Kāla is the universal principle of time that governs all change, growth, decay, and death. It operates at multiple levels: Kṣaṇa (moment), Muhūrta (48 minutes), Ahorātra (day-night), Pakṣa (fortnight), Māsa (month), Ṛtu (season), Ayana (half-year), Saṃvatsara (year), Yuga (cosmic age), Kalpa (cosmic cycle). The Bhagavad Gītā (11.32) identifies Kāla with Kṛṣṇa himself: \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" — I am time, the destroyer of worlds.",
+      "dhatu": "कल् (Kal) — To count, to calculate; also connected to कल् (Kal) — to drive, to impel. Time is that which counts/measures and that which drives all things forward.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:kala",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Kalayati iti kālaḥ\" — that which counts/measures. Also: \"kālayati sarvam iti kālaḥ\" — that which drives everything forward. Time is the universal driver.",
+      "related_concepts": [
+        "dharma",
+        "karma",
+        "maya",
+        "brahman (beyond time)",
+        "atman (beyond time)"
+      ],
+      "tattva": "Kāla-Tattva — the principle of time. In Sāṃkhya: Kāla is not a separate tattva but the mode of Prakṛti's activity. In Kashmir Śaivism: Kāla is one of the five kañcukas (coverings) that limit the universal consciousness — it limits the soul's experience to a particular time."
+    },
+    "layers": {
+      "sanskrit": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "काल",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "shabda": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "काल",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "acoustic_phonetics": {
+          "status": "EVIDENCE_BACKED",
+          "claims": [
+            {
+              "value": {
+                "iast": "krīṃ",
+                "ipa": "krĩː",
+                "varna_class": "compound bīja (ka + ra + ī + anusvāra)",
+                "sthana": "kaṇṭha + danta-mūla + tālu with nasalization",
+                "prayatna": "compound: plosive + semivowel + long vowel + anusvāra",
+                "vedic_pitch": "ūrdhva (ascending) — Kāla = time which ascends and transforms",
+                "mantra_frequency_note": "Krīṃ is the bīja of Kālī, the Goddess of time. The compound ka+ra+ī+ṃ represents: creation (ka) + fire (ra) + consciousness (ī) + resonance (ṃ). Pāṇinīya-Śikṣā discusses compound bījas in the context of maṅgala-vācaka.",
+                "siksha_source": "Pāṇinīya-Śikṣā 4.3 (compound bīja formation)"
+              },
+              "classification": "SOURCE_SCOPED",
+              "provenance": [
+                {
+                  "source_id": "8f88727662228f49",
+                  "evidence_type": "VEDA",
+                  "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+                  "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+                  "retrieval_system": "uniguru_vedanga_shiksha"
+                }
+              ]
+            }
+          ],
+          "provenance": [
+            {
+              "source_id": "8f88727662228f49",
+              "evidence_type": "VEDA",
+              "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+              "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+              "retrieval_system": "uniguru_vedanga_shiksha"
+            }
+          ],
+          "source": "Pāṇinīya-Śikṣā; Taittirīya Prātiśākhya; Ṛgveda-Prātiśākhya"
+        }
+      },
+      "dhatu": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "कल् (Kal) — To count, to calculate; also connected to कल् (Kal) — to drive, to impel. Time is that which counts/measures and that which drives all things forward.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "vyakarana": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Kāla is a masculine noun. It has two distinct meanings: (1) time (the cosmic principle), (2) death/Yama (the lord of time). The same word means both \"time\" and \"death\" — time is the force that leads all things to death.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "panini_grammar": {
+          "status": "EVIDENCE_BACKED",
+          "dhatu_root_key": "kal",
+          "panini_sutras": [
+            {
+              "sutra_number": "3.3.18",
+              "sutra_text": "karmaṇy adhikaraṇe ca",
+              "rule_class": "kṛt-pratyaya",
+              "gloss": "From kal (to count, to impel) with suffix -a and lengthened ā; kāla = time, that which counts/impels.",
+              "pada": "adhyāya 3, pāda 3",
+              "derived_word": "kāla",
+              "provenance": {
+                "source_id": "b28c9d261b8bda82",
+                "evidence_type": "PANINI",
+                "source_path": "knowledge/gurukul/sanskrit/grammar.md",
+                "content_hash": "299f9fb5707fc2cd60a56d5d4da0e8c077d32a2419edaadb5b0051e4aff11733",
+                "retrieval_system": "uniguru_vedanga_grammar"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "source_id": "b28c9d261b8bda82",
+              "evidence_type": "PANINI",
+              "source_path": "knowledge/gurukul/sanskrit/grammar.md",
+              "content_hash": "299f9fb5707fc2cd60a56d5d4da0e8c077d32a2419edaadb5b0051e4aff11733",
+              "retrieval_system": "uniguru_vedanga_grammar"
+            }
+          ],
+          "source": "Pāṇini Ashtadhyayi via UniGuru Gurukul grammar.md"
+        }
+      },
+      "nirukta": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "\"Kalayati iti kālaḥ\" — that which counts/measures. Also: \"kālayati sarvam iti kālaḥ\" — that which drives everything forward. Time is the universal driver.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "beeja": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "क्रीं (Krīm) — the bīja of Kālī (the Goddess of time and death). Also कं (Kaṃ) — the bīja of Brahmā (the creator who operates within time).",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "acoustic_phonetics": {
+          "status": "EVIDENCE_BACKED",
+          "claims": [
+            {
+              "value": {
+                "iast": "krīṃ",
+                "ipa": "krĩː",
+                "varna_class": "compound bīja (ka + ra + ī + anusvāra)",
+                "sthana": "kaṇṭha + danta-mūla + tālu with nasalization",
+                "prayatna": "compound: plosive + semivowel + long vowel + anusvāra",
+                "vedic_pitch": "ūrdhva (ascending) — Kāla = time which ascends and transforms",
+                "mantra_frequency_note": "Krīṃ is the bīja of Kālī, the Goddess of time. The compound ka+ra+ī+ṃ represents: creation (ka) + fire (ra) + consciousness (ī) + resonance (ṃ). Pāṇinīya-Śikṣā discusses compound bījas in the context of maṅgala-vācaka.",
+                "siksha_source": "Pāṇinīya-Śikṣā 4.3 (compound bīja formation)"
+              },
+              "classification": "SOURCE_SCOPED",
+              "provenance": [
+                {
+                  "source_id": "8f88727662228f49",
+                  "evidence_type": "VEDA",
+                  "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+                  "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+                  "retrieval_system": "uniguru_vedanga_shiksha"
+                }
+              ]
+            }
+          ],
+          "provenance": [
+            {
+              "source_id": "8f88727662228f49",
+              "evidence_type": "VEDA",
+              "source_path": "knowledge/sanskrit/phonetics/bija_phonetics.json",
+              "content_hash": "70b67f4baca43018da4942d5c058b9de0446bdaa8c7fdf2e08f9f1459d2458d7",
+              "retrieval_system": "uniguru_vedanga_shiksha"
+            }
+          ],
+          "source": "Pāṇinīya-Śikṣā; Taittirīya Prātiśākhya; Ṛgveda-Prātiśākhya"
+        }
+      },
+      "tattva": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Kāla-Tattva — the principle of time. In Sāṃkhya: Kāla is not a separate tattva but the mode of Prakṛti's activity. In Kashmir Śaivism: Kāla is one of the five kañcukas (coverings) that limit the universal consciousness — it limits the soul's experience to a particular time.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "shakti": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "literal_meaning": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Time; the right time; death; the black one (Kāla = black = death).",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "functional_meaning": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Kāla is the universal principle of time that governs all change, growth, decay, and death. It operates at multiple levels: Kṣaṇa (moment), Muhūrta (48 minutes), Ahorātra (day-night), Pakṣa (fortnight), Māsa (month), Ṛtu (season), Ayana (half-year), Saṃvatsara (year), Yuga (cosmic age), Kalpa (cosmic cycle). The Bhagavad Gītā (11.32) identifies Kāla with Kṛṣṇa himself: \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" — I am time, the destroyer of worlds.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "ontology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Vaiśeṣika: Kāla is one of the nine dravyas (substances) — eternal, all-pervading, the cause of all temporal relations. In Sāṃkhya: Kāla is not a separate substance but the mode of Prakṛti's activity. In Advaita: Kāla is within māyā — from the absolute standpoint, there is no time. In Kashmir Śaivism: Kāla is one of the five kañcukas that limit the soul.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "cosmology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Vedic cosmology: the four yugas (Kṛta/Satya, Tretā, Dvāpara, Kali) constitute a mahāyuga (4,320,000 years). 1000 mahāyugas = one kalpa (day of Brahmā = 4.32 billion years). The concept of mahāpralaya (great dissolution) at the end of Brahmā's life (311 trillion years). The Purāṇas describe Kāla as the cosmic force that drives the universe through its cycles.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "psychology": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Kāla as psychological principle: the experience of time is subjective — time flies in joy and drags in suffering. The concept of kāla-jñāna (knowledge of time) — the wise person knows the right time for action. The concept of kāla-yoga (the yoga of time) — acting in alignment with the cosmic time.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "governance": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The concept of Kāla in governance: the Arthaśāstra emphasizes kāla (timing) as one of the most important factors in governance. The concept of kāla-nīti (time-policy) — the right action at the right time. The concept of kāla-cakra (wheel of time) in political philosophy — empires rise and fall according to the wheel of time.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "medicine": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Āyurveda: Kāla (time) is one of the three causes of disease (along with karma and prajñāparādha). The concept of kāla-parīkṣā (examination of time) — the physician must consider the time of day, season, and stage of life in diagnosis and treatment. The concept of kāla-bala (strength of time) — certain times are more favorable for treatment.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "engineering": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "mathematics": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "In Vedic mathematics: Kāla is the basis of the Indian number system — the large numbers (millions, billions, trillions) were developed to measure cosmic time. The concept of kāla-gaṇita (time calculation) — the mathematics of astronomical cycles.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "astronomy": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "Jyotiṣa (Vedic astronomy) is fundamentally the science of Kāla — tracking the movements of celestial bodies to determine auspicious times. The concept of kāla-cakra (wheel of time) in Jyotiṣa — the zodiac as the wheel of cosmic time. The nakṣatra system, the tithi (lunar day), and the muhūrta (auspicious time) are all expressions of Kāla.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "metallurgy": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The concept of Kāla in metallurgy: the right time for metallurgical processes — certain times are more auspicious for smelting, forging, and casting. The concept of kāla-karma (time-action) in metallurgy.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "ritual": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The concept of Kāla in ritual: all Vedic rituals are performed at specific times determined by Jyotiṣa. The concept of muhūrta (auspicious time) — the right moment for ritual action. The concept of kāla-pūjā (worship of time) — the Kālī pūjā is the worship of the Goddess of time.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "symbolism": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "The wheel (cakra) symbolizes Kāla — the wheel of time that turns without stopping. The serpent eating its own tail (Ouroboros) symbolizes the cyclical nature of time. The skull (kapāla) symbolizes Kāla as death. The hourglass symbolizes the finite nature of human time within infinite cosmic time.",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_deities": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Kālī (the Goddess of time and death — the personification of Kāla)\n- Yama (Kāla — the lord of death and time)\n- Śiva (Mahākāla — the great time, the lord of cosmic cycles)\n- Kṛṣṇa (identifies himself as Kāla in the Bhagavad Gītā)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_lokas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Kālaloka (the realm of time — the realm of Yama)\n- All lokas exist within Kāla",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_koshas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- All five koshas exist within Kāla — they are temporal\n- Beyond all koshas is the Ātman — beyond time",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_chakras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Mūlādhāra (root chakra) — the seat of temporal existence and survival\n- Sahasrāra (crown chakra) — beyond time (kālātīta)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_yantras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Kālī Yantra (the yantra of the Goddess of time)\n- Kāla Yantra (for working with time in ritual)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_mantras": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" (Bhagavad Gītā 11.32)\n- Kālī Mantra: \"Om krīm kālikāyai namaḥ\"\n- Mahākāla Mantra: \"Om hrīm śrīm krīm paramēśvari svāhā\"",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_vidyas": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Kāla Vidyā (the science of time — Jyotiṣa)\n- Kālacakra Vidyā (the science of the wheel of time — Buddhist and Hindu)",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "related_shastras": {
+        "status": "NO_RETRIEVED_EVIDENCE",
+        "claims": []
+      },
+      "traditional_interpretations": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Vaiśeṣika: Kāla is an eternal, all-pervading substance — the cause of all temporal relations\n- Advaita: Kāla is within māyā — from the absolute standpoint, there is no time\n- Kashmir Śaivism: Kāla is one of the five kañcukas that limit the soul\n- Śākta: Kāla is the Goddess Kālī — the power of time and liberation",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "historical_evolution": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- Ṛgvedic period: Kāla as the cosmic time that governs the universe\n- Upaniṣadic period: Kāla as the force that drives all beings to death\n- Purāṇic period: Kāla as the cosmic cycles (yugas, kalpas)\n- Bhagavad Gītā: Kāla as Kṛṣṇa himself — the destroyer of worlds\n- Tantric period: Kāla as the Goddess Kālī — the liberating power of time",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "cross_references": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": [
+              "atman (beyond time)",
+              "brahman (beyond time)",
+              "dharma",
+              "karma",
+              "maya"
+            ],
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "open_research_questions": {
+        "status": "EVIDENCE_BACKED",
+        "claims": [
+          {
+            "value": "- What is the relationship between the Vedic concept of Kāla and modern physics' concept of time (spacetime, arrow of time)?\n- How does the concept of kāla-cakra (wheel of time) relate to modern cosmological theories of cyclic universes?",
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      },
+      "experimental_hypotheses": {
+        "status": "EXPLICITLY_MARKED_EXPERIMENTAL",
+        "claims": [
+          {
+            "value": "[EXPERIMENTAL — NOT CANONICAL] Some cosmologists propose that the Vedic concept of cosmic cycles (yugas, kalpas) may correspond to cyclic cosmological models (ekpyrotic universe, cyclic cosmology). This remains a speculative analogy.",
+            "classification": "EXPERIMENTAL",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ],
+        "policy": "Marked EXPERIMENTAL in source document."
+      },
+      "comparative_hermeneutics": {
+        "status": "EVIDENCE_BACKED",
+        "darshana_matrix": {
+          "advaita": {
+            "position": "Kāla is within māyā — from the absolute standpoint, there is no time",
+            "key_terms": "Advaita",
+            "source_text": "Advaita: Kāla is within māyā — from the absolute standpoint, there is no time",
+            "evidence_type": "COMMENTARY",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          },
+          "dvaita": {
+            "position": "Kāla is within māyā — from the absolute standpoint, there is no time",
+            "key_terms": "Advaita",
+            "source_text": "Advaita: Kāla is within māyā — from the absolute standpoint, there is no time",
+            "evidence_type": "COMMENTARY",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          },
+          "shakta": {
+            "position": "Kāla is the Goddess Kālī — the power of time and liberation",
+            "key_terms": "Śākta",
+            "source_text": "Śākta: Kāla is the Goddess Kālī — the power of time and liberation",
+            "evidence_type": "COMMENTARY",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        },
+        "traditions_represented": [
+          "advaita",
+          "dvaita",
+          "shakta"
+        ],
+        "claims": [
+          {
+            "value": {
+              "advaita": {
+                "position": "Kāla is within māyā — from the absolute standpoint, there is no time",
+                "key_terms": "Advaita",
+                "source_text": "Advaita: Kāla is within māyā — from the absolute standpoint, there is no time",
+                "evidence_type": "COMMENTARY",
+                "provenance": [
+                  {
+                    "source_id": "7315a0415d58b241",
+                    "evidence_type": "BHAGAVAD_GITA",
+                    "provenance": {
+                      "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "c49d9ec3761b8045",
+                    "evidence_type": "VEDA",
+                    "provenance": {
+                      "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "42d57832441cd68d",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "3544e204dde98be0",
+                    "evidence_type": "TRADITION",
+                    "provenance": {
+                      "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  }
+                ]
+              },
+              "dvaita": {
+                "position": "Kāla is within māyā — from the absolute standpoint, there is no time",
+                "key_terms": "Advaita",
+                "source_text": "Advaita: Kāla is within māyā — from the absolute standpoint, there is no time",
+                "evidence_type": "COMMENTARY",
+                "provenance": [
+                  {
+                    "source_id": "7315a0415d58b241",
+                    "evidence_type": "BHAGAVAD_GITA",
+                    "provenance": {
+                      "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "c49d9ec3761b8045",
+                    "evidence_type": "VEDA",
+                    "provenance": {
+                      "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "42d57832441cd68d",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "3544e204dde98be0",
+                    "evidence_type": "TRADITION",
+                    "provenance": {
+                      "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  }
+                ]
+              },
+              "shakta": {
+                "position": "Kāla is the Goddess Kālī — the power of time and liberation",
+                "key_terms": "Śākta",
+                "source_text": "Śākta: Kāla is the Goddess Kālī — the power of time and liberation",
+                "evidence_type": "COMMENTARY",
+                "provenance": [
+                  {
+                    "source_id": "7315a0415d58b241",
+                    "evidence_type": "BHAGAVAD_GITA",
+                    "provenance": {
+                      "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "c49d9ec3761b8045",
+                    "evidence_type": "VEDA",
+                    "provenance": {
+                      "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "42d57832441cd68d",
+                    "evidence_type": "PRIMARY_CANON",
+                    "provenance": {
+                      "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  },
+                  {
+                    "source_id": "3544e204dde98be0",
+                    "evidence_type": "TRADITION",
+                    "provenance": {
+                      "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                      "chapter": "",
+                      "verse": "",
+                      "commentary": "",
+                      "author": "",
+                      "edition": "",
+                      "translator": "",
+                      "validation_status": "UNVERIFIED",
+                      "trace_id": null,
+                      "artifact_hash": null
+                    },
+                    "source_path": "knowledge/sanskrit/kala.md",
+                    "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                    "retrieval_system": "sanskrit_lexical_records"
+                  }
+                ]
+              }
+            },
+            "classification": "SOURCE_SCOPED",
+            "provenance": [
+              {
+                "source_id": "7315a0415d58b241",
+                "evidence_type": "BHAGAVAD_GITA",
+                "provenance": {
+                  "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "c49d9ec3761b8045",
+                "evidence_type": "VEDA",
+                "provenance": {
+                  "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "42d57832441cd68d",
+                "evidence_type": "PRIMARY_CANON",
+                "provenance": {
+                  "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              },
+              {
+                "source_id": "3544e204dde98be0",
+                "evidence_type": "TRADITION",
+                "provenance": {
+                  "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+                  "chapter": "",
+                  "verse": "",
+                  "commentary": "",
+                  "author": "",
+                  "edition": "",
+                  "translator": "",
+                  "validation_status": "UNVERIFIED",
+                  "trace_id": null,
+                  "artifact_hash": null
+                },
+                "source_path": "knowledge/sanskrit/kala.md",
+                "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+                "retrieval_system": "sanskrit_lexical_records"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "retrieved_evidence": [],
+    "retrieval": {
+      "system": "uniguru_kosha",
+      "strategy": "deterministic_token_overlap",
+      "records_found": 0
+    },
+    "coverage": {
+      "total_layers": 35,
+      "evidence_backed_layers": 31,
+      "coverage_pct": 88.6
+    }
+  },
+  "pipeline": [
+    {
+      "stage": "śabda",
+      "schema_field": "shabda",
+      "value": "काल",
+      "evidence": [
+        {
+          "source_id": "7315a0415d58b241",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "c49d9ec3761b8045",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "42d57832441cd68d",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "3544e204dde98be0",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "BHAGAVAD_GITA",
+        "VEDA",
+        "PRIMARY_CANON",
+        "TRADITION"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:kala",
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6"
+      }
+    },
+    {
+      "stage": "dhātu",
+      "schema_field": "dhatu",
+      "value": "कल् (Kal) — To count, to calculate; also connected to कल् (Kal) — to drive, to impel. Time is that which counts/measures and that which drives all things forward.",
+      "evidence": [
+        {
+          "source_id": "7315a0415d58b241",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "c49d9ec3761b8045",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "42d57832441cd68d",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "3544e204dde98be0",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "BHAGAVAD_GITA",
+        "VEDA",
+        "PRIMARY_CANON",
+        "TRADITION"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:kala",
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6"
+      }
+    },
+    {
+      "stage": "vyākaraṇa",
+      "schema_field": "vyakarana",
+      "value": "Kāla is a masculine noun. It has two distinct meanings: (1) time (the cosmic principle), (2) death/Yama (the lord of time). The same word means both \"time\" and \"death\" — time is the force that leads all things to death.",
+      "evidence": [
+        {
+          "source_id": "7315a0415d58b241",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "c49d9ec3761b8045",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "42d57832441cd68d",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "3544e204dde98be0",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "BHAGAVAD_GITA",
+        "VEDA",
+        "PRIMARY_CANON",
+        "TRADITION"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:kala",
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6"
+      }
+    },
+    {
+      "stage": "nirukta",
+      "schema_field": "nirukta",
+      "value": "\"Kalayati iti kālaḥ\" — that which counts/measures. Also: \"kālayati sarvam iti kālaḥ\" — that which drives everything forward. Time is the universal driver.",
+      "evidence": [
+        {
+          "source_id": "7315a0415d58b241",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "c49d9ec3761b8045",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "42d57832441cd68d",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "3544e204dde98be0",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "BHAGAVAD_GITA",
+        "VEDA",
+        "PRIMARY_CANON",
+        "TRADITION"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:kala",
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6"
+      }
+    },
+    {
+      "stage": "bīja",
+      "schema_field": "beeja",
+      "value": "क्रीं (Krīm) — the bīja of Kālī (the Goddess of time and death). Also कं (Kaṃ) — the bīja of Brahmā (the creator who operates within time).",
+      "evidence": [
+        {
+          "source_id": "7315a0415d58b241",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "c49d9ec3761b8045",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "42d57832441cd68d",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "3544e204dde98be0",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "BHAGAVAD_GITA",
+        "VEDA",
+        "PRIMARY_CANON",
+        "TRADITION"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:kala",
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6"
+      }
+    },
+    {
+      "stage": "tattva",
+      "schema_field": "tattva",
+      "value": "Kāla-Tattva — the principle of time. In Sāṃkhya: Kāla is not a separate tattva but the mode of Prakṛti's activity. In Kashmir Śaivism: Kāla is one of the five kañcukas (coverings) that limit the universal consciousness — it limits the soul's experience to a particular time.",
+      "evidence": [
+        {
+          "source_id": "7315a0415d58b241",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "c49d9ec3761b8045",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "42d57832441cd68d",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "3544e204dde98be0",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "BHAGAVAD_GITA",
+        "VEDA",
+        "PRIMARY_CANON",
+        "TRADITION"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:kala",
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6"
+      }
+    },
+    {
+      "stage": "śakti",
+      "schema_field": "shakti",
+      "value": null,
+      "evidence": [
+        {
+          "source_id": "7315a0415d58b241",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "c49d9ec3761b8045",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "42d57832441cd68d",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "3544e204dde98be0",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "BHAGAVAD_GITA",
+        "VEDA",
+        "PRIMARY_CANON",
+        "TRADITION"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:kala",
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6"
+      }
+    },
+    {
+      "stage": "functional_meaning",
+      "schema_field": "functional_meaning",
+      "value": "Kāla is the universal principle of time that governs all change, growth, decay, and death. It operates at multiple levels: Kṣaṇa (moment), Muhūrta (48 minutes), Ahorātra (day-night), Pakṣa (fortnight), Māsa (month), Ṛtu (season), Ayana (half-year), Saṃvatsara (year), Yuga (cosmic age), Kalpa (cosmic cycle). The Bhagavad Gītā (11.32) identifies Kāla with Kṛṣṇa himself: \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" — I am time, the destroyer of worlds.",
+      "evidence": [
+        {
+          "source_id": "7315a0415d58b241",
+          "evidence_type": "BHAGAVAD_GITA",
+          "provenance": {
+            "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "c49d9ec3761b8045",
+          "evidence_type": "VEDA",
+          "provenance": {
+            "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "42d57832441cd68d",
+          "evidence_type": "PRIMARY_CANON",
+          "provenance": {
+            "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        },
+        {
+          "source_id": "3544e204dde98be0",
+          "evidence_type": "TRADITION",
+          "provenance": {
+            "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+            "chapter": "",
+            "verse": "",
+            "commentary": "",
+            "author": "",
+            "edition": "",
+            "translator": "",
+            "validation_status": "UNVERIFIED",
+            "trace_id": null,
+            "artifact_hash": null
+          },
+          "source_path": "knowledge/sanskrit/kala.md",
+          "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+          "retrieval_system": "sanskrit_lexical_records"
+        }
+      ],
+      "classification": [
+        "BHAGAVAD_GITA",
+        "VEDA",
+        "PRIMARY_CANON",
+        "TRADITION"
+      ],
+      "lineage": {
+        "concept_id": "sanskar:sanskrit:kala",
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6"
+      }
+    }
+  ],
+  "cross_references": [
+    {
+      "target": "atman (beyond time)",
+      "claim": "kala is cross-referenced with atman (beyond time) by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/kala.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "brahman (beyond time)",
+      "claim": "kala is cross-referenced with brahman (beyond time) by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/kala.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "dharma",
+      "claim": "kala is cross-referenced with dharma by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/kala.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "karma",
+      "claim": "kala is cross-referenced with karma by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/kala.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    },
+    {
+      "target": "maya",
+      "claim": "kala is cross-referenced with maya by the lexical record.",
+      "classification": "DERIVED",
+      "source_path": "knowledge/sanskrit/kala.md",
+      "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE"
+    }
+  ],
+  "cross_text_synthesis": {
+    "status": "RETRIEVED_SOURCE_RECORDS_ONLY",
+    "canonical_claims": [
+      {
+        "claim": "Kāla is the universal principle of time that governs all change, growth, decay, and death. It operates at multiple levels: Kṣaṇa (moment), Muhūrta (48 minutes), Ahorātra (day-night), Pakṣa (fortnight), Māsa (month), Ṛtu (season), Ayana (half-year), Saṃvatsara (year), Yuga (cosmic age), Kalpa (cosmic cycle). The Bhagavad Gītā (11.32) identifies Kāla with Kṛṣṇa himself: \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" — I am time, the destroyer of worlds.",
+        "classification": [
+          "BHAGAVAD_GITA",
+          "VEDA",
+          "PRIMARY_CANON",
+          "TRADITION"
+        ],
+        "source_path": "knowledge/sanskrit/kala.md"
+      }
+    ],
+    "retrieved_records": [],
+    "conflicts": [],
+    "uncertainty": "Retrieved records are preserved as source-scoped evidence; the decoder does not merge them into an untraceable summary."
+  },
+  "knowledge_graph": {
+    "graph_id": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_GRAPH_V3",
+    "schema_version": "3.0.0",
+    "nodes": [
+      {
+        "id": "sanskar:sanskrit:kala",
+        "type": "sanskrit_concept",
+        "label": "kala",
+        "address": "knowledge/sanskrit/kala.md",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "sanskar:sanskrit:dharma",
+        "type": "sanskrit_concept",
+        "label": "dharma",
+        "address": "backend/knowledge/sanskrit/dharma.md"
+      },
+      {
+        "id": "sanskar:sanskrit:karma",
+        "type": "sanskrit_concept",
+        "label": "karma",
+        "address": "backend/knowledge/sanskrit/karma.md"
+      },
+      {
+        "id": "sanskar:sanskrit:maya",
+        "type": "sanskrit_concept",
+        "label": "maya",
+        "address": "backend/knowledge/sanskrit/maya.md"
+      },
+      {
+        "id": "deity:kali",
+        "type": "deity",
+        "label": "Kālī",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "deity:yama",
+        "type": "deity",
+        "label": "Yama",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "deity:siva",
+        "type": "deity",
+        "label": "Śiva",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "deity:krsna",
+        "type": "deity",
+        "label": "Kṛṣṇa",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "loka:kalaloka",
+        "type": "loka",
+        "label": "Kālaloka",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "loka:all_lokas_exist_within_kala",
+        "type": "loka",
+        "label": "All lokas exist within Kāla",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "kosha_ref:all_five_koshas_exist_within_kala_—_they_are_temporal",
+        "type": "kosha",
+        "label": "All five koshas exist within Kāla — they are temporal",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "kosha_ref:beyond_all_koshas_is_the_atman_—_beyond_time",
+        "type": "kosha",
+        "label": "Beyond all koshas is the Ātman — beyond time",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "chakra_ref:muladhara",
+        "type": "chakra",
+        "label": "Mūlādhāra",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "chakra_ref:sahasrara",
+        "type": "chakra",
+        "label": "Sahasrāra",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "yantra:kali_yantra",
+        "type": "yantra",
+        "label": "Kālī Yantra",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "yantra:kala_yantra",
+        "type": "yantra",
+        "label": "Kāla Yantra",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "vidya:kala_vidya",
+        "type": "vidya",
+        "label": "Kāla Vidyā",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "id": "vidya:kalacakra_vidya",
+        "type": "vidya",
+        "label": "Kālacakra Vidyā",
+        "provenance": "knowledge/sanskrit/kala.md"
+      }
+    ],
+    "edges": [
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "sanskar:sanskrit:dharma",
+        "type": "canonical_cross_reference",
+        "evidence_type": "DERIVED",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "sanskar:sanskrit:karma",
+        "type": "canonical_cross_reference",
+        "evidence_type": "DERIVED",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "sanskar:sanskrit:maya",
+        "type": "canonical_cross_reference",
+        "evidence_type": "DERIVED",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "deity:kali",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "deity:yama",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "deity:siva",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "deity:krsna",
+        "type": "related_deity",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "loka:kalaloka",
+        "type": "related_loka",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "loka:all_lokas_exist_within_kala",
+        "type": "related_loka",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "kosha_ref:all_five_koshas_exist_within_kala_—_they_are_temporal",
+        "type": "related_kosha",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "kosha_ref:beyond_all_koshas_is_the_atman_—_beyond_time",
+        "type": "related_kosha",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "chakra_ref:muladhara",
+        "type": "related_chakra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "chakra_ref:sahasrara",
+        "type": "related_chakra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "yantra:kali_yantra",
+        "type": "related_yantra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "yantra:kala_yantra",
+        "type": "related_yantra",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "vidya:kala_vidya",
+        "type": "related_vidya",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      },
+      {
+        "from": "sanskar:sanskrit:kala",
+        "to": "vidya:kalacakra_vidya",
+        "type": "related_vidya",
+        "evidence_type": "TRADITION",
+        "provenance": "knowledge/sanskrit/kala.md"
+      }
+    ],
+    "metadata": {
+      "adapter": "uniguru_civilizational_enrichment_v3",
+      "consistency_valid": true,
+      "orphaned_nodes": [],
+      "source_snapshot_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+      "node_count": 18,
+      "edge_count": 17
+    }
+  },
+  "functional_meaning": {
+    "summary": "Kāla is the universal principle of time that governs all change, growth, decay, and death. It operates at multiple levels: Kṣaṇa (moment), Muhūrta (48 minutes), Ahorātra (day-night), Pakṣa (fortnight), Māsa (month), Ṛtu (season), Ayana (half-year), Saṃvatsara (year), Yuga (cosmic age), Kalpa (cosmic cycle). The Bhagavad Gītā (11.32) identifies Kāla with Kṛṣṇa himself: \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" — I am time, the destroyer of worlds.",
+    "classification": "SOURCE_SCOPED_CANONICAL_TEXT"
+  },
+  "provenance": {
+    "registry_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "schema_version": "uniguru_civilizational_enrichment_v3",
+    "source_documents": [
+      {
+        "source_id": "7315a0415d58b241",
+        "evidence_type": "BHAGAVAD_GITA",
+        "provenance": {
+          "source_text": "Bhagavad Gītā 11.32 (Kṛṣṇa as Kāla)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "c49d9ec3761b8045",
+        "evidence_type": "VEDA",
+        "provenance": {
+          "source_text": "Atharvaveda 19.53-54 (Kāla Sūkta — hymn to time)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "42d57832441cd68d",
+        "evidence_type": "PRIMARY_CANON",
+        "provenance": {
+          "source_text": "Vaiśeṣika Sūtras 2.2.6 (Kāla as a substance)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+        "retrieval_system": "sanskrit_lexical_records"
+      },
+      {
+        "source_id": "3544e204dde98be0",
+        "evidence_type": "TRADITION",
+        "provenance": {
+          "source_text": "Arthaśāstra 1.19 (Kāla in governance)",
+          "chapter": "",
+          "verse": "",
+          "commentary": "",
+          "author": "",
+          "edition": "",
+          "translator": "",
+          "validation_status": "UNVERIFIED",
+          "trace_id": null,
+          "artifact_hash": null
+        },
+        "source_path": "knowledge/sanskrit/kala.md",
+        "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6",
+        "retrieval_system": "sanskrit_lexical_records"
+      }
+    ],
+    "retrieved_records": [],
+    "lineage": {
+      "concept_id": "sanskar:sanskrit:kala",
+      "source_path": "knowledge/sanskrit/kala.md",
+      "content_hash": "dd1d36cbd7238800c1c627be9162a0142c23a7a5d42cf5d28e36a339add847a6"
+    },
+    "replay_safe": true
+  },
+  "governed_response": {
+    "evidence_classification": {
+      "classification": "SOURCE_SCOPED",
+      "evidence_types": [
+        "BHAGAVAD_GITA",
+        "PRIMARY_CANON",
+        "TRADITION",
+        "VEDA"
+      ],
+      "notes": "Claims are either lexical source fields or verbatim retrieved UniGuru records; no generative canonical summary is used."
+    },
+    "research_classification": "civilizational_knowledge",
+    "governance_state": "read_only_observation"
+  },
+  "result_hash": "90a17d492dc5ad8a50ad5c8c34d386cef3070cd52368d8093986d520c53c016b"
+}

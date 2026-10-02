@@ -1,0 +1,15 @@
+{
+  "38013493a3ed3960baa1f964a07c0b884aa6ea73e3d424653b6c6ddaacf96009": {
+    "trace_id": "38013493a3ed3960baa1f964a07c0b884aa6ea73e3d424653b6c6ddaacf96009",
+    "semantic_entity": "Light",
+    "conflicting_states": [
+      "514401db80eb9120c551e72d6aab0a91214e0ec6247a255dc3f1ead1141c03b1",
+      "e519f8cf0e4cf6f56ca2672c38e38f6c4f4d5a2fea435f4f9ada36988c2d361b"
+    ],
+    "resolution_state_hash": "cf50593fe9a88c6d4fc1be1fa6e210d975f09ff7f78512cc15e977a7ccbe4a51",
+    "escalation_pathway": "AI_AUTO_RESOLVE",
+    "tamper_seal": "65bd26b9454e3787c56e6493ca1e2f4bffe24720b59626da3a20bfc41e08f034",
+    "timestamp": 1788528290.2676702,
+    "parent_trace_id": null
+  }
+}

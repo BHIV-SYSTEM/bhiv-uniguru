@@ -1,0 +1,30 @@
+{
+  "ontology_id": "UNIGURU_CANONICAL_CURRICULUM_ONTOLOGY_V1",
+  "node_types": [
+    "publisher",
+    "board",
+    "textbook",
+    "edition",
+    "chapter",
+    "section",
+    "concept",
+    "exercise",
+    "learning_outcome",
+    "assessment",
+    "mastery_node",
+    "learning_path"
+  ],
+  "edge_types": [
+    "assessed_by",
+    "contains_chapter",
+    "contains_section",
+    "governs",
+    "has_edition",
+    "leads_to",
+    "part_of",
+    "produces_outcome",
+    "publishes",
+    "teaches_concept",
+    "verified_by"
+  ]
+}

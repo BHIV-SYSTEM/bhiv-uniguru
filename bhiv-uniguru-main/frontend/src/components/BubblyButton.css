@@ -1,0 +1,121 @@
+/* Base bubbly button styles */
+.bubbly-button {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 0.5em 1em; /* Reduced default padding */
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 9999px; /* Full rounded corners like the original buttons */
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow ease-in 0.25s;
+  font-weight: 600;
+  overflow: visible;
+}
+
+.bubbly-button:focus {
+  outline: 0;
+}
+
+.bubbly-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.bubbly-button:disabled:hover {
+  transform: none;
+}
+
+/* Bubble elements created by GSAP - small and star-like */
+.bubble {
+  border-radius: 50%;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+  filter: blur(0.5px); /* Slight blur for softer star effect */
+}
+
+/* Primary variant - Gradient theme matching your app (30% less bright) */
+.bubbly-button-primary {
+  background: linear-gradient(135deg, #4a8bc7, #7a6bc4, #9560b8, #7a73b8, #5fa0a8, #47b399);
+  color: #fff;
+  box-shadow: 0 2px 25px rgba(97, 172, 239, 0.35);
+}
+
+.bubbly-button-primary:hover {
+  box-shadow: 0 4px 30px rgba(97, 172, 239, 0.42);
+}
+
+/* Secondary variant - Yellow theme (30% less bright) */
+.bubbly-button-secondary {
+  background: linear-gradient(135deg, #d4a01c, #cc7f08);
+  color: #fff;
+  box-shadow: 0 2px 25px rgba(251, 191, 36, 0.35);
+}
+
+.bubbly-button-secondary:hover {
+  box-shadow: 0 4px 30px rgba(251, 191, 36, 0.42);
+}
+
+/* Success variant - Green theme (30% less bright) */
+.bubbly-button-success {
+  background: linear-gradient(135deg, #0b8a5a, #046647);
+  color: #fff;
+  box-shadow: 0 2px 25px rgba(16, 185, 129, 0.35);
+}
+
+.bubbly-button-success:hover {
+  box-shadow: 0 4px 30px rgba(16, 185, 129, 0.42);
+}
+
+/* Warning variant - Orange theme (30% less bright) */
+.bubbly-button-warning {
+  background: linear-gradient(135deg, #cc5a0f, #b8460a);
+  color: #fff;
+  box-shadow: 0 2px 25px rgba(249, 115, 22, 0.35);
+}
+
+.bubbly-button-warning:hover {
+  box-shadow: 0 4px 30px rgba(249, 115, 22, 0.42);
+}
+
+/* Danger variant - Red theme (30% less bright) */
+.bubbly-button-danger {
+  background: linear-gradient(135deg, #c73030, #a61b1b);
+  color: #fff;
+  box-shadow: 0 2px 25px rgba(239, 68, 68, 0.35);
+}
+
+.bubbly-button-danger:hover {
+  box-shadow: 0 4px 30px rgba(239, 68, 68, 0.42);
+}
+
+/* Disabled state styling */
+.bubbly-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  animation: none !important;
+}
+
+.bubbly-button:disabled:hover {
+  box-shadow: inherit;
+  transform: none !important;
+}
+
+/* Send button specific overrides */
+.send-button.bubbly-button {
+  padding: 0;
+  min-width: 48px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button.bubbly-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(97, 172, 239, 0.3);
+}

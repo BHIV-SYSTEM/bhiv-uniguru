@@ -1,0 +1,24 @@
+{
+  "schema": "UNIGURU_ECOSYSTEM_REPLAY_VERIFICATION_V1",
+  "trace_id": "isha_phase2_dharma_execution",
+  "query_hash": "f6d9683abe0d8a9e",
+  "generated_at": "2026-08-07T05:51:51.399197Z",
+  "checks": {
+    "trace_id_stable": true,
+    "vijay_runtime_hash_stable": true,
+    "vijay_last_event_hash_stable": true,
+    "tantra_contract_schema_stable": true,
+    "tantra_trace_continuity_stable": true,
+    "gc_authority_enforcement_stable": true,
+    "mdu_lineage_hash_stable": true,
+    "sanskrit_decoder_result_stable": true
+  },
+  "replay_verified": true,
+  "stable_fields": {
+    "runtime_hash": "8371a57df9f71a98e1124d55220a1e5091e460da46e962cd513e36d6dd44e5cb",
+    "last_event_hash": "7ccc89b3b3766866cac4d9754fdc039b7a819ab402ee4198e23ba0cbfea9589e",
+    "lineage_hash": "5276d2c1a9b48ba5df7d73199759df416792e96db1abb59b563ce375d7d835b4",
+    "contract_schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1"
+  },
+  "verification_hash": "13a180640435bf9092bbdeb577100ceb9489cc20826f10de99110811880a4204"
+}

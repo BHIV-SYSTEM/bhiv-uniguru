@@ -1,0 +1,12 @@
+{
+  "answer_with_evidence": {
+    "required_inputs": [
+      "query",
+      "evidence_id",
+      "textbook_id",
+      "page_numbers",
+      "source_hash"
+    ],
+    "contract": "Do not answer as canonical curriculum unless evidence.validation_status is VERIFIED."
+  }
+}

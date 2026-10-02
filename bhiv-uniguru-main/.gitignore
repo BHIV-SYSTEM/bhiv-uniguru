@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+**pycache**/
+*.pyc
+venv/
+env/
+.env
+tests/.tmp/
+.pytest_tmp/
+
+# Large Files
+backend/RAG/chunks.db
+backend/RAG/faiss_index.bin
+backend/RAG/chroma.sqlite3
+
+# Node
+node_modules/
+dist/
+build/

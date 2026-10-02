@@ -1,0 +1,298 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "manifest_id": "curriculum_source_manifest_v1",
+  "manifest_version": "1.0.0",
+  "manifest_generated_at": "2026-06-09T17:14:37.947+05:30",
+  "manifest_authority": "UniGuru Verified Curriculum Platform",
+  "manifest_purpose": "Complete inventory of curriculum sources with extraction status and lineage tracking",
+  "sources": {
+    "primary_sources": [
+      {
+        "source_id": "BALBHARTI_MATH_G1_MM_2023",
+        "source_type": "Official Textbook",
+        "source_name": "गणित (Mathematics) - Grade 1 - Marathi Medium - 2023 Edition",
+        "source_location": "curriculum/textbooks/balbharti/2023/mathematics/grade_1/marathi_medium",
+        "source_authority": "Maharashtra State Board of Education",
+        "authority_verification_status": "VERIFIED",
+        "authority_verification_date": "2026-06-09",
+        "content_type": "Textbook",
+        "format": "PDF (digitized from print)",
+        "total_pages": 156,
+        "total_chapters": 14,
+        "extraction_status": {
+          "status": "INITIATED",
+          "started_at": "2026-06-09T17:15:00Z",
+          "chapters_extracted": 0,
+          "concepts_extracted": 0,
+          "exercises_extracted": 0,
+          "completion_percentage": 0
+        },
+        "lineage_tracking": {
+          "enabled": true,
+          "lineage_id": "LINEAGE_BALBHARTI_MATH_G1_MM_2023",
+          "tracking_depth": "Source → Chapter → Section → Concept → Exercise",
+          "attribution_required": true
+        },
+        "quality_metrics": {
+          "ocr_accuracy_expected": 0.95,
+          "extraction_completeness_expected": 0.98,
+          "source_verification_status": "VERIFIED",
+          "source_authenticity_status": "AUTHENTIC"
+        }
+      },
+      {
+        "source_id": "BALBHARTI_MATH_G2_MM_2023",
+        "source_type": "Official Textbook",
+        "source_name": "गणित (Mathematics) - Grade 2 - Marathi Medium - 2023 Edition",
+        "source_location": "curriculum/textbooks/balbharti/2023/mathematics/grade_2/marathi_medium",
+        "source_authority": "Maharashtra State Board of Education",
+        "authority_verification_status": "VERIFIED",
+        "authority_verification_date": "2026-06-09",
+        "content_type": "Textbook",
+        "format": "PDF (digitized from print)",
+        "total_pages": 164,
+        "total_chapters": 14,
+        "extraction_status": {
+          "status": "PENDING",
+          "started_at": null,
+          "chapters_extracted": 0,
+          "concepts_extracted": 0,
+          "exercises_extracted": 0,
+          "completion_percentage": 0
+        },
+        "lineage_tracking": {
+          "enabled": true,
+          "lineage_id": "LINEAGE_BALBHARTI_MATH_G2_MM_2023",
+          "tracking_depth": "Source → Chapter → Section → Concept → Exercise",
+          "attribution_required": true
+        },
+        "quality_metrics": {
+          "ocr_accuracy_expected": 0.95,
+          "extraction_completeness_expected": 0.98,
+          "source_verification_status": "VERIFIED",
+          "source_authenticity_status": "AUTHENTIC"
+        }
+      },
+      {
+        "source_id": "BALBHARTI_ENGLISH_G1_MM_2023",
+        "source_type": "Official Textbook",
+        "source_name": "इंग्रजी (English) - Grade 1 - Marathi Medium - 2023 Edition",
+        "source_location": "curriculum/textbooks/balbharti/2023/english/grade_1/marathi_medium",
+        "source_authority": "Maharashtra State Board of Education",
+        "authority_verification_status": "VERIFIED",
+        "authority_verification_date": "2026-06-09",
+        "content_type": "Textbook",
+        "format": "PDF (digitized from print)",
+        "total_pages": 142,
+        "total_chapters": 18,
+        "extraction_status": {
+          "status": "PENDING",
+          "started_at": null,
+          "chapters_extracted": 0,
+          "concepts_extracted": 0,
+          "exercises_extracted": 0,
+          "completion_percentage": 0
+        },
+        "lineage_tracking": {
+          "enabled": true,
+          "lineage_id": "LINEAGE_BALBHARTI_ENGLISH_G1_MM_2023",
+          "tracking_depth": "Source → Chapter → Section → Concept → Exercise",
+          "attribution_required": true
+        },
+        "quality_metrics": {
+          "ocr_accuracy_expected": 0.95,
+          "extraction_completeness_expected": 0.98,
+          "source_verification_status": "VERIFIED",
+          "source_authenticity_status": "AUTHENTIC"
+        }
+      },
+      {
+        "source_id": "BALBHARTI_SCIENCE_G3_MM_2023",
+        "source_type": "Official Textbook",
+        "source_name": "विज्ञान (Science) - Grade 3 - Marathi Medium - 2023 Edition",
+        "source_location": "curriculum/textbooks/balbharti/2023/science/grade_3/marathi_medium",
+        "source_authority": "Maharashtra State Board of Education",
+        "authority_verification_status": "VERIFIED",
+        "authority_verification_date": "2026-06-09",
+        "content_type": "Textbook",
+        "format": "PDF (digitized from print)",
+        "total_pages": 168,
+        "total_chapters": 16,
+        "extraction_status": {
+          "status": "PENDING",
+          "started_at": null,
+          "chapters_extracted": 0,
+          "concepts_extracted": 0,
+          "exercises_extracted": 0,
+          "completion_percentage": 0
+        },
+        "lineage_tracking": {
+          "enabled": true,
+          "lineage_id": "LINEAGE_BALBHARTI_SCIENCE_G3_MM_2023",
+          "tracking_depth": "Source → Chapter → Section → Concept → Exercise",
+          "attribution_required": true
+        },
+        "quality_metrics": {
+          "ocr_accuracy_expected": 0.95,
+          "extraction_completeness_expected": 0.98,
+          "source_verification_status": "VERIFIED",
+          "source_authenticity_status": "AUTHENTIC"
+        }
+      }
+    ]
+  },
+  "extraction_pipeline": {
+    "pipeline_id": "CURRICULUM_EXTRACTION_PIPELINE_V1",
+    "pipeline_status": "INITIALIZED",
+    "stages": [
+      {
+        "stage_id": "OCR_PROCESSING",
+        "stage_name": "Optical Character Recognition",
+        "stage_status": "READY",
+        "description": "Convert PDF textbooks to machine-readable text with lineage tracking",
+        "dependencies": ["source_verification"],
+        "quality_threshold": {
+          "accuracy_minimum": 0.95,
+          "confidence_minimum": 0.90
+        }
+      },
+      {
+        "stage_id": "CHAPTER_EXTRACTION",
+        "stage_name": "Chapter-Level Extraction",
+        "stage_status": "READY",
+        "description": "Extract chapters with lineage to source textbook",
+        "dependencies": ["OCR_PROCESSING"],
+        "output_format": "chapter_manifest.json"
+      },
+      {
+        "stage_id": "CONCEPT_EXTRACTION",
+        "stage_name": "Concept-Level Extraction",
+        "stage_status": "READY",
+        "description": "Extract concepts, definitions, learning outcomes with lineage",
+        "dependencies": ["CHAPTER_EXTRACTION"],
+        "output_format": "concept_manifest.json"
+      },
+      {
+        "stage_id": "EXERCISE_EXTRACTION",
+        "stage_name": "Exercise Extraction",
+        "stage_status": "READY",
+        "description": "Extract exercises, questions, activities with lineage",
+        "dependencies": ["CONCEPT_EXTRACTION"],
+        "output_format": "exercise_manifest.json"
+      },
+      {
+        "stage_id": "LINEAGE_VALIDATION",
+        "stage_name": "Lineage Continuity Validation",
+        "stage_status": "READY",
+        "description": "Validate complete lineage chain from source to exercise",
+        "dependencies": ["CHAPTER_EXTRACTION", "CONCEPT_EXTRACTION", "EXERCISE_EXTRACTION"],
+        "validation_rules": [
+          "Every concept must trace to source textbook",
+          "Every exercise must trace through chapter and concept",
+          "No orphaned content without source attribution"
+        ]
+      },
+      {
+        "stage_id": "PROOF_GENERATION",
+        "stage_name": "Proof Generation",
+        "stage_status": "READY",
+        "description": "Generate validation proofs and lineage evidence",
+        "dependencies": ["LINEAGE_VALIDATION"],
+        "output_format": "ingestion_proof.json"
+      }
+    ]
+  },
+  "raw_extraction_storage": {
+    "storage_root": "curriculum/raw/",
+    "directories": [
+      {
+        "source_id": "BALBHARTI_MATH_G1_MM_2023",
+        "storage_path": "curriculum/raw/balbharti/math_g1_mm_2023/",
+        "purpose": "Raw OCR output and intermediate extractions"
+      },
+      {
+        "source_id": "BALBHARTI_MATH_G2_MM_2023",
+        "storage_path": "curriculum/raw/balbharti/math_g2_mm_2023/",
+        "purpose": "Raw OCR output and intermediate extractions"
+      },
+      {
+        "source_id": "BALBHARTI_ENGLISH_G1_MM_2023",
+        "storage_path": "curriculum/raw/balbharti/english_g1_mm_2023/",
+        "purpose": "Raw OCR output and intermediate extractions"
+      },
+      {
+        "source_id": "BALBHARTI_SCIENCE_G3_MM_2023",
+        "storage_path": "curriculum/raw/balbharti/science_g3_mm_2023/",
+        "purpose": "Raw OCR output and intermediate extractions"
+      }
+    ],
+    "retention_policy": "PERMANENT - All intermediate outputs retained for verification"
+  },
+  "verified_extraction_storage": {
+    "storage_root": "curriculum/extracted/",
+    "manifests": [
+      {
+        "manifest_name": "chapter_manifest.json",
+        "purpose": "Verified chapters with lineage",
+        "format": "JSON"
+      },
+      {
+        "manifest_name": "concept_manifest.json",
+        "purpose": "Verified concepts with lineage",
+        "format": "JSON"
+      },
+      {
+        "manifest_name": "exercise_manifest.json",
+        "purpose": "Verified exercises with lineage",
+        "format": "JSON"
+      },
+      {
+        "manifest_name": "glossary_manifest.json",
+        "purpose": "Verified glossaries and definitions",
+        "format": "JSON"
+      },
+      {
+        "manifest_name": "curriculum_lineage_registry.json",
+        "purpose": "Complete lineage tracking from source to exercise",
+        "format": "JSON"
+      }
+    ]
+  },
+  "ingestion_proof_requirements": {
+    "proof_type": "CURRICULUM_INGESTION_PROOF",
+    "proof_elements": [
+      {
+        "element": "source_verification",
+        "description": "Evidence that all sources are verified and authorized"
+      },
+      {
+        "element": "extraction_completeness",
+        "description": "Evidence that all expected content was extracted"
+      },
+      {
+        "element": "lineage_continuity",
+        "description": "Evidence that complete lineage chains are maintained"
+      },
+      {
+        "element": "quality_validation",
+        "description": "Evidence that quality thresholds were met"
+      },
+      {
+        "element": "no_synthetic_content",
+        "description": "Evidence that no synthetic content was introduced"
+      }
+    ],
+    "proof_storage_path": "curriculum/proofs/ingestion_proof.json"
+  },
+  "manifest_statistics": {
+    "total_sources": 4,
+    "verified_sources": 4,
+    "total_textbooks": 4,
+    "total_editions": 4,
+    "total_pages": 630,
+    "total_chapters": 62,
+    "extraction_pipeline_stages": 6,
+    "lineage_tracking_enabled": true,
+    "proof_generation_enabled": true
+  }
+}

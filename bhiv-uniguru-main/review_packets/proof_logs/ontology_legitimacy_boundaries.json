@@ -1,0 +1,33 @@
+{
+  "rows": [
+    {
+      "boundary_hash": "768c79e4074df35f91a9ae45ccda12e08388bd2a821e4c94f3a0e89fdfc89c8f",
+      "canonical_authority_granted": false,
+      "claim_key": "civilizational_memory",
+      "concept_id": "civilizational_memory",
+      "domain": "tantra",
+      "lineage_bound_reference": {
+        "concept_hash": "5103cdf9ed6e4038cfd1fd9de138ab2c46a08e02b9ced18899ed5f5532c2a7a7",
+        "snapshot_version": 2
+      },
+      "ontology_legitimacy_ceiling": 0.42,
+      "semantic_legitimacy_cap": 0.1374,
+      "truth_level": 3
+    },
+    {
+      "boundary_hash": "429cdb00ab7bc4bdcc81e2b967e3284346419240f0af102fcbccb49ec8e222b6",
+      "canonical_authority_granted": false,
+      "claim_key": "governed_claim",
+      "concept_id": "governed_claim",
+      "domain": "core",
+      "lineage_bound_reference": {
+        "concept_hash": "a6c1d53efa480c8794eb85c4bc0c84a848b817282791f38a7c2901d10962339e",
+        "snapshot_version": 2
+      },
+      "ontology_legitimacy_ceiling": 0.42,
+      "semantic_legitimacy_cap": 0.1062,
+      "truth_level": 3
+    }
+  ],
+  "schema": "UNIGURU_ONTOLOGY_LEGITIMACY_BOUNDARIES_V1"
+}

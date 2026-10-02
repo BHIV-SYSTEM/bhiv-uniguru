@@ -1,0 +1,442 @@
+{
+  "contract_id": "student_progress_contract_v1",
+  "contract_version": "1.0.0",
+  "contract_generated_at": "2026-06-09T17:14:37.947+05:30",
+  "contract_purpose": "API contract for student progress and mastery intelligence outputs",
+  "contract_authority": "UniGuru Learning Intelligence Platform",
+  "contract_schemas": {
+    "StudentProgressState": {
+      "type": "object",
+      "description": "Complete snapshot of student learning progress and mastery",
+      "required": [
+        "student_id",
+        "snapshot_timestamp",
+        "mastery_score",
+        "mastery_level",
+        "concepts_attempted",
+        "concepts_mastered",
+        "concepts_developing",
+        "concepts_struggling",
+        "weak_areas",
+        "concept_strengths",
+        "total_exercises_completed",
+        "learning_velocity",
+        "recommended_next_steps",
+        "estimated_time_to_grade_mastery"
+      ],
+      "properties": {
+        "student_id": {
+          "type": "string",
+          "description": "Unique identifier for the student"
+        },
+        "snapshot_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of when this snapshot was generated"
+        },
+        "mastery_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Overall mastery score (0.0-1.0)"
+        },
+        "mastery_level": {
+          "type": "string",
+          "enum": [
+            "NOT_STARTED",
+            "NOVICE",
+            "DEVELOPING",
+            "PROFICIENT",
+            "MASTERY",
+            "EXPERT"
+          ],
+          "description": "Overall mastery level across all concepts"
+        },
+        "concepts_attempted": {
+          "type": "integer",
+          "description": "Total number of concepts student has attempted"
+        },
+        "concepts_mastered": {
+          "type": "integer",
+          "description": "Number of concepts with mastery level >= 0.90"
+        },
+        "concepts_developing": {
+          "type": "integer",
+          "description": "Number of concepts with mastery level 0.70-0.90"
+        },
+        "concepts_struggling": {
+          "type": "integer",
+          "description": "Number of concepts with mastery level < 0.70"
+        },
+        "weak_areas": {
+          "type": "array",
+          "description": "List of concepts where mastery is below threshold",
+          "items": {
+            "$ref": "#/components/schemas/ConceptWeakArea"
+          }
+        },
+        "concept_strengths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of concept IDs where student has mastered (>= 0.90)"
+        },
+        "total_exercises_completed": {
+          "type": "integer",
+          "description": "Total number of exercises completed by student"
+        },
+        "learning_velocity": {
+          "type": "number",
+          "description": "Rate of mastery improvement (0.0-1.0 per unit time)"
+        },
+        "recommended_next_steps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Recommended learning actions for student"
+        },
+        "estimated_time_to_grade_mastery": {
+          "type": "object",
+          "description": "Estimate of time until full grade mastery",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["IN_PROGRESS", "ALREADY_MASTERED", "BLOCKED"]
+            },
+            "hours_needed": {
+              "type": "number",
+              "description": "Estimated hours for full mastery"
+            },
+            "estimated_weeks": {
+              "type": "number",
+              "description": "Estimated weeks for full mastery"
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Confidence in this estimate"
+            }
+          }
+        }
+      }
+    },
+    "ConceptWeakArea": {
+      "type": "object",
+      "description": "Details of a concept where student is struggling",
+      "required": [
+        "concept_id",
+        "mastery_score",
+        "mastery_level",
+        "accuracy",
+        "confidence",
+        "priority"
+      ],
+      "properties": {
+        "concept_id": {
+          "type": "string",
+          "description": "Unique concept identifier"
+        },
+        "mastery_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Current mastery score for this concept"
+        },
+        "mastery_level": {
+          "type": "string",
+          "enum": [
+            "NOT_STARTED",
+            "NOVICE",
+            "DEVELOPING",
+            "PROFICIENT",
+            "MASTERY",
+            "EXPERT"
+          ],
+          "description": "Mastery level for this concept"
+        },
+        "attempts": {
+          "type": "integer",
+          "description": "Number of exercise attempts"
+        },
+        "correct_attempts": {
+          "type": "integer",
+          "description": "Number of correct attempts"
+        },
+        "accuracy": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Accuracy percentage (correct/total)"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Student confidence level (self-reported + computed)"
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["HIGH", "MEDIUM", "LOW"],
+          "description": "Priority for remediation"
+        }
+      }
+    },
+    "ConceptMastery": {
+      "type": "object",
+      "description": "Detailed mastery metrics for a single concept",
+      "required": [
+        "concept_id",
+        "attempts",
+        "correct_attempts",
+        "mastery_score",
+        "mastery_level",
+        "first_attempted",
+        "last_attempted"
+      ],
+      "properties": {
+        "concept_id": {
+          "type": "string",
+          "description": "Concept identifier"
+        },
+        "attempts": {
+          "type": "integer",
+          "description": "Total exercise attempts for this concept"
+        },
+        "correct_attempts": {
+          "type": "integer",
+          "description": "Number of correct attempts"
+        },
+        "incorrect_attempts": {
+          "type": "integer",
+          "description": "Number of incorrect attempts"
+        },
+        "total_time_seconds": {
+          "type": "integer",
+          "description": "Total time spent on this concept"
+        },
+        "average_confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Average confidence level"
+        },
+        "mastery_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Computed mastery score"
+        },
+        "mastery_level": {
+          "type": "string",
+          "enum": [
+            "NOT_STARTED",
+            "NOVICE",
+            "DEVELOPING",
+            "PROFICIENT",
+            "MASTERY",
+            "EXPERT"
+          ],
+          "description": "Mastery level"
+        },
+        "first_attempted": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of first attempt"
+        },
+        "last_attempted": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of most recent attempt"
+        },
+        "exercises_completed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of exercise IDs completed for this concept"
+        }
+      }
+    },
+    "RemediationRecommendation": {
+      "type": "object",
+      "description": "Recommended remediation for a struggling concept",
+      "required": [
+        "concept_id",
+        "current_mastery_score",
+        "current_mastery_level",
+        "remediation_recommended",
+        "remediation_urgency",
+        "recommended_actions",
+        "estimated_remediation_hours",
+        "success_probability"
+      ],
+      "properties": {
+        "concept_id": {
+          "type": "string",
+          "description": "Concept needing remediation"
+        },
+        "current_mastery_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Current mastery score"
+        },
+        "current_mastery_level": {
+          "type": "string",
+          "description": "Current mastery level"
+        },
+        "remediation_recommended": {
+          "type": "boolean",
+          "description": "Whether remediation is needed"
+        },
+        "remediation_urgency": {
+          "type": "string",
+          "enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW"],
+          "description": "Urgency level for remediation"
+        },
+        "recommended_actions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Specific recommended remediation actions"
+        },
+        "estimated_remediation_hours": {
+          "type": "number",
+          "description": "Estimated hours needed for full mastery"
+        },
+        "success_probability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Estimated probability of reaching mastery with remediation"
+        }
+      }
+    },
+    "ExerciseResult": {
+      "type": "object",
+      "description": "Result of completing a single exercise",
+      "required": [
+        "timestamp",
+        "concept_id",
+        "exercise_id",
+        "correct",
+        "time_taken_seconds",
+        "difficulty_level",
+        "accuracy",
+        "efficiency_score"
+      ],
+      "properties": {
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When exercise was completed"
+        },
+        "concept_id": {
+          "type": "string",
+          "description": "Concept this exercise tests"
+        },
+        "exercise_id": {
+          "type": "string",
+          "description": "Unique exercise identifier"
+        },
+        "correct": {
+          "type": "boolean",
+          "description": "Whether answer was correct"
+        },
+        "time_taken_seconds": {
+          "type": "integer",
+          "description": "Seconds spent on exercise"
+        },
+        "difficulty_level": {
+          "type": "string",
+          "enum": ["BASIC", "INTERMEDIATE", "ADVANCED"],
+          "description": "Exercise difficulty"
+        },
+        "confidence_self_report": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Student self-reported confidence"
+        },
+        "accuracy": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Accuracy (1.0 if correct, 0.0 if incorrect)"
+        },
+        "efficiency_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Efficiency score based on time"
+        }
+      }
+    }
+  },
+  "api_endpoints": [
+    {
+      "endpoint": "/students/{student_id}/progress",
+      "method": "GET",
+      "description": "Get current student progress state",
+      "response_schema": "#/components/schemas/StudentProgressState",
+      "status_codes": {
+        "200": "Success",
+        "404": "Student not found"
+      }
+    },
+    {
+      "endpoint": "/students/{student_id}/mastery/{concept_id}",
+      "method": "GET",
+      "description": "Get detailed mastery for specific concept",
+      "response_schema": "#/components/schemas/ConceptMastery",
+      "status_codes": {
+        "200": "Success",
+        "404": "Student or concept not found"
+      }
+    },
+    {
+      "endpoint": "/students/{student_id}/weak-areas",
+      "method": "GET",
+      "description": "Get concepts where student is struggling",
+      "response_schema": {
+        "type": "array",
+        "items": {"$ref": "#/components/schemas/ConceptWeakArea"}
+      },
+      "status_codes": {
+        "200": "Success"
+      }
+    },
+    {
+      "endpoint": "/students/{student_id}/remediation/{concept_id}",
+      "method": "GET",
+      "description": "Get remediation recommendation for concept",
+      "response_schema": "#/components/schemas/RemediationRecommendation",
+      "status_codes": {
+        "200": "Success"
+      }
+    },
+    {
+      "endpoint": "/students/{student_id}/exercises",
+      "method": "POST",
+      "description": "Record exercise completion",
+      "request_schema": "#/components/schemas/ExerciseResult",
+      "response_schema": "#/components/schemas/ExerciseResult",
+      "status_codes": {
+        "201": "Created",
+        "400": "Invalid input"
+      }
+    }
+  ],
+  "contract_guarantees": {
+    "mastery_score_accuracy": "Computed from 60% accuracy + 40% confidence",
+    "confidence_tracking": "Exponential moving average with recent attempts weighted higher",
+    "remediation_routing": "Based on concept dependencies from pedagogical graph",
+    "progress_updates": "Real-time as exercises are completed",
+    "data_lineage": "All progress data traced back to source curriculum",
+    "no_synthetic_content": "Only based on actual exercise completion"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "canonical_authority_default": false,
+  "deterministic_event_registry": "constitutional_runtime_trace.json:event_registry",
+  "governance_rules": [
+    "confidence_is_not_legitimacy",
+    "reinforcement_is_not_truth_authority",
+    "contradictions_are_never_silently_merged",
+    "rollback_requires_hash_chain_authenticity",
+    "forged_replay_is_rejected_on_event_hash_or_previous_hash_mismatch",
+    "ontology_mutation_requires_snapshot_lineage",
+    "observability_is_non_authoritative"
+  ],
+  "registry_hash": "fb6dbc166bb73247c2fafe6ab981220072e170e5371da37533f66d791fa5c823",
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "schema": "UNIGURU_GOVERNANCE_REGISTRY_V1"
+}

@@ -1,0 +1,26 @@
+UniGuru Clean Repository File Path Overview:
+
+uniguru_v2/
+├── frontend/
+│   ├── src/                    (React components, forms, UI layer)
+│   ├── package.json            (Node Dependencies)
+│   ├── tailwind.config.js
+│   └── vercel.json             (Live deployment mapping)
+├── backend/
+│   ├── data/kosha/             [NEW] Clean production data ingestion folder
+│   ├── kosha/                  [NEW] Pure deterministic retrieval engines
+│   │   ├── kosha_loader.py
+│   │   ├── kosha_retriever.py 
+│   │   └── kosha_validator.py  (Pydantic schemas)
+│   ├── service/
+│   │   ├── api.py              [REFACTORED] Live Unified Endpoints (Protected & Fallback Enabled)
+│   │   └── live_service.py     (Unified Orchestration)
+│   ├── .env                    (Secure LLM + Supabase Keys)
+│   ├── requirements.txt        
+│   └── main.py                 (FastAPI Boot sequence)
+└── yashika_reviewpacket/       (This packet containing live proofs)
+
+REMOVED & CLEANED:
+- [DELETED] backend/tests/             (Wiped noisy directories)
+- [DELETED] backend/isha_review_packet/(Wiped temporary test packets)
+- [DELETED] massive SQL and Bin elements causing Push crashes.

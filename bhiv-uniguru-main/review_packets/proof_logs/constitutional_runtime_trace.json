@@ -1,0 +1,99 @@
+{
+  "canonical_authority_granted": false,
+  "component_hashes": {
+    "contradiction_escalation": "a6e9e43f9e018248930124e5b3d23368058dd5be53d2ca5d6f3d6d1fa619440c",
+    "observability": "3d836c745be9b2d9248da87d74281bb10f1b1bf78fb2a767c4063b133d336e88",
+    "ontology_lineage": "ce996e956bd515baa79b71997a3e34ab895135e1a3a6456f87f986cf7343b3e5",
+    "semantic_governance": "5747d8b289930bdd6bcadf809333f36e13843e5389a8ef831f8d6309c318b183",
+    "trust_propagation": "499b43debbe87e8193c75f9f102ac076a5c1b918a95f3a8b7635f3a532f29d47",
+    "uncertainty_lineage": "743458d6d00081bda313fbbdf951f5c5b85eca3219871abc3cdc4804137c464f"
+  },
+  "event_registry": [
+    {
+      "canonical_authority_granted": false,
+      "component": "runtime_structure",
+      "decision": "DECLARE_SINGLE_RUNTIME",
+      "event_hash": "ba417410b0478afd9faf1574823e5bb9c0833109b4543c13be5ffc80780ecf8f",
+      "event_type": "runtime_convergence_declared",
+      "index": 0,
+      "payload_hash": "4d3c99b4d7537fdebda9297b015f6e03e196954c68be8325c0e295c81d8f333a",
+      "previous_event_hash": null
+    },
+    {
+      "canonical_authority_granted": false,
+      "component": "semantic_governance",
+      "decision": "OBSERVE_WITHOUT_AUTHORITY",
+      "event_hash": "5a5e84991fbae01e588fb0be98145cc0e0aa7b62711904324e6593e1ca8bfa35",
+      "event_type": "semantic_governance_observed",
+      "index": 1,
+      "payload_hash": "5747d8b289930bdd6bcadf809333f36e13843e5389a8ef831f8d6309c318b183",
+      "previous_event_hash": "ba417410b0478afd9faf1574823e5bb9c0833109b4543c13be5ffc80780ecf8f"
+    },
+    {
+      "canonical_authority_granted": false,
+      "component": "trust_propagation",
+      "decision": "PROPAGATE_BOUNDED_TRUST",
+      "event_hash": "12c130024a81383ecef2ff30bded3ec292bec97def968167c85d05096dcd6895",
+      "event_type": "trust_pressure_propagated",
+      "index": 2,
+      "payload_hash": "499b43debbe87e8193c75f9f102ac076a5c1b918a95f3a8b7635f3a532f29d47",
+      "previous_event_hash": "5a5e84991fbae01e588fb0be98145cc0e0aa7b62711904324e6593e1ca8bfa35"
+    },
+    {
+      "canonical_authority_granted": false,
+      "component": "contradiction_escalation",
+      "decision": "PERSIST_AND_ESCALATE",
+      "event_hash": "7da31931575a8d4da781a5a9d2ce43a6ef644c486391d206e1aa7c1ad62804cb",
+      "event_type": "contradiction_escalated",
+      "index": 3,
+      "payload_hash": "a6e9e43f9e018248930124e5b3d23368058dd5be53d2ca5d6f3d6d1fa619440c",
+      "previous_event_hash": "12c130024a81383ecef2ff30bded3ec292bec97def968167c85d05096dcd6895"
+    },
+    {
+      "canonical_authority_granted": false,
+      "component": "ontology_lineage",
+      "decision": "ENFORCE_LEGITIMACY_CAP",
+      "event_hash": "4ef46a4ac61ede6bf3635e3f304e5a5f5d32b54a928bbbc324e45b37566b3e64",
+      "event_type": "ontology_lineage_checked",
+      "index": 4,
+      "payload_hash": "ce996e956bd515baa79b71997a3e34ab895135e1a3a6456f87f986cf7343b3e5",
+      "previous_event_hash": "7da31931575a8d4da781a5a9d2ce43a6ef644c486391d206e1aa7c1ad62804cb"
+    },
+    {
+      "canonical_authority_granted": false,
+      "component": "uncertainty_lineage",
+      "decision": "PRESERVE_UNCERTAINTY",
+      "event_hash": "ff176c26646656ba7ab596ae44246577bb48edcdc0e17062e4021ff9fb29989c",
+      "event_type": "uncertainty_lineage_reconstructed",
+      "index": 5,
+      "payload_hash": "743458d6d00081bda313fbbdf951f5c5b85eca3219871abc3cdc4804137c464f",
+      "previous_event_hash": "4ef46a4ac61ede6bf3635e3f304e5a5f5d32b54a928bbbc324e45b37566b3e64"
+    },
+    {
+      "canonical_authority_granted": false,
+      "component": "observability",
+      "decision": "EMIT_NON_AUTHORITATIVE_TELEMETRY",
+      "event_hash": "f0fc345b31bf94487ded348d63e493b2664d28d4c68e68c1c4eac09d7b48818b",
+      "event_type": "observability_emitted",
+      "index": 6,
+      "payload_hash": "3d836c745be9b2d9248da87d74281bb10f1b1bf78fb2a767c4063b133d336e88",
+      "previous_event_hash": "ff176c26646656ba7ab596ae44246577bb48edcdc0e17062e4021ff9fb29989c"
+    }
+  ],
+  "event_registry_verification": {
+    "failure_count": 0,
+    "failures": [],
+    "hash_chain_ok": true,
+    "last_event_hash": "f0fc345b31bf94487ded348d63e493b2664d28d4c68e68c1c4eac09d7b48818b"
+  },
+  "repo_convergence": {
+    "no_parallel_authority_path": true,
+    "single_governance_package": "backend/governance",
+    "single_observability_layer": "SemanticPressureObservabilityEngine",
+    "single_replay_lineage_flow": "constitutional_event_registry",
+    "single_trust_layer": "AuthorityPressureGovernanceEngine"
+  },
+  "runtime_hash": "ed93a48342b3168c01c72716b103aa351b01fa42ebdac7b48d138e7a2c4cc335",
+  "runtime_id": "constitutional_cognition_runtime_v1",
+  "schema": "UNIGURU_CONSTITUTIONAL_COGNITION_RUNTIME_TRACE_V1"
+}

@@ -1,0 +1,157 @@
+{
+  "constitutional_reasoning_summary": {
+    "canonical_authority_granted": false,
+    "flow": [
+      "query",
+      "masterdb_lookup",
+      "semantic_interpretation",
+      "constitutional_evaluation",
+      "trust_contradiction_ontology_evaluation",
+      "bounded_response_generation",
+      "explanation_layer",
+      "replay_artifact_emission"
+    ],
+    "observability_state": "ESCALATED",
+    "verification_status": "PARTIAL_VERIFIED_SAMPLE"
+  },
+  "contract_hash": "49339074c0ff3d56b05f9155b471273cdc3aa07c03c65b1c2633a17f0168246e",
+  "contradiction_state": {
+    "arbitration_hash": "0de83cff6d5f28227056398a155a31367df25164eb9d144f1a791505142cea42",
+    "silent_merge_allowed": false,
+    "unresolved_count": 0
+  },
+  "ontology_boundary_state": {
+    "alert_count": 1,
+    "boundary_state_hash": "59b73a3b6e19c445c5854c27f73f1234ae7c3835e2a33cb991e60e49e676584c",
+    "canonical_authority_granted": false
+  },
+  "response_payload": {
+    "answer": "Force and Motion concept 1: This concept explains Force and Motion within the Science curriculum for grade 10. It is presented with age-appropriate examples and guided practice for English Medium. Example: Example 1: Use Force and Motion to solve a simple grade-level problem. Practice: What is one important idea from Force and Motion?",
+    "curriculum_mapping": {
+      "chapter_recommendations": [
+        "Force and Motion"
+      ],
+      "curriculum_version": "balbharti-2026-06",
+      "learning_objectives": [
+        "Students will learn the key idea of Force and Motion in Science for grade 10, build foundational understanding, and apply it through curriculum exercises."
+      ],
+      "matched_record_id": "balbharti_en_g10_science_force_and_motion_6_01",
+      "provenance_status": "sample_seed",
+      "version": "balbharti-2026-06"
+    },
+    "learning_state": {
+      "concept_dependency_map": {
+        "current_concept": "Force and Motion concept 1",
+        "next_concept": "Force and Motion concept 2",
+        "prerequisite_concept": "Energy concept 2"
+      },
+      "curriculum_mapping": {
+        "curriculum_version": "balbharti-2026-06",
+        "matched_record_id": "balbharti_en_g10_science_force_and_motion_6_01",
+        "provenance_status": "sample_seed",
+        "source_lineage": {
+          "ingestion_method": "synthetic_expansion_seed",
+          "page_or_section": "Force and Motion mapping",
+          "provenance_status": "sample_seed",
+          "publisher": "Maharashtra State Bureau of Textbook Production and Curriculum Research",
+          "source_reference": "Balbharti English Medium Class 10 Science",
+          "source_type": "curriculum_sample_seed"
+        },
+        "version": "balbharti-2026-06"
+      },
+      "difficulty_progression": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "follow_up_concepts": [
+        "Explore: Force and Motion concept 1",
+        "Explore: Force and Motion concept 1",
+        "Explore: Force and Motion concept 2",
+        "Explore: Force and Motion concept 2"
+      ],
+      "learning_gap": {
+        "confidence": 1.0,
+        "description": "Matched grade 10 topic with easy difficulty and confidence 1.00.",
+        "gap_type": "conceptual_reinforcement",
+        "remediation_recommendation": "Review the matched concept in class and then practice the suggested questions for mastery."
+      },
+      "learning_outcome": "Students will learn the key idea of Force and Motion in Science for grade 10, build foundational understanding, and apply it through curriculum exercises.",
+      "learning_path_suggestion": {
+        "next_concept": "Force and Motion concept 2",
+        "path": [
+          "Energy concept 2",
+          "Force and Motion concept 1",
+          "Force and Motion concept 2"
+        ],
+        "prerequisite_concept": "Energy concept 2",
+        "recommendation": "Begin with the matched concept and then review the earlier grade-level foundation before moving to the next linked curriculum topic."
+      },
+      "practice_recommendations": [
+        "What is one important idea from Force and Motion?",
+        "How does Force and Motion relate to grade 10 science learning?",
+        "What is one important idea from Force and Motion?",
+        "How does Force and Motion relate to grade 9 science learning?",
+        "What is one important idea from Force and Motion?"
+      ],
+      "remediation_recommendation": "Review the matched concept in class and then practice the suggested questions for mastery."
+    },
+    "matched_record": {
+      "chapter": "Force and Motion",
+      "concept": "Force and Motion concept 1",
+      "curriculum_version": "balbharti-2026-06",
+      "definition": "This concept explains Force and Motion within the Science curriculum for grade 10. It is presented with age-appropriate examples and guided practice for English Medium.",
+      "difficulty": "easy",
+      "examples": [
+        "Example 1: Use Force and Motion to solve a simple grade-level problem.",
+        "Example 2: Observe how Force and Motion appears in everyday life."
+      ],
+      "governance": {
+        "canonical_authority_granted": false,
+        "replay_safe": true,
+        "review_required": true
+      },
+      "grade": 10,
+      "language_variant": "en-IN",
+      "learning_outcome": "Students will learn the key idea of Force and Motion in Science for grade 10, build foundational understanding, and apply it through curriculum exercises.",
+      "medium": "English Medium",
+      "questions": [
+        "What is one important idea from Force and Motion?",
+        "How does Force and Motion relate to grade 10 science learning?"
+      ],
+      "record_id": "balbharti_en_g10_science_force_and_motion_6_01",
+      "source_lineage": {
+        "ingestion_method": "synthetic_expansion_seed",
+        "page_or_section": "Force and Motion mapping",
+        "provenance_status": "sample_seed",
+        "publisher": "Maharashtra State Bureau of Textbook Production and Curriculum Research",
+        "source_reference": "Balbharti English Medium Class 10 Science",
+        "source_type": "curriculum_sample_seed"
+      },
+      "subject": "Science",
+      "version": "balbharti-2026-06"
+    },
+    "retrieval_confidence": 1.0,
+    "source_lineage": {
+      "ingestion_method": "synthetic_expansion_seed",
+      "page_or_section": "Force and Motion mapping",
+      "provenance_status": "sample_seed",
+      "publisher": "Maharashtra State Bureau of Textbook Production and Curriculum Research",
+      "source_reference": "Balbharti English Medium Class 10 Science",
+      "source_type": "curriculum_sample_seed"
+    }
+  },
+  "runtime_hash": "00587305bb8390b3fb63a67d03c5755d735964a62616b0215287eea7ab694b93",
+  "schema_version": "UNIGURU_RUNTIME_RESPONSE_CONTRACT_V1",
+  "trace_id": "7c5c895c02d14451",
+  "trust_state": {
+    "authority_pressure_score": 0.5595,
+    "governance_response": "ESCALATE_SEMANTIC_PRESSURE",
+    "trust_score": 0.3104
+  },
+  "uncertainty_state": {
+    "classification": "sample_seed_requires_review",
+    "preserved": true,
+    "score": 0.0
+  }
+}

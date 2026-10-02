@@ -1,0 +1,916 @@
+{
+  "answer": "Represents the sustaining principle governing righteous conduct and universal order.",
+  "bucket_telemetry": {
+    "bucket_path": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru\\review_packets\\integration_proof\\bucket_isha_sanskrit_dharma_v1.json",
+    "decision": "answer",
+    "emitted": true,
+    "event": "ecosystem_runtime_execution",
+    "live_emitted": false,
+    "live_endpoint": null,
+    "ontology_reference": {
+      "domain": "sanskrit",
+      "trace_id": "isha_sanskrit_dharma_v1"
+    },
+    "query_hash": "b4e7732c6611e739",
+    "route": "TANTRA_ECOSYSTEM",
+    "timestamp": "2026-08-04T14:56:43.726727Z",
+    "trace_id": "isha_sanskrit_dharma_v1",
+    "verification_status": "PARTIAL_VERIFIED_SAMPLE"
+  },
+  "confidence": 0.65,
+  "execution_hash": "8d838b4f347f3db9d3dc3371a06bf2b9405215fc2566d06552fa653599bd12c6",
+  "gc_validation": {
+    "authority_enforced": true,
+    "canonical_authority_granted": false,
+    "governance_note": "Constitutional authority remains read-only and enforcement is preserved through replay-safe hashing.",
+    "live_authority_validation": {
+      "live": false,
+      "path": "/gc/validate/authority",
+      "reason": "not_configured"
+    },
+    "live_hidden_state_validation": {
+      "live": false,
+      "path": "/gc/validate/hidden-state",
+      "reason": "not_configured"
+    },
+    "trace_id": "isha_sanskrit_dharma_v1"
+  },
+  "insightflow_observability": {
+    "live_decision": {
+      "live": false,
+      "path": "/decisions",
+      "reason": "not_configured"
+    },
+    "live_trace": {
+      "live": false,
+      "path": "/traces",
+      "reason": "not_configured"
+    },
+    "observability_state": "live_runtime_trace_complete",
+    "pipeline_status": "PARTIAL_VERIFIED_SAMPLE",
+    "replay_safe": true,
+    "trace_complete": true,
+    "trace_hash": "e09fd69f0e6285325ee22b16eae753ba3a0f7cded47c66ca8b1d3ffe096ecade",
+    "trace_id": "isha_sanskrit_dharma_v1"
+  },
+  "mdu_validation": {
+    "evidence_payload": {
+      "chapter": "sanskrit",
+      "edition": "2026",
+      "evidence_id": "02903100-4780-574f-b607-689cc54526a7",
+      "lineage_hash": "d7abf47a38407e5fb780d93c29545ead0a076fd8bdfa1473cfdc8833e8dea9b4",
+      "page_numbers": [
+        1
+      ],
+      "retrieval_hash": "017b07b92c854c75a8f0a44ef2e0952200659b253354c30150d860892604e6db",
+      "section": "runtime_convergence",
+      "source_hash": "c31372857ed4824a193b21aea2698806f2d177f79c906d5663a7c305de368f03",
+      "textbook_id": "bhiv_internal_intelligence_platform",
+      "verification_status": "PARTIAL_VERIFIED_SAMPLE"
+    },
+    "live_provenance_validation": {
+      "canonical_id": "BHIV-DS-UNIGURU-RUNTIME-001",
+      "lineage_hash": null,
+      "live": false,
+      "reason": "not_configured",
+      "runtime_hash": "cd10bfc9da442b839239f00b321b104ab9e5cd1e98fa9898fd89c06ce4b58f30",
+      "trace_id": "isha_sanskrit_dharma_v1"
+    },
+    "live_schema_validation": {
+      "canonical_id": "BHIV-DS-UNIGURU-RUNTIME-001",
+      "live": false,
+      "reason": "not_configured",
+      "trace_id": "02903100-4780-574f-b607-689cc54526a7"
+    },
+    "missing_fields": [],
+    "provenance_continuity": true,
+    "required_fields": [
+      "evidence_id",
+      "textbook_id",
+      "edition",
+      "chapter",
+      "section",
+      "page_numbers",
+      "source_hash",
+      "retrieval_hash",
+      "lineage_hash",
+      "verification_status"
+    ],
+    "schema_compatible": true,
+    "trace_id": "isha_sanskrit_dharma_v1"
+  },
+  "pipeline_summary": {
+    "domain": "sanskrit",
+    "matched_signals": 1,
+    "reasoning_path": [
+      "query_received",
+      "kosha_schema_enforced",
+      "canonical_entities_extracted",
+      "ontology_aware_retrieval",
+      "signal_validation",
+      "epistemic_confidence_derivation",
+      "contradiction_consensus_analysis",
+      "structured_signal_emission",
+      "deterministic_rejection",
+      "governance_contract_emission",
+      "bucket_proof_ready",
+      "isha_sanskrit_source_retrieval",
+      "sanskar_schema_validation",
+      "sanskrit_cross_reference_synthesis",
+      "sanskrit_graph_navigation"
+    ],
+    "rejected_signals": 12,
+    "sanskrit_decoder": {
+      "canonical_concept": {
+        "beeja": null,
+        "canonical_name": "dharma",
+        "concept_id": "sanskar:sanskrit:dharma",
+        "dhatu": "\u0927\u0943 (Dh\u1e5b)\n\nMeaning: To uphold, sustain, support.",
+        "functional_meaning": "Represents the sustaining principle governing righteous conduct and universal order.",
+        "nirukta": "That which upholds or sustains.",
+        "ontology_version": "sanskar_sanskrit_sources_v1",
+        "related_concepts": [
+          "karma",
+          "moksha",
+          "yoga"
+        ],
+        "sanskrit": "\u0927\u0930\u094d\u092e",
+        "semantic_version": "isha_sanskrit_decoder_v3",
+        "shabda": "\u0927\u0930\u094d\u092e",
+        "shakti": "Preservation and righteous order.",
+        "tattva": "Principle of sustaining cosmic order.",
+        "transliteration": "Dharma",
+        "vyakarana": "Derived from the verbal root \u0927\u0943."
+      },
+      "cross_references": [
+        {
+          "claim": "dharma is cross-referenced with karma by the Sanskar source document.",
+          "classification": "DERIVED",
+          "source_path": "knowledge/sanskrit/dharma.md",
+          "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE",
+          "target": "karma"
+        },
+        {
+          "claim": "dharma is cross-referenced with moksha by the Sanskar source document.",
+          "classification": "DERIVED",
+          "source_path": "knowledge/sanskrit/dharma.md",
+          "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE",
+          "target": "moksha"
+        },
+        {
+          "claim": "dharma is cross-referenced with yoga by the Sanskar source document.",
+          "classification": "DERIVED",
+          "source_path": "knowledge/sanskrit/dharma.md",
+          "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE",
+          "target": "yoga"
+        }
+      ],
+      "cross_text_synthesis": {
+        "canonical_claims": [
+          {
+            "claim": "Represents the sustaining principle governing righteous conduct and universal order.",
+            "classification": [
+              "BHAGAVAD_GITA",
+              "TRADITION",
+              "TRADITION"
+            ],
+            "source_path": "knowledge/sanskrit/dharma.md"
+          }
+        ],
+        "conflicts": [],
+        "derived_interpretations": [
+          {
+            "claim": "dharma is cross-referenced with karma by the Sanskar source document.",
+            "classification": "DERIVED",
+            "source_path": "knowledge/sanskrit/dharma.md",
+            "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE",
+            "target": "karma"
+          },
+          {
+            "claim": "dharma is cross-referenced with moksha by the Sanskar source document.",
+            "classification": "DERIVED",
+            "source_path": "knowledge/sanskrit/dharma.md",
+            "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE",
+            "target": "moksha"
+          },
+          {
+            "claim": "dharma is cross-referenced with yoga by the Sanskar source document.",
+            "classification": "DERIVED",
+            "source_path": "knowledge/sanskrit/dharma.md",
+            "status": "DERIVED_FROM_CANONICAL_CROSS_REFERENCE",
+            "target": "yoga"
+          }
+        ],
+        "status": "SOURCE_REFERENCES_ONLY",
+        "uncertainty": "The supplied source documents list canonical texts but do not contain passage-level excerpts; no cross-text semantic merge is asserted."
+      },
+      "functional_meaning": {
+        "classification": "SOURCE_SCOPED_CANONICAL_TEXT",
+        "summary": "Represents the sustaining principle governing righteous conduct and universal order."
+      },
+      "governed_response": {
+        "evidence_classification": {
+          "classification": "SOURCE_SCOPED",
+          "evidence_types": [
+            "BHAGAVAD_GITA",
+            "TRADITION"
+          ],
+          "notes": "Evidence types are derived from the canonical source names supplied by Sanskar."
+        },
+        "governance_state": "read_only_observation",
+        "research_classification": "civilizational_knowledge"
+      },
+      "knowledge_graph": {
+        "edges": [
+          {
+            "evidence_type": "DERIVED",
+            "from": "sanskar:sanskrit:dharma",
+            "provenance": "knowledge/sanskrit/dharma.md",
+            "to": "sanskar:sanskrit:karma",
+            "type": "cross_reference"
+          },
+          {
+            "evidence_type": "DERIVED",
+            "from": "sanskar:sanskrit:dharma",
+            "provenance": "knowledge/sanskrit/dharma.md",
+            "to": "sanskar:sanskrit:moksha",
+            "type": "cross_reference"
+          },
+          {
+            "evidence_type": "DERIVED",
+            "from": "sanskar:sanskrit:dharma",
+            "provenance": "knowledge/sanskrit/dharma.md",
+            "to": "sanskar:sanskrit:yoga",
+            "type": "cross_reference"
+          }
+        ],
+        "graph_id": "UNIGURU_CURRICULUM_KNOWLEDGE_GRAPH_V2",
+        "metadata": {
+          "adapter": "isha_sanskrit_source_graph",
+          "consistency_valid": true,
+          "source_snapshot_hash": "9b4011c2b54fb1daf797f5494757a69e480b34cae445a0e90dfd96ff5cebc71b"
+        },
+        "nodes": [
+          {
+            "address": "knowledge/sanskrit/dharma.md",
+            "id": "sanskar:sanskrit:dharma",
+            "label": "dharma",
+            "provenance": "knowledge/sanskrit/dharma.md",
+            "type": "concept"
+          },
+          {
+            "address": "backend/knowledge/sanskrit/karma.md",
+            "id": "sanskar:sanskrit:karma",
+            "label": "karma",
+            "type": "concept"
+          },
+          {
+            "address": "backend/knowledge/sanskrit/moksha.md",
+            "id": "sanskar:sanskrit:moksha",
+            "label": "moksha",
+            "type": "concept"
+          },
+          {
+            "address": "backend/knowledge/sanskrit/yoga.md",
+            "id": "sanskar:sanskrit:yoga",
+            "label": "yoga",
+            "type": "concept"
+          }
+        ],
+        "schema_version": "2.0.0"
+      },
+      "pipeline": [
+        {
+          "classification": [
+            "BHAGAVAD_GITA",
+            "TRADITION",
+            "TRADITION"
+          ],
+          "evidence": [
+            {
+              "evidence_type": "BHAGAVAD_GITA",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Bhagavad Gita",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "fdb68f8434211ec3"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Manusmriti",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "6df275c311aa0537"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Mahabharata",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "2824bd64c46eac91"
+            }
+          ],
+          "lineage": {
+            "concept_id": "sanskar:sanskrit:dharma",
+            "content_hash": "9b4011c2b54fb1daf797f5494757a69e480b34cae445a0e90dfd96ff5cebc71b",
+            "source_path": "knowledge/sanskrit/dharma.md"
+          },
+          "schema_field": "shabda",
+          "stage": "\u015babda",
+          "value": "\u0927\u0930\u094d\u092e"
+        },
+        {
+          "classification": [
+            "BHAGAVAD_GITA",
+            "TRADITION",
+            "TRADITION"
+          ],
+          "evidence": [
+            {
+              "evidence_type": "BHAGAVAD_GITA",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Bhagavad Gita",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "fdb68f8434211ec3"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Manusmriti",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "6df275c311aa0537"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Mahabharata",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "2824bd64c46eac91"
+            }
+          ],
+          "lineage": {
+            "concept_id": "sanskar:sanskrit:dharma",
+            "content_hash": "9b4011c2b54fb1daf797f5494757a69e480b34cae445a0e90dfd96ff5cebc71b",
+            "source_path": "knowledge/sanskrit/dharma.md"
+          },
+          "schema_field": "dhatu",
+          "stage": "dh\u0101tu",
+          "value": "\u0927\u0943 (Dh\u1e5b)\n\nMeaning: To uphold, sustain, support."
+        },
+        {
+          "classification": [
+            "BHAGAVAD_GITA",
+            "TRADITION",
+            "TRADITION"
+          ],
+          "evidence": [
+            {
+              "evidence_type": "BHAGAVAD_GITA",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Bhagavad Gita",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "fdb68f8434211ec3"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Manusmriti",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "6df275c311aa0537"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Mahabharata",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "2824bd64c46eac91"
+            }
+          ],
+          "lineage": {
+            "concept_id": "sanskar:sanskrit:dharma",
+            "content_hash": "9b4011c2b54fb1daf797f5494757a69e480b34cae445a0e90dfd96ff5cebc71b",
+            "source_path": "knowledge/sanskrit/dharma.md"
+          },
+          "schema_field": "vyakarana",
+          "stage": "vy\u0101kara\u1e47a",
+          "value": "Derived from the verbal root \u0927\u0943."
+        },
+        {
+          "classification": [
+            "BHAGAVAD_GITA",
+            "TRADITION",
+            "TRADITION"
+          ],
+          "evidence": [
+            {
+              "evidence_type": "BHAGAVAD_GITA",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Bhagavad Gita",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "fdb68f8434211ec3"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Manusmriti",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "6df275c311aa0537"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Mahabharata",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "2824bd64c46eac91"
+            }
+          ],
+          "lineage": {
+            "concept_id": "sanskar:sanskrit:dharma",
+            "content_hash": "9b4011c2b54fb1daf797f5494757a69e480b34cae445a0e90dfd96ff5cebc71b",
+            "source_path": "knowledge/sanskrit/dharma.md"
+          },
+          "schema_field": "nirukta",
+          "stage": "nirukta",
+          "value": "That which upholds or sustains."
+        },
+        {
+          "classification": [
+            "BHAGAVAD_GITA",
+            "TRADITION",
+            "TRADITION"
+          ],
+          "evidence": [
+            {
+              "evidence_type": "BHAGAVAD_GITA",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Bhagavad Gita",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "fdb68f8434211ec3"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Manusmriti",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "6df275c311aa0537"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Mahabharata",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "2824bd64c46eac91"
+            }
+          ],
+          "lineage": {
+            "concept_id": "sanskar:sanskrit:dharma",
+            "content_hash": "9b4011c2b54fb1daf797f5494757a69e480b34cae445a0e90dfd96ff5cebc71b",
+            "source_path": "knowledge/sanskrit/dharma.md"
+          },
+          "schema_field": "beeja",
+          "stage": "b\u012bja",
+          "value": null
+        },
+        {
+          "classification": [
+            "BHAGAVAD_GITA",
+            "TRADITION",
+            "TRADITION"
+          ],
+          "evidence": [
+            {
+              "evidence_type": "BHAGAVAD_GITA",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Bhagavad Gita",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "fdb68f8434211ec3"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Manusmriti",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "6df275c311aa0537"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Mahabharata",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "2824bd64c46eac91"
+            }
+          ],
+          "lineage": {
+            "concept_id": "sanskar:sanskrit:dharma",
+            "content_hash": "9b4011c2b54fb1daf797f5494757a69e480b34cae445a0e90dfd96ff5cebc71b",
+            "source_path": "knowledge/sanskrit/dharma.md"
+          },
+          "schema_field": "tattva",
+          "stage": "tattva",
+          "value": "Principle of sustaining cosmic order."
+        },
+        {
+          "classification": [
+            "BHAGAVAD_GITA",
+            "TRADITION",
+            "TRADITION"
+          ],
+          "evidence": [
+            {
+              "evidence_type": "BHAGAVAD_GITA",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Bhagavad Gita",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "fdb68f8434211ec3"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Manusmriti",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "6df275c311aa0537"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Mahabharata",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "2824bd64c46eac91"
+            }
+          ],
+          "lineage": {
+            "concept_id": "sanskar:sanskrit:dharma",
+            "content_hash": "9b4011c2b54fb1daf797f5494757a69e480b34cae445a0e90dfd96ff5cebc71b",
+            "source_path": "knowledge/sanskrit/dharma.md"
+          },
+          "schema_field": "shakti",
+          "stage": "\u015bakti",
+          "value": "Preservation and righteous order."
+        },
+        {
+          "classification": [
+            "BHAGAVAD_GITA",
+            "TRADITION",
+            "TRADITION"
+          ],
+          "evidence": [
+            {
+              "evidence_type": "BHAGAVAD_GITA",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Bhagavad Gita",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "fdb68f8434211ec3"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Manusmriti",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "6df275c311aa0537"
+            },
+            {
+              "evidence_type": "TRADITION",
+              "provenance": {
+                "author": "",
+                "chapter": "",
+                "commentary": "",
+                "edition": "",
+                "source_text": "Mahabharata",
+                "translator": "",
+                "validation_status": "UNVERIFIED",
+                "verse": ""
+              },
+              "source_id": "2824bd64c46eac91"
+            }
+          ],
+          "lineage": {
+            "concept_id": "sanskar:sanskrit:dharma",
+            "content_hash": "9b4011c2b54fb1daf797f5494757a69e480b34cae445a0e90dfd96ff5cebc71b",
+            "source_path": "knowledge/sanskrit/dharma.md"
+          },
+          "schema_field": "functional_meaning",
+          "stage": "functional_meaning",
+          "value": "Represents the sustaining principle governing righteous conduct and universal order."
+        }
+      ],
+      "provenance": {
+        "lineage": {
+          "concept_id": "sanskar:sanskrit:dharma",
+          "content_hash": "9b4011c2b54fb1daf797f5494757a69e480b34cae445a0e90dfd96ff5cebc71b",
+          "source_path": "knowledge/sanskrit/dharma.md"
+        },
+        "registry_version": "sanskar_sanskrit_sources_v1",
+        "replay_safe": true,
+        "schema_version": "isha_sanskrit_decoder_v3",
+        "source_documents": [
+          {
+            "evidence_type": "BHAGAVAD_GITA",
+            "provenance": {
+              "author": "",
+              "chapter": "",
+              "commentary": "",
+              "edition": "",
+              "source_text": "Bhagavad Gita",
+              "translator": "",
+              "validation_status": "UNVERIFIED",
+              "verse": ""
+            },
+            "source_id": "fdb68f8434211ec3"
+          },
+          {
+            "evidence_type": "TRADITION",
+            "provenance": {
+              "author": "",
+              "chapter": "",
+              "commentary": "",
+              "edition": "",
+              "source_text": "Manusmriti",
+              "translator": "",
+              "validation_status": "UNVERIFIED",
+              "verse": ""
+            },
+            "source_id": "6df275c311aa0537"
+          },
+          {
+            "evidence_type": "TRADITION",
+            "provenance": {
+              "author": "",
+              "chapter": "",
+              "commentary": "",
+              "edition": "",
+              "source_text": "Mahabharata",
+              "translator": "",
+              "validation_status": "UNVERIFIED",
+              "verse": ""
+            },
+            "source_id": "2824bd64c46eac91"
+          }
+        ]
+      },
+      "result_hash": "f996f1ba8da63bf78b028e3e869a6668672264db61a7f3bf6a3fb84414377f4d"
+    }
+  },
+  "query": "\u0927\u0930\u094d\u092e",
+  "tantra_contract": {
+    "bucket_proof_ready": true,
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_continuity": {
+      "bucket_proof": "isha_sanskrit_dharma_v1",
+      "retrieval": "isha_sanskrit_dharma_v1",
+      "synthesis": "isha_sanskrit_dharma_v1",
+      "validation": "isha_sanskrit_dharma_v1"
+    },
+    "trace_id": "isha_sanskrit_dharma_v1",
+    "verification_status": "PARTIAL_VERIFIED_SAMPLE"
+  },
+  "tantra_ecosystem_fabric": {
+    "karma_intelligence": {
+      "adaptation_level": "NEUTRAL",
+      "recommended_tactic": "OBSERVE"
+    },
+    "prana_verified": true,
+    "status": "SUCCESS",
+    "trace_id": "isha_sanskrit_dharma_v1"
+  },
+  "tantra_sdk_contracts": {
+    "execution_event": {
+      "command": "\u0927\u0930\u094d\u092e",
+      "compatibility": {
+        "adapter": "TantraSdkAdapter",
+        "supported_schema": "execution_event.v1.0.0"
+      },
+      "duration_ms": 12,
+      "execution_id": "exec_isha_sanskrit_dharma_v1",
+      "outcome": {
+        "answer": "Represents the sustaining principle governing righteous conduct and universal order.",
+        "domain": "sanskrit",
+        "verification_status": "PARTIAL_VERIFIED_SAMPLE"
+      },
+      "ownership": "uniguru",
+      "provenance": {
+        "environment": "local",
+        "schema_source": "C:\\Users\\Isha Singh\\Desktop\\vijay\\tantara_ecosystem-main\\execution_sdk\\v1\\schemas\\execution_event.v1.0.0.json",
+        "source_system": "uniguru_backend",
+        "version": "1.0.0"
+      },
+      "related_trace_ids": [
+        "isha_sanskrit_dharma_v1"
+      ],
+      "schema_version": "execution_event.v1.0.0",
+      "status": "completed",
+      "subject_id": "uniguru_runtime",
+      "timestamp": "2026-08-04T14:56:43.728725Z",
+      "trace_id": "isha_sanskrit_dharma_v1",
+      "validation_status": "valid"
+    },
+    "live_authority_validation": {
+      "live": false,
+      "path": "/runtime/authority/validate",
+      "reason": "not_configured"
+    },
+    "live_execution_submission": {
+      "live": false,
+      "path": "/runtime/execution-event",
+      "reason": "not_configured"
+    },
+    "live_trace_submission": {
+      "live": false,
+      "path": "/runtime/trace",
+      "reason": "not_configured"
+    },
+    "tantra_sdk_live": false
+  },
+  "timestamp": "2026-08-04T14:56:43.728725Z",
+  "trace_id": "isha_sanskrit_dharma_v1",
+  "verification_status": "PARTIAL_VERIFIED_SAMPLE",
+  "vijay_validation": {
+    "canonical_authority_granted": false,
+    "component_hashes": {
+      "contradiction_escalation": "2fea60c8de58f0596f6468e5bc9af85f907c4b1a1f29d5c522d1a2217e71a9a4",
+      "observability": "5aba1721337088433c85786cfbf0a33c5ab3b32edbabf346b75e02698f83ef67",
+      "ontology_lineage": "e0d78ee868ce2ecf5e1dba1185b217fd207cec1fe96489eed24adafa234279af",
+      "semantic_governance": "326da2a0046339fd1cae33274f721744b2edb6c808568ea75bfe93be06c8394f",
+      "trust_propagation": "4e568e9b2512ad19dba8f7b755e8cdd5958b198c684cf2cc29edbd7631ec0e7b",
+      "uncertainty_lineage": "33c757f34ef935718b01d56c0fbb6517af2ac1d16c0dee303d4552ef070398ad"
+    },
+    "hash_chain_ok": true,
+    "last_event_hash": "e93af03a86c7df0edcb99a8bc15f811fa64ab7bc3107e5cbf249e6e63bf4f425",
+    "replay_safe": true,
+    "runtime_hash": "cd10bfc9da442b839239f00b321b104ab9e5cd1e98fa9898fd89c06ce4b58f30",
+    "semantic_event": {
+      "ambiguity_class": "bounded",
+      "claim_key": "ecosystem_execution",
+      "confidence": 0.65,
+      "contradiction_pressure": 0.0,
+      "legitimacy_evidence": 0.38,
+      "provenance_weight": 0.42,
+      "reinforcement_count": 1,
+      "trace_id": "isha_sanskrit_dharma_v1",
+      "uncertainty": 0.35,
+      "unresolved": false
+    },
+    "trace_id": "isha_sanskrit_dharma_v1"
+  }
+}

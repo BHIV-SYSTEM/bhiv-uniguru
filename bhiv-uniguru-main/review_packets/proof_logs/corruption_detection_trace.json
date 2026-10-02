@@ -1,0 +1,16 @@
+{
+  "detected": true,
+  "verification": {
+    "failure_count": 1,
+    "failures": [
+      {
+        "actual_event_hash": "5a5e84991fbae01e588fb0be98145cc0e0aa7b62711904324e6593e1ca8bfa35",
+        "expected_event_hash": "e1e12587ab21e6c3d21ea1780a95c99c55ba6ede478b1f2e4beb4ba2740cde04",
+        "index": 1,
+        "type": "event_hash_mismatch"
+      }
+    ],
+    "hash_chain_ok": false,
+    "last_event_hash": "f0fc345b31bf94487ded348d63e493b2664d28d4c68e68c1c4eac09d7b48818b"
+  }
+}

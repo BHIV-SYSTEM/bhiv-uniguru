@@ -1,0 +1,14 @@
+from enum import Enum
+
+
+class EvidenceType(str, Enum):
+    PRIMARY_CANON = "PRIMARY_CANON"
+    VEDA = "VEDA"
+    UPANISHAD = "UPANISHAD"
+    BHAGAVAD_GITA = "BHAGAVAD_GITA"
+    PANINI = "PANINI"
+    NIRUKTA = "NIRUKTA"
+    COMMENTARY = "COMMENTARY"
+    TRADITION = "TRADITION"
+    SCHOLAR = "SCHOLAR"
+    DERIVED = "DERIVED"

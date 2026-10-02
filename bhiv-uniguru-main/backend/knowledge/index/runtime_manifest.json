@@ -1,0 +1,243 @@
+{
+  "summary": {
+    "documents_total": 45,
+    "keywords_total": 106,
+    "categories": {
+      "quantum": 19,
+      "gurukul": 6,
+      "jain": 10,
+      "swaminarayan": 10
+    },
+    "verification_status": {
+      "UNSPECIFIED": 19,
+      "VERIFIED": 26
+    }
+  },
+  "ingestion_log": [
+    {
+      "path": "backend/knowledge/quantum\\density_matrix.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\entanglement.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\grover_algorithm.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\KB_INDEX.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\qubit.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\README.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\shor_algorithm.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\superposition.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Algorithms\\quantum_algorithms_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Applications\\quantum_applications_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Biology\\quantum_biology_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Chemistry\\quantum_chemistry_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Computing\\nielsen_chuang_core.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Computing\\quantum_computing_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Computing\\quantum_information_core.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Hardware\\quantum_hardware_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Mathematics\\quantum_math_foundations.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Physics\\quantum_physics_overview.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/quantum\\Quantum_Software\\quantum_software_stack.md",
+      "category": "quantum",
+      "verification_status": "UNSPECIFIED"
+    },
+    {
+      "path": "backend/knowledge/gurukul\\logic\\nyaya_logic.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/gurukul\\logic\\panchavayava_argument.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/gurukul\\mathematics\\geometry.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/gurukul\\mathematics\\vedic_math.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/gurukul\\sanskrit\\grammar.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/gurukul\\sciences\\physics_concepts.md",
+      "category": "gurukul",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/jain\\acharanga_sutra.md",
+      "category": "jain",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/jain\\anekantavada_syadvada.md",
+      "category": "jain",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/jain\\jain_cosmology.md",
+      "category": "jain",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/jain\\jain_karma_doctrine.md",
+      "category": "jain",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/jain\\jain_shravaka_ethics.md",
+      "category": "jain",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/jain\\mahavira_life.md",
+      "category": "jain",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/jain\\rishabhadeva_adinatha.md",
+      "category": "jain",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/jain\\sutrakritanga.md",
+      "category": "jain",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/jain\\tattvartha_sutra.md",
+      "category": "jain",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/jain\\uttaradhyayana_sutra.md",
+      "category": "jain",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/swaminarayan\\akshar_purushottam_darshan.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/swaminarayan\\mandirs_akshardham.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/swaminarayan\\nishkulanand_swami.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/swaminarayan\\panch_vartman.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/swaminarayan\\satpurush_doctrine.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/swaminarayan\\shikshapatri.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/swaminarayan\\swaminarayan_biography.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/swaminarayan\\swaminarayan_theology.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/swaminarayan\\swamini_vato.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "path": "backend/knowledge/swaminarayan\\vachanamrut_core.md",
+      "category": "swaminarayan",
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

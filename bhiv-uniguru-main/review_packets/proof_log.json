@@ -1,0 +1,229 @@
+{
+  "generated_at": "2026-05-05T13:05:22.564221+00:00",
+  "pipeline": "deterministic_kosha_v2",
+  "total_queries": 22,
+  "knowledge_found": 10,
+  "no_verified_knowledge": 12,
+  "results": [
+    {
+      "query_number": 1,
+      "query": "What is the Bhagavad Gita?",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 2,
+      "query": "Tell me about the Upanishads",
+      "verification_status": "VERIFIED",
+      "confidence": 0.5,
+      "signals_found": 1,
+      "signals_rejected": 0,
+      "answer_preview": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to . They are considered the crown...",
+      "reasoning": "Signal matched via tags ['upanishads'] with content overlap 1.00. Confidence: 0.500."
+    },
+    {
+      "query_number": 3,
+      "query": "What does the Mahabharata say about dharma?",
+      "verification_status": "VERIFIED",
+      "confidence": 0.25,
+      "signals_found": 2,
+      "signals_rejected": 0,
+      "answer_preview": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation . It outlines the princi...",
+      "reasoning": "Signal matched via tags [] with content overlap 0.33. Confidence: 0.250."
+    },
+    {
+      "query_number": 4,
+      "query": "Explain the concept of karma in Hindu philosophy",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 5,
+      "query": "What are the Vedas?",
+      "verification_status": "VERIFIED",
+      "confidence": 1.0,
+      "signals_found": 2,
+      "signals_rejected": 0,
+      "answer_preview": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to . They are considered the crown...",
+      "reasoning": "Signal matched via tags [] with content overlap 1.00. Confidence: 1.000."
+    },
+    {
+      "query_number": 6,
+      "query": "Tell me about Vishnu in the Puranas",
+      "verification_status": "VERIFIED",
+      "confidence": 0.3333,
+      "signals_found": 1,
+      "signals_rejected": 0,
+      "answer_preview": "The main deity praised in the Padma Purana is Vishnu. The Purana contains stories and descriptions of Vishnu's greatness...",
+      "reasoning": "Signal matched via tags ['vishnu'] with content overlap 0.50. Confidence: 0.333."
+    },
+    {
+      "query_number": 7,
+      "query": "What is the significance of the Narada Purana?",
+      "verification_status": "VERIFIED",
+      "confidence": 0.6667,
+      "signals_found": 3,
+      "signals_rejected": 0,
+      "answer_preview": "According to the Narada-Purana , the opposite of Ahimsa (Non-Violence) is not explicitly mentioned. However, it can be i...",
+      "reasoning": "Signal matched via tags [] with content overlap 0.67. Confidence: 0.667."
+    },
+    {
+      "query_number": 8,
+      "query": "Explain the teachings of the Bhagavad Gita on decision making",
+      "verification_status": "VERIFIED",
+      "confidence": 0.1667,
+      "signals_found": 1,
+      "signals_rejected": 0,
+      "answer_preview": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to . They are considered the crown...",
+      "reasoning": "Signal matched via tags [] with content overlap 0.20. Confidence: 0.167."
+    },
+    {
+      "query_number": 9,
+      "query": "What is Brahman according to the Upanishads?",
+      "verification_status": "VERIFIED",
+      "confidence": 1.0,
+      "signals_found": 5,
+      "signals_rejected": 0,
+      "answer_preview": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to . They are considered the crown...",
+      "reasoning": "Signal matched via tags ['upanishads'] with content overlap 1.00. Confidence: 1.000."
+    },
+    {
+      "query_number": 10,
+      "query": "Tell me about tantra and the Bhairava tradition",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 11,
+      "query": "What does the Ramayana teach?",
+      "verification_status": "VERIFIED",
+      "confidence": 0.3333,
+      "signals_found": 1,
+      "signals_rejected": 1,
+      "answer_preview": "The texts that describe stories of gods and creation are the Valmiki-Ramayana and the Brahmanda Purana Part 4. The Valmi...",
+      "reasoning": "Signal matched via tags [] with content overlap 0.50. Confidence: 0.333."
+    },
+    {
+      "query_number": 12,
+      "query": "Explain the concept of yoga in the Upanishads",
+      "verification_status": "VERIFIED",
+      "confidence": 0.25,
+      "signals_found": 1,
+      "signals_rejected": 0,
+      "answer_preview": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to . They are considered the crown...",
+      "reasoning": "Signal matched via tags ['upanishads'] with content overlap 0.33. Confidence: 0.250."
+    },
+    {
+      "query_number": 13,
+      "query": "What is the Tripura Rahasya?",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 14,
+      "query": "Tell me about Indra in the Puranas",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 15,
+      "query": "What are the teachings on self-realization?",
+      "verification_status": "VERIFIED",
+      "confidence": 1.0,
+      "signals_found": 5,
+      "signals_rejected": 0,
+      "answer_preview": "The Upanishads expound the secret meaning of the Vedas and treat of Brahma, according to . They are considered the crown...",
+      "reasoning": "Signal matched via tags [] with content overlap 1.00. Confidence: 1.000."
+    },
+    {
+      "query_number": 16,
+      "query": "What is the current stock price of Apple?",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 17,
+      "query": "Who won the cricket match yesterday?",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 18,
+      "query": "What is the latest news from Ukraine?",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 19,
+      "query": "Explain quantum entanglement in physics",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 20,
+      "query": "What is the GDP of India in 2024?",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 21,
+      "query": "How do I fix a Python import error?",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    },
+    {
+      "query_number": 22,
+      "query": "What is the recipe for biryani?",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "confidence": 0.0,
+      "signals_found": 0,
+      "signals_rejected": 0,
+      "answer_preview": "I do not have verified knowledge to answer this question.",
+      "reasoning": "No signals passed domain+tag+query validation."
+    }
+  ]
+}

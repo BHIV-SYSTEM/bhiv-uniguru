@@ -1,0 +1,3440 @@
+{
+  "graph_id": "UNIGURU_CURRICULUM_KNOWLEDGE_GRAPH_V2",
+  "schema_version": "2.0.0",
+  "generated_at": "2026-06-29T07:36:56.337089+00:00",
+  "node_types": [
+    "publisher",
+    "board",
+    "textbook",
+    "edition",
+    "chapter",
+    "section",
+    "concept",
+    "exercise",
+    "learning_outcome",
+    "assessment",
+    "mastery_node",
+    "learning_path"
+  ],
+  "nodes": [
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "type": "assessment",
+      "label": "Assessment for Number Recognition",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_001/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "type": "assessment",
+      "label": "Assessment for Counting objects",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_002/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "type": "assessment",
+      "label": "Assessment for Comparison of Sizes",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_004/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "type": "assessment",
+      "label": "Assessment for Top and Bottom",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_005/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "type": "assessment",
+      "label": "Assessment for Near and Far",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_006/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "type": "assessment",
+      "label": "Assessment for Before and After",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_007/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "type": "assessment",
+      "label": "Assessment for One and Many",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_008/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "type": "assessment",
+      "label": "Assessment for Addition Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_009/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "type": "assessment",
+      "label": "Assessment for Subtraction Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_010/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "type": "assessment",
+      "label": "Assessment for Intro to Ten",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_011/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "type": "assessment",
+      "label": "Assessment for Coins and Notes",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_012/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "type": "assessment",
+      "label": "Assessment for Measurement of Length",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_013/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "type": "assessment",
+      "label": "Assessment for Days of the Week",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_014/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "type": "assessment",
+      "label": "Assessment for Addition with Regrouping",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_015/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "type": "assessment",
+      "label": "Assessment for Subtraction by Borrowing",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_016/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "type": "assessment",
+      "label": "Assessment for Geometric Shapes",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_017/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "type": "assessment",
+      "label": "Assessment for Patterns and Sequences",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_018/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "type": "assessment",
+      "label": "Assessment for Reading Calendar",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_019/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "type": "assessment",
+      "label": "Assessment for Weight and Balance",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_020/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "type": "assessment",
+      "label": "Assessment for Capacity Measurement",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_021/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "type": "assessment",
+      "label": "Assessment for Handling Data",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_022/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "type": "assessment",
+      "label": "Assessment for Multiplication Preparation",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_023/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "type": "assessment",
+      "label": "Assessment for Division Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_024/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "type": "assessment",
+      "label": "Assessment for Phonetics - A to Z",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_025/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "type": "assessment",
+      "label": "Assessment for Greetings and Manners",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_026/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "type": "assessment",
+      "label": "Assessment for Naming Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_027/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "type": "assessment",
+      "label": "Assessment for Action Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_028/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "type": "assessment",
+      "label": "Assessment for Rhyming Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_029/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "type": "assessment",
+      "label": "Assessment for Pronouns Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_030/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "type": "assessment",
+      "label": "Assessment for Describing Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_031/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "type": "assessment",
+      "label": "Assessment for Prepositions Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_032/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "type": "assessment",
+      "label": "Assessment for Sight Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_033/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "type": "assessment",
+      "label": "Assessment for Reading Sentences",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_034/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "type": "assessment",
+      "label": "Assessment for Living and Non-Living",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_035/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "type": "assessment",
+      "label": "Assessment for Parts of a Plant",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_036/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "type": "assessment",
+      "label": "Assessment for Types of Animals",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_037/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "type": "assessment",
+      "label": "Assessment for Food Habits of Animals",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_038/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "type": "assessment",
+      "label": "Assessment for Water Sources",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_039/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "type": "assessment",
+      "label": "Assessment for Properties of Air",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_040/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "type": "assessment",
+      "label": "Assessment for Cleanliness and Health",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_041/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "type": "assessment",
+      "label": "Assessment for Our Environment",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_042/assessment"
+    },
+    {
+      "id": "assessment:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "type": "assessment",
+      "label": "Assessment for Place Value",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G2_MM_CONCEPT_001/assessment"
+    },
+    {
+      "id": "board:a61e84e62c7797ce43c1",
+      "type": "board",
+      "label": "Maharashtra State Board",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371"
+    },
+    {
+      "id": "chapter:19c79cb63ba2902174ce",
+      "type": "chapter",
+      "label": "Counting from 1 to 10",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e"
+    },
+    {
+      "id": "chapter:30dc83e27701fa525846",
+      "type": "chapter",
+      "label": "Counting from 1 to 10",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e"
+    },
+    {
+      "id": "chapter:a01ab68b959ed4ab616d",
+      "type": "chapter",
+      "label": "Numbers 11-100",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0"
+    },
+    {
+      "id": "chapter:d9819efb58072d064df9",
+      "type": "chapter",
+      "label": "Numbers 11-100",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "type": "concept",
+      "label": "Number Recognition",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "source_hash": "cceb25133efd4ac110223f732aabbdd3817b522178cd437da31ba279da0781cf"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "type": "concept",
+      "label": "Counting objects",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "source_hash": "84d32947ee75d1d573520d0d9a7630b59dc0f4d7f32ec2ec55b2540dea13f9d0"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "type": "concept",
+      "label": "Comparison of Sizes",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "source_hash": "88271c6d984f5ef4b5d9303598a645a1f7da71bdda2ff9cae4efe425a8c49971"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "type": "concept",
+      "label": "Top and Bottom",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "source_hash": "79f5eedfc857f78f9f8656c26fcdfa5e612df8d171ce980dfe00f4cde842eabf"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "type": "concept",
+      "label": "Near and Far",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "source_hash": "1ee5d5eb9cb540546983eaa51c7c3183a7768cad496b5e3d514d7eff326c86a6"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "type": "concept",
+      "label": "Before and After",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "source_hash": "df18192e68142df7f8987b8c44132aa8d04e657908803b41c5f4578a38017345"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "type": "concept",
+      "label": "One and Many",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "source_hash": "34198ddc0d7faadce7b6f316ccb9b0177aa9281f5d930a7cf721c29ed8754a5d"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "type": "concept",
+      "label": "Addition Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "source_hash": "5c00bdecf1861d7f0159f96289fec900c9f51f5c9401ea04f3de1c82c0602171"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "type": "concept",
+      "label": "Subtraction Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "source_hash": "32f43dbbdb0700ee2970caaf04b388ca8fc046bb3bd73c81f4215ab10f34f96c"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "type": "concept",
+      "label": "Intro to Ten",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "source_hash": "b1bac4bf57d67f718c34a1263181f04f3762a226775d17100895f215353b9c72"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "type": "concept",
+      "label": "Coins and Notes",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "source_hash": "6b945255bf4f0b653910286386af197ef4ddb0f59f444675f498ea48381a85c9"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "type": "concept",
+      "label": "Measurement of Length",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "source_hash": "6ecb0ee2b8b451a64361b88df5ea106de5fbcb61c9581dd0f70500488dd7ec7e"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "type": "concept",
+      "label": "Days of the Week",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "source_hash": "9dc945f4e24d0c92909b6e6c96205e07543906577f6b501fe30ca73d2bcdd761"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "type": "concept",
+      "label": "Addition with Regrouping",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "source_hash": "682d82a05e483529e0586d86c9bd3b61321f1bd646fc873222a27c4d33d7396c"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "type": "concept",
+      "label": "Subtraction by Borrowing",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "source_hash": "01e0a669aa9117beea951ea0ddd21a30a57ccc07361697f76ab30f2a4fb5eb22"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "type": "concept",
+      "label": "Geometric Shapes",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "source_hash": "52ee2bc0a6300965acdb5b2a1b35167f171808e3b1b354b50c3aa29cbc295fd0"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "type": "concept",
+      "label": "Patterns and Sequences",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "source_hash": "746c86642a7023742b454cc089c10de3fd8a68cb97a47bd513f9877f94a2f583"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "type": "concept",
+      "label": "Reading Calendar",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "source_hash": "5ffff412526f1f0e9dbce4b4f1acb87fb5f03d40b3636bb3b9d0b3dc169b22df"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "type": "concept",
+      "label": "Weight and Balance",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "source_hash": "99851cf3092ede6895cb4b77ff9458a21f50754b5c8043868330873b9ec05d6e"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "type": "concept",
+      "label": "Capacity Measurement",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "source_hash": "3b8b2cc8a4b19b59093c0e2c6f96fdde632522b1cb3384f9fda05160a6d27ca7"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "type": "concept",
+      "label": "Handling Data",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "source_hash": "674c1113479263e664592c0109d334d35a364969bb8d8c4f84969c0c73df0e48"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "type": "concept",
+      "label": "Multiplication Preparation",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "source_hash": "26c4c4db52256132d54b5e40851a8bfd0c2016e8c803749f458943be4f5cb8af"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "type": "concept",
+      "label": "Division Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "source_hash": "64035e4d279de4d620929aa3c40c6444249300ea13c0d1fe7e2189cd58a79c81"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "type": "concept",
+      "label": "Phonetics - A to Z",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "source_hash": "f2843f1c10029c24eeb153f00237f58ac9c20d157a289429838d21741c5aed79"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "type": "concept",
+      "label": "Greetings and Manners",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "source_hash": "944f52a60eca8fe149d86f542aeb876e97ad42cd1354dbb3ddcd750d4087ff08"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "type": "concept",
+      "label": "Naming Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "source_hash": "940af968ddf68d2bd999281905aad756075672131c6d09607715342b7554436a"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "type": "concept",
+      "label": "Action Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "source_hash": "35c609cf74c146b34ec35db8ca63c7b48c50c5de4c8627cf5a05979b1a8b2cf1"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "type": "concept",
+      "label": "Rhyming Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "source_hash": "075a725c5044230dc8f5ad7011937beff9f5a1cb6b3eb52c8b65621753526625"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "type": "concept",
+      "label": "Pronouns Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "source_hash": "e3b4816ba025ace155f31e6c63023196a3bc18ed91525f94163eacbbb166b105"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "type": "concept",
+      "label": "Describing Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "source_hash": "c55414c2d2ae9dba1832496cb876e33931ab0d1b7ac02385f3af7aeafdf7b01c"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "type": "concept",
+      "label": "Prepositions Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "source_hash": "fab3de0c042fa0f0599225ac6eb47f782edfb5de69c229b08a81336dbc698fa0"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "type": "concept",
+      "label": "Sight Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "source_hash": "808aa8f80278fee5bf0a345592fa876ad63af407bf0201e59f8c0160e7e4b0a3"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "type": "concept",
+      "label": "Reading Sentences",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "source_hash": "1a48f3f18fd07bf47b1942d3e3402e63e1cd30c16eda1d44f964bd9bebeef35a"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "type": "concept",
+      "label": "Living and Non-Living",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "source_hash": "25b38ab273eeeef0874e0636160074817f33c382ef1b9b756744f8793d181921"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "type": "concept",
+      "label": "Parts of a Plant",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "source_hash": "1f1952cbc8026ca975f383d758eb7e757f23fecd1e64a0b9e65443d50fea94dc"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "type": "concept",
+      "label": "Types of Animals",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "source_hash": "1108a28d16676887355f58e0058e66d87d433e766b1ab8a800b228b357008552"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "type": "concept",
+      "label": "Food Habits of Animals",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "source_hash": "7bdee20428efcdd3fdb7b465576403608a776f0350f1e2d11d360ee6ee1f6704"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "type": "concept",
+      "label": "Water Sources",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "source_hash": "5cd8e059953e476a6551037d6870a9677aefffa35ad69ee55672424140df0639"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "type": "concept",
+      "label": "Properties of Air",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "source_hash": "3720b3bcc6e4670ee2c27a0868679f7aacc81394a06b966a52fdda4aac9cb267"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "type": "concept",
+      "label": "Cleanliness and Health",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "source_hash": "1d9ce6cdc7ecf9e89352acd202468e198a2a188c63a68d0db893ce7ed265c084"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "type": "concept",
+      "label": "Our Environment",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "record_id": "BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "source_hash": "047bc3f8e642a6d148959d67a4c66fa5d339c58c6400997edc088513bd9fd77f"
+    },
+    {
+      "id": "concept:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "type": "concept",
+      "label": "Place Value",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "record_id": "BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "source_hash": "ca13524afa08e4ebfeda9b78602631dde270fcc79f96cb474aa13b764ef055e2"
+    },
+    {
+      "id": "edition:BALBHARTI_ENGLISH_G1_MM:2023",
+      "type": "edition",
+      "label": "2023",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023"
+    },
+    {
+      "id": "edition:BALBHARTI_MATH_G1_MM:2023",
+      "type": "edition",
+      "label": "2023",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023"
+    },
+    {
+      "id": "edition:BALBHARTI_MATH_G2_MM:2023",
+      "type": "edition",
+      "label": "2023",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023"
+    },
+    {
+      "id": "edition:BALBHARTI_SCIENCE_G3_MM:2023",
+      "type": "edition",
+      "label": "2023",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_401",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_401",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_034/exercise/BALBHARTI_ENGLISH_G1_MM_EX_401"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_437",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_437",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_025/exercise/BALBHARTI_ENGLISH_G1_MM_EX_437"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_439",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_439",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_026/exercise/BALBHARTI_ENGLISH_G1_MM_EX_439"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_440",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_440",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_027/exercise/BALBHARTI_ENGLISH_G1_MM_EX_440"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_442",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_442",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_028/exercise/BALBHARTI_ENGLISH_G1_MM_EX_442"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_443",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_443",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_029/exercise/BALBHARTI_ENGLISH_G1_MM_EX_443"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_445",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_445",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_030/exercise/BALBHARTI_ENGLISH_G1_MM_EX_445"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_446",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_446",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_031/exercise/BALBHARTI_ENGLISH_G1_MM_EX_446"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_448",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_448",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_032/exercise/BALBHARTI_ENGLISH_G1_MM_EX_448"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_449",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_449",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_033/exercise/BALBHARTI_ENGLISH_G1_MM_EX_449"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_451",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_451",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_034/exercise/BALBHARTI_ENGLISH_G1_MM_EX_451"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_489",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_489",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_026/exercise/BALBHARTI_ENGLISH_G1_MM_EX_489"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_492",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_492",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_028/exercise/BALBHARTI_ENGLISH_G1_MM_EX_492"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_495",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_495",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_030/exercise/BALBHARTI_ENGLISH_G1_MM_EX_495"
+    },
+    {
+      "id": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_498",
+      "type": "exercise",
+      "label": "BALBHARTI_ENGLISH_G1_MM_EX_498",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_032/exercise/BALBHARTI_ENGLISH_G1_MM_EX_498"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_CH01_EX001",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_CH01_EX001",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_001/exercise/BALBHARTI_MATH_G1_MM_CH01_EX001"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_CH01_EX002",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_CH01_EX002",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_002/exercise/BALBHARTI_MATH_G1_MM_CH01_EX002"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_006",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_006",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_004/exercise/BALBHARTI_MATH_G1_MM_EX_006"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_007",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_007",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_005/exercise/BALBHARTI_MATH_G1_MM_EX_007"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_009",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_009",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_006/exercise/BALBHARTI_MATH_G1_MM_EX_009"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_010",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_010",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_007/exercise/BALBHARTI_MATH_G1_MM_EX_010"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_012",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_012",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_008/exercise/BALBHARTI_MATH_G1_MM_EX_012"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_013",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_013",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_009/exercise/BALBHARTI_MATH_G1_MM_EX_013"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_015",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_015",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_010/exercise/BALBHARTI_MATH_G1_MM_EX_015"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_016",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_016",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_011/exercise/BALBHARTI_MATH_G1_MM_EX_016"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_018",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_018",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_012/exercise/BALBHARTI_MATH_G1_MM_EX_018"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_019",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_019",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_013/exercise/BALBHARTI_MATH_G1_MM_EX_019"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_021",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_021",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_014/exercise/BALBHARTI_MATH_G1_MM_EX_021"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_051",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_051",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_001/exercise/BALBHARTI_MATH_G1_MM_EX_051"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_052",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_052",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_002/exercise/BALBHARTI_MATH_G1_MM_EX_052"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_056",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_056",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_004/exercise/BALBHARTI_MATH_G1_MM_EX_056"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_059",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_059",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_006/exercise/BALBHARTI_MATH_G1_MM_EX_059"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_062",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_062",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_008/exercise/BALBHARTI_MATH_G1_MM_EX_062"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_065",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_065",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_010/exercise/BALBHARTI_MATH_G1_MM_EX_065"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_068",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_068",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_012/exercise/BALBHARTI_MATH_G1_MM_EX_068"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_071",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_071",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_014/exercise/BALBHARTI_MATH_G1_MM_EX_071"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_101",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_101",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_001/exercise/BALBHARTI_MATH_G1_MM_EX_101"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_102",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_102",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_002/exercise/BALBHARTI_MATH_G1_MM_EX_102"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_106",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_106",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_004/exercise/BALBHARTI_MATH_G1_MM_EX_106"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_109",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_109",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_006/exercise/BALBHARTI_MATH_G1_MM_EX_109"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_112",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_112",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_008/exercise/BALBHARTI_MATH_G1_MM_EX_112"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_115",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_115",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_010/exercise/BALBHARTI_MATH_G1_MM_EX_115"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_118",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_118",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_012/exercise/BALBHARTI_MATH_G1_MM_EX_118"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_121",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_121",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_014/exercise/BALBHARTI_MATH_G1_MM_EX_121"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_151",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_151",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_001/exercise/BALBHARTI_MATH_G1_MM_EX_151"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_152",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_152",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_002/exercise/BALBHARTI_MATH_G1_MM_EX_152"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_156",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_156",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_004/exercise/BALBHARTI_MATH_G1_MM_EX_156"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_159",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_159",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_006/exercise/BALBHARTI_MATH_G1_MM_EX_159"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_162",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_162",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_008/exercise/BALBHARTI_MATH_G1_MM_EX_162"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_165",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_165",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_010/exercise/BALBHARTI_MATH_G1_MM_EX_165"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_168",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_168",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_012/exercise/BALBHARTI_MATH_G1_MM_EX_168"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G1_MM_EX_171",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G1_MM_EX_171",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_014/exercise/BALBHARTI_MATH_G1_MM_EX_171"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_CH02_EX001",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_CH02_EX001",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G2_MM_CONCEPT_001/exercise/BALBHARTI_MATH_G2_MM_CH02_EX001"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_222",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_222",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_015/exercise/BALBHARTI_MATH_G2_MM_EX_222"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_224",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_224",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_016/exercise/BALBHARTI_MATH_G2_MM_EX_224"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_225",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_225",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_017/exercise/BALBHARTI_MATH_G2_MM_EX_225"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_227",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_227",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_018/exercise/BALBHARTI_MATH_G2_MM_EX_227"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_228",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_228",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_019/exercise/BALBHARTI_MATH_G2_MM_EX_228"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_230",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_230",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_020/exercise/BALBHARTI_MATH_G2_MM_EX_230"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_231",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_231",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_021/exercise/BALBHARTI_MATH_G2_MM_EX_231"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_233",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_233",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_022/exercise/BALBHARTI_MATH_G2_MM_EX_233"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_234",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_234",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_023/exercise/BALBHARTI_MATH_G2_MM_EX_234"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_236",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_236",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_024/exercise/BALBHARTI_MATH_G2_MM_EX_236"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_274",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_274",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_016/exercise/BALBHARTI_MATH_G2_MM_EX_274"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_277",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_277",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_018/exercise/BALBHARTI_MATH_G2_MM_EX_277"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_280",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_280",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_020/exercise/BALBHARTI_MATH_G2_MM_EX_280"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_283",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_283",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_022/exercise/BALBHARTI_MATH_G2_MM_EX_283"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_286",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_286",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_024/exercise/BALBHARTI_MATH_G2_MM_EX_286"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_324",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_324",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_016/exercise/BALBHARTI_MATH_G2_MM_EX_324"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_327",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_327",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_018/exercise/BALBHARTI_MATH_G2_MM_EX_327"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_330",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_330",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_020/exercise/BALBHARTI_MATH_G2_MM_EX_330"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_333",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_333",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_022/exercise/BALBHARTI_MATH_G2_MM_EX_333"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_336",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_336",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_024/exercise/BALBHARTI_MATH_G2_MM_EX_336"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_374",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_374",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_016/exercise/BALBHARTI_MATH_G2_MM_EX_374"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_377",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_377",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_018/exercise/BALBHARTI_MATH_G2_MM_EX_377"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_380",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_380",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_020/exercise/BALBHARTI_MATH_G2_MM_EX_380"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_383",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_383",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_022/exercise/BALBHARTI_MATH_G2_MM_EX_383"
+    },
+    {
+      "id": "exercise:BALBHARTI_MATH_G2_MM_EX_386",
+      "type": "exercise",
+      "label": "BALBHARTI_MATH_G2_MM_EX_386",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_024/exercise/BALBHARTI_MATH_G2_MM_EX_386"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_502",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_502",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_035/exercise/BALBHARTI_SCIENCE_G3_MM_EX_502"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_504",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_504",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_036/exercise/BALBHARTI_SCIENCE_G3_MM_EX_504"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_505",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_505",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_037/exercise/BALBHARTI_SCIENCE_G3_MM_EX_505"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_507",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_507",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_038/exercise/BALBHARTI_SCIENCE_G3_MM_EX_507"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_508",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_508",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_039/exercise/BALBHARTI_SCIENCE_G3_MM_EX_508"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_510",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_510",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_040/exercise/BALBHARTI_SCIENCE_G3_MM_EX_510"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_511",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_511",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_041/exercise/BALBHARTI_SCIENCE_G3_MM_EX_511"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_513",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_513",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_042/exercise/BALBHARTI_SCIENCE_G3_MM_EX_513"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_554",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_554",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_036/exercise/BALBHARTI_SCIENCE_G3_MM_EX_554"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_557",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_557",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_038/exercise/BALBHARTI_SCIENCE_G3_MM_EX_557"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_560",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_560",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_040/exercise/BALBHARTI_SCIENCE_G3_MM_EX_560"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_563",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_563",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_042/exercise/BALBHARTI_SCIENCE_G3_MM_EX_563"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_604",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_604",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_036/exercise/BALBHARTI_SCIENCE_G3_MM_EX_604"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_607",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_607",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_038/exercise/BALBHARTI_SCIENCE_G3_MM_EX_607"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_610",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_610",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_040/exercise/BALBHARTI_SCIENCE_G3_MM_EX_610"
+    },
+    {
+      "id": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_613",
+      "type": "exercise",
+      "label": "BALBHARTI_SCIENCE_G3_MM_EX_613",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_042/exercise/BALBHARTI_SCIENCE_G3_MM_EX_613"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "type": "learning_outcome",
+      "label": "Students can identify and write numbers 1 to 5.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_001/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "type": "learning_outcome",
+      "label": "Students can count objects up to 10 accurately.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_002/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "type": "learning_outcome",
+      "label": "Students can distinguish between big and small objects.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_004/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "type": "learning_outcome",
+      "label": "Students can identify objects at the top or bottom.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_005/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "type": "learning_outcome",
+      "label": "Students can describe relative closeness of objects.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_006/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "type": "learning_outcome",
+      "label": "Students can order events or numbers sequentially.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_007/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "type": "learning_outcome",
+      "label": "Students can categorize items into one or many.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_008/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "type": "learning_outcome",
+      "label": "Students can combine two groups of objects.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_009/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "type": "learning_outcome",
+      "label": "Students can remove objects from a group and count remainder.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_010/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "type": "learning_outcome",
+      "label": "Students can count up to 10 and group objects in tens.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_011/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "type": "learning_outcome",
+      "label": "Students can identify 1, 2, 5, and 10 rupee coins and notes.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_012/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "type": "learning_outcome",
+      "label": "Students can measure length using handspans or feet.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_013/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "type": "learning_outcome",
+      "label": "Students can name the days of the week in sequence.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_014/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "type": "learning_outcome",
+      "label": "Students can solve addition problems with carry-over.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_015/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "type": "learning_outcome",
+      "label": "Students can solve subtraction problems with borrowing.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_016/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "type": "learning_outcome",
+      "label": "Students can name and classify basic geometric shapes.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_017/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "type": "learning_outcome",
+      "label": "Students can identify and extend simple patterns.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_018/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "type": "learning_outcome",
+      "label": "Students can identify months and find dates on a calendar.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_019/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "type": "learning_outcome",
+      "label": "Students can identify heavier and lighter objects.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_020/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "type": "learning_outcome",
+      "label": "Students can compare container capacities.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_021/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "type": "learning_outcome",
+      "label": "Students can read and interpret simple pictographs.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_022/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "type": "learning_outcome",
+      "label": "Students can represent groups as repeated addition.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_023/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "type": "learning_outcome",
+      "label": "Students can distribute objects equally among groups.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_024/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "type": "learning_outcome",
+      "label": "Students can pronounce basic letter sounds.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_025/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "type": "learning_outcome",
+      "label": "Students can use polite words in conversation.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_026/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "type": "learning_outcome",
+      "label": "Students can identify nouns in simple sentences.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_027/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "type": "learning_outcome",
+      "label": "Students can recognize verbs in daily activities.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_028/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "type": "learning_outcome",
+      "label": "Students can match rhyming words in poems.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_029/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "type": "learning_outcome",
+      "label": "Students can replace naming words with correct pronouns.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_030/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "type": "learning_outcome",
+      "label": "Students can identify describing words.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_031/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "type": "learning_outcome",
+      "label": "Students can use basic prepositions correctly.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_032/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "type": "learning_outcome",
+      "label": "Students can read common words like the, of, to, and.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_033/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "type": "learning_outcome",
+      "label": "Students can read short sentences independently.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_034/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "type": "learning_outcome",
+      "label": "Students can classify items as living or non-living.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_035/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "type": "learning_outcome",
+      "label": "Students can label parts of a plant.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_036/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "type": "learning_outcome",
+      "label": "Students can categorize common animals.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_037/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "type": "learning_outcome",
+      "label": "Students can identify what different animals eat.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_038/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "type": "learning_outcome",
+      "label": "Students can list sources of fresh water.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_039/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "type": "learning_outcome",
+      "label": "Students can demonstrate air properties through simple experiments.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_040/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "type": "learning_outcome",
+      "label": "Students can practice healthy hygiene habits.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_041/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "type": "learning_outcome",
+      "label": "Students can describe ways to protect the environment.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_042/learning-outcome"
+    },
+    {
+      "id": "learning_outcome:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "type": "learning_outcome",
+      "label": "Students can decompose a two-digit number into tens and ones.",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G2_MM_CONCEPT_001/learning-outcome"
+    },
+    {
+      "id": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "learning_path",
+      "label": "English Grade 1 Path",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/learning-path"
+    },
+    {
+      "id": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "learning_path",
+      "label": "Mathematics Grade 1 Path",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/learning-path"
+    },
+    {
+      "id": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "learning_path",
+      "label": "Mathematics Grade 2 Path",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/learning-path"
+    },
+    {
+      "id": "learning_path:BALBHARTI_SCIENCE_G3_MM",
+      "type": "learning_path",
+      "label": "Science Grade 3 Path",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/learning-path"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "type": "mastery_node",
+      "label": "Mastery for Number Recognition",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_001/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "type": "mastery_node",
+      "label": "Mastery for Counting objects",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_002/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "type": "mastery_node",
+      "label": "Mastery for Comparison of Sizes",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_004/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "type": "mastery_node",
+      "label": "Mastery for Top and Bottom",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_005/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "type": "mastery_node",
+      "label": "Mastery for Near and Far",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_006/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "type": "mastery_node",
+      "label": "Mastery for Before and After",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_007/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "type": "mastery_node",
+      "label": "Mastery for One and Many",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_008/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "type": "mastery_node",
+      "label": "Mastery for Addition Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_009/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "type": "mastery_node",
+      "label": "Mastery for Subtraction Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_010/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "type": "mastery_node",
+      "label": "Mastery for Intro to Ten",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_011/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "type": "mastery_node",
+      "label": "Mastery for Coins and Notes",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_012/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "type": "mastery_node",
+      "label": "Mastery for Measurement of Length",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_013/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "type": "mastery_node",
+      "label": "Mastery for Days of the Week",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_014/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "type": "mastery_node",
+      "label": "Mastery for Addition with Regrouping",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_015/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "type": "mastery_node",
+      "label": "Mastery for Subtraction by Borrowing",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_016/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "type": "mastery_node",
+      "label": "Mastery for Geometric Shapes",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_017/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "type": "mastery_node",
+      "label": "Mastery for Patterns and Sequences",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_018/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "type": "mastery_node",
+      "label": "Mastery for Reading Calendar",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_019/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "type": "mastery_node",
+      "label": "Mastery for Weight and Balance",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_020/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "type": "mastery_node",
+      "label": "Mastery for Capacity Measurement",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_021/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "type": "mastery_node",
+      "label": "Mastery for Handling Data",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_022/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "type": "mastery_node",
+      "label": "Mastery for Multiplication Preparation",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_023/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "type": "mastery_node",
+      "label": "Mastery for Division Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_024/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "type": "mastery_node",
+      "label": "Mastery for Phonetics - A to Z",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_025/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "type": "mastery_node",
+      "label": "Mastery for Greetings and Manners",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_026/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "type": "mastery_node",
+      "label": "Mastery for Naming Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_027/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "type": "mastery_node",
+      "label": "Mastery for Action Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_028/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "type": "mastery_node",
+      "label": "Mastery for Rhyming Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_029/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "type": "mastery_node",
+      "label": "Mastery for Pronouns Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_030/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "type": "mastery_node",
+      "label": "Mastery for Describing Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_031/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "type": "mastery_node",
+      "label": "Mastery for Prepositions Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_032/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "type": "mastery_node",
+      "label": "Mastery for Sight Words",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_033/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "type": "mastery_node",
+      "label": "Mastery for Reading Sentences",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e/concept/BALBHARTI_MATH_G1_MM_CONCEPT_034/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "type": "mastery_node",
+      "label": "Mastery for Living and Non-Living",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_035/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "type": "mastery_node",
+      "label": "Mastery for Parts of a Plant",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_036/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "type": "mastery_node",
+      "label": "Mastery for Types of Animals",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_037/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "type": "mastery_node",
+      "label": "Mastery for Food Habits of Animals",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_038/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "type": "mastery_node",
+      "label": "Mastery for Water Sources",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_039/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "type": "mastery_node",
+      "label": "Mastery for Properties of Air",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_040/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "type": "mastery_node",
+      "label": "Mastery for Cleanliness and Health",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_041/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "type": "mastery_node",
+      "label": "Mastery for Our Environment",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G1_MM_CONCEPT_042/mastery"
+    },
+    {
+      "id": "mastery_node:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "type": "mastery_node",
+      "label": "Mastery for Place Value",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66/concept/BALBHARTI_MATH_G2_MM_CONCEPT_001/mastery"
+    },
+    {
+      "id": "publisher:ff8f9f5a1f328c4aa9ce",
+      "type": "publisher",
+      "label": "Maharashtra State Board of Education (Balbharti)",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce"
+    },
+    {
+      "id": "section:156c9c8629c2bb0ca4f1",
+      "type": "section",
+      "label": "Number Recognition (1-5)",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e",
+      "page": 3
+    },
+    {
+      "id": "section:2f5702ceb66afd134bf5",
+      "type": "section",
+      "label": "Number Recognition (1-5)",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM/edition/2023/chapter/380c77a3a8d5f471ad1e/section/63b029c228270bd61c5e",
+      "page": 76
+    },
+    {
+      "id": "section:3a9a2bd787453023c152",
+      "type": "section",
+      "label": "Tens and Ones Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66",
+      "page": 6
+    },
+    {
+      "id": "section:94b1017b79e20f2a95ab",
+      "type": "section",
+      "label": "Tens and Ones Intro",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM/edition/2023/chapter/e04d33c8308fe2cf08a0/section/27dec3fa809864a2ce66",
+      "page": 18
+    },
+    {
+      "id": "textbook:BALBHARTI_ENGLISH_G1_MM",
+      "type": "textbook",
+      "label": "BALBHARTI_ENGLISH_G1_MM",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_ENGLISH_G1_MM",
+      "subject": "English",
+      "grade": 1,
+      "medium": "Marathi Medium"
+    },
+    {
+      "id": "textbook:BALBHARTI_MATH_G1_MM",
+      "type": "textbook",
+      "label": "BALBHARTI_MATH_G1_MM",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G1_MM",
+      "subject": "Mathematics",
+      "grade": 1,
+      "medium": "Marathi Medium"
+    },
+    {
+      "id": "textbook:BALBHARTI_MATH_G2_MM",
+      "type": "textbook",
+      "label": "BALBHARTI_MATH_G2_MM",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_MATH_G2_MM",
+      "subject": "Mathematics",
+      "grade": 2,
+      "medium": "Marathi Medium"
+    },
+    {
+      "id": "textbook:BALBHARTI_SCIENCE_G3_MM",
+      "type": "textbook",
+      "label": "BALBHARTI_SCIENCE_G3_MM",
+      "address": "publisher/ff8f9f5a1f328c4aa9ce/board/7826289a6ca24ab39371/textbook/BALBHARTI_SCIENCE_G3_MM",
+      "subject": "Science",
+      "grade": 3,
+      "medium": "Marathi Medium"
+    }
+  ],
+  "edges": [
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "to": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "type": "leads_to"
+    },
+    {
+      "from": "assessment:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "to": "mastery_node:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "type": "leads_to"
+    },
+    {
+      "from": "board:a61e84e62c7797ce43c1",
+      "to": "textbook:BALBHARTI_ENGLISH_G1_MM",
+      "type": "publishes"
+    },
+    {
+      "from": "board:a61e84e62c7797ce43c1",
+      "to": "textbook:BALBHARTI_MATH_G1_MM",
+      "type": "publishes"
+    },
+    {
+      "from": "board:a61e84e62c7797ce43c1",
+      "to": "textbook:BALBHARTI_MATH_G2_MM",
+      "type": "publishes"
+    },
+    {
+      "from": "board:a61e84e62c7797ce43c1",
+      "to": "textbook:BALBHARTI_SCIENCE_G3_MM",
+      "type": "publishes"
+    },
+    {
+      "from": "chapter:19c79cb63ba2902174ce",
+      "to": "section:2f5702ceb66afd134bf5",
+      "type": "contains_section"
+    },
+    {
+      "from": "chapter:30dc83e27701fa525846",
+      "to": "section:156c9c8629c2bb0ca4f1",
+      "type": "contains_section"
+    },
+    {
+      "from": "chapter:a01ab68b959ed4ab616d",
+      "to": "section:94b1017b79e20f2a95ab",
+      "type": "contains_section"
+    },
+    {
+      "from": "chapter:d9819efb58072d064df9",
+      "to": "section:3a9a2bd787453023c152",
+      "type": "contains_section"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_CH01_EX001",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_051",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_101",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_151",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_CH01_EX002",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_052",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_102",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_152",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_006",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_056",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_106",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_156",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_007",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_009",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_059",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_109",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_159",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_010",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_012",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_062",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_112",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_162",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_013",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_015",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_065",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_115",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_165",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_016",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_018",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_068",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_118",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_168",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_019",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_021",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_071",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_121",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "to": "exercise:BALBHARTI_MATH_G1_MM_EX_171",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_222",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_224",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_274",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_324",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_374",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_225",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_227",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_277",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_327",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_377",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_228",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_230",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_280",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_330",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_380",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_231",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_233",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_283",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_333",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_383",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_234",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_236",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_286",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_336",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_EX_386",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_437",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_439",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_489",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_440",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_442",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_492",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_443",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_445",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_495",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_446",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_448",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_498",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_449",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_401",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "to": "exercise:BALBHARTI_ENGLISH_G1_MM_EX_451",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_502",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_504",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_554",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_604",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_505",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_507",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_557",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_607",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_508",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_510",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_560",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_610",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_511",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_513",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_563",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "to": "exercise:BALBHARTI_SCIENCE_G3_MM_EX_613",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "to": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "to": "exercise:BALBHARTI_MATH_G2_MM_CH02_EX001",
+      "type": "assessed_by"
+    },
+    {
+      "from": "concept:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "to": "learning_outcome:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "type": "produces_outcome"
+    },
+    {
+      "from": "edition:BALBHARTI_ENGLISH_G1_MM:2023",
+      "to": "chapter:19c79cb63ba2902174ce",
+      "type": "contains_chapter"
+    },
+    {
+      "from": "edition:BALBHARTI_MATH_G1_MM:2023",
+      "to": "chapter:30dc83e27701fa525846",
+      "type": "contains_chapter"
+    },
+    {
+      "from": "edition:BALBHARTI_MATH_G2_MM:2023",
+      "to": "chapter:a01ab68b959ed4ab616d",
+      "type": "contains_chapter"
+    },
+    {
+      "from": "edition:BALBHARTI_SCIENCE_G3_MM:2023",
+      "to": "chapter:d9819efb58072d064df9",
+      "type": "contains_chapter"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "to": "assessment:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "type": "verified_by"
+    },
+    {
+      "from": "learning_outcome:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "to": "assessment:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "type": "verified_by"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "to": "learning_path:BALBHARTI_MATH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "to": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "to": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "to": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "to": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "to": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "to": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "to": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "to": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "to": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "to": "learning_path:BALBHARTI_ENGLISH_G1_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "to": "learning_path:BALBHARTI_SCIENCE_G3_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "to": "learning_path:BALBHARTI_SCIENCE_G3_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "to": "learning_path:BALBHARTI_SCIENCE_G3_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "to": "learning_path:BALBHARTI_SCIENCE_G3_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "to": "learning_path:BALBHARTI_SCIENCE_G3_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "to": "learning_path:BALBHARTI_SCIENCE_G3_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "to": "learning_path:BALBHARTI_SCIENCE_G3_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "to": "learning_path:BALBHARTI_SCIENCE_G3_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "mastery_node:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "to": "learning_path:BALBHARTI_MATH_G2_MM",
+      "type": "part_of"
+    },
+    {
+      "from": "publisher:ff8f9f5a1f328c4aa9ce",
+      "to": "board:a61e84e62c7797ce43c1",
+      "type": "governs"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_001",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_002",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_004",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_005",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_006",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_007",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_008",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_009",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_010",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_011",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_012",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_013",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:156c9c8629c2bb0ca4f1",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_014",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:2f5702ceb66afd134bf5",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_025",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:2f5702ceb66afd134bf5",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_026",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:2f5702ceb66afd134bf5",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_027",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:2f5702ceb66afd134bf5",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_028",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:2f5702ceb66afd134bf5",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_029",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:2f5702ceb66afd134bf5",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_030",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:2f5702ceb66afd134bf5",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_031",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:2f5702ceb66afd134bf5",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_032",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:2f5702ceb66afd134bf5",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_033",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:2f5702ceb66afd134bf5",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_034",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:3a9a2bd787453023c152",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_035",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:3a9a2bd787453023c152",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_036",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:3a9a2bd787453023c152",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_037",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:3a9a2bd787453023c152",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_038",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:3a9a2bd787453023c152",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_039",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:3a9a2bd787453023c152",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_040",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:3a9a2bd787453023c152",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_041",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:3a9a2bd787453023c152",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_042",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_015",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_016",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_017",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_018",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_019",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_020",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_021",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_022",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_023",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G1_MM_CONCEPT_024",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "section:94b1017b79e20f2a95ab",
+      "to": "concept:BALBHARTI_MATH_G2_MM_CONCEPT_001",
+      "type": "teaches_concept"
+    },
+    {
+      "from": "textbook:BALBHARTI_ENGLISH_G1_MM",
+      "to": "edition:BALBHARTI_ENGLISH_G1_MM:2023",
+      "type": "has_edition"
+    },
+    {
+      "from": "textbook:BALBHARTI_MATH_G1_MM",
+      "to": "edition:BALBHARTI_MATH_G1_MM:2023",
+      "type": "has_edition"
+    },
+    {
+      "from": "textbook:BALBHARTI_MATH_G2_MM",
+      "to": "edition:BALBHARTI_MATH_G2_MM:2023",
+      "type": "has_edition"
+    },
+    {
+      "from": "textbook:BALBHARTI_SCIENCE_G3_MM",
+      "to": "edition:BALBHARTI_SCIENCE_G3_MM:2023",
+      "type": "has_edition"
+    }
+  ],
+  "metadata": {
+    "total_records": 42,
+    "total_nodes": 284,
+    "total_edges": 321,
+    "addressable": true,
+    "immutable": true,
+    "graph_hash": "31a42763c5aa3cb941456b492d32990a0ccb0ef8158b9311cdf19a308498fd3a"
+  }
+}

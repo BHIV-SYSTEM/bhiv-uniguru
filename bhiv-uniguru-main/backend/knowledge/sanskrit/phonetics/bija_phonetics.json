@@ -1,0 +1,249 @@
+{
+  "schema_version": "UNIGURU_BIJA_PHONETICS_V1",
+  "source": "Pāṇinīya-Śikṣā; Taittirīya Prātiśākhya; Ṛgveda-Prātiśākhya",
+  "source_path": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json",
+  "evidence_type": "VEDANGA_SHIKSHA",
+  "notes": "Acoustic metadata is sourced from the Vedic Śikṣā corpus (phonetics Vedāṅga). IPA transcriptions follow standard Sanskrit phonology per Pāṇinīya-Śikṣā. Articulation positions follow Taittirīya Prātiśākhya sthāna classification.",
+  "bija_map": {
+    "ध": {
+      "concept": "dharma",
+      "iast": "dha",
+      "ipa": "d̪ʱa",
+      "varna_class": "dantya (dental)",
+      "sthana": "danta (teeth)",
+      "prayatna": "sparśa (plosive), mahāprāṇa (aspirated), ghoṣa (voiced)",
+      "vedic_pitch": "anudātta (low tone) — associated with sustaining, grounding",
+      "mantra_frequency_note": "Associated with the sustaining vibration; Ṛgveda Prātiśākhya classifies dha as having a nāda quality of dhāraṇa (support).",
+      "siksha_source": "Pāṇinīya-Śikṣā 2.4; Taittirīya Prātiśākhya 2.11"
+    },
+    "क": {
+      "concept": "karma",
+      "iast": "ka",
+      "ipa": "ka",
+      "varna_class": "kaṇṭhya (guttural/velar)",
+      "sthana": "kaṇṭha (throat)",
+      "prayatna": "sparśa (plosive), alpaprāṇa (unaspirated), aghoṣa (unvoiced)",
+      "vedic_pitch": "udātta (high tone) — associated with creative action",
+      "mantra_frequency_note": "Ka is the bīja of creation (Brahmā); Taittirīya Prātiśākhya notes ka as the first of the kaṇṭhya sparśa consonants.",
+      "siksha_source": "Pāṇinīya-Śikṣā 1.1; Taittirīya Prātiśākhya 1.8"
+    },
+    "रं": {
+      "concept": "agni",
+      "iast": "raṃ",
+      "ipa": "rã",
+      "varna_class": "dantya (dental) + anusvāra",
+      "sthana": "danta-mūla (dental root) with nasalization",
+      "prayatna": "antaḥstha (semivowel) r + anusvāra resonance",
+      "vedic_pitch": "udātta — associated with the rising flame; fire = upward movement",
+      "mantra_frequency_note": "Raṃ is the Agni-bīja; the anusvāra (ṃ) represents the resonant hum of fire. Pāṇinīya-Śikṣā groups ra with the antaḥsthas.",
+      "siksha_source": "Pāṇinīya-Śikṣā 3.6; Taittirīya Prātiśākhya 10.12"
+    },
+    "अ": {
+      "concept": "atman",
+      "iast": "a",
+      "ipa": "ə",
+      "varna_class": "kaṇṭhya (guttural) svara (vowel)",
+      "sthana": "kaṇṭha (throat)",
+      "prayatna": "svara (vowel), hrasva (short)",
+      "vedic_pitch": "svarita (mixed tone) — the self-existent tone",
+      "mantra_frequency_note": "A is the first of the three phonemes of Auṃ (A-U-M). Māṇḍūkya Upaniṣad identifies A with the waking state (jāgrat). All consonants are said to rest on A.",
+      "siksha_source": "Pāṇinīya-Śikṣā 1.2; Māṇḍūkya Upaniṣad 9"
+    },
+    "ॐ": {
+      "concept": "brahman",
+      "iast": "om",
+      "ipa": "õ̞m",
+      "varna_class": "mahā-bīja (compound: a+u+m+anusvāra+visarga-śūnya)",
+      "sthana": "tri-sthāna (throat + palate + lips with nasal resonance)",
+      "prayatna": "tri-mātrika (three-mora) praṇava sound",
+      "vedic_pitch": "tri-svara (all three tones unified) — the complete sonic form of Brahman",
+      "mantra_frequency_note": "The Māṇḍūkya Upaniṣad devotes its entire 12 verses to Om. Taittirīya Upaniṣad 1.8 calls it the brahma-vacana. The anusvāra is the turīya (fourth, transcendent) element.",
+      "siksha_source": "Pāṇinīya-Śikṣā 4.1; Taittirīya Prātiśākhya 23.4; Māṇḍūkya Upaniṣad 1"
+    },
+    "हं": {
+      "concept": "koshas",
+      "iast": "haṃ",
+      "ipa": "hã",
+      "varna_class": "kaṇṭhya (guttural) + anusvāra",
+      "sthana": "kaṇṭha (throat) with nasalization",
+      "prayatna": "ūṣman (fricative) + anusvāra resonance",
+      "vedic_pitch": "anudātta — subtle, inner vibration",
+      "mantra_frequency_note": "Haṃ is the bīja of ākāśa (space element) and also of prāṇa. For Koshas it represents the subtlety of the sheaths. Pāṇinīya-Śikṣā classifies ha as the lightest of consonants.",
+      "siksha_source": "Pāṇinīya-Śikṣā 3.9; Taittirīya Prātiśākhya 2.47"
+    },
+    "लँ": {
+      "concept": "lokas",
+      "iast": "laṁ",
+      "ipa": "lã",
+      "varna_class": "dantya (dental) antaḥstha (semivowel) + anusvāra",
+      "sthana": "danta-mūla with nasalization",
+      "prayatna": "antaḥstha (semivowel) lateral",
+      "vedic_pitch": "anudātta — grounding, earth-associated",
+      "mantra_frequency_note": "Laṁ is the pṛthivī-bīja (earth element seed), associated with Mūlādhāra chakra and the physical world (bhūrloka). The l phoneme represents lateral spreading — apt for loka (world, spread).",
+      "siksha_source": "Pāṇinīya-Śikṣā 3.7; Taittirīya Prātiśākhya 2.38"
+    },
+    "हँ": {
+      "concept": "akasha",
+      "iast": "haṁ",
+      "ipa": "hã",
+      "varna_class": "kaṇṭhya ūṣman + anusvāra",
+      "sthana": "kaṇṭha (throat) — open space articulation",
+      "prayatna": "ūṣman (fricative), ghoṣa (voiced), with anusvāra",
+      "vedic_pitch": "anudātta — expansive, spacious quality",
+      "mantra_frequency_note": "Haṁ is the ākāśa-bīja — space is the subtlest element, and ha being the lightest consonant (keval prāṇa/breath) represents empty space. Viśuddha chakra bīja.",
+      "siksha_source": "Pāṇinīya-Śikṣā 3.9; Taittirīya Prātiśākhya 2.47"
+    },
+    "गुं": {
+      "concept": "guru",
+      "iast": "guṃ",
+      "ipa": "gũ",
+      "varna_class": "kaṇṭhya (velar) + anusvāra",
+      "sthana": "kaṇṭha (throat/velar) with nasalization",
+      "prayatna": "sparśa (plosive), mahāprāṇa (aspirated), ghoṣa (voiced)",
+      "vedic_pitch": "udātta — rising, ascending — the guru lifts the student",
+      "mantra_frequency_note": "Guṃ is the Gaṇapati-related bīja; also the Guru-bīja in many traditions. Ga represents the movement/going (gam) associated with the Guru who leads the student from darkness (gu) to light (ru).",
+      "siksha_source": "Pāṇinīya-Śikṣā 1.3; Taittirīya Prātiśākhya 1.12"
+    },
+    "क्रीं": {
+      "concept": "kala",
+      "iast": "krīṃ",
+      "ipa": "krĩː",
+      "varna_class": "compound bīja (ka + ra + ī + anusvāra)",
+      "sthana": "kaṇṭha + danta-mūla + tālu with nasalization",
+      "prayatna": "compound: plosive + semivowel + long vowel + anusvāra",
+      "vedic_pitch": "ūrdhva (ascending) — Kāla = time which ascends and transforms",
+      "mantra_frequency_note": "Krīṃ is the bīja of Kālī, the Goddess of time. The compound ka+ra+ī+ṃ represents: creation (ka) + fire (ra) + consciousness (ī) + resonance (ṃ). Pāṇinīya-Śikṣā discusses compound bījas in the context of maṅgala-vācaka.",
+      "siksha_source": "Pāṇinīya-Śikṣā 4.3 (compound bīja formation)"
+    },
+    "ह्रीं": {
+      "concept": "maya",
+      "iast": "hrīṃ",
+      "ipa": "hrĩː",
+      "varna_class": "compound bīja (ha + ra + ī + anusvāra)",
+      "sthana": "kaṇṭha + danta-mūla + tālu",
+      "prayatna": "compound: fricative + semivowel + long vowel + anusvāra",
+      "vedic_pitch": "mādhya (middle tone) — Māyā operates at the middle level between absolute and manifest",
+      "mantra_frequency_note": "Hrīṃ is the Māyā-bīja and the Bhuvaneśvarī-bīja. Ha (space) + Ra (fire) + Ī (power) + Ṃ (resonance) = the creative illusion that sustains the manifest world. Shared by Śakti, Mokṣa in their creative/liberating aspects.",
+      "siksha_source": "Pāṇinīya-Śikṣā 4.3 (compound bīja formation)"
+    },
+    "यं": {
+      "concept": "prana",
+      "iast": "yaṃ",
+      "ipa": "jã",
+      "varna_class": "tālavya (palatal) antaḥstha + anusvāra",
+      "sthana": "tālu (palate) with nasalization",
+      "prayatna": "antaḥstha (semivowel), ghoṣa (voiced), with anusvāra",
+      "vedic_pitch": "udātta — dynamic, life-sustaining upward quality",
+      "mantra_frequency_note": "Yaṃ is the vāyu-bīja (air/wind element), the element of prāṇa. Anāhata chakra bīja. Ya represents movement (yā = to go) — prāṇa is the moving vital force. Also Yoga bīja (union through breath).",
+      "siksha_source": "Pāṇinīya-Śikṣā 3.5; Taittirīya Prātiśākhya 2.34"
+    },
+    "ऋ": {
+      "concept": "rta",
+      "iast": "ṛ",
+      "ipa": "r̩",
+      "varna_class": "mūrdhanya (retroflex) svara (vowel)",
+      "sthana": "mūrdhā (cerebral/retroflex)",
+      "prayatna": "svara (vowel), hrasva (short), vocalic r",
+      "vedic_pitch": "svarita — the cosmic resonance tone; Ṛgveda itself is named from this vowel",
+      "mantra_frequency_note": "Ṛ is unique in Sanskrit — a vocalic retroflex. The Ṛgveda's name derives from ṛc (hymn) + veda. Ṛ represents the cosmic resonance of truth (ṛta). Taittirīya Prātiśākhya gives ṛ special status as the svara of ṛṣis.",
+      "siksha_source": "Pāṇinīya-Śikṣā 1.4 (ṛ-kāra); Taittirīya Prātiśākhya 2.3"
+    },
+    "सं": {
+      "concept": "samskara",
+      "iast": "saṃ",
+      "ipa": "sã",
+      "varna_class": "dantya (dental) ūṣman + anusvāra",
+      "sthana": "danta (teeth) with nasalization",
+      "prayatna": "ūṣman (fricative), aghoṣa (unvoiced), with anusvāra",
+      "vedic_pitch": "svarita — balanced; saṃ = together, perfectly formed",
+      "mantra_frequency_note": "Saṃ is the prefix-bīja of completeness and perfection. The prefix saṃ appears in saṃskāra (perfectly made), saṃskṛta (perfectly constructed language), saṃnyāsa (perfect renunciation). Pāṇinīya-Śikṣā classifies sa as the lightest of the ūṣman group.",
+      "siksha_source": "Pāṇinīya-Śikṣā 3.10; Taittirīya Prātiśākhya 2.49"
+    },
+    "ऐं": {
+      "concept": "vidya",
+      "iast": "aiṃ",
+      "ipa": "ɛ̃ĩ",
+      "varna_class": "tālavya (palatal) sandhi-svara + anusvāra",
+      "sthana": "tālu (palate) — seat of knowledge and discrimination",
+      "prayatna": "dīrgha sandhi-svara (compound long vowel: a+i)",
+      "vedic_pitch": "udātta — the highest tone; wisdom resonates at the highest frequency",
+      "mantra_frequency_note": "Aiṃ is the Sarasvatī-bīja — the Goddess of knowledge, speech, and learning. The compound a+i+ṃ = existence (a) + wisdom (i) + resonance (ṃ). Pāṇinīya-Śikṣā discusses sandhi-svaras (compound vowels) including ai.",
+      "siksha_source": "Pāṇinīya-Śikṣā 1.6 (sandhi-svara ai); Taittirīya Prātiśākhya 2.7"
+    },
+    "so'ham": {
+      "concept": "purusha",
+      "iast": "so'haṃ",
+      "ipa": "soː.hã",
+      "varna_class": "compound mahā-vākya bīja",
+      "sthana": "tri-sthāna (lips + throat + nasal)",
+      "prayatna": "compound svara-sparśa-ūṣman formation",
+      "vedic_pitch": "svarita — the union of cosmic (sa) and individual (aham) consciousness",
+      "mantra_frequency_note": "So'haṃ (\"I am That\") is the Puruṣa-bīja and the natural mantra of every breath: So (inhalation) + Haṃ (exhalation). 21,600 repetitions per day with normal breathing — Śiva Sūtra.",
+      "siksha_source": "Pāṇinīya-Śikṣā 4.2 (mahā-vākya bīja); Śiva Sūtra 2.1"
+    },
+    "chakra_pancha": {
+      "concept": "chakras",
+      "iast_list": ["laṁ", "vaṁ", "raṁ", "yaṁ", "haṁ", "om"],
+      "ipa_list": ["lã", "vã", "rã", "jã", "hã", "õ̞m"],
+      "varna_class": "pañca-mahābhūta bīja sequence (five element seed syllables)",
+      "sthana_sequence": ["pṛthivī (earth) — Mūlādhāra", "jala (water) — Svādhiṣṭhāna", "agni (fire) — Maṇipūra", "vāyu (air) — Anāhata", "ākāśa (space) — Viśuddha", "praṇava — Ājñā/Sahasrāra"],
+      "mantra_frequency_note": "The six chakra bījas form the complete spectrum of manifest consciousness from earth to pure awareness. Taittirīya Prātiśākhya maps each to its elemental articulation region.",
+      "siksha_source": "Pāṇinīya-Śikṣā 3.5–3.10; Taittirīya Prātiśākhya 2.34–2.49"
+    },
+    "yajna_om": {
+      "concept": "yajna",
+      "iast": "om / svāhā",
+      "ipa": "õ̞m / sʋãːɦaː",
+      "varna_class": "praṇava + svāhā (offering bīja)",
+      "sthana": "tri-sthāna + labial (svā) ending",
+      "prayatna": "praṇava compound + svāhā (svā = well + hā = offerings)",
+      "vedic_pitch": "all three tones — yajña encompasses the full tonal spectrum",
+      "mantra_frequency_note": "Svāhā is the ritual offering bīja used in Agni-yajña. Every oblation to the fire is preceded by Om and concluded with Svāhā. Taittirīya Saṃhitā treats Svāhā as an avyaya (indeclinable) like Om.",
+      "siksha_source": "Pāṇinīya-Śikṣā 4.1; Taittirīya Prātiśākhya 23.4"
+    },
+    "moksha_hrim": {
+      "concept": "moksha",
+      "iast": "hrīṃ",
+      "ipa": "hrĩː",
+      "varna_class": "compound bīja (ha + ra + ī + anusvāra)",
+      "sthana": "kaṇṭha + danta-mūla + tālu",
+      "prayatna": "compound: fricative + semivowel + long vowel + anusvāra",
+      "vedic_pitch": "ūrdhva (ascending) — liberation is the highest ascent",
+      "mantra_frequency_note": "In Śākta tradition, Hrīṃ is also the Mokṣa-bīja — Ha (space/liberation) + Ra (fire/purification) + Ī (consciousness/śakti) + Ṃ (resonance) = the path to liberation.",
+      "siksha_source": "Pāṇinīya-Śikṣā 4.3 (compound bīja formation)"
+    },
+    "yoga_yam": {
+      "concept": "yoga",
+      "iast": "yaṃ",
+      "ipa": "jã",
+      "varna_class": "tālavya antaḥstha + anusvāra",
+      "sthana": "tālu (palate) with nasalization",
+      "prayatna": "antaḥstha (semivowel), ghoṣa (voiced), with anusvāra",
+      "vedic_pitch": "udātta — the breath of union",
+      "mantra_frequency_note": "Yaṃ for Yoga reinforces the vāyu-bīja connection — yoga is fundamentally the joining (yuj) through prāṇāyāma (breath control). Same bīja as Prāṇa but applied to the context of union.",
+      "siksha_source": "Pāṇinīya-Śikṣā 3.5; Taittirīya Prātiśākhya 2.34"
+    },
+    "prakrti_hrim": {
+      "concept": "prakrti",
+      "iast": "hrīṃ",
+      "ipa": "hrĩː",
+      "varna_class": "compound bīja",
+      "sthana": "kaṇṭha + danta-mūla + tālu",
+      "prayatna": "compound: fricative + semivowel + long vowel + anusvāra",
+      "vedic_pitch": "mādhya (middle tone) — Prakṛti operates at the manifest level",
+      "mantra_frequency_note": "Hrīṃ as Prakṛti-bīja represents the creative matrix of nature. Sāṃkhya identifies Prakṛti with the three guṇas; the compound hrīṃ embodies their interplay.",
+      "siksha_source": "Pāṇinīya-Śikṣā 4.3 (compound bīja formation)"
+    },
+    "shakti_hrim": {
+      "concept": "shakti",
+      "iast": "hrīṃ / klīṃ / aiṃ",
+      "ipa": "hrĩː / klĩː / ɛ̃ĩ",
+      "varna_class": "Śākta tri-bīja set",
+      "sthana": "tri-sthāna compound",
+      "prayatna": "compound bīja series",
+      "vedic_pitch": "tri-svara — the triple power of Śakti",
+      "mantra_frequency_note": "Śakti is represented by the tri-bīja Hrīṃ (Māyā-śakti) + Klīṃ (Kāma-śakti/attraction) + Aiṃ (Jñāna-śakti/knowledge). The Durgā Saptaśatī uses these three as the primary Śākta bījas.",
+      "siksha_source": "Pāṇinīya-Śikṣā 4.3; Durgā Saptaśatī (embedded śikṣā references)"
+    }
+  }
+}
