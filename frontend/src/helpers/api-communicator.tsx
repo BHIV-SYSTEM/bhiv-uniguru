@@ -2,7 +2,7 @@ import axios from "axios";
 import { IMessage } from "../context/AuthContext";
 
 // Configure axios base URL and defaults
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8010";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 axios.defaults.baseURL = API_BASE_URL;
 axios.defaults.withCredentials = true;
 

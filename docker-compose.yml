@@ -19,31 +19,12 @@ services:
     networks:
       - uniguru_net
 
-  node-backend:
-    build:
-      context: ./node-backend
-      dockerfile: Dockerfile
-    container_name: node-backend
-    restart: unless-stopped
-    environment:
-      NODE_BACKEND_PORT: "8080"
-      UNIGURU_ASK_URL: "http://uniguru-api:8000/ask"
-      UNIGURU_API_TOKEN: "${UNIGURU_API_TOKEN}"
-      UNIGURU_REQUEST_TIMEOUT_MS: "15000"
-    depends_on:
-      - uniguru-api
-    expose:
-      - "8080"
-    networks:
-      - uniguru_net
-
   nginx:
     image: nginx:1.27-alpine
     container_name: uniguru-nginx
     restart: unless-stopped
     depends_on:
       - uniguru-api
-      - node-backend
     ports:
       - "80:80"
       - "443:443"

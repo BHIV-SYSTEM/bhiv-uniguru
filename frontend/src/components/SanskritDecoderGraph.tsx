@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useMemo, useState } from "react";
+import React, { useRef, useMemo, useState } from "react";
 import type { GraphNode, GraphEdge } from "../types/sanskrit";
 
 // ── Node colour palette by type ───────────────────────────────────────────────
@@ -140,9 +140,9 @@ const SanskritDecoderGraph: React.FC<Props> = ({
   );
 
   // Centre + scale to fit SVG
-  const { placed, scale, ox, oy } = useMemo(() => {
+  const placed = useMemo(() => {
     if (!solved.length)
-      return { placed: [], scale: 1, ox: width / 2, oy: height / 2 };
+      return [];
     const xs = solved.map((n) => n.x);
     const ys = solved.map((n) => n.y);
     const minX = Math.min(...xs);
@@ -160,7 +160,7 @@ const SanskritDecoderGraph: React.FC<Props> = ({
       px: n.x * s + ox,
       py: n.y * s + oy,
     }));
-    return { placed, scale: s, ox, oy };
+    return placed;
   }, [solved, width, height]);
 
   const placedById = useMemo(

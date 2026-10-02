@@ -1,0 +1,3002 @@
+{
+  "answer": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_a9df0fb0b71c",
+      "signal_06c5c2470e91"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 2,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7378,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.5542,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7378,
+            "why": [
+              "epistemic_score=0.7378",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7485,
+          "retrieval_confidence": 0.5542,
+          "semantic_score": 0.5333,
+          "tag_match_score": 1.0
+        },
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7279,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 0.9501,
+              "ontology_convergence": 0.7,
+              "retrieval_strength": 0.4891,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.7701
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7279,
+            "why": [
+              "epistemic_score=0.7279",
+              "ceiling_applied=0.7800",
+              "source_type=commentary"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4523,
+          "retrieval_confidence": 0.4891,
+          "semantic_score": 0.4333,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+        "claim_group_count": 2,
+        "consensus_score": 0.8333,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+        "multi_source_reinforcement": 0.3333,
+        "source_count": 2
+      },
+      "overall": 0.7378,
+      "rejected_count": 0
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "b85c06eef3770b6d59dec0ec6d704c24156aa2d222e243293108c5c28cb3ce91",
+    "memory_event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "6ed0858df8e142cfd8e1cfaf725787858cf07f309411ec2aaf864edba23db1b4",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Atman",
+        "Bhagavad Gita",
+        "Brahma",
+        "Brahman",
+        "Devi",
+        "Governance",
+        "Karma",
+        "King",
+        "Kundalini",
+        "Mantra",
+        "Moksha",
+        "Narayana",
+        "Prakriti",
+        "Purusha",
+        "Rajas",
+        "Sankhya",
+        "Sattva",
+        "Shiva",
+        "Tamas",
+        "Yajna",
+        "Yantra",
+        "Yoga"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_02b105d3dff75cc2",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T13:32:37.045227Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [],
+    "retrieval_truth_hash": "4b590d696217157513cbcd69ea9d861646a6f3925e2c4cf574932c85d4cb1819",
+    "semantic_path": [
+      {
+        "domain": "maths",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_subtraction_001",
+        "signal_id": "signal_a9df0fb0b71c",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      },
+      {
+        "domain": "sanskrit queries",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_sanskrit_prakrti",
+        "signal_id": "signal_06c5c2470e91",
+        "source_lineage": {
+          "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "transformation_history": [
+            "commentarial_source",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T13:32:35.014486Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_02b105d3dff75cc2",
+      "contract_emission": "trace_02b105d3dff75cc2",
+      "downstream_execution": "trace_02b105d3dff75cc2",
+      "immutable": true,
+      "retrieval": "trace_02b105d3dff75cc2",
+      "synthesis": "trace_02b105d3dff75cc2",
+      "validation": "trace_02b105d3dff75cc2"
+    },
+    "trace_id": "trace_02b105d3dff75cc2",
+    "verification_status": "VERIFIED"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:maths:6486beb0c48c",
+      "claim_id": "claim_1_86ed93d8",
+      "claim_text": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another",
+      "confidence": 0.554176,
+      "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "canonical_object_id": "uko:maths:6486beb0c48c",
+      "claim_id": "claim_2_fdd1ce29",
+      "claim_text": "Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "confidence": 0.554176,
+      "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "confidence": 0.7378,
+  "confidence_breakdown": {
+    "accepted_count": 2,
+    "accepted_derivations": [
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.7378,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.82,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.3333,
+            "ocr_integrity": 1.0,
+            "ontology_convergence": 0.7333,
+            "retrieval_strength": 0.5542,
+            "semantic_agreement": 0.6667,
+            "source_authority": 0.74
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.7378,
+          "why": [
+            "epistemic_score=0.7378",
+            "ceiling_applied=0.8200",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.7485,
+        "retrieval_confidence": 0.5542,
+        "semantic_score": 0.5333,
+        "tag_match_score": 1.0
+      },
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.7279,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.78,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.3333,
+            "ocr_integrity": 0.9501,
+            "ontology_convergence": 0.7,
+            "retrieval_strength": 0.4891,
+            "semantic_agreement": 0.6667,
+            "source_authority": 0.7701
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.7279,
+          "why": [
+            "epistemic_score=0.7279",
+            "ceiling_applied=0.7800",
+            "source_type=commentary"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.4523,
+        "retrieval_confidence": 0.4891,
+        "semantic_score": 0.4333,
+        "tag_match_score": 0.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+      "claim_group_count": 2,
+      "consensus_score": 0.8333,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+      "multi_source_reinforcement": 0.3333,
+      "source_count": 2
+    },
+    "overall": 0.7378,
+    "rejected_count": 0
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+    "claim_group_count": 2,
+    "consensus_score": 0.8333,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+    "multi_source_reinforcement": 0.3333,
+    "source_count": 2
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_02b105d3dff75cc2"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 74,
+    "valid_entries": 55
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T13:32:35.014486Z",
+  "interpretation_payload": {
+    "answer": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+    "artifact_hash": "b85c06eef3770b6d59dec0ec6d704c24156aa2d222e243293108c5c28cb3ce91",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.7378,
+    "confidence_breakdown": {
+      "accepted_count": 2,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7378,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.5542,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7378,
+            "why": [
+              "epistemic_score=0.7378",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7485,
+          "retrieval_confidence": 0.5542,
+          "semantic_score": 0.5333,
+          "tag_match_score": 1.0
+        },
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7279,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 0.9501,
+              "ontology_convergence": 0.7,
+              "retrieval_strength": 0.4891,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.7701
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7279,
+            "why": [
+              "epistemic_score=0.7279",
+              "ceiling_applied=0.7800",
+              "source_type=commentary"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4523,
+          "retrieval_confidence": 0.4891,
+          "semantic_score": 0.4333,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+        "claim_group_count": 2,
+        "consensus_score": 0.8333,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+        "multi_source_reinforcement": 0.3333,
+        "source_count": 2
+      },
+      "overall": 0.7378,
+      "rejected_count": 0
+    },
+    "contradiction_state": {
+      "classification": "interpretive_or_weak_evidence_zone",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_a9df0fb0b71c",
+        "signal_06c5c2470e91"
+      ],
+      "retrieval_trace_id": "trace_02b105d3dff75cc2",
+      "retrieval_truth_hash": "4b590d696217157513cbcd69ea9d861646a6f3925e2c4cf574932c85d4cb1819"
+    },
+    "trace_id": "trace_02b105d3dff75cc2",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_subtraction_001",
+    "KOSHA_sanskrit_prakrti"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7378,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.5542,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7378,
+            "why": [
+              "epistemic_score=0.7378",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7485,
+          "retrieval_confidence": 0.5542,
+          "semantic_score": 0.5333,
+          "tag_match_score": 1.0
+        },
+        "overlap_percent": {
+          "concept": 66.67,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_a9df0fb0b71c",
+        "what_matched": {
+          "candidate_entities": [],
+          "query_entities": [],
+          "tags": [
+            "subtraction"
+          ]
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.7378,
+      "content": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "domain": "maths",
+      "knowledge_id": "KOSHA_subtraction_001",
+      "signal_id": "signal_a9df0fb0b71c",
+      "source": "balbharti_primary_mathematics_curriculum",
+      "source_governance": {
+        "authority_weight": 0.74,
+        "confidence_ceiling": 0.82,
+        "lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0,
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "subtraction",
+        "subtract",
+        "difference",
+        "arithmetic",
+        "maths",
+        "minus"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "evidence_priority": {
+          "contextual_proximity": 1.0,
+          "direct_definition": 0.0,
+          "exact_entity_match": 0.0,
+          "exact_topic_match": 0.0,
+          "query_coverage": 0.0,
+          "source_authority": 0.7755
+        },
+        "knowledge_id": "KOSHA_subtraction_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_02b105d3dff75cc2"
+      }
+    },
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7279,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.3333,
+              "ocr_integrity": 0.9501,
+              "ontology_convergence": 0.7,
+              "retrieval_strength": 0.4891,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.7701
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7279,
+            "why": [
+              "epistemic_score=0.7279",
+              "ceiling_applied=0.7800",
+              "source_type=commentary"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4523,
+          "retrieval_confidence": 0.4891,
+          "semantic_score": 0.4333,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 66.67,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_06c5c2470e91",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "atman"
+            },
+            {
+              "canonical": "Bhagavad Gita",
+              "concepts": [
+                "dharma",
+                "karma yoga",
+                "jnana yoga",
+                "bhakti yoga"
+              ],
+              "domain": "gitas",
+              "entity_type": "text",
+              "matched_alias": "bhagavad gita"
+            },
+            {
+              "canonical": "Brahma",
+              "concepts": [
+                "creation",
+                "cosmology"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "creator"
+            },
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shaktis"
+            },
+            {
+              "canonical": "Governance",
+              "concepts": [
+                "law",
+                "responsibility"
+              ],
+              "domain": "governance",
+              "entity_type": "concept",
+              "matched_alias": "governance"
+            },
+            {
+              "canonical": "Karma",
+              "concepts": [
+                "cause",
+                "effect",
+                "duty"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "action"
+            },
+            {
+              "canonical": "King",
+              "concepts": [
+                "governance",
+                "duty"
+              ],
+              "domain": "governance",
+              "entity_type": "role",
+              "matched_alias": "rajas"
+            },
+            {
+              "canonical": "Kundalini",
+              "concepts": [
+                "energy",
+                "yoga"
+              ],
+              "domain": "tantra",
+              "entity_type": "concept",
+              "matched_alias": "kundalini"
+            },
+            {
+              "canonical": "Mantra",
+              "concepts": [
+                "sound",
+                "ritual"
+              ],
+              "domain": "tantra",
+              "entity_type": "concept",
+              "matched_alias": "mantras"
+            },
+            {
+              "canonical": "Moksha",
+              "concepts": [
+                "freedom",
+                "realization"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "liberation"
+            },
+            {
+              "canonical": "Narayana",
+              "concepts": [
+                "preservation",
+                "cosmic person"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "vishnu"
+            },
+            {
+              "canonical": "Prakriti",
+              "concepts": [
+                "matter",
+                "gunas"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "nature"
+            },
+            {
+              "canonical": "Purusha",
+              "concepts": [
+                "self",
+                "consciousness"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "purusha"
+            },
+            {
+              "canonical": "Rajas",
+              "concepts": [
+                "guna",
+                "motion"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "activity"
+            },
+            {
+              "canonical": "Sankhya",
+              "concepts": [
+                "gunas",
+                "purusha",
+                "prakriti"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "samkhya"
+            },
+            {
+              "canonical": "Sattva",
+              "concepts": [
+                "guna",
+                "balance"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "clarity"
+            },
+            {
+              "canonical": "Shiva",
+              "concepts": [
+                "destruction",
+                "yoga"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shiva"
+            },
+            {
+              "canonical": "Tamas",
+              "concepts": [
+                "guna",
+                "obstruction"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "darkness"
+            },
+            {
+              "canonical": "Yajna",
+              "concepts": [
+                "ritual",
+                "offering"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "ritual offerings"
+            },
+            {
+              "canonical": "Yantra",
+              "concepts": [
+                "geometry",
+                "ritual"
+              ],
+              "domain": "tantra",
+              "entity_type": "concept",
+              "matched_alias": "yantras"
+            },
+            {
+              "canonical": "Yoga",
+              "concepts": [
+                "discipline",
+                "meditation"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "yoga"
+            }
+          ],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.7279,
+      "content": "# Prakrti\n\n## Canonical Name\n\nPrakrti\n\n## Sanskrit\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Transliteration\n\nPrak\u1e5bti\n\n## \u015aabda\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Dh\u0101tu\n\n\u092a\u094d\u0930 + \u0915\u0943 (Pra + K\u1e5b) \u2014 Pra (before, primary, forth) + K\u1e5b (to do, to make). The primary maker; the original nature; that which was made first.\n\n## Vy\u0101kara\u1e47a\n\nPrak\u1e5bti is a feminine noun derived from the prefix pra- and the root k\u1e5b (to make) with the suffix -ti. The feminine gender is significant \u2014 Prak\u1e5bti is the feminine creative principle, complementary to the masculine Puru\u1e63a.\n\n## Nirukta\n\n\"Prak\u1e5b\u1e63\u1e6d\u0101 k\u1e5bti\u1e25 prak\u1e5bti\u1e25\" \u2014 the primary creation. Prak\u1e5bti is the original nature from which all manifest existence emerges.\n\n## B\u012bja\n\n\u0939\u094d\u0930\u0940\u0902 (Hr\u012bm) \u2014 the b\u012bja of Prak\u1e5bti as the creative power. Also \u0915\u094d\u0932\u0940\u0902 (Kl\u012bm) \u2014 the b\u012bja of attraction and manifestation.\n\n## Tattva\n\nPrak\u1e5bti-Tattva \u2014 the principle of primal matter and creative nature. In S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities (along with Puru\u1e63a). It is the material cause of the universe \u2014 the primal matter from which all manifest existence evolves.\n\n## \u015aakti\n\nPrak\u1e5bti is itself the \u015bakti \u2014 the creative power. In \u015a\u0101kta traditions, Prak\u1e5bti = \u015aakti = the Goddess. The three gu\u1e47as (sattva, rajas, tamas) are the three \u015baktis of Prak\u1e5bti.\n\n## Literal Meaning\n\nNature; primal matter; the original creative principle; the feminine creative power.\n\n## Functional Meaning\n\nPrak\u1e5bti is the primal, undifferentiated matter from which the entire manifest universe evolves. In S\u0101\u1e43khya philosophy, Prak\u1e5bti consists of three gu\u1e47as (qualities): Sattva (clarity, luminosity), Rajas (activity, passion), Tamas (inertia, darkness). When the three gu\u1e47as are in perfect equilibrium, Prak\u1e5bti is unmanifest (avyakta). When the equilibrium is disturbed (by Puru\u1e63a's proximity), Prak\u1e5bti begins to evolve the universe through twenty-three tattvas (principles).\n\n## Ontology\n\nIn S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 it is the material cause of the universe. It is unconscious (acetana) but active. Puru\u1e63a is conscious but inactive. The universe is the product of their interaction. In Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman. In Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent on Brahman. In \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality.\n\n## Cosmology\n\nIn S\u0101\u1e43khya cosmology: from Prak\u1e5bti evolves Mahat (cosmic intellect), then Aha\u1e43k\u0101ra (ego-principle), then the five tanm\u0101tras (subtle elements), then the five mah\u0101bh\u016btas (gross elements), then the ten indriyas (sense and action organs), then manas (mind) \u2014 twenty-three tattvas in total. The universe is Prak\u1e5bti's evolution for Puru\u1e63a's experience and eventual liberation.\n\n## Psychology\n\nPrak\u1e5bti as psychological principle: the three gu\u1e47as govern all psychological states. Sattva produces clarity, wisdom, and peace. Rajas produces activity, desire, and restlessness. Tamas produces inertia, delusion, and sleep. The goal of yoga is to transcend all three gu\u1e47as (trigu\u1e47\u0101t\u012bta) and rest in Puru\u1e63a's pure consciousness.\n\n## Governance\n\nThe concept of Prak\u1e5bti in governance: the Artha\u015b\u0101stra describes the seven elements of the state (sapt\u0101\u1e45ga) as the Prak\u1e5bti of the kingdom \u2014 king, minister, territory, fort, treasury, army, ally. The concept of r\u0101ja-prak\u1e5bti (the nature of the king) \u2014 the king's gu\u1e47a-composition determines the quality of governance.\n\n## Medicine\n\nIn \u0100yurveda: Prak\u1e5bti is the individual's constitutional nature \u2014 the unique combination of the three do\u1e63as (v\u0101ta, pitta, kapha) determined at conception. The concept of deha-prak\u1e5bti (body-nature) \u2014 each person has a unique Prak\u1e5bti that determines their health tendencies. \u0100yurvedic treatment is tailored to the individual's Prak\u1e5bti.\n\n## Mathematics\n\nThe concept of Prak\u1e5bti in mathematics: the three gu\u1e47as as the three fundamental operations (addition/sattva, multiplication/rajas, subtraction/tamas). The concept of Prak\u1e5bti in B\u012bjaganita (algebra) \u2014 the term prak\u1e5bti is used for the coefficient in quadratic equations.\n\n## Astronomy\n\nIn Jyoti\u1e63a: the three gu\u1e47as of Prak\u1e5bti are expressed in the three types of signs (movable/rajas, fixed/tamas, dual/sattva). The concept of graha-prak\u1e5bti (planetary nature) \u2014 each planet has its own gu\u1e47a composition.\n\n## Metallurgy\n\nIn alchemical traditions: the three gu\u1e47as of Prak\u1e5bti are expressed in the three states of matter (solid/tamas, liquid/rajas, gas/sattva). The concept of dh\u0101tu-prak\u1e5bti (metal nature) \u2014 each metal has its own gu\u1e47a composition.\n\n## Ritual\n\nThe concept of Prak\u1e5bti in ritual: the three gu\u1e47as determine the nature of ritual offerings. Sattvic offerings (milk, ghee, fruits) are for liberation. Rajasic offerings (meat, wine) are for worldly power. Tamasic offerings are for destructive purposes. The Bhagavad G\u012bt\u0101 (17.7-10) describes the three types of food, sacrifice, and worship according to the three gu\u1e47as.\n\n## Symbolism\n\nThe three gu\u1e47as are symbolized by three colors: white (sattva), red (rajas), black (tamas). The three strands of a rope symbolize the three gu\u1e47as \u2014 together they bind the soul. The Goddess (Dev\u012b) symbolizes Prak\u1e5bti \u2014 the creative, sustaining, and dissolving power.\n\n## Related Deities\n\n- Dev\u012b/Mah\u0101dev\u012b (Prak\u1e5bti as the Goddess \u2014 the supreme creative reality)\n- Brahm\u0101 (the creator who works through Prak\u1e5bti)\n- Vi\u1e63\u1e47u (Prak\u1e5bti as his body in Vi\u015bi\u1e63\u1e6d\u0101dvaita)\n- \u015aiva (Prak\u1e5bti as his \u015aakti)\n\n## Related Lokas\n\n- All lokas are within Prak\u1e5bti \u2014 they are Prak\u1e5bti's manifestations\n- Beyond Prak\u1e5bti is Puru\u1e63a's realm (kaivalya)\n\n## Related Koshas\n\n- All five koshas are manifestations of Prak\u1e5bti\n- The \u0100tman (Puru\u1e63a) is beyond Prak\u1e5bti\n\n## Related Chakras\n\n- All seven chakras are within Prak\u1e5bti\n- The awakening of ku\u1e47\u1e0dalin\u012b is Prak\u1e5bti's \u015bakti rising toward Puru\u1e63a\n\n## Related Yantras\n\n- \u015ar\u012b Yantra (the geometric form of Prak\u1e5bti's creative evolution)\n\n## Related Mantras\n\n- \"Hr\u012bm\" (the b\u012bja of Prak\u1e5bti-\u015aakti)\n- Dev\u012b M\u0101h\u0101tmya (the primary text of Prak\u1e5bti as the Goddess)\n\n## Related Vidy\u0101s\n\n- S\u0101\u1e43khya Vidy\u0101 (the science of Prak\u1e5bti and Puru\u1e63a)\n- \u0100yurveda (Prak\u1e5bti as individual constitution)\n\n## Related \u015a\u0101stras\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text on Prak\u1e5bti\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14 (the three gu\u1e47as of Prak\u1e5bti)\n- Caraka Sa\u1e43hit\u0101 (Prak\u1e5bti as individual constitution)\n\n## Traditional Interpretations\n\n- S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 the material cause of the universe\n- Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman\n- Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent\n- \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality\n\n## Historical Evolution\n\n- \u1e5agvedic period: Prak\u1e5bti as the natural world\n- Upani\u1e63adic period: Prak\u1e5bti as the creative power of Brahman\n- S\u0101\u1e43khya period (pre-classical): Prak\u1e5bti systematized as the material cause\n- Classical S\u0101\u1e43khya (\u012a\u015bvarak\u1e5b\u1e63\u1e47a, ~4th century CE): Prak\u1e5bti fully systematized\n- Bhagavad G\u012bt\u0101: Prak\u1e5bti and Puru\u1e63a integrated into the teaching of liberation\n\n## Cross References\n\n- Purusha\n- Maya\n- Shakti\n- Guna (the three qualities of Prakrti)\n- Atman (Purusha \u2014 the consciousness beyond Prakrti)\n\n## Open Research Questions\n\n- Is the S\u0101\u1e43khya concept of Prak\u1e5bti as unconscious matter compatible with the \u015a\u0101kta concept of Prak\u1e5bti as conscious Goddess?\n- How does the S\u0101\u1e43khya concept of Prak\u1e5bti's evolution relate to modern evolutionary biology?\n\n## Experimental Hypotheses\n\n[EXPERIMENTAL \u2014 NOT CANONICAL] Some researchers propose that the S\u0101\u1e43khya concept of the three gu\u1e47as (sattva, rajas, tamas) corresponds to the three fundamental states of matter (plasma/gas, liquid, solid) or to the three fundamental forces of nature. This remains a speculative analogy.\n\n## Canonical Sources\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14.5-18 (the three gu\u1e47as)\n- Yoga S\u016btras 2.18 (Prak\u1e5bti as the object of experience)\n- Caraka Sa\u1e43hit\u0101 \u015a\u0101r\u012brasth\u0101na 1 (Prak\u1e5bti as individual constitution)",
+      "domain": "sanskrit queries",
+      "knowledge_id": "KOSHA_sanskrit_prakrti",
+      "signal_id": "signal_06c5c2470e91",
+      "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+      "source_governance": {
+        "authority_weight": 0.7701,
+        "confidence_ceiling": 0.8301,
+        "lineage": {
+          "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "transformation_history": [
+            "commentarial_source",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0499,
+        "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+        "source_type": "commentary",
+        "suppression_reason": null
+      },
+      "tags": [
+        "prakrti",
+        "prakrti"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "evidence_priority": {
+          "contextual_proximity": 0.0,
+          "direct_definition": 0.0,
+          "exact_entity_match": 0.0,
+          "exact_topic_match": 0.0,
+          "query_coverage": 0.0,
+          "source_authority": 0.7755
+        },
+        "knowledge_id": "KOSHA_sanskrit_prakrti",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "transformation_history": [
+            "commentarial_source",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_02b105d3dff75cc2"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_02b105d3dff75cc2"
+  },
+  "query": "What is Subtraction?",
+  "reasoning": "Answer uses 1 accepted evidence record(s): KOSHA_subtraction_001 (balbharti_primary_mathematics_curriculum). Sentences are extracted from retrieved content.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [],
+  "retrieval_run_record": {
+    "candidate_count": 2,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:maths:6486beb0c48c",
+        "claim_id": "claim_1_86ed93d8",
+        "claim_text": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another",
+        "confidence": 0.554176,
+        "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "canonical_object_id": "uko:maths:6486beb0c48c",
+        "claim_id": "claim_2_fdd1ce29",
+        "claim_text": "Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "confidence": 0.554176,
+        "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "deduplicated_candidate_count": 2,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_1039af9d7c1d",
+    "replay_id": "replay_f763ac89680e5f2b",
+    "replay_safe": true,
+    "retrieval_run_id": "run_03eaf583753d",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:6486beb0c48c",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+        "ranking_score": 0.554176,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:sanskrit queries:071ca4ff7c6f",
+        "dedup_status": "unique",
+        "domain": "sanskrit queries",
+        "provenance_hash": "071ca4ff7c6f9f639136e87038138b7e808046efa55f4651f7a267f9e3730c42",
+        "ranking_score": 0.48909899999999995,
+        "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+        "text_span": "# Prakrti\n\n## Canonical Name\n\nPrakrti\n\n## Sanskrit\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Transliteration\n\nPrak\u1e5bti\n\n## \u015aabda\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Dh\u0101tu\n\n\u092a\u094d\u0930 + \u0915\u0943 (Pra + K\u1e5b) \u2014 Pra (before, primary, forth) + K\u1e5b (to do, to make). The primary maker; the original nature; that which was made first.\n\n## Vy\u0101kara\u1e47a\n\nPrak\u1e5bti is a feminine noun derived from the prefix pra- and the root k\u1e5b (to make) with the suffix -ti. The feminine gender is significant \u2014 Prak\u1e5bti is the feminine creative principle, complementary to the masculine Puru\u1e63a.\n\n## Nirukta\n\n\"Prak\u1e5b\u1e63\u1e6d\u0101 k\u1e5bti\u1e25 prak\u1e5bti\u1e25\" \u2014 the primary creation. Prak\u1e5bti is the original nature from which all manifest existence emerges.\n\n## B\u012bja\n\n\u0939\u094d\u0930\u0940\u0902 (Hr\u012bm) \u2014 the b\u012bja of Prak\u1e5bti as the creative power. Also \u0915\u094d\u0932\u0940\u0902 (Kl\u012bm) \u2014 the b\u012bja of attraction and manifestation.\n\n## Tattva\n\nPrak\u1e5bti-Tattva \u2014 the principle of primal matter and creative nature. In S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities (along with Puru\u1e63a). It is the material cause of the universe \u2014 the primal matter from which all manifest existence evolves.\n\n## \u015aakti\n\nPrak\u1e5bti is itself the \u015bakti \u2014 the creative power. In \u015a\u0101kta traditions, Prak\u1e5bti = \u015aakti = the Goddess. The three gu\u1e47as (sattva, rajas, tamas) are the three \u015baktis of Prak\u1e5bti.\n\n## Literal Meaning\n\nNature; primal matter; the original creative principle; the feminine creative power.\n\n## Functional Meaning\n\nPrak\u1e5bti is the primal, undifferentiated matter from which the entire manifest universe evolves. In S\u0101\u1e43khya philosophy, Prak\u1e5bti consists of three gu\u1e47as (qualities): Sattva (clarity, luminosity), Rajas (activity, passion), Tamas (inertia, darkness). When the three gu\u1e47as are in perfect equilibrium, Prak\u1e5bti is unmanifest (avyakta). When the equilibrium is disturbed (by Puru\u1e63a's proximity), Prak\u1e5bti begins to evolve the universe through twenty-three tattvas (principles).\n\n## Ontology\n\nIn S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 it is the material cause of the universe. It is unconscious (acetana) but active. Puru\u1e63a is conscious but inactive. The universe is the product of their interaction. In Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman. In Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent on Brahman. In \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality.\n\n## Cosmology\n\nIn S\u0101\u1e43khya cosmology: from Prak\u1e5bti evolves Mahat (cosmic intellect), then Aha\u1e43k\u0101ra (ego-principle), then the five tanm\u0101tras (subtle elements), then the five mah\u0101bh\u016btas (gross elements), then the ten indriyas (sense and action organs), then manas (mind) \u2014 twenty-three tattvas in total. The universe is Prak\u1e5bti's evolution for Puru\u1e63a's experience and eventual liberation.\n\n## Psychology\n\nPrak\u1e5bti as psychological principle: the three gu\u1e47as govern all psychological states. Sattva produces clarity, wisdom, and peace. Rajas produces activity, desire, and restlessness. Tamas produces inertia, delusion, and sleep. The goal of yoga is to transcend all three gu\u1e47as (trigu\u1e47\u0101t\u012bta) and rest in Puru\u1e63a's pure consciousness.\n\n## Governance\n\nThe concept of Prak\u1e5bti in governance: the Artha\u015b\u0101stra describes the seven elements of the state (sapt\u0101\u1e45ga) as the Prak\u1e5bti of the kingdom \u2014 king, minister, territory, fort, treasury, army, ally. The concept of r\u0101ja-prak\u1e5bti (the nature of the king) \u2014 the king's gu\u1e47a-composition determines the quality of governance.\n\n## Medicine\n\nIn \u0100yurveda: Prak\u1e5bti is the individual's constitutional nature \u2014 the unique combination of the three do\u1e63as (v\u0101ta, pitta, kapha) determined at conception. The concept of deha-prak\u1e5bti (body-nature) \u2014 each person has a unique Prak\u1e5bti that determines their health tendencies. \u0100yurvedic treatment is tailored to the individual's Prak\u1e5bti.\n\n## Mathematics\n\nThe concept of Prak\u1e5bti in mathematics: the three gu\u1e47as as the three fundamental operations (addition/sattva, multiplication/rajas, subtraction/tamas). The concept of Prak\u1e5bti in B\u012bjaganita (algebra) \u2014 the term prak\u1e5bti is used for the coefficient in quadratic equations.\n\n## Astronomy\n\nIn Jyoti\u1e63a: the three gu\u1e47as of Prak\u1e5bti are expressed in the three types of signs (movable/rajas, fixed/tamas, dual/sattva). The concept of graha-prak\u1e5bti (planetary nature) \u2014 each planet has its own gu\u1e47a composition.\n\n## Metallurgy\n\nIn alchemical traditions: the three gu\u1e47as of Prak\u1e5bti are expressed in the three states of matter (solid/tamas, liquid/rajas, gas/sattva). The concept of dh\u0101tu-prak\u1e5bti (metal nature) \u2014 each metal has its own gu\u1e47a composition.\n\n## Ritual\n\nThe concept of Prak\u1e5bti in ritual: the three gu\u1e47as determine the nature of ritual offerings. Sattvic offerings (milk, ghee, fruits) are for liberation. Rajasic offerings (meat, wine) are for worldly power. Tamasic offerings are for destructive purposes. The Bhagavad G\u012bt\u0101 (17.7-10) describes the three types of food, sacrifice, and worship according to the three gu\u1e47as.\n\n## Symbolism\n\nThe three gu\u1e47as are symbolized by three colors: white (sattva), red (rajas), black (tamas). The three strands of a rope symbolize the three gu\u1e47as \u2014 together they bind the soul. The Goddess (Dev\u012b) symbolizes Prak\u1e5bti \u2014 the creative, sustaining, and dissolving power.\n\n## Related Deities\n\n- Dev\u012b/Mah\u0101dev\u012b (Prak\u1e5bti as the Goddess \u2014 the supreme creative reality)\n- Brahm\u0101 (the creator who works through Prak\u1e5bti)\n- Vi\u1e63\u1e47u (Prak\u1e5bti as his body in Vi\u015bi\u1e63\u1e6d\u0101dvaita)\n- \u015aiva (Prak\u1e5bti as his \u015aakti)\n\n## Related Lokas\n\n- All lokas are within Prak\u1e5bti \u2014 they are Prak\u1e5bti's manifestations\n- Beyond Prak\u1e5bti is Puru\u1e63a's realm (kaivalya)\n\n## Related Koshas\n\n- All five koshas are manifestations of Prak\u1e5bti\n- The \u0100tman (Puru\u1e63a) is beyond Prak\u1e5bti\n\n## Related Chakras\n\n- All seven chakras are within Prak\u1e5bti\n- The awakening of ku\u1e47\u1e0dalin\u012b is Prak\u1e5bti's \u015bakti rising toward Puru\u1e63a\n\n## Related Yantras\n\n- \u015ar\u012b Yantra (the geometric form of Prak\u1e5bti's creative evolution)\n\n## Related Mantras\n\n- \"Hr\u012bm\" (the b\u012bja of Prak\u1e5bti-\u015aakti)\n- Dev\u012b M\u0101h\u0101tmya (the primary text of Prak\u1e5bti as the Goddess)\n\n## Related Vidy\u0101s\n\n- S\u0101\u1e43khya Vidy\u0101 (the science of Prak\u1e5bti and Puru\u1e63a)\n- \u0100yurveda (Prak\u1e5bti as individual constitution)\n\n## Related \u015a\u0101stras\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text on Prak\u1e5bti\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14 (the three gu\u1e47as of Prak\u1e5bti)\n- Caraka Sa\u1e43hit\u0101 (Prak\u1e5bti as individual constitution)\n\n## Traditional Interpretations\n\n- S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 the material cause of the universe\n- Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman\n- Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent\n- \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality\n\n## Historical Evolution\n\n- \u1e5agvedic period: Prak\u1e5bti as the natural world\n- Upani\u1e63adic period: Prak\u1e5bti as the creative power of Brahman\n- S\u0101\u1e43khya period (pre-classical): Prak\u1e5bti systematized as the material cause\n- Classical S\u0101\u1e43khya (\u012a\u015bvarak\u1e5b\u1e63\u1e47a, ~4th century CE): Prak\u1e5bti fully systematized\n- Bhagavad G\u012bt\u0101: Prak\u1e5bti and Puru\u1e63a integrated into the teaching of liberation\n\n## Cross References\n\n- Purusha\n- Maya\n- Shakti\n- Guna (the three qualities of Prakrti)\n- Atman (Purusha \u2014 the consciousness beyond Prakrti)\n\n## Open Research Questions\n\n- Is the S\u0101\u1e43khya concept of Prak\u1e5bti as unconscious matter compatible with the \u015a\u0101kta concept of Prak\u1e5bti as conscious Goddess?\n- How does the S\u0101\u1e43khya concept of Prak\u1e5bti's evolution relate to modern evolutionary biology?\n\n## Experimental Hypotheses\n\n[EXPERIMENTAL \u2014 NOT CANONICAL] Some researchers propose that the S\u0101\u1e43khya concept of the three gu\u1e47as (sattva, rajas, tamas) corresponds to the three fundamental states of matter (plasma/gas, liquid, solid) or to the three fundamental forces of nature. This remains a speculative analogy.\n\n## Canonical Sources\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14.5-18 (the three gu\u1e47as)\n- Yoga S\u016btras 2.18 (Prak\u1e5bti as the object of experience)\n- Caraka Sa\u1e43hit\u0101 \u015a\u0101r\u012brasth\u0101na 1 (Prak\u1e5bti as individual constitution)",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "trace_02b105d3dff75cc2",
+    "verification_status": "VERIFIED"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_a9df0fb0b71c",
+      "signal_06c5c2470e91"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.7378,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.82,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.3333,
+                "ocr_integrity": 1.0,
+                "ontology_convergence": 0.7333,
+                "retrieval_strength": 0.5542,
+                "semantic_agreement": 0.6667,
+                "source_authority": 0.74
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.7378,
+              "why": [
+                "epistemic_score=0.7378",
+                "ceiling_applied=0.8200",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.7485,
+            "retrieval_confidence": 0.5542,
+            "semantic_score": 0.5333,
+            "tag_match_score": 1.0
+          },
+          "overlap_percent": {
+            "concept": 66.67,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_a9df0fb0b71c",
+          "what_matched": {
+            "candidate_entities": [],
+            "query_entities": [],
+            "tags": [
+              "subtraction"
+            ]
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.7378,
+        "content": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "domain": "maths",
+        "knowledge_id": "KOSHA_subtraction_001",
+        "signal_id": "signal_a9df0fb0b71c",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.74,
+          "confidence_ceiling": 0.82,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "subtraction",
+          "subtract",
+          "difference",
+          "arithmetic",
+          "maths",
+          "minus"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "evidence_priority": {
+            "contextual_proximity": 1.0,
+            "direct_definition": 0.0,
+            "exact_entity_match": 0.0,
+            "exact_topic_match": 0.0,
+            "query_coverage": 0.0,
+            "source_authority": 0.7755
+          },
+          "knowledge_id": "KOSHA_subtraction_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_02b105d3dff75cc2"
+        }
+      },
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.7279,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.78,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.3333,
+                "ocr_integrity": 0.9501,
+                "ontology_convergence": 0.7,
+                "retrieval_strength": 0.4891,
+                "semantic_agreement": 0.6667,
+                "source_authority": 0.7701
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.7279,
+              "why": [
+                "epistemic_score=0.7279",
+                "ceiling_applied=0.7800",
+                "source_type=commentary"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.4523,
+            "retrieval_confidence": 0.4891,
+            "semantic_score": 0.4333,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 66.67,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_06c5c2470e91",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Atman",
+                "concepts": [
+                  "Brahman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "atman"
+              },
+              {
+                "canonical": "Bhagavad Gita",
+                "concepts": [
+                  "dharma",
+                  "karma yoga",
+                  "jnana yoga",
+                  "bhakti yoga"
+                ],
+                "domain": "gitas",
+                "entity_type": "text",
+                "matched_alias": "bhagavad gita"
+              },
+              {
+                "canonical": "Brahma",
+                "concepts": [
+                  "creation",
+                  "cosmology"
+                ],
+                "domain": "puranas",
+                "entity_type": "deity",
+                "matched_alias": "creator"
+              },
+              {
+                "canonical": "Brahman",
+                "concepts": [
+                  "ultimate reality",
+                  "Atman"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "brahman"
+              },
+              {
+                "canonical": "Devi",
+                "concepts": [
+                  "power",
+                  "protection"
+                ],
+                "domain": "puranas",
+                "entity_type": "deity",
+                "matched_alias": "shaktis"
+              },
+              {
+                "canonical": "Governance",
+                "concepts": [
+                  "law",
+                  "responsibility"
+                ],
+                "domain": "governance",
+                "entity_type": "concept",
+                "matched_alias": "governance"
+              },
+              {
+                "canonical": "Karma",
+                "concepts": [
+                  "cause",
+                  "effect",
+                  "duty"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "action"
+              },
+              {
+                "canonical": "King",
+                "concepts": [
+                  "governance",
+                  "duty"
+                ],
+                "domain": "governance",
+                "entity_type": "role",
+                "matched_alias": "rajas"
+              },
+              {
+                "canonical": "Kundalini",
+                "concepts": [
+                  "energy",
+                  "yoga"
+                ],
+                "domain": "tantra",
+                "entity_type": "concept",
+                "matched_alias": "kundalini"
+              },
+              {
+                "canonical": "Mantra",
+                "concepts": [
+                  "sound",
+                  "ritual"
+                ],
+                "domain": "tantra",
+                "entity_type": "concept",
+                "matched_alias": "mantras"
+              },
+              {
+                "canonical": "Moksha",
+                "concepts": [
+                  "freedom",
+                  "realization"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "liberation"
+              },
+              {
+                "canonical": "Narayana",
+                "concepts": [
+                  "preservation",
+                  "cosmic person"
+                ],
+                "domain": "puranas",
+                "entity_type": "deity",
+                "matched_alias": "vishnu"
+              },
+              {
+                "canonical": "Prakriti",
+                "concepts": [
+                  "matter",
+                  "gunas"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "nature"
+              },
+              {
+                "canonical": "Purusha",
+                "concepts": [
+                  "self",
+                  "consciousness"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "purusha"
+              },
+              {
+                "canonical": "Rajas",
+                "concepts": [
+                  "guna",
+                  "motion"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "activity"
+              },
+              {
+                "canonical": "Sankhya",
+                "concepts": [
+                  "gunas",
+                  "purusha",
+                  "prakriti"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "samkhya"
+              },
+              {
+                "canonical": "Sattva",
+                "concepts": [
+                  "guna",
+                  "balance"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "clarity"
+              },
+              {
+                "canonical": "Shiva",
+                "concepts": [
+                  "destruction",
+                  "yoga"
+                ],
+                "domain": "puranas",
+                "entity_type": "deity",
+                "matched_alias": "shiva"
+              },
+              {
+                "canonical": "Tamas",
+                "concepts": [
+                  "guna",
+                  "obstruction"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "darkness"
+              },
+              {
+                "canonical": "Yajna",
+                "concepts": [
+                  "ritual",
+                  "offering"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "ritual offerings"
+              },
+              {
+                "canonical": "Yantra",
+                "concepts": [
+                  "geometry",
+                  "ritual"
+                ],
+                "domain": "tantra",
+                "entity_type": "concept",
+                "matched_alias": "yantras"
+              },
+              {
+                "canonical": "Yoga",
+                "concepts": [
+                  "discipline",
+                  "meditation"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "yoga"
+              }
+            ],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.7279,
+        "content": "# Prakrti\n\n## Canonical Name\n\nPrakrti\n\n## Sanskrit\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Transliteration\n\nPrak\u1e5bti\n\n## \u015aabda\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Dh\u0101tu\n\n\u092a\u094d\u0930 + \u0915\u0943 (Pra + K\u1e5b) \u2014 Pra (before, primary, forth) + K\u1e5b (to do, to make). The primary maker; the original nature; that which was made first.\n\n## Vy\u0101kara\u1e47a\n\nPrak\u1e5bti is a feminine noun derived from the prefix pra- and the root k\u1e5b (to make) with the suffix -ti. The feminine gender is significant \u2014 Prak\u1e5bti is the feminine creative principle, complementary to the masculine Puru\u1e63a.\n\n## Nirukta\n\n\"Prak\u1e5b\u1e63\u1e6d\u0101 k\u1e5bti\u1e25 prak\u1e5bti\u1e25\" \u2014 the primary creation. Prak\u1e5bti is the original nature from which all manifest existence emerges.\n\n## B\u012bja\n\n\u0939\u094d\u0930\u0940\u0902 (Hr\u012bm) \u2014 the b\u012bja of Prak\u1e5bti as the creative power. Also \u0915\u094d\u0932\u0940\u0902 (Kl\u012bm) \u2014 the b\u012bja of attraction and manifestation.\n\n## Tattva\n\nPrak\u1e5bti-Tattva \u2014 the principle of primal matter and creative nature. In S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities (along with Puru\u1e63a). It is the material cause of the universe \u2014 the primal matter from which all manifest existence evolves.\n\n## \u015aakti\n\nPrak\u1e5bti is itself the \u015bakti \u2014 the creative power. In \u015a\u0101kta traditions, Prak\u1e5bti = \u015aakti = the Goddess. The three gu\u1e47as (sattva, rajas, tamas) are the three \u015baktis of Prak\u1e5bti.\n\n## Literal Meaning\n\nNature; primal matter; the original creative principle; the feminine creative power.\n\n## Functional Meaning\n\nPrak\u1e5bti is the primal, undifferentiated matter from which the entire manifest universe evolves. In S\u0101\u1e43khya philosophy, Prak\u1e5bti consists of three gu\u1e47as (qualities): Sattva (clarity, luminosity), Rajas (activity, passion), Tamas (inertia, darkness). When the three gu\u1e47as are in perfect equilibrium, Prak\u1e5bti is unmanifest (avyakta). When the equilibrium is disturbed (by Puru\u1e63a's proximity), Prak\u1e5bti begins to evolve the universe through twenty-three tattvas (principles).\n\n## Ontology\n\nIn S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 it is the material cause of the universe. It is unconscious (acetana) but active. Puru\u1e63a is conscious but inactive. The universe is the product of their interaction. In Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman. In Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent on Brahman. In \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality.\n\n## Cosmology\n\nIn S\u0101\u1e43khya cosmology: from Prak\u1e5bti evolves Mahat (cosmic intellect), then Aha\u1e43k\u0101ra (ego-principle), then the five tanm\u0101tras (subtle elements), then the five mah\u0101bh\u016btas (gross elements), then the ten indriyas (sense and action organs), then manas (mind) \u2014 twenty-three tattvas in total. The universe is Prak\u1e5bti's evolution for Puru\u1e63a's experience and eventual liberation.\n\n## Psychology\n\nPrak\u1e5bti as psychological principle: the three gu\u1e47as govern all psychological states. Sattva produces clarity, wisdom, and peace. Rajas produces activity, desire, and restlessness. Tamas produces inertia, delusion, and sleep. The goal of yoga is to transcend all three gu\u1e47as (trigu\u1e47\u0101t\u012bta) and rest in Puru\u1e63a's pure consciousness.\n\n## Governance\n\nThe concept of Prak\u1e5bti in governance: the Artha\u015b\u0101stra describes the seven elements of the state (sapt\u0101\u1e45ga) as the Prak\u1e5bti of the kingdom \u2014 king, minister, territory, fort, treasury, army, ally. The concept of r\u0101ja-prak\u1e5bti (the nature of the king) \u2014 the king's gu\u1e47a-composition determines the quality of governance.\n\n## Medicine\n\nIn \u0100yurveda: Prak\u1e5bti is the individual's constitutional nature \u2014 the unique combination of the three do\u1e63as (v\u0101ta, pitta, kapha) determined at conception. The concept of deha-prak\u1e5bti (body-nature) \u2014 each person has a unique Prak\u1e5bti that determines their health tendencies. \u0100yurvedic treatment is tailored to the individual's Prak\u1e5bti.\n\n## Mathematics\n\nThe concept of Prak\u1e5bti in mathematics: the three gu\u1e47as as the three fundamental operations (addition/sattva, multiplication/rajas, subtraction/tamas). The concept of Prak\u1e5bti in B\u012bjaganita (algebra) \u2014 the term prak\u1e5bti is used for the coefficient in quadratic equations.\n\n## Astronomy\n\nIn Jyoti\u1e63a: the three gu\u1e47as of Prak\u1e5bti are expressed in the three types of signs (movable/rajas, fixed/tamas, dual/sattva). The concept of graha-prak\u1e5bti (planetary nature) \u2014 each planet has its own gu\u1e47a composition.\n\n## Metallurgy\n\nIn alchemical traditions: the three gu\u1e47as of Prak\u1e5bti are expressed in the three states of matter (solid/tamas, liquid/rajas, gas/sattva). The concept of dh\u0101tu-prak\u1e5bti (metal nature) \u2014 each metal has its own gu\u1e47a composition.\n\n## Ritual\n\nThe concept of Prak\u1e5bti in ritual: the three gu\u1e47as determine the nature of ritual offerings. Sattvic offerings (milk, ghee, fruits) are for liberation. Rajasic offerings (meat, wine) are for worldly power. Tamasic offerings are for destructive purposes. The Bhagavad G\u012bt\u0101 (17.7-10) describes the three types of food, sacrifice, and worship according to the three gu\u1e47as.\n\n## Symbolism\n\nThe three gu\u1e47as are symbolized by three colors: white (sattva), red (rajas), black (tamas). The three strands of a rope symbolize the three gu\u1e47as \u2014 together they bind the soul. The Goddess (Dev\u012b) symbolizes Prak\u1e5bti \u2014 the creative, sustaining, and dissolving power.\n\n## Related Deities\n\n- Dev\u012b/Mah\u0101dev\u012b (Prak\u1e5bti as the Goddess \u2014 the supreme creative reality)\n- Brahm\u0101 (the creator who works through Prak\u1e5bti)\n- Vi\u1e63\u1e47u (Prak\u1e5bti as his body in Vi\u015bi\u1e63\u1e6d\u0101dvaita)\n- \u015aiva (Prak\u1e5bti as his \u015aakti)\n\n## Related Lokas\n\n- All lokas are within Prak\u1e5bti \u2014 they are Prak\u1e5bti's manifestations\n- Beyond Prak\u1e5bti is Puru\u1e63a's realm (kaivalya)\n\n## Related Koshas\n\n- All five koshas are manifestations of Prak\u1e5bti\n- The \u0100tman (Puru\u1e63a) is beyond Prak\u1e5bti\n\n## Related Chakras\n\n- All seven chakras are within Prak\u1e5bti\n- The awakening of ku\u1e47\u1e0dalin\u012b is Prak\u1e5bti's \u015bakti rising toward Puru\u1e63a\n\n## Related Yantras\n\n- \u015ar\u012b Yantra (the geometric form of Prak\u1e5bti's creative evolution)\n\n## Related Mantras\n\n- \"Hr\u012bm\" (the b\u012bja of Prak\u1e5bti-\u015aakti)\n- Dev\u012b M\u0101h\u0101tmya (the primary text of Prak\u1e5bti as the Goddess)\n\n## Related Vidy\u0101s\n\n- S\u0101\u1e43khya Vidy\u0101 (the science of Prak\u1e5bti and Puru\u1e63a)\n- \u0100yurveda (Prak\u1e5bti as individual constitution)\n\n## Related \u015a\u0101stras\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text on Prak\u1e5bti\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14 (the three gu\u1e47as of Prak\u1e5bti)\n- Caraka Sa\u1e43hit\u0101 (Prak\u1e5bti as individual constitution)\n\n## Traditional Interpretations\n\n- S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 the material cause of the universe\n- Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman\n- Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent\n- \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality\n\n## Historical Evolution\n\n- \u1e5agvedic period: Prak\u1e5bti as the natural world\n- Upani\u1e63adic period: Prak\u1e5bti as the creative power of Brahman\n- S\u0101\u1e43khya period (pre-classical): Prak\u1e5bti systematized as the material cause\n- Classical S\u0101\u1e43khya (\u012a\u015bvarak\u1e5b\u1e63\u1e47a, ~4th century CE): Prak\u1e5bti fully systematized\n- Bhagavad G\u012bt\u0101: Prak\u1e5bti and Puru\u1e63a integrated into the teaching of liberation\n\n## Cross References\n\n- Purusha\n- Maya\n- Shakti\n- Guna (the three qualities of Prakrti)\n- Atman (Purusha \u2014 the consciousness beyond Prakrti)\n\n## Open Research Questions\n\n- Is the S\u0101\u1e43khya concept of Prak\u1e5bti as unconscious matter compatible with the \u015a\u0101kta concept of Prak\u1e5bti as conscious Goddess?\n- How does the S\u0101\u1e43khya concept of Prak\u1e5bti's evolution relate to modern evolutionary biology?\n\n## Experimental Hypotheses\n\n[EXPERIMENTAL \u2014 NOT CANONICAL] Some researchers propose that the S\u0101\u1e43khya concept of the three gu\u1e47as (sattva, rajas, tamas) corresponds to the three fundamental states of matter (plasma/gas, liquid, solid) or to the three fundamental forces of nature. This remains a speculative analogy.\n\n## Canonical Sources\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14.5-18 (the three gu\u1e47as)\n- Yoga S\u016btras 2.18 (Prak\u1e5bti as the object of experience)\n- Caraka Sa\u1e43hit\u0101 \u015a\u0101r\u012brasth\u0101na 1 (Prak\u1e5bti as individual constitution)",
+        "domain": "sanskrit queries",
+        "knowledge_id": "KOSHA_sanskrit_prakrti",
+        "signal_id": "signal_06c5c2470e91",
+        "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+        "source_governance": {
+          "authority_weight": 0.7701,
+          "confidence_ceiling": 0.8301,
+          "lineage": {
+            "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+            "transformation_history": [
+              "commentarial_source",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0499,
+          "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "source_type": "commentary",
+          "suppression_reason": null
+        },
+        "tags": [
+          "prakrti",
+          "prakrti"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "evidence_priority": {
+            "contextual_proximity": 0.0,
+            "direct_definition": 0.0,
+            "exact_entity_match": 0.0,
+            "exact_topic_match": 0.0,
+            "query_coverage": 0.0,
+            "source_authority": 0.7755
+          },
+          "knowledge_id": "KOSHA_sanskrit_prakrti",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+            "transformation_history": [
+              "commentarial_source",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_02b105d3dff75cc2"
+        }
+      }
+    ],
+    "artifact_hash": "4b590d696217157513cbcd69ea9d861646a6f3925e2c4cf574932c85d4cb1819",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-10-02T13:32:35.014486Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What is Subtraction?",
+    "raw_signal_count": 2,
+    "rejected_signal_ids": [],
+    "rejected_signals": [],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_subtraction_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_a9df0fb0b71c",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_02b105d3dff75cc2"
+      },
+      {
+        "knowledge_id": "KOSHA_sanskrit_prakrti",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_06c5c2470e91",
+        "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+        "source_lineage": {
+          "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "transformation_history": [
+            "commentarial_source",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_02b105d3dff75cc2"
+      }
+    ],
+    "trace_id": "trace_02b105d3dff75cc2"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:6486beb0c48c",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+      "ranking_score": 0.554176,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:sanskrit queries:071ca4ff7c6f",
+      "dedup_status": "unique",
+      "domain": "sanskrit queries",
+      "provenance_hash": "071ca4ff7c6f9f639136e87038138b7e808046efa55f4651f7a267f9e3730c42",
+      "ranking_score": 0.48909899999999995,
+      "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+      "text_span": "# Prakrti\n\n## Canonical Name\n\nPrakrti\n\n## Sanskrit\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Transliteration\n\nPrak\u1e5bti\n\n## \u015aabda\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Dh\u0101tu\n\n\u092a\u094d\u0930 + \u0915\u0943 (Pra + K\u1e5b) \u2014 Pra (before, primary, forth) + K\u1e5b (to do, to make). The primary maker; the original nature; that which was made first.\n\n## Vy\u0101kara\u1e47a\n\nPrak\u1e5bti is a feminine noun derived from the prefix pra- and the root k\u1e5b (to make) with the suffix -ti. The feminine gender is significant \u2014 Prak\u1e5bti is the feminine creative principle, complementary to the masculine Puru\u1e63a.\n\n## Nirukta\n\n\"Prak\u1e5b\u1e63\u1e6d\u0101 k\u1e5bti\u1e25 prak\u1e5bti\u1e25\" \u2014 the primary creation. Prak\u1e5bti is the original nature from which all manifest existence emerges.\n\n## B\u012bja\n\n\u0939\u094d\u0930\u0940\u0902 (Hr\u012bm) \u2014 the b\u012bja of Prak\u1e5bti as the creative power. Also \u0915\u094d\u0932\u0940\u0902 (Kl\u012bm) \u2014 the b\u012bja of attraction and manifestation.\n\n## Tattva\n\nPrak\u1e5bti-Tattva \u2014 the principle of primal matter and creative nature. In S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities (along with Puru\u1e63a). It is the material cause of the universe \u2014 the primal matter from which all manifest existence evolves.\n\n## \u015aakti\n\nPrak\u1e5bti is itself the \u015bakti \u2014 the creative power. In \u015a\u0101kta traditions, Prak\u1e5bti = \u015aakti = the Goddess. The three gu\u1e47as (sattva, rajas, tamas) are the three \u015baktis of Prak\u1e5bti.\n\n## Literal Meaning\n\nNature; primal matter; the original creative principle; the feminine creative power.\n\n## Functional Meaning\n\nPrak\u1e5bti is the primal, undifferentiated matter from which the entire manifest universe evolves. In S\u0101\u1e43khya philosophy, Prak\u1e5bti consists of three gu\u1e47as (qualities): Sattva (clarity, luminosity), Rajas (activity, passion), Tamas (inertia, darkness). When the three gu\u1e47as are in perfect equilibrium, Prak\u1e5bti is unmanifest (avyakta). When the equilibrium is disturbed (by Puru\u1e63a's proximity), Prak\u1e5bti begins to evolve the universe through twenty-three tattvas (principles).\n\n## Ontology\n\nIn S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 it is the material cause of the universe. It is unconscious (acetana) but active. Puru\u1e63a is conscious but inactive. The universe is the product of their interaction. In Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman. In Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent on Brahman. In \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality.\n\n## Cosmology\n\nIn S\u0101\u1e43khya cosmology: from Prak\u1e5bti evolves Mahat (cosmic intellect), then Aha\u1e43k\u0101ra (ego-principle), then the five tanm\u0101tras (subtle elements), then the five mah\u0101bh\u016btas (gross elements), then the ten indriyas (sense and action organs), then manas (mind) \u2014 twenty-three tattvas in total. The universe is Prak\u1e5bti's evolution for Puru\u1e63a's experience and eventual liberation.\n\n## Psychology\n\nPrak\u1e5bti as psychological principle: the three gu\u1e47as govern all psychological states. Sattva produces clarity, wisdom, and peace. Rajas produces activity, desire, and restlessness. Tamas produces inertia, delusion, and sleep. The goal of yoga is to transcend all three gu\u1e47as (trigu\u1e47\u0101t\u012bta) and rest in Puru\u1e63a's pure consciousness.\n\n## Governance\n\nThe concept of Prak\u1e5bti in governance: the Artha\u015b\u0101stra describes the seven elements of the state (sapt\u0101\u1e45ga) as the Prak\u1e5bti of the kingdom \u2014 king, minister, territory, fort, treasury, army, ally. The concept of r\u0101ja-prak\u1e5bti (the nature of the king) \u2014 the king's gu\u1e47a-composition determines the quality of governance.\n\n## Medicine\n\nIn \u0100yurveda: Prak\u1e5bti is the individual's constitutional nature \u2014 the unique combination of the three do\u1e63as (v\u0101ta, pitta, kapha) determined at conception. The concept of deha-prak\u1e5bti (body-nature) \u2014 each person has a unique Prak\u1e5bti that determines their health tendencies. \u0100yurvedic treatment is tailored to the individual's Prak\u1e5bti.\n\n## Mathematics\n\nThe concept of Prak\u1e5bti in mathematics: the three gu\u1e47as as the three fundamental operations (addition/sattva, multiplication/rajas, subtraction/tamas). The concept of Prak\u1e5bti in B\u012bjaganita (algebra) \u2014 the term prak\u1e5bti is used for the coefficient in quadratic equations.\n\n## Astronomy\n\nIn Jyoti\u1e63a: the three gu\u1e47as of Prak\u1e5bti are expressed in the three types of signs (movable/rajas, fixed/tamas, dual/sattva). The concept of graha-prak\u1e5bti (planetary nature) \u2014 each planet has its own gu\u1e47a composition.\n\n## Metallurgy\n\nIn alchemical traditions: the three gu\u1e47as of Prak\u1e5bti are expressed in the three states of matter (solid/tamas, liquid/rajas, gas/sattva). The concept of dh\u0101tu-prak\u1e5bti (metal nature) \u2014 each metal has its own gu\u1e47a composition.\n\n## Ritual\n\nThe concept of Prak\u1e5bti in ritual: the three gu\u1e47as determine the nature of ritual offerings. Sattvic offerings (milk, ghee, fruits) are for liberation. Rajasic offerings (meat, wine) are for worldly power. Tamasic offerings are for destructive purposes. The Bhagavad G\u012bt\u0101 (17.7-10) describes the three types of food, sacrifice, and worship according to the three gu\u1e47as.\n\n## Symbolism\n\nThe three gu\u1e47as are symbolized by three colors: white (sattva), red (rajas), black (tamas). The three strands of a rope symbolize the three gu\u1e47as \u2014 together they bind the soul. The Goddess (Dev\u012b) symbolizes Prak\u1e5bti \u2014 the creative, sustaining, and dissolving power.\n\n## Related Deities\n\n- Dev\u012b/Mah\u0101dev\u012b (Prak\u1e5bti as the Goddess \u2014 the supreme creative reality)\n- Brahm\u0101 (the creator who works through Prak\u1e5bti)\n- Vi\u1e63\u1e47u (Prak\u1e5bti as his body in Vi\u015bi\u1e63\u1e6d\u0101dvaita)\n- \u015aiva (Prak\u1e5bti as his \u015aakti)\n\n## Related Lokas\n\n- All lokas are within Prak\u1e5bti \u2014 they are Prak\u1e5bti's manifestations\n- Beyond Prak\u1e5bti is Puru\u1e63a's realm (kaivalya)\n\n## Related Koshas\n\n- All five koshas are manifestations of Prak\u1e5bti\n- The \u0100tman (Puru\u1e63a) is beyond Prak\u1e5bti\n\n## Related Chakras\n\n- All seven chakras are within Prak\u1e5bti\n- The awakening of ku\u1e47\u1e0dalin\u012b is Prak\u1e5bti's \u015bakti rising toward Puru\u1e63a\n\n## Related Yantras\n\n- \u015ar\u012b Yantra (the geometric form of Prak\u1e5bti's creative evolution)\n\n## Related Mantras\n\n- \"Hr\u012bm\" (the b\u012bja of Prak\u1e5bti-\u015aakti)\n- Dev\u012b M\u0101h\u0101tmya (the primary text of Prak\u1e5bti as the Goddess)\n\n## Related Vidy\u0101s\n\n- S\u0101\u1e43khya Vidy\u0101 (the science of Prak\u1e5bti and Puru\u1e63a)\n- \u0100yurveda (Prak\u1e5bti as individual constitution)\n\n## Related \u015a\u0101stras\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text on Prak\u1e5bti\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14 (the three gu\u1e47as of Prak\u1e5bti)\n- Caraka Sa\u1e43hit\u0101 (Prak\u1e5bti as individual constitution)\n\n## Traditional Interpretations\n\n- S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 the material cause of the universe\n- Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman\n- Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent\n- \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality\n\n## Historical Evolution\n\n- \u1e5agvedic period: Prak\u1e5bti as the natural world\n- Upani\u1e63adic period: Prak\u1e5bti as the creative power of Brahman\n- S\u0101\u1e43khya period (pre-classical): Prak\u1e5bti systematized as the material cause\n- Classical S\u0101\u1e43khya (\u012a\u015bvarak\u1e5b\u1e63\u1e47a, ~4th century CE): Prak\u1e5bti fully systematized\n- Bhagavad G\u012bt\u0101: Prak\u1e5bti and Puru\u1e63a integrated into the teaching of liberation\n\n## Cross References\n\n- Purusha\n- Maya\n- Shakti\n- Guna (the three qualities of Prakrti)\n- Atman (Purusha \u2014 the consciousness beyond Prakrti)\n\n## Open Research Questions\n\n- Is the S\u0101\u1e43khya concept of Prak\u1e5bti as unconscious matter compatible with the \u015a\u0101kta concept of Prak\u1e5bti as conscious Goddess?\n- How does the S\u0101\u1e43khya concept of Prak\u1e5bti's evolution relate to modern evolutionary biology?\n\n## Experimental Hypotheses\n\n[EXPERIMENTAL \u2014 NOT CANONICAL] Some researchers propose that the S\u0101\u1e43khya concept of the three gu\u1e47as (sattva, rajas, tamas) corresponds to the three fundamental states of matter (plasma/gas, liquid, solid) or to the three fundamental forces of nature. This remains a speculative analogy.\n\n## Canonical Sources\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14.5-18 (the three gu\u1e47as)\n- Yoga S\u016btras 2.18 (Prak\u1e5bti as the object of experience)\n- Caraka Sa\u1e43hit\u0101 \u015a\u0101r\u012brasth\u0101na 1 (Prak\u1e5bti as individual constitution)",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": true,
+    "constitutional_governance": {
+      "canonical_authority_granted": true,
+      "canonical_memory_keys": [
+        "Agni",
+        "Agni Purana",
+        "Ahimsa",
+        "Assembly",
+        "Atharvaveda",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Bhakti",
+        "Bhakti Yoga",
+        "Brahma",
+        "Brahma Purana",
+        "Brahman",
+        "Brahmanda Purana",
+        "Chandogya Upanishad",
+        "City",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Ganga",
+        "Garuda Purana",
+        "Governance",
+        "Guru",
+        "Indra",
+        "Jnana Yoga",
+        "Justice",
+        "Kali Yuga",
+        "Karma",
+        "Karma Yoga",
+        "Katha Upanishad",
+        "King",
+        "Krishna",
+        "Kundalini",
+        "Kurma Purana",
+        "Linga Purana",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Manusmriti",
+        "Markandeya Purana",
+        "Matsya Purana",
+        "Moksha",
+        "Mundaka Upanishad",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Pilgrimage",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Purusha",
+        "Rain",
+        "Rajadharma",
+        "Rajas",
+        "Ramayana",
+        "Rigveda",
+        "Road",
+        "Samaveda",
+        "Samsara",
+        "Sankhya",
+        "Sarasvati",
+        "Sattva",
+        "Satya Yuga",
+        "Shiva",
+        "Skanda Purana",
+        "Smriti",
+        "Soil",
+        "Surya",
+        "Taittiriya Upanishad",
+        "Tamas",
+        "Temple",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Varaha Purana",
+        "Varna",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Vishnu",
+        "Yajna",
+        "Yajnavalkya Smriti",
+        "Yajurveda",
+        "Yantra",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 47,
+      "event": {
+        "canonical_authority_granted": true,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [
+          "Atman",
+          "Bhagavad Gita",
+          "Brahma",
+          "Brahman",
+          "Devi",
+          "Governance",
+          "Karma",
+          "King",
+          "Kundalini",
+          "Mantra",
+          "Moksha",
+          "Narayana",
+          "Prakriti",
+          "Purusha",
+          "Rajas",
+          "Sankhya",
+          "Sattva",
+          "Shiva",
+          "Tamas",
+          "Yajna",
+          "Yantra",
+          "Yoga"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "canonical",
+        "trace_id": "trace_02b105d3dff75cc2",
+        "updated_at": "2026-10-02T13:32:36.236727Z"
+      },
+      "event_hash": "6ed0858df8e142cfd8e1cfaf725787858cf07f309411ec2aaf864edba23db1b4",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": true,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "ACCEPT_CANONICAL_MUTATION",
+        "failure_states": [],
+        "memory_classification": "canonical",
+        "reasons": [],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "5081ffc9068012538fa10e474817481d40895e421a0c8ef63b325ad8ad2292e2",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "6ed0858df8e142cfd8e1cfaf725787858cf07f309411ec2aaf864edba23db1b4",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "bcd27301520ed174caa0190c0e0f4cf710cafd6f3088a0865a01030817953eac",
+      "transient_event_count": 832
+    },
+    "entity_continuity": {
+      "Atman": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "Svetasvatara Upanishad - sanskrit and English.pdf",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md"
+        ],
+        "trace_ids": [
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_1a91b05a0a8b56f0",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Bhagavad Gita": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "The Complete Mahabharata_English_ocred.pdf",
+          "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "vigyan-bhairava-tantra_ocr.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Brahma": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Brahman": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "Svetasvatara Upanishad - sanskrit and English.pdf",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_1a91b05a0a8b56f0",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Devi": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/rta.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Shakti and Shakta_ocr.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Governance": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/rta.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Karma": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "The Complete Mahabharata_English_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "vigyan-bhairava-tantra_ocr.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "King": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/rta.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Kundalini": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md"
+        ],
+        "trace_ids": [
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "phase2_mitra_test",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_7e9993bf9a615c3f",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Mantra": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/rta.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Moksha": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "The Complete Mahabharata_English_ocred.pdf"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Narayana": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Vayu Purana Part 1_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Prakriti": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md",
+          "Svetasvatara Upanishad - sanskrit and English.pdf"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Purusha": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md"
+        ],
+        "trace_ids": [
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Rajas": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Valmiki-Ramayana-Eng-Translation-Griffith_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Sankhya": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Sattva": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Shiva": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Tamas": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Yajna": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "The Complete Mahabharata_English_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/rta.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Yantra": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/rta.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/akasha.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      },
+      "Yoga": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:32:37.045227Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "The Complete Mahabharata_English_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2"
+        ]
+      }
+    },
+    "event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "6ed0858df8e142cfd8e1cfaf725787858cf07f309411ec2aaf864edba23db1b4",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Atman",
+        "Bhagavad Gita",
+        "Brahma",
+        "Brahman",
+        "Devi",
+        "Governance",
+        "Karma",
+        "King",
+        "Kundalini",
+        "Mantra",
+        "Moksha",
+        "Narayana",
+        "Prakriti",
+        "Purusha",
+        "Rajas",
+        "Sankhya",
+        "Sattva",
+        "Shiva",
+        "Tamas",
+        "Yajna",
+        "Yantra",
+        "Yoga"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_02b105d3dff75cc2",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T13:32:37.045227Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [],
+    "user_continuity": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-10-02T13:32:37.045227Z",
+      "queries": 28,
+      "trace_ids": [
+        "trace_5fb0cbd5122c50eb",
+        "trace_5bc60934f0025251",
+        "trace_4ab18174325e56af",
+        "trace_8f368be361ef56ba",
+        "trace_c0bcb65347cd5ba2",
+        "trace_3df20ed0bfd45707",
+        "trace_4c72859000385ae0",
+        "trace_979a7e91c03153fa",
+        "trace_f0d78e2f28e751f9",
+        "trace_1a91b05a0a8b56f0",
+        "trace_f0ce1a8a771350f2",
+        "trace_7e9993bf9a615c3f",
+        "trace_45b2ec7eb15d52ac",
+        "trace_b2164942ff4b550d",
+        "trace_b7b9352b9fa850ff",
+        "trace_0bd4fc46113a56d0",
+        "trace_abf0540c13ae5c85",
+        "trace_efe57d8139155146",
+        "trace_61179523abee522e",
+        "trace_5a0a8775b336526b",
+        "trace_f95d669e228b5e69",
+        "trace_f951f7b832d15b25",
+        "trace_98c09c1bbdb45ee7",
+        "trace_744d8093ba805a16",
+        "trace_e5ccca51e4e35cec",
+        "trace_15844a513b565015",
+        "trace_fbc65eee30d25c0b",
+        "trace_02b105d3dff75cc2"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "maths",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_subtraction_001",
+      "signal_id": "signal_a9df0fb0b71c",
+      "source_lineage": {
+        "original_source": "balbharti_primary_mathematics_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    },
+    {
+      "domain": "sanskrit queries",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_sanskrit_prakrti",
+      "signal_id": "signal_06c5c2470e91",
+      "source_lineage": {
+        "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+        "transformation_history": [
+          "commentarial_source",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 2,
+  "signals_rejected": 0,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_02b105d3dff75cc2",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "b85c06eef3770b6d59dec0ec6d704c24156aa2d222e243293108c5c28cb3ce91",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "4b590d696217157513cbcd69ea9d861646a6f3925e2c4cf574932c85d4cb1819",
+    "trace_id": "trace_02b105d3dff75cc2"
+  },
+  "verification_status": "VERIFIED"
+}

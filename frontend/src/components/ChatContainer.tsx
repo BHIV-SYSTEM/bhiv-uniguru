@@ -2962,7 +2962,6 @@ const ChatContainer: React.FC = () => {
   // Audio state
   const [playingAudioIndex, setPlayingAudioIndex] = useState<number | null>(null);
   const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
-  const [vaaniToken, setVaaniToken] = useState<string | null>(null);
 
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const messagesContainerRef = useRef<HTMLDivElement | null>(null);
@@ -2991,38 +2990,6 @@ const ChatContainer: React.FC = () => {
       }
     };
   }, [audioElement]);
-
-  // Get Vaani authentication token
-  const getVaaniToken = async (): Promise<string | null> => {
-    if (vaaniToken) return vaaniToken;
-
-    try {
-      const response = await fetch('https://vaani-sentinel-gs6x.onrender.com/api/v1/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          username: 'admin',
-          password: 'secret'
-        }),
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        const token = data.access_token || data.token;
-        if (token) {
-          setVaaniToken(token);
-          return token;
-        }
-      }
-      console.error('Failed to get Vaani token:', response.status);
-      return null;
-    } catch (error) {
-      console.error('Error getting Vaani token:', error);
-      return null;
-    }
-  };
 
   // Keyboard shortcuts for audio control
   useEffect(() => {
@@ -3372,33 +3339,7 @@ const ChatContainer: React.FC = () => {
       if (!finalAudioUrl.startsWith('data:')) {
         toast.loading("Loading audio...", { id: "audio-loading" });
 
-        // Fetch the audio with authentication
-        const token = await getVaaniToken();
-        if (!token) {
-          throw new Error('Failed to get Vaani authentication token');
-        }
-
-        const response = await fetch(finalAudioUrl, {
-          method: 'GET',
-          headers: {
-            'Authorization': `Bearer ${token}`,
-          }
-        });
-
-        if (!response.ok) {
-          throw new Error(`Failed to fetch audio: ${response.status}`);
-        }
-
-        const audioBuffer = await response.arrayBuffer();
-        // Convert ArrayBuffer to base64 using btoa (browser-compatible)
-        const uint8Array = new Uint8Array(audioBuffer);
-        let binary = '';
-        uint8Array.forEach(byte => binary += String.fromCharCode(byte));
-        const audioBase64 = btoa(binary);
-        const contentType = response.headers.get('content-type') || 'audio/wav';
-        finalAudioUrl = `data:${contentType};base64,${audioBase64}`;
-
-        toast.dismiss("audio-loading");
+        throw new Error('Protected Vaani audio requires a server-side credential provider.');
       }
 
       // Create new audio element
@@ -3470,6 +3411,7 @@ const ChatContainer: React.FC = () => {
       });
     } catch (error) {
       console.error('Error setting up audio:', error);
+      toast.dismiss("audio-loading");
       toast.error("Failed to load audio", {
         duration: 3000,
         icon: '❌'

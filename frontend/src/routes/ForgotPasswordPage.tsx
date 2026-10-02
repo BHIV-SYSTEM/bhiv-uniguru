@@ -41,7 +41,7 @@ const ForgotPasswordPage: React.FC = () => {
     try {
       toast.loading("Sending reset email...", { id: "forgot-password" });
 
-      await axios.post("http://localhost:8000/api/v1/user/forgot-password", {
+      await axios.post("/api/v1/user/forgot-password", {
         email,
       });
 

@@ -154,9 +154,6 @@ class SignalValidator:
         if source_governance.get("suppression_reason"):
             return False, str(source_governance["suppression_reason"]), details
 
-<<<<<<< HEAD
-        # Rule 3: Tag match
-=======
         text_entities = [
             entity
             for entity in cls.entity_resolver.extract(query)
@@ -199,7 +196,6 @@ class SignalValidator:
                     return False, "no_topic_evidence_for_named_source", details
 
         # Rule 3: Tag match — at least 1 tag must overlap with query
->>>>>>> 4b55e262ce1a8873277e6ad512ac88daa4782075
         tag_score, matched_tags = cls.compute_tag_match(query_tokens, tags)
         details["tag_match_score"] = tag_score
         details["matched_tags"] = matched_tags
@@ -265,7 +261,14 @@ class SignalValidator:
         has_content_match = content_overlap > 0.1
         semantic_score = float(details["semantic_score"])
         entity_overlap_val = float(details["entity_overlap"])
-        has_semantic_match = semantic_score >= 0.6 and entity_overlap_val >= 0.5
+        domain_consistency_val = float(details["domain_consistency"])
+        # Semantic match gate requires domain_consistency > 0 to prevent off-topic
+        # queries (e.g. "FIFA World Cup") from matching via incidental word overlap.
+        has_semantic_match = (
+            semantic_score >= 0.6
+            and entity_overlap_val >= 0.5
+            and domain_consistency_val > 0.0
+        )
 
         if not has_tag_match and not has_content_match and not has_semantic_match:
             return False, "no_query_relevance:tags_and_content_both_miss", details
@@ -273,6 +276,12 @@ class SignalValidator:
         query_entities = details.get("query_entities") or []
         if details.get("missing_required_entities"):
             return False, "entity_conflict", details
+
+        # A shared word is not enough to ground a query that has no known
+        # canonical entity (for example, "world" in a FIFA query and a Maya
+        # passage). Require meaningful lexical coverage for these queries.
+        if not query_entities and max(tag_score, content_overlap) < 0.5:
+            return False, "insufficient_lexical_coverage", details
 
         if query_entities and float(details["entity_overlap"]) < MIN_ENTITY_OVERLAP_WHEN_ENTITY_QUERY:
             return False, "entity_conflict", details
@@ -381,10 +390,18 @@ class AnswerSynthesizer:
             for part in re.split(r"\s+(?:and|or)\s+", subject_text, flags=re.IGNORECASE)
         ]
         text = re.sub(r"\[\d+\]", "", str(content or ""))
+        # Keep a colon lead-in with its following line so the selected evidence
+        # is a complete sentence (for example, a phrase followed by its gloss).
+        text = re.sub(r":\s*\n+\s*", ": ", text)
         sentences = re.split(r"(?<=[.!?\u0964\u0965])\s+|\n+", text)
         relevant = []
         resolver = CanonicalEntityResolver()
         query_entities = resolver.extract(query)
+        query_subjects.extend(
+            str(entity.get("canonical") or "")
+            for entity in query_entities
+            if entity.get("canonical")
+        )
         entity_terms = {
             name.casefold(): SignalValidator.tokenize(name)
             for entity in query_entities
@@ -431,6 +448,16 @@ class AnswerSynthesizer:
                     re.search(
                         rf"^\s*(?:the\s+)?{re.escape(_normalize_latin(subject))}\b(?:\s*\([^)]*\))?(?:\s+things)?\s+(?:is|are|means|refers to|denotes|translates to|does not|do not)\b|\b(?:explains|describes)\s+{re.escape(_normalize_latin(subject))}\b\s+as\b",
                         normalized_sentence,
+                    )
+                    # A multiword concept can be supported by an exact topical
+                    # sentence even when the source describes it instead of
+                    # using a dictionary-style "X is ..." definition.
+                    or (
+                        len(SignalValidator.tokenize(subject)) > 1
+                        and re.search(
+                            rf"\b{re.escape(_normalize_latin(subject))}\b",
+                            normalized_sentence,
+                        )
                     )
                     for subject in query_subjects if subject
                 )
@@ -500,6 +527,13 @@ class AnswerSynthesizer:
                 query=query,
                 content=str(signal.get("content") or ""),
             ):
+                # Markdown lists sometimes contain complete evidence clauses
+                # without terminal punctuation. Add punctuation only; keep the
+                # selected source wording and order intact.
+                sentence = re.sub(r"\s+", " ", sentence).strip()
+                punctuation_check = sentence.rstrip("*_").rstrip()
+                if punctuation_check and punctuation_check[-1] not in ".!?।॥\u201d\"":
+                    sentence += "."
                 if not AnswerSynthesizer._is_duplicate_sentence(sentence, answer_sentences):
                     answer_sentences.append(sentence)
                     if signal not in used_signals:

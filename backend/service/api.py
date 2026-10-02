@@ -163,10 +163,8 @@ if _PRIMARY_API_TOKEN:
     _API_TOKENS.add(_PRIMARY_API_TOKEN)
 _AUTH_MODE = "strict" if _API_AUTH_REQUIRED else "disabled"
 if _API_AUTH_REQUIRED and not _API_TOKENS:
-    _API_AUTH_REQUIRED = False
-    _AUTH_MODE = "demo-no-auth"
-    logger.warning(
-        "UNIGURU_API_AUTH_REQUIRED=true but no tokens configured. Falling back to demo mode auth bypass."
+    raise RuntimeError(
+        "UNIGURU_API_AUTH_REQUIRED=true requires UNIGURU_API_TOKEN or UNIGURU_API_TOKENS."
     )
 _JWT_AUTH_REQUIRED = os.getenv("UNIGURU_JWT_AUTH_REQUIRED", "false").strip().lower() in {"1", "true", "yes", "on"}
 _JWT_PUBLIC_KEY_CONFIGURED = bool(
@@ -687,17 +685,74 @@ def _process_router_request(
     context_map["caller"] = caller_name
     context_map["query_type"] = query_type.value
     context_map["session_id"] = session_id
-    context_map["allow_web"] = bool(allow_web or query_type == QueryType.WEB_LOOKUP)
+    context_map["allow_web"] = bool(allow_web)
     context_map["source_language"] = adapted.source_language
 
-    response = conversation_router.route_query(query=normalized_query, context=context_map)
-    response = _ensure_non_empty_answer(
-        response,
+    result = _execute_kosha_pipeline(
         query=normalized_query,
-        session_id=session_id,
-        caller=caller_name,
+        domain_hint=None,
+        top_k=5,
+        trace_id=str(uuid.uuid4()),
+        user_id=caller_name,
     )
-    response = language_adapter.localize_response(response=response, source_language=adapted.source_language)
+    candidate_signals = result.get("matched_signals") or []
+    answer = str(result.get("answer") or "I do not have verified knowledge to answer this question.")
+    answer_claims = [
+        " ".join(claim.casefold().split())
+        for claim in re.split(r"(?<=[.!?])\s+|\n+", answer)
+        if len(claim.strip()) >= 20 and not claim.lstrip().casefold().startswith("sources:")
+    ]
+    matched_signals = [
+        signal
+        for signal in candidate_signals
+        if isinstance(signal, dict)
+        and any(
+            claim in " ".join(str(signal.get("content") or "").casefold().split())
+            for claim in answer_claims
+        )
+    ]
+    evidence_sources = [
+        {
+            "knowledge_id": signal.get("knowledge_id"),
+            "path": signal.get("source"),
+            "excerpt": signal.get("content"),
+            "confidence": signal.get("confidence"),
+        }
+        for signal in matched_signals
+        if isinstance(signal, dict) and str(signal.get("content") or "").strip()
+    ]
+    cited_sources = list(dict.fromkeys(
+        str(source.get("path") or "").strip()
+        for source in evidence_sources
+        if str(source.get("path") or "").strip()
+    ))
+    answer_with_sources = answer
+    if cited_sources:
+        answer_with_sources += "\n\nSources: " + "; ".join(cited_sources[:3])
+    verification_status = str(result.get("verification_status") or "NO_VERIFIED_KNOWLEDGE")
+    confidence_breakdown = result.get("confidence_breakdown") or {}
+    response = {
+        "answer": answer_with_sources,
+        "decision": "answer" if verification_status == "VERIFIED" else "block",
+        "verification_status": verification_status,
+        "session_id": session_id,
+        "confidence": result.get("confidence", 0.0),
+        "confidence_breakdown": confidence_breakdown,
+        "reasoning": result.get("reasoning"),
+        "reasoning_path": result.get("reasoning_path", []),
+        "domain_resolution": result.get("domain_resolution", {}),
+        "matched_signals": matched_signals,
+        "rejected_signals": result.get("rejected_signals", []),
+        "fallback_to_llm": False,
+        "routing": {"route": "DETERMINISTIC_KOSHA", "query_type": query_type.value},
+        "retrieval_trace": {
+            "engine": "DeterministicKoshaPipeline",
+            "method": "entity_domain_validated_keyword_retrieval",
+            "match_found": verification_status == "VERIFIED" and bool(matched_signals),
+            "confidence": float(confidence_breakdown.get("overall") or 0.0),
+            "evidence_sources": evidence_sources,
+        },
+    }
     latency_ms = (time.perf_counter() - started) * 1000
 
     decision = str(response.get("decision") or "unknown")
@@ -841,7 +896,7 @@ async def observability_and_throttle(request: Request, call_next):
     "/ask",
     tags=["Core Intelligence"],
     summary="Ask UniGuru a Question",
-    description="Submit a query to UniGuru's reasoning engine. Returns verified knowledge base answers or LLM fallback."
+    description="Submit a query to deterministic Kosha retrieval. Unsupported queries receive an explicit refusal."
 )
 def ask(request: AskRequest, raw_request: Request) -> Dict[str, Any]:
     if not _try_enter_ask_queue():
@@ -2521,8 +2576,8 @@ def _execute_kosha_pipeline(
 )
 def new_rag_endpoint(request: NewRagRequest, token: HTTPAuthorizationCredentials = Depends(security)) -> Dict[str, Any]:
     try:
-        allowed_key = os.getenv("EXTERNAL_API_SECRET_KEY", "uniguru_secret_123")
-        if token.credentials != allowed_key:
+        allowed_key = os.getenv("EXTERNAL_API_SECRET_KEY", "").strip()
+        if not allowed_key or token.credentials != allowed_key:
             raise HTTPException(status_code=401, detail="Unauthorized Access. Invalid API Key.")
 
         conversation_context = {
@@ -2553,6 +2608,24 @@ def new_rag_endpoint(request: NewRagRequest, token: HTTPAuthorizationCredentials
             top_k=5,
             allow_generated_verse=bool(request.allow_generated_verse),
         )
+        adapted = language_adapter.normalize_query(request.query)
+        kosha_result.setdefault("normalized_query", adapted.normalized_query)
+        # Keep the legacy /new_rag field name while deriving it only from the
+        # evidence actually used by deterministic synthesis.
+        selected_ids = set(kosha_result.get("evidence_signal_ids") or [])
+        legacy_signals = []
+        for signal in kosha_result.get("matched_signals") or []:
+            if signal.get("signal_id") not in selected_ids:
+                continue
+            compatible_signal = dict(signal)
+            source = str(compatible_signal.get("source") or "")
+            normalized_source = source.replace("\\", "/")
+            knowledge_marker = "/knowledge/"
+            marker_index = normalized_source.casefold().rfind(knowledge_marker)
+            if marker_index >= 0:
+                compatible_signal["source"] = normalized_source[marker_index + len(knowledge_marker):]
+            legacy_signals.append(compatible_signal)
+        kosha_result["signals"] = legacy_signals
         if kosha_result.get("verification_status") == "NO_VERIFIED_KNOWLEDGE":
             hybrid_response = service.ask(
                 user_query=request.query,
@@ -2666,8 +2739,8 @@ def log_to_bucket(event_id, query, signals_used, final_answer, confidence, syste
 )
 def new_query_endpoint(request: CoreRequest, token: HTTPAuthorizationCredentials = Depends(security)) -> Dict[str, Any]:
     try:
-        allowed_key = os.getenv("EXTERNAL_API_SECRET_KEY", "uniguru_secret_123")
-        if token.credentials != allowed_key:
+        allowed_key = os.getenv("EXTERNAL_API_SECRET_KEY", "").strip()
+        if not allowed_key or token.credentials != allowed_key:
             raise HTTPException(status_code=401, detail="Unauthorized Access.")
 
         final_payload = _execute_kosha_pipeline(

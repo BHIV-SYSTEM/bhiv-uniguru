@@ -121,13 +121,6 @@ const LayerRow: React.FC<{ layerKey: string; layer: KnowledgeLayer }> = ({ layer
     );
   }
   const firstClaim = layer.claims[0];
-  const preview =
-    typeof firstClaim?.value === "string"
-      ? firstClaim.value.slice(0, 120)
-      : typeof firstClaim?.value === "object"
-      ? JSON.stringify(firstClaim.value).slice(0, 120)
-      : "";
-
   return (
     <div className="rounded-lg border border-gray-700/40 overflow-hidden">
       <button

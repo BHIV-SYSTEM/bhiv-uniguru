@@ -375,6 +375,7 @@ def run_deterministic_pipeline(
         "semantic_memory": semantic_memory,
         "multi_hop_traversal": multi_hop_traversal,
         "matched_signals": matched_signals,
+        "evidence_signal_ids": synthesis.get("evidence_signal_ids", []),
         "rejected_signals": rejected,
         "reasoning_path": reasoning_path,
         "semantic_path": semantic_path,

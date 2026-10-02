@@ -58,7 +58,7 @@ const ResetPasswordPage: React.FC = () => {
       toast.loading("Resetting password...", { id: "reset-password" });
       
       // Replace with your actual API endpoint
-      await axios.post("http://localhost:8000/api/v1/user/reset-password", {
+      await axios.post("/api/v1/user/reset-password", {
         token,
         password,
       });

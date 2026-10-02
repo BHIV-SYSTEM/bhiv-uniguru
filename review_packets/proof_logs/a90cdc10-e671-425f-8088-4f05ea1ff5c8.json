@@ -1,0 +1,1394 @@
+{
+  "answer": "The Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa: UniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol. In Patanjali's Yoga Sutras (2.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_a034fb5f2e03"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 0.5,
+          "derived_confidence": 0.6276,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.9808,
+              "ontology_convergence": 0.6913,
+              "retrieval_strength": 0.5075,
+              "semantic_agreement": 0.625,
+              "source_authority": 0.8008
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6276,
+            "why": [
+              "epistemic_score=0.6276",
+              "ceiling_applied=0.7800",
+              "source_type=commentary"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3616,
+          "retrieval_confidence": 0.5075,
+          "semantic_score": 0.449,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.6276,
+      "rejected_count": 0
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "6af175a15f1af0f1b303d1a55a7e15b97e19e8c816cfebbb6b54280632c0c547",
+    "memory_event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "f0112666f943ee641ae0803a1c937290b2dc66af08c971ad7d590181303cb526",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Ahimsa",
+        "Dharma",
+        "Karma",
+        "Mahabharata",
+        "Moksha",
+        "Yoga"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T13:33:50.143540Z",
+      "user_id": "tantra-client"
+    },
+    "rejected_signals": [],
+    "retrieval_truth_hash": "b69d63e635e471bb668c1eb68d85c3e744f26900677d023ded8e34a7356e7206",
+    "semantic_path": [
+      {
+        "domain": "sanskrit queries",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_sanskrit_ahimsa",
+        "signal_id": "signal_a034fb5f2e03",
+        "source_lineage": {
+          "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "transformation_history": [
+            "commentarial_source",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T13:33:47.870945Z",
+    "trace_continuity": {
+      "bucket_proof": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+      "contract_emission": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+      "downstream_execution": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+      "immutable": true,
+      "retrieval": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+      "synthesis": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+      "validation": "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+    },
+    "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+    "verification_status": "VERIFIED"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:sanskrit queries:ac54d7e2d3f9",
+      "claim_id": "claim_1_18d45ae7",
+      "claim_text": "The Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa: UniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol",
+      "confidence": 0.507464,
+      "provenance_hash": "ac54d7e2d3f9b9c7176b1de6a077425c4f4bb5e16a388deae76287801cbb9e20",
+      "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+      "text_span": "# Ahimsa\n\n## Canonical Name\n\nAhimsa\n\n## Sanskrit\n\n\u0905\u0939\u093f\u0902\u0938\u093e\n\n## Transliteration\n\nAhimsa\n\n## Literal Meaning\n\nNon-violence; non-harm; non-injury. From Sanskrit a (not) + himsa (violence, harm, injury).\n\n## Ahimsa Paramo Dharma\n\nThe phrase **Ahimsa Paramo Dharma** (\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903) means:\n\n**\"Non-violence is the highest dharma.\"**\n\n- Ahimsa = non-violence\n- Paramo = highest, supreme\n- Dharma = duty, righteousness, cosmic order\n\nThis maxim appears in the Mahabharata (Anushasana Parva 115.1) and is one of the most cited ethical statements in Indian tradition. The full verse continues: \"Ahimsa paramo dharma, tatha ahimsa paramo tapah\" \u2014 Non-violence is the highest dharma; non-violence is the highest austerity.\n\n## Functional Meaning\n\nAhimsa is the principle of not causing harm to any living being \u2014 in thought, word, or action. It is the foundational ethical principle shared across Hindu, Jain, and Buddhist traditions. In Jainism, ahimsa is the first and supreme vow. In Yoga, ahimsa is the first of the five Yamas (ethical restraints) in Patanjali's Ashtanga Yoga. In the Mahabharata, ahimsa is declared the highest dharma.\n\n## Marathi Summary\n\n\u0905\u0939\u093f\u0902\u0938\u093e \u092e\u094d\u0939\u0923\u091c\u0947 \u0935\u093f\u091a\u093e\u0930, \u0936\u092c\u094d\u0926 \u0915\u093f\u0902\u0935\u093e \u0915\u0943\u0924\u0940\u0924\u0942\u0928 \u0915\u094b\u0923\u0924\u094d\u092f\u093e\u0939\u0940 \u0938\u091c\u0940\u0935\u093e\u0932\u093e \u0907\u091c\u093e \u0928 \u0915\u0930\u0923\u0947. \u091c\u0948\u0928 \u092a\u0930\u0902\u092a\u0930\u0947\u0924 \u0924\u0940 \u0938\u0930\u094d\u0935\u094b\u091a\u094d\u091a \u0935\u094d\u0930\u0924 \u092e\u093e\u0928\u0932\u0940 \u091c\u093e\u0924\u0947.\n\n## Jain Teaching on Ahimsa\n\nThe Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa:\n\n\"All beings desire to live. None wishes to die. Therefore, a wise person does not kill, nor causes others to kill, nor consents to killing.\"\n\nThe Five Great Vows (Mahavrata) for Jain monks place Ahimsa first:\n1. Ahimsa \u2014 Non-violence toward all living beings\n2. Satya \u2014 Absolute truthfulness\n3. Asteya \u2014 Non-stealing\n4. Brahmacharya \u2014 Celibacy\n5. Aparigraha \u2014 Complete non-possessiveness\n\nUniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol. 22, Jacobi translation\n\n## Yoga Teaching on Ahimsa\n\nIn Patanjali's Yoga Sutras (2.30), Ahimsa is the first of the five Yamas:\n\"Ahimsa-satya-asteya-brahmacharya-aparigraha yamah\" \u2014 Non-violence, truthfulness, non-stealing, celibacy, and non-possessiveness are the five restraints.\n\nPatanjali states (Yoga Sutras 2.35): \"Ahimsa-pratishthayam tat-sannidhau vaira-tyagah\" \u2014 When one is established in non-violence, all enmity is abandoned in one's presence.\n\n## Dharma Connection\n\nThe Mahabharata (Anushasana Parva) states: \"Ahimsa paramo dharma\" \u2014 Non-violence is the highest dharma. The Caraka Samhita (Ayurvedic text) states that the physician's svadharma includes ahimsa (non-harm) as the first ethical principle. Dharma.md cross-references Ahimsa as a related concept.\n\n## Cosmology and Ethics\n\nAhimsa operates at multiple levels:\n- Physical: not harming the body of any being\n- Verbal: not speaking words that harm\n- Mental: not harboring harmful thoughts\n\nIn Jain cosmology, every act of violence (himsa) generates karma that binds the soul. Ahimsa is therefore both an ethical principle and a metaphysical necessity for liberation (moksha).\n\n## Related Concepts\n\n- Dharma (Ahimsa paramo dharma \u2014 non-violence is the highest dharma)\n- Karma (violence generates binding karma)\n- Moksha (ahimsa is necessary for liberation)\n- Satya (truth \u2014 the second great vow, companion to ahimsa)\n- Yoga (ahimsa is the first Yama in Patanjali's system)\n\n## Related Shastras\n\n- Mahabharata, Anushasana Parva (primary source for \"Ahimsa paramo dharma\")\n- Acharanga Sutra (Jain canonical source \u2014 oldest text on ahimsa)\n- Yoga Sutras of Patanjali (2.30 \u2014 ahimsa as first Yama)\n- Caraka Samhita (Ayurvedic ethics \u2014 ahimsa as physician's duty)\n- Tattvartha Sutra (Jain systematic philosophy of ahimsa)\n\n## Canonical Sources\n\n- Mahabharata, Anushasana Parva 115.1: \"Ahimsa paramo dharma\"\n- Acharanga Sutra, Book 1, Lecture 7 (Jain canonical teaching)\n- Yoga Sutras of Patanjali 2.30 (ahimsa as first Yama)\n- Caraka Samhita Sutrasthana 1.15 (physician's dharma includes ahimsa)\n\nUniGuru Citation: Mahabharata Anushasana Parva; Acharanga Sutra; Yoga Sutras of Patanjali",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "canonical_object_id": "uko:sanskrit queries:ac54d7e2d3f9",
+      "claim_id": "claim_2_f3665f36",
+      "claim_text": "In Patanjali's Yoga Sutras (2.",
+      "confidence": 0.507464,
+      "provenance_hash": "ac54d7e2d3f9b9c7176b1de6a077425c4f4bb5e16a388deae76287801cbb9e20",
+      "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+      "text_span": "# Ahimsa\n\n## Canonical Name\n\nAhimsa\n\n## Sanskrit\n\n\u0905\u0939\u093f\u0902\u0938\u093e\n\n## Transliteration\n\nAhimsa\n\n## Literal Meaning\n\nNon-violence; non-harm; non-injury. From Sanskrit a (not) + himsa (violence, harm, injury).\n\n## Ahimsa Paramo Dharma\n\nThe phrase **Ahimsa Paramo Dharma** (\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903) means:\n\n**\"Non-violence is the highest dharma.\"**\n\n- Ahimsa = non-violence\n- Paramo = highest, supreme\n- Dharma = duty, righteousness, cosmic order\n\nThis maxim appears in the Mahabharata (Anushasana Parva 115.1) and is one of the most cited ethical statements in Indian tradition. The full verse continues: \"Ahimsa paramo dharma, tatha ahimsa paramo tapah\" \u2014 Non-violence is the highest dharma; non-violence is the highest austerity.\n\n## Functional Meaning\n\nAhimsa is the principle of not causing harm to any living being \u2014 in thought, word, or action. It is the foundational ethical principle shared across Hindu, Jain, and Buddhist traditions. In Jainism, ahimsa is the first and supreme vow. In Yoga, ahimsa is the first of the five Yamas (ethical restraints) in Patanjali's Ashtanga Yoga. In the Mahabharata, ahimsa is declared the highest dharma.\n\n## Marathi Summary\n\n\u0905\u0939\u093f\u0902\u0938\u093e \u092e\u094d\u0939\u0923\u091c\u0947 \u0935\u093f\u091a\u093e\u0930, \u0936\u092c\u094d\u0926 \u0915\u093f\u0902\u0935\u093e \u0915\u0943\u0924\u0940\u0924\u0942\u0928 \u0915\u094b\u0923\u0924\u094d\u092f\u093e\u0939\u0940 \u0938\u091c\u0940\u0935\u093e\u0932\u093e \u0907\u091c\u093e \u0928 \u0915\u0930\u0923\u0947. \u091c\u0948\u0928 \u092a\u0930\u0902\u092a\u0930\u0947\u0924 \u0924\u0940 \u0938\u0930\u094d\u0935\u094b\u091a\u094d\u091a \u0935\u094d\u0930\u0924 \u092e\u093e\u0928\u0932\u0940 \u091c\u093e\u0924\u0947.\n\n## Jain Teaching on Ahimsa\n\nThe Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa:\n\n\"All beings desire to live. None wishes to die. Therefore, a wise person does not kill, nor causes others to kill, nor consents to killing.\"\n\nThe Five Great Vows (Mahavrata) for Jain monks place Ahimsa first:\n1. Ahimsa \u2014 Non-violence toward all living beings\n2. Satya \u2014 Absolute truthfulness\n3. Asteya \u2014 Non-stealing\n4. Brahmacharya \u2014 Celibacy\n5. Aparigraha \u2014 Complete non-possessiveness\n\nUniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol. 22, Jacobi translation\n\n## Yoga Teaching on Ahimsa\n\nIn Patanjali's Yoga Sutras (2.30), Ahimsa is the first of the five Yamas:\n\"Ahimsa-satya-asteya-brahmacharya-aparigraha yamah\" \u2014 Non-violence, truthfulness, non-stealing, celibacy, and non-possessiveness are the five restraints.\n\nPatanjali states (Yoga Sutras 2.35): \"Ahimsa-pratishthayam tat-sannidhau vaira-tyagah\" \u2014 When one is established in non-violence, all enmity is abandoned in one's presence.\n\n## Dharma Connection\n\nThe Mahabharata (Anushasana Parva) states: \"Ahimsa paramo dharma\" \u2014 Non-violence is the highest dharma. The Caraka Samhita (Ayurvedic text) states that the physician's svadharma includes ahimsa (non-harm) as the first ethical principle. Dharma.md cross-references Ahimsa as a related concept.\n\n## Cosmology and Ethics\n\nAhimsa operates at multiple levels:\n- Physical: not harming the body of any being\n- Verbal: not speaking words that harm\n- Mental: not harboring harmful thoughts\n\nIn Jain cosmology, every act of violence (himsa) generates karma that binds the soul. Ahimsa is therefore both an ethical principle and a metaphysical necessity for liberation (moksha).\n\n## Related Concepts\n\n- Dharma (Ahimsa paramo dharma \u2014 non-violence is the highest dharma)\n- Karma (violence generates binding karma)\n- Moksha (ahimsa is necessary for liberation)\n- Satya (truth \u2014 the second great vow, companion to ahimsa)\n- Yoga (ahimsa is the first Yama in Patanjali's system)\n\n## Related Shastras\n\n- Mahabharata, Anushasana Parva (primary source for \"Ahimsa paramo dharma\")\n- Acharanga Sutra (Jain canonical source \u2014 oldest text on ahimsa)\n- Yoga Sutras of Patanjali (2.30 \u2014 ahimsa as first Yama)\n- Caraka Samhita (Ayurvedic ethics \u2014 ahimsa as physician's duty)\n- Tattvartha Sutra (Jain systematic philosophy of ahimsa)\n\n## Canonical Sources\n\n- Mahabharata, Anushasana Parva 115.1: \"Ahimsa paramo dharma\"\n- Acharanga Sutra, Book 1, Lecture 7 (Jain canonical teaching)\n- Yoga Sutras of Patanjali 2.30 (ahimsa as first Yama)\n- Caraka Samhita Sutrasthana 1.15 (physician's dharma includes ahimsa)\n\nUniGuru Citation: Mahabharata Anushasana Parva; Acharanga Sutra; Yoga Sutras of Patanjali",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "confidence": 0.6276,
+  "confidence_breakdown": {
+    "accepted_count": 1,
+    "accepted_derivations": [
+      {
+        "content_overlap": 0.5,
+        "derived_confidence": 0.6276,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.78,
+          "dimensions": {
+            "contextual_consistency": 0.5,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 0.9808,
+            "ontology_convergence": 0.6913,
+            "retrieval_strength": 0.5075,
+            "semantic_agreement": 0.625,
+            "source_authority": 0.8008
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.6276,
+          "why": [
+            "epistemic_score=0.6276",
+            "ceiling_applied=0.7800",
+            "source_type=commentary"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.3616,
+        "retrieval_confidence": 0.5075,
+        "semantic_score": 0.449,
+        "tag_match_score": 0.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+      "claim_group_count": 1,
+      "consensus_score": 0.5,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+      "multi_source_reinforcement": 0.0,
+      "source_count": 1
+    },
+    "overall": 0.6276,
+    "rejected_count": 0
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+    "claim_group_count": 1,
+    "consensus_score": 0.5,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+    "multi_source_reinforcement": 0.0,
+    "source_count": 1
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 74,
+    "valid_entries": 55
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T13:33:47.870945Z",
+  "interpretation_payload": {
+    "answer": "The Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa: UniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol. In Patanjali's Yoga Sutras (2.",
+    "artifact_hash": "6af175a15f1af0f1b303d1a55a7e15b97e19e8c816cfebbb6b54280632c0c547",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.6276,
+    "confidence_breakdown": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 0.5,
+          "derived_confidence": 0.6276,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.9808,
+              "ontology_convergence": 0.6913,
+              "retrieval_strength": 0.5075,
+              "semantic_agreement": 0.625,
+              "source_authority": 0.8008
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6276,
+            "why": [
+              "epistemic_score=0.6276",
+              "ceiling_applied=0.7800",
+              "source_type=commentary"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3616,
+          "retrieval_confidence": 0.5075,
+          "semantic_score": 0.449,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.6276,
+      "rejected_count": 0
+    },
+    "contradiction_state": {
+      "classification": "interpretive_or_weak_evidence_zone",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_a034fb5f2e03"
+      ],
+      "retrieval_trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+      "retrieval_truth_hash": "b69d63e635e471bb668c1eb68d85c3e744f26900677d023ded8e34a7356e7206"
+    },
+    "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_sanskrit_ahimsa"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 0.5,
+          "derived_confidence": 0.6276,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.9808,
+              "ontology_convergence": 0.6913,
+              "retrieval_strength": 0.5075,
+              "semantic_agreement": 0.625,
+              "source_authority": 0.8008
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6276,
+            "why": [
+              "epistemic_score=0.6276",
+              "ceiling_applied=0.7800",
+              "source_type=commentary"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3616,
+          "retrieval_confidence": 0.5075,
+          "semantic_score": 0.449,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 62.5,
+          "content": 50.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_a034fb5f2e03",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Ahimsa",
+              "concepts": [
+                "ethics",
+                "restraint"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "non violence"
+            },
+            {
+              "canonical": "Dharma",
+              "concepts": [
+                "ethics",
+                "order",
+                "responsibility"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "righteousness"
+            },
+            {
+              "canonical": "Karma",
+              "concepts": [
+                "cause",
+                "effect",
+                "duty"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "action"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            },
+            {
+              "canonical": "Moksha",
+              "concepts": [
+                "freedom",
+                "realization"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "liberation"
+            },
+            {
+              "canonical": "Yoga",
+              "concepts": [
+                "discipline",
+                "meditation"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "yoga"
+            }
+          ],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.6276,
+      "content": "# Ahimsa\n\n## Canonical Name\n\nAhimsa\n\n## Sanskrit\n\n\u0905\u0939\u093f\u0902\u0938\u093e\n\n## Transliteration\n\nAhimsa\n\n## Literal Meaning\n\nNon-violence; non-harm; non-injury. From Sanskrit a (not) + himsa (violence, harm, injury).\n\n## Ahimsa Paramo Dharma\n\nThe phrase **Ahimsa Paramo Dharma** (\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903) means:\n\n**\"Non-violence is the highest dharma.\"**\n\n- Ahimsa = non-violence\n- Paramo = highest, supreme\n- Dharma = duty, righteousness, cosmic order\n\nThis maxim appears in the Mahabharata (Anushasana Parva 115.1) and is one of the most cited ethical statements in Indian tradition. The full verse continues: \"Ahimsa paramo dharma, tatha ahimsa paramo tapah\" \u2014 Non-violence is the highest dharma; non-violence is the highest austerity.\n\n## Functional Meaning\n\nAhimsa is the principle of not causing harm to any living being \u2014 in thought, word, or action. It is the foundational ethical principle shared across Hindu, Jain, and Buddhist traditions. In Jainism, ahimsa is the first and supreme vow. In Yoga, ahimsa is the first of the five Yamas (ethical restraints) in Patanjali's Ashtanga Yoga. In the Mahabharata, ahimsa is declared the highest dharma.\n\n## Marathi Summary\n\n\u0905\u0939\u093f\u0902\u0938\u093e \u092e\u094d\u0939\u0923\u091c\u0947 \u0935\u093f\u091a\u093e\u0930, \u0936\u092c\u094d\u0926 \u0915\u093f\u0902\u0935\u093e \u0915\u0943\u0924\u0940\u0924\u0942\u0928 \u0915\u094b\u0923\u0924\u094d\u092f\u093e\u0939\u0940 \u0938\u091c\u0940\u0935\u093e\u0932\u093e \u0907\u091c\u093e \u0928 \u0915\u0930\u0923\u0947. \u091c\u0948\u0928 \u092a\u0930\u0902\u092a\u0930\u0947\u0924 \u0924\u0940 \u0938\u0930\u094d\u0935\u094b\u091a\u094d\u091a \u0935\u094d\u0930\u0924 \u092e\u093e\u0928\u0932\u0940 \u091c\u093e\u0924\u0947.\n\n## Jain Teaching on Ahimsa\n\nThe Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa:\n\n\"All beings desire to live. None wishes to die. Therefore, a wise person does not kill, nor causes others to kill, nor consents to killing.\"\n\nThe Five Great Vows (Mahavrata) for Jain monks place Ahimsa first:\n1. Ahimsa \u2014 Non-violence toward all living beings\n2. Satya \u2014 Absolute truthfulness\n3. Asteya \u2014 Non-stealing\n4. Brahmacharya \u2014 Celibacy\n5. Aparigraha \u2014 Complete non-possessiveness\n\nUniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol. 22, Jacobi translation\n\n## Yoga Teaching on Ahimsa\n\nIn Patanjali's Yoga Sutras (2.30), Ahimsa is the first of the five Yamas:\n\"Ahimsa-satya-asteya-brahmacharya-aparigraha yamah\" \u2014 Non-violence, truthfulness, non-stealing, celibacy, and non-possessiveness are the five restraints.\n\nPatanjali states (Yoga Sutras 2.35): \"Ahimsa-pratishthayam tat-sannidhau vaira-tyagah\" \u2014 When one is established in non-violence, all enmity is abandoned in one's presence.\n\n## Dharma Connection\n\nThe Mahabharata (Anushasana Parva) states: \"Ahimsa paramo dharma\" \u2014 Non-violence is the highest dharma. The Caraka Samhita (Ayurvedic text) states that the physician's svadharma includes ahimsa (non-harm) as the first ethical principle. Dharma.md cross-references Ahimsa as a related concept.\n\n## Cosmology and Ethics\n\nAhimsa operates at multiple levels:\n- Physical: not harming the body of any being\n- Verbal: not speaking words that harm\n- Mental: not harboring harmful thoughts\n\nIn Jain cosmology, every act of violence (himsa) generates karma that binds the soul. Ahimsa is therefore both an ethical principle and a metaphysical necessity for liberation (moksha).\n\n## Related Concepts\n\n- Dharma (Ahimsa paramo dharma \u2014 non-violence is the highest dharma)\n- Karma (violence generates binding karma)\n- Moksha (ahimsa is necessary for liberation)\n- Satya (truth \u2014 the second great vow, companion to ahimsa)\n- Yoga (ahimsa is the first Yama in Patanjali's system)\n\n## Related Shastras\n\n- Mahabharata, Anushasana Parva (primary source for \"Ahimsa paramo dharma\")\n- Acharanga Sutra (Jain canonical source \u2014 oldest text on ahimsa)\n- Yoga Sutras of Patanjali (2.30 \u2014 ahimsa as first Yama)\n- Caraka Samhita (Ayurvedic ethics \u2014 ahimsa as physician's duty)\n- Tattvartha Sutra (Jain systematic philosophy of ahimsa)\n\n## Canonical Sources\n\n- Mahabharata, Anushasana Parva 115.1: \"Ahimsa paramo dharma\"\n- Acharanga Sutra, Book 1, Lecture 7 (Jain canonical teaching)\n- Yoga Sutras of Patanjali 2.30 (ahimsa as first Yama)\n- Caraka Samhita Sutrasthana 1.15 (physician's dharma includes ahimsa)\n\nUniGuru Citation: Mahabharata Anushasana Parva; Acharanga Sutra; Yoga Sutras of Patanjali",
+      "domain": "sanskrit queries",
+      "knowledge_id": "KOSHA_sanskrit_ahimsa",
+      "signal_id": "signal_a034fb5f2e03",
+      "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+      "source_governance": {
+        "authority_weight": 0.8008,
+        "confidence_ceiling": 0.8608,
+        "lineage": {
+          "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "transformation_history": [
+            "commentarial_source",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0192,
+        "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+        "source_type": "commentary",
+        "suppression_reason": null
+      },
+      "tags": [
+        "ahimsa",
+        "ahimsa"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "evidence_priority": {
+          "contextual_proximity": 0.3025,
+          "direct_definition": 0.0,
+          "exact_entity_match": 0.0,
+          "exact_topic_match": 0.0,
+          "query_coverage": 0.0,
+          "source_authority": 0.7755
+        },
+        "knowledge_id": "KOSHA_sanskrit_ahimsa",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "transformation_history": [
+            "commentarial_source",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+  },
+  "query": "What type of text is the Kama Sutra?",
+  "reasoning": "Answer uses 1 accepted evidence record(s): KOSHA_sanskrit_ahimsa (Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md). Sentences are extracted from retrieved content.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [],
+  "retrieval_run_record": {
+    "candidate_count": 1,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:sanskrit queries:ac54d7e2d3f9",
+        "claim_id": "claim_1_18d45ae7",
+        "claim_text": "The Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa: UniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol",
+        "confidence": 0.507464,
+        "provenance_hash": "ac54d7e2d3f9b9c7176b1de6a077425c4f4bb5e16a388deae76287801cbb9e20",
+        "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+        "text_span": "# Ahimsa\n\n## Canonical Name\n\nAhimsa\n\n## Sanskrit\n\n\u0905\u0939\u093f\u0902\u0938\u093e\n\n## Transliteration\n\nAhimsa\n\n## Literal Meaning\n\nNon-violence; non-harm; non-injury. From Sanskrit a (not) + himsa (violence, harm, injury).\n\n## Ahimsa Paramo Dharma\n\nThe phrase **Ahimsa Paramo Dharma** (\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903) means:\n\n**\"Non-violence is the highest dharma.\"**\n\n- Ahimsa = non-violence\n- Paramo = highest, supreme\n- Dharma = duty, righteousness, cosmic order\n\nThis maxim appears in the Mahabharata (Anushasana Parva 115.1) and is one of the most cited ethical statements in Indian tradition. The full verse continues: \"Ahimsa paramo dharma, tatha ahimsa paramo tapah\" \u2014 Non-violence is the highest dharma; non-violence is the highest austerity.\n\n## Functional Meaning\n\nAhimsa is the principle of not causing harm to any living being \u2014 in thought, word, or action. It is the foundational ethical principle shared across Hindu, Jain, and Buddhist traditions. In Jainism, ahimsa is the first and supreme vow. In Yoga, ahimsa is the first of the five Yamas (ethical restraints) in Patanjali's Ashtanga Yoga. In the Mahabharata, ahimsa is declared the highest dharma.\n\n## Marathi Summary\n\n\u0905\u0939\u093f\u0902\u0938\u093e \u092e\u094d\u0939\u0923\u091c\u0947 \u0935\u093f\u091a\u093e\u0930, \u0936\u092c\u094d\u0926 \u0915\u093f\u0902\u0935\u093e \u0915\u0943\u0924\u0940\u0924\u0942\u0928 \u0915\u094b\u0923\u0924\u094d\u092f\u093e\u0939\u0940 \u0938\u091c\u0940\u0935\u093e\u0932\u093e \u0907\u091c\u093e \u0928 \u0915\u0930\u0923\u0947. \u091c\u0948\u0928 \u092a\u0930\u0902\u092a\u0930\u0947\u0924 \u0924\u0940 \u0938\u0930\u094d\u0935\u094b\u091a\u094d\u091a \u0935\u094d\u0930\u0924 \u092e\u093e\u0928\u0932\u0940 \u091c\u093e\u0924\u0947.\n\n## Jain Teaching on Ahimsa\n\nThe Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa:\n\n\"All beings desire to live. None wishes to die. Therefore, a wise person does not kill, nor causes others to kill, nor consents to killing.\"\n\nThe Five Great Vows (Mahavrata) for Jain monks place Ahimsa first:\n1. Ahimsa \u2014 Non-violence toward all living beings\n2. Satya \u2014 Absolute truthfulness\n3. Asteya \u2014 Non-stealing\n4. Brahmacharya \u2014 Celibacy\n5. Aparigraha \u2014 Complete non-possessiveness\n\nUniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol. 22, Jacobi translation\n\n## Yoga Teaching on Ahimsa\n\nIn Patanjali's Yoga Sutras (2.30), Ahimsa is the first of the five Yamas:\n\"Ahimsa-satya-asteya-brahmacharya-aparigraha yamah\" \u2014 Non-violence, truthfulness, non-stealing, celibacy, and non-possessiveness are the five restraints.\n\nPatanjali states (Yoga Sutras 2.35): \"Ahimsa-pratishthayam tat-sannidhau vaira-tyagah\" \u2014 When one is established in non-violence, all enmity is abandoned in one's presence.\n\n## Dharma Connection\n\nThe Mahabharata (Anushasana Parva) states: \"Ahimsa paramo dharma\" \u2014 Non-violence is the highest dharma. The Caraka Samhita (Ayurvedic text) states that the physician's svadharma includes ahimsa (non-harm) as the first ethical principle. Dharma.md cross-references Ahimsa as a related concept.\n\n## Cosmology and Ethics\n\nAhimsa operates at multiple levels:\n- Physical: not harming the body of any being\n- Verbal: not speaking words that harm\n- Mental: not harboring harmful thoughts\n\nIn Jain cosmology, every act of violence (himsa) generates karma that binds the soul. Ahimsa is therefore both an ethical principle and a metaphysical necessity for liberation (moksha).\n\n## Related Concepts\n\n- Dharma (Ahimsa paramo dharma \u2014 non-violence is the highest dharma)\n- Karma (violence generates binding karma)\n- Moksha (ahimsa is necessary for liberation)\n- Satya (truth \u2014 the second great vow, companion to ahimsa)\n- Yoga (ahimsa is the first Yama in Patanjali's system)\n\n## Related Shastras\n\n- Mahabharata, Anushasana Parva (primary source for \"Ahimsa paramo dharma\")\n- Acharanga Sutra (Jain canonical source \u2014 oldest text on ahimsa)\n- Yoga Sutras of Patanjali (2.30 \u2014 ahimsa as first Yama)\n- Caraka Samhita (Ayurvedic ethics \u2014 ahimsa as physician's duty)\n- Tattvartha Sutra (Jain systematic philosophy of ahimsa)\n\n## Canonical Sources\n\n- Mahabharata, Anushasana Parva 115.1: \"Ahimsa paramo dharma\"\n- Acharanga Sutra, Book 1, Lecture 7 (Jain canonical teaching)\n- Yoga Sutras of Patanjali 2.30 (ahimsa as first Yama)\n- Caraka Samhita Sutrasthana 1.15 (physician's dharma includes ahimsa)\n\nUniGuru Citation: Mahabharata Anushasana Parva; Acharanga Sutra; Yoga Sutras of Patanjali",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "canonical_object_id": "uko:sanskrit queries:ac54d7e2d3f9",
+        "claim_id": "claim_2_f3665f36",
+        "claim_text": "In Patanjali's Yoga Sutras (2.",
+        "confidence": 0.507464,
+        "provenance_hash": "ac54d7e2d3f9b9c7176b1de6a077425c4f4bb5e16a388deae76287801cbb9e20",
+        "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+        "text_span": "# Ahimsa\n\n## Canonical Name\n\nAhimsa\n\n## Sanskrit\n\n\u0905\u0939\u093f\u0902\u0938\u093e\n\n## Transliteration\n\nAhimsa\n\n## Literal Meaning\n\nNon-violence; non-harm; non-injury. From Sanskrit a (not) + himsa (violence, harm, injury).\n\n## Ahimsa Paramo Dharma\n\nThe phrase **Ahimsa Paramo Dharma** (\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903) means:\n\n**\"Non-violence is the highest dharma.\"**\n\n- Ahimsa = non-violence\n- Paramo = highest, supreme\n- Dharma = duty, righteousness, cosmic order\n\nThis maxim appears in the Mahabharata (Anushasana Parva 115.1) and is one of the most cited ethical statements in Indian tradition. The full verse continues: \"Ahimsa paramo dharma, tatha ahimsa paramo tapah\" \u2014 Non-violence is the highest dharma; non-violence is the highest austerity.\n\n## Functional Meaning\n\nAhimsa is the principle of not causing harm to any living being \u2014 in thought, word, or action. It is the foundational ethical principle shared across Hindu, Jain, and Buddhist traditions. In Jainism, ahimsa is the first and supreme vow. In Yoga, ahimsa is the first of the five Yamas (ethical restraints) in Patanjali's Ashtanga Yoga. In the Mahabharata, ahimsa is declared the highest dharma.\n\n## Marathi Summary\n\n\u0905\u0939\u093f\u0902\u0938\u093e \u092e\u094d\u0939\u0923\u091c\u0947 \u0935\u093f\u091a\u093e\u0930, \u0936\u092c\u094d\u0926 \u0915\u093f\u0902\u0935\u093e \u0915\u0943\u0924\u0940\u0924\u0942\u0928 \u0915\u094b\u0923\u0924\u094d\u092f\u093e\u0939\u0940 \u0938\u091c\u0940\u0935\u093e\u0932\u093e \u0907\u091c\u093e \u0928 \u0915\u0930\u0923\u0947. \u091c\u0948\u0928 \u092a\u0930\u0902\u092a\u0930\u0947\u0924 \u0924\u0940 \u0938\u0930\u094d\u0935\u094b\u091a\u094d\u091a \u0935\u094d\u0930\u0924 \u092e\u093e\u0928\u0932\u0940 \u091c\u093e\u0924\u0947.\n\n## Jain Teaching on Ahimsa\n\nThe Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa:\n\n\"All beings desire to live. None wishes to die. Therefore, a wise person does not kill, nor causes others to kill, nor consents to killing.\"\n\nThe Five Great Vows (Mahavrata) for Jain monks place Ahimsa first:\n1. Ahimsa \u2014 Non-violence toward all living beings\n2. Satya \u2014 Absolute truthfulness\n3. Asteya \u2014 Non-stealing\n4. Brahmacharya \u2014 Celibacy\n5. Aparigraha \u2014 Complete non-possessiveness\n\nUniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol. 22, Jacobi translation\n\n## Yoga Teaching on Ahimsa\n\nIn Patanjali's Yoga Sutras (2.30), Ahimsa is the first of the five Yamas:\n\"Ahimsa-satya-asteya-brahmacharya-aparigraha yamah\" \u2014 Non-violence, truthfulness, non-stealing, celibacy, and non-possessiveness are the five restraints.\n\nPatanjali states (Yoga Sutras 2.35): \"Ahimsa-pratishthayam tat-sannidhau vaira-tyagah\" \u2014 When one is established in non-violence, all enmity is abandoned in one's presence.\n\n## Dharma Connection\n\nThe Mahabharata (Anushasana Parva) states: \"Ahimsa paramo dharma\" \u2014 Non-violence is the highest dharma. The Caraka Samhita (Ayurvedic text) states that the physician's svadharma includes ahimsa (non-harm) as the first ethical principle. Dharma.md cross-references Ahimsa as a related concept.\n\n## Cosmology and Ethics\n\nAhimsa operates at multiple levels:\n- Physical: not harming the body of any being\n- Verbal: not speaking words that harm\n- Mental: not harboring harmful thoughts\n\nIn Jain cosmology, every act of violence (himsa) generates karma that binds the soul. Ahimsa is therefore both an ethical principle and a metaphysical necessity for liberation (moksha).\n\n## Related Concepts\n\n- Dharma (Ahimsa paramo dharma \u2014 non-violence is the highest dharma)\n- Karma (violence generates binding karma)\n- Moksha (ahimsa is necessary for liberation)\n- Satya (truth \u2014 the second great vow, companion to ahimsa)\n- Yoga (ahimsa is the first Yama in Patanjali's system)\n\n## Related Shastras\n\n- Mahabharata, Anushasana Parva (primary source for \"Ahimsa paramo dharma\")\n- Acharanga Sutra (Jain canonical source \u2014 oldest text on ahimsa)\n- Yoga Sutras of Patanjali (2.30 \u2014 ahimsa as first Yama)\n- Caraka Samhita (Ayurvedic ethics \u2014 ahimsa as physician's duty)\n- Tattvartha Sutra (Jain systematic philosophy of ahimsa)\n\n## Canonical Sources\n\n- Mahabharata, Anushasana Parva 115.1: \"Ahimsa paramo dharma\"\n- Acharanga Sutra, Book 1, Lecture 7 (Jain canonical teaching)\n- Yoga Sutras of Patanjali 2.30 (ahimsa as first Yama)\n- Caraka Samhita Sutrasthana 1.15 (physician's dharma includes ahimsa)\n\nUniGuru Citation: Mahabharata Anushasana Parva; Acharanga Sutra; Yoga Sutras of Patanjali",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "deduplicated_candidate_count": 1,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_9778ee39628d",
+    "replay_id": "replay_b1fb1977cb298ba8",
+    "replay_safe": true,
+    "retrieval_run_id": "run_feca70bed381",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:sanskrit queries:ac54d7e2d3f9",
+        "dedup_status": "unique",
+        "domain": "sanskrit queries",
+        "provenance_hash": "ac54d7e2d3f9b9c7176b1de6a077425c4f4bb5e16a388deae76287801cbb9e20",
+        "ranking_score": 0.507464,
+        "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+        "text_span": "# Ahimsa\n\n## Canonical Name\n\nAhimsa\n\n## Sanskrit\n\n\u0905\u0939\u093f\u0902\u0938\u093e\n\n## Transliteration\n\nAhimsa\n\n## Literal Meaning\n\nNon-violence; non-harm; non-injury. From Sanskrit a (not) + himsa (violence, harm, injury).\n\n## Ahimsa Paramo Dharma\n\nThe phrase **Ahimsa Paramo Dharma** (\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903) means:\n\n**\"Non-violence is the highest dharma.\"**\n\n- Ahimsa = non-violence\n- Paramo = highest, supreme\n- Dharma = duty, righteousness, cosmic order\n\nThis maxim appears in the Mahabharata (Anushasana Parva 115.1) and is one of the most cited ethical statements in Indian tradition. The full verse continues: \"Ahimsa paramo dharma, tatha ahimsa paramo tapah\" \u2014 Non-violence is the highest dharma; non-violence is the highest austerity.\n\n## Functional Meaning\n\nAhimsa is the principle of not causing harm to any living being \u2014 in thought, word, or action. It is the foundational ethical principle shared across Hindu, Jain, and Buddhist traditions. In Jainism, ahimsa is the first and supreme vow. In Yoga, ahimsa is the first of the five Yamas (ethical restraints) in Patanjali's Ashtanga Yoga. In the Mahabharata, ahimsa is declared the highest dharma.\n\n## Marathi Summary\n\n\u0905\u0939\u093f\u0902\u0938\u093e \u092e\u094d\u0939\u0923\u091c\u0947 \u0935\u093f\u091a\u093e\u0930, \u0936\u092c\u094d\u0926 \u0915\u093f\u0902\u0935\u093e \u0915\u0943\u0924\u0940\u0924\u0942\u0928 \u0915\u094b\u0923\u0924\u094d\u092f\u093e\u0939\u0940 \u0938\u091c\u0940\u0935\u093e\u0932\u093e \u0907\u091c\u093e \u0928 \u0915\u0930\u0923\u0947. \u091c\u0948\u0928 \u092a\u0930\u0902\u092a\u0930\u0947\u0924 \u0924\u0940 \u0938\u0930\u094d\u0935\u094b\u091a\u094d\u091a \u0935\u094d\u0930\u0924 \u092e\u093e\u0928\u0932\u0940 \u091c\u093e\u0924\u0947.\n\n## Jain Teaching on Ahimsa\n\nThe Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa:\n\n\"All beings desire to live. None wishes to die. Therefore, a wise person does not kill, nor causes others to kill, nor consents to killing.\"\n\nThe Five Great Vows (Mahavrata) for Jain monks place Ahimsa first:\n1. Ahimsa \u2014 Non-violence toward all living beings\n2. Satya \u2014 Absolute truthfulness\n3. Asteya \u2014 Non-stealing\n4. Brahmacharya \u2014 Celibacy\n5. Aparigraha \u2014 Complete non-possessiveness\n\nUniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol. 22, Jacobi translation\n\n## Yoga Teaching on Ahimsa\n\nIn Patanjali's Yoga Sutras (2.30), Ahimsa is the first of the five Yamas:\n\"Ahimsa-satya-asteya-brahmacharya-aparigraha yamah\" \u2014 Non-violence, truthfulness, non-stealing, celibacy, and non-possessiveness are the five restraints.\n\nPatanjali states (Yoga Sutras 2.35): \"Ahimsa-pratishthayam tat-sannidhau vaira-tyagah\" \u2014 When one is established in non-violence, all enmity is abandoned in one's presence.\n\n## Dharma Connection\n\nThe Mahabharata (Anushasana Parva) states: \"Ahimsa paramo dharma\" \u2014 Non-violence is the highest dharma. The Caraka Samhita (Ayurvedic text) states that the physician's svadharma includes ahimsa (non-harm) as the first ethical principle. Dharma.md cross-references Ahimsa as a related concept.\n\n## Cosmology and Ethics\n\nAhimsa operates at multiple levels:\n- Physical: not harming the body of any being\n- Verbal: not speaking words that harm\n- Mental: not harboring harmful thoughts\n\nIn Jain cosmology, every act of violence (himsa) generates karma that binds the soul. Ahimsa is therefore both an ethical principle and a metaphysical necessity for liberation (moksha).\n\n## Related Concepts\n\n- Dharma (Ahimsa paramo dharma \u2014 non-violence is the highest dharma)\n- Karma (violence generates binding karma)\n- Moksha (ahimsa is necessary for liberation)\n- Satya (truth \u2014 the second great vow, companion to ahimsa)\n- Yoga (ahimsa is the first Yama in Patanjali's system)\n\n## Related Shastras\n\n- Mahabharata, Anushasana Parva (primary source for \"Ahimsa paramo dharma\")\n- Acharanga Sutra (Jain canonical source \u2014 oldest text on ahimsa)\n- Yoga Sutras of Patanjali (2.30 \u2014 ahimsa as first Yama)\n- Caraka Samhita (Ayurvedic ethics \u2014 ahimsa as physician's duty)\n- Tattvartha Sutra (Jain systematic philosophy of ahimsa)\n\n## Canonical Sources\n\n- Mahabharata, Anushasana Parva 115.1: \"Ahimsa paramo dharma\"\n- Acharanga Sutra, Book 1, Lecture 7 (Jain canonical teaching)\n- Yoga Sutras of Patanjali 2.30 (ahimsa as first Yama)\n- Caraka Samhita Sutrasthana 1.15 (physician's dharma includes ahimsa)\n\nUniGuru Citation: Mahabharata Anushasana Parva; Acharanga Sutra; Yoga Sutras of Patanjali",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+    "verification_status": "VERIFIED"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_a034fb5f2e03"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 0.5,
+            "derived_confidence": 0.6276,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.78,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.9808,
+                "ontology_convergence": 0.6913,
+                "retrieval_strength": 0.5075,
+                "semantic_agreement": 0.625,
+                "source_authority": 0.8008
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.6276,
+              "why": [
+                "epistemic_score=0.6276",
+                "ceiling_applied=0.7800",
+                "source_type=commentary"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.3616,
+            "retrieval_confidence": 0.5075,
+            "semantic_score": 0.449,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 62.5,
+            "content": 50.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_a034fb5f2e03",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Ahimsa",
+                "concepts": [
+                  "ethics",
+                  "restraint"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "non violence"
+              },
+              {
+                "canonical": "Dharma",
+                "concepts": [
+                  "ethics",
+                  "order",
+                  "responsibility"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "righteousness"
+              },
+              {
+                "canonical": "Karma",
+                "concepts": [
+                  "cause",
+                  "effect",
+                  "duty"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "action"
+              },
+              {
+                "canonical": "Mahabharata",
+                "concepts": [
+                  "dharma",
+                  "Kurukshetra",
+                  "Pandavas"
+                ],
+                "domain": "itihasa",
+                "entity_type": "text",
+                "matched_alias": "mahabharata"
+              },
+              {
+                "canonical": "Moksha",
+                "concepts": [
+                  "freedom",
+                  "realization"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "liberation"
+              },
+              {
+                "canonical": "Yoga",
+                "concepts": [
+                  "discipline",
+                  "meditation"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "yoga"
+              }
+            ],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.6276,
+        "content": "# Ahimsa\n\n## Canonical Name\n\nAhimsa\n\n## Sanskrit\n\n\u0905\u0939\u093f\u0902\u0938\u093e\n\n## Transliteration\n\nAhimsa\n\n## Literal Meaning\n\nNon-violence; non-harm; non-injury. From Sanskrit a (not) + himsa (violence, harm, injury).\n\n## Ahimsa Paramo Dharma\n\nThe phrase **Ahimsa Paramo Dharma** (\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903) means:\n\n**\"Non-violence is the highest dharma.\"**\n\n- Ahimsa = non-violence\n- Paramo = highest, supreme\n- Dharma = duty, righteousness, cosmic order\n\nThis maxim appears in the Mahabharata (Anushasana Parva 115.1) and is one of the most cited ethical statements in Indian tradition. The full verse continues: \"Ahimsa paramo dharma, tatha ahimsa paramo tapah\" \u2014 Non-violence is the highest dharma; non-violence is the highest austerity.\n\n## Functional Meaning\n\nAhimsa is the principle of not causing harm to any living being \u2014 in thought, word, or action. It is the foundational ethical principle shared across Hindu, Jain, and Buddhist traditions. In Jainism, ahimsa is the first and supreme vow. In Yoga, ahimsa is the first of the five Yamas (ethical restraints) in Patanjali's Ashtanga Yoga. In the Mahabharata, ahimsa is declared the highest dharma.\n\n## Marathi Summary\n\n\u0905\u0939\u093f\u0902\u0938\u093e \u092e\u094d\u0939\u0923\u091c\u0947 \u0935\u093f\u091a\u093e\u0930, \u0936\u092c\u094d\u0926 \u0915\u093f\u0902\u0935\u093e \u0915\u0943\u0924\u0940\u0924\u0942\u0928 \u0915\u094b\u0923\u0924\u094d\u092f\u093e\u0939\u0940 \u0938\u091c\u0940\u0935\u093e\u0932\u093e \u0907\u091c\u093e \u0928 \u0915\u0930\u0923\u0947. \u091c\u0948\u0928 \u092a\u0930\u0902\u092a\u0930\u0947\u0924 \u0924\u0940 \u0938\u0930\u094d\u0935\u094b\u091a\u094d\u091a \u0935\u094d\u0930\u0924 \u092e\u093e\u0928\u0932\u0940 \u091c\u093e\u0924\u0947.\n\n## Jain Teaching on Ahimsa\n\nThe Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa:\n\n\"All beings desire to live. None wishes to die. Therefore, a wise person does not kill, nor causes others to kill, nor consents to killing.\"\n\nThe Five Great Vows (Mahavrata) for Jain monks place Ahimsa first:\n1. Ahimsa \u2014 Non-violence toward all living beings\n2. Satya \u2014 Absolute truthfulness\n3. Asteya \u2014 Non-stealing\n4. Brahmacharya \u2014 Celibacy\n5. Aparigraha \u2014 Complete non-possessiveness\n\nUniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol. 22, Jacobi translation\n\n## Yoga Teaching on Ahimsa\n\nIn Patanjali's Yoga Sutras (2.30), Ahimsa is the first of the five Yamas:\n\"Ahimsa-satya-asteya-brahmacharya-aparigraha yamah\" \u2014 Non-violence, truthfulness, non-stealing, celibacy, and non-possessiveness are the five restraints.\n\nPatanjali states (Yoga Sutras 2.35): \"Ahimsa-pratishthayam tat-sannidhau vaira-tyagah\" \u2014 When one is established in non-violence, all enmity is abandoned in one's presence.\n\n## Dharma Connection\n\nThe Mahabharata (Anushasana Parva) states: \"Ahimsa paramo dharma\" \u2014 Non-violence is the highest dharma. The Caraka Samhita (Ayurvedic text) states that the physician's svadharma includes ahimsa (non-harm) as the first ethical principle. Dharma.md cross-references Ahimsa as a related concept.\n\n## Cosmology and Ethics\n\nAhimsa operates at multiple levels:\n- Physical: not harming the body of any being\n- Verbal: not speaking words that harm\n- Mental: not harboring harmful thoughts\n\nIn Jain cosmology, every act of violence (himsa) generates karma that binds the soul. Ahimsa is therefore both an ethical principle and a metaphysical necessity for liberation (moksha).\n\n## Related Concepts\n\n- Dharma (Ahimsa paramo dharma \u2014 non-violence is the highest dharma)\n- Karma (violence generates binding karma)\n- Moksha (ahimsa is necessary for liberation)\n- Satya (truth \u2014 the second great vow, companion to ahimsa)\n- Yoga (ahimsa is the first Yama in Patanjali's system)\n\n## Related Shastras\n\n- Mahabharata, Anushasana Parva (primary source for \"Ahimsa paramo dharma\")\n- Acharanga Sutra (Jain canonical source \u2014 oldest text on ahimsa)\n- Yoga Sutras of Patanjali (2.30 \u2014 ahimsa as first Yama)\n- Caraka Samhita (Ayurvedic ethics \u2014 ahimsa as physician's duty)\n- Tattvartha Sutra (Jain systematic philosophy of ahimsa)\n\n## Canonical Sources\n\n- Mahabharata, Anushasana Parva 115.1: \"Ahimsa paramo dharma\"\n- Acharanga Sutra, Book 1, Lecture 7 (Jain canonical teaching)\n- Yoga Sutras of Patanjali 2.30 (ahimsa as first Yama)\n- Caraka Samhita Sutrasthana 1.15 (physician's dharma includes ahimsa)\n\nUniGuru Citation: Mahabharata Anushasana Parva; Acharanga Sutra; Yoga Sutras of Patanjali",
+        "domain": "sanskrit queries",
+        "knowledge_id": "KOSHA_sanskrit_ahimsa",
+        "signal_id": "signal_a034fb5f2e03",
+        "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+        "source_governance": {
+          "authority_weight": 0.8008,
+          "confidence_ceiling": 0.8608,
+          "lineage": {
+            "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+            "transformation_history": [
+              "commentarial_source",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0192,
+          "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "source_type": "commentary",
+          "suppression_reason": null
+        },
+        "tags": [
+          "ahimsa",
+          "ahimsa"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "evidence_priority": {
+            "contextual_proximity": 0.3025,
+            "direct_definition": 0.0,
+            "exact_entity_match": 0.0,
+            "exact_topic_match": 0.0,
+            "query_coverage": 0.0,
+            "source_authority": 0.7755
+          },
+          "knowledge_id": "KOSHA_sanskrit_ahimsa",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+            "transformation_history": [
+              "commentarial_source",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+        }
+      }
+    ],
+    "artifact_hash": "b69d63e635e471bb668c1eb68d85c3e744f26900677d023ded8e34a7356e7206",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-10-02T13:33:47.870945Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What type of text is the Kama Sutra?",
+    "raw_signal_count": 1,
+    "rejected_signal_ids": [],
+    "rejected_signals": [],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_sanskrit_ahimsa",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_a034fb5f2e03",
+        "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+        "source_lineage": {
+          "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "transformation_history": [
+            "commentarial_source",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+      }
+    ],
+    "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:sanskrit queries:ac54d7e2d3f9",
+      "dedup_status": "unique",
+      "domain": "sanskrit queries",
+      "provenance_hash": "ac54d7e2d3f9b9c7176b1de6a077425c4f4bb5e16a388deae76287801cbb9e20",
+      "ranking_score": 0.507464,
+      "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+      "text_span": "# Ahimsa\n\n## Canonical Name\n\nAhimsa\n\n## Sanskrit\n\n\u0905\u0939\u093f\u0902\u0938\u093e\n\n## Transliteration\n\nAhimsa\n\n## Literal Meaning\n\nNon-violence; non-harm; non-injury. From Sanskrit a (not) + himsa (violence, harm, injury).\n\n## Ahimsa Paramo Dharma\n\nThe phrase **Ahimsa Paramo Dharma** (\u0905\u0939\u093f\u0902\u0938\u093e \u092a\u0930\u092e\u094b \u0927\u0930\u094d\u092e\u0903) means:\n\n**\"Non-violence is the highest dharma.\"**\n\n- Ahimsa = non-violence\n- Paramo = highest, supreme\n- Dharma = duty, righteousness, cosmic order\n\nThis maxim appears in the Mahabharata (Anushasana Parva 115.1) and is one of the most cited ethical statements in Indian tradition. The full verse continues: \"Ahimsa paramo dharma, tatha ahimsa paramo tapah\" \u2014 Non-violence is the highest dharma; non-violence is the highest austerity.\n\n## Functional Meaning\n\nAhimsa is the principle of not causing harm to any living being \u2014 in thought, word, or action. It is the foundational ethical principle shared across Hindu, Jain, and Buddhist traditions. In Jainism, ahimsa is the first and supreme vow. In Yoga, ahimsa is the first of the five Yamas (ethical restraints) in Patanjali's Ashtanga Yoga. In the Mahabharata, ahimsa is declared the highest dharma.\n\n## Marathi Summary\n\n\u0905\u0939\u093f\u0902\u0938\u093e \u092e\u094d\u0939\u0923\u091c\u0947 \u0935\u093f\u091a\u093e\u0930, \u0936\u092c\u094d\u0926 \u0915\u093f\u0902\u0935\u093e \u0915\u0943\u0924\u0940\u0924\u0942\u0928 \u0915\u094b\u0923\u0924\u094d\u092f\u093e\u0939\u0940 \u0938\u091c\u0940\u0935\u093e\u0932\u093e \u0907\u091c\u093e \u0928 \u0915\u0930\u0923\u0947. \u091c\u0948\u0928 \u092a\u0930\u0902\u092a\u0930\u0947\u0924 \u0924\u0940 \u0938\u0930\u094d\u0935\u094b\u091a\u094d\u091a \u0935\u094d\u0930\u0924 \u092e\u093e\u0928\u0932\u0940 \u091c\u093e\u0924\u0947.\n\n## Jain Teaching on Ahimsa\n\nThe Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa:\n\n\"All beings desire to live. None wishes to die. Therefore, a wise person does not kill, nor causes others to kill, nor consents to killing.\"\n\nThe Five Great Vows (Mahavrata) for Jain monks place Ahimsa first:\n1. Ahimsa \u2014 Non-violence toward all living beings\n2. Satya \u2014 Absolute truthfulness\n3. Asteya \u2014 Non-stealing\n4. Brahmacharya \u2014 Celibacy\n5. Aparigraha \u2014 Complete non-possessiveness\n\nUniGuru Citation: Acharanga Sutra, Book 1, Lecture 7; Sacred Books of the East, Vol. 22, Jacobi translation\n\n## Yoga Teaching on Ahimsa\n\nIn Patanjali's Yoga Sutras (2.30), Ahimsa is the first of the five Yamas:\n\"Ahimsa-satya-asteya-brahmacharya-aparigraha yamah\" \u2014 Non-violence, truthfulness, non-stealing, celibacy, and non-possessiveness are the five restraints.\n\nPatanjali states (Yoga Sutras 2.35): \"Ahimsa-pratishthayam tat-sannidhau vaira-tyagah\" \u2014 When one is established in non-violence, all enmity is abandoned in one's presence.\n\n## Dharma Connection\n\nThe Mahabharata (Anushasana Parva) states: \"Ahimsa paramo dharma\" \u2014 Non-violence is the highest dharma. The Caraka Samhita (Ayurvedic text) states that the physician's svadharma includes ahimsa (non-harm) as the first ethical principle. Dharma.md cross-references Ahimsa as a related concept.\n\n## Cosmology and Ethics\n\nAhimsa operates at multiple levels:\n- Physical: not harming the body of any being\n- Verbal: not speaking words that harm\n- Mental: not harboring harmful thoughts\n\nIn Jain cosmology, every act of violence (himsa) generates karma that binds the soul. Ahimsa is therefore both an ethical principle and a metaphysical necessity for liberation (moksha).\n\n## Related Concepts\n\n- Dharma (Ahimsa paramo dharma \u2014 non-violence is the highest dharma)\n- Karma (violence generates binding karma)\n- Moksha (ahimsa is necessary for liberation)\n- Satya (truth \u2014 the second great vow, companion to ahimsa)\n- Yoga (ahimsa is the first Yama in Patanjali's system)\n\n## Related Shastras\n\n- Mahabharata, Anushasana Parva (primary source for \"Ahimsa paramo dharma\")\n- Acharanga Sutra (Jain canonical source \u2014 oldest text on ahimsa)\n- Yoga Sutras of Patanjali (2.30 \u2014 ahimsa as first Yama)\n- Caraka Samhita (Ayurvedic ethics \u2014 ahimsa as physician's duty)\n- Tattvartha Sutra (Jain systematic philosophy of ahimsa)\n\n## Canonical Sources\n\n- Mahabharata, Anushasana Parva 115.1: \"Ahimsa paramo dharma\"\n- Acharanga Sutra, Book 1, Lecture 7 (Jain canonical teaching)\n- Yoga Sutras of Patanjali 2.30 (ahimsa as first Yama)\n- Caraka Samhita Sutrasthana 1.15 (physician's dharma includes ahimsa)\n\nUniGuru Citation: Mahabharata Anushasana Parva; Acharanga Sutra; Yoga Sutras of Patanjali",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": true,
+    "constitutional_governance": {
+      "canonical_authority_granted": true,
+      "canonical_memory_keys": [
+        "Agni",
+        "Agni Purana",
+        "Ahimsa",
+        "Assembly",
+        "Atharvaveda",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Bhakti",
+        "Bhakti Yoga",
+        "Brahma",
+        "Brahma Purana",
+        "Brahman",
+        "Brahmanda Purana",
+        "Chandogya Upanishad",
+        "City",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Ganga",
+        "Garuda Purana",
+        "Governance",
+        "Guru",
+        "Indra",
+        "Jnana Yoga",
+        "Justice",
+        "Kali Yuga",
+        "Karma",
+        "Karma Yoga",
+        "Katha Upanishad",
+        "King",
+        "Krishna",
+        "Kundalini",
+        "Kurma Purana",
+        "Linga Purana",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Manusmriti",
+        "Markandeya Purana",
+        "Matsya Purana",
+        "Moksha",
+        "Mundaka Upanishad",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Pilgrimage",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Purusha",
+        "Rain",
+        "Rajadharma",
+        "Rajas",
+        "Ramayana",
+        "Rigveda",
+        "Road",
+        "Samaveda",
+        "Samsara",
+        "Sankhya",
+        "Sarasvati",
+        "Sattva",
+        "Satya Yuga",
+        "Shiva",
+        "Skanda Purana",
+        "Smriti",
+        "Soil",
+        "Surya",
+        "Taittiriya Upanishad",
+        "Tamas",
+        "Temple",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Varaha Purana",
+        "Varna",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Vishnu",
+        "Yajna",
+        "Yajnavalkya Smriti",
+        "Yajurveda",
+        "Yantra",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 50,
+      "event": {
+        "canonical_authority_granted": true,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [
+          "Ahimsa",
+          "Dharma",
+          "Karma",
+          "Mahabharata",
+          "Moksha",
+          "Yoga"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "canonical",
+        "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+        "updated_at": "2026-10-02T13:33:48.974262Z"
+      },
+      "event_hash": "f0112666f943ee641ae0803a1c937290b2dc66af08c971ad7d590181303cb526",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": true,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "ACCEPT_CANONICAL_MUTATION",
+        "failure_states": [],
+        "memory_classification": "canonical",
+        "reasons": [],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "3a83647c8f8f9efebf92de1555732f41208e56b9118d958e93794fe033d284eb",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "f0112666f943ee641ae0803a1c937290b2dc66af08c971ad7d590181303cb526",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "fd74604fbcde6c5b6c879d9544d6845acdb35576528988ccf67a9180ba629af3",
+      "transient_event_count": 838
+    },
+    "entity_continuity": {
+      "Ahimsa": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:33:50.143540Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md"
+        ],
+        "trace_ids": [
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_ebdc42aca6ff5387",
+          "trace_ce6e7f4bda095ee0",
+          "test_pos",
+          "6ddfa950-eb50-4fee-b3af-74231f7b2e41",
+          "b2ffefc5-1009-4dd7-bfc4-fef6472de14c",
+          "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+        ]
+      },
+      "Dharma": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:33:50.143540Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "The Complete Mahabharata_English_ocred.pdf",
+          "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
+          "Vayu Purana Part 1_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/rta.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/rta.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_ebdc42aca6ff5387",
+          "trace_ce6e7f4bda095ee0",
+          "test_pos",
+          "6ddfa950-eb50-4fee-b3af-74231f7b2e41",
+          "b2ffefc5-1009-4dd7-bfc4-fef6472de14c",
+          "test_neg",
+          "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+        ]
+      },
+      "Karma": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:33:50.143540Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "The Complete Mahabharata_English_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "vigyan-bhairava-tantra_ocr.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2",
+          "trace_ebdc42aca6ff5387",
+          "trace_ce6e7f4bda095ee0",
+          "test_pos",
+          "6ddfa950-eb50-4fee-b3af-74231f7b2e41",
+          "b2ffefc5-1009-4dd7-bfc4-fef6472de14c",
+          "test_neg",
+          "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+        ]
+      },
+      "Mahabharata": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:33:50.143540Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "The Complete Mahabharata_English_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md"
+        ],
+        "trace_ids": [
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_15844a513b565015",
+          "trace_ebdc42aca6ff5387",
+          "trace_ce6e7f4bda095ee0",
+          "test_pos",
+          "6ddfa950-eb50-4fee-b3af-74231f7b2e41",
+          "b2ffefc5-1009-4dd7-bfc4-fef6472de14c",
+          "test_neg",
+          "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+        ]
+      },
+      "Moksha": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:33:50.143540Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "The Complete Mahabharata_English_ocred.pdf",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2",
+          "trace_ebdc42aca6ff5387",
+          "trace_ce6e7f4bda095ee0",
+          "test_pos",
+          "6ddfa950-eb50-4fee-b3af-74231f7b2e41",
+          "b2ffefc5-1009-4dd7-bfc4-fef6472de14c",
+          "test_neg",
+          "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+        ]
+      },
+      "Yoga": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:33:50.143540Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "The Complete Mahabharata_English_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/chakras.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/maya.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: c:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prana.md"
+        ],
+        "trace_ids": [
+          "trace_5fb0cbd5122c50eb",
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_c0bcb65347cd5ba2",
+          "phase2_mitra_test",
+          "trace_3df20ed0bfd45707",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "trace_4c72859000385ae0",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "trace_979a7e91c03153fa",
+          "trace_f0d78e2f28e751f9",
+          "trace_7e9993bf9a615c3f",
+          "test_sanskrit_dharma",
+          "trace_45b2ec7eb15d52ac",
+          "trace_b7b9352b9fa850ff",
+          "trace_0bd4fc46113a56d0",
+          "trace_abf0540c13ae5c85",
+          "trace_efe57d8139155146",
+          "trace_61179523abee522e",
+          "trace_5a0a8775b336526b",
+          "trace_f95d669e228b5e69",
+          "trace_f951f7b832d15b25",
+          "trace_98c09c1bbdb45ee7",
+          "trace_744d8093ba805a16",
+          "trace_e5ccca51e4e35cec",
+          "trace_15844a513b565015",
+          "trace_fbc65eee30d25c0b",
+          "trace_02b105d3dff75cc2",
+          "trace_ebdc42aca6ff5387",
+          "trace_ce6e7f4bda095ee0",
+          "test_pos",
+          "6ddfa950-eb50-4fee-b3af-74231f7b2e41",
+          "b2ffefc5-1009-4dd7-bfc4-fef6472de14c",
+          "test_neg",
+          "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+        ]
+      }
+    },
+    "event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "f0112666f943ee641ae0803a1c937290b2dc66af08c971ad7d590181303cb526",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Ahimsa",
+        "Dharma",
+        "Karma",
+        "Mahabharata",
+        "Moksha",
+        "Yoga"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T13:33:50.143540Z",
+      "user_id": "tantra-client"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [],
+    "user_continuity": {
+      "continuity_score": 0.25,
+      "last_seen": "2026-10-02T13:33:50.143540Z",
+      "queries": 3,
+      "trace_ids": [
+        "6ddfa950-eb50-4fee-b3af-74231f7b2e41",
+        "b2ffefc5-1009-4dd7-bfc4-fef6472de14c",
+        "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "sanskrit queries",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_sanskrit_ahimsa",
+      "signal_id": "signal_a034fb5f2e03",
+      "source_lineage": {
+        "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
+        "transformation_history": [
+          "commentarial_source",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 1,
+  "signals_rejected": 0,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "6af175a15f1af0f1b303d1a55a7e15b97e19e8c816cfebbb6b54280632c0c547",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "b69d63e635e471bb668c1eb68d85c3e744f26900677d023ded8e34a7356e7206",
+    "trace_id": "a90cdc10-e671-425f-8088-4f05ea1ff5c8"
+  },
+  "verification_status": "VERIFIED"
+}

@@ -1,0 +1,913 @@
+{
+  "answer": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana and Kamika Agama , which provide guidelines for building temples.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_4c479eaa05fd"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 0.5,
+          "derived_confidence": 0.5684,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.6583,
+              "retrieval_strength": 0.4386,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5684,
+            "why": [
+              "epistemic_score=0.5684",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3521,
+          "retrieval_confidence": 0.4386,
+          "semantic_score": 0.475,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.5684,
+      "rejected_count": 0
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "e4aee4047d003fee2324876339ffb67f0cfddc95f3af184f58056b0d41cfedf9",
+    "memory_event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "27bc40321cdb86ac98975160326cb66ac9dd9e37cf6defcaead8f7c3e36fbd5c",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Agni",
+        "Agni Purana",
+        "Temple"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_8f368be361ef56ba",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T13:26:05.542637Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [],
+    "retrieval_truth_hash": "910fd3be07807c3414eeff3c7b0d26071810d9ec4044380cac275d47ce18b9fd",
+    "semantic_path": [
+      {
+        "domain": "infrastructure + temples",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_bffb6027024e",
+        "signal_id": "signal_4c479eaa05fd",
+        "source_lineage": {
+          "original_source": "Agni Purana Unabridged English Motilal.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T13:26:03.558866Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_8f368be361ef56ba",
+      "contract_emission": "trace_8f368be361ef56ba",
+      "downstream_execution": "trace_8f368be361ef56ba",
+      "immutable": true,
+      "retrieval": "trace_8f368be361ef56ba",
+      "synthesis": "trace_8f368be361ef56ba",
+      "validation": "trace_8f368be361ef56ba"
+    },
+    "trace_id": "trace_8f368be361ef56ba",
+    "verification_status": "VERIFIED"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:infrastructure + temples:929c8551d003",
+      "claim_id": "claim_1_26a6fe14",
+      "claim_text": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana and Kamika Agama , which provide guidelines for building temples.",
+      "confidence": 0.4386,
+      "provenance_hash": "929c8551d003252886f82c9e9ad667cc9a47b78d941aa5b33beb1e690dd7f58d",
+      "source_id": "Agni Purana Unabridged English Motilal.pdf",
+      "text_span": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana [1] and Kamika Agama [2], which provide guidelines for building temples. According to these scriptures, constructing a temple can bring spiritual benefits and destroy sins. The architecture of a temple, including its base, pedestal, and door orientation, is also considered important. The influence of these scriptures on society can be seen in the careful planning and construction of temples, with attention to detail and adherence to traditional guidelines.",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "confidence": 0.5684,
+  "confidence_breakdown": {
+    "accepted_count": 1,
+    "accepted_derivations": [
+      {
+        "content_overlap": 0.5,
+        "derived_confidence": 0.5684,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.6,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 0.88,
+            "ontology_convergence": 0.6583,
+            "retrieval_strength": 0.4386,
+            "semantic_agreement": 0.5,
+            "source_authority": 0.42
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.5684,
+          "why": [
+            "epistemic_score=0.5684",
+            "ceiling_applied=0.6000",
+            "source_type=ocr_derivative"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.3521,
+        "retrieval_confidence": 0.4386,
+        "semantic_score": 0.475,
+        "tag_match_score": 0.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+      "claim_group_count": 1,
+      "consensus_score": 0.5,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+      "multi_source_reinforcement": 0.0,
+      "source_count": 1
+    },
+    "overall": 0.5684,
+    "rejected_count": 0
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+    "claim_group_count": 1,
+    "consensus_score": 0.5,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+    "multi_source_reinforcement": 0.0,
+    "source_count": 1
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_8f368be361ef56ba"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 74,
+    "valid_entries": 55
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T13:26:03.558866Z",
+  "interpretation_payload": {
+    "answer": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana and Kamika Agama , which provide guidelines for building temples.",
+    "artifact_hash": "e4aee4047d003fee2324876339ffb67f0cfddc95f3af184f58056b0d41cfedf9",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.5684,
+    "confidence_breakdown": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 0.5,
+          "derived_confidence": 0.5684,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.6583,
+              "retrieval_strength": 0.4386,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5684,
+            "why": [
+              "epistemic_score=0.5684",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3521,
+          "retrieval_confidence": 0.4386,
+          "semantic_score": 0.475,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "interpretive_or_weak_evidence_zone",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "Evidence is valid but interpretive or weak; do not flatten into universal certainty.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.5684,
+      "rejected_count": 0
+    },
+    "contradiction_state": {
+      "classification": "interpretive_or_weak_evidence_zone",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_4c479eaa05fd"
+      ],
+      "retrieval_trace_id": "trace_8f368be361ef56ba",
+      "retrieval_truth_hash": "910fd3be07807c3414eeff3c7b0d26071810d9ec4044380cac275d47ce18b9fd"
+    },
+    "trace_id": "trace_8f368be361ef56ba",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_bffb6027024e"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 0.5,
+          "derived_confidence": 0.5684,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.6583,
+              "retrieval_strength": 0.4386,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5684,
+            "why": [
+              "epistemic_score=0.5684",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3521,
+          "retrieval_confidence": 0.4386,
+          "semantic_score": 0.475,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 50.0,
+          "content": 50.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_4c479eaa05fd",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Agni",
+              "concepts": [
+                "fire",
+                "yajna"
+              ],
+              "domain": "vedas",
+              "entity_type": "deity",
+              "matched_alias": "agni"
+            },
+            {
+              "canonical": "Agni Purana",
+              "concepts": [
+                "purana",
+                "ritual",
+                "architecture"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "agni purana"
+            },
+            {
+              "canonical": "Temple",
+              "concepts": [
+                "ritual",
+                "architecture"
+              ],
+              "domain": "governance",
+              "entity_type": "structure",
+              "matched_alias": "temples"
+            }
+          ],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.5684,
+      "content": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana [1] and Kamika Agama [2], which provide guidelines for building temples. According to these scriptures, constructing a temple can bring spiritual benefits and destroy sins. The architecture of a temple, including its base, pedestal, and door orientation, is also considered important. The influence of these scriptures on society can be seen in the careful planning and construction of temples, with attention to detail and adherence to traditional guidelines.",
+      "domain": "infrastructure + temples",
+      "knowledge_id": "KOSHA_bffb6027024e",
+      "signal_id": "signal_4c479eaa05fd",
+      "source": "Agni Purana Unabridged English Motilal.pdf",
+      "source_governance": {
+        "authority_weight": 0.42,
+        "confidence_ceiling": 0.6,
+        "lineage": {
+          "original_source": "Agni Purana Unabridged English Motilal.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.12,
+        "source": "Agni Purana Unabridged English Motilal.pdf",
+        "source_type": "ocr_derivative",
+        "suppression_reason": null
+      },
+      "tags": [
+        "ancient",
+        "architecture",
+        "construction"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "evidence_priority": {
+          "contextual_proximity": 1.0,
+          "direct_definition": 0.0,
+          "exact_entity_match": 0.0,
+          "exact_topic_match": 0.0,
+          "query_coverage": 0.0,
+          "source_authority": 0.7755
+        },
+        "knowledge_id": "KOSHA_bffb6027024e",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "Agni Purana Unabridged English Motilal.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_8f368be361ef56ba"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_8f368be361ef56ba"
+  },
+  "query": "Name one Agama text.",
+  "reasoning": "Answer uses 1 accepted evidence record(s): KOSHA_bffb6027024e (Agni Purana Unabridged English Motilal.pdf). Sentences are extracted from retrieved content.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [],
+  "retrieval_run_record": {
+    "candidate_count": 1,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:infrastructure + temples:929c8551d003",
+        "claim_id": "claim_1_26a6fe14",
+        "claim_text": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana and Kamika Agama , which provide guidelines for building temples.",
+        "confidence": 0.4386,
+        "provenance_hash": "929c8551d003252886f82c9e9ad667cc9a47b78d941aa5b33beb1e690dd7f58d",
+        "source_id": "Agni Purana Unabridged English Motilal.pdf",
+        "text_span": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana [1] and Kamika Agama [2], which provide guidelines for building temples. According to these scriptures, constructing a temple can bring spiritual benefits and destroy sins. The architecture of a temple, including its base, pedestal, and door orientation, is also considered important. The influence of these scriptures on society can be seen in the careful planning and construction of temples, with attention to detail and adherence to traditional guidelines.",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "deduplicated_candidate_count": 1,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_b64f7a81ad27",
+    "replay_id": "replay_d00fb5d30c08d287",
+    "replay_safe": true,
+    "retrieval_run_id": "run_4cb44df97878",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:infrastructure + temples:929c8551d003",
+        "dedup_status": "unique",
+        "domain": "infrastructure + temples",
+        "provenance_hash": "929c8551d003252886f82c9e9ad667cc9a47b78d941aa5b33beb1e690dd7f58d",
+        "ranking_score": 0.4386,
+        "source_id": "Agni Purana Unabridged English Motilal.pdf",
+        "text_span": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana [1] and Kamika Agama [2], which provide guidelines for building temples. According to these scriptures, constructing a temple can bring spiritual benefits and destroy sins. The architecture of a temple, including its base, pedestal, and door orientation, is also considered important. The influence of these scriptures on society can be seen in the careful planning and construction of temples, with attention to detail and adherence to traditional guidelines.",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "trace_8f368be361ef56ba",
+    "verification_status": "VERIFIED"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_4c479eaa05fd"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 0.5,
+            "derived_confidence": 0.5684,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.6583,
+                "retrieval_strength": 0.4386,
+                "semantic_agreement": 0.5,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.5684,
+              "why": [
+                "epistemic_score=0.5684",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.3521,
+            "retrieval_confidence": 0.4386,
+            "semantic_score": 0.475,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 50.0,
+            "content": 50.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_4c479eaa05fd",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Agni",
+                "concepts": [
+                  "fire",
+                  "yajna"
+                ],
+                "domain": "vedas",
+                "entity_type": "deity",
+                "matched_alias": "agni"
+              },
+              {
+                "canonical": "Agni Purana",
+                "concepts": [
+                  "purana",
+                  "ritual",
+                  "architecture"
+                ],
+                "domain": "puranas",
+                "entity_type": "text",
+                "matched_alias": "agni purana"
+              },
+              {
+                "canonical": "Temple",
+                "concepts": [
+                  "ritual",
+                  "architecture"
+                ],
+                "domain": "governance",
+                "entity_type": "structure",
+                "matched_alias": "temples"
+              }
+            ],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.5684,
+        "content": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana [1] and Kamika Agama [2], which provide guidelines for building temples. According to these scriptures, constructing a temple can bring spiritual benefits and destroy sins. The architecture of a temple, including its base, pedestal, and door orientation, is also considered important. The influence of these scriptures on society can be seen in the careful planning and construction of temples, with attention to detail and adherence to traditional guidelines.",
+        "domain": "infrastructure + temples",
+        "knowledge_id": "KOSHA_bffb6027024e",
+        "signal_id": "signal_4c479eaa05fd",
+        "source": "Agni Purana Unabridged English Motilal.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Agni Purana Unabridged English Motilal.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Agni Purana Unabridged English Motilal.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tags": [
+          "ancient",
+          "architecture",
+          "construction"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "evidence_priority": {
+            "contextual_proximity": 1.0,
+            "direct_definition": 0.0,
+            "exact_entity_match": 0.0,
+            "exact_topic_match": 0.0,
+            "query_coverage": 0.0,
+            "source_authority": 0.7755
+          },
+          "knowledge_id": "KOSHA_bffb6027024e",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "Agni Purana Unabridged English Motilal.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_8f368be361ef56ba"
+        }
+      }
+    ],
+    "artifact_hash": "910fd3be07807c3414eeff3c7b0d26071810d9ec4044380cac275d47ce18b9fd",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-10-02T13:26:03.558866Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "Name one Agama text.",
+    "raw_signal_count": 1,
+    "rejected_signal_ids": [],
+    "rejected_signals": [],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_bffb6027024e",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_4c479eaa05fd",
+        "source": "Agni Purana Unabridged English Motilal.pdf",
+        "source_lineage": {
+          "original_source": "Agni Purana Unabridged English Motilal.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_8f368be361ef56ba"
+      }
+    ],
+    "trace_id": "trace_8f368be361ef56ba"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:infrastructure + temples:929c8551d003",
+      "dedup_status": "unique",
+      "domain": "infrastructure + temples",
+      "provenance_hash": "929c8551d003252886f82c9e9ad667cc9a47b78d941aa5b33beb1e690dd7f58d",
+      "ranking_score": 0.4386,
+      "source_id": "Agni Purana Unabridged English Motilal.pdf",
+      "text_span": "The significance of temple construction and architecture in ancient scriptures is highlighted in texts such as the Agni Purana [1] and Kamika Agama [2], which provide guidelines for building temples. According to these scriptures, constructing a temple can bring spiritual benefits and destroy sins. The architecture of a temple, including its base, pedestal, and door orientation, is also considered important. The influence of these scriptures on society can be seen in the careful planning and construction of temples, with attention to detail and adherence to traditional guidelines.",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": true,
+    "constitutional_governance": {
+      "canonical_authority_granted": true,
+      "canonical_memory_keys": [
+        "Agni",
+        "Agni Purana",
+        "Ahimsa",
+        "Assembly",
+        "Atharvaveda",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Bhakti",
+        "Bhakti Yoga",
+        "Brahma",
+        "Brahma Purana",
+        "Brahman",
+        "Brahmanda Purana",
+        "Chandogya Upanishad",
+        "City",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Ganga",
+        "Garuda Purana",
+        "Governance",
+        "Guru",
+        "Indra",
+        "Jnana Yoga",
+        "Justice",
+        "Kali Yuga",
+        "Karma",
+        "Karma Yoga",
+        "Katha Upanishad",
+        "King",
+        "Krishna",
+        "Kundalini",
+        "Kurma Purana",
+        "Linga Purana",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Markandeya Purana",
+        "Matsya Purana",
+        "Moksha",
+        "Mundaka Upanishad",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Pilgrimage",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Purusha",
+        "Rain",
+        "Rajadharma",
+        "Rajas",
+        "Ramayana",
+        "Rigveda",
+        "Road",
+        "Samaveda",
+        "Samsara",
+        "Sankhya",
+        "Sarasvati",
+        "Sattva",
+        "Satya Yuga",
+        "Shiva",
+        "Skanda Purana",
+        "Smriti",
+        "Soil",
+        "Surya",
+        "Taittiriya Upanishad",
+        "Tamas",
+        "Temple",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Varaha Purana",
+        "Varna",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Vishnu",
+        "Yajna",
+        "Yajnavalkya Smriti",
+        "Yajurveda",
+        "Yantra",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 42,
+      "event": {
+        "canonical_authority_granted": true,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [
+          "Agni",
+          "Agni Purana",
+          "Temple"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "canonical",
+        "trace_id": "trace_8f368be361ef56ba",
+        "updated_at": "2026-10-02T13:26:04.770117Z"
+      },
+      "event_hash": "27bc40321cdb86ac98975160326cb66ac9dd9e37cf6defcaead8f7c3e36fbd5c",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": true,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "ACCEPT_CANONICAL_MUTATION",
+        "failure_states": [],
+        "memory_classification": "canonical",
+        "reasons": [],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "a8a517a2629aaddd8612519253d2d764bfc2022b8a657ce8ee4e941b1fe7ff11",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "27bc40321cdb86ac98975160326cb66ac9dd9e37cf6defcaead8f7c3e36fbd5c",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "c4f85a688c52a37d1dbd4d6dff10b0fef3088d94f572510be124574fc7bc846c",
+      "transient_event_count": 816
+    },
+    "entity_continuity": {
+      "Agni": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:26:05.542637Z",
+        "reinforcement_score": 0.6875,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/rta.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/samskara.md",
+          "Agni Purana Unabridged English Motilal.pdf"
+        ],
+        "trace_ids": [
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_8f368be361ef56ba"
+        ]
+      },
+      "Agni Purana": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:26:05.542637Z",
+        "reinforcement_score": 0.4375,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "Agni Purana Unabridged English Motilal.pdf"
+        ],
+        "trace_ids": [
+          "trace_5bc60934f0025251",
+          "trace_4ab18174325e56af",
+          "trace_8f368be361ef56ba"
+        ]
+      },
+      "Temple": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T13:26:05.542637Z",
+        "reinforcement_score": 0.375,
+        "source_ids": [
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
+          "Agni Purana Unabridged English Motilal.pdf"
+        ],
+        "trace_ids": [
+          "trace_4ab18174325e56af",
+          "trace_8f368be361ef56ba"
+        ]
+      }
+    },
+    "event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "27bc40321cdb86ac98975160326cb66ac9dd9e37cf6defcaead8f7c3e36fbd5c",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Agni",
+        "Agni Purana",
+        "Temple"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_8f368be361ef56ba",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T13:26:05.542637Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [],
+    "user_continuity": {
+      "continuity_score": 0.3,
+      "last_seen": "2026-10-02T13:26:05.542637Z",
+      "queries": 4,
+      "trace_ids": [
+        "trace_5fb0cbd5122c50eb",
+        "trace_5bc60934f0025251",
+        "trace_4ab18174325e56af",
+        "trace_8f368be361ef56ba"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "infrastructure + temples",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_bffb6027024e",
+      "signal_id": "signal_4c479eaa05fd",
+      "source_lineage": {
+        "original_source": "Agni Purana Unabridged English Motilal.pdf",
+        "transformation_history": [
+          "source_text",
+          "ocr_extraction",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 1,
+  "signals_rejected": 0,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_8f368be361ef56ba",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "e4aee4047d003fee2324876339ffb67f0cfddc95f3af184f58056b0d41cfedf9",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "910fd3be07807c3414eeff3c7b0d26071810d9ec4044380cac275d47ce18b9fd",
+    "trace_id": "trace_8f368be361ef56ba"
+  },
+  "verification_status": "VERIFIED"
+}
