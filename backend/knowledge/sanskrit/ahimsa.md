@@ -32,6 +32,10 @@ This maxim appears in the Mahabharata (Anushasana Parva 115.1) and is one of the
 
 Ahimsa is the principle of not causing harm to any living being — in thought, word, or action. It is the foundational ethical principle shared across Hindu, Jain, and Buddhist traditions. In Jainism, ahimsa is the first and supreme vow. In Yoga, ahimsa is the first of the five Yamas (ethical restraints) in Patanjali's Ashtanga Yoga. In the Mahabharata, ahimsa is declared the highest dharma.
 
+## Marathi Summary
+
+अहिंसा म्हणजे विचार, शब्द किंवा कृतीतून कोणत्याही सजीवाला इजा न करणे. जैन परंपरेत ती सर्वोच्च व्रत मानली जाते.
+
 ## Jain Teaching on Ahimsa
 
 The Acharanga Sutra (the oldest Jain canonical text) states the core teaching of ahimsa:

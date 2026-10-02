@@ -19,6 +19,7 @@ KB_PATHS: Dict[str, str] = {
     "swaminarayan": os.path.normpath(os.path.join(_KB_ROOT, "swaminarayan")),
     "gurukul": os.path.normpath(os.path.join(_KB_ROOT, "gurukul")),
     "sanskrit": os.path.normpath(os.path.join(_KB_ROOT, "sanskrit")),
+    "programming": os.path.normpath(os.path.join(_KB_ROOT, "programming")),
 }
 
 _DENSE_STATE: Optional[Dict[str, Any]] = None
@@ -208,29 +209,27 @@ class AdvancedRetriever:
         self._load_memory()
 
     def _load_memory(self) -> None:
-        for kb_name, kb_path in KB_PATHS.items():
-            if not os.path.exists(kb_path):
-                continue
-            for root, _, files in os.walk(kb_path):
-                for file_name in files:
-                    if not file_name.endswith(".md"):
-                        continue
-                    full_path = os.path.join(root, file_name)
-                    keyword = os.path.splitext(file_name)[0].lower().replace("_", " ")
-                    try:
-                        with open(full_path, "r", encoding="utf-8") as f:
-                            content = f.read()
-                    except OSError:
-                        # Demo-safety mode: unreadable KB files are skipped, not fatal.
-                        continue
-                    key = keyword
-                    if key in self.knowledge_map:
-                        relative_path = os.path.relpath(full_path, _KB_ROOT)
-                        key = os.path.splitext(relative_path)[0].replace(os.sep, "/").lower()
-                    self.knowledge_map[key] = content
-                    self.source_map[key] = kb_name
-                    self.file_map[key] = file_name
-                    self.path_map[key] = os.path.relpath(full_path, _KB_ROOT).replace(os.sep, "/")
+        if not os.path.isdir(_KB_ROOT):
+            return
+        for root, _, files in os.walk(_KB_ROOT):
+            for file_name in files:
+                if not file_name.lower().endswith(".md"):
+                    continue
+                full_path = os.path.join(root, file_name)
+                relative_path = os.path.relpath(full_path, _KB_ROOT).replace(os.sep, "/")
+                keyword = os.path.splitext(file_name)[0].lower().replace("_", " ")
+                try:
+                    with open(full_path, "r", encoding="utf-8") as handle:
+                        content = handle.read()
+                except OSError:
+                    continue
+                key = keyword
+                if key in self.knowledge_map:
+                    key = os.path.splitext(relative_path)[0].replace("/", " ").lower()
+                self.knowledge_map[key] = content
+                self.source_map[key] = relative_path.split("/", 1)[0]
+                self.file_map[key] = file_name
+                self.path_map[key] = relative_path
 
     @staticmethod
     def _tokens(text: str) -> List[str]:

@@ -107,4 +107,18 @@ def test_exact_concept_title_is_ranked_first():
 def test_duplicate_basename_documents_are_not_overwritten():
     retriever = AdvancedRetriever()
 
-    assert len(retriever.knowledge_map) == 73
+    assert len(retriever.knowledge_map) == 74
+
+
+def test_python_and_its_history_are_retrievable_from_active_kb():
+    retriever = AdvancedRetriever()
+
+    overview = retriever.retrieve_multi("What is Python?")
+    history = retriever.retrieve_multi("What is the history of Python?")
+
+    assert overview
+    assert overview[0]["path"] == "programming/python.md"
+    assert "high-level programming language" in overview[0]["content"]
+    assert history
+    assert history[0]["path"] == "programming/python.md"
+    assert "late 1980s" in history[0]["content"]

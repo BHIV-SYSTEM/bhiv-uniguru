@@ -1634,15 +1634,20 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
         chat["messages"].append(user_msg)
         chat["lastActivity"] = _utc_now_iso()
 
-    # Use the deterministic TANTRA-ready pipeline so the UI can expose truth state.
+    # Use the shared verified RAG path so the browser chat and /ask see the
+    # same active KB and language handling.
     try:
         trace_id = f"chat_{chat_id}_{uuid.uuid5(uuid.NAMESPACE_URL, message).hex[:12]}"
-        router_response = _execute_kosha_pipeline(
-            query=message,
-            domain_hint=None,
-            top_k=5,
-            trace_id=trace_id,
-            user_id=user_id,
+        adapted = language_adapter.normalize_query(message)
+        router_response = service.ask(
+            user_query=adapted.normalized_query,
+            session_id=chat_id,
+            context={"caller": user_id, "source_language": adapted.source_language},
+            allow_web_retrieval=False,
+        )
+        router_response = language_adapter.localize_response(
+            router_response,
+            source_language=adapted.source_language,
         )
         answer = str(router_response.get("answer") or "I could not generate a response.")
     except Exception as exc:
@@ -1667,6 +1672,8 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
         "downstream_execution": router_response.get("downstream_execution"),
         "bucket_proof": router_response.get("bucket_proof"),
         "output_contract": router_response.get("output_contract"),
+        "retrieval_trace": router_response.get("retrieval_trace"),
+        "language_adapter": router_response.get("language_adapter"),
     }
     ai_msg = {"sender": "bot", "content": answer, "timestamp": _utc_now_iso(), "metadata": ai_metadata}
     with _CHAT_LOCK:

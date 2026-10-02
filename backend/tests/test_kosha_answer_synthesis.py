@@ -269,7 +269,7 @@ def test_accepted_records_without_relevant_evidence_keep_existing_refusal():
     assert synthesis["evidence_signal_ids"] == []
 
 
-def test_chat_new_still_delegates_to_existing_kosha_pipeline(monkeypatch):
+def test_chat_new_uses_shared_verified_rag_service(monkeypatch):
     from service import api
 
     chat_id = "kosha-pipeline-route-test"
@@ -278,11 +278,20 @@ def test_chat_new_still_delegates_to_existing_kosha_pipeline(monkeypatch):
     monkeypatch.setattr(api, "_serialize_chat_session", lambda *_args, **_kwargs: {"id": chat_id})
     calls = []
 
-    def fake_kosha_pipeline(**kwargs):
+    def fake_ask(**kwargs):
         calls.append(kwargs)
-        return {"answer": "deterministic Kosha response", "verification_status": "VERIFIED"}
+        return {
+            "answer": "verified shared RAG response",
+            "verification_status": "VERIFIED",
+            "retrieval_trace": {"match_found": True},
+        }
 
-    monkeypatch.setattr(api, "_execute_kosha_pipeline", fake_kosha_pipeline)
+    monkeypatch.setattr(api.service, "ask", fake_ask)
+    monkeypatch.setattr(
+        api,
+        "_execute_kosha_pipeline",
+        lambda **_kwargs: (_ for _ in ()).throw(AssertionError("chat must not use Kosha-only retrieval")),
+    )
     request = Request(
         scope={
             "type": "http",
@@ -301,13 +310,10 @@ def test_chat_new_still_delegates_to_existing_kosha_pipeline(monkeypatch):
         request,
     )
 
-    assert response["aiResponse"]["content"] == "deterministic Kosha response"
-    assert calls == [
-        {
-            "query": "What is Brahman?",
-            "domain_hint": None,
-            "top_k": 5,
-            "trace_id": calls[0]["trace_id"],
-            "user_id": "test-user",
-        }
-    ]
+    assert response["aiResponse"]["content"] == "verified shared RAG response"
+    assert calls == [{
+        "user_query": "What is Brahman?",
+        "session_id": chat_id,
+        "context": {"caller": "test-user", "source_language": "en"},
+        "allow_web_retrieval": False,
+    }]
