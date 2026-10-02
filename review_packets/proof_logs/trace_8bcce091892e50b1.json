@@ -1,0 +1,1485 @@
+{
+  "answer": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_a9df0fb0b71c",
+      "signal_584361841c63",
+      "signal_0dfc0c5f843b"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 3,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6579,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5302,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6579,
+            "why": [
+              "epistemic_score=0.6579",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4601,
+          "retrieval_confidence": 0.5302,
+          "semantic_score": 0.425,
+          "tag_match_score": 0.0
+        },
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6579,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5302,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6579,
+            "why": [
+              "epistemic_score=0.6579",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4601,
+          "retrieval_confidence": 0.5302,
+          "semantic_score": 0.425,
+          "tag_match_score": 0.0
+        },
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6569,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.9973,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5296,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.7373
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6569,
+            "why": [
+              "epistemic_score=0.6569",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7099,
+          "retrieval_confidence": 0.5296,
+          "semantic_score": 0.425,
+          "tag_match_score": 1.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 3,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.6579,
+      "rejected_count": 0
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "80d904f9468aabebcde6b3b596100320d1f9839195bc0220b4a7b0c9790473fd",
+    "memory_event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "73e47973c123a84347954c54742217c20ec0bf85b75b35c38351da762c9a2a66",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_8bcce091892e50b1",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T06:51:58.522106Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [],
+    "retrieval_truth_hash": "2caa4d51ea3f26e89e26bc39387eb74b249e459c32345997174248165bfd84f5",
+    "semantic_path": [
+      {
+        "domain": "maths",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_subtraction_001",
+        "signal_id": "signal_a9df0fb0b71c",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      },
+      {
+        "domain": "maths",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "signal_id": "signal_584361841c63",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      },
+      {
+        "domain": "maths",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_addition_001",
+        "signal_id": "signal_0dfc0c5f843b",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T06:51:58.133460Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_8bcce091892e50b1",
+      "contract_emission": "trace_8bcce091892e50b1",
+      "downstream_execution": "trace_8bcce091892e50b1",
+      "immutable": true,
+      "retrieval": "trace_8bcce091892e50b1",
+      "synthesis": "trace_8bcce091892e50b1",
+      "validation": "trace_8bcce091892e50b1"
+    },
+    "trace_id": "trace_8bcce091892e50b1",
+    "verification_status": "VERIFIED"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:maths:342a5c163b7e",
+      "claim_id": "claim_1_ab56a5bd",
+      "claim_text": "Addition is the mathematical operation of combining two or more numbers to find their total or sum",
+      "confidence": 0.529579,
+      "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "canonical_object_id": "uko:maths:342a5c163b7e",
+      "claim_id": "claim_2_3ed9ad59",
+      "claim_text": "Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+      "confidence": 0.529579,
+      "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "confidence": 0.6569,
+  "confidence_breakdown": {
+    "accepted_count": 3,
+    "accepted_derivations": [
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.6579,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.78,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 1.0,
+            "ontology_convergence": 0.6417,
+            "retrieval_strength": 0.5302,
+            "semantic_agreement": 0.5,
+            "source_authority": 0.74
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.6579,
+          "why": [
+            "epistemic_score=0.6579",
+            "ceiling_applied=0.7800",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.4601,
+        "retrieval_confidence": 0.5302,
+        "semantic_score": 0.425,
+        "tag_match_score": 0.0
+      },
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.6579,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.78,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 1.0,
+            "ontology_convergence": 0.6417,
+            "retrieval_strength": 0.5302,
+            "semantic_agreement": 0.5,
+            "source_authority": 0.74
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.6579,
+          "why": [
+            "epistemic_score=0.6579",
+            "ceiling_applied=0.7800",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.4601,
+        "retrieval_confidence": 0.5302,
+        "semantic_score": 0.425,
+        "tag_match_score": 0.0
+      },
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.6569,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.78,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 0.9973,
+            "ontology_convergence": 0.6417,
+            "retrieval_strength": 0.5296,
+            "semantic_agreement": 0.5,
+            "source_authority": 0.7373
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.6569,
+          "why": [
+            "epistemic_score=0.6569",
+            "ceiling_applied=0.7800",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.7099,
+        "retrieval_confidence": 0.5296,
+        "semantic_score": 0.425,
+        "tag_match_score": 1.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "single_source_verified",
+      "claim_group_count": 3,
+      "consensus_score": 0.5,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+      "multi_source_reinforcement": 0.0,
+      "source_count": 1
+    },
+    "overall": 0.6579,
+    "rejected_count": 0
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "single_source_verified",
+    "claim_group_count": 3,
+    "consensus_score": 0.5,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+    "multi_source_reinforcement": 0.0,
+    "source_count": 1
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_8bcce091892e50b1"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 46,
+    "valid_entries": 27
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T06:51:58.133460Z",
+  "interpretation_payload": {
+    "answer": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+    "artifact_hash": "80d904f9468aabebcde6b3b596100320d1f9839195bc0220b4a7b0c9790473fd",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.6569,
+    "confidence_breakdown": {
+      "accepted_count": 3,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6579,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5302,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6579,
+            "why": [
+              "epistemic_score=0.6579",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4601,
+          "retrieval_confidence": 0.5302,
+          "semantic_score": 0.425,
+          "tag_match_score": 0.0
+        },
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6579,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5302,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6579,
+            "why": [
+              "epistemic_score=0.6579",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4601,
+          "retrieval_confidence": 0.5302,
+          "semantic_score": 0.425,
+          "tag_match_score": 0.0
+        },
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6569,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.9973,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5296,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.7373
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6569,
+            "why": [
+              "epistemic_score=0.6569",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7099,
+          "retrieval_confidence": 0.5296,
+          "semantic_score": 0.425,
+          "tag_match_score": 1.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 3,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.6579,
+      "rejected_count": 0
+    },
+    "contradiction_state": {
+      "classification": "single_source_verified",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_a9df0fb0b71c",
+        "signal_584361841c63",
+        "signal_0dfc0c5f843b"
+      ],
+      "retrieval_trace_id": "trace_8bcce091892e50b1",
+      "retrieval_truth_hash": "2caa4d51ea3f26e89e26bc39387eb74b249e459c32345997174248165bfd84f5"
+    },
+    "trace_id": "trace_8bcce091892e50b1",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_subtraction_001",
+    "KOSHA_number_recognition_001",
+    "KOSHA_addition_001"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6579,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5302,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6579,
+            "why": [
+              "epistemic_score=0.6579",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4601,
+          "retrieval_confidence": 0.5302,
+          "semantic_score": 0.425,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 50.0,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_a9df0fb0b71c",
+        "what_matched": {
+          "candidate_entities": [],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.6579,
+      "content": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "domain": "maths",
+      "knowledge_id": "KOSHA_subtraction_001",
+      "signal_id": "signal_a9df0fb0b71c",
+      "source": "balbharti_primary_mathematics_curriculum",
+      "source_governance": {
+        "authority_weight": 0.74,
+        "confidence_ceiling": 0.82,
+        "lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0,
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "subtraction",
+        "subtract",
+        "difference",
+        "arithmetic",
+        "maths",
+        "minus"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_subtraction_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_8bcce091892e50b1"
+      }
+    },
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6579,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5302,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6579,
+            "why": [
+              "epistemic_score=0.6579",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4601,
+          "retrieval_confidence": 0.5302,
+          "semantic_score": 0.425,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 50.0,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_584361841c63",
+        "what_matched": {
+          "candidate_entities": [],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.6579,
+      "content": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+      "domain": "maths",
+      "knowledge_id": "KOSHA_number_recognition_001",
+      "signal_id": "signal_584361841c63",
+      "source": "balbharti_primary_mathematics_curriculum",
+      "source_governance": {
+        "authority_weight": 0.74,
+        "confidence_ceiling": 0.82,
+        "lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0,
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "number",
+        "recognition",
+        "numerals",
+        "maths",
+        "counting"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_8bcce091892e50b1"
+      }
+    },
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6569,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.9973,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5296,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.7373
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6569,
+            "why": [
+              "epistemic_score=0.6569",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7099,
+          "retrieval_confidence": 0.5296,
+          "semantic_score": 0.425,
+          "tag_match_score": 1.0
+        },
+        "overlap_percent": {
+          "concept": 50.0,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_0dfc0c5f843b",
+        "what_matched": {
+          "candidate_entities": [],
+          "query_entities": [],
+          "tags": [
+            "addition"
+          ]
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.6569,
+      "content": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+      "domain": "maths",
+      "knowledge_id": "KOSHA_addition_001",
+      "signal_id": "signal_0dfc0c5f843b",
+      "source": "balbharti_primary_mathematics_curriculum",
+      "source_governance": {
+        "authority_weight": 0.7373,
+        "confidence_ceiling": 0.8173,
+        "lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0027,
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "addition",
+        "add",
+        "sum",
+        "arithmetic",
+        "maths",
+        "plus"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_addition_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_8bcce091892e50b1"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_8bcce091892e50b1"
+  },
+  "query": "What is Addition?",
+  "reasoning": "Answer uses 1 accepted evidence record(s): KOSHA_addition_001 (balbharti_primary_mathematics_curriculum). Sentences are extracted from retrieved content.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [],
+  "retrieval_run_record": {
+    "candidate_count": 3,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:maths:342a5c163b7e",
+        "claim_id": "claim_1_ab56a5bd",
+        "claim_text": "Addition is the mathematical operation of combining two or more numbers to find their total or sum",
+        "confidence": 0.529579,
+        "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "canonical_object_id": "uko:maths:342a5c163b7e",
+        "claim_id": "claim_2_3ed9ad59",
+        "claim_text": "Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+        "confidence": 0.529579,
+        "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "deduplicated_candidate_count": 3,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_fd9450065bbd",
+    "replay_id": "replay_4c82af90746fbfff",
+    "replay_safe": true,
+    "retrieval_run_id": "run_6057bc8cbfb1",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:6486beb0c48c",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+        "ranking_score": 0.5302,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:1181034ec156",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "1181034ec15638c4f519efc1f2fe9c88a4db9d9777d57f44483226e80f164595",
+        "ranking_score": 0.5302,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:342a5c163b7e",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+        "ranking_score": 0.529579,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "trace_8bcce091892e50b1",
+    "verification_status": "VERIFIED"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_a9df0fb0b71c",
+      "signal_584361841c63",
+      "signal_0dfc0c5f843b"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.6579,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.78,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 1.0,
+                "ontology_convergence": 0.6417,
+                "retrieval_strength": 0.5302,
+                "semantic_agreement": 0.5,
+                "source_authority": 0.74
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.6579,
+              "why": [
+                "epistemic_score=0.6579",
+                "ceiling_applied=0.7800",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.4601,
+            "retrieval_confidence": 0.5302,
+            "semantic_score": 0.425,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 50.0,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_a9df0fb0b71c",
+          "what_matched": {
+            "candidate_entities": [],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.6579,
+        "content": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "domain": "maths",
+        "knowledge_id": "KOSHA_subtraction_001",
+        "signal_id": "signal_a9df0fb0b71c",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.74,
+          "confidence_ceiling": 0.82,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "subtraction",
+          "subtract",
+          "difference",
+          "arithmetic",
+          "maths",
+          "minus"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_subtraction_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_8bcce091892e50b1"
+        }
+      },
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.6579,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.78,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 1.0,
+                "ontology_convergence": 0.6417,
+                "retrieval_strength": 0.5302,
+                "semantic_agreement": 0.5,
+                "source_authority": 0.74
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.6579,
+              "why": [
+                "epistemic_score=0.6579",
+                "ceiling_applied=0.7800",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.4601,
+            "retrieval_confidence": 0.5302,
+            "semantic_score": 0.425,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 50.0,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_584361841c63",
+          "what_matched": {
+            "candidate_entities": [],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.6579,
+        "content": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+        "domain": "maths",
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "signal_id": "signal_584361841c63",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.74,
+          "confidence_ceiling": 0.82,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "number",
+          "recognition",
+          "numerals",
+          "maths",
+          "counting"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_number_recognition_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_8bcce091892e50b1"
+        }
+      },
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.6569,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.78,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.9973,
+                "ontology_convergence": 0.6417,
+                "retrieval_strength": 0.5296,
+                "semantic_agreement": 0.5,
+                "source_authority": 0.7373
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.6569,
+              "why": [
+                "epistemic_score=0.6569",
+                "ceiling_applied=0.7800",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.7099,
+            "retrieval_confidence": 0.5296,
+            "semantic_score": 0.425,
+            "tag_match_score": 1.0
+          },
+          "overlap_percent": {
+            "concept": 50.0,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_0dfc0c5f843b",
+          "what_matched": {
+            "candidate_entities": [],
+            "query_entities": [],
+            "tags": [
+              "addition"
+            ]
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.6569,
+        "content": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+        "domain": "maths",
+        "knowledge_id": "KOSHA_addition_001",
+        "signal_id": "signal_0dfc0c5f843b",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.7373,
+          "confidence_ceiling": 0.8173,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0027,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "addition",
+          "add",
+          "sum",
+          "arithmetic",
+          "maths",
+          "plus"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_addition_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_8bcce091892e50b1"
+        }
+      }
+    ],
+    "artifact_hash": "2caa4d51ea3f26e89e26bc39387eb74b249e459c32345997174248165bfd84f5",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-10-02T06:51:58.133460Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What is Addition?",
+    "raw_signal_count": 3,
+    "rejected_signal_ids": [],
+    "rejected_signals": [],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_subtraction_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_a9df0fb0b71c",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_8bcce091892e50b1"
+      },
+      {
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_584361841c63",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_8bcce091892e50b1"
+      },
+      {
+        "knowledge_id": "KOSHA_addition_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_0dfc0c5f843b",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_8bcce091892e50b1"
+      }
+    ],
+    "trace_id": "trace_8bcce091892e50b1"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:6486beb0c48c",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+      "ranking_score": 0.5302,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:1181034ec156",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "1181034ec15638c4f519efc1f2fe9c88a4db9d9777d57f44483226e80f164595",
+      "ranking_score": 0.5302,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:342a5c163b7e",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+      "ranking_score": 0.529579,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": true,
+    "constitutional_governance": {
+      "canonical_authority_granted": true,
+      "canonical_memory_keys": [
+        "Assembly",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Brahma",
+        "Brahman",
+        "Brahmanda Purana",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Karma",
+        "Karma Yoga",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Moksha",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Ramayana",
+        "Taittiriya Upanishad",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Yajna",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": true,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "canonical",
+        "trace_id": "trace_8bcce091892e50b1",
+        "updated_at": "2026-10-02T06:51:58.230955Z"
+      },
+      "event_hash": "73e47973c123a84347954c54742217c20ec0bf85b75b35c38351da762c9a2a66",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": true,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "ACCEPT_CANONICAL_MUTATION",
+        "failure_states": [],
+        "memory_classification": "canonical",
+        "reasons": [],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "a43900787608012856f2246cb2d6cc422dd828de01c177493a71f948ffcb56bd",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "73e47973c123a84347954c54742217c20ec0bf85b75b35c38351da762c9a2a66",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "362557c9b78adaf4c96ab634b7269b19ed2959759e4f3916d697c5de23d19773",
+      "transient_event_count": 693
+    },
+    "entity_continuity": {},
+    "event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "73e47973c123a84347954c54742217c20ec0bf85b75b35c38351da762c9a2a66",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_8bcce091892e50b1",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T06:51:58.522106Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [],
+    "user_continuity": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-10-02T06:51:58.522106Z",
+      "queries": 274,
+      "trace_ids": [
+        "trace_fe85a088c1575317",
+        "trace_5314af3bb0dc59b6",
+        "trace_75ce778ec3d05cea",
+        "trace_5a06aa0d31215702",
+        "trace_e3326815fac15673",
+        "trace_60f543309a585572",
+        "trace_3f9ddd011c0c5fbb",
+        "trace_112de477f5fb5609",
+        "trace_615b80a6520358f9",
+        "trace_f0969bc10a7a501d",
+        "trace_64ab872da79d5a21",
+        "trace_e0583b94386c57ad",
+        "trace_cb4742be967a5b8b",
+        "trace_6d5b71e164975c72",
+        "trace_a2b8da024e905c7a",
+        "trace_498ad7e3852b56bb",
+        "trace_82d1a66eb7435f4f",
+        "trace_09a94a05198c556a",
+        "trace_5c6af4e137c656aa",
+        "trace_e068fcefc8a85635",
+        "trace_e552a9714f185aaa",
+        "trace_eaff6ffc272c5e49",
+        "trace_515aa3e0898d5403",
+        "trace_8707db6e0a545a0a",
+        "trace_e11e2cc6929752ec",
+        "trace_03750fc5227c51ff",
+        "trace_602398a9effb5947",
+        "trace_2d648edb5ce75422",
+        "trace_0381e3f8cc8b5f04",
+        "trace_3ce2d9501d58557d",
+        "trace_1e65122d7ecf589c",
+        "trace_e3a049e8d30d5068",
+        "trace_aa32f41694dd596f",
+        "trace_59d8733686205386",
+        "trace_b830a3d33bc25104",
+        "trace_ad907ebd869957a6",
+        "trace_413d5761fd0e520e",
+        "trace_0ccdf987785f5f55",
+        "trace_6a06ed9891ea563e",
+        "trace_59fcc33a98c85d92",
+        "trace_549d62a54f7c5d1c",
+        "trace_fce9fa2046c050e8",
+        "trace_012f6ddcec535707",
+        "trace_36ea4d6235fa5c3f",
+        "trace_0e6d343c395559cf",
+        "trace_e040a3440d685e3a",
+        "trace_ef5de41286915537",
+        "trace_bffab8e238375f79",
+        "trace_1fd753e2a0e65263",
+        "trace_8bcce091892e50b1"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "maths",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_subtraction_001",
+      "signal_id": "signal_a9df0fb0b71c",
+      "source_lineage": {
+        "original_source": "balbharti_primary_mathematics_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    },
+    {
+      "domain": "maths",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_number_recognition_001",
+      "signal_id": "signal_584361841c63",
+      "source_lineage": {
+        "original_source": "balbharti_primary_mathematics_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    },
+    {
+      "domain": "maths",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_addition_001",
+      "signal_id": "signal_0dfc0c5f843b",
+      "source_lineage": {
+        "original_source": "balbharti_primary_mathematics_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 3,
+  "signals_rejected": 0,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_8bcce091892e50b1",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "80d904f9468aabebcde6b3b596100320d1f9839195bc0220b4a7b0c9790473fd",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "2caa4d51ea3f26e89e26bc39387eb74b249e459c32345997174248165bfd84f5",
+    "trace_id": "trace_8bcce091892e50b1"
+  },
+  "verification_status": "VERIFIED"
+}

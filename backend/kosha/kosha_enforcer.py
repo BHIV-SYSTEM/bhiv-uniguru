@@ -15,6 +15,11 @@ VALID_DOMAINS = {
     "chemistry", "biology", "agricultural", "general",
     # Legacy domains from existing Kosha entries
     "agriculture", "urban", "water / rivers", "infrastructure",
+    # Additional domain variants present in Kosha entries
+    "bhagavad gita", "gita + decision making", "dharma_systems",
+    "water management", "cosmology + time", "sustainability (ancient vs modern)",
+    "agriculture + ecology", "urban / society", "infrastructure + temples",
+    "sanskrit queries", "ecology",
 }
 
 DOMAIN_KEYWORDS: List[Tuple[str, tuple]] = [

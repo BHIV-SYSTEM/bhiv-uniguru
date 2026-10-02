@@ -1,0 +1,1118 @@
+{
+  "answer": "Number recognition is the ability to identify and name numbers by sight.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_cdb6dd20d503",
+      "signal_84e98d5d9f30"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 2,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7122,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.6502,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7122,
+            "why": [
+              "epistemic_score=0.7122",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7725,
+          "retrieval_confidence": 0.6502,
+          "semantic_score": 0.5333,
+          "tag_match_score": 1.0
+        },
+        {
+          "content_overlap": 0.5,
+          "derived_confidence": 0.5382,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.5667,
+              "retrieval_strength": 0.4342,
+              "semantic_agreement": 0.3333,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5382,
+            "why": [
+              "epistemic_score=0.5382",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3186,
+          "retrieval_confidence": 0.4342,
+          "semantic_score": 0.3667,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 2,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.7122,
+      "rejected_count": 0
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "1b945cb43901cb47b13a7b47f5aea655c7136549b3f51b297aa4450633d028a5",
+    "memory_event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "4b95863890466765c1d8e2215dfb6d4dc6ba2720be6e2dda7ba1a7334e2f4aae",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_1fd753e2a0e65263",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T06:51:58.115471Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [],
+    "retrieval_truth_hash": "e68ba9d027c5b9f00a3aa080c4ebfb51e652f44dc2cd57f21dbf053dc0c5d50b",
+    "semantic_path": [
+      {
+        "domain": "maths",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "signal_id": "signal_cdb6dd20d503",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      },
+      {
+        "domain": "maths",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_place_value_001",
+        "signal_id": "signal_84e98d5d9f30",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T06:51:57.738901Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_1fd753e2a0e65263",
+      "contract_emission": "trace_1fd753e2a0e65263",
+      "downstream_execution": "trace_1fd753e2a0e65263",
+      "immutable": true,
+      "retrieval": "trace_1fd753e2a0e65263",
+      "synthesis": "trace_1fd753e2a0e65263",
+      "validation": "trace_1fd753e2a0e65263"
+    },
+    "trace_id": "trace_1fd753e2a0e65263",
+    "verification_status": "VERIFIED"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:maths:1181034ec156",
+      "claim_id": "claim_1_65403377",
+      "claim_text": "Number recognition is the ability to identify and name numbers by sight.",
+      "confidence": 0.6502,
+      "provenance_hash": "1181034ec15638c4f519efc1f2fe9c88a4db9d9777d57f44483226e80f164595",
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "confidence": 0.7122,
+  "confidence_breakdown": {
+    "accepted_count": 2,
+    "accepted_derivations": [
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.7122,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.82,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 1.0,
+            "ontology_convergence": 0.7333,
+            "retrieval_strength": 0.6502,
+            "semantic_agreement": 0.6667,
+            "source_authority": 0.74
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.7122,
+          "why": [
+            "epistemic_score=0.7122",
+            "ceiling_applied=0.8200",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.7725,
+        "retrieval_confidence": 0.6502,
+        "semantic_score": 0.5333,
+        "tag_match_score": 1.0
+      },
+      {
+        "content_overlap": 0.5,
+        "derived_confidence": 0.5382,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.78,
+          "dimensions": {
+            "contextual_consistency": 0.5,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 1.0,
+            "ontology_convergence": 0.5667,
+            "retrieval_strength": 0.4342,
+            "semantic_agreement": 0.3333,
+            "source_authority": 0.74
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.5382,
+          "why": [
+            "epistemic_score=0.5382",
+            "ceiling_applied=0.7800",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.3186,
+        "retrieval_confidence": 0.4342,
+        "semantic_score": 0.3667,
+        "tag_match_score": 0.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "single_source_verified",
+      "claim_group_count": 2,
+      "consensus_score": 0.5,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+      "multi_source_reinforcement": 0.0,
+      "source_count": 1
+    },
+    "overall": 0.7122,
+    "rejected_count": 0
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "single_source_verified",
+    "claim_group_count": 2,
+    "consensus_score": 0.5,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+    "multi_source_reinforcement": 0.0,
+    "source_count": 1
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_1fd753e2a0e65263"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 46,
+    "valid_entries": 27
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T06:51:57.738901Z",
+  "interpretation_payload": {
+    "answer": "Number recognition is the ability to identify and name numbers by sight.",
+    "artifact_hash": "1b945cb43901cb47b13a7b47f5aea655c7136549b3f51b297aa4450633d028a5",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.7122,
+    "confidence_breakdown": {
+      "accepted_count": 2,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7122,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.6502,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7122,
+            "why": [
+              "epistemic_score=0.7122",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7725,
+          "retrieval_confidence": 0.6502,
+          "semantic_score": 0.5333,
+          "tag_match_score": 1.0
+        },
+        {
+          "content_overlap": 0.5,
+          "derived_confidence": 0.5382,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.5667,
+              "retrieval_strength": 0.4342,
+              "semantic_agreement": 0.3333,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5382,
+            "why": [
+              "epistemic_score=0.5382",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3186,
+          "retrieval_confidence": 0.4342,
+          "semantic_score": 0.3667,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 2,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.7122,
+      "rejected_count": 0
+    },
+    "contradiction_state": {
+      "classification": "single_source_verified",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_cdb6dd20d503",
+        "signal_84e98d5d9f30"
+      ],
+      "retrieval_trace_id": "trace_1fd753e2a0e65263",
+      "retrieval_truth_hash": "e68ba9d027c5b9f00a3aa080c4ebfb51e652f44dc2cd57f21dbf053dc0c5d50b"
+    },
+    "trace_id": "trace_1fd753e2a0e65263",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_number_recognition_001",
+    "KOSHA_place_value_001"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7122,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.6502,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7122,
+            "why": [
+              "epistemic_score=0.7122",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7725,
+          "retrieval_confidence": 0.6502,
+          "semantic_score": 0.5333,
+          "tag_match_score": 1.0
+        },
+        "overlap_percent": {
+          "concept": 66.67,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_cdb6dd20d503",
+        "what_matched": {
+          "candidate_entities": [],
+          "query_entities": [],
+          "tags": [
+            "number",
+            "recognition"
+          ]
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.7122,
+      "content": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+      "domain": "maths",
+      "knowledge_id": "KOSHA_number_recognition_001",
+      "signal_id": "signal_cdb6dd20d503",
+      "source": "balbharti_primary_mathematics_curriculum",
+      "source_governance": {
+        "authority_weight": 0.74,
+        "confidence_ceiling": 0.82,
+        "lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0,
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "number",
+        "recognition",
+        "numerals",
+        "maths",
+        "counting"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_1fd753e2a0e65263"
+      }
+    },
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 0.5,
+          "derived_confidence": 0.5382,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.5667,
+              "retrieval_strength": 0.4342,
+              "semantic_agreement": 0.3333,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5382,
+            "why": [
+              "epistemic_score=0.5382",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.3186,
+          "retrieval_confidence": 0.4342,
+          "semantic_score": 0.3667,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 33.33,
+          "content": 50.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_84e98d5d9f30",
+        "what_matched": {
+          "candidate_entities": [],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.5382,
+      "content": "Place value is the value of a digit based on its position in a number. In the decimal number system, each position represents a power of ten. For example, in the number 345, the digit 3 is in the hundreds place and has a value of 300, the digit 4 is in the tens place and has a value of 40, and the digit 5 is in the ones place and has a value of 5. Understanding place value is essential for reading, writing, and comparing numbers.",
+      "domain": "maths",
+      "knowledge_id": "KOSHA_place_value_001",
+      "signal_id": "signal_84e98d5d9f30",
+      "source": "balbharti_primary_mathematics_curriculum",
+      "source_governance": {
+        "authority_weight": 0.74,
+        "confidence_ceiling": 0.82,
+        "lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0,
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "place",
+        "value",
+        "place value",
+        "digits",
+        "maths",
+        "decimal"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_place_value_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_1fd753e2a0e65263"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_1fd753e2a0e65263"
+  },
+  "query": "What is Number Recognition?",
+  "reasoning": "Answer uses 1 accepted evidence record(s): KOSHA_number_recognition_001 (balbharti_primary_mathematics_curriculum). Sentences are extracted from retrieved content.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [],
+  "retrieval_run_record": {
+    "candidate_count": 2,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:maths:1181034ec156",
+        "claim_id": "claim_1_65403377",
+        "claim_text": "Number recognition is the ability to identify and name numbers by sight.",
+        "confidence": 0.6502,
+        "provenance_hash": "1181034ec15638c4f519efc1f2fe9c88a4db9d9777d57f44483226e80f164595",
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "deduplicated_candidate_count": 2,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_a0aebd05a660",
+    "replay_id": "replay_f56d36fe3d6d5d01",
+    "replay_safe": true,
+    "retrieval_run_id": "run_b883686a4d67",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:1181034ec156",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "1181034ec15638c4f519efc1f2fe9c88a4db9d9777d57f44483226e80f164595",
+        "ranking_score": 0.6502,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:815569ff974c",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "815569ff974ce15708d75d26671e827f58e40f7f1b7d89cf27594b2e9f0e592c",
+        "ranking_score": 0.43422400000000005,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Place value is the value of a digit based on its position in a number. In the decimal number system, each position represents a power of ten. For example, in the number 345, the digit 3 is in the hundreds place and has a value of 300, the digit 4 is in the tens place and has a value of 40, and the digit 5 is in the ones place and has a value of 5. Understanding place value is essential for reading, writing, and comparing numbers.",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "trace_1fd753e2a0e65263",
+    "verification_status": "VERIFIED"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_cdb6dd20d503",
+      "signal_84e98d5d9f30"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.7122,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.82,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 1.0,
+                "ontology_convergence": 0.7333,
+                "retrieval_strength": 0.6502,
+                "semantic_agreement": 0.6667,
+                "source_authority": 0.74
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.7122,
+              "why": [
+                "epistemic_score=0.7122",
+                "ceiling_applied=0.8200",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.7725,
+            "retrieval_confidence": 0.6502,
+            "semantic_score": 0.5333,
+            "tag_match_score": 1.0
+          },
+          "overlap_percent": {
+            "concept": 66.67,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_cdb6dd20d503",
+          "what_matched": {
+            "candidate_entities": [],
+            "query_entities": [],
+            "tags": [
+              "number",
+              "recognition"
+            ]
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.7122,
+        "content": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+        "domain": "maths",
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "signal_id": "signal_cdb6dd20d503",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.74,
+          "confidence_ceiling": 0.82,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "number",
+          "recognition",
+          "numerals",
+          "maths",
+          "counting"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_number_recognition_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_1fd753e2a0e65263"
+        }
+      },
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 0.5,
+            "derived_confidence": 0.5382,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.78,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 1.0,
+                "ontology_convergence": 0.5667,
+                "retrieval_strength": 0.4342,
+                "semantic_agreement": 0.3333,
+                "source_authority": 0.74
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.5382,
+              "why": [
+                "epistemic_score=0.5382",
+                "ceiling_applied=0.7800",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.3186,
+            "retrieval_confidence": 0.4342,
+            "semantic_score": 0.3667,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 33.33,
+            "content": 50.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_84e98d5d9f30",
+          "what_matched": {
+            "candidate_entities": [],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.5382,
+        "content": "Place value is the value of a digit based on its position in a number. In the decimal number system, each position represents a power of ten. For example, in the number 345, the digit 3 is in the hundreds place and has a value of 300, the digit 4 is in the tens place and has a value of 40, and the digit 5 is in the ones place and has a value of 5. Understanding place value is essential for reading, writing, and comparing numbers.",
+        "domain": "maths",
+        "knowledge_id": "KOSHA_place_value_001",
+        "signal_id": "signal_84e98d5d9f30",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.74,
+          "confidence_ceiling": 0.82,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "place",
+          "value",
+          "place value",
+          "digits",
+          "maths",
+          "decimal"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_place_value_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_1fd753e2a0e65263"
+        }
+      }
+    ],
+    "artifact_hash": "e68ba9d027c5b9f00a3aa080c4ebfb51e652f44dc2cd57f21dbf053dc0c5d50b",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-10-02T06:51:57.738901Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What is Number Recognition?",
+    "raw_signal_count": 2,
+    "rejected_signal_ids": [],
+    "rejected_signals": [],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_cdb6dd20d503",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_1fd753e2a0e65263"
+      },
+      {
+        "knowledge_id": "KOSHA_place_value_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_84e98d5d9f30",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_1fd753e2a0e65263"
+      }
+    ],
+    "trace_id": "trace_1fd753e2a0e65263"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:1181034ec156",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "1181034ec15638c4f519efc1f2fe9c88a4db9d9777d57f44483226e80f164595",
+      "ranking_score": 0.6502,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:815569ff974c",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "815569ff974ce15708d75d26671e827f58e40f7f1b7d89cf27594b2e9f0e592c",
+      "ranking_score": 0.43422400000000005,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Place value is the value of a digit based on its position in a number. In the decimal number system, each position represents a power of ten. For example, in the number 345, the digit 3 is in the hundreds place and has a value of 300, the digit 4 is in the tens place and has a value of 40, and the digit 5 is in the ones place and has a value of 5. Understanding place value is essential for reading, writing, and comparing numbers.",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": true,
+    "constitutional_governance": {
+      "canonical_authority_granted": true,
+      "canonical_memory_keys": [
+        "Assembly",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Brahma",
+        "Brahman",
+        "Brahmanda Purana",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Karma",
+        "Karma Yoga",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Moksha",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Ramayana",
+        "Taittiriya Upanishad",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Yajna",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": true,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "canonical",
+        "trace_id": "trace_1fd753e2a0e65263",
+        "updated_at": "2026-10-02T06:51:57.828291Z"
+      },
+      "event_hash": "4b95863890466765c1d8e2215dfb6d4dc6ba2720be6e2dda7ba1a7334e2f4aae",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": true,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "ACCEPT_CANONICAL_MUTATION",
+        "failure_states": [],
+        "memory_classification": "canonical",
+        "reasons": [],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "286448e0585593b4867aa82d394facd994da8746d2e3d1210aa5e194df60106e",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "4b95863890466765c1d8e2215dfb6d4dc6ba2720be6e2dda7ba1a7334e2f4aae",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "cb9fcfa9ab060555a6e57f76b1ed7bf963e6308bf928e8076b353f969ab6ab82",
+      "transient_event_count": 693
+    },
+    "entity_continuity": {},
+    "event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "4b95863890466765c1d8e2215dfb6d4dc6ba2720be6e2dda7ba1a7334e2f4aae",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_1fd753e2a0e65263",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T06:51:58.115471Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [],
+    "user_continuity": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-10-02T06:51:58.115471Z",
+      "queries": 273,
+      "trace_ids": [
+        "trace_ed2f056fcd6d58cc",
+        "trace_fe85a088c1575317",
+        "trace_5314af3bb0dc59b6",
+        "trace_75ce778ec3d05cea",
+        "trace_5a06aa0d31215702",
+        "trace_e3326815fac15673",
+        "trace_60f543309a585572",
+        "trace_3f9ddd011c0c5fbb",
+        "trace_112de477f5fb5609",
+        "trace_615b80a6520358f9",
+        "trace_f0969bc10a7a501d",
+        "trace_64ab872da79d5a21",
+        "trace_e0583b94386c57ad",
+        "trace_cb4742be967a5b8b",
+        "trace_6d5b71e164975c72",
+        "trace_a2b8da024e905c7a",
+        "trace_498ad7e3852b56bb",
+        "trace_82d1a66eb7435f4f",
+        "trace_09a94a05198c556a",
+        "trace_5c6af4e137c656aa",
+        "trace_e068fcefc8a85635",
+        "trace_e552a9714f185aaa",
+        "trace_eaff6ffc272c5e49",
+        "trace_515aa3e0898d5403",
+        "trace_8707db6e0a545a0a",
+        "trace_e11e2cc6929752ec",
+        "trace_03750fc5227c51ff",
+        "trace_602398a9effb5947",
+        "trace_2d648edb5ce75422",
+        "trace_0381e3f8cc8b5f04",
+        "trace_3ce2d9501d58557d",
+        "trace_1e65122d7ecf589c",
+        "trace_e3a049e8d30d5068",
+        "trace_aa32f41694dd596f",
+        "trace_59d8733686205386",
+        "trace_b830a3d33bc25104",
+        "trace_ad907ebd869957a6",
+        "trace_413d5761fd0e520e",
+        "trace_0ccdf987785f5f55",
+        "trace_6a06ed9891ea563e",
+        "trace_59fcc33a98c85d92",
+        "trace_549d62a54f7c5d1c",
+        "trace_fce9fa2046c050e8",
+        "trace_012f6ddcec535707",
+        "trace_36ea4d6235fa5c3f",
+        "trace_0e6d343c395559cf",
+        "trace_e040a3440d685e3a",
+        "trace_ef5de41286915537",
+        "trace_bffab8e238375f79",
+        "trace_1fd753e2a0e65263"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "maths",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_number_recognition_001",
+      "signal_id": "signal_cdb6dd20d503",
+      "source_lineage": {
+        "original_source": "balbharti_primary_mathematics_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    },
+    {
+      "domain": "maths",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_place_value_001",
+      "signal_id": "signal_84e98d5d9f30",
+      "source_lineage": {
+        "original_source": "balbharti_primary_mathematics_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 2,
+  "signals_rejected": 0,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_1fd753e2a0e65263",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "1b945cb43901cb47b13a7b47f5aea655c7136549b3f51b297aa4450633d028a5",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "e68ba9d027c5b9f00a3aa080c4ebfb51e652f44dc2cd57f21dbf053dc0c5d50b",
+    "trace_id": "trace_1fd753e2a0e65263"
+  },
+  "verification_status": "VERIFIED"
+}

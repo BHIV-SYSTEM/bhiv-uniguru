@@ -1,0 +1,1387 @@
+{
+  "answer": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_ae85bd7437f7"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.4385,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.4,
+              "retrieval_strength": 0.4566,
+              "semantic_agreement": 0.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4385,
+            "why": [
+              "epistemic_score=0.4385",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.6241,
+          "retrieval_confidence": 0.4566,
+          "semantic_score": 0.2,
+          "tag_match_score": 1.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.4385,
+      "rejected_count": 0
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "10e1187b21b0438574d0ffb88223e76ac5daa9650c15c61602b6c0033a01b87d",
+    "memory_event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "eee5508a8a907652e3cee650f8f5f866a14621ce00141fe7cb22955914d51739",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Brahman",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Upanishads",
+        "Yoga"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_d1642aa7320e5a34",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T06:54:07.779043Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [],
+    "retrieval_truth_hash": "ea1e2496432beb3b4fb6dcc0aecdd232341f835acd938869cb856301d366e907",
+    "semantic_path": [
+      {
+        "domain": "upanishads",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_om_001",
+        "signal_id": "signal_ae85bd7437f7",
+        "source_lineage": {
+          "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T06:54:07.376612Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_d1642aa7320e5a34",
+      "contract_emission": "trace_d1642aa7320e5a34",
+      "downstream_execution": "trace_d1642aa7320e5a34",
+      "immutable": true,
+      "retrieval": "trace_d1642aa7320e5a34",
+      "synthesis": "trace_d1642aa7320e5a34",
+      "validation": "trace_d1642aa7320e5a34"
+    },
+    "trace_id": "trace_d1642aa7320e5a34",
+    "verification_status": "VERIFIED"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:upanishads:992b97e66df9",
+      "claim_id": "claim_1_326c77f8",
+      "claim_text": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy.",
+      "confidence": 0.4566,
+      "provenance_hash": "992b97e66df9d888f6eb568fd224c935995fa04349bce7940baf7f8496afb13a",
+      "source_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+      "text_span": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. According to the Mandukya Upanishad, Om encompasses all of existence: the past, present, and future. It is considered the sound of Brahman, the ultimate reality, and is used as a mantra in meditation and spiritual practice.",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "confidence": 0.4385,
+  "confidence_breakdown": {
+    "accepted_count": 1,
+    "accepted_derivations": [
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.4385,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.6,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 0.88,
+            "ontology_convergence": 0.4,
+            "retrieval_strength": 0.4566,
+            "semantic_agreement": 0.0,
+            "source_authority": 0.42
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.4385,
+          "why": [
+            "epistemic_score=0.4385",
+            "ceiling_applied=0.6000",
+            "source_type=ocr_derivative"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.6241,
+        "retrieval_confidence": 0.4566,
+        "semantic_score": 0.2,
+        "tag_match_score": 1.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "single_source_verified",
+      "claim_group_count": 1,
+      "consensus_score": 0.5,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+      "multi_source_reinforcement": 0.0,
+      "source_count": 1
+    },
+    "overall": 0.4385,
+    "rejected_count": 0
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "single_source_verified",
+    "claim_group_count": 1,
+    "consensus_score": 0.5,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+    "multi_source_reinforcement": 0.0,
+    "source_count": 1
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_d1642aa7320e5a34"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 46,
+    "valid_entries": 27
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T06:54:07.376612Z",
+  "interpretation_payload": {
+    "answer": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy.",
+    "artifact_hash": "10e1187b21b0438574d0ffb88223e76ac5daa9650c15c61602b6c0033a01b87d",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.4385,
+    "confidence_breakdown": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.4385,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.4,
+              "retrieval_strength": 0.4566,
+              "semantic_agreement": 0.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4385,
+            "why": [
+              "epistemic_score=0.4385",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.6241,
+          "retrieval_confidence": 0.4566,
+          "semantic_score": 0.2,
+          "tag_match_score": 1.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.4385,
+      "rejected_count": 0
+    },
+    "contradiction_state": {
+      "classification": "single_source_verified",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_ae85bd7437f7"
+      ],
+      "retrieval_trace_id": "trace_d1642aa7320e5a34",
+      "retrieval_truth_hash": "ea1e2496432beb3b4fb6dcc0aecdd232341f835acd938869cb856301d366e907"
+    },
+    "trace_id": "trace_d1642aa7320e5a34",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_om_001"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.4385,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.4,
+              "retrieval_strength": 0.4566,
+              "semantic_agreement": 0.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4385,
+            "why": [
+              "epistemic_score=0.4385",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.6241,
+          "retrieval_confidence": 0.4566,
+          "semantic_score": 0.2,
+          "tag_match_score": 1.0
+        },
+        "overlap_percent": {
+          "concept": 0.0,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_ae85bd7437f7",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Mandukya Upanishad",
+              "concepts": [
+                "Om",
+                "consciousness"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text",
+              "matched_alias": "mandukya upanishad"
+            },
+            {
+              "canonical": "Mantra",
+              "concepts": [
+                "sound",
+                "ritual"
+              ],
+              "domain": "tantra",
+              "entity_type": "concept",
+              "matched_alias": "mantra"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            },
+            {
+              "canonical": "Yoga",
+              "concepts": [
+                "discipline",
+                "meditation"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "yoga"
+            }
+          ],
+          "query_entities": [],
+          "tags": [
+            "om"
+          ]
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.4385,
+      "content": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. According to the Mandukya Upanishad, Om encompasses all of existence: the past, present, and future. It is considered the sound of Brahman, the ultimate reality, and is used as a mantra in meditation and spiritual practice.",
+      "domain": "upanishads",
+      "knowledge_id": "KOSHA_om_001",
+      "signal_id": "signal_ae85bd7437f7",
+      "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+      "source_governance": {
+        "authority_weight": 0.42,
+        "confidence_ceiling": 0.6,
+        "lineage": {
+          "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.12,
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "source_type": "ocr_derivative",
+        "suppression_reason": null
+      },
+      "tags": [
+        "om",
+        "aum",
+        "sacred",
+        "sound",
+        "mantra",
+        "upanishad"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_om_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_d1642aa7320e5a34"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_d1642aa7320e5a34"
+  },
+  "query": "What is Om?",
+  "reasoning": "Answer uses 1 accepted evidence record(s): KOSHA_om_001 (Yoga_Upanishad_[Sanskrit_English]_OCR.pdf). Sentences are extracted from retrieved content.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [],
+  "retrieval_run_record": {
+    "candidate_count": 1,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:upanishads:992b97e66df9",
+        "claim_id": "claim_1_326c77f8",
+        "claim_text": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy.",
+        "confidence": 0.4566,
+        "provenance_hash": "992b97e66df9d888f6eb568fd224c935995fa04349bce7940baf7f8496afb13a",
+        "source_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "text_span": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. According to the Mandukya Upanishad, Om encompasses all of existence: the past, present, and future. It is considered the sound of Brahman, the ultimate reality, and is used as a mantra in meditation and spiritual practice.",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "deduplicated_candidate_count": 1,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_286e7de593c1",
+    "replay_id": "replay_22783f1ab5b3f1d5",
+    "replay_safe": true,
+    "retrieval_run_id": "run_5cdf9504e8c4",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:upanishads:992b97e66df9",
+        "dedup_status": "unique",
+        "domain": "upanishads",
+        "provenance_hash": "992b97e66df9d888f6eb568fd224c935995fa04349bce7940baf7f8496afb13a",
+        "ranking_score": 0.4566,
+        "source_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "text_span": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. According to the Mandukya Upanishad, Om encompasses all of existence: the past, present, and future. It is considered the sound of Brahman, the ultimate reality, and is used as a mantra in meditation and spiritual practice.",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "trace_d1642aa7320e5a34",
+    "verification_status": "VERIFIED"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_ae85bd7437f7"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.4385,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.4,
+                "retrieval_strength": 0.4566,
+                "semantic_agreement": 0.0,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.4385,
+              "why": [
+                "epistemic_score=0.4385",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.6241,
+            "retrieval_confidence": 0.4566,
+            "semantic_score": 0.2,
+            "tag_match_score": 1.0
+          },
+          "overlap_percent": {
+            "concept": 0.0,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_ae85bd7437f7",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Brahman",
+                "concepts": [
+                  "ultimate reality",
+                  "Atman"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "brahman"
+              },
+              {
+                "canonical": "Mandukya Upanishad",
+                "concepts": [
+                  "Om",
+                  "consciousness"
+                ],
+                "domain": "upanishads",
+                "entity_type": "text",
+                "matched_alias": "mandukya upanishad"
+              },
+              {
+                "canonical": "Mantra",
+                "concepts": [
+                  "sound",
+                  "ritual"
+                ],
+                "domain": "tantra",
+                "entity_type": "concept",
+                "matched_alias": "mantra"
+              },
+              {
+                "canonical": "Upanishads",
+                "concepts": [
+                  "Brahman",
+                  "Atman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "text_group",
+                "matched_alias": "upanishads"
+              },
+              {
+                "canonical": "Yoga",
+                "concepts": [
+                  "discipline",
+                  "meditation"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "yoga"
+              }
+            ],
+            "query_entities": [],
+            "tags": [
+              "om"
+            ]
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.4385,
+        "content": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. According to the Mandukya Upanishad, Om encompasses all of existence: the past, present, and future. It is considered the sound of Brahman, the ultimate reality, and is used as a mantra in meditation and spiritual practice.",
+        "domain": "upanishads",
+        "knowledge_id": "KOSHA_om_001",
+        "signal_id": "signal_ae85bd7437f7",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tags": [
+          "om",
+          "aum",
+          "sacred",
+          "sound",
+          "mantra",
+          "upanishad"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_om_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_d1642aa7320e5a34"
+        }
+      }
+    ],
+    "artifact_hash": "ea1e2496432beb3b4fb6dcc0aecdd232341f835acd938869cb856301d366e907",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-10-02T06:54:07.376612Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What is Om?",
+    "raw_signal_count": 1,
+    "rejected_signal_ids": [],
+    "rejected_signals": [],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_om_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_ae85bd7437f7",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "source_lineage": {
+          "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_d1642aa7320e5a34"
+      }
+    ],
+    "trace_id": "trace_d1642aa7320e5a34"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:upanishads:992b97e66df9",
+      "dedup_status": "unique",
+      "domain": "upanishads",
+      "provenance_hash": "992b97e66df9d888f6eb568fd224c935995fa04349bce7940baf7f8496afb13a",
+      "ranking_score": 0.4566,
+      "source_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+      "text_span": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. According to the Mandukya Upanishad, Om encompasses all of existence: the past, present, and future. It is considered the sound of Brahman, the ultimate reality, and is used as a mantra in meditation and spiritual practice.",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": false,
+    "constitutional_governance": {
+      "canonical_authority_granted": false,
+      "canonical_memory_keys": [
+        "Assembly",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Brahma",
+        "Brahman",
+        "Brahmanda Purana",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Karma",
+        "Karma Yoga",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Moksha",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Ramayana",
+        "Taittiriya Upanishad",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Yajna",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": false,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [
+          "Brahman",
+          "Mandukya Upanishad",
+          "Mantra",
+          "Upanishads",
+          "Yoga"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "transient",
+        "trace_id": "trace_d1642aa7320e5a34",
+        "updated_at": "2026-10-02T06:54:07.457208Z"
+      },
+      "event_hash": "eee5508a8a907652e3cee650f8f5f866a14621ce00141fe7cb22955914d51739",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": false,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "REJECT_CANONICAL_MUTATION",
+        "failure_states": [],
+        "memory_classification": "transient",
+        "reasons": [
+          "confidence_below_canonical_floor"
+        ],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "500d48cfac1fd9dd7d49eff6642e3305022a4662b74b792111f2827ca5f66555",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "eee5508a8a907652e3cee650f8f5f866a14621ce00141fe7cb22955914d51739",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "34f139cc5858daff5e9fd730290e49646168cf1d893cbb59011193a083136c93",
+      "transient_event_count": 703
+    },
+    "entity_continuity": {
+      "Brahman": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:54:07.779043Z",
+        "reinforcement_score": 0.875,
+        "source_ids": [
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Svetasvatara Upanishad - sanskrit and English.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_b47954192a92",
+          "ecosystem_ff5262118c8c",
+          "ecosystem_5f3dfac0dad2",
+          "trace_27e9fba4df8b5af7",
+          "ecosystem_5f921ae7c649",
+          "trace_cd867678907e5935",
+          "trace_d2765bbb427e57da",
+          "trace_a77e63332ecb5418",
+          "trace_224b93828a0a589e",
+          "trace_56a825c198a059b6",
+          "ecosystem_a00a15cc1502",
+          "ecosystem_2bc8f07844bc",
+          "ecosystem_54aa97cc5775",
+          "trace_f303803f8884511a",
+          "trace_b88514d878565034",
+          "trace_118ac0048a375ae5",
+          "trace_d43e2e3c9c135944",
+          "trace_4c58c9c712145a2a",
+          "trace_f7b53942ac8d5723",
+          "trace_f24a58f3b9025e99",
+          "trace_7090a906e8e65420",
+          "trace_54fefe4d7ed45aec",
+          "trace_0d7a1821eb775d46",
+          "trace_271f38bf4f47514f",
+          "trace_37e7a465f024597b",
+          "trace_689f7d7331335079",
+          "trace_993a4102687559f0",
+          "trace_5581d016fb8b5566",
+          "trace_84521d22c1a6542a",
+          "trace_be19f6cc67035ca5",
+          "trace_d06107373616529c",
+          "trace_246752a23e9b52c8",
+          "trace_943bd3f7296f5109",
+          "trace_0b9529ce42c15817",
+          "trace_502b97dd73d052e9",
+          "trace_09898a8e673b50ef",
+          "trace_24d1a80f0b6b51da",
+          "trace_9bfc417b005d558a",
+          "trace_0487e2eaa8b75f4c",
+          "trace_93cf6304ab005e00",
+          "trace_26be802b6939525f",
+          "trace_172596e690705f42",
+          "trace_f36a811b24045c84",
+          "trace_fa9ed407c31e52b6",
+          "trace_f821c78c816c5db2",
+          "trace_f36f33c022f55ead",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_badc1fdc1c9d513e",
+          "trace_8c8f4febd31e5724",
+          "trace_5514a7a5086c591b",
+          "trace_de4b859a12885226",
+          "trace_9ac88108ffb15852",
+          "trace_ec922187296f570a",
+          "trace_c342614c6468579d",
+          "trace_e45a74a3eb9e5632",
+          "trace_217e01e70a6159b0",
+          "trace_2c0477e078fd5571",
+          "trace_984775cefa555aee",
+          "trace_624af0eaa0b2516a",
+          "trace_d4def4e8a6125c94",
+          "trace_e4ddfa28691758a6",
+          "trace_d5523bed85e35b3a",
+          "trace_9408f9a0118f5510",
+          "trace_26101d1f71f75982",
+          "trace_6c1ef3fc75ea5936",
+          "trace_7b18cba342395de3",
+          "trace_fff2bf3703dd5b13",
+          "trace_892dfd5e622d5384",
+          "trace_ed2f056fcd6d58cc",
+          "trace_5314af3bb0dc59b6",
+          "trace_75ce778ec3d05cea",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_cb4742be967a5b8b",
+          "trace_6d5b71e164975c72",
+          "trace_a2b8da024e905c7a",
+          "trace_82d1a66eb7435f4f",
+          "trace_09a94a05198c556a",
+          "trace_eaff6ffc272c5e49",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "trace_2d648edb5ce75422",
+          "trace_0381e3f8cc8b5f04",
+          "trace_3ce2d9501d58557d",
+          "trace_e3a049e8d30d5068",
+          "trace_aa32f41694dd596f",
+          "trace_413d5761fd0e520e",
+          "trace_012f6ddcec535707",
+          "trace_36ea4d6235fa5c3f",
+          "trace_0e6d343c395559cf",
+          "trace_ef5de41286915537",
+          "trace_bffab8e238375f79",
+          "trace_6966ce434be25b24",
+          "trace_083fbea50eeb549e",
+          "trace_a05d0d5ab08c5acb",
+          "trace_dd86610d05865054",
+          "trace_1da1863ed96553d0",
+          "trace_3d7379cdae29513a",
+          "trace_a66282e3e5cc5ee5",
+          "trace_df1eca57f50250fe",
+          "trace_d636470994615fe0",
+          "trace_d5d1ba4eb1ad511a",
+          "trace_d1642aa7320e5a34"
+        ]
+      },
+      "Mandukya Upanishad": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:54:07.779043Z",
+        "reinforcement_score": 0.625,
+        "source_ids": [
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+        ],
+        "trace_ids": [
+          "trace_d06107373616529c",
+          "trace_246752a23e9b52c8",
+          "trace_09898a8e673b50ef",
+          "trace_24d1a80f0b6b51da",
+          "trace_26be802b6939525f",
+          "trace_172596e690705f42",
+          "trace_f36f33c022f55ead",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_de4b859a12885226",
+          "trace_9ac88108ffb15852",
+          "trace_217e01e70a6159b0",
+          "trace_2c0477e078fd5571",
+          "trace_984775cefa555aee",
+          "trace_d5523bed85e35b3a",
+          "trace_9408f9a0118f5510",
+          "trace_26101d1f71f75982",
+          "trace_892dfd5e622d5384",
+          "trace_ed2f056fcd6d58cc",
+          "trace_5314af3bb0dc59b6",
+          "trace_6d5b71e164975c72",
+          "trace_a2b8da024e905c7a",
+          "trace_82d1a66eb7435f4f",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "trace_0381e3f8cc8b5f04",
+          "trace_3ce2d9501d58557d",
+          "trace_e3a049e8d30d5068",
+          "trace_36ea4d6235fa5c3f",
+          "trace_0e6d343c395559cf",
+          "trace_ef5de41286915537",
+          "trace_a05d0d5ab08c5acb",
+          "trace_dd86610d05865054",
+          "trace_1da1863ed96553d0",
+          "trace_d636470994615fe0",
+          "trace_d5d1ba4eb1ad511a",
+          "trace_d1642aa7320e5a34"
+        ]
+      },
+      "Mantra": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:54:07.779043Z",
+        "reinforcement_score": 0.625,
+        "source_ids": [
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+        ],
+        "trace_ids": [
+          "trace_d06107373616529c",
+          "trace_246752a23e9b52c8",
+          "trace_09898a8e673b50ef",
+          "trace_24d1a80f0b6b51da",
+          "trace_26be802b6939525f",
+          "trace_172596e690705f42",
+          "trace_f36f33c022f55ead",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_de4b859a12885226",
+          "trace_9ac88108ffb15852",
+          "trace_217e01e70a6159b0",
+          "trace_2c0477e078fd5571",
+          "trace_984775cefa555aee",
+          "trace_d5523bed85e35b3a",
+          "trace_9408f9a0118f5510",
+          "trace_26101d1f71f75982",
+          "trace_892dfd5e622d5384",
+          "trace_ed2f056fcd6d58cc",
+          "trace_5314af3bb0dc59b6",
+          "trace_6d5b71e164975c72",
+          "trace_a2b8da024e905c7a",
+          "trace_82d1a66eb7435f4f",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "trace_0381e3f8cc8b5f04",
+          "trace_3ce2d9501d58557d",
+          "trace_e3a049e8d30d5068",
+          "trace_36ea4d6235fa5c3f",
+          "trace_0e6d343c395559cf",
+          "trace_ef5de41286915537",
+          "trace_a05d0d5ab08c5acb",
+          "trace_dd86610d05865054",
+          "trace_1da1863ed96553d0",
+          "trace_d636470994615fe0",
+          "trace_d5d1ba4eb1ad511a",
+          "trace_d1642aa7320e5a34"
+        ]
+      },
+      "Upanishads": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:54:07.779043Z",
+        "reinforcement_score": 0.875,
+        "source_ids": [
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Svetasvatara Upanishad - sanskrit and English.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_b47954192a92",
+          "ecosystem_ff5262118c8c",
+          "ecosystem_5f3dfac0dad2",
+          "trace_27e9fba4df8b5af7",
+          "ecosystem_5f921ae7c649",
+          "trace_cd867678907e5935",
+          "trace_d2765bbb427e57da",
+          "trace_a77e63332ecb5418",
+          "trace_224b93828a0a589e",
+          "trace_56a825c198a059b6",
+          "ecosystem_a00a15cc1502",
+          "ecosystem_2bc8f07844bc",
+          "ecosystem_54aa97cc5775",
+          "trace_f303803f8884511a",
+          "trace_b88514d878565034",
+          "trace_118ac0048a375ae5",
+          "trace_d43e2e3c9c135944",
+          "trace_4c58c9c712145a2a",
+          "trace_f7b53942ac8d5723",
+          "trace_f24a58f3b9025e99",
+          "trace_7090a906e8e65420",
+          "trace_54fefe4d7ed45aec",
+          "trace_0d7a1821eb775d46",
+          "trace_271f38bf4f47514f",
+          "trace_37e7a465f024597b",
+          "trace_689f7d7331335079",
+          "trace_993a4102687559f0",
+          "trace_5581d016fb8b5566",
+          "trace_84521d22c1a6542a",
+          "trace_b6937b9604ca5b84",
+          "trace_be19f6cc67035ca5",
+          "trace_d06107373616529c",
+          "trace_246752a23e9b52c8",
+          "trace_943bd3f7296f5109",
+          "trace_0b9529ce42c15817",
+          "trace_5dd32f16ad155234",
+          "trace_502b97dd73d052e9",
+          "trace_09898a8e673b50ef",
+          "trace_24d1a80f0b6b51da",
+          "trace_9bfc417b005d558a",
+          "trace_0487e2eaa8b75f4c",
+          "trace_b3162fe3e3fc5bef",
+          "trace_93cf6304ab005e00",
+          "trace_26be802b6939525f",
+          "trace_172596e690705f42",
+          "trace_f36a811b24045c84",
+          "trace_fa9ed407c31e52b6",
+          "trace_79de5f9a03bf5797",
+          "trace_f821c78c816c5db2",
+          "trace_f36f33c022f55ead",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_badc1fdc1c9d513e",
+          "trace_8c8f4febd31e5724",
+          "trace_2b1f494f0a4954b8",
+          "trace_5514a7a5086c591b",
+          "trace_de4b859a12885226",
+          "trace_9ac88108ffb15852",
+          "trace_ec922187296f570a",
+          "trace_c342614c6468579d",
+          "trace_63075f021b5a5145",
+          "trace_e45a74a3eb9e5632",
+          "trace_217e01e70a6159b0",
+          "trace_2c0477e078fd5571",
+          "trace_984775cefa555aee",
+          "trace_624af0eaa0b2516a",
+          "trace_d4def4e8a6125c94",
+          "trace_02d917758b71571b",
+          "trace_e4ddfa28691758a6",
+          "trace_d5523bed85e35b3a",
+          "trace_9408f9a0118f5510",
+          "trace_26101d1f71f75982",
+          "trace_6c1ef3fc75ea5936",
+          "trace_7b18cba342395de3",
+          "trace_a04271264712529d",
+          "trace_fff2bf3703dd5b13",
+          "trace_892dfd5e622d5384",
+          "trace_ed2f056fcd6d58cc",
+          "trace_5314af3bb0dc59b6",
+          "trace_75ce778ec3d05cea",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_e0583b94386c57ad",
+          "trace_cb4742be967a5b8b",
+          "trace_6d5b71e164975c72",
+          "trace_a2b8da024e905c7a",
+          "trace_82d1a66eb7435f4f",
+          "trace_09a94a05198c556a",
+          "trace_eaff6ffc272c5e49",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "trace_602398a9effb5947",
+          "trace_2d648edb5ce75422",
+          "trace_0381e3f8cc8b5f04",
+          "trace_3ce2d9501d58557d",
+          "trace_e3a049e8d30d5068",
+          "trace_aa32f41694dd596f",
+          "trace_413d5761fd0e520e",
+          "trace_fce9fa2046c050e8",
+          "trace_012f6ddcec535707",
+          "trace_36ea4d6235fa5c3f",
+          "trace_0e6d343c395559cf",
+          "trace_ef5de41286915537",
+          "trace_bffab8e238375f79",
+          "trace_6966ce434be25b24",
+          "trace_f6e77d2157825e66",
+          "trace_083fbea50eeb549e",
+          "trace_a05d0d5ab08c5acb",
+          "trace_dd86610d05865054",
+          "trace_1da1863ed96553d0",
+          "trace_3d7379cdae29513a",
+          "trace_a66282e3e5cc5ee5",
+          "trace_519c355ef0db5c7b",
+          "trace_df1eca57f50250fe",
+          "trace_d636470994615fe0",
+          "trace_d5d1ba4eb1ad511a",
+          "trace_d1642aa7320e5a34"
+        ]
+      },
+      "Yoga": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:54:07.779043Z",
+        "reinforcement_score": 0.75,
+        "source_ids": [
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "The Complete Mahabharata_English_ocred.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_5f3dfac0dad2",
+          "ecosystem_5f921ae7c649",
+          "trace_cd867678907e5935",
+          "trace_d2765bbb427e57da",
+          "trace_a77e63332ecb5418",
+          "trace_224b93828a0a589e",
+          "trace_56a825c198a059b6",
+          "ecosystem_54aa97cc5775",
+          "trace_f303803f8884511a",
+          "trace_118ac0048a375ae5",
+          "trace_4c58c9c712145a2a",
+          "trace_f24a58f3b9025e99",
+          "trace_7090a906e8e65420",
+          "trace_54fefe4d7ed45aec",
+          "trace_271f38bf4f47514f",
+          "trace_37e7a465f024597b",
+          "trace_004c48afb3b054d4",
+          "trace_67700634492f5891",
+          "trace_689f7d7331335079",
+          "trace_993a4102687559f0",
+          "trace_5581d016fb8b5566",
+          "trace_0d7198aab3cd5e0a",
+          "trace_ceb490e369b857fc",
+          "trace_b6937b9604ca5b84",
+          "trace_be19f6cc67035ca5",
+          "trace_d06107373616529c",
+          "trace_246752a23e9b52c8",
+          "trace_0b9529ce42c15817",
+          "trace_0e98e7210ae95a18",
+          "trace_0ddf54c6b4d258d3",
+          "trace_5dd32f16ad155234",
+          "trace_502b97dd73d052e9",
+          "trace_09898a8e673b50ef",
+          "trace_24d1a80f0b6b51da",
+          "trace_0487e2eaa8b75f4c",
+          "trace_11b81129158a5260",
+          "trace_dafe2ab8896d5220",
+          "trace_b3162fe3e3fc5bef",
+          "trace_93cf6304ab005e00",
+          "trace_26be802b6939525f",
+          "trace_172596e690705f42",
+          "trace_fa9ed407c31e52b6",
+          "trace_45a1c5bee6b25310",
+          "trace_4a1b99f68f2e5a6b",
+          "trace_79de5f9a03bf5797",
+          "trace_f821c78c816c5db2",
+          "trace_f36f33c022f55ead",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_8c8f4febd31e5724",
+          "trace_6b334994d1f259d0",
+          "trace_26c11d2833005bf3",
+          "trace_2b1f494f0a4954b8",
+          "trace_5514a7a5086c591b",
+          "trace_de4b859a12885226",
+          "trace_9ac88108ffb15852",
+          "trace_c342614c6468579d",
+          "trace_70325ee22be15e28",
+          "trace_38972c2d97dc5712",
+          "trace_63075f021b5a5145",
+          "trace_e45a74a3eb9e5632",
+          "trace_217e01e70a6159b0",
+          "trace_2c0477e078fd5571",
+          "trace_984775cefa555aee",
+          "trace_d4def4e8a6125c94",
+          "trace_2ea0a67622715609",
+          "trace_093c824c44085357",
+          "trace_02d917758b71571b",
+          "trace_e4ddfa28691758a6",
+          "trace_d5523bed85e35b3a",
+          "trace_9408f9a0118f5510",
+          "trace_26101d1f71f75982",
+          "trace_7b18cba342395de3",
+          "trace_7f6ff0d947d55744",
+          "trace_9e6f5ec1c83a52d1",
+          "trace_a04271264712529d",
+          "trace_fff2bf3703dd5b13",
+          "trace_892dfd5e622d5384",
+          "trace_ed2f056fcd6d58cc",
+          "trace_5314af3bb0dc59b6",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_615b80a6520358f9",
+          "trace_f0969bc10a7a501d",
+          "trace_e0583b94386c57ad",
+          "trace_cb4742be967a5b8b",
+          "trace_6d5b71e164975c72",
+          "trace_a2b8da024e905c7a",
+          "trace_82d1a66eb7435f4f",
+          "trace_eaff6ffc272c5e49",
+          "ecosystem_2dea802cb848",
+          "ecosystem_replay_test",
+          "ecosystem_mitra_test",
+          "phase2_e2e_test",
+          "phase2_replay_test",
+          "phase2_mitra_test",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "phase2_determinism_test",
+          "phase2_hash_chain_test",
+          "schema_stable_1",
+          "tantra_sdk_runtime_test",
+          "trace_8707db6e0a545a0a",
+          "trace_e11e2cc6929752ec",
+          "trace_602398a9effb5947",
+          "trace_2d648edb5ce75422",
+          "trace_0381e3f8cc8b5f04",
+          "trace_3ce2d9501d58557d",
+          "trace_e3a049e8d30d5068",
+          "trace_413d5761fd0e520e",
+          "ecosystem_17db02e6a667",
+          "trace_6a06ed9891ea563e",
+          "trace_59fcc33a98c85d92",
+          "trace_fce9fa2046c050e8",
+          "trace_012f6ddcec535707",
+          "trace_36ea4d6235fa5c3f",
+          "trace_0e6d343c395559cf",
+          "trace_ef5de41286915537",
+          "trace_6966ce434be25b24",
+          "trace_5956d9e35e595cf0",
+          "trace_52d7975ffcf5549e",
+          "trace_f6e77d2157825e66",
+          "trace_083fbea50eeb549e",
+          "trace_a05d0d5ab08c5acb",
+          "trace_dd86610d05865054",
+          "trace_1da1863ed96553d0",
+          "trace_a66282e3e5cc5ee5",
+          "trace_dc6294f6f78957f2",
+          "trace_278a9f9a8be457fc",
+          "trace_519c355ef0db5c7b",
+          "trace_df1eca57f50250fe",
+          "trace_d636470994615fe0",
+          "trace_d5d1ba4eb1ad511a",
+          "trace_d1642aa7320e5a34"
+        ]
+      }
+    },
+    "event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "eee5508a8a907652e3cee650f8f5f866a14621ce00141fe7cb22955914d51739",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Brahman",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Upanishads",
+        "Yoga"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_d1642aa7320e5a34",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T06:54:07.779043Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [],
+    "user_continuity": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-10-02T06:54:07.779043Z",
+      "queries": 301,
+      "trace_ids": [
+        "trace_2d648edb5ce75422",
+        "trace_0381e3f8cc8b5f04",
+        "trace_3ce2d9501d58557d",
+        "trace_1e65122d7ecf589c",
+        "trace_e3a049e8d30d5068",
+        "trace_aa32f41694dd596f",
+        "trace_59d8733686205386",
+        "trace_b830a3d33bc25104",
+        "trace_ad907ebd869957a6",
+        "trace_413d5761fd0e520e",
+        "trace_0ccdf987785f5f55",
+        "trace_6a06ed9891ea563e",
+        "trace_59fcc33a98c85d92",
+        "trace_549d62a54f7c5d1c",
+        "trace_fce9fa2046c050e8",
+        "trace_012f6ddcec535707",
+        "trace_36ea4d6235fa5c3f",
+        "trace_0e6d343c395559cf",
+        "trace_e040a3440d685e3a",
+        "trace_ef5de41286915537",
+        "trace_bffab8e238375f79",
+        "trace_1fd753e2a0e65263",
+        "trace_8bcce091892e50b1",
+        "trace_f7e17a6a6b295cf7",
+        "trace_6966ce434be25b24",
+        "trace_9855b673efcf56e5",
+        "trace_5956d9e35e595cf0",
+        "trace_52d7975ffcf5549e",
+        "trace_707940bf2eb354bb",
+        "trace_f6e77d2157825e66",
+        "trace_083fbea50eeb549e",
+        "trace_a05d0d5ab08c5acb",
+        "trace_dd86610d05865054",
+        "trace_cc74ff571824570c",
+        "trace_1da1863ed96553d0",
+        "trace_3d7379cdae29513a",
+        "trace_0a0fa0b72fda5c0c",
+        "trace_1c501f7b119158ac",
+        "trace_dbd53cf86fa851a2",
+        "trace_a66282e3e5cc5ee5",
+        "trace_aff88cb2f5d45a5d",
+        "trace_dc6294f6f78957f2",
+        "trace_278a9f9a8be457fc",
+        "trace_eff43f8336e7572c",
+        "trace_519c355ef0db5c7b",
+        "trace_df1eca57f50250fe",
+        "trace_d636470994615fe0",
+        "trace_d5d1ba4eb1ad511a",
+        "trace_1878204a031b5027",
+        "trace_d1642aa7320e5a34"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "upanishads",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_om_001",
+      "signal_id": "signal_ae85bd7437f7",
+      "source_lineage": {
+        "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "transformation_history": [
+          "source_text",
+          "ocr_extraction",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 1,
+  "signals_rejected": 0,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_d1642aa7320e5a34",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "10e1187b21b0438574d0ffb88223e76ac5daa9650c15c61602b6c0033a01b87d",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "ea1e2496432beb3b4fb6dcc0aecdd232341f835acd938869cb856301d366e907",
+    "trace_id": "trace_d1642aa7320e5a34"
+  },
+  "verification_status": "VERIFIED"
+}

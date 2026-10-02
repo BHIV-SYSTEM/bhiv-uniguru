@@ -1,0 +1,789 @@
+{
+  "answer": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_a9df0fb0b71c"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6579,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5302,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6579,
+            "why": [
+              "epistemic_score=0.6579",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7101,
+          "retrieval_confidence": 0.5302,
+          "semantic_score": 0.425,
+          "tag_match_score": 1.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.6579,
+      "rejected_count": 0
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "868c2af48777354dfc10567f152031c2b7d2c9c72c827b469ff0570eac2797b3",
+    "memory_event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "23ba7a55c821957d9e4167914fab79e43539846850bff74d02cad42c88f83a68",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_1c6643fba66d5706",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T06:56:54.839105Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [],
+    "retrieval_truth_hash": "a906e0358edd16e7033419c4c31cc862541283a6bc96fe9baf417bbe7ff34704",
+    "semantic_path": [
+      {
+        "domain": "maths",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_subtraction_001",
+        "signal_id": "signal_a9df0fb0b71c",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T06:56:54.447285Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_1c6643fba66d5706",
+      "contract_emission": "trace_1c6643fba66d5706",
+      "downstream_execution": "trace_1c6643fba66d5706",
+      "immutable": true,
+      "retrieval": "trace_1c6643fba66d5706",
+      "synthesis": "trace_1c6643fba66d5706",
+      "validation": "trace_1c6643fba66d5706"
+    },
+    "trace_id": "trace_1c6643fba66d5706",
+    "verification_status": "VERIFIED"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:maths:6486beb0c48c",
+      "claim_id": "claim_1_86ed93d8",
+      "claim_text": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another",
+      "confidence": 0.5302,
+      "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "canonical_object_id": "uko:maths:6486beb0c48c",
+      "claim_id": "claim_2_fdd1ce29",
+      "claim_text": "Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "confidence": 0.5302,
+      "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "confidence": 0.6579,
+  "confidence_breakdown": {
+    "accepted_count": 1,
+    "accepted_derivations": [
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.6579,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.78,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 1.0,
+            "ontology_convergence": 0.6417,
+            "retrieval_strength": 0.5302,
+            "semantic_agreement": 0.5,
+            "source_authority": 0.74
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.6579,
+          "why": [
+            "epistemic_score=0.6579",
+            "ceiling_applied=0.7800",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.7101,
+        "retrieval_confidence": 0.5302,
+        "semantic_score": 0.425,
+        "tag_match_score": 1.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "single_source_verified",
+      "claim_group_count": 1,
+      "consensus_score": 0.5,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+      "multi_source_reinforcement": 0.0,
+      "source_count": 1
+    },
+    "overall": 0.6579,
+    "rejected_count": 0
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "single_source_verified",
+    "claim_group_count": 1,
+    "consensus_score": 0.5,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+    "multi_source_reinforcement": 0.0,
+    "source_count": 1
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_1c6643fba66d5706"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 46,
+    "valid_entries": 27
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T06:56:54.447285Z",
+  "interpretation_payload": {
+    "answer": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+    "artifact_hash": "868c2af48777354dfc10567f152031c2b7d2c9c72c827b469ff0570eac2797b3",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.6579,
+    "confidence_breakdown": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6579,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5302,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6579,
+            "why": [
+              "epistemic_score=0.6579",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7101,
+          "retrieval_confidence": 0.5302,
+          "semantic_score": 0.425,
+          "tag_match_score": 1.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.6579,
+      "rejected_count": 0
+    },
+    "contradiction_state": {
+      "classification": "single_source_verified",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_a9df0fb0b71c"
+      ],
+      "retrieval_trace_id": "trace_1c6643fba66d5706",
+      "retrieval_truth_hash": "a906e0358edd16e7033419c4c31cc862541283a6bc96fe9baf417bbe7ff34704"
+    },
+    "trace_id": "trace_1c6643fba66d5706",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_subtraction_001"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.6579,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.78,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.6417,
+              "retrieval_strength": 0.5302,
+              "semantic_agreement": 0.5,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6579,
+            "why": [
+              "epistemic_score=0.6579",
+              "ceiling_applied=0.7800",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7101,
+          "retrieval_confidence": 0.5302,
+          "semantic_score": 0.425,
+          "tag_match_score": 1.0
+        },
+        "overlap_percent": {
+          "concept": 50.0,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_a9df0fb0b71c",
+        "what_matched": {
+          "candidate_entities": [],
+          "query_entities": [],
+          "tags": [
+            "subtraction"
+          ]
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.6579,
+      "content": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "domain": "maths",
+      "knowledge_id": "KOSHA_subtraction_001",
+      "signal_id": "signal_a9df0fb0b71c",
+      "source": "balbharti_primary_mathematics_curriculum",
+      "source_governance": {
+        "authority_weight": 0.74,
+        "confidence_ceiling": 0.82,
+        "lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0,
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "subtraction",
+        "subtract",
+        "difference",
+        "arithmetic",
+        "maths",
+        "minus"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_subtraction_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_1c6643fba66d5706"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_1c6643fba66d5706"
+  },
+  "query": "What is Subtraction?",
+  "reasoning": "Answer uses 1 accepted evidence record(s): KOSHA_subtraction_001 (balbharti_primary_mathematics_curriculum). Sentences are extracted from retrieved content.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [],
+  "retrieval_run_record": {
+    "candidate_count": 1,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:maths:6486beb0c48c",
+        "claim_id": "claim_1_86ed93d8",
+        "claim_text": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another",
+        "confidence": 0.5302,
+        "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "canonical_object_id": "uko:maths:6486beb0c48c",
+        "claim_id": "claim_2_fdd1ce29",
+        "claim_text": "Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "confidence": 0.5302,
+        "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "deduplicated_candidate_count": 1,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_1039af9d7c1d",
+    "replay_id": "replay_b03eb7b8bf8da313",
+    "replay_safe": true,
+    "retrieval_run_id": "run_fc3d2f8a4dbb",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:6486beb0c48c",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+        "ranking_score": 0.5302,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "trace_1c6643fba66d5706",
+    "verification_status": "VERIFIED"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_a9df0fb0b71c"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.6579,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.78,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 1.0,
+                "ontology_convergence": 0.6417,
+                "retrieval_strength": 0.5302,
+                "semantic_agreement": 0.5,
+                "source_authority": 0.74
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.6579,
+              "why": [
+                "epistemic_score=0.6579",
+                "ceiling_applied=0.7800",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.7101,
+            "retrieval_confidence": 0.5302,
+            "semantic_score": 0.425,
+            "tag_match_score": 1.0
+          },
+          "overlap_percent": {
+            "concept": 50.0,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_a9df0fb0b71c",
+          "what_matched": {
+            "candidate_entities": [],
+            "query_entities": [],
+            "tags": [
+              "subtraction"
+            ]
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.6579,
+        "content": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "domain": "maths",
+        "knowledge_id": "KOSHA_subtraction_001",
+        "signal_id": "signal_a9df0fb0b71c",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.74,
+          "confidence_ceiling": 0.82,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "subtraction",
+          "subtract",
+          "difference",
+          "arithmetic",
+          "maths",
+          "minus"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_subtraction_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_1c6643fba66d5706"
+        }
+      }
+    ],
+    "artifact_hash": "a906e0358edd16e7033419c4c31cc862541283a6bc96fe9baf417bbe7ff34704",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-10-02T06:56:54.447285Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What is Subtraction?",
+    "raw_signal_count": 1,
+    "rejected_signal_ids": [],
+    "rejected_signals": [],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_subtraction_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_a9df0fb0b71c",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_1c6643fba66d5706"
+      }
+    ],
+    "trace_id": "trace_1c6643fba66d5706"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:6486beb0c48c",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+      "ranking_score": 0.5302,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": true,
+    "constitutional_governance": {
+      "canonical_authority_granted": true,
+      "canonical_memory_keys": [
+        "Assembly",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Brahma",
+        "Brahman",
+        "Brahmanda Purana",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Karma",
+        "Karma Yoga",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Moksha",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Ramayana",
+        "Taittiriya Upanishad",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Yajna",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": true,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "canonical",
+        "trace_id": "trace_1c6643fba66d5706",
+        "updated_at": "2026-10-02T06:56:54.538291Z"
+      },
+      "event_hash": "23ba7a55c821957d9e4167914fab79e43539846850bff74d02cad42c88f83a68",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": true,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "ACCEPT_CANONICAL_MUTATION",
+        "failure_states": [],
+        "memory_classification": "canonical",
+        "reasons": [],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "11a0146593223b222a18a0ed5113b0f80f8f85defc27dcf8a75a19ee3f0f259c",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "23ba7a55c821957d9e4167914fab79e43539846850bff74d02cad42c88f83a68",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "d31dcd8134b156b7ebe8a559eb6c088233290581b25196dc969999183f76561e",
+      "transient_event_count": 709
+    },
+    "entity_continuity": {},
+    "event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "23ba7a55c821957d9e4167914fab79e43539846850bff74d02cad42c88f83a68",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_1c6643fba66d5706",
+      "unresolved_thread_opened": false,
+      "updated_at": "2026-10-02T06:56:54.839105Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [],
+    "user_continuity": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-10-02T06:56:54.839105Z",
+      "queries": 320,
+      "trace_ids": [
+        "trace_ef5de41286915537",
+        "trace_bffab8e238375f79",
+        "trace_1fd753e2a0e65263",
+        "trace_8bcce091892e50b1",
+        "trace_f7e17a6a6b295cf7",
+        "trace_6966ce434be25b24",
+        "trace_9855b673efcf56e5",
+        "trace_5956d9e35e595cf0",
+        "trace_52d7975ffcf5549e",
+        "trace_707940bf2eb354bb",
+        "trace_f6e77d2157825e66",
+        "trace_083fbea50eeb549e",
+        "trace_a05d0d5ab08c5acb",
+        "trace_dd86610d05865054",
+        "trace_cc74ff571824570c",
+        "trace_1da1863ed96553d0",
+        "trace_3d7379cdae29513a",
+        "trace_0a0fa0b72fda5c0c",
+        "trace_1c501f7b119158ac",
+        "trace_dbd53cf86fa851a2",
+        "trace_a66282e3e5cc5ee5",
+        "trace_aff88cb2f5d45a5d",
+        "trace_dc6294f6f78957f2",
+        "trace_278a9f9a8be457fc",
+        "trace_eff43f8336e7572c",
+        "trace_519c355ef0db5c7b",
+        "trace_df1eca57f50250fe",
+        "trace_d636470994615fe0",
+        "trace_d5d1ba4eb1ad511a",
+        "trace_1878204a031b5027",
+        "trace_d1642aa7320e5a34",
+        "trace_b9f1882a812a574c",
+        "trace_7ddd3510916b55cd",
+        "trace_df725cd8931b50aa",
+        "trace_0b94f39f7b96581c",
+        "trace_9e77ac3967845fa1",
+        "trace_0a2586fc6ba15156",
+        "trace_e342bc200ab5584a",
+        "trace_b057b6bf3a5d5bb3",
+        "trace_de983d1d21e05bee",
+        "trace_38e92519af48554e",
+        "trace_57050f0fdf99590a",
+        "trace_aee5aa58ca655c35",
+        "trace_355fbc6cf507584b",
+        "trace_82f8814eb8f359ef",
+        "trace_9b4e8f26365b5766",
+        "trace_b8bc5d63523b538a",
+        "trace_c1939f34788055de",
+        "trace_0cfc64c3c2595d30",
+        "trace_1c6643fba66d5706"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "maths",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_subtraction_001",
+      "signal_id": "signal_a9df0fb0b71c",
+      "source_lineage": {
+        "original_source": "balbharti_primary_mathematics_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 1,
+  "signals_rejected": 0,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_1c6643fba66d5706",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "868c2af48777354dfc10567f152031c2b7d2c9c72c827b469ff0570eac2797b3",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "a906e0358edd16e7033419c4c31cc862541283a6bc96fe9baf417bbe7ff34704",
+    "trace_id": "trace_1c6643fba66d5706"
+  },
+  "verification_status": "VERIFIED"
+}

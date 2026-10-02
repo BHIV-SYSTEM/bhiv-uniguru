@@ -26,6 +26,13 @@ class SourceGovernance:
         "vachanamrut",
         "shikshapatri",
     )
+    CURRICULUM_MARKERS = (
+        "balbharti",
+        "balbharati",
+        "curriculum",
+        "ncert",
+        "textbook",
+    )
     COMMENTARY_MARKERS = ("commentary", "bhashya", "vato", "darshan")
 
     @classmethod
@@ -36,12 +43,16 @@ class SourceGovernance:
         content_lower = content.lower()
 
         source_type = "unknown"
+        if "authoritative sanskrit knowledge:" in source_lower:
+            source_type = "commentary"
         if any(marker in source_lower for marker in cls.OCR_MARKERS):
             source_type = "ocr_derivative"
         if any(marker in source_lower for marker in cls.COMMENTARY_MARKERS):
             source_type = "commentary"
         if any(marker in source_lower for marker in cls.SCRIPTURE_MARKERS) and source_type != "ocr_derivative":
             source_type = "canonical_scripture"
+        if any(marker in source_lower for marker in cls.CURRICULUM_MARKERS):
+            source_type = "translation"  # curriculum entries treated as translation-tier authority
         if "context provided appears" in content_lower or "not provide a comprehensive" in content_lower:
             source_type = "inferred_synthesis"
 

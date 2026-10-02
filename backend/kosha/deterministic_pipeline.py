@@ -31,6 +31,7 @@ from reasoning.semantic_traversal import SemanticTraversalEngine
 logger = logging.getLogger(__name__)
 
 _KOSHA_DIR = Path(__file__).parent.parent / "data" / "kosha"
+_SANSKRIT_KNOWLEDGE_DIR = Path(__file__).parent.parent / "knowledge" / "sanskrit"
 _REVIEW_LOG_DIR = Path(__file__).parent.parent.parent / "review_packets" / "proof_logs"
 
 
@@ -117,7 +118,7 @@ def run_deterministic_pipeline(
     user_id = user_id or "anonymous"
 
     # Phase 1: Load Kosha entries
-    loader = KoshaLoader(data_sources=[str(_KOSHA_DIR)])
+    loader = KoshaLoader(data_sources=[str(_KOSHA_DIR), str(_SANSKRIT_KNOWLEDGE_DIR)])
     raw_entries = loader.load_all()
 
     # Phase 3: Enforce Kosha schema — validate existing entries
@@ -230,7 +231,11 @@ def run_deterministic_pipeline(
         validation["confidence_derivation"]["derived_confidence"] = epistemic["score"]
         signal["confidence"] = epistemic["score"]
     validation_result["accepted_signals"].sort(
-        key=lambda s: float(s.get("confidence") or 0.0),
+        key=lambda signal: (
+            *(float(signal.get("trace", {}).get("evidence_priority", {}).get(key) or 0.0)
+              for key in ("exact_topic_match", "exact_entity_match", "direct_definition", "query_coverage", "contextual_proximity", "source_authority")),
+            float(signal.get("confidence") or 0.0),
+        ),
         reverse=True,
     )
 

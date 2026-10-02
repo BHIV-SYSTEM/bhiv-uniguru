@@ -2,18 +2,30 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from pathlib import Path
 from typing import Any, Dict, List, Set
 
 
 _SEED_PATH = Path(__file__).with_name("seed_entities.json")
+_TRANSLITERATION = str.maketrans({
+    "ā": "a", "ī": "i", "ū": "u", "ṛ": "r", "ṝ": "r", "ḷ": "l",
+    "ṃ": "m", "ṁ": "m", "ḥ": "h", "ś": "s", "ṣ": "s", "ṭ": "t",
+    "ḍ": "d", "ṇ": "n", "ṅ": "n", "ñ": "n",
+})
 
 
 def _tokens(text: str) -> Set[str]:
+    raw = str(text or "").casefold().replace("ś", "sh").replace("ṣ", "sh")
+    normalized = unicodedata.normalize("NFKD", raw)
+    normalized = "".join(char for char in normalized if not unicodedata.combining(char))
+    normalized = normalized.replace("ś", "sh").replace("ṣ", "sh")
+    normalized = normalized.translate(_TRANSLITERATION)
+    normalized = re.sub(r"(?<=\w)['’]s\b", "", normalized)
     return {
         token
-        for token in re.findall(r"[a-zA-Z0-9\u0900-\u097F]+", str(text or "").lower())
-        if len(token) > 2
+        for token in re.findall(r"[a-zA-Z0-9\u0900-\u097F]+", normalized)
+        if len(token) > 1
     }
 
 
@@ -30,6 +42,17 @@ class CanonicalEntityResolver:
             self.domain_index.setdefault(str(entity.get("domain") or "general"), []).append(canonical)
             for alias in [canonical, *entity.get("aliases", [])]:
                 self.alias_index[self._normalize(alias)] = entity
+                words = self._normalize(alias).split()
+                if words:
+                    last = words[-1]
+                    if last.endswith("y") and len(last) > 2 and last[-2] not in "aeiou":
+                        plural = last[:-1] + "ies"
+                    elif last.endswith(("s", "x", "z", "ch", "sh")):
+                        plural = last + "es"
+                    else:
+                        plural = last + "s"
+                    words[-1] = plural
+                    self.alias_index[" ".join(words)] = entity
 
     def _load_entities(self) -> List[Dict[str, Any]]:
         with self.seed_path.open("r", encoding="utf-8") as handle:
@@ -40,7 +63,12 @@ class CanonicalEntityResolver:
 
     @staticmethod
     def _normalize(value: str) -> str:
-        value = str(value or "").lower()
+        raw = str(value or "").casefold().replace("ś", "sh").replace("ṣ", "sh")
+        value = unicodedata.normalize("NFKD", raw)
+        value = "".join(char for char in value if not unicodedata.combining(char))
+        value = value.replace("ś", "sh").replace("ṣ", "sh")
+        value = value.translate(_TRANSLITERATION)
+        value = re.sub(r"(?<=\w)['’]s\b", "", value)
         value = re.sub(r"[^a-zA-Z0-9\u0900-\u097F]+", " ", value)
         return " ".join(value.split())
 
@@ -65,6 +93,11 @@ class CanonicalEntityResolver:
 
     def expand_terms(self, text: str) -> Set[str]:
         terms = _tokens(text)
+        for term in tuple(terms):
+            if term.endswith("ies") and len(term) > 4:
+                terms.add(term[:-3] + "y")
+            elif term.endswith("s") and len(term) > 3:
+                terms.add(term[:-1])
         for entity in self.extract(text):
             canonical = str(entity["canonical"])
             terms.update(_tokens(canonical))

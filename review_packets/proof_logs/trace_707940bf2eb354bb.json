@@ -1,0 +1,1760 @@
+{
+  "answer": "I do not have verified knowledge to answer this question.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_e5c4debb7542"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.6,
+          "domain_consistency": 1.0,
+          "entity_overlap": 1.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.9667,
+              "retrieval_strength": 0.7446,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6,
+            "why": [
+              "epistemic_score=0.6000",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4562,
+          "retrieval_confidence": 0.7446,
+          "semantic_score": 0.9,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.6,
+      "rejected_count": 3
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "9b8fa726e3075c698689c9d4147b305568ce03720efda24ca8cce6339c639b67",
+    "memory_event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "070b80ca75f528c8789abf9444f536f4d6101aedb91b3695fc14568ff649d704",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Devi"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_707940bf2eb354bb",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T06:53:31.671600Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [
+      "signal_4cdb4e78d78c",
+      "signal_20c842feea41",
+      "signal_dc8bab7dd4ca"
+    ],
+    "retrieval_truth_hash": "a4304d9092810bae210c85295fa5a09e695cef242209217cac92e0aa08836bb0",
+    "semantic_path": [
+      {
+        "domain": "general",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_af7f56640546",
+        "signal_id": "signal_e5c4debb7542",
+        "source_lineage": {
+          "original_source": "Shakti and Shakta_ocr.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T06:53:31.268444Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_707940bf2eb354bb",
+      "contract_emission": "trace_707940bf2eb354bb",
+      "downstream_execution": "trace_707940bf2eb354bb",
+      "immutable": true,
+      "retrieval": "trace_707940bf2eb354bb",
+      "synthesis": "trace_707940bf2eb354bb",
+      "validation": "trace_707940bf2eb354bb"
+    },
+    "trace_id": "trace_707940bf2eb354bb",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:none:unverified",
+      "claim_id": "claim_9ff56873978d",
+      "claim_text": "I do not have verified knowledge to answer this question.",
+      "confidence": 0.0,
+      "provenance_hash": "255caf2d8dacabcf3302caabb080ce0e42c75256473238fa8bc8a33e43565109",
+      "source_id": "LLM_FALLBACK",
+      "text_span": "I do not have verified knowledge to answer this question.",
+      "verification_status": "UNVERIFIED_FALLBACK"
+    }
+  ],
+  "confidence": 0.0,
+  "confidence_breakdown": {
+    "accepted_count": 1,
+    "accepted_derivations": [
+      {
+        "content_overlap": 0.0,
+        "derived_confidence": 0.6,
+        "domain_consistency": 1.0,
+        "entity_overlap": 1.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.6,
+          "dimensions": {
+            "contextual_consistency": 0.5,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 0.88,
+            "ontology_convergence": 0.9667,
+            "retrieval_strength": 0.7446,
+            "semantic_agreement": 1.0,
+            "source_authority": 0.42
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.6,
+          "why": [
+            "epistemic_score=0.6000",
+            "ceiling_applied=0.6000",
+            "source_type=ocr_derivative"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.4562,
+        "retrieval_confidence": 0.7446,
+        "semantic_score": 0.9,
+        "tag_match_score": 0.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "single_source_verified",
+      "claim_group_count": 1,
+      "consensus_score": 0.5,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+      "multi_source_reinforcement": 0.0,
+      "source_count": 1
+    },
+    "overall": 0.6,
+    "rejected_count": 3
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "single_source_verified",
+    "claim_group_count": 1,
+    "consensus_score": 0.5,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+    "multi_source_reinforcement": 0.0,
+    "source_count": 1
+  },
+  "detected_domain": "puranas",
+  "domain_resolution": {
+    "confidence": 1.0,
+    "domain": "puranas",
+    "entities": [
+      {
+        "canonical": "Devi",
+        "concepts": [
+          "power",
+          "protection"
+        ],
+        "domain": "puranas",
+        "entity_type": "deity",
+        "matched_alias": "shakti"
+      }
+    ],
+    "method": "canonical_entity_majority"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_707940bf2eb354bb"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 46,
+    "valid_entries": 27
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T06:53:31.268444Z",
+  "interpretation_payload": {
+    "answer": "I do not have verified knowledge to answer this question.",
+    "artifact_hash": "9b8fa726e3075c698689c9d4147b305568ce03720efda24ca8cce6339c639b67",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.0,
+    "confidence_breakdown": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.6,
+          "domain_consistency": 1.0,
+          "entity_overlap": 1.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.9667,
+              "retrieval_strength": 0.7446,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6,
+            "why": [
+              "epistemic_score=0.6000",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4562,
+          "retrieval_confidence": 0.7446,
+          "semantic_score": 0.9,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.6,
+      "rejected_count": 3
+    },
+    "contradiction_state": {
+      "classification": "single_source_verified",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_e5c4debb7542"
+      ],
+      "retrieval_trace_id": "trace_707940bf2eb354bb",
+      "retrieval_truth_hash": "a4304d9092810bae210c85295fa5a09e695cef242209217cac92e0aa08836bb0"
+    },
+    "trace_id": "trace_707940bf2eb354bb",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_af7f56640546"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.6,
+          "domain_consistency": 1.0,
+          "entity_overlap": 1.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.9667,
+              "retrieval_strength": 0.7446,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.6,
+            "why": [
+              "epistemic_score=0.6000",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4562,
+          "retrieval_confidence": 0.7446,
+          "semantic_score": 0.9,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 85.71,
+          "content": 0.0,
+          "entity": 100.0
+        },
+        "signal_id": "signal_e5c4debb7542",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "query_entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.6,
+      "content": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+      "domain": "general",
+      "knowledge_id": "KOSHA_af7f56640546",
+      "signal_id": "signal_e5c4debb7542",
+      "source": "Shakti and Shakta_ocr.pdf",
+      "source_governance": {
+        "authority_weight": 0.42,
+        "confidence_ceiling": 0.6,
+        "lineage": {
+          "original_source": "Shakti and Shakta_ocr.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.12,
+        "source": "Shakti and Shakta_ocr.pdf",
+        "source_type": "ocr_derivative",
+        "suppression_reason": null
+      },
+      "tags": [
+        "charaka",
+        "defined",
+        "disease"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_af7f56640546",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "Shakti and Shakta_ocr.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_707940bf2eb354bb"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "deterministic": true,
+    "max_hops": 5,
+    "paths": [],
+    "source": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/ontology/seed_entities.json",
+    "start_nodes": [
+      "devi"
+    ],
+    "target_nodes": [
+      "devi"
+    ]
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_707940bf2eb354bb"
+  },
+  "query": "What is Shakti?",
+  "reasoning": "No accepted Kosha record contains evidence relevant to the query.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Brahma",
+            "concepts": [
+              "creation",
+              "cosmology"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "brahma"
+          },
+          {
+            "canonical": "Brahma Purana",
+            "concepts": [
+              "purana",
+              "creation"
+            ],
+            "domain": "puranas",
+            "entity_type": "text",
+            "matched_alias": "brahma purana"
+          },
+          {
+            "canonical": "Ganga",
+            "concepts": [
+              "sacred river",
+              "water"
+            ],
+            "domain": "ecology",
+            "entity_type": "river",
+            "matched_alias": "ganga"
+          },
+          {
+            "canonical": "Mahabharata",
+            "concepts": [
+              "dharma",
+              "Kurukshetra",
+              "Pandavas"
+            ],
+            "domain": "itihasa",
+            "entity_type": "text",
+            "matched_alias": "mahabharata"
+          },
+          {
+            "canonical": "Sarasvati",
+            "concepts": [
+              "river",
+              "knowledge"
+            ],
+            "domain": "ecology",
+            "entity_type": "river",
+            "matched_alias": "saraswati"
+          },
+          {
+            "canonical": "Water Conservation",
+            "concepts": [
+              "rivers",
+              "lakes",
+              "sustainability"
+            ],
+            "domain": "ecology",
+            "entity_type": "concept",
+            "matched_alias": "water conservation"
+          }
+        ],
+        "concept_overlap": 0.1429,
+        "confidence": 0.3126,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.3957,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.481,
+              "retrieval_strength": 0.3126,
+              "semantic_agreement": 0.1429,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.3957,
+            "why": [
+              "epistemic_score=0.3957",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.1681,
+          "retrieval_confidence": 0.3126,
+          "semantic_score": 0.3,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 1.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Devi"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Devi",
+            "concepts": [
+              "power",
+              "protection"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "shakti"
+          }
+        ],
+        "semantic_score": 0.3,
+        "signal_id": "signal_4cdb4e78d78c",
+        "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Brahma Purana - Parts I-IV_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_4cdb4e78d78c",
+      "source": "Brahma Purana - Parts I-IV_ocred.pdf"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.1429,
+        "confidence": 0.2730571428571429,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.4133,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.62,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.081,
+              "retrieval_strength": 0.2731,
+              "semantic_agreement": 0.1429,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.4133,
+            "why": [
+              "epistemic_score=0.4133",
+              "ceiling_applied=0.6200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.0983,
+          "retrieval_confidence": 0.2731,
+          "semantic_score": 0.1,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Devi"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Devi",
+            "concepts": [
+              "power",
+              "protection"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "shakti"
+          }
+        ],
+        "semantic_score": 0.1,
+        "signal_id": "signal_20c842feea41",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.74,
+          "confidence_ceiling": 0.82,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_20c842feea41",
+      "source": "balbharti_primary_mathematics_curriculum"
+    },
+    {
+      "details": {
+        "candidate_entities": [
+          {
+            "canonical": "Brahman",
+            "concepts": [
+              "ultimate reality",
+              "Atman"
+            ],
+            "domain": "upanishads",
+            "entity_type": "concept",
+            "matched_alias": "brahman"
+          },
+          {
+            "canonical": "Prakriti",
+            "concepts": [
+              "matter",
+              "gunas"
+            ],
+            "domain": "dharma_systems",
+            "entity_type": "concept",
+            "matched_alias": "nature"
+          },
+          {
+            "canonical": "Upanishads",
+            "concepts": [
+              "Brahman",
+              "Atman",
+              "liberation"
+            ],
+            "domain": "upanishads",
+            "entity_type": "text_group",
+            "matched_alias": "upanishads"
+          }
+        ],
+        "concept_overlap": 0.1429,
+        "confidence": 0.19945714285714283,
+        "confidence_derivation": {
+          "content_overlap": 0.0,
+          "derived_confidence": 0.3226,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 0.5,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.081,
+              "retrieval_strength": 0.1995,
+              "semantic_agreement": 0.1429,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.3226,
+            "why": [
+              "epistemic_score=0.3226",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.0799,
+          "retrieval_confidence": 0.1995,
+          "semantic_score": 0.1,
+          "tag_match_score": 0.0
+        },
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.5,
+        "domain_consistency": 0.0,
+        "domain_resolution": {
+          "confidence": 1.0,
+          "domain": "puranas",
+          "entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "method": "canonical_entity_majority"
+        },
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [
+          "Devi"
+        ],
+        "query_entities": [
+          {
+            "canonical": "Devi",
+            "concepts": [
+              "power",
+              "protection"
+            ],
+            "domain": "puranas",
+            "entity_type": "deity",
+            "matched_alias": "shakti"
+          }
+        ],
+        "semantic_score": 0.1,
+        "signal_id": "signal_dc8bab7dd4ca",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+      "signal_id": "signal_dc8bab7dd4ca",
+      "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+    }
+  ],
+  "retrieval_run_record": {
+    "candidate_count": 4,
+    "canonical_concept_id": "puranas",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:none:unverified",
+        "claim_id": "claim_9ff56873978d",
+        "claim_text": "I do not have verified knowledge to answer this question.",
+        "confidence": 0.0,
+        "provenance_hash": "255caf2d8dacabcf3302caabb080ce0e42c75256473238fa8bc8a33e43565109",
+        "source_id": "LLM_FALLBACK",
+        "text_span": "I do not have verified knowledge to answer this question.",
+        "verification_status": "UNVERIFIED_FALLBACK"
+      }
+    ],
+    "deduplicated_candidate_count": 4,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_4d7a416e1ee6",
+    "replay_id": "replay_d57ebc8cb84a46a1",
+    "replay_safe": true,
+    "retrieval_run_id": "run_c77495723d55",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:general:8b32c3be23ea",
+        "dedup_status": "unique",
+        "domain": "general",
+        "provenance_hash": "8b32c3be23ea6cd680f3dffdeb01d4ad81f4481ee96d04a126da9a0776f35e46",
+        "ranking_score": 0.7446,
+        "source_id": "Shakti and Shakta_ocr.pdf",
+        "text_span": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:water management:11658b2ee7d8",
+        "dedup_status": "unique",
+        "domain": "water management",
+        "provenance_hash": "11658b2ee7d86371bfa4965565bcd393d31d37945b27c815207fafafdebef295",
+        "ranking_score": 0.3126,
+        "source_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+        "text_span": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:815569ff974c",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "815569ff974ce15708d75d26671e827f58e40f7f1b7d89cf27594b2e9f0e592c",
+        "ranking_score": 0.2730571428571429,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Place value is the value of a digit based on its position in a number. In the decimal number system, each position represents a power of ten. For example, in the number 345, the digit 3 is in the hundreds place and has a value of 300, the digit 4 is in the tens place and has a value of 40, and the digit 5 is in the ones place and has a value of 5. Understanding place value is essential for reading, writing, and comparing numbers.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:upanishads:961252c5ee62",
+        "dedup_status": "unique",
+        "domain": "upanishads",
+        "provenance_hash": "961252c5ee628f0d0e9817691b57834bf3be18a796af0e19f27b5bebb9ea19c8",
+        "ranking_score": 0.19945714285714283,
+        "source_id": "Svetasvatara Upanishad - sanskrit and English.pdf",
+        "text_span": "Maya is the concept of illusion or the power that causes the world to appear as it is, concealing the true nature of Brahman. In Advaita Vedanta, maya is the cosmic illusion by which the one ultimate reality appears as the diverse phenomenal world. The Upanishads teach that maya is the veil that prevents the individual soul from recognizing its identity with Brahman.",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "trace_707940bf2eb354bb",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_e5c4debb7542"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.6,
+            "domain_consistency": 1.0,
+            "entity_overlap": 1.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.9667,
+                "retrieval_strength": 0.7446,
+                "semantic_agreement": 1.0,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.6,
+              "why": [
+                "epistemic_score=0.6000",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.4562,
+            "retrieval_confidence": 0.7446,
+            "semantic_score": 0.9,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 85.71,
+            "content": 0.0,
+            "entity": 100.0
+          },
+          "signal_id": "signal_e5c4debb7542",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Devi",
+                "concepts": [
+                  "power",
+                  "protection"
+                ],
+                "domain": "puranas",
+                "entity_type": "deity",
+                "matched_alias": "shakti"
+              }
+            ],
+            "query_entities": [
+              {
+                "canonical": "Devi",
+                "concepts": [
+                  "power",
+                  "protection"
+                ],
+                "domain": "puranas",
+                "entity_type": "deity",
+                "matched_alias": "shakti"
+              }
+            ],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.6,
+        "content": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+        "domain": "general",
+        "knowledge_id": "KOSHA_af7f56640546",
+        "signal_id": "signal_e5c4debb7542",
+        "source": "Shakti and Shakta_ocr.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Shakti and Shakta_ocr.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Shakti and Shakta_ocr.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tags": [
+          "charaka",
+          "defined",
+          "disease"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "puranas",
+            "entities": [
+              {
+                "canonical": "Devi",
+                "concepts": [
+                  "power",
+                  "protection"
+                ],
+                "domain": "puranas",
+                "entity_type": "deity",
+                "matched_alias": "shakti"
+              }
+            ],
+            "method": "canonical_entity_majority"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_af7f56640546",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "Shakti and Shakta_ocr.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_707940bf2eb354bb"
+        }
+      }
+    ],
+    "artifact_hash": "a4304d9092810bae210c85295fa5a09e695cef242209217cac92e0aa08836bb0",
+    "domain_resolution": {
+      "confidence": 1.0,
+      "domain": "puranas",
+      "entities": [
+        {
+          "canonical": "Devi",
+          "concepts": [
+            "power",
+            "protection"
+          ],
+          "domain": "puranas",
+          "entity_type": "deity",
+          "matched_alias": "shakti"
+        }
+      ],
+      "method": "canonical_entity_majority"
+    },
+    "generated_at": "2026-10-02T06:53:31.268444Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What is Shakti?",
+    "raw_signal_count": 4,
+    "rejected_signal_ids": [
+      "signal_4cdb4e78d78c",
+      "signal_20c842feea41",
+      "signal_dc8bab7dd4ca"
+    ],
+    "rejected_signals": [
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Brahma",
+              "concepts": [
+                "creation",
+                "cosmology"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "brahma"
+            },
+            {
+              "canonical": "Brahma Purana",
+              "concepts": [
+                "purana",
+                "creation"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "brahma purana"
+            },
+            {
+              "canonical": "Ganga",
+              "concepts": [
+                "sacred river",
+                "water"
+              ],
+              "domain": "ecology",
+              "entity_type": "river",
+              "matched_alias": "ganga"
+            },
+            {
+              "canonical": "Mahabharata",
+              "concepts": [
+                "dharma",
+                "Kurukshetra",
+                "Pandavas"
+              ],
+              "domain": "itihasa",
+              "entity_type": "text",
+              "matched_alias": "mahabharata"
+            },
+            {
+              "canonical": "Sarasvati",
+              "concepts": [
+                "river",
+                "knowledge"
+              ],
+              "domain": "ecology",
+              "entity_type": "river",
+              "matched_alias": "saraswati"
+            },
+            {
+              "canonical": "Water Conservation",
+              "concepts": [
+                "rivers",
+                "lakes",
+                "sustainability"
+              ],
+              "domain": "ecology",
+              "entity_type": "concept",
+              "matched_alias": "water conservation"
+            }
+          ],
+          "concept_overlap": 0.1429,
+          "confidence": 0.3126,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.3957,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.481,
+                "retrieval_strength": 0.3126,
+                "semantic_agreement": 0.1429,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.3957,
+              "why": [
+                "epistemic_score=0.3957",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.1681,
+            "retrieval_confidence": 0.3126,
+            "semantic_score": 0.3,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.5,
+          "domain_consistency": 1.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "puranas",
+            "entities": [
+              {
+                "canonical": "Devi",
+                "concepts": [
+                  "power",
+                  "protection"
+                ],
+                "domain": "puranas",
+                "entity_type": "deity",
+                "matched_alias": "shakti"
+              }
+            ],
+            "method": "canonical_entity_majority"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [
+            "Devi"
+          ],
+          "query_entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "semantic_score": 0.3,
+          "signal_id": "signal_4cdb4e78d78c",
+          "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+          "source_governance": {
+            "authority_weight": 0.42,
+            "confidence_ceiling": 0.6,
+            "lineage": {
+              "original_source": "Brahma Purana - Parts I-IV_ocred.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.12,
+            "source": "Brahma Purana - Parts I-IV_ocred.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_4cdb4e78d78c",
+        "source": "Brahma Purana - Parts I-IV_ocred.pdf"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.1429,
+          "confidence": 0.2730571428571429,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.4133,
+            "domain_consistency": 0.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.62,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 1.0,
+                "ontology_convergence": 0.081,
+                "retrieval_strength": 0.2731,
+                "semantic_agreement": 0.1429,
+                "source_authority": 0.74
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.4133,
+              "why": [
+                "epistemic_score=0.4133",
+                "ceiling_applied=0.6200",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.0983,
+            "retrieval_confidence": 0.2731,
+            "semantic_score": 0.1,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.5,
+          "domain_consistency": 0.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "puranas",
+            "entities": [
+              {
+                "canonical": "Devi",
+                "concepts": [
+                  "power",
+                  "protection"
+                ],
+                "domain": "puranas",
+                "entity_type": "deity",
+                "matched_alias": "shakti"
+              }
+            ],
+            "method": "canonical_entity_majority"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [
+            "Devi"
+          ],
+          "query_entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "semantic_score": 0.1,
+          "signal_id": "signal_20c842feea41",
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_governance": {
+            "authority_weight": 0.74,
+            "confidence_ceiling": 0.82,
+            "lineage": {
+              "original_source": "balbharti_primary_mathematics_curriculum",
+              "transformation_history": [
+                "source_text",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.0,
+            "source": "balbharti_primary_mathematics_curriculum",
+            "source_type": "translation",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_20c842feea41",
+        "source": "balbharti_primary_mathematics_curriculum"
+      },
+      {
+        "details": {
+          "candidate_entities": [
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Prakriti",
+              "concepts": [
+                "matter",
+                "gunas"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "nature"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            }
+          ],
+          "concept_overlap": 0.1429,
+          "confidence": 0.19945714285714283,
+          "confidence_derivation": {
+            "content_overlap": 0.0,
+            "derived_confidence": 0.3226,
+            "domain_consistency": 0.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 0.5,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.081,
+                "retrieval_strength": 0.1995,
+                "semantic_agreement": 0.1429,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.3226,
+              "why": [
+                "epistemic_score=0.3226",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.0799,
+            "retrieval_confidence": 0.1995,
+            "semantic_score": 0.1,
+            "tag_match_score": 0.0
+          },
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.5,
+          "domain_consistency": 0.0,
+          "domain_resolution": {
+            "confidence": 1.0,
+            "domain": "puranas",
+            "entities": [
+              {
+                "canonical": "Devi",
+                "concepts": [
+                  "power",
+                  "protection"
+                ],
+                "domain": "puranas",
+                "entity_type": "deity",
+                "matched_alias": "shakti"
+              }
+            ],
+            "method": "canonical_entity_majority"
+          },
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [
+            "Devi"
+          ],
+          "query_entities": [
+            {
+              "canonical": "Devi",
+              "concepts": [
+                "power",
+                "protection"
+              ],
+              "domain": "puranas",
+              "entity_type": "deity",
+              "matched_alias": "shakti"
+            }
+          ],
+          "semantic_score": 0.1,
+          "signal_id": "signal_dc8bab7dd4ca",
+          "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+          "source_governance": {
+            "authority_weight": 0.42,
+            "confidence_ceiling": 0.6,
+            "lineage": {
+              "original_source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+              "transformation_history": [
+                "source_text",
+                "ocr_extraction",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.12,
+            "source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+            "source_type": "ocr_derivative",
+            "suppression_reason": null
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "no_query_relevance:tags_and_content_both_miss",
+        "signal_id": "signal_dc8bab7dd4ca",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+      }
+    ],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_af7f56640546",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_e5c4debb7542",
+        "source": "Shakti and Shakta_ocr.pdf",
+        "source_lineage": {
+          "original_source": "Shakti and Shakta_ocr.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_707940bf2eb354bb"
+      }
+    ],
+    "trace_id": "trace_707940bf2eb354bb"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:general:8b32c3be23ea",
+      "dedup_status": "unique",
+      "domain": "general",
+      "provenance_hash": "8b32c3be23ea6cd680f3dffdeb01d4ad81f4481ee96d04a126da9a0776f35e46",
+      "ranking_score": 0.7446,
+      "source_id": "Shakti and Shakta_ocr.pdf",
+      "text_span": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindrance to the realization of perfect infinite Being [1]. This is further supported by the Charaka Samhita, which states that diseases originate from various causes such as heinous crimes, minor sins, and unpunished sins [2].",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:water management:11658b2ee7d8",
+      "dedup_status": "unique",
+      "domain": "water management",
+      "provenance_hash": "11658b2ee7d86371bfa4965565bcd393d31d37945b27c815207fafafdebef295",
+      "ranking_score": 0.3126,
+      "source_id": "Brahma Purana - Parts I-IV_ocred.pdf",
+      "text_span": "In Puranic literature, rivers, lakes, and water conservation hold significant importance as they are considered holy and are believed to have the power to fulfill desires and grant salvation. According to the Brahma Purana [1], taking a bath in these holy waters, performing Japa, Homa, and Pitrtarpana can fulfill all cherished desires of men and grant enjoyment and salvation. The text mentions twenty-five divine rivers, including the Ganga, which are considered sacred and are worshipped by devotees. Similarly, in the Mahabharata [2], various sacred rivers such as the Bhagirathi, Kalindi, and Saraswati are mentioned, which are personified and worship the Lord Varuna. These references highlight the importance of preserving and respecting these water bodies.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:815569ff974c",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "815569ff974ce15708d75d26671e827f58e40f7f1b7d89cf27594b2e9f0e592c",
+      "ranking_score": 0.2730571428571429,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Place value is the value of a digit based on its position in a number. In the decimal number system, each position represents a power of ten. For example, in the number 345, the digit 3 is in the hundreds place and has a value of 300, the digit 4 is in the tens place and has a value of 40, and the digit 5 is in the ones place and has a value of 5. Understanding place value is essential for reading, writing, and comparing numbers.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:upanishads:961252c5ee62",
+      "dedup_status": "unique",
+      "domain": "upanishads",
+      "provenance_hash": "961252c5ee628f0d0e9817691b57834bf3be18a796af0e19f27b5bebb9ea19c8",
+      "ranking_score": 0.19945714285714283,
+      "source_id": "Svetasvatara Upanishad - sanskrit and English.pdf",
+      "text_span": "Maya is the concept of illusion or the power that causes the world to appear as it is, concealing the true nature of Brahman. In Advaita Vedanta, maya is the cosmic illusion by which the one ultimate reality appears as the diverse phenomenal world. The Upanishads teach that maya is the veil that prevents the individual soul from recognizing its identity with Brahman.",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": false,
+    "constitutional_governance": {
+      "canonical_authority_granted": false,
+      "canonical_memory_keys": [
+        "Assembly",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Brahma",
+        "Brahman",
+        "Brahmanda Purana",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Karma",
+        "Karma Yoga",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Moksha",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Ramayana",
+        "Taittiriya Upanishad",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Yajna",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": false,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [
+          "Devi"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "transient",
+        "trace_id": "trace_707940bf2eb354bb",
+        "updated_at": "2026-10-02T06:53:31.355651Z"
+      },
+      "event_hash": "070b80ca75f528c8789abf9444f536f4d6101aedb91b3695fc14568ff649d704",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": false,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "REJECT_CANONICAL_MUTATION",
+        "failure_states": [
+          "PARTIAL_REJECTION_PRESENT"
+        ],
+        "memory_classification": "transient",
+        "reasons": [
+          "verification_status_not_verified"
+        ],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "395e9288121001ac13ca19124f6f820ec9055f6f805d32f0a0e990714e9f455a",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "070b80ca75f528c8789abf9444f536f4d6101aedb91b3695fc14568ff649d704",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "5fa0d064a639fc256d7b079e2c4735edf806caed16b2f841e10be4e0d7aa4e0d",
+      "transient_event_count": 696
+    },
+    "entity_continuity": {
+      "Devi": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:53:31.671600Z",
+        "reinforcement_score": 0.625,
+        "source_ids": [
+          "Shakti and Shakta_ocr.pdf"
+        ],
+        "trace_ids": [
+          "ecosystem_5f921ae7c649",
+          "trace_6958bcc87db65b3f",
+          "trace_921ca48e72a45ea4",
+          "trace_727f2fefc5d45d57",
+          "trace_a2df5ef280d75209",
+          "trace_e0e2d5a44a495f19",
+          "trace_4d31ea849eaf50ff",
+          "trace_17e9c0575efd5db1",
+          "trace_da466a9cab3c55bd",
+          "trace_9c76781554bb5792",
+          "trace_944bee91e4635294",
+          "trace_64ab872da79d5a21",
+          "trace_03750fc5227c51ff",
+          "trace_549d62a54f7c5d1c",
+          "trace_707940bf2eb354bb"
+        ]
+      }
+    },
+    "event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "070b80ca75f528c8789abf9444f536f4d6101aedb91b3695fc14568ff649d704",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Devi"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_707940bf2eb354bb",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T06:53:31.671600Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [
+      {
+        "contradiction_pressure": 0.0,
+        "query": "What is Shakti?",
+        "rejected_signal_count": 3,
+        "state": "open",
+        "trace_id": "trace_707940bf2eb354bb",
+        "updated_at": "2026-10-02T06:53:31.671600Z",
+        "user_id": "anonymous",
+        "verification_status": "NO_VERIFIED_KNOWLEDGE"
+      }
+    ],
+    "user_continuity": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-10-02T06:53:31.671600Z",
+      "queries": 280,
+      "trace_ids": [
+        "trace_3f9ddd011c0c5fbb",
+        "trace_112de477f5fb5609",
+        "trace_615b80a6520358f9",
+        "trace_f0969bc10a7a501d",
+        "trace_64ab872da79d5a21",
+        "trace_e0583b94386c57ad",
+        "trace_cb4742be967a5b8b",
+        "trace_6d5b71e164975c72",
+        "trace_a2b8da024e905c7a",
+        "trace_498ad7e3852b56bb",
+        "trace_82d1a66eb7435f4f",
+        "trace_09a94a05198c556a",
+        "trace_5c6af4e137c656aa",
+        "trace_e068fcefc8a85635",
+        "trace_e552a9714f185aaa",
+        "trace_eaff6ffc272c5e49",
+        "trace_515aa3e0898d5403",
+        "trace_8707db6e0a545a0a",
+        "trace_e11e2cc6929752ec",
+        "trace_03750fc5227c51ff",
+        "trace_602398a9effb5947",
+        "trace_2d648edb5ce75422",
+        "trace_0381e3f8cc8b5f04",
+        "trace_3ce2d9501d58557d",
+        "trace_1e65122d7ecf589c",
+        "trace_e3a049e8d30d5068",
+        "trace_aa32f41694dd596f",
+        "trace_59d8733686205386",
+        "trace_b830a3d33bc25104",
+        "trace_ad907ebd869957a6",
+        "trace_413d5761fd0e520e",
+        "trace_0ccdf987785f5f55",
+        "trace_6a06ed9891ea563e",
+        "trace_59fcc33a98c85d92",
+        "trace_549d62a54f7c5d1c",
+        "trace_fce9fa2046c050e8",
+        "trace_012f6ddcec535707",
+        "trace_36ea4d6235fa5c3f",
+        "trace_0e6d343c395559cf",
+        "trace_e040a3440d685e3a",
+        "trace_ef5de41286915537",
+        "trace_bffab8e238375f79",
+        "trace_1fd753e2a0e65263",
+        "trace_8bcce091892e50b1",
+        "trace_f7e17a6a6b295cf7",
+        "trace_6966ce434be25b24",
+        "trace_9855b673efcf56e5",
+        "trace_5956d9e35e595cf0",
+        "trace_52d7975ffcf5549e",
+        "trace_707940bf2eb354bb"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "general",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_af7f56640546",
+      "signal_id": "signal_e5c4debb7542",
+      "source_lineage": {
+        "original_source": "Shakti and Shakta_ocr.pdf",
+        "transformation_history": [
+          "source_text",
+          "ocr_extraction",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 1,
+  "signals_rejected": 3,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_707940bf2eb354bb",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "9b8fa726e3075c698689c9d4147b305568ce03720efda24ca8cce6339c639b67",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "a4304d9092810bae210c85295fa5a09e695cef242209217cac92e0aa08836bb0",
+    "trace_id": "trace_707940bf2eb354bb"
+  },
+  "verification_status": "NO_VERIFIED_KNOWLEDGE"
+}

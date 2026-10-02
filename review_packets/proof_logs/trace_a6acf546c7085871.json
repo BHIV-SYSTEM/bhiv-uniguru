@@ -1,0 +1,1716 @@
+{
+  "answer": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_b0d2033453f4",
+      "signal_a909704085c4",
+      "signal_8f24f1cdd5f8"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 3,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7045,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.5542,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7045,
+            "why": [
+              "epistemic_score=0.7045",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4985,
+          "retrieval_confidence": 0.5542,
+          "semantic_score": 0.5333,
+          "tag_match_score": 0.0
+        },
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7035,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.8173,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.9973,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.5536,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.7373
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7035,
+            "why": [
+              "epistemic_score=0.7035",
+              "ceiling_applied=0.8173",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7484,
+          "retrieval_confidence": 0.5536,
+          "semantic_score": 0.5333,
+          "tag_match_score": 1.0
+        },
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7026,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7276,
+              "retrieval_strength": 0.5418,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7026,
+            "why": [
+              "epistemic_score=0.7026",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4903,
+          "retrieval_confidence": 0.5418,
+          "semantic_score": 0.5161,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 3,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.7045,
+      "rejected_count": 2
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "6819ef5d4cabe532fe5e78c4180cb8aea7349c32594987c61122376dd8102d35",
+    "memory_event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "9b2ea4ab164b7aaa6f54351c12411f7fccf4655d71f840bbe31b182e86c136f5",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_a6acf546c7085871",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T07:18:47.685833Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [
+      "signal_ff777e2e1e89",
+      "signal_455d65e2c648"
+    ],
+    "retrieval_truth_hash": "7c46c2a61f094e46760b6fe9dd2f61a7e749033e9b69cbe3310262a2c9e6c878",
+    "semantic_path": [
+      {
+        "domain": "maths",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_subtraction_001",
+        "signal_id": "signal_b0d2033453f4",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      },
+      {
+        "domain": "maths",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_addition_001",
+        "signal_id": "signal_a909704085c4",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      },
+      {
+        "domain": "maths",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "signal_id": "signal_8f24f1cdd5f8",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T07:18:46.724918Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_a6acf546c7085871",
+      "contract_emission": "trace_a6acf546c7085871",
+      "downstream_execution": "trace_a6acf546c7085871",
+      "immutable": true,
+      "retrieval": "trace_a6acf546c7085871",
+      "synthesis": "trace_a6acf546c7085871",
+      "validation": "trace_a6acf546c7085871"
+    },
+    "trace_id": "trace_a6acf546c7085871",
+    "verification_status": "VERIFIED"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:maths:342a5c163b7e",
+      "claim_id": "claim_1_ab56a5bd",
+      "claim_text": "Addition is the mathematical operation of combining two or more numbers to find their total or sum",
+      "confidence": 0.553555,
+      "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "canonical_object_id": "uko:maths:342a5c163b7e",
+      "claim_id": "claim_2_3ed9ad59",
+      "claim_text": "Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+      "confidence": 0.553555,
+      "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "confidence": 0.7035,
+  "confidence_breakdown": {
+    "accepted_count": 3,
+    "accepted_derivations": [
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.7045,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.82,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 1.0,
+            "ontology_convergence": 0.7333,
+            "retrieval_strength": 0.5542,
+            "semantic_agreement": 0.6667,
+            "source_authority": 0.74
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.7045,
+          "why": [
+            "epistemic_score=0.7045",
+            "ceiling_applied=0.8200",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.4985,
+        "retrieval_confidence": 0.5542,
+        "semantic_score": 0.5333,
+        "tag_match_score": 0.0
+      },
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.7035,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.8173,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 0.9973,
+            "ontology_convergence": 0.7333,
+            "retrieval_strength": 0.5536,
+            "semantic_agreement": 0.6667,
+            "source_authority": 0.7373
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.7035,
+          "why": [
+            "epistemic_score=0.7035",
+            "ceiling_applied=0.8173",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.7484,
+        "retrieval_confidence": 0.5536,
+        "semantic_score": 0.5333,
+        "tag_match_score": 1.0
+      },
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.7026,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.82,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 1.0,
+            "ontology_convergence": 0.7276,
+            "retrieval_strength": 0.5418,
+            "semantic_agreement": 0.6667,
+            "source_authority": 0.74
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.7026,
+          "why": [
+            "epistemic_score=0.7026",
+            "ceiling_applied=0.8200",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.4903,
+        "retrieval_confidence": 0.5418,
+        "semantic_score": 0.5161,
+        "tag_match_score": 0.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "single_source_verified",
+      "claim_group_count": 3,
+      "consensus_score": 0.5,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+      "multi_source_reinforcement": 0.0,
+      "source_count": 1
+    },
+    "overall": 0.7045,
+    "rejected_count": 2
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "single_source_verified",
+    "claim_group_count": 3,
+    "consensus_score": 0.5,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+    "multi_source_reinforcement": 0.0,
+    "source_count": 1
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_a6acf546c7085871"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 74,
+    "valid_entries": 55
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T07:18:46.724918Z",
+  "interpretation_payload": {
+    "answer": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+    "artifact_hash": "6819ef5d4cabe532fe5e78c4180cb8aea7349c32594987c61122376dd8102d35",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.7035,
+    "confidence_breakdown": {
+      "accepted_count": 3,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7045,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.5542,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7045,
+            "why": [
+              "epistemic_score=0.7045",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4985,
+          "retrieval_confidence": 0.5542,
+          "semantic_score": 0.5333,
+          "tag_match_score": 0.0
+        },
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7035,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.8173,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.9973,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.5536,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.7373
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7035,
+            "why": [
+              "epistemic_score=0.7035",
+              "ceiling_applied=0.8173",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7484,
+          "retrieval_confidence": 0.5536,
+          "semantic_score": 0.5333,
+          "tag_match_score": 1.0
+        },
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7026,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7276,
+              "retrieval_strength": 0.5418,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7026,
+            "why": [
+              "epistemic_score=0.7026",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4903,
+          "retrieval_confidence": 0.5418,
+          "semantic_score": 0.5161,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 3,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.7045,
+      "rejected_count": 2
+    },
+    "contradiction_state": {
+      "classification": "single_source_verified",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_b0d2033453f4",
+        "signal_a909704085c4",
+        "signal_8f24f1cdd5f8"
+      ],
+      "retrieval_trace_id": "trace_a6acf546c7085871",
+      "retrieval_truth_hash": "7c46c2a61f094e46760b6fe9dd2f61a7e749033e9b69cbe3310262a2c9e6c878"
+    },
+    "trace_id": "trace_a6acf546c7085871",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_subtraction_001",
+    "KOSHA_addition_001",
+    "KOSHA_number_recognition_001"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7045,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.5542,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7045,
+            "why": [
+              "epistemic_score=0.7045",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4985,
+          "retrieval_confidence": 0.5542,
+          "semantic_score": 0.5333,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 66.67,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_b0d2033453f4",
+        "what_matched": {
+          "candidate_entities": [],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.7045,
+      "content": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "domain": "maths",
+      "knowledge_id": "KOSHA_subtraction_001",
+      "signal_id": "signal_b0d2033453f4",
+      "source": "balbharti_primary_mathematics_curriculum",
+      "source_governance": {
+        "authority_weight": 0.74,
+        "confidence_ceiling": 0.82,
+        "lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0,
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "subtraction",
+        "subtract",
+        "difference",
+        "arithmetic",
+        "maths",
+        "minus"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_subtraction_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a6acf546c7085871"
+      }
+    },
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7035,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.8173,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.9973,
+              "ontology_convergence": 0.7333,
+              "retrieval_strength": 0.5536,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.7373
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7035,
+            "why": [
+              "epistemic_score=0.7035",
+              "ceiling_applied=0.8173",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.7484,
+          "retrieval_confidence": 0.5536,
+          "semantic_score": 0.5333,
+          "tag_match_score": 1.0
+        },
+        "overlap_percent": {
+          "concept": 66.67,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_a909704085c4",
+        "what_matched": {
+          "candidate_entities": [],
+          "query_entities": [],
+          "tags": [
+            "addition"
+          ]
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.7035,
+      "content": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+      "domain": "maths",
+      "knowledge_id": "KOSHA_addition_001",
+      "signal_id": "signal_a909704085c4",
+      "source": "balbharti_primary_mathematics_curriculum",
+      "source_governance": {
+        "authority_weight": 0.7373,
+        "confidence_ceiling": 0.8173,
+        "lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0027,
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "addition",
+        "add",
+        "sum",
+        "arithmetic",
+        "maths",
+        "plus"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_addition_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a6acf546c7085871"
+      }
+    },
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.7026,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.7276,
+              "retrieval_strength": 0.5418,
+              "semantic_agreement": 0.6667,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.7026,
+            "why": [
+              "epistemic_score=0.7026",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.4903,
+          "retrieval_confidence": 0.5418,
+          "semantic_score": 0.5161,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 66.67,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_8f24f1cdd5f8",
+        "what_matched": {
+          "candidate_entities": [],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.7026,
+      "content": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+      "domain": "maths",
+      "knowledge_id": "KOSHA_number_recognition_001",
+      "signal_id": "signal_8f24f1cdd5f8",
+      "source": "balbharti_primary_mathematics_curriculum",
+      "source_governance": {
+        "authority_weight": 0.74,
+        "confidence_ceiling": 0.82,
+        "lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0,
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "number",
+        "recognition",
+        "numerals",
+        "maths",
+        "counting"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a6acf546c7085871"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_a6acf546c7085871"
+  },
+  "query": "What is Addition?",
+  "reasoning": "Answer uses 1 accepted evidence record(s): KOSHA_addition_001 (balbharti_primary_mathematics_curriculum). Sentences are extracted from retrieved content.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.443265,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_ff777e2e1e89",
+        "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+        "source_governance": {
+          "authority_weight": 0.2055,
+          "confidence_ceiling": 0.4555,
+          "lineage": {
+            "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0445,
+          "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "source_type": "unknown",
+          "suppression_reason": "weak_source_authority:unknown"
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "weak_source_authority:unknown",
+      "signal_id": "signal_ff777e2e1e89",
+      "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md"
+    },
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.35799899999999996,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_455d65e2c648",
+        "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+        "source_governance": {
+          "authority_weight": 0.2001,
+          "confidence_ceiling": 0.4501,
+          "lineage": {
+            "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0499,
+          "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "source_type": "unknown",
+          "suppression_reason": "weak_source_authority:unknown"
+        },
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "weak_source_authority:unknown",
+      "signal_id": "signal_455d65e2c648",
+      "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md"
+    }
+  ],
+  "retrieval_run_record": {
+    "candidate_count": 5,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:maths:342a5c163b7e",
+        "claim_id": "claim_1_ab56a5bd",
+        "claim_text": "Addition is the mathematical operation of combining two or more numbers to find their total or sum",
+        "confidence": 0.553555,
+        "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "canonical_object_id": "uko:maths:342a5c163b7e",
+        "claim_id": "claim_2_3ed9ad59",
+        "claim_text": "Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+        "confidence": 0.553555,
+        "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "deduplicated_candidate_count": 5,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_fd9450065bbd",
+    "replay_id": "replay_ed057c07c23884b7",
+    "replay_safe": true,
+    "retrieval_run_id": "run_f8c643e85dea",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:342a5c163b7e",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+        "ranking_score": 0.553555,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:6486beb0c48c",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+        "ranking_score": 0.554176,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:maths:1181034ec156",
+        "dedup_status": "unique",
+        "domain": "maths",
+        "provenance_hash": "1181034ec15638c4f519efc1f2fe9c88a4db9d9777d57f44483226e80f164595",
+        "ranking_score": 0.541792,
+        "source_id": "balbharti_primary_mathematics_curriculum",
+        "text_span": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:sanskrit queries:39033592b308",
+        "dedup_status": "unique",
+        "domain": "sanskrit queries",
+        "provenance_hash": "39033592b30884b8e8fe9f0531a5cd71403c67ca0bde19d78fa9da228f71a0be",
+        "ranking_score": 0.443265,
+        "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+        "text_span": "# Yoga\n\n## Canonical Name\n\nYoga\n\n## Sanskrit\n\n\u092f\u094b\u0917\n\n## Transliteration\n\nYoga\n\n## \u015aabda\n\n\u092f\u094b\u0917\n\n## Dh\u0101tu\n\n\u092f\u0941\u091c\u094d (Yuj) \u2014 To yoke, to unite, to join, to concentrate.\n\n## Vy\u0101kara\u1e47a\n\nYoga is a masculine noun derived from the root yuj with the suffix -a. The root yuj has two meanings: (1) yujir yoge \u2014 to unite; (2) yuj sam\u0101dhau \u2014 to concentrate. Both meanings are operative in the concept of yoga.\n\n## Nirukta\n\n\"Yujyate anena iti yoga\u1e25\" \u2014 that by which union is achieved. Also: \"yoge yukto bhavet\" \u2014 one who is yoked (disciplined) is in yoga.\n\n## B\u012bja\n\n\u092f\u0902 (Ya\u1e43) \u2014 the b\u012bja of the air element (v\u0101yu), associated with the heart chakra (An\u0101hata) and the breath-based practices of yoga.\n\n## Tattva\n\nYoga-Tattva \u2014 the principle of union and integration. Yoga operates at multiple levels: union of individual self with universal Self (Advaita), union of Puru\u1e63a with Prak\u1e5bti's dissolution (S\u0101\u1e43khya-Yoga), union of devotee with God (Bhakti-Yoga), union of action with non-attachment (Karma-Yoga).\n\n## \u015aakti\n\nYoga-\u015aakti \u2014 the integrating power. The ku\u1e47\u1e0dalin\u012b-\u015bakti is the primary yogic power that, when awakened, unites the individual with the universal. Pr\u0101\u1e47a-\u015bakti (life-force) is the medium through which yoga operates.\n\n## Literal Meaning\n\nUnion; yoking; discipline; method; path.\n\n## Functional Meaning\n\nYoga is the discipline leading to union of the individual self with the highest reality. Pata\u00f1jali defines yoga as \"yoga\u015b citta-v\u1e5btti-nirodha\u1e25\" \u2014 yoga is the cessation of the modifications of the mind-stuff. The Bhagavad G\u012bt\u0101 defines yoga as \"samatvam yoga ucyate\" \u2014 equanimity is called yoga, and \"yoga\u1e25 karmasu kau\u015balam\" \u2014 yoga is skill in action. The four classical paths are: J\u00f1\u0101na-Yoga (knowledge), Bhakti-Yoga (devotion), Karma-Yoga (action), R\u0101ja-Yoga (meditation).\n\n## Ontology\n\nIn S\u0101\u1e43khya-Yoga: yoga is the practical discipline that achieves the S\u0101\u1e43khya goal of Puru\u1e63a's liberation from Prak\u1e5bti. In Advaita Ved\u0101nta: yoga is a means (s\u0101dhana) to the recognition of \u0100tman = Brahman. In Vi\u015bi\u1e63\u1e6d\u0101dvaita: Bhakti-Yoga is the highest yoga \u2014 devotional union with Vi\u1e63\u1e47u. In Tantra: yoga is the union of \u015aiva and \u015aakti within the practitioner's body.\n\n## Cosmology\n\nIn Pur\u0101\u1e47ic cosmology: yoga is the cosmic principle of integration that holds the universe together. The concept of Yoga-M\u0101y\u0101 (Vi\u1e63\u1e47u's creative yoga-power) describes the divine yoga that maintains cosmic order. The Pur\u0101\u1e47as describe Vi\u1e63\u1e47u as eternally in yoga (yoga-nidr\u0101 \u2014 the yogic sleep of Vi\u1e63\u1e47u).\n\n## Psychology\n\nPata\u00f1jali's Yoga S\u016btras provide the most systematic psychology of yoga. The eight limbs (a\u1e63\u1e6d\u0101\u1e45ga): Yama (restraints), Niyama (observances), \u0100sana (posture), Pr\u0101\u1e47\u0101y\u0101ma (breath control), Praty\u0101h\u0101ra (sense withdrawal), Dh\u0101ra\u1e47\u0101 (concentration), Dhy\u0101na (meditation), Sam\u0101dhi (absorption). The psychology of yoga maps the transformation of consciousness from ordinary awareness to liberation. The concept of citta (mind-stuff) and its five states (k\u1e63ipta, m\u016b\u1e0dha, vik\u1e63ipta, ek\u0101gra, niruddha) describes the psychological journey of yoga.\n\n## Governance\n\nThe concept of yoga in governance: the Artha\u015b\u0101stra recommends yogic practices for the ruler's mental clarity and decision-making. The concept of r\u0101ja-yoga (royal yoga) is both a spiritual path and a metaphor for the disciplined governance of the kingdom of the self. A\u015boka's dhamma practice was essentially a form of governance-yoga.\n\n## Medicine\n\nYoga as medicine: the Ha\u1e6dha Yoga Prad\u012bpik\u0101 describes yoga as the cure for all diseases. Modern research confirms yoga's efficacy for stress, cardiovascular disease, mental health, and chronic pain. In \u0100yurveda: yoga is one of the three pillars of health alongside \u0101h\u0101ra (diet) and vih\u0101ra (lifestyle). The concept of yoga-cikits\u0101 (yoga therapy) is a distinct branch of \u0100yurvedic medicine.\n\n## Mathematics\n\nThe concept of yoga in mathematics: the Vedic mathematical concept of \"yoga\" (addition/union) mirrors the spiritual concept. The Sulbas\u016btras use geometric yoga (union of areas) to construct ritual altars. The concept of sa\u1e43yoga (conjunction) in Vai\u015be\u1e63ika philosophy is the mathematical-ontological basis of yoga.\n\n## Astronomy\n\nIn Jyoti\u1e63a: yoga refers to specific planetary combinations (graha-yoga) that indicate particular life patterns. There are 27 yogas in the Vedic calendar (based on the combined longitude of Sun and Moon). The concept of yoga in Jyoti\u1e63a is directly derived from the root meaning of \"union\" \u2014 the union of planetary influences.\n\n## Metallurgy\n\nIn alchemical traditions: yoga is the process of combining (yojana) substances to create new compounds. The Rasa\u015b\u0101stra tradition uses the concept of yoga (combination) as the basis of alchemical practice. The yoga of mercury (p\u0101rada) with sulfur (gandhaka) is the foundational alchemical yoga.\n\n## Ritual\n\nThe Yoga-S\u016btra's concept of \u012a\u015bvara-pra\u1e47idh\u0101na (surrender to God) is the ritual dimension of yoga. The concept of p\u016bj\u0101 (worship) as yoga: the Bhagavad G\u012bt\u0101 describes devotional worship as Bhakti-Yoga. The Tantric ritual of ny\u0101sa (placing mantras on the body) is a form of yoga that unites the practitioner with the deity.\n\n## Symbolism\n\nThe yoke (yoga) symbolizes the disciplined harnessing of the mind. The lotus in meditation posture symbolizes yoga \u2014 rooted in the earth, blooming toward the sky. The intertwined serpents (ku\u1e47\u1e0dalin\u012b) symbolize the yogic energy. The bindu (point of concentration) symbolizes the goal of yoga \u2014 one-pointed awareness.\n\n## Related Deities\n\n- \u015aiva (\u0100di\u015biva \u2014 the first yogi, the lord of yoga)\n- Vi\u1e63\u1e47u (eternally in yoga-nidr\u0101 \u2014 the cosmic yogi)\n- K\u1e5b\u1e63\u1e47a (the teacher of yoga in the Bhagavad G\u012bt\u0101)\n- Pata\u00f1jali (the sage who systematized yoga \u2014 considered an incarnation of \u0100di\u015be\u1e63a)\n- Datt\u0101treya (the guru of yoga traditions)\n\n## Related Lokas\n\n- Yoga-loka (the realm of yogis)\n- Brahmaloka (the destination of the highest yogis)\n\n## Related Koshas\n\n- Pr\u0101\u1e47amaya Kosha (energy sheath) \u2014 the primary field of pr\u0101\u1e47\u0101y\u0101ma yoga\n- Manomaya Kosha (mind sheath) \u2014 the field of dh\u0101ra\u1e47\u0101 and dhy\u0101na\n- Vij\u00f1\u0101namaya Kosha (intellect sheath) \u2014 the field of j\u00f1\u0101na-yoga\n- \u0100nandamaya Kosha (bliss sheath) \u2014 the field of sam\u0101dhi\n\n## Related Chakras\n\n- All seven chakras are the map of the yogic body\n- M\u016bl\u0101dh\u0101ra (root) \u2014 the starting point of ku\u1e47\u1e0dalin\u012b yoga\n- Sahasr\u0101ra (crown) \u2014 the destination of ku\u1e47\u1e0dalin\u012b yoga\n- Su\u1e63umn\u0101 n\u0101\u1e0d\u012b \u2014 the central channel through which yoga energy flows\n\n## Related Yantras\n\n- \u015ar\u012b Yantra (the yantra of the highest yoga \u2014 union of \u015aiva and \u015aakti)\n- Ku\u1e47\u1e0dalin\u012b Yantra (for yogic energy practices)\n\n## Related Mantras\n\n- \"Yoga\u015b citta-v\u1e5btti-nirodha\u1e25\" (Yoga S\u016btras 1.2) \u2014 the definition of yoga\n- G\u0101yatr\u012b Mantra (the mantra of j\u00f1\u0101na-yoga)\n- \"Om nama\u1e25 \u015biv\u0101ya\" (the mantra of \u015aiva-yoga)\n- Mah\u0101m\u1e5btyu\u00f1jaya Mantra (the mantra of liberation through yoga)\n\n## Related Vidy\u0101s\n\n- R\u0101ja-Yoga Vidy\u0101 (the royal science of meditation)\n- Ha\u1e6dha-Yoga Vidy\u0101 (the science of physical yoga)\n- Ku\u1e47\u1e0dalin\u012b-Yoga Vidy\u0101 (the science of yogic energy)\n- Karma-Yoga Vidy\u0101 (the science of action without attachment)\n\n## Related \u015a\u0101stras\n\n- Yoga S\u016btras (Pata\u00f1jali) \u2014 the primary text\n- Bhagavad G\u012bt\u0101 (Chapters 3, 4, 5, 6 \u2014 Karma, J\u00f1\u0101na, Bhakti, Dhy\u0101na Yoga)\n- Ha\u1e6dha Yoga Prad\u012bpik\u0101 (Sv\u0101tm\u0101r\u0101ma)\n- Ghera\u1e47\u1e0da Sa\u1e43hit\u0101\n- \u015aiva Sa\u1e43hit\u0101\n- Yoga V\u0101si\u1e63\u1e6dha\n\n## Traditional Interpretations\n\n- Pata\u00f1jali: Yoga is the cessation of mental modifications; the goal is kaivalya (liberation)\n- Advaita Ved\u0101nta: Yoga is a means to the recognition of \u0100tman = Brahman\n- Vi\u015bi\u1e63\u1e6d\u0101dvaita: Bhakti-Yoga is the highest yoga \u2014 devotional union with Vi\u1e63\u1e47u\n- Tantra: Yoga is the union of \u015aiva and \u015aakti within the practitioner's body\n- Buddhism: Yoga (dhy\u0101na) is the path to nirv\u0101\u1e47a\n- Modern: Yoga as physical-mental wellness practice (partial understanding of the full tradition)\n\n## Historical Evolution\n\n- \u1e5agvedic period: Yoga as yoking (of horses, of the mind to the divine)\n- Upani\u1e63adic period: Yoga as the path to Brahman-realization\n- Pre-classical period: Various yoga traditions develop (J\u00f1\u0101na, Bhakti, Karma)\n- Classical period (Pata\u00f1jali, ~200 BCE\u2013200 CE): Yoga systematized in eight limbs\n- Tantric period (500\u20131200 CE): Ha\u1e6dha-Yoga, Ku\u1e47\u1e0dalin\u012b-Yoga develop\n- Medieval bhakti: Bhakti-Yoga as the primary path for the common person\n- Modern (19th century onward): Yoga globalized; physical aspects emphasized\n\n## Cross References\n\n- Dharma\n- Karma\n- Moksha\n- Atman\n- Prana\n- Samadhi\n- Kundalini\n\n## Open Research Questions\n\n- What is the relationship between Pata\u00f1jali's Yoga and S\u0101\u1e43khya philosophy? Are they one system or two?\n- How does the Tantric concept of yoga (union of \u015aiva-\u015aakti) relate to the Advaita concept of yoga (recognition of \u0100tman = Brahman)?\n- What are the neurological mechanisms underlying the advanced states of yoga (sam\u0101dhi)?\n\n## Experimental Hypotheses\n\n[EXPERIMENTAL \u2014 NOT CANONICAL] Neuroscience research suggests that advanced meditation states (dhy\u0101na, sam\u0101dhi) produce measurable changes in brain structure and function. Whether these changes correspond to the traditional descriptions of yoga's effects remains under investigation.\n\n## Canonical Sources\n\n- Yoga S\u016btras of Pata\u00f1jali (complete text)\n- Bhagavad G\u012bt\u0101 2.48, 6.1-47\n- Ka\u1e6dha Upani\u1e63ad 2.3.10-11 (yoga as the path to liberation)\n- \u015avet\u0101\u015bvatara Upani\u1e63ad 2.8-15 (yoga practice described)\n- Ha\u1e6dha Yoga Prad\u012bpik\u0101 (Sv\u0101tm\u0101r\u0101ma)",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:sanskrit queries:071ca4ff7c6f",
+        "dedup_status": "unique",
+        "domain": "sanskrit queries",
+        "provenance_hash": "071ca4ff7c6f9f639136e87038138b7e808046efa55f4651f7a267f9e3730c42",
+        "ranking_score": 0.35799899999999996,
+        "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+        "text_span": "# Prakrti\n\n## Canonical Name\n\nPrakrti\n\n## Sanskrit\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Transliteration\n\nPrak\u1e5bti\n\n## \u015aabda\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Dh\u0101tu\n\n\u092a\u094d\u0930 + \u0915\u0943 (Pra + K\u1e5b) \u2014 Pra (before, primary, forth) + K\u1e5b (to do, to make). The primary maker; the original nature; that which was made first.\n\n## Vy\u0101kara\u1e47a\n\nPrak\u1e5bti is a feminine noun derived from the prefix pra- and the root k\u1e5b (to make) with the suffix -ti. The feminine gender is significant \u2014 Prak\u1e5bti is the feminine creative principle, complementary to the masculine Puru\u1e63a.\n\n## Nirukta\n\n\"Prak\u1e5b\u1e63\u1e6d\u0101 k\u1e5bti\u1e25 prak\u1e5bti\u1e25\" \u2014 the primary creation. Prak\u1e5bti is the original nature from which all manifest existence emerges.\n\n## B\u012bja\n\n\u0939\u094d\u0930\u0940\u0902 (Hr\u012bm) \u2014 the b\u012bja of Prak\u1e5bti as the creative power. Also \u0915\u094d\u0932\u0940\u0902 (Kl\u012bm) \u2014 the b\u012bja of attraction and manifestation.\n\n## Tattva\n\nPrak\u1e5bti-Tattva \u2014 the principle of primal matter and creative nature. In S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities (along with Puru\u1e63a). It is the material cause of the universe \u2014 the primal matter from which all manifest existence evolves.\n\n## \u015aakti\n\nPrak\u1e5bti is itself the \u015bakti \u2014 the creative power. In \u015a\u0101kta traditions, Prak\u1e5bti = \u015aakti = the Goddess. The three gu\u1e47as (sattva, rajas, tamas) are the three \u015baktis of Prak\u1e5bti.\n\n## Literal Meaning\n\nNature; primal matter; the original creative principle; the feminine creative power.\n\n## Functional Meaning\n\nPrak\u1e5bti is the primal, undifferentiated matter from which the entire manifest universe evolves. In S\u0101\u1e43khya philosophy, Prak\u1e5bti consists of three gu\u1e47as (qualities): Sattva (clarity, luminosity), Rajas (activity, passion), Tamas (inertia, darkness). When the three gu\u1e47as are in perfect equilibrium, Prak\u1e5bti is unmanifest (avyakta). When the equilibrium is disturbed (by Puru\u1e63a's proximity), Prak\u1e5bti begins to evolve the universe through twenty-three tattvas (principles).\n\n## Ontology\n\nIn S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 it is the material cause of the universe. It is unconscious (acetana) but active. Puru\u1e63a is conscious but inactive. The universe is the product of their interaction. In Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman. In Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent on Brahman. In \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality.\n\n## Cosmology\n\nIn S\u0101\u1e43khya cosmology: from Prak\u1e5bti evolves Mahat (cosmic intellect), then Aha\u1e43k\u0101ra (ego-principle), then the five tanm\u0101tras (subtle elements), then the five mah\u0101bh\u016btas (gross elements), then the ten indriyas (sense and action organs), then manas (mind) \u2014 twenty-three tattvas in total. The universe is Prak\u1e5bti's evolution for Puru\u1e63a's experience and eventual liberation.\n\n## Psychology\n\nPrak\u1e5bti as psychological principle: the three gu\u1e47as govern all psychological states. Sattva produces clarity, wisdom, and peace. Rajas produces activity, desire, and restlessness. Tamas produces inertia, delusion, and sleep. The goal of yoga is to transcend all three gu\u1e47as (trigu\u1e47\u0101t\u012bta) and rest in Puru\u1e63a's pure consciousness.\n\n## Governance\n\nThe concept of Prak\u1e5bti in governance: the Artha\u015b\u0101stra describes the seven elements of the state (sapt\u0101\u1e45ga) as the Prak\u1e5bti of the kingdom \u2014 king, minister, territory, fort, treasury, army, ally. The concept of r\u0101ja-prak\u1e5bti (the nature of the king) \u2014 the king's gu\u1e47a-composition determines the quality of governance.\n\n## Medicine\n\nIn \u0100yurveda: Prak\u1e5bti is the individual's constitutional nature \u2014 the unique combination of the three do\u1e63as (v\u0101ta, pitta, kapha) determined at conception. The concept of deha-prak\u1e5bti (body-nature) \u2014 each person has a unique Prak\u1e5bti that determines their health tendencies. \u0100yurvedic treatment is tailored to the individual's Prak\u1e5bti.\n\n## Mathematics\n\nThe concept of Prak\u1e5bti in mathematics: the three gu\u1e47as as the three fundamental operations (addition/sattva, multiplication/rajas, subtraction/tamas). The concept of Prak\u1e5bti in B\u012bjaganita (algebra) \u2014 the term prak\u1e5bti is used for the coefficient in quadratic equations.\n\n## Astronomy\n\nIn Jyoti\u1e63a: the three gu\u1e47as of Prak\u1e5bti are expressed in the three types of signs (movable/rajas, fixed/tamas, dual/sattva). The concept of graha-prak\u1e5bti (planetary nature) \u2014 each planet has its own gu\u1e47a composition.\n\n## Metallurgy\n\nIn alchemical traditions: the three gu\u1e47as of Prak\u1e5bti are expressed in the three states of matter (solid/tamas, liquid/rajas, gas/sattva). The concept of dh\u0101tu-prak\u1e5bti (metal nature) \u2014 each metal has its own gu\u1e47a composition.\n\n## Ritual\n\nThe concept of Prak\u1e5bti in ritual: the three gu\u1e47as determine the nature of ritual offerings. Sattvic offerings (milk, ghee, fruits) are for liberation. Rajasic offerings (meat, wine) are for worldly power. Tamasic offerings are for destructive purposes. The Bhagavad G\u012bt\u0101 (17.7-10) describes the three types of food, sacrifice, and worship according to the three gu\u1e47as.\n\n## Symbolism\n\nThe three gu\u1e47as are symbolized by three colors: white (sattva), red (rajas), black (tamas). The three strands of a rope symbolize the three gu\u1e47as \u2014 together they bind the soul. The Goddess (Dev\u012b) symbolizes Prak\u1e5bti \u2014 the creative, sustaining, and dissolving power.\n\n## Related Deities\n\n- Dev\u012b/Mah\u0101dev\u012b (Prak\u1e5bti as the Goddess \u2014 the supreme creative reality)\n- Brahm\u0101 (the creator who works through Prak\u1e5bti)\n- Vi\u1e63\u1e47u (Prak\u1e5bti as his body in Vi\u015bi\u1e63\u1e6d\u0101dvaita)\n- \u015aiva (Prak\u1e5bti as his \u015aakti)\n\n## Related Lokas\n\n- All lokas are within Prak\u1e5bti \u2014 they are Prak\u1e5bti's manifestations\n- Beyond Prak\u1e5bti is Puru\u1e63a's realm (kaivalya)\n\n## Related Koshas\n\n- All five koshas are manifestations of Prak\u1e5bti\n- The \u0100tman (Puru\u1e63a) is beyond Prak\u1e5bti\n\n## Related Chakras\n\n- All seven chakras are within Prak\u1e5bti\n- The awakening of ku\u1e47\u1e0dalin\u012b is Prak\u1e5bti's \u015bakti rising toward Puru\u1e63a\n\n## Related Yantras\n\n- \u015ar\u012b Yantra (the geometric form of Prak\u1e5bti's creative evolution)\n\n## Related Mantras\n\n- \"Hr\u012bm\" (the b\u012bja of Prak\u1e5bti-\u015aakti)\n- Dev\u012b M\u0101h\u0101tmya (the primary text of Prak\u1e5bti as the Goddess)\n\n## Related Vidy\u0101s\n\n- S\u0101\u1e43khya Vidy\u0101 (the science of Prak\u1e5bti and Puru\u1e63a)\n- \u0100yurveda (Prak\u1e5bti as individual constitution)\n\n## Related \u015a\u0101stras\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text on Prak\u1e5bti\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14 (the three gu\u1e47as of Prak\u1e5bti)\n- Caraka Sa\u1e43hit\u0101 (Prak\u1e5bti as individual constitution)\n\n## Traditional Interpretations\n\n- S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 the material cause of the universe\n- Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman\n- Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent\n- \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality\n\n## Historical Evolution\n\n- \u1e5agvedic period: Prak\u1e5bti as the natural world\n- Upani\u1e63adic period: Prak\u1e5bti as the creative power of Brahman\n- S\u0101\u1e43khya period (pre-classical): Prak\u1e5bti systematized as the material cause\n- Classical S\u0101\u1e43khya (\u012a\u015bvarak\u1e5b\u1e63\u1e47a, ~4th century CE): Prak\u1e5bti fully systematized\n- Bhagavad G\u012bt\u0101: Prak\u1e5bti and Puru\u1e63a integrated into the teaching of liberation\n\n## Cross References\n\n- Purusha\n- Maya\n- Shakti\n- Guna (the three qualities of Prakrti)\n- Atman (Purusha \u2014 the consciousness beyond Prakrti)\n\n## Open Research Questions\n\n- Is the S\u0101\u1e43khya concept of Prak\u1e5bti as unconscious matter compatible with the \u015a\u0101kta concept of Prak\u1e5bti as conscious Goddess?\n- How does the S\u0101\u1e43khya concept of Prak\u1e5bti's evolution relate to modern evolutionary biology?\n\n## Experimental Hypotheses\n\n[EXPERIMENTAL \u2014 NOT CANONICAL] Some researchers propose that the S\u0101\u1e43khya concept of the three gu\u1e47as (sattva, rajas, tamas) corresponds to the three fundamental states of matter (plasma/gas, liquid, solid) or to the three fundamental forces of nature. This remains a speculative analogy.\n\n## Canonical Sources\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14.5-18 (the three gu\u1e47as)\n- Yoga S\u016btras 2.18 (Prak\u1e5bti as the object of experience)\n- Caraka Sa\u1e43hit\u0101 \u015a\u0101r\u012brasth\u0101na 1 (Prak\u1e5bti as individual constitution)",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "trace_a6acf546c7085871",
+    "verification_status": "VERIFIED"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_b0d2033453f4",
+      "signal_a909704085c4",
+      "signal_8f24f1cdd5f8"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.7045,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.82,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 1.0,
+                "ontology_convergence": 0.7333,
+                "retrieval_strength": 0.5542,
+                "semantic_agreement": 0.6667,
+                "source_authority": 0.74
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.7045,
+              "why": [
+                "epistemic_score=0.7045",
+                "ceiling_applied=0.8200",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.4985,
+            "retrieval_confidence": 0.5542,
+            "semantic_score": 0.5333,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 66.67,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_b0d2033453f4",
+          "what_matched": {
+            "candidate_entities": [],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.7045,
+        "content": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+        "domain": "maths",
+        "knowledge_id": "KOSHA_subtraction_001",
+        "signal_id": "signal_b0d2033453f4",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.74,
+          "confidence_ceiling": 0.82,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "subtraction",
+          "subtract",
+          "difference",
+          "arithmetic",
+          "maths",
+          "minus"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_subtraction_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_a6acf546c7085871"
+        }
+      },
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.7035,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.8173,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.9973,
+                "ontology_convergence": 0.7333,
+                "retrieval_strength": 0.5536,
+                "semantic_agreement": 0.6667,
+                "source_authority": 0.7373
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.7035,
+              "why": [
+                "epistemic_score=0.7035",
+                "ceiling_applied=0.8173",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.7484,
+            "retrieval_confidence": 0.5536,
+            "semantic_score": 0.5333,
+            "tag_match_score": 1.0
+          },
+          "overlap_percent": {
+            "concept": 66.67,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_a909704085c4",
+          "what_matched": {
+            "candidate_entities": [],
+            "query_entities": [],
+            "tags": [
+              "addition"
+            ]
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.7035,
+        "content": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+        "domain": "maths",
+        "knowledge_id": "KOSHA_addition_001",
+        "signal_id": "signal_a909704085c4",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.7373,
+          "confidence_ceiling": 0.8173,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0027,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "addition",
+          "add",
+          "sum",
+          "arithmetic",
+          "maths",
+          "plus"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_addition_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_a6acf546c7085871"
+        }
+      },
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.7026,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.82,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 1.0,
+                "ontology_convergence": 0.7276,
+                "retrieval_strength": 0.5418,
+                "semantic_agreement": 0.6667,
+                "source_authority": 0.74
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.7026,
+              "why": [
+                "epistemic_score=0.7026",
+                "ceiling_applied=0.8200",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.4903,
+            "retrieval_confidence": 0.5418,
+            "semantic_score": 0.5161,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 66.67,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_8f24f1cdd5f8",
+          "what_matched": {
+            "candidate_entities": [],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.7026,
+        "content": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+        "domain": "maths",
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "signal_id": "signal_8f24f1cdd5f8",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_governance": {
+          "authority_weight": 0.74,
+          "confidence_ceiling": 0.82,
+          "lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0,
+          "source": "balbharti_primary_mathematics_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "number",
+          "recognition",
+          "numerals",
+          "maths",
+          "counting"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_number_recognition_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_mathematics_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_a6acf546c7085871"
+        }
+      }
+    ],
+    "artifact_hash": "7c46c2a61f094e46760b6fe9dd2f61a7e749033e9b69cbe3310262a2c9e6c878",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-10-02T07:18:46.724918Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What is Addition?",
+    "raw_signal_count": 5,
+    "rejected_signal_ids": [
+      "signal_ff777e2e1e89",
+      "signal_455d65e2c648"
+    ],
+    "rejected_signals": [
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.443265,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_ff777e2e1e89",
+          "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+          "source_governance": {
+            "authority_weight": 0.2055,
+            "confidence_ceiling": 0.4555,
+            "lineage": {
+              "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+              "transformation_history": [
+                "source_text",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.0445,
+            "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+            "source_type": "unknown",
+            "suppression_reason": "weak_source_authority:unknown"
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "weak_source_authority:unknown",
+        "signal_id": "signal_ff777e2e1e89",
+        "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md"
+      },
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.35799899999999996,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_455d65e2c648",
+          "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+          "source_governance": {
+            "authority_weight": 0.2001,
+            "confidence_ceiling": 0.4501,
+            "lineage": {
+              "original_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+              "transformation_history": [
+                "source_text",
+                "kosha_structuring"
+              ]
+            },
+            "ocr_integrity_penalty": 0.0499,
+            "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+            "source_type": "unknown",
+            "suppression_reason": "weak_source_authority:unknown"
+          },
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "weak_source_authority:unknown",
+        "signal_id": "signal_455d65e2c648",
+        "source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md"
+      }
+    ],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_subtraction_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_b0d2033453f4",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a6acf546c7085871"
+      },
+      {
+        "knowledge_id": "KOSHA_addition_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_a909704085c4",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a6acf546c7085871"
+      },
+      {
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_8f24f1cdd5f8",
+        "source": "balbharti_primary_mathematics_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_mathematics_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a6acf546c7085871"
+      }
+    ],
+    "trace_id": "trace_a6acf546c7085871"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:342a5c163b7e",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "342a5c163b7ea99ee38eee586dc865feeb67c2fb1ff628cabfaf7806a22bf329",
+      "ranking_score": 0.553555,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the four basic arithmetic operations. When we add numbers together, the result is called the sum. For example, 2 plus 3 equals 5. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:6486beb0c48c",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "6486beb0c48cbd54b9bdad6b96b90f8a90125c3ae2663aae98728cb1a614418a",
+      "ranking_score": 0.554176,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. It is the inverse of addition. The result of subtraction is called the difference. For example, 5 minus 3 equals 2. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:maths:1181034ec156",
+      "dedup_status": "unique",
+      "domain": "maths",
+      "provenance_hash": "1181034ec15638c4f519efc1f2fe9c88a4db9d9777d57f44483226e80f164595",
+      "ranking_score": 0.541792,
+      "source_id": "balbharti_primary_mathematics_curriculum",
+      "text_span": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for early learners. Students learn to recognize numerals such as 1, 2, 3 and associate each numeral with the quantity it represents. Number recognition forms the basis for counting, addition, and all further arithmetic.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:sanskrit queries:39033592b308",
+      "dedup_status": "unique",
+      "domain": "sanskrit queries",
+      "provenance_hash": "39033592b30884b8e8fe9f0531a5cd71403c67ca0bde19d78fa9da228f71a0be",
+      "ranking_score": 0.443265,
+      "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+      "text_span": "# Yoga\n\n## Canonical Name\n\nYoga\n\n## Sanskrit\n\n\u092f\u094b\u0917\n\n## Transliteration\n\nYoga\n\n## \u015aabda\n\n\u092f\u094b\u0917\n\n## Dh\u0101tu\n\n\u092f\u0941\u091c\u094d (Yuj) \u2014 To yoke, to unite, to join, to concentrate.\n\n## Vy\u0101kara\u1e47a\n\nYoga is a masculine noun derived from the root yuj with the suffix -a. The root yuj has two meanings: (1) yujir yoge \u2014 to unite; (2) yuj sam\u0101dhau \u2014 to concentrate. Both meanings are operative in the concept of yoga.\n\n## Nirukta\n\n\"Yujyate anena iti yoga\u1e25\" \u2014 that by which union is achieved. Also: \"yoge yukto bhavet\" \u2014 one who is yoked (disciplined) is in yoga.\n\n## B\u012bja\n\n\u092f\u0902 (Ya\u1e43) \u2014 the b\u012bja of the air element (v\u0101yu), associated with the heart chakra (An\u0101hata) and the breath-based practices of yoga.\n\n## Tattva\n\nYoga-Tattva \u2014 the principle of union and integration. Yoga operates at multiple levels: union of individual self with universal Self (Advaita), union of Puru\u1e63a with Prak\u1e5bti's dissolution (S\u0101\u1e43khya-Yoga), union of devotee with God (Bhakti-Yoga), union of action with non-attachment (Karma-Yoga).\n\n## \u015aakti\n\nYoga-\u015aakti \u2014 the integrating power. The ku\u1e47\u1e0dalin\u012b-\u015bakti is the primary yogic power that, when awakened, unites the individual with the universal. Pr\u0101\u1e47a-\u015bakti (life-force) is the medium through which yoga operates.\n\n## Literal Meaning\n\nUnion; yoking; discipline; method; path.\n\n## Functional Meaning\n\nYoga is the discipline leading to union of the individual self with the highest reality. Pata\u00f1jali defines yoga as \"yoga\u015b citta-v\u1e5btti-nirodha\u1e25\" \u2014 yoga is the cessation of the modifications of the mind-stuff. The Bhagavad G\u012bt\u0101 defines yoga as \"samatvam yoga ucyate\" \u2014 equanimity is called yoga, and \"yoga\u1e25 karmasu kau\u015balam\" \u2014 yoga is skill in action. The four classical paths are: J\u00f1\u0101na-Yoga (knowledge), Bhakti-Yoga (devotion), Karma-Yoga (action), R\u0101ja-Yoga (meditation).\n\n## Ontology\n\nIn S\u0101\u1e43khya-Yoga: yoga is the practical discipline that achieves the S\u0101\u1e43khya goal of Puru\u1e63a's liberation from Prak\u1e5bti. In Advaita Ved\u0101nta: yoga is a means (s\u0101dhana) to the recognition of \u0100tman = Brahman. In Vi\u015bi\u1e63\u1e6d\u0101dvaita: Bhakti-Yoga is the highest yoga \u2014 devotional union with Vi\u1e63\u1e47u. In Tantra: yoga is the union of \u015aiva and \u015aakti within the practitioner's body.\n\n## Cosmology\n\nIn Pur\u0101\u1e47ic cosmology: yoga is the cosmic principle of integration that holds the universe together. The concept of Yoga-M\u0101y\u0101 (Vi\u1e63\u1e47u's creative yoga-power) describes the divine yoga that maintains cosmic order. The Pur\u0101\u1e47as describe Vi\u1e63\u1e47u as eternally in yoga (yoga-nidr\u0101 \u2014 the yogic sleep of Vi\u1e63\u1e47u).\n\n## Psychology\n\nPata\u00f1jali's Yoga S\u016btras provide the most systematic psychology of yoga. The eight limbs (a\u1e63\u1e6d\u0101\u1e45ga): Yama (restraints), Niyama (observances), \u0100sana (posture), Pr\u0101\u1e47\u0101y\u0101ma (breath control), Praty\u0101h\u0101ra (sense withdrawal), Dh\u0101ra\u1e47\u0101 (concentration), Dhy\u0101na (meditation), Sam\u0101dhi (absorption). The psychology of yoga maps the transformation of consciousness from ordinary awareness to liberation. The concept of citta (mind-stuff) and its five states (k\u1e63ipta, m\u016b\u1e0dha, vik\u1e63ipta, ek\u0101gra, niruddha) describes the psychological journey of yoga.\n\n## Governance\n\nThe concept of yoga in governance: the Artha\u015b\u0101stra recommends yogic practices for the ruler's mental clarity and decision-making. The concept of r\u0101ja-yoga (royal yoga) is both a spiritual path and a metaphor for the disciplined governance of the kingdom of the self. A\u015boka's dhamma practice was essentially a form of governance-yoga.\n\n## Medicine\n\nYoga as medicine: the Ha\u1e6dha Yoga Prad\u012bpik\u0101 describes yoga as the cure for all diseases. Modern research confirms yoga's efficacy for stress, cardiovascular disease, mental health, and chronic pain. In \u0100yurveda: yoga is one of the three pillars of health alongside \u0101h\u0101ra (diet) and vih\u0101ra (lifestyle). The concept of yoga-cikits\u0101 (yoga therapy) is a distinct branch of \u0100yurvedic medicine.\n\n## Mathematics\n\nThe concept of yoga in mathematics: the Vedic mathematical concept of \"yoga\" (addition/union) mirrors the spiritual concept. The Sulbas\u016btras use geometric yoga (union of areas) to construct ritual altars. The concept of sa\u1e43yoga (conjunction) in Vai\u015be\u1e63ika philosophy is the mathematical-ontological basis of yoga.\n\n## Astronomy\n\nIn Jyoti\u1e63a: yoga refers to specific planetary combinations (graha-yoga) that indicate particular life patterns. There are 27 yogas in the Vedic calendar (based on the combined longitude of Sun and Moon). The concept of yoga in Jyoti\u1e63a is directly derived from the root meaning of \"union\" \u2014 the union of planetary influences.\n\n## Metallurgy\n\nIn alchemical traditions: yoga is the process of combining (yojana) substances to create new compounds. The Rasa\u015b\u0101stra tradition uses the concept of yoga (combination) as the basis of alchemical practice. The yoga of mercury (p\u0101rada) with sulfur (gandhaka) is the foundational alchemical yoga.\n\n## Ritual\n\nThe Yoga-S\u016btra's concept of \u012a\u015bvara-pra\u1e47idh\u0101na (surrender to God) is the ritual dimension of yoga. The concept of p\u016bj\u0101 (worship) as yoga: the Bhagavad G\u012bt\u0101 describes devotional worship as Bhakti-Yoga. The Tantric ritual of ny\u0101sa (placing mantras on the body) is a form of yoga that unites the practitioner with the deity.\n\n## Symbolism\n\nThe yoke (yoga) symbolizes the disciplined harnessing of the mind. The lotus in meditation posture symbolizes yoga \u2014 rooted in the earth, blooming toward the sky. The intertwined serpents (ku\u1e47\u1e0dalin\u012b) symbolize the yogic energy. The bindu (point of concentration) symbolizes the goal of yoga \u2014 one-pointed awareness.\n\n## Related Deities\n\n- \u015aiva (\u0100di\u015biva \u2014 the first yogi, the lord of yoga)\n- Vi\u1e63\u1e47u (eternally in yoga-nidr\u0101 \u2014 the cosmic yogi)\n- K\u1e5b\u1e63\u1e47a (the teacher of yoga in the Bhagavad G\u012bt\u0101)\n- Pata\u00f1jali (the sage who systematized yoga \u2014 considered an incarnation of \u0100di\u015be\u1e63a)\n- Datt\u0101treya (the guru of yoga traditions)\n\n## Related Lokas\n\n- Yoga-loka (the realm of yogis)\n- Brahmaloka (the destination of the highest yogis)\n\n## Related Koshas\n\n- Pr\u0101\u1e47amaya Kosha (energy sheath) \u2014 the primary field of pr\u0101\u1e47\u0101y\u0101ma yoga\n- Manomaya Kosha (mind sheath) \u2014 the field of dh\u0101ra\u1e47\u0101 and dhy\u0101na\n- Vij\u00f1\u0101namaya Kosha (intellect sheath) \u2014 the field of j\u00f1\u0101na-yoga\n- \u0100nandamaya Kosha (bliss sheath) \u2014 the field of sam\u0101dhi\n\n## Related Chakras\n\n- All seven chakras are the map of the yogic body\n- M\u016bl\u0101dh\u0101ra (root) \u2014 the starting point of ku\u1e47\u1e0dalin\u012b yoga\n- Sahasr\u0101ra (crown) \u2014 the destination of ku\u1e47\u1e0dalin\u012b yoga\n- Su\u1e63umn\u0101 n\u0101\u1e0d\u012b \u2014 the central channel through which yoga energy flows\n\n## Related Yantras\n\n- \u015ar\u012b Yantra (the yantra of the highest yoga \u2014 union of \u015aiva and \u015aakti)\n- Ku\u1e47\u1e0dalin\u012b Yantra (for yogic energy practices)\n\n## Related Mantras\n\n- \"Yoga\u015b citta-v\u1e5btti-nirodha\u1e25\" (Yoga S\u016btras 1.2) \u2014 the definition of yoga\n- G\u0101yatr\u012b Mantra (the mantra of j\u00f1\u0101na-yoga)\n- \"Om nama\u1e25 \u015biv\u0101ya\" (the mantra of \u015aiva-yoga)\n- Mah\u0101m\u1e5btyu\u00f1jaya Mantra (the mantra of liberation through yoga)\n\n## Related Vidy\u0101s\n\n- R\u0101ja-Yoga Vidy\u0101 (the royal science of meditation)\n- Ha\u1e6dha-Yoga Vidy\u0101 (the science of physical yoga)\n- Ku\u1e47\u1e0dalin\u012b-Yoga Vidy\u0101 (the science of yogic energy)\n- Karma-Yoga Vidy\u0101 (the science of action without attachment)\n\n## Related \u015a\u0101stras\n\n- Yoga S\u016btras (Pata\u00f1jali) \u2014 the primary text\n- Bhagavad G\u012bt\u0101 (Chapters 3, 4, 5, 6 \u2014 Karma, J\u00f1\u0101na, Bhakti, Dhy\u0101na Yoga)\n- Ha\u1e6dha Yoga Prad\u012bpik\u0101 (Sv\u0101tm\u0101r\u0101ma)\n- Ghera\u1e47\u1e0da Sa\u1e43hit\u0101\n- \u015aiva Sa\u1e43hit\u0101\n- Yoga V\u0101si\u1e63\u1e6dha\n\n## Traditional Interpretations\n\n- Pata\u00f1jali: Yoga is the cessation of mental modifications; the goal is kaivalya (liberation)\n- Advaita Ved\u0101nta: Yoga is a means to the recognition of \u0100tman = Brahman\n- Vi\u015bi\u1e63\u1e6d\u0101dvaita: Bhakti-Yoga is the highest yoga \u2014 devotional union with Vi\u1e63\u1e47u\n- Tantra: Yoga is the union of \u015aiva and \u015aakti within the practitioner's body\n- Buddhism: Yoga (dhy\u0101na) is the path to nirv\u0101\u1e47a\n- Modern: Yoga as physical-mental wellness practice (partial understanding of the full tradition)\n\n## Historical Evolution\n\n- \u1e5agvedic period: Yoga as yoking (of horses, of the mind to the divine)\n- Upani\u1e63adic period: Yoga as the path to Brahman-realization\n- Pre-classical period: Various yoga traditions develop (J\u00f1\u0101na, Bhakti, Karma)\n- Classical period (Pata\u00f1jali, ~200 BCE\u2013200 CE): Yoga systematized in eight limbs\n- Tantric period (500\u20131200 CE): Ha\u1e6dha-Yoga, Ku\u1e47\u1e0dalin\u012b-Yoga develop\n- Medieval bhakti: Bhakti-Yoga as the primary path for the common person\n- Modern (19th century onward): Yoga globalized; physical aspects emphasized\n\n## Cross References\n\n- Dharma\n- Karma\n- Moksha\n- Atman\n- Prana\n- Samadhi\n- Kundalini\n\n## Open Research Questions\n\n- What is the relationship between Pata\u00f1jali's Yoga and S\u0101\u1e43khya philosophy? Are they one system or two?\n- How does the Tantric concept of yoga (union of \u015aiva-\u015aakti) relate to the Advaita concept of yoga (recognition of \u0100tman = Brahman)?\n- What are the neurological mechanisms underlying the advanced states of yoga (sam\u0101dhi)?\n\n## Experimental Hypotheses\n\n[EXPERIMENTAL \u2014 NOT CANONICAL] Neuroscience research suggests that advanced meditation states (dhy\u0101na, sam\u0101dhi) produce measurable changes in brain structure and function. Whether these changes correspond to the traditional descriptions of yoga's effects remains under investigation.\n\n## Canonical Sources\n\n- Yoga S\u016btras of Pata\u00f1jali (complete text)\n- Bhagavad G\u012bt\u0101 2.48, 6.1-47\n- Ka\u1e6dha Upani\u1e63ad 2.3.10-11 (yoga as the path to liberation)\n- \u015avet\u0101\u015bvatara Upani\u1e63ad 2.8-15 (yoga practice described)\n- Ha\u1e6dha Yoga Prad\u012bpik\u0101 (Sv\u0101tm\u0101r\u0101ma)",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:sanskrit queries:071ca4ff7c6f",
+      "dedup_status": "unique",
+      "domain": "sanskrit queries",
+      "provenance_hash": "071ca4ff7c6f9f639136e87038138b7e808046efa55f4651f7a267f9e3730c42",
+      "ranking_score": 0.35799899999999996,
+      "source_id": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/prakrti.md",
+      "text_span": "# Prakrti\n\n## Canonical Name\n\nPrakrti\n\n## Sanskrit\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Transliteration\n\nPrak\u1e5bti\n\n## \u015aabda\n\n\u092a\u094d\u0930\u0915\u0943\u0924\u093f\n\n## Dh\u0101tu\n\n\u092a\u094d\u0930 + \u0915\u0943 (Pra + K\u1e5b) \u2014 Pra (before, primary, forth) + K\u1e5b (to do, to make). The primary maker; the original nature; that which was made first.\n\n## Vy\u0101kara\u1e47a\n\nPrak\u1e5bti is a feminine noun derived from the prefix pra- and the root k\u1e5b (to make) with the suffix -ti. The feminine gender is significant \u2014 Prak\u1e5bti is the feminine creative principle, complementary to the masculine Puru\u1e63a.\n\n## Nirukta\n\n\"Prak\u1e5b\u1e63\u1e6d\u0101 k\u1e5bti\u1e25 prak\u1e5bti\u1e25\" \u2014 the primary creation. Prak\u1e5bti is the original nature from which all manifest existence emerges.\n\n## B\u012bja\n\n\u0939\u094d\u0930\u0940\u0902 (Hr\u012bm) \u2014 the b\u012bja of Prak\u1e5bti as the creative power. Also \u0915\u094d\u0932\u0940\u0902 (Kl\u012bm) \u2014 the b\u012bja of attraction and manifestation.\n\n## Tattva\n\nPrak\u1e5bti-Tattva \u2014 the principle of primal matter and creative nature. In S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities (along with Puru\u1e63a). It is the material cause of the universe \u2014 the primal matter from which all manifest existence evolves.\n\n## \u015aakti\n\nPrak\u1e5bti is itself the \u015bakti \u2014 the creative power. In \u015a\u0101kta traditions, Prak\u1e5bti = \u015aakti = the Goddess. The three gu\u1e47as (sattva, rajas, tamas) are the three \u015baktis of Prak\u1e5bti.\n\n## Literal Meaning\n\nNature; primal matter; the original creative principle; the feminine creative power.\n\n## Functional Meaning\n\nPrak\u1e5bti is the primal, undifferentiated matter from which the entire manifest universe evolves. In S\u0101\u1e43khya philosophy, Prak\u1e5bti consists of three gu\u1e47as (qualities): Sattva (clarity, luminosity), Rajas (activity, passion), Tamas (inertia, darkness). When the three gu\u1e47as are in perfect equilibrium, Prak\u1e5bti is unmanifest (avyakta). When the equilibrium is disturbed (by Puru\u1e63a's proximity), Prak\u1e5bti begins to evolve the universe through twenty-three tattvas (principles).\n\n## Ontology\n\nIn S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 it is the material cause of the universe. It is unconscious (acetana) but active. Puru\u1e63a is conscious but inactive. The universe is the product of their interaction. In Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman. In Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent on Brahman. In \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality.\n\n## Cosmology\n\nIn S\u0101\u1e43khya cosmology: from Prak\u1e5bti evolves Mahat (cosmic intellect), then Aha\u1e43k\u0101ra (ego-principle), then the five tanm\u0101tras (subtle elements), then the five mah\u0101bh\u016btas (gross elements), then the ten indriyas (sense and action organs), then manas (mind) \u2014 twenty-three tattvas in total. The universe is Prak\u1e5bti's evolution for Puru\u1e63a's experience and eventual liberation.\n\n## Psychology\n\nPrak\u1e5bti as psychological principle: the three gu\u1e47as govern all psychological states. Sattva produces clarity, wisdom, and peace. Rajas produces activity, desire, and restlessness. Tamas produces inertia, delusion, and sleep. The goal of yoga is to transcend all three gu\u1e47as (trigu\u1e47\u0101t\u012bta) and rest in Puru\u1e63a's pure consciousness.\n\n## Governance\n\nThe concept of Prak\u1e5bti in governance: the Artha\u015b\u0101stra describes the seven elements of the state (sapt\u0101\u1e45ga) as the Prak\u1e5bti of the kingdom \u2014 king, minister, territory, fort, treasury, army, ally. The concept of r\u0101ja-prak\u1e5bti (the nature of the king) \u2014 the king's gu\u1e47a-composition determines the quality of governance.\n\n## Medicine\n\nIn \u0100yurveda: Prak\u1e5bti is the individual's constitutional nature \u2014 the unique combination of the three do\u1e63as (v\u0101ta, pitta, kapha) determined at conception. The concept of deha-prak\u1e5bti (body-nature) \u2014 each person has a unique Prak\u1e5bti that determines their health tendencies. \u0100yurvedic treatment is tailored to the individual's Prak\u1e5bti.\n\n## Mathematics\n\nThe concept of Prak\u1e5bti in mathematics: the three gu\u1e47as as the three fundamental operations (addition/sattva, multiplication/rajas, subtraction/tamas). The concept of Prak\u1e5bti in B\u012bjaganita (algebra) \u2014 the term prak\u1e5bti is used for the coefficient in quadratic equations.\n\n## Astronomy\n\nIn Jyoti\u1e63a: the three gu\u1e47as of Prak\u1e5bti are expressed in the three types of signs (movable/rajas, fixed/tamas, dual/sattva). The concept of graha-prak\u1e5bti (planetary nature) \u2014 each planet has its own gu\u1e47a composition.\n\n## Metallurgy\n\nIn alchemical traditions: the three gu\u1e47as of Prak\u1e5bti are expressed in the three states of matter (solid/tamas, liquid/rajas, gas/sattva). The concept of dh\u0101tu-prak\u1e5bti (metal nature) \u2014 each metal has its own gu\u1e47a composition.\n\n## Ritual\n\nThe concept of Prak\u1e5bti in ritual: the three gu\u1e47as determine the nature of ritual offerings. Sattvic offerings (milk, ghee, fruits) are for liberation. Rajasic offerings (meat, wine) are for worldly power. Tamasic offerings are for destructive purposes. The Bhagavad G\u012bt\u0101 (17.7-10) describes the three types of food, sacrifice, and worship according to the three gu\u1e47as.\n\n## Symbolism\n\nThe three gu\u1e47as are symbolized by three colors: white (sattva), red (rajas), black (tamas). The three strands of a rope symbolize the three gu\u1e47as \u2014 together they bind the soul. The Goddess (Dev\u012b) symbolizes Prak\u1e5bti \u2014 the creative, sustaining, and dissolving power.\n\n## Related Deities\n\n- Dev\u012b/Mah\u0101dev\u012b (Prak\u1e5bti as the Goddess \u2014 the supreme creative reality)\n- Brahm\u0101 (the creator who works through Prak\u1e5bti)\n- Vi\u1e63\u1e47u (Prak\u1e5bti as his body in Vi\u015bi\u1e63\u1e6d\u0101dvaita)\n- \u015aiva (Prak\u1e5bti as his \u015aakti)\n\n## Related Lokas\n\n- All lokas are within Prak\u1e5bti \u2014 they are Prak\u1e5bti's manifestations\n- Beyond Prak\u1e5bti is Puru\u1e63a's realm (kaivalya)\n\n## Related Koshas\n\n- All five koshas are manifestations of Prak\u1e5bti\n- The \u0100tman (Puru\u1e63a) is beyond Prak\u1e5bti\n\n## Related Chakras\n\n- All seven chakras are within Prak\u1e5bti\n- The awakening of ku\u1e47\u1e0dalin\u012b is Prak\u1e5bti's \u015bakti rising toward Puru\u1e63a\n\n## Related Yantras\n\n- \u015ar\u012b Yantra (the geometric form of Prak\u1e5bti's creative evolution)\n\n## Related Mantras\n\n- \"Hr\u012bm\" (the b\u012bja of Prak\u1e5bti-\u015aakti)\n- Dev\u012b M\u0101h\u0101tmya (the primary text of Prak\u1e5bti as the Goddess)\n\n## Related Vidy\u0101s\n\n- S\u0101\u1e43khya Vidy\u0101 (the science of Prak\u1e5bti and Puru\u1e63a)\n- \u0100yurveda (Prak\u1e5bti as individual constitution)\n\n## Related \u015a\u0101stras\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text on Prak\u1e5bti\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14 (the three gu\u1e47as of Prak\u1e5bti)\n- Caraka Sa\u1e43hit\u0101 (Prak\u1e5bti as individual constitution)\n\n## Traditional Interpretations\n\n- S\u0101\u1e43khya: Prak\u1e5bti is one of the two ultimate realities \u2014 the material cause of the universe\n- Advaita: Prak\u1e5bti = M\u0101y\u0101 \u2014 the creative power of Brahman\n- Vi\u015bi\u1e63\u1e6d\u0101dvaita: Prak\u1e5bti is the body of Brahman-Vi\u1e63\u1e47u \u2014 real and dependent\n- \u015a\u0101kta: Prak\u1e5bti = the Goddess \u2014 the supreme creative reality\n\n## Historical Evolution\n\n- \u1e5agvedic period: Prak\u1e5bti as the natural world\n- Upani\u1e63adic period: Prak\u1e5bti as the creative power of Brahman\n- S\u0101\u1e43khya period (pre-classical): Prak\u1e5bti systematized as the material cause\n- Classical S\u0101\u1e43khya (\u012a\u015bvarak\u1e5b\u1e63\u1e47a, ~4th century CE): Prak\u1e5bti fully systematized\n- Bhagavad G\u012bt\u0101: Prak\u1e5bti and Puru\u1e63a integrated into the teaching of liberation\n\n## Cross References\n\n- Purusha\n- Maya\n- Shakti\n- Guna (the three qualities of Prakrti)\n- Atman (Purusha \u2014 the consciousness beyond Prakrti)\n\n## Open Research Questions\n\n- Is the S\u0101\u1e43khya concept of Prak\u1e5bti as unconscious matter compatible with the \u015a\u0101kta concept of Prak\u1e5bti as conscious Goddess?\n- How does the S\u0101\u1e43khya concept of Prak\u1e5bti's evolution relate to modern evolutionary biology?\n\n## Experimental Hypotheses\n\n[EXPERIMENTAL \u2014 NOT CANONICAL] Some researchers propose that the S\u0101\u1e43khya concept of the three gu\u1e47as (sattva, rajas, tamas) corresponds to the three fundamental states of matter (plasma/gas, liquid, solid) or to the three fundamental forces of nature. This remains a speculative analogy.\n\n## Canonical Sources\n\n- S\u0101\u1e43khya K\u0101rik\u0101 (\u012a\u015bvarak\u1e5b\u1e63\u1e47a) \u2014 the primary text\n- Bhagavad G\u012bt\u0101 13.19-23 (Prak\u1e5bti and Puru\u1e63a)\n- Bhagavad G\u012bt\u0101 14.5-18 (the three gu\u1e47as)\n- Yoga S\u016btras 2.18 (Prak\u1e5bti as the object of experience)\n- Caraka Sa\u1e43hit\u0101 \u015a\u0101r\u012brasth\u0101na 1 (Prak\u1e5bti as individual constitution)",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": true,
+    "constitutional_governance": {
+      "canonical_authority_granted": true,
+      "canonical_memory_keys": [
+        "Agni",
+        "Agni Purana",
+        "Assembly",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Bhakti",
+        "Brahma",
+        "Brahma Purana",
+        "Brahman",
+        "Brahmanda Purana",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Garuda Purana",
+        "Governance",
+        "Kali Yuga",
+        "Karma",
+        "Karma Yoga",
+        "King",
+        "Krishna",
+        "Kurma Purana",
+        "Linga Purana",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Markandeya Purana",
+        "Matsya Purana",
+        "Moksha",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Rajadharma",
+        "Ramayana",
+        "Satya Yuga",
+        "Shiva",
+        "Skanda Purana",
+        "Taittiriya Upanishad",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Varaha Purana",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Yajna",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": true,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "canonical",
+        "trace_id": "trace_a6acf546c7085871",
+        "updated_at": "2026-10-02T07:18:47.386893Z"
+      },
+      "event_hash": "9b2ea4ab164b7aaa6f54351c12411f7fccf4655d71f840bbe31b182e86c136f5",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": true,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "ACCEPT_CANONICAL_MUTATION",
+        "failure_states": [
+          "PARTIAL_REJECTION_PRESENT"
+        ],
+        "memory_classification": "canonical",
+        "reasons": [],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "6d116e73bde6ebb1ee49b901632cd2fbee45e81ffb5514fb2871f1495c2edfc8",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "9b2ea4ab164b7aaa6f54351c12411f7fccf4655d71f840bbe31b182e86c136f5",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "ee3274a068c07cf9f89bc4f1cd2fe67f63092aeaae8fb093aa06b8d6dc932c89",
+      "transient_event_count": 713
+    },
+    "entity_continuity": {},
+    "event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "9b2ea4ab164b7aaa6f54351c12411f7fccf4655d71f840bbe31b182e86c136f5",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_a6acf546c7085871",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T07:18:47.685833Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [
+      {
+        "contradiction_pressure": 0.0,
+        "query": "What is Addition?",
+        "rejected_signal_count": 2,
+        "state": "open",
+        "trace_id": "trace_a6acf546c7085871",
+        "updated_at": "2026-10-02T07:18:47.685833Z",
+        "user_id": "anonymous",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "user_continuity": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-10-02T07:18:47.685833Z",
+      "queries": 334,
+      "trace_ids": [
+        "trace_cc74ff571824570c",
+        "trace_1da1863ed96553d0",
+        "trace_3d7379cdae29513a",
+        "trace_0a0fa0b72fda5c0c",
+        "trace_1c501f7b119158ac",
+        "trace_dbd53cf86fa851a2",
+        "trace_a66282e3e5cc5ee5",
+        "trace_aff88cb2f5d45a5d",
+        "trace_dc6294f6f78957f2",
+        "trace_278a9f9a8be457fc",
+        "trace_eff43f8336e7572c",
+        "trace_519c355ef0db5c7b",
+        "trace_df1eca57f50250fe",
+        "trace_d636470994615fe0",
+        "trace_d5d1ba4eb1ad511a",
+        "trace_1878204a031b5027",
+        "trace_d1642aa7320e5a34",
+        "trace_b9f1882a812a574c",
+        "trace_7ddd3510916b55cd",
+        "trace_df725cd8931b50aa",
+        "trace_0b94f39f7b96581c",
+        "trace_9e77ac3967845fa1",
+        "trace_0a2586fc6ba15156",
+        "trace_e342bc200ab5584a",
+        "trace_b057b6bf3a5d5bb3",
+        "trace_de983d1d21e05bee",
+        "trace_38e92519af48554e",
+        "trace_57050f0fdf99590a",
+        "trace_aee5aa58ca655c35",
+        "trace_355fbc6cf507584b",
+        "trace_82f8814eb8f359ef",
+        "trace_9b4e8f26365b5766",
+        "trace_b8bc5d63523b538a",
+        "trace_c1939f34788055de",
+        "trace_0cfc64c3c2595d30",
+        "trace_1c6643fba66d5706",
+        "trace_c03db9b3747954d6",
+        "trace_2931edf82e7f5d21",
+        "trace_f5ed16c168a85dc2",
+        "trace_697b78fd51d45ee0",
+        "trace_d484b3325c0a5549",
+        "trace_d042d65b2c2e598a",
+        "trace_56e3b41b60585d1c",
+        "trace_cb65b273f4b45602",
+        "trace_59a42a5211b95c6b",
+        "trace_34588781b97155c6",
+        "trace_229221528c955a2d",
+        "trace_ca66859264fd5a21",
+        "trace_c7fa6aa752215caf",
+        "trace_a6acf546c7085871"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "maths",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_subtraction_001",
+      "signal_id": "signal_b0d2033453f4",
+      "source_lineage": {
+        "original_source": "balbharti_primary_mathematics_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    },
+    {
+      "domain": "maths",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_addition_001",
+      "signal_id": "signal_a909704085c4",
+      "source_lineage": {
+        "original_source": "balbharti_primary_mathematics_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    },
+    {
+      "domain": "maths",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_number_recognition_001",
+      "signal_id": "signal_8f24f1cdd5f8",
+      "source_lineage": {
+        "original_source": "balbharti_primary_mathematics_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 3,
+  "signals_rejected": 2,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_a6acf546c7085871",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "6819ef5d4cabe532fe5e78c4180cb8aea7349c32594987c61122376dd8102d35",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "7c46c2a61f094e46760b6fe9dd2f61a7e749033e9b69cbe3310262a2c9e6c878",
+    "trace_id": "trace_a6acf546c7085871"
+  },
+  "verification_status": "VERIFIED"
+}

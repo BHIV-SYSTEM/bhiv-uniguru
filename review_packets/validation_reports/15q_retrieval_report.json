@@ -1,0 +1,505 @@
+[
+  {
+    "id": "Q01",
+    "question": "What is Dharma?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "dharma_systems",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_b0ee3744731a",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_bf72b8578590",
+        "source": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_7eaed110c87b",
+        "source": "Vayu Purana Part 1_ocred.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Dharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. Dharma is one of the four Puru\u1e63\u0101rthas (aims of human life): Dharma, Artha, K\u0101ma, Mok\u1e63a. Dharma is symbolized by the wheel (dharmacakra) \u2014 the Buddha's first teaching is the \"turning of the wheel of dharma.\" The scales of justice represent dharma's balancing function.",
+    "selected_evidence_preview": "Dharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. Dharma ",
+    "selected_evidence_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
+    "candidate_evidence_preview": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without att",
+    "final_answer": "Dharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. Dharma is one of the four Puru\u1e63\u0101rthas (aims of human life): Dharma, Artha, K\u0101ma, Mok\u1e63a. Dharma is symbolized by the wheel (dharmacakra) \u2014 the Buddha's first teaching is the \"turning of the wheel of dharma.\" The scales of justice represent dharma's balancing function.",
+    "answer_preview": "Dharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. Dharma is one of the four Puru\u1e63\u0101rthas (aims of human life): Dharma, Artha, K\u0101ma, Mok\u1e63a.",
+    "signals_matched": 19,
+    "signals_rejected": 4,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q02",
+    "question": "What is Karma?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "dharma_systems",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_b0ee3744731a",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_1164aa688883",
+        "source": "vigyan-bhairava-tantra_ocr.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_da8756d0729f",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Karma is a neuter noun meaning \"action\" or \"deed.\" In grammar, karma also denotes the object of a verb (karman = object/patient). Karma is the universal principle that every action generates corresponding consequences. The Bh\u0101gavata Pur\u0101\u1e47a describes karma as the force that maintains the cosmic order of creation, preservation, and dissolution.",
+    "selected_evidence_preview": "Karma is a neuter noun meaning \"action\" or \"deed.\" In grammar, karma also denotes the object of a verb (karman = object/",
+    "selected_evidence_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
+    "candidate_evidence_preview": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without att",
+    "final_answer": "Karma is a neuter noun meaning \"action\" or \"deed.\" In grammar, karma also denotes the object of a verb (karman = object/patient). Karma is the universal principle that every action generates corresponding consequences. The Bh\u0101gavata Pur\u0101\u1e47a describes karma as the force that maintains the cosmic order of creation, preservation, and dissolution.",
+    "answer_preview": "Karma is a neuter noun meaning \"action\" or \"deed.\" In grammar, karma also denotes the object of a verb (karman = object/patient). Karma is the universal principle that every action generates correspon",
+    "signals_matched": 19,
+    "signals_rejected": 5,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q03",
+    "question": "What is Shakti?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "puranas",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_af7f56640546",
+        "source": "Shakti and Shakta_ocr.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_place_value_001",
+        "source": "balbharti_primary_mathematics_curriculum"
+      },
+      {
+        "knowledge_id": "KOSHA_maya_001",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_7c7d25934225",
+        "source": "Brahma Purana - Parts I-IV_ocred.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "\u015aakti is a feminine noun, i-stem declension. \u015aakti is both the power itself and the Goddess who embodies that power. \u015aakti is itself the principle of \u015bakti \u2014 it is self-referential.",
+    "selected_evidence_preview": "\u015aakti is a feminine noun, i-stem declension. \u015aakti is both the power itself and the Goddess who embodies that power. \u015aak",
+    "selected_evidence_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/shakti.md",
+    "candidate_evidence_preview": "According to the provided context, disease is defined as a state of want of wholeness or imperfection, which is a hindra",
+    "final_answer": "\u015aakti is a feminine noun, i-stem declension. \u015aakti is both the power itself and the Goddess who embodies that power. \u015aakti is itself the principle of \u015bakti \u2014 it is self-referential.",
+    "answer_preview": "\u015aakti is a feminine noun, i-stem declension. \u015aakti is both the power itself and the Goddess who embodies that power. \u015aakti is itself the principle of \u015bakti \u2014 it is self-referential.",
+    "signals_matched": 27,
+    "signals_rejected": 3,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q04",
+    "question": "What is Prana?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "dharma_systems",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_prana_001",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_1164aa688883",
+        "source": "vigyan-bhairava-tantra_ocr.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_living_nonliving_001",
+        "source": "balbharti_primary_science_curriculum"
+      },
+      {
+        "knowledge_id": "KOSHA_7eaed110c87b",
+        "source": "Vayu Purana Part 1_ocred.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Prana is the vital life force or breath that sustains all living beings. Pr\u0101\u1e47a is a masculine noun. Pr\u0101\u1e47a is the bridge between the physical body (annamaya kosha) and the mind (manomaya kosha). Pr\u0101\u1e47a is the universal life-force that animates all living beings.",
+    "selected_evidence_preview": "Prana is the vital life force or breath that sustains all living beings. Pr\u0101\u1e47a is a masculine noun. Pr\u0101\u1e47a is the bridge ",
+    "selected_evidence_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+    "candidate_evidence_preview": "Prana is the vital life force or breath that sustains all living beings. According to the Upanishads, prana is the funda",
+    "final_answer": "Prana is the vital life force or breath that sustains all living beings. Pr\u0101\u1e47a is a masculine noun. Pr\u0101\u1e47a is the bridge between the physical body (annamaya kosha) and the mind (manomaya kosha). Pr\u0101\u1e47a is the universal life-force that animates all living beings.",
+    "answer_preview": "Prana is the vital life force or breath that sustains all living beings. Pr\u0101\u1e47a is a masculine noun. Pr\u0101\u1e47a is the bridge between the physical body (annamaya kosha) and the mind (manomaya kosha). Pr\u0101\u1e47a ",
+    "signals_matched": 12,
+    "signals_rejected": 13,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q05",
+    "question": "What is Atman?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "upanishads",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_atman_001",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_0ee0e39422ee",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_da8756d0729f",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_om_001",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Atman is the individual self or soul, the innermost essence of a person. The \u0100tman (Puru\u1e63a) is beyond Prak\u1e5bti The \u0100tman (Puru\u1e63a) is beyond all five koshas \u0100tman is a masculine noun (though it refers to the genderless Self). \u0100tman is the seat of cit (consciousness), the second aspect of Sat-Cit-\u0100nanda (Being-Consciousness-Bliss). \u0100tman is the eternal, unchanging Self underlying individual existence.",
+    "selected_evidence_preview": "Atman is the individual self or soul, the innermost essence of a person. The \u0100tman (Puru\u1e63a) is beyond Prak\u1e5bti The \u0100tman ",
+    "selected_evidence_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+    "candidate_evidence_preview": "Atman is the individual self or soul, the innermost essence of a person. According to the Upanishads, Atman is identical",
+    "final_answer": "Atman is the individual self or soul, the innermost essence of a person. The \u0100tman (Puru\u1e63a) is beyond Prak\u1e5bti The \u0100tman (Puru\u1e63a) is beyond all five koshas \u0100tman is a masculine noun (though it refers to the genderless Self). \u0100tman is the seat of cit (consciousness), the second aspect of Sat-Cit-\u0100nanda (Being-Consciousness-Bliss). \u0100tman is the eternal, unchanging Self underlying individual existence.",
+    "answer_preview": "Atman is the individual self or soul, the innermost essence of a person. The \u0100tman (Puru\u1e63a) is beyond Prak\u1e5bti The \u0100tman (Puru\u1e63a) is beyond all five koshas \u0100tman is a masculine noun (though it refers t",
+    "signals_matched": 26,
+    "signals_rejected": 8,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q06",
+    "question": "What is Brahman?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "upanishads",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_da8756d0729f",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_maya_001",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_atman_001",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_om_001",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible. Brahman is the ocean from which the universe arises like waves. Brahman is a neuter noun (not to be confused with Brahm\u0101, the masculine creator deity, or Br\u0101hma\u1e47a, the priestly class). Brahman is the infinitely expanding reality that underlies all existence. Brahman is described as Sat-Cit-\u0100nanda (Being-Consciousness-Bliss) \u2014 not three qualities but three aspects of one indivisible reality.",
+    "selected_evidence_preview": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of ev",
+    "selected_evidence_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+    "candidate_evidence_preview": "The meaning of \"\u092c\u094d\u0930\u0939\u094d\u092e (Brahman)\" is the Supreme or Ultimate Reality, which is described in the Vedas as the absolute an",
+    "final_answer": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible. Brahman is the ocean from which the universe arises like waves. Brahman is a neuter noun (not to be confused with Brahm\u0101, the masculine creator deity, or Br\u0101hma\u1e47a, the priestly class). Brahman is the infinitely expanding reality that underlies all existence. Brahman is described as Sat-Cit-\u0100nanda (Being-Consciousness-Bliss) \u2014 not three qualities but three aspects of one indivisible reality.",
+    "answer_preview": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything. It describes Brahman as the unconditioned, non-dual bliss, beyond the ",
+    "signals_matched": 25,
+    "signals_rejected": 2,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q07",
+    "question": "What is Yoga?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "dharma_systems",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_b0ee3744731a",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_om_001",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_prana_001",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_0ee0e39422ee",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_941a6dd7c900",
+        "source": "The Narada-Purana, Part 1_ocred.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Yoga is a masculine noun derived from the root yuj with the suffix -a. Yoga is the discipline leading to union of the individual self with the highest reality. Yoga as medicine: the Ha\u1e6dha Yoga Prad\u012bpik\u0101 describes yoga as the cure for all diseases.",
+    "selected_evidence_preview": "Yoga is a masculine noun derived from the root yuj with the suffix -a. Yoga is the discipline leading to union of the in",
+    "selected_evidence_source": "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
+    "candidate_evidence_preview": "The Bhagavad Gita emphasizes the importance of doing one's duty (dharma) and performing actions (karma yoga) without att",
+    "final_answer": "Yoga is a masculine noun derived from the root yuj with the suffix -a. Yoga is the discipline leading to union of the individual self with the highest reality. Yoga as medicine: the Ha\u1e6dha Yoga Prad\u012bpik\u0101 describes yoga as the cure for all diseases.",
+    "answer_preview": "Yoga is a masculine noun derived from the root yuj with the suffix -a. Yoga is the discipline leading to union of the individual self with the highest reality. Yoga as medicine: the Ha\u1e6dha Yoga Prad\u012bpi",
+    "signals_matched": 27,
+    "signals_rejected": 2,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q08",
+    "question": "What is Moksha?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "dharma_systems",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_9e0093dbdf4f",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_af7f56640546",
+        "source": "Shakti and Shakta_ocr.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_b0ee3744731a",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_0ee0e39422ee",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_7e8df28983fc",
+        "source": "The Complete Mahabharata_English_ocred.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Moksha translates to \"liberation\" in English. Mok\u1e63a is a masculine noun derived from the root muc (to release) with the suffix -a. Mok\u1e63a is freedom from the cycle of birth, death, and rebirth (sa\u1e43s\u0101ra) and from the root cause of that cycle \u2014 ignorance (avidy\u0101) and its product, ego (aha\u1e43k\u0101ra).",
+    "selected_evidence_preview": "Moksha translates to \"liberation\" in English. Mok\u1e63a is a masculine noun derived from the root muc (to release) with the ",
+    "selected_evidence_source": "The Complete Mahabharata_English_ocred.pdf",
+    "candidate_evidence_preview": "Moksha translates to \"liberation\" in English. [1]",
+    "final_answer": "Moksha translates to \"liberation\" in English. Mok\u1e63a is a masculine noun derived from the root muc (to release) with the suffix -a. Mok\u1e63a is freedom from the cycle of birth, death, and rebirth (sa\u1e43s\u0101ra) and from the root cause of that cycle \u2014 ignorance (avidy\u0101) and its product, ego (aha\u1e43k\u0101ra).",
+    "answer_preview": "Moksha translates to \"liberation\" in English. Mok\u1e63a is a masculine noun derived from the root muc (to release) with the suffix -a. Mok\u1e63a is freedom from the cycle of birth, death, and rebirth (sa\u1e43s\u0101ra",
+    "signals_matched": 21,
+    "signals_rejected": 6,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q09",
+    "question": "What is Om?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "general",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_om_001",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. Om is classified as a pra\u1e47ava (primordial sound) and an avyaya (indeclinable). Om is the sonic form of Brahman \u2014 the vibration from which the universe emerges and into which it dissolves. Om is the first vibration of \u015aakti \u2014 the creative power of the universe expressed as sound. Om (\u0950) is the primary symbol of Brahman \u2014 the sound of the universe.",
+    "selected_evidence_preview": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. Om is classified",
+    "selected_evidence_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+    "candidate_evidence_preview": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. According to the",
+    "final_answer": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. Om is classified as a pra\u1e47ava (primordial sound) and an avyaya (indeclinable). Om is the sonic form of Brahman \u2014 the vibration from which the universe emerges and into which it dissolves. Om is the first vibration of \u015aakti \u2014 the creative power of the universe expressed as sound. Om (\u0950) is the primary symbol of Brahman \u2014 the sound of the universe.",
+    "answer_preview": "Om (also written as Aum) is the sacred primordial sound and symbol of the universe in Hindu philosophy. Om is classified as a pra\u1e47ava (primordial sound) and an avyaya (indeclinable). Om is the sonic f",
+    "signals_matched": 18,
+    "signals_rejected": 0,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q10",
+    "question": "What is Maya?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "general",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_maya_001",
+        "source": "Svetasvatara Upanishad - sanskrit and English.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Maya is the concept of illusion or the power that causes the world to appear as it is, concealing the true nature of Brahman. M\u0101y\u0101 is \"that which measures out\" or \"that which creates the appearance of measure and form.\" M\u0101y\u0101 is a feminine noun. M\u0101y\u0101 is the cosmic power that creates the appearance of multiplicity in the non-dual Brahman.",
+    "selected_evidence_preview": "Maya is the concept of illusion or the power that causes the world to appear as it is, concealing the true nature of Bra",
+    "selected_evidence_source": "Svetasvatara Upanishad - sanskrit and English.pdf",
+    "candidate_evidence_preview": "Maya is the concept of illusion or the power that causes the world to appear as it is, concealing the true nature of Bra",
+    "final_answer": "Maya is the concept of illusion or the power that causes the world to appear as it is, concealing the true nature of Brahman. M\u0101y\u0101 is \"that which measures out\" or \"that which creates the appearance of measure and form.\" M\u0101y\u0101 is a feminine noun. M\u0101y\u0101 is the cosmic power that creates the appearance of multiplicity in the non-dual Brahman.",
+    "answer_preview": "Maya is the concept of illusion or the power that causes the world to appear as it is, concealing the true nature of Brahman. M\u0101y\u0101 is \"that which measures out\" or \"that which creates the appearance of",
+    "signals_matched": 6,
+    "signals_rejected": 0,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q11",
+    "question": "What is Number Recognition?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "general",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "source": "balbharti_primary_mathematics_curriculum"
+      },
+      {
+        "knowledge_id": "KOSHA_place_value_001",
+        "source": "balbharti_primary_mathematics_curriculum"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Number recognition is the ability to identify and name numbers by sight.",
+    "selected_evidence_preview": "Number recognition is the ability to identify and name numbers by sight.",
+    "selected_evidence_source": "balbharti_primary_mathematics_curriculum",
+    "candidate_evidence_preview": "Number recognition is the ability to identify and name numbers by sight. It is a foundational mathematics skill for earl",
+    "final_answer": "Number recognition is the ability to identify and name numbers by sight.",
+    "answer_preview": "Number recognition is the ability to identify and name numbers by sight.",
+    "signals_matched": 11,
+    "signals_rejected": 0,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q12",
+    "question": "What is Addition?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "general",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_addition_001",
+        "source": "balbharti_primary_mathematics_curriculum"
+      },
+      {
+        "knowledge_id": "KOSHA_subtraction_001",
+        "source": "balbharti_primary_mathematics_curriculum"
+      },
+      {
+        "knowledge_id": "KOSHA_number_recognition_001",
+        "source": "balbharti_primary_mathematics_curriculum"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+    "selected_evidence_preview": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. Addition is represen",
+    "selected_evidence_source": "balbharti_primary_mathematics_curriculum",
+    "candidate_evidence_preview": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. It is one of the fou",
+    "final_answer": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+    "answer_preview": "Addition is the mathematical operation of combining two or more numbers to find their total or sum. Addition is represented by the plus sign (+) and is a fundamental skill in mathematics.",
+    "signals_matched": 5,
+    "signals_rejected": 0,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q13",
+    "question": "What is Subtraction?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "general",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_subtraction_001",
+        "source": "balbharti_primary_mathematics_curriculum"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+    "selected_evidence_preview": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another.",
+    "selected_evidence_source": "balbharti_primary_mathematics_curriculum",
+    "candidate_evidence_preview": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another.",
+    "final_answer": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. Subtraction is represented by the minus sign (-) and is a core arithmetic skill.",
+    "answer_preview": "Subtraction is the mathematical operation of finding the difference between two numbers by taking one away from another. Subtraction is represented by the minus sign (-) and is a core arithmetic skill",
+    "signals_matched": 2,
+    "signals_rejected": 0,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q14",
+    "question": "What are Living and Non-Living things?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "general",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_living_nonliving_001",
+        "source": "balbharti_primary_science_curriculum"
+      },
+      {
+        "knowledge_id": "KOSHA_prana_001",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+      },
+      {
+        "knowledge_id": "KOSHA_941a6dd7c900",
+        "source": "The Narada-Purana, Part 1_ocred.pdf"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Non-living things do not grow, reproduce, or respond to stimuli. Living things are organisms that grow, reproduce, respond to their environment, and require food and energy.",
+    "selected_evidence_preview": "Non-living things do not grow, reproduce, or respond to stimuli. Living things are organisms that grow, reproduce, respo",
+    "selected_evidence_source": "balbharti_primary_science_curriculum",
+    "candidate_evidence_preview": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy. Examples of",
+    "final_answer": "Non-living things do not grow, reproduce, or respond to stimuli. Living things are organisms that grow, reproduce, respond to their environment, and require food and energy.",
+    "answer_preview": "Non-living things do not grow, reproduce, or respond to stimuli. Living things are organisms that grow, reproduce, respond to their environment, and require food and energy.",
+    "signals_matched": 19,
+    "signals_rejected": 1,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  },
+  {
+    "id": "Q15",
+    "question": "What is Place Value?",
+    "status": "PASS",
+    "verification_status": "VERIFIED",
+    "domain": "general",
+    "retrieved_documents": [
+      {
+        "knowledge_id": "KOSHA_place_value_001",
+        "source": "balbharti_primary_mathematics_curriculum"
+      }
+    ],
+    "expected_direct_evidence": true,
+    "genuine_kb_gap": false,
+    "selected_evidence": "Place value is the value of a digit based on its position in a number.",
+    "selected_evidence_preview": "Place value is the value of a digit based on its position in a number.",
+    "selected_evidence_source": "balbharti_primary_mathematics_curriculum",
+    "candidate_evidence_preview": "Place value is the value of a digit based on its position in a number. In the decimal number system, each position repre",
+    "final_answer": "Place value is the value of a digit based on its position in a number.",
+    "answer_preview": "Place value is the value of a digit based on its position in a number.",
+    "signals_matched": 5,
+    "signals_rejected": 0,
+    "fail_reason": "",
+    "diagnosis": "DIRECT_EVIDENCE_ANSWERED"
+  }
+]

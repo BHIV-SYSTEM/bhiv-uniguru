@@ -1,0 +1,2455 @@
+{
+  "answer": "Non-living things do not grow, reproduce, or respond to stimuli. Living things are organisms that grow, reproduce, respond to their environment, and require food and energy.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_eedf1e65660c",
+      "signal_eca3ce6eaa49",
+      "signal_e3e8c2b8b733"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 3,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.8165,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.6667,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.8083,
+              "retrieval_strength": 0.5962,
+              "semantic_agreement": 0.8333,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.8165,
+            "why": [
+              "epistemic_score=0.8165",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.6516,
+          "retrieval_confidence": 0.5962,
+          "semantic_score": 0.5917,
+          "tag_match_score": 0.5
+        },
+        {
+          "content_overlap": 0.25,
+          "derived_confidence": 0.5897,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.6667,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.5833,
+              "retrieval_strength": 0.3966,
+              "semantic_agreement": 0.3333,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5897,
+            "why": [
+              "epistemic_score=0.5897",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.2742,
+          "retrieval_confidence": 0.3966,
+          "semantic_score": 0.4167,
+          "tag_match_score": 0.0
+        },
+        {
+          "content_overlap": 0.25,
+          "derived_confidence": 0.5897,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.6667,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.5833,
+              "retrieval_strength": 0.3966,
+              "semantic_agreement": 0.3333,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5897,
+            "why": [
+              "epistemic_score=0.5897",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.2742,
+          "retrieval_confidence": 0.3966,
+          "semantic_score": 0.4167,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "multi_source_consensus",
+        "claim_group_count": 3,
+        "consensus_score": 1.1667,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.6667,
+        "source_count": 3
+      },
+      "overall": 0.8165,
+      "rejected_count": 1
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "d867b90d8801e4ef671cd9db354f8acdd202668642a58975b526a4fde4473287",
+    "memory_event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "1bf30d05cccacb912d8ed828a01aaf0371f0d9c500ebfdf000f064f9499ddfce",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Atman",
+        "Brahman",
+        "Ecology",
+        "Prana",
+        "Prashna Upanishad",
+        "Taittiriya Upanishad",
+        "Upanishads",
+        "Yoga"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_a66282e3e5cc5ee5",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T06:53:36.880962Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [
+      "signal_f494c67a7b59"
+    ],
+    "retrieval_truth_hash": "7181690c505cdc1da565a7b1f226953c7b1095f517cf702b64371fe563cba0d9",
+    "semantic_path": [
+      {
+        "domain": "biology",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_living_nonliving_001",
+        "signal_id": "signal_eedf1e65660c",
+        "source_lineage": {
+          "original_source": "balbharti_primary_science_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        }
+      },
+      {
+        "domain": "upanishads",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_prana_001",
+        "signal_id": "signal_eca3ce6eaa49",
+        "source_lineage": {
+          "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        }
+      },
+      {
+        "domain": "upanishads",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "signal_id": "signal_e3e8c2b8b733",
+        "source_lineage": {
+          "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T06:53:36.489928Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_a66282e3e5cc5ee5",
+      "contract_emission": "trace_a66282e3e5cc5ee5",
+      "downstream_execution": "trace_a66282e3e5cc5ee5",
+      "immutable": true,
+      "retrieval": "trace_a66282e3e5cc5ee5",
+      "synthesis": "trace_a66282e3e5cc5ee5",
+      "validation": "trace_a66282e3e5cc5ee5"
+    },
+    "trace_id": "trace_a66282e3e5cc5ee5",
+    "verification_status": "VERIFIED"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:biology:506f0b71cad4",
+      "claim_id": "claim_1_19080a6a",
+      "claim_text": "Non-living things do not grow, reproduce, or respond to stimuli",
+      "confidence": 0.5962240000000001,
+      "provenance_hash": "506f0b71cad447b3c0afc7c1ae1bd3b0dee21cf64d6f1c3eb1d0ac583bb8997b",
+      "source_id": "balbharti_primary_science_curriculum",
+      "text_span": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy. Examples of living things include plants, animals, and humans. Non-living things do not grow, reproduce, or respond to stimuli. Examples of non-living things include rocks, water, and air. The key difference between living and non-living things is that living things carry out life processes.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "canonical_object_id": "uko:biology:506f0b71cad4",
+      "claim_id": "claim_2_49d44569",
+      "claim_text": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy.",
+      "confidence": 0.5962240000000001,
+      "provenance_hash": "506f0b71cad447b3c0afc7c1ae1bd3b0dee21cf64d6f1c3eb1d0ac583bb8997b",
+      "source_id": "balbharti_primary_science_curriculum",
+      "text_span": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy. Examples of living things include plants, animals, and humans. Non-living things do not grow, reproduce, or respond to stimuli. Examples of non-living things include rocks, water, and air. The key difference between living and non-living things is that living things carry out life processes.",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "confidence": 0.8165,
+  "confidence_breakdown": {
+    "accepted_count": 3,
+    "accepted_derivations": [
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.8165,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.82,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.6667,
+            "ocr_integrity": 1.0,
+            "ontology_convergence": 0.8083,
+            "retrieval_strength": 0.5962,
+            "semantic_agreement": 0.8333,
+            "source_authority": 0.74
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.8165,
+          "why": [
+            "epistemic_score=0.8165",
+            "ceiling_applied=0.8200",
+            "source_type=translation"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.6516,
+        "retrieval_confidence": 0.5962,
+        "semantic_score": 0.5917,
+        "tag_match_score": 0.5
+      },
+      {
+        "content_overlap": 0.25,
+        "derived_confidence": 0.5897,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.6,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.6667,
+            "ocr_integrity": 0.88,
+            "ontology_convergence": 0.5833,
+            "retrieval_strength": 0.3966,
+            "semantic_agreement": 0.3333,
+            "source_authority": 0.42
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.5897,
+          "why": [
+            "epistemic_score=0.5897",
+            "ceiling_applied=0.6000",
+            "source_type=ocr_derivative"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.2742,
+        "retrieval_confidence": 0.3966,
+        "semantic_score": 0.4167,
+        "tag_match_score": 0.0
+      },
+      {
+        "content_overlap": 0.25,
+        "derived_confidence": 0.5897,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.6,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.6667,
+            "ocr_integrity": 0.88,
+            "ontology_convergence": 0.5833,
+            "retrieval_strength": 0.3966,
+            "semantic_agreement": 0.3333,
+            "source_authority": 0.42
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.5897,
+          "why": [
+            "epistemic_score=0.5897",
+            "ceiling_applied=0.6000",
+            "source_type=ocr_derivative"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.2742,
+        "retrieval_confidence": 0.3966,
+        "semantic_score": 0.4167,
+        "tag_match_score": 0.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "multi_source_consensus",
+      "claim_group_count": 3,
+      "consensus_score": 1.1667,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+      "multi_source_reinforcement": 0.6667,
+      "source_count": 3
+    },
+    "overall": 0.8165,
+    "rejected_count": 1
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "multi_source_consensus",
+    "claim_group_count": 3,
+    "consensus_score": 1.1667,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+    "multi_source_reinforcement": 0.6667,
+    "source_count": 3
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_a66282e3e5cc5ee5"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 46,
+    "valid_entries": 27
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T06:53:36.489928Z",
+  "interpretation_payload": {
+    "answer": "Non-living things do not grow, reproduce, or respond to stimuli. Living things are organisms that grow, reproduce, respond to their environment, and require food and energy.",
+    "artifact_hash": "d867b90d8801e4ef671cd9db354f8acdd202668642a58975b526a4fde4473287",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.8165,
+    "confidence_breakdown": {
+      "accepted_count": 3,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.8165,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.6667,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.8083,
+              "retrieval_strength": 0.5962,
+              "semantic_agreement": 0.8333,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.8165,
+            "why": [
+              "epistemic_score=0.8165",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.6516,
+          "retrieval_confidence": 0.5962,
+          "semantic_score": 0.5917,
+          "tag_match_score": 0.5
+        },
+        {
+          "content_overlap": 0.25,
+          "derived_confidence": 0.5897,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.6667,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.5833,
+              "retrieval_strength": 0.3966,
+              "semantic_agreement": 0.3333,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5897,
+            "why": [
+              "epistemic_score=0.5897",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.2742,
+          "retrieval_confidence": 0.3966,
+          "semantic_score": 0.4167,
+          "tag_match_score": 0.0
+        },
+        {
+          "content_overlap": 0.25,
+          "derived_confidence": 0.5897,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.6667,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.5833,
+              "retrieval_strength": 0.3966,
+              "semantic_agreement": 0.3333,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5897,
+            "why": [
+              "epistemic_score=0.5897",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.2742,
+          "retrieval_confidence": 0.3966,
+          "semantic_score": 0.4167,
+          "tag_match_score": 0.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "multi_source_consensus",
+        "claim_group_count": 3,
+        "consensus_score": 1.1667,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.6667,
+        "source_count": 3
+      },
+      "overall": 0.8165,
+      "rejected_count": 1
+    },
+    "contradiction_state": {
+      "classification": "multi_source_consensus",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_eedf1e65660c",
+        "signal_eca3ce6eaa49",
+        "signal_e3e8c2b8b733"
+      ],
+      "retrieval_trace_id": "trace_a66282e3e5cc5ee5",
+      "retrieval_truth_hash": "7181690c505cdc1da565a7b1f226953c7b1095f517cf702b64371fe563cba0d9"
+    },
+    "trace_id": "trace_a66282e3e5cc5ee5",
+    "verification_status": "VERIFIED"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_living_nonliving_001",
+    "KOSHA_prana_001",
+    "KOSHA_9a8183e951a4"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.8165,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.82,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.6667,
+              "ocr_integrity": 1.0,
+              "ontology_convergence": 0.8083,
+              "retrieval_strength": 0.5962,
+              "semantic_agreement": 0.8333,
+              "source_authority": 0.74
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.8165,
+            "why": [
+              "epistemic_score=0.8165",
+              "ceiling_applied=0.8200",
+              "source_type=translation"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.6516,
+          "retrieval_confidence": 0.5962,
+          "semantic_score": 0.5917,
+          "tag_match_score": 0.5
+        },
+        "overlap_percent": {
+          "concept": 83.33,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_eedf1e65660c",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Ecology",
+              "concepts": [
+                "nature",
+                "sustainability"
+              ],
+              "domain": "ecology",
+              "entity_type": "concept",
+              "matched_alias": "environment"
+            }
+          ],
+          "query_entities": [],
+          "tags": [
+            "non",
+            "living"
+          ]
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.8165,
+      "content": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy. Examples of living things include plants, animals, and humans. Non-living things do not grow, reproduce, or respond to stimuli. Examples of non-living things include rocks, water, and air. The key difference between living and non-living things is that living things carry out life processes.",
+      "domain": "biology",
+      "knowledge_id": "KOSHA_living_nonliving_001",
+      "signal_id": "signal_eedf1e65660c",
+      "source": "balbharti_primary_science_curriculum",
+      "source_governance": {
+        "authority_weight": 0.74,
+        "confidence_ceiling": 0.82,
+        "lineage": {
+          "original_source": "balbharti_primary_science_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.0,
+        "source": "balbharti_primary_science_curriculum",
+        "source_type": "translation",
+        "suppression_reason": null
+      },
+      "tags": [
+        "living",
+        "non-living",
+        "organisms",
+        "biology",
+        "life"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_living_nonliving_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "balbharti_primary_science_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a66282e3e5cc5ee5"
+      }
+    },
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 0.25,
+          "derived_confidence": 0.5897,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.6667,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.5833,
+              "retrieval_strength": 0.3966,
+              "semantic_agreement": 0.3333,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5897,
+            "why": [
+              "epistemic_score=0.5897",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.2742,
+          "retrieval_confidence": 0.3966,
+          "semantic_score": 0.4167,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 33.33,
+          "content": 25.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_eca3ce6eaa49",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Prana",
+              "concepts": [
+                "breath",
+                "life"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "prana"
+            },
+            {
+              "canonical": "Prashna Upanishad",
+              "concepts": [
+                "questions",
+                "prana"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text",
+              "matched_alias": "prashna upanishad"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            },
+            {
+              "canonical": "Yoga",
+              "concepts": [
+                "discipline",
+                "meditation"
+              ],
+              "domain": "dharma_systems",
+              "entity_type": "concept",
+              "matched_alias": "yoga"
+            }
+          ],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.5897,
+      "content": "Prana is the vital life force or breath that sustains all living beings. According to the Upanishads, prana is the fundamental energy that animates the body and mind. The Prashna Upanishad teaches that prana is the supreme force from which all life originates, and it pervades the entire universe as the vital breath.",
+      "domain": "upanishads",
+      "knowledge_id": "KOSHA_prana_001",
+      "signal_id": "signal_eca3ce6eaa49",
+      "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+      "source_governance": {
+        "authority_weight": 0.42,
+        "confidence_ceiling": 0.6,
+        "lineage": {
+          "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.12,
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "source_type": "ocr_derivative",
+        "suppression_reason": null
+      },
+      "tags": [
+        "prana",
+        "vital",
+        "breath",
+        "life",
+        "upanishad"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_prana_001",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a66282e3e5cc5ee5"
+      }
+    },
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 0.25,
+          "derived_confidence": 0.5897,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.6,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.6667,
+              "ocr_integrity": 0.88,
+              "ontology_convergence": 0.5833,
+              "retrieval_strength": 0.3966,
+              "semantic_agreement": 0.3333,
+              "source_authority": 0.42
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5897,
+            "why": [
+              "epistemic_score=0.5897",
+              "ceiling_applied=0.6000",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.2742,
+          "retrieval_confidence": 0.3966,
+          "semantic_score": 0.4167,
+          "tag_match_score": 0.0
+        },
+        "overlap_percent": {
+          "concept": 33.33,
+          "content": 25.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_e3e8c2b8b733",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Atman",
+              "concepts": [
+                "Brahman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "self"
+            },
+            {
+              "canonical": "Brahman",
+              "concepts": [
+                "ultimate reality",
+                "Atman"
+              ],
+              "domain": "upanishads",
+              "entity_type": "concept",
+              "matched_alias": "brahman"
+            },
+            {
+              "canonical": "Taittiriya Upanishad",
+              "concepts": [
+                "Brahman",
+                "kosha"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text",
+              "matched_alias": "taittiriya upanishad"
+            },
+            {
+              "canonical": "Upanishads",
+              "concepts": [
+                "Brahman",
+                "Atman",
+                "liberation"
+              ],
+              "domain": "upanishads",
+              "entity_type": "text_group",
+              "matched_alias": "upanishads"
+            }
+          ],
+          "query_entities": [],
+          "tags": []
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.5897,
+      "content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+      "domain": "upanishads",
+      "knowledge_id": "KOSHA_9a8183e951a4",
+      "signal_id": "signal_e3e8c2b8b733",
+      "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+      "source_governance": {
+        "authority_weight": 0.42,
+        "confidence_ceiling": 0.6,
+        "lineage": {
+          "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.12,
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "source_type": "ocr_derivative",
+        "suppression_reason": null
+      },
+      "tags": [
+        "taittiriya",
+        "upanishad"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a66282e3e5cc5ee5"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_a66282e3e5cc5ee5"
+  },
+  "query": "What are Living and Non-Living things?",
+  "reasoning": "Answer uses 1 accepted evidence record(s): KOSHA_living_nonliving_001 (balbharti_primary_science_curriculum). Sentences are extracted from retrieved content.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [
+    {
+      "details": {
+        "candidate_entities": [],
+        "concept_overlap": 0.0,
+        "confidence": 0.318576,
+        "confidence_derivation": {},
+        "content_overlap": 0.0,
+        "contextual_proximity": 0.0,
+        "domain_consistency": 0.0,
+        "entity_overlap": 0.0,
+        "matched_tags": [],
+        "missing_required_entities": [],
+        "query_entities": [],
+        "semantic_score": 0.0,
+        "signal_id": "signal_f494c67a7b59",
+        "source": "The Narada-Purana, Part 1_ocred.pdf",
+        "source_governance": {},
+        "tag_match_score": 0.0
+      },
+      "rejection_reason": "low_contextual_overlap",
+      "signal_id": "signal_f494c67a7b59",
+      "source": "The Narada-Purana, Part 1_ocred.pdf"
+    }
+  ],
+  "retrieval_run_record": {
+    "candidate_count": 4,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:biology:506f0b71cad4",
+        "claim_id": "claim_1_19080a6a",
+        "claim_text": "Non-living things do not grow, reproduce, or respond to stimuli",
+        "confidence": 0.5962240000000001,
+        "provenance_hash": "506f0b71cad447b3c0afc7c1ae1bd3b0dee21cf64d6f1c3eb1d0ac583bb8997b",
+        "source_id": "balbharti_primary_science_curriculum",
+        "text_span": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy. Examples of living things include plants, animals, and humans. Non-living things do not grow, reproduce, or respond to stimuli. Examples of non-living things include rocks, water, and air. The key difference between living and non-living things is that living things carry out life processes.",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "canonical_object_id": "uko:biology:506f0b71cad4",
+        "claim_id": "claim_2_49d44569",
+        "claim_text": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy.",
+        "confidence": 0.5962240000000001,
+        "provenance_hash": "506f0b71cad447b3c0afc7c1ae1bd3b0dee21cf64d6f1c3eb1d0ac583bb8997b",
+        "source_id": "balbharti_primary_science_curriculum",
+        "text_span": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy. Examples of living things include plants, animals, and humans. Non-living things do not grow, reproduce, or respond to stimuli. Examples of non-living things include rocks, water, and air. The key difference between living and non-living things is that living things carry out life processes.",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "deduplicated_candidate_count": 4,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_8cb960fe5f25",
+    "replay_id": "replay_8389ac442e2112c2",
+    "replay_safe": true,
+    "retrieval_run_id": "run_5fad93890ac8",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:biology:506f0b71cad4",
+        "dedup_status": "unique",
+        "domain": "biology",
+        "provenance_hash": "506f0b71cad447b3c0afc7c1ae1bd3b0dee21cf64d6f1c3eb1d0ac583bb8997b",
+        "ranking_score": 0.5962240000000001,
+        "source_id": "balbharti_primary_science_curriculum",
+        "text_span": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy. Examples of living things include plants, animals, and humans. Non-living things do not grow, reproduce, or respond to stimuli. Examples of non-living things include rocks, water, and air. The key difference between living and non-living things is that living things carry out life processes.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:upanishads:9b129b9b290d",
+        "dedup_status": "unique",
+        "domain": "upanishads",
+        "provenance_hash": "9b129b9b290df591362a2f61391d1b4740142f267dfef896fbe862ca41358d04",
+        "ranking_score": 0.39662400000000003,
+        "source_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "text_span": "Prana is the vital life force or breath that sustains all living beings. According to the Upanishads, prana is the fundamental energy that animates the body and mind. The Prashna Upanishad teaches that prana is the supreme force from which all life originates, and it pervades the entire universe as the vital breath.",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:upanishads:6285486b08ec",
+        "dedup_status": "unique",
+        "domain": "upanishads",
+        "provenance_hash": "6285486b08ec780a1b4dec860abcf756e2d2857ecb1794adb33ad71ed445be2b",
+        "ranking_score": 0.39662400000000003,
+        "source_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "text_span": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+        "tradition_context": "general"
+      },
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:puranas:a82d688ccefb",
+        "dedup_status": "unique",
+        "domain": "puranas",
+        "provenance_hash": "a82d688ccefbd6a2024b5fcbeedb6a1c45d08a4ed2468bada2db992ada654a2a",
+        "ranking_score": 0.318576,
+        "source_id": "The Narada-Purana, Part 1_ocred.pdf",
+        "text_span": "According to the Narada-Purana [1], the opposite of Ahimsa (Non-Violence) is not explicitly mentioned. However, it can be inferred that the opposite of Ahimsa is Adharma (unrighteousness) or Himsa (violence), which is mentioned in the context of Ahimsa being the bestower of Yogic achievements.",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "trace_a66282e3e5cc5ee5",
+    "verification_status": "VERIFIED"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_eedf1e65660c",
+      "signal_eca3ce6eaa49",
+      "signal_e3e8c2b8b733"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.8165,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.82,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.6667,
+                "ocr_integrity": 1.0,
+                "ontology_convergence": 0.8083,
+                "retrieval_strength": 0.5962,
+                "semantic_agreement": 0.8333,
+                "source_authority": 0.74
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.8165,
+              "why": [
+                "epistemic_score=0.8165",
+                "ceiling_applied=0.8200",
+                "source_type=translation"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.6516,
+            "retrieval_confidence": 0.5962,
+            "semantic_score": 0.5917,
+            "tag_match_score": 0.5
+          },
+          "overlap_percent": {
+            "concept": 83.33,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_eedf1e65660c",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Ecology",
+                "concepts": [
+                  "nature",
+                  "sustainability"
+                ],
+                "domain": "ecology",
+                "entity_type": "concept",
+                "matched_alias": "environment"
+              }
+            ],
+            "query_entities": [],
+            "tags": [
+              "non",
+              "living"
+            ]
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.8165,
+        "content": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy. Examples of living things include plants, animals, and humans. Non-living things do not grow, reproduce, or respond to stimuli. Examples of non-living things include rocks, water, and air. The key difference between living and non-living things is that living things carry out life processes.",
+        "domain": "biology",
+        "knowledge_id": "KOSHA_living_nonliving_001",
+        "signal_id": "signal_eedf1e65660c",
+        "source": "balbharti_primary_science_curriculum",
+        "source_governance": {
+          "authority_weight": 0.74,
+          "confidence_ceiling": 0.82,
+          "lineage": {
+            "original_source": "balbharti_primary_science_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.0,
+          "source": "balbharti_primary_science_curriculum",
+          "source_type": "translation",
+          "suppression_reason": null
+        },
+        "tags": [
+          "living",
+          "non-living",
+          "organisms",
+          "biology",
+          "life"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_living_nonliving_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "balbharti_primary_science_curriculum",
+            "transformation_history": [
+              "source_text",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_a66282e3e5cc5ee5"
+        }
+      },
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 0.25,
+            "derived_confidence": 0.5897,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.6667,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.5833,
+                "retrieval_strength": 0.3966,
+                "semantic_agreement": 0.3333,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.5897,
+              "why": [
+                "epistemic_score=0.5897",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.2742,
+            "retrieval_confidence": 0.3966,
+            "semantic_score": 0.4167,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 33.33,
+            "content": 25.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_eca3ce6eaa49",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Prana",
+                "concepts": [
+                  "breath",
+                  "life"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "prana"
+              },
+              {
+                "canonical": "Prashna Upanishad",
+                "concepts": [
+                  "questions",
+                  "prana"
+                ],
+                "domain": "upanishads",
+                "entity_type": "text",
+                "matched_alias": "prashna upanishad"
+              },
+              {
+                "canonical": "Upanishads",
+                "concepts": [
+                  "Brahman",
+                  "Atman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "text_group",
+                "matched_alias": "upanishads"
+              },
+              {
+                "canonical": "Yoga",
+                "concepts": [
+                  "discipline",
+                  "meditation"
+                ],
+                "domain": "dharma_systems",
+                "entity_type": "concept",
+                "matched_alias": "yoga"
+              }
+            ],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.5897,
+        "content": "Prana is the vital life force or breath that sustains all living beings. According to the Upanishads, prana is the fundamental energy that animates the body and mind. The Prashna Upanishad teaches that prana is the supreme force from which all life originates, and it pervades the entire universe as the vital breath.",
+        "domain": "upanishads",
+        "knowledge_id": "KOSHA_prana_001",
+        "signal_id": "signal_eca3ce6eaa49",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tags": [
+          "prana",
+          "vital",
+          "breath",
+          "life",
+          "upanishad"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_prana_001",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_a66282e3e5cc5ee5"
+        }
+      },
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 0.25,
+            "derived_confidence": 0.5897,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.6,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.6667,
+                "ocr_integrity": 0.88,
+                "ontology_convergence": 0.5833,
+                "retrieval_strength": 0.3966,
+                "semantic_agreement": 0.3333,
+                "source_authority": 0.42
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.5897,
+              "why": [
+                "epistemic_score=0.5897",
+                "ceiling_applied=0.6000",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.2742,
+            "retrieval_confidence": 0.3966,
+            "semantic_score": 0.4167,
+            "tag_match_score": 0.0
+          },
+          "overlap_percent": {
+            "concept": 33.33,
+            "content": 25.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_e3e8c2b8b733",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Atman",
+                "concepts": [
+                  "Brahman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "self"
+              },
+              {
+                "canonical": "Brahman",
+                "concepts": [
+                  "ultimate reality",
+                  "Atman"
+                ],
+                "domain": "upanishads",
+                "entity_type": "concept",
+                "matched_alias": "brahman"
+              },
+              {
+                "canonical": "Taittiriya Upanishad",
+                "concepts": [
+                  "Brahman",
+                  "kosha"
+                ],
+                "domain": "upanishads",
+                "entity_type": "text",
+                "matched_alias": "taittiriya upanishad"
+              },
+              {
+                "canonical": "Upanishads",
+                "concepts": [
+                  "Brahman",
+                  "Atman",
+                  "liberation"
+                ],
+                "domain": "upanishads",
+                "entity_type": "text_group",
+                "matched_alias": "upanishads"
+              }
+            ],
+            "query_entities": [],
+            "tags": []
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.5897,
+        "content": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+        "domain": "upanishads",
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "signal_id": "signal_e3e8c2b8b733",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "source_governance": {
+          "authority_weight": 0.42,
+          "confidence_ceiling": 0.6,
+          "lineage": {
+            "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.12,
+          "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tags": [
+          "taittiriya",
+          "upanishad"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_9a8183e951a4",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_a66282e3e5cc5ee5"
+        }
+      }
+    ],
+    "artifact_hash": "7181690c505cdc1da565a7b1f226953c7b1095f517cf702b64371fe563cba0d9",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-10-02T06:53:36.489928Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What are Living and Non-Living things?",
+    "raw_signal_count": 4,
+    "rejected_signal_ids": [
+      "signal_f494c67a7b59"
+    ],
+    "rejected_signals": [
+      {
+        "details": {
+          "candidate_entities": [],
+          "concept_overlap": 0.0,
+          "confidence": 0.318576,
+          "confidence_derivation": {},
+          "content_overlap": 0.0,
+          "contextual_proximity": 0.0,
+          "domain_consistency": 0.0,
+          "entity_overlap": 0.0,
+          "matched_tags": [],
+          "missing_required_entities": [],
+          "query_entities": [],
+          "semantic_score": 0.0,
+          "signal_id": "signal_f494c67a7b59",
+          "source": "The Narada-Purana, Part 1_ocred.pdf",
+          "source_governance": {},
+          "tag_match_score": 0.0
+        },
+        "rejection_reason": "low_contextual_overlap",
+        "signal_id": "signal_f494c67a7b59",
+        "source": "The Narada-Purana, Part 1_ocred.pdf"
+      }
+    ],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_living_nonliving_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_eedf1e65660c",
+        "source": "balbharti_primary_science_curriculum",
+        "source_lineage": {
+          "original_source": "balbharti_primary_science_curriculum",
+          "transformation_history": [
+            "source_text",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a66282e3e5cc5ee5"
+      },
+      {
+        "knowledge_id": "KOSHA_prana_001",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_eca3ce6eaa49",
+        "source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "source_lineage": {
+          "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a66282e3e5cc5ee5"
+      },
+      {
+        "knowledge_id": "KOSHA_9a8183e951a4",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_e3e8c2b8b733",
+        "source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "source_lineage": {
+          "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_a66282e3e5cc5ee5"
+      }
+    ],
+    "trace_id": "trace_a66282e3e5cc5ee5"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:biology:506f0b71cad4",
+      "dedup_status": "unique",
+      "domain": "biology",
+      "provenance_hash": "506f0b71cad447b3c0afc7c1ae1bd3b0dee21cf64d6f1c3eb1d0ac583bb8997b",
+      "ranking_score": 0.5962240000000001,
+      "source_id": "balbharti_primary_science_curriculum",
+      "text_span": "Living things are organisms that grow, reproduce, respond to their environment, and require food and energy. Examples of living things include plants, animals, and humans. Non-living things do not grow, reproduce, or respond to stimuli. Examples of non-living things include rocks, water, and air. The key difference between living and non-living things is that living things carry out life processes.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:upanishads:9b129b9b290d",
+      "dedup_status": "unique",
+      "domain": "upanishads",
+      "provenance_hash": "9b129b9b290df591362a2f61391d1b4740142f267dfef896fbe862ca41358d04",
+      "ranking_score": 0.39662400000000003,
+      "source_id": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+      "text_span": "Prana is the vital life force or breath that sustains all living beings. According to the Upanishads, prana is the fundamental energy that animates the body and mind. The Prashna Upanishad teaches that prana is the supreme force from which all life originates, and it pervades the entire universe as the vital breath.",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:upanishads:6285486b08ec",
+      "dedup_status": "unique",
+      "domain": "upanishads",
+      "provenance_hash": "6285486b08ec780a1b4dec860abcf756e2d2857ecb1794adb33ad71ed445be2b",
+      "ranking_score": 0.39662400000000003,
+      "source_id": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+      "text_span": "The Taittiriya Upanishad explains Brahman as the Supreme Self, entirely distinct from the world, and as the source of everything [1]. It describes Brahman as the unconditioned, non-dual bliss, beyond the scope of speech and thought, and as indescribable and incomprehensible [2].",
+      "tradition_context": "general"
+    },
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:puranas:a82d688ccefb",
+      "dedup_status": "unique",
+      "domain": "puranas",
+      "provenance_hash": "a82d688ccefbd6a2024b5fcbeedb6a1c45d08a4ed2468bada2db992ada654a2a",
+      "ranking_score": 0.318576,
+      "source_id": "The Narada-Purana, Part 1_ocred.pdf",
+      "text_span": "According to the Narada-Purana [1], the opposite of Ahimsa (Non-Violence) is not explicitly mentioned. However, it can be inferred that the opposite of Ahimsa is Adharma (unrighteousness) or Himsa (violence), which is mentioned in the context of Ahimsa being the bestower of Yogic achievements.",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": true,
+    "constitutional_governance": {
+      "canonical_authority_granted": true,
+      "canonical_memory_keys": [
+        "Assembly",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Brahma",
+        "Brahman",
+        "Brahmanda Purana",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Karma",
+        "Karma Yoga",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Moksha",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Ramayana",
+        "Taittiriya Upanishad",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Yajna",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 1,
+      "event": {
+        "canonical_authority_granted": true,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [
+          "Atman",
+          "Brahman",
+          "Ecology",
+          "Prana",
+          "Prashna Upanishad",
+          "Taittiriya Upanishad",
+          "Upanishads",
+          "Yoga"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "canonical",
+        "trace_id": "trace_a66282e3e5cc5ee5",
+        "updated_at": "2026-10-02T06:53:36.583378Z"
+      },
+      "event_hash": "1bf30d05cccacb912d8ed828a01aaf0371f0d9c500ebfdf000f064f9499ddfce",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": true,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "ACCEPT_CANONICAL_MUTATION",
+        "failure_states": [
+          "PARTIAL_REJECTION_PRESENT"
+        ],
+        "memory_classification": "canonical",
+        "reasons": [],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "725820c9124c3914486569ac697c645a37889de55c7671cac5e15844826e6b2a",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "1bf30d05cccacb912d8ed828a01aaf0371f0d9c500ebfdf000f064f9499ddfce",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "0b1ce0333cb4400602fe6d2f8c957f438e7f5decaca5f387220bddab138c079e",
+      "transient_event_count": 698
+    },
+    "entity_continuity": {
+      "Atman": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:53:36.880962Z",
+        "reinforcement_score": 0.875,
+        "source_ids": [
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Svetasvatara Upanishad - sanskrit and English.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_b47954192a92",
+          "ecosystem_ff5262118c8c",
+          "ecosystem_5f3dfac0dad2",
+          "trace_27e9fba4df8b5af7",
+          "ecosystem_5f921ae7c649",
+          "trace_cd867678907e5935",
+          "trace_d2765bbb427e57da",
+          "trace_a77e63332ecb5418",
+          "trace_224b93828a0a589e",
+          "trace_56a825c198a059b6",
+          "ecosystem_a00a15cc1502",
+          "ecosystem_2bc8f07844bc",
+          "ecosystem_54aa97cc5775",
+          "trace_f303803f8884511a",
+          "trace_b88514d878565034",
+          "trace_118ac0048a375ae5",
+          "trace_d43e2e3c9c135944",
+          "trace_4c58c9c712145a2a",
+          "trace_f7b53942ac8d5723",
+          "trace_f24a58f3b9025e99",
+          "trace_7090a906e8e65420",
+          "trace_54fefe4d7ed45aec",
+          "trace_0d7a1821eb775d46",
+          "trace_271f38bf4f47514f",
+          "trace_37e7a465f024597b",
+          "trace_689f7d7331335079",
+          "trace_993a4102687559f0",
+          "trace_5581d016fb8b5566",
+          "trace_84521d22c1a6542a",
+          "trace_be19f6cc67035ca5",
+          "trace_d06107373616529c",
+          "trace_246752a23e9b52c8",
+          "trace_0b9529ce42c15817",
+          "trace_502b97dd73d052e9",
+          "trace_09898a8e673b50ef",
+          "trace_24d1a80f0b6b51da",
+          "trace_0487e2eaa8b75f4c",
+          "trace_93cf6304ab005e00",
+          "trace_26be802b6939525f",
+          "trace_172596e690705f42",
+          "trace_fa9ed407c31e52b6",
+          "trace_f821c78c816c5db2",
+          "trace_f36f33c022f55ead",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_8c8f4febd31e5724",
+          "trace_5514a7a5086c591b",
+          "trace_de4b859a12885226",
+          "trace_9ac88108ffb15852",
+          "trace_c342614c6468579d",
+          "trace_e45a74a3eb9e5632",
+          "trace_217e01e70a6159b0",
+          "trace_2c0477e078fd5571",
+          "trace_d4def4e8a6125c94",
+          "trace_e4ddfa28691758a6",
+          "trace_d5523bed85e35b3a",
+          "trace_9408f9a0118f5510",
+          "trace_7b18cba342395de3",
+          "trace_fff2bf3703dd5b13",
+          "trace_892dfd5e622d5384",
+          "trace_ed2f056fcd6d58cc",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_cb4742be967a5b8b",
+          "trace_6d5b71e164975c72",
+          "trace_a2b8da024e905c7a",
+          "trace_eaff6ffc272c5e49",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "trace_2d648edb5ce75422",
+          "trace_0381e3f8cc8b5f04",
+          "trace_3ce2d9501d58557d",
+          "trace_413d5761fd0e520e",
+          "trace_012f6ddcec535707",
+          "trace_36ea4d6235fa5c3f",
+          "trace_0e6d343c395559cf",
+          "trace_6966ce434be25b24",
+          "trace_083fbea50eeb549e",
+          "trace_a05d0d5ab08c5acb",
+          "trace_dd86610d05865054",
+          "trace_a66282e3e5cc5ee5"
+        ]
+      },
+      "Brahman": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:53:36.880962Z",
+        "reinforcement_score": 0.875,
+        "source_ids": [
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Svetasvatara Upanishad - sanskrit and English.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_b47954192a92",
+          "ecosystem_ff5262118c8c",
+          "ecosystem_5f3dfac0dad2",
+          "trace_27e9fba4df8b5af7",
+          "ecosystem_5f921ae7c649",
+          "trace_cd867678907e5935",
+          "trace_d2765bbb427e57da",
+          "trace_a77e63332ecb5418",
+          "trace_224b93828a0a589e",
+          "trace_56a825c198a059b6",
+          "ecosystem_a00a15cc1502",
+          "ecosystem_2bc8f07844bc",
+          "ecosystem_54aa97cc5775",
+          "trace_f303803f8884511a",
+          "trace_b88514d878565034",
+          "trace_118ac0048a375ae5",
+          "trace_d43e2e3c9c135944",
+          "trace_4c58c9c712145a2a",
+          "trace_f7b53942ac8d5723",
+          "trace_f24a58f3b9025e99",
+          "trace_7090a906e8e65420",
+          "trace_54fefe4d7ed45aec",
+          "trace_0d7a1821eb775d46",
+          "trace_271f38bf4f47514f",
+          "trace_37e7a465f024597b",
+          "trace_689f7d7331335079",
+          "trace_993a4102687559f0",
+          "trace_5581d016fb8b5566",
+          "trace_84521d22c1a6542a",
+          "trace_be19f6cc67035ca5",
+          "trace_d06107373616529c",
+          "trace_246752a23e9b52c8",
+          "trace_943bd3f7296f5109",
+          "trace_0b9529ce42c15817",
+          "trace_502b97dd73d052e9",
+          "trace_09898a8e673b50ef",
+          "trace_24d1a80f0b6b51da",
+          "trace_9bfc417b005d558a",
+          "trace_0487e2eaa8b75f4c",
+          "trace_93cf6304ab005e00",
+          "trace_26be802b6939525f",
+          "trace_172596e690705f42",
+          "trace_f36a811b24045c84",
+          "trace_fa9ed407c31e52b6",
+          "trace_f821c78c816c5db2",
+          "trace_f36f33c022f55ead",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_badc1fdc1c9d513e",
+          "trace_8c8f4febd31e5724",
+          "trace_5514a7a5086c591b",
+          "trace_de4b859a12885226",
+          "trace_9ac88108ffb15852",
+          "trace_ec922187296f570a",
+          "trace_c342614c6468579d",
+          "trace_e45a74a3eb9e5632",
+          "trace_217e01e70a6159b0",
+          "trace_2c0477e078fd5571",
+          "trace_984775cefa555aee",
+          "trace_624af0eaa0b2516a",
+          "trace_d4def4e8a6125c94",
+          "trace_e4ddfa28691758a6",
+          "trace_d5523bed85e35b3a",
+          "trace_9408f9a0118f5510",
+          "trace_26101d1f71f75982",
+          "trace_6c1ef3fc75ea5936",
+          "trace_7b18cba342395de3",
+          "trace_fff2bf3703dd5b13",
+          "trace_892dfd5e622d5384",
+          "trace_ed2f056fcd6d58cc",
+          "trace_5314af3bb0dc59b6",
+          "trace_75ce778ec3d05cea",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_cb4742be967a5b8b",
+          "trace_6d5b71e164975c72",
+          "trace_a2b8da024e905c7a",
+          "trace_82d1a66eb7435f4f",
+          "trace_09a94a05198c556a",
+          "trace_eaff6ffc272c5e49",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "trace_2d648edb5ce75422",
+          "trace_0381e3f8cc8b5f04",
+          "trace_3ce2d9501d58557d",
+          "trace_e3a049e8d30d5068",
+          "trace_aa32f41694dd596f",
+          "trace_413d5761fd0e520e",
+          "trace_012f6ddcec535707",
+          "trace_36ea4d6235fa5c3f",
+          "trace_0e6d343c395559cf",
+          "trace_ef5de41286915537",
+          "trace_bffab8e238375f79",
+          "trace_6966ce434be25b24",
+          "trace_083fbea50eeb549e",
+          "trace_a05d0d5ab08c5acb",
+          "trace_dd86610d05865054",
+          "trace_1da1863ed96553d0",
+          "trace_3d7379cdae29513a",
+          "trace_a66282e3e5cc5ee5"
+        ]
+      },
+      "Ecology": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:53:36.880962Z",
+        "reinforcement_score": 0.625,
+        "source_ids": [
+          "balbharti_primary_science_curriculum"
+        ],
+        "trace_ids": [
+          "trace_fa9ed407c31e52b6",
+          "trace_8c8f4febd31e5724",
+          "trace_c342614c6468579d",
+          "trace_d4def4e8a6125c94",
+          "trace_7b18cba342395de3",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_eaff6ffc272c5e49",
+          "trace_413d5761fd0e520e",
+          "trace_6966ce434be25b24",
+          "trace_a66282e3e5cc5ee5"
+        ]
+      },
+      "Prana": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:53:36.880962Z",
+        "reinforcement_score": 0.625,
+        "source_ids": [
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+        ],
+        "trace_ids": [
+          "trace_b6937b9604ca5b84",
+          "trace_246752a23e9b52c8",
+          "trace_0b9529ce42c15817",
+          "trace_5dd32f16ad155234",
+          "trace_24d1a80f0b6b51da",
+          "trace_0487e2eaa8b75f4c",
+          "trace_b3162fe3e3fc5bef",
+          "trace_172596e690705f42",
+          "trace_fa9ed407c31e52b6",
+          "trace_79de5f9a03bf5797",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_8c8f4febd31e5724",
+          "trace_2b1f494f0a4954b8",
+          "trace_9ac88108ffb15852",
+          "trace_c342614c6468579d",
+          "trace_63075f021b5a5145",
+          "trace_2c0477e078fd5571",
+          "trace_d4def4e8a6125c94",
+          "trace_02d917758b71571b",
+          "trace_9408f9a0118f5510",
+          "trace_7b18cba342395de3",
+          "trace_a04271264712529d",
+          "trace_ed2f056fcd6d58cc",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_e0583b94386c57ad",
+          "trace_a2b8da024e905c7a",
+          "trace_eaff6ffc272c5e49",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "trace_602398a9effb5947",
+          "trace_3ce2d9501d58557d",
+          "trace_413d5761fd0e520e",
+          "trace_fce9fa2046c050e8",
+          "trace_0e6d343c395559cf",
+          "trace_6966ce434be25b24",
+          "trace_f6e77d2157825e66",
+          "trace_dd86610d05865054",
+          "trace_a66282e3e5cc5ee5"
+        ]
+      },
+      "Prashna Upanishad": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:53:36.880962Z",
+        "reinforcement_score": 0.625,
+        "source_ids": [
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf"
+        ],
+        "trace_ids": [
+          "trace_b6937b9604ca5b84",
+          "trace_246752a23e9b52c8",
+          "trace_0b9529ce42c15817",
+          "trace_5dd32f16ad155234",
+          "trace_24d1a80f0b6b51da",
+          "trace_0487e2eaa8b75f4c",
+          "trace_b3162fe3e3fc5bef",
+          "trace_172596e690705f42",
+          "trace_fa9ed407c31e52b6",
+          "trace_79de5f9a03bf5797",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_8c8f4febd31e5724",
+          "trace_2b1f494f0a4954b8",
+          "trace_9ac88108ffb15852",
+          "trace_c342614c6468579d",
+          "trace_63075f021b5a5145",
+          "trace_2c0477e078fd5571",
+          "trace_d4def4e8a6125c94",
+          "trace_02d917758b71571b",
+          "trace_9408f9a0118f5510",
+          "trace_7b18cba342395de3",
+          "trace_a04271264712529d",
+          "trace_ed2f056fcd6d58cc",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_e0583b94386c57ad",
+          "trace_a2b8da024e905c7a",
+          "trace_eaff6ffc272c5e49",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "trace_602398a9effb5947",
+          "trace_3ce2d9501d58557d",
+          "trace_413d5761fd0e520e",
+          "trace_fce9fa2046c050e8",
+          "trace_0e6d343c395559cf",
+          "trace_6966ce434be25b24",
+          "trace_f6e77d2157825e66",
+          "trace_dd86610d05865054",
+          "trace_a66282e3e5cc5ee5"
+        ]
+      },
+      "Taittiriya Upanishad": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:53:36.880962Z",
+        "reinforcement_score": 0.625,
+        "source_ids": [
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_b47954192a92",
+          "ecosystem_ff5262118c8c",
+          "ecosystem_5f3dfac0dad2",
+          "trace_27e9fba4df8b5af7",
+          "trace_cd867678907e5935",
+          "trace_d2765bbb427e57da",
+          "trace_a77e63332ecb5418",
+          "trace_224b93828a0a589e",
+          "trace_56a825c198a059b6",
+          "ecosystem_2bc8f07844bc",
+          "trace_f303803f8884511a",
+          "trace_b88514d878565034",
+          "trace_118ac0048a375ae5",
+          "trace_d43e2e3c9c135944",
+          "trace_4c58c9c712145a2a",
+          "trace_f7b53942ac8d5723",
+          "trace_f24a58f3b9025e99",
+          "trace_7090a906e8e65420",
+          "trace_0d7a1821eb775d46",
+          "trace_271f38bf4f47514f",
+          "trace_689f7d7331335079",
+          "trace_993a4102687559f0",
+          "trace_84521d22c1a6542a",
+          "trace_be19f6cc67035ca5",
+          "trace_d06107373616529c",
+          "trace_0b9529ce42c15817",
+          "trace_502b97dd73d052e9",
+          "trace_09898a8e673b50ef",
+          "trace_0487e2eaa8b75f4c",
+          "trace_93cf6304ab005e00",
+          "trace_26be802b6939525f",
+          "trace_fa9ed407c31e52b6",
+          "trace_f821c78c816c5db2",
+          "trace_f36f33c022f55ead",
+          "trace_8c8f4febd31e5724",
+          "trace_5514a7a5086c591b",
+          "trace_de4b859a12885226",
+          "trace_c342614c6468579d",
+          "trace_e45a74a3eb9e5632",
+          "trace_217e01e70a6159b0",
+          "trace_d4def4e8a6125c94",
+          "trace_e4ddfa28691758a6",
+          "trace_d5523bed85e35b3a",
+          "trace_7b18cba342395de3",
+          "trace_fff2bf3703dd5b13",
+          "trace_892dfd5e622d5384",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_cb4742be967a5b8b",
+          "trace_6d5b71e164975c72",
+          "trace_eaff6ffc272c5e49",
+          "trace_2d648edb5ce75422",
+          "trace_0381e3f8cc8b5f04",
+          "trace_413d5761fd0e520e",
+          "trace_012f6ddcec535707",
+          "trace_36ea4d6235fa5c3f",
+          "trace_6966ce434be25b24",
+          "trace_083fbea50eeb549e",
+          "trace_a05d0d5ab08c5acb",
+          "trace_a66282e3e5cc5ee5"
+        ]
+      },
+      "Upanishads": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:53:36.880962Z",
+        "reinforcement_score": 0.875,
+        "source_ids": [
+          "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Svetasvatara Upanishad - sanskrit and English.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_b47954192a92",
+          "ecosystem_ff5262118c8c",
+          "ecosystem_5f3dfac0dad2",
+          "trace_27e9fba4df8b5af7",
+          "ecosystem_5f921ae7c649",
+          "trace_cd867678907e5935",
+          "trace_d2765bbb427e57da",
+          "trace_a77e63332ecb5418",
+          "trace_224b93828a0a589e",
+          "trace_56a825c198a059b6",
+          "ecosystem_a00a15cc1502",
+          "ecosystem_2bc8f07844bc",
+          "ecosystem_54aa97cc5775",
+          "trace_f303803f8884511a",
+          "trace_b88514d878565034",
+          "trace_118ac0048a375ae5",
+          "trace_d43e2e3c9c135944",
+          "trace_4c58c9c712145a2a",
+          "trace_f7b53942ac8d5723",
+          "trace_f24a58f3b9025e99",
+          "trace_7090a906e8e65420",
+          "trace_54fefe4d7ed45aec",
+          "trace_0d7a1821eb775d46",
+          "trace_271f38bf4f47514f",
+          "trace_37e7a465f024597b",
+          "trace_689f7d7331335079",
+          "trace_993a4102687559f0",
+          "trace_5581d016fb8b5566",
+          "trace_84521d22c1a6542a",
+          "trace_b6937b9604ca5b84",
+          "trace_be19f6cc67035ca5",
+          "trace_d06107373616529c",
+          "trace_246752a23e9b52c8",
+          "trace_943bd3f7296f5109",
+          "trace_0b9529ce42c15817",
+          "trace_5dd32f16ad155234",
+          "trace_502b97dd73d052e9",
+          "trace_09898a8e673b50ef",
+          "trace_24d1a80f0b6b51da",
+          "trace_9bfc417b005d558a",
+          "trace_0487e2eaa8b75f4c",
+          "trace_b3162fe3e3fc5bef",
+          "trace_93cf6304ab005e00",
+          "trace_26be802b6939525f",
+          "trace_172596e690705f42",
+          "trace_f36a811b24045c84",
+          "trace_fa9ed407c31e52b6",
+          "trace_79de5f9a03bf5797",
+          "trace_f821c78c816c5db2",
+          "trace_f36f33c022f55ead",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_badc1fdc1c9d513e",
+          "trace_8c8f4febd31e5724",
+          "trace_2b1f494f0a4954b8",
+          "trace_5514a7a5086c591b",
+          "trace_de4b859a12885226",
+          "trace_9ac88108ffb15852",
+          "trace_ec922187296f570a",
+          "trace_c342614c6468579d",
+          "trace_63075f021b5a5145",
+          "trace_e45a74a3eb9e5632",
+          "trace_217e01e70a6159b0",
+          "trace_2c0477e078fd5571",
+          "trace_984775cefa555aee",
+          "trace_624af0eaa0b2516a",
+          "trace_d4def4e8a6125c94",
+          "trace_02d917758b71571b",
+          "trace_e4ddfa28691758a6",
+          "trace_d5523bed85e35b3a",
+          "trace_9408f9a0118f5510",
+          "trace_26101d1f71f75982",
+          "trace_6c1ef3fc75ea5936",
+          "trace_7b18cba342395de3",
+          "trace_a04271264712529d",
+          "trace_fff2bf3703dd5b13",
+          "trace_892dfd5e622d5384",
+          "trace_ed2f056fcd6d58cc",
+          "trace_5314af3bb0dc59b6",
+          "trace_75ce778ec3d05cea",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_e0583b94386c57ad",
+          "trace_cb4742be967a5b8b",
+          "trace_6d5b71e164975c72",
+          "trace_a2b8da024e905c7a",
+          "trace_82d1a66eb7435f4f",
+          "trace_09a94a05198c556a",
+          "trace_eaff6ffc272c5e49",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "trace_602398a9effb5947",
+          "trace_2d648edb5ce75422",
+          "trace_0381e3f8cc8b5f04",
+          "trace_3ce2d9501d58557d",
+          "trace_e3a049e8d30d5068",
+          "trace_aa32f41694dd596f",
+          "trace_413d5761fd0e520e",
+          "trace_fce9fa2046c050e8",
+          "trace_012f6ddcec535707",
+          "trace_36ea4d6235fa5c3f",
+          "trace_0e6d343c395559cf",
+          "trace_ef5de41286915537",
+          "trace_bffab8e238375f79",
+          "trace_6966ce434be25b24",
+          "trace_f6e77d2157825e66",
+          "trace_083fbea50eeb549e",
+          "trace_a05d0d5ab08c5acb",
+          "trace_dd86610d05865054",
+          "trace_1da1863ed96553d0",
+          "trace_3d7379cdae29513a",
+          "trace_a66282e3e5cc5ee5"
+        ]
+      },
+      "Yoga": {
+        "contradiction_pressure": 0.0,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T06:53:36.880962Z",
+        "reinforcement_score": 0.75,
+        "source_ids": [
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "The Complete Mahabharata_English_ocred.pdf"
+        ],
+        "trace_ids": [
+          "trace_fe93c60db1115856",
+          "ecosystem_5f3dfac0dad2",
+          "ecosystem_5f921ae7c649",
+          "trace_cd867678907e5935",
+          "trace_d2765bbb427e57da",
+          "trace_a77e63332ecb5418",
+          "trace_224b93828a0a589e",
+          "trace_56a825c198a059b6",
+          "ecosystem_54aa97cc5775",
+          "trace_f303803f8884511a",
+          "trace_118ac0048a375ae5",
+          "trace_4c58c9c712145a2a",
+          "trace_f24a58f3b9025e99",
+          "trace_7090a906e8e65420",
+          "trace_54fefe4d7ed45aec",
+          "trace_271f38bf4f47514f",
+          "trace_37e7a465f024597b",
+          "trace_004c48afb3b054d4",
+          "trace_67700634492f5891",
+          "trace_689f7d7331335079",
+          "trace_993a4102687559f0",
+          "trace_5581d016fb8b5566",
+          "trace_0d7198aab3cd5e0a",
+          "trace_ceb490e369b857fc",
+          "trace_b6937b9604ca5b84",
+          "trace_be19f6cc67035ca5",
+          "trace_d06107373616529c",
+          "trace_246752a23e9b52c8",
+          "trace_0b9529ce42c15817",
+          "trace_0e98e7210ae95a18",
+          "trace_0ddf54c6b4d258d3",
+          "trace_5dd32f16ad155234",
+          "trace_502b97dd73d052e9",
+          "trace_09898a8e673b50ef",
+          "trace_24d1a80f0b6b51da",
+          "trace_0487e2eaa8b75f4c",
+          "trace_11b81129158a5260",
+          "trace_dafe2ab8896d5220",
+          "trace_b3162fe3e3fc5bef",
+          "trace_93cf6304ab005e00",
+          "trace_26be802b6939525f",
+          "trace_172596e690705f42",
+          "trace_fa9ed407c31e52b6",
+          "trace_45a1c5bee6b25310",
+          "trace_4a1b99f68f2e5a6b",
+          "trace_79de5f9a03bf5797",
+          "trace_f821c78c816c5db2",
+          "trace_f36f33c022f55ead",
+          "trace_3ca0b1c8b6e5524c",
+          "trace_8c8f4febd31e5724",
+          "trace_6b334994d1f259d0",
+          "trace_26c11d2833005bf3",
+          "trace_2b1f494f0a4954b8",
+          "trace_5514a7a5086c591b",
+          "trace_de4b859a12885226",
+          "trace_9ac88108ffb15852",
+          "trace_c342614c6468579d",
+          "trace_70325ee22be15e28",
+          "trace_38972c2d97dc5712",
+          "trace_63075f021b5a5145",
+          "trace_e45a74a3eb9e5632",
+          "trace_217e01e70a6159b0",
+          "trace_2c0477e078fd5571",
+          "trace_984775cefa555aee",
+          "trace_d4def4e8a6125c94",
+          "trace_2ea0a67622715609",
+          "trace_093c824c44085357",
+          "trace_02d917758b71571b",
+          "trace_e4ddfa28691758a6",
+          "trace_d5523bed85e35b3a",
+          "trace_9408f9a0118f5510",
+          "trace_26101d1f71f75982",
+          "trace_7b18cba342395de3",
+          "trace_7f6ff0d947d55744",
+          "trace_9e6f5ec1c83a52d1",
+          "trace_a04271264712529d",
+          "trace_fff2bf3703dd5b13",
+          "trace_892dfd5e622d5384",
+          "trace_ed2f056fcd6d58cc",
+          "trace_5314af3bb0dc59b6",
+          "trace_3f9ddd011c0c5fbb",
+          "trace_615b80a6520358f9",
+          "trace_f0969bc10a7a501d",
+          "trace_e0583b94386c57ad",
+          "trace_cb4742be967a5b8b",
+          "trace_6d5b71e164975c72",
+          "trace_a2b8da024e905c7a",
+          "trace_82d1a66eb7435f4f",
+          "trace_eaff6ffc272c5e49",
+          "ecosystem_2dea802cb848",
+          "ecosystem_replay_test",
+          "ecosystem_mitra_test",
+          "phase2_e2e_test",
+          "phase2_replay_test",
+          "phase2_mitra_test",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "phase2_determinism_test",
+          "phase2_hash_chain_test",
+          "schema_stable_1",
+          "tantra_sdk_runtime_test",
+          "trace_8707db6e0a545a0a",
+          "trace_e11e2cc6929752ec",
+          "trace_602398a9effb5947",
+          "trace_2d648edb5ce75422",
+          "trace_0381e3f8cc8b5f04",
+          "trace_3ce2d9501d58557d",
+          "trace_e3a049e8d30d5068",
+          "trace_413d5761fd0e520e",
+          "ecosystem_17db02e6a667",
+          "trace_6a06ed9891ea563e",
+          "trace_59fcc33a98c85d92",
+          "trace_fce9fa2046c050e8",
+          "trace_012f6ddcec535707",
+          "trace_36ea4d6235fa5c3f",
+          "trace_0e6d343c395559cf",
+          "trace_ef5de41286915537",
+          "trace_6966ce434be25b24",
+          "trace_5956d9e35e595cf0",
+          "trace_52d7975ffcf5549e",
+          "trace_f6e77d2157825e66",
+          "trace_083fbea50eeb549e",
+          "trace_a05d0d5ab08c5acb",
+          "trace_dd86610d05865054",
+          "trace_1da1863ed96553d0",
+          "trace_a66282e3e5cc5ee5"
+        ]
+      }
+    },
+    "event": {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "1bf30d05cccacb912d8ed828a01aaf0371f0d9c500ebfdf000f064f9499ddfce",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Atman",
+        "Brahman",
+        "Ecology",
+        "Prana",
+        "Prashna Upanishad",
+        "Taittiriya Upanishad",
+        "Upanishads",
+        "Yoga"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_a66282e3e5cc5ee5",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T06:53:36.880962Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [
+      {
+        "contradiction_pressure": 0.0,
+        "query": "What are Living and Non-Living things?",
+        "rejected_signal_count": 1,
+        "state": "open",
+        "trace_id": "trace_a66282e3e5cc5ee5",
+        "updated_at": "2026-10-02T06:53:36.880962Z",
+        "user_id": "anonymous",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "user_continuity": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-10-02T06:53:36.880962Z",
+      "queries": 291,
+      "trace_ids": [
+        "trace_09a94a05198c556a",
+        "trace_5c6af4e137c656aa",
+        "trace_e068fcefc8a85635",
+        "trace_e552a9714f185aaa",
+        "trace_eaff6ffc272c5e49",
+        "trace_515aa3e0898d5403",
+        "trace_8707db6e0a545a0a",
+        "trace_e11e2cc6929752ec",
+        "trace_03750fc5227c51ff",
+        "trace_602398a9effb5947",
+        "trace_2d648edb5ce75422",
+        "trace_0381e3f8cc8b5f04",
+        "trace_3ce2d9501d58557d",
+        "trace_1e65122d7ecf589c",
+        "trace_e3a049e8d30d5068",
+        "trace_aa32f41694dd596f",
+        "trace_59d8733686205386",
+        "trace_b830a3d33bc25104",
+        "trace_ad907ebd869957a6",
+        "trace_413d5761fd0e520e",
+        "trace_0ccdf987785f5f55",
+        "trace_6a06ed9891ea563e",
+        "trace_59fcc33a98c85d92",
+        "trace_549d62a54f7c5d1c",
+        "trace_fce9fa2046c050e8",
+        "trace_012f6ddcec535707",
+        "trace_36ea4d6235fa5c3f",
+        "trace_0e6d343c395559cf",
+        "trace_e040a3440d685e3a",
+        "trace_ef5de41286915537",
+        "trace_bffab8e238375f79",
+        "trace_1fd753e2a0e65263",
+        "trace_8bcce091892e50b1",
+        "trace_f7e17a6a6b295cf7",
+        "trace_6966ce434be25b24",
+        "trace_9855b673efcf56e5",
+        "trace_5956d9e35e595cf0",
+        "trace_52d7975ffcf5549e",
+        "trace_707940bf2eb354bb",
+        "trace_f6e77d2157825e66",
+        "trace_083fbea50eeb549e",
+        "trace_a05d0d5ab08c5acb",
+        "trace_dd86610d05865054",
+        "trace_cc74ff571824570c",
+        "trace_1da1863ed96553d0",
+        "trace_3d7379cdae29513a",
+        "trace_0a0fa0b72fda5c0c",
+        "trace_1c501f7b119158ac",
+        "trace_dbd53cf86fa851a2",
+        "trace_a66282e3e5cc5ee5"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "biology",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_living_nonliving_001",
+      "signal_id": "signal_eedf1e65660c",
+      "source_lineage": {
+        "original_source": "balbharti_primary_science_curriculum",
+        "transformation_history": [
+          "source_text",
+          "kosha_structuring"
+        ]
+      }
+    },
+    {
+      "domain": "upanishads",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_prana_001",
+      "signal_id": "signal_eca3ce6eaa49",
+      "source_lineage": {
+        "original_source": "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+        "transformation_history": [
+          "source_text",
+          "ocr_extraction",
+          "kosha_structuring"
+        ]
+      }
+    },
+    {
+      "domain": "upanishads",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_9a8183e951a4",
+      "signal_id": "signal_e3e8c2b8b733",
+      "source_lineage": {
+        "original_source": "Taittiriya_Upanishad_Swami_Sarvanand[Sanskrit-English]_OCR.pdf",
+        "transformation_history": [
+          "source_text",
+          "ocr_extraction",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 3,
+  "signals_rejected": 1,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_a66282e3e5cc5ee5",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "d867b90d8801e4ef671cd9db354f8acdd202668642a58975b526a4fde4473287",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "7181690c505cdc1da565a7b1f226953c7b1095f517cf702b64371fe563cba0d9",
+    "trace_id": "trace_a66282e3e5cc5ee5"
+  },
+  "verification_status": "VERIFIED"
+}

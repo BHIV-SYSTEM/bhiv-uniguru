@@ -214,6 +214,11 @@ class AdvancedRetriever:
         if not query_terms:
             raise ValueError("No subject terms are available for evidence synthesis.")
 
+        devanagari_terms = [
+            term for term in query_terms
+            if any("\u0900" <= char <= "\u097f" for char in term)
+        ]
+
         evidence = cls._combine_evidence(results)
         paragraphs = re.split(r"\n{2,}", evidence)
         sentence_rows = []
@@ -228,6 +233,21 @@ class AdvancedRetriever:
                     sentence_rows.append((sentence_index, paragraph_index, sentence))
                 sentence_index += 1
 
+        if devanagari_terms and not any(
+            all(
+                cls._token_forms(term) & set().union(
+                    *(cls._token_forms(token) for token in cls._tokens(sentence))
+                )
+                for term in devanagari_terms
+            )
+            for _, _, sentence in sentence_rows
+        ):
+            raise ValueError("Retrieved evidence does not contain the complete Sanskrit phrase.")
+
+        primary_terms = cls._query_terms(
+            str((results[0] if results else {}).get("keyword") or "")
+        )
+
         seen_sentences = set()
         ranked_rows = []
         for index, paragraph_index, sentence in sentence_rows:
@@ -237,18 +257,54 @@ class AdvancedRetriever:
                 continue
             seen_sentences.add(normalized_sentence)
             sentence_forms = set().union(*(cls._token_forms(token) for token in sentence_tokens))
-            overlap = sum(1 for term in query_terms if cls._token_forms(term) & sentence_forms)
-            if overlap:
-                ranked_rows.append((overlap, -index, index, paragraph_index, sentence))
+            matched_terms = {
+                term for term in query_terms
+                if cls._token_forms(term) & sentence_forms
+            }
+            if matched_terms:
+                subject_overlap = sum(
+                    1 for term in matched_terms
+                    if any(cls._token_forms(term) & cls._token_forms(primary_term) for primary_term in primary_terms)
+                )
+                primary_phrase = bool(primary_terms) and any(
+                    all(
+                        cls._token_forms(primary_term) & cls._token_forms(sentence_tokens[start + offset])
+                        for offset, primary_term in enumerate(primary_terms)
+                    )
+                    for start in range(len(sentence_tokens) - len(primary_terms) + 1)
+                )
+                first_subject_token = next(
+                    (token for token in sentence_tokens if token not in STOPWORDS),
+                    "",
+                )
+                starts_with_subject = bool(
+                    first_subject_token
+                    and any(
+                        cls._token_forms(first_subject_token) & cls._token_forms(term)
+                        for term in primary_terms
+                    )
+                )
+                ranked_rows.append((
+                    subject_overlap,
+                    len(matched_terms),
+                    int(primary_phrase),
+                    int(starts_with_subject),
+                    -min(len(sentence_tokens), 40),
+                    -index,
+                    index,
+                    paragraph_index,
+                    sentence,
+                ))
 
         if not ranked_rows:
             raise ValueError("Retrieved evidence does not contain the query subject.")
 
-        chosen = sorted(ranked_rows, key=lambda row: (row[0], row[1]), reverse=True)[:6]
+        chosen = sorted(ranked_rows, reverse=True)[:6]
         selected_indexes = []
 
         # Keep the directly adjacent definition/translation sentence as evidence context.
-        for _, _, index, paragraph_index, source_sentence in chosen:
+        for row in chosen:
+            index, paragraph_index, source_sentence = row[6], row[7], row[8]
             source_lower = source_sentence.casefold()
             introduces_evidence = source_sentence.rstrip().endswith(":") or " means:" in source_lower
             if not introduces_evidence:
@@ -279,7 +335,7 @@ class AdvancedRetriever:
             if context_rows:
                 selected_indexes.extend([index, *(row[0] for row in context_rows)])
 
-        selected_indexes.extend(row[2] for row in chosen)
+        selected_indexes.extend(row[6] for row in chosen)
         selected_indexes = list(dict.fromkeys(selected_indexes))[:6]
         sentence_by_index = {index: sentence for index, _, sentence in sentence_rows}
         selected_sentences = [sentence_by_index[index] for index in selected_indexes]
@@ -328,6 +384,12 @@ class AdvancedRetriever:
             combined_content = self._synthesize_evidence(results, query)
             if not combined_content.strip():
                 combined_content = primary.get("content") or ""
+        except ValueError:
+            return {
+                "decision": "no_match",
+                "content": None,
+                "reasoning": "Retrieved documents do not contain sufficient evidence to answer the query.",
+            }
         except Exception:
             combined_content = primary.get("content") or ""
 

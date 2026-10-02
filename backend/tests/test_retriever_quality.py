@@ -57,6 +57,44 @@ def test_generic_prompt_words_do_not_match_unrelated_documents():
     assert all(row["file"] != "quantum_notes.md" for row in results)
 
 
+def test_canonical_subject_sentence_outranks_generic_high_overlap_sentence():
+    results = [
+        {
+            "keyword": "grover algorithm",
+            "content": (
+                "The algorithm does use a quantum oracle for searching. "
+                "Grover's algorithm employs amplitude amplification."
+            ),
+        }
+    ]
+
+    answer = AdvancedRetriever._synthesize_evidence(
+        results,
+        "What does Grover's algorithm use?",
+    )
+
+    assert answer.startswith("Grover's algorithm employs amplitude amplification.")
+
+
+def test_incomplete_sanskrit_phrase_returns_insufficient_evidence():
+    retriever = _retriever_with_documents(
+        {"karma": "Karma is the concept of action and its consequences."}
+    )
+    results = [
+        {
+            "keyword": "karma",
+            "content": retriever.knowledge_map["karma"],
+            "file": "karma.md",
+        }
+    ]
+
+    response = retriever.reason_and_compare(results, "Translate \\u0915\\u0930\\u094d\\u092e \\u0915\\u0930\\u094b")
+
+    assert response["decision"] == "no_match"
+    assert response["content"] is None
+    assert "sufficient evidence" in response["reasoning"]
+
+
 def test_sanskrit_knowledge_tree_is_loaded():
     retriever = AdvancedRetriever()
 

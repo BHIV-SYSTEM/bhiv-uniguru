@@ -1,0 +1,950 @@
+{
+  "answer": "I do not have verified knowledge to answer this question.",
+  "bucket_proof": {
+    "accepted_signals": [
+      "signal_5504c676a6f4"
+    ],
+    "confidence_derivation": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.5762,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5762,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8562,
+              "ontology_convergence": 0.8667,
+              "retrieval_strength": 0.8111,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.3962
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5762,
+            "why": [
+              "epistemic_score=0.5762",
+              "ceiling_applied=0.5762",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.8328,
+          "retrieval_confidence": 0.8111,
+          "semantic_score": 0.6,
+          "tag_match_score": 1.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.5762,
+      "rejected_count": 0
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "e8b6250714f5bbe07a4f55a4bfed2939708e1a95d90ceb1aa4818765b5c6528a",
+    "memory_event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "328c107799f05cc51fdebcefee4898a948f110241b4329b604e1eb83aeb3cdf6",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Narada Purana"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_bef1201f5c065bc4",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T07:30:31.299569Z",
+      "user_id": "anonymous"
+    },
+    "rejected_signals": [],
+    "retrieval_truth_hash": "3ab2b3a894fd4600ad246f93a53d170d894d4632a5843f189a0b1a33c477c6d2",
+    "semantic_path": [
+      {
+        "domain": "puranas",
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_15ea4d9ceaf4",
+        "signal_id": "signal_5504c676a6f4",
+        "source_lineage": {
+          "original_source": "The Narada-Purana, Part 3_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        }
+      }
+    ],
+    "timestamp": "2026-10-02T07:30:30.124176Z",
+    "trace_continuity": {
+      "bucket_proof": "trace_bef1201f5c065bc4",
+      "contract_emission": "trace_bef1201f5c065bc4",
+      "downstream_execution": "trace_bef1201f5c065bc4",
+      "immutable": true,
+      "retrieval": "trace_bef1201f5c065bc4",
+      "synthesis": "trace_bef1201f5c065bc4",
+      "validation": "trace_bef1201f5c065bc4"
+    },
+    "trace_id": "trace_bef1201f5c065bc4",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:none:unverified",
+      "claim_id": "claim_f135f2e3b901",
+      "claim_text": "I do not have verified knowledge to answer this question.",
+      "confidence": 0.0,
+      "provenance_hash": "255caf2d8dacabcf3302caabb080ce0e42c75256473238fa8bc8a33e43565109",
+      "source_id": "LLM_FALLBACK",
+      "text_span": "I do not have verified knowledge to answer this question.",
+      "verification_status": "UNVERIFIED_FALLBACK"
+    }
+  ],
+  "confidence": 0.0,
+  "confidence_breakdown": {
+    "accepted_count": 1,
+    "accepted_derivations": [
+      {
+        "content_overlap": 1.0,
+        "derived_confidence": 0.5762,
+        "domain_consistency": 1.0,
+        "entity_overlap": 0.0,
+        "epistemic_confidence": {
+          "confidence_ceiling": 0.5762,
+          "dimensions": {
+            "contextual_consistency": 1.0,
+            "contradiction_pressure": 0.0,
+            "multi_source_reinforcement": 0.0,
+            "ocr_integrity": 0.8562,
+            "ontology_convergence": 0.8667,
+            "retrieval_strength": 0.8111,
+            "semantic_agreement": 1.0,
+            "source_authority": 0.3962
+          },
+          "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+          "score": 0.5762,
+          "why": [
+            "epistemic_score=0.5762",
+            "ceiling_applied=0.5762",
+            "source_type=ocr_derivative"
+          ]
+        },
+        "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+        "match_confidence": 0.8328,
+        "retrieval_confidence": 0.8111,
+        "semantic_score": 0.6,
+        "tag_match_score": 1.0
+      }
+    ],
+    "consensus": {
+      "ambiguity_classification": "single_source_verified",
+      "claim_group_count": 1,
+      "consensus_score": 0.5,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+      "multi_source_reinforcement": 0.0,
+      "source_count": 1
+    },
+    "overall": 0.5762,
+    "rejected_count": 0
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "single_source_verified",
+    "claim_group_count": 1,
+    "consensus_score": 0.5,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+    "multi_source_reinforcement": 0.0,
+    "source_count": 1
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "confidence": 0.0,
+    "domain": "general",
+    "entities": [],
+    "method": "no_canonical_entity"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "READY_FOR_CONSUMPTION",
+    "trace_id": "trace_bef1201f5c065bc4"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 74,
+    "valid_entries": 55
+  },
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T07:30:30.124176Z",
+  "interpretation_payload": {
+    "answer": "I do not have verified knowledge to answer this question.",
+    "artifact_hash": "e8b6250714f5bbe07a4f55a4bfed2939708e1a95d90ceb1aa4818765b5c6528a",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.0,
+    "confidence_breakdown": {
+      "accepted_count": 1,
+      "accepted_derivations": [
+        {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.5762,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5762,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8562,
+              "ontology_convergence": 0.8667,
+              "retrieval_strength": 0.8111,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.3962
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5762,
+            "why": [
+              "epistemic_score=0.5762",
+              "ceiling_applied=0.5762",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.8328,
+          "retrieval_confidence": 0.8111,
+          "semantic_score": 0.6,
+          "tag_match_score": 1.0
+        }
+      ],
+      "consensus": {
+        "ambiguity_classification": "single_source_verified",
+        "claim_group_count": 1,
+        "consensus_score": 0.5,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No deterministic contradiction detected.",
+        "multi_source_reinforcement": 0.0,
+        "source_count": 1
+      },
+      "overall": 0.5762,
+      "rejected_count": 0
+    },
+    "contradiction_state": {
+      "classification": "single_source_verified",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [
+        "signal_5504c676a6f4"
+      ],
+      "retrieval_trace_id": "trace_bef1201f5c065bc4",
+      "retrieval_truth_hash": "3ab2b3a894fd4600ad246f93a53d170d894d4632a5843f189a0b1a33c477c6d2"
+    },
+    "trace_id": "trace_bef1201f5c065bc4",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "knowledge_ids_used": [
+    "KOSHA_15ea4d9ceaf4"
+  ],
+  "matched_signals": [
+    {
+      "acceptance_reasoning": {
+        "confidence_derivation": {
+          "content_overlap": 1.0,
+          "derived_confidence": 0.5762,
+          "domain_consistency": 1.0,
+          "entity_overlap": 0.0,
+          "epistemic_confidence": {
+            "confidence_ceiling": 0.5762,
+            "dimensions": {
+              "contextual_consistency": 1.0,
+              "contradiction_pressure": 0.0,
+              "multi_source_reinforcement": 0.0,
+              "ocr_integrity": 0.8562,
+              "ontology_convergence": 0.8667,
+              "retrieval_strength": 0.8111,
+              "semantic_agreement": 1.0,
+              "source_authority": 0.3962
+            },
+            "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+            "score": 0.5762,
+            "why": [
+              "epistemic_score=0.5762",
+              "ceiling_applied=0.5762",
+              "source_type=ocr_derivative"
+            ]
+          },
+          "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+          "match_confidence": 0.8328,
+          "retrieval_confidence": 0.8111,
+          "semantic_score": 0.6,
+          "tag_match_score": 1.0
+        },
+        "overlap_percent": {
+          "concept": 100.0,
+          "content": 100.0,
+          "entity": 0.0
+        },
+        "signal_id": "signal_5504c676a6f4",
+        "what_matched": {
+          "candidate_entities": [
+            {
+              "canonical": "Narada Purana",
+              "concepts": [
+                "purana",
+                "devotion",
+                "pilgrimage"
+              ],
+              "domain": "puranas",
+              "entity_type": "text",
+              "matched_alias": "narada purana"
+            }
+          ],
+          "query_entities": [],
+          "tags": [
+            "translate"
+          ]
+        },
+        "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+      },
+      "confidence": 0.5762,
+      "content": "Satyam vada translates to \"Speak the truth\". [1]",
+      "domain": "puranas",
+      "knowledge_id": "KOSHA_15ea4d9ceaf4",
+      "signal_id": "signal_5504c676a6f4",
+      "source": "The Narada-Purana, Part 3_ocred.pdf",
+      "source_governance": {
+        "authority_weight": 0.3962,
+        "confidence_ceiling": 0.5762,
+        "lineage": {
+          "original_source": "The Narada-Purana, Part 3_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "ocr_integrity_penalty": 0.1438,
+        "source": "The Narada-Purana, Part 3_ocred.pdf",
+        "source_type": "ocr_derivative",
+        "suppression_reason": null
+      },
+      "tags": [
+        "satyam",
+        "translate",
+        "vada"
+      ],
+      "trace": {
+        "domain_resolution": {
+          "confidence": 0.0,
+          "domain": "general",
+          "entities": [],
+          "method": "no_canonical_entity"
+        },
+        "embedding_trace": {},
+        "knowledge_id": "KOSHA_15ea4d9ceaf4",
+        "method": "ontology_aware_kosha_retrieval",
+        "source_lineage": {
+          "original_source": "The Narada-Purana, Part 3_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_bef1201f5c065bc4"
+      }
+    }
+  ],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "trace_bef1201f5c065bc4"
+  },
+  "query": "Translate \"?????? ???? ?????\"",
+  "reasoning": "No accepted Kosha record contains evidence relevant to the query.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_synthesis",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [],
+  "retrieval_run_record": {
+    "candidate_count": 1,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:none:unverified",
+        "claim_id": "claim_f135f2e3b901",
+        "claim_text": "I do not have verified knowledge to answer this question.",
+        "confidence": 0.0,
+        "provenance_hash": "255caf2d8dacabcf3302caabb080ce0e42c75256473238fa8bc8a33e43565109",
+        "source_id": "LLM_FALLBACK",
+        "text_span": "I do not have verified knowledge to answer this question.",
+        "verification_status": "UNVERIFIED_FALLBACK"
+      }
+    ],
+    "deduplicated_candidate_count": 1,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_5279753ef08f",
+    "replay_id": "replay_445db122b3fa10c8",
+    "replay_safe": true,
+    "retrieval_run_id": "run_d01c3395d3f6",
+    "selected_evidence": [
+      {
+        "authority_tier": "CANONICAL",
+        "canonical_object_id": "uko:puranas:731b6b48e773",
+        "dedup_status": "unique",
+        "domain": "puranas",
+        "provenance_hash": "731b6b48e77359a84eb3ae881988398ec365987440b0457adf3edbe431739f13",
+        "ranking_score": 0.811126,
+        "source_id": "The Narada-Purana, Part 3_ocred.pdf",
+        "text_span": "Satyam vada translates to \"Speak the truth\". [1]",
+        "tradition_context": "general"
+      }
+    ],
+    "semantic_scope": "general",
+    "trace_id": "trace_bef1201f5c065bc4",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [
+      "signal_5504c676a6f4"
+    ],
+    "accepted_signals": [
+      {
+        "acceptance_reasoning": {
+          "confidence_derivation": {
+            "content_overlap": 1.0,
+            "derived_confidence": 0.5762,
+            "domain_consistency": 1.0,
+            "entity_overlap": 0.0,
+            "epistemic_confidence": {
+              "confidence_ceiling": 0.5762,
+              "dimensions": {
+                "contextual_consistency": 1.0,
+                "contradiction_pressure": 0.0,
+                "multi_source_reinforcement": 0.0,
+                "ocr_integrity": 0.8562,
+                "ontology_convergence": 0.8667,
+                "retrieval_strength": 0.8111,
+                "semantic_agreement": 1.0,
+                "source_authority": 0.3962
+              },
+              "formula": "0.22*source_authority + 0.18*semantic_agreement + 0.16*ontology_convergence + 0.14*contextual_consistency + 0.12*ocr_integrity + 0.10*multi_source_reinforcement + 0.08*retrieval_strength - 0.26*contradiction_pressure, capped by source/convergence ceilings",
+              "score": 0.5762,
+              "why": [
+                "epistemic_score=0.5762",
+                "ceiling_applied=0.5762",
+                "source_type=ocr_derivative"
+              ]
+            },
+            "formula": "0.25*retrieval + 0.25*tag + 0.2*content + 0.3*semantic",
+            "match_confidence": 0.8328,
+            "retrieval_confidence": 0.8111,
+            "semantic_score": 0.6,
+            "tag_match_score": 1.0
+          },
+          "overlap_percent": {
+            "concept": 100.0,
+            "content": 100.0,
+            "entity": 0.0
+          },
+          "signal_id": "signal_5504c676a6f4",
+          "what_matched": {
+            "candidate_entities": [
+              {
+                "canonical": "Narada Purana",
+                "concepts": [
+                  "purana",
+                  "devotion",
+                  "pilgrimage"
+                ],
+                "domain": "puranas",
+                "entity_type": "text",
+                "matched_alias": "narada purana"
+              }
+            ],
+            "query_entities": [],
+            "tags": [
+              "translate"
+            ]
+          },
+          "why_accepted": "Accepted after deterministic entity, concept, domain, contextual, tag, content, and confidence checks."
+        },
+        "confidence": 0.5762,
+        "content": "Satyam vada translates to \"Speak the truth\". [1]",
+        "domain": "puranas",
+        "knowledge_id": "KOSHA_15ea4d9ceaf4",
+        "signal_id": "signal_5504c676a6f4",
+        "source": "The Narada-Purana, Part 3_ocred.pdf",
+        "source_governance": {
+          "authority_weight": 0.3962,
+          "confidence_ceiling": 0.5762,
+          "lineage": {
+            "original_source": "The Narada-Purana, Part 3_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "ocr_integrity_penalty": 0.1438,
+          "source": "The Narada-Purana, Part 3_ocred.pdf",
+          "source_type": "ocr_derivative",
+          "suppression_reason": null
+        },
+        "tags": [
+          "satyam",
+          "translate",
+          "vada"
+        ],
+        "trace": {
+          "domain_resolution": {
+            "confidence": 0.0,
+            "domain": "general",
+            "entities": [],
+            "method": "no_canonical_entity"
+          },
+          "embedding_trace": {},
+          "knowledge_id": "KOSHA_15ea4d9ceaf4",
+          "method": "ontology_aware_kosha_retrieval",
+          "source_lineage": {
+            "original_source": "The Narada-Purana, Part 3_ocred.pdf",
+            "transformation_history": [
+              "source_text",
+              "ocr_extraction",
+              "kosha_structuring"
+            ]
+          },
+          "trace_id": "trace_bef1201f5c065bc4"
+        }
+      }
+    ],
+    "artifact_hash": "3ab2b3a894fd4600ad246f93a53d170d894d4632a5843f189a0b1a33c477c6d2",
+    "domain_resolution": {
+      "confidence": 0.0,
+      "domain": "general",
+      "entities": [],
+      "method": "no_canonical_entity"
+    },
+    "generated_at": "2026-10-02T07:30:30.124176Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "Translate \"?????? ???? ?????\"",
+    "raw_signal_count": 1,
+    "rejected_signal_ids": [],
+    "rejected_signals": [],
+    "source_lineage": [
+      {
+        "knowledge_id": "KOSHA_15ea4d9ceaf4",
+        "retrieval_method": "ontology_aware_kosha_retrieval",
+        "signal_id": "signal_5504c676a6f4",
+        "source": "The Narada-Purana, Part 3_ocred.pdf",
+        "source_lineage": {
+          "original_source": "The Narada-Purana, Part 3_ocred.pdf",
+          "transformation_history": [
+            "source_text",
+            "ocr_extraction",
+            "kosha_structuring"
+          ]
+        },
+        "trace_id": "trace_bef1201f5c065bc4"
+      }
+    ],
+    "trace_id": "trace_bef1201f5c065bc4"
+  },
+  "selected_evidence": [
+    {
+      "authority_tier": "CANONICAL",
+      "canonical_object_id": "uko:puranas:731b6b48e773",
+      "dedup_status": "unique",
+      "domain": "puranas",
+      "provenance_hash": "731b6b48e77359a84eb3ae881988398ec365987440b0457adf3edbe431739f13",
+      "ranking_score": 0.811126,
+      "source_id": "The Narada-Purana, Part 3_ocred.pdf",
+      "text_span": "Satyam vada translates to \"Speak the truth\". [1]",
+      "tradition_context": "general"
+    }
+  ],
+  "semantic_memory": {
+    "canonical_authority_granted": false,
+    "constitutional_governance": {
+      "canonical_authority_granted": false,
+      "canonical_memory_keys": [
+        "Agni",
+        "Agni Purana",
+        "Ahimsa",
+        "Assembly",
+        "Atharvaveda",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Bhakti",
+        "Bhakti Yoga",
+        "Brahma",
+        "Brahma Purana",
+        "Brahman",
+        "Brahmanda Purana",
+        "Chandogya Upanishad",
+        "City",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Ganga",
+        "Garuda Purana",
+        "Governance",
+        "Guru",
+        "Indra",
+        "Jnana Yoga",
+        "Justice",
+        "Kali Yuga",
+        "Karma",
+        "Karma Yoga",
+        "Katha Upanishad",
+        "King",
+        "Krishna",
+        "Kundalini",
+        "Kurma Purana",
+        "Linga Purana",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Markandeya Purana",
+        "Matsya Purana",
+        "Moksha",
+        "Mundaka Upanishad",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana",
+        "Pilgrimage",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Purusha",
+        "Rain",
+        "Rajadharma",
+        "Rajas",
+        "Ramayana",
+        "Rigveda",
+        "Road",
+        "Samaveda",
+        "Samsara",
+        "Sankhya",
+        "Sarasvati",
+        "Sattva",
+        "Satya Yuga",
+        "Shiva",
+        "Skanda Purana",
+        "Smriti",
+        "Soil",
+        "Surya",
+        "Taittiriya Upanishad",
+        "Tamas",
+        "Temple",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Varaha Purana",
+        "Varna",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Vishnu",
+        "Yajna",
+        "Yajnavalkya Smriti",
+        "Yajurveda",
+        "Yantra",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 16,
+      "event": {
+        "canonical_authority_granted": false,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [
+          "Narada Purana"
+        ],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "transient",
+        "trace_id": "trace_bef1201f5c065bc4",
+        "updated_at": "2026-10-02T07:30:30.858392Z"
+      },
+      "event_hash": "328c107799f05cc51fdebcefee4898a948f110241b4329b604e1eb83aeb3cdf6",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": false,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "REJECT_CANONICAL_MUTATION",
+        "failure_states": [],
+        "memory_classification": "transient",
+        "reasons": [
+          "verification_status_not_verified"
+        ],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "908c45dc9560fdf57c3e7d42b5d6f908087b7eceeceb195deaf5ac42ec2e8139",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "328c107799f05cc51fdebcefee4898a948f110241b4329b604e1eb83aeb3cdf6",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "683539ebbd37753cd40539e68f5e56255fc78d52ab4afa66ac71bb8428318be0",
+      "transient_event_count": 747
+    },
+    "entity_continuity": {
+      "Narada Purana": {
+        "contradiction_pressure": 0.0667,
+        "decay_state": "active",
+        "last_seen": "2026-10-02T07:30:31.299569Z",
+        "reinforcement_score": 0.9767,
+        "source_ids": [
+          "The Narada-Purana, Part 4_ocred.pdf",
+          "Vayu Purana Part 1_ocred.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
+          "The Narada-Purana, Part 3_ocred.pdf"
+        ],
+        "trace_ids": [
+          "trace_53fc47b7fef55f42",
+          "trace_370421f8dd445b6b",
+          "ecosystem_bbe95214b5c5",
+          "ecosystem_567017d0719e",
+          "ecosystem_8bfc06bdaa4a",
+          "ecosystem_960f40588be2",
+          "trace_004c48afb3b054d4",
+          "trace_0d7198aab3cd5e0a",
+          "trace_0e98e7210ae95a18",
+          "trace_11b81129158a5260",
+          "trace_45a1c5bee6b25310",
+          "trace_6b334994d1f259d0",
+          "trace_70325ee22be15e28",
+          "trace_2ea0a67622715609",
+          "trace_7f6ff0d947d55744",
+          "trace_615b80a6520358f9",
+          "phase2_mitra_test",
+          "schema_stable_1",
+          "trace_8707db6e0a545a0a",
+          "trace_6a06ed9891ea563e",
+          "trace_5956d9e35e595cf0",
+          "trace_dc6294f6f78957f2",
+          "trace_e342bc200ab5584a",
+          "trace_f5ed16c168a85dc2",
+          "trace_697b78fd51d45ee0",
+          "trace_d484b3325c0a5549",
+          "trace_56e3b41b60585d1c",
+          "trace_cb65b273f4b45602",
+          "trace_34588781b97155c6",
+          "trace_cb37436487ac552c",
+          "trace_6377945827605e9d",
+          "trace_88924b086f175c13",
+          "trace_0b968470bef8576e",
+          "trace_d1155a2203df5f51",
+          "trace_dcdefb97b2285170",
+          "trace_60efd4e33ce3537a",
+          "trace_94129dd6fe075584",
+          "trace_7455cb16e49654cc",
+          "trace_dca388ee2296551a",
+          "trace_06034de300d65bb9",
+          "trace_98cbeb2ea21a5e48",
+          "trace_c923b85a98ba50af",
+          "trace_14dbaa990da05104",
+          "trace_0dfa0e5a0f6f5239",
+          "trace_6b8e4a6cd9d051d0",
+          "trace_c3853f3cdee957ad",
+          "trace_53a111b7f5a25878",
+          "trace_36b58f215c215c7d",
+          "trace_6b0e5bccfd035a4d",
+          "trace_5a87aab406295441",
+          "trace_c4c10d87df9d5519",
+          "trace_829b6991b8ff50f5",
+          "trace_3551a09ad4195015",
+          "trace_89138c248cdf53f4",
+          "trace_d40ed77d492354bd",
+          "trace_b9d5fd1f353b5342",
+          "trace_40ebd6833ecb522b",
+          "trace_a0e7f70973f05e54",
+          "trace_ead6cb2f07ad5b8b",
+          "trace_1f7f7f8ef795507c",
+          "trace_989b37a032f55ca5",
+          "trace_a76d74f84ffc52ff",
+          "trace_6775cad248fb5520",
+          "trace_94895a44d78850f0",
+          "trace_5a951979090f5c25",
+          "trace_0476b99a50ed5033",
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "trace_f9a009feb0635a5d",
+          "trace_bef1201f5c065bc4"
+        ]
+      }
+    },
+    "event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "328c107799f05cc51fdebcefee4898a948f110241b4329b604e1eb83aeb3cdf6",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Narada Purana"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_bef1201f5c065bc4",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T07:30:31.299569Z",
+      "user_id": "anonymous"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [
+      {
+        "contradiction_pressure": 0.0,
+        "query": "Translate \"?????? ???? ?????\"",
+        "rejected_signal_count": 0,
+        "state": "open",
+        "trace_id": "trace_bef1201f5c065bc4",
+        "updated_at": "2026-10-02T07:30:31.299569Z",
+        "user_id": "anonymous",
+        "verification_status": "NO_VERIFIED_KNOWLEDGE"
+      }
+    ],
+    "user_continuity": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-10-02T07:30:31.299569Z",
+      "queries": 409,
+      "trace_ids": [
+        "trace_ea6c8eb550225478",
+        "trace_6b8e4a6cd9d051d0",
+        "trace_1185617b978f5106",
+        "trace_c3853f3cdee957ad",
+        "trace_53a111b7f5a25878",
+        "trace_36b58f215c215c7d",
+        "trace_8c70ce2e68a152ad",
+        "trace_6b0e5bccfd035a4d",
+        "trace_5a87aab406295441",
+        "trace_0e783a4968755900",
+        "trace_c4c10d87df9d5519",
+        "trace_6c977c0030485e0d",
+        "trace_9e244e9482765935",
+        "trace_a1198a2f814b53b0",
+        "trace_d83cefcec3cb5fc4",
+        "trace_241fa021b41252ec",
+        "trace_829b6991b8ff50f5",
+        "trace_297cf1da3ed8542c",
+        "trace_3551a09ad4195015",
+        "trace_89138c248cdf53f4",
+        "trace_d40ed77d492354bd",
+        "trace_2bf5fce4d0e55c90",
+        "trace_b9d5fd1f353b5342",
+        "trace_40ebd6833ecb522b",
+        "trace_2bfc8abc4a7a5577",
+        "trace_a0e7f70973f05e54",
+        "trace_02da65b1c6de5dfb",
+        "trace_2a839b361f325ebd",
+        "trace_77b81aa50acd5073",
+        "trace_d9d6270f112d5bd6",
+        "trace_57f07331eaea5246",
+        "trace_ead6cb2f07ad5b8b",
+        "trace_721a11252f0e5eab",
+        "trace_1f7f7f8ef795507c",
+        "trace_989b37a032f55ca5",
+        "trace_a76d74f84ffc52ff",
+        "trace_7122f5e0346551ba",
+        "trace_6775cad248fb5520",
+        "trace_94895a44d78850f0",
+        "trace_a7d23df812e156a0",
+        "trace_5a951979090f5c25",
+        "trace_ef33d05036d35fa9",
+        "trace_46fb98ddeff956b3",
+        "trace_293efbba44395aa7",
+        "trace_1c3d0cfead8f52fd",
+        "trace_8e3262f49b5c5dc8",
+        "trace_0476b99a50ed5033",
+        "trace_f937329a84b95f74",
+        "trace_f9a009feb0635a5d",
+        "trace_bef1201f5c065bc4"
+      ]
+    }
+  },
+  "semantic_path": [
+    {
+      "domain": "puranas",
+      "embedding_trace": {},
+      "knowledge_id": "KOSHA_15ea4d9ceaf4",
+      "signal_id": "signal_5504c676a6f4",
+      "source_lineage": {
+        "original_source": "The Narada-Purana, Part 3_ocred.pdf",
+        "transformation_history": [
+          "source_text",
+          "ocr_extraction",
+          "kosha_structuring"
+        ]
+      }
+    }
+  ],
+  "signals_found": 1,
+  "signals_rejected": 0,
+  "synthesis_mode": "DETERMINISTIC_FROM_ACCEPTED_SIGNALS",
+  "trace_id": "trace_bef1201f5c065bc4",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "e8b6250714f5bbe07a4f55a4bfed2939708e1a95d90ceb1aa4818765b5c6528a",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "3ab2b3a894fd4600ad246f93a53d170d894d4632a5843f189a0b1a33c477c6d2",
+    "trace_id": "trace_bef1201f5c065bc4"
+  },
+  "verification_status": "NO_VERIFIED_KNOWLEDGE"
+}
