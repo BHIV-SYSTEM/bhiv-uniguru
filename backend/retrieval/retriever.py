@@ -777,6 +777,7 @@ def get_rag_health() -> Dict[str, Any]:
         and metadata_available
         and database_chunks > 0
         and vector_chunks == database_chunks
+        and _load_dense_state() is not None
     )
     return {
         "status": "healthy" if index_loaded else ("degraded" if retriever.knowledge_map else "unavailable"),

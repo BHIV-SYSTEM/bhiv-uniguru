@@ -27,13 +27,13 @@
       "memory_classification": "transient",
       "trace_id": "phase2_hash_chain_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-02T05:05:03.394536Z",
+      "updated_at": "2026-10-02T05:21:38.015902Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [],
     "retrieval_truth_hash": "bba7cebe2ca0e162b50adb0aacf05267f7ea4adae4b8fa9ad29d5709c1999c4f",
     "semantic_path": [],
-    "timestamp": "2026-10-02T05:05:03.082670Z",
+    "timestamp": "2026-10-02T05:21:37.740339Z",
     "trace_continuity": {
       "bucket_proof": "phase2_hash_chain_test",
       "contract_emission": "phase2_hash_chain_test",
@@ -97,7 +97,7 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-10-02T05:05:03.082670Z",
+  "generated_at": "2026-10-02T05:21:37.740339Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
     "artifact_hash": "bb7fedf4ea1cff655eb63a5b4bcd439107e1380e79b75040c5fff5356fdbd338",
@@ -206,7 +206,7 @@
       "domain": "gitas",
       "method": "retriever"
     },
-    "generated_at": "2026-10-02T05:05:03.082670Z",
+    "generated_at": "2026-10-02T05:21:37.740339Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -273,21 +273,21 @@
         ],
         "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
       },
-      "idempotent_replay": false,
+      "idempotent_replay": true,
       "lineage_traceable": true,
       "mutation_id": "bf7c609ad4ecc5b9c7ccfc81c730b766ccff7367e7e1d37b73f20e6ec7e15343",
       "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "5c92cddece7e8a2a91130236e97576b1c7017d277e82c528e198b4b15c3993c5",
+        "last_event_hash": "8a4673dab36b89e406b87db8e6d4d0ed306291c79c1a0cec4526b7fe2ece5367",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "b4399e9c086d54f24165be66dd6893b0cec893dc9e9213d84ac1f83331ea3bab",
-      "transient_event_count": 568
+      "state_hash": "a4e1e1c1172e01ed16003f631fa76390ca840e973812a238ec7c310c3211688b",
+      "transient_event_count": 581
     },
     "entity_continuity": {},
     "event": {
@@ -299,7 +299,7 @@
       "memory_classification": "transient",
       "trace_id": "phase2_hash_chain_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-02T05:05:03.394536Z",
+      "updated_at": "2026-10-02T05:21:38.015902Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
@@ -313,17 +313,16 @@
         "rejected_signal_count": 0,
         "state": "open",
         "trace_id": "phase2_hash_chain_test",
-        "updated_at": "2026-10-02T05:05:03.394536Z",
+        "updated_at": "2026-10-02T05:21:38.015902Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-10-02T05:05:03.394536Z",
-      "queries": 582,
+      "last_seen": "2026-10-02T05:21:38.015902Z",
+      "queries": 604,
       "trace_ids": [
-        "ecosystem_5c458221a6e5",
         "ecosystem_a00a15cc1502",
         "ecosystem_20dd33cc96b6",
         "ecosystem_960f40588be2",
@@ -372,7 +371,8 @@
         "ecosystem_ac74380d9833",
         "ecosystem_46b609792b50",
         "ecosystem_5a5dc8c6e13b",
-        "ecosystem_95827dfff924"
+        "ecosystem_95827dfff924",
+        "ecosystem_1f739e325095"
       ]
     }
   },

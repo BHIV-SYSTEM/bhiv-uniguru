@@ -66,7 +66,7 @@
       "memory_classification": "canonical",
       "trace_id": "phase2_mitra_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-02T05:04:41.107450Z",
+      "updated_at": "2026-10-02T05:21:23.345602Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -107,7 +107,7 @@
         }
       }
     ],
-    "timestamp": "2026-10-02T05:04:40.922258Z",
+    "timestamp": "2026-10-02T05:21:23.050186Z",
     "trace_continuity": {
       "bucket_proof": "phase2_mitra_test",
       "contract_emission": "phase2_mitra_test",
@@ -221,7 +221,7 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-10-02T05:04:40.922258Z",
+  "generated_at": "2026-10-02T05:21:23.050186Z",
   "interpretation_payload": {
     "answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation.",
     "artifact_hash": "cd4169a8e7fc8dfad2c9a114cea57615b625df5930711d760a9d6f5cb6dccc95",
@@ -1442,7 +1442,7 @@
       ],
       "method": "canonical_entity_majority"
     },
-    "generated_at": "2026-10-02T05:04:40.922258Z",
+    "generated_at": "2026-10-02T05:21:23.050186Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -2298,27 +2298,27 @@
         ],
         "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
       },
-      "idempotent_replay": false,
+      "idempotent_replay": true,
       "lineage_traceable": true,
       "mutation_id": "82fae1527b940fc0f5cf42d1c89cbb2eaaceb6a6e9777969ca026a56e7c6a567",
       "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "79a8ad116100948f3869a8a1ab9782753111bb3bea349c2b9015f3721d6e3c08",
+        "last_event_hash": "8a4673dab36b89e406b87db8e6d4d0ed306291c79c1a0cec4526b7fe2ece5367",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "500d189d02be1077e2bc360ba44880bf55bdf6721860ab2d6437357d796aabef",
-      "transient_event_count": 562
+      "state_hash": "a4e1e1c1172e01ed16003f631fa76390ca840e973812a238ec7c310c3211688b",
+      "transient_event_count": 581
     },
     "entity_continuity": {
       "Assembly": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-10-02T05:04:41.107450Z",
+        "last_seen": "2026-10-02T05:21:23.345602Z",
         "reinforcement_score": 0.5625,
         "source_ids": [
           "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
@@ -2336,7 +2336,7 @@
       "Dharma": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-10-02T05:04:41.107450Z",
+        "last_seen": "2026-10-02T05:21:23.345602Z",
         "reinforcement_score": 0.5625,
         "source_ids": [
           "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
@@ -2364,7 +2364,7 @@
       "memory_classification": "canonical",
       "trace_id": "phase2_mitra_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-02T05:04:41.107450Z",
+      "updated_at": "2026-10-02T05:21:23.345602Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
@@ -2378,17 +2378,16 @@
         "rejected_signal_count": 11,
         "state": "open",
         "trace_id": "phase2_mitra_test",
-        "updated_at": "2026-10-02T05:04:41.107450Z",
+        "updated_at": "2026-10-02T05:21:23.345602Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "VERIFIED"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-10-02T05:04:41.107450Z",
-      "queries": 574,
+      "last_seen": "2026-10-02T05:21:23.345602Z",
+      "queries": 596,
       "trace_ids": [
-        "ecosystem_5c458221a6e5",
         "ecosystem_a00a15cc1502",
         "ecosystem_20dd33cc96b6",
         "ecosystem_960f40588be2",
@@ -2437,7 +2436,8 @@
         "ecosystem_ac74380d9833",
         "ecosystem_46b609792b50",
         "ecosystem_5a5dc8c6e13b",
-        "ecosystem_95827dfff924"
+        "ecosystem_95827dfff924",
+        "ecosystem_1f739e325095"
       ]
     }
   },

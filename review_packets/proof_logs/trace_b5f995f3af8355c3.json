@@ -17,39 +17,39 @@
       "rejected_count": 0
     },
     "event": "tantra_uniguru_intelligence_contract",
-    "interpretation_hash": "6556e9bf0314ebefc5236547ac93fc2ba6ca8bdd580fdaf1f4c82851bde8fc64",
+    "interpretation_hash": "6f6063c0ae813fb0e4d0db84945a5be27958737aba330246a021276185387347",
     "memory_event": {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "b07b6bd89c5ac44676426a56d8ec644536b29ecc444097fb0a8fc1a537aa3c51",
+      "constitutional_event_hash": "7b8cbd3da561b42e898c3509a28da4e22feaa4dab80ca4ef43868e6ca8c86480",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
-      "trace_id": "phase2_determinism_test",
+      "trace_id": "trace_b5f995f3af8355c3",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-02T05:21:36.155774Z",
-      "user_id": "ecosystem_runtime"
+      "updated_at": "2026-10-02T05:22:59.743358Z",
+      "user_id": "anonymous"
     },
     "rejected_signals": [],
-    "retrieval_truth_hash": "e38647b23468fb05d91005453d7e0166b5547fdc50dda0dbfb607189ecda8f09",
+    "retrieval_truth_hash": "0167617896c9138ccf290014413f7659b0569324293772b83093561cabd6697d",
     "semantic_path": [],
-    "timestamp": "2026-10-02T05:21:35.537613Z",
+    "timestamp": "2026-10-02T05:22:59.352277Z",
     "trace_continuity": {
-      "bucket_proof": "phase2_determinism_test",
-      "contract_emission": "phase2_determinism_test",
-      "downstream_execution": "phase2_determinism_test",
+      "bucket_proof": "trace_b5f995f3af8355c3",
+      "contract_emission": "trace_b5f995f3af8355c3",
+      "downstream_execution": "trace_b5f995f3af8355c3",
       "immutable": true,
-      "retrieval": "phase2_determinism_test",
-      "synthesis": "phase2_determinism_test",
-      "validation": "phase2_determinism_test"
+      "retrieval": "trace_b5f995f3af8355c3",
+      "synthesis": "trace_b5f995f3af8355c3",
+      "validation": "trace_b5f995f3af8355c3"
     },
-    "trace_id": "phase2_determinism_test",
+    "trace_id": "trace_b5f995f3af8355c3",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
   },
   "claim_evidence_bindings": [
     {
       "canonical_object_id": "uko:none:unverified",
-      "claim_id": "claim_431383ace041",
+      "claim_id": "claim_12a3a64134f2",
       "claim_text": "I do not have verified knowledge to answer this question.",
       "confidence": 0.0,
       "provenance_hash": "255caf2d8dacabcf3302caabb080ce0e42c75256473238fa8bc8a33e43565109",
@@ -81,15 +81,15 @@
     "disagreement_aware_synthesis": "No valid signals available.",
     "multi_source_reinforcement": 0.0
   },
-  "detected_domain": "gitas",
+  "detected_domain": "puranas",
   "domain_resolution": {
-    "domain": "gitas",
+    "domain": "puranas",
     "method": "retriever"
   },
   "downstream_execution": {
     "consumer": "TANTRA_EXECUTION_CHAIN",
     "status": "REJECTED_NO_DOWNSTREAM_ACTION",
-    "trace_id": "phase2_determinism_test"
+    "trace_id": "trace_b5f995f3af8355c3"
   },
   "enforcement_stats": {
     "rejected_entries": 25,
@@ -97,10 +97,10 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-10-02T05:21:35.537613Z",
+  "generated_at": "2026-10-02T05:22:59.352277Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
-    "artifact_hash": "6556e9bf0314ebefc5236547ac93fc2ba6ca8bdd580fdaf1f4c82851bde8fc64",
+    "artifact_hash": "6f6063c0ae813fb0e4d0db84945a5be27958737aba330246a021276185387347",
     "authority_boundary": {
       "free_form_output": false,
       "may_introduce_unreferenced_claims": false,
@@ -129,10 +129,10 @@
     "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
     "references": {
       "accepted_signal_ids": [],
-      "retrieval_trace_id": "phase2_determinism_test",
-      "retrieval_truth_hash": "e38647b23468fb05d91005453d7e0166b5547fdc50dda0dbfb607189ecda8f09"
+      "retrieval_trace_id": "trace_b5f995f3af8355c3",
+      "retrieval_truth_hash": "0167617896c9138ccf290014413f7659b0569324293772b83093561cabd6697d"
     },
-    "trace_id": "phase2_determinism_test",
+    "trace_id": "trace_b5f995f3af8355c3",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
   },
   "knowledge_ids_used": [],
@@ -143,10 +143,10 @@
     "paths": [],
     "source": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/ontology/seed_entities.json",
     "start_nodes": [
-      "bhagavad gita"
+      "padma purana"
     ],
     "target_nodes": [
-      "bhagavad gita"
+      "padma purana"
     ]
   },
   "output_contract": {
@@ -154,9 +154,9 @@
     "downstream_consumable": true,
     "free_form_output": false,
     "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
-    "trace_id": "phase2_determinism_test"
+    "trace_id": "trace_b5f995f3af8355c3"
   },
-  "query": "What is the Bhagavad Gita?",
+  "query": "What agricultural practices are mentioned in the Padma Purana?",
   "reasoning": "No signals passed domain+tag+query validation.",
   "reasoning_path": [
     "query_received",
@@ -174,11 +174,11 @@
   "rejected_signals": [],
   "retrieval_run_record": {
     "candidate_count": 0,
-    "canonical_concept_id": "gitas",
+    "canonical_concept_id": "puranas",
     "claim_bindings": [
       {
         "canonical_object_id": "uko:none:unverified",
-        "claim_id": "claim_431383ace041",
+        "claim_id": "claim_12a3a64134f2",
         "claim_text": "I do not have verified knowledge to answer this question.",
         "confidence": 0.0,
         "provenance_hash": "255caf2d8dacabcf3302caabb080ce0e42c75256473238fa8bc8a33e43565109",
@@ -189,33 +189,33 @@
     ],
     "deduplicated_candidate_count": 0,
     "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
-    "query_id": "query_28aa99ee6ce5",
-    "replay_id": "replay_8fb33626d056edf0",
+    "query_id": "query_47ea2b93d23d",
+    "replay_id": "replay_b69122f4502991bc",
     "replay_safe": true,
-    "retrieval_run_id": "run_18dc564b020e",
+    "retrieval_run_id": "run_b893c7e5599a",
     "selected_evidence": [],
     "semantic_scope": "general",
-    "trace_id": "phase2_determinism_test",
+    "trace_id": "trace_b5f995f3af8355c3",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
   },
   "retrieval_truth_payload": {
     "accepted_signal_ids": [],
     "accepted_signals": [],
-    "artifact_hash": "e38647b23468fb05d91005453d7e0166b5547fdc50dda0dbfb607189ecda8f09",
+    "artifact_hash": "0167617896c9138ccf290014413f7659b0569324293772b83093561cabd6697d",
     "domain_resolution": {
-      "domain": "gitas",
+      "domain": "puranas",
       "method": "retriever"
     },
-    "generated_at": "2026-10-02T05:21:35.537613Z",
+    "generated_at": "2026-10-02T05:22:59.352277Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
-    "query": "What is the Bhagavad Gita?",
+    "query": "What agricultural practices are mentioned in the Padma Purana?",
     "raw_signal_count": 0,
     "rejected_signal_ids": [],
     "rejected_signals": [],
     "source_lineage": [],
-    "trace_id": "phase2_determinism_test"
+    "trace_id": "trace_b5f995f3af8355c3"
   },
   "selected_evidence": [],
   "semantic_memory": {
@@ -247,10 +247,10 @@
         "entities_touched": [],
         "event_type": "semantic_mutation_evaluated",
         "memory_classification": "transient",
-        "trace_id": "phase2_determinism_test",
-        "updated_at": "2026-10-02T05:04:58.815429Z"
+        "trace_id": "trace_b5f995f3af8355c3",
+        "updated_at": "2026-10-02T05:22:59.403817Z"
       },
-      "event_hash": "b07b6bd89c5ac44676426a56d8ec644536b29ecc444097fb0a8fc1a537aa3c51",
+      "event_hash": "7b8cbd3da561b42e898c3509a28da4e22feaa4dab80ca4ef43868e6ca8c86480",
       "event_log_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_events.jsonl",
       "governance_decision": {
         "canonical_authority_granted": false,
@@ -273,34 +273,34 @@
         ],
         "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
       },
-      "idempotent_replay": true,
+      "idempotent_replay": false,
       "lineage_traceable": true,
-      "mutation_id": "edca3ffb3c7f24fde3ca0ae693bf38cca4b823964b08098512d75560ba4897a6",
+      "mutation_id": "b3537c12d3fc5c8539161b1bfed6675652c476d1d6f5293f6602626b217127df",
       "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "8a4673dab36b89e406b87db8e6d4d0ed306291c79c1a0cec4526b7fe2ece5367",
+        "last_event_hash": "7b8cbd3da561b42e898c3509a28da4e22feaa4dab80ca4ef43868e6ca8c86480",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "a4e1e1c1172e01ed16003f631fa76390ca840e973812a238ec7c310c3211688b",
-      "transient_event_count": 581
+      "state_hash": "b5940f4702f2b6cbf83e5f5721f823d853f5e70d272e031c2f7bac6e67b5657a",
+      "transient_event_count": 582
     },
     "entity_continuity": {},
     "event": {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "b07b6bd89c5ac44676426a56d8ec644536b29ecc444097fb0a8fc1a537aa3c51",
+      "constitutional_event_hash": "7b8cbd3da561b42e898c3509a28da4e22feaa4dab80ca4ef43868e6ca8c86480",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
-      "trace_id": "phase2_determinism_test",
+      "trace_id": "trace_b5f995f3af8355c3",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-02T05:21:36.155774Z",
-      "user_id": "ecosystem_runtime"
+      "updated_at": "2026-10-02T05:22:59.743358Z",
+      "user_id": "anonymous"
     },
     "observable": true,
     "replayable": true,
@@ -309,70 +309,70 @@
     "unresolved_threads": [
       {
         "contradiction_pressure": 0.0,
-        "query": "What is the Bhagavad Gita?",
+        "query": "What agricultural practices are mentioned in the Padma Purana?",
         "rejected_signal_count": 0,
         "state": "open",
-        "trace_id": "phase2_determinism_test",
-        "updated_at": "2026-10-02T05:21:36.155774Z",
-        "user_id": "ecosystem_runtime",
+        "trace_id": "trace_b5f995f3af8355c3",
+        "updated_at": "2026-10-02T05:22:59.743358Z",
+        "user_id": "anonymous",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-10-02T05:21:36.155774Z",
-      "queries": 603,
+      "last_seen": "2026-10-02T05:22:59.743358Z",
+      "queries": 51,
       "trace_ids": [
-        "ecosystem_a00a15cc1502",
-        "ecosystem_20dd33cc96b6",
-        "ecosystem_960f40588be2",
-        "ecosystem_ca46e7f54a6a",
-        "ecosystem_35b3dca447b5",
-        "ecosystem_2bc8f07844bc",
-        "ecosystem_3e43d1ac0f3d",
-        "fault_injection_determinism_check",
-        "ecosystem_ab933d1e0bd2",
-        "ecosystem_22a12850f7ac",
-        "ecosystem_54aa97cc5775",
-        "tantra_sdk_runtime_test",
-        "ecosystem_b7f98a0d5073",
-        "ecosystem_469a064e2981",
-        "ecosystem_replay_test",
-        "ecosystem_mitra_test",
-        "test_sanskrit_dharma",
-        "ecosystem_acceptance_live",
-        "ecosystem_02d2f408057f",
-        "ecosystem_a43f39855627",
-        "phase2_e2e_test",
-        "phase2_replay_test",
-        "phase2_mitra_test",
-        "phase2_proof_emit_test",
-        "phase2_replay_emit_test",
-        "contract_trace_abc",
-        "mitra_trace_xyz",
-        "phase2_determinism_test",
-        "phase2_hash_chain_test",
-        "schema_stable_1",
-        "ecosystem_5626eaffcd74",
-        "ecosystem_3df5a7eaa20e",
-        "ecosystem_e9148dc8f9c3",
-        "ecosystem_e670d357af03",
-        "ecosystem_3fd9ed924a65",
-        "ecosystem_77914c475024",
-        "ecosystem_2edbd34253d7",
-        "ecosystem_0674d98e8a7c",
-        "ecosystem_f9de737d4ddf",
-        "ecosystem_4679b2ae64cd",
-        "ecosystem_228214212b14",
-        "ecosystem_58469b222c82",
-        "ecosystem_cad7b36eaa65",
-        "ecosystem_eb07ff9a2eea",
-        "ecosystem_aba258be3cbb",
-        "ecosystem_ac74380d9833",
-        "ecosystem_46b609792b50",
-        "ecosystem_5a5dc8c6e13b",
-        "ecosystem_95827dfff924",
-        "ecosystem_1f739e325095"
+        "trace_60bfedfcc24b5c3c",
+        "trace_5414d1c00f545657",
+        "trace_981abcfbd0e453b9",
+        "trace_74a659edb7df59d0",
+        "trace_07aafb6d784c53cb",
+        "trace_cb83b3258cd75bc6",
+        "trace_53fc47b7fef55f42",
+        "trace_370421f8dd445b6b",
+        "trace_84eb0c2eabac5098",
+        "trace_fe93c60db1115856",
+        "trace_a399177050625afc",
+        "trace_656c0fe3ae0c5067",
+        "trace_f981d085ece95df4",
+        "trace_add88fa25d3a5e45",
+        "trace_64c53a60e14a52ae",
+        "trace_7228cbdd955a5e34",
+        "trace_6cb439bf77a3565f",
+        "trace_78d640b4381a5c11",
+        "trace_27e9fba4df8b5af7",
+        "trace_2fc49518e5a454f4",
+        "trace_cb90d1ebd09e5987",
+        "trace_ea1d5a96b9965bbf",
+        "trace_df30f66706615615",
+        "trace_03b560ed98aa5467",
+        "trace_cd867678907e5935",
+        "trace_d2765bbb427e57da",
+        "trace_a77e63332ecb5418",
+        "trace_224b93828a0a589e",
+        "trace_56a825c198a059b6",
+        "trace_8870dc4a247d5342",
+        "trace_5ee00d4905315b7c",
+        "trace_db4e7642933158dc",
+        "diagnose_3682780330642026904",
+        "diagnose_2900449613254506430",
+        "trace_6c58b4b2ece057a5",
+        "trace_b3d9dd09c4dc5346",
+        "trace_b7a747ec5daa5a37",
+        "trace_5c3a02e0b628530f",
+        "trace_fe7478abcd4551c5",
+        "trace_c4d7a16de3d4550c",
+        "trace_cbc4d3121de251d7",
+        "trace_0f252b658326531d",
+        "trace_c34275207d475c91",
+        "trace_a43dfc292cce54fd",
+        "trace_dae30c72c7595ce6",
+        "trace_529e16697a57520d",
+        "trace_2d5769544ddf5cc9",
+        "trace_fda74279ebc255fa",
+        "trace_03beb7eca6415918",
+        "trace_b5f995f3af8355c3"
       ]
     }
   },
@@ -380,13 +380,13 @@
   "signals_found": 0,
   "signals_rejected": 0,
   "synthesis_mode": "REJECTED_NO_SYNTHESIS",
-  "trace_id": "phase2_determinism_test",
+  "trace_id": "trace_b5f995f3af8355c3",
   "truth_interpretation_link": {
     "boundary_status": "ENFORCED",
-    "interpretation_hash": "6556e9bf0314ebefc5236547ac93fc2ba6ca8bdd580fdaf1f4c82851bde8fc64",
+    "interpretation_hash": "6f6063c0ae813fb0e4d0db84945a5be27958737aba330246a021276185387347",
     "interpretation_references_retrieval": true,
-    "retrieval_truth_hash": "e38647b23468fb05d91005453d7e0166b5547fdc50dda0dbfb607189ecda8f09",
-    "trace_id": "phase2_determinism_test"
+    "retrieval_truth_hash": "0167617896c9138ccf290014413f7659b0569324293772b83093561cabd6697d",
+    "trace_id": "trace_b5f995f3af8355c3"
   },
   "verification_status": "NO_VERIFIED_KNOWLEDGE"
 }

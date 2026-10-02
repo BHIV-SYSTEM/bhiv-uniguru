@@ -66,7 +66,7 @@
       "memory_classification": "canonical",
       "trace_id": "schema_stable_1",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-02T05:05:05.806996Z",
+      "updated_at": "2026-10-02T05:21:41.397897Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -107,7 +107,7 @@
         }
       }
     ],
-    "timestamp": "2026-10-02T05:05:05.667613Z",
+    "timestamp": "2026-10-02T05:21:41.149224Z",
     "trace_continuity": {
       "bucket_proof": "schema_stable_1",
       "contract_emission": "schema_stable_1",
@@ -221,7 +221,7 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-10-02T05:05:05.667613Z",
+  "generated_at": "2026-10-02T05:21:41.149224Z",
   "interpretation_payload": {
     "answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation.",
     "artifact_hash": "5f9975df89886f15046b7f7c19cc486f69bffcfed64f680805a8c3536490be21",
@@ -1442,7 +1442,7 @@
       ],
       "method": "canonical_entity_majority"
     },
-    "generated_at": "2026-10-02T05:05:05.667613Z",
+    "generated_at": "2026-10-02T05:21:41.149224Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -2305,20 +2305,20 @@
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "1bb72778f1df00da940426ba3aa4697f280d65cd84380e0bf9e432dd61370bea",
+        "last_event_hash": "8a4673dab36b89e406b87db8e6d4d0ed306291c79c1a0cec4526b7fe2ece5367",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "1573c539371fbd5a53a99ba98382608fe0027178fec391fcd6d3e17115291364",
-      "transient_event_count": 568
+      "state_hash": "a4e1e1c1172e01ed16003f631fa76390ca840e973812a238ec7c310c3211688b",
+      "transient_event_count": 581
     },
     "entity_continuity": {
       "Assembly": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-10-02T05:05:05.806996Z",
+        "last_seen": "2026-10-02T05:21:41.397897Z",
         "reinforcement_score": 0.5625,
         "source_ids": [
           "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
@@ -2336,7 +2336,7 @@
       "Dharma": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-10-02T05:05:05.806996Z",
+        "last_seen": "2026-10-02T05:21:41.397897Z",
         "reinforcement_score": 0.5625,
         "source_ids": [
           "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
@@ -2364,7 +2364,7 @@
       "memory_classification": "canonical",
       "trace_id": "schema_stable_1",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-02T05:05:05.806996Z",
+      "updated_at": "2026-10-02T05:21:41.397897Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
@@ -2378,17 +2378,16 @@
         "rejected_signal_count": 11,
         "state": "open",
         "trace_id": "schema_stable_1",
-        "updated_at": "2026-10-02T05:05:05.806996Z",
+        "updated_at": "2026-10-02T05:21:41.397897Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "VERIFIED"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-10-02T05:05:05.806996Z",
-      "queries": 584,
+      "last_seen": "2026-10-02T05:21:41.397897Z",
+      "queries": 606,
       "trace_ids": [
-        "ecosystem_5c458221a6e5",
         "ecosystem_a00a15cc1502",
         "ecosystem_20dd33cc96b6",
         "ecosystem_960f40588be2",
@@ -2437,7 +2436,8 @@
         "ecosystem_ac74380d9833",
         "ecosystem_46b609792b50",
         "ecosystem_5a5dc8c6e13b",
-        "ecosystem_95827dfff924"
+        "ecosystem_95827dfff924",
+        "ecosystem_1f739e325095"
       ]
     }
   },
