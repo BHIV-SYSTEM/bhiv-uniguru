@@ -78,8 +78,10 @@ def _index_available() -> bool:
 
 
 class NewRAGEngine:
-    def __init__(self, model_name=None):
-        curr_db, curr_faiss = _resolve_paths()
+    def __init__(self, model_name=None, db_path=None, faiss_path=None, model=None):
+        default_db, default_faiss = _resolve_paths()
+        curr_db = os.fspath(db_path or default_db)
+        curr_faiss = os.fspath(faiss_path or default_faiss)
         if not (os.path.exists(curr_faiss) and os.path.exists(curr_db)):
             raise FileNotFoundError(
                 f"FAISS index missing. Expected {curr_faiss} and {curr_db}. "
@@ -88,10 +90,12 @@ class NewRAGEngine:
 
         import faiss
         import numpy as np
-        from sentence_transformers import SentenceTransformer
 
         model_name = model_name or os.getenv("UNIGURU_EMBEDDING_MODEL", "all-MiniLM-L6-v2")
-        self.model = SentenceTransformer(model_name)
+        if model is None:
+            from sentence_transformers import SentenceTransformer
+            model = SentenceTransformer(model_name)
+        self.model = model
         self.index = faiss.read_index(curr_faiss)
         self.db_path = curr_db
         self.faiss_path = curr_faiss
@@ -120,54 +124,73 @@ class NewRAGEngine:
             pass
         return None
 
-    def retrieve(self, query: str, top_k: int = 20, class_level: str = None, subject: str = None, language: str = None, domain: str = None, doc_type: str = None, topic: str = None):
+    def retrieve(self, query: str, top_k: int = 20, class_level: str = None, subject: str = None, language: str = None, domain: str = None, doc_type: str = None, topic: str = None, source: str = None):
         query_emb = self.model.encode([query])
         self._faiss.normalize_L2(query_emb)
-        search_k = 50 if (class_level or subject or language or domain or doc_type or topic) else top_k
+        search_k = 50 if (class_level or subject or language or domain or doc_type or topic or source) else top_k
         scores, ids = self.index.search(query_emb, search_k)
 
         candidates: List[Dict[str, Any]] = []
         with sqlite3.connect(self.db_path) as conn:
-            for col in ["class_level", "subject", "chapter", "source", "language", "domain", "type", "topic"]:
-                try:
-                    conn.execute(f"ALTER TABLE chunks ADD COLUMN {col} TEXT")
-                except sqlite3.OperationalError:
-                    pass
-                    
+            available_columns = {row[1] for row in conn.execute("PRAGMA table_info(chunks)")}
+            metadata_columns = (
+                "file_name", "page_number", "text", "class_level", "subject", "chapter",
+                "source", "language", "domain", "type", "topic", "document_id", "source_path",
+            )
+            select_columns = ", ".join(
+                column if column in available_columns else f"NULL AS {column}"
+                for column in metadata_columns
+            )
             cur = conn.cursor()
             for score, doc_id in zip(scores[0], ids[0]):
                 if doc_id == -1:
                     continue
                 
-                query_sql = "SELECT file_name, page_number, text, class_level, subject, chapter, source, language, domain, type, topic FROM chunks WHERE id = ?"
+                query_sql = f"SELECT {select_columns} FROM chunks WHERE id = ?"
                 params = [int(doc_id)]
-                
-                if class_level:
+                if class_level and "class_level" in available_columns:
                     query_sql += " AND class_level = ?"
                     params.append(class_level)
-                if subject:
+                elif class_level:
+                    continue
+                if subject and "subject" in available_columns:
                     query_sql += " AND LOWER(subject) = LOWER(?)"
                     params.append(subject)
-                if language:
+                elif subject:
+                    continue
+                if language and "language" in available_columns:
                     query_sql += " AND LOWER(language) = LOWER(?)"
                     params.append(language)
-                if domain:
+                elif language:
+                    continue
+                if domain and "domain" in available_columns:
                     query_sql += " AND LOWER(domain) = LOWER(?)"
                     params.append(domain)
-                if doc_type:
+                elif domain:
+                    continue
+                if doc_type and "type" in available_columns:
                     query_sql += " AND LOWER(type) = LOWER(?)"
                     params.append(doc_type)
-                if topic:
+                elif doc_type:
+                    continue
+                if topic and "topic" in available_columns:
                     query_sql += " AND LOWER(topic) = LOWER(?)"
                     params.append(topic)
+                elif topic:
+                    continue
+                if source and "source" in available_columns:
+                    query_sql += " AND LOWER(source) = LOWER(?)"
+                    params.append(source)
+                elif source:
+                    continue
                     
                 cur.execute(query_sql, tuple(params))
                 row = cur.fetchone()
                 if not row:
                     continue
-                # FAISS IndexFlatL2 returns Euclidean distance. Convert to cosine similarity:
+                # FAISS IndexFlatL2 returns squared L2 distance for normalized vectors.
                 raw_dist = float(score)
-                cosine_sim = float(max(0.0, 1.0 - (raw_dist ** 2) / 2.0)) if raw_dist <= 2.0 else 0.0
+                cosine_sim = float(max(0.0, min(1.0, 1.0 - raw_dist / 2.0))) if raw_dist <= 2.0 else 0.0
                 candidates.append(
                     {
                         "id": int(doc_id),
@@ -182,7 +205,9 @@ class NewRAGEngine:
                             "language": row[7],
                             "domain": row[8],
                             "type": row[9],
-                            "topic": row[10]
+                            "topic": row[10],
+                            "document_id": row[11],
+                            "source_path": row[12],
                         },
                         "score": round(cosine_sim, 4),
                         "raw_l2_distance": round(raw_dist, 4),
@@ -290,8 +315,8 @@ class NewRAGEngine:
 
         return "No relevant context found."
 
-    def answer_question(self, query: str, max_context_chars: int = 4000, top_k: int = 5, class_level: str = None, subject: str = None, language: str = None, domain: str = None, doc_type: str = None, topic: str = None):
-        retrieved = self.retrieve(query, top_k=20, class_level=class_level, subject=subject, language=language, domain=domain, doc_type=doc_type, topic=topic)
+    def answer_question(self, query: str, max_context_chars: int = 4000, top_k: int = 5, class_level: str = None, subject: str = None, language: str = None, domain: str = None, doc_type: str = None, topic: str = None, source: str = None):
+        retrieved = self.retrieve(query, top_k=20, class_level=class_level, subject=subject, language=language, domain=domain, doc_type=doc_type, topic=topic, source=source)
         if not retrieved:
             return {"answer": "No relevant context found.", "retrieved": []}
 

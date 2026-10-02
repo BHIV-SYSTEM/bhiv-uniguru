@@ -17,17 +17,17 @@
       "rejected_count": 12
     },
     "event": "tantra_uniguru_intelligence_contract",
-    "interpretation_hash": "affcf7ff6bdd12a1d8a3c8e4150872e93360d380d394b197160ca2e79adccc39",
+    "interpretation_hash": "79b72f9fff9d61ff5bd9848c21750bc34bc75d1744d6579e0e8f2ada498e0dfd",
     "memory_event": {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "487cfec4ae0d2bfee655cd41ff784b6d167ac6fc20a226b9ca77ac102500f91c",
+      "constitutional_event_hash": "c49700d5c2ebb08173690f2b9e1b035c71525e97ab5ea82a9a6506c299166400",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
       "trace_id": "mitra_trace_xyz",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T16:25:34.858637Z",
+      "updated_at": "2026-10-02T05:04:57.657336Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -44,9 +44,9 @@
       "signal_eb60a8e8b4c2",
       "signal_16517055e77e"
     ],
-    "retrieval_truth_hash": "8586ff0ab96d93b60e56986641ed3752cb804399ba8fbb181d631c6faf15903a",
+    "retrieval_truth_hash": "ae98dad1bbb22997cc7f4568132f90aee083f9b20bcc4220b9f542e1cadf2a0c",
     "semantic_path": [],
-    "timestamp": "2026-09-30T16:25:34.668755Z",
+    "timestamp": "2026-10-02T05:04:57.495363Z",
     "trace_continuity": {
       "bucket_proof": "mitra_trace_xyz",
       "contract_emission": "mitra_trace_xyz",
@@ -123,10 +123,10 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-09-30T16:25:34.668755Z",
+  "generated_at": "2026-10-02T05:04:57.495363Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
-    "artifact_hash": "affcf7ff6bdd12a1d8a3c8e4150872e93360d380d394b197160ca2e79adccc39",
+    "artifact_hash": "79b72f9fff9d61ff5bd9848c21750bc34bc75d1744d6579e0e8f2ada498e0dfd",
     "authority_boundary": {
       "free_form_output": false,
       "may_introduce_unreferenced_claims": false,
@@ -156,7 +156,7 @@
     "references": {
       "accepted_signal_ids": [],
       "retrieval_trace_id": "mitra_trace_xyz",
-      "retrieval_truth_hash": "8586ff0ab96d93b60e56986641ed3752cb804399ba8fbb181d631c6faf15903a"
+      "retrieval_truth_hash": "ae98dad1bbb22997cc7f4568132f90aee083f9b20bcc4220b9f542e1cadf2a0c"
     },
     "trace_id": "mitra_trace_xyz",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
@@ -167,7 +167,7 @@
     "deterministic": true,
     "max_hops": 5,
     "paths": [],
-    "source": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/ontology/seed_entities.json",
+    "source": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/ontology/seed_entities.json",
     "start_nodes": [
       "yoga"
     ],
@@ -320,6 +320,7 @@
         "entity_overlap": 1.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Yoga",
@@ -369,6 +370,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_1f2412a66c91",
@@ -463,6 +465,7 @@
         "missing_required_entities": [
           "Yoga"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Yoga",
@@ -592,6 +595,7 @@
         "missing_required_entities": [
           "Yoga"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Yoga",
@@ -712,6 +716,7 @@
         "missing_required_entities": [
           "Yoga"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Yoga",
@@ -761,6 +766,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_7f2a293375f9",
@@ -799,6 +805,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_ce3744fca9c2",
@@ -822,6 +829,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_0c86e2873bfb",
@@ -845,6 +853,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_e52fa52f9a1c",
@@ -868,6 +877,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_0a775da12718",
@@ -891,6 +901,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_eb60a8e8b4c2",
@@ -914,6 +925,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_16517055e77e",
@@ -1088,7 +1100,7 @@
   "retrieval_truth_payload": {
     "accepted_signal_ids": [],
     "accepted_signals": [],
-    "artifact_hash": "8586ff0ab96d93b60e56986641ed3752cb804399ba8fbb181d631c6faf15903a",
+    "artifact_hash": "ae98dad1bbb22997cc7f4568132f90aee083f9b20bcc4220b9f542e1cadf2a0c",
     "domain_resolution": {
       "confidence": 1.0,
       "domain": "dharma_systems",
@@ -1106,7 +1118,7 @@
       ],
       "method": "canonical_entity_majority"
     },
-    "generated_at": "2026-09-30T16:25:34.668755Z",
+    "generated_at": "2026-10-02T05:04:57.495363Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -1249,6 +1261,7 @@
           "entity_overlap": 1.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Yoga",
@@ -1298,6 +1311,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_1f2412a66c91",
@@ -1392,6 +1406,7 @@
           "missing_required_entities": [
             "Yoga"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Yoga",
@@ -1521,6 +1536,7 @@
           "missing_required_entities": [
             "Yoga"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Yoga",
@@ -1641,6 +1657,7 @@
           "missing_required_entities": [
             "Yoga"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Yoga",
@@ -1690,6 +1707,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_7f2a293375f9",
@@ -1728,6 +1746,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_ce3744fca9c2",
@@ -1751,6 +1770,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_0c86e2873bfb",
@@ -1774,6 +1794,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_e52fa52f9a1c",
@@ -1797,6 +1818,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_0a775da12718",
@@ -1820,6 +1842,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_eb60a8e8b4c2",
@@ -1843,6 +1866,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_16517055e77e",
@@ -2013,7 +2037,7 @@
         "Vedas",
         "Yoga"
       ],
-      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "checkpoint_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
       "contradiction_event_count": 1,
       "event": {
         "canonical_authority_granted": false,
@@ -2022,10 +2046,10 @@
         "event_type": "semantic_mutation_evaluated",
         "memory_classification": "transient",
         "trace_id": "mitra_trace_xyz",
-        "updated_at": "2026-09-05T18:03:53.336530Z"
+        "updated_at": "2026-10-02T05:04:57.525212Z"
       },
-      "event_hash": "487cfec4ae0d2bfee655cd41ff784b6d167ac6fc20a226b9ca77ac102500f91c",
-      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "event_hash": "c49700d5c2ebb08173690f2b9e1b035c71525e97ab5ea82a9a6506c299166400",
+      "event_log_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_events.jsonl",
       "governance_decision": {
         "canonical_authority_granted": false,
         "confidence_floor": 0.55,
@@ -2049,39 +2073,39 @@
         ],
         "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
       },
-      "idempotent_replay": true,
+      "idempotent_replay": false,
       "lineage_traceable": true,
-      "mutation_id": "76c3caa5d4abc241e8c525af46fe3e28ff0a9463c5f4cacef6176d2edb943bef",
-      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "mutation_id": "2de991a442b3eefc3998192c57acd620f013b38973c180ef78843db141e4a6f8",
+      "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "f210895ef778e63aac0ccc222eb08d2d6b608dcede8c1184cab05c4af6e664a3",
+        "last_event_hash": "c49700d5c2ebb08173690f2b9e1b035c71525e97ab5ea82a9a6506c299166400",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "5eb48d2974d77a3614b1deec2617d3b332ec80f58df8f58eda2ee941c1402157",
-      "transient_event_count": 549
+      "state_hash": "e7864310e7a381c6b0af2a7e49c37d7d6f3dded53c9a0618aa0d3400d36947df",
+      "transient_event_count": 566
     },
     "entity_continuity": {},
     "event": {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "487cfec4ae0d2bfee655cd41ff784b6d167ac6fc20a226b9ca77ac102500f91c",
+      "constitutional_event_hash": "c49700d5c2ebb08173690f2b9e1b035c71525e97ab5ea82a9a6506c299166400",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
       "trace_id": "mitra_trace_xyz",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T16:25:34.858637Z",
+      "updated_at": "2026-10-02T05:04:57.657336Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
     "replayable": true,
     "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
-    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "state_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/semantic_memory_state.json",
     "unresolved_threads": [
       {
         "contradiction_pressure": 0.0,
@@ -2089,18 +2113,16 @@
         "rejected_signal_count": 12,
         "state": "open",
         "trace_id": "mitra_trace_xyz",
-        "updated_at": "2026-09-30T16:25:34.858637Z",
+        "updated_at": "2026-10-02T05:04:57.657336Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-09-30T16:25:34.858637Z",
-      "queries": 517,
+      "last_seen": "2026-10-02T05:04:57.657336Z",
+      "queries": 579,
       "trace_ids": [
-        "ecosystem_5f921ae7c649",
-        "ecosystem_6222dea31647",
         "ecosystem_5c458221a6e5",
         "ecosystem_a00a15cc1502",
         "ecosystem_20dd33cc96b6",
@@ -2148,7 +2170,9 @@
         "ecosystem_eb07ff9a2eea",
         "ecosystem_aba258be3cbb",
         "ecosystem_ac74380d9833",
-        "ecosystem_46b609792b50"
+        "ecosystem_46b609792b50",
+        "ecosystem_5a5dc8c6e13b",
+        "ecosystem_95827dfff924"
       ]
     }
   },
@@ -2159,9 +2183,9 @@
   "trace_id": "mitra_trace_xyz",
   "truth_interpretation_link": {
     "boundary_status": "ENFORCED",
-    "interpretation_hash": "affcf7ff6bdd12a1d8a3c8e4150872e93360d380d394b197160ca2e79adccc39",
+    "interpretation_hash": "79b72f9fff9d61ff5bd9848c21750bc34bc75d1744d6579e0e8f2ada498e0dfd",
     "interpretation_references_retrieval": true,
-    "retrieval_truth_hash": "8586ff0ab96d93b60e56986641ed3752cb804399ba8fbb181d631c6faf15903a",
+    "retrieval_truth_hash": "ae98dad1bbb22997cc7f4568132f90aee083f9b20bcc4220b9f542e1cadf2a0c",
     "trace_id": "mitra_trace_xyz"
   },
   "verification_status": "NO_VERIFIED_KNOWLEDGE"

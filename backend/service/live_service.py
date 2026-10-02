@@ -210,6 +210,8 @@ class LiveUniGuruService:
                 "truth_level": ontology_reference.get("truth_level"),
             },
             "reasoning_trace": reasoning_trace,
+            "retrieval_trace": data.get("retrieval_trace"),
+            "verification": data.get("verification"),
             "governance_flags": sealed.get("governance_flags", {}),
             "governance_output": sealed.get("governance_output", {}),
             "verification_status": sealed.get("verification_status"),

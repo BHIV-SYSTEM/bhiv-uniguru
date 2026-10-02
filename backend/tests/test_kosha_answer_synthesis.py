@@ -174,6 +174,53 @@ def test_synthesis_uses_multiple_relevant_records_and_deduplicates_sentences():
     assert "Ayurveda" not in synthesis["answer"]
 
 
+def test_explicit_purana_query_requires_matching_source_and_agriculture_evidence(valid_entries):
+    query = "What agricultural practices are mentioned in the Padma Purana?"
+
+    signals, _domain = KoshaRetriever(valid_entries).retrieve(query)
+    validation = SignalValidator.validate_all(signals, query)
+
+    assert signals == []
+    assert validation["accepted_signals"] == []
+
+
+def test_validator_rejects_wrong_purana_source_even_when_content_mentions_padma():
+    signal = {
+        "signal_id": "wrong-purana-source",
+        "source": "The Narada-Purana, Part 4_ocred.pdf",
+        "content": "The main deity praised in the Padma Purana is Vishnu.",
+        "tags": ["padma", "purana", "vishnu"],
+        "confidence": 0.8,
+    }
+
+    valid, reason, details = SignalValidator.validate_signal(
+        signal,
+        "What agricultural practices are mentioned in the Padma Purana?",
+    )
+
+    assert not valid
+    assert reason == "source_entity_mismatch"
+    assert "padma" in details["missing_source_entities"]
+
+
+def test_validator_rejects_correct_source_without_requested_topic():
+    signal = {
+        "signal_id": "missing-topic",
+        "source": "Padma Purana, Part 4_ocred.pdf",
+        "content": "The main deity praised in the Padma Purana is Vishnu.",
+        "tags": ["padma", "purana", "vishnu"],
+        "confidence": 0.8,
+    }
+
+    valid, reason, _details = SignalValidator.validate_signal(
+        signal,
+        "What agricultural practices are mentioned in the Padma Purana?",
+    )
+
+    assert not valid
+    assert reason == "no_topic_evidence_for_named_source"
+
+
 def test_one_relevant_record_is_used_without_unrelated_accepted_record():
     accepted = [
         _accepted_signal(

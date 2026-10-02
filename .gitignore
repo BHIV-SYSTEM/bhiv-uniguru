@@ -12,6 +12,8 @@ tests/.tmp/
 backend/RAG/chunks.db
 backend/RAG/faiss_index.bin
 backend/RAG/chroma.sqlite3
+backend/RAG/indices/
+backend/RAG/active_index.json
 
 # Node
 node_modules/

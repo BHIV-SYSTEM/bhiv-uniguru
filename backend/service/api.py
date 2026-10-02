@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import asyncio
 import json
 import logging
 import os
@@ -8,8 +9,10 @@ import re
 import sys
 import threading
 import time
+import unicodedata
 import uuid
 from collections import defaultdict, deque
+from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Optional
@@ -98,12 +101,31 @@ class AskRequest(BaseModel):
         return value
 
 
+class DebugRetrievalRequest(BaseModel):
+    query: str = Field(..., min_length=1, max_length=2000)
+
+
+@asynccontextmanager
+async def _app_lifespan(_app):
+    from retrieval.retriever import warm_rag_index
+
+    try:
+        if await asyncio.to_thread(warm_rag_index):
+            logger.info("Active RAG index and embedding model loaded.")
+        else:
+            logger.warning("Active vector index unavailable; lexical retrieval remains enabled.")
+    except Exception:
+        logger.exception("RAG startup warmup failed; lexical retrieval remains enabled.")
+    yield
+
+
 app = FastAPI(
     title="UniGuru Live Reasoning Service",
     version="1.1.0",
     description="Sovereign AI reasoning engine with knowledge base, ontology, and guru management",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    lifespan=_app_lifespan,
 )
 
 _default_cors_origins = [
@@ -1022,6 +1044,66 @@ def health() -> Dict[str, Any]:
     }
 
 
+@app.get("/health/rag", tags=["System Health"], summary="RAG Index Health")
+def health_rag() -> Dict[str, Any]:
+    from retrieval.retriever import get_rag_health
+
+    return get_rag_health()
+
+
+@app.post("/debug/retrieval", tags=["Development"], summary="Inspect Retrieval Candidates")
+def debug_retrieval(request: DebugRetrievalRequest, raw_request: Request) -> Dict[str, Any]:
+    environment = os.getenv("UNIGURU_ENV", "production").strip().lower()
+    debug_enabled = os.getenv("UNIGURU_DEBUG_RETRIEVAL", "false").strip().lower() in {"1", "true", "yes", "on"}
+    if environment not in {"development", "dev", "local", "test"} or not debug_enabled:
+        raise HTTPException(status_code=404, detail="Not found")
+    _enforce_service_auth(raw_request)
+
+    from retrieval.retriever import AdvancedRetriever, get_rag_health
+
+    normalized_query = unicodedata.normalize("NFKC", request.query).strip()
+    retriever = AdvancedRetriever(top_n=30)
+    candidates = retriever.retrieve_multi(normalized_query)
+
+    def _candidate_payload(candidate: Dict[str, Any]) -> Dict[str, Any]:
+        return {
+            "source": candidate.get("source"),
+            "file": candidate.get("file"),
+            "path": candidate.get("path"),
+            "text": str(candidate.get("content") or "")[:2000],
+            "bm25_score": candidate.get("bm25_score", 0.0),
+            "entity_score": candidate.get("entity_score", 0.0),
+            "fusion_score": candidate.get("fusion_score", 0.0),
+            "dense_score": candidate.get("dense_score", 0.0),
+            "evidence_coverage": candidate.get("evidence_coverage", 0.0),
+            "matched_terms": candidate.get("matched_terms", []),
+        }
+
+    return {
+        "normalized_query": normalized_query,
+        "detected_intent": conversation_router.classify(normalized_query).value,
+        "extracted_entities": sorted(retriever._source_entity_terms(normalized_query)),
+        "dense_candidates": [
+            _candidate_payload(candidate)
+            for candidate in sorted(candidates, key=lambda row: row.get("dense_score", 0.0), reverse=True)
+            if candidate.get("dense_score", 0.0) > 0
+        ],
+        "bm25_candidates": [
+            _candidate_payload(candidate)
+            for candidate in sorted(candidates, key=lambda row: row.get("bm25_score", 0.0), reverse=True)
+        ],
+        "entity_candidates": [
+            _candidate_payload(candidate)
+            for candidate in sorted(candidates, key=lambda row: row.get("entity_score", 0.0), reverse=True)
+        ],
+        "fused_candidates": [_candidate_payload(candidate) for candidate in candidates],
+        "filtered_candidates": [_candidate_payload(candidate) for candidate in candidates],
+        "reranked_candidates": [_candidate_payload(candidate) for candidate in candidates],
+        "final_chunks": [_candidate_payload(candidate) for candidate in candidates[:8]],
+        "index_health": get_rag_health(),
+    }
+
+
 @app.get(
     "/ready",
     tags=["System Health"],
@@ -1808,6 +1890,8 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
 class NewRagRequest(BaseModel):
     query: str = Field(..., min_length=1)
     domain: Optional[str] = Field(None, description="Optional domain hint (e.g. agriculture, historical, science, maths, physics)")
+    session_id: Optional[str] = Field(None, max_length=128)
+    caller: Optional[str] = Field(None, max_length=128)
     allow_generated_verse: bool = Field(
         default=False,
         description="If true, generate Sanskrit verse only when no clean canonical verse is found.",
@@ -2434,12 +2518,93 @@ def new_rag_endpoint(request: NewRagRequest, token: HTTPAuthorizationCredentials
         if token.credentials != allowed_key:
             raise HTTPException(status_code=401, detail="Unauthorized Access. Invalid API Key.")
 
-        return _execute_kosha_pipeline(
+        conversation_context = {
+            "session_id": request.session_id,
+            "caller": request.caller,
+        }
+        conversation_state = conversation_router._get_session_memory(conversation_context)
+        is_conversational = conversation_router._conversation_answer(request.query, conversation_state) is not None
+        if is_conversational:
+            conversational = conversation_router.route_query(request.query, conversation_context)
+            answer = str(conversational.get("answer") or "").strip()
+            return {
+                "query": request.query,
+                "answer": answer,
+                "final_answer": answer,
+                "confidence": None,
+                "signals": [],
+                "status": "success",
+                "verification_status": "NOT_REQUIRED",
+                "kosha_attempted": False,
+                "fallback_to_llm": False,
+                "routing": conversational.get("routing"),
+            }
+
+        kosha_result = _execute_kosha_pipeline(
             query=request.query,
             domain_hint=request.domain,
             top_k=5,
             allow_generated_verse=bool(request.allow_generated_verse),
         )
+        if kosha_result.get("verification_status") == "NO_VERIFIED_KNOWLEDGE":
+            hybrid_response = service.ask(
+                user_query=request.query,
+                session_id=request.session_id,
+                context={"caller": request.caller or "new_rag"},
+                allow_web_retrieval=False,
+            )
+            retrieval_trace = hybrid_response.get("retrieval_trace") or {}
+            if (
+                hybrid_response.get("verification_status") in {"VERIFIED", "VERIFIED_PARTIAL", "PARTIAL"}
+                and retrieval_trace.get("match_found")
+                and str(hybrid_response.get("answer") or "").strip()
+            ):
+                evidence_sources = retrieval_trace.get("evidence_sources") or []
+                signals = [
+                    {
+                        "signal_id": f"hybrid_{index + 1}",
+                        "type": "LOCAL_MARKDOWN_EVIDENCE",
+                        "content": evidence.get("excerpt") or "",
+                        "source": evidence.get("path") or evidence.get("file") or "unknown",
+                        "confidence": float(evidence.get("evidence_coverage") or 0.0),
+                        "trace": {
+                            "method": "verified_hybrid_retrieval",
+                            "chunk_id": evidence.get("chunk_id"),
+                            "page_number": evidence.get("page_number"),
+                            "chapter": evidence.get("chapter"),
+                        },
+                    }
+                    for index, evidence in enumerate(evidence_sources)
+                    if isinstance(evidence, dict) and str(evidence.get("excerpt") or "").strip()
+                ]
+                return {
+                    "query": request.query,
+                    "answer": hybrid_response["answer"],
+                    "final_answer": hybrid_response["answer"],
+                    "confidence": None,
+                    "confidence_breakdown": {
+                        "retrieval_score": retrieval_trace.get("retrieval_score"),
+                        "reranker_score": retrieval_trace.get("reranker_score"),
+                        "evidence_coverage": retrieval_trace.get("evidence_coverage"),
+                        "answer_confidence": None,
+                    },
+                    "signals": signals,
+                    "matched_signals": signals,
+                    "verification_status": hybrid_response["verification_status"],
+                    "status": "success",
+                    "kosha_attempted": True,
+                    "fallback_to_llm": False,
+                    "fallback_reason": "no_valid_kosha_signals; verified_hybrid_kb_evidence_found",
+                    "retrieval_trace": retrieval_trace,
+                    "kosha_result": kosha_result,
+                    "output_contract": {
+                        "schema": "UNIGURU_HYBRID_RAG_CONTRACT_V1",
+                        "contract_bound": True,
+                        "downstream_consumable": True,
+                        "free_form_output": False,
+                    },
+                }
+        return kosha_result
     except Exception as e:
         logger.error(f"Error querying FAISS Kosha RAG: {e}")
         raise HTTPException(status_code=500, detail=str(e))

@@ -22,6 +22,8 @@ except ModuleNotFoundError:  # pragma: no cover - defensive fallback for local/t
 
 
 class KoshaRetriever:
+    SOURCE_QUERY_FILLER = {"according", "describe", "describes", "mentioned", "mentions", "says", "say"}
+
     def __init__(self, entries: List[KoshaEntry]):
         self.entries = entries
         self.entity_resolver = CanonicalEntityResolver()
@@ -105,6 +107,24 @@ class KoshaRetriever:
         raw_query_terms = re.findall(r"\b\w+\b", query_normalized)
         query_words = {t for t in raw_query_terms if len(t) > 2 and t not in STOPWORDS}
         query_words.update(self.entity_resolver.expand_terms(query))
+        text_entities = [
+            entity
+            for entity in self.entity_resolver.extract(query)
+            if entity.get("entity_type") == "text"
+        ]
+        source_entity_terms = {
+            term
+            for entity in text_entities
+            for term in re.findall(r"[a-zA-Z0-9]+", str(entity.get("canonical") or "").lower())
+        }
+        source_topic_terms = {
+            term
+            for term in raw_query_terms
+            if len(term) > 2
+            and term not in STOPWORDS
+            and term not in self.SOURCE_QUERY_FILLER
+            and term not in source_entity_terms
+        }
         
         if not domain:
             domain_resolution = self.entity_resolver.resolve_domain(query)
@@ -115,6 +135,27 @@ class KoshaRetriever:
         scored_entries: List[tuple[float, KoshaEntry]] = []
 
         for entry in self.entries:
+            if text_entities:
+                source_words = set(re.findall(r"[a-zA-Z0-9]+", str(entry.source or "").lower()))
+                if not source_entity_terms.issubset(source_words):
+                    continue
+                if source_topic_terms:
+                    candidate_words = set(re.findall(
+                        r"[a-zA-Z0-9]+",
+                        f"{entry.content} {' '.join(entry.tags or [])}".lower(),
+                    ))
+                    candidate_forms = set(candidate_words)
+                    for term in tuple(candidate_words):
+                        if term.endswith("s") and len(term) > 4:
+                            candidate_forms.add(term[:-1])
+                    topic_forms = set(source_topic_terms)
+                    if "agricultural" in topic_forms:
+                        topic_forms.add("agriculture")
+                    elif "agriculture" in topic_forms:
+                        topic_forms.add("agricultural")
+                    if not (candidate_forms & topic_forms):
+                        continue
+
             # Tag match score: proportion of query terms covered by this entry's tags.
             normalized_tags = []
             for tag in entry.tags or []:

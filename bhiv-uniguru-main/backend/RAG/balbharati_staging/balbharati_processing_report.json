@@ -1,0 +1,849 @@
+{
+  "version": "balbharati-20261001T155739.984566Z",
+  "status": "INCOMPLETE_NO_INDEX_WRITTEN",
+  "source_pdf_count": 9,
+  "unique_documents": 7,
+  "duplicate_files_skipped": 2,
+  "pages_total": 682,
+  "native_text_pages": 502,
+  "page_cache_hits": 0,
+  "page_cache_misses": 682,
+  "ocr_pages_required": 164,
+  "ocr_pages_succeeded": 0,
+  "blank_pages": 17,
+  "failed_pages": [
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/english/103050001.pdf",
+      "page": 1,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/english/103050001.pdf",
+      "page": 2,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/english/103050001.pdf",
+      "page": 83,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/english/103050001.pdf",
+      "page": 91,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/english/103050001.pdf",
+      "page": 92,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/marathi/101050001.pdf",
+      "page": 1,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/marathi/101050001.pdf",
+      "page": 2,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/marathi/101050001.pdf",
+      "page": 12,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/marathi/101050001.pdf",
+      "page": 17,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/marathi/101050001.pdf",
+      "page": 60,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/marathi/101050001.pdf",
+      "page": 91,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_1/marathi/101050001.pdf",
+      "page": 92,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_2/marathi/102050001.pdf",
+      "page": 1,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_2/marathi/102050001.pdf",
+      "page": 6,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_2/marathi/102050001.pdf",
+      "page": 91,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_2/marathi/102050001.pdf",
+      "page": 92,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 1,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 2,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 3,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 5,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 7,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 8,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 9,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 10,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 11,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 12,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 13,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 14,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 15,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 16,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 17,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 18,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 19,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 20,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 21,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 22,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 23,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 24,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 25,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 26,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 27,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 28,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 29,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 30,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 31,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 32,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 33,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 34,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 35,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 36,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 37,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 38,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 39,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 40,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 41,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 42,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 43,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 44,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 45,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 46,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 47,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 48,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 49,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 50,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 51,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 52,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 53,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 54,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 55,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 56,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 57,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 58,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 59,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 60,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 61,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 62,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 63,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 64,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 65,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 66,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 67,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 68,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 69,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 70,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 71,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 72,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 73,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 74,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 75,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 76,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 77,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 78,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 79,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 80,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 81,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 82,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 83,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 84,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 85,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 86,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 87,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 88,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 89,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 90,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 91,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 92,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 93,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 94,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 95,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 96,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 97,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 98,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+      "page": 99,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 1,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 3,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 6,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 8,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 12,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 13,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 15,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 23,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 24,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 26,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 27,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 28,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 30,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 31,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 32,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 33,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 36,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 37,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 38,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 39,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 40,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 41,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 42,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 43,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 44,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 45,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 46,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 47,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 48,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 49,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 50,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 51,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 53,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 55,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 58,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 59,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 60,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 61,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 63,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 64,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+      "page": 66,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/marathi/105050001.pdf",
+      "page": 1,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/marathi/105050001.pdf",
+      "page": 2,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/marathi/105050001.pdf",
+      "page": 36,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/marathi/105050001.pdf",
+      "page": 91,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/marathi/105050001.pdf",
+      "page": 92,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/marathi/501000541.pdf",
+      "page": 1,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/marathi/501000541.pdf",
+      "page": 2,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/marathi/501000541.pdf",
+      "page": 5,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/marathi/501000541.pdf",
+      "page": 147,
+      "error": "unavailable: ModuleNotFoundError"
+    },
+    {
+      "source_path": "backend/knowledge/balbharti/class_5/marathi/501000541.pdf",
+      "page": 148,
+      "error": "unavailable: ModuleNotFoundError"
+    }
+  ],
+  "failed_documents": [],
+  "chunks_created": 611,
+  "processed_files": [
+    "backend/knowledge/balbharti/class_1/english/103050001.pdf",
+    "backend/knowledge/balbharti/class_1/marathi/101050001.pdf",
+    "backend/knowledge/balbharti/class_2/marathi/102050001.pdf",
+    "backend/knowledge/balbharti/class_4/marathi/104050001.pdf",
+    "backend/knowledge/balbharti/class_5/history/501000542.pdf",
+    "backend/knowledge/balbharti/class_5/marathi/105050001.pdf",
+    "backend/knowledge/balbharti/class_5/marathi/501000541.pdf"
+  ],
+  "metadata_unverified_documents": 6,
+  "ready_for_index_build": false
+}

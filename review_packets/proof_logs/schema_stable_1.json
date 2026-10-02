@@ -1,5 +1,5 @@
 {
-  "answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation . It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+  "answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation.",
   "bucket_proof": {
     "accepted_signals": [
       "signal_f83cddef0988"
@@ -53,10 +53,10 @@
       "rejected_count": 11
     },
     "event": "tantra_uniguru_intelligence_contract",
-    "interpretation_hash": "bc0d4e7defab7e78d27fe96b214eb759c74d98a210d9bdf8cc1809ba1b06111d",
+    "interpretation_hash": "5f9975df89886f15046b7f7c19cc486f69bffcfed64f680805a8c3536490be21",
     "memory_event": {
       "canonical_authority_granted": true,
-      "constitutional_event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
+      "constitutional_event_hash": "1bb72778f1df00da940426ba3aa4697f280d65cd84380e0bf9e432dd61370bea",
       "contradiction_pressure": 0.0,
       "entities_touched": [
         "Assembly",
@@ -66,7 +66,7 @@
       "memory_classification": "canonical",
       "trace_id": "schema_stable_1",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T16:25:41.502522Z",
+      "updated_at": "2026-10-02T05:05:05.806996Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -82,7 +82,7 @@
       "signal_43ab8d3ac8de",
       "signal_16517055e77e"
     ],
-    "retrieval_truth_hash": "95834ffa4e3969409597d01780e911184fc715f864de81686a4da8ed838a3a73",
+    "retrieval_truth_hash": "d7675f6d2523ae12c5c3508d076ebb288d59fab21bab72f6013e95c4ff2818a3",
     "semantic_path": [
       {
         "domain": "general",
@@ -107,7 +107,7 @@
         }
       }
     ],
-    "timestamp": "2026-09-30T16:25:41.247679Z",
+    "timestamp": "2026-10-02T05:05:05.667613Z",
     "trace_continuity": {
       "bucket_proof": "schema_stable_1",
       "contract_emission": "schema_stable_1",
@@ -123,18 +123,8 @@
   "claim_evidence_bindings": [
     {
       "canonical_object_id": "uko:general:dafb4202df49",
-      "claim_id": "claim_1_5f5a25c7",
-      "claim_text": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation",
-      "confidence": 0.6859569999999999,
-      "provenance_hash": "dafb4202df4948fa68dd08f6d518a958e5550914e9b9054d3c83de3e9a6f3d4e",
-      "source_id": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
-      "text_span": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
-      "verification_status": "VERIFIED"
-    },
-    {
-      "canonical_object_id": "uko:general:dafb4202df49",
-      "claim_id": "claim_2_9dbb3a11",
-      "claim_text": "It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+      "claim_id": "claim_1_8e743a89",
+      "claim_text": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation.",
       "confidence": 0.6859569999999999,
       "provenance_hash": "dafb4202df4948fa68dd08f6d518a958e5550914e9b9054d3c83de3e9a6f3d4e",
       "source_id": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
@@ -231,10 +221,10 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-09-30T16:25:41.247679Z",
+  "generated_at": "2026-10-02T05:05:05.667613Z",
   "interpretation_payload": {
-    "answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation . It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
-    "artifact_hash": "bc0d4e7defab7e78d27fe96b214eb759c74d98a210d9bdf8cc1809ba1b06111d",
+    "answer": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation.",
+    "artifact_hash": "5f9975df89886f15046b7f7c19cc486f69bffcfed64f680805a8c3536490be21",
     "authority_boundary": {
       "free_form_output": false,
       "may_introduce_unreferenced_claims": false,
@@ -300,7 +290,7 @@
         "signal_f83cddef0988"
       ],
       "retrieval_trace_id": "schema_stable_1",
-      "retrieval_truth_hash": "95834ffa4e3969409597d01780e911184fc715f864de81686a4da8ed838a3a73"
+      "retrieval_truth_hash": "d7675f6d2523ae12c5c3508d076ebb288d59fab21bab72f6013e95c4ff2818a3"
     },
     "trace_id": "schema_stable_1",
     "verification_status": "VERIFIED"
@@ -462,7 +452,7 @@
     "deterministic": true,
     "max_hops": 5,
     "paths": [],
-    "source": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/ontology/seed_entities.json",
+    "source": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/ontology/seed_entities.json",
     "start_nodes": [
       "dharma"
     ],
@@ -478,7 +468,7 @@
     "trace_id": "schema_stable_1"
   },
   "query": "What is dharma?",
-  "reasoning": "Accepted signal because tags [], content overlap 1.00, entity overlap 1.00, domain consistency 1.00, and derived confidence 0.594 met deterministic thresholds.",
+  "reasoning": "Answer uses 1 accepted evidence record(s): KOSHA_bf72b8578590 (The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf). Sentences are extracted from retrieved content.",
   "reasoning_path": [
     "query_received",
     "kosha_schema_enforced",
@@ -505,6 +495,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_1f2412a66c91",
@@ -600,6 +591,7 @@
         "missing_required_entities": [
           "Dharma"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Dharma",
@@ -731,6 +723,7 @@
         "missing_required_entities": [
           "Dharma"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Dharma",
@@ -781,6 +774,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_a438c8244240",
@@ -932,6 +926,7 @@
         "missing_required_entities": [
           "Dharma"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Dharma",
@@ -982,6 +977,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_b920dceb8457",
@@ -1005,6 +1001,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_d320e8d2ce62",
@@ -1028,6 +1025,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_248ccce0b0a5",
@@ -1051,6 +1049,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_875b23cbc5bf",
@@ -1074,6 +1073,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_43ab8d3ac8de",
@@ -1097,6 +1097,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_16517055e77e",
@@ -1115,18 +1116,8 @@
     "claim_bindings": [
       {
         "canonical_object_id": "uko:general:dafb4202df49",
-        "claim_id": "claim_1_5f5a25c7",
-        "claim_text": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation",
-        "confidence": 0.6859569999999999,
-        "provenance_hash": "dafb4202df4948fa68dd08f6d518a958e5550914e9b9054d3c83de3e9a6f3d4e",
-        "source_id": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
-        "text_span": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation [2]. It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
-        "verification_status": "VERIFIED"
-      },
-      {
-        "canonical_object_id": "uko:general:dafb4202df49",
-        "claim_id": "claim_2_9dbb3a11",
-        "claim_text": "It outlines the principles and procedures for determining laws and social rules, including the qualifications and composition of a council of Brahmanas that can lay down the law.",
+        "claim_id": "claim_1_8e743a89",
+        "claim_text": "The text that explains law and social rules is the Dharma Sastra Vol 5 Manu English Translation.",
         "confidence": 0.6859569999999999,
         "provenance_hash": "dafb4202df4948fa68dd08f6d518a958e5550914e9b9054d3c83de3e9a6f3d4e",
         "source_id": "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
@@ -1137,7 +1128,7 @@
     "deduplicated_candidate_count": 12,
     "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
     "query_id": "query_ade4cecc234e",
-    "replay_id": "replay_f11853e1581cba63",
+    "replay_id": "replay_0a1e199c5fb3807a",
     "replay_safe": true,
     "retrieval_run_id": "run_ae2513e68a61",
     "selected_evidence": [
@@ -1432,7 +1423,7 @@
         }
       }
     ],
-    "artifact_hash": "95834ffa4e3969409597d01780e911184fc715f864de81686a4da8ed838a3a73",
+    "artifact_hash": "d7675f6d2523ae12c5c3508d076ebb288d59fab21bab72f6013e95c4ff2818a3",
     "domain_resolution": {
       "confidence": 1.0,
       "domain": "dharma_systems",
@@ -1451,7 +1442,7 @@
       ],
       "method": "canonical_entity_majority"
     },
-    "generated_at": "2026-09-30T16:25:41.247679Z",
+    "generated_at": "2026-10-02T05:05:05.667613Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -1483,6 +1474,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_1f2412a66c91",
@@ -1578,6 +1570,7 @@
           "missing_required_entities": [
             "Dharma"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Dharma",
@@ -1709,6 +1702,7 @@
           "missing_required_entities": [
             "Dharma"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Dharma",
@@ -1759,6 +1753,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_a438c8244240",
@@ -1910,6 +1905,7 @@
           "missing_required_entities": [
             "Dharma"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Dharma",
@@ -1960,6 +1956,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_b920dceb8457",
@@ -1983,6 +1980,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_d320e8d2ce62",
@@ -2006,6 +2004,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_248ccce0b0a5",
@@ -2029,6 +2028,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_875b23cbc5bf",
@@ -2052,6 +2052,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_43ab8d3ac8de",
@@ -2075,6 +2076,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_16517055e77e",
@@ -2261,7 +2263,7 @@
         "Vedas",
         "Yoga"
       ],
-      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "checkpoint_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
       "contradiction_event_count": 1,
       "event": {
         "canonical_authority_granted": true,
@@ -2273,10 +2275,10 @@
         "event_type": "semantic_mutation_evaluated",
         "memory_classification": "canonical",
         "trace_id": "schema_stable_1",
-        "updated_at": "2026-09-05T18:03:58.043105Z"
+        "updated_at": "2026-10-02T05:05:04.381764Z"
       },
-      "event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
-      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "event_hash": "1bb72778f1df00da940426ba3aa4697f280d65cd84380e0bf9e432dd61370bea",
+      "event_log_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_events.jsonl",
       "governance_decision": {
         "canonical_authority_granted": true,
         "confidence_floor": 0.55,
@@ -2298,26 +2300,26 @@
       },
       "idempotent_replay": true,
       "lineage_traceable": true,
-      "mutation_id": "4f7d703c3e5aaec2a136079373917dea9572412acf828656cad6e694f89738cf",
-      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "mutation_id": "f668a53a2d23fcb05c09cef1611adb4a7fe807f89c5a9a89c7449fcdc9f3aab1",
+      "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "f210895ef778e63aac0ccc222eb08d2d6b608dcede8c1184cab05c4af6e664a3",
+        "last_event_hash": "1bb72778f1df00da940426ba3aa4697f280d65cd84380e0bf9e432dd61370bea",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "5eb48d2974d77a3614b1deec2617d3b332ec80f58df8f58eda2ee941c1402157",
-      "transient_event_count": 549
+      "state_hash": "1573c539371fbd5a53a99ba98382608fe0027178fec391fcd6d3e17115291364",
+      "transient_event_count": 568
     },
     "entity_continuity": {
       "Assembly": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-09-30T16:25:41.502522Z",
-        "reinforcement_score": 0.5,
+        "last_seen": "2026-10-02T05:05:05.806996Z",
+        "reinforcement_score": 0.5625,
         "source_ids": [
           "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
         ],
@@ -2327,14 +2329,15 @@
           "ecosystem_35b3dca447b5",
           "ecosystem_22a12850f7ac",
           "phase2_mitra_test",
-          "schema_stable_1"
+          "schema_stable_1",
+          "trace_8870dc4a247d5342"
         ]
       },
       "Dharma": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-09-30T16:25:41.502522Z",
-        "reinforcement_score": 0.5,
+        "last_seen": "2026-10-02T05:05:05.806996Z",
+        "reinforcement_score": 0.5625,
         "source_ids": [
           "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
         ],
@@ -2344,13 +2347,14 @@
           "ecosystem_35b3dca447b5",
           "ecosystem_22a12850f7ac",
           "phase2_mitra_test",
-          "schema_stable_1"
+          "schema_stable_1",
+          "trace_8870dc4a247d5342"
         ]
       }
     },
     "event": {
       "canonical_authority_granted": true,
-      "constitutional_event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
+      "constitutional_event_hash": "1bb72778f1df00da940426ba3aa4697f280d65cd84380e0bf9e432dd61370bea",
       "contradiction_pressure": 0.0,
       "entities_touched": [
         "Assembly",
@@ -2360,13 +2364,13 @@
       "memory_classification": "canonical",
       "trace_id": "schema_stable_1",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T16:25:41.502522Z",
+      "updated_at": "2026-10-02T05:05:05.806996Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
     "replayable": true,
     "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
-    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "state_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/semantic_memory_state.json",
     "unresolved_threads": [
       {
         "contradiction_pressure": 0.0,
@@ -2374,18 +2378,16 @@
         "rejected_signal_count": 11,
         "state": "open",
         "trace_id": "schema_stable_1",
-        "updated_at": "2026-09-30T16:25:41.502522Z",
+        "updated_at": "2026-10-02T05:05:05.806996Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "VERIFIED"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-09-30T16:25:41.502522Z",
-      "queries": 523,
+      "last_seen": "2026-10-02T05:05:05.806996Z",
+      "queries": 584,
       "trace_ids": [
-        "ecosystem_5f921ae7c649",
-        "ecosystem_6222dea31647",
         "ecosystem_5c458221a6e5",
         "ecosystem_a00a15cc1502",
         "ecosystem_20dd33cc96b6",
@@ -2433,7 +2435,9 @@
         "ecosystem_eb07ff9a2eea",
         "ecosystem_aba258be3cbb",
         "ecosystem_ac74380d9833",
-        "ecosystem_46b609792b50"
+        "ecosystem_46b609792b50",
+        "ecosystem_5a5dc8c6e13b",
+        "ecosystem_95827dfff924"
       ]
     }
   },
@@ -2467,9 +2471,9 @@
   "trace_id": "schema_stable_1",
   "truth_interpretation_link": {
     "boundary_status": "ENFORCED",
-    "interpretation_hash": "bc0d4e7defab7e78d27fe96b214eb759c74d98a210d9bdf8cc1809ba1b06111d",
+    "interpretation_hash": "5f9975df89886f15046b7f7c19cc486f69bffcfed64f680805a8c3536490be21",
     "interpretation_references_retrieval": true,
-    "retrieval_truth_hash": "95834ffa4e3969409597d01780e911184fc715f864de81686a4da8ed838a3a73",
+    "retrieval_truth_hash": "d7675f6d2523ae12c5c3508d076ebb288d59fab21bab72f6013e95c4ff2818a3",
     "trace_id": "schema_stable_1"
   },
   "verification_status": "VERIFIED"

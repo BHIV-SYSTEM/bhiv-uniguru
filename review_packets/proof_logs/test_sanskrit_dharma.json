@@ -17,17 +17,17 @@
       "rejected_count": 12
     },
     "event": "tantra_uniguru_intelligence_contract",
-    "interpretation_hash": "150d92932276c1e0f387dd196c6b8f41c0ad507a94ecb0b61ab245674431be83",
+    "interpretation_hash": "152174d646fa55bea3a3cf810615fdc1f4ed7edead4993daa0a8037b3171ea28",
     "memory_event": {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
+      "constitutional_event_hash": "98e1b843bdbe68d5fa84a2f5f55273416a9e07ce8122ef210bf54b4b890e962a",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
       "trace_id": "test_sanskrit_dharma",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T16:26:43.190013Z",
+      "updated_at": "2026-10-02T05:07:36.819646Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -44,9 +44,9 @@
       "signal_9ad658d56ead",
       "signal_580ef5a34a5b"
     ],
-    "retrieval_truth_hash": "67b4f2287ae600bd94ae3dea39aeb0cddb504582d690f74365417902b80a6161",
+    "retrieval_truth_hash": "ef29632fccbf654dab20ae8cb4161839f6a47d591bbe9a699333737bef788980",
     "semantic_path": [],
-    "timestamp": "2026-09-30T16:26:42.973157Z",
+    "timestamp": "2026-10-02T05:07:36.392155Z",
     "trace_continuity": {
       "bucket_proof": "test_sanskrit_dharma",
       "contract_emission": "test_sanskrit_dharma",
@@ -112,10 +112,10 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-09-30T16:26:42.973157Z",
+  "generated_at": "2026-10-02T05:07:36.392155Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
-    "artifact_hash": "150d92932276c1e0f387dd196c6b8f41c0ad507a94ecb0b61ab245674431be83",
+    "artifact_hash": "152174d646fa55bea3a3cf810615fdc1f4ed7edead4993daa0a8037b3171ea28",
     "authority_boundary": {
       "free_form_output": false,
       "may_introduce_unreferenced_claims": false,
@@ -145,7 +145,7 @@
     "references": {
       "accepted_signal_ids": [],
       "retrieval_trace_id": "test_sanskrit_dharma",
-      "retrieval_truth_hash": "67b4f2287ae600bd94ae3dea39aeb0cddb504582d690f74365417902b80a6161"
+      "retrieval_truth_hash": "ef29632fccbf654dab20ae8cb4161839f6a47d591bbe9a699333737bef788980"
     },
     "trace_id": "test_sanskrit_dharma",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
@@ -271,6 +271,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.2,
         "signal_id": "signal_77dd0bc08fc2",
@@ -356,6 +357,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.2,
         "signal_id": "signal_9ebec8874da9",
@@ -394,6 +396,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_3f89617db742",
@@ -475,6 +478,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.2,
         "signal_id": "signal_70020d40086f",
@@ -612,6 +616,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.2,
         "signal_id": "signal_5bba5a47a7a7",
@@ -730,6 +735,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.2,
         "signal_id": "signal_de441e6d0f79",
@@ -847,6 +853,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.2,
         "signal_id": "signal_ce8454ca17f9",
@@ -943,6 +950,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.2,
         "signal_id": "signal_72edaa89c736",
@@ -1048,6 +1056,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.2,
         "signal_id": "signal_a0354de7b451",
@@ -1144,6 +1153,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.2,
         "signal_id": "signal_724b9f22abdb",
@@ -1230,6 +1240,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.2,
         "signal_id": "signal_9ad658d56ead",
@@ -1268,6 +1279,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_580ef5a34a5b",
@@ -1457,14 +1469,14 @@
   "retrieval_truth_payload": {
     "accepted_signal_ids": [],
     "accepted_signals": [],
-    "artifact_hash": "67b4f2287ae600bd94ae3dea39aeb0cddb504582d690f74365417902b80a6161",
+    "artifact_hash": "ef29632fccbf654dab20ae8cb4161839f6a47d591bbe9a699333737bef788980",
     "domain_resolution": {
       "confidence": 0.0,
       "domain": "general",
       "entities": [],
       "method": "no_canonical_entity"
     },
-    "generated_at": "2026-09-30T16:26:42.973157Z",
+    "generated_at": "2026-10-02T05:07:36.392155Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -1575,6 +1587,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.2,
           "signal_id": "signal_77dd0bc08fc2",
@@ -1660,6 +1673,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.2,
           "signal_id": "signal_9ebec8874da9",
@@ -1698,6 +1712,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_3f89617db742",
@@ -1779,6 +1794,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.2,
           "signal_id": "signal_70020d40086f",
@@ -1916,6 +1932,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.2,
           "signal_id": "signal_5bba5a47a7a7",
@@ -2034,6 +2051,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.2,
           "signal_id": "signal_de441e6d0f79",
@@ -2151,6 +2169,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.2,
           "signal_id": "signal_ce8454ca17f9",
@@ -2247,6 +2266,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.2,
           "signal_id": "signal_72edaa89c736",
@@ -2352,6 +2372,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.2,
           "signal_id": "signal_a0354de7b451",
@@ -2448,6 +2469,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.2,
           "signal_id": "signal_724b9f22abdb",
@@ -2534,6 +2556,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.2,
           "signal_id": "signal_9ad658d56ead",
@@ -2572,6 +2595,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_580ef5a34a5b",
@@ -2757,7 +2781,7 @@
         "Vedas",
         "Yoga"
       ],
-      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "checkpoint_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
       "contradiction_event_count": 1,
       "event": {
         "canonical_authority_granted": false,
@@ -2766,10 +2790,10 @@
         "event_type": "semantic_mutation_evaluated",
         "memory_classification": "transient",
         "trace_id": "test_sanskrit_dharma",
-        "updated_at": "2026-09-05T18:01:43.814610Z"
+        "updated_at": "2026-10-02T05:07:30.110737Z"
       },
-      "event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
-      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "event_hash": "98e1b843bdbe68d5fa84a2f5f55273416a9e07ce8122ef210bf54b4b890e962a",
+      "event_log_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_events.jsonl",
       "governance_decision": {
         "canonical_authority_granted": false,
         "confidence_floor": 0.55,
@@ -2795,37 +2819,37 @@
       },
       "idempotent_replay": true,
       "lineage_traceable": true,
-      "mutation_id": "34e72f18a910c12973e223f70cb4fead658f1b207243401b5f07f2ee47f61702",
-      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "mutation_id": "47a97ddffa3a62985cf2bd4144f843402a47dc16f84827b7d0b11c9808e8d4bf",
+      "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "f210895ef778e63aac0ccc222eb08d2d6b608dcede8c1184cab05c4af6e664a3",
+        "last_event_hash": "98e1b843bdbe68d5fa84a2f5f55273416a9e07ce8122ef210bf54b4b890e962a",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "5eb48d2974d77a3614b1deec2617d3b332ec80f58df8f58eda2ee941c1402157",
-      "transient_event_count": 549
+      "state_hash": "dfa8bf0a8142e35e7423c279b9c5b027c3a5e60509096c8892f4686c4c829922",
+      "transient_event_count": 571
     },
     "entity_continuity": {},
     "event": {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
+      "constitutional_event_hash": "98e1b843bdbe68d5fa84a2f5f55273416a9e07ce8122ef210bf54b4b890e962a",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
       "trace_id": "test_sanskrit_dharma",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T16:26:43.190013Z",
+      "updated_at": "2026-10-02T05:07:36.819646Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
     "replayable": true,
     "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
-    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "state_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/semantic_memory_state.json",
     "unresolved_threads": [
       {
         "contradiction_pressure": 0.0,
@@ -2833,18 +2857,16 @@
         "rejected_signal_count": 12,
         "state": "open",
         "trace_id": "test_sanskrit_dharma",
-        "updated_at": "2026-09-30T16:26:43.190013Z",
+        "updated_at": "2026-10-02T05:07:36.819646Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-09-30T16:26:43.190013Z",
-      "queries": 529,
+      "last_seen": "2026-10-02T05:07:36.819646Z",
+      "queries": 587,
       "trace_ids": [
-        "ecosystem_5f921ae7c649",
-        "ecosystem_6222dea31647",
         "ecosystem_5c458221a6e5",
         "ecosystem_a00a15cc1502",
         "ecosystem_20dd33cc96b6",
@@ -2892,7 +2914,9 @@
         "ecosystem_eb07ff9a2eea",
         "ecosystem_aba258be3cbb",
         "ecosystem_ac74380d9833",
-        "ecosystem_46b609792b50"
+        "ecosystem_46b609792b50",
+        "ecosystem_5a5dc8c6e13b",
+        "ecosystem_95827dfff924"
       ]
     }
   },
@@ -2903,9 +2927,9 @@
   "trace_id": "test_sanskrit_dharma",
   "truth_interpretation_link": {
     "boundary_status": "ENFORCED",
-    "interpretation_hash": "150d92932276c1e0f387dd196c6b8f41c0ad507a94ecb0b61ab245674431be83",
+    "interpretation_hash": "152174d646fa55bea3a3cf810615fdc1f4ed7edead4993daa0a8037b3171ea28",
     "interpretation_references_retrieval": true,
-    "retrieval_truth_hash": "67b4f2287ae600bd94ae3dea39aeb0cddb504582d690f74365417902b80a6161",
+    "retrieval_truth_hash": "ef29632fccbf654dab20ae8cb4161839f6a47d591bbe9a699333737bef788980",
     "trace_id": "test_sanskrit_dharma"
   },
   "verification_status": "NO_VERIFIED_KNOWLEDGE"

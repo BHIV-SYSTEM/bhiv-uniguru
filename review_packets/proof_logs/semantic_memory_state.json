@@ -3,8 +3,8 @@
     "Assembly": {
       "contradiction_pressure": 0.0,
       "decay_state": "active",
-      "last_seen": "2026-09-30T16:25:41.502522Z",
-      "reinforcement_score": 0.5,
+      "last_seen": "2026-10-02T05:05:05.806996Z",
+      "reinforcement_score": 0.5625,
       "source_ids": [
         "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
       ],
@@ -14,7 +14,8 @@
         "ecosystem_35b3dca447b5",
         "ecosystem_22a12850f7ac",
         "phase2_mitra_test",
-        "schema_stable_1"
+        "schema_stable_1",
+        "trace_8870dc4a247d5342"
       ]
     },
     "Atman": {
@@ -47,8 +48,8 @@
     "Bhagavata Purana": {
       "contradiction_pressure": 0.0,
       "decay_state": "active",
-      "last_seen": "2026-08-29T05:11:26.085486Z",
-      "reinforcement_score": 0.5,
+      "last_seen": "2026-10-02T04:56:11.312900Z",
+      "reinforcement_score": 0.625,
       "source_ids": [
         "The Narada-Purana, Part 4_ocred.pdf"
       ],
@@ -58,7 +59,9 @@
         "ecosystem_bbe95214b5c5",
         "ecosystem_567017d0719e",
         "ecosystem_8bfc06bdaa4a",
-        "ecosystem_960f40588be2"
+        "ecosystem_960f40588be2",
+        "trace_db4e7642933158dc",
+        "diagnose_3682780330642026904"
       ]
     },
     "Brahma": {
@@ -138,8 +141,8 @@
     "Dharma": {
       "contradiction_pressure": 0.0,
       "decay_state": "active",
-      "last_seen": "2026-09-30T16:25:41.502522Z",
-      "reinforcement_score": 0.5,
+      "last_seen": "2026-10-02T05:05:05.806996Z",
+      "reinforcement_score": 0.5625,
       "source_ids": [
         "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf"
       ],
@@ -149,7 +152,8 @@
         "ecosystem_35b3dca447b5",
         "ecosystem_22a12850f7ac",
         "phase2_mitra_test",
-        "schema_stable_1"
+        "schema_stable_1",
+        "trace_8870dc4a247d5342"
       ]
     },
     "Manusmriti": {
@@ -169,8 +173,8 @@
     "Narada Purana": {
       "contradiction_pressure": 0.0,
       "decay_state": "active",
-      "last_seen": "2026-08-29T05:11:26.085486Z",
-      "reinforcement_score": 0.5,
+      "last_seen": "2026-10-02T04:56:11.312900Z",
+      "reinforcement_score": 0.625,
       "source_ids": [
         "The Narada-Purana, Part 4_ocred.pdf"
       ],
@@ -180,14 +184,16 @@
         "ecosystem_bbe95214b5c5",
         "ecosystem_567017d0719e",
         "ecosystem_8bfc06bdaa4a",
-        "ecosystem_960f40588be2"
+        "ecosystem_960f40588be2",
+        "trace_db4e7642933158dc",
+        "diagnose_3682780330642026904"
       ]
     },
     "Narayana": {
       "contradiction_pressure": 0.0,
       "decay_state": "active",
-      "last_seen": "2026-08-29T05:11:26.085486Z",
-      "reinforcement_score": 0.5,
+      "last_seen": "2026-10-02T04:56:11.312900Z",
+      "reinforcement_score": 0.625,
       "source_ids": [
         "The Narada-Purana, Part 4_ocred.pdf"
       ],
@@ -197,14 +203,16 @@
         "ecosystem_bbe95214b5c5",
         "ecosystem_567017d0719e",
         "ecosystem_8bfc06bdaa4a",
-        "ecosystem_960f40588be2"
+        "ecosystem_960f40588be2",
+        "trace_db4e7642933158dc",
+        "diagnose_3682780330642026904"
       ]
     },
     "Padma Purana": {
       "contradiction_pressure": 0.0,
       "decay_state": "active",
-      "last_seen": "2026-08-29T05:11:26.085486Z",
-      "reinforcement_score": 0.5,
+      "last_seen": "2026-10-02T04:56:11.312900Z",
+      "reinforcement_score": 0.625,
       "source_ids": [
         "The Narada-Purana, Part 4_ocred.pdf"
       ],
@@ -214,7 +222,9 @@
         "ecosystem_bbe95214b5c5",
         "ecosystem_567017d0719e",
         "ecosystem_8bfc06bdaa4a",
-        "ecosystem_960f40588be2"
+        "ecosystem_960f40588be2",
+        "trace_db4e7642933158dc",
+        "diagnose_3682780330642026904"
       ]
     },
     "Ramayana": {
@@ -353,927 +363,6 @@
     }
   },
   "events": [
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:41:49.265695Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "195dd0e2ae98f0c9b4b3a4ba955d31e2aef5cab04125fc6257f5ba5b4afd8404",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "contract_trace_abc",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:41:50.357657Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "487cfec4ae0d2bfee655cd41ff784b6d167ac6fc20a226b9ca77ac102500f91c",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "mitra_trace_xyz",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:41:51.394223Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_determinism_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:41:52.453766Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_determinism_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:41:53.487986Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c73cc885c3a596e5b6b4df6cd54d50c901de5b90db618d35df5b7819d621f130",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_hash_chain_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:41:54.585878Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "schema_stable_1",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:41:55.602687Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "schema_stable_1",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:41:57.237810Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "test_sanskrit_dharma",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:42:51.623612Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "test_sanskrit_dharma",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:42:53.464512Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "test_sanskrit_dharma",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:42:55.437220Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "tantra_sdk_runtime_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:42:57.310218Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "73383f32c4f3886ac08c10ad60bbe836e846b97db9aeafa12b75f4e0e594b8e1",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_228214212b14",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:27.267791Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:29.541235Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:31.009114Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "b62d7cbb92658224341424f571e9a37214b18a049dac36609d267cc6fad4749a",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_mitra_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:32.363712Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "2e12be442238beab3f8d4dbf382792cdeb3091b32cdf6cca44b0201cc55e086d",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_e2e_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:50.951239Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f506dee3d9c2e08ea6abccac363f62ec2d7837ed966725d39f207ee24a254fef",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:52.976786Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f506dee3d9c2e08ea6abccac363f62ec2d7837ed966725d39f207ee24a254fef",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:54.946137Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "3399c6db3f721047fe9092f39f92050b60e924d8f52acb2c820f2985d064e762",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "phase2_mitra_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:56.172858Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "7e0066001b00399193052f87736c517cd9f0cd76c5a138f7058db1bf7793f6c1",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_proof_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:57.294666Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:58.466262Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T14:59:59.572462Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "195dd0e2ae98f0c9b4b3a4ba955d31e2aef5cab04125fc6257f5ba5b4afd8404",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "contract_trace_abc",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:00:00.660677Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "487cfec4ae0d2bfee655cd41ff784b6d167ac6fc20a226b9ca77ac102500f91c",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "mitra_trace_xyz",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:00:01.668259Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_determinism_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:00:02.709765Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_determinism_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:00:03.973766Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c73cc885c3a596e5b6b4df6cd54d50c901de5b90db618d35df5b7819d621f130",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_hash_chain_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:00:05.049860Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "schema_stable_1",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:00:06.070582Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "schema_stable_1",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:00:07.419227Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "test_sanskrit_dharma",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:00:59.701086Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "test_sanskrit_dharma",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:01:01.293704Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "test_sanskrit_dharma",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:01:03.060203Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "tantra_sdk_runtime_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:01:04.802439Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "2f6218d2b9dd74724c0de80fa5c344189b760aa82278fab47fb0bbc9e4b4af10",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_58469b222c82",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:53:15.720175Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:53:17.467152Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:53:18.929315Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "b62d7cbb92658224341424f571e9a37214b18a049dac36609d267cc6fad4749a",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_mitra_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:53:20.445517Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "2e12be442238beab3f8d4dbf382792cdeb3091b32cdf6cca44b0201cc55e086d",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_e2e_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:53:38.121489Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f506dee3d9c2e08ea6abccac363f62ec2d7837ed966725d39f207ee24a254fef",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:53:40.501369Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f506dee3d9c2e08ea6abccac363f62ec2d7837ed966725d39f207ee24a254fef",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:53:45.977495Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "3399c6db3f721047fe9092f39f92050b60e924d8f52acb2c820f2985d064e762",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "phase2_mitra_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:53:49.887086Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "7e0066001b00399193052f87736c517cd9f0cd76c5a138f7058db1bf7793f6c1",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_proof_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:53:55.440987Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:53:59.322238Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:54:06.400787Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "195dd0e2ae98f0c9b4b3a4ba955d31e2aef5cab04125fc6257f5ba5b4afd8404",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "contract_trace_abc",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:54:12.041925Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "487cfec4ae0d2bfee655cd41ff784b6d167ac6fc20a226b9ca77ac102500f91c",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "mitra_trace_xyz",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:54:17.492313Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_determinism_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:54:24.314486Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_determinism_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:54:29.222476Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c73cc885c3a596e5b6b4df6cd54d50c901de5b90db618d35df5b7819d621f130",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_hash_chain_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:54:30.556696Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "schema_stable_1",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:54:31.900356Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "schema_stable_1",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:54:33.281345Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "test_sanskrit_dharma",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:55:26.324520Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "test_sanskrit_dharma",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:55:28.128072Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "test_sanskrit_dharma",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:55:29.857595Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "tantra_sdk_runtime_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:55:32.188186Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "fa7d95bd2caa70d3c7041d8aa3912b311f46d6ee660627f5061f5b113082af4e",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_cad7b36eaa65",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:27.679440Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:29.552283Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:30.939421Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "b62d7cbb92658224341424f571e9a37214b18a049dac36609d267cc6fad4749a",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "ecosystem_mitra_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:32.233671Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "2e12be442238beab3f8d4dbf382792cdeb3091b32cdf6cca44b0201cc55e086d",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_e2e_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:50.688157Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f506dee3d9c2e08ea6abccac363f62ec2d7837ed966725d39f207ee24a254fef",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:52.051801Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "f506dee3d9c2e08ea6abccac363f62ec2d7837ed966725d39f207ee24a254fef",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:53.370906Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "3399c6db3f721047fe9092f39f92050b60e924d8f52acb2c820f2985d064e762",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "phase2_mitra_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:54.694711Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "7e0066001b00399193052f87736c517cd9f0cd76c5a138f7058db1bf7793f6c1",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_proof_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:55.716934Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:56.754998Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_replay_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:57.759888Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "195dd0e2ae98f0c9b4b3a4ba955d31e2aef5cab04125fc6257f5ba5b4afd8404",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "contract_trace_abc",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:57:58.997626Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "487cfec4ae0d2bfee655cd41ff784b6d167ac6fc20a226b9ca77ac102500f91c",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "mitra_trace_xyz",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:58:00.076744Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_determinism_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:58:01.115107Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_determinism_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:58:02.425996Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
-      "constitutional_event_hash": "c73cc885c3a596e5b6b4df6cd54d50c901de5b90db618d35df5b7819d621f130",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_hash_chain_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:58:03.503027Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "schema_stable_1",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:58:04.567306Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": true,
-      "constitutional_event_hash": "24318047252928c43579d355812e6c083349bb600909ae548b0b6ecbfc6463c0",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [
-        "Assembly",
-        "Dharma"
-      ],
-      "event": "semantic_memory_update",
-      "memory_classification": "canonical",
-      "trace_id": "schema_stable_1",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T15:58:05.928097Z",
-      "user_id": "ecosystem_runtime"
-    },
     {
       "canonical_authority_granted": false,
       "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
@@ -2839,11 +1928,959 @@
       "unresolved_thread_opened": true,
       "updated_at": "2026-09-30T16:26:44.968579Z",
       "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "2e12be442238beab3f8d4dbf382792cdeb3091b32cdf6cca44b0201cc55e086d",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_e2e_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:09:50.415830Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "f506dee3d9c2e08ea6abccac363f62ec2d7837ed966725d39f207ee24a254fef",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:09:52.998303Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "f506dee3d9c2e08ea6abccac363f62ec2d7837ed966725d39f207ee24a254fef",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:09:55.404806Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "668dedaa38d884029c15037df1a1e1c9b16383dc1b0036ac149f75e055e4864a",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Assembly",
+        "Dharma"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "phase2_mitra_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:09:58.079290Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "7e0066001b00399193052f87736c517cd9f0cd76c5a138f7058db1bf7793f6c1",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_proof_emit_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:09:59.728000Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_emit_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:10:01.068452Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_emit_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:10:02.349875Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "195dd0e2ae98f0c9b4b3a4ba955d31e2aef5cab04125fc6257f5ba5b4afd8404",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "contract_trace_abc",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:10:03.797547Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "487cfec4ae0d2bfee655cd41ff784b6d167ac6fc20a226b9ca77ac102500f91c",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "mitra_trace_xyz",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:10:05.769642Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_determinism_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:10:07.698658Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_determinism_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:10:09.585627Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "c73cc885c3a596e5b6b4df6cd54d50c901de5b90db618d35df5b7819d621f130",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_hash_chain_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:10:10.633303Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "9a56e10311ad3c00026d20d80ba471e9742f7a3d9af118475b73afba05634d04",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Assembly",
+        "Dharma"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "schema_stable_1",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:10:12.135827Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "9a56e10311ad3c00026d20d80ba471e9742f7a3d9af118475b73afba05634d04",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Assembly",
+        "Dharma"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "schema_stable_1",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:10:13.500524Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "82246798a4961cc19cbfbdfd3079263a1b438fdafe13e2e5a9334193411af91f",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "ecosystem_5a5dc8c6e13b",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:44:53.924565Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "ecosystem_replay_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:44:56.476679Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "ecosystem_replay_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:44:58.980753Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "b62d7cbb92658224341424f571e9a37214b18a049dac36609d267cc6fad4749a",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "ecosystem_mitra_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:45:02.018025Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "2e12be442238beab3f8d4dbf382792cdeb3091b32cdf6cca44b0201cc55e086d",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_e2e_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:01.270927Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "f506dee3d9c2e08ea6abccac363f62ec2d7837ed966725d39f207ee24a254fef",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:04.804827Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "f506dee3d9c2e08ea6abccac363f62ec2d7837ed966725d39f207ee24a254fef",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:05.947061Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "668dedaa38d884029c15037df1a1e1c9b16383dc1b0036ac149f75e055e4864a",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Assembly",
+        "Dharma"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "phase2_mitra_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:07.148152Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "7e0066001b00399193052f87736c517cd9f0cd76c5a138f7058db1bf7793f6c1",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_proof_emit_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:08.694784Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_emit_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:10.289855Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_emit_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:12.300408Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "195dd0e2ae98f0c9b4b3a4ba955d31e2aef5cab04125fc6257f5ba5b4afd8404",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "contract_trace_abc",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:13.783724Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "487cfec4ae0d2bfee655cd41ff784b6d167ac6fc20a226b9ca77ac102500f91c",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "mitra_trace_xyz",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:15.229249Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_determinism_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:16.899672Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "c123b19594f6c37b83709322cb5d3eab0cdfec943a4561de7b212b8f821518de",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_determinism_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:18.702718Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "c73cc885c3a596e5b6b4df6cd54d50c901de5b90db618d35df5b7819d621f130",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_hash_chain_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:20.496880Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "9a56e10311ad3c00026d20d80ba471e9742f7a3d9af118475b73afba05634d04",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Assembly",
+        "Dharma"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "schema_stable_1",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:22.978489Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "9a56e10311ad3c00026d20d80ba471e9742f7a3d9af118475b73afba05634d04",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Assembly",
+        "Dharma"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "schema_stable_1",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:46:24.515062Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "test_sanskrit_dharma",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:47:13.309214Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "test_sanskrit_dharma",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:47:14.815254Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "f12f8946d1b52a023d704c1ca2be5c2a545da8833a52fda8647387ab93f89bd0",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "test_sanskrit_dharma",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:47:16.134951Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "tantra_sdk_runtime_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:47:17.696960Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "227abbe0097fa16ae984828ced26ae14070580b407b7d03c0b10352291d86ad0",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Assembly",
+        "Dharma"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_8870dc4a247d5342",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:55:20.086949Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "78ec3a51990e79fe90008efae2e6076703ff54a1bf2d9d4325dc0b908b3da734",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_5ee00d4905315b7c",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:55:20.423329Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "926ff0e2c53ad80de79e8aed110ded41746db32333b4437bcec49ca2c44b3ede",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Bhagavata Purana",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "trace_db4e7642933158dc",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:55:20.780344Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "ee7d1f079552e01f012d8ef12f4445c472be475d874677991b5e7c06a9f3537f",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Bhagavata Purana",
+        "Narada Purana",
+        "Narayana",
+        "Padma Purana"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "diagnose_3682780330642026904",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:56:11.312900Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "7ba69f5e27853a4f946f6677e404a051b138f0567b77ce3911ef4fa7e2c72d97",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "diagnose_2900449613254506430",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:56:11.617668Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "6dec21b8456b1464ee294b935d15d5002bf48766044ec1d72d56faf40c770840",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_6c58b4b2ece057a5",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T04:59:46.472155Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "9c1540b2c8da7ed7d80e9aad388fcf9fd320644e0699159f29eec532e72a9271",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_b3d9dd09c4dc5346",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:01:35.693950Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "8085f8675b2963337fd3a465909bb2f2995298b6b91239adf5a8195df51c30c9",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_b7a747ec5daa5a37",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:01:36.308280Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "745590ca24709fdadfd36ab0f75c0ad6cec4e2ea0a8466cfe8e3a55c9fbdec50",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_5c3a02e0b628530f",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:02:39.778704Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "a90fbb157215f341aa45c2b6ed0e3f42059b4c7cf5421d8ed507f1f3d7a60636",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_fe7478abcd4551c5",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:02:40.492308Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "d0d1af46275d3a178c9cd277679ef44fe0c12f6f6192f01667de543bce4e1135",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "ecosystem_95827dfff924",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:03:11.773264Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "876ddb80e4262433a2f42c657871fd1dc4b1dc4751d36f95e23b151c4ca4a62f",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "ecosystem_replay_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:03:14.540628Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "876ddb80e4262433a2f42c657871fd1dc4b1dc4751d36f95e23b151c4ca4a62f",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "ecosystem_replay_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:03:17.397921Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "5d0fa106d353314555d7ceaf53e5f8f10f1125d999d2d1fffe5d6ca7bea90a0e",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "ecosystem_mitra_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:03:22.309707Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "d18b8d300d5bf272799f939297cbc2ab41110cd55477f1873b985e851c8eb44e",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_e2e_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:04:35.610104Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "d7ecf7b0c7e6e2db80f03147d50978ab9a61058c5cb50d4f9aeb58518454a0d7",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:04:37.945232Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "d7ecf7b0c7e6e2db80f03147d50978ab9a61058c5cb50d4f9aeb58518454a0d7",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:04:39.416135Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "79a8ad116100948f3869a8a1ab9782753111bb3bea349c2b9015f3721d6e3c08",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Assembly",
+        "Dharma"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "phase2_mitra_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:04:41.107450Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "147f5748fccac5aeb9144aa1151ff4cf1e0155bce044aec28eacb91366f09b0a",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_proof_emit_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:04:42.110202Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "55baf84616a4d6799918e5dff7a743e5a7c30c2f5ba640fb86e6611239be0e43",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_emit_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:04:43.431526Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "55baf84616a4d6799918e5dff7a743e5a7c30c2f5ba640fb86e6611239be0e43",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_replay_emit_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:04:50.057576Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "1ba15b6782a2356093ef757aa67a71019ca717e0dfd4a3d7670821a2df019553",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "contract_trace_abc",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:04:56.557344Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "c49700d5c2ebb08173690f2b9e1b035c71525e97ab5ea82a9a6506c299166400",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "mitra_trace_xyz",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:04:57.657336Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "b07b6bd89c5ac44676426a56d8ec644536b29ecc444097fb0a8fc1a537aa3c51",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_determinism_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:04:58.957524Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "b07b6bd89c5ac44676426a56d8ec644536b29ecc444097fb0a8fc1a537aa3c51",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_determinism_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:05:01.483219Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "5c92cddece7e8a2a91130236e97576b1c7017d277e82c528e198b4b15c3993c5",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "phase2_hash_chain_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:05:03.394536Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "1bb72778f1df00da940426ba3aa4697f280d65cd84380e0bf9e432dd61370bea",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Assembly",
+        "Dharma"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "schema_stable_1",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:05:04.557386Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": true,
+      "constitutional_event_hash": "1bb72778f1df00da940426ba3aa4697f280d65cd84380e0bf9e432dd61370bea",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [
+        "Assembly",
+        "Dharma"
+      ],
+      "event": "semantic_memory_update",
+      "memory_classification": "canonical",
+      "trace_id": "schema_stable_1",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:05:05.806996Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "2b169d0b463d8fe2b0f885c16155061946ec0b9ec2cdf6d7177f71adbf6ccc33",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_c4d7a16de3d4550c",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:06:50.907932Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "892d249a0e692f4212097574f8200988e905617cbbf92b305d7ae8308a5a9d5c",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_cbc4d3121de251d7",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:06:52.556830Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "98e1b843bdbe68d5fa84a2f5f55273416a9e07ce8122ef210bf54b4b890e962a",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "test_sanskrit_dharma",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:07:30.564518Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "98e1b843bdbe68d5fa84a2f5f55273416a9e07ce8122ef210bf54b4b890e962a",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "test_sanskrit_dharma",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:07:33.604457Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "98e1b843bdbe68d5fa84a2f5f55273416a9e07ce8122ef210bf54b4b890e962a",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "test_sanskrit_dharma",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:07:36.819646Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "1245bf305b860ab3ae4205b45ccff75ca5bdc104a58b1761ea2332ae2b7c22fd",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "tantra_sdk_runtime_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:07:39.621191Z",
+      "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "591e119ec5b457d75960f40733ccd2586a7756d0dba6d72df5a4db669eee83e1",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_0f252b658326531d",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:09:00.835202Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "762ce13af1e7b98f10ef7ce588667194bc53adb1079e9aee08715f7a85f19deb",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_c34275207d475c91",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:09:01.112686Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "edbedaa62bc475cf9c4e4bfa17e93d128b620183611d0bf7ca08599f75e862eb",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_a43dfc292cce54fd",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:11:28.979635Z",
+      "user_id": "anonymous"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "1b37304ed60997dc648897c2f297b24ca2050b21ab3ab8315037e66a6c1bc1f7",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "trace_dae30c72c7595ce6",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T05:11:29.348457Z",
+      "user_id": "anonymous"
     }
   ],
   "load_warning": "Previous memory state was unreadable; started observable empty state.",
   "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
   "unresolved_threads": {
+    "anonymous:diagnose_2900449613254506430": {
+      "contradiction_pressure": 0.0,
+      "query": "What is Karma Yoga?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "diagnose_2900449613254506430",
+      "updated_at": "2026-10-02T04:56:11.617668Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:diagnose_3682780330642026904": {
+      "contradiction_pressure": 0.0,
+      "query": "What agricultural practices are mentioned in the Padma Purana?",
+      "rejected_signal_count": 11,
+      "state": "open",
+      "trace_id": "diagnose_3682780330642026904",
+      "updated_at": "2026-10-02T04:56:11.312900Z",
+      "user_id": "anonymous",
+      "verification_status": "VERIFIED"
+    },
     "anonymous:trace_03b560ed98aa5467": {
       "contradiction_pressure": 0.0,
       "query": "Explain Karma and rebirth according to Hindu texts",
@@ -2861,6 +2898,16 @@
       "state": "open",
       "trace_id": "trace_07aafb6d784c53cb",
       "updated_at": "2026-08-29T05:10:57.208348Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_0f252b658326531d": {
+      "contradiction_pressure": 0.0,
+      "query": "What is Karma Yoga?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "trace_0f252b658326531d",
+      "updated_at": "2026-10-02T05:09:00.835202Z",
       "user_id": "anonymous",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
@@ -2944,6 +2991,26 @@
       "user_id": "anonymous",
       "verification_status": "VERIFIED"
     },
+    "anonymous:trace_5c3a02e0b628530f": {
+      "contradiction_pressure": 0.0,
+      "query": "What agricultural practices are mentioned in the Padma Purana?",
+      "rejected_signal_count": 0,
+      "state": "open",
+      "trace_id": "trace_5c3a02e0b628530f",
+      "updated_at": "2026-10-02T05:02:39.778704Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_5ee00d4905315b7c": {
+      "contradiction_pressure": 0.0,
+      "query": "What is Karma Yoga?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "trace_5ee00d4905315b7c",
+      "updated_at": "2026-10-02T04:55:20.423329Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
     "anonymous:trace_60bfedfcc24b5c3c": {
       "contradiction_pressure": 0.0,
       "query": "What does the Mahabharata say about dharma?",
@@ -2971,6 +3038,16 @@
       "state": "open",
       "trace_id": "trace_656c0fe3ae0c5067",
       "updated_at": "2026-08-29T05:11:07.682576Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_6c58b4b2ece057a5": {
+      "contradiction_pressure": 0.0,
+      "query": "What agricultural practices are mentioned in the Padma Purana?",
+      "rejected_signal_count": 0,
+      "state": "open",
+      "trace_id": "trace_6c58b4b2ece057a5",
+      "updated_at": "2026-10-02T04:59:46.472155Z",
       "user_id": "anonymous",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
@@ -3024,6 +3101,16 @@
       "user_id": "anonymous",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
+    "anonymous:trace_8870dc4a247d5342": {
+      "contradiction_pressure": 0.0,
+      "query": "What is Dharma?",
+      "rejected_signal_count": 11,
+      "state": "open",
+      "trace_id": "trace_8870dc4a247d5342",
+      "updated_at": "2026-10-02T04:55:20.086949Z",
+      "user_id": "anonymous",
+      "verification_status": "VERIFIED"
+    },
     "anonymous:trace_981abcfbd0e453b9": {
       "contradiction_pressure": 0.0,
       "query": "Return Upanishads for Bhagavad Gita teachings",
@@ -3041,6 +3128,16 @@
       "state": "open",
       "trace_id": "trace_a399177050625afc",
       "updated_at": "2026-08-29T05:11:06.269451Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_a43dfc292cce54fd": {
+      "contradiction_pressure": 0.0,
+      "query": "What agricultural practices are mentioned in the Padma Purana?",
+      "rejected_signal_count": 0,
+      "state": "open",
+      "trace_id": "trace_a43dfc292cce54fd",
+      "updated_at": "2026-10-02T05:11:28.979635Z",
       "user_id": "anonymous",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
@@ -3064,6 +3161,46 @@
       "user_id": "anonymous",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
+    "anonymous:trace_b3d9dd09c4dc5346": {
+      "contradiction_pressure": 0.0,
+      "query": "What agricultural practices are mentioned in the Padma Purana?",
+      "rejected_signal_count": 0,
+      "state": "open",
+      "trace_id": "trace_b3d9dd09c4dc5346",
+      "updated_at": "2026-10-02T05:01:35.693950Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_b7a747ec5daa5a37": {
+      "contradiction_pressure": 0.0,
+      "query": "What is Karma Yoga?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "trace_b7a747ec5daa5a37",
+      "updated_at": "2026-10-02T05:01:36.308280Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_c34275207d475c91": {
+      "contradiction_pressure": 0.0,
+      "query": "What agricultural practices are mentioned in the Padma Purana?",
+      "rejected_signal_count": 0,
+      "state": "open",
+      "trace_id": "trace_c34275207d475c91",
+      "updated_at": "2026-10-02T05:09:01.112686Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_c4d7a16de3d4550c": {
+      "contradiction_pressure": 0.0,
+      "query": "What agricultural practices are mentioned in the Padma Purana?",
+      "rejected_signal_count": 0,
+      "state": "open",
+      "trace_id": "trace_c4d7a16de3d4550c",
+      "updated_at": "2026-10-02T05:06:50.907932Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
     "anonymous:trace_cb83b3258cd75bc6": {
       "contradiction_pressure": 0.0,
       "query": "What does the Bhagavad Gita teach about Karma Yoga?",
@@ -3084,6 +3221,16 @@
       "user_id": "anonymous",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
+    "anonymous:trace_cbc4d3121de251d7": {
+      "contradiction_pressure": 0.0,
+      "query": "What is Karma Yoga?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "trace_cbc4d3121de251d7",
+      "updated_at": "2026-10-02T05:06:52.556830Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
     "anonymous:trace_cd867678907e5935": {
       "contradiction_pressure": 0.0,
       "query": "Explain the Upanishadic concept of Brahman",
@@ -3101,6 +3248,26 @@
       "state": "open",
       "trace_id": "trace_d2765bbb427e57da",
       "updated_at": "2026-08-29T05:11:22.054258Z",
+      "user_id": "anonymous",
+      "verification_status": "VERIFIED"
+    },
+    "anonymous:trace_dae30c72c7595ce6": {
+      "contradiction_pressure": 0.0,
+      "query": "What is Karma Yoga?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "trace_dae30c72c7595ce6",
+      "updated_at": "2026-10-02T05:11:29.348457Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_db4e7642933158dc": {
+      "contradiction_pressure": 0.0,
+      "query": "What agricultural practices are mentioned in the Padma Purana?",
+      "rejected_signal_count": 11,
+      "state": "open",
+      "trace_id": "trace_db4e7642933158dc",
+      "updated_at": "2026-10-02T04:55:20.780344Z",
       "user_id": "anonymous",
       "verification_status": "VERIFIED"
     },
@@ -3134,6 +3301,16 @@
       "user_id": "anonymous",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
+    "anonymous:trace_fe7478abcd4551c5": {
+      "contradiction_pressure": 0.0,
+      "query": "What is Karma Yoga?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "trace_fe7478abcd4551c5",
+      "updated_at": "2026-10-02T05:02:40.492308Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
     "anonymous:trace_fe93c60db1115856": {
       "contradiction_pressure": 0.0,
       "query": "Explain the Upanishadic concept of Brahman",
@@ -3150,7 +3327,7 @@
       "rejected_signal_count": 12,
       "state": "open",
       "trace_id": "contract_trace_abc",
-      "updated_at": "2026-09-30T16:25:33.652385Z",
+      "updated_at": "2026-10-02T05:04:56.557344Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
@@ -3374,6 +3551,16 @@
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
+    "ecosystem_runtime:ecosystem_5a5dc8c6e13b": {
+      "contradiction_pressure": 0.0,
+      "query": "What is the Bhagavad Gita?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "ecosystem_5a5dc8c6e13b",
+      "updated_at": "2026-10-02T04:44:53.924565Z",
+      "user_id": "ecosystem_runtime",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
     "ecosystem_runtime:ecosystem_5c458221a6e5": {
       "contradiction_pressure": 0.0,
       "query": "What guidance do ancient texts give on ethics?",
@@ -3481,6 +3668,16 @@
       "state": "open",
       "trace_id": "ecosystem_934a4e270088",
       "updated_at": "2026-08-29T05:11:13.250831Z",
+      "user_id": "ecosystem_runtime",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "ecosystem_runtime:ecosystem_95827dfff924": {
+      "contradiction_pressure": 0.0,
+      "query": "What is the Bhagavad Gita?",
+      "rejected_signal_count": 0,
+      "state": "open",
+      "trace_id": "ecosystem_95827dfff924",
+      "updated_at": "2026-10-02T05:03:11.773264Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
@@ -3717,20 +3914,20 @@
     "ecosystem_runtime:ecosystem_mitra_test": {
       "contradiction_pressure": 0.0,
       "query": "What is the Bhagavad Gita?",
-      "rejected_signal_count": 12,
+      "rejected_signal_count": 0,
       "state": "open",
       "trace_id": "ecosystem_mitra_test",
-      "updated_at": "2026-09-30T16:25:00.742636Z",
+      "updated_at": "2026-10-02T05:03:22.309707Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
     "ecosystem_runtime:ecosystem_replay_test": {
       "contradiction_pressure": 0.0,
       "query": "What is the Bhagavad Gita?",
-      "rejected_signal_count": 12,
+      "rejected_signal_count": 0,
       "state": "open",
       "trace_id": "ecosystem_replay_test",
-      "updated_at": "2026-09-30T16:24:59.278779Z",
+      "updated_at": "2026-10-02T05:03:17.397921Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
@@ -3750,37 +3947,37 @@
       "rejected_signal_count": 12,
       "state": "open",
       "trace_id": "mitra_trace_xyz",
-      "updated_at": "2026-09-30T16:25:34.858637Z",
+      "updated_at": "2026-10-02T05:04:57.657336Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
     "ecosystem_runtime:phase2_determinism_test": {
       "contradiction_pressure": 0.0,
       "query": "What is the Bhagavad Gita?",
-      "rejected_signal_count": 12,
+      "rejected_signal_count": 0,
       "state": "open",
       "trace_id": "phase2_determinism_test",
-      "updated_at": "2026-09-30T16:25:37.617929Z",
+      "updated_at": "2026-10-02T05:05:01.483219Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
     "ecosystem_runtime:phase2_e2e_test": {
       "contradiction_pressure": 0.0,
       "query": "What is the Bhagavad Gita?",
-      "rejected_signal_count": 12,
+      "rejected_signal_count": 0,
       "state": "open",
       "trace_id": "phase2_e2e_test",
-      "updated_at": "2026-09-30T16:25:19.197205Z",
+      "updated_at": "2026-10-02T05:04:35.610104Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
     "ecosystem_runtime:phase2_hash_chain_test": {
       "contradiction_pressure": 0.0,
       "query": "What is the Bhagavad Gita?",
-      "rejected_signal_count": 12,
+      "rejected_signal_count": 0,
       "state": "open",
       "trace_id": "phase2_hash_chain_test",
-      "updated_at": "2026-09-30T16:25:39.065033Z",
+      "updated_at": "2026-10-02T05:05:03.394536Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
@@ -3790,7 +3987,7 @@
       "rejected_signal_count": 11,
       "state": "open",
       "trace_id": "phase2_mitra_test",
-      "updated_at": "2026-09-30T16:25:25.090557Z",
+      "updated_at": "2026-10-02T05:04:41.107450Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "VERIFIED"
     },
@@ -3800,7 +3997,7 @@
       "rejected_signal_count": 12,
       "state": "open",
       "trace_id": "phase2_proof_emit_test",
-      "updated_at": "2026-09-30T16:25:26.214859Z",
+      "updated_at": "2026-10-02T05:04:42.110202Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
@@ -3810,17 +4007,17 @@
       "rejected_signal_count": 12,
       "state": "open",
       "trace_id": "phase2_replay_emit_test",
-      "updated_at": "2026-09-30T16:25:29.063864Z",
+      "updated_at": "2026-10-02T05:04:50.057576Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
     "ecosystem_runtime:phase2_replay_test": {
       "contradiction_pressure": 0.0,
       "query": "What is the Bhagavad Gita?",
-      "rejected_signal_count": 12,
+      "rejected_signal_count": 0,
       "state": "open",
       "trace_id": "phase2_replay_test",
-      "updated_at": "2026-09-30T16:25:23.421588Z",
+      "updated_at": "2026-10-02T05:04:39.416135Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
@@ -3830,17 +4027,17 @@
       "rejected_signal_count": 11,
       "state": "open",
       "trace_id": "schema_stable_1",
-      "updated_at": "2026-09-30T16:25:41.502522Z",
+      "updated_at": "2026-10-02T05:05:05.806996Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "VERIFIED"
     },
     "ecosystem_runtime:tantra_sdk_runtime_test": {
       "contradiction_pressure": 0.0,
       "query": "What is the Bhagavad Gita?",
-      "rejected_signal_count": 12,
+      "rejected_signal_count": 0,
       "state": "open",
       "trace_id": "tantra_sdk_runtime_test",
-      "updated_at": "2026-09-30T16:26:44.968579Z",
+      "updated_at": "2026-10-02T05:07:39.621191Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
@@ -3850,17 +4047,17 @@
       "rejected_signal_count": 12,
       "state": "open",
       "trace_id": "test_sanskrit_dharma",
-      "updated_at": "2026-09-30T16:26:43.190013Z",
+      "updated_at": "2026-10-02T05:07:36.819646Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     }
   },
-  "updated_at": "2026-09-30T16:26:44.968579Z",
+  "updated_at": "2026-10-02T05:11:29.348457Z",
   "users": {
     "anonymous": {
       "continuity_score": 1.0,
-      "last_seen": "2026-08-29T05:11:22.858786Z",
-      "queries": 30,
+      "last_seen": "2026-10-02T05:11:29.348457Z",
+      "queries": 46,
       "trace_ids": [
         "trace_4c7da6360deb526c",
         "trace_60bfedfcc24b5c3c",
@@ -3891,16 +4088,30 @@
         "trace_d2765bbb427e57da",
         "trace_a77e63332ecb5418",
         "trace_224b93828a0a589e",
-        "trace_56a825c198a059b6"
+        "trace_56a825c198a059b6",
+        "trace_8870dc4a247d5342",
+        "trace_5ee00d4905315b7c",
+        "trace_db4e7642933158dc",
+        "diagnose_3682780330642026904",
+        "diagnose_2900449613254506430",
+        "trace_6c58b4b2ece057a5",
+        "trace_b3d9dd09c4dc5346",
+        "trace_b7a747ec5daa5a37",
+        "trace_5c3a02e0b628530f",
+        "trace_fe7478abcd4551c5",
+        "trace_c4d7a16de3d4550c",
+        "trace_cbc4d3121de251d7",
+        "trace_0f252b658326531d",
+        "trace_c34275207d475c91",
+        "trace_a43dfc292cce54fd",
+        "trace_dae30c72c7595ce6"
       ]
     },
     "ecosystem_runtime": {
       "continuity_score": 1.0,
-      "last_seen": "2026-09-30T16:26:44.968579Z",
-      "queries": 530,
+      "last_seen": "2026-10-02T05:07:39.621191Z",
+      "queries": 588,
       "trace_ids": [
-        "ecosystem_5f921ae7c649",
-        "ecosystem_6222dea31647",
         "ecosystem_5c458221a6e5",
         "ecosystem_a00a15cc1502",
         "ecosystem_20dd33cc96b6",
@@ -3948,7 +4159,9 @@
         "ecosystem_eb07ff9a2eea",
         "ecosystem_aba258be3cbb",
         "ecosystem_ac74380d9833",
-        "ecosystem_46b609792b50"
+        "ecosystem_46b609792b50",
+        "ecosystem_5a5dc8c6e13b",
+        "ecosystem_95827dfff924"
       ]
     }
   }

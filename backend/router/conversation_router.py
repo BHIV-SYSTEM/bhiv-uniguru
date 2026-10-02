@@ -1,4 +1,6 @@
 from __future__ import annotations
+from collections import OrderedDict
+import threading
 
 import hashlib
 import os
@@ -138,6 +140,83 @@ class ConversationRouter:
         self._llm_model = os.getenv("UNIGURU_LLM_MODEL", "demo-safety-llm").strip()
         self._llm_timeout = float(os.getenv("UNIGURU_LLM_TIMEOUT_SECONDS", "20"))
         self._llm_api_key = os.getenv("UNIGURU_LLM_API_KEY", "").strip()
+        self._session_memory: OrderedDict[tuple[str, str], Dict[str, str]] = OrderedDict()
+        self._session_memory_lock = threading.Lock()
+
+    @staticmethod
+    def _session_key(context: Dict[str, Any]) -> Optional[tuple[str, str]]:
+        session_id = str(context.get("session_id") or "").strip()
+        if not session_id:
+            return None
+        user_scope = str(context.get("user_id") or context.get("caller") or "anonymous")
+        if user_scope.strip().casefold() in {"anonymous", "anonymous-client"}:
+            return None
+        return user_scope, session_id
+
+    def _get_session_memory(self, context: Dict[str, Any]) -> Dict[str, str]:
+        key = self._session_key(context)
+        if key is None:
+            return {}
+        with self._session_memory_lock:
+            state = self._session_memory.get(key, {}).copy()
+            if key in self._session_memory:
+                self._session_memory.move_to_end(key)
+            return state
+
+    def _save_session_memory(self, context: Dict[str, Any], state: Dict[str, str]) -> None:
+        key = self._session_key(context)
+        if key is None:
+            return
+        with self._session_memory_lock:
+            self._session_memory[key] = state.copy()
+            self._session_memory.move_to_end(key)
+            while len(self._session_memory) > 1024:
+                self._session_memory.popitem(last=False)
+
+    @staticmethod
+    def _conversation_answer(query: str, state: Dict[str, str]) -> Optional[str]:
+        text = query.strip()
+        lower = text.casefold().strip(" .,!?")
+        introduction = re.fullmatch(r"my name is\s+([A-Za-z][A-Za-z' -]{0,59})", lower)
+        if introduction:
+            name = text.strip().rstrip(".!?")[len("my name is"):].strip()
+            state["preferred_name"] = name
+            return f"Hi {name}! Nice to meet you. How can I help you?"
+        if re.fullmatch(r"(?:hi|hello|hey)(?: there)?", lower):
+            return "Hi! I'm UniGuru. How can I help you?"
+        if re.fullmatch(r"(?:goodbye|bye|see you|see you later)", lower):
+            name = state.get("preferred_name")
+            return f"Goodbye, {name}. Take care!" if name else "Goodbye! Take care."
+        if re.fullmatch(r"(?:how are you|how are you doing|how's it going)", lower):
+            return "I'm doing great! Thanks for asking. How can I help you?"
+        if re.search(r"\bwhat is your name\b|\bwhat's your name\b|\bwho are you\b", lower):
+            return "My name is UniGuru. How can I help you?"
+        if re.search(r"\bcan you help me with my question\b|\bcan you help me\b", lower):
+            name = state.get("preferred_name")
+            return f"Of course, {name}. What would you like help with?" if name else "Of course. What would you like help with?"
+        return None
+
+    @staticmethod
+    def _requests_absent_kb_information(query: str) -> bool:
+        return bool(re.search(
+            r"\bnot\s+(?:present\s+)?in\s+(?:the\s+)?(?:kb|knowledge\s+base)\b",
+            query.casefold(),
+        ))
+
+    @staticmethod
+    def _followup_query(query: str, state: Dict[str, str]) -> Optional[str]:
+        lower = query.casefold()
+        is_followup = bool(
+            re.match(r"^(?:explain|simplify|describe|summarize|elaborate on)\s+(?:it|that|this|those|them)\b", lower)
+            or re.match(r"^(?:what|how) about\s+(?:it|that|this|those|them)\b", lower)
+            or re.match(r"^(?:tell me more|go into more detail|give me an example)\b", lower)
+        )
+        if not is_followup:
+            return None
+        previous_query = state.get("last_query")
+        if not previous_query:
+            return ""
+        return f"{previous_query} {query}"
 
     def llm_status(self) -> Dict[str, Any]:
         configured = bool(self._llm_url)
@@ -153,6 +232,73 @@ class ConversationRouter:
     def route_query(self, query: str, context: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         started = time.perf_counter()
         context_map = dict(context or {})
+        session_state = self._get_session_memory(context_map)
+        conversational_answer = self._conversation_answer(query, session_state)
+        if conversational_answer is not None:
+            self._save_session_memory(context_map, session_state)
+            response = self._build_router_contract_response(
+                decision="answer",
+                answer=conversational_answer,
+                reason="Handled as conversational intent without knowledge retrieval.",
+                query_type=QueryRoutingType.GENERAL_LLM_QUERY,
+                route=RouteTarget.ROUTE_LLM,
+                verification_status="UNVERIFIED",
+                session_id=context_map.get("session_id"),
+                governance_allowed=True,
+                governance_reason="Conversational response; no knowledge-base evidence required.",
+            )
+            response.pop("_resolved_route", None)
+            response["routing"] = {
+                "query_type": QueryRoutingType.GENERAL_LLM_QUERY.value,
+                "route": RouteTarget.ROUTE_LLM.value,
+                "router_latency_ms": round((time.perf_counter() - started) * 1000, 3),
+            }
+            return response
+
+        if self._requests_absent_kb_information(query):
+            response = self._build_router_contract_response(
+                decision="answer",
+                answer="I can't verify information that is explicitly absent from my knowledge base. Ask about a specific topic or source, and I'll check the available evidence.",
+                reason="The request explicitly states that the requested information is outside the knowledge base.",
+                query_type=QueryRoutingType.KNOWLEDGE_QUERY,
+                route=RouteTarget.ROUTE_UNIGURU,
+                verification_status="UNVERIFIED",
+                session_id=context_map.get("session_id"),
+                governance_allowed=True,
+                governance_reason="No knowledge claim was made without evidence.",
+            )
+            response.pop("_resolved_route", None)
+            response["routing"] = {
+                "query_type": QueryRoutingType.KNOWLEDGE_QUERY.value,
+                "route": RouteTarget.ROUTE_UNIGURU.value,
+                "router_latency_ms": round((time.perf_counter() - started) * 1000, 3),
+            }
+            return response
+
+        original_query = query
+        followup_query = self._followup_query(query, session_state)
+        if followup_query == "":
+            response = self._build_router_contract_response(
+                decision="answer",
+                answer="What would you like me to explain?",
+                reason="A follow-up was received without a prior topic in this session.",
+                query_type=QueryRoutingType.GENERAL_LLM_QUERY,
+                route=RouteTarget.ROUTE_LLM,
+                verification_status="UNVERIFIED",
+                session_id=context_map.get("session_id"),
+                governance_allowed=True,
+                governance_reason="Clarification requested before retrieval.",
+            )
+            response.pop("_resolved_route", None)
+            response["routing"] = {
+                "query_type": QueryRoutingType.GENERAL_LLM_QUERY.value,
+                "route": RouteTarget.ROUTE_LLM.value,
+                "router_latency_ms": round((time.perf_counter() - started) * 1000, 3),
+            }
+            return response
+        if followup_query:
+            query = followup_query
+
         query_type = self.classify(query=query, context=context_map)
         target = self.select_route(query_type=query_type)
         session_id = context_map.get("session_id")
@@ -178,6 +324,9 @@ class ConversationRouter:
             "route": resolved_route,
             "router_latency_ms": round(routing_latency, 3),
         }
+        if query_type == QueryRoutingType.KNOWLEDGE_QUERY:
+            session_state["last_query"] = session_state.get("last_query") if followup_query else original_query
+            self._save_session_memory(context_map, session_state)
         return response
 
     def classify(self, query: str, context: Optional[Dict[str, Any]] = None) -> QueryRoutingType:
@@ -248,6 +397,7 @@ class ConversationRouter:
                 allow_web_retrieval=effective_allow_web,
             )
         except Exception as exc:
+            self._breaker.record_latency((time.perf_counter() - started) * 1000)
             return self._build_llm_response(
                 query=query,
                 query_type=query_type,
@@ -255,9 +405,9 @@ class ConversationRouter:
                 warning=f"UniGuru KB path failed ({exc}). Falling back to conversational mode.",
             )
         latency_ms = (time.perf_counter() - started) * 1000
-        self._breaker.record_latency(latency_ms)
 
         if not str(response.get("answer") or "").strip():
+            self._breaker.record_latency(latency_ms)
             return self._build_llm_response(
                 query=query,
                 query_type=query_type,
@@ -266,7 +416,11 @@ class ConversationRouter:
             )
 
         verification_status = str(response.get("verification_status") or "UNVERIFIED").upper()
-        if verification_status == "UNVERIFIED" and self._allow_unverified_fallback:
+        if (
+            verification_status == "UNVERIFIED"
+            and self._allow_unverified_fallback
+            and query_type != QueryRoutingType.KNOWLEDGE_QUERY
+        ):
             return self._build_llm_response(
                 query=query,
                 query_type=query_type,
@@ -334,6 +488,11 @@ class ConversationRouter:
         )
 
     def _request_llm(self, query: str, session_id: Optional[str]) -> Dict[str, str]:
+        system_prompt = (
+            "You are UniGuru, a helpful conversational AI assistant. Answer the user's actual question directly. "
+            "For casual conversation, respond naturally. Do not invent knowledge-base facts, citations, or sources; "
+            "when evidence is unavailable, say so clearly."
+        )
         if self._llm_url.startswith("internal://"):
             return {
                 "answer": self._build_local_demo_answer(query),
@@ -355,13 +514,19 @@ class ConversationRouter:
             # Groq/OpenAI-compatible payload.
             sanitized_payload = {
                 "model": self._llm_model,
-                "messages": [{"role": "user", "content": query}],
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": query},
+                ],
                 "stream": False,
             }
         else:
             payload = {
                 "model": self._llm_model or None,
-                "messages": [{"role": "user", "content": query}],
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": query},
+                ],
                 "prompt": query,
                 "query": query,
                 "input": query,

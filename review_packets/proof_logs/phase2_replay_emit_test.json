@@ -17,17 +17,17 @@
       "rejected_count": 12
     },
     "event": "tantra_uniguru_intelligence_contract",
-    "interpretation_hash": "0129ca6b3d7f62543e3ca36050a1a0ba7af59e0236339550b73c15517ba8767b",
+    "interpretation_hash": "6b992155faf155914088ed264875aa4aa3caade12ea1ce8ca36ea149274718eb",
     "memory_event": {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
+      "constitutional_event_hash": "55baf84616a4d6799918e5dff7a743e5a7c30c2f5ba640fb86e6611239be0e43",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
       "trace_id": "phase2_replay_emit_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T16:25:29.063864Z",
+      "updated_at": "2026-10-02T05:04:50.057576Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -44,9 +44,9 @@
       "signal_43ab8d3ac8de",
       "signal_16517055e77e"
     ],
-    "retrieval_truth_hash": "b41566d2488f8c173165eb2c1dcfdc591d6b26823a568cb2eb7d16f8aac33f81",
+    "retrieval_truth_hash": "1a28c1f2800b3a7a21f6c3436d33170f20c3262028650e0ae9ee213388d61712",
     "semantic_path": [],
-    "timestamp": "2026-09-30T16:25:28.867985Z",
+    "timestamp": "2026-10-02T05:04:49.378383Z",
     "trace_continuity": {
       "bucket_proof": "phase2_replay_emit_test",
       "contract_emission": "phase2_replay_emit_test",
@@ -124,10 +124,10 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-09-30T16:25:28.867985Z",
+  "generated_at": "2026-10-02T05:04:49.378383Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
-    "artifact_hash": "0129ca6b3d7f62543e3ca36050a1a0ba7af59e0236339550b73c15517ba8767b",
+    "artifact_hash": "6b992155faf155914088ed264875aa4aa3caade12ea1ce8ca36ea149274718eb",
     "authority_boundary": {
       "free_form_output": false,
       "may_introduce_unreferenced_claims": false,
@@ -157,7 +157,7 @@
     "references": {
       "accepted_signal_ids": [],
       "retrieval_trace_id": "phase2_replay_emit_test",
-      "retrieval_truth_hash": "b41566d2488f8c173165eb2c1dcfdc591d6b26823a568cb2eb7d16f8aac33f81"
+      "retrieval_truth_hash": "1a28c1f2800b3a7a21f6c3436d33170f20c3262028650e0ae9ee213388d61712"
     },
     "trace_id": "phase2_replay_emit_test",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
@@ -168,7 +168,7 @@
     "deterministic": true,
     "max_hops": 5,
     "paths": [],
-    "source": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/ontology/seed_entities.json",
+    "source": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/ontology/seed_entities.json",
     "start_nodes": [
       "karma"
     ],
@@ -304,6 +304,7 @@
         "missing_required_entities": [
           "Karma"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Karma",
@@ -426,6 +427,7 @@
         "missing_required_entities": [
           "Karma"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Karma",
@@ -557,6 +559,7 @@
         "missing_required_entities": [
           "Karma"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Karma",
@@ -607,6 +610,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_f494c67a7b59",
@@ -743,6 +747,7 @@
         "missing_required_entities": [
           "Karma"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Karma",
@@ -793,6 +798,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_7f2a293375f9",
@@ -903,6 +909,7 @@
         "missing_required_entities": [
           "Karma"
         ],
+        "missing_source_entities": [],
         "query_entities": [
           {
             "canonical": "Karma",
@@ -953,6 +960,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_0c86e2873bfb",
@@ -976,6 +984,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_91fb3667904d",
@@ -999,6 +1008,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_1f7ea3403790",
@@ -1022,6 +1032,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_43ab8d3ac8de",
@@ -1045,6 +1056,7 @@
         "entity_overlap": 0.0,
         "matched_tags": [],
         "missing_required_entities": [],
+        "missing_source_entities": [],
         "query_entities": [],
         "semantic_score": 0.0,
         "signal_id": "signal_16517055e77e",
@@ -1219,7 +1231,7 @@
   "retrieval_truth_payload": {
     "accepted_signal_ids": [],
     "accepted_signals": [],
-    "artifact_hash": "b41566d2488f8c173165eb2c1dcfdc591d6b26823a568cb2eb7d16f8aac33f81",
+    "artifact_hash": "1a28c1f2800b3a7a21f6c3436d33170f20c3262028650e0ae9ee213388d61712",
     "domain_resolution": {
       "confidence": 1.0,
       "domain": "dharma_systems",
@@ -1238,7 +1250,7 @@
       ],
       "method": "canonical_entity_majority"
     },
-    "generated_at": "2026-09-30T16:25:28.867985Z",
+    "generated_at": "2026-10-02T05:04:49.378383Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -1364,6 +1376,7 @@
           "missing_required_entities": [
             "Karma"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Karma",
@@ -1486,6 +1499,7 @@
           "missing_required_entities": [
             "Karma"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Karma",
@@ -1617,6 +1631,7 @@
           "missing_required_entities": [
             "Karma"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Karma",
@@ -1667,6 +1682,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_f494c67a7b59",
@@ -1803,6 +1819,7 @@
           "missing_required_entities": [
             "Karma"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Karma",
@@ -1853,6 +1870,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_7f2a293375f9",
@@ -1963,6 +1981,7 @@
           "missing_required_entities": [
             "Karma"
           ],
+          "missing_source_entities": [],
           "query_entities": [
             {
               "canonical": "Karma",
@@ -2013,6 +2032,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_0c86e2873bfb",
@@ -2036,6 +2056,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_91fb3667904d",
@@ -2059,6 +2080,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_1f7ea3403790",
@@ -2082,6 +2104,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_43ab8d3ac8de",
@@ -2105,6 +2128,7 @@
           "entity_overlap": 0.0,
           "matched_tags": [],
           "missing_required_entities": [],
+          "missing_source_entities": [],
           "query_entities": [],
           "semantic_score": 0.0,
           "signal_id": "signal_16517055e77e",
@@ -2275,7 +2299,7 @@
         "Vedas",
         "Yoga"
       ],
-      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "checkpoint_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
       "contradiction_event_count": 1,
       "event": {
         "canonical_authority_granted": false,
@@ -2284,10 +2308,10 @@
         "event_type": "semantic_mutation_evaluated",
         "memory_classification": "transient",
         "trace_id": "phase2_replay_emit_test",
-        "updated_at": "2026-09-05T18:03:49.836407Z"
+        "updated_at": "2026-10-02T05:04:43.147269Z"
       },
-      "event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
-      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "event_hash": "55baf84616a4d6799918e5dff7a743e5a7c30c2f5ba640fb86e6611239be0e43",
+      "event_log_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_events.jsonl",
       "governance_decision": {
         "canonical_authority_granted": false,
         "confidence_floor": 0.55,
@@ -2313,37 +2337,37 @@
       },
       "idempotent_replay": true,
       "lineage_traceable": true,
-      "mutation_id": "aeee0725fa06cbf2f54bb0c073b5bafb0ac57431c1e0561b643cdebe345a2d19",
-      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "mutation_id": "275997be371d3cc8c8280c68690ac6ec9e4132d9176320af20e9c9baa00f19cf",
+      "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "f210895ef778e63aac0ccc222eb08d2d6b608dcede8c1184cab05c4af6e664a3",
+        "last_event_hash": "55baf84616a4d6799918e5dff7a743e5a7c30c2f5ba640fb86e6611239be0e43",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "5eb48d2974d77a3614b1deec2617d3b332ec80f58df8f58eda2ee941c1402157",
-      "transient_event_count": 549
+      "state_hash": "c2fabab5f22f30e05cb8c8d623f7cac61b02e04bde6c74f35fe55956d0462a04",
+      "transient_event_count": 564
     },
     "entity_continuity": {},
     "event": {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
+      "constitutional_event_hash": "55baf84616a4d6799918e5dff7a743e5a7c30c2f5ba640fb86e6611239be0e43",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
       "trace_id": "phase2_replay_emit_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T16:25:29.063864Z",
+      "updated_at": "2026-10-02T05:04:50.057576Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
     "replayable": true,
     "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
-    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "state_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/semantic_memory_state.json",
     "unresolved_threads": [
       {
         "contradiction_pressure": 0.0,
@@ -2351,18 +2375,16 @@
         "rejected_signal_count": 12,
         "state": "open",
         "trace_id": "phase2_replay_emit_test",
-        "updated_at": "2026-09-30T16:25:29.063864Z",
+        "updated_at": "2026-10-02T05:04:50.057576Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-09-30T16:25:29.063864Z",
-      "queries": 515,
+      "last_seen": "2026-10-02T05:04:50.057576Z",
+      "queries": 577,
       "trace_ids": [
-        "ecosystem_5f921ae7c649",
-        "ecosystem_6222dea31647",
         "ecosystem_5c458221a6e5",
         "ecosystem_a00a15cc1502",
         "ecosystem_20dd33cc96b6",
@@ -2410,7 +2432,9 @@
         "ecosystem_eb07ff9a2eea",
         "ecosystem_aba258be3cbb",
         "ecosystem_ac74380d9833",
-        "ecosystem_46b609792b50"
+        "ecosystem_46b609792b50",
+        "ecosystem_5a5dc8c6e13b",
+        "ecosystem_95827dfff924"
       ]
     }
   },
@@ -2421,9 +2445,9 @@
   "trace_id": "phase2_replay_emit_test",
   "truth_interpretation_link": {
     "boundary_status": "ENFORCED",
-    "interpretation_hash": "0129ca6b3d7f62543e3ca36050a1a0ba7af59e0236339550b73c15517ba8767b",
+    "interpretation_hash": "6b992155faf155914088ed264875aa4aa3caade12ea1ce8ca36ea149274718eb",
     "interpretation_references_retrieval": true,
-    "retrieval_truth_hash": "b41566d2488f8c173165eb2c1dcfdc591d6b26823a568cb2eb7d16f8aac33f81",
+    "retrieval_truth_hash": "1a28c1f2800b3a7a21f6c3436d33170f20c3262028650e0ae9ee213388d61712",
     "trace_id": "phase2_replay_emit_test"
   },
   "verification_status": "NO_VERIFIED_KNOWLEDGE"

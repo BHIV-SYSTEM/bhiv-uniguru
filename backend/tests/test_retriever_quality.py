@@ -76,3 +76,35 @@ def test_synthesis_failure_falls_back_to_primary_document():
         response = retriever.reason_and_compare(results, "What is Brahman?")
 
     assert response["content"] == primary_content
+
+
+def test_specific_source_and_topic_must_both_have_evidence():
+    retriever = AdvancedRetriever()
+
+    results = retriever.retrieve_multi(
+        "What agricultural practices are mentioned in the Padma Purana?"
+    )
+
+    assert results == []
+
+
+def test_conversational_filler_does_not_retrieve_unrelated_documents():
+    retriever = AdvancedRetriever()
+
+    assert retriever.retrieve_multi("Explain it simply.") == []
+
+
+def test_exact_concept_title_is_ranked_first():
+    retriever = AdvancedRetriever()
+
+    results = retriever.retrieve_multi("What is Dharma?")
+
+    assert results
+    assert results[0]["file"] == "dharma.md"
+    assert results[0]["evidence_coverage"] == 1.0
+
+
+def test_duplicate_basename_documents_are_not_overwritten():
+    retriever = AdvancedRetriever()
+
+    assert len(retriever.knowledge_map) == 73

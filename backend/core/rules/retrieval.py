@@ -35,6 +35,25 @@ class RetrievalRule(BaseRule):
                 min_confidence=KB_CONFIDENCE_THRESHOLD
             )
             is_verified = verification.get("truth_declaration") in {"VERIFIED", "VERIFIED_PARTIAL"}
+            cited_sources = []
+            for source in trace.get("evidence_sources", []):
+                if not isinstance(source, dict):
+                    continue
+                source_path = str(source.get("path") or source.get("file") or "").strip()
+                if not source_path:
+                    continue
+                citation = source_path
+                if source.get("chapter"):
+                    citation += f", {source['chapter']}"
+                if source.get("page_number") is not None:
+                    citation += f", page {source['page_number']}"
+                if source.get("chunk_id") is not None:
+                    citation += f", chunk {source['chunk_id']}"
+                cited_sources.append(citation)
+            cited_sources = list(dict.fromkeys(cited_sources))
+            answer = _clean_kb_content(kb_content)
+            if cited_sources:
+                answer = f"{answer}\n\nSources: " + "; ".join(cited_sources[:3])
 
             return RuleResult(
                 action=RuleAction.ANSWER,
@@ -49,7 +68,7 @@ class RetrievalRule(BaseRule):
                     "safety": False
                 },
                 response_content=(
-                    f"UniGuru Deterministic Knowledge Retrieval:\n\n{_clean_kb_content(kb_content)}"
+                    f"UniGuru Deterministic Knowledge Retrieval:\n\n{answer}"
                     if is_verified else UNVERIFIED_REFUSAL
                 ),
                 rule_name=self.name,

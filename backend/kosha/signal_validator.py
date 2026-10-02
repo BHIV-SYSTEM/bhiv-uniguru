@@ -31,6 +31,7 @@ class SignalValidator:
     If no valid signal → explicitly return NO VERIFIED KNOWLEDGE
     No silent fallback.
     """
+    entity_resolver = CanonicalEntityResolver()
 
     @staticmethod
     def tokenize(text: str) -> set:
@@ -96,6 +97,7 @@ class SignalValidator:
             "query_entities": [],
             "candidate_entities": [],
             "missing_required_entities": [],
+            "missing_source_entities": [],
             "confidence_derivation": {},
             "source_governance": {},
         }
@@ -124,6 +126,47 @@ class SignalValidator:
         details["source_governance"] = source_governance
         if source_governance.get("suppression_reason"):
             return False, str(source_governance["suppression_reason"]), details
+
+        text_entities = [
+            entity
+            for entity in cls.entity_resolver.extract(query)
+            if entity.get("entity_type") == "text"
+        ]
+        if text_entities:
+            source_tokens = cls.tokenize(source)
+            required_source_tokens = {
+                token
+                for entity in text_entities
+                for token in cls.tokenize(str(entity.get("canonical") or ""))
+            }
+            missing_source_tokens = sorted(required_source_tokens - source_tokens)
+            details["missing_source_entities"] = missing_source_tokens
+            if missing_source_tokens:
+                return False, "source_entity_mismatch", details
+
+            filler_terms = {"according", "describe", "describes", "mentioned", "mentions", "says", "say"}
+            topic_tokens = query_tokens - required_source_tokens - filler_terms
+            if topic_tokens:
+                evidence_tokens = cls.tokenize(content)
+                evidence_tokens.update(
+                    token
+                    for tag in tags
+                    for token in cls.tokenize(str(tag))
+                )
+                topic_forms = set(topic_tokens)
+                evidence_forms = set(evidence_tokens)
+                if "agricultural" in topic_forms:
+                    topic_forms.add("agriculture")
+                elif "agriculture" in topic_forms:
+                    topic_forms.add("agricultural")
+                for token in tuple(topic_forms):
+                    if token.endswith("s") and len(token) > 4:
+                        topic_forms.add(token[:-1])
+                for token in tuple(evidence_forms):
+                    if token.endswith("s") and len(token) > 4:
+                        evidence_forms.add(token[:-1])
+                if not topic_forms & evidence_forms:
+                    return False, "no_topic_evidence_for_named_source", details
 
         # Rule 3: Tag match — at least 1 tag must overlap with query
         tag_score, matched_tags = cls.compute_tag_match(query_tokens, tags)
