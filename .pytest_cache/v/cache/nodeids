@@ -205,6 +205,7 @@
   "backend/tests/test_phase2_sanskrit_decoder_knowledge_graph.py::test_unknown_concept_returns_unverified_without_inference",
   "backend/tests/test_phase2_sanskrit_decoder_knowledge_graph.py::test_whitespace_only_query_raises_value_error",
   "backend/tests/test_rag_health.py::test_ask_answers_from_relevant_kb_and_rejects_missing_source_topic_evidence",
+  "backend/tests/test_rag_health.py::test_ask_rejects_entity_matches_when_query_type_requires_another_domain",
   "backend/tests/test_rag_health.py::test_chat_new_answers_india_prime_minister_with_source_evidence",
   "backend/tests/test_rag_health.py::test_debug_retrieval_exposes_candidate_stages_only_when_enabled",
   "backend/tests/test_rag_health.py::test_debug_retrieval_is_disabled_outside_explicit_development_mode",

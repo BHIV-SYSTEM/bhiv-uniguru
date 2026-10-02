@@ -95,6 +95,46 @@ def test_ask_answers_from_relevant_kb_and_rejects_missing_source_topic_evidence(
     assert "I do not have verified knowledge" in unsupported_after_answer["answer"]
 
 
+def test_ask_rejects_entity_matches_when_query_type_requires_another_domain():
+    client = TestClient(app)
+    headers = {"Authorization": "Bearer release-test-token"}
+    context = {"caller": "rag-api-test"}
+
+    for query in ("What is Dharma?", "What is the meaning of Dharma?"):
+        response = client.post(
+            "/ask",
+            headers=headers,
+            json={"query": query, "context": context, "session_id": "dharma-domain-regression"},
+        )
+        assert response.status_code == 200
+        assert response.json()["verification_status"] == "VERIFIED"
+        assert any(
+            signal.get("knowledge_id") == "KOSHA_sanskrit_dharma"
+            for signal in response.json()["matched_signals"]
+        )
+
+    for query in (
+        "What is the current stock market price of Dharma?",
+        "What is the weather in Dharma?",
+        "What is the capital of Dharma?",
+        "Who won the FIFA World Cup in 2022?",
+    ):
+        response = client.post(
+            "/ask",
+            headers=headers,
+            json={"query": query, "context": context, "session_id": "dharma-domain-regression"},
+        )
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["verification_status"] == "NO_VERIFIED_KNOWLEDGE"
+        assert payload["decision"] == "block"
+        assert payload["confidence"] == 0.0
+        assert payload["matched_signals"] == []
+        assert payload["fallback_to_llm"] is False
+        assert payload["routing"]["route"] == "DETERMINISTIC_KOSHA"
+        assert payload["retrieval_trace"]["match_found"] is False
+
+
 def test_chat_new_answers_india_prime_minister_with_source_evidence():
     client = TestClient(app)
     response = client.post(

@@ -5,6 +5,7 @@ from typing import List, Dict, Any, Optional, Tuple
 from governance.epistemic_confidence import EpistemicConfidenceEngine
 from governance.source_governance import SourceGovernance
 from ontology.entity_resolver import CanonicalEntityResolver
+from service.query_classifier import QueryType, classify_query
 
 logger = logging.getLogger(__name__)
 
@@ -112,6 +113,7 @@ class SignalValidator:
         details = {
             "signal_id": signal.get("signal_id", "unknown"),
             "source": source,
+            "query_type": classify_query(query).value,
             "confidence": confidence,
             "tag_match_score": 0.0,
             "content_overlap": 0.0,
@@ -142,6 +144,12 @@ class SignalValidator:
         )
         if any(marker in content.lower() for marker in non_answer_markers):
             return False, "low_contextual_overlap", details
+
+        # The local Kosha corpus answers stable concept and explanation
+        # questions. An entity match cannot turn a market, weather, score, or
+        # other lookup task into a Sanskrit knowledge query.
+        if classify_query(query) == QueryType.WEB_LOOKUP:
+            return False, "query_type_not_supported_by_kosha:web_lookup", details
 
         # Rule 2: Confidence must meet minimum threshold
         if confidence < MIN_SIGNAL_CONFIDENCE:

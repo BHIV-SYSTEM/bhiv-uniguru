@@ -1,0 +1,428 @@
+{
+  "answer": "I do not have verified knowledge to answer this question.",
+  "bucket_proof": {
+    "accepted_signals": [],
+    "confidence_derivation": {
+      "accepted_count": 0,
+      "accepted_derivations": [],
+      "consensus": {
+        "ambiguity_classification": "no_valid_signals",
+        "consensus_score": 0.0,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No valid signals available.",
+        "multi_source_reinforcement": 0.0
+      },
+      "overall": 0.0,
+      "rejected_count": 0
+    },
+    "event": "tantra_uniguru_intelligence_contract",
+    "interpretation_hash": "064285a6138f7a238877f7331db309239a9d6a6d327a48d471a7c1b0ed4da769",
+    "memory_event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "4a267ff2224ee0425d099c708f76995c37247ec2ac64d2566ad817219f272fb9",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T16:42:13.585592Z",
+      "user_id": "release-validation"
+    },
+    "rejected_signals": [],
+    "retrieval_truth_hash": "abb49cda2c6376e07516dbdbe542930c33b8d13e5a99a4dc16980c369c675a3f",
+    "semantic_path": [],
+    "timestamp": "2026-10-02T16:42:11.240835Z",
+    "trace_continuity": {
+      "bucket_proof": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+      "contract_emission": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+      "downstream_execution": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+      "immutable": true,
+      "retrieval": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+      "synthesis": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+      "validation": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39"
+    },
+    "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "claim_evidence_bindings": [
+    {
+      "canonical_object_id": "uko:none:unverified",
+      "claim_id": "claim_2f465315ab25",
+      "claim_text": "I do not have verified knowledge to answer this question.",
+      "confidence": 0.0,
+      "provenance_hash": "255caf2d8dacabcf3302caabb080ce0e42c75256473238fa8bc8a33e43565109",
+      "source_id": "LLM_FALLBACK",
+      "text_span": "I do not have verified knowledge to answer this question.",
+      "verification_status": "UNVERIFIED_FALLBACK"
+    }
+  ],
+  "confidence": 0.0,
+  "confidence_breakdown": {
+    "accepted_count": 0,
+    "accepted_derivations": [],
+    "consensus": {
+      "ambiguity_classification": "no_valid_signals",
+      "consensus_score": 0.0,
+      "contradiction_pressure": 0.0,
+      "contradictions": [],
+      "disagreement_aware_synthesis": "No valid signals available.",
+      "multi_source_reinforcement": 0.0
+    },
+    "overall": 0.0,
+    "rejected_count": 0
+  },
+  "consensus_analysis": {
+    "ambiguity_classification": "no_valid_signals",
+    "consensus_score": 0.0,
+    "contradiction_pressure": 0.0,
+    "contradictions": [],
+    "disagreement_aware_synthesis": "No valid signals available.",
+    "multi_source_reinforcement": 0.0
+  },
+  "detected_domain": null,
+  "domain_resolution": {
+    "domain": "general",
+    "method": "retriever"
+  },
+  "downstream_execution": {
+    "consumer": "TANTRA_EXECUTION_CHAIN",
+    "status": "REJECTED_NO_DOWNSTREAM_ACTION",
+    "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39"
+  },
+  "enforcement_stats": {
+    "rejected_entries": 19,
+    "total_entries": 74,
+    "valid_entries": 55
+  },
+  "evidence_signal_ids": [],
+  "fallback_to_llm": false,
+  "generated_at": "2026-10-02T16:42:11.240835Z",
+  "interpretation_payload": {
+    "answer": "I do not have verified knowledge to answer this question.",
+    "artifact_hash": "064285a6138f7a238877f7331db309239a9d6a6d327a48d471a7c1b0ed4da769",
+    "authority_boundary": {
+      "free_form_output": false,
+      "may_introduce_unreferenced_claims": false,
+      "may_mutate_retrieval_truth": false
+    },
+    "confidence": 0.0,
+    "confidence_breakdown": {
+      "accepted_count": 0,
+      "accepted_derivations": [],
+      "consensus": {
+        "ambiguity_classification": "no_valid_signals",
+        "consensus_score": 0.0,
+        "contradiction_pressure": 0.0,
+        "contradictions": [],
+        "disagreement_aware_synthesis": "No valid signals available.",
+        "multi_source_reinforcement": 0.0
+      },
+      "overall": 0.0,
+      "rejected_count": 0
+    },
+    "contradiction_state": {
+      "classification": "no_valid_signals",
+      "contradiction_pressure": 0.0,
+      "contradictions": []
+    },
+    "layer": "BOUNDED_SEMANTIC_INTERPRETATION",
+    "references": {
+      "accepted_signal_ids": [],
+      "retrieval_trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+      "retrieval_truth_hash": "abb49cda2c6376e07516dbdbe542930c33b8d13e5a99a4dc16980c369c675a3f"
+    },
+    "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "knowledge_ids_used": [],
+  "matched_signals": [],
+  "multi_hop_traversal": {
+    "max_hops": 5,
+    "paths": [],
+    "start_nodes": [],
+    "target_nodes": []
+  },
+  "output_contract": {
+    "contract_bound": true,
+    "downstream_consumable": true,
+    "free_form_output": false,
+    "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+    "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39"
+  },
+  "query": "What is today's stock price?",
+  "reasoning": "No signals passed domain+tag+query validation.",
+  "reasoning_path": [
+    "query_received",
+    "kosha_schema_enforced",
+    "canonical_entities_extracted",
+    "ontology_aware_retrieval",
+    "signal_validation",
+    "epistemic_confidence_derivation",
+    "contradiction_consensus_analysis",
+    "structured_signal_emission",
+    "deterministic_rejection",
+    "governance_contract_emission",
+    "bucket_proof_ready"
+  ],
+  "rejected_signals": [],
+  "retrieval_run_record": {
+    "candidate_count": 0,
+    "canonical_concept_id": "general",
+    "claim_bindings": [
+      {
+        "canonical_object_id": "uko:none:unverified",
+        "claim_id": "claim_2f465315ab25",
+        "claim_text": "I do not have verified knowledge to answer this question.",
+        "confidence": 0.0,
+        "provenance_hash": "255caf2d8dacabcf3302caabb080ce0e42c75256473238fa8bc8a33e43565109",
+        "source_id": "LLM_FALLBACK",
+        "text_span": "I do not have verified knowledge to answer this question.",
+        "verification_status": "UNVERIFIED_FALLBACK"
+      }
+    ],
+    "deduplicated_candidate_count": 0,
+    "index_version": "UNIGURU_CONVERGENCE_INDEX_V1",
+    "query_id": "query_520748db8a4a",
+    "replay_id": "replay_4a736a2ae65afcbe",
+    "replay_safe": true,
+    "retrieval_run_id": "run_db1584ee03b0",
+    "selected_evidence": [],
+    "semantic_scope": "general",
+    "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+    "verification_status": "NO_VERIFIED_KNOWLEDGE"
+  },
+  "retrieval_truth_payload": {
+    "accepted_signal_ids": [],
+    "accepted_signals": [],
+    "artifact_hash": "abb49cda2c6376e07516dbdbe542930c33b8d13e5a99a4dc16980c369c675a3f",
+    "domain_resolution": {
+      "domain": "general",
+      "method": "retriever"
+    },
+    "generated_at": "2026-10-02T16:42:11.240835Z",
+    "immutable": true,
+    "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
+    "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
+    "query": "What is today's stock price?",
+    "raw_signal_count": 0,
+    "rejected_signal_ids": [],
+    "rejected_signals": [],
+    "source_lineage": [],
+    "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39"
+  },
+  "selected_evidence": [],
+  "semantic_memory": {
+    "canonical_authority_granted": false,
+    "constitutional_governance": {
+      "canonical_authority_granted": false,
+      "canonical_memory_keys": [
+        "Agni",
+        "Agni Purana",
+        "Ahimsa",
+        "Assembly",
+        "Atharvaveda",
+        "Atman",
+        "Bhagavad Gita",
+        "Bhagavata Purana",
+        "Bhairava",
+        "Bhakti",
+        "Bhakti Yoga",
+        "Brahma",
+        "Brahma Purana",
+        "Brahman",
+        "Brahmanda Purana",
+        "Chandogya Upanishad",
+        "City",
+        "Decision Making",
+        "Devi",
+        "Dharma",
+        "Ecology",
+        "Ganga",
+        "Garuda Purana",
+        "Governance",
+        "Guru",
+        "Indra",
+        "Jnana Yoga",
+        "Justice",
+        "Kali Yuga",
+        "Karma",
+        "Karma Yoga",
+        "Katha Upanishad",
+        "King",
+        "Krishna",
+        "Kundalini",
+        "Kurma Purana",
+        "Linga Purana",
+        "Mahabharata",
+        "Mandukya Upanishad",
+        "Mantra",
+        "Manusmriti",
+        "Markandeya Purana",
+        "Matsya Purana",
+        "Moksha",
+        "Mundaka Upanishad",
+        "Narada Purana",
+        "Narayana",
+        "Om",
+        "Padma Purana",
+        "Pilgrimage",
+        "Prakriti",
+        "Prana",
+        "Prashna Upanishad",
+        "Purusha",
+        "Rain",
+        "Rajadharma",
+        "Rajas",
+        "Ramayana",
+        "Rigveda",
+        "Road",
+        "Samaveda",
+        "Samsara",
+        "Sankhya",
+        "Sarasvati",
+        "Sattva",
+        "Satya Yuga",
+        "Shiva",
+        "Skanda Purana",
+        "Smriti",
+        "Soil",
+        "Surya",
+        "Taittiriya Upanishad",
+        "Tamas",
+        "Temple",
+        "Tripura Rahasya",
+        "Upanishads",
+        "Varaha Purana",
+        "Varna",
+        "Vayu Purana",
+        "Vedas",
+        "Vigyan Bhairava Tantra",
+        "Village",
+        "Vishnu",
+        "Yajna",
+        "Yajnavalkya Smriti",
+        "Yajurveda",
+        "Yantra",
+        "Yoga",
+        "Yuga"
+      ],
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 89,
+      "event": {
+        "canonical_authority_granted": false,
+        "contradiction_pressure": 0.0,
+        "entities_touched": [],
+        "event_type": "semantic_mutation_evaluated",
+        "memory_classification": "transient",
+        "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+        "updated_at": "2026-10-02T16:42:12.295391Z"
+      },
+      "event_hash": "4a267ff2224ee0425d099c708f76995c37247ec2ac64d2566ad817219f272fb9",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "governance_decision": {
+        "canonical_authority_granted": false,
+        "confidence_floor": 0.55,
+        "contradiction_pressure": 0.0,
+        "decision": "REJECT_CANONICAL_MUTATION",
+        "failure_states": [],
+        "memory_classification": "transient",
+        "reasons": [
+          "verification_status_not_verified",
+          "no_accepted_signals",
+          "confidence_below_canonical_floor"
+        ],
+        "rules": [
+          "interpretation_never_mutates_retrieval_truth",
+          "canonical_authority_requires_governance_acceptance",
+          "contradictions_are_audit_events_not_silent_merges",
+          "persistent_writes_are_append_only_and_replayable",
+          "ontology_references_preserve_snapshot_lineage"
+        ],
+        "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
+      },
+      "idempotent_replay": false,
+      "lineage_traceable": true,
+      "mutation_id": "2f4456700a82c54f5e73e726e0c65c7e07079b15bcbad8eb3499e5df6a060d7e",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observable": true,
+      "replay_integrity": {
+        "hash_chain_ok": false,
+        "last_event_hash": "4a267ff2224ee0425d099c708f76995c37247ec2ac64d2566ad817219f272fb9",
+        "rollback_target": null
+      },
+      "replayable": true,
+      "rollback_safe": true,
+      "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
+      "state_hash": "9647fa937ac44a9de95e16c95f02c3884bc67593b206f50f17d07f8e6c9a043d",
+      "transient_event_count": 966
+    },
+    "entity_continuity": {},
+    "event": {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "4a267ff2224ee0425d099c708f76995c37247ec2ac64d2566ad817219f272fb9",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T16:42:13.585592Z",
+      "user_id": "release-validation"
+    },
+    "observable": true,
+    "replayable": true,
+    "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "unresolved_threads": [
+      {
+        "contradiction_pressure": 0.0,
+        "query": "What is today's stock price?",
+        "rejected_signal_count": 0,
+        "state": "open",
+        "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+        "updated_at": "2026-10-02T16:42:13.585592Z",
+        "user_id": "release-validation",
+        "verification_status": "NO_VERIFIED_KNOWLEDGE"
+      }
+    ],
+    "user_continuity": {
+      "continuity_score": 0.95,
+      "last_seen": "2026-10-02T16:42:13.585592Z",
+      "queries": 17,
+      "trace_ids": [
+        "f02a7be6-4f95-4c31-b424-ed54c8068af7",
+        "80dc4cb3-0796-4819-a972-b00c6f7606ab",
+        "a9ede43c-58c8-4904-9959-3736ffe04742",
+        "8b856b3f-a71c-44a2-890b-e972e9357b62",
+        "f7bd944b-e232-4e2f-aa8f-612a9de43055",
+        "8a1fbf77-7e86-46fd-b338-362c00239fc4",
+        "ef63f450-b082-45df-80f3-c18239928b2a",
+        "19b1f438-21d8-4af2-8113-0dba9cb6e795",
+        "fe12038e-2819-4e36-b86e-6fe2e8ba30b2",
+        "2da947f5-c893-4ae4-aa81-f762e94e1971",
+        "479cc892-f3fa-42bc-b395-b428db2b9429",
+        "84a45cfb-2692-4941-bc92-9d563ebe3fe7",
+        "cb3054eb-4b81-44e3-a018-343996e91294",
+        "43855e9d-9ad3-4c72-a417-decce2c2cf99",
+        "17c02948-2dbd-403f-88f1-86d9e3602f7a",
+        "c023e3ec-16f1-45c9-8489-0e71729cdd64",
+        "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39"
+      ]
+    }
+  },
+  "semantic_path": [],
+  "signals_found": 0,
+  "signals_rejected": 0,
+  "synthesis_mode": "REJECTED_NO_SYNTHESIS",
+  "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39",
+  "truth_interpretation_link": {
+    "boundary_status": "ENFORCED",
+    "interpretation_hash": "064285a6138f7a238877f7331db309239a9d6a6d327a48d471a7c1b0ed4da769",
+    "interpretation_references_retrieval": true,
+    "retrieval_truth_hash": "abb49cda2c6376e07516dbdbe542930c33b8d13e5a99a4dc16980c369c675a3f",
+    "trace_id": "f3973a5a-b1fd-465c-8cc1-9712aa1d7b39"
+  },
+  "verification_status": "NO_VERIFIED_KNOWLEDGE"
+}

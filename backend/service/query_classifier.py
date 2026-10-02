@@ -21,6 +21,9 @@ _WEB_LOOKUP_PATTERNS = (
     r"\bmarket\b",
     r"\bprice\b",
     r"\bscore\b",
+    # A "capital of" question requires a general geography lookup, not concept
+    # evidence from an unrelated canonical entity mentioned in the same query.
+    r"\bcapital\s+of\b",
 )
 
 _CONCEPT_PATTERNS = (
