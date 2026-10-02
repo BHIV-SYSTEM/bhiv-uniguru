@@ -1,4 +1,5 @@
 import json
+import hashlib
 import os
 import math
 import re
@@ -20,10 +21,11 @@ KB_PATHS: Dict[str, str] = {
     "gurukul": os.path.normpath(os.path.join(_KB_ROOT, "gurukul")),
     "sanskrit": os.path.normpath(os.path.join(_KB_ROOT, "sanskrit")),
     "programming": os.path.normpath(os.path.join(_KB_ROOT, "programming")),
+    "history": os.path.normpath(os.path.join(_KB_ROOT, "history")),
 }
 
 _DENSE_STATE: Optional[Dict[str, Any]] = None
-_DENSE_STATE_KEY: Optional[Tuple[str, str, float]] = None
+_DENSE_STATE_KEY: Optional[Tuple[str, str, float, str]] = None
 _DENSE_STATE_LOCK = threading.Lock()
 
 
@@ -44,12 +46,26 @@ def _active_index_paths() -> Tuple[Any, Any, Any]:
     return database_path, index_path, metadata_path
 
 
+def _current_source_manifest_hash() -> str:
+    from pathlib import Path
+
+    manifest = hashlib.sha256()
+    for path in sorted(Path(_KB_ROOT).rglob("*.md")):
+        if not path.is_file():
+            continue
+        relative_path = path.relative_to(_KB_ROOT).as_posix()
+        file_hash = hashlib.sha256(path.read_text(encoding="utf-8").encode("utf-8")).hexdigest()
+        manifest.update(f"{relative_path}:{file_hash}\n".encode("utf-8"))
+    return manifest.hexdigest()
+
+
 def _load_dense_state() -> Optional[Dict[str, Any]]:
     global _DENSE_STATE, _DENSE_STATE_KEY
     database_path, index_path, metadata_path = _active_index_paths()
     if not database_path.is_file() or not index_path.is_file() or not metadata_path.is_file():
         return None
-    state_key = (str(database_path), str(index_path), index_path.stat().st_mtime)
+    source_manifest_hash = _current_source_manifest_hash()
+    state_key = (str(database_path), str(index_path), index_path.stat().st_mtime, source_manifest_hash)
     if _DENSE_STATE_KEY == state_key:
         return _DENSE_STATE
     with _DENSE_STATE_LOCK:
@@ -61,6 +77,10 @@ def _load_dense_state() -> Optional[Dict[str, Any]]:
             from sentence_transformers import SentenceTransformer
 
             metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+            if metadata.get("source_manifest_sha256") != source_manifest_hash:
+                _DENSE_STATE = None
+                _DENSE_STATE_KEY = state_key
+                return None
             index = faiss.read_index(str(index_path))
             with sqlite3.connect(str(database_path)) as connection:
                 row_ids = {
@@ -748,6 +768,7 @@ def get_rag_health() -> Dict[str, Any]:
             metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             metadata = {}
+    current_source_manifest_hash = _current_source_manifest_hash()
     if metadata_available:
         try:
             import sqlite3
@@ -776,6 +797,7 @@ def get_rag_health() -> Dict[str, Any]:
         and metadata_available
         and database_chunks > 0
         and vector_chunks == database_chunks
+        and metadata.get("source_manifest_sha256") == current_source_manifest_hash
         and _load_dense_state() is not None
     )
     return {
@@ -796,6 +818,7 @@ def get_rag_health() -> Dict[str, Any]:
         "metadata_chunk_count": database_chunks if metadata_available else 0,
         "vector_count": vector_chunks,
         "metadata_claimed_chunks": metadata.get("total_chunks"),
+        "source_manifest_current": metadata.get("source_manifest_sha256") == current_source_manifest_hash,
         "indexed_documents": metadata.get("indexed_documents", 0) if index_loaded else 0,
         "chunking": (
             f"Character windows of {metadata.get('chunk_size')} with {metadata.get('chunk_overlap')} overlap."

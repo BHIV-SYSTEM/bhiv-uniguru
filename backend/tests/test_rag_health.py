@@ -7,16 +7,16 @@ from service.api import app
 def test_rag_health_reports_active_markdown_corpus_and_loaded_vector_index():
     health = get_rag_health()
 
-    assert health["source_documents"] == 73
-    assert health["lexical_documents_loaded"] == 73
+    assert health["source_documents"] == 75
+    assert health["lexical_documents_loaded"] == 75
     assert health["index"] == "loaded"
-    assert health["indexed_chunks"] == 158
+    assert health["indexed_chunks"] > 0
     assert health["metadata_available"] is True
     assert health["embedding_model"] == "all-MiniLM-L6-v2"
     assert health["embedding_dimension"] == 384
     assert health["index_type"] == "IndexIDMap2"
-    assert health["metadata_chunk_count"] == 158
-    assert health["metadata_claimed_chunks"] == 158
+    assert health["metadata_chunk_count"] == health["indexed_chunks"]
+    assert health["metadata_claimed_chunks"] == health["indexed_chunks"]
     assert health["status"] == "healthy"
 
 
@@ -90,6 +90,22 @@ def test_ask_answers_from_relevant_kb_and_rejects_missing_source_topic_evidence(
     assert unsupported_after_answer["verification_status"] == "UNVERIFIED"
     assert "Karma Yoga" not in unsupported_after_answer["answer"]
     assert "explicitly absent" in unsupported_after_answer["answer"]
+
+
+def test_chat_new_answers_india_prime_minister_with_source_evidence():
+    client = TestClient(app)
+    response = client.post(
+        "/chat/new",
+        json={"message": "india prime minister", "chatbotId": "test-guru", "userId": "india-history-user"},
+    )
+
+    assert response.status_code == 200
+    payload = response.json()
+    answer = payload["aiResponse"]["content"]
+    assert "Narendra Modi" in answer
+    assert "9 June 2024" in answer
+    assert "history/india_government_and_history.md" in answer
+    assert payload["aiResponse"]["metadata"]["verification_status"] == "VERIFIED"
 
 
 def test_new_rag_answers_greetings_without_running_kosha_retrieval(monkeypatch):

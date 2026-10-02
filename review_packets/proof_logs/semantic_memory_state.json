@@ -365,18 +365,6 @@
   "events": [
     {
       "canonical_authority_granted": false,
-      "constitutional_event_hash": "7e0066001b00399193052f87736c517cd9f0cd76c5a138f7058db1bf7793f6c1",
-      "contradiction_pressure": 0.0,
-      "entities_touched": [],
-      "event": "semantic_memory_update",
-      "memory_classification": "transient",
-      "trace_id": "phase2_proof_emit_test",
-      "unresolved_thread_opened": true,
-      "updated_at": "2026-09-30T16:03:11.287087Z",
-      "user_id": "ecosystem_runtime"
-    },
-    {
-      "canonical_authority_granted": false,
       "constitutional_event_hash": "6dd5d62ec882b48eb158ea5d98920ade7a0a86734098ddf8829d652b6214687f",
       "contradiction_pressure": 0.0,
       "entities_touched": [],
@@ -2853,6 +2841,18 @@
       "unresolved_thread_opened": true,
       "updated_at": "2026-10-02T06:46:33.551622Z",
       "user_id": "demo-user"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "cba9091b9a8cf9c52d492bf4ce7347adca730b5f01fa7e409615e8fe90de0d15",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_074171debc84",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-02T07:29:49.767491Z",
+      "user_id": "demo-user"
     }
   ],
   "load_warning": "Previous memory state was unreadable; started observable empty state.",
@@ -3397,6 +3397,16 @@
       "updated_at": "2026-08-29T05:11:04.749559Z",
       "user_id": "anonymous",
       "verification_status": "VERIFIED"
+    },
+    "demo-user:chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_074171debc84": {
+      "contradiction_pressure": 0.0,
+      "query": "hello",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_074171debc84",
+      "updated_at": "2026-10-02T07:29:49.767491Z",
+      "user_id": "demo-user",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
     "demo-user:chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_9febc35d1006": {
       "contradiction_pressure": 0.0,
@@ -4169,7 +4179,7 @@
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     }
   },
-  "updated_at": "2026-10-02T06:46:33.551622Z",
+  "updated_at": "2026-10-02T07:29:49.767491Z",
   "users": {
     "anonymous": {
       "continuity_score": 1.0,
@@ -4229,13 +4239,14 @@
       ]
     },
     "demo-user": {
-      "continuity_score": 0.25,
-      "last_seen": "2026-10-02T06:46:33.551622Z",
-      "queries": 4,
+      "continuity_score": 0.3,
+      "last_seen": "2026-10-02T07:29:49.767491Z",
+      "queries": 5,
       "trace_ids": [
         "chat_6752f272-9b5b-4239-94b6-cc960bbb9c19_989e664ce7c7",
         "chat_758bf2e1-cf1d-49a3-8e65-32384d35a402_074171debc84",
-        "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_9febc35d1006"
+        "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_9febc35d1006",
+        "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_074171debc84"
       ]
     },
     "ecosystem_runtime": {

@@ -107,7 +107,7 @@ def test_exact_concept_title_is_ranked_first():
 def test_duplicate_basename_documents_are_not_overwritten():
     retriever = AdvancedRetriever()
 
-    assert len(retriever.knowledge_map) == 74
+    assert len(retriever.knowledge_map) == 75
 
 
 def test_python_and_its_history_are_retrievable_from_active_kb():
@@ -122,3 +122,14 @@ def test_python_and_its_history_are_retrievable_from_active_kb():
     assert history
     assert history[0]["path"] == "programming/python.md"
     assert "late 1980s" in history[0]["content"]
+
+
+def test_india_prime_minister_query_returns_officially_sourced_history():
+    retriever = AdvancedRetriever()
+
+    results = retriever.retrieve_multi("india prime minister")
+
+    assert results
+    assert results[0]["path"] == "history/india_government_and_history.md"
+    assert "Narendra Modi" in results[0]["content"]
+    assert "9 June 2024" in results[0]["content"]

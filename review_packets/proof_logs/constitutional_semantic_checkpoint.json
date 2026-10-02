@@ -2487,7 +2487,7 @@
       "trace_id": "constitutional_contradiction_injection"
     }
   ],
-  "event_count": 747,
+  "event_count": 748,
   "lineage": [
     {
       "classification": "transient",
@@ -8464,15 +8464,23 @@
       "previous_event_hash": "9a84d2345ee28fac5ad52977172d5cf341b919671798e0bc63f0811b13056055",
       "retrieval_truth_hash": "86326deecb27f7b995a955d597efc744795e9ab346da87a6ec1dca78664b70e7",
       "trace_id": "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_9febc35d1006"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "cba9091b9a8cf9c52d492bf4ce7347adca730b5f01fa7e409615e8fe90de0d15",
+      "interpretation_hash": "fb3ae873f30877ab122ae3aded5ddfc869960787984512744cde0b1dc94264c6",
+      "previous_event_hash": "f8ffaa06516a522ab389a7caa0e74941bdebaaefb8bce29d49d7bc2cc4d473eb",
+      "retrieval_truth_hash": "85b823fa99903169ab96b4697b2012f6b7cccdda5799d6f292ab8d9b2431d82c",
+      "trace_id": "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_074171debc84"
     }
   ],
   "replay_integrity": {
     "hash_chain_ok": false,
-    "last_event_hash": "f8ffaa06516a522ab389a7caa0e74941bdebaaefb8bce29d49d7bc2cc4d473eb",
+    "last_event_hash": "cba9091b9a8cf9c52d492bf4ce7347adca730b5f01fa7e409615e8fe90de0d15",
     "rollback_target": null
   },
   "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_RECONSTRUCTION_V1",
-  "state_hash": "2adbf522a8eb47942c114510c80e2abe0209e0483f177d820074dd82ce7a54d6",
+  "state_hash": "da88ccee69726fc3eeadfdc0c2fbd626335d32e319f3fd5ae416f3f265268221",
   "transient_memory": [
     {
       "classification": "transient",
@@ -14307,6 +14315,16 @@
         "confidence_below_canonical_floor"
       ],
       "trace_id": "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_9febc35d1006"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "cba9091b9a8cf9c52d492bf4ce7347adca730b5f01fa7e409615e8fe90de0d15",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_074171debc84"
     }
   ]
 }
