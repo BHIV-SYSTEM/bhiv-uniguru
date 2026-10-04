@@ -85,7 +85,7 @@ interface GuruPreset extends GuruFormData {
 
 
 
-const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingChat }) => {
+const LeftSidebar: React.FC<LeftSidebarProps> = ({ onCreateNewChat, isCreatingChat }) => {
 
   const { user } = useAuth();
 
@@ -121,19 +121,19 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
   // Refs for GSAP animations
 
-  const contentRef = useRef\<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
-  const gurusRef = useRef\<HTMLDivElement>(null);
+  const gurusRef = useRef<HTMLDivElement>(null);
 
-  const chatsRef = useRef\<HTMLDivElement>(null);
+  const chatsRef = useRef<HTMLDivElement>(null);
 
-  const toolsRef = useRef\<HTMLDivElement>(null);
+  const toolsRef = useRef<HTMLDivElement>(null);
 
 
 
   // Horizontal scrolling ref for presets carousel
 
-  const presetsScrollRef = useRef\<HTMLDivElement>(null);
+  const presetsScrollRef = useRef<HTMLDivElement>(null);
 
   const scrollPresets = (dir: 'left' | 'right') => {
 
@@ -141,7 +141,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
     if (!el) return;
 
-    const amount = Math.max(260, Math.floor(el.clientWidth \* 0.85));
+    const amount = Math.max(260, Math.floor(el.clientWidth * 0.85));
 
     el.scrollBy({ left: dir === 'left' ? -amount : amount, behavior: 'smooth' });
 
@@ -195,7 +195,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
   const [isToolsExpanded, setIsToolsExpanded] = useState(true);
 
-  const [formData, setFormData] = useState\<GuruFormData>({
+  const [formData, setFormData] = useState<GuruFormData>({
 
     name: "",
 
@@ -357,7 +357,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
   // First-time user onboarding helper
 
-  const [showOnboarding, setShowOnboarding] = useState\<boolean>(() => {
+  const [showOnboarding, setShowOnboarding] = useState<boolean>(() => {
 
     try {
 
@@ -373,7 +373,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
   });
 
-  const [showPresets, setShowPresets] = useState\<boolean>(true);
+  const [showPresets, setShowPresets] = useState<boolean>(true);
 
 
 
@@ -425,7 +425,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
 
 
-  const sidebarRef = useRef\<HTMLDivElement>(null);
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
 
 
@@ -443,7 +443,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
         // Only auto-close on mobile
 
-        if (typeof window !== 'undefined' && window\.innerWidth < 1024) {
+        if (typeof window !== 'undefined' && window.innerWidth < 1024) {
 
           setIsCollapsed(true);
 
@@ -459,7 +459,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
       if (typeof window !== 'undefined') {
 
-        const isMobile = window\.innerWidth < 1024;
+        const isMobile = window.innerWidth < 1024;
 
         if (isMobile) {
 
@@ -479,7 +479,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
     document.addEventListener("mousedown", handleClickOutside);
 
-    window\.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
 
 
 
@@ -487,7 +487,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
       document.removeEventListener("mousedown", handleClickOutside);
 
-      window\.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", handleResize);
 
     };
 
@@ -499,7 +499,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
   useEffect(() => {
 
-    const onOpenGuruCreate = (\_e: Event) => {
+    const onOpenGuruCreate = (_e: Event) => {
 
       setIsCollapsed(false);
 
@@ -511,11 +511,11 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
     // custom event not in WindowEventMap; cast to satisfy TS
 
-    window\.addEventListener('open-guru-create' as any, onOpenGuruCreate as EventListener);
+    window.addEventListener('open-guru-create' as any, onOpenGuruCreate as EventListener);
 
     return () => {
 
-      window\.removeEventListener('open-guru-create' as any, onOpenGuruCreate as EventListener);
+      window.removeEventListener('open-guru-create' as any, onOpenGuruCreate as EventListener);
 
     };
 
@@ -581,7 +581,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
       const newGuru = {
 
-        id: newGuruResponse.chatbot?.\_id || newGuruResponse.guru?.id || newGuruResponse.id,
+        id: newGuruResponse.chatbot?._id || newGuruResponse.guru?.id || newGuruResponse.id,
 
         name: newGuruResponse.chatbot?.name || formData.name.trim(),
 
@@ -865,9 +865,9 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
     const now = new Date();
 
-    const diffTime = Math.abs(now\.getTime() - date.getTime());
+    const diffTime = Math.abs(now.getTime() - date.getTime());
 
-    const diffDays = Math.ceil(diffTime / (1000 \* 60 \* 60 \* 24));
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
 
 
@@ -875,7 +875,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
     if (diffDays === 2) return "Yesterday";
 
-    if (diffDays <= 7) return \`${diffDays - 1} days ago\`;
+    if (diffDays <= 7) return `${diffDays - 1} days ago`;
 
     return date.toLocaleDateString();
 
@@ -1031,17 +1031,17 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
     <>
 
-      {/\* Sidebar \*/}
+      {/* Sidebar */}
 
-      \<div
+      <div
 
         ref={sidebarRef}
 
-        className={\`fixed top-16 left-0 h-[calc(100vh-4rem)] transform transition-all duration-300 ease-in-out z-40 backdrop-blur-xl border-r border-purple-400/20 shadow-2xl flex flex-col overflow-hidden ${
+        className={`fixed top-16 left-0 h-[calc(100vh-4rem)] transform transition-all duration-300 ease-in-out z-40 backdrop-blur-xl border-r border-purple-400/20 shadow-2xl flex flex-col overflow-hidden ${
 
           isCollapsed ? 'w-16' : 'w-80 md:w-96 lg:w-[30rem] xl:w-[34rem]'
 
-        }\`}
+        }`}
 
         style={{
 
@@ -1057,23 +1057,23 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
       >
 
-        {/\* Header \*/}
+        {/* Header */}
 
-        \<div className="flex items-center justify-between p-4 border-b border-purple-400/20 flex-shrink-0">
+        <div className="flex items-center justify-between p-4 border-b border-purple-400/20 flex-shrink-0">
 
           {!isCollapsed && (
 
-            \<h2 className="text-lg font-bold flex items-center gap-2">
+            <h2 className="text-lg font-bold flex items-center gap-2">
 
-              \<img src={guruLogo} alt="Guru" className="w-6 h-6 drop-shadow-lg" />
+              <img src={guruLogo} alt="Guru" className="w-6 h-6 drop-shadow-lg" />
 
-              \<span className="bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">UniGuru Tools\</span>
+              <span className="bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">UniGuru Tools</span>
 
-            \</h2>
+            </h2>
 
           )}
 
-          \<button
+          <button
 
             onClick={() => {
 
@@ -1089,7 +1089,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
           >
 
-            \<FontAwesomeIcon
+            <FontAwesomeIcon
 
               icon={isCollapsed ? faChevronRight : faChevronLeft}
 
@@ -1097,23 +1097,23 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
             />
 
-          \</button>
+          </button>
 
-        \</div>
+        </div>
 
 
 
-        {/\* Navigation Tabs - Discord Style \*/}
+        {/* Navigation Tabs - Discord Style */}
 
         {!isCollapsed && (
 
-          \<div className="flex border-b border-purple-400/20 flex-shrink-0 bg-black/10">
+          <div className="flex border-b border-purple-400/20 flex-shrink-0 bg-black/10">
 
-            \<button
+            <button
 
               onClick={() => handleSectionChange('gurus')}
 
-              className={\`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
+              className={`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
 
                 activeSection === 'gurus'
 
@@ -1121,39 +1121,39 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                   : 'text-gray-300 hover:text-white hover:bg-purple-400/10'
 
-              }\`}
+              }`}
 
             >
 
-              {/\* Discord-style active indicator \*/}
+              {/* Discord-style active indicator */}
 
               {activeSection === 'gurus' && (
 
-                \<div className="absolute bottom-0 left-0 right-0 h-0.5 bg-purple-400 rounded-t-full">\</div>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-purple-400 rounded-t-full"></div>
 
               )}
 
 
 
-              {/\* Hover effect background \*/}
+              {/* Hover effect background */}
 
-              \<div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200">\</div>
-
-
-
-              \<img src={guruLogo} alt="Guru" className="w-4 h-4 mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
-
-              \<span className="relative z-10">{t('gurus')}\</span>
-
-            \</button>
+              <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
 
 
 
-            \<button
+              <img src={guruLogo} alt="Guru" className="w-4 h-4 mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
+
+              <span className="relative z-10">{t('gurus')}</span>
+
+            </button>
+
+
+
+            <button
 
               onClick={() => handleSectionChange('chats')}
 
-              className={\`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
+              className={`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
 
                 activeSection === 'chats'
 
@@ -1161,35 +1161,35 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                   : 'text-gray-300 hover:text-white hover:bg-blue-400/10'
 
-              }\`}
+              }`}
 
             >
 
               {activeSection === 'chats' && (
 
-                \<div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-400 rounded-t-full">\</div>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-400 rounded-t-full"></div>
 
               )}
 
 
 
-              \<div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200">\</div>
+              <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
 
 
 
-              \<FontAwesomeIcon icon={faComments} className="mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
+              <FontAwesomeIcon icon={faComments} className="mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
 
-              \<span className="relative z-10">{t('chats')}\</span>
+              <span className="relative z-10">{t('chats')}</span>
 
-            \</button>
+            </button>
 
 
 
-            \<button
+            <button
 
               onClick={() => handleSectionChange('tools')}
 
-              className={\`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
+              className={`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
 
                 activeSection === 'tools'
 
@@ -1197,51 +1197,51 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                   : 'text-gray-300 hover:text-white hover:bg-orange-400/10'
 
-              }\`}
+              }`}
 
             >
 
               {activeSection === 'tools' && (
 
-                \<div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-400 rounded-t-full">\</div>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-400 rounded-t-full"></div>
 
               )}
 
 
 
-              \<div className="absolute inset-0 bg-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200">\</div>
+              <div className="absolute inset-0 bg-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
 
 
 
-              \<FontAwesomeIcon icon={faTools} className="mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
+              <FontAwesomeIcon icon={faTools} className="mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
 
-              \<span className="relative z-10">Tools\</span>
+              <span className="relative z-10">Tools</span>
 
-            \</button>
+            </button>
 
-          \</div>
+          </div>
 
         )}
 
 
 
-        {/\* Collapsed Icons - Discord Style \*/}
+        {/* Collapsed Icons - Discord Style */}
 
         {isCollapsed && (
 
-          \<div className="flex flex-col items-center py-4 space-y-3">
+          <div className="flex flex-col items-center py-4 space-y-3">
 
-            {/\* Gurus Button \*/}
+            {/* Gurus Button */}
 
-            \<div className="relative group discord-tooltip" data-tooltip={\`My Gurus (${gurus.length})\`}>
+            <div className="relative group discord-tooltip" data-tooltip={`My Gurus (${gurus.length})`}>
 
-              {/\* Discord-style indicator bar \*/}
+              {/* Discord-style indicator bar */}
 
-              \<div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100">\</div>
+              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100"></div>
 
 
 
-              \<button
+              <button
 
                 onClick={() => {
 
@@ -1253,33 +1253,33 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                 className="relative w-12 h-12 rounded-3xl bg-gray-700/80 hover:bg-purple-600 text-gray-300 hover:text-white transition-all duration-200 ease-out group-hover:rounded-2xl flex items-center justify-center overflow-hidden"
 
-                title={\`My Gurus (${gurus.length})\`}
+                title={`My Gurus (${gurus.length})`}
 
               >
 
-                {/\* Discord-style background glow \*/}
+                {/* Discord-style background glow */}
 
-                \<div className="absolute inset-0 bg-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl">\</div>
-
-
-
-                \<img src={guruLogo} alt="Guru" className="relative z-10 w-6 h-6 transition-transform duration-200 group-hover:scale-110" />
-
-              \</button>
-
-            \</div>
+                <div className="absolute inset-0 bg-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
 
 
 
-            {/\* Chats Button \*/}
+                <img src={guruLogo} alt="Guru" className="relative z-10 w-6 h-6 transition-transform duration-200 group-hover:scale-110" />
 
-            \<div className="relative group">
+              </button>
 
-              \<div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100">\</div>
+            </div>
 
 
 
-              \<button
+            {/* Chats Button */}
+
+            <div className="relative group">
+
+              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100"></div>
+
+
+
+              <button
 
                 onClick={() => {
 
@@ -1291,31 +1291,31 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                 className="relative w-12 h-12 rounded-3xl bg-gray-700/80 hover:bg-blue-600 text-gray-300 hover:text-white transition-all duration-200 ease-out group-hover:rounded-2xl flex items-center justify-center overflow-hidden"
 
-                title={selectedGuru ? \`${selectedGuru.name} Chats (${getChatsByGuru(selectedGuru.id).length})\` : \`Recent Conversations (${chatSessions.length})\`}
+                title={selectedGuru ? `${selectedGuru.name} Chats (${getChatsByGuru(selectedGuru.id).length})` : `Recent Conversations (${chatSessions.length})`}
 
               >
 
-                \<div className="absolute inset-0 bg-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl">\</div>
+                <div className="absolute inset-0 bg-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
 
 
 
-                \<FontAwesomeIcon icon={faComments} className="relative z-10 text-lg transition-transform duration-200 group-hover:scale-110" />
+                <FontAwesomeIcon icon={faComments} className="relative z-10 text-lg transition-transform duration-200 group-hover:scale-110" />
 
-              \</button>
+              </button>
 
-            \</div>
-
-
-
-            {/\* Tools Button \*/}
-
-            \<div className="relative group">
-
-              \<div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100">\</div>
+            </div>
 
 
 
-              \<button
+            {/* Tools Button */}
+
+            <div className="relative group">
+
+              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100"></div>
+
+
+
+              <button
 
                 onClick={() => {
 
@@ -1331,33 +1331,33 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
               >
 
-                \<div className="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl">\</div>
+                <div className="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
 
 
 
-                \<FontAwesomeIcon icon={faTools} className="relative z-10 text-lg transition-transform duration-200 group-hover:scale-110" />
+                <FontAwesomeIcon icon={faTools} className="relative z-10 text-lg transition-transform duration-200 group-hover:scale-110" />
 
-              \</button>
+              </button>
 
-            \</div>
-
-
-
-            {/\* Separator \*/}
-
-            \<div className="w-8 h-0.5 bg-gray-600/50 rounded-full my-2">\</div>
+            </div>
 
 
 
-            {/\* New Chat Button \*/}
+            {/* Separator */}
 
-            \<div className="relative group">
-
-              \<div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100 group-disabled:opacity-0">\</div>
+            <div className="w-8 h-0.5 bg-gray-600/50 rounded-full my-2"></div>
 
 
 
-              \<button
+            {/* New Chat Button */}
+
+            <div className="relative group">
+
+              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100 group-disabled:opacity-0"></div>
+
+
+
+              <button
 
                 onClick={onCreateNewChat}
 
@@ -1369,67 +1369,67 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
               >
 
-                {/\* Discord-style background glow \*/}
+                {/* Discord-style background glow */}
 
-                \<div className="absolute inset-0 bg-green-400/30 opacity-0 group-hover:opacity-100 group-disabled:opacity-0 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl">\</div>
+                <div className="absolute inset-0 bg-green-400/30 opacity-0 group-hover:opacity-100 group-disabled:opacity-0 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
 
 
 
-                {/\* Disabled state overlay \*/}
+                {/* Disabled state overlay */}
 
                 {(isCreatingChat || !selectedGuru) && (
 
-                  \<div className="absolute inset-0 bg-gray-900/40 rounded-3xl">\</div>
+                  <div className="absolute inset-0 bg-gray-900/40 rounded-3xl"></div>
 
                 )}
 
 
 
-                \<MessageSquarePlus
+                <MessageSquarePlus
 
                   size={20}
 
-                  className={\`relative z-10 transition-all duration-200 group-hover:scale-110 group-disabled:scale-100 ${isCreatingChat ? 'animate-spin' : ''}\`}
+                  className={`relative z-10 transition-all duration-200 group-hover:scale-110 group-disabled:scale-100 ${isCreatingChat ? 'animate-spin' : ''}`}
 
                 />
 
-              \</button>
+              </button>
 
-            \</div>
+            </div>
 
-          \</div>
+          </div>
 
         )}
 
 
 
-        {/\* Content \*/}
+        {/* Content */}
 
         {!isCollapsed && (
 
-          \<div ref={contentRef} className="flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll p-4 pb-6 space-y-4 min-h-0">
+          <div ref={contentRef} className="flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll p-4 pb-6 space-y-4 min-h-0">
 
-            {/\* Gurus Section \*/}
+            {/* Gurus Section */}
 
             {activeSection === 'gurus' && (
 
-              \<div ref={gurusRef} className="flex flex-col h-full space-y-4">
+              <div ref={gurusRef} className="flex flex-col h-full space-y-4">
 
-                {/\* Action Buttons \*/}
+                {/* Action Buttons */}
 
                 {showOnboarding && gurus.length === 0 && !showCreateForm && (
 
-                  \<div className="bg-purple-500/10 border border-purple-400/30 text-purple-200 text-sm p-3 rounded-lg flex items-start justify-between gap-3">
+                  <div className="bg-purple-500/10 border border-purple-400/30 text-purple-200 text-sm p-3 rounded-lg flex items-start justify-between gap-3">
 
-                    \<div>
+                    <div>
 
-                      \<div className="font-semibold">Getting started\</div>
+                      <div className="font-semibold">Getting started</div>
 
-                      \<div>Step 1: Click "Create Guru" to start.\</div>
+                      <div>Step 1: Click "Create Guru" to start.</div>
 
-                    \</div>
+                    </div>
 
-                    \<button
+                    <button
 
                       onClick={() => { try { localStorage.setItem('guruOnboardingDismissed','true'); } catch {} setShowOnboarding(false); }}
 
@@ -1439,19 +1439,19 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                       Hide tips
 
-                    \</button>
+                    </button>
 
-                  \</div>
+                  </div>
 
                 )}
 
                 {!showOnboarding && gurus.length === 0 && !showCreateForm && (
 
-                  \<div className="bg-purple-500/5 border border-purple-400/20 text-purple-200 text-xs p-2 rounded-lg flex items-center justify-between gap-3">
+                  <div className="bg-purple-500/5 border border-purple-400/20 text-purple-200 text-xs p-2 rounded-lg flex items-center justify-between gap-3">
 
-                    \<span>New here? You can show tips again.\</span>
+                    <span>New here? You can show tips again.</span>
 
-                    \<button
+                    <button
 
                       onClick={() => { try { localStorage.setItem('guruOnboardingDismissed','false'); } catch {} setShowOnboarding(true); }}
 
@@ -1461,59 +1461,59 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                       Show tips
 
-                    \</button>
+                    </button>
 
-                  \</div>
+                  </div>
 
                 )}
 
                 {!showCreateForm && (
 
-                  \<div className="flex gap-2">
+                  <div className="flex gap-2">
 
-                    \<BubblyButton
+                    <BubblyButton
 
                       onClick={() => setShowCreateForm(true)}
 
                       variant="primary"
 
-                      className={\`flex-1 flex items-center justify-center gap-2 py-2 px-3 font-medium text-sm ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400 shadow-purple-500/30 shadow-lg' : ''}\`}
+                      className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 font-medium text-sm ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400 shadow-purple-500/30 shadow-lg' : ''}`}
 
                     >
 
-                      \<span>Create Guru\</span>
+                      <span>Create Guru</span>
 
-                    \</BubblyButton>
+                    </BubblyButton>
 
-                  \</div>
+                  </div>
 
                 )}
 
 
 
-                {/\* Create New Guru Form \*/}
+                {/* Create New Guru Form */}
 
                 {showCreateForm && (
 
-                  \<div className="bg-gradient-to-br from-purple-900/40 to-purple-800/30 backdrop-blur-sm rounded-xl p-6 border border-purple-400/30 shadow-xl">
+                  <div className="bg-gradient-to-br from-purple-900/40 to-purple-800/30 backdrop-blur-sm rounded-xl p-6 border border-purple-400/30 shadow-xl">
 
-                    \<div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center justify-between mb-6">
 
-                      \<div className="flex items-center gap-3">
+                      <div className="flex items-center gap-3">
 
-                        \<div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
 
-                          \<img src={guruLogo} alt="Guru" className="w-5 h-5" />
+                          <img src={guruLogo} alt="Guru" className="w-5 h-5" />
 
-                        \</div>
+                        </div>
 
-                        \<h3 className="text-white font-semibold text-lg">Create New Guru\</h3>
+                        <h3 className="text-white font-semibold text-lg">Create New Guru</h3>
 
-                      \</div>
+                      </div>
 
                       {showOnboarding && (
 
-                        \<button
+                        <button
 
                           onClick={() => { try { localStorage.setItem('guruOnboardingDismissed','true'); } catch {} setShowOnboarding(false); }}
 
@@ -1523,25 +1523,25 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                           Hide tips
 
-                        \</button>
+                        </button>
 
                       )}
 
-                    \</div>
+                    </div>
 
 
 
-                    {/\* Quick start templates - horizontal carousel \*/}
+                    {/* Quick start templates - horizontal carousel */}
 
-                    \<div className="mb-4">
+                    <div className="mb-4">
 
-                      \<div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center justify-between mb-2">
 
-                        \<div className="text-purple-200 text-xs">Quick start templates\</div>
+                        <div className="text-purple-200 text-xs">Quick start templates</div>
 
-                        \<div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2">
 
-                          \<button
+                          <button
 
                             type="button"
 
@@ -1553,13 +1553,13 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                             {showPresets ? 'Hide' : 'Show'}
 
-                          \</button>
+                          </button>
 
                           {showPresets && (
 
-                            \<div className="hidden sm:flex items-center gap-1">
+                            <div className="hidden sm:flex items-center gap-1">
 
-                              \<button
+                              <button
 
                                 type="button"
 
@@ -1571,11 +1571,11 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                               >
 
-                                \<FontAwesomeIcon icon={faChevronLeft} className="text-xs" />
+                                <FontAwesomeIcon icon={faChevronLeft} className="text-xs" />
 
-                              \</button>
+                              </button>
 
-                              \<button
+                              <button
 
                                 type="button"
 
@@ -1587,29 +1587,29 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                               >
 
-                                \<FontAwesomeIcon icon={faChevronRight} className="text-xs" />
+                                <FontAwesomeIcon icon={faChevronRight} className="text-xs" />
 
-                              \</button>
+                              </button>
 
-                            \</div>
+                            </div>
 
                           )}
 
-                        \</div>
+                        </div>
 
-                      \</div>
+                      </div>
 
 
 
                       {showPresets && (
 
-                        \<div className="relative">
+                        <div className="relative">
 
-                          {/\* Overlay arrows for mobile too \*/}
+                          {/* Overlay arrows for mobile too */}
 
-                          \<div className="sm:hidden absolute inset-y-0 left-0 flex items-center">
+                          <div className="sm:hidden absolute inset-y-0 left-0 flex items-center">
 
-                            \<button
+                            <button
 
                               type="button"
 
@@ -1621,15 +1621,15 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                             >
 
-                              \<FontAwesomeIcon icon={faChevronLeft} className="text-xs" />
+                              <FontAwesomeIcon icon={faChevronLeft} className="text-xs" />
 
-                            \</button>
+                            </button>
 
-                          \</div>
+                          </div>
 
-                          \<div className="sm:hidden absolute inset-y-0 right-0 flex items-center">
+                          <div className="sm:hidden absolute inset-y-0 right-0 flex items-center">
 
-                            \<button
+                            <button
 
                               type="button"
 
@@ -1641,15 +1641,15 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                             >
 
-                              \<FontAwesomeIcon icon={faChevronRight} className="text-xs" />
+                              <FontAwesomeIcon icon={faChevronRight} className="text-xs" />
 
-                            \</button>
+                            </button>
 
-                          \</div>
+                          </div>
 
 
 
-                          \<div
+                          <div
 
                             ref={presetsScrollRef}
 
@@ -1661,7 +1661,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                             {guruPresets.map((p, idx) => (
 
-                              \<button
+                              <button
 
                                 key={idx}
 
@@ -1671,63 +1671,63 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                                 className="min-w-[260px] sm:min-w-[280px] group relative p-3 rounded-lg border border-purple-400/30 bg-white/5 hover:bg-white/10 hover:border-purple-400/60 transition-all text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/50"
 
-                                title={\`${p.name} — ${p.subject}\`}
+                                title={`${p.name} — ${p.subject}`}
 
-                                aria-label={\`Use ${p.name} template\`}
+                                aria-label={`Use ${p.name} template`}
 
                               >
 
-                                \<div className="flex items-start gap-3">
+                                <div className="flex items-start gap-3">
 
-                                  \<div className="text-lg leading-none">{p.emoji}\</div>
+                                  <div className="text-lg leading-none">{p.emoji}</div>
 
-                                  \<div className="min-w-0">
+                                  <div className="min-w-0">
 
-                                    \<div className="text-white text-sm font-medium truncate">{p.name}\</div>
+                                    <div className="text-white text-sm font-medium truncate">{p.name}</div>
 
-                                    \<div className="text-purple-200 text-xs truncate">{p.subject}\</div>
+                                    <div className="text-purple-200 text-xs truncate">{p.subject}</div>
 
                                     {p.tagline && (
 
-                                      \<div className="text-gray-400 text-xs mt-1 line-clamp-2">{p.tagline}\</div>
+                                      <div className="text-gray-400 text-xs mt-1 line-clamp-2">{p.tagline}</div>
 
                                     )}
 
-                                  \</div>
+                                  </div>
 
-                                \</div>
+                                </div>
 
-                              \</button>
+                              </button>
 
                             ))}
 
-                          \</div>
+                          </div>
 
-                        \</div>
+                        </div>
 
                       )}
 
-                    \</div>
+                    </div>
 
 
 
-                    \<form onSubmit={handleCreateGuru} className="space-y-4">
+                    <form onSubmit={handleCreateGuru} className="space-y-4">
 
-                      \<div>
+                      <div>
 
-                        \<label className="block text-purple-200 text-sm font-medium mb-2">
+                        <label className="block text-purple-200 text-sm font-medium mb-2">
 
-                          Guru Name \*
+                          Guru Name *
 
-                        \</label>
+                        </label>
 
                         {showOnboarding && gurus.length === 0 && (
 
-                          \<p className="text-xs text-purple-300 mb-2">Step 2: Give your guru a clear, memorable name.\</p>
+                          <p className="text-xs text-purple-300 mb-2">Step 2: Give your guru a clear, memorable name.</p>
 
                         )}
 
-                        \<input
+                        <input
 
                           type="text"
 
@@ -1737,31 +1737,31 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
 
-                          className={\`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}\`}
+                          className={`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}`}
 
                           required
 
                         />
 
-                      \</div>
+                      </div>
 
 
 
-                      \<div>
+                      <div>
 
-                        \<label className="block text-purple-200 text-sm font-medium mb-2">
+                        <label className="block text-purple-200 text-sm font-medium mb-2">
 
-                          Subject/Expertise \*
+                          Subject/Expertise *
 
-                        \</label>
+                        </label>
 
                         {showOnboarding && gurus.length === 0 && (
 
-                          \<p className="text-xs text-purple-300 mb-2">Step 3: Specify the subject or expertise (e.g., Math, Physics, Programming).\</p>
+                          <p className="text-xs text-purple-300 mb-2">Step 3: Specify the subject or expertise (e.g., Math, Physics, Programming).</p>
 
                         )}
 
-                        \<input
+                        <input
 
                           type="text"
 
@@ -1771,31 +1771,31 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                           onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
 
-                          className={\`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}\`}
+                          className={`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}`}
 
                           required
 
                         />
 
-                      \</div>
+                      </div>
 
 
 
-                      \<div>
+                      <div>
 
-                        \<label className="block text-purple-200 text-sm font-medium mb-2">
+                        <label className="block text-purple-200 text-sm font-medium mb-2">
 
                           Description
 
-                        \</label>
+                        </label>
 
                         {showOnboarding && gurus.length === 0 && (
 
-                          \<p className="text-xs text-purple-300 mb-2">Step 4: Describe your guru's style and what it should help with.\</p>
+                          <p className="text-xs text-purple-300 mb-2">Step 4: Describe your guru's style and what it should help with.</p>
 
                         )}
 
-                        \<textarea
+                        <textarea
 
                           placeholder="Describe your guru's personality..."
 
@@ -1803,7 +1803,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                           onChange={(e) => setFormData({ ...formData, description: e.target.value })}
 
-                          className={\`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all resize-none ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}\`}
+                          className={`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all resize-none ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}`}
 
                           rows={4}
 
@@ -1811,19 +1811,19 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                         />
 
-                      \</div>
+                      </div>
 
 
 
                       {showOnboarding && gurus.length === 0 && (
 
-                        \<div className="text-purple-200 text-sm mt-2">Step 5: Click "Create Guru" to finish.\</div>
+                        <div className="text-purple-200 text-sm mt-2">Step 5: Click "Create Guru" to finish.</div>
 
                       )}
 
-                      \<div className="flex gap-3 pt-2">
+                      <div className="flex gap-3 pt-2">
 
-                        \<button
+                        <button
 
                           type="button"
 
@@ -1835,37 +1835,37 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                           Cancel
 
-                        \</button>
+                        </button>
 
-                        \<BubblyButton
+                        <BubblyButton
 
                           type="submit"
 
                           variant="primary"
 
-                          className={\`flex-1 py-3 px-4 font-medium ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400 shadow-purple-500/30 shadow-lg' : ''}\`}
+                          className={`flex-1 py-3 px-4 font-medium ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400 shadow-purple-500/30 shadow-lg' : ''}`}
 
                         >
 
                           Create Guru
 
-                        \</BubblyButton>
+                        </BubblyButton>
 
-                      \</div>
+                      </div>
 
-                    \</form>
+                    </form>
 
-                  \</div>
+                  </div>
 
                 )}
 
 
 
-                {/\* Gurus List \*/}
+                {/* Gurus List */}
 
-                \<div className={\`flex flex-col ${showCreateForm ? 'flex-shrink-0' : 'flex-1'} min-h-0\`}>
+                <div className={`flex flex-col ${showCreateForm ? 'flex-shrink-0' : 'flex-1'} min-h-0`}>
 
-                  \<button
+                  <button
 
                     onClick={toggleGuruList}
 
@@ -1873,13 +1873,13 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                   >
 
-                    \<span className="text-base font-semibold transition-colors duration-200">
+                    <span className="text-base font-semibold transition-colors duration-200">
 
                       My Gurus ({gurus.length})
 
-                    \</span>
+                    </span>
 
-                    \<FontAwesomeIcon
+                    <FontAwesomeIcon
 
                       icon={isGuruListExpanded ? faChevronUp : faChevronDown}
 
@@ -1887,33 +1887,33 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                     />
 
-                  \</button>
+                  </button>
 
 
 
                   {isGuruListExpanded && (
 
-                    \<div className="space-y-2 flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll min-h-0">
+                    <div className="space-y-2 flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll min-h-0">
 
                       {gurus.length === 0 ? (
 
-                        \<div className="text-gray-300 text-center py-4">
+                        <div className="text-gray-300 text-center py-4">
 
-                          \<p className="text-sm">No gurus yet\</p>
+                          <p className="text-sm">No gurus yet</p>
 
-                          \<p className="text-xs">Create your first guru to get started!\</p>
+                          <p className="text-xs">Create your first guru to get started!</p>
 
-                        \</div>
+                        </div>
 
                       ) : (
 
                         gurus.map((guru) => (
 
-                          \<div
+                          <div
 
                             key={guru.id}
 
-                            className={\`guru-card relative backdrop-blur-sm rounded-xl p-3 border transition-all duration-200 ease-out cursor-pointer group overflow-hidden ${
+                            className={`guru-card relative backdrop-blur-sm rounded-xl p-3 border transition-all duration-200 ease-out cursor-pointer group overflow-hidden ${
 
                               selectedGuru?.id === guru.id
 
@@ -1921,7 +1921,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                                 : "border-purple-400/20 hover:border-purple-400/50 hover:scale-[1.02]"
 
-                            }\`}
+                            }`}
 
                             style={{
 
@@ -1935,59 +1935,59 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                             onClick={() => handleGuruSelect(guru)}
 
-                            title={\`${guru.name}\n${guru.subject}\n${guru.description}\`}
+                            title={`${guru.name}\n${guru.subject}\n${guru.description}`}
 
                           >
 
-                            {/\* Discord-style left indicator for selected \*/}
+                            {/* Discord-style left indicator for selected */}
 
                             {selectedGuru?.id === guru.id && (
 
-                              \<div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-purple-400 rounded-r-full">\</div>
+                              <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-purple-400 rounded-r-full"></div>
 
                             )}
 
 
 
-                            {/\* Hover glow effect \*/}
+                            {/* Hover glow effect */}
 
-                            \<div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl">\</div>
+                            <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
 
 
-                            \<div className="flex items-start justify-between relative z-10">
+                            <div className="flex items-start justify-between relative z-10">
 
-                              \<div className="flex-1 min-w-0">
+                              <div className="flex-1 min-w-0">
 
-                                \<div className="flex items-center gap-2 mb-1">
+                                <div className="flex items-center gap-2 mb-1">
 
-                                  \<img src={guruLogo} alt="Guru" className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:scale-110" />
+                                  <img src={guruLogo} alt="Guru" className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:scale-110" />
 
-                                  \<h4 className="text-white font-medium text-sm truncate break-words transition-colors duration-200">
+                                  <h4 className="text-white font-medium text-sm truncate break-words transition-colors duration-200">
 
                                     {guru.name}
 
-                                  \</h4>
+                                  </h4>
 
-                                \</div>
+                                </div>
 
-                                \<p className="text-purple-300 text-xs truncate break-words transition-colors duration-200 group-hover:text-purple-200">
+                                <p className="text-purple-300 text-xs truncate break-words transition-colors duration-200 group-hover:text-purple-200">
 
                                   {guru.subject}
 
-                                \</p>
+                                </p>
 
-                                \<p className="text-gray-300 text-xs mt-1 line-clamp-2 break-words transition-colors duration-200 group-hover:text-gray-200">
+                                <p className="text-gray-300 text-xs mt-1 line-clamp-2 break-words transition-colors duration-200 group-hover:text-gray-200">
 
                                   {guru.description}
 
-                                \</p>
+                                </p>
 
-                              \</div>
+                              </div>
 
-                              \<div className="flex items-center gap-1 ml-2 opacity-0 group-hover:opacity-100 transition-all duration-200">
+                              <div className="flex items-center gap-1 ml-2 opacity-0 group-hover:opacity-100 transition-all duration-200">
 
-                                \<button
+                                <button
 
                                   onClick={(e) => {
 
@@ -2003,7 +2003,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                                 >
 
-                                  \<FontAwesomeIcon
+                                  <FontAwesomeIcon
 
                                     icon={faTrash}
 
@@ -2011,41 +2011,41 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                                   />
 
-                                \</button>
+                                </button>
 
-                              \</div>
+                              </div>
 
-                            \</div>
+                            </div>
 
-                          \</div>
+                          </div>
 
                         ))
 
                       )}
 
-                    \</div>
+                    </div>
 
                   )}
 
-                \</div>
+                </div>
 
-              \</div>
+              </div>
 
             )}
 
 
 
-            {/\* Chats Section \*/}
+            {/* Chats Section */}
 
             {activeSection === 'chats' && (
 
-              \<div ref={chatsRef} className="flex flex-col h-full space-y-4">
+              <div ref={chatsRef} className="flex flex-col h-full space-y-4">
 
-                {/\* New Chat Button - Discord Style \*/}
+                {/* New Chat Button - Discord Style */}
 
-                \<div className="relative group">
+                <div className="relative group">
 
-                  \<BubblyButton
+                  <BubblyButton
 
                     onClick={onCreateNewChat}
 
@@ -2057,43 +2057,43 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                   >
 
-                    {/\* Discord-style shimmer effect \*/}
+                    {/* Discord-style shimmer effect */}
 
-                    \<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out">\</div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
 
 
 
-                    {/\* Pulse effect for disabled state \*/}
+                    {/* Pulse effect for disabled state */}
 
                     {(isCreatingChat || !selectedGuru) && (
 
-                      \<div className="absolute inset-0 bg-gray-500/20 animate-pulse rounded-lg">\</div>
+                      <div className="absolute inset-0 bg-gray-500/20 animate-pulse rounded-lg"></div>
 
                     )}
 
 
 
-                    \<FontAwesomeIcon
+                    <FontAwesomeIcon
 
                       icon={faPlus}
 
-                      className={\`text-sm mr-3 transition-all duration-200 relative z-10 group-hover:rotate-90 group-disabled:rotate-0 ${isCreatingChat ? 'animate-spin' : ''}\`}
+                      className={`text-sm mr-3 transition-all duration-200 relative z-10 group-hover:rotate-90 group-disabled:rotate-0 ${isCreatingChat ? 'animate-spin' : ''}`}
 
                     />
 
-                    \<span className="relative z-10">{isCreatingChat ? t('creating') : t('startNewChat')}\</span>
+                    <span className="relative z-10">{isCreatingChat ? t('creating') : t('startNewChat')}</span>
 
-                  \</BubblyButton>
+                  </BubblyButton>
 
-                \</div>
+                </div>
 
 
 
-                {/\* All Chat History \*/}
+                {/* All Chat History */}
 
-                \<div className="flex flex-col flex-1 min-h-0">
+                <div className="flex flex-col flex-1 min-h-0">
 
-                  \<button
+                  <button
 
                     onClick={toggleChatList}
 
@@ -2101,13 +2101,13 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                   >
 
-                    \<span className="text-base font-semibold transition-colors duration-200">
+                    <span className="text-base font-semibold transition-colors duration-200">
 
-                      {selectedGuru ? \`${selectedGuru.name} ${t('chats')}\` : 'Recent Conversations'} ({selectedGuru ? getChatsByGuru(selectedGuru.id).length : chatSessions.length})
+                      {selectedGuru ? `${selectedGuru.name} ${t('chats')}` : 'Recent Conversations'} ({selectedGuru ? getChatsByGuru(selectedGuru.id).length : chatSessions.length})
 
-                    \</span>
+                    </span>
 
-                    \<FontAwesomeIcon
+                    <FontAwesomeIcon
 
                       icon={isChatListExpanded ? faChevronUp : faChevronDown}
 
@@ -2115,13 +2115,13 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                     />
 
-                  \</button>
+                  </button>
 
 
 
                   {isChatListExpanded && (
 
-                    \<div className="space-y-2 flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll min-h-0">
+                    <div className="space-y-2 flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll min-h-0">
 
                       {(() => {
 
@@ -2139,31 +2139,31 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                           return (
 
-                            \<div className="text-gray-300 text-center py-8">
+                            <div className="text-gray-300 text-center py-8">
 
                               {selectedGuru ? (
 
                                 <>
 
-                                  \<p className="text-sm">No chat history with {selectedGuru.name}\</p>
+                                  <p className="text-sm">No chat history with {selectedGuru.name}</p>
 
-                                  \<p className="text-xs">Start a conversation to see your chat history here\</p>
+                                  <p className="text-xs">Start a conversation to see your chat history here</p>
 
-                                \</>
+                                </>
 
                               ) : (
 
                                 <>
 
-                                  \<p className="text-sm">No chat history yet\</p>
+                                  <p className="text-sm">No chat history yet</p>
 
-                                  \<p className="text-xs">Select a guru and start a conversation\</p>
+                                  <p className="text-xs">Select a guru and start a conversation</p>
 
-                                \</>
+                                </>
 
                               )}
 
-                            \</div>
+                            </div>
 
                           );
 
@@ -2173,11 +2173,11 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                         return filteredChats.slice(0, 20).map((chat) => (
 
-                          \<div
+                          <div
 
                             key={chat.id}
 
-                            className={\`chat-card relative backdrop-blur-sm rounded-xl p-3 border transition-all duration-200 ease-out cursor-pointer group overflow-hidden ${
+                            className={`chat-card relative backdrop-blur-sm rounded-xl p-3 border transition-all duration-200 ease-out cursor-pointer group overflow-hidden ${
 
                               currentChatId === chat.id
 
@@ -2185,7 +2185,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                                 : "border-purple-400/20 hover:border-blue-400/50 hover:scale-[1.02]"
 
-                            }\`}
+                            }`}
 
                             style={{
 
@@ -2199,63 +2199,63 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                             onClick={() => handleChatSelect(chat.id)}
 
-                            title={\`${chat.title || \`Chat ${chat.id.slice(0, 8)}\`}\nWith ${chat.guru.name} • ${chat.messageCount} messages\nLast active: ${formatDate(chat.lastActivity)}\`}
+                            title={`${chat.title || `Chat ${chat.id.slice(0, 8)}`}\nWith ${chat.guru.name} • ${chat.messageCount} messages\nLast active: ${formatDate(chat.lastActivity)}`}
 
                           >
 
-                            {/\* Discord-style left indicator for active chat \*/}
+                            {/* Discord-style left indicator for active chat */}
 
                             {currentChatId === chat.id && (
 
-                              \<div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-blue-400 rounded-r-full">\</div>
+                              <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-blue-400 rounded-r-full"></div>
 
                             )}
 
 
 
-                            {/\* Hover glow effect \*/}
+                            {/* Hover glow effect */}
 
-                            \<div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl">\</div>
+                            <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
 
 
-                            \<div className="flex items-start justify-between relative z-10">
+                            <div className="flex items-start justify-between relative z-10">
 
-                              \<div className="flex-1 min-w-0">
+                              <div className="flex-1 min-w-0">
 
-                                \<h4 className="text-white font-medium text-sm truncate break-words transition-colors duration-200">
+                                <h4 className="text-white font-medium text-sm truncate break-words transition-colors duration-200">
 
-                                  {chat.title || \`Chat ${chat.id.slice(0, 8)}\`}
+                                  {chat.title || `Chat ${chat.id.slice(0, 8)}`}
 
-                                \</h4>
+                                </h4>
 
-                                \<div className="flex items-center justify-between mt-1">
+                                <div className="flex items-center justify-between mt-1">
 
-                                  \<p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">
+                                  <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">
 
                                     {chat.guru.name} • {chat.messageCount} messages
 
-                                  \</p>
+                                  </p>
 
-                                  \<p className="text-gray-400 text-xs transition-colors duration-200 group-hover:text-gray-300">
+                                  <p className="text-gray-400 text-xs transition-colors duration-200 group-hover:text-gray-300">
 
                                     {formatDate(chat.lastActivity)}
 
-                                  \</p>
+                                  </p>
 
-                                \</div>
+                                </div>
 
-                              \</div>
+                              </div>
 
-                              \<div className="flex items-center gap-1 ml-2 opacity-0 group-hover:opacity-100 transition-all duration-200">
+                              <div className="flex items-center gap-1 ml-2 opacity-0 group-hover:opacity-100 transition-all duration-200">
 
-                                \<button
+                                <button
 
                                   onClick={(e) => {
 
                                     e.stopPropagation();
 
-                                    openRenameModal(chat.id, chat.title || \`Chat ${chat.id.slice(0, 8)}\`);
+                                    openRenameModal(chat.id, chat.title || `Chat ${chat.id.slice(0, 8)}`);
 
                                   }}
 
@@ -2265,17 +2265,17 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                                 >
 
-                                  \<FontAwesomeIcon icon={faEdit} size="xs" />
+                                  <FontAwesomeIcon icon={faEdit} size="xs" />
 
-                                \</button>
+                                </button>
 
-                                \<button
+                                <button
 
                                   onClick={(e) => {
 
                                     e.stopPropagation();
 
-                                    handleDeleteChat(chat.id, chat.title || \`Chat ${chat.id.slice(0, 8)}\`);
+                                    handleDeleteChat(chat.id, chat.title || `Chat ${chat.id.slice(0, 8)}`);
 
                                   }}
 
@@ -2285,7 +2285,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                                 >
 
-                                  \<FontAwesomeIcon
+                                  <FontAwesomeIcon
 
                                     icon={faTrash}
 
@@ -2293,39 +2293,39 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                                   />
 
-                                \</button>
+                                </button>
 
-                              \</div>
+                              </div>
 
-                            \</div>
+                            </div>
 
-                          \</div>
+                          </div>
 
                         ));
 
                       })()}
 
-                    \</div>
+                    </div>
 
                   )}
 
-                \</div>
+                </div>
 
-              \</div>
+              </div>
 
             )}
 
 
 
-            {/\* Tools Section \*/}
+            {/* Tools Section */}
 
             {activeSection === 'tools' && (
 
-              \<div ref={toolsRef} className="flex flex-col h-full space-y-4">
+              <div ref={toolsRef} className="flex flex-col h-full space-y-4">
 
-                \<div>
+                <div>
 
-                  \<button
+                  <button
 
                     onClick={toggleToolsList}
 
@@ -2333,9 +2333,9 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                   >
 
-                    \<span className="text-base font-semibold transition-colors duration-200">Available Tools\</span>
+                    <span className="text-base font-semibold transition-colors duration-200">Available Tools</span>
 
-                    \<FontAwesomeIcon
+                    <FontAwesomeIcon
 
                       icon={isToolsExpanded ? faChevronUp : faChevronDown}
 
@@ -2343,17 +2343,17 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                     />
 
-                  \</button>
+                  </button>
 
 
 
                   {isToolsExpanded && (
 
-                    \<div className="space-y-2">
+                    <div className="space-y-2">
 
-                      {/\* Sanskrit Knowledge Decoder Tool \*/}
+                      {/* Sanskrit Knowledge Decoder Tool */}
 
-                      \<div
+                      <div
 
                         key="sanskrit-decoder"
 
@@ -2365,11 +2365,11 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                         onClick={() => {
 
-                          const nav = (window as unknown as Record\<string, unknown>).\_\_sidebarNavigate as ((path: string) => void) | undefined;
+                          const nav = (window as unknown as Record<string, unknown>).__sidebarNavigate as ((path: string) => void) | undefined;
 
                           if (nav) nav("/sanskrit-decoder");
 
-                          else window\.location.href = "/sanskrit-decoder";
+                          else window.location.href = "/sanskrit-decoder";
 
                         }}
 
@@ -2377,35 +2377,35 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                       >
 
-                        \<div className="absolute inset-0 bg-violet-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl" />
+                        <div className="absolute inset-0 bg-violet-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl" />
 
-                        \<div className="flex items-center gap-3 relative z-10">
+                        <div className="flex items-center gap-3 relative z-10">
 
-                          \<div className="text-violet-300 text-lg transition-transform duration-200 group-hover:scale-110 select-none">ॐ\</div>
+                          <div className="text-violet-300 text-lg transition-transform duration-200 group-hover:scale-110 select-none">ॐ</div>
 
-                          \<div>
+                          <div>
 
-                            \<h4 className="text-white font-semibold text-sm transition-colors duration-200">Sanskrit Decoder\</h4>
+                            <h4 className="text-white font-semibold text-sm transition-colors duration-200">Sanskrit Decoder</h4>
 
-                            \<p className="text-violet-300 text-xs transition-colors duration-200 group-hover:text-violet-200">Civilizational Knowledge Engine\</p>
+                            <p className="text-violet-300 text-xs transition-colors duration-200 group-hover:text-violet-200">Civilizational Knowledge Engine</p>
 
-                          \</div>
+                          </div>
 
-                          \<div className="ml-auto">
+                          <div className="ml-auto">
 
-                            \<span className="text-[9px] px-1.5 py-0.5 rounded-full bg-violet-900/60 text-violet-300 border border-violet-700/40 font-medium">LIVE\</span>
+                            <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-violet-900/60 text-violet-300 border border-violet-700/40 font-medium">LIVE</span>
 
-                          \</div>
+                          </div>
 
-                        \</div>
+                        </div>
 
-                      \</div>
+                      </div>
 
 
 
-                      {/\* AI Assistant Tool \*/}
+                      {/* AI Assistant Tool */}
 
-                      \<div
+                      <div
 
                         key="ai-assistant"
 
@@ -2423,33 +2423,33 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                       >
 
-                        {/\* Hover glow effect \*/}
+                        {/* Hover glow effect */}
 
-                        \<div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl">\</div>
-
-
-
-                        \<div className="flex items-center gap-3 relative z-10">
-
-                          \<div className="text-purple-400 text-lg transition-transform duration-200 group-hover:scale-110">🤖\</div>
-
-                          \<div>
-
-                            \<h4 className="text-white font-medium text-sm transition-colors duration-200">AI Assistant\</h4>
-
-                            \<p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Get help with your queries\</p>
-
-                          \</div>
-
-                        \</div>
-
-                      \</div>
+                        <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
 
 
-                      {/\* Code Generator Tool \*/}
+                        <div className="flex items-center gap-3 relative z-10">
 
-                      \<div
+                          <div className="text-purple-400 text-lg transition-transform duration-200 group-hover:scale-110">🤖</div>
+
+                          <div>
+
+                            <h4 className="text-white font-medium text-sm transition-colors duration-200">AI Assistant</h4>
+
+                            <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Get help with your queries</p>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+
+                      {/* Code Generator Tool */}
+
+                      <div
 
                         key="code-generator"
 
@@ -2467,33 +2467,33 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                       >
 
-                          {/\* Hover glow effect \*/}
+                          {/* Hover glow effect */}
 
-                          \<div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl">\</div>
-
-
-
-                          \<div className="flex items-center gap-3 relative z-10">
-
-                            \<div className="text-green-400 text-lg transition-transform duration-200 group-hover:scale-110">💻\</div>
-
-                            \<div>
-
-                              \<h4 className="text-white font-medium text-sm transition-colors duration-200">Code Generator\</h4>
-
-                              \<p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Generate code snippets\</p>
-
-                            \</div>
-
-                          \</div>
-
-                        \</div>
+                          <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
 
 
-                      {/\* Study Planner Tool \*/}
+                          <div className="flex items-center gap-3 relative z-10">
 
-                      \<div
+                            <div className="text-green-400 text-lg transition-transform duration-200 group-hover:scale-110">💻</div>
+
+                            <div>
+
+                              <h4 className="text-white font-medium text-sm transition-colors duration-200">Code Generator</h4>
+
+                              <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Generate code snippets</p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+
+
+                      {/* Study Planner Tool */}
+
+                      <div
 
                         key="study-planner"
 
@@ -2509,33 +2509,33 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                       >
 
-                          {/\* Hover glow effect \*/}
+                          {/* Hover glow effect */}
 
-                          \<div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl">\</div>
-
-
-
-                          \<div className="flex items-center gap-3 relative z-10">
-
-                            \<div className="text-blue-400 text-lg transition-transform duration-200 group-hover:scale-110">📚\</div>
-
-                            \<div>
-
-                              \<h4 className="text-white font-medium text-sm transition-colors duration-200">Study Planner\</h4>
-
-                              \<p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Plan your learning journey\</p>
-
-                            \</div>
-
-                          \</div>
-
-                        \</div>
+                          <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
 
 
-                      {/\* Note Taking Tool \*/}
+                          <div className="flex items-center gap-3 relative z-10">
 
-                      \<div
+                            <div className="text-blue-400 text-lg transition-transform duration-200 group-hover:scale-110">📚</div>
+
+                            <div>
+
+                              <h4 className="text-white font-medium text-sm transition-colors duration-200">Study Planner</h4>
+
+                              <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Plan your learning journey</p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+
+
+                      {/* Note Taking Tool */}
+
+                      <div
 
                         key="note-taking"
 
@@ -2551,49 +2551,49 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
                       >
 
-                          {/\* Hover glow effect \*/}
+                          {/* Hover glow effect */}
 
-                          \<div className="absolute inset-0 bg-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl">\</div>
+                          <div className="absolute inset-0 bg-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
 
 
-                          \<div className="flex items-center gap-3 relative z-10">
+                          <div className="flex items-center gap-3 relative z-10">
 
-                            \<div className="text-yellow-400 text-lg transition-transform duration-200 group-hover:scale-110">📝\</div>
+                            <div className="text-yellow-400 text-lg transition-transform duration-200 group-hover:scale-110">📝</div>
 
-                            \<div>
+                            <div>
 
-                              \<h4 className="text-white font-medium text-sm transition-colors duration-200">Note Taking\</h4>
+                              <h4 className="text-white font-medium text-sm transition-colors duration-200">Note Taking</h4>
 
-                              \<p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Save and organize your insights\</p>
+                              <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Save and organize your insights</p>
 
-                            \</div>
+                            </div>
 
-                          \</div>
+                          </div>
 
-                        \</div>
+                        </div>
 
-                    \</div>
+                    </div>
 
                   )}
 
-                \</div>
+                </div>
 
-              \</div>
+              </div>
 
             )}
 
-          \</div>
+          </div>
 
         )}
 
-      \</div>
+      </div>
 
 
 
-      {/\* Confirmation Modal \*/}
+      {/* Confirmation Modal */}
 
-      \<ConfirmationModal
+      <ConfirmationModal
 
         isOpen={confirmModal.isOpen}
 
@@ -2601,9 +2601,9 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
         onConfirm={confirmDelete}
 
-        title={\`Delete ${confirmModal.type === 'guru' ? 'Guru' : 'Chat'}\`}
+        title={`Delete ${confirmModal.type === 'guru' ? 'Guru' : 'Chat'}`}
 
-        message={\`Are you sure you want to delete "${confirmModal.name}"? This action cannot be undone.\`}
+        message={`Are you sure you want to delete "${confirmModal.name}"? This action cannot be undone.`}
 
         confirmText="Delete"
 
@@ -2615,9 +2615,9 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
 
 
-      {/\* Rename Modal \*/}
+      {/* Rename Modal */}
 
-      \<RenameModal
+      <RenameModal
 
         isOpen={renameModal.isOpen}
 
@@ -2637,7 +2637,7 @@ const LeftSidebar: React.FC\<LeftSidebarProps> = ({ onCreateNewChat, isCreatingC
 
       />
 
-    \</>
+    </>
 
   );
 

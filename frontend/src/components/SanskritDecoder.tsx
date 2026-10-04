@@ -188,7 +188,7 @@ const SUGGESTED_CONCEPTS = [
 
 const EvidenceBadge: React.FC<{ status: string }> = ({ status }) => {
 
-  const map: Record\<string, { label: string; className: string }> = {
+  const map: Record<string, { label: string; className: string }> = {
 
     EVIDENCE_BACKED:                  { label: "Evidence Backed",   className: "bg-emerald-900/50 text-emerald-300 border-emerald-700/60" },
 
@@ -210,11 +210,11 @@ const EvidenceBadge: React.FC<{ status: string }> = ({ status }) => {
 
   return (
 
-    \<span className={\`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium border ${config.className}\`}>
+    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium border ${config.className}`}>
 
       {config.label}
 
-    \</span>
+    </span>
 
   );
 
@@ -230,13 +230,13 @@ const LayerRow: React.FC<{ layerKey: string; layer: KnowledgeLayer }> = ({ layer
 
     return (
 
-      \<div className="flex items-center justify-between px-3 py-2 rounded-lg bg-gray-900/20 border border-gray-800/30">
+      <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-gray-900/20 border border-gray-800/30">
 
-        \<span className="text-gray-600 text-xs capitalize">{layerKey.replace(/\_/g, " ")}\</span>
+        <span className="text-gray-600 text-xs capitalize">{layerKey.replace(/_/g, " ")}</span>
 
-        \<EvidenceBadge status={layer.status} />
+        <EvidenceBadge status={layer.status} />
 
-      \</div>
+      </div>
 
     );
 
@@ -249,145 +249,145 @@ const LayerRow: React.FC<{ layerKey: string; layer: KnowledgeLayer }> = ({ layer
 
   return (
 
-    \<div className="rounded-lg border border-gray-700/40 overflow-hidden">
+    <div className="rounded-lg border border-gray-700/40 overflow-hidden">
 
-      \<button
+      <button
 
         onClick={() => setOpen((p) => !p)}
 
         className="w-full flex items-center justify-between px-3 py-2.5 bg-gray-900/40 hover:bg-gray-800/60 transition-colors"
 
-        id={\`layer-${layerKey}\`}
+        id={`layer-${layerKey}`}
 
       >
 
-        \<div className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
 
           {open ? (
 
-            \<ChevronDown size={12} className="text-gray-400 flex-shrink-0" />
+            <ChevronDown size={12} className="text-gray-400 flex-shrink-0" />
 
           ) : (
 
-            \<ChevronRight size={12} className="text-gray-400 flex-shrink-0" />
+            <ChevronRight size={12} className="text-gray-400 flex-shrink-0" />
 
           )}
 
-          \<span className="text-gray-200 text-xs font-medium capitalize">
+          <span className="text-gray-200 text-xs font-medium capitalize">
 
-            {layerKey.replace(/\_/g, " ")}
+            {layerKey.replace(/_/g, " ")}
 
-          \</span>
+          </span>
 
-        \</div>
+        </div>
 
-        \<EvidenceBadge status={layer.status} />
+        <EvidenceBadge status={layer.status} />
 
-      \</button>
+      </button>
 
 
 
       {open && (
 
-        \<div className="px-4 py-3 bg-gray-950/60 space-y-2 border-t border-gray-800/40">
+        <div className="px-4 py-3 bg-gray-950/60 space-y-2 border-t border-gray-800/40">
 
-          {/\* Panini grammar enrichment \*/}
+          {/* Panini grammar enrichment */}
 
           {layer.panini_grammar?.panini_sutras?.length ? (
 
-            \<div className="mb-2 p-2 rounded bg-purple-950/40 border border-purple-800/30">
+            <div className="mb-2 p-2 rounded bg-purple-950/40 border border-purple-800/30">
 
-              \<div className="text-purple-300 text-[10px] font-semibold mb-1">
+              <div className="text-purple-300 text-[10px] font-semibold mb-1">
 
                 Pāṇini Sūtras ({layer.panini_grammar.panini_sutras.length})
 
-              \</div>
+              </div>
 
               {layer.panini_grammar.panini_sutras.map((s, i) => (
 
-                \<div key={i} className="text-gray-300 text-xs mb-1">
+                <div key={i} className="text-gray-300 text-xs mb-1">
 
-                  \<span className="text-purple-400 font-mono">{s.sutra_number}\</span>{" "}
+                  <span className="text-purple-400 font-mono">{s.sutra_number}</span>{" "}
 
-                  \<span>{s.sutra_text}\</span>{" "}
+                  <span>{s.sutra_text}</span>{" "}
 
-                  {s.gloss && \<span className="text-gray-500">— {s.gloss}\</span>}
+                  {s.gloss && <span className="text-gray-500">— {s.gloss}</span>}
 
-                \</div>
+                </div>
 
               ))}
 
-            \</div>
+            </div>
 
           ) : null}
 
 
 
-          {/\* Acoustic phonetics enrichment \*/}
+          {/* Acoustic phonetics enrichment */}
 
           {layer.acoustic_phonetics?.claims?.length ? (
 
-            \<div className="mb-2 p-2 rounded bg-teal-950/40 border border-teal-800/30">
+            <div className="mb-2 p-2 rounded bg-teal-950/40 border border-teal-800/30">
 
-              \<div className="text-teal-300 text-[10px] font-semibold mb-1">Śikṣā Acoustic Phonetics\</div>
+              <div className="text-teal-300 text-[10px] font-semibold mb-1">Śikṣā Acoustic Phonetics</div>
 
               {layer.acoustic_phonetics.claims.map((c, i) => {
 
-                const v = c.value as Record\<string, string | undefined>;
+                const v = c.value as Record<string, string | undefined>;
 
                 return (
 
-                  \<div key={i} className="text-gray-300 text-xs grid grid-cols-2 gap-1">
+                  <div key={i} className="text-gray-300 text-xs grid grid-cols-2 gap-1">
 
-                    {v.iast && \<span>IAST: \<span className="font-mono text-teal-300">{v.iast}\</span>\</span>}
+                    {v.iast && <span>IAST: <span className="font-mono text-teal-300">{v.iast}</span></span>}
 
-                    {v.ipa && \<span>IPA: \<span className="font-mono text-teal-300">{v.ipa}\</span>\</span>}
+                    {v.ipa && <span>IPA: <span className="font-mono text-teal-300">{v.ipa}</span></span>}
 
-                    {v.varna_class && \<span>Class: \<span className="text-gray-400">{v.varna_class}\</span>\</span>}
+                    {v.varna_class && <span>Class: <span className="text-gray-400">{v.varna_class}</span></span>}
 
-                    {v.sthana && \<span>Sthāna: \<span className="text-gray-400">{v.sthana}\</span>\</span>}
+                    {v.sthana && <span>Sthāna: <span className="text-gray-400">{v.sthana}</span></span>}
 
-                  \</div>
+                  </div>
 
                 );
 
               })}
 
-            \</div>
+            </div>
 
           ) : null}
 
 
 
-          {/\* Darshana matrix \*/}
+          {/* Darshana matrix */}
 
           {layer.darshana_matrix && Object.keys(layer.darshana_matrix).length > 0 && (
 
-            \<div className="mb-2 space-y-1">
+            <div className="mb-2 space-y-1">
 
               {Object.entries(layer.darshana_matrix).map(([trad, entry]) => (
 
-                \<div key={trad} className="p-2 rounded bg-indigo-950/30 border border-indigo-800/20">
+                <div key={trad} className="p-2 rounded bg-indigo-950/30 border border-indigo-800/20">
 
-                  \<div className="text-indigo-300 text-[10px] font-semibold capitalize mb-0.5">{trad}\</div>
+                  <div className="text-indigo-300 text-[10px] font-semibold capitalize mb-0.5">{trad}</div>
 
-                  \<div className="text-gray-300 text-xs">{entry.position}\</div>
+                  <div className="text-gray-300 text-xs">{entry.position}</div>
 
-                \</div>
+                </div>
 
               ))}
 
-            \</div>
+            </div>
 
           )}
 
 
 
-          {/\* Regular claims \*/}
+          {/* Regular claims */}
 
           {layer.claims.map((claim, i) => (
 
-            \<div key={i} className="text-gray-300 text-xs leading-relaxed">
+            <div key={i} className="text-gray-300 text-xs leading-relaxed">
 
               {typeof claim.value === "string"
 
@@ -399,35 +399,35 @@ const LayerRow: React.FC<{ layerKey: string; layer: KnowledgeLayer }> = ({ layer
 
                 : JSON.stringify(claim.value)}
 
-            \</div>
+            </div>
 
           ))}
 
 
 
-          {/\* Provenance \*/}
+          {/* Provenance */}
 
           {firstClaim?.provenance?.[0] && (
 
-            \<div className="mt-2 flex items-start gap-1.5 text-[10px] text-gray-500">
+            <div className="mt-2 flex items-start gap-1.5 text-[10px] text-gray-500">
 
-              \<Shield size={10} className="mt-0.5 flex-shrink-0 text-gray-600" />
+              <Shield size={10} className="mt-0.5 flex-shrink-0 text-gray-600" />
 
-              \<span className="font-mono break-all">
+              <span className="font-mono break-all">
 
                 {firstClaim.provenance[0].source_path}
 
-              \</span>
+              </span>
 
-            \</div>
+            </div>
 
           )}
 
-        \</div>
+        </div>
 
       )}
 
-    \</div>
+    </div>
 
   );
 
@@ -445,17 +445,17 @@ const SanskritDecoder: React.FC = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const [result, setResult] = useState\<SanskritDecoderApiResponse | null>(null);
+  const [result, setResult] = useState<SanskritDecoderApiResponse | null>(null);
 
-  const [error, setError] = useState\<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   const [activeTab, setActiveTab] = useState<"pipeline" | "layers" | "graph" | "provenance">("pipeline");
 
-  const [expandedGroups, setExpandedGroups] = useState\<Set\<string>>(new Set(["Core Linguistic"]));
+  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set(["Core Linguistic"]));
 
   const [healthStatus, setHealthStatus] = useState<"unknown" | "online" | "offline">("unknown");
 
-  const inputRef = useRef\<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
 
 
@@ -559,47 +559,47 @@ const SanskritDecoder: React.FC = () => {
 
   return (
 
-    \<div className="min-h-screen bg-black text-white font-sans">
+    <div className="min-h-screen bg-black text-white font-sans">
 
-      {/\* Header \*/}
+      {/* Header */}
 
-      \<div className="relative overflow-hidden">
+      <div className="relative overflow-hidden">
 
-        \<div className="absolute inset-0 bg-gradient-to-b from-purple-950/30 via-black to-black pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-950/30 via-black to-black pointer-events-none" />
 
-        \<div className="relative max-w-5xl mx-auto px-4 pt-10 pb-6">
+        <div className="relative max-w-5xl mx-auto px-4 pt-10 pb-6">
 
-          \<div className="flex items-center justify-between mb-2">
+          <div className="flex items-center justify-between mb-2">
 
-            \<div className="flex items-center gap-3">
+            <div className="flex items-center gap-3">
 
-              \<div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-violet-800 flex items-center justify-center text-lg font-bold shadow-lg shadow-purple-900/50">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-violet-800 flex items-center justify-center text-lg font-bold shadow-lg shadow-purple-900/50">
 
                 ॐ
 
-              \</div>
+              </div>
 
-              \<div>
+              <div>
 
-                \<h1 className="text-2xl font-bold bg-gradient-to-r from-purple-300 via-violet-200 to-white bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-300 via-violet-200 to-white bg-clip-text text-transparent">
 
                   Sanskrit Knowledge Decoder
 
-                \</h1>
+                </h1>
 
-                \<p className="text-gray-500 text-xs mt-0.5">
+                <p className="text-gray-500 text-xs mt-0.5">
 
                   UniGuru Native Civilizational Intelligence Engine · Isha Singh · Sprint 2026
 
-                \</p>
+                </p>
 
-              \</div>
+              </div>
 
-            \</div>
+            </div>
 
-            {/\* Health badge \*/}
+            {/* Health badge */}
 
-            \<div className={\`flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs ${
+            <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs ${
 
               healthStatus === "online"
 
@@ -611,27 +611,27 @@ const SanskritDecoder: React.FC = () => {
 
                 : "bg-gray-900/50 border-gray-700/50 text-gray-500"
 
-            }\`}>
+            }`}>
 
-              \<div className={\`w-1.5 h-1.5 rounded-full ${
+              <div className={`w-1.5 h-1.5 rounded-full ${
 
                 healthStatus === "online" ? "bg-emerald-400 animate-pulse" :
 
                 healthStatus === "offline" ? "bg-red-400" : "bg-gray-500"
 
-              }\`} />
+              }`} />
 
               {healthStatus === "online" ? "Runtime Online" : healthStatus === "offline" ? "Runtime Offline" : "Checking…"}
 
-            \</div>
+            </div>
 
-          \</div>
+          </div>
 
 
 
-          {/\* Description \*/}
+          {/* Description */}
 
-          \<p className="text-gray-400 text-sm max-w-2xl mt-4 leading-relaxed">
+          <p className="text-gray-400 text-sm max-w-2xl mt-4 leading-relaxed">
 
             Decodes Sanskrit concepts through their own epistemology — Śabda → Dhātu → Vyākaraṇa →
 
@@ -639,25 +639,25 @@ const SanskritDecoder: React.FC = () => {
 
             every statement is evidence-classified, every execution is replay-safe.
 
-          \</p>
+          </p>
 
-        \</div>
+        </div>
 
-      \</div>
+      </div>
 
 
 
-      \<div className="max-w-5xl mx-auto px-4 pb-16 space-y-6">
+      <div className="max-w-5xl mx-auto px-4 pb-16 space-y-6">
 
-        {/\* Search box \*/}
+        {/* Search box */}
 
-        \<div className="relative">
+        <div className="relative">
 
-          \<div className="flex gap-2">
+          <div className="flex gap-2">
 
-            \<div className="relative flex-1">
+            <div className="relative flex-1">
 
-              \<Search
+              <Search
 
                 size={16}
 
@@ -665,7 +665,7 @@ const SanskritDecoder: React.FC = () => {
 
               />
 
-              \<input
+              <input
 
                 ref={inputRef}
 
@@ -689,9 +689,9 @@ const SanskritDecoder: React.FC = () => {
 
               />
 
-            \</div>
+            </div>
 
-            \<button
+            <button
 
               id="sanskrit-decode-btn"
 
@@ -705,33 +705,33 @@ const SanskritDecoder: React.FC = () => {
 
               {loading ? (
 
-                \<RefreshCw size={15} className="animate-spin" />
+                <RefreshCw size={15} className="animate-spin" />
 
               ) : (
 
-                \<Layers size={15} />
+                <Layers size={15} />
 
               )}
 
               {loading ? "Decoding…" : "Decode"}
 
-            \</button>
+            </button>
 
-          \</div>
+          </div>
 
 
 
-          {/\* Suggestions \*/}
+          {/* Suggestions */}
 
-          \<div className="flex flex-wrap gap-2 mt-3">
+          <div className="flex flex-wrap gap-2 mt-3">
 
             {SUGGESTED_CONCEPTS.map((c) => (
 
-              \<button
+              <button
 
                 key={c}
 
-                id={\`suggest-${c}\`}
+                id={`suggest-${c}`}
 
                 onClick={() => handleDecode(c)}
 
@@ -741,53 +741,53 @@ const SanskritDecoder: React.FC = () => {
 
                 {c}
 
-              \</button>
+              </button>
 
             ))}
 
-          \</div>
+          </div>
 
-        \</div>
+        </div>
 
 
 
-        {/\* Error \*/}
+        {/* Error */}
 
         {error && (
 
-          \<div className="flex items-start gap-3 p-4 rounded-xl bg-red-950/30 border border-red-800/50">
+          <div className="flex items-start gap-3 p-4 rounded-xl bg-red-950/30 border border-red-800/50">
 
-            \<AlertCircle size={16} className="text-red-400 flex-shrink-0 mt-0.5" />
+            <AlertCircle size={16} className="text-red-400 flex-shrink-0 mt-0.5" />
 
-            \<div className="text-sm text-red-300">
+            <div className="text-sm text-red-300">
 
-              \<div className="font-semibold mb-0.5">Decoder Error\</div>
+              <div className="font-semibold mb-0.5">Decoder Error</div>
 
-              \<div className="text-red-400 text-xs">{error}\</div>
+              <div className="text-red-400 text-xs">{error}</div>
 
-              \<div className="text-gray-500 text-xs mt-1">Runtime URL: {RUNTIME_API_BASE}\</div>
+              <div className="text-gray-500 text-xs mt-1">Runtime URL: {RUNTIME_API_BASE}</div>
 
-            \</div>
+            </div>
 
-          \</div>
+          </div>
 
         )}
 
 
 
-        {/\* Not Found \*/}
+        {/* Not Found */}
 
         {isNotFound && (
 
-          \<div className="flex items-start gap-3 p-4 rounded-xl bg-gray-900/50 border border-gray-700">
+          <div className="flex items-start gap-3 p-4 rounded-xl bg-gray-900/50 border border-gray-700">
 
-            \<Info size={16} className="text-gray-400 flex-shrink-0 mt-0.5" />
+            <Info size={16} className="text-gray-400 flex-shrink-0 mt-0.5" />
 
-            \<div>
+            <div>
 
-              \<div className="text-gray-300 font-semibold text-sm mb-0.5">No Canonical Record Found\</div>
+              <div className="text-gray-300 font-semibold text-sm mb-0.5">No Canonical Record Found</div>
 
-              \<div className="text-gray-500 text-xs">
+              <div className="text-gray-500 text-xs">
 
                 "{query}" did not match any canonical Sanskrit lexical record in the
 
@@ -795,53 +795,53 @@ const SanskritDecoder: React.FC = () => {
 
                 variant. Evidence classification: UNVERIFIED.
 
-              \</div>
+              </div>
 
-            \</div>
+            </div>
 
-          \</div>
+          </div>
 
         )}
 
 
 
-        {/\* ── Results ──────────────────────────────────────────────────────── \*/}
+        {/* ── Results ──────────────────────────────────────────────────────── */}
 
         {concept && (
 
           <>
 
-            {/\* Concept header card \*/}
+            {/* Concept header card */}
 
-            \<div className="rounded-2xl bg-gradient-to-br from-gray-900 via-purple-950/20 to-gray-900 border border-purple-800/40 p-5 shadow-xl">
+            <div className="rounded-2xl bg-gradient-to-br from-gray-900 via-purple-950/20 to-gray-900 border border-purple-800/40 p-5 shadow-xl">
 
-              \<div className="flex items-start justify-between gap-4 flex-wrap">
+              <div className="flex items-start justify-between gap-4 flex-wrap">
 
-                \<div>
+                <div>
 
-                  \<div className="text-4xl font-bold text-purple-200 mb-1">
+                  <div className="text-4xl font-bold text-purple-200 mb-1">
 
                     {concept.sanskrit}
 
-                  \</div>
+                  </div>
 
-                  \<div className="text-gray-300 text-lg font-semibold">
+                  <div className="text-gray-300 text-lg font-semibold">
 
                     {concept.transliteration}
 
-                  \</div>
+                  </div>
 
-                  \<div className="text-gray-500 text-sm mt-0.5 font-mono">
+                  <div className="text-gray-500 text-sm mt-0.5 font-mono">
 
                     {concept.concept_id}
 
-                  \</div>
+                  </div>
 
-                \</div>
+                </div>
 
-                \<div className="flex flex-col gap-2 items-end">
+                <div className="flex flex-col gap-2 items-end">
 
-                  \<EvidenceBadge
+                  <EvidenceBadge
 
                     status={govResponse?.evidence_classification?.classification ?? "SOURCE_SCOPED"}
 
@@ -849,75 +849,75 @@ const SanskritDecoder: React.FC = () => {
 
                   {result?.replay?.replay_safe && (
 
-                    \<div className="flex items-center gap-1 text-xs text-emerald-400">
+                    <div className="flex items-center gap-1 text-xs text-emerald-400">
 
-                      \<CheckCircle2 size={11} />
+                      <CheckCircle2 size={11} />
 
                       Replay Safe
 
-                    \</div>
+                    </div>
 
                   )}
 
                   {civilizational?.coverage && (
 
-                    \<div className="text-xs text-gray-500">
+                    <div className="text-xs text-gray-500">
 
                       Coverage:{" "}
 
-                      \<span className="text-purple-400 font-semibold">
+                      <span className="text-purple-400 font-semibold">
 
                         {civilizational.coverage.coverage_pct}%
 
-                      \</span>{" "}
+                      </span>{" "}
 
                       ({civilizational.coverage.evidence_backed_layers}/
 
                       {civilizational.coverage.total_layers} layers)
 
-                    \</div>
+                    </div>
 
                   )}
 
-                \</div>
+                </div>
 
-              \</div>
+              </div>
 
 
 
-              {/\* Functional meaning \*/}
+              {/* Functional meaning */}
 
               {concept.functional_meaning && (
 
-                \<div className="mt-4 p-3 rounded-xl bg-black/40 border border-gray-800/60">
+                <div className="mt-4 p-3 rounded-xl bg-black/40 border border-gray-800/60">
 
-                  \<div className="text-gray-500 text-xs mb-1 uppercase tracking-wider">
+                  <div className="text-gray-500 text-xs mb-1 uppercase tracking-wider">
 
                     Functional Meaning
 
-                  \</div>
+                  </div>
 
-                  \<div className="text-gray-200 text-sm leading-relaxed">
+                  <div className="text-gray-200 text-sm leading-relaxed">
 
                     {concept.functional_meaning}
 
-                  \</div>
+                  </div>
 
-                \</div>
+                </div>
 
               )}
 
 
 
-              {/\* Related concepts \*/}
+              {/* Related concepts */}
 
               {concept.related_concepts?.length > 0 && (
 
-                \<div className="mt-3 flex flex-wrap gap-2">
+                <div className="mt-3 flex flex-wrap gap-2">
 
                   {concept.related_concepts.map((rc) => (
 
-                    \<button
+                    <button
 
                       key={rc}
 
@@ -929,21 +929,21 @@ const SanskritDecoder: React.FC = () => {
 
                       {rc}
 
-                    \</button>
+                    </button>
 
                   ))}
 
-                \</div>
+                </div>
 
               )}
 
-            \</div>
+            </div>
 
 
 
-            {/\* Tab navigation \*/}
+            {/* Tab navigation */}
 
-            \<div className="flex gap-1 bg-gray-900/60 rounded-xl p-1 border border-gray-800/60">
+            <div className="flex gap-1 bg-gray-900/60 rounded-xl p-1 border border-gray-800/60">
 
               {[
 
@@ -957,15 +957,15 @@ const SanskritDecoder: React.FC = () => {
 
               ].map(({ id, label, icon: Icon }) => (
 
-                \<button
+                <button
 
                   key={id}
 
-                  id={\`tab-${id}\`}
+                  id={`tab-${id}`}
 
                   onClick={() => setActiveTab(id as typeof activeTab)}
 
-                  className={\`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-medium transition-all ${
+                  className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-medium transition-all ${
 
                     activeTab === id
 
@@ -973,33 +973,33 @@ const SanskritDecoder: React.FC = () => {
 
                       : "text-gray-400 hover:text-gray-200 hover:bg-gray-800/50"
 
-                  }\`}
+                  }`}
 
                 >
 
-                  \<Icon size={13} />
+                  <Icon size={13} />
 
-                  \<span className="hidden sm:inline">{label}\</span>
+                  <span className="hidden sm:inline">{label}</span>
 
-                \</button>
+                </button>
 
               ))}
 
-            \</div>
+            </div>
 
 
 
-            {/\* ── Pipeline Tab ─────────────────────────────────────────── \*/}
+            {/* ── Pipeline Tab ─────────────────────────────────────────── */}
 
             {activeTab === "pipeline" && (
 
-              \<div className="space-y-2">
+              <div className="space-y-2">
 
-                \<div className="text-gray-500 text-xs mb-3">
+                <div className="text-gray-500 text-xs mb-3">
 
                   Canonical decoder pipeline — every stage traceable to source
 
-                \</div>
+                </div>
 
                 {PIPELINE_STAGES.map((def, idx) => {
 
@@ -1013,7 +1013,7 @@ const SanskritDecoder: React.FC = () => {
 
                   return (
 
-                    \<div
+                    <div
 
                       key={def.key}
 
@@ -1021,11 +1021,11 @@ const SanskritDecoder: React.FC = () => {
 
                     >
 
-                      {/\* Step indicator \*/}
+                      {/* Step indicator */}
 
-                      \<div className="flex flex-col items-center">
+                      <div className="flex flex-col items-center">
 
-                        \<div className={\`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold border-2 ${
+                        <div className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold border-2 ${
 
                           value
 
@@ -1033,79 +1033,79 @@ const SanskritDecoder: React.FC = () => {
 
                             : "bg-gray-900 border-gray-700 text-gray-600"
 
-                        }\`}>
+                        }`}>
 
                           {idx + 1}
 
-                        \</div>
+                        </div>
 
                         {idx < PIPELINE_STAGES.length - 1 && (
 
-                          \<div className="w-px h-4 bg-gray-800 mt-1" />
+                          <div className="w-px h-4 bg-gray-800 mt-1" />
 
                         )}
 
-                      \</div>
+                      </div>
 
-                      \<div className="flex-1 min-w-0">
+                      <div className="flex-1 min-w-0">
 
-                        \<div className="flex items-center gap-2 mb-0.5">
+                        <div className="flex items-center gap-2 mb-0.5">
 
-                          \<span className="text-purple-300 font-semibold text-sm">{def.label}\</span>
+                          <span className="text-purple-300 font-semibold text-sm">{def.label}</span>
 
                           {value ? (
 
-                            \<CheckCircle2 size={11} className="text-emerald-400" />
+                            <CheckCircle2 size={11} className="text-emerald-400" />
 
                           ) : (
 
-                            \<Circle size={11} className="text-gray-600" />
+                            <Circle size={11} className="text-gray-600" />
 
                           )}
 
-                        \</div>
+                        </div>
 
-                        \<div className="text-gray-600 text-xs mb-1.5">{def.desc}\</div>
+                        <div className="text-gray-600 text-xs mb-1.5">{def.desc}</div>
 
                         {value ? (
 
-                          \<div className="text-gray-200 text-sm leading-relaxed">{value}\</div>
+                          <div className="text-gray-200 text-sm leading-relaxed">{value}</div>
 
                         ) : (
 
-                          \<div className="text-gray-600 text-xs italic">Not asserted in source record\</div>
+                          <div className="text-gray-600 text-xs italic">Not asserted in source record</div>
 
                         )}
 
                         {stage?.lineage && (
 
-                          \<div className="mt-1.5 text-[10px] text-gray-600 font-mono">
+                          <div className="mt-1.5 text-[10px] text-gray-600 font-mono">
 
                             ↳ {stage.lineage.source_path}
 
-                          \</div>
+                          </div>
 
                         )}
 
-                      \</div>
+                      </div>
 
-                    \</div>
+                    </div>
 
                   );
 
                 })}
 
-              \</div>
+              </div>
 
             )}
 
 
 
-            {/\* ── Knowledge Layers Tab ─────────────────────────────────── \*/}
+            {/* ── Knowledge Layers Tab ─────────────────────────────────── */}
 
             {activeTab === "layers" && civilizational && (
 
-              \<div className="space-y-3">
+              <div className="space-y-3">
 
                 {KNOWLEDGE_LAYER_GROUPS.map(({ group, icon: Icon, layers }) => {
 
@@ -1117,11 +1117,11 @@ const SanskritDecoder: React.FC = () => {
 
                   return (
 
-                    \<div key={group} className="rounded-xl border border-gray-800/50 overflow-hidden">
+                    <div key={group} className="rounded-xl border border-gray-800/50 overflow-hidden">
 
-                      \<button
+                      <button
 
-                        id={\`group-${group.toLowerCase().replace(/\s+/g, "-")}\`}
+                        id={`group-${group.toLowerCase().replace(/\s+/g, "-")}`}
 
                         onClick={() => toggleGroup(group)}
 
@@ -1129,39 +1129,39 @@ const SanskritDecoder: React.FC = () => {
 
                       >
 
-                        \<div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2">
 
-                          \<Icon size={14} className="text-purple-400" />
+                          <Icon size={14} className="text-purple-400" />
 
-                          \<span className="text-sm font-semibold text-gray-200">{group}\</span>
+                          <span className="text-sm font-semibold text-gray-200">{group}</span>
 
                           {hasEvidence && (
 
-                            \<span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-950/50 text-emerald-400 border border-emerald-800/40">
+                            <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-950/50 text-emerald-400 border border-emerald-800/40">
 
                               Evidence Available
 
-                            \</span>
+                            </span>
 
                           )}
 
-                        \</div>
+                        </div>
 
                         {expandedGroups.has(group) ? (
 
-                          \<ChevronDown size={14} className="text-gray-500" />
+                          <ChevronDown size={14} className="text-gray-500" />
 
                         ) : (
 
-                          \<ChevronRight size={14} className="text-gray-500" />
+                          <ChevronRight size={14} className="text-gray-500" />
 
                         )}
 
-                      \</button>
+                      </button>
 
                       {expandedGroups.has(group) && (
 
-                        \<div className="p-3 space-y-1.5 bg-black/20">
+                        <div className="p-3 space-y-1.5 bg-black/20">
 
                           {layers.map((layerKey) => {
 
@@ -1169,25 +1169,25 @@ const SanskritDecoder: React.FC = () => {
 
                             if (!layer) return (
 
-                              \<div key={layerKey} className="flex items-center justify-between px-3 py-1.5 rounded-lg bg-gray-900/20 border border-gray-800/20">
+                              <div key={layerKey} className="flex items-center justify-between px-3 py-1.5 rounded-lg bg-gray-900/20 border border-gray-800/20">
 
-                                \<span className="text-gray-700 text-xs capitalize">{layerKey.replace(/\_/g, " ")}\</span>
+                                <span className="text-gray-700 text-xs capitalize">{layerKey.replace(/_/g, " ")}</span>
 
-                                \<span className="text-gray-700 text-[10px]">—\</span>
+                                <span className="text-gray-700 text-[10px]">—</span>
 
-                              \</div>
+                              </div>
 
                             );
 
-                            return \<LayerRow key={layerKey} layerKey={layerKey} layer={layer} />;
+                            return <LayerRow key={layerKey} layerKey={layerKey} layer={layer} />;
 
                           })}
 
-                        \</div>
+                        </div>
 
                       )}
 
-                    \</div>
+                    </div>
 
                   );
 
@@ -1195,35 +1195,35 @@ const SanskritDecoder: React.FC = () => {
 
 
 
-                {/\* Cross-references \*/}
+                {/* Cross-references */}
 
                 {result?.decoder_result?.cross_references?.length > 0 && (
 
-                  \<div className="rounded-xl border border-gray-800/50 overflow-hidden">
+                  <div className="rounded-xl border border-gray-800/50 overflow-hidden">
 
-                    \<div className="px-4 py-3 bg-gray-900/60">
+                    <div className="px-4 py-3 bg-gray-900/60">
 
-                      \<div className="flex items-center gap-2">
+                      <div className="flex items-center gap-2">
 
-                        \<GitBranch size={14} className="text-purple-400" />
+                        <GitBranch size={14} className="text-purple-400" />
 
-                        \<span className="text-sm font-semibold text-gray-200">Cross-Text Synthesis\</span>
+                        <span className="text-sm font-semibold text-gray-200">Cross-Text Synthesis</span>
 
-                      \</div>
+                      </div>
 
-                    \</div>
+                    </div>
 
-                    \<div className="p-3 space-y-1.5 bg-black/20">
+                    <div className="p-3 space-y-1.5 bg-black/20">
 
                       {result.decoder_result.cross_references.map((xr, i) => (
 
-                        \<div key={i} className="flex items-start gap-2 px-3 py-2 rounded-lg bg-gray-900/30 border border-gray-800/30">
+                        <div key={i} className="flex items-start gap-2 px-3 py-2 rounded-lg bg-gray-900/30 border border-gray-800/30">
 
-                          \<ChevronRight size={12} className="text-purple-500 mt-0.5 flex-shrink-0" />
+                          <ChevronRight size={12} className="text-purple-500 mt-0.5 flex-shrink-0" />
 
-                          \<div>
+                          <div>
 
-                            \<button
+                            <button
 
                               onClick={() => handleDecode(xr.target)}
 
@@ -1233,69 +1233,69 @@ const SanskritDecoder: React.FC = () => {
 
                               {xr.target}
 
-                            \</button>
+                            </button>
 
-                            \<div className="text-gray-500 text-xs mt-0.5">{xr.claim}\</div>
+                            <div className="text-gray-500 text-xs mt-0.5">{xr.claim}</div>
 
-                          \</div>
+                          </div>
 
-                          \<EvidenceBadge status={xr.classification} />
+                          <EvidenceBadge status={xr.classification} />
 
-                        \</div>
+                        </div>
 
                       ))}
 
-                    \</div>
+                    </div>
 
-                  \</div>
+                  </div>
 
                 )}
 
-              \</div>
+              </div>
 
             )}
 
 
 
-            {/\* ── Graph Tab ────────────────────────────────────────────── \*/}
+            {/* ── Graph Tab ────────────────────────────────────────────── */}
 
             {activeTab === "graph" && graph && (
 
-              \<div className="space-y-4">
+              <div className="space-y-4">
 
-                \<div className="flex items-center justify-between">
+                <div className="flex items-center justify-between">
 
-                  \<div className="text-gray-500 text-xs">
+                  <div className="text-gray-500 text-xs">
 
                     {graph.metadata.node_count} nodes · {graph.metadata.edge_count} edges ·{" "}
 
-                    \<span className="text-purple-400">Civilizational Knowledge Graph V3\</span>
+                    <span className="text-purple-400">Civilizational Knowledge Graph V3</span>
 
-                  \</div>
+                  </div>
 
-                  \<div className={\`flex items-center gap-1 text-xs ${
+                  <div className={`flex items-center gap-1 text-xs ${
 
                     graph.metadata.consistency_valid ? "text-emerald-400" : "text-red-400"
 
-                  }\`}>
+                  }`}>
 
                     {graph.metadata.consistency_valid ? (
 
-                      \<CheckCircle2 size={11} />
+                      <CheckCircle2 size={11} />
 
                     ) : (
 
-                      \<AlertCircle size={11} />
+                      <AlertCircle size={11} />
 
                     )}
 
                     Graph {graph.metadata.consistency_valid ? "Consistent" : "Invalid"}
 
-                  \</div>
+                  </div>
 
-                \</div>
+                </div>
 
-                \<SanskritDecoderGraph
+                <SanskritDecoderGraph
 
                   nodes={graph.nodes}
 
@@ -1307,29 +1307,29 @@ const SanskritDecoder: React.FC = () => {
 
                 />
 
-                \<div className="text-[10px] text-gray-600 font-mono">
+                <div className="text-[10px] text-gray-600 font-mono">
 
                   graph_id: {graph.graph_id} · snapshot_hash:{" "}
 
                   {graph.metadata.source_snapshot_hash?.slice(0, 16)}
 
-                \</div>
+                </div>
 
-              \</div>
+              </div>
 
             )}
 
 
 
-            {/\* ── Provenance Tab ───────────────────────────────────────── \*/}
+            {/* ── Provenance Tab ───────────────────────────────────────── */}
 
             {activeTab === "provenance" && provenance && (
 
-              \<div className="space-y-4">
+              <div className="space-y-4">
 
-                {/\* Replay banner \*/}
+                {/* Replay banner */}
 
-                \<div className={\`flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm ${
+                <div className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm ${
 
                   provenance.replay_safe
 
@@ -1337,19 +1337,19 @@ const SanskritDecoder: React.FC = () => {
 
                     : "bg-red-950/30 border-red-800/40 text-red-300"
 
-                }\`}>
+                }`}>
 
                   {provenance.replay_safe ? (
 
-                    \<CheckCircle2 size={14} />
+                    <CheckCircle2 size={14} />
 
                   ) : (
 
-                    \<AlertCircle size={14} />
+                    <AlertCircle size={14} />
 
                   )}
 
-                  \<span>
+                  <span>
 
                     {provenance.replay_safe
 
@@ -1357,15 +1357,15 @@ const SanskritDecoder: React.FC = () => {
 
                       : "Replay safety flag NOT set"}
 
-                  \</span>
+                  </span>
 
-                \</div>
+                </div>
 
 
 
-                {/\* Metadata \*/}
+                {/* Metadata */}
 
-                \<div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 gap-3">
 
                   {[
 
@@ -1383,181 +1383,181 @@ const SanskritDecoder: React.FC = () => {
 
                   ].map(({ label, value }) => (
 
-                    \<div key={label} className="p-3 rounded-lg bg-gray-900/40 border border-gray-800/40">
+                    <div key={label} className="p-3 rounded-lg bg-gray-900/40 border border-gray-800/40">
 
-                      \<div className="text-gray-600 text-[10px] uppercase tracking-wider mb-0.5">{label}\</div>
+                      <div className="text-gray-600 text-[10px] uppercase tracking-wider mb-0.5">{label}</div>
 
-                      \<div className="text-gray-300 text-xs font-mono break-all">{value ?? "—"}\</div>
+                      <div className="text-gray-300 text-xs font-mono break-all">{value ?? "—"}</div>
 
-                    \</div>
+                    </div>
 
                   ))}
 
-                \</div>
+                </div>
 
 
 
-                {/\* Source documents \*/}
+                {/* Source documents */}
 
-                \<div>
+                <div>
 
-                  \<div className="text-gray-500 text-xs mb-2 uppercase tracking-wider">Source Documents\</div>
+                  <div className="text-gray-500 text-xs mb-2 uppercase tracking-wider">Source Documents</div>
 
-                  \<div className="space-y-2">
+                  <div className="space-y-2">
 
                     {provenance.source_documents?.map((doc, i) => (
 
-                      \<div key={i} className="p-3 rounded-lg bg-gray-900/40 border border-gray-800/40">
+                      <div key={i} className="p-3 rounded-lg bg-gray-900/40 border border-gray-800/40">
 
-                        \<div className="flex items-center gap-2 mb-1">
+                        <div className="flex items-center gap-2 mb-1">
 
-                          \<Shield size={11} className="text-purple-400" />
+                          <Shield size={11} className="text-purple-400" />
 
-                          \<span className="text-purple-300 text-xs font-mono">{doc.source_path}\</span>
+                          <span className="text-purple-300 text-xs font-mono">{doc.source_path}</span>
 
-                        \</div>
+                        </div>
 
-                        \<div className="grid grid-cols-2 gap-x-4 text-[10px] text-gray-500">
+                        <div className="grid grid-cols-2 gap-x-4 text-[10px] text-gray-500">
 
-                          \<span>Source: \<span className="text-gray-400">{doc.source}\</span>\</span>
+                          <span>Source: <span className="text-gray-400">{doc.source}</span></span>
 
-                          \<span>Evidence: \<span className="text-gray-400">{doc.evidence_type}\</span>\</span>
+                          <span>Evidence: <span className="text-gray-400">{doc.evidence_type}</span></span>
 
-                          \<span className="col-span-2 font-mono">
+                          <span className="col-span-2 font-mono">
 
                             hash: {doc.content_hash?.slice(0, 24)}
 
-                          \</span>
+                          </span>
 
-                        \</div>
+                        </div>
 
-                      \</div>
+                      </div>
 
                     ))}
 
-                  \</div>
+                  </div>
 
-                \</div>
+                </div>
 
 
 
-                {/\* Lineage path \*/}
+                {/* Lineage path */}
 
                 {provenance.lineage?.source_path && (
 
-                  \<div className="p-3 rounded-lg bg-purple-950/20 border border-purple-800/30">
+                  <div className="p-3 rounded-lg bg-purple-950/20 border border-purple-800/30">
 
-                    \<div className="text-gray-500 text-[10px] uppercase tracking-wider mb-1">
+                    <div className="text-gray-500 text-[10px] uppercase tracking-wider mb-1">
 
                       Knowledge Lineage
 
-                    \</div>
+                    </div>
 
-                    \<div className="font-mono text-purple-300 text-xs">
+                    <div className="font-mono text-purple-300 text-xs">
 
                       {provenance.lineage.source_path}
 
-                    \</div>
+                    </div>
 
-                    \<div className="font-mono text-gray-600 text-[10px] mt-0.5">
+                    <div className="font-mono text-gray-600 text-[10px] mt-0.5">
 
                       hash: {provenance.lineage.content_hash?.slice(0, 24)}
 
-                    \</div>
+                    </div>
 
-                  \</div>
+                  </div>
 
                 )}
 
 
 
-                {/\* Governance \*/}
+                {/* Governance */}
 
                 {govResponse && (
 
-                  \<div className="p-4 rounded-xl bg-gray-900/40 border border-gray-800/40">
+                  <div className="p-4 rounded-xl bg-gray-900/40 border border-gray-800/40">
 
-                    \<div className="text-gray-500 text-xs uppercase tracking-wider mb-2">
+                    <div className="text-gray-500 text-xs uppercase tracking-wider mb-2">
 
                       Governance State
 
-                    \</div>
+                    </div>
 
-                    \<div className="space-y-1.5 text-xs">
+                    <div className="space-y-1.5 text-xs">
 
-                      \<div className="flex justify-between">
+                      <div className="flex justify-between">
 
-                        \<span className="text-gray-500">Governance\</span>
+                        <span className="text-gray-500">Governance</span>
 
-                        \<span className="text-gray-300 font-mono">{govResponse.governance_state}\</span>
+                        <span className="text-gray-300 font-mono">{govResponse.governance_state}</span>
 
-                      \</div>
+                      </div>
 
-                      \<div className="flex justify-between">
+                      <div className="flex justify-between">
 
-                        \<span className="text-gray-500">Research Class\</span>
+                        <span className="text-gray-500">Research Class</span>
 
-                        \<span className="text-gray-300 font-mono">{govResponse.research_classification}\</span>
+                        <span className="text-gray-300 font-mono">{govResponse.research_classification}</span>
 
-                      \</div>
+                      </div>
 
-                      \<div className="flex justify-between">
+                      <div className="flex justify-between">
 
-                        \<span className="text-gray-500">Evidence Types\</span>
+                        <span className="text-gray-500">Evidence Types</span>
 
-                        \<div className="flex gap-1 flex-wrap justify-end">
+                        <div className="flex gap-1 flex-wrap justify-end">
 
                           {govResponse.evidence_classification?.evidence_types?.map((et) => (
 
-                            \<span key={et} className="text-[10px] px-1.5 py-0.5 rounded bg-purple-950/50 text-purple-400 border border-purple-800/30">
+                            <span key={et} className="text-[10px] px-1.5 py-0.5 rounded bg-purple-950/50 text-purple-400 border border-purple-800/30">
 
                               {et}
 
-                            \</span>
+                            </span>
 
                           ))}
 
-                        \</div>
+                        </div>
 
-                      \</div>
+                      </div>
 
-                      \<div className="text-gray-600 text-[10px] mt-2 leading-relaxed">
+                      <div className="text-gray-600 text-[10px] mt-2 leading-relaxed">
 
                         {govResponse.evidence_classification?.notes}
 
-                      \</div>
+                      </div>
 
-                    \</div>
+                    </div>
 
-                  \</div>
+                  </div>
 
                 )}
 
-              \</div>
+              </div>
 
             )}
 
-          \</>
+          </>
 
         )}
 
 
 
-        {/\* Empty state \*/}
+        {/* Empty state */}
 
         {!loading && !result && !error && (
 
-          \<div className="text-center py-16 space-y-4">
+          <div className="text-center py-16 space-y-4">
 
-            \<div className="text-6xl opacity-20 select-none">ॐ\</div>
+            <div className="text-6xl opacity-20 select-none">ॐ</div>
 
-            \<div className="text-gray-600 text-sm">
+            <div className="text-gray-600 text-sm">
 
               Enter any Sanskrit concept above to decode its civilizational meaning
 
-            \</div>
+            </div>
 
-            \<div className="text-gray-700 text-xs max-w-md mx-auto">
+            <div className="text-gray-700 text-xs max-w-md mx-auto">
 
               The decoder exposes Śabda, Dhātu, Vyākaraṇa, Nirukta, Bīja, Tattva, Śakti,
 
@@ -1565,15 +1565,15 @@ const SanskritDecoder: React.FC = () => {
 
               all source-backed and provenance-tagged.
 
-            \</div>
+            </div>
 
-          \</div>
+          </div>
 
         )}
 
-      \</div>
+      </div>
 
-    \</div>
+    </div>
 
   );
 
