@@ -3,79 +3,186 @@ name: UniGuru Production Infrastructure CI/CD Pipeline
 on:
   push:
     branches: [main]
+
   workflow_dispatch:
 
+
+# ============================================================
+# GLOBAL VARIABLES
+# ============================================================
+
 env:
-  API_IMAGE: bhiv/uniguru-api
-  FRONTEND_IMAGE: bhiv/uniguru-frontend
+  API_IMAGE: bhiv/uniguru-2-api
+  FRONTEND_IMAGE: bhiv/uniguru-2-frontend
+
+  # UniGuru public host port
+  UNIGURU_PUBLIC_PORT: "30309"
+
 
 jobs:
+
+  # ==========================================================
+  # 1. VALIDATION
+  # ==========================================================
+
   validate:
     name: Validate deployment configuration
+
     runs-on: ubuntu-latest
+
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
+
+      # ------------------------------------------------------
+      # Git SHA
+      # ------------------------------------------------------
+
       - name: Set GitHub SHA
-        run: echo "short_sha=${GITHUB_SHA::7}" >> "$GITHUB_ENV"
+        run: |
+          echo "short_sha=${GITHUB_SHA::7}" >> "$GITHUB_ENV"
+
+
+      # ------------------------------------------------------
+      # Generate production compose
+      # ------------------------------------------------------
 
       - name: Generate production Compose file
         run: |
-          sed "s|IMG_TAG|$short_sha|g" \
-            docker-compose.production.template.yml > docker-compose.production.yml
+
+          sed \
+            "s|IMG_TAG|$short_sha|g" \
+            docker-compose.production.template.yml \
+            > docker-compose.production.yml
+
+
+      # ------------------------------------------------------
+      # Stub environment for compose validation
+      # ------------------------------------------------------
 
       - name: Create stub environment
         run: |
-          printf '%s\n' 'UNIGURU_HTTP_PORT=8026' 'UNIGURU_WORKERS=1' > .env
+
+          printf '%s\n' \
+            'UNIGURU_HOST=0.0.0.0' \
+            'UNIGURU_PORT=8000' \
+            'UNIGURU_WORKERS=1' \
+            'UNIGURU_CORS_ORIGINS=http://localhost:30309' \
+            'UNIGURU_API_AUTH_REQUIRED=false' \
+            > .env.production
+
+
+      # ------------------------------------------------------
+      # Validate Compose
+      # ------------------------------------------------------
 
       - name: Validate Docker Compose
-        run: docker compose -f docker-compose.production.yml config
+        run: |
+
+          docker compose \
+            -f docker-compose.production.yml \
+            config
+
+
+      # ------------------------------------------------------
+      # Validate frontend Docker build
+      # ------------------------------------------------------
 
       - name: Validate frontend image build
         run: |
+
           docker build \
-            --build-arg VITE_API_BASE_URL="${{ secrets.UNIGURU_FRONTEND_API_BASE_URL || 'http://localhost:8026' }}" \
-            --build-arg VITE_API_URL="${{ secrets.UNIGURU_FRONTEND_API_BASE_URL || 'http://localhost:8026' }}" \
-            --build-arg VITE_SANSKRIT_API_URL="${{ secrets.UNIGURU_FRONTEND_API_BASE_URL || 'http://localhost:8026' }}" \
-            --build-arg VITE_BACKEND_URL_V1="${{ secrets.UNIGURU_FRONTEND_BACKEND_URL_V1 || 'http://localhost:8026/api/v1' }}" \
-            --build-arg VITE_APP__BACKEND_GOOGLE_OAUTH_URL="${{ secrets.UNIGURU_FRONTEND_GOOGLE_OAUTH_URL || 'http://localhost:8026/auth/google/token' }}" \
+            --build-arg VITE_API_BASE_URL="${{ secrets.UNIGURU_FRONTEND_API_BASE_URL || 'http://localhost:30309' }}" \
+            --build-arg VITE_API_URL="${{ secrets.UNIGURU_FRONTEND_API_BASE_URL || 'http://localhost:30309' }}" \
+            --build-arg VITE_SANSKRIT_API_URL="${{ secrets.UNIGURU_FRONTEND_API_BASE_URL || 'http://localhost:30309' }}" \
+            --build-arg VITE_BACKEND_URL_V1="${{ secrets.UNIGURU_FRONTEND_BACKEND_URL_V1 || 'http://localhost:30309/api/v1' }}" \
+            --build-arg VITE_APP__BACKEND_GOOGLE_OAUTH_URL="${{ secrets.UNIGURU_FRONTEND_GOOGLE_OAUTH_URL || 'http://localhost:30309/auth/google/token' }}" \
             --build-arg VITE_GOOGLE_CLIENT_ID="${{ secrets.UNIGURU_GOOGLE_CLIENT_ID }}" \
-            -f frontend/Dockerfile frontend
+            -f frontend/Dockerfile \
+            frontend
+
+
+  # ==========================================================
+  # 2. BUILD + PUSH
+  # ==========================================================
 
   build:
     name: Build and push production images
+
     runs-on: ubuntu-latest
-    needs: validate
+
+    needs:
+      - validate
+
     outputs:
       sha_short: ${{ steps.vars.outputs.sha_short }}
+
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
+
+      # ------------------------------------------------------
+      # Git SHA
+      # ------------------------------------------------------
+
       - name: Set short git commit SHA
         id: vars
-        run: echo "sha_short=$(git rev-parse --short=7 HEAD)" >> "$GITHUB_OUTPUT"
+
+        run: |
+
+          echo \
+            "sha_short=$(git rev-parse --short=7 HEAD)" \
+            >> "$GITHUB_OUTPUT"
+
+
+      # ------------------------------------------------------
+      # Docker Buildx
+      # ------------------------------------------------------
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
+
+      # ------------------------------------------------------
+      # Docker Hub login
+      # ------------------------------------------------------
+
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
+
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+
+      # ======================================================
+      # BACKEND / API
+      # ======================================================
+
       - name: Build and push backend
         run: |
-          docker buildx build --push \
+
+          docker buildx build \
+            --push \
             --tag "${{ env.API_IMAGE }}:${{ steps.vars.outputs.sha_short }}" \
             --tag "${{ env.API_IMAGE }}:latest" \
-            -f Dockerfile .
+            -f Dockerfile \
+            .
+
+
+      # ======================================================
+      # FRONTEND
+      # ======================================================
 
       - name: Build and push frontend
         run: |
-          docker buildx build --push \
+
+          docker buildx build \
+            --push \
             --build-arg VITE_API_BASE_URL="${{ secrets.UNIGURU_FRONTEND_API_BASE_URL }}" \
             --build-arg VITE_API_URL="${{ secrets.UNIGURU_FRONTEND_API_BASE_URL }}" \
             --build-arg VITE_SANSKRIT_API_URL="${{ secrets.UNIGURU_FRONTEND_API_BASE_URL }}" \
@@ -84,205 +191,702 @@ jobs:
             --build-arg VITE_GOOGLE_CLIENT_ID="${{ secrets.UNIGURU_GOOGLE_CLIENT_ID }}" \
             --tag "${{ env.FRONTEND_IMAGE }}:${{ steps.vars.outputs.sha_short }}" \
             --tag "${{ env.FRONTEND_IMAGE }}:latest" \
-            -f frontend/Dockerfile frontend
+            -f frontend/Dockerfile \
+            frontend
+
+
+  # ==========================================================
+  # 3. DEPLOY
+  # ==========================================================
 
   deploy:
     name: Deploy to production VM
+
     runs-on: ubuntu-latest
-    needs: build
+
+    needs:
+      - build
+
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create production .env
-        run: |
-          cat > .env <<'EOF'
-          ${{ secrets.UNIGURU_ENV_FILE }}
-          EOF
 
-      - name: Create deployment archive
-        run: |
-          mkdir -p deployment/deploy/nginx
-          cp docker-compose.production.template.yml deployment/
-          cp deploy/nginx/production.conf deployment/deploy/nginx/
-          cp .env deployment/
-          tar -czf deployment.tar.gz -C deployment .
+      # ------------------------------------------------------
+      # Install SSH password utility
+      # ------------------------------------------------------
 
       - name: Install sshpass
         run: |
+
           sudo apt-get update
           sudo apt-get install -y sshpass
 
+
+      # ------------------------------------------------------
+      # Create production environment
+      # ------------------------------------------------------
+
+      - name: Create production .env
+        run: |
+
+          cat > .env.production <<'EOF'
+          ${{ secrets.UNIGURU_ENV_FILE }}
+          EOF
+
+
+      # ------------------------------------------------------
+      # Create deployment archive
+      # ------------------------------------------------------
+
+      - name: Create deployment archive
+        run: |
+
+          mkdir -p deployment/deploy/nginx
+
+          cp \
+            docker-compose.production.template.yml \
+            deployment/
+
+          cp \
+            deploy/nginx/production.conf \
+            deployment/deploy/nginx/
+
+          cp \
+            .env.production \
+            deployment/
+
+          tar \
+            -czf deployment.tar.gz \
+            -C deployment \
+            .
+
+
+      # ------------------------------------------------------
+      # Create application directory
+      # ------------------------------------------------------
+
       - name: Create application directory
         run: |
-          sshpass -p "${{ secrets.VM_PASSWORD }}" ssh \
-            -p "${{ secrets.VM_PORT }}" \
-            -o StrictHostKeyChecking=no \
-            "${{ secrets.VM_USERNAME }}@${{ secrets.VM_IP }}" \
-            "mkdir -p '${{ secrets.VM_APP_DIR }}'"
+
+          sshpass \
+            -p "${{ secrets.VM_PASSWORD }}" \
+            ssh \
+              -p "${{ secrets.VM_PORT }}" \
+              -o StrictHostKeyChecking=no \
+              "${{ secrets.VM_USERNAME }}@${{ secrets.VM_IP }}" \
+              "mkdir -p '${{ secrets.VM_APP_DIR }}/deploy/nginx' '${{ secrets.VM_APP_DIR }}/release_history'"
+
+
+      # ------------------------------------------------------
+      # Copy deployment package
+      # ------------------------------------------------------
 
       - name: Copy deployment archive
         run: |
-          sshpass -p "${{ secrets.VM_PASSWORD }}" scp \
-            -P "${{ secrets.VM_PORT }}" \
-            -o StrictHostKeyChecking=no \
-            deployment.tar.gz \
-            "${{ secrets.VM_USERNAME }}@${{ secrets.VM_IP }}:${{ secrets.VM_APP_DIR }}/deployment.tar.gz"
+
+          sshpass \
+            -p "${{ secrets.VM_PASSWORD }}" \
+            scp \
+              -P "${{ secrets.VM_PORT }}" \
+              -o StrictHostKeyChecking=no \
+              deployment.tar.gz \
+              "${{ secrets.VM_USERNAME }}@${{ secrets.VM_IP }}:${{ secrets.VM_APP_DIR }}/deployment.tar.gz"
+
+
+      # ======================================================
+      # DEPLOY + HEALTH CHECK
+      # ======================================================
 
       - name: Deploy and health check
         run: |
-          sshpass -p "${{ secrets.VM_PASSWORD }}" ssh \
-            -p "${{ secrets.VM_PORT }}" \
-            -o StrictHostKeyChecking=no \
-            "${{ secrets.VM_USERNAME }}@${{ secrets.VM_IP }}" \
-            "bash -s" <<'EOF'
+
+          sshpass \
+            -p "${{ secrets.VM_PASSWORD }}" \
+            ssh \
+              -p "${{ secrets.VM_PORT }}" \
+              -o StrictHostKeyChecking=no \
+              "${{ secrets.VM_USERNAME }}@${{ secrets.VM_IP }}" \
+              "bash -s" <<'EOF'
+
           set -euo pipefail
+
+
+          # --------------------------------------------------
+          # Application directory
+          # --------------------------------------------------
+
           APP_DIR="${{ secrets.VM_APP_DIR }}"
+
           cd "$APP_DIR"
 
+
+          # --------------------------------------------------
+          # Prepare directory
+          # --------------------------------------------------
+
           mkdir -p release_history
-          tar -xzf deployment.tar.gz
-          rm -f deployment.tar.gz
+
+
+          # --------------------------------------------------
+          # Extract deployment files
+          # --------------------------------------------------
+
+          tar \
+            -xzf deployment.tar.gz
+
+          rm \
+            -f deployment.tar.gz
+
+
+          # --------------------------------------------------
+          # Verify Docker
+          # --------------------------------------------------
 
           docker version
+
           docker compose version
 
-          echo "${{ secrets.DOCKER_PASSWORD }}" | \
-            docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+          # --------------------------------------------------
+          # Docker Hub login
+          # --------------------------------------------------
+
+          echo "${{ secrets.DOCKER_PASSWORD }}" \
+            | docker login \
+                -u "${{ secrets.DOCKER_USERNAME }}" \
+                --password-stdin
+
+
+          # --------------------------------------------------
+          # Image tag
+          # --------------------------------------------------
 
           SHORT_SHA="${{ needs.build.outputs.sha_short }}"
-          sed "s|IMG_TAG|$SHORT_SHA|g" \
-            docker-compose.production.template.yml > docker-compose.production.yml
 
-          docker compose -f docker-compose.production.yml config
-          docker compose -f docker-compose.production.yml pull
-          docker compose -f docker-compose.production.yml up -d --remove-orphans
 
-          PUBLIC_PORT="$(docker compose -f docker-compose.production.yml port uniguru-nginx 80 | sed 's/.*://')"
+          # --------------------------------------------------
+          # Generate production compose
+          # --------------------------------------------------
 
-          echo "Waiting for UniGuru health checks on $PUBLIC_PORT..."
+          sed \
+            "s|IMG_TAG|$SHORT_SHA|g" \
+            docker-compose.production.template.yml \
+            > docker-compose.production.yml
+
+
+          # --------------------------------------------------
+          # Validate generated compose
+          # --------------------------------------------------
+
+          docker compose \
+            -f docker-compose.production.yml \
+            config
+
+
+          # --------------------------------------------------
+          # Pull images from Docker Hub
+          # --------------------------------------------------
+
+          docker compose \
+            -f docker-compose.production.yml \
+            pull
+
+
+          # --------------------------------------------------
+          # Start application
+          # --------------------------------------------------
+
+          docker compose \
+            -f docker-compose.production.yml \
+            up \
+              -d \
+              --remove-orphans
+
+
+          # --------------------------------------------------
+          # Logout
+          # --------------------------------------------------
+
+          docker logout
+
+
+          # ==================================================
+          # HEALTH CHECK
+          # ==================================================
+
+          echo "Waiting for UniGuru health checks..."
+
+          PUBLIC_PORT="${{ env.UNIGURU_PUBLIC_PORT }}"
+
+
           for i in {1..18}; do
+
             API_HEALTH=0
+            BRIDGE_HEALTH=0
             FRONTEND_HEALTH=0
+            NGINX_HEALTH=0
             PUBLIC_HEALTH=0
+            PUBLIC_READY=0
 
-            docker inspect --format='{{.State.Health.Status}}' uniguru-api 2>/dev/null \
-              | grep -q '^healthy$' && API_HEALTH=1 || true
 
-            docker inspect --format='{{.State.Health.Status}}' uniguru-frontend 2>/dev/null \
-              | grep -q '^healthy$' && FRONTEND_HEALTH=1 || true
+            # ----------------------------------------------
+            # API
+            # ----------------------------------------------
 
-            curl -fsS "http://127.0.0.1:${PUBLIC_PORT}/health" >/dev/null \
-              && PUBLIC_HEALTH=1 || true
+            docker inspect \
+              --format='{{.State.Health.Status}}' \
+              uniguru-api \
+              2>/dev/null \
+              | grep -q '^healthy$' \
+              && API_HEALTH=1 \
+              || true
 
-            if [ "$API_HEALTH" -eq 1 ] && \
-               [ "$FRONTEND_HEALTH" -eq 1 ] && \
-               [ "$PUBLIC_HEALTH" -eq 1 ]; then
+
+            # ----------------------------------------------
+            # Bridge
+            # ----------------------------------------------
+
+            docker inspect \
+              --format='{{.State.Health.Status}}' \
+              uniguru-bridge \
+              2>/dev/null \
+              | grep -q '^healthy$' \
+              && BRIDGE_HEALTH=1 \
+              || true
+
+
+            # ----------------------------------------------
+            # Frontend
+            # ----------------------------------------------
+
+            docker inspect \
+              --format='{{.State.Health.Status}}' \
+              uniguru-frontend \
+              2>/dev/null \
+              | grep -q '^healthy$' \
+              && FRONTEND_HEALTH=1 \
+              || true
+
+
+            # ----------------------------------------------
+            # Nginx
+            # ----------------------------------------------
+
+            docker inspect \
+              --format='{{.State.Health.Status}}' \
+              uniguru-nginx \
+              2>/dev/null \
+              | grep -q '^healthy$' \
+              && NGINX_HEALTH=1 \
+              || true
+
+
+            # ----------------------------------------------
+            # Public /health
+            # ----------------------------------------------
+
+            curl \
+              -fsS \
+              --max-time 10 \
+              "http://127.0.0.1:${PUBLIC_PORT}/health" \
+              >/dev/null \
+              && PUBLIC_HEALTH=1 \
+              || true
+
+
+            # ----------------------------------------------
+            # Public /ready
+            # ----------------------------------------------
+
+            curl \
+              -fsS \
+              --max-time 10 \
+              "http://127.0.0.1:${PUBLIC_PORT}/ready" \
+              >/dev/null \
+              && PUBLIC_READY=1 \
+              || true
+
+
+            # ----------------------------------------------
+            # Output status
+            # ----------------------------------------------
+
+            echo \
+              "api=${API_HEALTH} bridge=${BRIDGE_HEALTH} frontend=${FRONTEND_HEALTH} nginx=${NGINX_HEALTH} health=${PUBLIC_HEALTH} ready=${PUBLIC_READY}"
+
+
+            # ----------------------------------------------
+            # Success condition
+            # ----------------------------------------------
+
+            if [ "$API_HEALTH" -eq 1 ] &&
+               [ "$BRIDGE_HEALTH" -eq 1 ] &&
+               [ "$FRONTEND_HEALTH" -eq 1 ] &&
+               [ "$NGINX_HEALTH" -eq 1 ] &&
+               [ "$PUBLIC_HEALTH" -eq 1 ] &&
+               [ "$PUBLIC_READY" -eq 1 ]
+            then
+
+              echo "========================================="
               echo "UniGuru deployment is healthy."
+              echo "========================================="
+
               break
+
             fi
+
+
+            # ----------------------------------------------
+            # Final attempt failed
+            # ----------------------------------------------
 
             if [ "$i" -eq 18 ]; then
+
+              echo "========================================="
               echo "Deployment health check failed."
-              docker compose -f docker-compose.production.yml ps
-              docker compose -f docker-compose.production.yml logs --tail=100
+              echo "========================================="
+
+
+              docker compose \
+                -f docker-compose.production.yml \
+                ps
+
+
+              docker compose \
+                -f docker-compose.production.yml \
+                logs \
+                --tail=100
+
+
               exit 1
+
             fi
 
-            echo "api=$API_HEALTH frontend=$FRONTEND_HEALTH public=$PUBLIC_HEALTH; retrying in 10s..."
+
+            echo \
+              "Retrying in 10 seconds..."
+
+
             sleep 10
+
           done
 
+
+          # ==================================================
+          # RELEASE HISTORY
+          # ==================================================
+
           if [ ! -f release_history/RELEASE_HISTORY.md ]; then
+
             printf '%s\n' \
               '# UniGuru Release History' \
               '' \
               '| Timestamp | Image Tag (Git SHA) | Status | Description |' \
               '|---|---|---|---|' \
               > release_history/RELEASE_HISTORY.md
+
           fi
 
-          echo "| $(date -u '+%Y-%m-%d %H:%M:%S UTC') | $SHORT_SHA | SUCCESS | Stable deployment |" \
+
+          # --------------------------------------------------
+          # Save successful deployment
+          # --------------------------------------------------
+
+          echo \
+            "| $(date -u '+%Y-%m-%d %H:%M:%S UTC') | $SHORT_SHA | SUCCESS | Stable deployment |" \
             >> release_history/RELEASE_HISTORY.md
+
+
+          # --------------------------------------------------
+          # Save last known-good tag
+          # --------------------------------------------------
+
+          echo "$SHORT_SHA" \
+            > release_history/LAST_GOOD_TAG
+
+
           EOF
+
+
+  # ==========================================================
+  # 4. AUTOMATIC ROLLBACK
+  # ==========================================================
 
   rollback:
     name: Automatic rollback
+
     runs-on: ubuntu-latest
-    needs: [build, deploy]
+
+    needs:
+      - build
+      - deploy
+
     if: always() && needs.deploy.result == 'failure'
+
     steps:
+
       - name: Install sshpass
         run: |
+
           sudo apt-get update
           sudo apt-get install -y sshpass
 
+
       - name: Roll back to last healthy release
         run: |
-          sshpass -p "${{ secrets.VM_PASSWORD }}" ssh \
-            -p "${{ secrets.VM_PORT }}" \
-            -o StrictHostKeyChecking=no \
-            "${{ secrets.VM_USERNAME }}@${{ secrets.VM_IP }}" \
-            "bash -s" <<'EOF'
+
+          sshpass \
+            -p "${{ secrets.VM_PASSWORD }}" \
+            ssh \
+              -p "${{ secrets.VM_PORT }}" \
+              -o StrictHostKeyChecking=no \
+              "${{ secrets.VM_USERNAME }}@${{ secrets.VM_IP }}" \
+              "bash -s" <<'EOF'
+
           set -euo pipefail
+
+
+          # --------------------------------------------------
+          # Application directory
+          # --------------------------------------------------
+
           APP_DIR="${{ secrets.VM_APP_DIR }}"
+
           cd "$APP_DIR"
 
-          test -f release_history/RELEASE_HISTORY.md || {
-            echo "No release history exists. Rollback unavailable."
-            exit 1
-          }
+
+          # --------------------------------------------------
+          # Check release history
+          # --------------------------------------------------
+
+          test \
+            -f release_history/RELEASE_HISTORY.md \
+            || {
+
+              echo "No release history exists. Rollback unavailable."
+
+              exit 1
+
+            }
+
+
+          # --------------------------------------------------
+          # Find previous successful release
+          # --------------------------------------------------
 
           LAST_HEALTHY_TAG="$(
-            grep -E '\| (SUCCESS|ROLLBACK_SUCCESS) \|' \
-              release_history/RELEASE_HISTORY.md | tail -n 1 |
-              awk -F'|' '{gsub(/[[:space:]]/, "", $3); print $3}'
+            grep \
+              -E '\| (SUCCESS|ROLLBACK_SUCCESS) \|' \
+              release_history/RELEASE_HISTORY.md \
+            | tail -n 1 \
+            | awk -F'|' \
+                '{
+                  gsub(/[[:space:]]/, "", $3);
+                  print $3
+                }'
           )"
 
-          test -n "$LAST_HEALTHY_TAG" || {
-            echo "No previous healthy image tag found."
-            exit 1
-          }
 
-          echo "Rolling back to $LAST_HEALTHY_TAG"
+          # --------------------------------------------------
+          # Validate tag
+          # --------------------------------------------------
 
-          echo "${{ secrets.DOCKER_PASSWORD }}" | \
-            docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+          test \
+            -n "$LAST_HEALTHY_TAG" \
+            || {
 
-          sed "s|IMG_TAG|$LAST_HEALTHY_TAG|g" \
-            docker-compose.production.template.yml > docker-compose.production.yml
+              echo "No previous healthy image tag found."
 
-          docker compose -f docker-compose.production.yml pull
-          docker compose -f docker-compose.production.yml up -d --remove-orphans
+              exit 1
 
-          PUBLIC_PORT="$(docker compose -f docker-compose.production.yml port uniguru-nginx 80 | sed 's/.*://')"
+            }
+
+
+          echo \
+            "Rolling back to $LAST_HEALTHY_TAG"
+
+
+          # --------------------------------------------------
+          # Docker Hub login
+          # --------------------------------------------------
+
+          echo "${{ secrets.DOCKER_PASSWORD }}" \
+            | docker login \
+                -u "${{ secrets.DOCKER_USERNAME }}" \
+                --password-stdin
+
+
+          # --------------------------------------------------
+          # Generate rollback compose
+          # --------------------------------------------------
+
+          sed \
+            "s|IMG_TAG|$LAST_HEALTHY_TAG|g" \
+            docker-compose.production.template.yml \
+            > docker-compose.production.yml
+
+
+          # --------------------------------------------------
+          # Pull previous images
+          # --------------------------------------------------
+
+          docker compose \
+            -f docker-compose.production.yml \
+            pull
+
+
+          # --------------------------------------------------
+          # Start previous release
+          # --------------------------------------------------
+
+          docker compose \
+            -f docker-compose.production.yml \
+            up \
+              -d \
+              --remove-orphans
+
+
+          docker logout
+
+
+          # ==================================================
+          # ROLLBACK HEALTH CHECK
+          # ==================================================
+
+          PUBLIC_PORT="${{ env.UNIGURU_PUBLIC_PORT }}"
+
 
           for i in {1..18}; do
+
             API_HEALTH=0
+            BRIDGE_HEALTH=0
             FRONTEND_HEALTH=0
+            NGINX_HEALTH=0
             PUBLIC_HEALTH=0
+            PUBLIC_READY=0
 
-            docker inspect --format='{{.State.Health.Status}}' uniguru-api 2>/dev/null \
-              | grep -q '^healthy$' && API_HEALTH=1 || true
-            docker inspect --format='{{.State.Health.Status}}' uniguru-frontend 2>/dev/null \
-              | grep -q '^healthy$' && FRONTEND_HEALTH=1 || true
-            curl -fsS "http://127.0.0.1:${PUBLIC_PORT}/health" >/dev/null \
-              && PUBLIC_HEALTH=1 || true
 
-            if [ "$API_HEALTH" -eq 1 ] && \
-               [ "$FRONTEND_HEALTH" -eq 1 ] && \
-               [ "$PUBLIC_HEALTH" -eq 1 ]; then
+            # API
+            docker inspect \
+              --format='{{.State.Health.Status}}' \
+              uniguru-api \
+              2>/dev/null \
+              | grep -q '^healthy$' \
+              && API_HEALTH=1 \
+              || true
+
+
+            # Bridge
+            docker inspect \
+              --format='{{.State.Health.Status}}' \
+              uniguru-bridge \
+              2>/dev/null \
+              | grep -q '^healthy$' \
+              && BRIDGE_HEALTH=1 \
+              || true
+
+
+            # Frontend
+            docker inspect \
+              --format='{{.State.Health.Status}}' \
+              uniguru-frontend \
+              2>/dev/null \
+              | grep -q '^healthy$' \
+              && FRONTEND_HEALTH=1 \
+              || true
+
+
+            # Nginx
+            docker inspect \
+              --format='{{.State.Health.Status}}' \
+              uniguru-nginx \
+              2>/dev/null \
+              | grep -q '^healthy$' \
+              && NGINX_HEALTH=1 \
+              || true
+
+
+            # Public health
+            curl \
+              -fsS \
+              --max-time 10 \
+              "http://127.0.0.1:${PUBLIC_PORT}/health" \
+              >/dev/null \
+              && PUBLIC_HEALTH=1 \
+              || true
+
+
+            # Public readiness
+            curl \
+              -fsS \
+              --max-time 10 \
+              "http://127.0.0.1:${PUBLIC_PORT}/ready" \
+              >/dev/null \
+              && PUBLIC_READY=1 \
+              || true
+
+
+            echo \
+              "api=${API_HEALTH} bridge=${BRIDGE_HEALTH} frontend=${FRONTEND_HEALTH} nginx=${NGINX_HEALTH} health=${PUBLIC_HEALTH} ready=${PUBLIC_READY}"
+
+
+            if [ "$API_HEALTH" -eq 1 ] &&
+               [ "$BRIDGE_HEALTH" -eq 1 ] &&
+               [ "$FRONTEND_HEALTH" -eq 1 ] &&
+               [ "$NGINX_HEALTH" -eq 1 ] &&
+               [ "$PUBLIC_HEALTH" -eq 1 ] &&
+               [ "$PUBLIC_READY" -eq 1 ]
+            then
+
+              echo "========================================="
               echo "Rollback deployment is healthy."
-              echo "| $(date -u '+%Y-%m-%d %H:%M:%S UTC') | $LAST_HEALTHY_TAG | ROLLBACK_SUCCESS | Automatic rollback |" \
+              echo "========================================="
+
+
+              echo \
+                "| $(date -u '+%Y-%m-%d %H:%M:%S UTC') | $LAST_HEALTHY_TAG | ROLLBACK_SUCCESS | Automatic rollback |" \
                 >> release_history/RELEASE_HISTORY.md
+
+
+              echo "$LAST_HEALTHY_TAG" \
+                > release_history/LAST_GOOD_TAG
+
+
               exit 0
+
             fi
+
+
+            if [ "$i" -eq 18 ]; then
+
+              echo "Rollback deployment health check failed."
+
+
+              docker compose \
+                -f docker-compose.production.yml \
+                ps
+
+
+              docker compose \
+                -f docker-compose.production.yml \
+                logs \
+                --tail=100
+
+
+              echo \
+                "| $(date -u '+%Y-%m-%d %H:%M:%S UTC') | $LAST_HEALTHY_TAG | ROLLBACK_FAILED | Automatic rollback failed health check |" \
+                >> release_history/RELEASE_HISTORY.md
+
+
+              exit 1
+
+            fi
+
+
             sleep 10
+
           done
 
-          docker compose -f docker-compose.production.yml ps
-          docker compose -f docker-compose.production.yml logs --tail=100
-          echo "| $(date -u '+%Y-%m-%d %H:%M:%S UTC') | $LAST_HEALTHY_TAG | ROLLBACK_FAILED | Automatic rollback failed health check |" \
-            >> release_history/RELEASE_HISTORY.md
-          exit 1
           EOF
