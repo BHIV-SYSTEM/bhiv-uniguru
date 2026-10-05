@@ -398,13 +398,8 @@ jobs:
                 echo "Pull failed."
 
                 # Restart Docker only after repeated pull failures.
-                if [ "\$ATTEMPT" -ge 2 ]; then
-                  echo "Restarting Docker daemon..."
-                  sudo systemctl restart docker || true
-                  sleep 10
-                else
-                  sleep 15
-                fi
+                echo "Docker pull failed; waiting before retry..."
+                sleep 20
               fi
             done
 
