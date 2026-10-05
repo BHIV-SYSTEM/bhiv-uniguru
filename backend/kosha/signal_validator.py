@@ -154,9 +154,7 @@ class SignalValidator:
         if source_governance.get("suppression_reason"):
             return False, str(source_governance["suppression_reason"]), details
 
-<<<<<<< HEAD
         # Rule 3: Tag match
-=======
         text_entities = [
             entity
             for entity in cls.entity_resolver.extract(query)
@@ -199,7 +197,6 @@ class SignalValidator:
                     return False, "no_topic_evidence_for_named_source", details
 
         # Rule 3: Tag match — at least 1 tag must overlap with query
->>>>>>> 4b55e262ce1a8873277e6ad512ac88daa4782075
         tag_score, matched_tags = cls.compute_tag_match(query_tokens, tags)
         details["tag_match_score"] = tag_score
         details["matched_tags"] = matched_tags
