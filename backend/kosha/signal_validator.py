@@ -162,6 +162,7 @@ class SignalValidator:
         if source_governance.get("suppression_reason"):
             return False, str(source_governance["suppression_reason"]), details
 
+        # Rule 3: Tag match
         text_entities = [
             entity
             for entity in cls.entity_resolver.extract(query)

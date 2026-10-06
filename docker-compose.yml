@@ -16,14 +16,24 @@ services:
       SUPABASE_URL: ${SUPABASE_URL:?Set SUPABASE_URL in the deployment environment}
       SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY:?Set SUPABASE_ANON_KEY in the deployment environment}
       UNIGURU_ENVIRONMENT: production
+      UNIGURU_DEMO_AUTH_ENABLED: "false"
+      UNIGURU_API_AUTH_REQUIRED: "true"
+      UNIGURU_LLM_URL: ${UNIGURU_LLM_URL:?Set UNIGURU_LLM_URL to a reachable production endpoint}
       UNIGURU_CORS_ORIGINS: https://uni-guru.vercel.app
       UNIGURU_CHAT_DB_PATH: /var/lib/uniguru/chats.sqlite3
+      MDU_ENABLED: "false"
     expose:
       - "8000"
     volumes:
       - uniguru_metrics:/var/lib/uniguru
     networks:
       - uniguru_net
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
 
   nginx:
     image: nginx:1.27-alpine
@@ -42,6 +52,12 @@ services:
       - nginx_logs:/var/log/nginx
     networks:
       - uniguru_net
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:80/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
 
   certbot:
     image: certbot/certbot:latest
@@ -52,6 +68,8 @@ services:
       - certbot_conf:/etc/letsencrypt
     entrypoint: /bin/sh -c
     command: "trap exit TERM; while :; do certbot renew --webroot -w /var/www/certbot --quiet; sleep 12h; done"
+    networks:
+      - uniguru_net
 
 volumes:
   certbot_www:
