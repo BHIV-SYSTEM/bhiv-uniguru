@@ -16,8 +16,8 @@ Chat storage uses `UNIGURU_CHAT_DB_PATH` under `/var/lib/uniguru`; the deploymen
 
 The Render Blueprint declares a Starter web service because Render persistent disks require a paid service. A disk-attached service runs as a single instance; confirm the applicable Render price and scaling constraints before applying the Blueprint. This repository change does not deploy or provision a paid resource.
 
-The production Docker image starts `backend/main.py`, which mounts the runtime API under `/v2`. Do not replace this with a direct `uvicorn service.api:app` command unless the runtime mount is also preserved.
-The Docker build context excludes `.env*` files; supply production values through Render or the deployment environment, not image layers.
+The production Docker image starts `backend/main.py`, which mounts the runtime API under `/v2`. Do not replace this with a direct `uvicorn service.api:app` command unless the runtime mount is also preserved. Docker Compose requires `UNIGURU_LLM_URL` from the operator's ignored root `.env` file or shell environment; Render requests the same endpoint as externally supplied configuration. The tracked production env template contains no loopback LLM or bridge endpoints.
+The Docker build context excludes `.env*` files; supply production values through Render or the deployment environment, not image layers. Compose's API health check uses Python's standard library rather than assuming `curl` is installed in the app image.
 
 MDU validation is an optional ecosystem integration, not a startup dependency for the normal UniGuru API. Render explicitly sets `MDU_ENABLED=false`; when disabled, the runtime produces local schema/provenance validation and skips authenticated MDU requests. To enable live MDU validation, first obtain provider confirmation that the historical credential has been revoked, then supply a replacement `MDU_API_KEY` through the deployment secret store and set `MDU_ENABLED=true`.
 

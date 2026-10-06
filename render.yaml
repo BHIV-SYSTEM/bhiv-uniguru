@@ -22,6 +22,8 @@ services:
         value: https://uni-guru.vercel.app
       - key: UNIGURU_CHAT_DB_PATH
         value: /var/lib/uniguru/chats.sqlite3
+      - key: UNIGURU_LLM_URL
+        sync: false
       - key: SUPABASE_URL
         sync: false
       - key: SUPABASE_ANON_KEY
