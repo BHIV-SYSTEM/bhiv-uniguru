@@ -975,7 +975,7 @@
       "memory_classification": "quarantined",
       "trace_id": "mitra_trace_xyz",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-06T10:43:11.711475Z",
+      "updated_at": "2026-10-06T11:56:49.068449Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -1340,7 +1340,7 @@
         }
       }
     ],
-    "timestamp": "2026-10-06T10:43:08.900536Z",
+    "timestamp": "2026-10-06T11:56:46.306662Z",
     "trace_continuity": {
       "bucket_proof": "mitra_trace_xyz",
       "contract_emission": "mitra_trace_xyz",
@@ -2306,7 +2306,7 @@
     "signal_c0c587d9d7a4"
   ],
   "fallback_to_llm": false,
-  "generated_at": "2026-10-06T10:43:08.900536Z",
+  "generated_at": "2026-10-06T11:56:46.306662Z",
   "interpretation_payload": {
     "answer": "Yoga is a masculine noun derived from the root yuj with the suffix -a. Yoga is the discipline leading to union of the individual self with the highest reality. Yoga as medicine: the Ha\u1e6dha Yoga Prad\u012bpik\u0101 describes yoga as the cure for all diseases.",
     "artifact_hash": "f8574767a00df6c78c4f7ce259d39f226e3e0b76f420a5680d2aff90ead71fee",
@@ -22168,7 +22168,7 @@
       ],
       "method": "canonical_entity_majority"
     },
-    "generated_at": "2026-10-06T10:43:08.900536Z",
+    "generated_at": "2026-10-06T11:56:46.306662Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -23379,20 +23379,20 @@
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "f85abcb7e4d8ce1f67606e72d93552d7ed8cd6972be633edeaee2333844b06b1",
+        "last_event_hash": "2e88f629ec74e8b278b77e6fc0ef39c1ec92b419d103a3c4c5362c4ae3a4e5e2",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "2a12d1e3a9ca7f28d1620818cca2674951c7ca44d9dada97a42f9b9d1593341d",
-      "transient_event_count": 991
+      "state_hash": "91a1dc3370e13348f4536ae6d0f58a03dfc211e3f2a647b58034e30c643bded3",
+      "transient_event_count": 1010
     },
     "entity_continuity": {
       "Agni": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
@@ -23653,13 +23653,26 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Ahimsa": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/ahimsa.md",
@@ -23847,13 +23860,21 @@
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Assembly": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
@@ -24046,13 +24067,22 @@
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Atharvaveda": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
@@ -24298,13 +24328,24 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Atman": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
@@ -24646,13 +24687,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Bhagavad Gita": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -24974,13 +25030,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Bhagavata Purana": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -25208,13 +25276,23 @@
           "51b599c9-9bfd-4c99-b382-7306367f15ca",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_bd229dcb5fc05791"
+          "trace_bd229dcb5fc05791",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f"
         ]
       },
       "Bhakti": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -25495,13 +25573,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Bhakti Yoga": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
@@ -25753,13 +25843,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Brahma": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -26086,13 +26188,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Brahman": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
@@ -26419,13 +26533,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Brahmanda Purana": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
@@ -26611,13 +26737,19 @@
           "trace_4b1fffdfca3355c3",
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
-          "a3bd2072-a18e-4eb6-8490-3209c27c0a74"
+          "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac"
         ]
       },
       "Chandogya Upanishad": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -26877,13 +27009,23 @@
           "51b599c9-9bfd-4c99-b382-7306367f15ca",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_bd229dcb5fc05791"
+          "trace_bd229dcb5fc05791",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f"
         ]
       },
       "City": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
@@ -27036,7 +27178,7 @@
       "Decision Making": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
@@ -27270,13 +27412,23 @@
           "51b599c9-9bfd-4c99-b382-7306367f15ca",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_bd229dcb5fc05791"
+          "trace_bd229dcb5fc05791",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f"
         ]
       },
       "Devi": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -27624,13 +27776,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Dharma": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -27957,13 +28124,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Governance": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -28310,13 +28492,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Guru": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
@@ -28569,13 +28766,23 @@
           "51b599c9-9bfd-4c99-b382-7306367f15ca",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_bd229dcb5fc05791"
+          "trace_bd229dcb5fc05791",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f"
         ]
       },
       "Indra": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
@@ -28871,13 +29078,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Jnana Yoga": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yoga.md",
@@ -29106,13 +29328,23 @@
           "51b599c9-9bfd-4c99-b382-7306367f15ca",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_bd229dcb5fc05791"
+          "trace_bd229dcb5fc05791",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f"
         ]
       },
       "Justice": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -29376,13 +29608,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Karma": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -29717,13 +29961,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Karma Yoga": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -29964,13 +30223,23 @@
           "51b599c9-9bfd-4c99-b382-7306367f15ca",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_bd229dcb5fc05791"
+          "trace_bd229dcb5fc05791",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f"
         ]
       },
       "Katha Upanishad": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
@@ -30227,13 +30496,23 @@
           "51b599c9-9bfd-4c99-b382-7306367f15ca",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_bd229dcb5fc05791"
+          "trace_bd229dcb5fc05791",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f"
         ]
       },
       "King": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -30570,13 +30849,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Kundalini": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
@@ -30855,13 +31149,26 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Mahabharata": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "The Complete Mahabharata_English_ocred.pdf",
@@ -31113,13 +31420,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Mandukya Upanishad": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/atman.md",
@@ -31336,13 +31655,19 @@
           "trace_4b1fffdfca3355c3",
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
-          "a3bd2072-a18e-4eb6-8490-3209c27c0a74"
+          "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac"
         ]
       },
       "Mantra": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -31688,13 +32013,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Markandeya Purana": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
@@ -31904,13 +32244,19 @@
           "trace_3f9f4dc94426554c",
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
-          "a3bd2072-a18e-4eb6-8490-3209c27c0a74"
+          "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac"
         ]
       },
       "Moksha": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -32250,13 +32596,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Mundaka Upanishad": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
@@ -32473,13 +32834,19 @@
           "trace_3f9f4dc94426554c",
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
-          "a3bd2072-a18e-4eb6-8490-3209c27c0a74"
+          "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac"
         ]
       },
       "Narayana": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -32811,13 +33178,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Om": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
@@ -33098,13 +33477,26 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Pilgrimage": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.7267,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/moksha.md",
@@ -33291,13 +33683,19 @@
           "trace_3f9f4dc94426554c",
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
-          "a3bd2072-a18e-4eb6-8490-3209c27c0a74"
+          "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac"
         ]
       },
       "Prakriti": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -33619,13 +34017,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Prana": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
@@ -33904,13 +34317,26 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Prashna Upanishad": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.8517,
         "source_ids": [
           "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
@@ -34020,7 +34446,7 @@
       "Purusha": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
@@ -34308,13 +34734,23 @@
           "51b599c9-9bfd-4c99-b382-7306367f15ca",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_bd229dcb5fc05791"
+          "trace_bd229dcb5fc05791",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f"
         ]
       },
       "Rain": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
@@ -34549,13 +34985,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Rajadharma": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
@@ -34769,13 +35217,21 @@
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Rajas": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -35083,13 +35539,26 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Rigveda": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.7267,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/lokas.md",
@@ -35255,13 +35724,19 @@
           "trace_3f9f4dc94426554c",
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
-          "a3bd2072-a18e-4eb6-8490-3209c27c0a74"
+          "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac"
         ]
       },
       "Road": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -35557,13 +36032,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Samaveda": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.7267,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/mantra.md",
@@ -35694,7 +36181,7 @@
       "Samsara": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -35928,13 +36415,23 @@
           "51b599c9-9bfd-4c99-b382-7306367f15ca",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_bd229dcb5fc05791"
+          "trace_bd229dcb5fc05791",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f"
         ]
       },
       "Sankhya": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -36257,13 +36754,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Sarasvati": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/guru.md",
@@ -36476,13 +36988,19 @@
           "trace_4b1fffdfca3355c3",
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
-          "a3bd2072-a18e-4eb6-8490-3209c27c0a74"
+          "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac"
         ]
       },
       "Sattva": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -36780,13 +37298,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Shiva": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
@@ -37099,13 +37629,26 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Skanda Purana": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/puranas.md",
@@ -37281,13 +37824,19 @@
           "trace_50abd85419db5d76",
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
-          "a3bd2072-a18e-4eb6-8490-3209c27c0a74"
+          "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac"
         ]
       },
       "Smriti": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
@@ -37461,13 +38010,21 @@
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Soil": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -37742,13 +38299,26 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Surya": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/agni.md",
@@ -38046,13 +38616,26 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Taittiriya Upanishad": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
@@ -38310,13 +38893,21 @@
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Tamas": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -38595,13 +39186,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Temple": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yantra.md",
@@ -38724,7 +39327,7 @@
       "Upanishads": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -39047,13 +39650,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Varna": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
@@ -39265,13 +39880,21 @@
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Vedas": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -39556,13 +40179,25 @@
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Yajna": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -39876,13 +40511,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Yajnavalkya Smriti": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.8517,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/dharma.md",
@@ -40055,13 +40705,21 @@
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_f7ef44723d8156e7"
         ]
       },
       "Yajurveda": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/yajna.md",
@@ -40271,13 +40929,23 @@
           "51b599c9-9bfd-4c99-b382-7306367f15ca",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_bd229dcb5fc05791"
+          "trace_bd229dcb5fc05791",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f"
         ]
       },
       "Yantra": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -40622,13 +41290,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Yoga": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/knowledge/sanskrit/karma.md",
@@ -40975,13 +41658,28 @@
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
           "trace_bd229dcb5fc05791",
           "trace_b2aadbdc5b2d5902",
-          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491"
+          "91b7b5f6-36a6-4d21-8f3c-0e43145c6491",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "f74da40e-e537-4c01-8009-b3482f7c9772",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_ee211a2f9b665c31",
+          "107e69ac-11d8-4799-9ab5-3d94fe2ee5db",
+          "trace_4b88914550de519a",
+          "67e2561e-9305-42fa-a50e-6b63de653287",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "e2e25c2d-d8f4-4943-99b9-afb7b8900b14",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_a194a238756f568f",
+          "trace_f7ef44723d8156e7",
+          "1a3a6e36-5081-486f-9ed3-92eb5584e4aa"
         ]
       },
       "Yuga": {
         "contradiction_pressure": 0.0667,
         "decay_state": "active",
-        "last_seen": "2026-10-06T10:43:11.711475Z",
+        "last_seen": "2026-10-06T11:56:49.068449Z",
         "reinforcement_score": 0.9767,
         "source_ids": [
           "Vayu Purana Part 1_ocred.pdf",
@@ -41216,7 +41914,15 @@
           "41ae2190-34ce-4c30-addf-cbd4d2c894a5",
           "30e774d3-592c-4e1c-95b9-8887821a95d5",
           "a3bd2072-a18e-4eb6-8490-3209c27c0a74",
-          "trace_b2aadbdc5b2d5902"
+          "trace_b2aadbdc5b2d5902",
+          "341da708-5d96-4eaf-94ba-0bb685110c16",
+          "dca84559-3e61-4003-9713-0f0cc3f69972",
+          "d96397ce-ac2e-4692-9641-f380d598e5e6",
+          "trace_4b88914550de519a",
+          "cffadfbd-6d32-4a66-964a-a696b752028d",
+          "de1b4af5-a81e-42f3-89e5-4099611c970f",
+          "2ffd69c2-0a15-4cdb-a579-64d4e06ee9ac",
+          "trace_f7ef44723d8156e7"
         ]
       }
     },
@@ -41297,7 +42003,7 @@
       "memory_classification": "quarantined",
       "trace_id": "mitra_trace_xyz",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-06T10:43:11.711475Z",
+      "updated_at": "2026-10-06T11:56:49.068449Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
@@ -41311,15 +42017,15 @@
         "rejected_signal_count": 2,
         "state": "open",
         "trace_id": "mitra_trace_xyz",
-        "updated_at": "2026-10-06T10:43:11.711475Z",
+        "updated_at": "2026-10-06T11:56:49.068449Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "VERIFIED"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-10-06T10:43:11.711475Z",
-      "queries": 269,
+      "last_seen": "2026-10-06T11:56:49.068449Z",
+      "queries": 327,
       "trace_ids": [
         "ecosystem_c6be6c9f77bb",
         "ecosystem_replay_test",
@@ -41346,7 +42052,9 @@
         "ecosystem_8760b9a49002",
         "ecosystem_4f9d655629ac",
         "ecosystem_53b2b66ab6c5",
-        "ecosystem_f7808f2d2942"
+        "ecosystem_f7808f2d2942",
+        "ecosystem_f01a0a3ac6dd",
+        "ecosystem_21374062ef62"
       ]
     }
   },
