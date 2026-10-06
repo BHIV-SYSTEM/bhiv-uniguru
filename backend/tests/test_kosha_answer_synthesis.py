@@ -277,6 +277,7 @@ def test_chat_new_uses_shared_verified_rag_service(monkeypatch):
     chat_id = "kosha-pipeline-route-test"
     chat = {"id": chat_id, "userId": "test-user", "messages": [], "lastActivity": None}
     monkeypatch.setitem(api._CHAT_SESSIONS, chat_id, chat)
+    monkeypatch.setattr(api, "_require_user_identity", lambda _request: {"id": "test-user"})
     monkeypatch.setattr(api, "_serialize_chat_session", lambda *_args, **_kwargs: {"id": chat_id})
     calls = []
 
@@ -313,9 +314,10 @@ def test_chat_new_uses_shared_verified_rag_service(monkeypatch):
     )
 
     assert response["aiResponse"]["content"] == "verified shared RAG response"
-    assert calls == [{
-        "user_query": "What is Brahman?",
-        "session_id": chat_id,
-        "context": {"caller": "test-user", "source_language": "en"},
-        "allow_web_retrieval": False,
-    }]
+    assert len(calls) == 1
+    assert calls[0]["user_query"] == "What is Brahman?"
+    assert calls[0]["session_id"] == chat_id
+    assert calls[0]["context"]["caller"] == "test-user"
+    assert calls[0]["context"]["source_language"] == "en"
+    assert calls[0]["context"]["trace_id"].startswith(f"chat_{chat_id}_")
+    assert calls[0]["allow_web_retrieval"] is False

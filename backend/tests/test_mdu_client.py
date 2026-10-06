@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import io
+import urllib.error
+
 from integrations.mdu_client import MDUClient
 
 
@@ -38,3 +41,27 @@ def test_mdu_client_uses_canonical_dataset_lookup(monkeypatch) -> None:
     assert result["canonical_id"] == "BHIV-DS-UNIGURU-RUNTIME-001"
     assert calls[0][0].endswith("/api/v1/datasets/canonical/BHIV-DS-UNIGURU-RUNTIME-001")
     assert calls[0][1] == "GET"
+
+
+def test_mdu_key_is_redacted_from_upstream_error_logs_and_results(monkeypatch, caplog) -> None:
+    secret = "test_mdu_secret_do_not_log"
+
+    def fake_urlopen(req, timeout=5.0):
+        raise urllib.error.HTTPError(
+            req.full_url,
+            502,
+            "Bad Gateway",
+            hdrs=None,
+            fp=io.BytesIO(f'{{"detail":"upstream echoed {secret}"}}'.encode("utf-8")),
+        )
+
+    monkeypatch.setattr("integrations.mdu_client.urllib.request.urlopen", fake_urlopen)
+    client = MDUClient()
+    client.enabled = True
+    client.api_key = secret
+
+    result = client.get_registry_summary()
+
+    assert secret not in caplog.text
+    assert secret not in repr(result)
+    assert "[REDACTED]" in result["reason"]

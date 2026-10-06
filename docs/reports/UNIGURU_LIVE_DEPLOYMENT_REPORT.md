@@ -1,5 +1,7 @@
 # UniGuru Live Deployment Report
 
+> **Historical report.** The endpoint checks below were explicitly blocked by workspace network policy and are not proof of a live deployment. Current configured URLs are listed in `frontend/.env.production` and `render.yaml`; perform a new browser and deployed API test before claiming production access.
+
 Date: 2026-03-12
 Target: `https://uni-guru.in`
 

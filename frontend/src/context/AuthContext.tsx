@@ -91,8 +91,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       try {
         setIsAuthLoading(true);
         const data = await checkAuthStatus();
-        if (data && data.authenticated) {
-          setUser({ id: data.id, email: data.email, name: data.name });
+        if (data && data.authenticated && data.user) {
+          setUser({ id: data.user.id, email: data.user.email, name: data.user.name });
           setIsLoggedIn(true);
 
           // Auto-load gurus
@@ -161,7 +161,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     try {
       const data = await signupUser(name, email, password);
       console.log("The Data is "+data);
-      if (data) {
+      if (data?.token) {
         setUser({ id: data.id, email: data.email, name: data.name });
         setIsLoggedIn(true);
         localStorage.setItem("token", data.token);

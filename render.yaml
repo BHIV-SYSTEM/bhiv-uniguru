@@ -1,7 +1,8 @@
 services:
   - type: web
-    name: uniguru-api
+    name: complete-uniguru
     runtime: docker
+    plan: starter
     dockerfilePath: ./Dockerfile
     dockerContext: .
     envVars:
@@ -13,12 +14,26 @@ services:
         value: "8000"
       - key: UNIGURU_WORKERS
         value: "1"
+      - key: UNIGURU_ENVIRONMENT
+        value: production
+      - key: UNIGURU_DEMO_AUTH_ENABLED
+        value: "false"
+      - key: UNIGURU_CORS_ORIGINS
+        value: https://uni-guru.vercel.app
+      - key: UNIGURU_CHAT_DB_PATH
+        value: /var/lib/uniguru/chats.sqlite3
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
       - key: UNIGURU_API_AUTH_REQUIRED
         value: "true"
       - key: UNIGURU_API_TOKEN
         sync: false
       - key: UNIGURU_API_TOKENS
         sync: false
+      - key: MDU_ENABLED
+        value: "false"
       - key: UNIGURU_ALLOWED_CALLERS
         value: "bhiv-assistant,gurukul-platform,internal-testing,uniguru-frontend"
       - key: EXTERNAL_API_SECRET_KEY
@@ -36,3 +51,7 @@ services:
       - key: LOG_LEVEL
         value: INFO
     healthCheckPath: /health
+    disk:
+      name: uniguru-data
+      mountPath: /var/lib/uniguru
+      sizeGB: 1

@@ -61,6 +61,8 @@ def test_chat_new_uses_verified_marathi_retrieval_path(monkeypatch):
     chat_id = "marathi-chat-route-test"
     chat = {"id": chat_id, "userId": "marathi-user", "messages": [], "lastActivity": None}
     monkeypatch.setitem(api._CHAT_SESSIONS, chat_id, chat)
+    monkeypatch.setattr(api, "_require_user_identity", lambda _request: {"id": "marathi-user"})
+    monkeypatch.setattr(api, "_require_user_identity", lambda _request: {"id": "marathi-user"})
     monkeypatch.setattr(api, "_serialize_chat_session", lambda *_args, **_kwargs: {"id": chat_id})
     calls = []
 

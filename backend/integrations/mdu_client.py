@@ -601,11 +601,11 @@ class MDUClient:
     ) -> Dict[str, Any]:
         try:
             with urllib.request.urlopen(req, timeout=self.timeout) as resp:
-                body = resp.read().decode("utf-8")
+                body = self._redact_secret(resp.read().decode("utf-8"))
                 data = json.loads(body) if body.strip() else {}
                 return {"live": True, "status": resp.status, "raw": data, "path": path}
         except urllib.error.HTTPError as exc:
-            body = exc.read().decode("utf-8")
+            body = self._redact_secret(exc.read().decode("utf-8"))
             logger.warning("MDU %s %s => %s: %s", req.method, path, exc.code, body[:300])
             try:
                 raw = json.loads(body)
@@ -613,8 +613,15 @@ class MDUClient:
                 raw = {"detail": body[:300]}
             return {"live": False, "status": exc.code, "reason": body[:300], "raw": raw, "path": path}
         except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as exc:
-            logger.warning("MDU %s %s failed: %s", req.method, path, exc)
-            return {"live": False, "reason": str(exc), "path": path}
+            reason = self._redact_secret(str(exc))
+            logger.warning("MDU %s %s failed: %s", req.method, path, reason)
+            return {"live": False, "reason": reason, "path": path}
+
+    def _redact_secret(self, value: str) -> str:
+        """Prevent an upstream response or exception from echoing the API key."""
+        if not self.api_key:
+            return value
+        return value.replace(self.api_key, "[REDACTED]")
 
     @staticmethod
     def _wrap_dataset_response(raw: Dict[str, Any]) -> Dict[str, Any]:

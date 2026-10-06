@@ -5,9 +5,11 @@ __pycache__/
 venv/
 env/
 .env
-.env.production
+.env.*
+!.env.example
 tests/.tmp/
 .pytest_tmp/
+logs/chats.sqlite3*
 
 # Large Files
 backend/RAG/chunks.db

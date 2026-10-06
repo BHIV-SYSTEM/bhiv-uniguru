@@ -37,6 +37,7 @@ from service.live_service import LiveUniGuruService
 from service.query_classifier import QueryType, classify_query
 from service.guru_models import Guru, CreateGuruRequest, guru_storage
 from service.supabase_auth import supabase_auth
+from service.chat_storage import ChatSessionStore
 from stt import STTEngine, STTUnavailableError
 from security import AuditEmitter, JWTClaims, RBACEnforcer, ReplayMitigationTable, RS256Verifier
 
@@ -136,6 +137,11 @@ _default_cors_origins = [
 ]
 _cors_origins_raw = os.getenv("UNIGURU_CORS_ORIGINS", ",".join(_default_cors_origins))
 _cors_origins = [origin.strip() for origin in _cors_origins_raw.split(",") if origin.strip()]
+_IS_PRODUCTION = os.getenv("UNIGURU_ENVIRONMENT", "").strip().lower() == "production"
+if _IS_PRODUCTION and not os.getenv("UNIGURU_CORS_ORIGINS", "").strip():
+    raise RuntimeError("UNIGURU_CORS_ORIGINS must contain the production frontend origin.")
+if _IS_PRODUCTION and not supabase_auth.enabled:
+    raise RuntimeError("Production requires valid SUPABASE_URL and SUPABASE_ANON_KEY settings.")
 
 app.add_middleware(
     CORSMiddleware,
@@ -212,7 +218,13 @@ _ASK_REQUEST_TIMESTAMPS: deque[float] = deque()
 _ASK_INFLIGHT = 0
 _ASK_QUEUE_LIMIT = int(os.getenv("UNIGURU_ROUTER_QUEUE_LIMIT", "200"))
 _CHAT_LOCK = threading.Lock()
-_CHAT_SESSIONS: Dict[str, Dict[str, Any]] = {}
+_CHAT_SESSIONS: ChatSessionStore = ChatSessionStore()
+_DEMO_AUTH_ENABLED = (
+    os.getenv("UNIGURU_DEMO_AUTH_ENABLED", "false").strip().lower() in {"1", "true", "yes", "on"}
+    and not _IS_PRODUCTION
+    and not os.getenv("RENDER")
+)
+_DEMO_AUTH_TOKENS: Dict[str, Dict[str, str]] = {}
 _METRICS = {
     "requests_total": 0,
     "requests_by_status": defaultdict(int),
@@ -431,6 +443,38 @@ def _enforce_service_auth(request: Request) -> Optional[JWTClaims]:
     if token not in _API_TOKENS:
         raise HTTPException(status_code=401, detail="Unauthorized")
     return None
+
+
+def _request_bearer_token(request: Request) -> Optional[str]:
+    value = request.headers.get("Authorization", "")
+    if value.lower().startswith("bearer "):
+        return value[7:].strip() or None
+    return None
+
+
+def _issue_demo_user(user_id: str, email: str, name: str) -> Dict[str, str]:
+    token = uuid.uuid4().hex + uuid.uuid4().hex
+    user = {"id": user_id, "email": email, "name": name}
+    _DEMO_AUTH_TOKENS[token] = user
+    return {"token": token, **user}
+
+
+def _require_user_identity(request: Request) -> Dict[str, str]:
+    """Return identity verified by Supabase or an explicit local-only demo token."""
+    token = _request_bearer_token(request)
+    if _DEMO_AUTH_ENABLED:
+        user = _DEMO_AUTH_TOKENS.get(token or "")
+        if user:
+            return user
+        raise HTTPException(status_code=401, detail="Valid local demo login required")
+    if not supabase_auth.enabled:
+        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
+    if not token:
+        raise HTTPException(status_code=401, detail="Bearer token required")
+    user = supabase_auth.verify_token(token)
+    if not user:
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+    return user
 
 
 def _resolve_caller(request: AskRequest, raw_request: Request) -> str:
@@ -1387,14 +1431,8 @@ def ontology_concept(concept_id: str) -> Dict[str, Any]:
 )
 def get_user_gurus(request: Request) -> Dict[str, Any]:
     """Get all gurus for the authenticated user."""
-    # Extract user_id from request context or header
-    user_id = request.headers.get("X-User-Id", "demo-user")
-
+    user_id = _require_user_identity(request)["id"]
     gurus = guru_storage.get_user_gurus(user_id)
-    # Demo compatibility: if caller user_id does not match creator user_id,
-    # return all active gurus so the UI does not lose recently created gurus.
-    if not gurus:
-        gurus = guru_storage.get_all_active_gurus()
 
     return {
         "chatbots": [
@@ -1417,12 +1455,15 @@ def get_user_gurus(request: Request) -> Dict[str, Any]:
     summary="Get Guru Chat History",
     description="Retrieve all chat conversations for a specific guru"
 )
-def get_guru_chats(chatbot_id: str, user_id: str) -> Dict[str, Any]:
+def get_guru_chats(chatbot_id: str, user_id: str, request: Request) -> Dict[str, Any]:
     """Get all chats for a specific guru. Stub implementation."""
+    owner_id = _require_user_identity(request)["id"]
+    if user_id != owner_id:
+        raise HTTPException(status_code=403, detail="Forbidden")
     with _CHAT_LOCK:
         messages: list[Dict[str, Any]] = []
         for chat in _CHAT_SESSIONS.values():
-            if chat.get("userId") == user_id and chat.get("guru", {}).get("_id") == chatbot_id:
+            if chat.get("userId") == owner_id and chat.get("guru", {}).get("_id") == chatbot_id:
                 messages.extend(chat.get("messages", []))
         return {"messages": messages, "chats": []}
 
@@ -1433,11 +1474,14 @@ def get_guru_chats(chatbot_id: str, user_id: str) -> Dict[str, Any]:
     summary="Create Default Guru",
     description="Create a new guru with default settings (auto-generated name and subject)"
 )
-def create_new_guru(user_id: str) -> Dict[str, Any]:
+def create_new_guru(user_id: str, request: Request) -> Dict[str, Any]:
     """Create a new default guru for user."""
+    owner_id = _require_user_identity(request)["id"]
+    if user_id != owner_id:
+        raise HTTPException(status_code=403, detail="Forbidden")
     guru = guru_storage.create_guru(
-        user_id=user_id,
-        name=f"Guru {len(guru_storage.get_user_gurus(user_id)) + 1}",
+        user_id=owner_id,
+        name=f"Guru {len(guru_storage.get_user_gurus(owner_id)) + 1}",
         subject="General Knowledge",
         description="A general-purpose AI guru"
     )
@@ -1469,12 +1513,9 @@ def create_custom_guru(
     user_id: Optional[str] = None,
 ) -> Dict[str, Any]:
     """Create a custom guru with specified name, subject, and description."""
-    resolved_user_id = (
-        (user_id or "").strip()
-        or request.headers.get("X-User-Id", "").strip()
-        or request.headers.get("X-Caller-Name", "").strip()
-        or "demo-user"
-    )
+    resolved_user_id = _require_user_identity(request)["id"]
+    if user_id and user_id.strip() != resolved_user_id:
+        raise HTTPException(status_code=403, detail="Forbidden")
     guru = guru_storage.create_guru(
         user_id=resolved_user_id,
         name=request_body.name,
@@ -1499,7 +1540,7 @@ def create_custom_guru(
 )
 def delete_guru_endpoint(chatbot_id: str, request: Request) -> Dict[str, Any]:
     """Delete (soft delete) a guru."""
-    user_id = request.headers.get("X-User-Id", "demo-user")
+    user_id = _require_user_identity(request)["id"]
     
     success = guru_storage.delete_guru(chatbot_id, user_id)
     if not success:
@@ -1517,16 +1558,13 @@ def delete_guru_endpoint(chatbot_id: str, request: Request) -> Dict[str, Any]:
 def chat_create(request_body: Dict[str, Any], request: Request) -> Dict[str, Any]:
     guru_id = str(request_body.get("guruId") or "").strip()
     title = str(request_body.get("title") or "").strip()
-    user_id = str(
-        request_body.get("userId")
-        or request.headers.get("X-User-Id")
-        or request.headers.get("X-Caller-Name")
-        or "demo-user"
-    ).strip()
+    user_id = _require_user_identity(request)["id"]
     if not guru_id:
         raise HTTPException(status_code=400, detail="guruId is required")
 
     guru = guru_storage.get_guru(guru_id)
+    if guru and guru.user_id != user_id:
+        raise HTTPException(status_code=404, detail="Guru not found")
     if guru:
         guru_payload = {
             "_id": guru.id,
@@ -1566,16 +1604,10 @@ def chat_list(
     guruId: Optional[str] = None,
     archived: bool = False,
 ) -> Dict[str, Any]:
-    user_id = str(
-        request.headers.get("X-User-Id")
-        or request.headers.get("X-Caller-Name")
-        or "demo-user"
-    ).strip()
+    user_id = _require_user_identity(request)["id"]
 
     with _CHAT_LOCK:
         chats = [c for c in _CHAT_SESSIONS.values() if c.get("userId") == user_id]
-        if not chats:
-            chats = list(_CHAT_SESSIONS.values())
         if guruId:
             chats = [c for c in chats if c.get("guru", {}).get("_id") == guruId]
         if archived:
@@ -1591,33 +1623,29 @@ def chat_all_with_data(
     request: Request,
     includeMessages: bool = False,
 ) -> Dict[str, Any]:
-    user_id = str(
-        request.headers.get("X-User-Id")
-        or request.headers.get("X-Caller-Name")
-        or "demo-user"
-    ).strip()
+    user_id = _require_user_identity(request)["id"]
     with _CHAT_LOCK:
         chats = [c for c in _CHAT_SESSIONS.values() if c.get("userId") == user_id]
-        if not chats:
-            chats = list(_CHAT_SESSIONS.values())
         chats.sort(key=lambda c: c.get("lastActivity", ""), reverse=True)
         return {"chats": [_serialize_chat_session(c, include_messages=includeMessages) for c in chats]}
 
 
 @app.get("/chat/chat/{chat_id}", tags=["Chat"], summary="Get Chat Session By ID")
-def chat_get(chat_id: str) -> Dict[str, Any]:
+def chat_get(chat_id: str, request: Request) -> Dict[str, Any]:
+    owner_id = _require_user_identity(request)["id"]
     with _CHAT_LOCK:
         chat = _CHAT_SESSIONS.get(chat_id)
-        if not chat:
+        if not chat or chat.get("userId") != owner_id:
             raise HTTPException(status_code=404, detail="Chat not found")
         return {"chat": _serialize_chat_session(chat, include_messages=True)}
 
 
 @app.put("/chat/chat/{chat_id}", tags=["Chat"], summary="Update Chat Session")
-def chat_update(chat_id: str, request_body: Dict[str, Any]) -> Dict[str, Any]:
+def chat_update(chat_id: str, request_body: Dict[str, Any], request: Request) -> Dict[str, Any]:
+    owner_id = _require_user_identity(request)["id"]
     with _CHAT_LOCK:
         chat = _CHAT_SESSIONS.get(chat_id)
-        if not chat:
+        if not chat or chat.get("userId") != owner_id:
             raise HTTPException(status_code=404, detail="Chat not found")
         if "title" in request_body and isinstance(request_body["title"], str):
             chat["title"] = request_body["title"].strip() or chat["title"]
@@ -1626,15 +1654,18 @@ def chat_update(chat_id: str, request_body: Dict[str, Any]) -> Dict[str, Any]:
         if "isActive" in request_body:
             chat["isActive"] = bool(request_body["isActive"])
         chat["lastActivity"] = _utc_now_iso()
+        _CHAT_SESSIONS[chat_id] = chat
         return {"chat": _serialize_chat_session(chat, include_messages=False)}
 
 
 @app.delete("/chat/chat/{chat_id}", tags=["Chat"], summary="Delete Chat Session")
-def chat_delete(chat_id: str) -> Dict[str, Any]:
+def chat_delete(chat_id: str, request: Request) -> Dict[str, Any]:
+    owner_id = _require_user_identity(request)["id"]
     with _CHAT_LOCK:
-        chat = _CHAT_SESSIONS.pop(chat_id, None)
-        if not chat:
+        chat = _CHAT_SESSIONS.get(chat_id)
+        if not chat or chat.get("userId") != owner_id:
             raise HTTPException(status_code=404, detail="Chat not found")
+        _CHAT_SESSIONS.pop(chat_id)
     return {"status": "ok", "message": "Chat deleted successfully", "chatId": chat_id}
 
 
@@ -1645,16 +1676,10 @@ def chat_all_chats(request: Request) -> Dict[str, Any]:
 
 @app.delete("/chat/delete", tags=["Chat"], summary="Delete All Chats")
 def chat_delete_all(request: Request) -> Dict[str, Any]:
-    user_id = str(
-        request.headers.get("X-User-Id")
-        or request.headers.get("X-Caller-Name")
-        or "demo-user"
-    ).strip()
+    user_id = _require_user_identity(request)["id"]
     deleted = 0
     with _CHAT_LOCK:
         ids = [chat_id for chat_id, chat in _CHAT_SESSIONS.items() if chat.get("userId") == user_id]
-        if not ids:
-            ids = list(_CHAT_SESSIONS.keys())
         for chat_id in ids:
             _CHAT_SESSIONS.pop(chat_id, None)
             deleted += 1
@@ -1665,16 +1690,21 @@ def chat_delete_all(request: Request) -> Dict[str, Any]:
 def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, Any]:
     message = str(request_body.get("message") or "").strip()
     chatbot_id = str(request_body.get("chatbotId") or "").strip()
-    user_id = str(request_body.get("userId") or "demo-user").strip()
+    user_id = _require_user_identity(raw_request)["id"]
     chat_id = str(request_body.get("chatId") or "").strip()
     if not message:
         raise HTTPException(status_code=400, detail="message is required")
     if not chatbot_id:
         raise HTTPException(status_code=400, detail="chatbotId is required")
+    guru = guru_storage.get_guru(chatbot_id)
+    if guru and guru.user_id != user_id:
+        raise HTTPException(status_code=404, detail="Guru not found")
 
     # Ensure chat exists
     with _CHAT_LOCK:
         chat = _CHAT_SESSIONS.get(chat_id) if chat_id else None
+        if chat and chat.get("userId") != user_id:
+            raise HTTPException(status_code=404, detail="Chat not found")
     if not chat:
         created = chat_create(
             {"guruId": chatbot_id, "title": (message[:48] + "...") if len(message) > 48 else message, "userId": user_id},
@@ -1688,6 +1718,7 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
     with _CHAT_LOCK:
         chat["messages"].append(user_msg)
         chat["lastActivity"] = _utc_now_iso()
+        _CHAT_SESSIONS[chat_id] = chat
 
     # Use the shared verified RAG path so the browser chat and /ask see the
     # same active KB and language handling.
@@ -1697,7 +1728,7 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
         router_response = service.ask(
             user_query=adapted.normalized_query,
             session_id=chat_id,
-            context={"caller": user_id, "source_language": adapted.source_language},
+            context={"caller": user_id, "source_language": adapted.source_language, "trace_id": trace_id},
             allow_web_retrieval=False,
         )
         router_response = language_adapter.localize_response(
@@ -1712,7 +1743,7 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
 
     ai_metadata = {
         "retrieved_chunks": [],
-        "trace_id": router_response.get("trace_id"),
+        "trace_id": router_response.get("trace_id") or trace_id,
         "verification_status": router_response.get("verification_status"),
         "confidence_breakdown": router_response.get("confidence_breakdown"),
         "consensus_analysis": router_response.get("consensus_analysis"),
@@ -1734,6 +1765,7 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
     with _CHAT_LOCK:
         chat["messages"].append(ai_msg)
         chat["lastActivity"] = _utc_now_iso()
+        _CHAT_SESSIONS[chat_id] = chat
         serialized_chat = _serialize_chat_session(chat, include_messages=False)
 
     return {
@@ -1758,34 +1790,8 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
     description="Verify if user session is valid and return user profile"
 )
 def user_auth_status(request: Request) -> Dict[str, Any]:
-    """Check if user is authenticated."""
-    # Try to get token from Authorization header
-    auth_header = request.headers.get("Authorization", "")
-    token = auth_header.replace("Bearer ", "") if auth_header.startswith("Bearer ") else None
-    
-    if not token:
-        # Check localStorage token (sent by frontend)
-        token = request.headers.get("X-Auth-Token")
-    
-    # If Supabase is enabled, verify token
-    if supabase_auth.enabled and token:
-        user = supabase_auth.verify_token(token)
-        if user:
-            return {
-                "authenticated": True,
-                "user": user
-            }
-    
-    # Demo mode fallback
-    user_id = request.headers.get("X-User-Id", "demo-user")
-    return {
-        "authenticated": True,
-        "user": {
-            "id": user_id,
-            "email": f"{user_id}@demo.local",
-            "name": user_id.replace("-", " ").title()
-        }
-    }
+    user = _require_user_identity(request)
+    return {"authenticated": True, "user": user}
 
 
 @app.post(
@@ -1812,7 +1818,10 @@ def google_oauth_callback(request_body: Dict[str, Any]) -> Dict[str, Any]:
             }
         except Exception as e:
             logger.error(f"Supabase Google auth failed: {e}")
-            # Fall through to demo mode
+            raise HTTPException(status_code=401, detail="Google authentication failed")
+
+    if not _DEMO_AUTH_ENABLED:
+        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
     
     # Demo mode fallback: decode token locally
     import base64
@@ -1842,15 +1851,14 @@ def google_oauth_callback(request_body: Dict[str, Any]) -> Dict[str, Any]:
         email = f'user-{user_id}@demo.local'
         name = 'Demo User'
     
-    # Generate demo session token
-    session_token = hashlib.sha256(f"{user_id}-{time.time()}".encode()).hexdigest()
+    demo_user = _issue_demo_user(user_id, email, name)
     
     return {
-        "token": session_token,
+        "token": demo_user["token"],
         "user": {
-            "id": user_id,
-            "email": email,
-            "name": name
+            "id": demo_user["id"],
+            "email": demo_user["email"],
+            "name": demo_user["name"]
         },
         "navigateUrl": "/chatpage"
     }
@@ -1884,16 +1892,10 @@ def user_login(request_body: Dict[str, Any]) -> Dict[str, Any]:
             logger.error(f"Supabase login failed: {e}")
             raise HTTPException(status_code=401, detail=str(e))
     
-    # Demo mode fallback: accept any credentials
-    user_id = hashlib.md5(email.encode()).hexdigest()[:12]
-    session_token = hashlib.sha256(f"{user_id}-{time.time()}".encode()).hexdigest()
-    
-    return {
-        "token": session_token,
-        "id": user_id,
-        "email": email,
-        "name": email.split('@')[0].title()
-    }
+    if not _DEMO_AUTH_ENABLED:
+        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
+    demo_user = _issue_demo_user(email.strip().lower(), email.strip(), email.split('@')[0].title())
+    return demo_user
 
 
 @app.post(
@@ -1935,16 +1937,15 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
             status_code = 429 if "rate limit" in detail.lower() else 400
             raise HTTPException(status_code=status_code, detail=detail)
     
-    # Demo mode fallback: accept any signup
-    user_id = hashlib.md5(email.encode()).hexdigest()[:12]
-    session_token = hashlib.sha256(f"{user_id}-{time.time()}".encode()).hexdigest()
-    
+    if not _DEMO_AUTH_ENABLED:
+        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
+    demo_user = _issue_demo_user(email.strip().lower(), email.strip(), name.strip())
     return {
         "success": True,
-        "token": session_token,
-        "id": user_id,
-        "email": email,
-        "name": name,
+        "token": demo_user["token"],
+        "id": demo_user["id"],
+        "email": demo_user["email"],
+        "name": demo_user["name"],
         "navigateUrl": "/chatpage"
     }
 
@@ -2779,12 +2780,10 @@ def new_query_endpoint(request: CoreRequest, token: HTTPAuthorizationCredentials
 )
 def user_logout(request: Request) -> Dict[str, Any]:
     """Handle user logout."""
-    # Try to get token from Authorization header
-    auth_header = request.headers.get("Authorization", "")
-    token = auth_header.replace("Bearer ", "") if auth_header.startswith("Bearer ") else None
-    
-    # If Supabase is enabled, logout from Supabase
-    if supabase_auth.enabled and token:
+    token = _request_bearer_token(request)
+    if _DEMO_AUTH_ENABLED and token:
+        _DEMO_AUTH_TOKENS.pop(token, None)
+    elif supabase_auth.enabled and token:
         supabase_auth.logout(token)
     
     return {"status": "ok", "message": "Logged out successfully"}

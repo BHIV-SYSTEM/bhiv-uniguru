@@ -2,7 +2,9 @@ from fastapi.testclient import TestClient
 
 import pytest
 from retrieval.retriever import get_rag_health
-from service.api import app
+from service import api
+
+app = api.app
 
 
 @pytest.mark.skip(reason="FAISS index is not committed to the repository (.gitignore). Active pipeline is deterministic Kosha, not FAISS.")
@@ -135,11 +137,18 @@ def test_ask_rejects_entity_matches_when_query_type_requires_another_domain():
         assert payload["retrieval_trace"]["match_found"] is False
 
 
-def test_chat_new_answers_india_prime_minister_with_source_evidence():
+def test_chat_new_answers_india_prime_minister_with_source_evidence(monkeypatch):
+    monkeypatch.setattr(api, "_DEMO_AUTH_ENABLED", True)
+    monkeypatch.setattr(
+        api,
+        "_DEMO_AUTH_TOKENS",
+        {"test-local-token": {"id": "india-history-user", "email": "india@example.test", "name": "India"}},
+    )
     client = TestClient(app)
     response = client.post(
         "/chat/new",
         json={"message": "india prime minister", "chatbotId": "test-guru", "userId": "india-history-user"},
+        headers={"Authorization": "Bearer test-local-token"},
     )
 
     assert response.status_code == 200

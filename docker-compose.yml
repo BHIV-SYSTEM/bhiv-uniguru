@@ -12,6 +12,12 @@ services:
     environment:
       UNIGURU_HOST: "0.0.0.0"
       UNIGURU_PORT: "8000"
+      UNIGURU_API_TOKEN: ${UNIGURU_API_TOKEN:?Set UNIGURU_API_TOKEN in the deployment environment}
+      SUPABASE_URL: ${SUPABASE_URL:?Set SUPABASE_URL in the deployment environment}
+      SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY:?Set SUPABASE_ANON_KEY in the deployment environment}
+      UNIGURU_ENVIRONMENT: production
+      UNIGURU_CORS_ORIGINS: https://uni-guru.vercel.app
+      UNIGURU_CHAT_DB_PATH: /var/lib/uniguru/chats.sqlite3
     expose:
       - "8000"
     volumes:
