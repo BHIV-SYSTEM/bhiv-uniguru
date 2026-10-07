@@ -97,7 +97,6 @@ def test_ask_answers_from_relevant_kb_and_rejects_missing_source_topic_evidence(
     assert "I do not have verified knowledge" in unsupported_after_answer["answer"]
 
 
-<<<<<<< HEAD
 def test_ask_rejects_entity_matches_when_query_type_requires_another_domain():
     client = TestClient(app)
     headers = {"Authorization": "Bearer release-test-token"}
@@ -138,14 +137,6 @@ def test_ask_rejects_entity_matches_when_query_type_requires_another_domain():
         assert payload["retrieval_trace"]["match_found"] is False
 
 
-def test_chat_new_answers_india_prime_minister_with_source_evidence(monkeypatch):
-    monkeypatch.setattr(api, "_DEMO_AUTH_ENABLED", True)
-    monkeypatch.setattr(
-        api,
-        "_DEMO_AUTH_TOKENS",
-        {"test-local-token": {"id": "india-history-user", "email": "india@example.test", "name": "India"}},
-    )
-=======
 def test_ask_answers_general_questions_without_making_verification_mandatory():
     client = TestClient(app)
 
@@ -178,8 +169,13 @@ def test_chat_new_uses_conversation_routing_for_greetings_and_provenance():
     assert payload["metadata"]["retrieved_evidence"] is False
 
 
-def test_chat_new_answers_india_prime_minister_with_source_evidence():
->>>>>>> e244267 (Fix UniGuru RAG response routing)
+def test_chat_new_answers_india_prime_minister_with_source_evidence(monkeypatch):
+    monkeypatch.setattr(api, "_DEMO_AUTH_ENABLED", True)
+    monkeypatch.setattr(
+        api,
+        "_DEMO_AUTH_TOKENS",
+        {"test-local-token": {"id": "india-history-user", "email": "india@example.test", "name": "India"}},
+    )
     client = TestClient(app)
     response = client.post(
         "/chat/new",
