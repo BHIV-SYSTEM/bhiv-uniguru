@@ -47,7 +47,8 @@ def main() -> None:
     try:
         from service.universal_orchestrator import get_universal_orchestrator
         orchestrator = get_universal_orchestrator()
-        print(f"[OK] Universal Orchestrator pre-warmed: {orchestrator.rag_engine.total_chunks} chunks ready.")
+        chunk_count = getattr(orchestrator.rag_engine, "total_chunks", len(getattr(orchestrator.rag_engine, "chunks", [])))
+        print(f"[OK] Universal Orchestrator pre-warmed: {chunk_count} chunks ready.")
     except Exception as exc:
         print(f"[WARN] Failed to pre-warm Universal Orchestrator: {exc}")
 
