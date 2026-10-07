@@ -1725,11 +1725,23 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
     try:
         trace_id = f"chat_{chat_id}_{uuid.uuid5(uuid.NAMESPACE_URL, message).hex[:12]}"
         adapted = language_adapter.normalize_query(message)
+<<<<<<< HEAD
         router_response = service.ask(
             user_query=adapted.normalized_query,
             session_id=chat_id,
             context={"caller": user_id, "source_language": adapted.source_language, "trace_id": trace_id},
             allow_web_retrieval=False,
+=======
+        router_response = conversation_router.route_query(
+            query=adapted.normalized_query,
+            context={
+                "caller": user_id,
+                "user_id": user_id,
+                "session_id": chat_id,
+                "source_language": adapted.source_language,
+                "allow_web": False,
+            },
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
         )
         router_response = language_adapter.localize_response(
             router_response,
@@ -1745,6 +1757,10 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
         "retrieved_chunks": [],
         "trace_id": router_response.get("trace_id") or trace_id,
         "verification_status": router_response.get("verification_status"),
+        "source_type": router_response.get("source_type"),
+        "verified": router_response.get("verified"),
+        "retrieved_evidence": router_response.get("retrieved_evidence"),
+        "retrieval_performed": router_response.get("retrieval_performed"),
         "confidence_breakdown": router_response.get("confidence_breakdown"),
         "consensus_analysis": router_response.get("consensus_analysis"),
         "retrieval_truth_payload": router_response.get("retrieval_truth_payload"),

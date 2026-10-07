@@ -1,5 +1,6 @@
 from __future__ import annotations
 from collections import OrderedDict
+import logging
 import threading
 
 import hashlib
@@ -85,7 +86,23 @@ _CREATIVE_PATTERNS = (
     r"\b(write|compose|create)\b.*\b(poem|joke|rap|story|lyrics)\b",
 )
 
-SAFE_FALLBACK_PREFIX = "I am still learning this topic, but here is a basic explanation..."
+_LOGGER = logging.getLogger(__name__)
+
+_DIRECT_LLM_PATTERNS = (
+    r"\b(?:write|show|give|create)\b.*\b(?:code|function|program|script)\b",
+    r"\b(?:python|javascript|typescript|java|c\+\+|fastapi)\b.*\b(?:code|function|program|script|work)\b",
+    r"\b(?:explain|define)\s+recursion\b",
+    r"^(?:(?:what is|solve|calculate)\s+)?-?\d+(?:\.\d+)?\s*[+\-*/]\s*-?\d+(?:\.\d+)?\??$",
+)
+
+_STRICT_EVIDENCE_PATTERNS = (
+    r"\baccording to\b",
+    r"\b(?:provided|uploaded|attached)\s+(?:source|document|file|text|passage)\b",
+    r"\b(?:the|this|that)\s+(?:source|document|file|text|passage)\b",
+    r"\b(?:cite|citation|source[- ]backed|verify|verified|verification)\b",
+    r"\bmentioned in\b",
+    r"\bfrom\s+(?:the\s+)?(?:document|source|text|passage|file)\b",
+)
 
 
 @dataclass(frozen=True)
@@ -182,8 +199,9 @@ class ConversationRouter:
             name = text.strip().rstrip(".!?")[len("my name is"):].strip()
             state["preferred_name"] = name
             return f"Hi {name}! Nice to meet you. How can I help you?"
-        if re.fullmatch(r"(?:hi|hello|hey)(?: there)?", lower):
-            return "Hi! I'm UniGuru. How can I help you?"
+        if re.fullmatch(r"(?:hi|hello|hey|good morning|good afternoon|good evening)(?: there)?", lower):
+            name = state.get("preferred_name")
+            return f"Hello {name}! How can I help you today?" if name else "Hello! How can I help you today?"
         if re.fullmatch(r"(?:goodbye|bye|see you|see you later)", lower):
             name = state.get("preferred_name")
             return f"Goodbye, {name}. Take care!" if name else "Goodbye! Take care."
@@ -195,6 +213,35 @@ class ConversationRouter:
             name = state.get("preferred_name")
             return f"Of course, {name}. What would you like help with?" if name else "Of course. What would you like help with?"
         return None
+
+    @staticmethod
+    def _requires_strict_verification(query: str) -> bool:
+        return any(re.search(pattern, query.casefold()) for pattern in _STRICT_EVIDENCE_PATTERNS)
+
+    @staticmethod
+    def _log_route(
+        *,
+        query: str,
+        intent: str,
+        route: str,
+        retrieval: str,
+        chunks: int,
+        verification: str,
+        source_type: str,
+        answer: str,
+    ) -> None:
+        _LOGGER.debug(
+            "[UniGuru Router] query=%r intent=%s route=%s retrieval=%s retrieved_chunks=%d "
+            "verification=%s source_type=%s response=%r",
+            query,
+            intent,
+            route,
+            retrieval,
+            chunks,
+            verification,
+            source_type,
+            answer[:500],
+        )
 
     @staticmethod
     def _requests_absent_kb_information(query: str) -> bool:
@@ -242,10 +289,15 @@ class ConversationRouter:
                 reason="Handled as conversational intent without knowledge retrieval.",
                 query_type=QueryRoutingType.GENERAL_LLM_QUERY,
                 route=RouteTarget.ROUTE_LLM,
-                verification_status="UNVERIFIED",
+                verification_status="NOT_REQUIRED",
                 session_id=context_map.get("session_id"),
                 governance_allowed=True,
                 governance_reason="Conversational response; no knowledge-base evidence required.",
+            )
+            response.update(
+                source_type="conversation",
+                verified=False,
+                retrieved_evidence=False,
             )
             response.pop("_resolved_route", None)
             response["routing"] = {
@@ -253,6 +305,16 @@ class ConversationRouter:
                 "route": RouteTarget.ROUTE_LLM.value,
                 "router_latency_ms": round((time.perf_counter() - started) * 1000, 3),
             }
+            self._log_route(
+                query=query,
+                intent="greeting_or_conversation",
+                route=RouteTarget.ROUTE_LLM.value,
+                retrieval="skipped",
+                chunks=0,
+                verification="skipped",
+                source_type="conversation",
+                answer=conversational_answer,
+            )
             return response
 
         if self._requests_absent_kb_information(query):
@@ -273,6 +335,17 @@ class ConversationRouter:
                 "route": RouteTarget.ROUTE_UNIGURU.value,
                 "router_latency_ms": round((time.perf_counter() - started) * 1000, 3),
             }
+            response.update(source_type="rag", verified=False, retrieved_evidence=False)
+            self._log_route(
+                query=query,
+                intent="explicitly_absent_from_knowledge_base",
+                route=RouteTarget.ROUTE_UNIGURU.value,
+                retrieval="skipped",
+                chunks=0,
+                verification="performed",
+                source_type="rag",
+                answer=response["answer"],
+            )
             return response
 
         original_query = query
@@ -295,6 +368,17 @@ class ConversationRouter:
                 "route": RouteTarget.ROUTE_LLM.value,
                 "router_latency_ms": round((time.perf_counter() - started) * 1000, 3),
             }
+            response.update(source_type="conversation", verified=False, retrieved_evidence=False)
+            self._log_route(
+                query=query,
+                intent="followup_needs_clarification",
+                route=RouteTarget.ROUTE_LLM.value,
+                retrieval="skipped",
+                chunks=0,
+                verification="skipped",
+                source_type="conversation",
+                answer=response["answer"],
+            )
             return response
         if followup_query:
             query = followup_query
@@ -327,6 +411,18 @@ class ConversationRouter:
         if query_type == QueryRoutingType.KNOWLEDGE_QUERY:
             session_state["last_query"] = session_state.get("last_query") if followup_query else original_query
             self._save_session_memory(context_map, session_state)
+        retrieval_trace = response.get("retrieval_trace")
+        evidence_sources = retrieval_trace.get("evidence_sources", []) if isinstance(retrieval_trace, dict) else []
+        self._log_route(
+            query=original_query,
+            intent=query_type.value,
+            route=resolved_route,
+            retrieval="performed" if response.get("retrieval_performed") else "skipped",
+            chunks=len(evidence_sources) if isinstance(evidence_sources, list) else 0,
+            verification=str(response.get("verification_status") or "NOT_REQUIRED"),
+            source_type=str(response.get("source_type") or "unknown"),
+            answer=str(response.get("answer") or ""),
+        )
         return response
 
     def classify(self, query: str, context: Optional[Dict[str, Any]] = None) -> QueryRoutingType:
@@ -340,6 +436,8 @@ class ConversationRouter:
             return QueryRoutingType.WORKFLOW_QUERY
         if any(re.search(pattern, text) for pattern in _TOOL_PATTERNS):
             return QueryRoutingType.TOOL_QUERY
+        if any(re.search(pattern, text) for pattern in _DIRECT_LLM_PATTERNS):
+            return QueryRoutingType.GENERAL_LLM_QUERY
         if any(re.search(pattern, text) for pattern in _GENERAL_CHAT_PATTERNS):
             return QueryRoutingType.GENERAL_LLM_QUERY
         if any(re.search(pattern, text) for pattern in _CREATIVE_PATTERNS):
@@ -416,17 +514,32 @@ class ConversationRouter:
             )
 
         verification_status = str(response.get("verification_status") or "UNVERIFIED").upper()
+        retrieval_trace = response.get("retrieval_trace")
+        evidence_sources = retrieval_trace.get("evidence_sources", []) if isinstance(retrieval_trace, dict) else []
+        response["retrieval_performed"] = True
+        response["retrieved_evidence"] = bool(evidence_sources)
+        response["source_type"] = "rag"
+        response["verified"] = verification_status == "VERIFIED"
         if (
             verification_status == "UNVERIFIED"
             and self._allow_unverified_fallback
-            and query_type != QueryRoutingType.KNOWLEDGE_QUERY
+            and not self._requires_strict_verification(query)
         ):
-            return self._build_llm_response(
+            fallback = self._build_llm_response(
                 query=query,
                 query_type=query_type,
                 session_id=session_id,
-                warning="UniGuru could not verify this query. This is an LLM fallback response.",
+                warning=(
+                    "I couldn't find a relevant answer in the UniGuru knowledge base. "
+                    "Based on general knowledge:"
+                    if query_type == QueryRoutingType.KNOWLEDGE_QUERY
+                    else None
+                ),
             )
+            fallback["retrieval_trace"] = retrieval_trace
+            fallback["retrieval_performed"] = True
+            fallback["retrieved_evidence"] = bool(evidence_sources)
+            return fallback
         return response
 
     def _build_system_block_response(
@@ -475,17 +588,24 @@ class ConversationRouter:
         answer = llm_result["answer"]
         if warning:
             answer = f"{warning} {answer}"
-        return self._build_router_contract_response(
+        response = self._build_router_contract_response(
             decision="answer",
             answer=answer,
             reason=llm_result["reason"],
             query_type=query_type,
             route=RouteTarget.ROUTE_LLM,
-            verification_status="UNVERIFIED",
+            verification_status="NOT_REQUIRED",
             session_id=session_id,
             governance_allowed=True,
             governance_reason=llm_result["governance_reason"],
         )
+        response.update(
+            source_type="llm_general_knowledge",
+            verified=False,
+            retrieved_evidence=False,
+            retrieval_performed=False,
+        )
+        return response
 
     def _request_llm(self, query: str, session_id: Optional[str]) -> Dict[str, str]:
         system_prompt = (
@@ -582,6 +702,73 @@ class ConversationRouter:
     def _build_local_demo_answer(query: str) -> str:
         text = str(query or "").strip()
         lower = text.lower()
+        math_match = re.fullmatch(
+            r"(?:what is\s+|solve\s+|calculate\s+)?(-?\d+(?:\.\d+)?)\s*([+\-*/])\s*(-?\d+(?:\.\d+)?)\??",
+            lower,
+        )
+        if math_match:
+            left, operator, right = math_match.groups()
+            first, second = float(left), float(right)
+            if operator == "+":
+                result = first + second
+            elif operator == "-":
+                result = first - second
+            elif operator == "*":
+                result = first * second
+            elif second != 0:
+                result = first / second
+            else:
+                return "Division by zero is undefined."
+            rendered = str(int(result)) if result.is_integer() else str(result)
+            return rendered
+        if "reverse a string" in lower or "reverse string" in lower:
+            return (
+                "```python\n"
+                "def reverse_string(text: str) -> str:\n"
+                "    return text[::-1]\n"
+                "```\n\n"
+                "Python slicing with a step of `-1` returns the characters in reverse order."
+            )
+        if "machine learning" in lower:
+            return (
+                "Machine learning is a branch of AI in which computer systems learn patterns from data "
+                "to make predictions or decisions, rather than following only explicitly programmed rules."
+            )
+        if re.search(r"\b(?:nlp|natural language processing)\b", lower):
+            return (
+                "Natural language processing (NLP) is a field of AI that enables computers to work with "
+                "human language, including tasks such as translation, text classification, and speech recognition."
+            )
+        if "gravity" in lower:
+            return (
+                "Gravity is the attractive interaction between objects with mass. On Earth, it gives objects "
+                "weight and causes unsupported objects to accelerate toward the ground."
+            )
+        if "karma yoga" in lower:
+            return (
+                "Karma Yoga is the path of selfless action: doing one's duty sincerely without attachment "
+                "to personal reward or the fruits of the action."
+            )
+        if "mahavira" in lower:
+            return (
+                "Mahavira was the 24th Tirthankara of Jainism. Traditionally dated to the 6th century BCE, "
+                "he taught nonviolence (ahimsa), self-discipline, and non-attachment."
+            )
+        if "recursion" in lower:
+            return (
+                "Recursion is a technique where a function solves a problem by calling itself on a smaller "
+                "input. A base case stops the calls; without one, recursion can continue until the program fails."
+            )
+        if "fastapi" in lower:
+            return (
+                "FastAPI is a Python web framework for building APIs. It uses Python type annotations for "
+                "request validation and OpenAPI documentation, and is built on Starlette and Pydantic."
+            )
+        if re.search(r"\bpython\b", lower):
+            return (
+                "Python is a high-level, general-purpose programming language known for readable syntax and "
+                "a large ecosystem. It is commonly used for automation, web services, data analysis, and AI."
+            )
         if "joke" in lower:
             body = "Here is one: Why did the developer go broke? Because they used up all their cache."
         elif any(token in lower for token in ("news", "current", "latest", "happening in the world")):
@@ -591,11 +778,12 @@ class ConversationRouter:
             )
         elif text:
             body = (
-                f"{text} can be understood by starting with the core idea, then examples, and then practical usage."
+                "I don't have a configured language model available right now, so I can't reliably answer "
+                f"'{text}' yet. If you can connect an LLM provider, I can answer questions beyond my local knowledge."
             )
         else:
             body = "Let us start with the basics and build up step by step."
-        return f"{SAFE_FALLBACK_PREFIX} {body}"
+        return body
 
     def _build_router_contract_response(
         self,

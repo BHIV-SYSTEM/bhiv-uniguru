@@ -82139,7 +82139,11 @@
       "trace_id": "trace_ca33605003bc5cf2"
     }
   ],
+<<<<<<< HEAD
   "event_count": 1773,
+=======
+  "event_count": 763,
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
   "lineage": [
     {
       "classification": "transient",
@@ -93799,6 +93803,7 @@
     },
     {
       "classification": "transient",
+<<<<<<< HEAD
       "event_hash": "5bb970542651924b9dea62c73265c7ee64ccabb4a0b90bc4116c92615cf33e6e",
       "interpretation_hash": "2c02b4828c9d0f4325184cd289e00f4234a3d6135fe471d3c6e59907f3dbc196",
       "previous_event_hash": "bac8db985a935b4ccab4f771011fd3dc836951e9b2b22933fa730ad7e4e053f4",
@@ -96324,15 +96329,46 @@
       "previous_event_hash": "0cdb62f0e241e25fcf001bbc61627de11e3355b25130ba961d08701e5c687d9d",
       "retrieval_truth_hash": "88782efb111ab7e9b37b864401269dceff7da3505b68cc7176fee6ecf7e46d3c",
       "trace_id": "trace_93bd37c14e5259f3"
+=======
+      "event_hash": "d78e06a8fccca1f2772993c300608de939e2b3d23f18cc0ea6ad6eccf4ac6947",
+      "interpretation_hash": "813664f8bc5bbcd7b3caaf7bc0fdfafcbd45a0129d9c30e035a2da92b5440703",
+      "previous_event_hash": "97bced78a3fdc713307c8f3c7789366f2a43d3a858b1a468b4214deb948f7a95",
+      "retrieval_truth_hash": "bdddd052d96e085200bdb93fc6663f4789a22fe1d158581181a7aa7ad457c0ea",
+      "trace_id": "trace_2045486b136b5043"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "c137b9591f1ab42d2419072ed6e4fbc3cc0154a8fa36e634432f80589a8cd397",
+      "interpretation_hash": "a43724ff57a114da0bac6acff8e68b193dde1507a1d0ed631f4da2a165bcd142",
+      "previous_event_hash": "d78e06a8fccca1f2772993c300608de939e2b3d23f18cc0ea6ad6eccf4ac6947",
+      "retrieval_truth_hash": "604a00ab38a94c40fa99a83b9178b10d6a66cf467d5ec7f2dcd549c3225ced67",
+      "trace_id": "trace_22729b252a795f06"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "0eef03c336d96ac3951b49ffa012815e07a4aee257bc1ab1bd5d6d5dccac29bf",
+      "interpretation_hash": "070e016ba69de60d60b631e0e3261b32a84860be9d37e52ac3de10510bce42b1",
+      "previous_event_hash": "c137b9591f1ab42d2419072ed6e4fbc3cc0154a8fa36e634432f80589a8cd397",
+      "retrieval_truth_hash": "ec322e212c96e7eaf5faa8415f6f5f16c6990d3534b2a53a33f88d5d91c68e27",
+      "trace_id": "trace_2ebea6532ac8517f"
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
     }
   ],
   "replay_integrity": {
     "hash_chain_ok": false,
+<<<<<<< HEAD
     "last_event_hash": "3ac58dff0a4e1fc9c7a5c78a2e9b772e67026582f33d820d7f1e58d5b88eb026",
     "rollback_target": null
   },
   "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_RECONSTRUCTION_V1",
   "state_hash": "6b0842cf1627066bf7171d90c43fa52b0d8efdbdbcf354ead9d58941c858c402",
+=======
+    "last_event_hash": "0eef03c336d96ac3951b49ffa012815e07a4aee257bc1ab1bd5d6d5dccac29bf",
+    "rollback_target": null
+  },
+  "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_RECONSTRUCTION_V1",
+  "state_hash": "98e6bc6b3682c327748c1c67a0c6d0c06acfa572c626c31cc448210584fd004a",
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
   "transient_memory": [
     {
       "classification": "transient",
@@ -104622,26 +104658,43 @@
         "no_accepted_signals",
         "confidence_below_canonical_floor"
       ],
+<<<<<<< HEAD
       "trace_id": "8696f829-9667-4218-bc31-5c8032970666"
     },
     {
       "classification": "transient",
       "event_hash": "17247637efd003d851aa20d35c901f444ef6ee6af798280050a850c154a8cf87",
+=======
+      "trace_id": "trace_2045486b136b5043"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "c137b9591f1ab42d2419072ed6e4fbc3cc0154a8fa36e634432f80589a8cd397",
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
       "reasons": [
         "verification_status_not_verified",
         "no_accepted_signals",
         "confidence_below_canonical_floor"
       ],
+<<<<<<< HEAD
       "trace_id": "08c6f7c1-9795-439c-801d-f45860e94657"
     },
     {
       "classification": "transient",
       "event_hash": "7fa1b52f03b10b9cc51de30332fc6abfa2d0e36757c8299aede732079c27abda",
+=======
+      "trace_id": "trace_22729b252a795f06"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "0eef03c336d96ac3951b49ffa012815e07a4aee257bc1ab1bd5d6d5dccac29bf",
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
       "reasons": [
         "verification_status_not_verified",
         "no_accepted_signals",
         "confidence_below_canonical_floor"
       ],
+<<<<<<< HEAD
       "trace_id": "trace_a0fee0319a91509f"
     },
     {
@@ -105953,6 +106006,9 @@
         "confidence_below_canonical_floor"
       ],
       "trace_id": "trace_f462c81aa1425407"
+=======
+      "trace_id": "trace_2ebea6532ac8517f"
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
     }
   ]
 }

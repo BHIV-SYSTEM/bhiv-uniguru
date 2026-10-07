@@ -97,6 +97,7 @@ def test_ask_answers_from_relevant_kb_and_rejects_missing_source_topic_evidence(
     assert "I do not have verified knowledge" in unsupported_after_answer["answer"]
 
 
+<<<<<<< HEAD
 def test_ask_rejects_entity_matches_when_query_type_requires_another_domain():
     client = TestClient(app)
     headers = {"Authorization": "Bearer release-test-token"}
@@ -144,6 +145,41 @@ def test_chat_new_answers_india_prime_minister_with_source_evidence(monkeypatch)
         "_DEMO_AUTH_TOKENS",
         {"test-local-token": {"id": "india-history-user", "email": "india@example.test", "name": "India"}},
     )
+=======
+def test_ask_answers_general_questions_without_making_verification_mandatory():
+    client = TestClient(app)
+
+    greeting = client.post("/ask", json={"query": "hello"}).json()
+    general = client.post("/ask", json={"query": "What is machine learning?"}).json()
+    math = client.post("/ask", json={"query": "What is 2 + 2?"}).json()
+
+    assert "hello" in greeting["answer"].casefold() or "hi" in greeting["answer"].casefold()
+    assert "Verification status: UNVERIFIED" not in greeting["answer"]
+    assert general["source_type"] in {"rag", "llm_general_knowledge"}
+    assert "Verification status: UNVERIFIED" not in general["answer"]
+    assert "machine learning" in general["answer"].casefold()
+    assert math["answer"] == "4"
+    assert math["source_type"] == "llm_general_knowledge"
+
+
+def test_chat_new_uses_conversation_routing_for_greetings_and_provenance():
+    client = TestClient(app)
+    response = client.post(
+        "/chat/new",
+        json={"message": "hi", "chatbotId": "test-guru", "userId": "greeting-user"},
+    )
+
+    assert response.status_code == 200
+    payload = response.json()["aiResponse"]
+    assert "hello" in payload["content"].casefold()
+    assert "Verification status: UNVERIFIED" not in payload["content"]
+    assert payload["metadata"]["source_type"] == "conversation"
+    assert payload["metadata"]["verified"] is False
+    assert payload["metadata"]["retrieved_evidence"] is False
+
+
+def test_chat_new_answers_india_prime_minister_with_source_evidence():
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
     client = TestClient(app)
     response = client.post(
         "/chat/new",

@@ -28501,6 +28501,7 @@
       "user_id": "anonymous"
     },
     {
+<<<<<<< HEAD
       "canonical_authority_granted": true,
       "constitutional_event_hash": "076371c1a1b0e04073154da3f1c50f90da96cd3afe8ec9423c7d59bb082382de",
       "contradiction_pressure": 0.0,
@@ -28709,10 +28710,15 @@
     {
       "canonical_authority_granted": false,
       "constitutional_event_hash": "4dd93d442c4b153f19247858a0ff0b6ec0c870f2808dd147f63198c41da06e66",
+=======
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "c137b9591f1ab42d2419072ed6e4fbc3cc0154a8fa36e634432f80589a8cd397",
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
+<<<<<<< HEAD
       "trace_id": "tantra_sdk_runtime_test",
       "unresolved_thread_opened": true,
       "updated_at": "2026-10-06T11:47:11.520441Z",
@@ -28813,15 +28819,25 @@
       "trace_id": "trace_f7ef44723d8156e7",
       "unresolved_thread_opened": true,
       "updated_at": "2026-10-06T11:56:08.321935Z",
+=======
+      "trace_id": "trace_22729b252a795f06",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-07T07:15:15.722054Z",
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
       "user_id": "anonymous"
     },
     {
       "canonical_authority_granted": false,
+<<<<<<< HEAD
       "constitutional_event_hash": "265e6bbb38341601f747b44714b2b54c414967e9b4b943d747fd5bd9d7bced05",
+=======
+      "constitutional_event_hash": "0eef03c336d96ac3951b49ffa012815e07a4aee257bc1ab1bd5d6d5dccac29bf",
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
       "contradiction_pressure": 0.0,
       "entities_touched": [],
       "event": "semantic_memory_update",
       "memory_classification": "transient",
+<<<<<<< HEAD
       "trace_id": "66e9a220-6aec-45b3-8f2b-6c761183317b",
       "unresolved_thread_opened": true,
       "updated_at": "2026-10-06T11:56:11.167466Z",
@@ -30278,6 +30294,12 @@
       "unresolved_thread_opened": true,
       "updated_at": "2026-10-06T11:58:48.641172Z",
       "user_id": "ecosystem_runtime"
+=======
+      "trace_id": "trace_2ebea6532ac8517f",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-10-07T07:15:16.146948Z",
+      "user_id": "anonymous"
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
     }
   ],
   "load_warning": "Previous memory state was unreadable; started observable empty state.",
@@ -30313,7 +30335,81 @@
       "user_id": "anonymous",
       "verification_status": "VERIFIED"
     },
+<<<<<<< HEAD
     "anonymous:trace_00d0f987a93a5bb8": {
+=======
+    "anonymous:trace_22729b252a795f06": {
+      "contradiction_pressure": 0.0,
+      "query": "What agricultural practices are mentioned in the Padma Purana?",
+      "rejected_signal_count": 0,
+      "state": "open",
+      "trace_id": "trace_22729b252a795f06",
+      "updated_at": "2026-10-07T07:15:15.722054Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_27e9fba4df8b5af7": {
+      "contradiction_pressure": 0.0,
+      "query": "What is the Taittiriya Upanishad about?",
+      "rejected_signal_count": 11,
+      "state": "open",
+      "trace_id": "trace_27e9fba4df8b5af7",
+      "updated_at": "2026-08-29T05:11:15.881976Z",
+      "user_id": "anonymous",
+      "verification_status": "VERIFIED"
+    },
+    "anonymous:trace_2d5769544ddf5cc9": {
+      "contradiction_pressure": 0.0,
+      "query": "What is Karma Yoga?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "trace_2d5769544ddf5cc9",
+      "updated_at": "2026-10-02T05:17:13.376731Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_2ebea6532ac8517f": {
+      "contradiction_pressure": 0.0,
+      "query": "What is Karma Yoga?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "trace_2ebea6532ac8517f",
+      "updated_at": "2026-10-07T07:15:16.146948Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_2fc49518e5a454f4": {
+      "contradiction_pressure": 0.0,
+      "query": "Explain the concept of Atman in Upanishadic texts",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "trace_2fc49518e5a454f4",
+      "updated_at": "2026-08-29T05:11:17.026043Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_370421f8dd445b6b": {
+      "contradiction_pressure": 0.0,
+      "query": "What is the Padma Purana?",
+      "rejected_signal_count": 11,
+      "state": "open",
+      "trace_id": "trace_370421f8dd445b6b",
+      "updated_at": "2026-08-29T05:11:01.615717Z",
+      "user_id": "anonymous",
+      "verification_status": "VERIFIED"
+    },
+    "anonymous:trace_4c7da6360deb526c": {
+      "contradiction_pressure": 0.0,
+      "query": "How are rivers like Ganga described in Puranic texts?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "trace_4c7da6360deb526c",
+      "updated_at": "2026-08-29T05:10:55.554537Z",
+      "user_id": "anonymous",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "anonymous:trace_529e16697a57520d": {
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
       "contradiction_pressure": 0.0,
       "query": "What agricultural practices are mentioned in the Padma Purana?",
       "rejected_signal_count": 0,
@@ -34084,6 +34180,7 @@
       "verification_status": "VERIFIED"
     }
   },
+<<<<<<< HEAD
   "updated_at": "2026-10-06T11:58:48.641172Z",
   "users": {
     "anonymous": {
@@ -34141,6 +34238,76 @@
         "trace_f7ef44723d8156e7",
         "trace_f462c81aa1425407",
         "trace_93bd37c14e5259f3"
+=======
+  "updated_at": "2026-10-07T07:15:16.146948Z",
+  "users": {
+    "anonymous": {
+      "continuity_score": 1.0,
+      "last_seen": "2026-10-07T07:15:16.146948Z",
+      "queries": 67,
+      "trace_ids": [
+        "trace_6cb439bf77a3565f",
+        "trace_78d640b4381a5c11",
+        "trace_27e9fba4df8b5af7",
+        "trace_2fc49518e5a454f4",
+        "trace_cb90d1ebd09e5987",
+        "trace_ea1d5a96b9965bbf",
+        "trace_df30f66706615615",
+        "trace_03b560ed98aa5467",
+        "trace_cd867678907e5935",
+        "trace_d2765bbb427e57da",
+        "trace_a77e63332ecb5418",
+        "trace_224b93828a0a589e",
+        "trace_56a825c198a059b6",
+        "trace_8870dc4a247d5342",
+        "trace_5ee00d4905315b7c",
+        "trace_db4e7642933158dc",
+        "diagnose_3682780330642026904",
+        "diagnose_2900449613254506430",
+        "trace_6c58b4b2ece057a5",
+        "trace_b3d9dd09c4dc5346",
+        "trace_b7a747ec5daa5a37",
+        "trace_5c3a02e0b628530f",
+        "trace_fe7478abcd4551c5",
+        "trace_c4d7a16de3d4550c",
+        "trace_cbc4d3121de251d7",
+        "trace_0f252b658326531d",
+        "trace_c34275207d475c91",
+        "trace_a43dfc292cce54fd",
+        "trace_dae30c72c7595ce6",
+        "trace_529e16697a57520d",
+        "trace_2d5769544ddf5cc9",
+        "trace_fda74279ebc255fa",
+        "trace_03beb7eca6415918",
+        "trace_b5f995f3af8355c3",
+        "trace_f1e71d24c52d59c0",
+        "trace_a03daa75d5575809",
+        "trace_bf158ee97e4252ad",
+        "trace_f63f0b3b4acf55e3",
+        "trace_b439f3a743025469",
+        "trace_80e078dd0f9f5dba",
+        "trace_62b5cbe4dbe05a9d",
+        "trace_6549e9a0da345a43",
+        "trace_cc975264f3a75e9b",
+        "trace_134f615209c55c52",
+        "trace_d7ca260c738a576b",
+        "trace_6a2abdc49c4159db",
+        "trace_99775c986097553c",
+        "trace_2045486b136b5043",
+        "trace_22729b252a795f06",
+        "trace_2ebea6532ac8517f"
+      ]
+    },
+    "demo-user": {
+      "continuity_score": 0.3,
+      "last_seen": "2026-10-02T07:29:49.767491Z",
+      "queries": 5,
+      "trace_ids": [
+        "chat_6752f272-9b5b-4239-94b6-cc960bbb9c19_989e664ce7c7",
+        "chat_758bf2e1-cf1d-49a3-8e65-32384d35a402_074171debc84",
+        "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_9febc35d1006",
+        "chat_0be459f7-dd6c-44d5-ab5f-1fc5336cfc7c_074171debc84"
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
       ]
     },
     "ecosystem_runtime": {

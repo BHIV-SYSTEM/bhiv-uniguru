@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "canonical_entity_count": 89,
   "contradiction_event_count": 92,
   "event_count": 1773,
@@ -8,4 +9,15 @@
   "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_OBSERVABILITY_V1",
   "state_hash": "6b0842cf1627066bf7171d90c43fa52b0d8efdbdbcf354ead9d58941c858c402",
   "transient_event_count": 1017
+=======
+  "canonical_entity_count": 15,
+  "contradiction_event_count": 1,
+  "event_count": 763,
+  "generated_at": "2026-10-07T07:15:16.146948Z",
+  "hash_chain_ok": false,
+  "last_event_hash": "0eef03c336d96ac3951b49ffa012815e07a4aee257bc1ab1bd5d6d5dccac29bf",
+  "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_OBSERVABILITY_V1",
+  "state_hash": "98e6bc6b3682c327748c1c67a0c6d0c06acfa572c626c31cc448210584fd004a",
+  "transient_event_count": 604
+>>>>>>> e244267 (Fix UniGuru RAG response routing)
 }
