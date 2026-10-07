@@ -1,0 +1,588 @@
+{
+  "timestamp": 1791360716.156372,
+  "total_queries": 28,
+  "passed": 28,
+  "failed": 0,
+  "pass_rate_pct": 100.0,
+  "domain_breakdown": {
+    "Mathematics": {
+      "total": 2,
+      "passed": 2
+    },
+    "Physics": {
+      "total": 2,
+      "passed": 2
+    },
+    "Chemistry": {
+      "total": 2,
+      "passed": 2
+    },
+    "Biology": {
+      "total": 2,
+      "passed": 2
+    },
+    "Computer Science": {
+      "total": 2,
+      "passed": 2
+    },
+    "Programming": {
+      "total": 3,
+      "passed": 3
+    },
+    "AI / Machine Learning": {
+      "total": 2,
+      "passed": 2
+    },
+    "History of India": {
+      "total": 2,
+      "passed": 2
+    },
+    "Vedas & Upanishads": {
+      "total": 2,
+      "passed": 2
+    },
+    "Geography": {
+      "total": 2,
+      "passed": 2
+    },
+    "Languages": {
+      "total": 3,
+      "passed": 3
+    },
+    "General Knowledge": {
+      "total": 1,
+      "passed": 1
+    },
+    "PDF Ingested Citations": {
+      "total": 2,
+      "passed": 2
+    },
+    "Calibrated Abstention": {
+      "total": 1,
+      "passed": 1
+    }
+  },
+  "details": [
+    {
+      "id": "comp_001",
+      "domain": "Mathematics",
+      "question": "What is the Fundamental Theorem of Calculus?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "Calculus",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Openstax Calculus: Fundamental Theorems Of Integration**:\n\nOPENSTAX CALCULUS: FUNDAMENTAL THEOREMS OF INTEGRATION Section: Fundamental Theorem of Calculus The Fundamental Theorem of Calculus establishes the vital link between differential calculus and integral calculus. Part 1: If f is continuous ...",
+      "citations": [
+        "[1] OpenStax Calculus: Fundamental Theorems of Integration (Source: OpenStax Calculus 2e, Page 1, Section: 'Openstax Calculus: Fundamental Theorems Of Integration')",
+        "[2] OpenStax Calculus: Fundamental Theorems of Integration (Source: OpenStax Calculus 2e, Page 2, Section: 'Openstax Calculus: Fundamental Theorems Of Integration')",
+        "[3] Calculus, Differentiation, and Integration (Source: NCERT & OpenStax Calculus, Page 1, Section: '1. Differential Calculus Fundamentals')",
+        "[4] Calculus, Differentiation, and Integration (Source: NCERT & OpenStax Calculus, Page 1, Section: '2. Integral Calculus Fundamentals')"
+      ],
+      "latency_ms": 175.33,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_002",
+      "domain": "Mathematics",
+      "question": "Explain Bayes Theorem in probability theory.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "Bayes",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Probability, Statistics, and Discrete Mathematics**:\n\nProbability quantifies the likelihood of an event $E$ occurring within a sample space $S$: $$P(E) = \\frac{|E|}{|S|} \\quad \\text{for equally likely outcomes, with } 0 \\le P(E) \\le 1$$  ### Conditional Probability: The probability of event $A$ gi...",
+      "citations": [
+        "[1] Probability, Statistics, and Discrete Mathematics (Source: NCERT & Harvard Stat 110 Open Courseware, Page 1, Section: '1. Probability Theory and Bayes' Theorem')",
+        "[2] Probability, Statistics, and Discrete Mathematics (Source: NCERT & Harvard Stat 110 Open Courseware, Page 1, Section: '3. Discrete Mathematics: Logic, Sets, and Graph Theory')",
+        "[3] Compilers, Automata Theory, and Software Engineering (Source: IEEE Computer Society & Dragon Book (Aho, Lam, Sethi, Ullman), Page 1, Section: '2. Automata Theory & Chomsky Hierarchy')",
+        "[4] Database Management Systems, SQL, and Distributed Systems (Source: ACM SIGMOD & PostgreSQL Global Development Group, Page 1, Section: '3. Distributed Systems: CAP Theorem & Consistency Models')"
+      ],
+      "latency_ms": 30.57,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_003",
+      "domain": "Physics",
+      "question": "What is Faraday's Law of Electromagnetic Induction?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Faraday",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Introduction**:\n\nSection: Magnetic Flux and Faraday Law Magnetic flux through a surface of area A placed in a uniform magnetic field B is defined as Phi = B * A * cos(theta). The SI unit of magnetic flux is Weber (Wb). Faraday stated two laws of electromagnetic induction: 1. Whenever magnetic flux...",
+      "citations": [
+        "[1] NCERT Class 12 Physics: Electromagnetic Induction (Source: NCERT Class 12 Physics, Page 1, Section: 'Introduction')",
+        "[2] NCERT Class 12 Physics: Electromagnetic Induction (Source: NCERT Class 12 Physics, Page 2, Section: 'Introduction')",
+        "[3] NCERT Class 12 Physics: Electromagnetic Induction (Source: NCERT Class 12 Physics, Page 3, Section: 'Introduction')",
+        "[4] Electromagnetism, Maxwell's Equations, and Optics (Source: NCERT Class 12 Physics & CERN Educational Portal, Page 1, Section: '2. Maxwell's Four Equations')"
+      ],
+      "latency_ms": 31.51,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_004",
+      "domain": "Physics",
+      "question": "Explain Maxwell's equations and electromagnetic waves.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Maxwell",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Electromagnetism, Maxwell's Equations, and Optics**:\n\nIn differential vector form in vacuum: 1. Gauss's Law for Electricity:    $$\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0}$$    (Electric charges act as sources and sinks of electric fields). 2. Gauss's Law for Magnetism:    $$\\nabla \\cdo...",
+      "citations": [
+        "[1] Electromagnetism, Maxwell's Equations, and Optics (Source: NCERT Class 12 Physics & CERN Educational Portal, Page 1, Section: '2. Maxwell's Four Equations')",
+        "[2] Electromagnetism, Maxwell's Equations, and Optics (Source: NCERT Class 12 Physics & CERN Educational Portal, Page 1, Section: '3. Wave Optics and Geometric Optics')",
+        "[3] Calculus, Differentiation, and Integration (Source: NCERT & OpenStax Calculus, Page 1, Section: '3. Ordinary Differential Equations (ODEs)')",
+        "[4] Algebra, Linear Algebra, and Analytical Geometry (Source: NCERT Mathematics & MIT OpenCourseWare 18.06, Page 1, Section: '1. Polynomials and Quadratic Equations')"
+      ],
+      "latency_ms": 27.28,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_005",
+      "domain": "Chemistry",
+      "question": "What is the difference between SN1 and SN2 reaction mechanisms?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "SN1",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Organic Chemistry, Inorganic Chemistry, and Periodic Table Trends**:\n\n- Functional Groups:   - Alkanes: Single bonds ($C_n H_{2n+2}$), combustion and free radical halogenation.   - Alkenes: Double bonds ($C_n H_{2n}$), electrophilic addition reactions (Markovnikov's rule).   - Alcohols: $-OH$ hydr...",
+      "citations": [
+        "[1] Organic Chemistry, Inorganic Chemistry, and Periodic Table Trends (Source: NCERT Class 11-12 Chemistry & IUPAC Nomenclature Guidelines, Page 1, Section: '3. Organic Chemistry Mechanisms & Functional Groups')",
+        "[2] Physical Chemistry, Electrochemistry, and Biochemistry (Source: NCERT Chemistry & NIST Chemical Thermodynamics Database, Page 1, Section: '2. Thermochemistry and Electrochemistry')",
+        "[3] JavaScript, TypeScript, Event Loop, and Frontend Frameworks (Source: MDN Web Docs & TypeScript Official Handbook, Page 1, Section: '4. Frontend & Component Architecture (React / Next.js)')",
+        "[4] Physical Chemistry, Electrochemistry, and Biochemistry (Source: NCERT Chemistry & NIST Chemical Thermodynamics Database, Page 1, Section: '1. Chemical Kinetics and Equilibrium')"
+      ],
+      "latency_ms": 33.12,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_006",
+      "domain": "Chemistry",
+      "question": "What is the Arrhenius equation for chemical reaction rates?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "Arrhenius",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Physical Chemistry, Electrochemistry, and Biochemistry**:\n\n- Rate Law: The relationship between reactant concentrations and reaction rate:   $$\\text{Rate} = k [A]^m [B]^n$$   where $m$ and $n$ are experimental reaction orders, and $k$ is the rate constant governed by the Arrhenius Equation:   $$k ...",
+      "citations": [
+        "[1] Physical Chemistry, Electrochemistry, and Biochemistry (Source: NCERT Chemistry & NIST Chemical Thermodynamics Database, Page 1, Section: '1. Chemical Kinetics and Equilibrium')",
+        "[2] Organic Chemistry, Inorganic Chemistry, and Periodic Table Trends (Source: NCERT Class 11-12 Chemistry & IUPAC Nomenclature Guidelines, Page 1, Section: '2. Chemical Bonding and Molecular Geometry')",
+        "[3] Physical Chemistry, Electrochemistry, and Biochemistry (Source: NCERT Chemistry & NIST Chemical Thermodynamics Database, Page 1, Section: '2. Thermochemistry and Electrochemistry')",
+        "[4] Organic Chemistry, Inorganic Chemistry, and Periodic Table Trends (Source: NCERT Class 11-12 Chemistry & IUPAC Nomenclature Guidelines, Page 1, Section: '1. Periodic Table Periodic Trends')"
+      ],
+      "latency_ms": 29.74,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_007",
+      "domain": "Biology",
+      "question": "Explain the Central Dogma of Molecular Biology.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Central Dogma",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Cell Biology, Molecular Genetics, and Biotechnology**:\n\nThe Central Dogma of Molecular Biology (proposed by Francis Crick) describes the unidirectional flow of genetic information: $$\\text{DNA} \\xrightarrow{\\text{Transcription}} \\text{mRNA} \\xrightarrow{\\text{Translation}} \\text{Protein}$$  - DNA ...",
+      "citations": [
+        "[1] Cell Biology, Molecular Genetics, and Biotechnology (Source: NCERT Class 11-12 Biology & OpenStax Biology 2e, Page 1, Section: '2. Molecular Genetics & Central Dogma')",
+        "[2] Organic Chemistry, Inorganic Chemistry, and Periodic Table Trends (Source: NCERT Class 11-12 Chemistry & IUPAC Nomenclature Guidelines, Page 1, Section: '2. Chemical Bonding and Molecular Geometry')",
+        "[3] Cell Biology, Molecular Genetics, and Biotechnology (Source: NCERT Class 11-12 Biology & OpenStax Biology 2e, Page 1, Section: '3. Mendelian Genetics and Biotechnology')",
+        "[4] Cell Biology, Molecular Genetics, and Biotechnology (Source: NCERT Class 11-12 Biology & OpenStax Biology 2e, Page 1, Section: '1. Cell Structure and Organelles')"
+      ],
+      "latency_ms": 29.07,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_008",
+      "domain": "Biology",
+      "question": "What is the light-independent Calvin cycle in photosynthesis?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "BIOLOGY",
+      "expected_snippet": "Calvin",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Photosynthesis**:\n\nPhotosynthesis is the biological process by which green plants, algae, and certain bacteria convert light energy into chemical energy, synthesizing glucose from water and carbon dioxide, while releasing oxygen.\n\n### Overall Chemical Equation:\n$$6\\text{CO}_2 + 6\\text{H}_2\\text{O}...",
+      "citations": [
+        "Standard Scientific Principles"
+      ],
+      "latency_ms": 0.3,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_009",
+      "domain": "Computer Science",
+      "question": "Explain the difference between a process and a thread in operating systems.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "Thread",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Operating Systems, Computer Architecture, and Concurrency**:\n\nThe operating system acts as an intermediary between computer hardware and user applications, managing CPU, memory, and I/O devices: - Process vs. Thread:   - A Process is an executing program instance with its own private virtual addre...",
+      "citations": [
+        "[1] Operating Systems, Computer Architecture, and Concurrency (Source: IEEE Computer Society & Silberschatz Operating System Concepts, Page 1, Section: '1. Operating Systems Core Architecture')",
+        "[2] Database Management Systems, SQL, and Distributed Systems (Source: ACM SIGMOD & PostgreSQL Global Development Group, Page 1, Section: '3. Distributed Systems: CAP Theorem & Consistency Models')",
+        "[3] Operating Systems, Computer Architecture, and Concurrency (Source: IEEE Computer Society & Silberschatz Operating System Concepts, Page 1, Section: '3. Concurrency, Synchronization, and Deadlocks')",
+        "[4] Plant Physiology, Photosynthesis, Human Systems, and Ecology (Source: NCERT Biology & National Science Foundation, Page 1, Section: '2. Human Organ Systems')"
+      ],
+      "latency_ms": 29.8,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_010",
+      "domain": "Computer Science",
+      "question": "What are the ACID properties in database management systems?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "CHEMISTRY",
+      "expected_snippet": "ACID",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Database Management Systems, SQL, and Distributed Systems**:\n\nRelational databases store structured records in tables consisting of rows (tuples) and columns (attributes), enforcing integrity constraints: - Atomicity: All operations in a transaction succeed completely, or all changes are rolled ba...",
+      "citations": [
+        "[1] Database Management Systems, SQL, and Distributed Systems (Source: ACM SIGMOD & PostgreSQL Global Development Group, Page 1, Section: '1. Relational Database Concepts & ACID Properties')",
+        "[2] Database Management Systems, SQL, and Distributed Systems (Source: ACM SIGMOD & PostgreSQL Global Development Group, Page 1, Section: '3. Distributed Systems: CAP Theorem & Consistency Models')",
+        "[3] Operating Systems, Computer Architecture, and Concurrency (Source: IEEE Computer Society & Silberschatz Operating System Concepts, Page 1, Section: '2. Memory Management, Virtual Memory, and Paging')",
+        "[4] Operating Systems, Computer Architecture, and Concurrency (Source: IEEE Computer Society & Silberschatz Operating System Concepts, Page 1, Section: '1. Operating Systems Core Architecture')"
+      ],
+      "latency_ms": 28.99,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_011",
+      "domain": "Programming",
+      "question": "What is the Global Interpreter Lock (GIL) in Python?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "GIL",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Python Fundamentals, Core Data Structures, and Memory Model**:\n\n- Decorator: A callable that takes another function and extends its behavior without modifying its source code.   ``python   def timer_decorator(func):       def wrapper(args, kwargs):           import time           t0 = time.perf_co...",
+      "citations": [
+        "[1] Python Fundamentals, Core Data Structures, and Memory Model (Source: Authoritative Educational Publication, Page 1, Section: '3. Python Decorators and Generators')",
+        "[2] Python Fundamentals, Core Data Structures, and Memory Model (Source: Authoritative Educational Publication, Page 1, Section: '1. Python Lists vs. Tuples vs. Sets vs. Dictionaries')",
+        "[3] Comprehensive Python Programming, Asyncio, OOP, and Runtime Architecture (Source: Python Official Documentation & PEP Standards, Page 1, Section: '3. Asynchronous Programming (`asyncio`), Concurrency, and Threading')",
+        "[4] Comprehensive Python Programming, Asyncio, OOP, and Runtime Architecture (Source: Python Official Documentation & PEP Standards, Page 1, Section: '2. Advanced Object-Oriented Programming (OOP)')"
+      ],
+      "latency_ms": 27.96,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_012",
+      "domain": "Programming",
+      "question": "Explain RAII and smart pointers in modern C++.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "RAII",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Modern C++ and C Core Programming, Memory Management, and STL**:\n\n- RAII (Resource Acquisition Is Initialization):   Binds the lifecycle of resources (heap memory, file descriptors, database connections, mutex locks) to the lifetime of stack objects. When the object leaves scope, its destructor is...",
+      "citations": [
+        "[1] Modern C++ and C Core Programming, Memory Management, and STL (Source: ISO C++ Standard & CppReference, Page 1, Section: '2. Modern C++ (C++11 through C++20): RAII and Smart Pointers')",
+        "[2] Modern C++ and C Core Programming, Memory Management, and STL (Source: ISO C++ Standard & CppReference, Page 1, Section: '1. Memory Management & Pointers in C')",
+        "[3] History of India, Ancient Civilizations, Medieval and Modern Eras (Source: NCERT Indian History & Archaeological Survey of India (ASI), Page 1, Section: '4. Modern India and The Freedom Struggle')",
+        "[4] Comprehensive Python Programming, Asyncio, OOP, and Runtime Architecture (Source: Python Official Documentation & PEP Standards, Page 1, Section: '4. Modern Type Hints & Pydantic Data Validation')"
+      ],
+      "latency_ms": 29.98,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_013",
+      "domain": "Programming",
+      "question": "How does Rust ensure memory safety without a garbage collector?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "Ownership",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Systems Programming in Go, Rust, and Bash Shell Scripting**:\n\nRust achieves compile-time memory safety without a garbage collector through its Ownership System: - Ownership Rules:   1. Each value in Rust has an owner variable.   2. There can only be one owner at a time.   3. When the owner goes ou...",
+      "citations": [
+        "[1] Systems Programming in Go, Rust, and Bash Shell Scripting (Source: Rust Foundation Documentation & Go Language Specification, Page 1, Section: '1. Rust: Ownership, Borrowing, and Memory Safety')",
+        "[2] Operating Systems, Computer Architecture, and Concurrency (Source: IEEE Computer Society & Silberschatz Operating System Concepts, Page 1, Section: '2. Memory Management, Virtual Memory, and Paging')",
+        "[3] Modern C++ and C Core Programming, Memory Management, and STL (Source: ISO C++ Standard & CppReference, Page 1, Section: '1. Memory Management & Pointers in C')",
+        "[4] Java Programming, JVM Architecture, and OOP Design (Source: Oracle Java Documentation & OpenJDK Specification, Page 1, Section: '1. JVM Architecture & Garbage Collection')"
+      ],
+      "latency_ms": 28.52,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_014",
+      "domain": "AI / Machine Learning",
+      "question": "How does multi-head self-attention work in Transformer models?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Attention",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Large Language Models, Generative AI, and RAG Architecture**:\n\nIntroduced in \"Attention Is All You Need\" (Vaswani et al., 2017), the Transformer eliminates recurrent connections in favor of global parallel attention: - Scaled Dot-Product Attention:   $$\\text{Attention}(Q, K, V) = \\text{softmax}\\le...",
+      "citations": [
+        "[1] Large Language Models, Generative AI, and RAG Architecture (Source: Vaswani et al. (2017) & Lewis et al. (2020) RAG Paper (arXiv:2005.11401), Page 1, Section: '1. Transformer Architecture & Self-Attention')",
+        "[2] AI, Machine Learning, Transformers & Retrieval-Augmented Generation (RAG) (Source: Authoritative Educational Publication, Page 1, Section: '2. Transformer Self-Attention Mechanism')",
+        "[3] Classical Mechanics, Newton's Laws, and Thermodynamics (Source: NCERT Physics & NIST Physical Reference Data, Page 1, Section: '2. Work, Energy, and Conservation Laws')",
+        "[4] Computer Networks, TCP/IP, and Cybersecurity Fundamentals (Source: IETF RFC Standards & OWASP Foundation, Page 1, Section: '1. Network Layer Models (OSI 7-Layer vs. TCP/IP 4-Layer)')"
+      ],
+      "latency_ms": 33.24,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_015",
+      "domain": "AI / Machine Learning",
+      "question": "Explain hybrid search in Retrieval-Augmented Generation (RAG).",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "RAG",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Large Language Models, Generative AI, and RAG Architecture**:\n\nRAG mitigates hallucinations and enables dynamic factual updates by anchoring model responses in authoritative retrieved evidence: - Dense Vector Search:   Encodes text chunks into high-dimensional vector spaces (e.g. 384-d, 768-d, 153...",
+      "citations": [
+        "[1] Large Language Models, Generative AI, and RAG Architecture (Source: Vaswani et al. (2017) & Lewis et al. (2020) RAG Paper (arXiv:2005.11401), Page 1, Section: '2. Advanced Retrieval-Augmented Generation (RAG)')",
+        "[2] AI, Machine Learning, Transformers & Retrieval-Augmented Generation (RAG) (Source: Authoritative Educational Publication, Page 1, Section: '3. Retrieval-Augmented Generation (RAG) Pipeline')",
+        "[3] Data Structures & Algorithms Foundations (Source: Authoritative Educational Publication, Page 1, Section: '1. Binary Search')",
+        "[4] AI, Machine Learning, Transformers & Retrieval-Augmented Generation (RAG) (Source: Authoritative Educational Publication, Page 1, Section: '2. Transformer Self-Attention Mechanism')"
+      ],
+      "latency_ms": 29.51,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_016",
+      "domain": "History of India",
+      "question": "What are the major urban planning features of the Indus Valley Civilization?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Indus",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**History of India, Ancient Civilizations, Medieval and Modern Eras**:\n\n- Indus Valley / Harappan Civilization ($\\sim 2600\\text{ - }1900\\text{ BCE}$):   - Advanced urban planning: Grid layout, baked brick houses, sophisticated covered drainage networks, public granaries, and the Great Bath at Mohenj...",
+      "citations": [
+        "[1] History of India, Ancient Civilizations, Medieval and Modern Eras (Source: NCERT Indian History & Archaeological Survey of India (ASI), Page 1, Section: '1. Ancient India & The Indus Valley Civilization')",
+        "[2] World History, Global Civilizations, and Landmark Historical Events (Source: UNESCO World Heritage & NCERT World History, Page 1, Section: '1. Ancient River Valley Civilizations')",
+        "[3] Physical Geography, Earth Systems, Climate, and World Continents (Source: USGS & NCERT Physical Geography, Page 1, Section: '3. World Continents, Oceans, and Major Physical Features')",
+        "[4] ASI and IGNCA: Heritage of India and Vedic Canon (Source: Archaeological Survey of India & IGNCA, Page 1, Section: 'Asi And Ignca: Heritage Of India And Vedic Canon')"
+      ],
+      "latency_ms": 29.35,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_017",
+      "domain": "History of India",
+      "question": "What were the administrative achievements of Emperor Ashoka and the Mauryan Empire?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Ashoka",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**History of India, Ancient Civilizations, Medieval and Modern Eras**:\n\n- Mahajanapadas & Mauryan Empire ($322\\text{ - }185\\text{ BCE}$):   - Emergence of 16 Mahajanapadas; Magadha rose as the preeminent power.   - Chandragupta Maurya founded the Mauryan Empire with guidance from Chanakya (Kautilya)...",
+      "citations": [
+        "[1] History of India, Ancient Civilizations, Medieval and Modern Eras (Source: NCERT Indian History & Archaeological Survey of India (ASI), Page 1, Section: '2. Mauryan Empire, Emperor Ashoka, and The Classical Age')",
+        "[2] History of India, Ancient Civilizations, Medieval and Modern Eras (Source: NCERT Indian History & Archaeological Survey of India (ASI), Page 1, Section: '3. Medieval India: Empires and Culture')",
+        "[3] Guru (Source: Authoritative Educational Publication, Page 1, Section: 'Governance')",
+        "[4] World History, Global Civilizations, and Landmark Historical Events (Source: UNESCO World Heritage & NCERT World History, Page 1, Section: '1. Ancient River Valley Civilizations')"
+      ],
+      "latency_ms": 30.24,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_018",
+      "domain": "Vedas & Upanishads",
+      "question": "What are the four Vedas and their primary subject matter?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Rigveda",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**The Four Vedas, Principal Upanishads, and Vedic Sciences**:\n\nThe Vedas are the foundational shruti (revealed) texts of Indian civilizational thought, preserved over millennia through sophisticated oral mnemonic chanting (Padapatha, Kramapatha, Jatapatha, Ghanapatha): 1. Rigveda (Ṛgveda):    - The ...",
+      "citations": [
+        "[1] The Four Vedas, Principal Upanishads, and Vedic Sciences (Source: Vedic Canon, National Mission for Manuscripts & IGNCA, Page 1, Section: '1. The Four Canonical Vedas (Chatur-Veda)')",
+        "[2] The Four Vedas, Principal Upanishads, and Vedic Sciences (Source: Vedic Canon, National Mission for Manuscripts & IGNCA, Page 1, Section: '2. Structure of Each Veda & The Principal Upanishads')",
+        "[3] The Four Vedas, Principal Upanishads, and Vedic Sciences (Source: Vedic Canon, National Mission for Manuscripts & IGNCA, Page 1, Section: '3. Vedangas & Vedic Sciences')",
+        "[4] Vidya (Source: Authoritative Educational Publication, Page 1, Section: 'Related Vidyās')"
+      ],
+      "latency_ms": 28.18,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_019",
+      "domain": "Vedas & Upanishads",
+      "question": "What is the core philosophical teaching of the Principal Upanishads regarding Atman and Brahman?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Brahman",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**The Four Vedas, Principal Upanishads, and Vedic Sciences**:\n\nEvery Veda consists of four chronological/conceptual layers: 1. Samhitas: Collections of poetic hymns and mantras. 2. Brahmanas: Prose texts detailing ritual performance, symbolic meanings, and context. 3. Aranyakas: \"Forest treatises\" t...",
+      "citations": [
+        "[1] The Four Vedas, Principal Upanishads, and Vedic Sciences (Source: Vedic Canon, National Mission for Manuscripts & IGNCA, Page 1, Section: '2. Structure of Each Veda & The Principal Upanishads')",
+        "[2] Svetasvatara Upanishad - sanskrit and English.pdf (Source: Svetasvatara Upanishad - sanskrit and English.pdf, Page 1, Section: 'brahman')",
+        "[3] Atman (Source: Authoritative Educational Publication, Page 1, Section: 'Historical Evolution')",
+        "[4] Brahman (Source: Authoritative Educational Publication, Page 1, Section: 'Related Vidyās')"
+      ],
+      "latency_ms": 36.71,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_020",
+      "domain": "Geography",
+      "question": "Explain the mechanism of the Indian Southwest Monsoon.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Monsoon",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Geography of India, River Systems, Climate, and Agriculture**:\n\n- The Indian Monsoon:   - Southwest Monsoon (June - September): Driven by differential heating of land and sea, low pressure over northwestern India, and the shifting of the ITCZ, bringing 75%+ of annual precipitation.   - Retreating ...",
+      "citations": [
+        "[1] Geography of India, River Systems, Climate, and Agriculture (Source: Survey of India & NCERT Indian Geography, Page 1, Section: '3. Climate, Monsoons, and Agriculture in India')",
+        "[2] Geography of India, River Systems, Climate, and Agriculture (Source: Survey of India & NCERT Indian Geography, Page 1, Section: '2. Indian Drainage & River Systems')",
+        "[3] History of India, Ancient Civilizations, Medieval and Modern Eras (Source: NCERT Indian History & Archaeological Survey of India (ASI), Page 1, Section: '3. Medieval India: Empires and Culture')",
+        "[4] History of India, Ancient Civilizations, Medieval and Modern Eras (Source: NCERT Indian History & Archaeological Survey of India (ASI), Page 1, Section: '4. Modern India and The Freedom Struggle')"
+      ],
+      "latency_ms": 31.04,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_021",
+      "domain": "Geography",
+      "question": "What is plate tectonics and what are the three types of plate boundaries?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "Tectonic",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Physical Geography, Earth Systems, Climate, and World Continents**:\n\nThe Earth is composed of concentric compositional layers: - Crust: Thin outer silicate shell (continental crust: granitic, $\\sim 30\\text{-}50\\text{ km}$ thick; oceanic crust: basaltic, $\\sim 5\\text{-}10\\text{ km}$ thick). - Mantl...",
+      "citations": [
+        "[1] Physical Geography, Earth Systems, Climate, and World Continents (Source: USGS & NCERT Physical Geography, Page 1, Section: '1. Earth's Interior Structure and Plate Tectonics')",
+        "[2] Prakrti (Source: Authoritative Educational Publication, Page 1, Section: 'Astronomy')",
+        "[3] Koshas (Source: Authoritative Educational Publication, Page 1, Section: 'Engineering')",
+        "[4] Marathi Grammar, Morphology, and Literature (मराठी व्याकरण व साहित्य) (Source: Maharashtra State Board (Balbharti) & M.R. Walambe, Page 1, Section: '2. नामाचे प्रकार व विभक्ती (Noun Types & Cases)')"
+      ],
+      "latency_ms": 34.79,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_022",
+      "domain": "Languages",
+      "question": "Explain subject-verb agreement rules in English grammar.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "ENGLISH",
+      "expected_snippet": "Agreement",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Explain Subject-Verb Agreement Rules In English Grammar**:\n\nThis topic refers to an educational concept. If you have specific questions about its mathematical properties, physical laws, or application, feel free to ask!",
+      "citations": [
+        "General Educational Reference"
+      ],
+      "latency_ms": 28.33,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_023",
+      "domain": "Languages",
+      "question": "मराठी व्याकरणात समास म्हणजे काय आणि त्याचे प्रकार कोणते?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "समास",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Marathi Grammar, Morphology, and Literature (मराठी व्याकरण व साहित्य)**:\n\n- नामाचे तीन मुख्य प्रकार:   1. सामान्यनाम (Common Noun): एकाच जातीच्या सर्व वस्तूंना दिलेले नाव (उदा. मुलगा, नदी, पर्वत, शहर).   2. विशेषनाम (Proper Noun): एखाद्या विशिष्ट व्यक्तीला, प्राण्याला किंवा स्थळाला दिलेले नाव (उदा...",
+      "citations": [
+        "[1] Marathi Grammar, Morphology, and Literature (मराठी व्याकरण व साहित्य) (Source: Maharashtra State Board (Balbharti) & M.R. Walambe, Page 1, Section: '2. नामाचे प्रकार व विभक्ती (Noun Types & Cases)')",
+        "[2] Marathi Grammar, Morphology, and Literature (मराठी व्याकरण व साहित्य) (Source: Maharashtra State Board (Balbharti) & M.R. Walambe, Page 1, Section: '1. मराठी वर्णमाला व संधी (Marathi Alphabet & Sandhi)')",
+        "[3] Marathi Grammar, Morphology, and Literature (मराठी व्याकरण व साहित्य) (Source: Maharashtra State Board (Balbharti) & M.R. Walambe, Page 1, Section: '3. काळ व समास (Tenses & Compound Words)')",
+        "[4] Hindi Grammar, Syntax, and Literature (हिंदी व्याकरण व साहित्य) (Source: NCERT Hindi Grammar & Kamta Prasad Guru, Page 1, Section: '3. समास एवं मुहावरे (Compounds & Idioms)')"
+      ],
+      "latency_ms": 38.73,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_024",
+      "domain": "Languages",
+      "question": "हिंदी व्याकरण में संधि के कितने भेद होते हैं?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "HINDI",
+      "expected_snippet": "संधि",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Hindi Grammar, Syntax, and Literature (हिंदी व्याकरण व साहित्य)**:\n\n- वर्णमाला:   - स्वर (११): अ, आ, इ, ई, उ, ऊ, ऋ, ए, ऐ, ओ, औ।   - अयोगवाह: अं (अनुस्वार), अः (विसर्ग)।   - व्यंजन (३३): स्पर्श व्यंजन (क-वर्ग से प-वर्ग तक २५), अंतःस्थ (य, र, ल, व), ऊष्म (श, ष, स, ह)।   - संयुक्त व्यंजन: क्ष, त्र, ज...",
+      "citations": [
+        "[1] Hindi Grammar, Syntax, and Literature (हिंदी व्याकरण व साहित्य) (Source: NCERT Hindi Grammar & Kamta Prasad Guru, Page 1, Section: '1. हिंदी वर्णमाला एवं संधि (Hindi Phonetics & Sandhi)')",
+        "[2] Hindi Grammar, Syntax, and Literature (हिंदी व्याकरण व साहित्य) (Source: NCERT Hindi Grammar & Kamta Prasad Guru, Page 1, Section: '2. शब्द-भेद एवं कारक (Parts of Speech & Cases)')",
+        "[3] Hindi Grammar, Syntax, and Literature (हिंदी व्याकरण व साहित्य) (Source: NCERT Hindi Grammar & Kamta Prasad Guru, Page 1, Section: '3. समास एवं मुहावरे (Compounds & Idioms)')",
+        "[4] Marathi Grammar, Morphology, and Literature (मराठी व्याकरण व साहित्य) (Source: Maharashtra State Board (Balbharti) & M.R. Walambe, Page 1, Section: '2. नामाचे प्रकार व विभक्ती (Noun Types & Cases)')"
+      ],
+      "latency_ms": 33.39,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_025",
+      "domain": "General Knowledge",
+      "question": "What are the Fundamental Rights guaranteed by the Constitution of India?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Constitution",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**General Knowledge, Indian Civics, World Capitals, and Scientific Milestones**:\n\nThe Constitution of India is the supreme law of India, adopted on 26 November 1949 and came into effect on 26 January 1950: - Preamble: Declares India to be a Sovereign, Socialist, Secular, Democratic Republic securing...",
+      "citations": [
+        "[1] General Knowledge, Indian Civics, World Capitals, and Scientific Milestones (Source: National Portal of India & United Nations, Page 1, Section: '1. Indian Constitution & Civics')",
+        "[2] History of India, Ancient Civilizations, Medieval and Modern Eras (Source: NCERT Indian History & Archaeological Survey of India (ASI), Page 1, Section: '4. Modern India and The Freedom Struggle')",
+        "[3] ASI and IGNCA: Heritage of India and Vedic Canon (Source: Archaeological Survey of India & IGNCA, Page 2, Section: 'Asi And Ignca: Heritage Of India And Vedic Canon')",
+        "[4] OpenStax Calculus: Fundamental Theorems of Integration (Source: OpenStax Calculus 2e, Page 1, Section: 'Openstax Calculus: Fundamental Theorems Of Integration')"
+      ],
+      "latency_ms": 31.86,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_026",
+      "domain": "PDF Ingested Citations",
+      "question": "Explain Faraday's experiment and induced electromotive force from NCERT Physics.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "NCERT",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Introduction**:\n\nSection: Magnetic Flux and Faraday Law Magnetic flux through a surface of area A placed in a uniform magnetic field B is defined as Phi = B * A * cos(theta). The SI unit of magnetic flux is Weber (Wb). Faraday stated two laws of electromagnetic induction: 1. Whenever magnetic flux...",
+      "citations": [
+        "[1] NCERT Class 12 Physics: Electromagnetic Induction (Source: NCERT Class 12 Physics, Page 1, Section: 'Introduction')",
+        "[2] NCERT Class 12 Physics: Electromagnetic Induction (Source: NCERT Class 12 Physics, Page 2, Section: 'Introduction')",
+        "[3] NCERT Class 12 Physics: Electromagnetic Induction (Source: NCERT Class 12 Physics, Page 3, Section: 'Introduction')",
+        "[4] Modern Physics, Quantum Mechanics, and Relativity (Source: CERN & IBM Quantum Educational Platform, Page 1, Section: '3. Nuclear Physics and Semiconductors')"
+      ],
+      "latency_ms": 34.53,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_027",
+      "domain": "PDF Ingested Citations",
+      "question": "What is the Riemann sum definition of definite integrals in OpenStax Calculus?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "Calculus",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "**Openstax Calculus: Fundamental Theorems Of Integration**:\n\nOPENSTAX CALCULUS: FUNDAMENTAL THEOREMS OF INTEGRATION Section: Integration by Parts Formula Integration by parts is the integral analog of the product rule for differentiation. Formula: integral of u dv = u * v - integral of v du. Selecti...",
+      "citations": [
+        "[1] OpenStax Calculus: Fundamental Theorems of Integration (Source: OpenStax Calculus 2e, Page 2, Section: 'Openstax Calculus: Fundamental Theorems Of Integration')",
+        "[2] OpenStax Calculus: Fundamental Theorems of Integration (Source: OpenStax Calculus 2e, Page 1, Section: 'Openstax Calculus: Fundamental Theorems Of Integration')",
+        "[3] Calculus, Differentiation, and Integration (Source: NCERT & OpenStax Calculus, Page 1, Section: '2. Integral Calculus Fundamentals')",
+        "[4] Calculus, Differentiation, and Integration (Source: NCERT & OpenStax Calculus, Page 1, Section: '1. Differential Calculus Fundamentals')"
+      ],
+      "latency_ms": 32.85,
+      "status": "PASS"
+    },
+    {
+      "id": "comp_028",
+      "domain": "Calibrated Abstention",
+      "question": "What agricultural practices are mentioned in the Padma Purana?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "does not contain verified",
+      "snippet_match": true,
+      "provenance_ok": true,
+      "actual_answer": "The current knowledge base does not contain verified records on agricultural practices in the Padma Purana.",
+      "citations": [],
+      "latency_ms": 0.62,
+      "status": "PASS"
+    }
+  ]
+}

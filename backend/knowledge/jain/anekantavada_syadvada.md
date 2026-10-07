@@ -12,10 +12,6 @@ category: jain
 
 Anekantavada (Non-one-sidedness) is one of the most important philosophical contributions of Jainism to Indian thought. It holds that ultimate reality is complex and cannot be described from a single viewpoint.
 
-## Marathi Summary
-
-अनेकांतवादानुसार वास्तवाचे अनेक पैलू असतात; एका दृष्टिकोनातून संपूर्ण सत्य समजत नाही. म्हणून एखाद्या विधानाचे मूल्यमापन वेगवेगळ्या दृष्टिकोनांतून करावे.
-
 **Core Principle:**
 Reality has infinite aspects. Any statement we make captures only one aspect (naya). Claiming absolute truth from one perspective alone is called Ekanta (one-sidedness) and is considered an error.
 

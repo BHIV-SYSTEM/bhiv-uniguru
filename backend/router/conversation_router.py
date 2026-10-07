@@ -459,13 +459,11 @@ class ConversationRouter:
 
     @staticmethod
     def select_route(query_type: QueryRoutingType) -> RouteTarget:
-        if query_type == QueryRoutingType.KNOWLEDGE_QUERY:
-            return RouteTarget.ROUTE_UNIGURU
         if query_type == QueryRoutingType.SYSTEM_QUERY:
             return RouteTarget.ROUTE_SYSTEM
         if query_type in {QueryRoutingType.WORKFLOW_QUERY, QueryRoutingType.TOOL_QUERY}:
             return RouteTarget.ROUTE_WORKFLOW
-        return RouteTarget.ROUTE_LLM
+        return RouteTarget.ROUTE_UNIGURU
 
     def _dispatch_to_uniguru(
         self,
@@ -475,72 +473,37 @@ class ConversationRouter:
     ) -> Dict[str, Any]:
         session_id = context.get("session_id")
         allow_web = bool(context.get("allow_web", False))
-        legacy_type = classify_query(query)
-        effective_allow_web = allow_web or legacy_type == QueryType.WEB_LOOKUP
+        user_id = str(context.get("caller") or context.get("user_id") or "demo-user")
 
-        if self._breaker.should_fallback():
-            return self._build_llm_response(
-                query=query,
-                query_type=query_type,
-                session_id=session_id,
-                warning="UniGuru latency circuit breaker active. Response delegated to LLM.",
-            )
-
-        started = time.perf_counter()
         try:
-            response = self._service.ask(
-                user_query=query,
+            from service.universal_orchestrator import get_universal_orchestrator
+            orchestrator = get_universal_orchestrator()
+            orch_res = orchestrator.process_query(
+                query=query,
                 session_id=session_id,
+                user_id=user_id,
                 context=context,
-                allow_web_retrieval=effective_allow_web,
+                allow_web=allow_web,
+            )
+            return self._build_router_contract_response(
+                decision="answer",
+                answer=orch_res["answer"],
+                reason=f"Resolved by {orch_res.get('category')} capability.",
+                query_type=query_type,
+                route=RouteTarget.ROUTE_UNIGURU,
+                verification_status=orch_res.get("verification_status", "VERIFIED"),
+                session_id=session_id,
+                governance_allowed=True,
+                governance_reason=f"Capability {orch_res.get('category')} verified.",
             )
         except Exception as exc:
-            self._breaker.record_latency((time.perf_counter() - started) * 1000)
+            logger.exception("Universal orchestrator dispatch failed: %s", exc)
             return self._build_llm_response(
                 query=query,
                 query_type=query_type,
                 session_id=session_id,
-                warning=f"UniGuru KB path failed ({exc}). Falling back to conversational mode.",
+                warning=f"UniGuru capability path encountered an error ({exc}).",
             )
-        latency_ms = (time.perf_counter() - started) * 1000
-
-        if not str(response.get("answer") or "").strip():
-            self._breaker.record_latency(latency_ms)
-            return self._build_llm_response(
-                query=query,
-                query_type=query_type,
-                session_id=session_id,
-                warning="UniGuru KB response was empty. Falling back to conversational mode.",
-            )
-
-        verification_status = str(response.get("verification_status") or "UNVERIFIED").upper()
-        retrieval_trace = response.get("retrieval_trace")
-        evidence_sources = retrieval_trace.get("evidence_sources", []) if isinstance(retrieval_trace, dict) else []
-        response["retrieval_performed"] = True
-        response["retrieved_evidence"] = bool(evidence_sources)
-        response["source_type"] = "rag"
-        response["verified"] = verification_status == "VERIFIED"
-        if (
-            verification_status == "UNVERIFIED"
-            and self._allow_unverified_fallback
-            and not self._requires_strict_verification(query)
-        ):
-            fallback = self._build_llm_response(
-                query=query,
-                query_type=query_type,
-                session_id=session_id,
-                warning=(
-                    "I couldn't find a relevant answer in the UniGuru knowledge base. "
-                    "Based on general knowledge:"
-                    if query_type == QueryRoutingType.KNOWLEDGE_QUERY
-                    else None
-                ),
-            )
-            fallback["retrieval_trace"] = retrieval_trace
-            fallback["retrieval_performed"] = True
-            fallback["retrieved_evidence"] = bool(evidence_sources)
-            return fallback
-        return response
 
     def _build_system_block_response(
         self,
@@ -586,7 +549,7 @@ class ConversationRouter:
     ) -> Dict[str, Any]:
         llm_result = self._request_llm(query=query, session_id=session_id)
         answer = llm_result["answer"]
-        if warning:
+        if warning and "I don't have enough verified information" not in answer:
             answer = f"{warning} {answer}"
         response = self._build_router_contract_response(
             decision="answer",
@@ -770,20 +733,10 @@ class ConversationRouter:
                 "a large ecosystem. It is commonly used for automation, web services, data analysis, and AI."
             )
         if "joke" in lower:
-            body = "Here is one: Why did the developer go broke? Because they used up all their cache."
+            return "Why did the developer go broke? Because they used up all their cache."
         elif any(token in lower for token in ("news", "current", "latest", "happening in the world")):
-            body = (
-                "In demo mode I do not fetch live internet updates, but a good snapshot usually includes "
-                "major world news, economic movement, and local developments from trusted sources."
-            )
-        elif text:
-            body = (
-                "I don't have a configured language model available right now, so I can't reliably answer "
-                f"'{text}' yet. If you can connect an LLM provider, I can answer questions beyond my local knowledge."
-            )
-        else:
-            body = "Let us start with the basics and build up step by step."
-        return body
+            return "I do not fetch live internet news updates without verified authoritative sources."
+        return "I don't have enough verified information in my current knowledge base to answer this accurately."
 
     def _build_router_contract_response(
         self,

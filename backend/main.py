@@ -43,6 +43,14 @@ def main() -> None:
     from service.uniguru_runtime_api import app as runtime_app
     app.mount("/v2", runtime_app)
 
+    # Pre-warm universal orchestrator and unified RAG engine so queries execute in milliseconds from the first request
+    try:
+        from service.universal_orchestrator import get_universal_orchestrator
+        orchestrator = get_universal_orchestrator()
+        print(f"[OK] Universal Orchestrator pre-warmed: {orchestrator.rag_engine.total_chunks} chunks ready.")
+    except Exception as exc:
+        print(f"[WARN] Failed to pre-warm Universal Orchestrator: {exc}")
+
     host = os.getenv("UNIGURU_HOST", "0.0.0.0")
     port = int(os.getenv("UNIGURU_PORT", "8000"))
     uvicorn.run(app, host=host, port=port, workers=1)

@@ -59,6 +59,16 @@ def load_masterdb_records() -> List[Dict[str, Any]]:
     return loaded if isinstance(loaded, list) else []
 
 
+CURRICULUM_STOPWORDS = {
+    "a", "an", "the", "is", "are", "was", "were", "what", "which", "who", "when",
+    "where", "why", "how", "about", "for", "to", "in", "on", "of", "and", "or",
+    "tell", "explain", "meaning", "concept", "define", "does", "do", "did", "say",
+    "state", "taught", "describe", "between", "with", "from", "by", "as", "at",
+    "knowledge", "topic", "information", "class", "grade", "standard", "std",
+    "solve", "problem", "learn", "study", "give", "me", "question", "example"
+}
+
+
 def _score_record(
     query: str,
     record: Dict[str, Any],
@@ -66,39 +76,60 @@ def _score_record(
     medium: Optional[str] = None,
     subject: Optional[str] = None,
 ) -> float:
-    query_tokens = _tokens(query)
-    if not query_tokens:
+    # 1. Enforce strict grade matching if grade is specified
+    record_grade = int(record.get("grade") or 0)
+    if grade is not None and record_grade != grade:
         return 0.0
 
-    fields = [
-        record.get("subject"),
-        record.get("chapter"),
-        record.get("concept"),
-        record.get("definition"),
-        record.get("learning_outcome"),
-        " ".join(record.get("examples") or []),
-        " ".join(record.get("questions") or []),
-    ]
-    record_tokens = _tokens(" ".join(str(field or "") for field in fields))
-    overlap = len(query_tokens & record_tokens) / max(len(query_tokens), 1)
+    # 2. Extract meaningful non-stopword tokens from query
+    query_norm = _normalize(query)
+    raw_query_tokens = _tokens(query)
+    meaningful_tokens = {t for t in raw_query_tokens if t not in CURRICULUM_STOPWORDS and len(t) > 2}
+    if not meaningful_tokens:
+        return 0.0
 
-    score = overlap
-    if record.get("chapter") and _normalize(record.get("chapter")) in _normalize(query):
+    # 3. Exact concept or chapter phrase match (highest confidence)
+    concept_str = _normalize(record.get("concept") or "")
+    chapter_str = _normalize(record.get("chapter") or "")
+    definition_str = _normalize(record.get("definition") or "")
+
+    concept_exact = bool(concept_str and concept_str in query_norm)
+    chapter_exact = bool(chapter_str and chapter_str in query_norm)
+
+    concept_tokens = {t for t in _tokens(concept_str) if t not in CURRICULUM_STOPWORDS}
+    chapter_tokens = {t for t in _tokens(chapter_str) if t not in CURRICULUM_STOPWORDS}
+    def_tokens = {t for t in _tokens(definition_str) if t not in CURRICULUM_STOPWORDS}
+
+    topic_tokens = concept_tokens | chapter_tokens | def_tokens
+    matched_topic_tokens = meaningful_tokens & topic_tokens
+
+    # CRITICAL: If zero meaningful query tokens match the topic/concept/chapter/definition,
+    # then this record has NO relevance to the query (even if subject or generic words match).
+    if not matched_topic_tokens and not concept_exact and not chapter_exact:
+        return 0.0
+
+    # Base score on topic overlap ratio
+    topic_overlap = len(matched_topic_tokens) / max(len(meaningful_tokens), 1)
+    score = topic_overlap * 0.40
+
+    if concept_exact:
+        score += 0.35
+    elif matched_topic_tokens & concept_tokens:
+        score += 0.20
+
+    if chapter_exact:
+        score += 0.25
+    elif matched_topic_tokens & chapter_tokens:
         score += 0.15
-    if record.get("concept") and _normalize(record.get("concept")) in _normalize(query):
-        score += 0.2
-    if grade is not None and int(record.get("grade") or 0) == grade:
-        score += 0.18
-    if medium and str(record.get("medium") or "").lower() == str(medium).lower():
-        score += 0.12
-    if subject and str(record.get("subject") or "").lower() == str(subject).lower():
-        score += 0.22
-    if record.get("difficulty") == "easy" and "easy" in query.lower():
-        score += 0.04
-    if record.get("difficulty") == "hard" and "hard" in query.lower():
-        score += 0.04
 
-    return round(score, 4)
+    # Subject match bonus only if topic matched
+    if subject and str(record.get("subject") or "").lower() == str(subject).lower():
+        score += 0.15
+    if grade is not None and record_grade == grade:
+        score += 0.10
+
+    # Normalized score between 0.0 and 1.0
+    return round(min(score, 1.0), 4)
 
 
 def _related_score(record: Dict[str, Any], reference: Dict[str, Any]) -> float:
@@ -192,15 +223,34 @@ def find_top_matches(
     max_results: int = 5,
 ) -> Dict[str, Any]:
     records = load_masterdb_records()
-    candidate_records = [
-        record
-        for record in records
-        if (grade is None or int(record.get("grade") or 0) == grade)
-        and (medium is None or str(record.get("medium") or "").lower() == str(medium).lower())
-        and (subject is None or str(record.get("subject") or "").lower() == str(subject).lower())
-    ]
-    if not candidate_records:
-        candidate_records = records
+    if grade is not None:
+        candidate_records = [
+            record for record in records
+            if int(record.get("grade") or 0) == grade
+        ]
+        # CRITICAL FIX: If explicit grade requested and not present in canonical DB,
+        # never fall back to all records (prevents Class 5 queries returning Grade 1 records).
+        if not candidate_records:
+            return {
+                "matches": [],
+                "best_record": None,
+                "confidence": 0.0,
+                "related_records": [],
+                "chapter_recommendations": [],
+                "learning_objectives": [],
+                "curriculum_graph": build_curriculum_graph(records),
+                "retrieval_hash": stable_hash([]),
+                "dataset_path": str(MASTERDB_PATH.relative_to(ROOT).as_posix()),
+            }
+    else:
+        candidate_records = [
+            record
+            for record in records
+            if (medium is None or str(record.get("medium") or "").lower() == str(medium).lower())
+            and (subject is None or str(record.get("subject") or "").lower() == str(subject).lower())
+        ]
+        if not candidate_records:
+            candidate_records = records
 
     scored = [
         {
@@ -209,7 +259,8 @@ def find_top_matches(
         }
         for record in candidate_records
     ]
-    scored = [row for row in scored if row["score"] > 0.0]
+    # Enforce minimum curriculum relevance threshold of 0.35
+    scored = [row for row in scored if row["score"] >= 0.35]
     scored.sort(key=lambda row: row["score"], reverse=True)
     matches = scored[:max_results]
     best_record = matches[0]["record"] if matches else None

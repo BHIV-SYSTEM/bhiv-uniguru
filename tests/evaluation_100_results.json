@@ -1,0 +1,1075 @@
+{
+  "timestamp": 1790931821.2647054,
+  "total_queries": 100,
+  "passed": 100,
+  "failed": 0,
+  "pass_rate_pct": 100.0,
+  "category_breakdown": {
+    "CONVERSATION": {
+      "total": 7,
+      "passed": 7
+    },
+    "IDENTITY": {
+      "total": 3,
+      "passed": 3
+    },
+    "USER_INTRODUCTION": {
+      "total": 2,
+      "passed": 2
+    },
+    "USER_IDENTITY": {
+      "total": 2,
+      "passed": 2
+    },
+    "PHYSICS": {
+      "total": 12,
+      "passed": 12
+    },
+    "KNOWLEDGE_BASE": {
+      "total": 14,
+      "passed": 14
+    },
+    "MATHEMATICS": {
+      "total": 15,
+      "passed": 15
+    },
+    "CHEMISTRY": {
+      "total": 10,
+      "passed": 10
+    },
+    "BIOLOGY": {
+      "total": 10,
+      "passed": 10
+    },
+    "PROGRAMMING": {
+      "total": 7,
+      "passed": 7
+    },
+    "SQL": {
+      "total": 3,
+      "passed": 3
+    },
+    "ENGLISH": {
+      "total": 3,
+      "passed": 3
+    },
+    "TRANSLATION": {
+      "total": 5,
+      "passed": 5
+    },
+    "MARATHI": {
+      "total": 2,
+      "passed": 2
+    },
+    "GENERAL_KNOWLEDGE": {
+      "total": 3,
+      "passed": 3
+    },
+    "CURRENT_INFORMATION": {
+      "total": 2,
+      "passed": 2
+    }
+  },
+  "details": [
+    {
+      "id": 1,
+      "question": "Hi",
+      "expected_capability": "CONVERSATION",
+      "actual_capability": "GREETING",
+      "expected_snippet": "UniGuru",
+      "actual_answer": "Hey Aarav! I'm UniGuru. How are you? How can I help you today?",
+      "latency_ms": 13.75,
+      "status": "PASS"
+    },
+    {
+      "id": 2,
+      "question": "Hello",
+      "expected_capability": "CONVERSATION",
+      "actual_capability": "GREETING",
+      "expected_snippet": "Hello",
+      "actual_answer": "Hello Aarav! How can I help you today?",
+      "latency_ms": 0.24,
+      "status": "PASS"
+    },
+    {
+      "id": 3,
+      "question": "How are you?",
+      "expected_capability": "CONVERSATION",
+      "actual_capability": "CASUAL_CONVERSATION",
+      "expected_snippet": "doing great",
+      "actual_answer": "I'm doing great, Aarav! How can I assist you today?",
+      "latency_ms": 0.45,
+      "status": "PASS"
+    },
+    {
+      "id": 4,
+      "question": "What is your name?",
+      "expected_capability": "IDENTITY",
+      "actual_capability": "IDENTITY",
+      "expected_snippet": "UniGuru",
+      "actual_answer": "My name is UniGuru. How can I help you?",
+      "latency_ms": 0.59,
+      "status": "PASS"
+    },
+    {
+      "id": 5,
+      "question": "Who are you?",
+      "expected_capability": "IDENTITY",
+      "actual_capability": "IDENTITY",
+      "expected_snippet": "UniGuru",
+      "actual_answer": "I'm UniGuru, your AI assistant. How can I help you?",
+      "latency_ms": 0.17,
+      "status": "PASS"
+    },
+    {
+      "id": 6,
+      "question": "Good morning",
+      "expected_capability": "CONVERSATION",
+      "actual_capability": "GREETING",
+      "expected_snippet": "Good Morning",
+      "actual_answer": "Good Morning Aarav! How can I assist you with your learning or questions today?",
+      "latency_ms": 0.3,
+      "status": "PASS"
+    },
+    {
+      "id": 7,
+      "question": "Good evening",
+      "expected_capability": "CONVERSATION",
+      "actual_capability": "GREETING",
+      "expected_snippet": "Good Evening",
+      "actual_answer": "Good Evening Aarav! How can I assist you with your learning or questions today?",
+      "latency_ms": 0.16,
+      "status": "PASS"
+    },
+    {
+      "id": 8,
+      "question": "Hey",
+      "expected_capability": "CONVERSATION",
+      "actual_capability": "GREETING",
+      "expected_snippet": "UniGuru",
+      "actual_answer": "Hey Aarav! I'm UniGuru. How are you? How can I help you today?",
+      "latency_ms": 0.13,
+      "status": "PASS"
+    },
+    {
+      "id": 9,
+      "question": "Namaste",
+      "expected_capability": "CONVERSATION",
+      "actual_capability": "GREETING",
+      "expected_snippet": "Hello",
+      "actual_answer": "Hello Aarav! How can I help you today?",
+      "latency_ms": 0.1,
+      "status": "PASS"
+    },
+    {
+      "id": 10,
+      "question": "Who created you?",
+      "expected_capability": "IDENTITY",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "UniGuru",
+      "actual_answer": "I'm UniGuru, your educational AI assistant. You can ask me questions about mathematics, physics, science, programming, Sanskrit, philosophy, language ...",
+      "latency_ms": 131.08,
+      "status": "PASS"
+    },
+    {
+      "id": 11,
+      "question": "My name is Vijay.",
+      "expected_capability": "USER_INTRODUCTION",
+      "actual_capability": "USER_INTRODUCTION",
+      "expected_snippet": "Vijay",
+      "actual_answer": "Nice to meet you, Vijay! How can I help you?",
+      "latency_ms": 1.58,
+      "status": "PASS"
+    },
+    {
+      "id": 12,
+      "question": "What is my name?",
+      "expected_capability": "USER_IDENTITY",
+      "actual_capability": "IDENTITY",
+      "expected_snippet": "Vijay",
+      "actual_answer": "Your name is Vijay.",
+      "latency_ms": 0.3,
+      "status": "PASS"
+    },
+    {
+      "id": 13,
+      "question": "My name is Aarav.",
+      "expected_capability": "USER_INTRODUCTION",
+      "actual_capability": "USER_INTRODUCTION",
+      "expected_snippet": "Aarav",
+      "actual_answer": "Nice to meet you, Aarav! How can I help you?",
+      "latency_ms": 1.16,
+      "status": "PASS"
+    },
+    {
+      "id": 14,
+      "question": "What is my name?",
+      "expected_capability": "USER_IDENTITY",
+      "actual_capability": "IDENTITY",
+      "expected_snippet": "Aarav",
+      "actual_answer": "Your name is Aarav.",
+      "latency_ms": 0.25,
+      "status": "PASS"
+    },
+    {
+      "id": 15,
+      "question": "What is Newton's second law?",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "Newton",
+      "actual_answer": "**Newton's Second Law of Motion**:\n\n> *The rate of change of momentum of a body is directly proportional to the applied net force, and occurs in the d...",
+      "latency_ms": 4.37,
+      "status": "PASS"
+    },
+    {
+      "id": 16,
+      "question": "Give an example.",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "Newton",
+      "actual_answer": "**Example of Newton's Second Law of Motion ($F = ma$)**:\n\n1. **Pushing an Empty vs. Loaded Shopping Cart**:\n   - An empty cart ($m_1$) accelerates qui...",
+      "latency_ms": 0.29,
+      "status": "PASS"
+    },
+    {
+      "id": 17,
+      "question": "What is Karma Yoga?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Karma Yoga",
+      "actual_answer": "**Karma**:\n\nIn Yoga psychology: karma creates saṃskāras (mental impressions) and vāsanās (latent tendencies) that condition future experience. Patañja...",
+      "latency_ms": 60.09,
+      "status": "PASS"
+    },
+    {
+      "id": 18,
+      "question": "Explain it simply.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Karma Yoga",
+      "actual_answer": "**Karma**:\n\nIn Yoga psychology: karma creates saṃskāras (mental impressions) and vāsanās (latent tendencies) that condition future experience. Patañja...",
+      "latency_ms": 49.22,
+      "status": "PASS"
+    },
+    {
+      "id": 19,
+      "question": "Give an example.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Karma Yoga",
+      "actual_answer": "**Karma**:\n\nIn Yoga psychology: karma creates saṃskāras (mental impressions) and vāsanās (latent tendencies) that condition future experience. Patañja...",
+      "latency_ms": 76.61,
+      "status": "PASS"
+    },
+    {
+      "id": 20,
+      "question": "Tell me more.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Karma Yoga",
+      "actual_answer": "**Karma**:\n\nIn Yoga psychology: karma creates saṃskāras (mental impressions) and vāsanās (latent tendencies) that condition future experience. Patañja...",
+      "latency_ms": 80.85,
+      "status": "PASS"
+    },
+    {
+      "id": 21,
+      "question": "2 + 2",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "4",
+      "actual_answer": "**Calculation**: 2 + 2\n\n$$2 + 2 = 4$$\n\n**Result**: **4**",
+      "latency_ms": 6.03,
+      "status": "PASS"
+    },
+    {
+      "id": 22,
+      "question": "287 * 46",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "13202",
+      "actual_answer": "**Calculation**: 287 * 46\n\n$$287  \\times  46 = 13202$$\n\n**Result**: **13202**",
+      "latency_ms": 1.96,
+      "status": "PASS"
+    },
+    {
+      "id": 23,
+      "question": "287 × 46",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "13202",
+      "actual_answer": "**Calculation**: 287 × 46\n\n$$287 × 46 = 13202$$\n\n**Result**: **13202**",
+      "latency_ms": 1.53,
+      "status": "PASS"
+    },
+    {
+      "id": 24,
+      "question": "Solve 2x + 5 = 15",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "5",
+      "actual_answer": "**Problem**: Solve the equation $2 x + 5 = 15$ for $x$\n\n**Step 1**: Rearrange equation: $2 x - 10 = 0$\n\n**Step 2**: Solve for $x$: $x = 5$\n\n**Result**...",
+      "latency_ms": 130.73,
+      "status": "PASS"
+    },
+    {
+      "id": 25,
+      "question": "Solve 3x - 9 = 0",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "3",
+      "actual_answer": "**Problem**: Solve the equation $3 x - 9 = 0$ for $x$\n\n**Step 1**: Rearrange equation: $3 x - 9 = 0$\n\n**Step 2**: Solve for $x$: $x = 3$\n\n**Result**: ...",
+      "latency_ms": 16.74,
+      "status": "PASS"
+    },
+    {
+      "id": 26,
+      "question": "Differentiate x^2",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "2*x",
+      "actual_answer": "**Problem**: Differentiate $x^{2}$ with respect to $x$\n\n**Step 1**: Apply differentiation rules to each term in $x^{2}$\n\n**Step 2**: $\\frac{d}{dx}[x^{...",
+      "latency_ms": 11.57,
+      "status": "PASS"
+    },
+    {
+      "id": 27,
+      "question": "Differentiate x²",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "2*x",
+      "actual_answer": "**Problem**: Differentiate $x^{2}$ with respect to $x$\n\n**Step 1**: Apply differentiation rules to each term in $x^{2}$\n\n**Step 2**: $\\frac{d}{dx}[x^{...",
+      "latency_ms": 4.63,
+      "status": "PASS"
+    },
+    {
+      "id": 28,
+      "question": "Integrate 2x",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "x**2",
+      "actual_answer": "**Problem**: Compute the indefinite integral $\\int 2 x \\, dx$\n\n**Step 1**: Find the antiderivative using integration power/sum rules\n\n**Step 2**: $\\in...",
+      "latency_ms": 101.08,
+      "status": "PASS"
+    },
+    {
+      "id": 29,
+      "question": "What is 15% of 80?",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "12",
+      "actual_answer": "**Calculation**: 15.0% of 80.0\n\n$$\\frac{15.0}{100} \\times 80.0 = 12$$\n\n**Result**: **12**",
+      "latency_ms": 0.54,
+      "status": "PASS"
+    },
+    {
+      "id": 30,
+      "question": "Calculate 25 * 4",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "100",
+      "actual_answer": "**Calculation**: 25 * 4\n\n$$25  \\times  4 = 100$$\n\n**Result**: **100**",
+      "latency_ms": 2.06,
+      "status": "PASS"
+    },
+    {
+      "id": 31,
+      "question": "Evaluate 144 / 12",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "12",
+      "actual_answer": "**Calculation**: 144 / 12\n\n$$144 / 12 = 12$$\n\n**Result**: **12**",
+      "latency_ms": 2.37,
+      "status": "PASS"
+    },
+    {
+      "id": 32,
+      "question": "Solve 5x = 25",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "5",
+      "actual_answer": "**Problem**: Solve the equation $5 x = 25$ for $x$\n\n**Step 1**: Rearrange equation: $5 x - 25 = 0$\n\n**Step 2**: Solve for $x$: $x = 5$\n\n**Result**: $$...",
+      "latency_ms": 19.45,
+      "status": "PASS"
+    },
+    {
+      "id": 33,
+      "question": "Differentiate x^3",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "3*x**2",
+      "actual_answer": "**Problem**: Differentiate $x^{3}$ with respect to $x$\n\n**Step 1**: Apply differentiation rules to each term in $x^{3}$\n\n**Step 2**: $\\frac{d}{dx}[x^{...",
+      "latency_ms": 12.57,
+      "status": "PASS"
+    },
+    {
+      "id": 34,
+      "question": "Integrate 3x^2",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "x**3",
+      "actual_answer": "**Problem**: Compute the indefinite integral $\\int 3 x^{2} \\, dx$\n\n**Step 1**: Find the antiderivative using integration power/sum rules\n\n**Step 2**: ...",
+      "latency_ms": 8.58,
+      "status": "PASS"
+    },
+    {
+      "id": 35,
+      "question": "What is 50% of 200?",
+      "expected_capability": "MATHEMATICS",
+      "actual_capability": "MATHEMATICS",
+      "expected_snippet": "100",
+      "actual_answer": "**Calculation**: 50.0% of 200.0\n\n$$\\frac{50.0}{100} \\times 200.0 = 100$$\n\n**Result**: **100**",
+      "latency_ms": 0.57,
+      "status": "PASS"
+    },
+    {
+      "id": 36,
+      "question": "State Newton's second law.",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "momentum",
+      "actual_answer": "**Newton's Second Law of Motion**:\n\n> *The rate of change of momentum of a body is directly proportional to the applied net force, and occurs in the d...",
+      "latency_ms": 0.4,
+      "status": "PASS"
+    },
+    {
+      "id": 37,
+      "question": "Calculate force for m=10kg and a=5m/s².",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "50 N",
+      "actual_answer": "**Physics Principle**: Newton's Second Law of Motion\n\n**Formula**: $$F = m \\cdot a$$\n\n**Given Variables**:\n- Mass ($m$) = 10.0 kg\n- Acceleration ($a$)...",
+      "latency_ms": 0.7,
+      "status": "PASS"
+    },
+    {
+      "id": 38,
+      "question": "Calculate force for m=20kg and a=2m/s^2.",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "40 N",
+      "actual_answer": "**Physics Principle**: Newton's Second Law of Motion\n\n**Formula**: $$F = m \\cdot a$$\n\n**Given Variables**:\n- Mass ($m$) = 20.0 kg\n- Acceleration ($a$)...",
+      "latency_ms": 0.47,
+      "status": "PASS"
+    },
+    {
+      "id": 39,
+      "question": "What is Newton's first law?",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "Inertia",
+      "actual_answer": "**Newton's First Law of Motion (Law of Inertia)**:\n\n> *An object at rest stays at rest, and an object in motion stays in motion with the same speed an...",
+      "latency_ms": 0.39,
+      "status": "PASS"
+    },
+    {
+      "id": 40,
+      "question": "What is Newton's third law?",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "action",
+      "actual_answer": "**Newton's Third Law of Motion**:\n\n> *For every action, there is an equal and opposite reaction.*\n\n### Mathematical Form:\n$$\\vec{F}_{A \\to B} = -\\vec{...",
+      "latency_ms": 0.37,
+      "status": "PASS"
+    },
+    {
+      "id": 41,
+      "question": "Calculate kinetic energy for m=10kg and v=4m/s.",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "80 J",
+      "actual_answer": "**Physics Principle**: Kinetic Energy Formula\n\n**Formula**: $$KE = \\frac{1}{2} m v^2$$\n\n**Given Variables**:\n- Mass ($m$) = 10.0 kg\n- Velocity ($v$) =...",
+      "latency_ms": 0.44,
+      "status": "PASS"
+    },
+    {
+      "id": 42,
+      "question": "What is Ohm's law?",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "Ohm",
+      "actual_answer": "**Ohm's Law**:\n\n> *The electric current flowing through a conductor between two points is directly proportional to the voltage across the two points, ...",
+      "latency_ms": 0.37,
+      "status": "PASS"
+    },
+    {
+      "id": 43,
+      "question": "Calculate voltage for I=2A and R=5ohm.",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "10 V",
+      "actual_answer": "**Ohm's Law**: $$V = I \\cdot R$$\n\n- Current ($I$) = 2.0 A\n- Resistance ($R$) = 5.0 $\\Omega$\n\n$$V = 2.0 \\times 5.0 = 10 \\text{ Volts}$$\n\n**Result**: **...",
+      "latency_ms": 0.43,
+      "status": "PASS"
+    },
+    {
+      "id": 44,
+      "question": "Explain the formula F = ma.",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "Newton",
+      "actual_answer": "**The Force Formula ($F = ma$)**:\n\nDerived directly from **Newton's Second Law of Motion**, the equation states that the net force acting on an object...",
+      "latency_ms": 0.35,
+      "status": "PASS"
+    },
+    {
+      "id": 45,
+      "question": "What is kinetic energy formula?",
+      "expected_capability": "PHYSICS",
+      "actual_capability": "PHYSICS",
+      "expected_snippet": "1/2",
+      "actual_answer": "**Kinetic Energy Formula**:\n\nKinetic energy is the energy possessed by an object due to its motion. The formula is:\n\n$$KE = \\frac{1}{2} m v^2$$ (or $K...",
+      "latency_ms": 0.34,
+      "status": "PASS"
+    },
+    {
+      "id": 46,
+      "question": "What is H2O?",
+      "expected_capability": "CHEMISTRY",
+      "actual_capability": "CHEMISTRY",
+      "expected_snippet": "Water",
+      "actual_answer": "**H₂O (Chemical Formula for Water)**:\n\nH₂O represents the chemical formula of **water**.\n\n### Molecular Composition:\n- **2 Hydrogen atoms (H)**\n- **1 ...",
+      "latency_ms": 0.31,
+      "status": "PASS"
+    },
+    {
+      "id": 47,
+      "question": "What is the chemical formula of water?",
+      "expected_capability": "CHEMISTRY",
+      "actual_capability": "CHEMISTRY",
+      "expected_snippet": "H₂O",
+      "actual_answer": "**H₂O (Chemical Formula for Water)**:\n\nH₂O represents the chemical formula of **water**.\n\n### Molecular Composition:\n- **2 Hydrogen atoms (H)**\n- **1 ...",
+      "latency_ms": 0.33,
+      "status": "PASS"
+    },
+    {
+      "id": 48,
+      "question": "How many hydrogen atoms are in H2O?",
+      "expected_capability": "CHEMISTRY",
+      "actual_capability": "CHEMISTRY",
+      "expected_snippet": "2",
+      "actual_answer": "**H₂O (Chemical Formula for Water)**:\n\nH₂O represents the chemical formula of **water**.\n\n### Molecular Composition:\n- **2 Hydrogen atoms (H)**\n- **1 ...",
+      "latency_ms": 0.36,
+      "status": "PASS"
+    },
+    {
+      "id": 49,
+      "question": "What type of bond is in H2O?",
+      "expected_capability": "CHEMISTRY",
+      "actual_capability": "CHEMISTRY",
+      "expected_snippet": "covalent",
+      "actual_answer": "**H₂O (Chemical Formula for Water)**:\n\nH₂O represents the chemical formula of **water**.\n\n### Molecular Composition:\n- **2 Hydrogen atoms (H)**\n- **1 ...",
+      "latency_ms": 0.33,
+      "status": "PASS"
+    },
+    {
+      "id": 50,
+      "question": "What is the molar mass of H2O?",
+      "expected_capability": "CHEMISTRY",
+      "actual_capability": "CHEMISTRY",
+      "expected_snippet": "18",
+      "actual_answer": "**H₂O (Chemical Formula for Water)**:\n\nH₂O represents the chemical formula of **water**.\n\n### Molecular Composition:\n- **2 Hydrogen atoms (H)**\n- **1 ...",
+      "latency_ms": 0.3,
+      "status": "PASS"
+    },
+    {
+      "id": 51,
+      "question": "पाण्याचे रासायनिक सूत्र काय आहे?",
+      "expected_capability": "CHEMISTRY",
+      "actual_capability": "CHEMISTRY",
+      "expected_snippet": "H₂O",
+      "actual_answer": "**H₂O (पाणी - Chemical Formula of Water)**:\n\nH₂O हे **पाण्याचे** रासायनिक सूत्र आहे.\n\n### आण्विक रचना:\n- **२ हायड्रोजन अणू (H)**\n- **१ ऑक्सिजन अणू (O)...",
+      "latency_ms": 0.44,
+      "status": "PASS"
+    },
+    {
+      "id": 52,
+      "question": "पानी का रासायनिक सूत्र क्या है?",
+      "expected_capability": "CHEMISTRY",
+      "actual_capability": "CHEMISTRY",
+      "expected_snippet": "H₂O",
+      "actual_answer": "**H₂O (जल / पानी का रासायनिक सूत्र)**:\n\nH₂O **जल (पानी)** का रासायनिक सूत्र है।\n\n### आणविक संरचना:\n- **२ हाइड्रोजन परमाणु (H)**\n- **१ ऑक्सीजन परमाणु (...",
+      "latency_ms": 0.63,
+      "status": "PASS"
+    },
+    {
+      "id": 53,
+      "question": "What is an acid?",
+      "expected_capability": "CHEMISTRY",
+      "actual_capability": "CHEMISTRY",
+      "expected_snippet": "acid",
+      "actual_answer": "**An Acid**:\n\nThis topic refers to an educational concept. If you have specific questions about its mathematical properties, physical laws, or applica...",
+      "latency_ms": 71.28,
+      "status": "PASS"
+    },
+    {
+      "id": 54,
+      "question": "What is a covalent bond?",
+      "expected_capability": "CHEMISTRY",
+      "actual_capability": "CHEMISTRY",
+      "expected_snippet": "bond",
+      "actual_answer": "**Organic Chemistry, Inorganic Chemistry, and Periodic Table Trends**:\n\n- Ionic Bonding: Complete electrostatic transfer of electrons between elements...",
+      "latency_ms": 88.95,
+      "status": "PASS"
+    },
+    {
+      "id": 55,
+      "question": "What is the pH of pure water?",
+      "expected_capability": "CHEMISTRY",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "Water",
+      "actual_answer": "**The Ph Of Pure Water**:\n\nThis topic refers to an educational concept. If you have specific questions about its mathematical properties, physical law...",
+      "latency_ms": 80.36,
+      "status": "PASS"
+    },
+    {
+      "id": 56,
+      "question": "What is photosynthesis?",
+      "expected_capability": "BIOLOGY",
+      "actual_capability": "BIOLOGY",
+      "expected_snippet": "glucose",
+      "actual_answer": "**Photosynthesis**:\n\nPhotosynthesis is the biological process by which green plants, algae, and certain bacteria convert light energy into chemical en...",
+      "latency_ms": 0.46,
+      "status": "PASS"
+    },
+    {
+      "id": 57,
+      "question": "Explain the equation for photosynthesis.",
+      "expected_capability": "BIOLOGY",
+      "actual_capability": "BIOLOGY",
+      "expected_snippet": "CO",
+      "actual_answer": "**Photosynthesis**:\n\nPhotosynthesis is the biological process by which green plants, algae, and certain bacteria convert light energy into chemical en...",
+      "latency_ms": 0.39,
+      "status": "PASS"
+    },
+    {
+      "id": 58,
+      "question": "What is chlorophyll?",
+      "expected_capability": "BIOLOGY",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "Chlorophyll",
+      "actual_answer": "**Plant Physiology, Photosynthesis, Human Systems, and Ecology**:\n\nPhotosynthesis converts solar light energy into chemical potential energy in autotr...",
+      "latency_ms": 62.81,
+      "status": "PASS"
+    },
+    {
+      "id": 59,
+      "question": "What is the water cycle?",
+      "expected_capability": "BIOLOGY",
+      "actual_capability": "BIOLOGY",
+      "expected_snippet": "Evaporation",
+      "actual_answer": "**The Water Cycle (Hydrologic Cycle)**:\n\nThe water cycle describes the continuous movement of water on, above, and below the surface of the Earth.\n\n##...",
+      "latency_ms": 0.43,
+      "status": "PASS"
+    },
+    {
+      "id": 60,
+      "question": "What are the main stages of the water cycle?",
+      "expected_capability": "BIOLOGY",
+      "actual_capability": "BIOLOGY",
+      "expected_snippet": "Precipitation",
+      "actual_answer": "**The Water Cycle (Hydrologic Cycle)**:\n\nThe water cycle describes the continuous movement of water on, above, and below the surface of the Earth.\n\n##...",
+      "latency_ms": 0.29,
+      "status": "PASS"
+    },
+    {
+      "id": 61,
+      "question": "जल चक्र क्या है?",
+      "expected_capability": "BIOLOGY",
+      "actual_capability": "BIOLOGY",
+      "expected_snippet": "जल चक्र",
+      "actual_answer": "**जल चक्र (Water Cycle / Hydrological Cycle)**:\n\nजल चक्र पृथ्वी पर जल के वायुमंडल, भूमि और महासागरों के बीच निरंतर संचलन की एक प्राकृतिक प्रक्रिया है।...",
+      "latency_ms": 0.35,
+      "status": "PASS"
+    },
+    {
+      "id": 62,
+      "question": "जलचक्र म्हणजे काय?",
+      "expected_capability": "BIOLOGY",
+      "actual_capability": "BIOLOGY",
+      "expected_snippet": "जलचक्र",
+      "actual_answer": "**जलचक्र (Water Cycle)**:\n\nजलचक्र ही पृथ्वी, वातावरण आणि महासागरांमधील पाण्याच्या निरंतर चक्राकार फिरण्याची नैसर्गिक प्रक्रिया आहे.\n\n### जलचक्राचे मुख...",
+      "latency_ms": 0.31,
+      "status": "PASS"
+    },
+    {
+      "id": 63,
+      "question": "प्रकाशसंश्लेषण म्हणजे काय?",
+      "expected_capability": "BIOLOGY",
+      "actual_capability": "BIOLOGY",
+      "expected_snippet": "प्रकाशसंश्लेषण",
+      "actual_answer": "**प्रकाशसंश्लेषण (Photosynthesis)**:\n\nप्रकाशसंश्लेषण ही अशी जैविक प्रक्रिया आहे ज्याद्वारे हिरव्या वनस्पती सूर्यप्रकाशाच्या ऊर्जेचा वापर करून कार्बन ड...",
+      "latency_ms": 0.33,
+      "status": "PASS"
+    },
+    {
+      "id": 64,
+      "question": "प्रकाश संश्लेषण क्या है?",
+      "expected_capability": "BIOLOGY",
+      "actual_capability": "BIOLOGY",
+      "expected_snippet": "प्रकाश संश्लेषण",
+      "actual_answer": "**प्रकाश संश्लेषण (Photosynthesis)**:\n\nप्रकाश संश्लेषण वह जैव-रासायनिक प्रक्रिया है जिसके द्वारा हरे पौधे सूर्य के प्रकाश की उपस्थिति में कार्बन डाइऑक...",
+      "latency_ms": 0.36,
+      "status": "PASS"
+    },
+    {
+      "id": 65,
+      "question": "What gas is released during photosynthesis?",
+      "expected_capability": "BIOLOGY",
+      "actual_capability": "BIOLOGY",
+      "expected_snippet": "oxygen",
+      "actual_answer": "**Photosynthesis**:\n\nPhotosynthesis is the biological process by which green plants, algae, and certain bacteria convert light energy into chemical en...",
+      "latency_ms": 0.33,
+      "status": "PASS"
+    },
+    {
+      "id": 66,
+      "question": "Write Python code to reverse a string.",
+      "expected_capability": "PROGRAMMING",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "[::-1]",
+      "actual_answer": "Here is Python code to **reverse a string**:\n\n```python\n# Method 1: Slicing (Most Pythonic & Efficient)\ndef reverse_string(s: str) -> str:\n    return ...",
+      "latency_ms": 1.18,
+      "status": "PASS"
+    },
+    {
+      "id": 67,
+      "question": "Explain REST API.",
+      "expected_capability": "PROGRAMMING",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "Stateless",
+      "actual_answer": "**REST API (Representational State Transfer Application Programming Interface)**:\n\nA REST API is an architectural style for networked applications tha...",
+      "latency_ms": 0.37,
+      "status": "PASS"
+    },
+    {
+      "id": 68,
+      "question": "Write a query to find the second-highest salary.",
+      "expected_capability": "SQL",
+      "actual_capability": "SQL",
+      "expected_snippet": "salary",
+      "actual_answer": "Here are standard SQL approaches to find the **second-highest salary** from an `Employee` table:\n\n### Approach 1: Using `DISTINCT`, `ORDER BY`, and `O...",
+      "latency_ms": 0.31,
+      "status": "PASS"
+    },
+    {
+      "id": 69,
+      "question": "Find second-highest salary in SQL",
+      "expected_capability": "SQL",
+      "actual_capability": "SQL",
+      "expected_snippet": "LIMIT 1 OFFSET 1",
+      "actual_answer": "Here are standard SQL approaches to find the **second-highest salary** from an `Employee` table:\n\n### Approach 1: Using `DISTINCT`, `ORDER BY`, and `O...",
+      "latency_ms": 0.35,
+      "status": "PASS"
+    },
+    {
+      "id": 70,
+      "question": "How to reverse a string in Python?",
+      "expected_capability": "PROGRAMMING",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "def reverse_string",
+      "actual_answer": "Here is Python code to **reverse a string**:\n\n```python\n# Method 1: Slicing (Most Pythonic & Efficient)\ndef reverse_string(s: str) -> str:\n    return ...",
+      "latency_ms": 1.12,
+      "status": "PASS"
+    },
+    {
+      "id": 71,
+      "question": "What are HTTP methods in REST API?",
+      "expected_capability": "PROGRAMMING",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "GET",
+      "actual_answer": "**REST API (Representational State Transfer Application Programming Interface)**:\n\nA REST API is an architectural style for networked applications tha...",
+      "latency_ms": 0.39,
+      "status": "PASS"
+    },
+    {
+      "id": 72,
+      "question": "Write SQL query for highest salary",
+      "expected_capability": "SQL",
+      "actual_capability": "SQL",
+      "expected_snippet": "SELECT",
+      "actual_answer": "### SQL Query for Highest Salary:\n```sql\nSELECT MAX(salary) AS HighestSalary\nFROM Employee;\n```",
+      "latency_ms": 0.27,
+      "status": "PASS"
+    },
+    {
+      "id": 73,
+      "question": "What is FastAPI?",
+      "expected_capability": "PROGRAMMING",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "API",
+      "actual_answer": "**FastAPI** is a modern, high-performance web framework for building APIs with Python 3.8+ based on standard Python type hints.\n\n### Key Features:\n- *...",
+      "latency_ms": 0.24,
+      "status": "PASS"
+    },
+    {
+      "id": 74,
+      "question": "Explain Python list slicing",
+      "expected_capability": "PROGRAMMING",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "slice",
+      "actual_answer": "**Python List Slicing**:\n\nSlicing in Python allows extracting subsets of a sequence (lists, strings, tuples) using the syntax:\n```python\nsequence[star...",
+      "latency_ms": 0.77,
+      "status": "PASS"
+    },
+    {
+      "id": 75,
+      "question": "What does status code 200 mean in REST API?",
+      "expected_capability": "PROGRAMMING",
+      "actual_capability": "PROGRAMMING",
+      "expected_snippet": "200 OK",
+      "actual_answer": "**HTTP Status Code 200 (OK)**:\n\nThe **200 OK** status code indicates that the HTTP request has succeeded.\n\n- **GET**: The resource has been fetched an...",
+      "latency_ms": 0.31,
+      "status": "PASS"
+    },
+    {
+      "id": 76,
+      "question": "Correct this sentence: he go to school",
+      "expected_capability": "ENGLISH",
+      "actual_capability": "ENGLISH",
+      "expected_snippet": "He goes to school.",
+      "actual_answer": "**Corrected Sentence**:\n> \"He goes to school.\"\n\n**Grammar Rule / Explanation**:\nIn simple present tense with a third-person singular subject ('He'), t...",
+      "latency_ms": 1.02,
+      "status": "PASS"
+    },
+    {
+      "id": 77,
+      "question": "Correct this sentence: she don't know",
+      "expected_capability": "ENGLISH",
+      "actual_capability": "ENGLISH",
+      "expected_snippet": "doesn't know",
+      "actual_answer": "**Corrected Sentence**:\n> \"She doesn't know.\"\n\n**Grammar Rule / Explanation**:\nWith third-person singular subjects ('She'), use 'does not' ('doesn't')...",
+      "latency_ms": 0.4,
+      "status": "PASS"
+    },
+    {
+      "id": 78,
+      "question": "Translate Marathi to English: नमस्कार",
+      "expected_capability": "TRANSLATION",
+      "actual_capability": "TRANSLATION",
+      "expected_snippet": "Hello",
+      "actual_answer": "**Translation (Hindi/Marathi → English)**:\n> **Namaste / Namaskar (नमस्ते / नमस्कार)** translates to **\"Hello\"** or **\"Greetings\"** in English.",
+      "latency_ms": 0.3,
+      "status": "PASS"
+    },
+    {
+      "id": 79,
+      "question": "Translate Marathi to English: तुम्ही कसे आहात?",
+      "expected_capability": "TRANSLATION",
+      "actual_capability": "TRANSLATION",
+      "expected_snippet": "How are you?",
+      "actual_answer": "**Translation (Marathi → English)**:\n> \"तुम्ही कसे आहात?\" → **\"How are you?\"**",
+      "latency_ms": 0.31,
+      "status": "PASS"
+    },
+    {
+      "id": 80,
+      "question": "Translate Hindi to English: नमस्ते",
+      "expected_capability": "TRANSLATION",
+      "actual_capability": "TRANSLATION",
+      "expected_snippet": "Hello",
+      "actual_answer": "**Translation (Hindi/Marathi → English)**:\n> **Namaste / Namaskar (नमस्ते / नमस्कार)** translates to **\"Hello\"** or **\"Greetings\"** in English.",
+      "latency_ms": 0.29,
+      "status": "PASS"
+    },
+    {
+      "id": 81,
+      "question": "Correct the sentence: they is playing",
+      "expected_capability": "ENGLISH",
+      "actual_capability": "ENGLISH",
+      "expected_snippet": "playing",
+      "actual_answer": "**Corrected Sentence**:\n> \"The sentence: they is playing.\"\n\n**Grammar Rule / Explanation**:\nEnsure subject-verb agreement, proper capitalization, and ...",
+      "latency_ms": 0.37,
+      "status": "PASS"
+    },
+    {
+      "id": 82,
+      "question": "Translate Marathi to English",
+      "expected_capability": "TRANSLATION",
+      "actual_capability": "TRANSLATION",
+      "expected_snippet": "Marathi",
+      "actual_answer": "Please provide the Marathi sentence or words you would like translated into English, and I will translate it accurately.",
+      "latency_ms": 0.23,
+      "status": "PASS"
+    },
+    {
+      "id": 83,
+      "question": "Translate Hindi to English",
+      "expected_capability": "TRANSLATION",
+      "actual_capability": "TRANSLATION",
+      "expected_snippet": "Hindi",
+      "actual_answer": "Please provide the Hindi sentence or text you would like translated into English.",
+      "latency_ms": 0.21,
+      "status": "PASS"
+    },
+    {
+      "id": 84,
+      "question": "गुरुत्वाकर्षण म्हणजे काय?",
+      "expected_capability": "MARATHI",
+      "actual_capability": "MARATHI",
+      "expected_snippet": "गुरुत्वाकर्षण",
+      "actual_answer": "**गुरुत्वाकर्षण (Gravitation / Gravity)**:\n\nगुरुत्वाकर्षण हे विश्वातील कोणत्याही दोन वस्तुमान (mass) असलेल्या वस्तूंमधील नैसर्गिक आकर्षण बल आहे.\n\n### ...",
+      "latency_ms": 1.33,
+      "status": "PASS"
+    },
+    {
+      "id": 85,
+      "question": "गुरुत्वाकर्षणाचा नियम काय आहे?",
+      "expected_capability": "MARATHI",
+      "actual_capability": "MARATHI",
+      "expected_snippet": "गुरुत्वाकर्षण",
+      "actual_answer": "**गुरुत्वाकर्षण (Gravitation / Gravity)**:\n\nगुरुत्वाकर्षण हे विश्वातील कोणत्याही दोन वस्तुमान (mass) असलेल्या वस्तूंमधील नैसर्गिक आकर्षण बल आहे.\n\n### ...",
+      "latency_ms": 1.43,
+      "status": "PASS"
+    },
+    {
+      "id": 86,
+      "question": "What is Dharma?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Dharma",
+      "actual_answer": "**Dharma**:\n\nDharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. It operates simultaneous...",
+      "latency_ms": 56.64,
+      "status": "PASS"
+    },
+    {
+      "id": 87,
+      "question": "What is Karma in Sanskrit tradition?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Karma",
+      "actual_answer": "**Karma**:\n\nAction; deed; work; ritual act. Karma is the universal principle that every action generates corresponding consequences. It operates acros...",
+      "latency_ms": 62.02,
+      "status": "PASS"
+    },
+    {
+      "id": 88,
+      "question": "Explain Karma Yoga.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Karma Yoga",
+      "actual_answer": "**Karma**:\n\nIn Yoga psychology: karma creates saṃskāras (mental impressions) and vāsanās (latent tendencies) that condition future experience. Patañja...",
+      "latency_ms": 54.05,
+      "status": "PASS"
+    },
+    {
+      "id": 89,
+      "question": "What is the meaning of Yoga?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Yoga",
+      "actual_answer": "**Yoga**:\n\nYoga is the discipline leading to union of the individual self with the highest reality. Patañjali defines yoga as \"yogaś citta-vṛtti-nirod...",
+      "latency_ms": 68.52,
+      "status": "PASS"
+    },
+    {
+      "id": 90,
+      "question": "What is Atman?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Atman",
+      "actual_answer": "**Atman**:\n\nĀtman is the eternal, unchanging Self underlying individual existence. It is the witness (sākṣī) of all mental and physical activity, neve...",
+      "latency_ms": 72.74,
+      "status": "PASS"
+    },
+    {
+      "id": 91,
+      "question": "What is Brahman?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Brahman",
+      "actual_answer": "**Brahman**:\n\nBrahman is the infinite, eternal, unchanging absolute reality that is the ground of all existence. It is both the material cause (upādān...",
+      "latency_ms": 65.75,
+      "status": "PASS"
+    },
+    {
+      "id": 92,
+      "question": "Explain Moksha.",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Moksha",
+      "actual_answer": "**Moksha**:\n\nLiberation; release; freedom from bondage. \"Mucyate iti mokṣaḥ\" — that from which one is released, or the state of being released. Libera...",
+      "latency_ms": 61.06,
+      "status": "PASS"
+    },
+    {
+      "id": 93,
+      "question": "What is Qubit in quantum computing?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "Qubit",
+      "actual_answer": "**Qubit**:\n\n﻿Title: Nielsen & Chuang Core Concepts Source(s): Nielsen, M. A. & Chuang, I. L., \"Quantum Computation and Quantum Information\" (2010) Aut...",
+      "latency_ms": 65.14,
+      "status": "PASS"
+    },
+    {
+      "id": 94,
+      "question": "What is Number Recognition in Grade 1 Mathematics?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "Number Recognition",
+      "actual_answer": "**Number Recognition**:\n\nDefinition: The ability to identify and recognize numerical symbols 1 to 5. Learning Outcome: Students can identify and write...",
+      "latency_ms": 81.66,
+      "status": "PASS"
+    },
+    {
+      "id": 95,
+      "question": "What agricultural practices are mentioned in the Padma Purana?",
+      "expected_capability": "KNOWLEDGE_BASE",
+      "actual_capability": "KNOWLEDGE_BASE",
+      "expected_snippet": "does not contain verified records on agricultural practices in the Padma Purana",
+      "actual_answer": "The current knowledge base does not contain verified records on agricultural practices in the Padma Purana.",
+      "latency_ms": 0.76,
+      "status": "PASS"
+    },
+    {
+      "id": 96,
+      "question": "What is the capital of France?",
+      "expected_capability": "GENERAL_KNOWLEDGE",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "Paris",
+      "actual_answer": "**The capital of France is Paris.**\n\nParis is located in north-central France along the Seine River and has been the nation's political, cultural, and...",
+      "latency_ms": 1.52,
+      "status": "PASS"
+    },
+    {
+      "id": 97,
+      "question": "What is the capital of India?",
+      "expected_capability": "GENERAL_KNOWLEDGE",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "New Delhi",
+      "actual_answer": "**The capital of India is New Delhi.**\n\nNew Delhi serves as the seat of all three branches of the Government of India.",
+      "latency_ms": 1.5,
+      "status": "PASS"
+    },
+    {
+      "id": 98,
+      "question": "What is the largest planet in our solar system?",
+      "expected_capability": "GENERAL_KNOWLEDGE",
+      "actual_capability": "GENERAL_KNOWLEDGE",
+      "expected_snippet": "Jupiter",
+      "actual_answer": "**The largest planet in our solar system is Jupiter.**\n\nJupiter is a gas giant with a mass more than two and a half times that of all the other planet...",
+      "latency_ms": 1.66,
+      "status": "PASS"
+    },
+    {
+      "id": 99,
+      "question": "What is today's weather in Mumbai?",
+      "expected_capability": "CURRENT_INFORMATION",
+      "actual_capability": "CURRENT_INFORMATION",
+      "expected_snippet": "Weather",
+      "actual_answer": "**Current Weather Advisory for Is Today**:\n\nTo get the most accurate, hyper-local real-time weather conditions for Is Today, please consult official m...",
+      "latency_ms": 0.93,
+      "status": "PASS"
+    },
+    {
+      "id": 100,
+      "question": "What is the latest news today?",
+      "expected_capability": "CURRENT_INFORMATION",
+      "actual_capability": "CURRENT_INFORMATION",
+      "expected_snippet": "News",
+      "actual_answer": "**Current News & Live Events**:\n\nFor up-to-the-minute breaking news and ongoing events today, please refer to authoritative real-time news agencies (s...",
+      "latency_ms": 0.38,
+      "status": "PASS"
+    }
+  ]
+}

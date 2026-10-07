@@ -752,6 +752,30 @@ def retrieve_knowledge(query: str) -> Optional[str]:
 
 
 def retrieve_knowledge_with_trace(query: str) -> Tuple[Optional[str], Dict[str, Any]]:
+    # Primary: Unified Hybrid RAG Engine (FAISS + SQLite + Provenance)
+    try:
+        from retrieval.unified_rag_engine import get_unified_engine
+        unified_engine = get_unified_engine()
+        unified_res = unified_engine.answer_query(query=query)
+        if unified_res.get("verification_status") == "VERIFIED":
+            content = unified_res.get("answer")
+            top_src = unified_res.get("sources_consulted", ["unified_kb"])[0] if unified_res.get("sources_consulted") else "unified_kb"
+            trace = {
+                "engine": "UnifiedRAGEngine_v3",
+                "kb_path": _KB_ROOT,
+                "match_found": True,
+                "confidence": float(unified_res.get("confidence") or 0.90),
+                "kb_file": top_src,
+                "matched_keyword": query,
+                "keyword_match_count": 1,
+                "query_token_count": len(query.split()),
+                "sources_consulted": unified_res.get("sources_consulted", [top_src]),
+                "citations": unified_res.get("citations", []),
+            }
+            return content, trace
+    except Exception:
+        pass
+
     try:
         retriever = AdvancedRetriever()
         results = retriever.retrieve_multi(query)
