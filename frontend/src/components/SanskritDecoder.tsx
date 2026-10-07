@@ -253,68 +253,7 @@ const LayerRow: React.FC<{ layerKey: string; layer: KnowledgeLayer }> = ({ layer
         <EvidenceBadge status={layer.status} />
       </button>
 
-  if (layer.status === "NOT_ASSERTED" || layer.status === "NO_RETRIEVED_EVIDENCE") {
-
-    return (
-
-      <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-gray-900/20 border border-gray-800/30">
-
-        <span className="text-gray-600 text-xs capitalize">{layerKey.replace(/_/g, " ")}</span>
-
-        <EvidenceBadge status={layer.status} />
-
-      </div>
-
-    );
-
-  }
-
-  const firstClaim = layer.claims[0];
-
-  
-
-
-  return (
-
-    <div className="rounded-lg border border-gray-700/40 overflow-hidden">
-
-      <button
-
-        onClick={() => setOpen((p) => !p)}
-
-        className="w-full flex items-center justify-between px-3 py-2.5 bg-gray-900/40 hover:bg-gray-800/60 transition-colors"
-
-        id={`layer-${layerKey}`}
-
-      >
-
-        <div className="flex items-center gap-2">
-
-          {open ? (
-
-            <ChevronDown size={12} className="text-gray-400 flex-shrink-0" />
-
-          ) : (
-
-            <ChevronRight size={12} className="text-gray-400 flex-shrink-0" />
-
-          )}
-
-          <span className="text-gray-200 text-xs font-medium capitalize">
-
-            {layerKey.replace(/_/g, " ")}
-
-          </span>
-
-        </div>
-
-        <EvidenceBadge status={layer.status} />
-
-      </button>
-
-
-
-      {open && (
+      {open && (
 
         <div className="px-4 py-3 bg-gray-950/60 space-y-2 border-t border-gray-800/40">
 
