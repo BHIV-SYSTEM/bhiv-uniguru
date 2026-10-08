@@ -93,6 +93,11 @@ _DIRECT_LLM_PATTERNS = (
     r"\b(?:python|javascript|typescript|java|c\+\+|fastapi)\b.*\b(?:code|function|program|script|work)\b",
     r"\b(?:explain|define)\s+recursion\b",
     r"^(?:(?:what is|solve|calculate)\s+)?-?\d+(?:\.\d+)?\s*[+\-*/]\s*-?\d+(?:\.\d+)?\??$",
+    # General "what is X" questions that don't need KB retrieval
+    r"^what\s+is\s+\w+",
+    r"^what\s+are\s+\w+",
+    r"^(?:explain|describe|tell me about)\s+\w+",
+    r"\b(?:python|javascript|java|machine learning|ai|artificial intelligence|nlp|deep learning|fastapi|django|flask|react|nodejs)\b",
 )
 
 _STRICT_EVIDENCE_PATTERNS = (
@@ -463,6 +468,8 @@ class ConversationRouter:
             return RouteTarget.ROUTE_SYSTEM
         if query_type in {QueryRoutingType.WORKFLOW_QUERY, QueryRoutingType.TOOL_QUERY}:
             return RouteTarget.ROUTE_WORKFLOW
+        if query_type == QueryRoutingType.GENERAL_LLM_QUERY:
+            return RouteTarget.ROUTE_LLM
         return RouteTarget.ROUTE_UNIGURU
 
     def _dispatch_to_uniguru(
@@ -664,9 +671,11 @@ class ConversationRouter:
     @staticmethod
     def _build_local_demo_answer(query: str) -> str:
         text = str(query or "").strip()
-        lower = text.lower()
-        math_match = re.fullmatch(
-            r"(?:what is\s+|solve\s+|calculate\s+)?(-?\d+(?:\.\d+)?)\s*([+\-*/])\s*(-?\d+(?:\.\d+)?)\??",
+        lower = text.lower().strip("?!. ")
+
+        # ── Math ─────────────────────────────────────────────────────────────
+        math_match = re.search(
+            r"(-?\d+(?:\.\d+)?)\s*([+\-*/])\s*(-?\d+(?:\.\d+)?)",
             lower,
         )
         if math_match:
@@ -682,61 +691,174 @@ class ConversationRouter:
                 result = first / second
             else:
                 return "Division by zero is undefined."
-            rendered = str(int(result)) if result.is_integer() else str(result)
-            return rendered
+            rendered = str(int(result)) if isinstance(result, float) and result.is_integer() else str(result)
+            a = str(int(first)) if first.is_integer() else str(first)
+            b = str(int(second)) if second.is_integer() else str(second)
+            return f"{a} {operator} {b} = **{rendered}**"
+
+        # ── Programming languages & frameworks ───────────────────────────────
         if "reverse a string" in lower or "reverse string" in lower:
             return (
-                "```python\n"
-                "def reverse_string(text: str) -> str:\n"
-                "    return text[::-1]\n"
-                "```\n\n"
+                "```python\ndef reverse_string(text: str) -> str:\n    return text[::-1]\n```\n\n"
                 "Python slicing with a step of `-1` returns the characters in reverse order."
             )
-        if "machine learning" in lower:
+        if re.search(r"\bfastapi\b", lower):
             return (
-                "Machine learning is a branch of AI in which computer systems learn patterns from data "
-                "to make predictions or decisions, rather than following only explicitly programmed rules."
+                "FastAPI is a modern Python web framework for building APIs quickly. It uses Python type "
+                "annotations for automatic request validation and generates OpenAPI docs automatically. "
+                "Built on Starlette and Pydantic, it is one of the fastest Python frameworks available."
+            )
+        if re.search(r"\bdjango\b", lower):
+            return (
+                "Django is a high-level Python web framework that encourages rapid development. It follows "
+                "the 'batteries included' philosophy, providing an ORM, admin panel, authentication, and more out of the box."
+            )
+        if re.search(r"\bflask\b", lower):
+            return (
+                "Flask is a lightweight Python web framework. It is minimalist and gives you full control "
+                "over the components you use, making it great for small APIs and microservices."
+            )
+        if re.search(r"\breact\b", lower):
+            return (
+                "React is a JavaScript library developed by Meta for building user interfaces. It uses a "
+                "component-based architecture and a virtual DOM for efficient UI updates."
+            )
+        if re.search(r"\bnodejs?\b|node\.js\b", lower):
+            return (
+                "Node.js is a JavaScript runtime built on Chrome's V8 engine that allows you to run JavaScript "
+                "on the server side. It is event-driven and non-blocking, great for I/O-heavy applications."
+            )
+        if re.search(r"\bjavascript\b|\bjs\b", lower):
+            return (
+                "JavaScript is the primary programming language of the web. It runs in browsers to make "
+                "pages interactive, and also on servers via Node.js. Modern JS (ES6+) supports classes, "
+                "modules, async/await, and much more."
+            )
+        if re.search(r"\btypescript\b", lower):
+            return (
+                "TypeScript is a superset of JavaScript developed by Microsoft. It adds static type "
+                "annotations which help catch bugs at compile time and improve code maintainability."
+            )
+        if re.search(r"\bc\+\+\b", lower):
+            return (
+                "C++ is a high-performance, general-purpose programming language. It extends C with "
+                "object-oriented features and is widely used in game development, operating systems, and embedded systems."
+            )
+        if re.search(r"\brust\b", lower):
+            return (
+                "Rust is a systems programming language focused on safety, speed, and concurrency. "
+                "It prevents memory safety bugs at compile time without a garbage collector."
+            )
+        if re.search(r"\bgolang\b|\bgo\b", lower):
+            return (
+                "Go (Golang) is an open-source language developed by Google. It is statically typed, compiled, "
+                "and known for its simplicity, fast compilation, and built-in concurrency support."
+            )
+        if re.search(r"\bpython\b", lower):
+            return (
+                "Python is a high-level, general-purpose programming language known for its clean, readable "
+                "syntax. It is widely used in web development, data science, machine learning, automation, "
+                "and scripting. Popular frameworks include Django, Flask, and FastAPI."
+            )
+
+        # ── AI / ML / CS concepts ─────────────────────────────────────────────
+        if "machine learning" in lower or re.search(r"\b\bml\b\b", lower):
+            return (
+                "Machine learning (ML) is a branch of AI where systems learn from data to make predictions "
+                "or decisions without being explicitly programmed. Key types include supervised learning, "
+                "unsupervised learning, and reinforcement learning."
+            )
+        if re.search(r"\bdeep learning\b", lower):
+            return (
+                "Deep learning is a subset of machine learning that uses multi-layer neural networks to learn "
+                "representations of data. It powers image recognition, speech recognition, and large language models."
             )
         if re.search(r"\b(?:nlp|natural language processing)\b", lower):
             return (
-                "Natural language processing (NLP) is a field of AI that enables computers to work with "
-                "human language, including tasks such as translation, text classification, and speech recognition."
+                "Natural Language Processing (NLP) is a field of AI that enables computers to understand, "
+                "interpret, and generate human language. Applications include chatbots, translation, sentiment "
+                "analysis, and text summarization."
             )
+        if re.search(r"\b(?:ai|artificial intelligence)\b", lower):
+            return (
+                "Artificial Intelligence (AI) is the simulation of human intelligence by machines. It includes "
+                "subfields like machine learning, deep learning, computer vision, and NLP. AI is used in "
+                "healthcare, finance, robotics, and many other domains."
+            )
+        if "recursion" in lower:
+            return (
+                "Recursion is a programming technique where a function solves a problem by calling itself on "
+                "a smaller input. Every recursive function needs a **base case** to stop the calls. "
+                "Example: `factorial(n) = n * factorial(n-1)`, base case: `factorial(0) = 1`."
+            )
+        if re.search(r"\bapi\b", lower):
+            return (
+                "An API (Application Programming Interface) is a set of rules that allows different software "
+                "applications to communicate with each other. REST APIs use HTTP methods like GET, POST, PUT, DELETE."
+            )
+        if re.search(r"\bdatabase\b|\bsql\b", lower):
+            return (
+                "A database is an organized collection of structured data. SQL is used to interact with "
+                "relational databases like PostgreSQL, MySQL, and SQLite. NoSQL databases like MongoDB "
+                "store unstructured or semi-structured data."
+            )
+        if re.search(r"\bgit\b", lower):
+            return (
+                "Git is a distributed version control system that tracks changes in source code. Key concepts "
+                "include commits, branches, merges, and pull requests. GitHub, GitLab, and Bitbucket are "
+                "popular platforms for hosting Git repositories."
+            )
+        if re.search(r"\bdocker\b", lower):
+            return (
+                "Docker is a platform for containerizing applications. Containers package code and dependencies "
+                "together so the app runs consistently across environments."
+            )
+
+        # ── General science ───────────────────────────────────────────────────
         if "gravity" in lower:
             return (
-                "Gravity is the attractive interaction between objects with mass. On Earth, it gives objects "
-                "weight and causes unsupported objects to accelerate toward the ground."
+                "Gravity is the fundamental force of attraction between objects with mass. On Earth, "
+                "objects accelerate toward the ground at 9.8 m/s². Einstein described gravity as the "
+                "curvature of spacetime caused by mass."
             )
+        if re.search(r"\bphysics\b", lower):
+            return (
+                "Physics is the natural science that studies matter, energy, and the fundamental forces of the "
+                "universe. Key branches include mechanics, thermodynamics, electromagnetism, quantum mechanics, and relativity."
+            )
+
+        # ── Spiritual / UniGuru domain ────────────────────────────────────────
         if "karma yoga" in lower:
             return (
-                "Karma Yoga is the path of selfless action: doing one's duty sincerely without attachment "
-                "to personal reward or the fruits of the action."
+                "Karma Yoga is the path of selfless action described in the Bhagavad Gita. It means performing "
+                "one's duty sincerely without attachment to personal reward or the fruits of the action."
             )
         if "mahavira" in lower:
             return (
                 "Mahavira was the 24th Tirthankara of Jainism. Traditionally dated to the 6th century BCE, "
-                "he taught nonviolence (ahimsa), self-discipline, and non-attachment."
+                "he taught nonviolence (ahimsa), self-discipline, and non-attachment as the path to liberation."
             )
-        if "recursion" in lower:
-            return (
-                "Recursion is a technique where a function solves a problem by calling itself on a smaller "
-                "input. A base case stops the calls; without one, recursion can continue until the program fails."
-            )
-        if "fastapi" in lower:
-            return (
-                "FastAPI is a Python web framework for building APIs. It uses Python type annotations for "
-                "request validation and OpenAPI documentation, and is built on Starlette and Pydantic."
-            )
-        if re.search(r"\bpython\b", lower):
-            return (
-                "Python is a high-level, general-purpose programming language known for readable syntax and "
-                "a large ecosystem. It is commonly used for automation, web services, data analysis, and AI."
-            )
+
+        # ── Fun / casual ──────────────────────────────────────────────────────
         if "joke" in lower:
-            return "Why did the developer go broke? Because they used up all their cache."
-        elif any(token in lower for token in ("news", "current", "latest", "happening in the world")):
-            return "I do not fetch live internet news updates without verified authoritative sources."
-        return "I don't have enough verified information in my current knowledge base to answer this accurately."
+            return "Why did the developer go broke? Because they used up all their cache! 😄"
+        if any(token in lower for token in ("news", "current", "latest", "happening in the world")):
+            return "I don't have access to live internet data, so I can't fetch current news or real-time updates."
+
+        # ── Smart generic fallback for "what is X" ────────────────────────────
+        what_is = re.match(r"^(?:what is|what are|explain|describe|tell me about)\s+(?:a\s+|an\s+|the\s+)?(.+)", lower)
+        if what_is:
+            topic = what_is.group(1).strip().rstrip("?")
+            return (
+                f"**{topic.title()}** is a topic I can provide general information about. "
+                f"Could you ask a more specific question about {topic}? "
+                f"I can help with definitions, examples, use cases, and comparisons."
+            )
+
+        return (
+            "I can help with programming, math, science, and general knowledge questions. "
+            "Could you rephrase or be more specific so I can give you a better answer?"
+        )
 
     def _build_router_contract_response(
         self,
