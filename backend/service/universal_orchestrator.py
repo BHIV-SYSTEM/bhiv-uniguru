@@ -65,7 +65,11 @@ class UniversalOrchestrator:
         self.gk_engine = get_gk_engine()
         self.current_info_engine = get_current_info_engine()
         self.multilingual_engine = get_multilingual_engine()
-        self.rag_engine = get_unified_engine()
+        try:
+            self.rag_engine = get_unified_engine()
+        except Exception as exc:
+            logger.warning("Unified RAG engine could not be loaded: %s", exc)
+            self.rag_engine = None
         self.validator = get_answer_validator()
 
     def process_query(
@@ -342,18 +346,19 @@ class UniversalOrchestrator:
             }
 
         # Used for indexed civilizational, Gurukul, Jain, Swaminarayan, Quantum, Balbharati, Kosha topics
-        rag_res = self.rag_engine.answer_query(query)
-        v_status = rag_res.get("verification_status", "UNVERIFIED")
-        if v_status == "VERIFIED":
-            return {
-                "answer": rag_res.get("answer"),
-                "verification_status": "VERIFIED",
-                "confidence": rag_res.get("confidence", 0.90),
-                "citations": rag_res.get("citations", []),
-                "sources_consulted": rag_res.get("sources_consulted", []),
-                "evidence": rag_res.get("evidence", []),
-                "topic": query,
-            }
+        if self.rag_engine is not None:
+            rag_res = self.rag_engine.answer_query(query)
+            v_status = rag_res.get("verification_status", "UNVERIFIED")
+            if v_status == "VERIFIED":
+                return {
+                    "answer": rag_res.get("answer"),
+                    "verification_status": "VERIFIED",
+                    "confidence": rag_res.get("confidence", 0.90),
+                    "citations": rag_res.get("citations", []),
+                    "sources_consulted": rag_res.get("sources_consulted", []),
+                    "evidence": rag_res.get("evidence", []),
+                    "topic": query,
+                }
 
         # Check if code_engine can solve it (e.g. AI/ML concepts like RAG, Transformers, or algorithms)
         code_res = self.code_engine.solve(query, context=user_context)

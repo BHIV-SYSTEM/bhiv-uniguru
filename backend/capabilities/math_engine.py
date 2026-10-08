@@ -15,33 +15,43 @@ from __future__ import annotations
 import math
 import re
 from typing import Any, Dict, Optional, Tuple
-import sympy as sp
+
+try:
+    import sympy as sp
+    _HAVE_SYMPY = True
+except ImportError:
+    sp = None
+    _HAVE_SYMPY = False
 
 
 class MathEngine:
     """Programmatic and symbolic mathematical solver."""
 
     def __init__(self) -> None:
-        self.x, self.y, self.z, self.t = sp.symbols("x y z t")
+        if _HAVE_SYMPY and sp is not None:
+            self.x, self.y, self.z, self.t = sp.symbols("x y z t")
+        else:
+            self.x = self.y = self.z = self.t = None
 
     def solve(self, query: str) -> Optional[Dict[str, Any]]:
         """Attempt to solve the mathematical query. Returns None if not a recognized math problem."""
         clean_q = query.strip()
         
         # 1. Differentiation
-        diff_res = self._solve_differentiation(clean_q)
-        if diff_res:
-            return diff_res
+        if _HAVE_SYMPY:
+            diff_res = self._solve_differentiation(clean_q)
+            if diff_res:
+                return diff_res
 
-        # 2. Integration
-        int_res = self._solve_integration(clean_q)
-        if int_res:
-            return int_res
+            # 2. Integration
+            int_res = self._solve_integration(clean_q)
+            if int_res:
+                return int_res
 
-        # 3. Algebraic Equation (e.g. Solve 2x + 5 = 15)
-        eq_res = self._solve_equation(clean_q)
-        if eq_res:
-            return eq_res
+            # 3. Algebraic Equation (e.g. Solve 2x + 5 = 15)
+            eq_res = self._solve_equation(clean_q)
+            if eq_res:
+                return eq_res
 
         # 4. Arithmetic / Expression evaluation (e.g. 287 * 46, 2 + 2, 15% of 80)
         arith_res = self._solve_arithmetic(clean_q)
@@ -225,11 +235,16 @@ class MathEngine:
             return None
 
         try:
-            expr = sp.sympify(clean_expr)
-            if expr.free_symbols:
-                return None  # Has variables
-            res = expr.evalf()
-            res_disp = int(res) if float(res).is_integer() else round(float(res), 6)
+            if _HAVE_SYMPY and sp is not None:
+                expr = sp.sympify(clean_expr)
+                if expr.free_symbols:
+                    return None  # Has variables
+                res = expr.evalf()
+                res_disp = int(res) if float(res).is_integer() else round(float(res), 6)
+            else:
+                # Safe evaluation using Python builtins
+                res = eval(clean_expr, {"__builtins__": None, "math": math}, {})
+                res_disp = int(res) if isinstance(res, (int, float)) and float(res).is_integer() else (round(float(res), 6) if isinstance(res, float) else res)
             latex_expr = clean.replace('*', ' \\times ')
             return {
                 "capability": "MATHEMATICS",

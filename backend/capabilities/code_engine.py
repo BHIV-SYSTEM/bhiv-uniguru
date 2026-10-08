@@ -702,6 +702,53 @@ class CodeEngine:
 
     def _handle_language_concepts(self, query: str, q_lower: str, context: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         """Handles fundamental language concepts (Python lists, pass by reference, decorators)."""
+        # What is Python / Python overview
+        if re.search(r"\b(?:what is|explain|define|tell me about)\s+(?:the\s+)?python\b", q_lower) or q_lower in {"python", "python language", "what is python?", "what is python"}:
+            answer = (
+                "**Python Programming Language**:\n\n"
+                "Python is a high-level, interpreted, general-purpose programming language created by Guido van Rossum and released in 1991. "
+                "It is designed with an emphasis on code readability, using significant whitespace (indentation) rather than curly braces.\n\n"
+                "### Key Features:\n"
+                "1. **Easy to Learn & Read**: Clean, intuitive syntax that resembles plain English.\n"
+                "2. **Interpreted & Dynamically Typed**: Code executes directly without prior compilation; variable types are determined at runtime.\n"
+                "3. **Multi-Paradigm**: Fully supports Object-Oriented, Functional, and Procedural programming.\n"
+                "4. **Vast Ecosystem**: Leading language for Artificial Intelligence & Machine Learning (`PyTorch`, `TensorFlow`, `scikit-learn`), "
+                "Data Science (`pandas`, `numpy`), Web Development (`FastAPI`, `Django`, `Flask`), and Scripting/Automation.\n\n"
+                "### Example:\n"
+                "```python\n"
+                "# Python demonstration\n"
+                "def greet(name: str) -> str:\n"
+                "    return f\"Hello, {name}! Welcome to UniGuru.\"\n\n"
+                "print(greet(\"Learner\"))\n"
+                "```"
+            )
+            return {
+                "capability": "PROGRAMMING",
+                "sub_type": "concept_python_language",
+                "result": "Python Programming Language",
+                "answer": answer,
+                "verified": True,
+            }
+
+        # What is JavaScript
+        if re.search(r"\b(?:what is|explain|define)\s+(?:the\s+)?javascript\b", q_lower) or q_lower in {"javascript", "what is javascript"}:
+            answer = (
+                "**JavaScript (JS)**:\n\n"
+                "JavaScript is a high-level, interpreted programming language that powers dynamic and interactive behavior on the web. "
+                "Alongside HTML and CSS, it is one of the core technologies of the World Wide Web.\n\n"
+                "### Key Features:\n"
+                "1. **Client & Server Side**: Runs in all web browsers and on the server via Node.js.\n"
+                "2. **Event-Driven & Asynchronous**: Utilizes an event loop with non-blocking I/O (`Promise`, `async/await`).\n"
+                "3. **Ecosystem**: Modern frontend frameworks include React, Vue, and Angular."
+            )
+            return {
+                "capability": "PROGRAMMING",
+                "sub_type": "concept_javascript_language",
+                "result": "JavaScript Language",
+                "answer": answer,
+                "verified": True,
+            }
+
         # Pass by reference in Python
         if "pass by reference" in q_lower and "python" in q_lower:
             answer = (
