@@ -62,10 +62,7 @@ const ChatPageWrapper: React.FC<{
   };
 
   return (
-    <div className="relative h-screen overflow-hidden">
-      <div className="fixed inset-0 z-0">
-        <StarsCanvas />
-      </div>
+    <div className="relative h-screen overflow-hidden bg-[#ffffff] text-[#161616] font-carbon">
       <Navbar
         onLogout={handleLogout}
         isChatStarted={isChatStarted}
@@ -111,16 +108,13 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white text-[#161616] font-carbon">
       <AppInitializer>
         <Routes>
         <Route
           path="/"
           element={
-            <div className="relative min-h-screen">
-              <div className="fixed inset-0 z-0">
-                <StarsCanvas />
-              </div>
+            <div className="relative min-h-screen bg-white text-[#161616] font-carbon">
               <Navbar
                 onLogout={handleLogout}
                 isChatStarted={isChatStarted}
@@ -139,10 +133,7 @@ function App() {
           path="/tools"
           element={
             <ProtectedRoute isLoggedIn={isLoggedIn}>
-              <div className="relative min-h-screen">
-                <div className="fixed inset-0 z-0">
-                  <StarsCanvas />
-                </div>
+              <div className="relative min-h-screen bg-white text-[#161616] font-carbon">
                 <Navbar
                   onLogout={handleLogout}
                   isChatStarted={isChatStarted}
@@ -175,10 +166,7 @@ function App() {
         <Route
           path="/about"
           element={
-            <div className="relative min-h-screen">
-              <div className="fixed inset-0 z-0">
-                <StarsCanvas />
-              </div>
+            <div className="relative min-h-screen bg-white text-[#161616] font-carbon">
               {/* Hide navbar on mobile for about page */}
               <div className="hidden md:block">
                 <Navbar

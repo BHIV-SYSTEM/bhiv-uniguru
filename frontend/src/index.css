@@ -2,15 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ensure black background is maintained */
+/* IBM Carbon Design System Canvas */
 html, body {
-  background-color: #000000 !important;
+  background-color: #ffffff !important;
+  color: #161616;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 #root {
-  background-color: #000000;
+  background-color: #ffffff;
   min-height: 100vh;
 }
 
@@ -1089,4 +1091,293 @@ body {
     transform: scale(1);
   }
 }
+
+/* ==========================================================================
+   CARBON DESIGN SYSTEM TOKENS & UTILITIES (faithful to DESIGN.md)
+   ========================================================================== */
+:root {
+  --cds-primary: #0f62fe;
+  --cds-on-primary: #ffffff;
+  --cds-ink: #161616;
+  --cds-ink-muted: #525252;
+  --cds-ink-subtle: #8c8c8c;
+  --cds-canvas: #ffffff;
+  --cds-surface-1: #f4f4f4;
+  --cds-surface-2: #e0e0e0;
+  --cds-inverse-canvas: #161616;
+  --cds-inverse-surface-1: #262626;
+  --cds-inverse-ink: #ffffff;
+  --cds-inverse-ink-muted: #c6c6c6;
+  --cds-hairline: #e0e0e0;
+  --cds-hairline-strong: #161616;
+  --cds-blue-60: #0043ce;
+  --cds-blue-80: #002d9c;
+  --cds-blue-hover: #0050e6;
+  --cds-semantic-success: #24a148;
+  --cds-semantic-warning: #f1c21b;
+  --cds-semantic-error: #da1e28;
+  --cds-semantic-info: #0f62fe;
+  --cds-font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-carbon {
+  font-family: var(--cds-font-sans) !important;
+}
+
+/* Carbon Button Variants */
+.cds-btn-primary,
+.cds-btn-primary * {
+  font-family: var(--cds-font-sans);
+  background-color: var(--cds-primary);
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  border-radius: 0px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.cds-btn-primary {
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  min-height: 48px;
+}
+.cds-btn-primary:hover {
+  background-color: var(--cds-blue-hover);
+}
+.cds-btn-primary:active {
+  background-color: var(--cds-blue-80);
+}
+
+.cds-btn-secondary,
+.cds-btn-secondary * {
+  font-family: var(--cds-font-sans);
+  background-color: #161616;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  border-radius: 0px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.cds-btn-secondary {
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  min-height: 48px;
+}
+.cds-btn-secondary:hover,
+.cds-btn-secondary:hover * {
+  background-color: #393939;
+  color: #ffffff !important;
+}
+
+.cds-btn-tertiary {
+  font-family: var(--cds-font-sans);
+  background-color: var(--cds-canvas);
+  color: var(--cds-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  border-radius: 0px !important;
+  padding: 12px 16px;
+  border: 1px solid var(--cds-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.cds-btn-tertiary:hover {
+  background-color: var(--cds-primary);
+  color: var(--cds-on-primary);
+}
+
+.cds-btn-ghost {
+  font-family: var(--cds-font-sans);
+  background-color: transparent;
+  color: var(--cds-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  border-radius: 0px !important;
+  padding: 12px 16px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+  text-decoration: none;
+}
+.cds-btn-ghost:hover {
+  background-color: var(--cds-surface-2);
+}
+
+/* Carbon Tile Cards */
+.cds-tile {
+  font-family: var(--cds-font-sans);
+  background-color: var(--cds-canvas);
+  color: var(--cds-ink);
+  border: 1px solid var(--cds-hairline);
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+.cds-tile:hover {
+  border-color: #8d8d8d;
+}
+.cds-tile-elevated {
+  font-family: var(--cds-font-sans);
+  background-color: var(--cds-surface-1);
+  color: var(--cds-ink);
+  border: 1px solid var(--cds-hairline);
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+/* Carbon Tabs */
+.cds-tab {
+  font-family: var(--cds-font-sans);
+  background-color: var(--cds-canvas);
+  color: var(--cds-ink-muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  padding: 16px 20px;
+  border: none;
+  border-bottom: 1px solid var(--cds-hairline);
+  border-radius: 0px !important;
+  cursor: pointer;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+.cds-tab:hover {
+  color: var(--cds-ink);
+}
+.cds-tab-active {
+  color: var(--cds-ink);
+  font-weight: 600;
+  border-bottom: 2px solid var(--cds-primary);
+}
+
+/* Carbon Form Input */
+.cds-input {
+  font-family: var(--cds-font-sans);
+  background-color: var(--cds-surface-1);
+  color: var(--cds-ink);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.50;
+  letter-spacing: 0.16px;
+  padding: 11px 16px;
+  border: none;
+  border-bottom: 1px solid var(--cds-ink-subtle);
+  border-radius: 0px !important;
+  outline: none;
+  width: 100%;
+  transition: border-color 150ms ease;
+}
+.cds-input:focus {
+  border-bottom: 2px solid var(--cds-primary);
+  outline: 2px solid var(--cds-primary);
+  outline-offset: -2px;
+}
+
+/* IBM Carbon Global Sidebar & Chat Container Overrides */
+.carbon-sidebar {
+  background-color: #ffffff !important;
+  border-right: 1px solid #e0e0e0 !important;
+  color: #161616 !important;
+  box-shadow: none !important;
+}
+
+.carbon-chat-bubble-user {
+  background-color: #0f62fe !important;
+  color: #ffffff !important;
+  border-radius: 0px !important;
+  border: 1px solid #0f62fe !important;
+}
+
+.carbon-chat-bubble-bot {
+  background-color: #f4f4f4 !important;
+  color: #161616 !important;
+  border-radius: 0px !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+.carbon-chat-input-bar {
+  background-color: #f4f4f4 !important;
+  border: 1px solid #8d8d8d !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+.carbon-chat-input-bar:focus-within {
+  border: 2px solid #0f62fe !important;
+  background-color: #ffffff !important;
+}
+
+/* Ensure legible high-contrast text on inverse dark canvases and footers */
+footer,
+footer *,
+.bg-\[\#161616\],
+.bg-\[\#161616\] *,
+[class*="bg-[#161616]"],
+[class*="bg-[#161616]"] * {
+  color: #ffffff !important;
+}
+
+footer p,
+footer span,
+footer li,
+.bg-\[\#161616\] p,
+.bg-\[\#161616\] span,
+.bg-\[\#161616\] li {
+  color: #e0e0e0 !important;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+footer button,
+footer a,
+.bg-\[\#161616\] h1,
+.bg-\[\#161616\] h2,
+.bg-\[\#161616\] h3,
+.bg-\[\#161616\] h4,
+.bg-\[\#161616\] button,
+.bg-\[\#161616\] a {
+  color: #ffffff !important;
+}
+
+footer button:hover,
+footer a:hover,
+.bg-\[\#161616\] button:hover,
+.bg-\[\#161616\] a:hover {
+  color: #78a9ff !important;
+}
+
 

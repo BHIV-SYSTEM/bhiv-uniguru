@@ -20,35 +20,6 @@ const AuthButton: React.FC<AuthButtonProps> = ({
   variant = 'primary',
   className = ''
 }) => {
-  const baseClasses = `
-    font-poppins tracking-[0.5px]
-    outline-none border-none
-    cursor-pointer
-    transition-all duration-200
-    disabled:opacity-50 disabled:cursor-not-allowed
-  `;
-
-  const variantClasses = {
-    primary: `
-      mt-3 sm:mt-6 w-full
-      bg-white text-button
-      py-[10px] sm:py-[15px] px-4
-      text-[14px] sm:text-[18px] font-semibold
-      rounded-[5px]
-      flex items-center justify-center
-      hover:bg-gray-100
-      touch-target
-    `,
-    social: `
-      bg-glass-social text-text-social
-      w-[150px] rounded-[3px]
-      py-[5px] px-[10px] pb-[10px] pl-[5px]
-      text-center
-      hover:bg-glass-socialHover
-      touch-target
-    `
-  };
-
   const isDisabled = disabled || loading;
 
   return (
@@ -57,8 +28,12 @@ const AuthButton: React.FC<AuthButtonProps> = ({
       onClick={onClick}
       disabled={isDisabled}
       className={`
-        ${baseClasses}
-        ${variantClasses[variant]}
+        w-full min-h-[48px] px-4 py-3
+        ${variant === 'primary' ? 'cds-btn-primary justify-center' : 'cds-btn-secondary justify-center'}
+        font-carbon text-sm font-normal tracking-[0.16px]
+        rounded-none cursor-pointer
+        disabled:opacity-50 disabled:cursor-not-allowed
+        transition-colors duration-150
         ${className}
       `}
     >

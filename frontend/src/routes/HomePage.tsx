@@ -1,303 +1,407 @@
-// "use client";
-
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import i18n from "../i18n";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faRocket,
-  faBrain
+  faArrowRight,
+  faBrain,
+  faLayerGroup,
+  faBookOpen,
+  faCheck,
+  faCode,
+  faMicroscope,
+  faAtom
 } from "@fortawesome/free-solid-svg-icons";
 import BHI from "../assets/blackhole-logo.png";
 import uniLogo from "../assets/uni-logo.png";
 import { useAuth } from "../context/AuthContext";
-// import StarsCanvas from "../components/StarBackground";
-const guruLogo = "/guru.png";
 
 interface HomePageProps {
   onChatStarted: () => void;
 }
 
 const HomePage: React.FC<HomePageProps> = ({ onChatStarted }) => {
-  const [isLetChatVisible, setIsLetChatVisible] = useState(true);
-  const welcomeContainerRef = useRef<HTMLDivElement | null>(null);
+  const [selectedTab, setSelectedTab] = useState<number>(0);
   const navigate = useNavigate();
   const { isLoggedIn, isAuthLoading } = useAuth();
 
-  // Simple language helper to hardcode localized strings without expanding i18n resources
+  // Language helper strictly localized without breaking i18n
   const L = (en: string, hi: string, mr: string) => (i18n.language === 'hi' ? hi : i18n.language === 'mr' ? mr : en);
-
-  const buttonClasses = [
-    "group relative px-8 py-4 bg-transparent border-2 border-purple-400 text-purple-400",
-    "font-bold text-lg rounded-lg hover:text-white hover:border-transparent",
-    "transition-all duration-300 ease-out overflow-hidden",
-    "shadow-[0_0_20px_rgba(147,51,234,0.3)]",
-    "hover:shadow-[0_0_40px_rgba(147,51,234,0.8),0_0_60px_rgba(59,130,246,0.4)]",
-    "backdrop-blur-sm"
-  ].join(" ");
 
   const handleLetChatClick = () => {
     if (isAuthLoading || !isLoggedIn) {
       navigate("/login");
       return;
     }
-    setIsLetChatVisible(false);
     onChatStarted();
     navigate("/chatpage");
   };
 
+  const mentorPresets = [
+    {
+      category: L("STEM & Mathematics", "गणित और विज्ञान", "गणित आणि विज्ञान"),
+      title: L("Advanced Mathematics Professor", "उन्नत गणित प्रोफेसर", "प्रगत गणित प्राध्यापक"),
+      tagline: L("Rigorous calculus, linear algebra, and discrete math instruction.", "कलन, रेखीय बीजगणित और विविक्त गणित का गहन मार्गदर्शन।", "कलन, रेखीय बीजगणित आणि विविक्त गणिताचे सखोल मार्गदर्शन."),
+      icon: faAtom,
+      topics: ["Multivariable Calculus", "Linear Algebra", "Proof Verification", "Number Theory"]
+    },
+    {
+      category: L("Computer Science", "कंप्यूटर विज्ञान", "संगणक विज्ञान"),
+      title: L("Systems Architect & Code Mentor", "सिस्टम्स आर्किटेक्ट और कोड मेंटर", "सिस्टम आर्किटेक्ट आणि कोड मेंटर"),
+      tagline: L("Production engineering, algorithmic complexity, and idiomatic clean code.", "उत्पादन इंजीनियरिंग, एल्गोरिदमिक जटिलता और स्वच्छ कोड।", "प्रॉडक्शन अभियांत्रिकी, अल्गोरिदमिक जटिलता आणि स्वच्छ कोड."),
+      icon: faCode,
+      topics: ["Distributed Systems", "Data Structures", "TypeScript & Rust", "API Architecture"]
+    },
+    {
+      category: L("Ancient Sciences & Sanskrit", "प्राचीन विज्ञान और संस्कृत", "प्राचीन विज्ञान आणि संस्कृत"),
+      title: L("Sanskrit Epistemology Decoder", "संस्कृत ज्ञानमीमांसा डिकोडर", "संस्कृत ज्ञानमीमांसा डिकोडर"),
+      tagline: L("Authentic Vedic epistemology, grammatical parsing, and root analysis.", "प्रामाणिक वैदिक ज्ञानमीमांसा, व्याकरण और मूल धातु विश्लेषण।", "अस्सल वैदिक ज्ञानमीमांसा, व्याकरण आणि मूळ धातू विश्लेषण."),
+      icon: faBookOpen,
+      topics: ["Sanskrit Grammar", "Tantra & Epistemology", "Etymology (Nirukta)", "Logic (Nyaya)"]
+    },
+    {
+      category: L("Sciences & Physics", "भौतिकी और विज्ञान", "भौतिकशास्त्र आणि विज्ञान"),
+      title: L("Theoretical Physics Mentor", "सैद्धांतिक भौतिकी मेंटर", "सैद्धांतिक भौतिकशास्त्र मार्गदर्शक"),
+      tagline: L("Conceptual clarity, thought experiments, and mathematical models.", "वैचारिक स्पष्टता, विचार प्रयोग और गणितीय मॉडल।", "वैचारिक स्पष्टता, विचार प्रयोग आणि गणितीय मॉडेल्स."),
+      icon: faMicroscope,
+      topics: ["Classical Mechanics", "Quantum States", "Thermodynamics", "Relativity"]
+    }
+  ];
+
   return (
-    <div className="relative min-h-screen">
-      {/* Mobile Layout - WITH CONTEXT & BETTER POSITIONING */}
-      <main className="block sm:hidden">
-        <div className="h-screen flex flex-col p-4 pt-20 overflow-hidden">
-          {/* Header with Context */}
-          <div className="text-center flex-shrink-0 mb-6">
-            <img src={uniLogo} alt="UniGuru" className="w-20 h-20 mx-auto mb-3" />
-            <h1
-              className="text-4xl font-bold bg-clip-text text-transparent mb-2"
-              style={{
-                fontFamily: "inknut",
-                background: "linear-gradient(135deg, #b18615, #d4a01c, #f7c52d, #d4a01c, #b18615)",
-                backgroundClip: "text",
-                WebkitBackgroundClip: "text"
-              }}
-            >
-              UniGuru
-            </h1>
-            <p className="text-base text-gray-200 font-light mb-3">{L('AI Learning Platform', 'एआई लर्निंग प्लेटफॉर्म', 'एआय शिक्षण प्लॅटफॉर्म')}</p>
-
-            {/* Context Box */}
-            <div className="bg-white/5 backdrop-blur-xl rounded-xl p-3 border border-purple-400/20 mb-4">
-              <p className="text-sm text-gray-100 leading-relaxed">
-                {L(
-                  'Welcome to UniGuru! ',
-                  'UniGuru में आपका स्वागत है! ',
-                  'UniGuru मध्ये आपले स्वागत आहे! '
-                )}
-                <span className="text-purple-400 font-semibold">{L('Create your own AI mentors', 'अपने AI मेंटर्स बनाएं', 'आपले AI गुरु तयार करा')}</span>
-                {L(' and start learning with experts in any field', ' और किसी भी विषय के विशेषज्ञों के साथ सीखना शुरू करें', ' आणि कोणत्याही क्षेत्रातील तज्ञांसोबत शिकायला सुरुवात करा')}
-              </p>
-            </div>
+    <div className="w-full bg-[#ffffff] text-[#161616] font-carbon pt-24 sm:pt-28">
+      {/* 2. Hero Section (IBM Carbon Display 60-76px weight 300) */}
+      <section className="relative px-6 sm:px-12 lg:px-16 pt-8 pb-20 border-b border-[#e0e0e0] max-w-[1584px] mx-auto">
+        <div className="max-w-4xl">
+          {/* Eyebrow */}
+          <div className="text-sm font-normal text-[#525252] mb-4 tracking-[0.16px]">
+            {L("Curated Artificial Intelligence Platform", "क्यूरेटेड कृत्रिम बुद्धिमत्ता प्लेटफॉर्म", "क्युरेटेड कृत्रिम बुद्धिमत्ता व्यासपीठ")}
           </div>
 
-          {/* Features - Centered */}
-          <div className="flex-1 flex flex-col justify-center min-h-0">
-            <div className="space-y-3 mb-4">
-              <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-xl border border-purple-400/20">
-                <img src={guruLogo} alt="Create" className="w-8 h-8 flex-shrink-0" />
-                <div>
-                  <h3 className="text-base font-bold text-white">{L('Create Your Guru', 'अपना गुरु बनाएं', 'आपला गुरू तयार करा')}</h3>
-                  <p className="text-xs text-gray-300">{L('Math professor, scientist, code mentor - any expert', 'गणित प्रोफेसर, वैज्ञानिक, कोड मेंटर - कोई भी विशेषज्ञ', 'गणित प्राध्यापक, वैज्ञानिक, कोड मार्गदर्शक - कोणताही तज्ज्ञ')}</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-xl border border-blue-400/20">
-                <FontAwesomeIcon icon={faBrain} className="text-blue-400 text-xl w-8 flex-shrink-0" />
-                <div>
-                  <h3 className="text-base font-bold text-white">{L('AI Roleplay', 'एआई रोलप्ले', 'एआय भूमिका')}</h3>
-                  <p className="text-xs text-gray-300">{L('Your mentor thinks and responds like a real expert', 'आपका मेंटर एक वास्तविक विशेषज्ञ की तरह सोचता और जवाब देता है', 'तुमचा गुरु खऱ्या तज्ञासारखा विचार करतो आणि प्रतिसाद देतो')}</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-3 p-3 bg-white/5 rounded-xl border border-green-400/20">
-                <FontAwesomeIcon icon={faRocket} className="text-green-400 text-xl w-8 flex-shrink-0" />
-                <div>
-                  <h3 className="text-base font-bold text-white">{L('Learn Faster', 'तेजी से सीखें', 'लवकर शिका')}</h3>
-                  <p className="text-xs text-gray-300">{L('Get personalized insights and authentic knowledge', 'व्यक्तिगत अंतर्दृष्टि और प्रामाणिक ज्ञान प्राप्त करें', 'वैयक्तिक अंतर्दृष्टी आणि अस्सल ज्ञान मिळवा')}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* CTA Button - Moved Up Here */}
-            <div className="text-center">
-              {isLetChatVisible && (
-                <button
-                  onClick={handleLetChatClick}
-                  className={buttonClasses}
-                  style={{ fontFamily: "Inter, system-ui, sans-serif", fontWeight: "600", letterSpacing: "0.05em" }}
-                >
-                  {/* Animated background fill */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600
-                                transform scale-x-0 group-hover:scale-x-100
-                                transition-transform duration-300 ease-out origin-left"></div>
-
-                  {/* Button content */}
-                  <div className="relative z-10 flex items-center justify-center gap-3">
-                    <div className="w-0 h-0 border-l-[8px] border-l-purple-400 group-hover:border-l-white
-                                  border-t-[6px] border-t-transparent
-                                  border-b-[6px] border-b-transparent
-                                  transition-colors duration-300"></div>
-                    <span className="tracking-wide">START CREATING</span>
-                  </div>
-
-                  {/* Corner accents */}
-                  <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-purple-400 group-hover:border-white transition-colors duration-300"></div>
-                  <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-purple-400 group-hover:border-white transition-colors duration-300"></div>
-                  <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-purple-400 group-hover:border-white transition-colors duration-300"></div>
-                  <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-purple-400 group-hover:border-white transition-colors duration-300"></div>
-                </button>
-              )}
-            </div>
-          </div>
-
-          {/* Bottom Examples */}
-          <div className="text-center flex-shrink-0 pb-4">
-            <p className="text-xs text-gray-400 mb-2">{L('Popular: Math • Science • Coding • Languages', 'लोकप्रिय: गणित • विज्ञान • कोडिंग • भाषाएँ', 'लोकप्रिय: गणित • विज्ञान • कोडिंग • भाषा')}</p>
-          </div>
-        </div>
-      </main>
-
-      {/* Desktop Layout - Original */}
-      <main className="hidden sm:flex flex-col items-center justify-center min-h-screen text-center p-4 pt-20 relative z-10">
-        <div
-          ref={welcomeContainerRef}
-          className="welcome-container p-8 max-w-6xl mx-auto relative w-full"
-        >
-          {/* Main Logo/Icon */}
-          <div className="mb-4 flex justify-center">
-            <div className="relative group">
-              <img
-                src={uniLogo}
-                alt="UniGuru"
-                className="w-36 h-36 sm:w-44 sm:h-44 mx-auto mb-3 animate-float drop-shadow-2xl group-hover:scale-105 transition-all duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-lg -z-10"></div>
-            </div>
-          </div>
-
-          {/* Main Heading */}
-          <h1
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent mb-3 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 drop-shadow-lg"
-            style={{
-              fontFamily: "inknut",
-              background: "linear-gradient(135deg, #b18615, #d4a01c, #f7c52d, #d4a01c, #b18615)",
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text"
-            }}
-          >
-            UniGuru
+          {/* Display Headline - Weight 300, Carbon signature */}
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-light text-[#161616] tracking-[-0.4px] leading-[1.15] mb-6">
+            {L("Create mentors who think,", "ऐसे मेंटर्स बनाएं जो सोचें,", "असे गुरू तयार करा जे विचार करतील,")}{" "}
+            <span className="font-light text-[#0f62fe]">
+              {L("teach, and reason.", "सिखाएं और समझें।", "शिकवतील आणि समजून घेतील.")}
+            </span>
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-base sm:text-lg lg:text-xl text-gray-200 mb-4 font-light max-w-3xl mx-auto leading-relaxed">
-            {L('Create AI Mentors Who Roleplay as Real Experts', 'ऐसे एआई मेंटर्स बनाएं जो वास्तविक विशेषज्ञों जैसा रोलप्ले करें', 'खरे तज्ञांसारखी भूमिका निभावणारे एआय गुरु तयार करा')}
+          {/* Subhead */}
+          <p className="text-lg sm:text-xl font-normal text-[#525252] leading-relaxed max-w-3xl mb-8 tracking-[0.16px]">
+            {L(
+              "UniGuru transforms domain knowledge into precise, authoritative AI mentors. Define any specialist — mathematicians, software architects, or ancient epistemologists — and master complex subjects with zero distraction.",
+              "UniGuru विषय ज्ञान को सटीक, प्रामाणिक AI मेंटर्स में बदलता है। किसी भी विशेषज्ञ को परिभाषित करें — गणितज्ञ, सॉफ्टवेयर आर्किटेक्ट, या प्राचीन ज्ञानशास्त्री — और बिना किसी व्यवधान के जटिल विषयों में महारत हासिल करें।",
+              "UniGuru ज्ञानक्षेत्राचे अचूक, अधिकृत AI गुरूंमध्ये रूपांतर करते. कोणत्याही तज्ञाची व्याख्या करा — गणितज्ञ, सॉफ्टवेअर आर्किटेक्ट, किंवा प्राचीन ज्ञानशास्त्रज्ञ — आणि जटिल विषयांवर प्रभुत्व मिळवा."
+            )}
           </p>
 
-          {/* Main Description */}
-          <div className="max-w-3xl mx-auto mb-6">
-            <p className="text-sm sm:text-base lg:text-lg text-gray-100 leading-relaxed mb-4 font-light">
-              {L('Welcome to UniGuru! Start your learning journey by creating your own ', 'UniGuru में आपका स्वागत है! अपनी सीखने की यात्रा की शुरुआत अपने ', 'UniGuru मध्ये आपले स्वागत आहे! आपली शिकण्याची यात्रा सुरू करा आपल्या ')}
-              <span className="text-purple-400 font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">{L('AI Gurus', 'एआई गुरुओं', 'एआय गुरूं')}</span>
-              {L('. Whether you need a mathematician, scientist, or philosopher, your AI mentors will guide you with personalized, expert-level knowledge. Let\'s begin your adventure in learning!', ' बनाकर। चाहे आपको गणितज्ञ, वैज्ञानिक या दार्शनिक की आवश्यकता हो, आपके एआई मेंटर्स व्यक्तिगत और विशेषज्ञ-स्तरीय ज्ञान के साथ आपका मार्गदर्शन करेंगे। आइए सीखने की आपकी यात्रा शुरू करें!', ' तयार करून. तुम्हाला गणितज्ञ, वैज्ञानिक किंवा तत्त्वज्ञ हवा असो, तुमचे एआय गुरु वैयक्तिक, तज्ञ-स्तरीय ज्ञानासह तुम्हाला मार्गदर्शन करतील. चला शिकण्याचा तुमचा प्रवास सुरू करूया!')}
-            </p>
-          </div>
+          {/* Carbon Primary & Secondary Action CTAs */}
+          <div className="flex flex-wrap items-center gap-4 pt-2">
+            <button
+              onClick={handleLetChatClick}
+              className="cds-btn-primary"
+              style={{ padding: "14px 28px", fontSize: "15px" }}
+            >
+              <span>{L("Start Learning Now", "सीखना शुरू करें", "शिकायला सुरुवात करा")}</span>
+              <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
+            </button>
 
-          {/* Interactive Feature Cards - Hover to reveal */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 max-w-4xl mx-auto">
-            <div className="group backdrop-blur-xl bg-white/5 rounded-xl p-4 border border-purple-400/20 hover:border-purple-400/60 hover:bg-white/10 transition-all duration-300 cursor-pointer text-center hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20">
-              <div className="flex justify-center mb-2">
-                <img src={guruLogo} alt="Guru" className="w-5 h-5 group-hover:scale-110 transition-all duration-300 drop-shadow-sm" />
-              </div>
-              <h3 className="text-sm font-bold text-white mb-1">{L('Create', 'बनाएं', 'तयार करा')}</h3>
-              <p className="text-xs text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {L('Define any expert mentor', 'किसी भी विशेषज्ञ मेंटर को परिभाषित करें', 'कोणताही तज्ज्ञ गुरु परिभाषित करा')}
-              </p>
-            </div>
-
-            <div className="group backdrop-blur-xl bg-white/5 rounded-xl p-4 border border-blue-400/20 hover:border-blue-400/60 hover:bg-white/10 transition-all duration-300 cursor-pointer text-center hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20">
-              <div className="flex justify-center mb-2">
-                <FontAwesomeIcon icon={faBrain} className="text-blue-400 text-xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300" />
-              </div>
-              <h3 className="text-sm font-bold text-white mb-1">{L('Roleplay', 'रोलप्ले', 'भूमिका')}</h3>
-              <p className="text-xs text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {L('AI embodies their expertise', 'एआई उनकी विशेषज्ञता को आत्मसात करता है', 'एआय त्यांच्या तज्ज्ञतेला मूर्त रूप देतो')}
-              </p>
-            </div>
-
-            <div className="group backdrop-blur-xl bg-white/5 rounded-xl p-4 border border-green-400/20 hover:border-green-400/60 hover:bg-white/10 transition-all duration-300 cursor-pointer text-center hover:scale-105 hover:shadow-lg hover:shadow-green-500/20">
-              <div className="flex justify-center mb-2">
-                <FontAwesomeIcon icon={faRocket} className="text-green-400 text-xl group-hover:scale-110 group-hover:text-green-300 transition-all duration-300" />
-              </div>
-              <h3 className="text-sm font-bold text-white mb-1">{L('Learn', 'सीखें', 'शिका')}</h3>
-              <p className="text-xs text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {L('Get authentic insights', 'प्रामाणिक अंतर्दृष्टि प्राप्त करें', 'अस्सल अंतर्दृष्टी मिळवा')}
-              </p>
-            </div>
-          </div>
-
-          {/* Popular Guru Types - Compact */}
-          <div className="mb-6">
-            <h3 className="text-sm font-semibold text-gray-300 mb-3 text-center">{L('Popular Mentor Types', 'लोकप्रिय मेंटर प्रकार', 'लोकप्रिय मेंटर प्रकार')}</h3>
-            <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
-              {[
-                "Math Professor", "Scientist", "Philosopher",
-                "Historian", "Code Mentor", "Language Tutor"
-              ].map((guru, index) => (
-                <span
-                  key={index}
-                  className="px-3 py-1.5 text-xs bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full text-gray-200 border border-purple-400/30 hover:border-purple-400/60 hover:text-white hover:bg-gradient-to-r hover:from-purple-500/40 hover:to-blue-500/40 transition-all duration-300 cursor-pointer backdrop-blur-sm hover:scale-105"
-                >
-                  {guru}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* CTA Button - Custom Neon Style */}
-          <div className="flex justify-center mt-4">
-            {isLetChatVisible && (
-              <button
-                onClick={handleLetChatClick}
-                className={[
-                  "group relative px-8 py-4 bg-transparent border-2",
-                  "border-purple-400 text-purple-400",
-                  "font-bold text-lg rounded-lg hover:text-white hover:border-transparent",
-                  "transition-all duration-300 ease-out overflow-hidden",
-                  "shadow-[0_0_20px_rgba(147,51,234,0.3)]",
-                  "hover:shadow-[0_0_40px_rgba(147,51,234,0.8),0_0_60px_rgba(59,130,246,0.4)]",
-                  "backdrop-blur-sm"
-                ].join(" ")}
-                style={{ fontFamily: "Inter, system-ui, sans-serif", fontWeight: "600", letterSpacing: "0.05em" }}
-              >
-                {/* Animated background fill */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600
-                              transform scale-x-0 group-hover:scale-x-100
-                              transition-transform duration-300 ease-out origin-left"></div>
-
-                {/* Button content */}
-                <div className="relative z-10 flex items-center justify-center gap-3">
-                  <div className="w-0 h-0 border-l-[8px] border-l-purple-400 group-hover:border-l-white
-                                border-t-[6px] border-t-transparent
-                                border-b-[6px] border-b-transparent
-                                transition-colors duration-300"></div>
-                  <span className="tracking-wide">START CREATING</span>
-                </div>
-
-                {/* Corner accents */}
-                <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-purple-400 group-hover:border-white transition-colors duration-300"></div>
-                <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-purple-400 group-hover:border-white transition-colors duration-300"></div>
-                <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-purple-400 group-hover:border-white transition-colors duration-300"></div>
-                <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-purple-400 group-hover:border-white transition-colors duration-300"></div>
-              </button>
-            )}
+            <button
+              onClick={() => navigate("/about")}
+              className="cds-btn-secondary text-white"
+              style={{ padding: "14px 24px", fontSize: "15px", color: "#ffffff" }}
+            >
+              <span style={{ color: "#ffffff" }}>{L("Explore System Architecture", "सिस्टम आर्किटेक्चर देखें", "सिस्टम आर्किटेक्चर पहा")}</span>
+            </button>
           </div>
         </div>
-      </main>
 
-      {/* Footer with blackhole logo - Hidden on mobile */}
-      <footer className="absolute bottom-5 right-5 z-10 hidden sm:block">
-        <a 
-          href="https://blackholeinfiverse.com/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="block hover:scale-105 transition-transform duration-200"
-        >
-          <img src={BHI} alt="BHI Logo" className="h-12" />
-        </a>
+        {/* Decorative Grid Specs watermark in background */}
+        <div className="mt-12 pt-8 border-t border-[#e0e0e0] grid grid-cols-2 md:grid-cols-4 gap-6 text-xs text-[#525252]">
+          <div>
+            <div className="text-2xl font-light text-[#161616] mb-1">0–4px</div>
+            <div>Deliberate flat geometry</div>
+          </div>
+          <div>
+            <div className="text-2xl font-light text-[#0f62fe] mb-1">100%</div>
+            <div>Curriculum ground truth</div>
+          </div>
+          <div>
+            <div className="text-2xl font-light text-[#161616] mb-1">Plex Sans</div>
+            <div>Precision typographic system</div>
+          </div>
+          <div>
+            <div className="text-2xl font-light text-[#161616] mb-1">Enterprise</div>
+            <div>Carbon Design compliance</div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Feature Card Grid (Thin-bordered tiles with 0px radius, no drop shadow) */}
+      <section className="px-6 sm:px-12 lg:px-16 py-20 max-w-[1584px] mx-auto border-b border-[#e0e0e0]">
+        <div className="mb-12">
+          <div className="text-sm font-normal text-[#525252] mb-2 tracking-[0.16px]">
+            {L("Core Capabilities", "मुख्य क्षमताएं", "मुख्य क्षमता")}
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-normal text-[#161616] tracking-tight">
+            {L("Engineered for cognitive depth and rigorous comprehension", "संज्ञानात्मक गहराई और कठोर समझ के लिए निर्मित", "सखोल समज आणि ज्ञानासाठी तयार केलेले")}
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-l border-[#e0e0e0]">
+          {/* Tile 1 */}
+          <div className="cds-tile p-8 border-r border-b border-[#e0e0e0] hover:bg-[#f4f4f4] transition-colors flex flex-col justify-between min-h-[280px]">
+            <div>
+              <div className="w-10 h-10 bg-[#f4f4f4] border border-[#e0e0e0] flex items-center justify-center mb-6">
+                <FontAwesomeIcon icon={faBrain} className="text-[#0f62fe] text-lg" />
+              </div>
+              <h3 className="text-xl font-normal text-[#161616] mb-3">
+                {L("Roleplay Mentorship", "रोलप्ले मेंटरशिप", "भूमिका मार्गदर्शन")}
+              </h3>
+              <p className="text-sm font-normal text-[#525252] leading-relaxed tracking-[0.16px]">
+                {L(
+                  "Configure mentors with customized pedagogies, tone, and rigor. Experience natural dialogue that tests your assumptions and checks comprehension.",
+                  "अनुकूलित शिक्षण विधियों, लहजे और गंभीरता के साथ मेंटर्स को कॉन्फ़िगर करें। स्वाभाविक बातचीत का अनुभव करें जो आपकी समझ की परीक्षा लेती है।",
+                  "सानुकूलित अध्यापन पद्धती, संवादशैली आणि सखोलतेसह गुरू कॉन्फिगर करा. तुमच्या समजुतीची चाचणी घेणारा नैसर्गिक संवाद अनुभवा."
+                )}
+              </p>
+            </div>
+            <div className="pt-6 text-xs text-[#0f62fe] font-medium flex items-center gap-2">
+              <span>{L("Learn more", "और जानें", "अधिक जाणून घ्या")}</span>
+              <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
+            </div>
+          </div>
+
+          {/* Tile 2 */}
+          <div className="cds-tile p-8 border-r border-b border-[#e0e0e0] hover:bg-[#f4f4f4] transition-colors flex flex-col justify-between min-h-[280px]">
+            <div>
+              <div className="w-10 h-10 bg-[#f4f4f4] border border-[#e0e0e0] flex items-center justify-center mb-6">
+                <FontAwesomeIcon icon={faLayerGroup} className="text-[#0f62fe] text-lg" />
+              </div>
+              <h3 className="text-xl font-normal text-[#161616] mb-3">
+                {L("Grounded Curriculum Truth", "प्रामाणिक पाठ्यक्रम सत्य", "अधिकृत अभ्यासक्रम सत्यता")}
+              </h3>
+              <p className="text-sm font-normal text-[#525252] leading-relaxed tracking-[0.16px]">
+                {L(
+                  "Responses draw from canonical knowledge graphs and textbook verified sources, preventing hallucination and ensuring academic fidelity.",
+                  "प्रतिक्रियाएं प्रामाणिक ज्ञान ग्राफ़ और पाठ्यपुस्तक सत्यापित स्रोतों से ली जाती हैं, जिससे भ्रांतियों से बचा जाता है और अकादमिक निष्ठा सुनिश्चित होती है।",
+                  "प्रतिसाद अधिकृत ज्ञान आलेख आणि पाठ्यपुस्तक पडताळणीतून येतात, ज्यामुळे अचूकता आणि शैक्षणिक विश्वासार्हता टिकून राहते."
+                )}
+              </p>
+            </div>
+            <div className="pt-6 text-xs text-[#0f62fe] font-medium flex items-center gap-2">
+              <span>{L("Verified retrieval", "सत्यापित पुनर्प्राप्ति", "पडताळलेली माहिती")}</span>
+              <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
+            </div>
+          </div>
+
+          {/* Tile 3 */}
+          <div className="cds-tile p-8 border-r border-b border-[#e0e0e0] hover:bg-[#f4f4f4] transition-colors flex flex-col justify-between min-h-[280px]">
+            <div>
+              <div className="w-10 h-10 bg-[#f4f4f4] border border-[#e0e0e0] flex items-center justify-center mb-6">
+                <FontAwesomeIcon icon={faBookOpen} className="text-[#0f62fe] text-lg" />
+              </div>
+              <h3 className="text-xl font-normal text-[#161616] mb-3">
+                {L("Sanskrit Knowledge Decoder", "संस्कृत ज्ञान डिकोडर", "संस्कृत ज्ञान डिकोडर")}
+              </h3>
+              <p className="text-sm font-normal text-[#525252] leading-relaxed tracking-[0.16px]">
+                {L(
+                  "Native Sanskrit epistemological decoder unravels traditional sutras, shlokas, and terminology into intuitive modern formulations.",
+                  "मूल संस्कृत ज्ञानमीमांसा डिकोडर पारंपरिक सूत्रों, श्लोकों और शब्दावली को सहज आधुनिक व्याख्याओं में प्रस्तुत करता है।",
+                  "मूळ संस्कृत ज्ञानमीमांसा डिकोडर पारंपारिक सूत्रे, श्लोक आणि संकल्पना आधुनिक स्वरूपात सहज समजावून देतो."
+                )}
+              </p>
+            </div>
+            <div className="pt-6 text-xs text-[#0f62fe] font-medium flex items-center gap-2">
+              <span>{L("Explore decoder", "डिकोडर देखें", "डिकोडर पहा")}</span>
+              <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Product Tab Strip & Showcase (Carbon Product Tabs) */}
+      <section className="bg-[#f4f4f4] px-6 sm:px-12 lg:px-16 py-20 border-b border-[#e0e0e0]">
+        <div className="max-w-[1584px] mx-auto">
+          <div className="mb-8">
+            <div className="text-sm font-normal text-[#525252] mb-2 tracking-[0.16px]">
+              {L("Mentor Archetypes", "मेंटर प्रकार", "मार्गदर्शक प्रकार")}
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-normal text-[#161616] tracking-tight">
+              {L("Interactive disciplines ready to converse", "संवाद के लिए तैयार परस्पर संवादात्मक विषय", "संवादासाठी सज्ज असलेले विविध विषय")}
+            </h2>
+          </div>
+
+          {/* Carbon Horizontal Tab Strip */}
+          <div className="flex border-b border-[#e0e0e0] overflow-x-auto mb-8 bg-white">
+            {mentorPresets.map((preset, idx) => (
+              <button
+                key={idx}
+                onClick={() => setSelectedTab(idx)}
+                className={`cds-tab whitespace-nowrap ${selectedTab === idx ? "cds-tab-active" : ""}`}
+              >
+                {preset.category}
+              </button>
+            ))}
+          </div>
+
+          {/* Active Tab Showcase Tile */}
+          <div className="cds-tile p-8 sm:p-12 border border-[#e0e0e0] bg-white">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div className="lg:col-span-7">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#f4f4f4] border border-[#e0e0e0] text-xs text-[#525252] mb-4">
+                  <FontAwesomeIcon icon={mentorPresets[selectedTab].icon} className="text-[#0f62fe]" />
+                  <span>{mentorPresets[selectedTab].category}</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-light text-[#161616] mb-4">
+                  {mentorPresets[selectedTab].title}
+                </h3>
+                <p className="text-base text-[#525252] leading-relaxed mb-6 tracking-[0.16px]">
+                  {mentorPresets[selectedTab].tagline}
+                </p>
+                <div className="grid grid-cols-2 gap-3 mb-8">
+                  {mentorPresets[selectedTab].topics.map((topic, i) => (
+                    <div key={i} className="flex items-center gap-2 text-sm text-[#161616]">
+                      <FontAwesomeIcon icon={faCheck} className="text-[#24a148] text-xs" />
+                      <span>{topic}</span>
+                    </div>
+                  ))}
+                </div>
+                <button
+                  onClick={handleLetChatClick}
+                  className="cds-btn-primary"
+                >
+                  <span>{L("Create this Mentor", "यह मेंटर बनाएं", "हा गुरू तयार करा")}</span>
+                  <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
+                </button>
+              </div>
+
+              <div className="lg:col-span-5 bg-[#f4f4f4] border border-[#e0e0e0] p-6">
+                <div className="text-xs text-[#525252] uppercase tracking-wider mb-3">Sample Interaction</div>
+                <div className="p-4 bg-white border border-[#e0e0e0] mb-3 text-xs leading-relaxed text-[#161616]">
+                  <span className="font-semibold text-[#0f62fe]">Student:</span> "Can you derive the proof from first principles without skipping the convergence constraint?"
+                </div>
+                <div className="p-4 bg-white border border-[#e0e0e0] text-xs leading-relaxed text-[#525252]">
+                  <span className="font-semibold text-[#161616]">Guru:</span> "Certainly. Let's observe the boundary condition where epsilon approaches zero. Notice how the series remains bounded..."
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Enterprise Partner / Domain Marquee (Carbon Logo Tiles) */}
+      <section className="px-6 sm:px-12 lg:px-16 py-16 max-w-[1584px] mx-auto border-b border-[#e0e0e0]">
+        <div className="text-xs uppercase tracking-wider text-[#8c8c8c] mb-6 font-medium">
+          {L("Academic and Technical Focus Disciplines", "शैक्षणिक और तकनीकी विशेषज्ञता के क्षेत्र", "शैक्षणिक आणि तांत्रिक विषयांचे क्षेत्र")}
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-0 border-t border-l border-[#e0e0e0]">
+          {["Mathematics", "Computer Science", "Vedic Epistemology", "Theoretical Physics", "Linguistics", "System Architecture"].map((disc, idx) => (
+            <div
+              key={idx}
+              className="cds-tile p-6 border-r border-b border-[#e0e0e0] flex items-center justify-center text-center text-xs font-normal text-[#525252] hover:bg-[#f4f4f4] transition-colors"
+            >
+              {disc}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 6. CTA Banner (IBM Blue #0f62fe full bleed banner as specified in DESIGN.md) */}
+      <section className="bg-[#0f62fe] text-white py-16 px-6 sm:px-12 lg:px-16">
+        <div className="max-w-[1584px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+          <div>
+            <h2 className="text-3xl sm:text-4xl font-light tracking-tight mb-2">
+              {L("Begin interacting with specialized mentors today.", "आज ही विशेष मेंटर्स के साथ सीखना शुरू करें।", "आजच विशेष गुरूंशी संवाद साधायला सुरुवात करा.")}
+            </h2>
+            <p className="text-white/80 text-base max-w-2xl font-light">
+              {L("No complex setup required. Create custom mentors or launch from curated presets in seconds.", "किसी जटिल सेटअप की आवश्यकता नहीं। कस्टम मेंटर्स बनाएं या सेकंडों में प्रीसेट से शुरू करें।", "कोणत्याही गुंतागुंतीच्या सेटअपची गरज नाही. काही सेकंदात आपले गुरू तयार करा.")}
+            </p>
+          </div>
+          <div className="flex-shrink-0">
+            <button
+              onClick={handleLetChatClick}
+              className="bg-white text-[#0f62fe] hover:bg-[#f4f4f4] px-8 py-4 text-sm font-normal rounded-none inline-flex items-center gap-3 transition-colors shadow-none"
+            >
+              <span>{L("Launch Workspace", "वर्कस्पेस खोलें", "वर्कस्पेस सुरू करा")}</span>
+              <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Carbon Charcoal Footer (Inverse Canvas #161616 with high-contrast text) */}
+      <footer className="bg-[#161616] text-[#f4f4f4] px-6 sm:px-12 lg:px-16 pt-16 pb-12">
+        <div className="max-w-[1584px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-[#393939] pb-12">
+          {/* Brand Col */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <img src={uniLogo} alt="UniGuru" className="w-8 h-8 object-contain" />
+              <span className="text-white text-lg font-light tracking-wider">UniGuru</span>
+            </div>
+            <p className="text-xs text-[#c6c6c6] leading-relaxed max-w-xs">
+              Enterprise educational AI powered by grounded curriculum graphs and pedagogical personas.
+            </p>
+            <div className="pt-2">
+              <a
+                href="https://blackholeinfiverse.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block hover:opacity-80 transition-opacity"
+              >
+                <img src={BHI} alt="Blackhole Infiverse" className="h-8 object-contain" />
+              </a>
+            </div>
+          </div>
+
+          {/* Col 2 */}
+          <div>
+            <h4 className="text-xs uppercase tracking-wider text-white mb-4 font-semibold">Platform</h4>
+            <ul className="space-y-2.5 text-xs text-[#f4f4f4]">
+              <li><button onClick={handleLetChatClick} className="text-[#f4f4f4] hover:text-white transition-colors">Roleplay Mentors</button></li>
+              <li><button onClick={handleLetChatClick} className="text-[#f4f4f4] hover:text-white transition-colors">Custom Personas</button></li>
+              <li><button onClick={() => navigate("/about")} className="text-[#f4f4f4] hover:text-white transition-colors">Curriculum Retrieval</button></li>
+              <li><button onClick={() => navigate("/about")} className="text-[#f4f4f4] hover:text-white transition-colors">Sanskrit Decoder</button></li>
+            </ul>
+          </div>
+
+          {/* Col 3 */}
+          <div>
+            <h4 className="text-xs uppercase tracking-wider text-white mb-4 font-semibold">Design & Architecture</h4>
+            <ul className="space-y-2.5 text-xs text-[#f4f4f4]">
+              <li><span className="text-[#f4f4f4]">Carbon Design System</span></li>
+              <li><span className="text-[#f4f4f4]">IBM Plex Sans Typography</span></li>
+              <li><span className="text-[#f4f4f4]">Flat 0px Geometry</span></li>
+              <li><span className="text-[#f4f4f4]">Single Accent Blue #0f62fe</span></li>
+            </ul>
+          </div>
+
+          {/* Col 4 */}
+          <div>
+            <h4 className="text-xs uppercase tracking-wider text-white mb-4 font-semibold">Access</h4>
+            <ul className="space-y-2.5 text-xs text-[#f4f4f4]">
+              <li><button onClick={() => navigate("/login")} className="text-[#f4f4f4] hover:text-white transition-colors">Sign In</button></li>
+              <li><button onClick={() => navigate("/signup")} className="text-[#f4f4f4] hover:text-white transition-colors">Create Account</button></li>
+              <li><button onClick={() => navigate("/about")} className="text-[#f4f4f4] hover:text-white transition-colors">Documentation</button></li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="max-w-[1584px] mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#c6c6c6] gap-4">
+          <div>
+            © {new Date().getFullYear()} UniGuru. All rights reserved. Faithfully adhering to DESIGN.md specification.
+          </div>
+          <div className="flex items-center gap-6">
+            <span className="text-[#c6c6c6] hover:text-white cursor-pointer" onClick={() => navigate("/about")}>Privacy</span>
+            <span className="text-[#c6c6c6] hover:text-white cursor-pointer" onClick={() => navigate("/about")}>Terms</span>
+            <span className="text-[#c6c6c6] hover:text-white cursor-pointer" onClick={() => navigate("/about")}>Security</span>
+          </div>
+        </div>
       </footer>
     </div>
   );
 };
 
 export default HomePage;
+

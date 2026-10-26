@@ -279,15 +279,14 @@ const SanskritDecoderGraph = ({
   }, [placed]);
 
   return (
-    <div className="relative select-none">
+    <div className="relative select-none border border-[#e0e0e0] bg-[#f4f4f4]">
       <svg
         ref={svgRef}
         width={width}
         height={height}
-        className="w-full rounded-xl"
+        className="w-full rounded-none"
         style={{
-          background:
-            "linear-gradient(135deg,#0d0d1a 0%,#0f172a 100%)",
+          backgroundColor: "#f4f4f4",
         }}
         viewBox={`0 0 ${width} ${height}`}
       >

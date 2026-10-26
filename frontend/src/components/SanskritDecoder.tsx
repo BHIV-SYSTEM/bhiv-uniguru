@@ -2,225 +2,213 @@ import React, { useState, useCallback, useRef, useEffect } from "react";
 
 import {
 
-  Search,
+  Search,
 
-  ChevronDown,
+  ChevronDown,
 
-  ChevronRight,
+  ChevronRight,
 
-  GitBranch,
+  GitBranch,
 
-  BookOpen,
+  BookOpen,
 
-  Layers,
+  Layers,
 
-  Shield,
+  Shield,
 
-  RefreshCw,
+  RefreshCw,
 
-  AlertCircle,
+  AlertCircle,
 
-  CheckCircle2,
+  CheckCircle2,
 
-  Circle,
+  Circle,
 
-  Network,
+  Network,
 
-  Sparkles,
+  Sparkles,
 
-  FlaskConical,
+  FlaskConical,
 
-  BookMarked,
+  BookMarked,
 
-  Zap,
+  Zap,
 
-  Info,
+  Info,
 
 } from "lucide-react";
 
 import {
 
-  decodeSanskritConcept,
+  decodeSanskritConcept,
 
-  checkDecoderHealth,
+  checkDecoderHealth,
 
-  RUNTIME_API_BASE,
+  RUNTIME_API_BASE,
 
 } from "../services/sanskritDecoderApi";
 
 import type {
 
-  SanskritDecoderApiResponse,
+  SanskritDecoderApiResponse,
 
-  KnowledgeLayer,
+  KnowledgeLayer,
 
-  PipelineStage,
+  PipelineStage,
 
 } from "../types/sanskrit";
 
 import SanskritDecoderGraph from "./SanskritDecoderGraph";
 
-
-
 // ── Constants ─────────────────────────────────────────────────────────────────
 
 const PIPELINE_STAGES = [
 
-  { key: "śabda",            label: "Śabda",           desc: "Sound-form / phonetic identity" },
+  { key: "śabda",            label: "Śabda",           desc: "Sound-form / phonetic identity" },
 
-  { key: "dhātu",           label: "Dhātu",            desc: "Root verb / primary semantic seed" },
+  { key: "dhātu",           label: "Dhātu",            desc: "Root verb / primary semantic seed" },
 
-  { key: "vyākaraṇa",      label: "Vyākaraṇa",        desc: "Grammar & derivation (Pāṇini)" },
+  { key: "vyākaraṇa",      label: "Vyākaraṇa",        desc: "Grammar & derivation (Pāṇini)" },
 
-  { key: "nirukta",         label: "Nirukta",          desc: "Etymological interpretation (Yāska)" },
+  { key: "nirukta",         label: "Nirukta",          desc: "Etymological interpretation (Yāska)" },
 
-  { key: "bīja",            label: "Bīja",             desc: "Seed-syllable / acoustic form" },
+  { key: "bīja",            label: "Bīja",             desc: "Seed-syllable / acoustic form" },
 
-  { key: "tattva",          label: "Tattva",           desc: "Cosmic principle / elemental reality" },
+  { key: "tattva",          label: "Tattva",           desc: "Cosmic principle / elemental reality" },
 
-  { key: "śakti",           label: "Śakti",            desc: "Dynamic power / transformative force" },
+  { key: "śakti",           label: "Śakti",            desc: "Dynamic power / transformative force" },
 
-  { key: "functional_meaning", label: "Functional Meaning", desc: "Civilizational operational definition" },
+  { key: "functional_meaning", label: "Functional Meaning", desc: "Civilizational operational definition" },
 
 ];
-
-
 
 const KNOWLEDGE_LAYER_GROUPS = [
 
-  {
+  {
 
-    group: "Core Linguistic",
+    group: "Core Linguistic",
 
-    icon: BookOpen,
+    icon: BookOpen,
 
-    layers: ["literal_meaning", "functional_meaning"],
+    layers: ["literal_meaning", "functional_meaning"],
 
-  },
+  },
 
-  {
+  {
 
-    group: "Philosophical Domains",
+    group: "Philosophical Domains",
 
-    icon: Sparkles,
+    icon: Sparkles,
 
-    layers: ["ontology", "cosmology", "psychology", "governance"],
+    layers: ["ontology", "cosmology", "psychology", "governance"],
 
-  },
+  },
 
-  {
+  {
 
-    group: "Scientific Applications",
+    group: "Scientific Applications",
 
-    icon: FlaskConical,
+    icon: FlaskConical,
 
-    layers: ["medicine", "engineering", "mathematics", "astronomy", "metallurgy"],
+    layers: ["medicine", "engineering", "mathematics", "astronomy", "metallurgy"],
 
-  },
+  },
 
-  {
+  {
 
-    group: "Ritual & Symbolism",
+    group: "Ritual & Symbolism",
 
-    icon: Zap,
+    icon: Zap,
 
-    layers: ["ritual", "symbolism"],
+    layers: ["ritual", "symbolism"],
 
-  },
+  },
 
-  {
+  {
 
-    group: "Relational Network",
+    group: "Relational Network",
 
-    icon: Network,
+    icon: Network,
 
-    layers: [
+    layers: [
 
-      "related_deities", "related_lokas", "related_koshas",
+      "related_deities", "related_lokas", "related_koshas",
 
-      "related_chakras", "related_yantras", "related_mantras",
+      "related_chakras", "related_yantras", "related_mantras",
 
-      "related_vidyas", "related_shastras",
+      "related_vidyas", "related_shastras",
 
-    ],
+    ],
 
-  },
+  },
 
-  {
+  {
 
-    group: "Hermeneutics & History",
+    group: "Hermeneutics & History",
 
-    icon: BookMarked,
+    icon: BookMarked,
 
-    layers: ["traditional_interpretations", "historical_evolution", "comparative_hermeneutics"],
+    layers: ["traditional_interpretations", "historical_evolution", "comparative_hermeneutics"],
 
-  },
+  },
 
-  {
+  {
 
-    group: "Research Classification",
+    group: "Research Classification",
 
-    icon: FlaskConical,
+    icon: FlaskConical,
 
-    layers: ["open_research_questions", "experimental_hypotheses"],
+    layers: ["open_research_questions", "experimental_hypotheses"],
 
-  },
+  },
 
 ];
-
-
 
 const SUGGESTED_CONCEPTS = [
 
-  "dharma", "karma", "prana", "atman", "brahman", "shakti",
+  "dharma", "karma", "prana", "atman", "brahman", "shakti",
 
-  "yajna", "moksha", "yoga", "vidya", "guru", "maya",
+  "yajna", "moksha", "yoga", "vidya", "guru", "maya",
 
-  "akasha", "agni", "rta", "om", "purusha", "prakrti",
+  "akasha", "agni", "rta", "om", "purusha", "prakrti",
 
 ];
 
-
-
 // ── Helper components ─────────────────────────────────────────────────────────
-
-
 
 const EvidenceBadge: React.FC<{ status: string }> = ({ status }) => {
 
-  const map: Record<string, { label: string; className: string }> = {
+  const map: Record<string, { label: string; className: string }> = {
 
-    EVIDENCE_BACKED:                  { label: "Evidence Backed",   className: "bg-emerald-900/50 text-emerald-300 border-emerald-700/60" },
+    EVIDENCE_BACKED:                  { label: "Evidence Backed",   className: "bg-emerald-900/50 text-emerald-300 border-emerald-700/60" },
 
-    NO_RETRIEVED_EVIDENCE:            { label: "No Evidence",       className: "bg-gray-800/50 text-gray-400 border-gray-700/40" },
+    NO_RETRIEVED_EVIDENCE:            { label: "No Evidence",       className: "bg-gray-800/50 text-gray-400 border-gray-700/40" },
 
-    NOT_ASSERTED:                     { label: "Not Asserted",      className: "bg-gray-800/30 text-gray-500 border-gray-800/40" },
+    NOT_ASSERTED:                     { label: "Not Asserted",      className: "bg-gray-800/30 text-gray-500 border-gray-800/40" },
 
-    EXPLICITLY_MARKED_EXPERIMENTAL:   { label: "Experimental",      className: "bg-amber-900/40 text-amber-300 border-amber-700/40" },
+    EXPLICITLY_MARKED_EXPERIMENTAL:   { label: "Experimental",      className: "bg-amber-900/40 text-amber-300 border-amber-700/40" },
 
-    SOURCE_SCOPED:                    { label: "Source Scoped",     className: "bg-blue-900/50 text-blue-300 border-blue-700/40" },
+    SOURCE_SCOPED:                    { label: "Source Scoped",     className: "bg-blue-900/50 text-blue-300 border-blue-700/40" },
 
-    UNVERIFIED:                       { label: "Unverified",        className: "bg-red-900/30 text-red-400 border-red-800/40" },
+    UNVERIFIED:                       { label: "Unverified",        className: "bg-red-900/30 text-red-400 border-red-800/40" },
 
-    DERIVED:                          { label: "Derived",           className: "bg-purple-900/30 text-purple-400 border-purple-800/40" },
+    DERIVED:                          { label: "Derived",           className: "bg-purple-900/30 text-[#0f62fe] border-purple-800/40" },
 
-  };
+  };
 
-  const config = map[status] ?? { label: status, className: "bg-gray-800/30 text-gray-500 border-gray-700/30" };
+  const config = map[status] ?? { label: status, className: "bg-gray-800/30 text-gray-500 border-gray-700/30" };
 
-  return (
+  return (
 
-    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium border ${config.className}`}>
+    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium border ${config.className}`}>
 
-      {config.label}
+      {config.label}
 
-    </span>
+    </span>
 
-  );
+  );
 
 };
-
-
 
 const LayerRow: React.FC<{ layerKey: string; layer: KnowledgeLayer }> = ({ layerKey, layer }) => {
   const [open, setOpen] = useState(false);
@@ -255,1296 +243,1232 @@ const LayerRow: React.FC<{ layerKey: string; layer: KnowledgeLayer }> = ({ layer
 
       {open && (
 
-        <div className="px-4 py-3 bg-gray-950/60 space-y-2 border-t border-gray-800/40">
+        <div className="px-4 py-3 bg-gray-950/60 space-y-2 border-t border-gray-800/40">
 
-          {/* Panini grammar enrichment */}
+          {/* Panini grammar enrichment */}
 
-          {layer.panini_grammar?.panini_sutras?.length ? (
+          {layer.panini_grammar?.panini_sutras?.length ? (
 
-            <div className="mb-2 p-2 rounded bg-purple-950/40 border border-purple-800/30">
+            <div className="mb-2 p-2 rounded bg-purple-950/40 border border-purple-800/30">
 
-              <div className="text-purple-300 text-[10px] font-semibold mb-1">
+              <div className="text-purple-300 text-[10px] font-semibold mb-1">
 
-                Pāṇini Sūtras ({layer.panini_grammar.panini_sutras.length})
+                Pāṇini Sūtras ({layer.panini_grammar.panini_sutras.length})
 
-              </div>
+              </div>
 
-              {layer.panini_grammar.panini_sutras.map((s, i) => (
+              {layer.panini_grammar.panini_sutras.map((s, i) => (
 
-                <div key={i} className="text-gray-300 text-xs mb-1">
+                <div key={i} className="text-[#161616] text-xs mb-1">
 
-                  <span className="text-purple-400 font-mono">{s.sutra_number}</span>{" "}
+                  <span className="text-[#0f62fe] font-mono">{s.sutra_number}</span>{" "}
 
-                  <span>{s.sutra_text}</span>{" "}
+                  <span>{s.sutra_text}</span>{" "}
 
-                  {s.gloss && <span className="text-gray-500">— {s.gloss}</span>}
+                  {s.gloss && <span className="text-gray-500">— {s.gloss}</span>}
 
-                </div>
+                </div>
 
-              ))}
+              ))}
 
-            </div>
+            </div>
 
-          ) : null}
+          ) : null}
 
+          {/* Acoustic phonetics enrichment */}
 
+          {layer.acoustic_phonetics?.claims?.length ? (
 
-          {/* Acoustic phonetics enrichment */}
+            <div className="mb-2 p-2 rounded bg-teal-950/40 border border-teal-800/30">
 
-          {layer.acoustic_phonetics?.claims?.length ? (
+              <div className="text-teal-300 text-[10px] font-semibold mb-1">Śikṣā Acoustic Phonetics</div>
 
-            <div className="mb-2 p-2 rounded bg-teal-950/40 border border-teal-800/30">
+              {layer.acoustic_phonetics.claims.map((c, i) => {
 
-              <div className="text-teal-300 text-[10px] font-semibold mb-1">Śikṣā Acoustic Phonetics</div>
+                const v = c.value as Record<string, string | undefined>;
 
-              {layer.acoustic_phonetics.claims.map((c, i) => {
+                return (
 
-                const v = c.value as Record<string, string | undefined>;
+                  <div key={i} className="text-[#161616] text-xs grid grid-cols-2 gap-1">
 
-                return (
+                    {v.iast && <span>IAST: <span className="font-mono text-teal-300">{v.iast}</span></span>}
 
-                  <div key={i} className="text-gray-300 text-xs grid grid-cols-2 gap-1">
+                    {v.ipa && <span>IPA: <span className="font-mono text-teal-300">{v.ipa}</span></span>}
 
-                    {v.iast && <span>IAST: <span className="font-mono text-teal-300">{v.iast}</span></span>}
+                    {v.varna_class && <span>Class: <span className="text-gray-400">{v.varna_class}</span></span>}
 
-                    {v.ipa && <span>IPA: <span className="font-mono text-teal-300">{v.ipa}</span></span>}
+                    {v.sthana && <span>Sthāna: <span className="text-gray-400">{v.sthana}</span></span>}
 
-                    {v.varna_class && <span>Class: <span className="text-gray-400">{v.varna_class}</span></span>}
+                  </div>
 
-                    {v.sthana && <span>Sthāna: <span className="text-gray-400">{v.sthana}</span></span>}
+                );
 
-                  </div>
+              })}
 
-                );
+            </div>
 
-              })}
+          ) : null}
 
-            </div>
+          {/* Darshana matrix */}
 
-          ) : null}
+          {layer.darshana_matrix && Object.keys(layer.darshana_matrix).length > 0 && (
 
+            <div className="mb-2 space-y-1">
 
+              {Object.entries(layer.darshana_matrix).map(([trad, entry]) => (
 
-          {/* Darshana matrix */}
+                <div key={trad} className="p-2 rounded bg-indigo-950/30 border border-indigo-800/20">
 
-          {layer.darshana_matrix && Object.keys(layer.darshana_matrix).length > 0 && (
+                  <div className="text-indigo-300 text-[10px] font-semibold capitalize mb-0.5">{trad}</div>
 
-            <div className="mb-2 space-y-1">
+                  <div className="text-[#161616] text-xs">{entry.position}</div>
 
-              {Object.entries(layer.darshana_matrix).map(([trad, entry]) => (
+                </div>
 
-                <div key={trad} className="p-2 rounded bg-indigo-950/30 border border-indigo-800/20">
+              ))}
 
-                  <div className="text-indigo-300 text-[10px] font-semibold capitalize mb-0.5">{trad}</div>
+            </div>
 
-                  <div className="text-gray-300 text-xs">{entry.position}</div>
+          )}
 
-                </div>
+          {/* Regular claims */}
 
-              ))}
+          {layer.claims.map((claim, i) => (
 
-            </div>
+            <div key={i} className="text-[#161616] text-xs leading-relaxed">
 
-          )}
+              {typeof claim.value === "string"
 
+                ? claim.value
 
+                : Array.isArray(claim.value)
 
-          {/* Regular claims */}
+                ? (claim.value as string[]).join(", ")
 
-          {layer.claims.map((claim, i) => (
+                : JSON.stringify(claim.value)}
 
-            <div key={i} className="text-gray-300 text-xs leading-relaxed">
+            </div>
 
-              {typeof claim.value === "string"
+          ))}
 
-                ? claim.value
+          {/* Provenance */}
 
-                : Array.isArray(claim.value)
+          {firstClaim?.provenance?.[0] && (
 
-                ? (claim.value as string[]).join(", ")
+            <div className="mt-2 flex items-start gap-1.5 text-[10px] text-gray-500">
 
-                : JSON.stringify(claim.value)}
+              <Shield size={10} className="mt-0.5 flex-shrink-0 text-gray-600" />
 
-            </div>
+              <span className="font-mono break-all">
 
-          ))}
+                {firstClaim.provenance[0].source_path}
 
+              </span>
 
+            </div>
 
-          {/* Provenance */}
+          )}
 
-          {firstClaim?.provenance?.[0] && (
+        </div>
 
-            <div className="mt-2 flex items-start gap-1.5 text-[10px] text-gray-500">
+      )}
 
-              <Shield size={10} className="mt-0.5 flex-shrink-0 text-gray-600" />
+    </div>
 
-              <span className="font-mono break-all">
-
-                {firstClaim.provenance[0].source_path}
-
-              </span>
-
-            </div>
-
-          )}
-
-        </div>
-
-      )}
-
-    </div>
-
-  );
+  );
 
 };
-
-
 
 // ── Main component ─────────────────────────────────────────────────────────────
 
-
-
 const SanskritDecoder: React.FC = () => {
 
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("");
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const [result, setResult] = useState<SanskritDecoderApiResponse | null>(null);
+  const [result, setResult] = useState<SanskritDecoderApiResponse | null>(null);
 
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
-  const [activeTab, setActiveTab] = useState<"pipeline" | "layers" | "graph" | "provenance">("pipeline");
+  const [activeTab, setActiveTab] = useState<"pipeline" | "layers" | "graph" | "provenance">("pipeline");
 
-  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set(["Core Linguistic"]));
+  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set(["Core Linguistic"]));
 
-  const [healthStatus, setHealthStatus] = useState<"unknown" | "online" | "offline">("unknown");
+  const [healthStatus, setHealthStatus] = useState<"unknown" | "online" | "offline">("unknown");
 
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
+  // Health check on mount
 
+  useEffect(() => {
 
-  // Health check on mount
+    checkDecoderHealth().then(({ online }) => {
 
-  useEffect(() => {
+      setHealthStatus(online ? "online" : "offline");
 
-    checkDecoderHealth().then(({ online }) => {
+    });
 
-      setHealthStatus(online ? "online" : "offline");
+  }, []);
 
-    });
+  const handleDecode = useCallback(async (q?: string) => {
 
-  }, []);
+    const finalQuery = (q ?? query).trim();
 
+    if (!finalQuery) return;
 
+    setQuery(finalQuery);
 
-  const handleDecode = useCallback(async (q?: string) => {
+    setLoading(true);
 
-    const finalQuery = (q ?? query).trim();
+    setError(null);
 
-    if (!finalQuery) return;
+    setResult(null);
 
-    setQuery(finalQuery);
+    setActiveTab("pipeline");
 
-    setLoading(true);
+    try {
 
-    setError(null);
+      const res = await decodeSanskritConcept(finalQuery);
 
-    setResult(null);
+      setResult(res);
 
-    setActiveTab("pipeline");
+    } catch (err: unknown) {
 
-    try {
+      const message =
 
-      const res = await decodeSanskritConcept(finalQuery);
+        err instanceof Error
 
-      setResult(res);
+          ? err.message
 
-    } catch (err: unknown) {
+          : "Unable to reach the Sanskrit decoder runtime. Ensure the backend is running on port 8001.";
 
-      const message =
+      setError(message);
 
-        err instanceof Error
+    } finally {
 
-          ? err.message
+      setLoading(false);
 
-          : "Unable to reach the Sanskrit decoder runtime. Ensure the backend is running on port 8001.";
+    }
 
-      setError(message);
+  }, [query]);
 
-    } finally {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
 
-      setLoading(false);
+    if (e.key === "Enter") handleDecode();
 
-    }
+  };
 
-  }, [query]);
+  const toggleGroup = (group: string) => {
 
+    setExpandedGroups((prev) => {
 
+      const next = new Set(prev);
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
+      next.has(group) ? next.delete(group) : next.add(group);
 
-    if (e.key === "Enter") handleDecode();
+      return next;
 
-  };
+    });
 
+  };
 
+  const concept = result?.decoder_result?.canonical_concept;
 
-  const toggleGroup = (group: string) => {
+  const civilizational = result?.decoder_result?.civilizational_knowledge;
 
-    setExpandedGroups((prev) => {
+  const pipeline = result?.decoder_result?.pipeline ?? [];
 
-      const next = new Set(prev);
+  const graph = result?.decoder_result?.knowledge_graph;
 
-      next.has(group) ? next.delete(group) : next.add(group);
+  const govResponse = result?.decoder_result?.governed_response;
 
-      return next;
+  const provenance = result?.decoder_result?.provenance;
 
-    });
+  const isNotFound = result && !concept;
 
-  };
+  return (
 
+    <div className="min-h-screen bg-white text-[#161616] font-carbon">
 
+      {/* Header */}
 
-  const concept = result?.decoder_result?.canonical_concept;
+      <div className="relative overflow-hidden">
 
-  const civilizational = result?.decoder_result?.civilizational_knowledge;
+        <div className="absolute inset-0 bg-[#f4f4f4] border-b border-[#e0e0e0] pointer-events-none" />
 
-  const pipeline = result?.decoder_result?.pipeline ?? [];
+        <div className="relative max-w-5xl mx-auto px-4 pt-10 pb-6">
 
-  const graph = result?.decoder_result?.knowledge_graph;
+          <div className="flex items-center justify-between mb-2">
 
-  const govResponse = result?.decoder_result?.governed_response;
+            <div className="flex items-center gap-3">
 
-  const provenance = result?.decoder_result?.provenance;
+              <div className="w-10 h-10 bg-[#ffffff] border border-[#e0e0e0] flex items-center justify-center text-lg font-bold text-[#0f62fe] rounded-none">
 
-  const isNotFound = result && !concept;
+                ॐ
 
+              </div>
 
+              <div>
 
-  return (
+                <h1 className="text-2xl sm:text-3xl font-light text-[#161616] tracking-tight">
 
-    <div className="min-h-screen bg-black text-white font-sans">
+                  Sanskrit Knowledge Decoder
 
-      {/* Header */}
+                </h1>
 
-      <div className="relative overflow-hidden">
+                <p className="text-[#525252] text-xs mt-0.5 tracking-[0.16px]">
 
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-950/30 via-black to-black pointer-events-none" />
+                  UniGuru Native Civilizational Intelligence Engine · Isha Singh · Sprint 2026
 
-        <div className="relative max-w-5xl mx-auto px-4 pt-10 pb-6">
+                </p>
 
-          <div className="flex items-center justify-between mb-2">
+              </div>
 
-            <div className="flex items-center gap-3">
+            </div>
 
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-violet-800 flex items-center justify-center text-lg font-bold shadow-lg shadow-purple-900/50">
+            {/* Health badge */}
 
-                ॐ
+            <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs ${
 
-              </div>
+              healthStatus === "online"
 
-              <div>
+                ? "bg-emerald-950/50 border-emerald-700/50 text-[#198038]"
 
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-300 via-violet-200 to-white bg-clip-text text-transparent">
+                : healthStatus === "offline"
 
-                  Sanskrit Knowledge Decoder
+                ? "bg-red-950/50 border-red-800/50 text-red-400"
 
-                </h1>
+                : "bg-gray-900/50 border-gray-700/50 text-gray-500"
 
-                <p className="text-gray-500 text-xs mt-0.5">
+            }`}>
 
-                  UniGuru Native Civilizational Intelligence Engine · Isha Singh · Sprint 2026
+              <div className={`w-1.5 h-1.5 rounded-full ${
 
-                </p>
+                healthStatus === "online" ? "bg-emerald-400 animate-pulse" :
 
-              </div>
+                healthStatus === "offline" ? "bg-red-400" : "bg-gray-500"
 
-            </div>
+              }`} />
 
-            {/* Health badge */}
+              {healthStatus === "online" ? "Runtime Online" : healthStatus === "offline" ? "Runtime Offline" : "Checking…"}
 
-            <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs ${
+            </div>
 
-              healthStatus === "online"
+          </div>
 
-                ? "bg-emerald-950/50 border-emerald-700/50 text-emerald-400"
+          {/* Description */}
 
-                : healthStatus === "offline"
+          <p className="text-[#525252] text-sm max-w-2xl mt-3 leading-relaxed tracking-[0.16px]">
 
-                ? "bg-red-950/50 border-red-800/50 text-red-400"
+            Decodes Sanskrit concepts through their own epistemology — Śabda → Dhātu → Vyākaraṇa →
 
-                : "bg-gray-900/50 border-gray-700/50 text-gray-500"
+            Nirukta → Bīja → Tattva → Śakti → Functional Meaning. Every claim is source-scoped,
 
-            }`}>
+            every statement is evidence-classified, every execution is replay-safe.
 
-              <div className={`w-1.5 h-1.5 rounded-full ${
+          </p>
 
-                healthStatus === "online" ? "bg-emerald-400 animate-pulse" :
+        </div>
 
-                healthStatus === "offline" ? "bg-red-400" : "bg-gray-500"
+      </div>
 
-              }`} />
+      <div className="max-w-5xl mx-auto px-4 pb-16 space-y-6">
 
-              {healthStatus === "online" ? "Runtime Online" : healthStatus === "offline" ? "Runtime Offline" : "Checking…"}
+        {/* Search box */}
 
-            </div>
+        <div className="relative">
 
-          </div>
+          <div className="flex gap-2">
 
+            <div className="relative flex-1">
 
+              <Search
 
-          {/* Description */}
+                size={16}
 
-          <p className="text-gray-400 text-sm max-w-2xl mt-4 leading-relaxed">
+                className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-500"
 
-            Decodes Sanskrit concepts through their own epistemology — Śabda → Dhātu → Vyākaraṇa →
+              />
 
-            Nirukta → Bīja → Tattva → Śakti → Functional Meaning. Every claim is source-scoped,
+              <input
 
-            every statement is evidence-classified, every execution is replay-safe.
+                ref={inputRef}
 
-          </p>
+                id="sanskrit-decoder-query"
 
-        </div>
+                type="text"
 
-      </div>
+                value={query}
 
+                onChange={(e) => setQuery(e.target.value)}
 
+                onKeyDown={handleKeyDown}
 
-      <div className="max-w-5xl mx-auto px-4 pb-16 space-y-6">
+                placeholder="Enter a Sanskrit concept — dharma, karma, prana, ॐ, धर्म …"
 
-        {/* Search box */}
+                className="w-full pl-10 pr-4 py-3.5 rounded-none bg-[#f4f4f4] border-b border-[#8d8d8d] text-[#161616] placeholder-[#525252] focus:outline-none focus:border-[#0f62fe] focus:border-b-2 transition-all text-sm tracking-[0.16px]"
 
-        <div className="relative">
+                autoComplete="off"
 
-          <div className="flex gap-2">
+                spellCheck={false}
 
-            <div className="relative flex-1">
+              />
 
-              <Search
+            </div>
 
-                size={16}
+            <button
 
-                className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-500"
+              id="sanskrit-decode-btn"
 
-              />
+              onClick={() => handleDecode()}
 
-              <input
+              disabled={loading || !query.trim()}
 
-                ref={inputRef}
+              className="cds-btn-primary px-6 py-3.5 rounded-none font-semibold text-xs tracking-[0.16px] flex items-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed"
 
-                id="sanskrit-decoder-query"
+            >
 
-                type="text"
+              {loading ? (
 
-                value={query}
+                <RefreshCw size={15} className="animate-spin" />
 
-                onChange={(e) => setQuery(e.target.value)}
+              ) : (
 
-                onKeyDown={handleKeyDown}
+                <Layers size={15} />
 
-                placeholder="Enter a Sanskrit concept — dharma, karma, prana, ॐ, धर्म …"
+              )}
 
-                className="w-full pl-10 pr-4 py-3.5 rounded-xl bg-gray-900 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-600/60 focus:border-purple-600 transition-all text-sm"
+              {loading ? "Decoding…" : "Decode"}
 
-                autoComplete="off"
+            </button>
 
-                spellCheck={false}
+          </div>
 
-              />
+          {/* Suggestions */}
 
-            </div>
+          <div className="flex flex-wrap gap-2 mt-3">
 
-            <button
+            {SUGGESTED_CONCEPTS.map((c) => (
 
-              id="sanskrit-decode-btn"
+              <button
 
-              onClick={() => handleDecode()}
+                key={c}
 
-              disabled={loading || !query.trim()}
+                id={`suggest-${c}`}
 
-              className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-purple-700 to-violet-700 hover:from-purple-600 hover:to-violet-600 disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold text-sm transition-all flex items-center gap-2 shadow-lg shadow-purple-900/30"
+                onClick={() => handleDecode(c)}
 
-            >
+                className="px-2.5 py-1 rounded-none bg-[#f4f4f4] border border-[#e0e0e0] text-[#525252] text-xs hover:border-[#0f62fe] hover:text-[#0f62fe] hover:bg-white transition-all tracking-[0.16px]"
 
-              {loading ? (
+              >
 
-                <RefreshCw size={15} className="animate-spin" />
+                {c}
 
-              ) : (
+              </button>
 
-                <Layers size={15} />
+            ))}
 
-              )}
+          </div>
 
-              {loading ? "Decoding…" : "Decode"}
+        </div>
 
-            </button>
+        {/* Error */}
 
-          </div>
+        {error && (
 
+          <div className="flex items-start gap-3 p-4 rounded-xl bg-red-950/30 border border-red-800/50">
 
+            <AlertCircle size={16} className="text-red-400 flex-shrink-0 mt-0.5" />
 
-          {/* Suggestions */}
+            <div className="text-sm text-red-300">
 
-          <div className="flex flex-wrap gap-2 mt-3">
+              <div className="font-semibold mb-0.5">Decoder Error</div>
 
-            {SUGGESTED_CONCEPTS.map((c) => (
+              <div className="text-red-400 text-xs">{error}</div>
 
-              <button
+              <div className="text-[#525252] text-xs mt-1">Runtime URL: {RUNTIME_API_BASE}</div>
 
-                key={c}
+            </div>
 
-                id={`suggest-${c}`}
+          </div>
 
-                onClick={() => handleDecode(c)}
+        )}
 
-                className="px-2.5 py-1 rounded-lg bg-gray-900/60 border border-gray-800 text-gray-400 text-xs hover:border-purple-700/60 hover:text-purple-300 hover:bg-purple-950/30 transition-all"
+        {/* Not Found */}
 
-              >
+        {isNotFound && (
 
-                {c}
+          <div className="flex items-start gap-3 p-4 rounded-xl bg-gray-900/50 border border-gray-700">
 
-              </button>
+            <Info size={16} className="text-gray-400 flex-shrink-0 mt-0.5" />
 
-            ))}
+            <div>
 
-          </div>
+              <div className="text-gray-300 font-semibold text-sm mb-0.5">No Canonical Record Found</div>
 
-        </div>
+              <div className="text-[#525252] text-xs">
 
+                "{query}" did not match any canonical Sanskrit lexical record in the
 
+                UniGuru registry. Try the Devanagari script form or a transliteration
 
-        {/* Error */}
+                variant. Evidence classification: UNVERIFIED.
 
-        {error && (
+              </div>
 
-          <div className="flex items-start gap-3 p-4 rounded-xl bg-red-950/30 border border-red-800/50">
+            </div>
 
-            <AlertCircle size={16} className="text-red-400 flex-shrink-0 mt-0.5" />
+          </div>
 
-            <div className="text-sm text-red-300">
+        )}
 
-              <div className="font-semibold mb-0.5">Decoder Error</div>
+        {/* ── Results ──────────────────────────────────────────────────────── */}
 
-              <div className="text-red-400 text-xs">{error}</div>
+        {concept && (
 
-              <div className="text-gray-500 text-xs mt-1">Runtime URL: {RUNTIME_API_BASE}</div>
+          <>
 
-            </div>
+            {/* Concept header card */}
 
-          </div>
+            <div className="cds-tile bg-white border border-[#e0e0e0] p-6 rounded-none shadow-none font-carbon">
 
-        )}
+              <div className="flex items-start justify-between gap-4 flex-wrap">
 
+                <div>
 
+                  <div className="text-4xl font-light text-[#161616] mb-1 tracking-tight">
 
-        {/* Not Found */}
+                    {concept.sanskrit}
 
-        {isNotFound && (
+                  </div>
 
-          <div className="flex items-start gap-3 p-4 rounded-xl bg-gray-900/50 border border-gray-700">
+                  <div className="text-lg font-semibold text-[#161616]">
 
-            <Info size={16} className="text-gray-400 flex-shrink-0 mt-0.5" />
+                    {concept.transliteration}
 
-            <div>
+                  </div>
 
-              <div className="text-gray-300 font-semibold text-sm mb-0.5">No Canonical Record Found</div>
+                  <div className="text-xs text-[#525252] font-mono mt-0.5">
 
-              <div className="text-gray-500 text-xs">
+                    {concept.concept_id}
 
-                "{query}" did not match any canonical Sanskrit lexical record in the
+                  </div>
 
-                UniGuru registry. Try the Devanagari script form or a transliteration
+                </div>
 
-                variant. Evidence classification: UNVERIFIED.
+                <div className="flex flex-col gap-2 items-end">
 
-              </div>
+                  <EvidenceBadge
 
-            </div>
+                    status={govResponse?.evidence_classification?.classification ?? "SOURCE_SCOPED"}
 
-          </div>
+                  />
 
-        )}
+                  {result?.replay?.replay_safe && (
 
+                    <div className="flex items-center gap-1 text-xs text-[#198038]">
 
+                      <CheckCircle2 size={11} />
 
-        {/* ── Results ──────────────────────────────────────────────────────── */}
+                      Replay Safe
 
-        {concept && (
+                    </div>
 
-          <>
+                  )}
 
-            {/* Concept header card */}
+                  {civilizational?.coverage && (
 
-            <div className="rounded-2xl bg-gradient-to-br from-gray-900 via-purple-950/20 to-gray-900 border border-purple-800/40 p-5 shadow-xl">
+                    <div className="text-xs text-gray-500">
 
-              <div className="flex items-start justify-between gap-4 flex-wrap">
+                      Coverage:{" "}
 
-                <div>
+                      <span className="text-[#0f62fe] font-semibold">
 
-                  <div className="text-4xl font-bold text-purple-200 mb-1">
+                        {civilizational.coverage.coverage_pct}%
 
-                    {concept.sanskrit}
+                      </span>{" "}
 
-                  </div>
+                      ({civilizational.coverage.evidence_backed_layers}/
 
-                  <div className="text-gray-300 text-lg font-semibold">
+                      {civilizational.coverage.total_layers} layers)
 
-                    {concept.transliteration}
+                    </div>
 
-                  </div>
+                  )}
 
-                  <div className="text-gray-500 text-sm mt-0.5 font-mono">
+                </div>
 
-                    {concept.concept_id}
+              </div>
 
-                  </div>
+              {/* Functional meaning */}
 
-                </div>
+              {concept.functional_meaning && (
 
-                <div className="flex flex-col gap-2 items-end">
+                <div className="mt-4 p-3 rounded-xl bg-black/40 border border-gray-800/60">
 
-                  <EvidenceBadge
+                  <div className="text-[#525252] text-xs mb-1 uppercase tracking-wider">
 
-                    status={govResponse?.evidence_classification?.classification ?? "SOURCE_SCOPED"}
+                    Functional Meaning
 
-                  />
+                  </div>
 
-                  {result?.replay?.replay_safe && (
+                  <div className="text-gray-200 text-sm leading-relaxed">
 
-                    <div className="flex items-center gap-1 text-xs text-emerald-400">
+                    {concept.functional_meaning}
 
-                      <CheckCircle2 size={11} />
+                  </div>
 
-                      Replay Safe
+                </div>
 
-                    </div>
+              )}
 
-                  )}
+              {/* Related concepts */}
 
-                  {civilizational?.coverage && (
+              {concept.related_concepts?.length > 0 && (
 
-                    <div className="text-xs text-gray-500">
+                <div className="mt-3 flex flex-wrap gap-2">
 
-                      Coverage:{" "}
+                  {concept.related_concepts.map((rc) => (
 
-                      <span className="text-purple-400 font-semibold">
+                    <button
 
-                        {civilizational.coverage.coverage_pct}%
+                      key={rc}
 
-                      </span>{" "}
+                      onClick={() => handleDecode(rc)}
 
-                      ({civilizational.coverage.evidence_backed_layers}/
+                      className="px-2.5 py-0.5 rounded-full bg-purple-950/40 border border-purple-800/40 text-purple-300 text-xs hover:bg-purple-900/50 transition-all"
 
-                      {civilizational.coverage.total_layers} layers)
+                    >
 
-                    </div>
+                      {rc}
 
-                  )}
+                    </button>
 
-                </div>
+                  ))}
 
-              </div>
+                </div>
 
+              )}
 
+            </div>
 
-              {/* Functional meaning */}
+            {/* Tab navigation */}
 
-              {concept.functional_meaning && (
+            <div className="flex gap-0 bg-[#f4f4f4] border-b border-[#e0e0e0] rounded-none p-0">
 
-                <div className="mt-4 p-3 rounded-xl bg-black/40 border border-gray-800/60">
+              {[
 
-                  <div className="text-gray-500 text-xs mb-1 uppercase tracking-wider">
+                { id: "pipeline", label: "Pipeline", icon: GitBranch },
 
-                    Functional Meaning
+                { id: "layers",   label: "Knowledge Layers", icon: Layers },
 
-                  </div>
+                { id: "graph",    label: "Knowledge Graph", icon: Network },
 
-                  <div className="text-gray-200 text-sm leading-relaxed">
+                { id: "provenance", label: "Provenance", icon: Shield },
 
-                    {concept.functional_meaning}
+              ].map(({ id, label, icon: Icon }) => (
 
-                  </div>
+                <button
 
-                </div>
+                  key={id}
 
-              )}
+                  id={`tab-${id}`}
 
+                  onClick={() => setActiveTab(id as typeof activeTab)}
 
+                  className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-medium transition-all ${
 
-              {/* Related concepts */}
+                    activeTab === id
 
-              {concept.related_concepts?.length > 0 && (
+                      ? "bg-purple-700 text-white shadow-md"
 
-                <div className="mt-3 flex flex-wrap gap-2">
+                      : "text-gray-400 hover:text-gray-200 hover:bg-gray-800/50"
 
-                  {concept.related_concepts.map((rc) => (
+                  }`}
 
-                    <button
+                >
 
-                      key={rc}
+                  <Icon size={13} />
 
-                      onClick={() => handleDecode(rc)}
+                  <span className="hidden sm:inline">{label}</span>
 
-                      className="px-2.5 py-0.5 rounded-full bg-purple-950/40 border border-purple-800/40 text-purple-300 text-xs hover:bg-purple-900/50 transition-all"
+                </button>
 
-                    >
+              ))}
 
-                      {rc}
+            </div>
 
-                    </button>
+            {/* ── Pipeline Tab ─────────────────────────────────────────── */}
 
-                  ))}
+            {activeTab === "pipeline" && (
 
-                </div>
+              <div className="space-y-2">
 
-              )}
+                <div className="text-[#525252] text-xs mb-3">
 
-            </div>
+                  Canonical decoder pipeline — every stage traceable to source
 
+                </div>
 
+                {PIPELINE_STAGES.map((def, idx) => {
 
-            {/* Tab navigation */}
+                  const stage = pipeline.find((p: PipelineStage) => p.stage === def.key);
 
-            <div className="flex gap-1 bg-gray-900/60 rounded-xl p-1 border border-gray-800/60">
+                  const value = stage?.value ?? concept[def.key.replace(/[āīū]/g, (c) =>
 
-              {[
+                    c === "ā" ? "a" : c === "ī" ? "i" : "u"
 
-                { id: "pipeline", label: "Pipeline", icon: GitBranch },
+                  ) as keyof typeof concept] as string | null;
 
-                { id: "layers",   label: "Knowledge Layers", icon: Layers },
+                  return (
 
-                { id: "graph",    label: "Knowledge Graph", icon: Network },
+                    <div
 
-                { id: "provenance", label: "Provenance", icon: Shield },
+                      key={def.key}
 
-              ].map(({ id, label, icon: Icon }) => (
+                      className="flex items-start gap-3 p-4 rounded-none bg-white border border-[#e0e0e0] hover:border-[#8d8d8d] transition-all"
 
-                <button
+                    >
 
-                  key={id}
+                      {/* Step indicator */}
 
-                  id={`tab-${id}`}
+                      <div className="flex flex-col items-center">
 
-                  onClick={() => setActiveTab(id as typeof activeTab)}
+                        <div className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold border-2 ${
 
-                  className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-medium transition-all ${
+                          value
 
-                    activeTab === id
+                            ? "bg-purple-900 border-purple-600 text-purple-200"
 
-                      ? "bg-purple-700 text-white shadow-md"
+                            : "bg-gray-900 border-gray-700 text-gray-600"
 
-                      : "text-gray-400 hover:text-gray-200 hover:bg-gray-800/50"
+                        }`}>
 
-                  }`}
+                          {idx + 1}
 
-                >
+                        </div>
 
-                  <Icon size={13} />
+                        {idx < PIPELINE_STAGES.length - 1 && (
 
-                  <span className="hidden sm:inline">{label}</span>
+                          <div className="w-px h-4 bg-gray-800 mt-1" />
 
-                </button>
+                        )}
 
-              ))}
+                      </div>
 
-            </div>
+                      <div className="flex-1 min-w-0">
 
+                        <div className="flex items-center gap-2 mb-0.5">
 
+                          <span className="text-purple-300 font-semibold text-sm">{def.label}</span>
 
-            {/* ── Pipeline Tab ─────────────────────────────────────────── */}
+                          {value ? (
 
-            {activeTab === "pipeline" && (
+                            <CheckCircle2 size={11} className="text-[#198038]" />
 
-              <div className="space-y-2">
+                          ) : (
 
-                <div className="text-gray-500 text-xs mb-3">
+                            <Circle size={11} className="text-gray-600" />
 
-                  Canonical decoder pipeline — every stage traceable to source
+                          )}
 
-                </div>
+                        </div>
 
-                {PIPELINE_STAGES.map((def, idx) => {
+                        <div className="text-gray-600 text-xs mb-1.5">{def.desc}</div>
 
-                  const stage = pipeline.find((p: PipelineStage) => p.stage === def.key);
+                        {value ? (
 
-                  const value = stage?.value ?? concept[def.key.replace(/[āīū]/g, (c) =>
+                          <div className="text-gray-200 text-sm leading-relaxed">{value}</div>
 
-                    c === "ā" ? "a" : c === "ī" ? "i" : "u"
+                        ) : (
 
-                  ) as keyof typeof concept] as string | null;
+                          <div className="text-gray-600 text-xs italic">Not asserted in source record</div>
 
-                  return (
+                        )}
 
-                    <div
+                        {stage?.lineage && (
 
-                      key={def.key}
+                          <div className="mt-1.5 text-[10px] text-gray-600 font-mono">
 
-                      className="flex items-start gap-3 p-4 rounded-xl bg-gray-900/40 border border-gray-800/40 hover:border-purple-800/40 transition-all"
+                            ↳ {stage.lineage.source_path}
 
-                    >
+                          </div>
 
-                      {/* Step indicator */}
+                        )}
 
-                      <div className="flex flex-col items-center">
+                      </div>
 
-                        <div className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold border-2 ${
+                    </div>
 
-                          value
+                  );
 
-                            ? "bg-purple-900 border-purple-600 text-purple-200"
+                })}
 
-                            : "bg-gray-900 border-gray-700 text-gray-600"
+              </div>
 
-                        }`}>
+            )}
 
-                          {idx + 1}
+            {/* ── Knowledge Layers Tab ─────────────────────────────────── */}
 
-                        </div>
+            {activeTab === "layers" && civilizational && (
 
-                        {idx < PIPELINE_STAGES.length - 1 && (
+              <div className="space-y-3">
 
-                          <div className="w-px h-4 bg-gray-800 mt-1" />
+                {KNOWLEDGE_LAYER_GROUPS.map(({ group, icon: Icon, layers }) => {
 
-                        )}
+                  const hasEvidence = layers.some(
 
-                      </div>
+                    (k) => civilizational.layers[k]?.status === "EVIDENCE_BACKED"
 
-                      <div className="flex-1 min-w-0">
+                  );
 
-                        <div className="flex items-center gap-2 mb-0.5">
+                  return (
 
-                          <span className="text-purple-300 font-semibold text-sm">{def.label}</span>
+                    <div key={group} className="rounded-xl border border-gray-800/50 overflow-hidden">
 
-                          {value ? (
+                      <button
 
-                            <CheckCircle2 size={11} className="text-emerald-400" />
+                        id={`group-${group.toLowerCase().replace(/\s+/g, "-")}`}
 
-                          ) : (
+                        onClick={() => toggleGroup(group)}
 
-                            <Circle size={11} className="text-gray-600" />
+                        className="w-full flex items-center justify-between px-4 py-3 bg-gray-900/60 hover:bg-gray-800/60 transition-colors"
 
-                          )}
+                      >
 
-                        </div>
+                        <div className="flex items-center gap-2">
 
-                        <div className="text-gray-600 text-xs mb-1.5">{def.desc}</div>
+                          <Icon size={14} className="text-[#0f62fe]" />
 
-                        {value ? (
+                          <span className="text-sm font-semibold text-gray-200">{group}</span>
 
-                          <div className="text-gray-200 text-sm leading-relaxed">{value}</div>
+                          {hasEvidence && (
 
-                        ) : (
+                            <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-950/50 text-[#198038] border border-emerald-800/40">
 
-                          <div className="text-gray-600 text-xs italic">Not asserted in source record</div>
+                              Evidence Available
 
-                        )}
+                            </span>
 
-                        {stage?.lineage && (
+                          )}
 
-                          <div className="mt-1.5 text-[10px] text-gray-600 font-mono">
+                        </div>
 
-                            ↳ {stage.lineage.source_path}
+                        {expandedGroups.has(group) ? (
 
-                          </div>
+                          <ChevronDown size={14} className="text-gray-500" />
 
-                        )}
+                        ) : (
 
-                      </div>
+                          <ChevronRight size={14} className="text-gray-500" />
 
-                    </div>
+                        )}
 
-                  );
+                      </button>
 
-                })}
+                      {expandedGroups.has(group) && (
 
-              </div>
+                        <div className="p-3 space-y-1.5 bg-black/20">
 
-            )}
+                          {layers.map((layerKey) => {
 
+                            const layer = civilizational.layers[layerKey];
 
+                            if (!layer) return (
 
-            {/* ── Knowledge Layers Tab ─────────────────────────────────── */}
+                              <div key={layerKey} className="flex items-center justify-between px-3 py-1.5 rounded-lg bg-gray-900/20 border border-gray-800/20">
 
-            {activeTab === "layers" && civilizational && (
+                                <span className="text-gray-700 text-xs capitalize">{layerKey.replace(/_/g, " ")}</span>
 
-              <div className="space-y-3">
+                                <span className="text-gray-700 text-[10px]">—</span>
 
-                {KNOWLEDGE_LAYER_GROUPS.map(({ group, icon: Icon, layers }) => {
+                              </div>
 
-                  const hasEvidence = layers.some(
+                            );
 
-                    (k) => civilizational.layers[k]?.status === "EVIDENCE_BACKED"
+                            return <LayerRow key={layerKey} layerKey={layerKey} layer={layer} />;
 
-                  );
+                          })}
 
-                  return (
+                        </div>
 
-                    <div key={group} className="rounded-xl border border-gray-800/50 overflow-hidden">
+                      )}
 
-                      <button
+                    </div>
 
-                        id={`group-${group.toLowerCase().replace(/\s+/g, "-")}`}
+                  );
 
-                        onClick={() => toggleGroup(group)}
+                })}
 
-                        className="w-full flex items-center justify-between px-4 py-3 bg-gray-900/60 hover:bg-gray-800/60 transition-colors"
+                {/* Cross-references */}
 
-                      >
+                {result?.decoder_result?.cross_references?.length > 0 && (
 
-                        <div className="flex items-center gap-2">
+                  <div className="rounded-xl border border-gray-800/50 overflow-hidden">
 
-                          <Icon size={14} className="text-purple-400" />
+                    <div className="px-4 py-3 bg-gray-900/60">
 
-                          <span className="text-sm font-semibold text-gray-200">{group}</span>
+                      <div className="flex items-center gap-2">
 
-                          {hasEvidence && (
+                        <GitBranch size={14} className="text-[#0f62fe]" />
 
-                            <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-950/50 text-emerald-400 border border-emerald-800/40">
+                        <span className="text-sm font-semibold text-gray-200">Cross-Text Synthesis</span>
 
-                              Evidence Available
+                      </div>
 
-                            </span>
+                    </div>
 
-                          )}
+                    <div className="p-3 space-y-1.5 bg-black/20">
 
-                        </div>
+                      {result.decoder_result.cross_references.map((xr, i) => (
 
-                        {expandedGroups.has(group) ? (
+                        <div key={i} className="flex items-start gap-2 px-3 py-2 rounded-lg bg-gray-900/30 border border-gray-800/30">
 
-                          <ChevronDown size={14} className="text-gray-500" />
+                          <ChevronRight size={12} className="text-purple-500 mt-0.5 flex-shrink-0" />
 
-                        ) : (
+                          <div>
 
-                          <ChevronRight size={14} className="text-gray-500" />
+                            <button
 
-                        )}
+                              onClick={() => handleDecode(xr.target)}
 
-                      </button>
+                              className="text-[#0f62fe] text-xs font-medium hover:text-purple-200 transition-colors"
 
-                      {expandedGroups.has(group) && (
+                            >
 
-                        <div className="p-3 space-y-1.5 bg-black/20">
+                              {xr.target}
 
-                          {layers.map((layerKey) => {
+                            </button>
 
-                            const layer = civilizational.layers[layerKey];
+                            <div className="text-[#525252] text-xs mt-0.5 tracking-[0.16px]">{xr.claim}</div>
 
-                            if (!layer) return (
+                          </div>
 
-                              <div key={layerKey} className="flex items-center justify-between px-3 py-1.5 rounded-lg bg-gray-900/20 border border-gray-800/20">
+                          <EvidenceBadge status={xr.classification} />
 
-                                <span className="text-gray-700 text-xs capitalize">{layerKey.replace(/_/g, " ")}</span>
+                        </div>
 
-                                <span className="text-gray-700 text-[10px]">—</span>
+                      ))}
 
-                              </div>
+                    </div>
 
-                            );
+                  </div>
 
-                            return <LayerRow key={layerKey} layerKey={layerKey} layer={layer} />;
+                )}
 
-                          })}
+              </div>
 
-                        </div>
+            )}
 
-                      )}
+            {/* ── Graph Tab ────────────────────────────────────────────── */}
 
-                    </div>
+            {activeTab === "graph" && graph && (
 
-                  );
+              <div className="space-y-4">
 
-                })}
+                <div className="flex items-center justify-between">
 
+                  <div className="text-[#525252] text-xs">
 
+                    {graph.metadata.node_count} nodes · {graph.metadata.edge_count} edges ·{" "}
 
-                {/* Cross-references */}
+                    <span className="text-[#0f62fe]">Civilizational Knowledge Graph V3</span>
 
-                {result?.decoder_result?.cross_references?.length > 0 && (
+                  </div>
 
-                  <div className="rounded-xl border border-gray-800/50 overflow-hidden">
+                  <div className={`flex items-center gap-1 text-xs ${
 
-                    <div className="px-4 py-3 bg-gray-900/60">
+                    graph.metadata.consistency_valid ? "text-[#198038]" : "text-red-400"
 
-                      <div className="flex items-center gap-2">
+                  }`}>
 
-                        <GitBranch size={14} className="text-purple-400" />
+                    {graph.metadata.consistency_valid ? (
 
-                        <span className="text-sm font-semibold text-gray-200">Cross-Text Synthesis</span>
+                      <CheckCircle2 size={11} />
 
-                      </div>
+                    ) : (
 
-                    </div>
+                      <AlertCircle size={11} />
 
-                    <div className="p-3 space-y-1.5 bg-black/20">
+                    )}
 
-                      {result.decoder_result.cross_references.map((xr, i) => (
+                    Graph {graph.metadata.consistency_valid ? "Consistent" : "Invalid"}
 
-                        <div key={i} className="flex items-start gap-2 px-3 py-2 rounded-lg bg-gray-900/30 border border-gray-800/30">
+                  </div>
 
-                          <ChevronRight size={12} className="text-purple-500 mt-0.5 flex-shrink-0" />
+                </div>
 
-                          <div>
+                <SanskritDecoderGraph
 
-                            <button
+                  nodes={graph.nodes}
 
-                              onClick={() => handleDecode(xr.target)}
+                  edges={graph.edges}
 
-                              className="text-purple-300 text-xs font-medium hover:text-purple-200 transition-colors"
+                  width={700}
 
-                            >
+                  height={440}
 
-                              {xr.target}
+                />
 
-                            </button>
+                <div className="text-[10px] text-gray-600 font-mono">
 
-                            <div className="text-gray-500 text-xs mt-0.5">{xr.claim}</div>
+                  graph_id: {graph.graph_id} · snapshot_hash:{" "}
 
-                          </div>
+                  {graph.metadata.source_snapshot_hash?.slice(0, 16)}
 
-                          <EvidenceBadge status={xr.classification} />
+                </div>
 
-                        </div>
+              </div>
 
-                      ))}
+            )}
 
-                    </div>
+            {/* ── Provenance Tab ───────────────────────────────────────── */}
 
-                  </div>
+            {activeTab === "provenance" && provenance && (
 
-                )}
+              <div className="space-y-4">
 
-              </div>
+                {/* Replay banner */}
 
-            )}
+                <div className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm ${
 
+                  provenance.replay_safe
 
+                    ? "bg-emerald-950/30 border-emerald-800/40 text-emerald-300"
 
-            {/* ── Graph Tab ────────────────────────────────────────────── */}
+                    : "bg-red-950/30 border-red-800/40 text-red-300"
 
-            {activeTab === "graph" && graph && (
+                }`}>
 
-              <div className="space-y-4">
+                  {provenance.replay_safe ? (
 
-                <div className="flex items-center justify-between">
+                    <CheckCircle2 size={14} />
 
-                  <div className="text-gray-500 text-xs">
+                  ) : (
 
-                    {graph.metadata.node_count} nodes · {graph.metadata.edge_count} edges ·{" "}
+                    <AlertCircle size={14} />
 
-                    <span className="text-purple-400">Civilizational Knowledge Graph V3</span>
+                  )}
 
-                  </div>
+                  <span>
 
-                  <div className={`flex items-center gap-1 text-xs ${
+                    {provenance.replay_safe
 
-                    graph.metadata.consistency_valid ? "text-emerald-400" : "text-red-400"
+                      ? "Execution is replay-safe — deterministic output guaranteed"
 
-                  }`}>
+                      : "Replay safety flag NOT set"}
 
-                    {graph.metadata.consistency_valid ? (
+                  </span>
 
-                      <CheckCircle2 size={11} />
+                </div>
 
-                    ) : (
+                {/* Metadata */}
 
-                      <AlertCircle size={11} />
+                <div className="grid grid-cols-2 gap-3">
 
-                    )}
+                  {[
 
-                    Graph {graph.metadata.consistency_valid ? "Consistent" : "Invalid"}
+                    { label: "Registry Version", value: provenance.registry_version },
 
-                  </div>
+                    { label: "Schema Version", value: provenance.schema_version },
 
-                </div>
+                    { label: "Concept ID", value: provenance.lineage?.concept_id },
 
-                <SanskritDecoderGraph
+                    { label: "Trace ID", value: result?.trace_id },
 
-                  nodes={graph.nodes}
+                    { label: "Response Hash", value: result?.response_hash?.slice(0, 20) + "…" },
 
-                  edges={graph.edges}
+                    { label: "Replay Key", value: result?.replay?.replay_key?.slice(0, 20) + "…" },
 
-                  width={700}
+                  ].map(({ label, value }) => (
 
-                  height={440}
+                    <div key={label} className="p-3 rounded-lg bg-gray-900/40 border border-gray-800/40">
 
-                />
+                      <div className="text-gray-600 text-[10px] uppercase tracking-wider mb-0.5">{label}</div>
 
-                <div className="text-[10px] text-gray-600 font-mono">
+                      <div className="text-[#161616] text-xs font-mono break-all">{value ?? "—"}</div>
 
-                  graph_id: {graph.graph_id} · snapshot_hash:{" "}
+                    </div>
 
-                  {graph.metadata.source_snapshot_hash?.slice(0, 16)}
+                  ))}
 
-                </div>
+                </div>
 
-              </div>
+                {/* Source documents */}
 
-            )}
+                <div>
 
+                  <div className="text-[#525252] text-xs mb-2 uppercase tracking-wider">Source Documents</div>
 
+                  <div className="space-y-2">
 
-            {/* ── Provenance Tab ───────────────────────────────────────── */}
+                    {provenance.source_documents?.map((doc, i) => (
 
-            {activeTab === "provenance" && provenance && (
+                      <div key={i} className="p-3 rounded-lg bg-gray-900/40 border border-gray-800/40">
 
-              <div className="space-y-4">
+                        <div className="flex items-center gap-2 mb-1">
 
-                {/* Replay banner */}
+                          <Shield size={11} className="text-[#0f62fe]" />
 
-                <div className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm ${
+                          <span className="text-purple-300 text-xs font-mono">{doc.source_path}</span>
 
-                  provenance.replay_safe
+                        </div>
 
-                    ? "bg-emerald-950/30 border-emerald-800/40 text-emerald-300"
+                        <div className="grid grid-cols-2 gap-x-4 text-[10px] text-gray-500">
 
-                    : "bg-red-950/30 border-red-800/40 text-red-300"
+                          <span>Source: <span className="text-gray-400">{doc.source}</span></span>
 
-                }`}>
+                          <span>Evidence: <span className="text-gray-400">{doc.evidence_type}</span></span>
 
-                  {provenance.replay_safe ? (
+                          <span className="col-span-2 font-mono">
 
-                    <CheckCircle2 size={14} />
+                            hash: {doc.content_hash?.slice(0, 24)}
 
-                  ) : (
+                          </span>
 
-                    <AlertCircle size={14} />
+                        </div>
 
-                  )}
+                      </div>
 
-                  <span>
+                    ))}
 
-                    {provenance.replay_safe
+                  </div>
 
-                      ? "Execution is replay-safe — deterministic output guaranteed"
+                </div>
 
-                      : "Replay safety flag NOT set"}
+                {/* Lineage path */}
 
-                  </span>
+                {provenance.lineage?.source_path && (
 
-                </div>
+                  <div className="p-3 rounded-lg bg-purple-950/20 border border-purple-800/30">
 
+                    <div className="text-gray-500 text-[10px] uppercase tracking-wider mb-1">
 
+                      Knowledge Lineage
 
-                {/* Metadata */}
+                    </div>
 
-                <div className="grid grid-cols-2 gap-3">
+                    <div className="font-mono text-purple-300 text-xs">
 
-                  {[
+                      {provenance.lineage.source_path}
 
-                    { label: "Registry Version", value: provenance.registry_version },
+                    </div>
 
-                    { label: "Schema Version", value: provenance.schema_version },
+                    <div className="font-mono text-gray-600 text-[10px] mt-0.5">
 
-                    { label: "Concept ID", value: provenance.lineage?.concept_id },
+                      hash: {provenance.lineage.content_hash?.slice(0, 24)}
 
-                    { label: "Trace ID", value: result?.trace_id },
+                    </div>
 
-                    { label: "Response Hash", value: result?.response_hash?.slice(0, 20) + "…" },
+                  </div>
 
-                    { label: "Replay Key", value: result?.replay?.replay_key?.slice(0, 20) + "…" },
+                )}
 
-                  ].map(({ label, value }) => (
+                {/* Governance */}
 
-                    <div key={label} className="p-3 rounded-lg bg-gray-900/40 border border-gray-800/40">
+                {govResponse && (
 
-                      <div className="text-gray-600 text-[10px] uppercase tracking-wider mb-0.5">{label}</div>
+                  <div className="p-4 rounded-xl bg-gray-900/40 border border-gray-800/40">
 
-                      <div className="text-gray-300 text-xs font-mono break-all">{value ?? "—"}</div>
+                    <div className="text-[#525252] text-xs uppercase tracking-wider mb-2">
 
-                    </div>
+                      Governance State
 
-                  ))}
+                    </div>
 
-                </div>
+                    <div className="space-y-1.5 text-xs">
 
+                      <div className="flex justify-between">
 
+                        <span className="text-gray-500">Governance</span>
 
-                {/* Source documents */}
+                        <span className="text-gray-300 font-mono">{govResponse.governance_state}</span>
 
-                <div>
+                      </div>
 
-                  <div className="text-gray-500 text-xs mb-2 uppercase tracking-wider">Source Documents</div>
+                      <div className="flex justify-between">
 
-                  <div className="space-y-2">
+                        <span className="text-gray-500">Research Class</span>
 
-                    {provenance.source_documents?.map((doc, i) => (
+                        <span className="text-gray-300 font-mono">{govResponse.research_classification}</span>
 
-                      <div key={i} className="p-3 rounded-lg bg-gray-900/40 border border-gray-800/40">
+                      </div>
 
-                        <div className="flex items-center gap-2 mb-1">
+                      <div className="flex justify-between">
 
-                          <Shield size={11} className="text-purple-400" />
+                        <span className="text-gray-500">Evidence Types</span>
 
-                          <span className="text-purple-300 text-xs font-mono">{doc.source_path}</span>
+                        <div className="flex gap-1 flex-wrap justify-end">
 
-                        </div>
+                          {govResponse.evidence_classification?.evidence_types?.map((et) => (
 
-                        <div className="grid grid-cols-2 gap-x-4 text-[10px] text-gray-500">
+                            <span key={et} className="text-[10px] px-1.5 py-0.5 rounded bg-purple-950/50 text-[#0f62fe] border border-purple-800/30">
 
-                          <span>Source: <span className="text-gray-400">{doc.source}</span></span>
+                              {et}
 
-                          <span>Evidence: <span className="text-gray-400">{doc.evidence_type}</span></span>
+                            </span>
 
-                          <span className="col-span-2 font-mono">
+                          ))}
 
-                            hash: {doc.content_hash?.slice(0, 24)}
+                        </div>
 
-                          </span>
+                      </div>
 
-                        </div>
+                      <div className="text-gray-600 text-[10px] mt-2 leading-relaxed">
 
-                      </div>
+                        {govResponse.evidence_classification?.notes}
 
-                    ))}
+                      </div>
 
-                  </div>
+                    </div>
 
-                </div>
+                  </div>
 
+                )}
 
+              </div>
 
-                {/* Lineage path */}
+            )}
 
-                {provenance.lineage?.source_path && (
+          </>
 
-                  <div className="p-3 rounded-lg bg-purple-950/20 border border-purple-800/30">
+        )}
 
-                    <div className="text-gray-500 text-[10px] uppercase tracking-wider mb-1">
+        {/* Empty state */}
 
-                      Knowledge Lineage
+        {!loading && !result && !error && (
 
-                    </div>
+          <div className="text-center py-16 space-y-4">
 
-                    <div className="font-mono text-purple-300 text-xs">
+            <div className="text-6xl opacity-20 select-none">ॐ</div>
 
-                      {provenance.lineage.source_path}
+            <div className="text-gray-600 text-sm">
 
-                    </div>
+              Enter any Sanskrit concept above to decode its civilizational meaning
 
-                    <div className="font-mono text-gray-600 text-[10px] mt-0.5">
+            </div>
 
-                      hash: {provenance.lineage.content_hash?.slice(0, 24)}
+            <div className="text-gray-700 text-xs max-w-md mx-auto">
 
-                    </div>
+              The decoder exposes Śabda, Dhātu, Vyākaraṇa, Nirukta, Bīja, Tattva, Śakti,
 
-                  </div>
+              35 knowledge layers, and the full civilizational knowledge graph —
 
-                )}
+              all source-backed and provenance-tagged.
 
+            </div>
 
+          </div>
 
-                {/* Governance */}
+        )}
 
-                {govResponse && (
+      </div>
 
-                  <div className="p-4 rounded-xl bg-gray-900/40 border border-gray-800/40">
+    </div>
 
-                    <div className="text-gray-500 text-xs uppercase tracking-wider mb-2">
-
-                      Governance State
-
-                    </div>
-
-                    <div className="space-y-1.5 text-xs">
-
-                      <div className="flex justify-between">
-
-                        <span className="text-gray-500">Governance</span>
-
-                        <span className="text-gray-300 font-mono">{govResponse.governance_state}</span>
-
-                      </div>
-
-                      <div className="flex justify-between">
-
-                        <span className="text-gray-500">Research Class</span>
-
-                        <span className="text-gray-300 font-mono">{govResponse.research_classification}</span>
-
-                      </div>
-
-                      <div className="flex justify-between">
-
-                        <span className="text-gray-500">Evidence Types</span>
-
-                        <div className="flex gap-1 flex-wrap justify-end">
-
-                          {govResponse.evidence_classification?.evidence_types?.map((et) => (
-
-                            <span key={et} className="text-[10px] px-1.5 py-0.5 rounded bg-purple-950/50 text-purple-400 border border-purple-800/30">
-
-                              {et}
-
-                            </span>
-
-                          ))}
-
-                        </div>
-
-                      </div>
-
-                      <div className="text-gray-600 text-[10px] mt-2 leading-relaxed">
-
-                        {govResponse.evidence_classification?.notes}
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                )}
-
-              </div>
-
-            )}
-
-          </>
-
-        )}
-
-
-
-        {/* Empty state */}
-
-        {!loading && !result && !error && (
-
-          <div className="text-center py-16 space-y-4">
-
-            <div className="text-6xl opacity-20 select-none">ॐ</div>
-
-            <div className="text-gray-600 text-sm">
-
-              Enter any Sanskrit concept above to decode its civilizational meaning
-
-            </div>
-
-            <div className="text-gray-700 text-xs max-w-md mx-auto">
-
-              The decoder exposes Śabda, Dhātu, Vyākaraṇa, Nirukta, Bīja, Tattva, Śakti,
-
-              35 knowledge layers, and the full civilizational knowledge graph —
-
-              all source-backed and provenance-tagged.
-
-            </div>
-
-          </div>
-
-        )}
-
-      </div>
-
-    </div>
-
-  );
+  );
 
 };
-
-
 
 export default SanskritDecoder;

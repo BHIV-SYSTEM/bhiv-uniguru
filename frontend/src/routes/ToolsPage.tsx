@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRobot, faCog, faTools, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faRobot, faCog, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import toast from "react-hot-toast";
-import BubblyButton from "../components/BubblyButton";
+// BubblyButton removed for IBM Carbon
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const ToolsPage: React.FC = () => {
@@ -22,7 +22,7 @@ const ToolsPage: React.FC = () => {
   if (isLoading) {
     return (
       <div className="relative min-h-screen flex items-center justify-center">
-        <div className="bg-glass-card backdrop-blur-xl rounded-xl p-8 border border-glass-border shadow-glass">
+        <div className="cds-tile bg-white border border-[#e0e0e0] p-8 rounded-none shadow-none font-carbon">
           <LoadingSpinner
             size="large"
             variant="gradient-ring"
@@ -39,79 +39,73 @@ const ToolsPage: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           {/* Back Button */}
           <div className="mb-6">
-            <BubblyButton
+            <button
               onClick={() => navigate("/chatpage")}
-              variant="primary"
-              className="flex items-center space-x-2 px-4 py-2 text-sm font-medium"
+              className="cds-btn-secondary text-xs"
+              style={{ minHeight: "40px", padding: "8px 16px" }}
             >
-              <FontAwesomeIcon icon={faArrowLeft} className="text-sm" />
-              <span>Back to Chat</span>
-            </BubblyButton>
+              <FontAwesomeIcon icon={faArrowLeft} className="text-xs mr-2" />
+              <span>Back to Workspace</span>
+            </button>
           </div>
           {/* Header */}
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center mb-4">
-              <FontAwesomeIcon icon={faTools} className="text-4xl text-yellow-500 mr-3" />
-              <h1 className="text-4xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
-                Tools
-              </h1>
+          <div className="text-left mb-10 pb-6 border-b border-[#e0e0e0]">
+            <div className="text-xs font-semibold uppercase tracking-wider text-[#0f62fe] mb-1">
+              Platform Utilities & Capabilities
             </div>
-            <p className="text-gray-300 text-lg">
-              Enhance your UniGuru experience with these powerful tools
+            <h1 className="text-3xl sm:text-4xl font-light text-[#161616] tracking-tight">
+              UniGuru Native Tools
+            </h1>
+            <p className="text-[#525252] text-sm sm:text-base mt-2 tracking-[0.16px]">
+              Specialized research, civilizational epistemology, and model tuning capabilities.
             </p>
           </div>
 
           {/* Tools Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Sanskrit Knowledge Decoder Tool */}
-            <div className="bg-purple-950/30 backdrop-blur-sm border border-purple-600/50 rounded-lg p-6 hover:bg-purple-900/40 transition-all duration-200 col-span-1 md:col-span-2 shadow-lg shadow-purple-950/50">
+            <div className="cds-tile bg-white border border-[#e0e0e0] p-6 col-span-1 md:col-span-2 rounded-none">
               <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-lg bg-purple-800 flex items-center justify-center text-xl text-purple-200 mr-3 font-bold">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-[#f4f4f4] border border-[#e0e0e0] flex items-center justify-center text-xl text-[#0f62fe] font-bold rounded-none">
                     ॐ
                   </div>
                   <div>
-                    <h2 className="text-xl font-semibold text-white flex items-center gap-2">
-                      Sanskrit Knowledge Decoder
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-700 font-medium">
-                        LIVE FEATURE
+                    <div className="flex items-center gap-2">
+                      <h2 className="text-lg font-semibold text-[#161616] tracking-tight">
+                        Sanskrit Knowledge Decoder
+                      </h2>
+                      <span className="text-[11px] px-2 py-0.5 bg-[#edf5ff] text-[#0f62fe] border border-[#d0e2ff] font-semibold tracking-wider">
+                        ACTIVE RUNTIME
                       </span>
-                    </h2>
-                    <p className="text-purple-300 text-xs">UniGuru Native Civilizational Intelligence Capability</p>
+                    </div>
+                    <p className="text-[#525252] text-xs tracking-[0.16px]">UniGuru Native Civilizational Intelligence Capability</p>
                   </div>
                 </div>
               </div>
-              <p className="text-gray-300 mb-4 text-sm leading-relaxed">
-                Decode Sanskrit concepts through their own epistemology — Śabda, Dhātu, Vyākaraṇa (Pāṇini), Nirukta, Bīja, Tattva, Śakti, and 35 civilizational knowledge layers backed by evidence classification and deterministic replay.
+              <p className="text-[#525252] mb-6 text-sm leading-relaxed tracking-[0.16px]">
+                Decode Sanskrit concepts through canonical epistemological pipelines — Śabda, Dhātu, Vyākaraṇa (Pāṇini), Nirukta, Bīja, Tattva, Śakti, and 35 knowledge layers verified against source provenance and replay safety.
               </p>
-              <BubblyButton
-                variant="primary"
-                className="px-6 py-2.5 font-semibold text-sm"
-                style={{
-                  background: 'linear-gradient(135deg, #7c3aed, #4c1d95)',
-                  color: 'white'
-                }}
+              <button
+                className="cds-btn-primary text-xs"
+                style={{ minHeight: "44px", padding: "10px 20px" }}
                 onClick={() => navigate("/sanskrit-decoder")}
               >
                 Launch Decoder Engine ॐ
-              </BubblyButton>
+              </button>
             </div>
             {/* Select Model Tool */}
-            <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:bg-gray-800/50 transition-all duration-200">
+            <div className="cds-tile bg-white border border-[#e0e0e0] p-6 rounded-none transition-colors">
               <div className="flex items-center mb-4">
                 <FontAwesomeIcon icon={faRobot} className="text-2xl text-blue-500 mr-3" />
-                <h2 className="text-xl font-semibold text-white">Select Model</h2>
+                <h2 className="text-base font-semibold text-[#161616]">Select Model</h2>
               </div>
-              <p className="text-gray-300 mb-4">
+              <p className="text-[#525252] text-sm mb-4 tracking-[0.16px]">
                 Choose from different AI models to customize your chat experience and get responses tailored to your needs.
               </p>
-              <BubblyButton
-                variant="primary"
-                className="px-4 py-2"
-                style={{
-                  background: 'linear-gradient(135deg, #3b82f6, #1d4ed8)',
-                  color: 'white'
-                }}
+              <button
+                className="cds-btn-secondary text-xs"
+                style={{ minHeight: "40px", padding: "8px 16px" }}
                 onClick={() => {
                   toast.success("Model configuration coming soon!", {
                     icon: '🤖',
@@ -120,21 +114,21 @@ const ToolsPage: React.FC = () => {
                 }}
               >
                 Configure Model
-              </BubblyButton>
+              </button>
             </div>
 
             {/* Scrape Data Tool */}
-            <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:bg-gray-800/50 transition-all duration-200">
+            <div className="cds-tile bg-white border border-[#e0e0e0] p-6 rounded-none transition-colors">
               <div className="flex items-center mb-4">
                 <FontAwesomeIcon icon={faCog} className="text-2xl text-green-500 mr-3" />
-                <h2 className="text-xl font-semibold text-white">Scrape Data</h2>
+                <h2 className="text-base font-semibold text-[#161616]">Scrape Data</h2>
               </div>
-              <p className="text-gray-300 mb-4">
+              <p className="text-[#525252] text-sm mb-4 tracking-[0.16px]">
                 Extract and analyze data from various sources to enhance your learning and research capabilities.
               </p>
-              <BubblyButton
-                variant="success"
-                className="px-4 py-2"
+              <button
+                className="cds-btn-secondary text-xs"
+                style={{ minHeight: "40px", padding: "8px 16px" }}
                 onClick={() => {
                   toast.success("Data scraping feature coming soon!", {
                     icon: '🔧',
@@ -143,28 +137,28 @@ const ToolsPage: React.FC = () => {
                 }}
               >
                 Start Scraping
-              </BubblyButton>
+              </button>
             </div>
           </div>
 
           {/* Coming Soon Section */}
           <div className="mt-12">
-            <h3 className="text-2xl font-semibold text-white mb-6 text-center">Coming Soon</h3>
+            <h3 className="text-lg font-semibold text-[#161616] mb-4 text-left border-t border-[#e0e0e0] pt-8">Upcoming Platform Extensions</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-lg p-4 text-center">
+              <div className="cds-tile bg-[#f4f4f4] border border-[#e0e0e0] p-4 text-left rounded-none">
                 <div className="text-gray-500 mb-2">📊</div>
-                <h4 className="text-white font-medium">Analytics Dashboard</h4>
-                <p className="text-gray-400 text-sm mt-1">Track your learning progress</p>
+                <h4 className="text-[#161616] font-medium text-sm">Analytics Dashboard</h4>
+                <p className="text-[#525252] text-xs mt-1">Track your learning progress</p>
               </div>
-              <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-lg p-4 text-center">
+              <div className="cds-tile bg-[#f4f4f4] border border-[#e0e0e0] p-4 text-left rounded-none">
                 <div className="text-gray-500 mb-2">🔧</div>
-                <h4 className="text-white font-medium">Custom Integrations</h4>
-                <p className="text-gray-400 text-sm mt-1">Connect external services</p>
+                <h4 className="text-[#161616] font-medium text-sm">Custom Integrations</h4>
+                <p className="text-[#525252] text-xs mt-1">Connect external services</p>
               </div>
-              <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-lg p-4 text-center">
+              <div className="cds-tile bg-[#f4f4f4] border border-[#e0e0e0] p-4 text-left rounded-none">
                 <div className="text-gray-500 mb-2">📝</div>
-                <h4 className="text-white font-medium">Note Taking</h4>
-                <p className="text-gray-400 text-sm mt-1">Save and organize your insights</p>
+                <h4 className="text-[#161616] font-medium text-sm">Note Taking</h4>
+                <p className="text-[#525252] text-xs mt-1">Save and organize your insights</p>
               </div>
             </div>
           </div>

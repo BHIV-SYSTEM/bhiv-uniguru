@@ -274,14 +274,34 @@ const Navbar: React.FC<NavbarProps> = ({
 
   const isHomePage = location.pathname === "/";
   const isChatPage = location.pathname === "/chatpage";
+  const _isAuthPage = ["/login", "/signup", "/forgot-password", "/reset-password"].includes(location.pathname);
+  void _isAuthPage;
+  const isCarbonChrome = true; // Uniform Carbon Design System across the whole application
 
-  
   return (
     <>
       {/* Main Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-xl border-b border-white/10">
-        <div className="w-full px-6">
-          <div className="flex items-center justify-between h-16">
+      <nav
+        className="fixed top-0 left-0 right-0 z-50 transition-colors duration-200 bg-white border-b border-[#e0e0e0] text-[#161616] font-carbon shadow-none"
+      >
+        {/* Carbon Utility Ribbon on HomePage */}
+        {isHomePage && (
+          <div className="w-full bg-[#f4f4f4] border-b border-[#e0e0e0] h-8 hidden sm:flex items-center justify-between px-6 sm:px-12 max-w-[1584px] mx-auto text-xs text-[#525252]">
+            <div className="flex items-center gap-6">
+              <span className="font-medium text-[#161616]">Enterprise AI Education</span>
+              <span className="text-[#8c8c8c]">|</span>
+              <span>Verified Curriculum & Authority Retrieval</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <span className="cursor-pointer hover:text-[#161616] transition-colors" onClick={() => navigate("/about")}>Documentation</span>
+              <span>•</span>
+              <span className="cursor-pointer hover:text-[#0f62fe] transition-colors" onClick={() => navigate("/chatpage")}>Workspace</span>
+            </div>
+          </div>
+        )}
+
+        <div className="w-full px-6 sm:px-12 max-w-[1584px] mx-auto">
+          <div className="flex items-center justify-between h-14">
 
             {/* Logo Section - Extreme Left */}
             <div
@@ -291,90 +311,121 @@ const Navbar: React.FC<NavbarProps> = ({
               <img
                 src={uniguru}
                 alt="UniGuru Logo"
-                className="w-10 h-10 sm:w-12 sm:h-12 object-contain group-hover:scale-105 transition-transform duration-200"
+                className="w-8 h-8 object-contain"
               />
-              <h1 className="text-xl sm:text-2xl font-bold bg-clip-text text-transparent"
-                  style={{
-                    background: "linear-gradient(135deg, #b18615, #d4a01c, #f7c52d, #d4a01c, #b18615)",
-                    backgroundClip: "text",
-                    WebkitBackgroundClip: "text"
-                  }}>
+              <span
+                className={`text-lg font-semibold tracking-tight ${
+                  isCarbonChrome ? "text-[#161616] font-carbon" : "text-xl sm:text-2xl font-bold bg-clip-text text-transparent"
+                }`}
+                style={
+                  isCarbonChrome
+                    ? { fontFamily: "'IBM Plex Sans', sans-serif" }
+                    : {
+                        background: "linear-gradient(135deg, #b18615, #d4a01c, #f7c52d, #d4a01c, #b18615)",
+                        backgroundClip: "text",
+                        WebkitBackgroundClip: "text",
+                      }
+                }
+              >
                 UniGuru
-              </h1>
+              </span>
             </div>
 
             {/* Desktop Auth Section - Extreme Right */}
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="hidden md:flex items-center space-x-3">
               {/* Language Dropdown */}
               <div ref={langRef} className="relative">
                 <button
                   onClick={() => setLangMenuOpen((o) => !o)}
-                  className="px-3 py-2 text-sm text-gray-200 hover:text-white hover:bg-gray-800/50 rounded-lg border border-gray-700/50"
+                  className={`px-3 py-1.5 text-xs rounded-none border transition-colors ${
+                    isCarbonChrome
+                      ? "text-[#161616] bg-[#f4f4f4] hover:bg-[#e0e0e0] border-[#e0e0e0]"
+                      : "text-gray-200 hover:text-white hover:bg-gray-800/50 border-gray-700/50 rounded-lg"
+                  }`}
                 >
                   {t('language')}: {i18n.language === 'hi' ? 'हिंदी' : i18n.language === 'mr' ? 'मराठी' : 'English'}
                 </button>
                 {langMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-40 bg-gray-900/95 backdrop-blur-sm border border-gray-700 rounded-lg shadow-xl py-2 z-50">
+                  <div
+                    className={`absolute right-0 mt-1 w-36 border shadow-lg py-1 z-50 ${
+                      isCarbonChrome
+                        ? "bg-white border-[#e0e0e0] rounded-none text-xs"
+                        : "bg-gray-900/95 backdrop-blur-sm border-gray-700 rounded-lg shadow-xl py-2"
+                    }`}
+                  >
                     <button
                       onClick={() => { i18n.changeLanguage('en'); localStorage.setItem('i18nextLng','en'); setLangMenuOpen(false); }}
-                      className="w-full px-4 py-2 text-left hover:bg-gray-800 text-gray-200"
+                      className={`w-full px-3 py-2 text-left ${isCarbonChrome ? "hover:bg-[#f4f4f4] text-[#161616]" : "hover:bg-gray-800 text-gray-200"}`}
                     >
                       English
                     </button>
                     <button
                       onClick={() => { i18n.changeLanguage('hi'); localStorage.setItem('i18nextLng','hi'); setLangMenuOpen(false); }}
-                      className="w-full px-4 py-2 text-left hover:bg-gray-800 text-gray-200"
+                      className={`w-full px-3 py-2 text-left ${isCarbonChrome ? "hover:bg-[#f4f4f4] text-[#161616]" : "hover:bg-gray-800 text-gray-200"}`}
                     >
                       हिंदी
                     </button>
                     <button
                       onClick={() => { i18n.changeLanguage('mr'); localStorage.setItem('i18nextLng','mr'); setLangMenuOpen(false); }}
-                      className="w-full px-4 py-2 text-left hover:bg-gray-800 text-gray-200"
+                      className={`w-full px-3 py-2 text-left ${isCarbonChrome ? "hover:bg-[#f4f4f4] text-[#161616]" : "hover:bg-gray-800 text-gray-200"}`}
                     >
                       मराठी
                     </button>
                   </div>
                 )}
               </div>
-                            {/* Helper UI toggle */}
-              <div className="flex items-center gap-2 text-xs text-gray-300">
+
+              {/* Helper UI toggle */}
+              <div className={`flex items-center gap-2 text-xs ${isCarbonChrome ? "text-[#525252]" : "text-gray-300"}`}>
                 <span>{t('helper')}</span>
                 <button
                   onClick={() => setHelper(!helperEnabled)}
                   aria-pressed={helperEnabled}
-                  className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 focus:outline-none border ${helperEnabled ? 'bg-purple-600 border-purple-500' : 'bg-gray-700 border-gray-600'}`}
+                  className={`relative inline-flex h-5 w-9 items-center transition-colors duration-200 focus:outline-none border ${
+                    helperEnabled
+                      ? isCarbonChrome ? "bg-[#0f62fe] border-[#0f62fe]" : "bg-purple-600 border-purple-500"
+                      : isCarbonChrome ? "bg-[#e0e0e0] border-[#c6c6c6]" : "bg-gray-700 border-gray-600"
+                  } rounded-full`}
                   title={helperEnabled ? t('disableHelperUI') : t('enableHelperUI')}
                 >
                   <span
-                    className={`inline-block h-4 w-4 transform bg-white rounded-full transition-transform duration-200 ${helperEnabled ? 'translate-x-6' : 'translate-x-1'}`}
+                    className={`inline-block h-3.5 w-3.5 transform bg-white rounded-full transition-transform duration-200 ${
+                      helperEnabled ? "translate-x-4" : "translate-x-0.5"
+                    }`}
                   />
                 </button>
               </div>
+
               {/* About Link */}
               <button
                 onClick={() => navigate("/about")}
-                className="flex items-center space-x-2 px-4 py-2 text-white hover:text-yellow-400 transition-colors font-medium"
+                className={`flex items-center space-x-1.5 px-3 py-1.5 text-xs font-normal transition-colors ${
+                  isCarbonChrome
+                    ? "text-[#161616] hover:text-[#0f62fe] hover:bg-[#f4f4f4]"
+                    : "text-white hover:text-yellow-400"
+                }`}
               >
-                <FontAwesomeIcon icon={faInfoCircle} className="text-sm" />
+                <FontAwesomeIcon icon={faInfoCircle} className="text-xs" />
                 <span>{t('about')}</span>
               </button>
+
               {/* Homepage Auth Buttons */}
               {isHomePage && !isLoggedIn && !isChatStarted && (
-                <div className="flex items-center space-x-3">
-                  <BubblyButton
+                <div className="flex items-center space-x-2">
+                  <button
                     onClick={() => navigate("/login")}
-                    variant="primary"
-                    className="px-6 py-2.5 font-medium text-sm flex items-center justify-center"
+                    className="cds-btn-tertiary"
+                    style={{ padding: "8px 16px", fontSize: "13px" }}
                   >
                     {t('login')}
-                  </BubblyButton>
-                  <BubblyButton
+                  </button>
+                  <button
                     onClick={() => navigate("/signup")}
-                    variant="secondary"
-                    className="px-6 py-2.5 font-medium text-sm flex items-center justify-center"
+                    className="cds-btn-primary"
+                    style={{ padding: "8px 16px", fontSize: "13px" }}
                   >
                     {t('signup')}
-                  </BubblyButton>
+                  </button>
                 </div>
               )}
 

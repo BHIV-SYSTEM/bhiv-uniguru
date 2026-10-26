@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faArrowLeft, faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
-import BubblyButton from "../components/BubblyButton";
+// BubblyButton removed
 import uniguru from "../assets/uni-logo.png";
 
 const NotFoundPage = () => {
@@ -11,7 +11,7 @@ const NotFoundPage = () => {
   const { isLoggedIn } = useAuth();
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center">
+    <div className="relative min-h-screen bg-white text-[#161616] font-carbon flex items-center justify-center">
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
         {/* Logo */}
@@ -35,100 +35,100 @@ const NotFoundPage = () => {
         <div className="mb-8">
           <FontAwesomeIcon 
             icon={faExclamationTriangle} 
-            className="text-6xl sm:text-8xl text-yellow-500 mb-4" 
+            className="text-6xl sm:text-8xl text-[#0f62fe] mb-4" 
           />
         </div>
 
         {/* 404 Text */}
         <div className="mb-8">
-          <h2 className="text-6xl sm:text-8xl font-bold text-white mb-4">
+          <h2 className="text-6xl sm:text-8xl font-light text-[#161616] mb-4 tracking-tight">
             404
           </h2>
-          <h3 className="text-2xl sm:text-3xl font-semibold text-gray-300 mb-4">
+          <h3 className="text-xl sm:text-2xl font-semibold text-[#161616] mb-4">
             Page Not Found
           </h3>
-          <p className="text-lg text-gray-400 mb-2">
+          <p className="text-lg text-[#525252] mb-2">
             Oops! The page you're looking for doesn't exist.
           </p>
-          <p className="text-base text-gray-500">
+          <p className="text-base text-[#8d8d8d]">
             It might have been moved, deleted, or you entered the wrong URL.
           </p>
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <BubblyButton
-            onClick={() => navigate("/")}
-            variant="primary"
-            className="flex items-center space-x-2 px-6 py-3 text-base font-medium"
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+          <button
+            onClick={() => navigate(isLoggedIn ? "/chatpage" : "/")}
+            className="cds-btn-primary text-xs"
+            style={{ minHeight: "44px", padding: "10px 20px" }}
           >
-            <FontAwesomeIcon icon={faHome} className="text-sm" />
-            <span>Go Home</span>
-          </BubblyButton>
+            <FontAwesomeIcon icon={faHome} className="mr-2" />
+            <span>{isLoggedIn ? "Go to Workspace" : "Go Home"}</span>
+          </button>
 
-          <BubblyButton
+          <button
             onClick={() => navigate(-1)}
-            variant="secondary"
-            className="flex items-center space-x-2 px-6 py-3 text-base font-medium"
+            className="cds-btn-secondary text-xs"
+            style={{ minHeight: "44px", padding: "10px 20px" }}
           >
-            <FontAwesomeIcon icon={faArrowLeft} className="text-sm" />
+            <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
             <span>Go Back</span>
-          </BubblyButton>
+          </button>
         </div>
 
         {/* Additional Help */}
-        <div className="mt-12 p-6 bg-gray-900/30 backdrop-blur-sm border border-gray-700 rounded-lg">
-          <h4 className="text-lg font-semibold text-white mb-3">
-            Need Help?
+        <div className="mt-10 p-6 cds-tile bg-[#f4f4f4] border border-[#e0e0e0] text-left rounded-none">
+          <h4 className="text-sm font-semibold text-[#161616] mb-2 tracking-[0.16px]">
+            Resolution Guidelines
           </h4>
-          <p className="text-gray-300 text-sm mb-4">
-            If you believe this is an error, you can try these options:
+          <p className="text-[#525252] text-xs mb-4 tracking-[0.16px]">
+            If this endpoint was referenced from curriculum, verify the following:
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-            <div className="flex items-center space-x-2 text-gray-400">
-              <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
-              <span>Check the URL for typos</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-[#525252]">
+            <div className="flex items-center space-x-2">
+              <span className="w-1.5 h-1.5 bg-[#0f62fe] rounded-none"></span>
+              <span>Check URL path spelling</span>
             </div>
-            <div className="flex items-center space-x-2 text-gray-400">
-              <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
-              <span>Try refreshing the page</span>
+            <div className="flex items-center space-x-2">
+              <span className="w-1.5 h-1.5 bg-[#0f62fe] rounded-none"></span>
+              <span>Refresh active session state</span>
             </div>
-            <div className="flex items-center space-x-2 text-gray-400">
-              <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
-              <span>Go back to the homepage</span>
+            <div className="flex items-center space-x-2">
+              <span className="w-1.5 h-1.5 bg-[#0f62fe] rounded-none"></span>
+              <span>Navigate back to home registry</span>
             </div>
-            <div className="flex items-center space-x-2 text-gray-400">
-              <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
-              <span>Contact support if needed</span>
+            <div className="flex items-center space-x-2">
+              <span className="w-1.5 h-1.5 bg-[#0f62fe] rounded-none"></span>
+              <span>Contact system administrator</span>
             </div>
           </div>
         </div>
 
         {/* Quick Navigation */}
-        <div className="mt-8">
-          <p className="text-gray-500 text-sm mb-4">Quick Navigation:</p>
-          <div className="flex flex-wrap justify-center gap-3">
+        <div className="mt-8 text-center">
+          <p className="text-[#525252] text-xs mb-3 tracking-[0.16px]">Quick Navigation</p>
+          <div className="flex flex-wrap justify-center gap-2">
             <button
               onClick={() => navigate("/")}
-              className="px-4 py-2 text-sm text-gray-400 hover:text-white transition-colors border border-gray-700 hover:border-gray-600 rounded-full"
+              className="px-3 py-1.5 text-xs text-[#161616] hover:bg-[#e0e0e0] transition-colors border border-[#e0e0e0] rounded-none bg-white"
             >
-              Home
+              Overview
             </button>
             <button
               onClick={() => navigate(isLoggedIn ? "/chatpage" : "/login")}
-              className="px-4 py-2 text-sm text-gray-400 hover:text-white transition-colors border border-gray-700 hover:border-gray-600 rounded-full"
+              className="px-3 py-1.5 text-xs text-[#161616] hover:bg-[#e0e0e0] transition-colors border border-[#e0e0e0] rounded-none bg-white"
             >
-              Chat
+              Workspace
             </button>
             <button
               onClick={() => navigate("/login")}
-              className="px-4 py-2 text-sm text-gray-400 hover:text-white transition-colors border border-gray-700 hover:border-gray-600 rounded-full"
+              className="px-3 py-1.5 text-xs text-[#161616] hover:bg-[#e0e0e0] transition-colors border border-[#e0e0e0] rounded-none bg-white"
             >
               Login
             </button>
             <button
               onClick={() => navigate("/signup")}
-              className="px-4 py-2 text-sm text-gray-400 hover:text-white transition-colors border border-gray-700 hover:border-gray-600 rounded-full"
+              className="px-3 py-1.5 text-xs text-[#161616] hover:bg-[#e0e0e0] transition-colors border border-[#e0e0e0] rounded-none bg-white"
             >
               Sign Up
             </button>

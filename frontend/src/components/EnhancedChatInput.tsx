@@ -12,7 +12,6 @@ import {
   faTimes
 } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
-import BubblyButton from "./BubblyButton";
 import toast from "react-hot-toast";
 
 // Web Speech API type declarations
@@ -605,17 +604,11 @@ const EnhancedChatInput: React.FC<EnhancedChatInputProps> = ({
       <div className="flex items-center w-full">
         <div
         ref={containerRef}
-        className={`enhanced-chat-input flex items-center w-full transition-all duration-300 rounded-2xl sm:rounded-3xl ${isTyping ? 'typing-animation' : ''} ${isDragOver ? 'drag-over' : ''}`}
+        className={`carbon-chat-input-bar flex items-center w-full transition-colors rounded-none ${isDragOver ? 'border-[#0f62fe]' : ''}`}
         style={{
-          background: 'transparent',
-          border: '2px solid transparent',
-          backgroundImage: charCount > maxChars * 0.9
-            ? 'linear-gradient(transparent, transparent), linear-gradient(135deg, #fbbf24, #f59e0b, #d97706)'
-            : isDragOver
-            ? 'linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(124, 58, 237, 0.2), rgba(139, 92, 246, 0.25))'
-            : 'linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(124, 58, 237, 0.15), rgba(168, 85, 247, 0.1))',
-          backgroundOrigin: 'border-box',
-          backgroundClip: 'content-box, border-box',
+          backgroundColor: '#f4f4f4',
+          border: '1px solid #8d8d8d',
+          borderRadius: '0px',
         }}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
@@ -625,7 +618,7 @@ const EnhancedChatInput: React.FC<EnhancedChatInputProps> = ({
         <div className="flex items-center px-2 sm:px-3 py-2 sm:py-3">
           <FontAwesomeIcon
             icon={faPaperclip}
-            className="mx-1 sm:mx-2 cursor-pointer text-white/80 hover:text-white transition-colors"
+            className="mx-1 sm:mx-2 cursor-pointer text-[#525252] hover:text-[#161616] transition-colors"
             style={{ fontSize: window.innerWidth < 640 ? '14px' : '16px' }}
             title="Attach file"
             onClick={handleFileClick}
@@ -645,7 +638,7 @@ const EnhancedChatInput: React.FC<EnhancedChatInputProps> = ({
           {showPlaceholder && (
             <span
               ref={placeholderRef}
-              className="absolute left-3 top-3 text-white/60 pointer-events-none select-none"
+              className="absolute left-3 top-3 text-[#525252] pointer-events-none select-none text-sm tracking-[0.16px]"
               style={{
                 fontSize: "inherit",
                 lineHeight: "inherit"
@@ -657,8 +650,8 @@ const EnhancedChatInput: React.FC<EnhancedChatInputProps> = ({
           )}
           <textarea
             ref={textareaRef}
-            className={`w-full p-2 sm:p-3 bg-transparent text-white focus:outline-none resize-none transition-all duration-300 text-sm sm:text-base mobile-scroll ${
-              showPlaceholder ? 'text-transparent' : 'text-white'
+            className={`w-full p-2 sm:p-3 bg-transparent text-[#161616] focus:outline-none resize-none text-sm sm:text-base tracking-[0.16px] ${
+              showPlaceholder ? 'text-transparent' : 'text-[#161616]'
             }`}
             value={message}
             onChange={handleInput}
@@ -674,7 +667,7 @@ const EnhancedChatInput: React.FC<EnhancedChatInputProps> = ({
               outline: "none",
               border: "none",
               boxShadow: "none",
-              color: "#ffffff",
+              color: "#161616",
               fontWeight: "500",
             }}
           />
@@ -685,7 +678,7 @@ const EnhancedChatInput: React.FC<EnhancedChatInputProps> = ({
           <FontAwesomeIcon
             icon={faCopy}
             className={`mx-1 sm:mx-2 cursor-pointer transition-all duration-300 hidden xs:block ${
-              message.trim() ? 'text-white/80 hover:text-white' : 'text-white/40 cursor-not-allowed'
+              message.trim() ? 'text-[#525252] hover:text-[#161616]' : 'text-[#a8a8a8] cursor-not-allowed'
             }`}
             style={{ fontSize: window.innerWidth < 640 ? '14px' : '16px' }}
             onClick={handleCopyText}
@@ -725,7 +718,7 @@ const EnhancedChatInput: React.FC<EnhancedChatInputProps> = ({
                 ? 'text-green-400 hover:text-green-300 animate-pulse'
                 : isRecording
                 ? 'text-red-400 hover:text-red-300 animate-pulse'
-                : 'text-white/80 hover:text-white'
+                : 'text-[#525252] hover:text-[#161616]'
             }`}
             style={{ fontSize: window.innerWidth < 640 ? '14px' : '16px' }}
             title={
@@ -741,7 +734,7 @@ const EnhancedChatInput: React.FC<EnhancedChatInputProps> = ({
           />
           <button
             onClick={toggleExpanded}
-            className="mx-1 sm:mx-2 cursor-pointer text-white/80 hover:text-white hidden xs:block"
+            className="mx-1 sm:mx-2 cursor-pointer text-[#525252] hover:text-[#161616] hidden xs:block"
             title={isExpanded ? "Collapse" : "Expand"}
           >
             <FontAwesomeIcon
@@ -753,32 +746,28 @@ const EnhancedChatInput: React.FC<EnhancedChatInputProps> = ({
         </div>
       </div>
 
-      {/* Send button */}
-      <BubblyButton
+      {/* Send button (Carbon flat square CTA) */}
+      <button
         onClick={onSendMessage}
-        variant="primary"
-        className="ml-2 sm:ml-3 send-button flex items-center justify-center transition-all duration-300 touch-target"
+        className="ml-2 sm:ml-3 flex items-center justify-center transition-colors rounded-none flex-shrink-0"
         disabled={!message.trim() && attachments.length === 0}
         style={{
           width: window.innerWidth < 640 ? '44px' : '48px',
           height: window.innerWidth < 640 ? '44px' : '48px',
-          borderRadius: '50%',
-          background: (message.trim() || attachments.length > 0)
-            ? 'linear-gradient(135deg, #61ACEF, #9987ED, #B679E1, #9791DB, #74BDCC, #59D2BF)'
-            : 'linear-gradient(135deg, #4B5563, #6B7280)',
-          boxShadow: (message.trim() || attachments.length > 0)
-            ? '0 2px 8px rgba(139, 92, 246, 0.15), 0 0 12px rgba(124, 58, 237, 0.1)'
-            : '0 1px 4px rgba(75, 85, 99, 0.2)',
-          transform: (message.trim() || attachments.length > 0) ? 'scale(1)' : 'scale(0.95)',
+          borderRadius: '0px',
+          backgroundColor: (message.trim() || attachments.length > 0) ? '#0f62fe' : '#e0e0e0',
+          cursor: (message.trim() || attachments.length > 0) ? 'pointer' : 'not-allowed',
+          border: 'none',
         }}
+        title="Send message"
       >
         <FontAwesomeIcon
-          className={`transition-all duration-300 ${
-            (message.trim() || attachments.length > 0) ? 'text-white text-base sm:text-lg' : 'text-gray-400 text-sm sm:text-base'
-          }`}
+          className={
+            (message.trim() || attachments.length > 0) ? 'text-white text-sm' : 'text-[#8d8d8d] text-sm'
+          }
           icon={faArrowUp}
         />
-      </BubblyButton>
+      </button>
 
       {/* Voice listening indicator and typing/stats */}
       <div className="absolute -top-6 sm:-top-8 left-2 sm:left-4 right-2 sm:right-4 flex justify-between items-center">
@@ -789,18 +778,18 @@ const EnhancedChatInput: React.FC<EnhancedChatInputProps> = ({
           </div>
         )}
         {isTyping && !isListening && (
-          <div className="text-xs text-white/70 animate-pulse">
+          <div className="text-xs text-[#525252] animate-pulse">
             Typing...
           </div>
         )}
 
         {showStats && (isExpanded || charCount > 100) && (
-          <div className="text-xs text-white/70 flex items-center gap-2 sm:gap-3 ml-auto">
+          <div className="text-xs text-[#525252] flex items-center gap-2 sm:gap-3 ml-auto">
             <span className={charCount > maxChars * 0.8 ? 'text-yellow-400' : ''}>
               {charCount}/{maxChars}
             </span>
             <span className="hidden xs:inline">{wordCount} words</span>
-            <span className="text-white/50 hidden lg:inline" title="Keyboard shortcuts">
+            <span className="text-[#8d8d8d] hidden lg:inline" title="Keyboard shortcuts">
               Ctrl+E: Expand
             </span>
           </div>

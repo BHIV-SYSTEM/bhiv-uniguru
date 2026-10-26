@@ -30,13 +30,10 @@ const AuthInput: React.FC<AuthInputProps> = ({
 
 
   return (
-    <div className={`${className}`}>
-      {/* Label (matching CodePen style) */}
+    <div className={`mb-4 ${className}`}>
+      {/* Label */}
       {label && (
-        <label className="
-          block mt-[16px] sm:mt-[30px] text-[13px] sm:text-[16px] font-medium
-          text-glass font-poppins tracking-[0.5px]
-        ">
+        <label className="block text-xs font-medium text-[#525252] mb-1.5 font-carbon tracking-[0.16px]">
           {label}
         </label>
       )}
@@ -52,26 +49,24 @@ const AuthInput: React.FC<AuthInputProps> = ({
           disabled={disabled}
           autoComplete={autoComplete}
           className={`
-            block h-[42px] sm:h-[50px] w-full mt-1 sm:mt-2
-            bg-glass-input
-            rounded-[3px]
-            px-[8px] sm:px-[10px] py-0
-            text-[13px] sm:text-[14px] font-light
-            text-glass placeholder:text-placeholder
-            font-poppins tracking-[0.5px]
-            outline-none border-none
-            transition-all duration-200
+            block h-12 w-full
+            bg-[#f4f4f4]
+            rounded-none
+            px-4 py-2.5
+            text-sm font-normal
+            text-[#161616] placeholder:text-[#8c8c8c]
+            font-carbon tracking-[0.16px]
+            border-b ${error ? "border-b-2 border-[#da1e28]" : "border-[#8c8c8c] focus:border-b-2 focus:border-[#0f62fe]"}
+            outline-none
+            transition-all duration-150
             disabled:opacity-50 disabled:cursor-not-allowed
-            touch-target
           `}
         />
-
-
       </div>
 
       {/* Error Message */}
       {error && (
-        <p className="text-red-400 text-xs sm:text-sm font-medium mt-2 font-poppins animate-mobile-slide-up">
+        <p className="text-[#da1e28] text-xs font-normal mt-1 font-carbon">
           {error}
         </p>
       )}

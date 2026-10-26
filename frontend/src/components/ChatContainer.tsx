@@ -459,7 +459,7 @@
 
 //   return (
 //     <div
-//       className="chat-container flex flex-col text-white transition-all duration-300 relative overflow-hidden"
+//       className="chat-container flex flex-col bg-white text-[#161616] font-carbon transition-all duration-300 relative overflow-hidden"
 //       style={{
 //         width: "100%",
 //       }}
@@ -678,7 +678,7 @@
 
 //       {/* Fixed Input Area */}
 //       {selectedGuru ? (
-//         <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 bg-gradient-to-t from-black/20 to-transparent">
+//         <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 bg-white border-t border-[#e0e0e0]">
 //           <div className="w-full max-w-6xl mx-auto px-4 sm:px-8">
 //             <EnhancedChatInput
 //               message={message}
@@ -1186,7 +1186,7 @@
 
 //   return (
 //     <div
-//       className="chat-container flex flex-col text-white transition-all duration-300 relative overflow-hidden"
+//       className="chat-container flex flex-col bg-white text-[#161616] font-carbon transition-all duration-300 relative overflow-hidden"
 //       style={{
 //         width: "100%",
 //       }}
@@ -1411,7 +1411,7 @@
 
 //       {/* Fixed Input Area */}
 //       {selectedGuru ? (
-//         <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 bg-gradient-to-t from-black/20 to-transparent">
+//         <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 bg-white border-t border-[#e0e0e0]">
 //           <div className="w-full max-w-6xl mx-auto px-4 sm:px-8">
 //             <EnhancedChatInput
 //               message={message}
@@ -1914,7 +1914,7 @@
 
 //   return (
 //     <div
-//       className="chat-container flex flex-col text-white transition-all duration-300 relative overflow-hidden"
+//       className="chat-container flex flex-col bg-white text-[#161616] font-carbon transition-all duration-300 relative overflow-hidden"
 //       style={{
 //         width: "100%",
 //       }}
@@ -2128,7 +2128,7 @@
 
 //       {/* Fixed Input Area */}
 //       {selectedGuru ? (
-//         <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 bg-gradient-to-t from-black/20 to-transparent">
+//         <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 bg-white border-t border-[#e0e0e0]">
 //           <div className="w-full max-w-6xl mx-auto px-4 sm:px-8">
 //             <EnhancedChatInput
 //               message={message}
@@ -2632,7 +2632,7 @@
 
 //   return (
 //     <div
-//       className="chat-container flex flex-col text-white transition-all duration-300 relative overflow-hidden"
+//       className="chat-container flex flex-col bg-white text-[#161616] font-carbon transition-all duration-300 relative overflow-hidden"
 //       style={{
 //         width: "100%",
 //       }}
@@ -2847,7 +2847,7 @@
 
 //       {/* Fixed Input Area */}
 //       {selectedGuru ? (
-//         <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 bg-gradient-to-t from-black/20 to-transparent">
+//         <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 bg-white border-t border-[#e0e0e0]">
 //           <div className="w-full max-w-6xl mx-auto px-4 sm:px-8">
 //             <EnhancedChatInput
 //               message={message}
@@ -3682,31 +3682,30 @@ const ChatContainer: React.FC = () => {
 
   return (
     <div
-      className="chat-container flex flex-col text-white transition-all duration-300 relative overflow-hidden"
+      className="chat-container flex flex-col bg-white text-[#161616] font-carbon transition-all duration-300 relative overflow-hidden"
       style={{
         width: "100%",
       }}
     >
-      {/* Selected Guru Display */}
+      {/* Selected Guru Display (Carbon flat surface-1 tile) */}
       {selectedGuru && (
         <div className="w-full flex justify-center px-3 sm:px-4 pt-4 pb-3 flex-shrink-0">
-          <div className="max-w-md w-full bg-white/5 backdrop-blur-sm rounded-lg p-3 border border-white/10">
-            <div className="flex items-center justify-center gap-3">
-              <div className="relative">
-                <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center">
-                  <img src={guruLogo} alt="Guru" className="w-6 h-6" />
+          <div className="max-w-md w-full bg-[#f4f4f4] border border-[#e0e0e0] p-3 rounded-none">
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white border border-[#e0e0e0] flex items-center justify-center rounded-none">
+                  <img src={guruLogo} alt="Guru" className="w-5 h-5" />
                 </div>
-                <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-400 rounded-full border-2 border-gray-900"></div>
+                <div>
+                  <h3 className="text-[#161616] font-semibold text-xs tracking-[0.16px]">
+                    {selectedGuru.name}
+                  </h3>
+                  <p className="text-[#525252] text-[11px] tracking-[0.16px]">
+                    {selectedGuru.subject}
+                  </p>
+                </div>
               </div>
-              <div className="text-center">
-                <h3 className="text-white font-medium text-sm">
-                  {selectedGuru.name}
-                </h3>
-                <p className="text-gray-400 text-xs">
-                  {selectedGuru.subject}
-                </p>
-              </div>
-              <div className="text-xs text-green-400 bg-green-400/10 px-2 py-1 rounded-full">
+              <div className="text-[11px] font-semibold text-[#0f62fe] bg-[#edf5ff] border border-[#d0e2ff] px-2 py-0.5 rounded-none uppercase tracking-wider">
                 Active
               </div>
             </div>
@@ -3784,8 +3783,8 @@ const ChatContainer: React.FC = () => {
                   msg.sender === "bot" && !msg.isLoading ? "flex flex-col" : "flex items-center"
                 } ${
                   msg.sender === "user"
-                    ? "bg-[linear-gradient(135deg,_#61ACEF,_#9987ED,_#B679E1,_#9791DB,_#74BDCC,_#59D2BF)] text-black"
-                    : "border border-gray-700 text-white"
+                    ? "bg-[#0f62fe] text-white border border-[#0f62fe] rounded-none"
+                    : "bg-[#f4f4f4] text-[#161616] border border-[#e0e0e0] rounded-none"
                 }`}
                 style={{
                   display: "inline-block",
@@ -3933,7 +3932,7 @@ const ChatContainer: React.FC = () => {
 
       {/* Fixed Input Area */}
       {selectedGuru ? (
-        <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 bg-gradient-to-t from-black/20 to-transparent">
+        <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 bg-white border-t border-[#e0e0e0]">
           <div className="w-full max-w-6xl mx-auto px-4 sm:px-8">
             <EnhancedChatInput
               message={message}
@@ -3953,22 +3952,23 @@ const ChatContainer: React.FC = () => {
       ) : (
         <div className="chat-input-area flex-shrink-0 w-full pt-3 pb-4 fixed inset-0 flex items-center justify-center pointer-events-none">
           <div className="w-full max-w-3xl mx-auto px-4 sm:px-8 pointer-events-auto">
-            <div className="bg-gradient-to-br from-white/10 via-white/5 to-transparent backdrop-blur-xl rounded-3xl border border-white/20 p-12 sm:p-16 text-center shadow-2xl shadow-black/20 transform hover:scale-105 transition-all duration-300">
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
-                  <img src={guruLogo} alt="Guru" className="w-7 h-7" />
+            <div className="cds-tile bg-white border border-[#e0e0e0] p-8 sm:p-12 text-center rounded-none shadow-none font-carbon">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-[#f4f4f4] border border-[#e0e0e0] flex items-center justify-center rounded-none">
+                  <img src={guruLogo} alt="Guru" className="w-6 h-6" />
                 </div>
-                <h4 className="text-white font-semibold text-lg sm:text-xl bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">No guru selected</h4>
+                <h4 className="text-[#161616] font-semibold text-lg sm:text-xl tracking-tight">No Guru Selected</h4>
               </div>
-              <p className="text-gray-300 text-sm sm:text-base mb-8 leading-relaxed">
-                Create or select a guru to start chatting.
+              <p className="text-[#525252] text-sm sm:text-base mb-6 leading-relaxed max-w-md mx-auto tracking-[0.16px]">
+                Create a personalized AI tutor or restart the curriculum onboarding to begin your session.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <button
                   onClick={() => {
                     window.dispatchEvent(new CustomEvent('open-guru-create'));
                   }}
-                  className="w-full sm:w-auto px-8 py-3 rounded-xl bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600 hover:from-purple-500 hover:via-purple-400 hover:to-blue-500 text-white text-sm font-semibold shadow-xl shadow-purple-500/30 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 border border-purple-400/30"
+                  className="cds-btn-primary text-xs"
+                  style={{ minHeight: "44px", padding: "10px 20px" }}
                 >
                   Create Guru
                 </button>
@@ -3976,7 +3976,8 @@ const ChatContainer: React.FC = () => {
                   onClick={() => {
                     window.dispatchEvent(new CustomEvent('restart-guru-onboarding'));
                   }}
-                  className="w-full sm:w-auto px-8 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/30 text-white text-sm font-semibold backdrop-blur-sm transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg"
+                  className="cds-btn-secondary text-xs"
+                  style={{ minHeight: "44px", padding: "10px 20px" }}
                 >
                   How to Guru?
                 </button>

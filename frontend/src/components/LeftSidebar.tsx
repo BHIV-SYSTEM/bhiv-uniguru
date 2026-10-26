@@ -5,23 +5,23 @@ import { MessageSquarePlus } from "lucide-react";
 
 import {
 
-  faChevronRight,
+  faChevronRight,
 
-  faChevronLeft,
+  faChevronLeft,
 
-  faEdit,
+  faEdit,
 
-  faTrash,
+  faTrash,
 
-  faChevronDown,
+  faChevronDown,
 
-  faChevronUp,
+  faChevronUp,
 
-  faComments,
+  faComments,
 
-  faTools,
+  faTools,
 
-  faPlus
+  faPlus
 
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -49,2598 +49,2362 @@ import "../styles/discord-tooltips.css";
 
 import { useTranslation } from 'react-i18next';
 
-
-
 interface LeftSidebarProps {
 
-  onCreateNewChat: () => void;
+  onCreateNewChat: () => void;
 
-  isCreatingChat: boolean;
+  isCreatingChat: boolean;
 
 }
-
-
 
 interface GuruFormData {
 
-  name: string;
+  name: string;
 
-  subject: string;
+  subject: string;
 
-  description: string;
+  description: string;
 
 }
-
-
 
 interface GuruPreset extends GuruFormData {
 
-  emoji: string;
+  emoji: string;
 
-  tagline?: string;
+  tagline?: string;
 
 }
 
-
-
 const LeftSidebar: React.FC<LeftSidebarProps> = ({ onCreateNewChat, isCreatingChat }) => {
 
-  const { user } = useAuth();
+  const { user } = useAuth();
 
-  const { gurus, addGuru, removeGuru, selectedGuru, refreshGurus, selectGuru } = useGuru();
+  const { gurus, addGuru, removeGuru, selectedGuru, refreshGurus, selectGuru } = useGuru();
 
-  const { selectChat, currentChatId, deleteChat, renameChat, chatSessions, getChatsByGuru } = useChat();
+  const { selectChat, currentChatId, deleteChat, renameChat, chatSessions, getChatsByGuru } = useChat();
 
-  const { t } = useTranslation();
+  const { t } = useTranslation();
 
+  const [isCollapsed, setIsCollapsed] = useState(() => {
 
+    // Always default to collapsed (closed) on refresh
 
-  const [isCollapsed, setIsCollapsed] = useState(() => {
+    try {
 
-    // Always default to collapsed (closed) on refresh
+      // Always return true to keep sidebar closed on refresh
 
-    try {
+      return true;
 
-      // Always return true to keep sidebar closed on refresh
+    } catch {
 
-      return true;
+      return true;
 
-    } catch {
+    }
 
-      return true;
+  });
 
-    }
+  const [activeSection, setActiveSection] = useState<'gurus' | 'chats' | 'tools'>('gurus');
 
-  });
+  // Refs for GSAP animations
 
-  const [activeSection, setActiveSection] = useState<'gurus' | 'chats' | 'tools'>('gurus');
+  const contentRef = useRef<HTMLDivElement>(null);
 
+  const gurusRef = useRef<HTMLDivElement>(null);
 
+  const chatsRef = useRef<HTMLDivElement>(null);
 
-  // Refs for GSAP animations
+  const toolsRef = useRef<HTMLDivElement>(null);
 
-  const contentRef = useRef<HTMLDivElement>(null);
+  // Horizontal scrolling ref for presets carousel
 
-  const gurusRef = useRef<HTMLDivElement>(null);
+  const presetsScrollRef = useRef<HTMLDivElement>(null);
 
-  const chatsRef = useRef<HTMLDivElement>(null);
+  const scrollPresets = (dir: 'left' | 'right') => {
 
-  const toolsRef = useRef<HTMLDivElement>(null);
+    const el = presetsScrollRef.current;
 
+    if (!el) return;
 
+    const amount = Math.max(260, Math.floor(el.clientWidth * 0.85));
 
-  // Horizontal scrolling ref for presets carousel
+    el.scrollBy({ left: dir === 'left' ? -amount : amount, behavior: 'smooth' });
 
-  const presetsScrollRef = useRef<HTMLDivElement>(null);
+  };
 
-  const scrollPresets = (dir: 'left' | 'right') => {
+  // Initial animation for sections
 
-    const el = presetsScrollRef.current;
+  useEffect(() => {
 
-    if (!el) return;
+    const currentRef =
 
-    const amount = Math.max(260, Math.floor(el.clientWidth * 0.85));
+      activeSection === 'gurus' ? gurusRef :
 
-    el.scrollBy({ left: dir === 'left' ? -amount : amount, behavior: 'smooth' });
+      activeSection === 'chats' ? chatsRef : toolsRef;
 
-  };
+    if (currentRef.current) {
 
+      gsap.fromTo(currentRef.current,
 
+        { opacity: 0, scale: 0.98 },
 
-  // Initial animation for sections
+        {
 
-  useEffect(() => {
+          opacity: 1,
 
-    const currentRef =
+          scale: 1,
 
-      activeSection === 'gurus' ? gurusRef :
+          duration: 0.3,
 
-      activeSection === 'chats' ? chatsRef : toolsRef;
+          ease: "power2.out",
 
+          delay: 0.05
 
+        }
 
-    if (currentRef.current) {
+      );
 
-      gsap.fromTo(currentRef.current,
+    }
 
-        { opacity: 0, scale: 0.98 },
+  }, [activeSection]);
 
-        {
+  const [showCreateForm, setShowCreateForm] = useState(false);
 
-          opacity: 1,
+  const [isGuruListExpanded, setIsGuruListExpanded] = useState(true);
 
-          scale: 1,
+  const [isChatListExpanded, setIsChatListExpanded] = useState(true);
 
-          duration: 0.3,
+  const [isToolsExpanded, setIsToolsExpanded] = useState(true);
 
-          ease: "power2.out",
+  const [formData, setFormData] = useState<GuruFormData>({
 
-          delay: 0.05
+    name: "",
 
-        }
+    subject: "",
 
-      );
+    description: ""
 
-    }
+  });
 
-  }, [activeSection]);
+  // Helpful templates to quickly prefill the form
 
-  const [showCreateForm, setShowCreateForm] = useState(false);
+  const guruPresets: GuruPreset[] = [
 
-  const [isGuruListExpanded, setIsGuruListExpanded] = useState(true);
+    {
 
-  const [isChatListExpanded, setIsChatListExpanded] = useState(true);
+      emoji: "📐",
 
-  const [isToolsExpanded, setIsToolsExpanded] = useState(true);
+      name: "Math Tutor",
 
-  const [formData, setFormData] = useState<GuruFormData>({
+      subject: "Mathematics (Algebra, Calculus, Geometry)",
 
-    name: "",
+      tagline: "Step-by-step explanations with examples",
 
-    subject: "",
+      description: "Patient tutor who explains step-by-step with examples and checks understanding."
 
-    description: ""
+    },
 
-  });
+    {
 
+      emoji: "💻",
 
+      name: "Coding Mentor",
 
-  // Helpful templates to quickly prefill the form
+      subject: "Programming (JavaScript, Python)",
 
-  const guruPresets: GuruPreset[] = [
+      tagline: "Clear code, simple explanations",
 
-    {
+      description: "Practical mentor who writes clear code, explains concepts simply, and provides best practices."
 
-      emoji: "📐",
+    },
 
-      name: "Math Tutor",
+    {
 
-      subject: "Mathematics (Algebra, Calculus, Geometry)",
+      emoji: "⚛️",
 
-      tagline: "Step-by-step explanations with examples",
+      name: "Physics Coach",
 
-      description: "Patient tutor who explains step-by-step with examples and checks understanding."
+      subject: "Physics (Mechanics, Electricity, Waves)",
 
-    },
+      tagline: "Analogies and visual intuition",
 
-    {
+      description: "Explains concepts with analogies and visual intuition; helps with problem-solving."
 
-      emoji: "💻",
+    },
 
-      name: "Coding Mentor",
+    {
 
-      subject: "Programming (JavaScript, Python)",
+      emoji: "✍️",
 
-      tagline: "Clear code, simple explanations",
+      name: "Essay Coach",
 
-      description: "Practical mentor who writes clear code, explains concepts simply, and provides best practices."
+      subject: "Writing & Essays",
 
-    },
+      tagline: "Structure, clarity, and feedback",
 
-    {
+      description: "Helps outline a thesis, improve clarity, suggest revisions, and cite sources properly."
 
-      emoji: "⚛️",
+    },
 
-      name: "Physics Coach",
+    {
 
-      subject: "Physics (Mechanics, Electricity, Waves)",
+      emoji: "🗣️",
 
-      tagline: "Analogies and visual intuition",
+      name: "Language Buddy",
 
-      description: "Explains concepts with analogies and visual intuition; helps with problem-solving."
+      subject: "Languages (English practice)",
 
-    },
+      tagline: "Conversation and gentle corrections",
 
-    {
+      description: "Conversational practice with friendly corrections and useful phrases."
 
-      emoji: "✍️",
+    },
 
-      name: "Essay Coach",
+    {
 
-      subject: "Writing & Essays",
+      emoji: "📊",
 
-      tagline: "Structure, clarity, and feedback",
+      name: "Data Science Guru",
 
-      description: "Helps outline a thesis, improve clarity, suggest revisions, and cite sources properly."
+      subject: "Data Science (Python, Pandas, ML)",
 
-    },
+      tagline: "From data cleaning to models",
 
-    {
+      description: "Guides through EDA, data cleaning, model building, and evaluation with practical tips."
 
-      emoji: "🗣️",
+    },
 
-      name: "Language Buddy",
+    {
 
-      subject: "Languages (English practice)",
+      emoji: "🎯",
 
-      tagline: "Conversation and gentle corrections",
+      name: "Interview Prep Coach",
 
-      description: "Conversational practice with friendly corrections and useful phrases."
+      subject: "Interview Prep (Behavioral & Technical)",
 
-    },
+      tagline: "Mock questions and feedback",
 
-    {
+      description: "Practices common questions, provides behavioral frameworks, and offers feedback."
 
-      emoji: "📊",
+    },
 
-      name: "Data Science Guru",
+    {
 
-      subject: "Data Science (Python, Pandas, ML)",
+      emoji: "🧪",
 
-      tagline: "From data cleaning to models",
+      name: "Chemistry Tutor",
 
-      description: "Guides through EDA, data cleaning, model building, and evaluation with practical tips."
+      subject: "Chemistry (Organic, Inorganic, Physical)",
 
-    },
+      tagline: "Reactions, mechanisms, and intuition",
 
-    {
+      description: "Breaks down reactions and mechanisms, builds chemical intuition with examples."
 
-      emoji: "🎯",
+    },
 
-      name: "Interview Prep Coach",
+    {
 
-      subject: "Interview Prep (Behavioral & Technical)",
+      emoji: "🏛️",
 
-      tagline: "Mock questions and feedback",
+      name: "History Guide",
 
-      description: "Practices common questions, provides behavioral frameworks, and offers feedback."
+      subject: "History (World, Modern)",
 
-    },
+      tagline: "Timelines and cause/effect",
 
-    {
+      description: "Explains timelines, causes, and consequences with memorable summaries."
 
-      emoji: "🧪",
+    },
 
-      name: "Chemistry Tutor",
+    {
 
-      subject: "Chemistry (Organic, Inorganic, Physical)",
+      emoji: "💼",
 
-      tagline: "Reactions, mechanisms, and intuition",
+      name: "Business Strategy Advisor",
 
-      description: "Breaks down reactions and mechanisms, builds chemical intuition with examples."
+      subject: "Business/Strategy (Case Studies)",
 
-    },
+      tagline: "MECE, hypotheses, and frameworks",
 
-    {
+      description: "Uses structured thinking, hypotheses, and classic frameworks to solve cases."
 
-      emoji: "🏛️",
+    }
 
-      name: "History Guide",
+  ];
 
-      subject: "History (World, Modern)",
+  // First-time user onboarding helper
 
-      tagline: "Timelines and cause/effect",
+  const [showOnboarding, setShowOnboarding] = useState<boolean>(() => {
 
-      description: "Explains timelines, causes, and consequences with memorable summaries."
+    try {
 
-    },
+      const dismissed = localStorage.getItem('guruOnboardingDismissed') === 'true';
 
-    {
+      return !dismissed;
 
-      emoji: "💼",
+    } catch {
 
-      name: "Business Strategy Advisor",
+      return true;
 
-      subject: "Business/Strategy (Case Studies)",
+    }
 
-      tagline: "MECE, hypotheses, and frameworks",
+  });
 
-      description: "Uses structured thinking, hypotheses, and classic frameworks to solve cases."
+  const [showPresets, setShowPresets] = useState<boolean>(true);
 
-    }
+  // Rename modal state
 
-  ];
+  const [renameModal, setRenameModal] = useState<{
 
+    isOpen: boolean;
 
+    chatId: string;
 
-  // First-time user onboarding helper
+    currentName: string;
 
-  const [showOnboarding, setShowOnboarding] = useState<boolean>(() => {
+  }>({
 
-    try {
+    isOpen: false,
 
-      const dismissed = localStorage.getItem('guruOnboardingDismissed') === 'true';
+    chatId: '',
 
-      return !dismissed;
+    currentName: ''
 
-    } catch {
+  });
 
-      return true;
+  // Confirmation modal states
 
-    }
+  const [confirmModal, setConfirmModal] = useState<{
 
-  });
+    isOpen: boolean;
 
-  const [showPresets, setShowPresets] = useState<boolean>(true);
+    type: 'guru' | 'chat';
 
+    id: string;
 
+    name: string;
 
-  // Rename modal state
+  }>({
 
-  const [renameModal, setRenameModal] = useState<{
+    isOpen: false,
 
-    isOpen: boolean;
+    type: 'guru',
 
-    chatId: string;
+    id: '',
 
-    currentName: string;
+    name: ''
 
-  }>({
+  });
 
-    isOpen: false,
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
-    chatId: '',
+  // Handle click outside to close sidebar on mobile and window resize
 
-    currentName: ''
+  useEffect(() => {
 
-  });
+    // Keep sidebar closed by default - no automatic opening based on screen size
 
+    const handleClickOutside = (event: MouseEvent) => {
 
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
 
-  // Confirmation modal states
+        // Only auto-close on mobile
 
-  const [confirmModal, setConfirmModal] = useState<{
+        if (typeof window !== 'undefined' && window.innerWidth < 1024) {
 
-    isOpen: boolean;
+          setIsCollapsed(true);
 
-    type: 'guru' | 'chat';
+        }
 
-    id: string;
+      }
 
-    name: string;
+    };
 
-  }>({
+    const handleResize = () => {
 
-    isOpen: false,
+      if (typeof window !== 'undefined') {
 
-    type: 'guru',
+        const isMobile = window.innerWidth < 1024;
 
-    id: '',
+        if (isMobile) {
 
-    name: ''
+          setIsCollapsed(true);
 
-  });
+          // Note: Not saving to localStorage since we want sidebar closed on refresh
 
+        }
 
+        // Keep sidebar closed on all screen sizes - user must manually open
 
-  const sidebarRef = useRef<HTMLDivElement>(null);
+      }
 
+    };
 
+    document.addEventListener("mousedown", handleClickOutside);
 
-  // Handle click outside to close sidebar on mobile and window resize
+    window.addEventListener("resize", handleResize);
 
-  useEffect(() => {
+    return () => {
 
-    // Keep sidebar closed by default - no automatic opening based on screen size
+      document.removeEventListener("mousedown", handleClickOutside);
 
+      window.removeEventListener("resize", handleResize);
 
+    };
 
-    const handleClickOutside = (event: MouseEvent) => {
+  }, []);
 
-      if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
+  // Open Create Guru panel when receiving global event
 
-        // Only auto-close on mobile
+  useEffect(() => {
 
-        if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+    const onOpenGuruCreate = (_e: Event) => {
 
-          setIsCollapsed(true);
+      setIsCollapsed(false);
 
-        }
+      handleSectionChange('gurus');
 
-      }
+      setShowCreateForm(true);
 
-    };
+    };
 
+    // custom event not in WindowEventMap; cast to satisfy TS
 
+    window.addEventListener('open-guru-create' as any, onOpenGuruCreate as EventListener);
 
-    const handleResize = () => {
+    return () => {
 
-      if (typeof window !== 'undefined') {
+      window.removeEventListener('open-guru-create' as any, onOpenGuruCreate as EventListener);
 
-        const isMobile = window.innerWidth < 1024;
+    };
 
-        if (isMobile) {
+  }, []);
 
-          setIsCollapsed(true);
+  // Auto-dismiss onboarding once the user has at least one guru
 
-          // Note: Not saving to localStorage since we want sidebar closed on refresh
+  useEffect(() => {
 
-        }
+    if (gurus.length > 0 && showOnboarding) {
 
-        // Keep sidebar closed on all screen sizes - user must manually open
+      try {
 
-      }
+        localStorage.setItem('guruOnboardingDismissed', 'true');
 
-    };
+      } catch {}
 
+      setShowOnboarding(false);
 
+    }
 
-    document.addEventListener("mousedown", handleClickOutside);
+  }, [gurus.length, showOnboarding]);
 
-    window.addEventListener("resize", handleResize);
+  const handleCreateGuru = async (e: React.FormEvent) => {
 
+    e.preventDefault();
 
+    if (!formData.name.trim() || !formData.subject.trim() || !formData.description.trim()) {
 
-    return () => {
+      toast.error("Please fill in all fields");
 
-      document.removeEventListener("mousedown", handleClickOutside);
+      return;
 
-      window.removeEventListener("resize", handleResize);
+    }
 
-    };
+    toast.loading("Creating guru...", { id: "create-guru" });
 
-  }, []);
+    try {
 
+      const newGuruResponse = await createCustomGuru(
 
+        user?.id || '',
 
-  // Open Create Guru panel when receiving global event
+        formData.name.trim(),
 
-  useEffect(() => {
+        formData.subject.trim(),
 
-    const onOpenGuruCreate = (_e: Event) => {
+        formData.description.trim()
 
-      setIsCollapsed(false);
+      );
 
-      handleSectionChange('gurus');
+      const newGuru = {
 
-      setShowCreateForm(true);
+        id: newGuruResponse.chatbot?._id || newGuruResponse.guru?.id || newGuruResponse.id,
 
-    };
+        name: newGuruResponse.chatbot?.name || formData.name.trim(),
 
-    // custom event not in WindowEventMap; cast to satisfy TS
+        subject: newGuruResponse.chatbot?.subject || formData.subject.trim(),
 
-    window.addEventListener('open-guru-create' as any, onOpenGuruCreate as EventListener);
+        description: newGuruResponse.chatbot?.description || formData.description.trim(),
 
-    return () => {
+        userid: user?.id || ''
 
-      window.removeEventListener('open-guru-create' as any, onOpenGuruCreate as EventListener);
+      };
 
-    };
+      addGuru(newGuru as any);
 
-  }, []);
+      // Make the new guru active immediately
 
+      selectGuru(newGuru as any);
 
+      // Sync with backend to ensure consistent state
 
-  // Auto-dismiss onboarding once the user has at least one guru
+      try {
 
-  useEffect(() => {
+        await refreshGurus();
 
-    if (gurus.length > 0 && showOnboarding) {
+      } catch (refreshError) {
 
-      try {
+        console.warn("Could not refresh guru list immediately:", refreshError);
 
-        localStorage.setItem('guruOnboardingDismissed', 'true');
+      }
 
-      } catch {}
+      setFormData({ name: "", subject: "", description: "" });
 
-      setShowOnboarding(false);
+      setShowCreateForm(false);
 
-    }
+      try {
 
-  }, [gurus.length, showOnboarding]);
+        localStorage.setItem('guruOnboardingDismissed','true');
 
+      } catch {}
 
+      setShowOnboarding(false);
 
-  const handleCreateGuru = async (e: React.FormEvent) => {
+      toast.success("Guru created successfully! 🧙‍♂️", {
 
-    e.preventDefault();
+        id: "create-guru",
 
+        icon: '✨'
 
+      });
 
-    if (!formData.name.trim() || !formData.subject.trim() || !formData.description.trim()) {
+    } catch (error) {
 
-      toast.error("Please fill in all fields");
+      console.error("Error creating guru:", error);
 
-      return;
+      toast.error("Failed to create guru. Please try again.", { id: "create-guru" });
 
-    }
+    }
 
+  };
 
+  const handleDeleteGuru = (guruId: string, guruName: string) => {
 
-    toast.loading("Creating guru...", { id: "create-guru" });
+    setConfirmModal({
 
+      isOpen: true,
 
+      type: 'guru',
 
-    try {
+      id: guruId,
 
-      const newGuruResponse = await createCustomGuru(
+      name: guruName
 
-        user?.id || '',
+    });
 
-        formData.name.trim(),
+  };
 
-        formData.subject.trim(),
+  const handleDeleteChat = (chatId: string, chatName: string) => {
 
-        formData.description.trim()
+    setConfirmModal({
 
-      );
+      isOpen: true,
 
+      type: 'chat',
 
+      id: chatId,
 
-      const newGuru = {
+      name: chatName
 
-        id: newGuruResponse.chatbot?._id || newGuruResponse.guru?.id || newGuruResponse.id,
+    });
 
-        name: newGuruResponse.chatbot?.name || formData.name.trim(),
+  };
 
-        subject: newGuruResponse.chatbot?.subject || formData.subject.trim(),
+  const confirmDelete = async () => {
 
-        description: newGuruResponse.chatbot?.description || formData.description.trim(),
+    const { type, id } = confirmModal;
 
-        userid: user?.id || ''
+    if (type === 'guru') {
 
-      };
+      toast.loading("Deleting guru...", { id: "delete-guru" });
 
+      try {
 
+        await removeGuru(id);
 
-      addGuru(newGuru as any);
+        toast.success("Guru deleted successfully", {
 
-      // Make the new guru active immediately
+          id: "delete-guru",
 
-      selectGuru(newGuru as any);
+          icon: '🗑️'
 
-      // Sync with backend to ensure consistent state
+        });
 
-      try {
+      } catch (error) {
 
-        await refreshGurus();
+        console.error("Error deleting guru:", error);
 
-      } catch (refreshError) {
+        toast.error("Failed to delete guru", { id: "delete-guru" });
 
-        console.warn("Could not refresh guru list immediately:", refreshError);
+      }
 
-      }
+    } else if (type === 'chat') {
 
+      toast.loading("Deleting chat...", { id: "delete-chat" });
 
+      try {
 
-      setFormData({ name: "", subject: "", description: "" });
+        await deleteChat(id);
 
-      setShowCreateForm(false);
+        toast.success("Chat deleted successfully", {
 
-      try {
+          id: "delete-chat",
 
-        localStorage.setItem('guruOnboardingDismissed','true');
+          icon: '🗑️'
 
-      } catch {}
+        });
 
-      setShowOnboarding(false);
+      } catch (error) {
 
+        console.error("Error deleting chat:", error);
 
+        toast.error("Failed to delete chat", { id: "delete-chat" });
 
-      toast.success("Guru created successfully! 🧙‍♂️", {
+      }
 
-        id: "create-guru",
+    }
 
-        icon: '✨'
+  };
 
-      });
+  const openRenameModal = (chatId: string, currentName: string) => {
 
-    } catch (error) {
+    setRenameModal({
 
-      console.error("Error creating guru:", error);
+      isOpen: true,
 
-      toast.error("Failed to create guru. Please try again.", { id: "create-guru" });
+      chatId,
 
-    }
+      currentName
 
-  };
+    });
 
+  };
 
+  const closeRenameModal = () => {
 
-  const handleDeleteGuru = (guruId: string, guruName: string) => {
+    setRenameModal({
 
-    setConfirmModal({
+      isOpen: false,
 
-      isOpen: true,
+      chatId: '',
 
-      type: 'guru',
+      currentName: ''
 
-      id: guruId,
+    });
 
-      name: guruName
+  };
 
-    });
+  const handleRenameChat = async (newName: string) => {
 
-  };
+    if (!newName.trim()) {
 
+      toast.error("Chat name cannot be empty");
 
+      return;
 
-  const handleDeleteChat = (chatId: string, chatName: string) => {
+    }
 
-    setConfirmModal({
+    toast.loading("Renaming chat...", { id: "rename-chat" });
 
-      isOpen: true,
+    try {
 
-      type: 'chat',
+      await renameChat(renameModal.chatId, newName.trim());
 
-      id: chatId,
+      toast.success("Chat renamed successfully", {
 
-      name: chatName
+        id: "rename-chat",
 
-    });
+        icon: '✏️'
 
-  };
+      });
 
+    } catch (error) {
 
+      console.error("Error renaming chat:", error);
 
-  const confirmDelete = async () => {
+      toast.error("Failed to rename chat", { id: "rename-chat" });
 
-    const { type, id } = confirmModal;
+    }
 
+  };
 
+  const toggleGuruList = () => {
 
-    if (type === 'guru') {
+    setIsGuruListExpanded(!isGuruListExpanded);
 
-      toast.loading("Deleting guru...", { id: "delete-guru" });
+  };
 
+  const toggleChatList = () => {
 
+    setIsChatListExpanded(!isChatListExpanded);
 
-      try {
+  };
 
-        await removeGuru(id);
+  const toggleToolsList = () => {
 
-        toast.success("Guru deleted successfully", {
+    setIsToolsExpanded(!isToolsExpanded);
 
-          id: "delete-guru",
+  };
 
-          icon: '🗑️'
+  const handleChatSelect = (chatId: string) => {
 
-        });
+    selectChat(chatId);
 
-      } catch (error) {
+  };
 
-        console.error("Error deleting guru:", error);
+  // Format date for chat history display
 
-        toast.error("Failed to delete guru", { id: "delete-guru" });
+  const formatDate = (dateString: string) => {
 
-      }
+    const date = new Date(dateString);
 
-    } else if (type === 'chat') {
+    const now = new Date();
 
-      toast.loading("Deleting chat...", { id: "delete-chat" });
+    const diffTime = Math.abs(now.getTime() - date.getTime());
 
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
+    if (diffDays === 1) return "Today";
 
-      try {
+    if (diffDays === 2) return "Yesterday";
 
-        await deleteChat(id);
+    if (diffDays <= 7) return `${diffDays - 1} days ago`;
 
-        toast.success("Chat deleted successfully", {
+    return date.toLocaleDateString();
 
-          id: "delete-chat",
+  };
 
-          icon: '🗑️'
+  const handleGuruSelect = (guru: any) => {
 
-        });
+    selectGuru(guru);
 
-      } catch (error) {
+    handleSectionChange('chats');
 
-        console.error("Error deleting chat:", error);
+  };
 
-        toast.error("Failed to delete chat", { id: "delete-chat" });
+  // Smooth section transition with GSAP
 
-      }
+  const handleSectionChange = (newSection: 'gurus' | 'chats' | 'tools') => {
 
-    }
+    if (newSection === activeSection) return;
 
-  };
+    const currentRef =
 
+      activeSection === 'gurus' ? gurusRef :
 
+      activeSection === 'chats' ? chatsRef : toolsRef;
 
-  const openRenameModal = (chatId: string, currentName: string) => {
+    const newRef =
 
-    setRenameModal({
+      newSection === 'gurus' ? gurusRef :
 
-      isOpen: true,
+      newSection === 'chats' ? chatsRef : toolsRef;
 
-      chatId,
+    // Set the content container height to prevent jumping
 
-      currentName
+    if (contentRef.current) {
 
-    });
+      const currentHeight = contentRef.current.offsetHeight;
 
-  };
+      gsap.set(contentRef.current, { height: currentHeight });
 
+    }
 
+    // Animate out current section
 
-  const closeRenameModal = () => {
+    if (currentRef.current) {
 
-    setRenameModal({
+      gsap.to(currentRef.current, {
 
-      isOpen: false,
+        opacity: 0,
 
-      chatId: '',
+        scale: 0.98,
 
-      currentName: ''
+        duration: 0.15,
 
-    });
+        ease: "power2.out",
 
-  };
+        onComplete: () => {
 
+          setActiveSection(newSection);
 
+          // Small delay to ensure DOM update
 
-  const handleRenameChat = async (newName: string) => {
+          gsap.delayedCall(0.02, () => {
 
-    if (!newName.trim()) {
+            // Reset content container height to auto after transition
 
-      toast.error("Chat name cannot be empty");
+            if (contentRef.current) {
 
-      return;
+              gsap.set(contentRef.current, { height: 'auto' });
 
-    }
+            }
 
+            // Animate in new section
 
+            if (newRef.current) {
 
-    toast.loading("Renaming chat...", { id: "rename-chat" });
+              gsap.fromTo(newRef.current,
 
+                { opacity: 0, scale: 0.98 },
 
+                {
 
-    try {
+                  opacity: 1,
 
-      await renameChat(renameModal.chatId, newName.trim());
+                  scale: 1,
 
+                  duration: 0.2,
 
+                  ease: "power2.out"
 
-      toast.success("Chat renamed successfully", {
+                }
 
-        id: "rename-chat",
+              );
 
-        icon: '✏️'
+            }
 
-      });
+          });
 
-    } catch (error) {
+        }
 
-      console.error("Error renaming chat:", error);
+      });
 
-      toast.error("Failed to rename chat", { id: "rename-chat" });
+    } else {
 
-    }
+      // Fallback if no current ref
 
-  };
+      setActiveSection(newSection);
 
+      if (newRef.current) {
 
+        gsap.fromTo(newRef.current,
 
-  const toggleGuruList = () => {
+          { opacity: 0, scale: 0.98 },
 
-    setIsGuruListExpanded(!isGuruListExpanded);
+          {
 
-  };
+            opacity: 1,
 
+            scale: 1,
 
+            duration: 0.2,
 
-  const toggleChatList = () => {
+            ease: "power2.out"
 
-    setIsChatListExpanded(!isChatListExpanded);
+          }
 
-  };
+        );
 
+      }
 
+    }
 
-  const toggleToolsList = () => {
+  };
 
-    setIsToolsExpanded(!isToolsExpanded);
+  return (
 
-  };
+    <>
 
+      {/* Sidebar */}
 
+      <div
 
+        ref={sidebarRef}
 
+        className={`fixed top-16 left-0 h-[calc(100vh-4rem)] transform transition-all duration-300 ease-in-out z-40 bg-white border-r border-[#e0e0e0] flex flex-col font-carbon overflow-hidden ${
 
-  const handleChatSelect = (chatId: string) => {
+          isCollapsed ? 'w-16' : 'w-80 md:w-96 lg:w-[30rem] xl:w-[34rem]'
 
-    selectChat(chatId);
+        }`}
 
-  };
+        style={{
+          backgroundColor: "#ffffff",
+          borderRight: "1px solid #e0e0e0",
+          boxShadow: "none",
+        }}
 
+      >
 
+        {/* Header */}
 
-  // Format date for chat history display
+        <div className="flex items-center justify-between p-4 border-b border-[#e0e0e0] bg-[#f4f4f4] flex-shrink-0">
 
-  const formatDate = (dateString: string) => {
+          {!isCollapsed && (
 
-    const date = new Date(dateString);
+            <h2 className="text-lg font-bold flex items-center gap-2">
 
-    const now = new Date();
+              <img src={guruLogo} alt="Guru" className="w-6 h-6 drop-shadow-lg" />
 
-    const diffTime = Math.abs(now.getTime() - date.getTime());
+              <span className="bg-gradient-to-r text-[#161616]">UniGuru Tools</span>
 
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            </h2>
 
+          )}
 
+          <button
 
-    if (diffDays === 1) return "Today";
+            onClick={() => {
 
-    if (diffDays === 2) return "Yesterday";
+              const newCollapsed = !isCollapsed;
 
-    if (diffDays <= 7) return `${diffDays - 1} days ago`;
+              setIsCollapsed(newCollapsed);
 
-    return date.toLocaleDateString();
+              // Note: Not saving to localStorage since we want sidebar closed on refresh
 
-  };
+            }}
 
+            className="text-[#525252] hover:text-white transition-all duration-200 p-2 rounded-full hover:bg-[#e0e0e0]"
 
+          >
 
-  const handleGuruSelect = (guru: any) => {
+            <FontAwesomeIcon
 
-    selectGuru(guru);
+              icon={isCollapsed ? faChevronRight : faChevronLeft}
 
-    handleSectionChange('chats');
+              size="sm"
 
-  };
+            />
 
+          </button>
 
+        </div>
 
-  // Smooth section transition with GSAP
+        {/* Navigation Tabs - Discord Style */}
 
-  const handleSectionChange = (newSection: 'gurus' | 'chats' | 'tools') => {
+        {!isCollapsed && (
 
-    if (newSection === activeSection) return;
+          <div className="flex border-b border-[#e0e0e0] bg-[#f4f4f4] flex-shrink-0 bg-[#f4f4f4]">
 
+            <button
 
+              onClick={() => handleSectionChange('gurus')}
 
-    const currentRef =
+              className={`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
 
-      activeSection === 'gurus' ? gurusRef :
+                activeSection === 'gurus'
 
-      activeSection === 'chats' ? chatsRef : toolsRef;
+                  ? 'text-white bg-[#0f62fe] text-white'
 
+                  : 'text-gray-300 hover:text-white hover:bg-[#e0e0e0]'
 
+              }`}
 
-    const newRef =
+            >
 
-      newSection === 'gurus' ? gurusRef :
+              {/* Discord-style active indicator */}
 
-      newSection === 'chats' ? chatsRef : toolsRef;
+              {activeSection === 'gurus' && (
 
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0f62fe] rounded-t-full"></div>
 
+              )}
 
-    // Set the content container height to prevent jumping
+              {/* Hover effect background */}
 
-    if (contentRef.current) {
+              <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
 
-      const currentHeight = contentRef.current.offsetHeight;
+              <img src={guruLogo} alt="Guru" className="w-4 h-4 mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
 
-      gsap.set(contentRef.current, { height: currentHeight });
+              <span className="relative z-10">{t('gurus')}</span>
 
-    }
+            </button>
 
+            <button
 
+              onClick={() => handleSectionChange('chats')}
 
-    // Animate out current section
+              className={`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
 
-    if (currentRef.current) {
+                activeSection === 'chats'
 
-      gsap.to(currentRef.current, {
+                  ? 'text-white bg-blue-500/20'
 
-        opacity: 0,
+                  : 'text-gray-300 hover:text-white hover:bg-blue-400/10'
 
-        scale: 0.98,
+              }`}
 
-        duration: 0.15,
+            >
 
-        ease: "power2.out",
+              {activeSection === 'chats' && (
 
-        onComplete: () => {
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-400 rounded-t-full"></div>
 
-          setActiveSection(newSection);
+              )}
 
+              <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
 
+              <FontAwesomeIcon icon={faComments} className="mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
 
-          // Small delay to ensure DOM update
+              <span className="relative z-10">{t('chats')}</span>
 
-          gsap.delayedCall(0.02, () => {
+            </button>
 
-            // Reset content container height to auto after transition
+            <button
 
-            if (contentRef.current) {
+              onClick={() => handleSectionChange('tools')}
 
-              gsap.set(contentRef.current, { height: 'auto' });
+              className={`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
 
-            }
+                activeSection === 'tools'
 
+                  ? 'text-white bg-orange-500/20'
 
+                  : 'text-gray-300 hover:text-white hover:bg-orange-400/10'
 
-            // Animate in new section
+              }`}
 
-            if (newRef.current) {
+            >
 
-              gsap.fromTo(newRef.current,
+              {activeSection === 'tools' && (
 
-                { opacity: 0, scale: 0.98 },
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-400 rounded-t-full"></div>
 
-                {
+              )}
 
-                  opacity: 1,
+              <div className="absolute inset-0 bg-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
 
-                  scale: 1,
+              <FontAwesomeIcon icon={faTools} className="mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
 
-                  duration: 0.2,
+              <span className="relative z-10">Tools</span>
 
-                  ease: "power2.out"
+            </button>
 
-                }
+          </div>
 
-              );
+        )}
 
-            }
+        {/* Collapsed Icons - Discord Style */}
 
-          });
+        {isCollapsed && (
 
-        }
+          <div className="flex flex-col items-center py-4 space-y-3">
 
-      });
+            {/* Gurus Button */}
 
-    } else {
+            <div className="relative group discord-tooltip" data-tooltip={`My Gurus (${gurus.length})`}>
 
-      // Fallback if no current ref
+              {/* Discord-style indicator bar */}
 
-      setActiveSection(newSection);
+              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100"></div>
 
-      if (newRef.current) {
+              <button
 
-        gsap.fromTo(newRef.current,
+                onClick={() => {
 
-          { opacity: 0, scale: 0.98 },
+                  setIsCollapsed(false);
 
-          {
+                  handleSectionChange('gurus');
 
-            opacity: 1,
+                }}
 
-            scale: 1,
+                className="relative w-12 h-12 rounded-3xl bg-gray-700/80 hover:bg-purple-600 text-gray-300 hover:text-white transition-all duration-200 ease-out group-hover:rounded-2xl flex items-center justify-center overflow-hidden"
 
-            duration: 0.2,
+                title={`My Gurus (${gurus.length})`}
 
-            ease: "power2.out"
+              >
 
-          }
+                {/* Discord-style background glow */}
 
-        );
+                <div className="absolute inset-0 bg-[#0f62fe] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
 
-      }
+                <img src={guruLogo} alt="Guru" className="relative z-10 w-6 h-6 transition-transform duration-200 group-hover:scale-110" />
 
-    }
+              </button>
 
-  };
+            </div>
 
+            {/* Chats Button */}
 
+            <div className="relative group">
 
-  return (
+              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100"></div>
 
-    <>
+              <button
 
-      {/* Sidebar */}
+                onClick={() => {
 
-      <div
+                  setIsCollapsed(false);
 
-        ref={sidebarRef}
+                  handleSectionChange('chats');
 
-        className={`fixed top-16 left-0 h-[calc(100vh-4rem)] transform transition-all duration-300 ease-in-out z-40 backdrop-blur-xl border-r border-purple-400/20 shadow-2xl flex flex-col overflow-hidden ${
+                }}
 
-          isCollapsed ? 'w-16' : 'w-80 md:w-96 lg:w-[30rem] xl:w-[34rem]'
+                className="relative w-12 h-12 rounded-3xl bg-gray-700/80 hover:bg-blue-600 text-gray-300 hover:text-white transition-all duration-200 ease-out group-hover:rounded-2xl flex items-center justify-center overflow-hidden"
 
-        }`}
+                title={selectedGuru ? `${selectedGuru.name} Chats (${getChatsByGuru(selectedGuru.id).length})` : `Recent Conversations (${chatSessions.length})`}
 
-        style={{
+              >
 
-          background: "linear-gradient(180deg, rgba(139, 92, 246, 0.08) 0%, rgba(124, 58, 237, 0.06) 30%, rgba(109, 40, 217, 0.05) 70%, rgba(91, 33, 182, 0.04) 100%)",
+                <div className="absolute inset-0 bg-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
 
-          backdropFilter: "blur(25px) saturate(120%)",
+                <FontAwesomeIcon icon={faComments} className="relative z-10 text-lg transition-transform duration-200 group-hover:scale-110" />
 
-          borderRight: "1px solid rgba(139, 92, 246, 0.15)",
+              </button>
 
-          boxShadow: "0 25px 50px -12px rgba(139, 92, 246, 0.1), 0 0 0 1px rgba(139, 92, 246, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.05)",
+            </div>
 
-        }}
+            {/* Tools Button */}
 
-      >
+            <div className="relative group">
 
-        {/* Header */}
+              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100"></div>
 
-        <div className="flex items-center justify-between p-4 border-b border-purple-400/20 flex-shrink-0">
+              <button
 
-          {!isCollapsed && (
+                onClick={() => {
 
-            <h2 className="text-lg font-bold flex items-center gap-2">
+                  setIsCollapsed(false);
 
-              <img src={guruLogo} alt="Guru" className="w-6 h-6 drop-shadow-lg" />
+                  handleSectionChange('tools');
 
-              <span className="bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">UniGuru Tools</span>
+                }}
 
-            </h2>
+                className="relative w-12 h-12 rounded-3xl bg-gray-700/80 hover:bg-orange-600 text-gray-300 hover:text-white transition-all duration-200 ease-out group-hover:rounded-2xl flex items-center justify-center overflow-hidden"
 
-          )}
+                title="Available Tools"
 
-          <button
+              >
 
-            onClick={() => {
+                <div className="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
 
-              const newCollapsed = !isCollapsed;
+                <FontAwesomeIcon icon={faTools} className="relative z-10 text-lg transition-transform duration-200 group-hover:scale-110" />
 
-              setIsCollapsed(newCollapsed);
+              </button>
 
-              // Note: Not saving to localStorage since we want sidebar closed on refresh
+            </div>
 
-            }}
+            {/* Separator */}
 
-            className="text-purple-300 hover:text-white transition-all duration-200 p-2 rounded-full hover:bg-purple-400/10"
+            <div className="w-8 h-0.5 bg-gray-600/50 rounded-full my-2"></div>
 
-          >
+            {/* New Chat Button */}
 
-            <FontAwesomeIcon
+            <div className="relative group">
 
-              icon={isCollapsed ? faChevronRight : faChevronLeft}
+              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100 group-disabled:opacity-0"></div>
 
-              size="sm"
+              <button
 
-            />
+                onClick={onCreateNewChat}
 
-          </button>
+                disabled={isCreatingChat || !selectedGuru}
 
-        </div>
+                className="relative w-12 h-12 rounded-3xl bg-green-600 hover:bg-green-500 text-white transition-all duration-200 ease-out group-hover:rounded-2xl flex items-center justify-center overflow-hidden disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-green-600 disabled:hover:rounded-3xl shadow-lg hover:shadow-green-500/30"
 
+                title={!selectedGuru ? t('selectGuruFirst') : isCreatingChat ? t('creating') : t('startNewChat')}
 
+              >
 
-        {/* Navigation Tabs - Discord Style */}
+                {/* Discord-style background glow */}
 
-        {!isCollapsed && (
+                <div className="absolute inset-0 bg-green-400/30 opacity-0 group-hover:opacity-100 group-disabled:opacity-0 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
 
-          <div className="flex border-b border-purple-400/20 flex-shrink-0 bg-black/10">
+                {/* Disabled state overlay */}
 
-            <button
+                {(isCreatingChat || !selectedGuru) && (
 
-              onClick={() => handleSectionChange('gurus')}
+                  <div className="absolute inset-0 bg-gray-900/40 rounded-3xl"></div>
 
-              className={`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
+                )}
 
-                activeSection === 'gurus'
+                <MessageSquarePlus
 
-                  ? 'text-white bg-purple-500/20'
+                  size={20}
 
-                  : 'text-gray-300 hover:text-white hover:bg-purple-400/10'
+                  className={`relative z-10 transition-all duration-200 group-hover:scale-110 group-disabled:scale-100 ${isCreatingChat ? 'animate-spin' : ''}`}
 
-              }`}
+                />
 
-            >
+              </button>
 
-              {/* Discord-style active indicator */}
+            </div>
 
-              {activeSection === 'gurus' && (
+          </div>
 
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-purple-400 rounded-t-full"></div>
+        )}
 
-              )}
+        {/* Content */}
 
+        {!isCollapsed && (
 
+          <div ref={contentRef} className="flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll p-4 pb-6 space-y-4 min-h-0">
 
-              {/* Hover effect background */}
+            {/* Gurus Section */}
 
-              <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+            {activeSection === 'gurus' && (
 
+              <div ref={gurusRef} className="flex flex-col h-full space-y-4">
 
+                {/* Action Buttons */}
 
-              <img src={guruLogo} alt="Guru" className="w-4 h-4 mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
+                {showOnboarding && gurus.length === 0 && !showCreateForm && (
 
-              <span className="relative z-10">{t('gurus')}</span>
+                  <div className="bg-purple-500/10 border border-purple-400/30 text-purple-200 text-sm p-3 rounded-lg flex items-start justify-between gap-3">
 
-            </button>
+                    <div>
 
+                      <div className="font-semibold">Getting started</div>
 
+                      <div>Step 1: Click "Create Guru" to start.</div>
 
-            <button
+                    </div>
 
-              onClick={() => handleSectionChange('chats')}
+                    <button
 
-              className={`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
+                      onClick={() => { try { localStorage.setItem('guruOnboardingDismissed','true'); } catch {} setShowOnboarding(false); }}
 
-                activeSection === 'chats'
+                      className="text-xs text-[#525252] hover:text-white underline"
 
-                  ? 'text-white bg-blue-500/20'
+                    >
 
-                  : 'text-gray-300 hover:text-white hover:bg-blue-400/10'
+                      Hide tips
 
-              }`}
+                    </button>
 
-            >
+                  </div>
 
-              {activeSection === 'chats' && (
+                )}
 
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-400 rounded-t-full"></div>
+                {!showOnboarding && gurus.length === 0 && !showCreateForm && (
 
-              )}
+                  <div className="bg-purple-500/5 border border-[#e0e0e0] text-purple-200 text-xs p-2 rounded-lg flex items-center justify-between gap-3">
 
+                    <span>New here? You can show tips again.</span>
 
+                    <button
 
-              <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                      onClick={() => { try { localStorage.setItem('guruOnboardingDismissed','false'); } catch {} setShowOnboarding(true); }}
 
+                      className="text-xs text-[#525252] hover:text-white underline"
 
+                    >
 
-              <FontAwesomeIcon icon={faComments} className="mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
+                      Show tips
 
-              <span className="relative z-10">{t('chats')}</span>
+                    </button>
 
-            </button>
+                  </div>
 
+                )}
 
+                {!showCreateForm && (
 
-            <button
+                  <div className="flex gap-2">
 
-              onClick={() => handleSectionChange('tools')}
+                    <BubblyButton
 
-              className={`relative flex-1 py-3 px-4 text-sm font-medium transition-all duration-200 ease-out flex items-center justify-center group overflow-hidden ${
+                      onClick={() => setShowCreateForm(true)}
 
-                activeSection === 'tools'
+                      variant="primary"
 
-                  ? 'text-white bg-orange-500/20'
+                      className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 font-medium text-sm ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400 shadow-purple-500/30 shadow-lg' : ''}`}
 
-                  : 'text-gray-300 hover:text-white hover:bg-orange-400/10'
+                    >
 
-              }`}
+                      <span>Create Guru</span>
 
-            >
+                    </BubblyButton>
 
-              {activeSection === 'tools' && (
+                  </div>
 
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-400 rounded-t-full"></div>
+                )}
 
-              )}
+                {/* Create New Guru Form */}
 
+                {showCreateForm && (
 
+                  <div className="bg-gradient-to-br from-purple-900/40 to-purple-800/30 backdrop-blur-sm rounded-xl p-6 border border-purple-400/30 shadow-xl">
 
-              <div className="absolute inset-0 bg-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                    <div className="flex items-center justify-between mb-6">
 
+                      <div className="flex items-center gap-3">
 
+                        <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
 
-              <FontAwesomeIcon icon={faTools} className="mr-2 relative z-10 transition-transform duration-200 group-hover:scale-110" />
+                          <img src={guruLogo} alt="Guru" className="w-5 h-5" />
 
-              <span className="relative z-10">Tools</span>
+                        </div>
 
-            </button>
+                        <h3 className="text-white font-semibold text-lg">Create New Guru</h3>
 
-          </div>
+                      </div>
 
-        )}
+                      {showOnboarding && (
 
+                        <button
 
+                          onClick={() => { try { localStorage.setItem('guruOnboardingDismissed','true'); } catch {} setShowOnboarding(false); }}
 
-        {/* Collapsed Icons - Discord Style */}
+                          className="text-xs text-[#525252] hover:text-white underline"
 
-        {isCollapsed && (
+                        >
 
-          <div className="flex flex-col items-center py-4 space-y-3">
+                          Hide tips
 
-            {/* Gurus Button */}
+                        </button>
 
-            <div className="relative group discord-tooltip" data-tooltip={`My Gurus (${gurus.length})`}>
+                      )}
 
-              {/* Discord-style indicator bar */}
+                    </div>
 
-              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100"></div>
+                    {/* Quick start templates - horizontal carousel */}
 
+                    <div className="mb-4">
 
+                      <div className="flex items-center justify-between mb-2">
 
-              <button
+                        <div className="text-purple-200 text-xs">Quick start templates</div>
 
-                onClick={() => {
+                        <div className="flex items-center gap-2">
 
-                  setIsCollapsed(false);
+                          <button
 
-                  handleSectionChange('gurus');
+                            type="button"
 
-                }}
+                            onClick={() => setShowPresets((prev) => !prev)}
 
-                className="relative w-12 h-12 rounded-3xl bg-gray-700/80 hover:bg-purple-600 text-gray-300 hover:text-white transition-all duration-200 ease-out group-hover:rounded-2xl flex items-center justify-center overflow-hidden"
+                            className="text-xs text-[#525252] hover:text-white underline"
 
-                title={`My Gurus (${gurus.length})`}
+                          >
 
-              >
+                            {showPresets ? 'Hide' : 'Show'}
 
-                {/* Discord-style background glow */}
+                          </button>
 
-                <div className="absolute inset-0 bg-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
+                          {showPresets && (
 
+                            <div className="hidden sm:flex items-center gap-1">
 
+                              <button
 
-                <img src={guruLogo} alt="Guru" className="relative z-10 w-6 h-6 transition-transform duration-200 group-hover:scale-110" />
+                                type="button"
 
-              </button>
+                                onClick={() => scrollPresets('left')}
 
-            </div>
+                                className="p-1.5 rounded-full bg-black/30 hover:bg-black/50 border border-purple-400/30 text-purple-200 hover:text-white transition-colors"
 
+                                aria-label="Previous templates"
 
+                              >
 
-            {/* Chats Button */}
+                                <FontAwesomeIcon icon={faChevronLeft} className="text-xs" />
 
-            <div className="relative group">
+                              </button>
 
-              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100"></div>
+                              <button
 
+                                type="button"
 
+                                onClick={() => scrollPresets('right')}
 
-              <button
+                                className="p-1.5 rounded-full bg-black/30 hover:bg-black/50 border border-purple-400/30 text-purple-200 hover:text-white transition-colors"
 
-                onClick={() => {
+                                aria-label="Next templates"
 
-                  setIsCollapsed(false);
+                              >
 
-                  handleSectionChange('chats');
+                                <FontAwesomeIcon icon={faChevronRight} className="text-xs" />
 
-                }}
+                              </button>
 
-                className="relative w-12 h-12 rounded-3xl bg-gray-700/80 hover:bg-blue-600 text-gray-300 hover:text-white transition-all duration-200 ease-out group-hover:rounded-2xl flex items-center justify-center overflow-hidden"
+                            </div>
 
-                title={selectedGuru ? `${selectedGuru.name} Chats (${getChatsByGuru(selectedGuru.id).length})` : `Recent Conversations (${chatSessions.length})`}
+                          )}
 
-              >
+                        </div>
 
-                <div className="absolute inset-0 bg-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
+                      </div>
 
+                      {showPresets && (
 
+                        <div className="relative">
 
-                <FontAwesomeIcon icon={faComments} className="relative z-10 text-lg transition-transform duration-200 group-hover:scale-110" />
+                          {/* Overlay arrows for mobile too */}
 
-              </button>
+                          <div className="sm:hidden absolute inset-y-0 left-0 flex items-center">
 
-            </div>
+                            <button
 
+                              type="button"
 
+                              onClick={() => scrollPresets('left')}
 
-            {/* Tools Button */}
+                              className="ml-[-6px] p-2 rounded-full bg-black/30 hover:bg-black/50 border border-purple-400/30 text-purple-200"
 
-            <div className="relative group">
+                              aria-label="Previous templates"
 
-              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100"></div>
+                            >
 
+                              <FontAwesomeIcon icon={faChevronLeft} className="text-xs" />
 
+                            </button>
 
-              <button
+                          </div>
 
-                onClick={() => {
+                          <div className="sm:hidden absolute inset-y-0 right-0 flex items-center">
 
-                  setIsCollapsed(false);
+                            <button
 
-                  handleSectionChange('tools');
+                              type="button"
 
-                }}
+                              onClick={() => scrollPresets('right')}
 
-                className="relative w-12 h-12 rounded-3xl bg-gray-700/80 hover:bg-orange-600 text-gray-300 hover:text-white transition-all duration-200 ease-out group-hover:rounded-2xl flex items-center justify-center overflow-hidden"
+                              className="mr-[-6px] p-2 rounded-full bg-black/30 hover:bg-black/50 border border-purple-400/30 text-purple-200"
 
-                title="Available Tools"
+                              aria-label="Next templates"
 
-              >
+                            >
 
-                <div className="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
+                              <FontAwesomeIcon icon={faChevronRight} className="text-xs" />
 
+                            </button>
 
+                          </div>
 
-                <FontAwesomeIcon icon={faTools} className="relative z-10 text-lg transition-transform duration-200 group-hover:scale-110" />
+                          <div
 
-              </button>
+                            ref={presetsScrollRef}
 
-            </div>
+                            className="flex gap-2 overflow-x-auto pr-1"
 
+                            style={{ scrollBehavior: 'smooth' }}
 
+                          >
 
-            {/* Separator */}
+                            {guruPresets.map((p, idx) => (
 
-            <div className="w-8 h-0.5 bg-gray-600/50 rounded-full my-2"></div>
+                              <button
 
+                                key={idx}
 
+                                type="button"
 
-            {/* New Chat Button */}
+                                onClick={() => setFormData({ name: p.name, subject: p.subject, description: p.description })}
 
-            <div className="relative group">
+                                className="min-w-[260px] sm:min-w-[280px] group relative p-3 rounded-lg border border-purple-400/30 bg-white/5 hover:bg-white/10 hover:border-purple-400/60 transition-all text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/50"
 
-              <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-1 bg-white rounded-r-full transition-all duration-200 ease-out group-hover:h-5 h-2 opacity-0 group-hover:opacity-100 group-disabled:opacity-0"></div>
+                                title={`${p.name} — ${p.subject}`}
 
+                                aria-label={`Use ${p.name} template`}
 
+                              >
 
-              <button
+                                <div className="flex items-start gap-3">
 
-                onClick={onCreateNewChat}
+                                  <div className="text-lg leading-none">{p.emoji}</div>
 
-                disabled={isCreatingChat || !selectedGuru}
+                                  <div className="min-w-0">
 
-                className="relative w-12 h-12 rounded-3xl bg-green-600 hover:bg-green-500 text-white transition-all duration-200 ease-out group-hover:rounded-2xl flex items-center justify-center overflow-hidden disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-green-600 disabled:hover:rounded-3xl shadow-lg hover:shadow-green-500/30"
+                                    <div className="text-white text-sm font-medium truncate">{p.name}</div>
 
-                title={!selectedGuru ? t('selectGuruFirst') : isCreatingChat ? t('creating') : t('startNewChat')}
+                                    <div className="text-purple-200 text-xs truncate">{p.subject}</div>
 
-              >
+                                    {p.tagline && (
 
-                {/* Discord-style background glow */}
+                                      <div className="text-gray-400 text-xs mt-1 line-clamp-2">{p.tagline}</div>
 
-                <div className="absolute inset-0 bg-green-400/30 opacity-0 group-hover:opacity-100 group-disabled:opacity-0 transition-opacity duration-200 rounded-3xl group-hover:rounded-2xl"></div>
+                                    )}
 
+                                  </div>
 
+                                </div>
 
-                {/* Disabled state overlay */}
+                              </button>
 
-                {(isCreatingChat || !selectedGuru) && (
+                            ))}
 
-                  <div className="absolute inset-0 bg-gray-900/40 rounded-3xl"></div>
+                          </div>
 
-                )}
+                        </div>
 
+                      )}
 
+                    </div>
 
-                <MessageSquarePlus
+                    <form onSubmit={handleCreateGuru} className="space-y-4">
 
-                  size={20}
+                      <div>
 
-                  className={`relative z-10 transition-all duration-200 group-hover:scale-110 group-disabled:scale-100 ${isCreatingChat ? 'animate-spin' : ''}`}
+                        <label className="block text-purple-200 text-sm font-medium mb-2">
 
-                />
+                          Guru Name *
 
-              </button>
+                        </label>
 
-            </div>
+                        {showOnboarding && gurus.length === 0 && (
 
-          </div>
+                          <p className="text-xs text-[#525252] mb-2">Step 2: Give your guru a clear, memorable name.</p>
 
-        )}
+                        )}
 
+                        <input
 
+                          type="text"
 
-        {/* Content */}
+                          placeholder="Enter guru name..."
 
-        {!isCollapsed && (
+                          value={formData.name}
 
-          <div ref={contentRef} className="flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll p-4 pb-6 space-y-4 min-h-0">
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
 
-            {/* Gurus Section */}
+                          className={`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}`}
 
-            {activeSection === 'gurus' && (
+                          required
 
-              <div ref={gurusRef} className="flex flex-col h-full space-y-4">
+                        />
 
-                {/* Action Buttons */}
+                      </div>
 
-                {showOnboarding && gurus.length === 0 && !showCreateForm && (
+                      <div>
 
-                  <div className="bg-purple-500/10 border border-purple-400/30 text-purple-200 text-sm p-3 rounded-lg flex items-start justify-between gap-3">
+                        <label className="block text-purple-200 text-sm font-medium mb-2">
 
-                    <div>
+                          Subject/Expertise *
 
-                      <div className="font-semibold">Getting started</div>
+                        </label>
 
-                      <div>Step 1: Click "Create Guru" to start.</div>
+                        {showOnboarding && gurus.length === 0 && (
 
-                    </div>
+                          <p className="text-xs text-[#525252] mb-2">Step 3: Specify the subject or expertise (e.g., Math, Physics, Programming).</p>
 
-                    <button
+                        )}
 
-                      onClick={() => { try { localStorage.setItem('guruOnboardingDismissed','true'); } catch {} setShowOnboarding(false); }}
+                        <input
 
-                      className="text-xs text-purple-300 hover:text-white underline"
+                          type="text"
 
-                    >
+                          placeholder="e.g., Math, Physics, Programming..."
 
-                      Hide tips
+                          value={formData.subject}
 
-                    </button>
+                          onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
 
-                  </div>
+                          className={`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}`}
 
-                )}
+                          required
 
-                {!showOnboarding && gurus.length === 0 && !showCreateForm && (
+                        />
 
-                  <div className="bg-purple-500/5 border border-purple-400/20 text-purple-200 text-xs p-2 rounded-lg flex items-center justify-between gap-3">
+                      </div>
 
-                    <span>New here? You can show tips again.</span>
+                      <div>
 
-                    <button
+                        <label className="block text-purple-200 text-sm font-medium mb-2">
 
-                      onClick={() => { try { localStorage.setItem('guruOnboardingDismissed','false'); } catch {} setShowOnboarding(true); }}
+                          Description
 
-                      className="text-xs text-purple-300 hover:text-white underline"
+                        </label>
 
-                    >
+                        {showOnboarding && gurus.length === 0 && (
 
-                      Show tips
+                          <p className="text-xs text-[#525252] mb-2">Step 4: Describe your guru's style and what it should help with.</p>
 
-                    </button>
+                        )}
 
-                  </div>
+                        <textarea
 
-                )}
+                          placeholder="Describe your guru's personality..."
 
-                {!showCreateForm && (
+                          value={formData.description}
 
-                  <div className="flex gap-2">
+                          onChange={(e) => setFormData({ ...formData, description: e.target.value })}
 
-                    <BubblyButton
+                          className={`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all resize-none ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}`}
 
-                      onClick={() => setShowCreateForm(true)}
+                          rows={4}
 
-                      variant="primary"
+                          required
 
-                      className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 font-medium text-sm ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400 shadow-purple-500/30 shadow-lg' : ''}`}
+                        />
 
-                    >
+                      </div>
 
-                      <span>Create Guru</span>
+                      {showOnboarding && gurus.length === 0 && (
 
-                    </BubblyButton>
+                        <div className="text-purple-200 text-sm mt-2">Step 5: Click "Create Guru" to finish.</div>
 
-                  </div>
+                      )}
 
-                )}
+                      <div className="flex gap-3 pt-2">
 
+                        <button
 
+                          type="button"
 
-                {/* Create New Guru Form */}
+                          onClick={() => setShowCreateForm(false)}
 
-                {showCreateForm && (
+                          className="flex-1 py-3 px-4 bg-gray-600/50 hover:bg-gray-600/70 text-gray-200 rounded-lg transition-all duration-200 font-medium"
 
-                  <div className="bg-gradient-to-br from-purple-900/40 to-purple-800/30 backdrop-blur-sm rounded-xl p-6 border border-purple-400/30 shadow-xl">
+                        >
 
-                    <div className="flex items-center justify-between mb-6">
+                          Cancel
 
-                      <div className="flex items-center gap-3">
+                        </button>
 
-                        <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <BubblyButton
 
-                          <img src={guruLogo} alt="Guru" className="w-5 h-5" />
+                          type="submit"
 
-                        </div>
+                          variant="primary"
 
-                        <h3 className="text-white font-semibold text-lg">Create New Guru</h3>
+                          className={`flex-1 py-3 px-4 font-medium ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400 shadow-purple-500/30 shadow-lg' : ''}`}
 
-                      </div>
+                        >
 
-                      {showOnboarding && (
+                          Create Guru
 
-                        <button
+                        </BubblyButton>
 
-                          onClick={() => { try { localStorage.setItem('guruOnboardingDismissed','true'); } catch {} setShowOnboarding(false); }}
+                      </div>
 
-                          className="text-xs text-purple-300 hover:text-white underline"
+                    </form>
 
-                        >
+                  </div>
 
-                          Hide tips
+                )}
 
-                        </button>
+                {/* Gurus List */}
 
-                      )}
+                <div className={`flex flex-col ${showCreateForm ? 'flex-shrink-0' : 'flex-1'} min-h-0`}>
 
-                    </div>
+                  <button
 
+                    onClick={toggleGuruList}
 
+                    className="flex items-center justify-between w-full text-left mb-3 text-[#525252] hover:text-white transition-all duration-200 ease-out py-2 px-2 rounded-lg hover:bg-purple-500/10 group"
 
-                    {/* Quick start templates - horizontal carousel */}
+                  >
 
-                    <div className="mb-4">
+                    <span className="text-base font-semibold transition-colors duration-200">
 
-                      <div className="flex items-center justify-between mb-2">
+                      My Gurus ({gurus.length})
 
-                        <div className="text-purple-200 text-xs">Quick start templates</div>
+                    </span>
 
-                        <div className="flex items-center gap-2">
+                    <FontAwesomeIcon
 
-                          <button
+                      icon={isGuruListExpanded ? faChevronUp : faChevronDown}
 
-                            type="button"
+                      className="text-sm transition-transform duration-200 group-hover:scale-110"
 
-                            onClick={() => setShowPresets((prev) => !prev)}
+                    />
 
-                            className="text-xs text-purple-300 hover:text-white underline"
+                  </button>
 
-                          >
+                  {isGuruListExpanded && (
 
-                            {showPresets ? 'Hide' : 'Show'}
+                    <div className="space-y-2 flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll min-h-0">
 
-                          </button>
+                      {gurus.length === 0 ? (
 
-                          {showPresets && (
+                        <div className="text-gray-300 text-center py-4">
 
-                            <div className="hidden sm:flex items-center gap-1">
+                          <p className="text-sm">No gurus yet</p>
 
-                              <button
+                          <p className="text-xs">Create your first guru to get started!</p>
 
-                                type="button"
+                        </div>
 
-                                onClick={() => scrollPresets('left')}
+                      ) : (
 
-                                className="p-1.5 rounded-full bg-black/30 hover:bg-black/50 border border-purple-400/30 text-purple-200 hover:text-white transition-colors"
+                        gurus.map((guru) => (
 
-                                aria-label="Previous templates"
+                          <div
 
-                              >
+                            key={guru.id}
 
-                                <FontAwesomeIcon icon={faChevronLeft} className="text-xs" />
+                            className={`guru-card relative backdrop-blur-sm rounded-xl p-3 border transition-all duration-200 ease-out cursor-pointer group overflow-hidden ${
 
-                              </button>
+                              selectedGuru?.id === guru.id
 
-                              <button
+                                ? "border-purple-400/60 shadow-lg shadow-purple-500/25 scale-[1.02]"
 
-                                type="button"
+                                : "border-[#e0e0e0] hover:border-purple-400/50 hover:scale-[1.02]"
 
-                                onClick={() => scrollPresets('right')}
+                            }`}
 
-                                className="p-1.5 rounded-full bg-black/30 hover:bg-black/50 border border-purple-400/30 text-purple-200 hover:text-white transition-colors"
+                            style={{
 
-                                aria-label="Next templates"
+                              background: selectedGuru?.id === guru.id
 
-                              >
+                                ? "linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(124, 58, 237, 0.15))"
 
-                                <FontAwesomeIcon icon={faChevronRight} className="text-xs" />
+                                : "rgba(139, 92, 246, 0.05)",
 
-                              </button>
+                            }}
 
-                            </div>
+                            onClick={() => handleGuruSelect(guru)}
 
-                          )}
+                            title={`${guru.name}\n${guru.subject}\n${guru.description}`}
 
-                        </div>
+                          >
 
-                      </div>
+                            {/* Discord-style left indicator for selected */}
 
+                            {selectedGuru?.id === guru.id && (
 
+                              <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-[#0f62fe] rounded-r-full"></div>
 
-                      {showPresets && (
+                            )}
 
-                        <div className="relative">
+                            {/* Hover glow effect */}
 
-                          {/* Overlay arrows for mobile too */}
+                            <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
-                          <div className="sm:hidden absolute inset-y-0 left-0 flex items-center">
+                            <div className="flex items-start justify-between relative z-10">
 
-                            <button
+                              <div className="flex-1 min-w-0">
 
-                              type="button"
+                                <div className="flex items-center gap-2 mb-1">
 
-                              onClick={() => scrollPresets('left')}
+                                  <img src={guruLogo} alt="Guru" className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:scale-110" />
 
-                              className="ml-[-6px] p-2 rounded-full bg-black/30 hover:bg-black/50 border border-purple-400/30 text-purple-200"
+                                  <h4 className="text-white font-medium text-sm truncate break-words transition-colors duration-200">
 
-                              aria-label="Previous templates"
+                                    {guru.name}
 
-                            >
+                                  </h4>
 
-                              <FontAwesomeIcon icon={faChevronLeft} className="text-xs" />
+                                </div>
 
-                            </button>
+                                <p className="text-[#525252] text-xs truncate break-words transition-colors duration-200 group-hover:text-purple-200">
 
-                          </div>
+                                  {guru.subject}
 
-                          <div className="sm:hidden absolute inset-y-0 right-0 flex items-center">
+                                </p>
 
-                            <button
+                                <p className="text-gray-300 text-xs mt-1 line-clamp-2 break-words transition-colors duration-200 group-hover:text-gray-200">
 
-                              type="button"
+                                  {guru.description}
 
-                              onClick={() => scrollPresets('right')}
+                                </p>
 
-                              className="mr-[-6px] p-2 rounded-full bg-black/30 hover:bg-black/50 border border-purple-400/30 text-purple-200"
+                              </div>
 
-                              aria-label="Next templates"
+                              <div className="flex items-center gap-1 ml-2 opacity-0 group-hover:opacity-100 transition-all duration-200">
 
-                            >
+                                <button
 
-                              <FontAwesomeIcon icon={faChevronRight} className="text-xs" />
+                                  onClick={(e) => {
 
-                            </button>
+                                    e.stopPropagation();
 
-                          </div>
+                                    handleDeleteGuru(guru.id, guru.name);
 
+                                  }}
 
+                                  className="p-1.5 rounded-lg transition-all duration-200 text-gray-400 hover:text-red-400 hover:bg-red-500/10 hover:scale-110"
 
-                          <div
+                                  title="Delete guru"
 
-                            ref={presetsScrollRef}
+                                >
 
-                            className="flex gap-2 overflow-x-auto pr-1"
+                                  <FontAwesomeIcon
 
-                            style={{ scrollBehavior: 'smooth' }}
+                                    icon={faTrash}
 
-                          >
+                                    size="xs"
 
-                            {guruPresets.map((p, idx) => (
+                                  />
 
-                              <button
+                                </button>
 
-                                key={idx}
+                              </div>
 
-                                type="button"
+                            </div>
 
-                                onClick={() => setFormData({ name: p.name, subject: p.subject, description: p.description })}
+                          </div>
 
-                                className="min-w-[260px] sm:min-w-[280px] group relative p-3 rounded-lg border border-purple-400/30 bg-white/5 hover:bg-white/10 hover:border-purple-400/60 transition-all text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/50"
+                        ))
 
-                                title={`${p.name} — ${p.subject}`}
+                      )}
 
-                                aria-label={`Use ${p.name} template`}
+                    </div>
 
-                              >
+                  )}
 
-                                <div className="flex items-start gap-3">
+                </div>
 
-                                  <div className="text-lg leading-none">{p.emoji}</div>
+              </div>
 
-                                  <div className="min-w-0">
+            )}
 
-                                    <div className="text-white text-sm font-medium truncate">{p.name}</div>
+            {/* Chats Section */}
 
-                                    <div className="text-purple-200 text-xs truncate">{p.subject}</div>
+            {activeSection === 'chats' && (
 
-                                    {p.tagline && (
+              <div ref={chatsRef} className="flex flex-col h-full space-y-4">
 
-                                      <div className="text-gray-400 text-xs mt-1 line-clamp-2">{p.tagline}</div>
+                {/* New Chat Button - Discord Style */}
 
-                                    )}
+                <div className="relative group">
 
-                                  </div>
+                  <BubblyButton
 
-                                </div>
+                    onClick={onCreateNewChat}
 
-                              </button>
+                    disabled={isCreatingChat || !selectedGuru}
 
-                            ))}
+                    variant="primary"
 
-                          </div>
+                    className="w-full flex items-center justify-center py-3 px-4 font-medium text-sm transition-all duration-200 ease-out relative overflow-hidden group-hover:scale-[1.02] disabled:hover:scale-100"
 
-                        </div>
+                  >
 
-                      )}
+                    {/* Discord-style shimmer effect */}
 
-                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
 
+                    {/* Pulse effect for disabled state */}
 
+                    {(isCreatingChat || !selectedGuru) && (
 
-                    <form onSubmit={handleCreateGuru} className="space-y-4">
+                      <div className="absolute inset-0 bg-gray-500/20 animate-pulse rounded-lg"></div>
 
-                      <div>
+                    )}
 
-                        <label className="block text-purple-200 text-sm font-medium mb-2">
+                    <FontAwesomeIcon
 
-                          Guru Name *
+                      icon={faPlus}
 
-                        </label>
+                      className={`text-sm mr-3 transition-all duration-200 relative z-10 group-hover:rotate-90 group-disabled:rotate-0 ${isCreatingChat ? 'animate-spin' : ''}`}
 
-                        {showOnboarding && gurus.length === 0 && (
+                    />
 
-                          <p className="text-xs text-purple-300 mb-2">Step 2: Give your guru a clear, memorable name.</p>
+                    <span className="relative z-10">{isCreatingChat ? t('creating') : t('startNewChat')}</span>
 
-                        )}
+                  </BubblyButton>
 
-                        <input
+                </div>
 
-                          type="text"
+                {/* All Chat History */}
 
-                          placeholder="Enter guru name..."
+                <div className="flex flex-col flex-1 min-h-0">
 
-                          value={formData.name}
+                  <button
 
-                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    onClick={toggleChatList}
 
-                          className={`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}`}
+                    className="flex items-center justify-between w-full text-left mb-3 text-[#525252] hover:text-white transition-all duration-200 ease-out py-2 px-2 rounded-lg hover:bg-blue-500/10 group"
 
-                          required
+                  >
 
-                        />
+                    <span className="text-base font-semibold transition-colors duration-200">
 
-                      </div>
+                      {selectedGuru ? `${selectedGuru.name} ${t('chats')}` : 'Recent Conversations'} ({selectedGuru ? getChatsByGuru(selectedGuru.id).length : chatSessions.length})
 
+                    </span>
 
+                    <FontAwesomeIcon
 
-                      <div>
+                      icon={isChatListExpanded ? faChevronUp : faChevronDown}
 
-                        <label className="block text-purple-200 text-sm font-medium mb-2">
+                      className="text-sm transition-transform duration-200 group-hover:scale-110"
 
-                          Subject/Expertise *
+                    />
 
-                        </label>
+                  </button>
 
-                        {showOnboarding && gurus.length === 0 && (
+                  {isChatListExpanded && (
 
-                          <p className="text-xs text-purple-300 mb-2">Step 3: Specify the subject or expertise (e.g., Math, Physics, Programming).</p>
+                    <div className="space-y-2 flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll min-h-0">
 
-                        )}
+                      {(() => {
 
-                        <input
+                        // Filter chats by selected guru if one is selected
 
-                          type="text"
+                        const filteredChats = selectedGuru
 
-                          placeholder="e.g., Math, Physics, Programming..."
+                          ? getChatsByGuru(selectedGuru.id)
 
-                          value={formData.subject}
+                          : chatSessions;
 
-                          onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                        if (filteredChats.length === 0) {
 
-                          className={`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}`}
+                          return (
 
-                          required
+                            <div className="text-gray-300 text-center py-8">
 
-                        />
+                              {selectedGuru ? (
 
-                      </div>
+                                <>
 
+                                  <p className="text-sm">No chat history with {selectedGuru.name}</p>
 
+                                  <p className="text-xs">Start a conversation to see your chat history here</p>
 
-                      <div>
+                                </>
 
-                        <label className="block text-purple-200 text-sm font-medium mb-2">
+                              ) : (
 
-                          Description
+                                <>
 
-                        </label>
+                                  <p className="text-sm">No chat history yet</p>
 
-                        {showOnboarding && gurus.length === 0 && (
+                                  <p className="text-xs">Select a guru and start a conversation</p>
 
-                          <p className="text-xs text-purple-300 mb-2">Step 4: Describe your guru's style and what it should help with.</p>
+                                </>
 
-                        )}
+                              )}
 
-                        <textarea
+                            </div>
 
-                          placeholder="Describe your guru's personality..."
+                          );
 
-                          value={formData.description}
+                        }
 
-                          onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                        return filteredChats.slice(0, 20).map((chat) => (
 
-                          className={`w-full px-4 py-3 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all resize-none ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400/60' : ''}`}
+                          <div
 
-                          rows={4}
+                            key={chat.id}
 
-                          required
+                            className={`chat-card relative backdrop-blur-sm rounded-xl p-3 border transition-all duration-200 ease-out cursor-pointer group overflow-hidden ${
 
-                        />
+                              currentChatId === chat.id
 
-                      </div>
+                                ? "border-blue-400/60 shadow-lg shadow-blue-500/25 scale-[1.02]"
 
+                                : "border-[#e0e0e0] hover:border-blue-400/50 hover:scale-[1.02]"
 
+                            }`}
 
-                      {showOnboarding && gurus.length === 0 && (
+                            style={{
 
-                        <div className="text-purple-200 text-sm mt-2">Step 5: Click "Create Guru" to finish.</div>
+                              background: currentChatId === chat.id
 
-                      )}
+                                ? "linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.15))"
 
-                      <div className="flex gap-3 pt-2">
+                                : "rgba(139, 92, 246, 0.05)",
 
-                        <button
+                            }}
 
-                          type="button"
+                            onClick={() => handleChatSelect(chat.id)}
 
-                          onClick={() => setShowCreateForm(false)}
+                            title={`${chat.title || `Chat ${chat.id.slice(0, 8)}`}\nWith ${chat.guru.name} • ${chat.messageCount} messages\nLast active: ${formatDate(chat.lastActivity)}`}
 
-                          className="flex-1 py-3 px-4 bg-gray-600/50 hover:bg-gray-600/70 text-gray-200 rounded-lg transition-all duration-200 font-medium"
+                          >
 
-                        >
+                            {/* Discord-style left indicator for active chat */}
 
-                          Cancel
+                            {currentChatId === chat.id && (
 
-                        </button>
+                              <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-blue-400 rounded-r-full"></div>
 
-                        <BubblyButton
+                            )}
 
-                          type="submit"
+                            {/* Hover glow effect */}
 
-                          variant="primary"
+                            <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
-                          className={`flex-1 py-3 px-4 font-medium ${showOnboarding && gurus.length === 0 ? 'ring-2 ring-purple-400 shadow-purple-500/30 shadow-lg' : ''}`}
+                            <div className="flex items-start justify-between relative z-10">
 
-                        >
+                              <div className="flex-1 min-w-0">
 
-                          Create Guru
+                                <h4 className="text-white font-medium text-sm truncate break-words transition-colors duration-200">
 
-                        </BubblyButton>
+                                  {chat.title || `Chat ${chat.id.slice(0, 8)}`}
 
-                      </div>
+                                </h4>
 
-                    </form>
+                                <div className="flex items-center justify-between mt-1">
 
-                  </div>
+                                  <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">
 
-                )}
+                                    {chat.guru.name} • {chat.messageCount} messages
 
+                                  </p>
 
+                                  <p className="text-gray-400 text-xs transition-colors duration-200 group-hover:text-gray-300">
 
-                {/* Gurus List */}
+                                    {formatDate(chat.lastActivity)}
 
-                <div className={`flex flex-col ${showCreateForm ? 'flex-shrink-0' : 'flex-1'} min-h-0`}>
+                                  </p>
 
-                  <button
+                                </div>
 
-                    onClick={toggleGuruList}
+                              </div>
 
-                    className="flex items-center justify-between w-full text-left mb-3 text-purple-300 hover:text-white transition-all duration-200 ease-out py-2 px-2 rounded-lg hover:bg-purple-500/10 group"
+                              <div className="flex items-center gap-1 ml-2 opacity-0 group-hover:opacity-100 transition-all duration-200">
 
-                  >
+                                <button
 
-                    <span className="text-base font-semibold transition-colors duration-200">
+                                  onClick={(e) => {
 
-                      My Gurus ({gurus.length})
+                                    e.stopPropagation();
 
-                    </span>
+                                    openRenameModal(chat.id, chat.title || `Chat ${chat.id.slice(0, 8)}`);
 
-                    <FontAwesomeIcon
+                                  }}
 
-                      icon={isGuruListExpanded ? faChevronUp : faChevronDown}
+                                  className="p-1.5 rounded-lg transition-all duration-200 text-gray-400 hover:text-blue-400 hover:bg-blue-500/10 hover:scale-110"
 
-                      className="text-sm transition-transform duration-200 group-hover:scale-110"
+                                  title="Rename chat"
 
-                    />
+                                >
 
-                  </button>
+                                  <FontAwesomeIcon icon={faEdit} size="xs" />
 
+                                </button>
 
+                                <button
 
-                  {isGuruListExpanded && (
+                                  onClick={(e) => {
 
-                    <div className="space-y-2 flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll min-h-0">
+                                    e.stopPropagation();
 
-                      {gurus.length === 0 ? (
+                                    handleDeleteChat(chat.id, chat.title || `Chat ${chat.id.slice(0, 8)}`);
 
-                        <div className="text-gray-300 text-center py-4">
+                                  }}
 
-                          <p className="text-sm">No gurus yet</p>
+                                  className="p-1.5 rounded-lg transition-all duration-200 text-gray-400 hover:text-red-400 hover:bg-red-500/10 hover:scale-110"
 
-                          <p className="text-xs">Create your first guru to get started!</p>
+                                  title="Delete chat"
 
-                        </div>
+                                >
 
-                      ) : (
+                                  <FontAwesomeIcon
 
-                        gurus.map((guru) => (
+                                    icon={faTrash}
 
-                          <div
+                                    size="xs"
 
-                            key={guru.id}
+                                  />
 
-                            className={`guru-card relative backdrop-blur-sm rounded-xl p-3 border transition-all duration-200 ease-out cursor-pointer group overflow-hidden ${
+                                </button>
 
-                              selectedGuru?.id === guru.id
+                              </div>
 
-                                ? "border-purple-400/60 shadow-lg shadow-purple-500/25 scale-[1.02]"
+                            </div>
 
-                                : "border-purple-400/20 hover:border-purple-400/50 hover:scale-[1.02]"
+                          </div>
 
-                            }`}
+                        ));
 
-                            style={{
+                      })()}
 
-                              background: selectedGuru?.id === guru.id
+                    </div>
 
-                                ? "linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(124, 58, 237, 0.15))"
+                  )}
 
-                                : "rgba(139, 92, 246, 0.05)",
+                </div>
 
-                            }}
+              </div>
 
-                            onClick={() => handleGuruSelect(guru)}
+            )}
 
-                            title={`${guru.name}\n${guru.subject}\n${guru.description}`}
+            {/* Tools Section */}
 
-                          >
+            {activeSection === 'tools' && (
 
-                            {/* Discord-style left indicator for selected */}
+              <div ref={toolsRef} className="flex flex-col h-full space-y-4">
 
-                            {selectedGuru?.id === guru.id && (
+                <div>
 
-                              <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-purple-400 rounded-r-full"></div>
+                  <button
 
-                            )}
+                    onClick={toggleToolsList}
 
+                    className="flex items-center justify-between w-full text-left mb-3 text-[#525252] hover:text-white transition-all duration-200 ease-out py-2 px-2 rounded-lg hover:bg-orange-500/10 group"
 
+                  >
 
-                            {/* Hover glow effect */}
+                    <span className="text-base font-semibold transition-colors duration-200">Available Tools</span>
 
-                            <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
+                    <FontAwesomeIcon
 
+                      icon={isToolsExpanded ? faChevronUp : faChevronDown}
 
+                      className="text-sm transition-transform duration-200 group-hover:scale-110"
 
-                            <div className="flex items-start justify-between relative z-10">
+                    />
 
-                              <div className="flex-1 min-w-0">
+                  </button>
 
-                                <div className="flex items-center gap-2 mb-1">
+                  {isToolsExpanded && (
 
-                                  <img src={guruLogo} alt="Guru" className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:scale-110" />
+                    <div className="space-y-2">
 
-                                  <h4 className="text-white font-medium text-sm truncate break-words transition-colors duration-200">
+                      {/* Sanskrit Knowledge Decoder Tool */}
 
-                                    {guru.name}
+                      <div
 
-                                  </h4>
+                        key="sanskrit-decoder"
 
-                                </div>
+                        id="sidebar-sanskrit-decoder"
 
-                                <p className="text-purple-300 text-xs truncate break-words transition-colors duration-200 group-hover:text-purple-200">
+                        className="relative backdrop-blur-sm rounded-xl p-3 border border-violet-500/30 hover:border-violet-400/70 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
 
-                                  {guru.subject}
+                        style={{ background: "rgba(109, 40, 217, 0.08)" }}
 
-                                </p>
+                        onClick={() => {
 
-                                <p className="text-gray-300 text-xs mt-1 line-clamp-2 break-words transition-colors duration-200 group-hover:text-gray-200">
+                          const nav = (window as unknown as Record<string, unknown>).__sidebarNavigate as ((path: string) => void) | undefined;
 
-                                  {guru.description}
+                          if (nav) nav("/sanskrit-decoder");
 
-                                </p>
+                          else window.location.href = "/sanskrit-decoder";
 
-                              </div>
+                        }}
 
-                              <div className="flex items-center gap-1 ml-2 opacity-0 group-hover:opacity-100 transition-all duration-200">
+                        title="Sanskrit Knowledge Decoder — Civilizational Intelligence Engine"
 
-                                <button
+                      >
 
-                                  onClick={(e) => {
+                        <div className="absolute inset-0 bg-violet-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl" />
 
-                                    e.stopPropagation();
+                        <div className="flex items-center gap-3 relative z-10">
 
-                                    handleDeleteGuru(guru.id, guru.name);
+                          <div className="text-violet-300 text-lg transition-transform duration-200 group-hover:scale-110 select-none">ॐ</div>
 
-                                  }}
+                          <div>
 
-                                  className="p-1.5 rounded-lg transition-all duration-200 text-gray-400 hover:text-red-400 hover:bg-red-500/10 hover:scale-110"
+                            <h4 className="text-white font-semibold text-sm transition-colors duration-200">Sanskrit Decoder</h4>
 
-                                  title="Delete guru"
+                            <p className="text-violet-300 text-xs transition-colors duration-200 group-hover:text-violet-200">Civilizational Knowledge Engine</p>
 
-                                >
+                          </div>
 
-                                  <FontAwesomeIcon
+                          <div className="ml-auto">
 
-                                    icon={faTrash}
+                            <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-violet-900/60 text-violet-300 border border-violet-700/40 font-medium">LIVE</span>
 
-                                    size="xs"
+                          </div>
 
-                                  />
+                        </div>
 
-                                </button>
+                      </div>
 
-                              </div>
+                      {/* AI Assistant Tool */}
 
-                            </div>
+                      <div
 
-                          </div>
+                        key="ai-assistant"
 
-                        ))
+                        className="relative backdrop-blur-sm rounded-xl p-3 border border-[#e0e0e0] hover:border-purple-400/50 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
 
-                      )}
+                        style={{
 
-                    </div>
+                          background: "rgba(139, 92, 246, 0.05)",
 
-                  )}
+                        }}
 
-                </div>
+                        onClick={() => toast.success("AI Assistant coming soon!")}
 
-              </div>
+                        title="AI Assistant - Get intelligent help with your queries and tasks"
 
-            )}
+                      >
 
+                        {/* Hover glow effect */}
 
+                        <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
-            {/* Chats Section */}
+                        <div className="flex items-center gap-3 relative z-10">
 
-            {activeSection === 'chats' && (
+                          <div className="text-[#0f62fe] text-lg transition-transform duration-200 group-hover:scale-110">🤖</div>
 
-              <div ref={chatsRef} className="flex flex-col h-full space-y-4">
+                          <div>
 
-                {/* New Chat Button - Discord Style */}
+                            <h4 className="text-white font-medium text-sm transition-colors duration-200">AI Assistant</h4>
 
-                <div className="relative group">
+                            <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Get help with your queries</p>
 
-                  <BubblyButton
+                          </div>
 
-                    onClick={onCreateNewChat}
+                        </div>
 
-                    disabled={isCreatingChat || !selectedGuru}
+                      </div>
 
-                    variant="primary"
+                      {/* Code Generator Tool */}
 
-                    className="w-full flex items-center justify-center py-3 px-4 font-medium text-sm transition-all duration-200 ease-out relative overflow-hidden group-hover:scale-[1.02] disabled:hover:scale-100"
+                      <div
 
-                  >
+                        key="code-generator"
 
-                    {/* Discord-style shimmer effect */}
+                        className="relative backdrop-blur-sm rounded-xl p-3 border border-[#e0e0e0] hover:border-green-400/50 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
 
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
+                        style={{
 
+                          background: "rgba(139, 92, 246, 0.05)",
 
+                        }}
 
-                    {/* Pulse effect for disabled state */}
+                        onClick={() => toast.success("Code Generator coming soon!")}
 
-                    {(isCreatingChat || !selectedGuru) && (
+                        title="Code Generator - Generate code snippets and programming solutions"
 
-                      <div className="absolute inset-0 bg-gray-500/20 animate-pulse rounded-lg"></div>
+                      >
 
-                    )}
+                          {/* Hover glow effect */}
 
+                          <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
+                          <div className="flex items-center gap-3 relative z-10">
 
-                    <FontAwesomeIcon
+                            <div className="text-green-400 text-lg transition-transform duration-200 group-hover:scale-110">💻</div>
 
-                      icon={faPlus}
+                            <div>
 
-                      className={`text-sm mr-3 transition-all duration-200 relative z-10 group-hover:rotate-90 group-disabled:rotate-0 ${isCreatingChat ? 'animate-spin' : ''}`}
+                              <h4 className="text-white font-medium text-sm transition-colors duration-200">Code Generator</h4>
 
-                    />
+                              <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Generate code snippets</p>
 
-                    <span className="relative z-10">{isCreatingChat ? t('creating') : t('startNewChat')}</span>
+                            </div>
 
-                  </BubblyButton>
+                          </div>
 
-                </div>
+                        </div>
 
+                      {/* Study Planner Tool */}
 
+                      <div
 
-                {/* All Chat History */}
+                        key="study-planner"
 
-                <div className="flex flex-col flex-1 min-h-0">
+                        className="relative backdrop-blur-sm rounded-xl p-3 border border-[#e0e0e0] hover:border-blue-400/50 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
 
-                  <button
+                        style={{
 
-                    onClick={toggleChatList}
+                          background: "rgba(139, 92, 246, 0.05)",
 
-                    className="flex items-center justify-between w-full text-left mb-3 text-purple-300 hover:text-white transition-all duration-200 ease-out py-2 px-2 rounded-lg hover:bg-blue-500/10 group"
+                        }}
 
-                  >
+                        onClick={() => toast.success("Study Planner coming soon!")}
 
-                    <span className="text-base font-semibold transition-colors duration-200">
+                      >
 
-                      {selectedGuru ? `${selectedGuru.name} ${t('chats')}` : 'Recent Conversations'} ({selectedGuru ? getChatsByGuru(selectedGuru.id).length : chatSessions.length})
+                          {/* Hover glow effect */}
 
-                    </span>
+                          <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
-                    <FontAwesomeIcon
+                          <div className="flex items-center gap-3 relative z-10">
 
-                      icon={isChatListExpanded ? faChevronUp : faChevronDown}
+                            <div className="text-blue-400 text-lg transition-transform duration-200 group-hover:scale-110">📚</div>
 
-                      className="text-sm transition-transform duration-200 group-hover:scale-110"
+                            <div>
 
-                    />
+                              <h4 className="text-white font-medium text-sm transition-colors duration-200">Study Planner</h4>
 
-                  </button>
+                              <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Plan your learning journey</p>
 
+                            </div>
 
+                          </div>
 
-                  {isChatListExpanded && (
+                        </div>
 
-                    <div className="space-y-2 flex-1 overflow-y-auto overflow-x-hidden sidebar-scroll min-h-0">
+                      {/* Note Taking Tool */}
 
-                      {(() => {
+                      <div
 
-                        // Filter chats by selected guru if one is selected
+                        key="note-taking"
 
-                        const filteredChats = selectedGuru
+                        className="relative backdrop-blur-sm rounded-xl p-3 border border-[#e0e0e0] hover:border-yellow-400/50 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
 
-                          ? getChatsByGuru(selectedGuru.id)
+                        style={{
 
-                          : chatSessions;
+                          background: "rgba(139, 92, 246, 0.05)",
 
+                        }}
 
+                        onClick={() => toast.success("Note Taking coming soon!")}
 
-                        if (filteredChats.length === 0) {
+                      >
 
-                          return (
+                          {/* Hover glow effect */}
 
-                            <div className="text-gray-300 text-center py-8">
+                          <div className="absolute inset-0 bg-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
 
-                              {selectedGuru ? (
+                          <div className="flex items-center gap-3 relative z-10">
 
-                                <>
+                            <div className="text-yellow-400 text-lg transition-transform duration-200 group-hover:scale-110">📝</div>
 
-                                  <p className="text-sm">No chat history with {selectedGuru.name}</p>
+                            <div>
 
-                                  <p className="text-xs">Start a conversation to see your chat history here</p>
+                              <h4 className="text-white font-medium text-sm transition-colors duration-200">Note Taking</h4>
 
-                                </>
+                              <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Save and organize your insights</p>
 
-                              ) : (
+                            </div>
 
-                                <>
+                          </div>
 
-                                  <p className="text-sm">No chat history yet</p>
+                        </div>
 
-                                  <p className="text-xs">Select a guru and start a conversation</p>
+                    </div>
 
-                                </>
+                  )}
 
-                              )}
+                </div>
 
-                            </div>
+              </div>
 
-                          );
+            )}
 
-                        }
+          </div>
 
+        )}
 
+      </div>
 
-                        return filteredChats.slice(0, 20).map((chat) => (
+      {/* Confirmation Modal */}
 
-                          <div
+      <ConfirmationModal
 
-                            key={chat.id}
+        isOpen={confirmModal.isOpen}
 
-                            className={`chat-card relative backdrop-blur-sm rounded-xl p-3 border transition-all duration-200 ease-out cursor-pointer group overflow-hidden ${
+        onClose={() => setConfirmModal({ ...confirmModal, isOpen: false })}
 
-                              currentChatId === chat.id
+        onConfirm={confirmDelete}
 
-                                ? "border-blue-400/60 shadow-lg shadow-blue-500/25 scale-[1.02]"
+        title={`Delete ${confirmModal.type === 'guru' ? 'Guru' : 'Chat'}`}
 
-                                : "border-purple-400/20 hover:border-blue-400/50 hover:scale-[1.02]"
+        message={`Are you sure you want to delete "${confirmModal.name}"? This action cannot be undone.`}
 
-                            }`}
+        confirmText="Delete"
 
-                            style={{
+        cancelText="Cancel"
 
-                              background: currentChatId === chat.id
+        type="danger"
 
-                                ? "linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.15))"
+      />
 
-                                : "rgba(139, 92, 246, 0.05)",
+      {/* Rename Modal */}
 
-                            }}
+      <RenameModal
 
-                            onClick={() => handleChatSelect(chat.id)}
+        isOpen={renameModal.isOpen}
 
-                            title={`${chat.title || `Chat ${chat.id.slice(0, 8)}`}\nWith ${chat.guru.name} • ${chat.messageCount} messages\nLast active: ${formatDate(chat.lastActivity)}`}
+        onClose={closeRenameModal}
 
-                          >
+        onConfirm={handleRenameChat}
 
-                            {/* Discord-style left indicator for active chat */}
+        title="Rename Chat"
 
-                            {currentChatId === chat.id && (
+        currentName={renameModal.currentName}
 
-                              <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-blue-400 rounded-r-full"></div>
+        placeholder="Enter new chat name..."
 
-                            )}
+        confirmText="Rename"
 
+        cancelText="Cancel"
 
+      />
 
-                            {/* Hover glow effect */}
+    </>
 
-                            <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
-
-
-
-                            <div className="flex items-start justify-between relative z-10">
-
-                              <div className="flex-1 min-w-0">
-
-                                <h4 className="text-white font-medium text-sm truncate break-words transition-colors duration-200">
-
-                                  {chat.title || `Chat ${chat.id.slice(0, 8)}`}
-
-                                </h4>
-
-                                <div className="flex items-center justify-between mt-1">
-
-                                  <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">
-
-                                    {chat.guru.name} • {chat.messageCount} messages
-
-                                  </p>
-
-                                  <p className="text-gray-400 text-xs transition-colors duration-200 group-hover:text-gray-300">
-
-                                    {formatDate(chat.lastActivity)}
-
-                                  </p>
-
-                                </div>
-
-                              </div>
-
-                              <div className="flex items-center gap-1 ml-2 opacity-0 group-hover:opacity-100 transition-all duration-200">
-
-                                <button
-
-                                  onClick={(e) => {
-
-                                    e.stopPropagation();
-
-                                    openRenameModal(chat.id, chat.title || `Chat ${chat.id.slice(0, 8)}`);
-
-                                  }}
-
-                                  className="p-1.5 rounded-lg transition-all duration-200 text-gray-400 hover:text-blue-400 hover:bg-blue-500/10 hover:scale-110"
-
-                                  title="Rename chat"
-
-                                >
-
-                                  <FontAwesomeIcon icon={faEdit} size="xs" />
-
-                                </button>
-
-                                <button
-
-                                  onClick={(e) => {
-
-                                    e.stopPropagation();
-
-                                    handleDeleteChat(chat.id, chat.title || `Chat ${chat.id.slice(0, 8)}`);
-
-                                  }}
-
-                                  className="p-1.5 rounded-lg transition-all duration-200 text-gray-400 hover:text-red-400 hover:bg-red-500/10 hover:scale-110"
-
-                                  title="Delete chat"
-
-                                >
-
-                                  <FontAwesomeIcon
-
-                                    icon={faTrash}
-
-                                    size="xs"
-
-                                  />
-
-                                </button>
-
-                              </div>
-
-                            </div>
-
-                          </div>
-
-                        ));
-
-                      })()}
-
-                    </div>
-
-                  )}
-
-                </div>
-
-              </div>
-
-            )}
-
-
-
-            {/* Tools Section */}
-
-            {activeSection === 'tools' && (
-
-              <div ref={toolsRef} className="flex flex-col h-full space-y-4">
-
-                <div>
-
-                  <button
-
-                    onClick={toggleToolsList}
-
-                    className="flex items-center justify-between w-full text-left mb-3 text-purple-300 hover:text-white transition-all duration-200 ease-out py-2 px-2 rounded-lg hover:bg-orange-500/10 group"
-
-                  >
-
-                    <span className="text-base font-semibold transition-colors duration-200">Available Tools</span>
-
-                    <FontAwesomeIcon
-
-                      icon={isToolsExpanded ? faChevronUp : faChevronDown}
-
-                      className="text-sm transition-transform duration-200 group-hover:scale-110"
-
-                    />
-
-                  </button>
-
-
-
-                  {isToolsExpanded && (
-
-                    <div className="space-y-2">
-
-                      {/* Sanskrit Knowledge Decoder Tool */}
-
-                      <div
-
-                        key="sanskrit-decoder"
-
-                        id="sidebar-sanskrit-decoder"
-
-                        className="relative backdrop-blur-sm rounded-xl p-3 border border-violet-500/30 hover:border-violet-400/70 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
-
-                        style={{ background: "rgba(109, 40, 217, 0.08)" }}
-
-                        onClick={() => {
-
-                          const nav = (window as unknown as Record<string, unknown>).__sidebarNavigate as ((path: string) => void) | undefined;
-
-                          if (nav) nav("/sanskrit-decoder");
-
-                          else window.location.href = "/sanskrit-decoder";
-
-                        }}
-
-                        title="Sanskrit Knowledge Decoder — Civilizational Intelligence Engine"
-
-                      >
-
-                        <div className="absolute inset-0 bg-violet-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl" />
-
-                        <div className="flex items-center gap-3 relative z-10">
-
-                          <div className="text-violet-300 text-lg transition-transform duration-200 group-hover:scale-110 select-none">ॐ</div>
-
-                          <div>
-
-                            <h4 className="text-white font-semibold text-sm transition-colors duration-200">Sanskrit Decoder</h4>
-
-                            <p className="text-violet-300 text-xs transition-colors duration-200 group-hover:text-violet-200">Civilizational Knowledge Engine</p>
-
-                          </div>
-
-                          <div className="ml-auto">
-
-                            <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-violet-900/60 text-violet-300 border border-violet-700/40 font-medium">LIVE</span>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
-
-
-                      {/* AI Assistant Tool */}
-
-                      <div
-
-                        key="ai-assistant"
-
-                        className="relative backdrop-blur-sm rounded-xl p-3 border border-purple-400/20 hover:border-purple-400/50 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
-
-                        style={{
-
-                          background: "rgba(139, 92, 246, 0.05)",
-
-                        }}
-
-                        onClick={() => toast.success("AI Assistant coming soon!")}
-
-                        title="AI Assistant - Get intelligent help with your queries and tasks"
-
-                      >
-
-                        {/* Hover glow effect */}
-
-                        <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
-
-
-
-                        <div className="flex items-center gap-3 relative z-10">
-
-                          <div className="text-purple-400 text-lg transition-transform duration-200 group-hover:scale-110">🤖</div>
-
-                          <div>
-
-                            <h4 className="text-white font-medium text-sm transition-colors duration-200">AI Assistant</h4>
-
-                            <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Get help with your queries</p>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
-
-
-                      {/* Code Generator Tool */}
-
-                      <div
-
-                        key="code-generator"
-
-                        className="relative backdrop-blur-sm rounded-xl p-3 border border-purple-400/20 hover:border-green-400/50 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
-
-                        style={{
-
-                          background: "rgba(139, 92, 246, 0.05)",
-
-                        }}
-
-                        onClick={() => toast.success("Code Generator coming soon!")}
-
-                        title="Code Generator - Generate code snippets and programming solutions"
-
-                      >
-
-                          {/* Hover glow effect */}
-
-                          <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
-
-
-
-                          <div className="flex items-center gap-3 relative z-10">
-
-                            <div className="text-green-400 text-lg transition-transform duration-200 group-hover:scale-110">💻</div>
-
-                            <div>
-
-                              <h4 className="text-white font-medium text-sm transition-colors duration-200">Code Generator</h4>
-
-                              <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Generate code snippets</p>
-
-                            </div>
-
-                          </div>
-
-                        </div>
-
-
-
-                      {/* Study Planner Tool */}
-
-                      <div
-
-                        key="study-planner"
-
-                        className="relative backdrop-blur-sm rounded-xl p-3 border border-purple-400/20 hover:border-blue-400/50 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
-
-                        style={{
-
-                          background: "rgba(139, 92, 246, 0.05)",
-
-                        }}
-
-                        onClick={() => toast.success("Study Planner coming soon!")}
-
-                      >
-
-                          {/* Hover glow effect */}
-
-                          <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
-
-
-
-                          <div className="flex items-center gap-3 relative z-10">
-
-                            <div className="text-blue-400 text-lg transition-transform duration-200 group-hover:scale-110">📚</div>
-
-                            <div>
-
-                              <h4 className="text-white font-medium text-sm transition-colors duration-200">Study Planner</h4>
-
-                              <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Plan your learning journey</p>
-
-                            </div>
-
-                          </div>
-
-                        </div>
-
-
-
-                      {/* Note Taking Tool */}
-
-                      <div
-
-                        key="note-taking"
-
-                        className="relative backdrop-blur-sm rounded-xl p-3 border border-purple-400/20 hover:border-yellow-400/50 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
-
-                        style={{
-
-                          background: "rgba(139, 92, 246, 0.05)",
-
-                        }}
-
-                        onClick={() => toast.success("Note Taking coming soon!")}
-
-                      >
-
-                          {/* Hover glow effect */}
-
-                          <div className="absolute inset-0 bg-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"></div>
-
-
-
-                          <div className="flex items-center gap-3 relative z-10">
-
-                            <div className="text-yellow-400 text-lg transition-transform duration-200 group-hover:scale-110">📝</div>
-
-                            <div>
-
-                              <h4 className="text-white font-medium text-sm transition-colors duration-200">Note Taking</h4>
-
-                              <p className="text-gray-300 text-xs transition-colors duration-200 group-hover:text-gray-200">Save and organize your insights</p>
-
-                            </div>
-
-                          </div>
-
-                        </div>
-
-                    </div>
-
-                  )}
-
-                </div>
-
-              </div>
-
-            )}
-
-          </div>
-
-        )}
-
-      </div>
-
-
-
-      {/* Confirmation Modal */}
-
-      <ConfirmationModal
-
-        isOpen={confirmModal.isOpen}
-
-        onClose={() => setConfirmModal({ ...confirmModal, isOpen: false })}
-
-        onConfirm={confirmDelete}
-
-        title={`Delete ${confirmModal.type === 'guru' ? 'Guru' : 'Chat'}`}
-
-        message={`Are you sure you want to delete "${confirmModal.name}"? This action cannot be undone.`}
-
-        confirmText="Delete"
-
-        cancelText="Cancel"
-
-        type="danger"
-
-      />
-
-
-
-      {/* Rename Modal */}
-
-      <RenameModal
-
-        isOpen={renameModal.isOpen}
-
-        onClose={closeRenameModal}
-
-        onConfirm={handleRenameChat}
-
-        title="Rename Chat"
-
-        currentName={renameModal.currentName}
-
-        placeholder="Enter new chat name..."
-
-        confirmText="Rename"
-
-        cancelText="Cancel"
-
-      />
-
-    </>
-
-  );
+  );
 
 };
-
-
 
 export default LeftSidebar;
