@@ -225,6 +225,11 @@ _DEMO_AUTH_ENABLED = (
     and not os.getenv("RENDER")
 )
 _DEMO_AUTH_TOKENS: Dict[str, Dict[str, str]] = {}
+_DEMO_AUTH_USERS: Dict[str, Dict[str, str]] = {}
+
+
+def _hash_demo_password(password: str) -> str:
+    return hashlib.sha256(str(password).encode("utf-8")).hexdigest()
 _METRICS = {
     "requests_total": 0,
     "requests_by_status": defaultdict(int),
@@ -1872,12 +1877,12 @@ def google_oauth_callback(request_body: Dict[str, Any]) -> Dict[str, Any]:
 )
 def user_login(request_body: Dict[str, Any]) -> Dict[str, Any]:
     """Handle user login."""
-    email = request_body.get("email")
-    password = request_body.get("password")
-    
+    email = str(request_body.get("email") or "").strip()
+    password = str(request_body.get("password") or "").strip()
+
     if not email or not password:
         raise HTTPException(status_code=400, detail="Email and password are required")
-    
+
     # Try Supabase authentication first
     if supabase_auth.enabled:
         try:
@@ -1891,10 +1896,18 @@ def user_login(request_body: Dict[str, Any]) -> Dict[str, Any]:
         except Exception as e:
             logger.error(f"Supabase login failed: {e}")
             raise HTTPException(status_code=401, detail=str(e))
-    
+
     if not _DEMO_AUTH_ENABLED:
         raise HTTPException(status_code=503, detail="Authentication provider is not configured")
-    demo_user = _issue_demo_user(email.strip().lower(), email.strip(), email.split('@')[0].title())
+
+    normalized_email = email.lower()
+    stored_user = _DEMO_AUTH_USERS.get(normalized_email)
+    if not stored_user:
+        raise HTTPException(status_code=401, detail="Invalid email or password")
+    if stored_user.get("password_hash") != _hash_demo_password(password):
+        raise HTTPException(status_code=401, detail="Invalid email or password")
+
+    demo_user = _issue_demo_user(stored_user["id"], stored_user["email"], stored_user["name"])
     return demo_user
 
 
@@ -1906,13 +1919,13 @@ def user_login(request_body: Dict[str, Any]) -> Dict[str, Any]:
 )
 def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
     """Handle user signup."""
-    name = request_body.get("name")
-    email = request_body.get("email")
-    password = request_body.get("password")
-    
+    name = str(request_body.get("name") or "").strip()
+    email = str(request_body.get("email") or "").strip()
+    password = str(request_body.get("password") or "").strip()
+
     if not email or not password or not name:
         raise HTTPException(status_code=400, detail="Name, email, and password are required")
-    
+
     # Try Supabase authentication first
     if supabase_auth.enabled:
         try:
@@ -1936,10 +1949,21 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
             detail = str(e)
             status_code = 429 if "rate limit" in detail.lower() else 400
             raise HTTPException(status_code=status_code, detail=detail)
-    
+
     if not _DEMO_AUTH_ENABLED:
         raise HTTPException(status_code=503, detail="Authentication provider is not configured")
-    demo_user = _issue_demo_user(email.strip().lower(), email.strip(), name.strip())
+
+    normalized_email = email.lower()
+    if normalized_email in _DEMO_AUTH_USERS:
+        raise HTTPException(status_code=409, detail="User already exists")
+
+    _DEMO_AUTH_USERS[normalized_email] = {
+        "id": normalized_email,
+        "email": email,
+        "name": name,
+        "password_hash": _hash_demo_password(password),
+    }
+    demo_user = _issue_demo_user(normalized_email, email, name)
     return {
         "success": True,
         "token": demo_user["token"],

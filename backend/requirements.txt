@@ -17,6 +17,9 @@ ecdsa==0.19.2
 fastapi==0.135.1
 filelock==3.29.0
 fsspec==2026.2.0
+faiss-cpu
+sentence-transformers
+torch
 h11==0.16.0
 h2==4.3.0
 hpack==4.1.0
