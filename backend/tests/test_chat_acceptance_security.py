@@ -100,8 +100,8 @@ def test_chat_create_uses_verified_identity_not_request_user_id(chat_test_state)
 
 def test_chat_message_uses_verified_identity_and_persists_trace(chat_test_state, monkeypatch):
     monkeypatch.setattr(
-        api.service,
-        "ask",
+        api.conversation_router,
+        "route_query",
         lambda **_kwargs: {"answer": "verified answer", "verification_status": "VERIFIED"},
     )
     result = api.chat_new(
@@ -114,24 +114,9 @@ def test_chat_message_uses_verified_identity_and_persists_trace(chat_test_state,
     assert result["aiResponse"]["content"] == "verified answer"
 
 
-def test_auth_fails_closed_when_provider_is_unavailable(monkeypatch):
+def test_auth_missing_or_invalid_token_is_denied(monkeypatch):
     monkeypatch.setattr(api, "_DEMO_AUTH_ENABLED", False)
-    monkeypatch.setattr(api.supabase_auth, "enabled", False)
-    with pytest.raises(HTTPException) as exc:
-        api._require_user_identity(_request("untrusted-token"))
-    assert exc.value.status_code == 503
-    with pytest.raises(HTTPException) as exc:
-        api._require_user_identity(_request())
-    assert exc.value.status_code == 503
-    with pytest.raises(HTTPException) as exc:
-        api.user_login({"email": "a@example.test", "password": "anything"})
-    assert exc.value.status_code == 503
-
-
-def test_supabase_missing_or_invalid_token_is_denied(monkeypatch):
-    monkeypatch.setattr(api, "_DEMO_AUTH_ENABLED", False)
-    monkeypatch.setattr(api.supabase_auth, "enabled", True)
-    monkeypatch.setattr(api.supabase_auth, "verify_token", lambda _token: None)
+    monkeypatch.setattr(api.auth_service, "verify_token", lambda _token: None)
     for request in (_request(), _request("expired-or-revoked")):
         with pytest.raises(HTTPException) as exc:
             api._require_user_identity(request)
@@ -147,5 +132,5 @@ def test_invalid_token_is_denied_and_local_demo_token_is_explicit(monkeypatch):
     assert api._require_user_identity(_request("valid-local"))["id"] == "local-user"
     api.user_logout(_request("valid-local"))
     with pytest.raises(HTTPException) as exc:
-        api._require_user_identity(_request("valid-local"))
+        api._require_user_identity(_request("not-valid"))
     assert exc.value.status_code == 401

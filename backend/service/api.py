@@ -36,7 +36,7 @@ from integrations import BucketTelemetryClient, CoreReaderClient, LanguageAdapte
 from service.live_service import LiveUniGuruService
 from service.query_classifier import QueryType, classify_query
 from service.guru_models import Guru, CreateGuruRequest, guru_storage
-from service.supabase_auth import supabase_auth
+from service.auth_service import auth_service
 from service.chat_storage import ChatSessionStore
 from stt import STTEngine, STTUnavailableError
 from security import AuditEmitter, JWTClaims, RBACEnforcer, ReplayMitigationTable, RS256Verifier
@@ -140,8 +140,7 @@ _cors_origins = [origin.strip() for origin in _cors_origins_raw.split(",") if or
 _IS_PRODUCTION = os.getenv("UNIGURU_ENVIRONMENT", "").strip().lower() == "production"
 if _IS_PRODUCTION and not os.getenv("UNIGURU_CORS_ORIGINS", "").strip():
     raise RuntimeError("UNIGURU_CORS_ORIGINS must contain the production frontend origin.")
-if _IS_PRODUCTION and not supabase_auth.enabled:
-    raise RuntimeError("Production requires valid SUPABASE_URL and SUPABASE_ANON_KEY settings.")
+# Native durable SQLite auth_service
 
 app.add_middleware(
     CORSMiddleware,
@@ -460,19 +459,19 @@ def _issue_demo_user(user_id: str, email: str, name: str) -> Dict[str, str]:
 
 
 def _require_user_identity(request: Request) -> Dict[str, str]:
-    """Return identity verified by Supabase or an explicit local-only demo token."""
+    """Return identity verified by local auth service or an explicit local-only demo token."""
     token = _request_bearer_token(request)
-    if _DEMO_AUTH_ENABLED:
-        user = _DEMO_AUTH_TOKENS.get(token or "")
-        if user:
-            return user
-        raise HTTPException(status_code=401, detail="Valid local demo login required")
-    if not supabase_auth.enabled:
-        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
+    if _DEMO_AUTH_ENABLED and token and token in _DEMO_AUTH_TOKENS:
+        return _DEMO_AUTH_TOKENS[token]
     if not token:
         raise HTTPException(status_code=401, detail="Bearer token required")
-    user = supabase_auth.verify_token(token)
+    user = auth_service.verify_token(token)
     if not user:
+        if _DEMO_AUTH_ENABLED:
+            user = _DEMO_AUTH_TOKENS.get(token or "")
+            if user:
+                return user
+            raise HTTPException(status_code=401, detail="Valid local demo login required")
         raise HTTPException(status_code=401, detail="Invalid or expired token")
     return user
 
@@ -1824,21 +1823,17 @@ def google_oauth_callback(request_body: Dict[str, Any]) -> Dict[str, Any]:
     if not token:
         raise HTTPException(status_code=400, detail="Token is required")
     
-    # Try Supabase authentication first
-    if supabase_auth.enabled:
-        try:
-            result = supabase_auth.verify_google_token(token)
-            return {
-                "token": result["token"],
-                "user": result["user"],
-                "navigateUrl": "/chatpage"
-            }
-        except Exception as e:
-            logger.error(f"Supabase Google auth failed: {e}")
+    try:
+        result = auth_service.verify_google_token(token)
+        return {
+            "token": result["token"],
+            "user": result["user"],
+            "navigateUrl": "/chatpage"
+        }
+    except Exception as e:
+        logger.error(f"Google auth failed: {e}")
+        if not _DEMO_AUTH_ENABLED:
             raise HTTPException(status_code=401, detail="Google authentication failed")
-
-    if not _DEMO_AUTH_ENABLED:
-        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
     
     # Demo mode fallback: decode token locally
     import base64
@@ -1895,24 +1890,20 @@ def user_login(request_body: Dict[str, Any]) -> Dict[str, Any]:
     if not email or not password:
         raise HTTPException(status_code=400, detail="Email and password are required")
     
-    # Try Supabase authentication first
-    if supabase_auth.enabled:
-        try:
-            result = supabase_auth.login_with_email(email, password)
-            return {
-                "token": result["token"],
-                "id": result["user"]["id"],
-                "email": result["user"]["email"],
-                "name": result["user"]["name"]
-            }
-        except Exception as e:
-            logger.error(f"Supabase login failed: {e}")
-            raise HTTPException(status_code=401, detail=str(e))
-    
-    if not _DEMO_AUTH_ENABLED:
-        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
-    demo_user = _issue_demo_user(email.strip().lower(), email.strip(), email.split('@')[0].title())
-    return demo_user
+    try:
+        result = auth_service.login_with_email(email, password)
+        return {
+            "token": result["token"],
+            "id": result["user"]["id"],
+            "email": result["user"]["email"],
+            "name": result["user"]["name"]
+        }
+    except Exception as e:
+        logger.error(f"Login failed: {e}")
+        if _DEMO_AUTH_ENABLED:
+            demo_user = _issue_demo_user(email.strip().lower(), email.strip(), email.split('@')[0].title())
+            return demo_user
+        raise HTTPException(status_code=401, detail=str(e))
 
 
 @app.post(
@@ -1930,41 +1921,32 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
     if not email or not password or not name:
         raise HTTPException(status_code=400, detail="Name, email, and password are required")
     
-    # Try Supabase authentication first
-    if supabase_auth.enabled:
-        try:
-            result = supabase_auth.signup_with_email(email, password, name)
+    try:
+        result = auth_service.signup_with_email(email, password, name)
+        return {
+            "success": result["success"],
+            "token": result["token"],
+            "id": result["user"]["id"],
+            "email": result["user"]["email"],
+            "name": result["user"]["name"],
+            "requires_email_verification": False,
+            "message": "Signup successful. You can login now.",
+            "navigateUrl": "/chatpage"
+        }
+    except Exception as e:
+        logger.error(f"Signup failed: {e}")
+        detail = str(e)
+        if _DEMO_AUTH_ENABLED:
+            demo_user = _issue_demo_user(email.strip().lower(), email.strip(), name.strip())
             return {
-                "success": result["success"],
-                "token": result["token"],
-                "id": result["user"]["id"],
-                "email": result["user"]["email"],
-                "name": result["user"]["name"],
-                "requires_email_verification": bool(result.get("requires_email_verification", False)),
-                "message": (
-                    "Signup successful. Please verify your email before logging in."
-                    if result.get("requires_email_verification", False)
-                    else "Signup successful. You can login now."
-                ),
+                "success": True,
+                "token": demo_user["token"],
+                "id": demo_user["id"],
+                "email": demo_user["email"],
+                "name": demo_user["name"],
                 "navigateUrl": "/chatpage"
             }
-        except Exception as e:
-            logger.error(f"Supabase signup failed: {e}")
-            detail = str(e)
-            status_code = 429 if "rate limit" in detail.lower() else 400
-            raise HTTPException(status_code=status_code, detail=detail)
-    
-    if not _DEMO_AUTH_ENABLED:
-        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
-    demo_user = _issue_demo_user(email.strip().lower(), email.strip(), name.strip())
-    return {
-        "success": True,
-        "token": demo_user["token"],
-        "id": demo_user["id"],
-        "email": demo_user["email"],
-        "name": demo_user["name"],
-        "navigateUrl": "/chatpage"
-    }
+        raise HTTPException(status_code=400, detail=detail)
 
 
 class NewRagRequest(BaseModel):
@@ -2937,10 +2919,10 @@ def new_query_endpoint(request: CoreRequest, token: HTTPAuthorizationCredentials
 def user_logout(request: Request) -> Dict[str, Any]:
     """Handle user logout."""
     token = _request_bearer_token(request)
-    if _DEMO_AUTH_ENABLED and token:
-        _DEMO_AUTH_TOKENS.pop(token, None)
-    elif supabase_auth.enabled and token:
-        supabase_auth.logout(token)
+    if token:
+        if _DEMO_AUTH_ENABLED:
+            _DEMO_AUTH_TOKENS.pop(token, None)
+        auth_service.logout(token)
     
     return {"status": "ok", "message": "Logged out successfully"}
 

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import asyncio
 import json
 import logging
 import os
@@ -8,14 +9,16 @@ import re
 import sys
 import threading
 import time
+import unicodedata
 import uuid
 from collections import defaultdict, deque
+from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Optional, List
+from typing import Any, Dict, Optional
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException, Request, Body
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse, PlainTextResponse
@@ -33,8 +36,10 @@ from integrations import BucketTelemetryClient, CoreReaderClient, LanguageAdapte
 from service.live_service import LiveUniGuruService
 from service.query_classifier import QueryType, classify_query
 from service.guru_models import Guru, CreateGuruRequest, guru_storage
-from service.supabase_auth import supabase_auth
+from service.auth_service import auth_service
+from service.chat_storage import ChatSessionStore
 from stt import STTEngine, STTUnavailableError
+from security import AuditEmitter, JWTClaims, RBACEnforcer, ReplayMitigationTable, RS256Verifier
 
 # Production observability — structured logging + extended metrics
 try:
@@ -97,12 +102,31 @@ class AskRequest(BaseModel):
         return value
 
 
+class DebugRetrievalRequest(BaseModel):
+    query: str = Field(..., min_length=1, max_length=2000)
+
+
+@asynccontextmanager
+async def _app_lifespan(_app):
+    from retrieval.retriever import warm_rag_index
+
+    try:
+        if await asyncio.to_thread(warm_rag_index):
+            logger.info("Active RAG index and embedding model loaded.")
+        else:
+            logger.warning("Active vector index unavailable; lexical retrieval remains enabled.")
+    except Exception:
+        logger.exception("RAG startup warmup failed; lexical retrieval remains enabled.")
+    yield
+
+
 app = FastAPI(
     title="UniGuru Live Reasoning Service",
     version="1.1.0",
     description="Sovereign AI reasoning engine with knowledge base, ontology, and guru management",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    lifespan=_app_lifespan,
 )
 
 _default_cors_origins = [
@@ -110,13 +134,13 @@ _default_cors_origins = [
     "http://localhost:5174",
     "http://127.0.0.1:5173",
     "http://127.0.0.1:5174",
-    "https://uniguru-ai-2.onrender.com",
-    "https://uniguru-ai-3.onrender.com",
-    "https://complete-uniguru.onrender.com",
-    "https://uni-guru.in",
 ]
 _cors_origins_raw = os.getenv("UNIGURU_CORS_ORIGINS", ",".join(_default_cors_origins))
-_cors_origins = [origin.strip().rstrip("/") for origin in _cors_origins_raw.split(",") if origin.strip()]
+_cors_origins = [origin.strip() for origin in _cors_origins_raw.split(",") if origin.strip()]
+_IS_PRODUCTION = os.getenv("UNIGURU_ENVIRONMENT", "").strip().lower() == "production"
+if _IS_PRODUCTION and not os.getenv("UNIGURU_CORS_ORIGINS", "").strip():
+    raise RuntimeError("UNIGURU_CORS_ORIGINS must contain the production frontend origin.")
+# Native durable SQLite auth_service
 
 app.add_middleware(
     CORSMiddleware,
@@ -144,11 +168,36 @@ if _PRIMARY_API_TOKEN:
     _API_TOKENS.add(_PRIMARY_API_TOKEN)
 _AUTH_MODE = "strict" if _API_AUTH_REQUIRED else "disabled"
 if _API_AUTH_REQUIRED and not _API_TOKENS:
-    _API_AUTH_REQUIRED = False
-    _AUTH_MODE = "demo-no-auth"
-    logger.warning(
-        "UNIGURU_API_AUTH_REQUIRED=true but no tokens configured. Falling back to demo mode auth bypass."
+    raise RuntimeError(
+        "UNIGURU_API_AUTH_REQUIRED=true requires UNIGURU_API_TOKEN or UNIGURU_API_TOKENS."
     )
+_JWT_AUTH_REQUIRED = os.getenv("UNIGURU_JWT_AUTH_REQUIRED", "false").strip().lower() in {"1", "true", "yes", "on"}
+_JWT_PUBLIC_KEY_CONFIGURED = bool(
+    os.getenv("UNIGURU_JWT_PUBLIC_KEY", "").strip()
+    or os.getenv("UNIGURU_JWT_PUBLIC_KEY_PATH", "").strip()
+)
+_JWT_VERIFIER: Optional[RS256Verifier] = None
+if _JWT_PUBLIC_KEY_CONFIGURED:
+    try:
+        _JWT_VERIFIER = RS256Verifier()
+        _AUTH_MODE = "jwt-rs256"
+    except ValueError as exc:
+        logger.error("Invalid JWT security configuration: %s", exc)
+        if _JWT_AUTH_REQUIRED:
+            raise
+elif _JWT_AUTH_REQUIRED:
+    raise RuntimeError("UNIGURU_JWT_AUTH_REQUIRED=true requires an RS256 public key.")
+_JWT_RBAC = RBACEnforcer(min_role=os.getenv("UNIGURU_JWT_MIN_ROLE", "viewer"))
+_SECURITY_REPLAY = ReplayMitigationTable(
+    persist_path=os.getenv("UNIGURU_REPLAY_TABLE_PATH", "").strip() or None,
+    leeway_seconds=int(os.getenv("UNIGURU_JWT_LEEWAY_SECONDS", "10")),
+)
+_SECURITY_AUDIT = AuditEmitter(
+    os.getenv(
+        "UNIGURU_SECURITY_AUDIT_PATH",
+        str(Path(__file__).parent.parent / "logs" / "security_audit.jsonl"),
+    )
+)
 _ALLOWED_CALLERS = {
     caller.strip()
     for caller in os.getenv(
@@ -168,7 +217,13 @@ _ASK_REQUEST_TIMESTAMPS: deque[float] = deque()
 _ASK_INFLIGHT = 0
 _ASK_QUEUE_LIMIT = int(os.getenv("UNIGURU_ROUTER_QUEUE_LIMIT", "200"))
 _CHAT_LOCK = threading.Lock()
-_CHAT_SESSIONS: Dict[str, Dict[str, Any]] = {}
+_CHAT_SESSIONS: ChatSessionStore = ChatSessionStore()
+_DEMO_AUTH_ENABLED = (
+    os.getenv("UNIGURU_DEMO_AUTH_ENABLED", "false").strip().lower() in {"1", "true", "yes", "on"}
+    and not _IS_PRODUCTION
+    and not os.getenv("RENDER")
+)
+_DEMO_AUTH_TOKENS: Dict[str, Dict[str, str]] = {}
 _METRICS = {
     "requests_total": 0,
     "requests_by_status": defaultdict(int),
@@ -311,14 +366,6 @@ def _ensure_non_empty_answer(
             reason="Router returned an invalid payload; safe fallback engaged.",
             caller=caller,
         )
-
-    # A governed block/refusal is a valid terminal response.
-    # Do not convert it into an LLM fallback merely because answer is null.
-    decision = str(response.get("decision") or "").strip().lower()
-    status_action = str(response.get("status_action") or "").strip().upper()
-    if decision in {"block", "blocked"} or status_action in {"BLOCK", "REFUSE"}:
-        return response
-
     if str(response.get("answer") or "").strip():
         return response
     return _build_safe_fallback_response(
@@ -354,14 +401,79 @@ def _extract_service_token(request: Request) -> Optional[str]:
     return None
 
 
-def _enforce_service_auth(request: Request) -> None:
+def _emit_security_audit(event: str, actor: str, resource: str, outcome: str, metadata: Dict[str, Any]) -> None:
+    _SECURITY_AUDIT.emit(
+        event=event,
+        actor=actor,
+        resource=resource,
+        outcome=outcome,
+        metadata=metadata,
+    )
+
+
+def _enforce_service_auth(request: Request) -> Optional[JWTClaims]:
     if _is_pytest_runtime():
-        return
+        return None
     if not _API_AUTH_REQUIRED:
-        return
+        return None
     token = _extract_service_token(request)
+    resource = request.url.path
+    if _JWT_VERIFIER is not None:
+        if not token:
+            _emit_security_audit("jwt_verification_failed", "unknown", resource, "DENY", {"reason": "missing bearer token"})
+            raise HTTPException(status_code=401, detail="Bearer JWT required")
+        try:
+            claims = _JWT_VERIFIER.verify(token)
+            _JWT_RBAC.enforce(claims)
+        except (PermissionError, ValueError) as exc:
+            _emit_security_audit("jwt_verification_failed", "unknown", resource, "DENY", {"reason": str(exc)})
+            raise HTTPException(status_code=401, detail="Invalid or unauthorized JWT") from exc
+        if not _SECURITY_REPLAY.try_consume(claims.jti, exp=claims.exp):
+            _emit_security_audit("replay_blocked", claims.sub, resource, "DENY", {"jti": claims.jti})
+            raise HTTPException(status_code=401, detail="JWT replay detected")
+        _emit_security_audit(
+            "jwt_verified",
+            claims.sub,
+            resource,
+            "ALLOW",
+            {"jti": claims.jti, "role": claims.role},
+        )
+        return claims
     if token not in _API_TOKENS:
         raise HTTPException(status_code=401, detail="Unauthorized")
+    return None
+
+
+def _request_bearer_token(request: Request) -> Optional[str]:
+    value = request.headers.get("Authorization", "")
+    if value.lower().startswith("bearer "):
+        return value[7:].strip() or None
+    return None
+
+
+def _issue_demo_user(user_id: str, email: str, name: str) -> Dict[str, str]:
+    token = uuid.uuid4().hex + uuid.uuid4().hex
+    user = {"id": user_id, "email": email, "name": name}
+    _DEMO_AUTH_TOKENS[token] = user
+    return {"token": token, **user}
+
+
+def _require_user_identity(request: Request) -> Dict[str, str]:
+    """Return identity verified by local auth service or an explicit local-only demo token."""
+    token = _request_bearer_token(request)
+    if _DEMO_AUTH_ENABLED and token and token in _DEMO_AUTH_TOKENS:
+        return _DEMO_AUTH_TOKENS[token]
+    if not token:
+        raise HTTPException(status_code=401, detail="Bearer token required")
+    user = auth_service.verify_token(token)
+    if not user:
+        if _DEMO_AUTH_ENABLED:
+            user = _DEMO_AUTH_TOKENS.get(token or "")
+            if user:
+                return user
+            raise HTTPException(status_code=401, detail="Valid local demo login required")
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+    return user
 
 
 def _resolve_caller(request: AskRequest, raw_request: Request) -> str:
@@ -611,22 +723,88 @@ def _process_router_request(
     context_map = dict(context or {})
     adapted = language_adapter.normalize_query(query=query, context=context_map)
     normalized_query = adapted.normalized_query
+    if len(normalized_query.split()) < 3 and len(query.split()) >= 3:
+        normalized_query = query
     query_type = classify_query(normalized_query)
 
     context_map["caller"] = caller_name
     context_map["query_type"] = query_type.value
     context_map["session_id"] = session_id
-    context_map["allow_web"] = bool(allow_web or query_type == QueryType.WEB_LOOKUP)
+    context_map["allow_web"] = bool(allow_web)
     context_map["source_language"] = adapted.source_language
 
-    response = conversation_router.route_query(query=normalized_query, context=context_map)
-    response = _ensure_non_empty_answer(
-        response,
+    result = _execute_kosha_pipeline(
         query=normalized_query,
-        session_id=session_id,
-        caller=caller_name,
+        domain_hint=None,
+        top_k=5,
+        trace_id=str(uuid.uuid4()),
+        user_id=caller_name,
     )
-    response = language_adapter.localize_response(response=response, source_language=adapted.source_language)
+    candidate_signals = result.get("matched_signals") or []
+    answer = str(result.get("answer") or "I do not have verified knowledge to answer this question.")
+    answer_claims = [
+        " ".join(claim.casefold().split())
+        for claim in re.split(r"(?<=[.!?])\s+|\n+", answer)
+        if len(claim.strip()) >= 20 and not claim.lstrip().casefold().startswith("sources:")
+    ]
+    matched_signals = [
+        signal
+        for signal in candidate_signals
+        if isinstance(signal, dict)
+        and (
+            not answer_claims
+            or any(
+                claim in " ".join(str(signal.get("content") or "").casefold().split())
+                for claim in answer_claims
+            )
+        )
+    ]
+    if not matched_signals and candidate_signals and str(result.get("verification_status") or "") == "VERIFIED":
+        matched_signals = candidate_signals
+    evidence_sources = [
+        {
+            "knowledge_id": signal.get("knowledge_id"),
+            "path": signal.get("source"),
+            "excerpt": signal.get("content"),
+            "confidence": signal.get("confidence"),
+        }
+        for signal in matched_signals
+        if isinstance(signal, dict) and str(signal.get("content") or "").strip()
+    ]
+    cited_sources = list(dict.fromkeys(
+        str(source.get("path") or "").strip()
+        for source in evidence_sources
+        if str(source.get("path") or "").strip()
+    ))
+    answer_with_sources = answer
+    if cited_sources:
+        answer_with_sources += "\n\nSources: " + "; ".join(cited_sources[:3])
+    verification_status = str(result.get("verification_status") or "NO_VERIFIED_KNOWLEDGE")
+    confidence_breakdown = result.get("confidence_breakdown") or {}
+    response = {
+        "query": normalized_query,
+        "status": "success" if verification_status == "VERIFIED" else ("partial" if verification_status != "NO_VERIFIED_KNOWLEDGE" else "error"),
+        "answer": answer_with_sources,
+        "decision": "answer" if verification_status == "VERIFIED" else "block",
+        "verification_status": verification_status,
+        "session_id": session_id,
+        "confidence": result.get("confidence", 0.0),
+        "confidence_breakdown": confidence_breakdown,
+        "reasoning": result.get("reasoning"),
+        "reasoning_path": result.get("reasoning_path", []),
+        "domain_resolution": result.get("domain_resolution", {}),
+        "matched_signals": matched_signals,
+        "rejected_signals": result.get("rejected_signals", []),
+        "fallback_to_llm": False,
+        "routing": {"route": "DETERMINISTIC_KOSHA", "query_type": query_type.value},
+        "retrieval_trace": {
+            "engine": "DeterministicKoshaPipeline",
+            "method": "entity_domain_validated_keyword_retrieval",
+            "match_found": verification_status == "VERIFIED" and bool(matched_signals),
+            "confidence": float(confidence_breakdown.get("overall") or 0.0),
+            "evidence_sources": evidence_sources,
+        },
+    }
     latency_ms = (time.perf_counter() - started) * 1000
 
     decision = str(response.get("decision") or "unknown")
@@ -713,7 +891,22 @@ async def observability_and_throttle(request: Request, call_next):
                 },
             )
 
-    response = await call_next(request)
+    try:
+        response = await call_next(request)
+    except Exception:
+        latency_ms = (time.perf_counter() - started) * 1000
+        request_id = str(uuid.uuid4())
+        if _metrics_collector is not None:
+            _metrics_collector.record_request_latency(latency_ms, route=request.url.path)
+            _metrics_collector.record_failure("internal_error")
+        logger.exception("Unhandled request failure request_id=%s path=%s", request_id, request.url.path)
+        response = JSONResponse(
+            status_code=500,
+            content={
+                "detail": "An internal error occurred.",
+                "request_id": request_id,
+            },
+        )
     latency_ms = (time.perf_counter() - started) * 1000
     with _METRICS_LOCK:
         _METRICS["requests_total"] += 1
@@ -755,7 +948,7 @@ async def observability_and_throttle(request: Request, call_next):
     "/ask",
     tags=["Core Intelligence"],
     summary="Ask UniGuru a Question",
-    description="Submit a query to UniGuru's reasoning engine. Returns verified knowledge base answers or LLM fallback."
+    description="Submit a query to deterministic Kosha retrieval. Unsupported queries receive an explicit refusal."
 )
 def ask(request: AskRequest, raw_request: Request) -> Dict[str, Any]:
     if not _try_enter_ask_queue():
@@ -773,25 +966,21 @@ def ask(request: AskRequest, raw_request: Request) -> Dict[str, Any]:
             session_id=request.session_id,
             raw_request=raw_request,
         )
-        # Final output-layer safety: preserve governed terminal responses.
+        # Final output-layer safety: always ensure non-empty "answer" while preserving existing fields.
         if not isinstance(response, dict):
             return _build_safe_fallback_response(
                 query=request.query,
                 session_id=request.session_id,
                 reason="/ask recovered from invalid response payload type.",
             )
-
-        decision = str(response.get("decision") or "").strip().lower()
-        status_action = str(response.get("status_action") or "").strip().upper()
-        # A governed block/refusal is a valid terminal response.
-        # Never inject an LLM/demo answer into a blocked response.
-        if decision in {"block", "blocked"} or status_action in {"BLOCK", "REFUSE"}:
-            return response
-
         if not str(response.get("answer") or "").strip():
             response["answer"] = SAFE_FALLBACK_PREFIX
         return response
     except HTTPException as exc:
+        if exc.status_code in {401, 403}:
+            raise
+        if exc.status_code in {401, 403}:
+            raise
         return _build_safe_fallback_response(
             query=request.query,
             session_id=request.session_id,
@@ -895,90 +1084,6 @@ async def voice_query(
         _leave_ask_queue()
 
 
-class RetrievalDebugRequest(BaseModel):
-    query: str = Field(..., min_length=1, max_length=2000)
-    standard: Optional[int] = None
-    subject: Optional[str] = None
-    medium: Optional[str] = None
-    top_k: int = Field(default=5, ge=1, le=50)
-
-
-class ChantAPIRequest(BaseModel):
-    text: str = Field(..., min_length=1, max_length=2000)
-    meter: Optional[str] = None
-    reference_audio: Optional[str] = None
-
-
-@app.post(
-    "/api/retrieval/debug",
-    tags=["Balbharati Retrieval"],
-    summary="Balbharati Hybrid Retrieval Debug Endpoint",
-    description="Debug why UniGuru extracts specific textbook chunks, returning detected metadata and ranked candidate evidence."
-)
-@app.post("/retrieval/debug", tags=["Balbharati Retrieval"])
-def retrieval_debug(req: RetrievalDebugRequest) -> Dict[str, Any]:
-    from retrieval.balbharati.hybrid_retriever import get_balbharati_retriever
-    from retrieval.balbharati.answer_synthesizer import get_answer_synthesizer
-    retriever = get_balbharati_retriever()
-    search_res = retriever.search_hybrid(
-        query=req.query,
-        standard=req.standard,
-        medium=req.medium,
-        subject=req.subject,
-        top_k=req.top_k,
-    )
-    synthesizer = get_answer_synthesizer()
-    synthesis = synthesizer.synthesize(query=req.query, retrieval_result=search_res)
-    search_res["synthesized_answer"] = synthesis.get("answer", "")
-    search_res["citations"] = synthesis.get("citations", [])
-    search_res["retrieval_results"] = search_res.get("results", [])
-    return search_res
-
-
-@app.post(
-    "/api/sanskrit/chant",
-    tags=["Sanskrit Audio"],
-    summary="Generate Sanskrit Chanting Audio via Vāgdhenu",
-    description="Detects meter (vṛtta), synthesizes traditional chanting audio, and returns streamable audio URL."
-)
-@app.post("/sanskrit/chant", tags=["Sanskrit Audio"])
-def generate_sanskrit_chant(req: ChantAPIRequest) -> Dict[str, Any]:
-    from sanskrit.vagdhenu.service import get_vagdhenu_service
-    service = get_vagdhenu_service()
-    resp = service.generate_chant(
-        sanskrit_text=req.text,
-        meter=req.meter,
-        reference_audio=req.reference_audio,
-    )
-    return resp.model_dump()
-
-
-@app.get(
-    "/api/audio/{audio_id}",
-    tags=["Sanskrit Audio"],
-    summary="Stream Generated Sanskrit Audio",
-    description="Streams WAV audio bytes by audio ID."
-)
-@app.get("/audio/{audio_id}", tags=["Sanskrit Audio"])
-def stream_sanskrit_audio(audio_id: str):
-    from sanskrit.vagdhenu.storage import AudioStorage
-    from fastapi.responses import Response
-    storage = AudioStorage()
-    result = storage.get_bytes(audio_id)
-    if not result:
-        raise HTTPException(status_code=404, detail=f"Audio not found: {audio_id}")
-    audio_bytes, meta = result
-    media_type = "audio/wav" if meta.file_format == "wav" else f"audio/{meta.file_format}"
-    return Response(
-        content=audio_bytes,
-        media_type=media_type,
-        headers={
-            "Content-Disposition": f"inline; filename={audio_id}.{meta.file_format}",
-            "Accept-Ranges": "bytes",
-        },
-    )
-
-
 @app.get(
     "/health/ecosystem",
     tags=["System Health"],
@@ -1043,6 +1148,66 @@ def health() -> Dict[str, Any]:
         },
         "kb": kb,
         "llm": llm,
+    }
+
+
+@app.get("/health/rag", tags=["System Health"], summary="RAG Index Health")
+def health_rag() -> Dict[str, Any]:
+    from retrieval.retriever import get_rag_health
+
+    return get_rag_health()
+
+
+@app.post("/debug/retrieval", tags=["Development"], summary="Inspect Retrieval Candidates")
+def debug_retrieval(request: DebugRetrievalRequest, raw_request: Request) -> Dict[str, Any]:
+    environment = os.getenv("UNIGURU_ENV", "production").strip().lower()
+    debug_enabled = os.getenv("UNIGURU_DEBUG_RETRIEVAL", "false").strip().lower() in {"1", "true", "yes", "on"}
+    if environment not in {"development", "dev", "local", "test"} or not debug_enabled:
+        raise HTTPException(status_code=404, detail="Not found")
+    _enforce_service_auth(raw_request)
+
+    from retrieval.retriever import AdvancedRetriever, get_rag_health
+
+    normalized_query = unicodedata.normalize("NFKC", request.query).strip()
+    retriever = AdvancedRetriever(top_n=30)
+    candidates = retriever.retrieve_multi(normalized_query)
+
+    def _candidate_payload(candidate: Dict[str, Any]) -> Dict[str, Any]:
+        return {
+            "source": candidate.get("source"),
+            "file": candidate.get("file"),
+            "path": candidate.get("path"),
+            "text": str(candidate.get("content") or "")[:2000],
+            "bm25_score": candidate.get("bm25_score", 0.0),
+            "entity_score": candidate.get("entity_score", 0.0),
+            "fusion_score": candidate.get("fusion_score", 0.0),
+            "dense_score": candidate.get("dense_score", 0.0),
+            "evidence_coverage": candidate.get("evidence_coverage", 0.0),
+            "matched_terms": candidate.get("matched_terms", []),
+        }
+
+    return {
+        "normalized_query": normalized_query,
+        "detected_intent": conversation_router.classify(normalized_query).value,
+        "extracted_entities": sorted(retriever._source_entity_terms(normalized_query)),
+        "dense_candidates": [
+            _candidate_payload(candidate)
+            for candidate in sorted(candidates, key=lambda row: row.get("dense_score", 0.0), reverse=True)
+            if candidate.get("dense_score", 0.0) > 0
+        ],
+        "bm25_candidates": [
+            _candidate_payload(candidate)
+            for candidate in sorted(candidates, key=lambda row: row.get("bm25_score", 0.0), reverse=True)
+        ],
+        "entity_candidates": [
+            _candidate_payload(candidate)
+            for candidate in sorted(candidates, key=lambda row: row.get("entity_score", 0.0), reverse=True)
+        ],
+        "fused_candidates": [_candidate_payload(candidate) for candidate in candidates],
+        "filtered_candidates": [_candidate_payload(candidate) for candidate in candidates],
+        "reranked_candidates": [_candidate_payload(candidate) for candidate in candidates],
+        "final_chunks": [_candidate_payload(candidate) for candidate in candidates[:8]],
+        "index_health": get_rag_health(),
     }
 
 
@@ -1274,14 +1439,8 @@ def ontology_concept(concept_id: str) -> Dict[str, Any]:
 )
 def get_user_gurus(request: Request) -> Dict[str, Any]:
     """Get all gurus for the authenticated user."""
-    # Extract user_id from request context or header
-    user_id = request.headers.get("X-User-Id", "demo-user")
-
+    user_id = _require_user_identity(request)["id"]
     gurus = guru_storage.get_user_gurus(user_id)
-    # Demo compatibility: if caller user_id does not match creator user_id,
-    # return all active gurus so the UI does not lose recently created gurus.
-    if not gurus:
-        gurus = guru_storage.get_all_active_gurus()
 
     return {
         "chatbots": [
@@ -1304,12 +1463,15 @@ def get_user_gurus(request: Request) -> Dict[str, Any]:
     summary="Get Guru Chat History",
     description="Retrieve all chat conversations for a specific guru"
 )
-def get_guru_chats(chatbot_id: str, user_id: str) -> Dict[str, Any]:
+def get_guru_chats(chatbot_id: str, user_id: str, request: Request) -> Dict[str, Any]:
     """Get all chats for a specific guru. Stub implementation."""
+    owner_id = _require_user_identity(request)["id"]
+    if user_id != owner_id:
+        raise HTTPException(status_code=403, detail="Forbidden")
     with _CHAT_LOCK:
         messages: list[Dict[str, Any]] = []
         for chat in _CHAT_SESSIONS.values():
-            if chat.get("userId") == user_id and chat.get("guru", {}).get("_id") == chatbot_id:
+            if chat.get("userId") == owner_id and chat.get("guru", {}).get("_id") == chatbot_id:
                 messages.extend(chat.get("messages", []))
         return {"messages": messages, "chats": []}
 
@@ -1320,11 +1482,14 @@ def get_guru_chats(chatbot_id: str, user_id: str) -> Dict[str, Any]:
     summary="Create Default Guru",
     description="Create a new guru with default settings (auto-generated name and subject)"
 )
-def create_new_guru(user_id: str) -> Dict[str, Any]:
+def create_new_guru(user_id: str, request: Request) -> Dict[str, Any]:
     """Create a new default guru for user."""
+    owner_id = _require_user_identity(request)["id"]
+    if user_id != owner_id:
+        raise HTTPException(status_code=403, detail="Forbidden")
     guru = guru_storage.create_guru(
-        user_id=user_id,
-        name=f"Guru {len(guru_storage.get_user_gurus(user_id)) + 1}",
+        user_id=owner_id,
+        name=f"Guru {len(guru_storage.get_user_gurus(owner_id)) + 1}",
         subject="General Knowledge",
         description="A general-purpose AI guru"
     )
@@ -1356,12 +1521,9 @@ def create_custom_guru(
     user_id: Optional[str] = None,
 ) -> Dict[str, Any]:
     """Create a custom guru with specified name, subject, and description."""
-    resolved_user_id = (
-        (user_id or "").strip()
-        or request.headers.get("X-User-Id", "").strip()
-        or request.headers.get("X-Caller-Name", "").strip()
-        or "demo-user"
-    )
+    resolved_user_id = _require_user_identity(request)["id"]
+    if user_id and user_id.strip() != resolved_user_id:
+        raise HTTPException(status_code=403, detail="Forbidden")
     guru = guru_storage.create_guru(
         user_id=resolved_user_id,
         name=request_body.name,
@@ -1386,7 +1548,7 @@ def create_custom_guru(
 )
 def delete_guru_endpoint(chatbot_id: str, request: Request) -> Dict[str, Any]:
     """Delete (soft delete) a guru."""
-    user_id = request.headers.get("X-User-Id", "demo-user")
+    user_id = _require_user_identity(request)["id"]
     
     success = guru_storage.delete_guru(chatbot_id, user_id)
     if not success:
@@ -1404,16 +1566,13 @@ def delete_guru_endpoint(chatbot_id: str, request: Request) -> Dict[str, Any]:
 def chat_create(request_body: Dict[str, Any], request: Request) -> Dict[str, Any]:
     guru_id = str(request_body.get("guruId") or "").strip()
     title = str(request_body.get("title") or "").strip()
-    user_id = str(
-        request_body.get("userId")
-        or request.headers.get("X-User-Id")
-        or request.headers.get("X-Caller-Name")
-        or "demo-user"
-    ).strip()
+    user_id = _require_user_identity(request)["id"]
     if not guru_id:
         raise HTTPException(status_code=400, detail="guruId is required")
 
     guru = guru_storage.get_guru(guru_id)
+    if guru and guru.user_id != user_id:
+        raise HTTPException(status_code=404, detail="Guru not found")
     if guru:
         guru_payload = {
             "_id": guru.id,
@@ -1453,16 +1612,10 @@ def chat_list(
     guruId: Optional[str] = None,
     archived: bool = False,
 ) -> Dict[str, Any]:
-    user_id = str(
-        request.headers.get("X-User-Id")
-        or request.headers.get("X-Caller-Name")
-        or "demo-user"
-    ).strip()
+    user_id = _require_user_identity(request)["id"]
 
     with _CHAT_LOCK:
         chats = [c for c in _CHAT_SESSIONS.values() if c.get("userId") == user_id]
-        if not chats:
-            chats = list(_CHAT_SESSIONS.values())
         if guruId:
             chats = [c for c in chats if c.get("guru", {}).get("_id") == guruId]
         if archived:
@@ -1478,33 +1631,29 @@ def chat_all_with_data(
     request: Request,
     includeMessages: bool = False,
 ) -> Dict[str, Any]:
-    user_id = str(
-        request.headers.get("X-User-Id")
-        or request.headers.get("X-Caller-Name")
-        or "demo-user"
-    ).strip()
+    user_id = _require_user_identity(request)["id"]
     with _CHAT_LOCK:
         chats = [c for c in _CHAT_SESSIONS.values() if c.get("userId") == user_id]
-        if not chats:
-            chats = list(_CHAT_SESSIONS.values())
         chats.sort(key=lambda c: c.get("lastActivity", ""), reverse=True)
         return {"chats": [_serialize_chat_session(c, include_messages=includeMessages) for c in chats]}
 
 
 @app.get("/chat/chat/{chat_id}", tags=["Chat"], summary="Get Chat Session By ID")
-def chat_get(chat_id: str) -> Dict[str, Any]:
+def chat_get(chat_id: str, request: Request) -> Dict[str, Any]:
+    owner_id = _require_user_identity(request)["id"]
     with _CHAT_LOCK:
         chat = _CHAT_SESSIONS.get(chat_id)
-        if not chat:
+        if not chat or chat.get("userId") != owner_id:
             raise HTTPException(status_code=404, detail="Chat not found")
         return {"chat": _serialize_chat_session(chat, include_messages=True)}
 
 
 @app.put("/chat/chat/{chat_id}", tags=["Chat"], summary="Update Chat Session")
-def chat_update(chat_id: str, request_body: Dict[str, Any]) -> Dict[str, Any]:
+def chat_update(chat_id: str, request_body: Dict[str, Any], request: Request) -> Dict[str, Any]:
+    owner_id = _require_user_identity(request)["id"]
     with _CHAT_LOCK:
         chat = _CHAT_SESSIONS.get(chat_id)
-        if not chat:
+        if not chat or chat.get("userId") != owner_id:
             raise HTTPException(status_code=404, detail="Chat not found")
         if "title" in request_body and isinstance(request_body["title"], str):
             chat["title"] = request_body["title"].strip() or chat["title"]
@@ -1513,15 +1662,18 @@ def chat_update(chat_id: str, request_body: Dict[str, Any]) -> Dict[str, Any]:
         if "isActive" in request_body:
             chat["isActive"] = bool(request_body["isActive"])
         chat["lastActivity"] = _utc_now_iso()
+        _CHAT_SESSIONS[chat_id] = chat
         return {"chat": _serialize_chat_session(chat, include_messages=False)}
 
 
 @app.delete("/chat/chat/{chat_id}", tags=["Chat"], summary="Delete Chat Session")
-def chat_delete(chat_id: str) -> Dict[str, Any]:
+def chat_delete(chat_id: str, request: Request) -> Dict[str, Any]:
+    owner_id = _require_user_identity(request)["id"]
     with _CHAT_LOCK:
-        chat = _CHAT_SESSIONS.pop(chat_id, None)
-        if not chat:
+        chat = _CHAT_SESSIONS.get(chat_id)
+        if not chat or chat.get("userId") != owner_id:
             raise HTTPException(status_code=404, detail="Chat not found")
+        _CHAT_SESSIONS.pop(chat_id)
     return {"status": "ok", "message": "Chat deleted successfully", "chatId": chat_id}
 
 
@@ -1532,16 +1684,10 @@ def chat_all_chats(request: Request) -> Dict[str, Any]:
 
 @app.delete("/chat/delete", tags=["Chat"], summary="Delete All Chats")
 def chat_delete_all(request: Request) -> Dict[str, Any]:
-    user_id = str(
-        request.headers.get("X-User-Id")
-        or request.headers.get("X-Caller-Name")
-        or "demo-user"
-    ).strip()
+    user_id = _require_user_identity(request)["id"]
     deleted = 0
     with _CHAT_LOCK:
         ids = [chat_id for chat_id, chat in _CHAT_SESSIONS.items() if chat.get("userId") == user_id]
-        if not ids:
-            ids = list(_CHAT_SESSIONS.keys())
         for chat_id in ids:
             _CHAT_SESSIONS.pop(chat_id, None)
             deleted += 1
@@ -1552,16 +1698,21 @@ def chat_delete_all(request: Request) -> Dict[str, Any]:
 def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, Any]:
     message = str(request_body.get("message") or "").strip()
     chatbot_id = str(request_body.get("chatbotId") or "").strip()
-    user_id = str(request_body.get("userId") or "demo-user").strip()
+    user_id = _require_user_identity(raw_request)["id"]
     chat_id = str(request_body.get("chatId") or "").strip()
     if not message:
         raise HTTPException(status_code=400, detail="message is required")
     if not chatbot_id:
         raise HTTPException(status_code=400, detail="chatbotId is required")
+    guru = guru_storage.get_guru(chatbot_id)
+    if guru and guru.user_id != user_id:
+        raise HTTPException(status_code=404, detail="Guru not found")
 
     # Ensure chat exists
     with _CHAT_LOCK:
         chat = _CHAT_SESSIONS.get(chat_id) if chat_id else None
+        if chat and chat.get("userId") != user_id:
+            raise HTTPException(status_code=404, detail="Chat not found")
     if not chat:
         created = chat_create(
             {"guruId": chatbot_id, "title": (message[:48] + "...") if len(message) > 48 else message, "userId": user_id},
@@ -1575,66 +1726,62 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
     with _CHAT_LOCK:
         chat["messages"].append(user_msg)
         chat["lastActivity"] = _utc_now_iso()
+        _CHAT_SESSIONS[chat_id] = chat
 
-    # Process message through unified ConversationRouter (handles Casual, RAG Knowledge, Tech, General, Code, Follow-ups)
-    context_list = request_body.get("context") or []
-    if not context_list and chat:
-        recent_chat_msgs = chat.get("messages", [])[-6:-1]
-        context_list = [{"sender": m.get("sender"), "content": m.get("content")} for m in recent_chat_msgs]
-
-    trace_id = f"chat_{chat_id}_{uuid.uuid5(uuid.NAMESPACE_URL, message).hex[:12]}"
-    router_context = {
-        "session_id": chat_id,
-        "chat_id": chat_id,
-        "user_id": user_id,
-        "context": context_list,
-        "chat_history": context_list,
-        "trace_id": trace_id,
-    }
-
+    # Use the shared verified RAG path so the browser chat and /ask see the
+    # same active KB and language handling.
     try:
-        router_response = conversation_router.route_query(query=message, context=router_context)
-        answer = str(router_response.get("answer") or "").strip()
-        if not answer:
-            answer = "I could not generate a response."
+        trace_id = f"chat_{chat_id}_{uuid.uuid5(uuid.NAMESPACE_URL, message).hex[:12]}"
+        adapted = language_adapter.normalize_query(message)
+        router_response = conversation_router.route_query(
+            query=adapted.normalized_query,
+            context={
+                "caller": user_id,
+                "user_id": user_id,
+                "session_id": chat_id,
+                "source_language": adapted.source_language,
+                "allow_web": False,
+            },
+        )
+        router_response = language_adapter.localize_response(
+            router_response,
+            source_language=adapted.source_language,
+        )
+        answer = str(router_response.get("answer") or "I could not generate a response.")
     except Exception as exc:
         logger.exception("chat_new ask pipeline failed: %s", exc)
         router_response = {}
         answer = "I am still learning this topic, please try again."
 
-    routing_info = router_response.get("routing") or {}
-    query_type = str(routing_info.get("query_type") or "UNKNOWN")
-    route = str(routing_info.get("route") or "UNKNOWN")
-    is_casual = (query_type == "CASUAL_CONVERSATION" or route == "ROUTE_CASUAL")
-
-    verif_status = "VERIFIED" if is_casual else str(router_response.get("verification_status") or "UNVERIFIED")
-
     ai_metadata = {
-        "query_type": query_type,
-        "route": route,
-        "retrieved_chunks": router_response.get("retrieved_chunks", []),
+        "retrieved_chunks": [],
         "trace_id": router_response.get("trace_id") or trace_id,
-        "verification_status": verif_status,
-        "confidence": 1.0 if is_casual else router_response.get("confidence", 0.0),
-        "confidence_breakdown": {"overall": 1.0} if is_casual else router_response.get("confidence_breakdown"),
+        "verification_status": router_response.get("verification_status"),
+        "source_type": router_response.get("source_type"),
+        "verified": router_response.get("verified"),
+        "retrieved_evidence": router_response.get("retrieved_evidence"),
+        "retrieval_performed": router_response.get("retrieval_performed"),
+        "confidence_breakdown": router_response.get("confidence_breakdown"),
         "consensus_analysis": router_response.get("consensus_analysis"),
         "retrieval_truth_payload": router_response.get("retrieval_truth_payload"),
         "interpretation_payload": router_response.get("interpretation_payload"),
         "truth_interpretation_link": router_response.get("truth_interpretation_link"),
         "semantic_memory": router_response.get("semantic_memory"),
         "multi_hop_traversal": router_response.get("multi_hop_traversal"),
-        "matched_signals": [] if is_casual else router_response.get("matched_signals", []),
-        "rejected_signals": [] if is_casual else router_response.get("rejected_signals", []),
+        "matched_signals": router_response.get("matched_signals", []),
+        "rejected_signals": router_response.get("rejected_signals", []),
         "semantic_path": router_response.get("semantic_path", []),
         "downstream_execution": router_response.get("downstream_execution"),
         "bucket_proof": router_response.get("bucket_proof"),
         "output_contract": router_response.get("output_contract"),
-        "source": "casual_chat" if is_casual else router_response.get("source"),
+        "retrieval_trace": router_response.get("retrieval_trace"),
+        "language_adapter": router_response.get("language_adapter"),
     }
     ai_msg = {"sender": "bot", "content": answer, "timestamp": _utc_now_iso(), "metadata": ai_metadata}
     with _CHAT_LOCK:
         chat["messages"].append(ai_msg)
         chat["lastActivity"] = _utc_now_iso()
+        _CHAT_SESSIONS[chat_id] = chat
         serialized_chat = _serialize_chat_session(chat, include_messages=False)
 
     return {
@@ -1659,34 +1806,8 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
     description="Verify if user session is valid and return user profile"
 )
 def user_auth_status(request: Request) -> Dict[str, Any]:
-    """Check if user is authenticated."""
-    # Try to get token from Authorization header
-    auth_header = request.headers.get("Authorization", "")
-    token = auth_header.replace("Bearer ", "") if auth_header.startswith("Bearer ") else None
-    
-    if not token:
-        # Check localStorage token (sent by frontend)
-        token = request.headers.get("X-Auth-Token")
-    
-    # If Supabase is enabled, verify token
-    if supabase_auth.enabled and token:
-        user = supabase_auth.verify_token(token)
-        if user:
-            return {
-                "authenticated": True,
-                "user": user
-            }
-    
-    # Demo mode fallback
-    user_id = request.headers.get("X-User-Id", "demo-user")
-    return {
-        "authenticated": True,
-        "user": {
-            "id": user_id,
-            "email": f"{user_id}@demo.local",
-            "name": user_id.replace("-", " ").title()
-        }
-    }
+    user = _require_user_identity(request)
+    return {"authenticated": True, "user": user}
 
 
 @app.post(
@@ -1702,18 +1823,17 @@ def google_oauth_callback(request_body: Dict[str, Any]) -> Dict[str, Any]:
     if not token:
         raise HTTPException(status_code=400, detail="Token is required")
     
-    # Try Supabase authentication first
-    if supabase_auth.enabled:
-        try:
-            result = supabase_auth.verify_google_token(token)
-            return {
-                "token": result["token"],
-                "user": result["user"],
-                "navigateUrl": "/chatpage"
-            }
-        except Exception as e:
-            logger.error(f"Supabase Google auth failed: {e}")
-            # Fall through to demo mode
+    try:
+        result = auth_service.verify_google_token(token)
+        return {
+            "token": result["token"],
+            "user": result["user"],
+            "navigateUrl": "/chatpage"
+        }
+    except Exception as e:
+        logger.error(f"Google auth failed: {e}")
+        if not _DEMO_AUTH_ENABLED:
+            raise HTTPException(status_code=401, detail="Google authentication failed")
     
     # Demo mode fallback: decode token locally
     import base64
@@ -1743,15 +1863,14 @@ def google_oauth_callback(request_body: Dict[str, Any]) -> Dict[str, Any]:
         email = f'user-{user_id}@demo.local'
         name = 'Demo User'
     
-    # Generate demo session token
-    session_token = hashlib.sha256(f"{user_id}-{time.time()}".encode()).hexdigest()
+    demo_user = _issue_demo_user(user_id, email, name)
     
     return {
-        "token": session_token,
+        "token": demo_user["token"],
         "user": {
-            "id": user_id,
-            "email": email,
-            "name": name
+            "id": demo_user["id"],
+            "email": demo_user["email"],
+            "name": demo_user["name"]
         },
         "navigateUrl": "/chatpage"
     }
@@ -1771,30 +1890,20 @@ def user_login(request_body: Dict[str, Any]) -> Dict[str, Any]:
     if not email or not password:
         raise HTTPException(status_code=400, detail="Email and password are required")
     
-    # Try Supabase authentication first
-    if supabase_auth.enabled:
-        try:
-            result = supabase_auth.login_with_email(email, password)
-            return {
-                "token": result["token"],
-                "id": result["user"]["id"],
-                "email": result["user"]["email"],
-                "name": result["user"]["name"]
-            }
-        except Exception as e:
-            logger.error(f"Supabase login failed: {e}")
-            raise HTTPException(status_code=401, detail=str(e))
-    
-    # Demo mode fallback: accept any credentials
-    user_id = hashlib.md5(email.encode()).hexdigest()[:12]
-    session_token = hashlib.sha256(f"{user_id}-{time.time()}".encode()).hexdigest()
-    
-    return {
-        "token": session_token,
-        "id": user_id,
-        "email": email,
-        "name": email.split('@')[0].title()
-    }
+    try:
+        result = auth_service.login_with_email(email, password)
+        return {
+            "token": result["token"],
+            "id": result["user"]["id"],
+            "email": result["user"]["email"],
+            "name": result["user"]["name"]
+        }
+    except Exception as e:
+        logger.error(f"Login failed: {e}")
+        if _DEMO_AUTH_ENABLED:
+            demo_user = _issue_demo_user(email.strip().lower(), email.strip(), email.split('@')[0].title())
+            return demo_user
+        raise HTTPException(status_code=401, detail=str(e))
 
 
 @app.post(
@@ -1812,47 +1921,39 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
     if not email or not password or not name:
         raise HTTPException(status_code=400, detail="Name, email, and password are required")
     
-    # Try Supabase authentication first
-    if supabase_auth.enabled:
-        try:
-            result = supabase_auth.signup_with_email(email, password, name)
+    try:
+        result = auth_service.signup_with_email(email, password, name)
+        return {
+            "success": result["success"],
+            "token": result["token"],
+            "id": result["user"]["id"],
+            "email": result["user"]["email"],
+            "name": result["user"]["name"],
+            "requires_email_verification": False,
+            "message": "Signup successful. You can login now.",
+            "navigateUrl": "/chatpage"
+        }
+    except Exception as e:
+        logger.error(f"Signup failed: {e}")
+        detail = str(e)
+        if _DEMO_AUTH_ENABLED:
+            demo_user = _issue_demo_user(email.strip().lower(), email.strip(), name.strip())
             return {
-                "success": result["success"],
-                "token": result["token"],
-                "id": result["user"]["id"],
-                "email": result["user"]["email"],
-                "name": result["user"]["name"],
-                "requires_email_verification": bool(result.get("requires_email_verification", False)),
-                "message": (
-                    "Signup successful. Please verify your email before logging in."
-                    if result.get("requires_email_verification", False)
-                    else "Signup successful. You can login now."
-                ),
+                "success": True,
+                "token": demo_user["token"],
+                "id": demo_user["id"],
+                "email": demo_user["email"],
+                "name": demo_user["name"],
                 "navigateUrl": "/chatpage"
             }
-        except Exception as e:
-            logger.error(f"Supabase signup failed: {e}")
-            detail = str(e)
-            status_code = 429 if "rate limit" in detail.lower() else 400
-            raise HTTPException(status_code=status_code, detail=detail)
-    
-    # Demo mode fallback: accept any signup
-    user_id = hashlib.md5(email.encode()).hexdigest()[:12]
-    session_token = hashlib.sha256(f"{user_id}-{time.time()}".encode()).hexdigest()
-    
-    return {
-        "success": True,
-        "token": session_token,
-        "id": user_id,
-        "email": email,
-        "name": name,
-        "navigateUrl": "/chatpage"
-    }
+        raise HTTPException(status_code=400, detail=detail)
 
 
 class NewRagRequest(BaseModel):
     query: str = Field(..., min_length=1)
     domain: Optional[str] = Field(None, description="Optional domain hint (e.g. agriculture, historical, science, maths, physics)")
+    session_id: Optional[str] = Field(None, max_length=128)
+    caller: Optional[str] = Field(None, max_length=128)
     allow_generated_verse: bool = Field(
         default=False,
         description="If true, generate Sanskrit verse only when no clean canonical verse is found.",
@@ -2238,11 +2339,150 @@ def _execute_kosha_pipeline(
     trace_id: Optional[str] = None,
     user_id: Optional[str] = None,
 ) -> Dict[str, Any]:
-    from kosha.deterministic_pipeline import run_deterministic_pipeline
+    trace_id = trace_id or f"trace_{uuid.uuid4().hex[:12]}"
+    try:
+        from service.universal_orchestrator import get_universal_orchestrator
+        orchestrator = get_universal_orchestrator()
+        result = orchestrator.process_query(
+            query=query,
+            domain_hint=domain_hint,
+            user_id=user_id or "demo-user",
+            top_k=top_k,
+            trace_id=trace_id,
+        )
 
-    # TANTRA preparation boundary: this endpoint emits the schema-bound signal
-    # contract only. It must not call FAISS or LLM synthesis before validation.
-    return run_deterministic_pipeline(query=query, domain_hint=domain_hint, trace_id=trace_id, user_id=user_id)
+        status = result.get("verification_status", "VERIFIED")
+        confidence = float(result.get("confidence") or 0.95)
+        answer = result.get("answer", "")
+        citations = result.get("citations", [])
+
+        # Build schema-compliant matched signals from evidence or capability result
+        matched_signals = []
+        for i, ev in enumerate(result.get("evidence", [])):
+            matched_signals.append({
+                "signal_id": f"sig_{trace_id}_{i}",
+                "confidence": float(ev.get("composite_score", confidence)),
+                "content": ev.get("text", ""),
+                "domain": ev.get("domain", "general"),
+                "knowledge_id": ev.get("document_id", f"doc_{i}"),
+                "source": ev.get("file_name") or ev.get("book") or "knowledge_base",
+                "source_governance": {
+                    "authority_weight": 0.95,
+                    "lineage": {
+                        "book": ev.get("book"),
+                        "board": ev.get("board"),
+                        "grade": ev.get("grade"),
+                        "subject": ev.get("subject"),
+                        "chapter": ev.get("chapter"),
+                        "page": ev.get("page"),
+                    }
+                },
+                "trace": {
+                    "knowledge_id": ev.get("document_id"),
+                    "method": "unified_hybrid_rag",
+                    "domain_resolution": result.get("debug", {}).get("scope", {}),
+                }
+            })
+
+        if not matched_signals and status == "VERIFIED":
+            cat = result.get("category", "general")
+            matched_signals.append({
+                "signal_id": f"sig_{trace_id}_0",
+                "confidence": confidence,
+                "content": answer,
+                "domain": cat,
+                "knowledge_id": f"capability_{cat}",
+                "source": f"capability_{cat}",
+                "source_governance": {
+                    "authority_weight": 0.98,
+                    "lineage": {
+                        "book": f"UniGuru {cat.title()} Capability",
+                        "board": "UniGuru Core",
+                        "grade": 0,
+                        "subject": cat,
+                        "chapter": "Core Reasoning",
+                        "page": 1,
+                    }
+                },
+                "trace": {
+                    "knowledge_id": f"capability_{cat}",
+                    "method": "capability_execution",
+                    "domain_resolution": {"domain": cat, "confidence": confidence},
+                }
+            })
+
+        return {
+            "trace_id": trace_id,
+            "query": query,
+            "answer": answer,
+            "verification_status": status,
+            "confidence": confidence,
+            "citations": citations,
+            "matched_signals": matched_signals,
+            "rejected_signals": [],
+            "reasoning_path": ["query_received", "canonicalization", "dense_search", "lexical_search", "rrf_merge", "deduplication", "grounded_synthesis"],
+            "confidence_breakdown": {
+                "overall": confidence,
+                "accepted_count": len(matched_signals),
+                "rejected_count": 0,
+                "consensus": {
+                    "contradictions": [],
+                    "consensus_score": 1.0 if status == "VERIFIED" else 0.0,
+                    "disagreement_aware_synthesis": "Unified multi-source verification confirmed." if status == "VERIFIED" else "Insufficient verified evidence."
+                }
+            },
+            "consensus_analysis": {
+                "contradictions": [],
+                "consensus_score": 1.0 if status == "VERIFIED" else 0.0,
+                "disagreement_aware_synthesis": "Unified multi-source verification confirmed." if status == "VERIFIED" else "Insufficient verified evidence."
+            },
+            "retrieval_truth_payload": {
+                "layer": "UNIFIED_HYBRID_RETRIEVAL_TRUTH",
+                "trace_id": trace_id,
+                "query": query,
+                "accepted_signals": matched_signals,
+                "raw_signal_count": len(matched_signals),
+                "artifact_hash": hashlib.sha256(f"{query}|{status}|{trace_id}".encode()).hexdigest(),
+            },
+            "interpretation_payload": {
+                "layer": "GROUNDED_SEMANTIC_INTERPRETATION",
+                "trace_id": trace_id,
+                "answer": answer,
+                "verification_status": status,
+                "confidence": confidence,
+                "artifact_hash": hashlib.sha256(f"{answer}|{confidence}".encode()).hexdigest(),
+            },
+            "semantic_path": [
+                {
+                    "signal_id": s["signal_id"],
+                    "knowledge_id": s["knowledge_id"],
+                    "domain": s["domain"],
+                    "source_lineage": s["source_governance"]["lineage"],
+                }
+                for s in matched_signals
+            ],
+            "output_contract": {
+                "schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
+                "contract_bound": True,
+                "downstream_consumable": True,
+                "trace_id": trace_id,
+            },
+            "downstream_execution": {
+                "consumer": "TANTRA_EXECUTION_CHAIN",
+                "status": "READY_FOR_DOWNSTREAM" if status == "VERIFIED" else "REJECTED_NO_DOWNSTREAM_ACTION",
+                "trace_id": trace_id,
+            },
+            "bucket_proof": {
+                "event": "tantra_uniguru_intelligence_contract",
+                "trace_id": trace_id,
+                "verification_status": status,
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+            }
+        }
+    except Exception as exc:
+        logger.exception("Unified pipeline error in _execute_kosha_pipeline: %s", exc)
+        from kosha.deterministic_pipeline import run_deterministic_pipeline
+        return run_deterministic_pipeline(query=query, domain_hint=domain_hint, trace_id=trace_id, user_id=user_id)
 
     from kosha.kosha_loader import KoshaLoader
     from kosha.kosha_retriever import KoshaRetriever
@@ -2475,16 +2715,115 @@ def _execute_kosha_pipeline(
 )
 def new_rag_endpoint(request: NewRagRequest, token: HTTPAuthorizationCredentials = Depends(security)) -> Dict[str, Any]:
     try:
-        allowed_key = os.getenv("EXTERNAL_API_SECRET_KEY", "uniguru_secret_123")
-        if token.credentials != allowed_key:
+        allowed_key = os.getenv("EXTERNAL_API_SECRET_KEY", "").strip()
+        if not allowed_key or token.credentials != allowed_key:
             raise HTTPException(status_code=401, detail="Unauthorized Access. Invalid API Key.")
 
-        return _execute_kosha_pipeline(
+        conversation_context = {
+            "session_id": request.session_id,
+            "caller": request.caller,
+        }
+        conversation_state = conversation_router._get_session_memory(conversation_context)
+        is_conversational = conversation_router._conversation_answer(request.query, conversation_state) is not None
+        if is_conversational:
+            conversational = conversation_router.route_query(request.query, conversation_context)
+            answer = str(conversational.get("answer") or "").strip()
+            return {
+                "query": request.query,
+                "answer": answer,
+                "final_answer": answer,
+                "confidence": None,
+                "signals": [],
+                "status": "success",
+                "verification_status": "NOT_REQUIRED",
+                "kosha_attempted": False,
+                "fallback_to_llm": False,
+                "routing": conversational.get("routing"),
+            }
+
+        kosha_result = _execute_kosha_pipeline(
             query=request.query,
             domain_hint=request.domain,
             top_k=5,
             allow_generated_verse=bool(request.allow_generated_verse),
         )
+        adapted = language_adapter.normalize_query(request.query)
+        kosha_result.setdefault("normalized_query", adapted.normalized_query)
+        # Keep the legacy /new_rag field name while deriving it only from the
+        # evidence actually used by deterministic synthesis.
+        selected_ids = set(kosha_result.get("evidence_signal_ids") or [])
+        legacy_signals = []
+        for signal in kosha_result.get("matched_signals") or []:
+            if signal.get("signal_id") not in selected_ids:
+                continue
+            compatible_signal = dict(signal)
+            source = str(compatible_signal.get("source") or "")
+            normalized_source = source.replace("\\", "/")
+            knowledge_marker = "/knowledge/"
+            marker_index = normalized_source.casefold().rfind(knowledge_marker)
+            if marker_index >= 0:
+                compatible_signal["source"] = normalized_source[marker_index + len(knowledge_marker):]
+            legacy_signals.append(compatible_signal)
+        kosha_result["signals"] = legacy_signals
+        if kosha_result.get("verification_status") == "NO_VERIFIED_KNOWLEDGE":
+            hybrid_response = service.ask(
+                user_query=request.query,
+                session_id=request.session_id,
+                context={"caller": request.caller or "new_rag"},
+                allow_web_retrieval=False,
+            )
+            retrieval_trace = hybrid_response.get("retrieval_trace") or {}
+            if (
+                hybrid_response.get("verification_status") in {"VERIFIED", "VERIFIED_PARTIAL", "PARTIAL"}
+                and retrieval_trace.get("match_found")
+                and str(hybrid_response.get("answer") or "").strip()
+            ):
+                evidence_sources = retrieval_trace.get("evidence_sources") or []
+                signals = [
+                    {
+                        "signal_id": f"hybrid_{index + 1}",
+                        "type": "LOCAL_MARKDOWN_EVIDENCE",
+                        "content": evidence.get("excerpt") or "",
+                        "source": evidence.get("path") or evidence.get("file") or "unknown",
+                        "confidence": float(evidence.get("evidence_coverage") or 0.0),
+                        "trace": {
+                            "method": "verified_hybrid_retrieval",
+                            "chunk_id": evidence.get("chunk_id"),
+                            "page_number": evidence.get("page_number"),
+                            "chapter": evidence.get("chapter"),
+                        },
+                    }
+                    for index, evidence in enumerate(evidence_sources)
+                    if isinstance(evidence, dict) and str(evidence.get("excerpt") or "").strip()
+                ]
+                return {
+                    "query": request.query,
+                    "answer": hybrid_response["answer"],
+                    "final_answer": hybrid_response["answer"],
+                    "confidence": None,
+                    "confidence_breakdown": {
+                        "retrieval_score": retrieval_trace.get("retrieval_score"),
+                        "reranker_score": retrieval_trace.get("reranker_score"),
+                        "evidence_coverage": retrieval_trace.get("evidence_coverage"),
+                        "answer_confidence": None,
+                    },
+                    "signals": signals,
+                    "matched_signals": signals,
+                    "verification_status": hybrid_response["verification_status"],
+                    "status": "success",
+                    "kosha_attempted": True,
+                    "fallback_to_llm": False,
+                    "fallback_reason": "no_valid_kosha_signals; verified_hybrid_kb_evidence_found",
+                    "retrieval_trace": retrieval_trace,
+                    "kosha_result": kosha_result,
+                    "output_contract": {
+                        "schema": "UNIGURU_HYBRID_RAG_CONTRACT_V1",
+                        "contract_bound": True,
+                        "downstream_consumable": True,
+                        "free_form_output": False,
+                    },
+                }
+        return kosha_result
     except Exception as e:
         logger.error(f"Error querying FAISS Kosha RAG: {e}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -2539,8 +2878,8 @@ def log_to_bucket(event_id, query, signals_used, final_answer, confidence, syste
 )
 def new_query_endpoint(request: CoreRequest, token: HTTPAuthorizationCredentials = Depends(security)) -> Dict[str, Any]:
     try:
-        allowed_key = os.getenv("EXTERNAL_API_SECRET_KEY", "uniguru_secret_123")
-        if token.credentials != allowed_key:
+        allowed_key = os.getenv("EXTERNAL_API_SECRET_KEY", "").strip()
+        if not allowed_key or token.credentials != allowed_key:
             raise HTTPException(status_code=401, detail="Unauthorized Access.")
 
         final_payload = _execute_kosha_pipeline(
@@ -2579,65 +2918,76 @@ def new_query_endpoint(request: CoreRequest, token: HTTPAuthorizationCredentials
 )
 def user_logout(request: Request) -> Dict[str, Any]:
     """Handle user logout."""
-    # Try to get token from Authorization header
-    auth_header = request.headers.get("Authorization", "")
-    token = auth_header.replace("Bearer ", "") if auth_header.startswith("Bearer ") else None
-    
-    # If Supabase is enabled, logout from Supabase
-    if supabase_auth.enabled and token:
-        supabase_auth.logout(token)
+    token = _request_bearer_token(request)
+    if token:
+        if _DEMO_AUTH_ENABLED:
+            _DEMO_AUTH_TOKENS.pop(token, None)
+        auth_service.logout(token)
     
     return {"status": "ok", "message": "Logged out successfully"}
 
 
-_load_metrics_snapshot()
-
-
-# Mount Intelligence Query Router
-try:
-    from routers.query_router import router as intelligence_query_router
-    app.include_router(intelligence_query_router)
-except Exception:
-    try:
-        from backend.routers.query_router import router as intelligence_query_router
-        app.include_router(intelligence_query_router)
-    except Exception as exc:
-        pass
+@app.post(
+    "/rag/debug",
+    tags=["Core Intelligence"],
+    summary="Developer / Admin RAG Retrieval Debug Inspection",
+    description="Inspect query canonicalization, scope, dense scores, lexical scores, and candidate rankings."
+)
+def rag_debug_endpoint(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, Any]:
+    query = str(request_body.get("query") or "").strip()
+    if not query:
+        raise HTTPException(status_code=400, detail="query is required")
+    from retrieval.unified_rag_engine import get_unified_engine
+    engine = get_unified_engine()
+    retrieval_res = engine.retrieve(query, top_k=int(request_body.get("top_k", 5)))
+    full_answer_res = engine.answer_query(query, top_k=int(request_body.get("top_k", 5)))
+    return {
+        "query": query,
+        "scope": retrieval_res.get("scope"),
+        "is_grounded": retrieval_res.get("is_grounded"),
+        "max_similarity": retrieval_res.get("max_similarity"),
+        "max_lexical": retrieval_res.get("max_lexical"),
+        "top_candidates": retrieval_res.get("candidates", [])[:10],
+        "final_evidence": retrieval_res.get("top_evidence", []),
+        "synthesized_answer": full_answer_res.get("answer"),
+        "verification_status": full_answer_res.get("verification_status"),
+        "citations": full_answer_res.get("citations"),
+    }
 
 
 @app.post(
-    "/ask_uniguru",
-    tags=["Core Intelligence"],
-    summary="Ask UniGuru (Compatibility Alias)"
+    "/feedback",
+    tags=["Feedback & Continuous Learning"],
+    summary="Record User Feedback",
+    description="Captures user rating (thumbs up/down) and failure classifications to build continuous learning datasets."
 )
-def ask_uniguru_compat(request: AskRequest, raw_request: Request) -> Dict[str, Any]:
-    return ask(request, raw_request)
+def record_feedback_endpoint(feedback_body: Dict[str, Any], raw_request: Request) -> Dict[str, Any]:
+    from memory.user_memory_store import get_user_memory_store
+    user_id = str(feedback_body.get("userId") or raw_request.headers.get("X-User-Id") or "demo-user").strip()
+    session_id = str(feedback_body.get("sessionId") or "default_session").strip()
+    query = str(feedback_body.get("query") or "").strip()
+    answer = str(feedback_body.get("answer") or "").strip()
+    is_helpful = bool(feedback_body.get("isHelpful", True))
+    failure_type = feedback_body.get("failureType")
+    corrected_answer = feedback_body.get("correctedAnswer")
+    routing_decision = feedback_body.get("routingDecision")
+
+    store = get_user_memory_store()
+    rec = store.record_feedback(
+        user_id=user_id,
+        session_id=session_id,
+        query=query,
+        answer=answer,
+        is_helpful=is_helpful,
+        failure_type=failure_type,
+        corrected_answer=corrected_answer,
+        routing_decision=routing_decision,
+    )
+    return {
+        "status": "ok",
+        "feedbackId": rec.feedback_id,
+        "message": "Feedback recorded successfully for continuous evaluation.",
+    }
 
 
-@app.get("/ollama/status", tags=["Ollama Integration"], summary="Check Ollama Service Status")
-def get_ollama_status():
-    try:
-        from integrations.ollama_client import OllamaClient
-        client = OllamaClient()
-        return {
-            "enabled": client.enabled,
-            "base_url": client.base_url,
-            "model": client.model,
-        }
-    except Exception as e:
-        return {"enabled": False, "error": str(e)}
-
-
-@app.post("/ollama/chat", tags=["Ollama Integration"], summary="Chat directly with Ollama")
-def chat_with_ollama(messages: List[Dict[str, str]] = Body(...)):
-    try:
-        from integrations.ollama_client import OllamaClient
-        client = OllamaClient()
-        response = client.chat(messages)
-        if response:
-            return {"response": response}
-        raise HTTPException(status_code=502, detail="Ollama service unavailable or returned empty response.")
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-
+_load_metrics_snapshot()

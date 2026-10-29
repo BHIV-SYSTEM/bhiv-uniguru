@@ -10,7 +10,7 @@ The frontend is fully configured for Vercel deployment.
 The FastAPI server is built asynchronously and can be pushed gracefully to Render.
 - **Requirements**: `requirements.txt` maps all required libraries (`uvicorn`, `fastapi`, `pydantic`, `groq`, `requests`).
 - **Start Command**: `uvicorn service.api:app --host 0.0.0.0 --port 10000`
-- **Integrations**: Make sure to import your `.env` variables (like `UNIGURU_LLM_API_KEY`, `SUPABASE_ANON_KEY`, `GROQ_API_KEY`, `EXTERNAL_API_SECRET_KEY`) directly into the Render Environment panel.
+- **Integrations**: Make sure to import your `.env` variables (like `UNIGURU_LLM_API_KEY`, `GROQ_API_KEY`, `EXTERNAL_API_SECRET_KEY`) directly into the Render Environment panel.
 
 ## 3. Data Sync Strategy
 Because the backend now scans `backend/data/kosha/` automatically on runtime, you can either:

@@ -10,7 +10,7 @@ These are repository configuration values. They do not establish that either dep
 
 ## Required deployment configuration
 
-Set `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `UNIGURU_API_TOKEN`, and `UNIGURU_API_TOKENS` in the deployment secret store. Configure the production frontend origin in `UNIGURU_CORS_ORIGINS`. Production startup fails if the required Supabase auth provider or CORS origin is missing.
+Set `UNIGURU_API_TOKEN` and `UNIGURU_API_TOKENS` in the deployment secret store. Configure the production frontend origin in `UNIGURU_CORS_ORIGINS`. User authentication is managed natively via durable SQLite storage (defaulting to `/var/lib/uniguru/users.sqlite3`), eliminating any external authentication provider dependency.
 
 Chat storage uses `UNIGURU_CHAT_DB_PATH` under `/var/lib/uniguru`; the deployment must mount persistent storage at that path. Do not place secrets in committed environment files.
 
@@ -26,7 +26,7 @@ MDU validation is an optional ecosystem integration, not a startup dependency fo
 - **Local development:** Start the API and frontend with `backend/.env.example` and local service URLs. Development CORS origins are localhost only.
 - **Local demo:** Use demo authentication only when explicitly enabled for a non-production, non-Render environment. Never copy demo credentials into production.
 - **Test:** Tests use isolated fixtures/mocks and do not establish production authentication, external service access, or deployment readiness.
-- **Production:** Set `UNIGURU_ENVIRONMENT=production`, keep demo authentication disabled, configure real Supabase and API auth values in the secret store, use the production CORS origin, and mount durable chat storage at `/var/lib/uniguru`. The current API renders a local internal demo LLM fallback unless an actual production LLM endpoint is configured; readiness reports this fallback as available, so `/ready` alone does not prove a live model dependency.
+- **Production:** Set `UNIGURU_ENVIRONMENT=production`, keep demo authentication disabled, configure real API auth values in the secret store, use the production CORS origin, and mount durable data storage at `/var/lib/uniguru` (used for both `chats.sqlite3` and `users.sqlite3`). The current API renders a local internal demo LLM fallback unless an actual production LLM endpoint is configured; readiness reports this fallback as available, so `/ready` alone does not prove a live model dependency.
 
 ## Local development
 

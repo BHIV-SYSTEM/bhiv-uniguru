@@ -15,7 +15,7 @@ uniguru_v2/
 │   ├── service/
 │   │   ├── api.py              [REFACTORED] Live Unified Endpoints (Protected & Fallback Enabled)
 │   │   └── live_service.py     (Unified Orchestration)
-│   ├── .env                    (Secure LLM + Supabase Keys)
+│   ├── .env                    (Secure LLM Keys)
 │   ├── requirements.txt        
 │   └── main.py                 (FastAPI Boot sequence)
 └── yashika_reviewpacket/       (This packet containing live proofs)
