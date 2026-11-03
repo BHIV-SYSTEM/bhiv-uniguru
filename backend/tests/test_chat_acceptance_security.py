@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import os
+import json
+import sqlite3
+import mongomock
 import pytest
 from fastapi import HTTPException
 from starlette.requests import Request
@@ -28,8 +31,9 @@ def _request(token: str | None = None) -> Request:
 
 
 @pytest.fixture
-def chat_test_state(monkeypatch, tmp_path):
-    store = ChatSessionStore(tmp_path / "chats.sqlite3")
+def chat_test_state(monkeypatch):
+    database = mongomock.MongoClient()["test_chats"]
+    store = ChatSessionStore(database=database)
     monkeypatch.setattr(api, "_CHAT_SESSIONS", store)
     monkeypatch.setattr(api, "_DEMO_AUTH_ENABLED", True)
     monkeypatch.setattr(
@@ -48,14 +52,48 @@ def chat_test_state(monkeypatch, tmp_path):
         "id": "chat-b", "userId": "user-b", "title": "B", "guru": {"_id": "g"},
         "createdAt": "now", "lastActivity": "now", "messages": [],
     }
-    return store
+    return store, database
 
 
-def test_chat_store_survives_reopen_and_keeps_owner(chat_test_state, tmp_path):
-    reopened = ChatSessionStore(tmp_path / "chats.sqlite3")
+def test_chat_store_survives_reopen_and_keeps_owner(chat_test_state):
+    store, database = chat_test_state
+    reopened = ChatSessionStore(database=database)
     assert reopened["chat-a"]["userId"] == "user-a"
     assert reopened["chat-a"]["messages"] == []
     assert {chat["userId"] for chat in reopened.values()} == {"user-a", "user-b"}
+
+
+def test_legacy_sqlite_chats_are_imported_once(tmp_path):
+    source = tmp_path / "legacy_chats.sqlite3"
+    payload = {
+        "id": "legacy-chat",
+        "userId": "legacy-user",
+        "title": "Imported",
+        "lastActivity": "2024-01-01",
+        "messages": [],
+    }
+    with sqlite3.connect(source) as connection:
+        connection.execute(
+            """CREATE TABLE chat_sessions (
+                   chat_id TEXT PRIMARY KEY, owner_id TEXT NOT NULL,
+                   payload TEXT NOT NULL, updated_at TEXT NOT NULL
+               )"""
+        )
+        connection.execute(
+            "INSERT INTO chat_sessions VALUES (?, ?, ?, ?)",
+            ("legacy-chat", "legacy-user", json.dumps(payload), "2024-01-01"),
+        )
+
+    database = mongomock.MongoClient()["legacy_chat_migration"]
+    store = ChatSessionStore(database=database, legacy_db_path=source)
+    assert store["legacy-chat"] == payload
+
+    database["chat_sessions"].update_one(
+        {"_id": "legacy-chat"},
+        {"$set": {"payload.title": "Changed in Mongo"}},
+    )
+    reopened = ChatSessionStore(database=database, legacy_db_path=source)
+    assert reopened["legacy-chat"]["title"] == "Changed in Mongo"
 
 
 def test_user_a_and_b_can_only_read_their_own_chats(chat_test_state):
@@ -68,6 +106,7 @@ def test_user_a_and_b_can_only_read_their_own_chats(chat_test_state):
 
 
 def test_chat_update_and_delete_require_ownership(chat_test_state):
+    chat_test_state, _database = chat_test_state
     with pytest.raises(HTTPException) as exc:
         api.chat_update("chat-b", {"title": "hijack"}, _request("token-a"))
     assert exc.value.status_code == 404
@@ -85,11 +124,13 @@ def test_chat_update_and_delete_require_ownership(chat_test_state):
 
 
 def test_chat_lists_never_fall_back_to_another_users_data(chat_test_state):
+    chat_test_state, _database = chat_test_state
     assert [c["id"] for c in api.chat_list(_request("token-a"))["chats"]] == ["chat-a"]
     assert [c["id"] for c in api.chat_all_with_data(_request("token-b"))["chats"]] == ["chat-b"]
 
 
 def test_chat_create_uses_verified_identity_not_request_user_id(chat_test_state):
+    chat_test_state, _database = chat_test_state
     created = api.chat_create(
         {"guruId": "unowned-or-default-guru", "userId": "user-b"},
         _request("token-a"),
@@ -99,6 +140,7 @@ def test_chat_create_uses_verified_identity_not_request_user_id(chat_test_state)
 
 
 def test_chat_message_uses_verified_identity_and_persists_trace(chat_test_state, monkeypatch):
+    chat_test_state, _database = chat_test_state
     monkeypatch.setattr(
         api.conversation_router,
         "route_query",
@@ -126,6 +168,8 @@ def test_auth_missing_or_invalid_token_is_denied(monkeypatch):
 def test_invalid_token_is_denied_and_local_demo_token_is_explicit(monkeypatch):
     monkeypatch.setattr(api, "_DEMO_AUTH_ENABLED", True)
     monkeypatch.setattr(api, "_DEMO_AUTH_TOKENS", {"valid-local": {"id": "local-user"}})
+    monkeypatch.setattr(api.auth_service, "verify_token", lambda _token: None)
+    monkeypatch.setattr(api.auth_service, "logout", lambda _token: True)
     with pytest.raises(HTTPException) as exc:
         api._require_user_identity(_request("not-valid"))
     assert exc.value.status_code == 401

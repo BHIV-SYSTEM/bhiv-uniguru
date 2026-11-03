@@ -1,5 +1,6 @@
 annotated-doc==0.0.4
 PyMuPDF==1.24.14
+dnspython==2.7.0
 annotated-types==0.7.0
 anyio==4.12.1
 bcrypt==5.0.0
@@ -45,6 +46,7 @@ pydantic==2.12.5
 pydantic_core==2.41.5
 Pygments==2.19.2
 pyiceberg==0.11.1
+pymongo==4.11.1
 PyJWT==2.12.1
 pyparsing==3.3.2
 pyroaring==1.0.4

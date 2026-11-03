@@ -2,14 +2,16 @@ from __future__ import annotations
 
 import base64
 import json
+import sqlite3
+import mongomock
 import pytest
 from service.auth_service import LocalAuthService
 
 
 @pytest.fixture
 def auth_service(tmp_path):
-    db_file = tmp_path / "test_users.sqlite3"
-    return LocalAuthService(db_path=db_file)
+    client = mongomock.MongoClient()
+    return LocalAuthService(database=client["test_users"])
 
 
 def test_signup_and_login_success(auth_service):
@@ -87,3 +89,43 @@ def test_invalid_and_empty_token_returns_none(auth_service):
     assert auth_service.verify_token("") is None
     assert auth_service.verify_token("   ") is None
     assert auth_service.verify_token("nonexistent-token-xyz") is None
+
+
+def test_legacy_sqlite_users_and_sessions_are_imported_once(tmp_path):
+    source = tmp_path / "legacy_users.sqlite3"
+    password_hash = LocalAuthService._hash_password("legacy-password")
+    with sqlite3.connect(source) as connection:
+        connection.executescript(
+            """CREATE TABLE users (
+                   id TEXT PRIMARY KEY, email TEXT UNIQUE NOT NULL, name TEXT NOT NULL,
+                   password_hash TEXT, created_at TEXT NOT NULL, is_active INTEGER NOT NULL
+               );
+               CREATE TABLE sessions (
+                   token TEXT PRIMARY KEY, user_id TEXT NOT NULL, created_at TEXT NOT NULL,
+                   expires_at TEXT
+               );"""
+        )
+        connection.execute(
+            "INSERT INTO users VALUES (?, ?, ?, ?, ?, ?)",
+            ("legacy-user", "legacy@example.com", "Legacy User", password_hash, "2024-01-01", 1),
+        )
+        connection.execute(
+            "INSERT INTO sessions VALUES (?, ?, ?, ?)",
+            ("legacy-token", "legacy-user", "2024-01-01", None),
+        )
+
+    database = mongomock.MongoClient()["legacy_migration"]
+    service = LocalAuthService(database=database, legacy_db_path=source)
+
+    assert service.verify_token("legacy-token") == {
+        "id": "legacy-user",
+        "email": "legacy@example.com",
+        "name": "Legacy User",
+    }
+    assert service.login_with_email("legacy@example.com", "legacy-password")["success"]
+
+    database["users"].update_one(
+        {"_id": "legacy-user"}, {"$set": {"name": "Changed in Mongo"}}
+    )
+    reopened = LocalAuthService(database=database, legacy_db_path=source)
+    assert reopened.verify_token("legacy-token")["name"] == "Changed in Mongo"

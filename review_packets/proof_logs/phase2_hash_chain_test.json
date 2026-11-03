@@ -27,13 +27,13 @@
       "memory_classification": "transient",
       "trace_id": "phase2_hash_chain_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-06T11:56:55.768011Z",
+      "updated_at": "2026-11-03T10:06:45.231404Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [],
     "retrieval_truth_hash": "bba7cebe2ca0e162b50adb0aacf05267f7ea4adae4b8fa9ad29d5709c1999c4f",
     "semantic_path": [],
-    "timestamp": "2026-10-06T11:56:54.589393Z",
+    "timestamp": "2026-11-03T10:06:43.373635Z",
     "trace_continuity": {
       "bucket_proof": "phase2_hash_chain_test",
       "contract_emission": "phase2_hash_chain_test",
@@ -93,12 +93,12 @@
   },
   "enforcement_stats": {
     "rejected_entries": 19,
-    "total_entries": 74,
-    "valid_entries": 55
+    "total_entries": 77,
+    "valid_entries": 58
   },
   "evidence_signal_ids": [],
   "fallback_to_llm": false,
-  "generated_at": "2026-10-06T11:56:54.589393Z",
+  "generated_at": "2026-11-03T10:06:43.373635Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
     "artifact_hash": "bb7fedf4ea1cff655eb63a5b4bcd439107e1380e79b75040c5fff5356fdbd338",
@@ -142,7 +142,7 @@
     "deterministic": true,
     "max_hops": 5,
     "paths": [],
-    "source": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/ontology/seed_entities.json",
+    "source": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/ontology/seed_entities.json",
     "start_nodes": [
       "bhagavad gita"
     ],
@@ -207,7 +207,7 @@
       "domain": "gitas",
       "method": "retriever"
     },
-    "generated_at": "2026-10-06T11:56:54.589393Z",
+    "generated_at": "2026-11-03T10:06:43.373635Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -227,6 +227,7 @@
         "Agni",
         "Agni Purana",
         "Ahimsa",
+        "Ashrama",
         "Assembly",
         "Atharvaveda",
         "Atman",
@@ -239,17 +240,20 @@
         "Brahma Purana",
         "Brahman",
         "Brahmanda Purana",
+        "Brihadaranyaka Upanishad",
         "Chandogya Upanishad",
         "City",
         "Decision Making",
         "Devi",
         "Dharma",
         "Ecology",
+        "Enforcement",
         "Ganga",
         "Garuda Purana",
         "Governance",
         "Guru",
         "Indra",
+        "Isha Upanishad",
         "Jnana Yoga",
         "Justice",
         "Kali Yuga",
@@ -270,6 +274,7 @@
         "Moksha",
         "Mundaka Upanishad",
         "Narada Purana",
+        "Narada Smriti",
         "Narayana",
         "Om",
         "Padma Purana",
@@ -314,8 +319,8 @@
         "Yoga",
         "Yuga"
       ],
-      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
-      "contradiction_event_count": 92,
+      "checkpoint_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "contradiction_event_count": 94,
       "event": {
         "canonical_authority_granted": false,
         "contradiction_pressure": 0.0,
@@ -326,7 +331,7 @@
         "updated_at": "2026-10-02T13:26:40.112748Z"
       },
       "event_hash": "13abe68991867f936274e3ff5d394cc9eba4ed69bc5300713c973af58241c89e",
-      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "event_log_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_events.jsonl",
       "governance_decision": {
         "canonical_authority_granted": false,
         "confidence_floor": 0.55,
@@ -351,18 +356,18 @@
       "idempotent_replay": true,
       "lineage_traceable": true,
       "mutation_id": "bf7c609ad4ecc5b9c7ccfc81c730b766ccff7367e7e1d37b73f20e6ec7e15343",
-      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "2e88f629ec74e8b278b77e6fc0ef39c1ec92b419d103a3c4c5362c4ae3a4e5e2",
+        "last_event_hash": "398dec847d44c6d16882b0ea467c94f3d7e1db8cd339235730a0b9ffa1dcf2d8",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "91a1dc3370e13348f4536ae6d0f58a03dfc211e3f2a647b58034e30c643bded3",
-      "transient_event_count": 1010
+      "state_hash": "61af979712814e9ecd906be3ed6a17522c8e540c20224ce801806ddfdb79fc9b",
+      "transient_event_count": 1076
     },
     "entity_continuity": {},
     "event": {
@@ -374,13 +379,13 @@
       "memory_classification": "transient",
       "trace_id": "phase2_hash_chain_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-10-06T11:56:55.768011Z",
+      "updated_at": "2026-11-03T10:06:45.231404Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
     "replayable": true,
     "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
-    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
+    "state_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/semantic_memory_state.json",
     "unresolved_threads": [
       {
         "contradiction_pressure": 0.0,
@@ -388,17 +393,18 @@
         "rejected_signal_count": 0,
         "state": "open",
         "trace_id": "phase2_hash_chain_test",
-        "updated_at": "2026-10-06T11:56:55.768011Z",
+        "updated_at": "2026-11-03T10:06:45.231404Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
-      "continuity_score": 1.0,
-      "last_seen": "2026-10-06T11:56:55.768011Z",
-      "queries": 330,
+      "continuity_score": 0.75,
+      "last_seen": "2026-11-03T10:06:45.231404Z",
+      "queries": 17,
       "trace_ids": [
-        "ecosystem_c6be6c9f77bb",
+        "ecosystem_c3cf30354a6e",
+        "ecosystem_2ef36abefc28",
         "ecosystem_replay_test",
         "ecosystem_mitra_test",
         "phase2_e2e_test",
@@ -409,23 +415,7 @@
         "contract_trace_abc",
         "mitra_trace_xyz",
         "phase2_determinism_test",
-        "phase2_hash_chain_test",
-        "schema_stable_1",
-        "test_sanskrit_dharma",
-        "tantra_sdk_runtime_test",
-        "ecosystem_2554e662d14b",
-        "ecosystem_72d478d16131",
-        "ecosystem_0aa936879971",
-        "ecosystem_39b58ec827ea",
-        "ecosystem_fcedf28aa7e1",
-        "ecosystem_a7ae4b8dd276",
-        "ecosystem_19cb53df65e6",
-        "ecosystem_8760b9a49002",
-        "ecosystem_4f9d655629ac",
-        "ecosystem_53b2b66ab6c5",
-        "ecosystem_f7808f2d2942",
-        "ecosystem_f01a0a3ac6dd",
-        "ecosystem_21374062ef62"
+        "phase2_hash_chain_test"
       ]
     }
   },

@@ -3,12 +3,20 @@ from __future__ import annotations
 import base64
 import json
 import os
+import mongomock
 import pytest
 from starlette.requests import Request
 
 os.environ["UNIGURU_API_AUTH_REQUIRED"] = "false"
 
 from service import api
+from service.auth_service import LocalAuthService
+
+
+@pytest.fixture(autouse=True)
+def mongo_auth_service(monkeypatch):
+    database = mongomock.MongoClient()["test_api_auth"]
+    monkeypatch.setattr(api, "auth_service", LocalAuthService(database=database))
 
 
 def _request(token: str | None = None) -> Request:
