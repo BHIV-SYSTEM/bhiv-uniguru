@@ -27,13 +27,13 @@
       "memory_classification": "transient",
       "trace_id": "phase2_e2e_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-11-03T10:05:29.388820Z",
+      "updated_at": "2026-11-03T14:50:08.604980Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [],
     "retrieval_truth_hash": "deebe63fddf96c0c8dbc5d822875a3810048817e75158f3a27a2ca4cbde0c664",
     "semantic_path": [],
-    "timestamp": "2026-11-03T10:05:26.388978Z",
+    "timestamp": "2026-11-03T14:50:07.410030Z",
     "trace_continuity": {
       "bucket_proof": "phase2_e2e_test",
       "contract_emission": "phase2_e2e_test",
@@ -98,7 +98,7 @@
   },
   "evidence_signal_ids": [],
   "fallback_to_llm": false,
-  "generated_at": "2026-11-03T10:05:26.388978Z",
+  "generated_at": "2026-11-03T14:50:07.410030Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
     "artifact_hash": "160b01b2699116f4236a2d748c5ff997bba7503bfd53e4c9f80897d749abdbca",
@@ -207,7 +207,7 @@
       "domain": "gitas",
       "method": "retriever"
     },
-    "generated_at": "2026-11-03T10:05:26.388978Z",
+    "generated_at": "2026-11-03T14:50:07.410030Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -227,6 +227,7 @@
         "Agni",
         "Agni Purana",
         "Ahimsa",
+        "Ashrama",
         "Assembly",
         "Atharvaveda",
         "Atman",
@@ -239,17 +240,20 @@
         "Brahma Purana",
         "Brahman",
         "Brahmanda Purana",
+        "Brihadaranyaka Upanishad",
         "Chandogya Upanishad",
         "City",
         "Decision Making",
         "Devi",
         "Dharma",
         "Ecology",
+        "Enforcement",
         "Ganga",
         "Garuda Purana",
         "Governance",
         "Guru",
         "Indra",
+        "Isha Upanishad",
         "Jnana Yoga",
         "Justice",
         "Kali Yuga",
@@ -270,6 +274,7 @@
         "Moksha",
         "Mundaka Upanishad",
         "Narada Purana",
+        "Narada Smriti",
         "Narayana",
         "Om",
         "Padma Purana",
@@ -315,7 +320,7 @@
         "Yuga"
       ],
       "checkpoint_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
-      "contradiction_event_count": 92,
+      "contradiction_event_count": 94,
       "event": {
         "canonical_authority_granted": false,
         "contradiction_pressure": 0.0,
@@ -355,14 +360,14 @@
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "8fb9102f1cfc8fa9dc55960bd09c9fa150f33ebba8ed286972f33ce43289c333",
+        "last_event_hash": "7c76b0ab88372a77059a03a4a1dbaaec5a9fe364dcaa4a4c2f941a79aac34fd0",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "0a8985fee111025166f93f29763e4c72c6d16f2af1b4d3122d5f410b4f09e6f3",
-      "transient_event_count": 1074
+      "state_hash": "76637b2e2345699147346a316bbcdb748eeade9752446b9c58d377d6ada5c56d",
+      "transient_event_count": 1077
     },
     "entity_continuity": {},
     "event": {
@@ -374,7 +379,7 @@
       "memory_classification": "transient",
       "trace_id": "phase2_e2e_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-11-03T10:05:29.388820Z",
+      "updated_at": "2026-11-03T14:50:08.604980Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
@@ -388,21 +393,33 @@
         "rejected_signal_count": 0,
         "state": "open",
         "trace_id": "phase2_e2e_test",
-        "updated_at": "2026-11-03T10:05:29.388820Z",
+        "updated_at": "2026-11-03T14:50:08.604980Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
-      "continuity_score": 0.35,
-      "last_seen": "2026-11-03T10:05:29.388820Z",
-      "queries": 6,
+      "continuity_score": 0.95,
+      "last_seen": "2026-11-03T14:50:08.604980Z",
+      "queries": 28,
       "trace_ids": [
         "ecosystem_c3cf30354a6e",
         "ecosystem_2ef36abefc28",
         "ecosystem_replay_test",
         "ecosystem_mitra_test",
-        "phase2_e2e_test"
+        "phase2_e2e_test",
+        "phase2_replay_test",
+        "phase2_mitra_test",
+        "phase2_proof_emit_test",
+        "phase2_replay_emit_test",
+        "contract_trace_abc",
+        "mitra_trace_xyz",
+        "phase2_determinism_test",
+        "phase2_hash_chain_test",
+        "schema_stable_1",
+        "test_sanskrit_dharma",
+        "tantra_sdk_runtime_test",
+        "ecosystem_fa36bb21ae26"
       ]
     }
   },

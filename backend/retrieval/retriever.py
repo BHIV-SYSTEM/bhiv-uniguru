@@ -1,5 +1,6 @@
 import json
 import hashlib
+import logging
 import os
 import math
 import re
@@ -30,6 +31,8 @@ _DENSE_UNAVAILABLE_KEY: Optional[Tuple[Any, ...]] = None
 _DENSE_STATE_LOCK = threading.Lock()
 _SOURCE_MANIFEST_CACHE: Dict[str, Tuple[Tuple[Any, ...], str]] = {}
 _SOURCE_MANIFEST_LOCK = threading.Lock()
+_LOGGER = logging.getLogger(__name__)
+MIN_EVIDENCE_COVERAGE = 0.25
 
 
 def _active_index_paths() -> Tuple[Any, Any, Any]:
@@ -271,6 +274,44 @@ STOPWORDS = {
     "could",
     "would",
     "should",
+    "be",
+    "been",
+    "being",
+    "do",
+    "does",
+    "did",
+    "doing",
+    "has",
+    "have",
+    "had",
+    "will",
+    "won",
+    "mean",
+    "means",
+    "this",
+    "that",
+    "these",
+    "those",
+    "s",
+    "exact",
+    "current",
+    "currently",
+    "today",
+    "tomorrow",
+    "latest",
+    "earlier",
+    "ask",
+    "asking",
+    "page",
+    "private",
+    "textbook",
+    "answer",
+    "answers",
+    "make",
+    "repair",
+    "recommend",
+    "in",
+    "there",
 }
 
 
@@ -339,6 +380,24 @@ class AdvancedRetriever:
             if token not in STOPWORDS
         ))
 
+    def _rare_topic_terms(self, terms: List[str]) -> set[str]:
+        documents = getattr(self, "knowledge_map", {})
+        if len(documents) < 20 or not terms:
+            return set()
+
+        frequencies = {term: 0 for term in terms}
+        for key, content in documents.items():
+            document_tokens = set(self._tokens(f"{key} {content}"))
+            for term in terms:
+                if self._token_forms(term) & document_tokens:
+                    frequencies[term] += 1
+
+        max_document_frequency = max(2, math.ceil(len(documents) * 0.05))
+        return {
+            term for term, frequency in frequencies.items()
+            if frequency <= max_document_frequency
+        }
+
     @staticmethod
     def _source_entity_terms(query: str) -> set[str]:
         source_suffixes = r"purana|purāṇa|sutra|sūtra|gita|gītā|upanishad|veda"
@@ -358,6 +417,12 @@ class AdvancedRetriever:
 
         source_terms = self._source_entity_terms(query)
         topic_terms = [token for token in tokens if not (self._token_forms(token) & source_terms)]
+        if (
+            re.search(r"\b(?:current|currently|today|tomorrow|latest|live|now)\b", query.casefold())
+            and re.search(r"\b(?:weather|temperature|price|score|won|forecast)\b", query.casefold())
+        ):
+            return []
+        rare_topic_terms = self._rare_topic_terms(topic_terms)
         query_forms = {token: self._token_forms(token) for token in tokens}
         document_rows = []
         dense_by_key: Dict[str, Dict[str, Any]] = {}
@@ -374,10 +439,12 @@ class AdvancedRetriever:
                 continue
             matched_topics = [
                 term for term in topic_terms
-                if self._token_forms(term) & chunk_tokens
+                if self._token_forms(term) & combined_tokens
             ]
             minimum_dense_score = float(os.getenv("UNIGURU_DENSE_SCORE_MIN", "0.35"))
             if source_terms and topic_terms and not matched_topics:
+                continue
+            if rare_topic_terms and not rare_topic_terms.intersection(matched_topics):
                 continue
             if not matched_topics and float(chunk["score"]) < minimum_dense_score:
                 continue
@@ -421,8 +488,13 @@ class AdvancedRetriever:
                 continue
 
             matched_terms = [token for token in tokens if query_forms[token] & document_forms]
-            matched_topics = [token for token in topic_terms if query_forms[token] & content_token_set]
+            matched_topics = [
+                token for token in topic_terms
+                if query_forms[token] & (content_token_set | title_tokens)
+            ]
             if not matched_terms or (source_terms and topic_terms and not matched_topics):
+                continue
+            if rare_topic_terms and not rare_topic_terms.intersection(matched_topics):
                 continue
 
             source_path = getattr(self, "path_map", {}).get(keyword)
@@ -497,12 +569,14 @@ class AdvancedRetriever:
 
         rows_by_key = {row["keyword"]: row for row in document_rows}
         results = []
-        for keyword in sorted(fused_scores, key=fused_scores.get, reverse=True)[: self.top_n]:
+        for keyword in sorted(fused_scores, key=fused_scores.get, reverse=True):
             row = rows_by_key[keyword]
             coverage = (
                 len(row["matched_topics"]) / len(topic_terms)
                 if topic_terms else len(row["matched_terms"]) / len(tokens)
             )
+            if coverage < MIN_EVIDENCE_COVERAGE:
+                continue
             results.append(
                 {
                     "content": row["content"],
@@ -523,12 +597,14 @@ class AdvancedRetriever:
                     "dense_chunk": row.get("dense_chunk"),
                 }
             )
+            if len(results) >= self.top_n:
+                break
         results.sort(
             key=lambda row: (
+                row["fusion_score"],
                 row["evidence_coverage"],
                 row["entity_score"],
                 row["bm25_score"],
-                row["fusion_score"],
             ),
             reverse=True,
         )
@@ -746,19 +822,24 @@ class AdvancedRetriever:
                     )
                     break
 
-        # Synthesis is extractive; failures preserve the existing primary-document fallback.
+        # A synthesis failure must never turn retrieved storage text into an answer.
         try:
             combined_content = self._synthesize_evidence(results, query)
             if not combined_content.strip():
-                combined_content = primary.get("content") or ""
+                raise ValueError("Evidence synthesis returned no answer.")
         except ValueError:
             return {
                 "decision": "no_match",
                 "content": None,
                 "reasoning": "Retrieved documents do not contain sufficient evidence to answer the query.",
             }
-        except Exception:
-            combined_content = primary.get("content") or ""
+        except Exception as exc:
+            _LOGGER.exception("Evidence synthesis failed (%s).", type(exc).__name__)
+            return {
+                "decision": "error",
+                "content": None,
+                "reasoning": "Evidence synthesis failed; retrieved document text was not returned as an answer.",
+            }
 
         return {
             "decision": "answer",
@@ -802,8 +883,13 @@ def retrieve_advanced(query: str) -> Dict[str, Any]:
         retriever = AdvancedRetriever()
         results = retriever.retrieve_multi(query)
         return retriever.reason_and_compare(results, query)
-    except Exception:
-        return {"decision": "no_match", "content": None, "reasoning": "Retriever fallback mode activated."}
+    except Exception as exc:
+        _LOGGER.exception("Advanced retrieval failed (%s).", type(exc).__name__)
+        return {
+            "decision": "error",
+            "content": None,
+            "reasoning": "The knowledge retrieval service failed; no answer was generated.",
+        }
 
 
 def retrieve_knowledge(query: str) -> Optional[str]:

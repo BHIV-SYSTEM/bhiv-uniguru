@@ -1,0 +1,20 @@
+{
+  "log_id": "ret_84ff61e795",
+  "timestamp": 1793717407.3953362,
+  "query": "test query",
+  "verification_status": "VERIFIED",
+  "confidence": 0.6541,
+  "citations": [
+    "[1] SQL Query Engineering, Indexing, and Performance Optimization (Source: PostgreSQL Documentation & ANSI SQL Standards, Page 1, Section: 'SQL Query Engineering, Indexing, and Performance Optimization')",
+    "[2] SQL Query Engineering, Indexing, and Performance Optimization (Source: PostgreSQL Documentation & ANSI SQL Standards, Page 1, Section: '3. Database Indexing & Query Execution Plans')",
+    "[3] Sanskrit: Agni (Source: UniGuru Sanskrit Knowledge, Page 1, Section: 'Governance')",
+    "[4] Ai Ml: Transformers Rag (Source: UniGuru Ai Ml Knowledge, Page 1, Section: '2. Transformer Self-Attention Mechanism')"
+  ],
+  "sources_consulted": [
+    "Ai Ml: Transformers Rag",
+    "SQL Query Engineering, Indexing, and Performance Optimization",
+    "Sanskrit: Agni"
+  ],
+  "latency_ms": 34.1,
+  "evidence_count": 4
+}

@@ -756,7 +756,7 @@
       "memory_classification": "canonical",
       "trace_id": "phase2_proof_emit_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-11-03T10:05:50.748216Z",
+      "updated_at": "2026-11-03T14:50:19.699918Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -1032,7 +1032,7 @@
         }
       }
     ],
-    "timestamp": "2026-11-03T10:05:46.355259Z",
+    "timestamp": "2026-11-03T14:50:17.706013Z",
     "trace_continuity": {
       "bucket_proof": "phase2_proof_emit_test",
       "contract_emission": "phase2_proof_emit_test",
@@ -1758,7 +1758,7 @@
     "signal_4f6221c30663"
   ],
   "fallback_to_llm": false,
-  "generated_at": "2026-11-03T10:05:46.355259Z",
+  "generated_at": "2026-11-03T14:50:17.706013Z",
   "interpretation_payload": {
     "answer": "Karma is a neuter noun meaning \"action\" or \"deed.\" In grammar, karma also denotes the object of a verb (karman = object/patient). Karma is the universal principle that every action generates corresponding consequences. The Bh\u0101gavata Pur\u0101\u1e47a describes karma as the force that maintains the cosmic order of creation, preservation, and dissolution.",
     "artifact_hash": "c67eadad69ddb5155a01330f8643affbf782ad0589c575003b8969dbd7f13bdc",
@@ -19226,7 +19226,7 @@
       ],
       "method": "canonical_entity_majority"
     },
-    "generated_at": "2026-11-03T10:05:46.355259Z",
+    "generated_at": "2026-11-03T14:50:17.706013Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -21680,7 +21680,7 @@
         "Yuga"
       ],
       "checkpoint_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
-      "contradiction_event_count": 92,
+      "contradiction_event_count": 94,
       "event": {
         "canonical_authority_granted": true,
         "contradiction_pressure": 0.0,
@@ -21796,28 +21796,28 @@
         ],
         "schema": "UNIGURU_SEMANTIC_GOVERNANCE_DECISION_V1"
       },
-      "idempotent_replay": false,
+      "idempotent_replay": true,
       "lineage_traceable": true,
       "mutation_id": "b4a5856397f72bc41da8aaba87bb02be9563d069958e8964c4bceb95388f0caa",
       "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "7848231f6d1feebfbb051e41efe4900bc125255cb639326a92a2797af537d9a1",
+        "last_event_hash": "7c76b0ab88372a77059a03a4a1dbaaec5a9fe364dcaa4a4c2f941a79aac34fd0",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "07443edf3578a5d65029abd0e2dc7372fc457571419b86466a992c60e50e183d",
-      "transient_event_count": 1074
+      "state_hash": "76637b2e2345699147346a316bbcdb748eeade9752446b9c58d377d6ada5c56d",
+      "transient_event_count": 1077
     },
     "entity_continuity": {
       "Agni": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
@@ -21826,45 +21826,57 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/smritis_shastras_and_ayurveda.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/samskara.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Agni Purana": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.375,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Ahimsa": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6669,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/ahimsa.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Assembly": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.5,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.7294,
         "source_ids": [
           "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
@@ -21872,14 +21884,18 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Atharvaveda": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
@@ -21887,18 +21903,24 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/kala.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/atman.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Atman": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
@@ -21919,18 +21941,28 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Bhagavad Gita": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "The Complete Mahabharata_English_ocred.pdf",
           "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
@@ -21947,18 +21979,25 @@
           "vigyan-bhairava-tantra_ocr.pdf",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Bhagavata Purana": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -21967,26 +22006,31 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Bhairava": {
         "contradiction_pressure": 0.0,
-        "decay_state": "weak",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.1875,
+        "decay_state": "active",
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.25,
         "source_ids": [
           "vigyan-bhairava-tantra_ocr.pdf"
         ],
         "trace_ids": [
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test"
         ]
       },
       "Bhakti": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -21998,28 +22042,38 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Bhakti Yoga": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6669,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yoga.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Brahma": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -22038,32 +22092,43 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Brahma Purana": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.5,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/smritis_shastras_and_ayurveda.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Brahman": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
@@ -22079,72 +22144,98 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Brahmanda Purana": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6044,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Brihadaranyaka Upanishad": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.375,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Chandogya Upanishad": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.5,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/atman.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "City": {
-        "contradiction_pressure": 0.0,
-        "decay_state": "weak",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.1875,
+        "contradiction_pressure": 0.0588,
+        "decay_state": "active",
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.3544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md"
         ],
         "trace_ids": [
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz"
         ]
       },
       "Decision Making": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.5,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.7294,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yoga.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
@@ -22152,14 +22243,18 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Devi": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -22180,18 +22275,27 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Dharma": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "The Complete Mahabharata_English_ocred.pdf",
           "The Uddhava-g\u012bt\u0101_sanskrit_English_Hindi_ocred.pdf",
@@ -22217,27 +22321,34 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Garuda Purana": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.375,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Governance": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -22259,18 +22370,27 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Guru": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/guru.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/smritis_shastras_and_ayurveda.md",
@@ -22282,14 +22402,18 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Indra": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
@@ -22297,45 +22421,57 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/lokas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/maya.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Isha Upanishad": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.375,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Jnana Yoga": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6044,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yoga.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Justice": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
@@ -22346,28 +22482,35 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Kali Yuga": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.5,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/smritis_shastras_and_ayurveda.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Karma": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "The Complete Mahabharata_English_ocred.pdf",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
@@ -22392,14 +22535,19 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Karma Yoga": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "The Complete Mahabharata_English_ocred.pdf",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -22408,14 +22556,18 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Katha Upanishad": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/guru.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yoga.md",
@@ -22425,14 +22577,18 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "King": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -22453,76 +22609,94 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Krishna": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.5,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Kundalini": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yoga.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/moksha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/chakras.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Kurma Purana": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.375,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Linga Purana": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.375,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Mahabharata": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "The Complete Mahabharata_English_ocred.pdf",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
@@ -22533,30 +22707,42 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Mandukya Upanishad": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/atman.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/maya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Mantra": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
@@ -22577,18 +22763,28 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Markandeya Purana": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.5,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.7294,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/smritis_shastras_and_ayurveda.md",
@@ -22596,27 +22792,33 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Matsya Purana": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.375,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Moksha": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/ahimsa.md",
@@ -22637,18 +22839,25 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Mundaka Upanishad": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/guru.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/moksha.md",
@@ -22658,28 +22867,34 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Narada Purana": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.5,
         "source_ids": [
           "Vayu Purana Part 1_ocred.pdf",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Narayana": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Vayu Purana Part 1_ocred.pdf",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
@@ -22699,18 +22914,26 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Om": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
@@ -22724,44 +22947,59 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/chakras.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/maya.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Padma Purana": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.375,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Pilgrimage": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.4794,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/moksha.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Prakriti": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
@@ -22773,18 +23011,25 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/maya.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Prana": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yajna.md",
@@ -22793,31 +23038,44 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/chakras.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Prashna Upanishad": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.7294,
         "source_ids": [
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Purusha": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yajna.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yoga.md",
@@ -22827,32 +23085,42 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/maya.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Rain": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6669,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yajna.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Rajadharma": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.5,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.7919,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
@@ -22860,14 +23128,19 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Rajas": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
@@ -22877,46 +23150,57 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/chakras.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Ramayana": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.5,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/smritis_shastras_and_ayurveda.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Rigveda": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6044,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/lokas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Road": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -22930,42 +23214,55 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Samaveda": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6044,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Samsara": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6044,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/moksha.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Sankhya": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
@@ -22978,65 +23275,85 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/maya.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Sarasvati": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/guru.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Sattva": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yoga.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/lokas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/moksha.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Satya Yuga": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.375,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Shiva": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
@@ -23052,63 +23369,83 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Skanda Purana": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6044,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/guru.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Smriti": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6669,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/smritis_shastras_and_ayurveda.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Soil": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yoga.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/lokas.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Surya": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.8544,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/rta.md",
@@ -23118,36 +23455,52 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/moksha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/atman.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/chakras.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Taittiriya Upanishad": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/rta.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/guru.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/lokas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Tamas": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
@@ -23159,26 +23512,32 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Tripura Rahasya": {
         "contradiction_pressure": 0.0,
-        "decay_state": "weak",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.1875,
+        "decay_state": "active",
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.25,
         "source_ids": [
           "vigyan-bhairava-tantra_ocr.pdf"
         ],
         "trace_ids": [
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test"
         ]
       },
       "Upanishads": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -23195,45 +23554,62 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/chakras.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/maya.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Varaha Purana": {
         "contradiction_pressure": 0.0,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.25,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.375,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "schema_stable_1"
         ]
       },
       "Varna": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.375,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.6669,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/chakras.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Vedas": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -23243,30 +23619,39 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/smritis_shastras_and_ayurveda.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Vigyan Bhairava Tantra": {
         "contradiction_pressure": 0.0,
-        "decay_state": "weak",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.1875,
+        "decay_state": "active",
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.25,
         "source_ids": [
           "vigyan-bhairava-tantra_ocr.pdf"
         ],
         "trace_ids": [
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test"
         ]
       },
       "Yajna": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "The Complete Mahabharata_English_ocred.pdf",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
@@ -23278,18 +23663,25 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/lokas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/chakras.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prakrti.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Yajnavalkya Smriti": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.5,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.7919,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/smritis_shastras_and_ayurveda.md",
@@ -23297,14 +23689,19 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Yajurveda": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.5,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.7294,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/yajna.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/upanishads.md",
@@ -23312,14 +23709,18 @@
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1"
         ]
       },
       "Yantra": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/karma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/agni.md",
@@ -23339,18 +23740,27 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Yoga": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "The Complete Mahabharata_English_ocred.pdf",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/ahimsa.md",
@@ -23371,29 +23781,45 @@
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/purusha.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/mantra.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/vidya.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/shakti.md",
+          "Yoga_Upanishad_[Sanskrit_English]_OCR.pdf",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/brahman.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/koshas.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/prana.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       },
       "Yuga": {
-        "contradiction_pressure": 0.0,
+        "contradiction_pressure": 0.0588,
         "decay_state": "active",
-        "last_seen": "2026-11-03T10:05:50.748216Z",
-        "reinforcement_score": 0.625,
+        "last_seen": "2026-11-03T14:50:19.699918Z",
+        "reinforcement_score": 0.9169,
         "source_ids": [
           "Vayu Purana Part 1_ocred.pdf",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/puranas.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/dharma.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/smritis_shastras_and_ayurveda.md",
           "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/lokas.md",
-          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/kala.md"
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/kala.md",
+          "Authoritative Sanskrit knowledge: C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/knowledge/sanskrit/om.md"
         ],
         "trace_ids": [
           "phase2_mitra_test",
-          "phase2_proof_emit_test"
+          "phase2_proof_emit_test",
+          "phase2_replay_emit_test",
+          "contract_trace_abc",
+          "mitra_trace_xyz",
+          "schema_stable_1",
+          "test_sanskrit_dharma"
         ]
       }
     },
@@ -23491,7 +23917,7 @@
       "memory_classification": "canonical",
       "trace_id": "phase2_proof_emit_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-11-03T10:05:50.748216Z",
+      "updated_at": "2026-11-03T14:50:19.699918Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
@@ -23505,15 +23931,15 @@
         "rejected_signal_count": 6,
         "state": "open",
         "trace_id": "phase2_proof_emit_test",
-        "updated_at": "2026-11-03T10:05:50.748216Z",
+        "updated_at": "2026-11-03T14:50:19.699918Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "VERIFIED"
       }
     ],
     "user_continuity": {
-      "continuity_score": 0.5,
-      "last_seen": "2026-11-03T10:05:50.748216Z",
-      "queries": 10,
+      "continuity_score": 0.95,
+      "last_seen": "2026-11-03T14:50:19.699918Z",
+      "queries": 32,
       "trace_ids": [
         "ecosystem_c3cf30354a6e",
         "ecosystem_2ef36abefc28",
@@ -23522,7 +23948,16 @@
         "phase2_e2e_test",
         "phase2_replay_test",
         "phase2_mitra_test",
-        "phase2_proof_emit_test"
+        "phase2_proof_emit_test",
+        "phase2_replay_emit_test",
+        "contract_trace_abc",
+        "mitra_trace_xyz",
+        "phase2_determinism_test",
+        "phase2_hash_chain_test",
+        "schema_stable_1",
+        "test_sanskrit_dharma",
+        "tantra_sdk_runtime_test",
+        "ecosystem_fa36bb21ae26"
       ]
     }
   },

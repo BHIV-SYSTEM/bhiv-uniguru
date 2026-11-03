@@ -168,8 +168,22 @@ class ConversationRouter:
         # No implicit demo provider: missing configuration is reported as unavailable.
         self._llm_url = os.getenv("UNIGURU_LLM_URL", "").strip()
         self._llm_model = os.getenv("UNIGURU_LLM_MODEL", "").strip()
-        self._llm_timeout = float(os.getenv("UNIGURU_LLM_TIMEOUT_SECONDS", "20"))
+        self._llm_fallback_url = os.getenv("UNIGURU_LLM_FALLBACK_URL", "").strip()
+        self._llm_fallback_model = os.getenv("UNIGURU_LLM_FALLBACK_MODEL", "").strip()
+        self._llm_fallback_api_key = os.getenv("UNIGURU_LLM_FALLBACK_API_KEY", "").strip()
+        try:
+            configured_timeout = float(os.getenv("UNIGURU_LLM_TIMEOUT_SECONDS", "20"))
+        except ValueError:
+            _LOGGER.warning("Invalid LLM timeout setting; using the 20-second default.")
+            configured_timeout = 20.0
+        self._llm_timeout = min(max(configured_timeout, 1.0), 60.0)
         self._llm_api_key = os.getenv("UNIGURU_LLM_API_KEY", "").strip()
+        try:
+            configured_retries = int(os.getenv("UNIGURU_LLM_MAX_RETRIES", "1"))
+        except ValueError:
+            _LOGGER.warning("Invalid LLM retry setting; using one bounded retry.")
+            configured_retries = 1
+        self._llm_max_retries = min(max(configured_retries, 0), 1)
         self._llm_available: Optional[bool] = None
         self._session_memory: OrderedDict[tuple[str, str], Dict[str, Any]] = OrderedDict()
         self._session_memory_lock = threading.Lock()
@@ -873,8 +887,17 @@ class ConversationRouter:
         verified_context: str = "",
         verification_status: str = "NOT_REQUIRED",
     ) -> Dict[str, str]:
-        provider_configured = bool(self._llm_url) and not self._llm_url.startswith("internal://")
-        if not provider_configured:
+        providers = []
+        for name, url, model, api_key in (
+            ("primary", self._llm_url, self._llm_model, self._llm_api_key),
+            ("fallback", self._llm_fallback_url, self._llm_fallback_model, self._llm_fallback_api_key),
+        ):
+            if not url or url.startswith("internal://"):
+                continue
+            if any(existing["url"].casefold() == url.casefold() for existing in providers):
+                continue
+            providers.append({"name": name, "url": url, "model": model, "api_key": api_key})
+        if not providers:
             self._llm_available = False
             return {
                 "answer": "I can't generate an answer because no language-model provider is configured.",
