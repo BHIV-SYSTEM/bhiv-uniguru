@@ -3607,33 +3607,56 @@ const ChatContainer: React.FC = () => {
 
   const renderGovernancePanel = (metadata?: Record<string, any>) => {
     if (!metadata?.trace_id) return null;
-    const confidence = Number(metadata.confidence_breakdown?.overall || 0);
+    const diagnostics = metadata.processing_diagnostics || {};
+    const retrieval = diagnostics.retrieval || {};
+    const interpretation = diagnostics.interpretation || {};
+    const generation = diagnostics.generation || {};
+    const signals = diagnostics.signals || {};
+    const retrievalConfidence = retrieval.status === "success"
+      ? Number(metadata.confidence_breakdown?.overall)
+      : null;
     const contradictions = metadata.consensus_analysis?.contradictions || [];
     const acceptedCount = Array.isArray(metadata.matched_signals) ? metadata.matched_signals.length : 0;
     const rejectedCount = Array.isArray(metadata.rejected_signals) ? metadata.rejected_signals.length : 0;
+    const retrievalArtifact = metadata.retrieval_truth_payload?.artifact_hash;
+    const interpretationArtifact = metadata.interpretation_payload?.artifact_hash;
+    const retrievalLabel = retrieval.status
+      ? `${retrieval.status}${retrievalArtifact ? ` (${retrievalArtifact.slice(0, 12)})` : ""}`
+      : retrievalArtifact?.slice(0, 12) || "unknown";
+    const interpretationLabel = interpretation.status
+      ? `${interpretation.status}${interpretationArtifact ? ` (${interpretationArtifact.slice(0, 12)})` : ""}`
+      : interpretationArtifact?.slice(0, 12) || "unknown";
     const lineage = metadata.retrieval_truth_payload?.source_lineage || [];
     const memoryEvent = metadata.semantic_memory?.event || {};
     const traversalPath = metadata.multi_hop_traversal?.paths?.[0] || [];
-    const downstreamStatus = metadata.downstream_execution?.status || "UNKNOWN";
+    const downstreamStatus = generation.status || metadata.downstream_execution?.status || "not reported";
 
     return (
       <div className="mt-3 w-full rounded-md border border-cyan-400/20 bg-slate-950/70 p-3 text-xs text-gray-200">
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
           <div>
-            <div className="text-gray-400">Confidence</div>
-            <div className={confidence >= 0.6 ? "text-emerald-300 font-semibold" : "text-amber-300 font-semibold"}>
-              {(confidence * 100).toFixed(1)}%
+            <div className="text-gray-400">Retrieval confidence</div>
+            <div className={retrievalConfidence !== null && Number.isFinite(retrievalConfidence) && retrievalConfidence >= 0.6 ? "text-emerald-300 font-semibold" : "text-amber-300 font-semibold"}>
+              {retrievalConfidence !== null && Number.isFinite(retrievalConfidence)
+                ? `${(retrievalConfidence * 100).toFixed(1)}%`
+                : retrieval.status === "skipped" ? "not applicable" : "not scored"}
             </div>
           </div>
           <div>
             <div className="text-gray-400">Contradiction</div>
             <div className={contradictions.length ? "text-red-300 font-semibold" : "text-emerald-300 font-semibold"}>
-              {contradictions.length ? `${contradictions.length} visible` : "none detected"}
+              {metadata.consensus_analysis
+                ? contradictions.length ? `${contradictions.length} visible` : "none detected"
+                : "not evaluated"}
             </div>
           </div>
           <div>
             <div className="text-gray-400">Signals</div>
-            <div className="font-semibold text-cyan-200">{acceptedCount} accepted / {rejectedCount} rejected</div>
+            <div className="font-semibold text-cyan-200">
+              {signals.status === "evaluated"
+                ? `${signals.accepted ?? acceptedCount} accepted / ${signals.rejected ?? rejectedCount} rejected`
+                : "not evaluated"}
+            </div>
           </div>
           <div>
             <div className="text-gray-400">Downstream</div>
@@ -3647,15 +3670,21 @@ const ChatContainer: React.FC = () => {
         <div className="mt-2 grid gap-2 sm:grid-cols-2">
           <div>
             <div className="text-gray-400">Truth Boundary</div>
-            <div>retrieval: {metadata.retrieval_truth_payload?.artifact_hash?.slice(0, 12) || "missing"}</div>
-            <div>interpretation: {metadata.interpretation_payload?.artifact_hash?.slice(0, 12) || "missing"}</div>
+            <div>retrieval: {retrievalLabel}</div>
+            <div>interpretation: {interpretationLabel}</div>
           </div>
           <div>
             <div className="text-gray-400">Memory</div>
-            <div>{memoryEvent.entities_touched?.length || 0} entities touched</div>
-            <div>{metadata.semantic_memory?.unresolved_threads?.length || 0} unresolved threads</div>
+            <div>{metadata.semantic_memory ? `${memoryEvent.entities_touched?.length || 0} entities touched` : "not used"}</div>
+            <div>{metadata.semantic_memory ? `${metadata.semantic_memory.unresolved_threads?.length || 0} unresolved threads` : "not used"}</div>
           </div>
         </div>
+        {interpretation.intent && (
+          <div className="mt-2 text-gray-400">
+            Intent: <span className="text-cyan-200">{interpretation.intent}</span>
+            {retrieval.status && <> · Retrieval: <span className="text-cyan-200">{retrieval.status}</span></>}
+          </div>
+        )}
         {lineage.length > 0 && (
           <div className="mt-2">
             <div className="text-gray-400">Source Lineage</div>

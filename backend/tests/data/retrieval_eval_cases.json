@@ -1,0 +1,394 @@
+{
+  "description": "Retrieval-only evaluation; source anchors point to files present in backend/knowledge.",
+  "cases": [
+    {
+      "id": "rag-01",
+      "category": "factual",
+      "query": "What is Dharma?",
+      "expected_sources": [
+        "sanskrit/dharma.md"
+      ],
+      "expected_topics": [
+        "dharma",
+        "duty"
+      ]
+    },
+    {
+      "id": "rag-02",
+      "category": "factual",
+      "query": "What does Ahimsa mean in Jain thought?",
+      "expected_sources": [
+        "sanskrit/ahimsa.md",
+        "jain/jain_shravaka_ethics.md"
+      ],
+      "expected_topics": [
+        "ahimsa",
+        "non-violence"
+      ]
+    },
+    {
+      "id": "rag-03",
+      "category": "factual",
+      "query": "What is the Jain doctrine of Anekantavada?",
+      "expected_sources": [
+        "jain/anekantavada_syadvada.md"
+      ],
+      "expected_topics": [
+        "anekantavada",
+        "one-sidedness"
+      ]
+    },
+    {
+      "id": "rag-04",
+      "category": "factual",
+      "query": "What is a qubit?",
+      "expected_sources": [
+        "quantum/qubit.md"
+      ],
+      "expected_topics": [
+        "qubit",
+        "quantum"
+      ]
+    },
+    {
+      "id": "rag-05",
+      "category": "factual",
+      "query": "How does Grover's algorithm search?",
+      "expected_sources": [
+        "quantum/grover_algorithm.md"
+      ],
+      "expected_topics": [
+        "grover",
+        "amplitude amplification"
+      ]
+    },
+    {
+      "id": "rag-06",
+      "category": "factual",
+      "query": "What problem does Shor's algorithm solve?",
+      "expected_sources": [
+        "quantum/shor_algorithm.md"
+      ],
+      "expected_topics": [
+        "shor",
+        "factoring"
+      ]
+    },
+    {
+      "id": "rag-07",
+      "category": "factual",
+      "query": "What is quantum entanglement?",
+      "expected_sources": [
+        "quantum/entanglement.md"
+      ],
+      "expected_topics": [
+        "entanglement",
+        "quantum"
+      ]
+    },
+    {
+      "id": "rag-08",
+      "category": "factual",
+      "query": "What is the purpose of the Vachanamrut?",
+      "expected_sources": [
+        "swaminarayan/vachanamrut_core.md"
+      ],
+      "expected_topics": [
+        "vachanamrut",
+        "discourses"
+      ]
+    },
+    {
+      "id": "rag-09",
+      "category": "factual",
+      "query": "What is the Python programming language?",
+      "expected_sources": [
+        "programming/python.md",
+        "programming/python_core.md"
+      ],
+      "expected_topics": [
+        "python",
+        "programming language"
+      ]
+    },
+    {
+      "id": "rag-10",
+      "category": "factual",
+      "query": "What is the Tattvartha Sutra?",
+      "expected_sources": [
+        "jain/tattvartha_sutra.md"
+      ],
+      "expected_topics": [
+        "tattvartha",
+        "sutra"
+      ]
+    },
+    {
+      "id": "rag-11",
+      "category": "factual",
+      "query": "What does the concept of Atman refer to?",
+      "expected_sources": [
+        "sanskrit/atman.md"
+      ],
+      "expected_topics": [
+        "atman",
+        "self"
+      ]
+    },
+    {
+      "id": "rag-12",
+      "category": "factual",
+      "query": "What is photosynthesis?",
+      "expected_sources": [
+        "biology/physiology_and_ecology.md"
+      ],
+      "expected_topics": [
+        "photosynthesis",
+        "biology"
+      ]
+    },
+    {
+      "id": "rag-13",
+      "category": "factual",
+      "query": "What is the Nyaya five-member argument?",
+      "expected_sources": [
+        "gurukul/logic/panchavayava_argument.md"
+      ],
+      "expected_topics": [
+        "panchavayava",
+        "nyaya"
+      ]
+    },
+    {
+      "id": "rag-14",
+      "category": "multi_document",
+      "query": "Compare Python and Java as programming languages.",
+      "expected_sources": [
+        "programming/python.md",
+        "programming/java_and_oop.md"
+      ],
+      "expected_topics": [
+        "python",
+        "java",
+        "programming"
+      ]
+    },
+    {
+      "id": "rag-15",
+      "category": "multi_document",
+      "query": "Compare Jain and Swaminarayan approaches to nonviolence and ethics.",
+      "expected_sources": [
+        "jain/jain_shravaka_ethics.md",
+        "swaminarayan/panch_vartman.md"
+      ],
+      "expected_topics": [
+        "ethics",
+        "non-harm"
+      ]
+    },
+    {
+      "id": "rag-16",
+      "category": "multi_document",
+      "query": "How do Grover's and Shor's algorithms differ?",
+      "expected_sources": [
+        "quantum/grover_algorithm.md",
+        "quantum/shor_algorithm.md"
+      ],
+      "expected_topics": [
+        "grover",
+        "shor",
+        "algorithm"
+      ]
+    },
+    {
+      "id": "rag-17",
+      "category": "multi_document",
+      "query": "Explain how quantum computing relates to quantum biology.",
+      "expected_sources": [
+        "quantum/Quantum_Computing/quantum_computing_overview.md",
+        "quantum/Quantum_Biology/quantum_biology_overview.md"
+      ],
+      "expected_topics": [
+        "quantum computing",
+        "quantum biology"
+      ]
+    },
+    {
+      "id": "rag-18",
+      "category": "multi_document",
+      "query": "Compare the Vedas and Upanishads as knowledge sources.",
+      "expected_sources": [
+        "sanskrit/vedas.md",
+        "sanskrit/upanishads.md"
+      ],
+      "expected_topics": [
+        "vedas",
+        "upanishads"
+      ]
+    },
+    {
+      "id": "rag-19",
+      "category": "multi_document",
+      "query": "What roles do karma and ahimsa have in Jain thought?",
+      "expected_sources": [
+        "jain/jain_karma_doctrine.md",
+        "jain/jain_shravaka_ethics.md"
+      ],
+      "expected_topics": [
+        "karma",
+        "ahimsa"
+      ]
+    },
+    {
+      "id": "rag-20",
+      "category": "misspelled",
+      "query": "How does Grover algorthm search a database?",
+      "expected_sources": [
+        "quantum/grover_algorithm.md"
+      ],
+      "expected_topics": [
+        "grover",
+        "search"
+      ]
+    },
+    {
+      "id": "rag-21",
+      "category": "misspelled",
+      "query": "Explain quantum entanglment in simple terms.",
+      "expected_sources": [
+        "quantum/entanglement.md"
+      ],
+      "expected_topics": [
+        "entanglement",
+        "quantum"
+      ]
+    },
+    {
+      "id": "rag-22",
+      "category": "misspelled",
+      "query": "What is anekantavda in Jain philosophy?",
+      "expected_sources": [
+        "jain/anekantavada_syadvada.md"
+      ],
+      "expected_topics": [
+        "anekantavada",
+        "jain"
+      ]
+    },
+    {
+      "id": "rag-23",
+      "category": "misspelled",
+      "query": "What does ahimsa meen?",
+      "expected_sources": [
+        "sanskrit/ahimsa.md",
+        "jain/jain_shravaka_ethics.md"
+      ],
+      "expected_topics": [
+        "ahimsa",
+        "non-violence"
+      ]
+    },
+    {
+      "id": "rag-24",
+      "category": "misspelled",
+      "query": "How does the swaminarayn tradition describe Akshar Purushottam?",
+      "expected_sources": [
+        "swaminarayan/akshar_purushottam_darshan.md"
+      ],
+      "expected_topics": [
+        "akshar",
+        "purushottam"
+      ]
+    },
+    {
+      "id": "rag-25",
+      "category": "misspelled",
+      "query": "What is a qubit in quantam computing?",
+      "expected_sources": [
+        "quantum/qubit.md",
+        "quantum/Quantum_Computing/quantum_computing_overview.md"
+      ],
+      "expected_topics": [
+        "qubit",
+        "quantum computing"
+      ]
+    },
+    {
+      "id": "rag-26",
+      "category": "underspecified_unanswerable",
+      "query": "What does it mean?",
+      "expected_sources": [],
+      "expected_topics": []
+    },
+    {
+      "id": "rag-27",
+      "category": "underspecified_unanswerable",
+      "query": "Explain the model.",
+      "expected_sources": [],
+      "expected_topics": []
+    },
+    {
+      "id": "rag-28",
+      "category": "underspecified_unanswerable",
+      "query": "What is the exact current temperature on Mars today?",
+      "expected_sources": [],
+      "expected_topics": []
+    },
+    {
+      "id": "rag-29",
+      "category": "underspecified_unanswerable",
+      "query": "Which page in my private textbook answers this?",
+      "expected_sources": [],
+      "expected_topics": []
+    },
+    {
+      "id": "rag-30",
+      "category": "underspecified_unanswerable",
+      "query": "What did I ask earlier?",
+      "expected_sources": [],
+      "expected_topics": []
+    },
+    {
+      "id": "rag-31",
+      "category": "unrelated",
+      "query": "How do I make a lasagna?",
+      "expected_sources": [],
+      "expected_topics": []
+    },
+    {
+      "id": "rag-32",
+      "category": "unrelated",
+      "query": "Who won today's football match?",
+      "expected_sources": [],
+      "expected_topics": []
+    },
+    {
+      "id": "rag-33",
+      "category": "unrelated",
+      "query": "What is the latest Bitcoin price?",
+      "expected_sources": [],
+      "expected_topics": []
+    },
+    {
+      "id": "rag-34",
+      "category": "unrelated",
+      "query": "How do I repair a leaking kitchen faucet?",
+      "expected_sources": [],
+      "expected_topics": []
+    },
+    {
+      "id": "rag-35",
+      "category": "unrelated",
+      "query": "What will the weather be tomorrow in Tokyo?",
+      "expected_sources": [],
+      "expected_topics": []
+    },
+    {
+      "id": "rag-36",
+      "category": "unrelated",
+      "query": "Recommend a beach hotel in Bali.",
+      "expected_sources": [],
+      "expected_topics": []
+    }
+  ]
+}

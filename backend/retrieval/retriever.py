@@ -25,8 +25,11 @@ KB_PATHS: Dict[str, str] = {
 }
 
 _DENSE_STATE: Optional[Dict[str, Any]] = None
-_DENSE_STATE_KEY: Optional[Tuple[str, str, float, str]] = None
+_DENSE_STATE_KEY: Optional[Tuple[Any, ...]] = None
+_DENSE_UNAVAILABLE_KEY: Optional[Tuple[Any, ...]] = None
 _DENSE_STATE_LOCK = threading.Lock()
+_SOURCE_MANIFEST_CACHE: Dict[str, Tuple[Tuple[Any, ...], str]] = {}
+_SOURCE_MANIFEST_LOCK = threading.Lock()
 
 
 def _active_index_paths() -> Tuple[Any, Any, Any]:
@@ -46,26 +49,77 @@ def _active_index_paths() -> Tuple[Any, Any, Any]:
     return database_path, index_path, metadata_path
 
 
+def _source_manifest_signature(root: Any) -> Tuple[Any, ...]:
+    """Cheaply detect corpus edits/additions/deletions before reusing its digest."""
+    from pathlib import Path
+
+    root_path = Path(root)
+    signature = []
+    for path in sorted(root_path.rglob("*.md")):
+        try:
+            stat = path.stat()
+        except OSError:
+            continue
+        if not path.is_file():
+            continue
+        signature.append((
+            path.relative_to(root_path).as_posix(),
+            stat.st_size,
+            stat.st_mtime_ns,
+            stat.st_ctime_ns,
+            getattr(stat, "st_ino", 0),
+        ))
+    return tuple(signature)
+
+
 def _current_source_manifest_hash() -> str:
     from pathlib import Path
 
-    manifest = hashlib.sha256()
-    for path in sorted(Path(_KB_ROOT).rglob("*.md")):
-        if not path.is_file():
-            continue
-        relative_path = path.relative_to(_KB_ROOT).as_posix()
-        file_hash = hashlib.sha256(path.read_text(encoding="utf-8").encode("utf-8")).hexdigest()
-        manifest.update(f"{relative_path}:{file_hash}\n".encode("utf-8"))
-    return manifest.hexdigest()
+    root = Path(_KB_ROOT)
+    root_key = str(root.resolve())
+    signature = _source_manifest_signature(root)
+    cached = _SOURCE_MANIFEST_CACHE.get(root_key)
+    if cached is not None and cached[0] == signature:
+        return cached[1]
+
+    with _SOURCE_MANIFEST_LOCK:
+        signature = _source_manifest_signature(root)
+        cached = _SOURCE_MANIFEST_CACHE.get(root_key)
+        if cached is not None and cached[0] == signature:
+            return cached[1]
+        manifest = hashlib.sha256()
+        for relative_path, *_ in signature:
+            path = root / relative_path
+            file_hash = hashlib.sha256(path.read_text(encoding="utf-8").encode("utf-8")).hexdigest()
+            manifest.update(f"{relative_path}:{file_hash}\n".encode("utf-8"))
+        digest = manifest.hexdigest()
+        _SOURCE_MANIFEST_CACHE[root_key] = (signature, digest)
+        return digest
 
 
 def _load_dense_state() -> Optional[Dict[str, Any]]:
-    global _DENSE_STATE, _DENSE_STATE_KEY
+    global _DENSE_STATE, _DENSE_STATE_KEY, _DENSE_UNAVAILABLE_KEY
     database_path, index_path, metadata_path = _active_index_paths()
     if not database_path.is_file() or not index_path.is_file() or not metadata_path.is_file():
         return None
+
+    def artifact_signature(path: Any) -> Tuple[int, int, int]:
+        stat = path.stat()
+        return stat.st_size, stat.st_mtime_ns, stat.st_ctime_ns
+
+    artifact_key = (
+        str(database_path), artifact_signature(database_path),
+        str(index_path), artifact_signature(index_path),
+        str(metadata_path), artifact_signature(metadata_path),
+    )
+    # A failed FAISS/embedder load cannot serve dense results. Reuse that
+    # unavailable state while the index artifacts are unchanged; source freshness
+    # is rechecked whenever dense loading is possible.
+    if _DENSE_UNAVAILABLE_KEY == artifact_key:
+        return None
+
     source_manifest_hash = _current_source_manifest_hash()
-    state_key = (str(database_path), str(index_path), index_path.stat().st_mtime, source_manifest_hash)
+    state_key = (*artifact_key, source_manifest_hash)
     if _DENSE_STATE_KEY == state_key:
         return _DENSE_STATE
     with _DENSE_STATE_LOCK:
@@ -77,7 +131,11 @@ def _load_dense_state() -> Optional[Dict[str, Any]]:
             from sentence_transformers import SentenceTransformer
 
             metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
-            if metadata.get("source_manifest_sha256") != source_manifest_hash:
+            indexed_manifest = metadata.get("source_manifest_sha256")
+            # Older indexes predate source manifests. Validate them structurally below
+            # (SQLite/FAISS IDs and dimensions); when a manifest is present, keep the
+            # strict freshness check for versioned indexes.
+            if indexed_manifest and indexed_manifest != source_manifest_hash:
                 _DENSE_STATE = None
                 _DENSE_STATE_KEY = state_key
                 return None
@@ -108,10 +166,12 @@ def _load_dense_state() -> Optional[Dict[str, Any]]:
                 "model": model,
             }
             _DENSE_STATE_KEY = state_key
+            _DENSE_UNAVAILABLE_KEY = None
             return _DENSE_STATE
         except Exception:
             _DENSE_STATE = None
             _DENSE_STATE_KEY = state_key
+            _DENSE_UNAVAILABLE_KEY = artifact_key
             return None
 
 

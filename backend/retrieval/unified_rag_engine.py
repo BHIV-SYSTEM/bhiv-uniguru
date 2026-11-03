@@ -22,6 +22,7 @@ os.environ.setdefault("HF_HUB_OFFLINE", "1")
 os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 import re
 import json
+import hashlib
 import sqlite3
 import threading
 import time
@@ -33,48 +34,27 @@ ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 BACKEND_DIR = ROOT_DIR / "backend"
 RAG_DIR = BACKEND_DIR / "RAG"
 def _resolve_rag_paths() -> Tuple[Path, Path, Path]:
-    """Resolve active database, FAISS index, and metadata paths dynamically."""
-    env_db = os.getenv("UNIGURU_RAG_DB_PATH")
-    env_index = os.getenv("UNIGURU_RAG_INDEX_PATH")
-    env_meta = os.getenv("UNIGURU_RAG_METADATA_PATH")
-
+    """Resolve one coherent active index, honoring explicit per-artifact overrides."""
     pointer_path = RAG_DIR / "active_index.json"
-    pointer = {}
-    if pointer_path.is_file():
-        try:
-            pointer = json.loads(pointer_path.read_text(encoding="utf-8"))
-        except Exception:
-            pointer = {}
+    try:
+        pointer = json.loads(pointer_path.read_text(encoding="utf-8")) if pointer_path.is_file() else {}
+    except (OSError, json.JSONDecodeError):
+        pointer = {}
 
-    db_rel = pointer.get("database_path", "chunks.db")
-    index_rel = pointer.get("index_path", "faiss_index.bin")
-    meta_rel = pointer.get("metadata_path", "index_metadata.json")
+    def resolve(env_name: str, pointer_key: str, legacy_name: str) -> Path:
+        override = os.getenv(env_name)
+        if override:
+            path = Path(override)
+            return path if path.is_absolute() else (ROOT_DIR / path).resolve()
+        relative = pointer.get(pointer_key, legacy_name)
+        path = Path(relative)
+        return path if path.is_absolute() else RAG_DIR / path
 
-    db_candidates = [
-        Path(env_db) if env_db else None,
-        RAG_DIR / "chunks.db",
-        RAG_DIR / db_rel,
-        ROOT_DIR / "bhiv-uniguru-main" / "backend" / "RAG" / "chunks.db",
-    ]
-    index_candidates = [
-        Path(env_index) if env_index else None,
-        RAG_DIR / "faiss_index.bin",
-        RAG_DIR / index_rel,
-        ROOT_DIR / "bhiv-uniguru-main" / "backend" / "RAG" / "faiss_index.bin",
-    ]
-    indices_dir = RAG_DIR / "indices"
-    if indices_dir.exists():
-        subdirs = sorted([d for d in indices_dir.iterdir() if d.is_dir()], reverse=True)
-        for sd in subdirs:
-            db_candidates.append(sd / "chunks.db")
-            index_candidates.append(sd / "faiss_index.bin")
-
-    resolved_db = next((p for p in db_candidates if p and p.is_file()), RAG_DIR / "chunks.db")
-    resolved_index = next((p for p in index_candidates if p and p.is_file()), RAG_DIR / "faiss_index.bin")
-    resolved_meta = RAG_DIR / meta_rel if (RAG_DIR / meta_rel).is_file() else RAG_DIR / "index_metadata.json"
-
-    return resolved_db, resolved_index, resolved_meta
-
+    return (
+        resolve("UNIGURU_RAG_DB_PATH", "database_path", "chunks.db"),
+        resolve("UNIGURU_RAG_INDEX_PATH", "index_path", "faiss_index.bin"),
+        resolve("UNIGURU_RAG_METADATA_PATH", "metadata_path", "index_metadata.json"),
+    )
 
 _RESOLVED_DB, _RESOLVED_INDEX, _RESOLVED_META = _resolve_rag_paths()
 DB_PATH = _RESOLVED_DB
@@ -153,17 +133,31 @@ class UnifiedRAGEngine:
         from sentence_transformers import SentenceTransformer
 
         self._faiss = faiss
-        self.model_name = "all-MiniLM-L6-v2"
-        self.model = SentenceTransformer(self.model_name)
         self.db_path = str(DB_PATH)
         self.faiss_path = str(FAISS_PATH)
+        self.metadata_path = str(METADATA_PATH)
 
         if not os.path.exists(self.faiss_path):
-            raise FileNotFoundError(f"FAISS index not found at {self.faiss_path}. Run scripts/build_knowledge_base.py first.")
+            raise FileNotFoundError(f"FAISS index not found at {self.faiss_path}. Run scripts/build_rag_index.py first.")
         if not os.path.exists(self.db_path):
-            raise FileNotFoundError(f"SQLite DB not found at {self.db_path}. Run scripts/build_knowledge_base.py first.")
-
+            raise FileNotFoundError(f"SQLite DB not found at {self.db_path}. Run scripts/build_rag_index.py first.")
+        try:
+            metadata = json.loads(Path(self.metadata_path).read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            metadata = {}
+        self.model_name = str(metadata.get("embedding_model") or "all-MiniLM-L6-v2")
+        self.model = SentenceTransformer(self.model_name)
         self.index = self._faiss.read_index(self.faiss_path)
+        expected_dimension = metadata.get("embedding_dimension", metadata.get("dimension"))
+        if expected_dimension is not None and int(expected_dimension) != int(self.index.d):
+            raise ValueError(
+                f"Embedding metadata dimension {expected_dimension} does not match FAISS index dimension {self.index.d}."
+            )
+        model_dimension = self.model.get_embedding_dimension()
+        if int(model_dimension) != int(self.index.d):
+            raise ValueError(
+                f"Embedding model {self.model_name} dimension {model_dimension} does not match FAISS index dimension {self.index.d}."
+            )
         self._init_llm_client()
         LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -347,6 +341,24 @@ class UnifiedRAGEngine:
 
         results.sort(key=lambda x: x[1], reverse=True)
         return results[:top_k]
+    @staticmethod
+    def _metadata_scope_matches(actual: Any, requested: Any) -> bool:
+        """Match explicit query scope conservatively; absent metadata is not a match."""
+        if actual is None or requested is None:
+            return False
+        normalize = lambda value: re.sub(r"[^\w]+", " ", str(value)).strip().casefold()
+        actual_value = normalize(actual)
+        requested_value = normalize(requested)
+        if not actual_value or not requested_value:
+            return False
+        if actual_value == requested_value:
+            return True
+        # Grade metadata commonly appears as e.g. "Grade 8" or "Class 8".
+        if requested_value.isdigit():
+            match = re.fullmatch(r"(?:grade|class|standard|std)?\s*(\d{1,2})", actual_value)
+            return bool(match and match.group(1) == requested_value)
+        return False
+
     def retrieve(self, query: str, top_k: int = 5) -> Dict[str, Any]:
         """
         Execute full hybrid retrieval pipeline:
@@ -402,9 +414,15 @@ class UnifiedRAGEngine:
 
                 # Normalize field values across different chunk schemas
                 c_domain = str(row.get("domain") or "general")
-                c_grade = row.get("grade") or row.get("class_level") or row.get("category")
+                c_grade = row.get("grade") or row.get("class_level")
                 c_subject = str(row.get("subject") or row.get("category") or "")
                 c_concept = str(row.get("concept") or row.get("topic") or "")
+                if scope.get("grade") is not None and not self._metadata_scope_matches(c_grade, scope["grade"]):
+                    continue
+                if scope.get("subject") and not self._metadata_scope_matches(c_subject, scope["subject"]):
+                    continue
+                if scope.get("domain") and not self._metadata_scope_matches(c_domain, scope["domain"]):
+                    continue
                 c_chapter = str(row.get("chapter") or "")
                 c_section = str(row.get("section") or row.get("subcategory") or "")
                 c_file = str(row.get("file_name") or "").replace(".md", "").replace(".pdf", "").replace("_", " ")

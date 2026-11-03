@@ -1,3 +1,4 @@
+from pathlib import Path
 from unittest.mock import patch
 
 from retrieval.retriever import AdvancedRetriever, KB_PATHS
@@ -144,8 +145,11 @@ def test_exact_concept_title_is_ranked_first():
 
 def test_duplicate_basename_documents_are_not_overwritten():
     retriever = AdvancedRetriever()
+    knowledge_root = Path(KB_PATHS["sanskrit"]).parent
+    markdown_files = list(knowledge_root.rglob("*.md"))
 
-    assert len(retriever.knowledge_map) == 75
+    assert len(retriever.knowledge_map) == len(markdown_files)
+    assert len(retriever.knowledge_map) > len({path.stem for path in markdown_files})
 
 
 def test_python_and_its_history_are_retrievable_from_active_kb():

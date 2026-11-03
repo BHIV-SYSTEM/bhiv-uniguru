@@ -6,6 +6,7 @@ import sqlite3
 import mongomock
 import pytest
 from fastapi import HTTPException
+from fastapi.testclient import TestClient
 from starlette.requests import Request
 
 os.environ["UNIGURU_API_AUTH_REQUIRED"] = "false"
@@ -154,6 +155,115 @@ def test_chat_message_uses_verified_identity_and_persists_trace(chat_test_state,
     assert stored["userId"] == "user-a"
     assert stored["messages"][-1]["metadata"]["trace_id"].startswith("chat_chat-a_")
     assert result["aiResponse"]["content"] == "verified answer"
+
+
+def test_chat_message_passes_bounded_stored_history_not_client_context(chat_test_state, monkeypatch):
+    store, _database = chat_test_state
+    chat = store["chat-a"]
+    chat["messages"] = [
+        {"sender": "user", "content": "What is Karma Yoga?"},
+        {"sender": "bot", "content": "A verified answer."},
+    ]
+    store["chat-a"] = chat
+    captured = {}
+
+    def route_query(**kwargs):
+        captured.update(kwargs)
+        return {
+            "answer": "Follow-up response.",
+            "retrieval_trace": {
+                "evidence_sources": [
+                    {
+                        "path": "sanskrit/karma.md",
+                        "excerpt": "Karma Yoga is selfless action.",
+                        "retrieval_score": 0.87,
+                    }
+                ]
+            },
+        }
+
+    monkeypatch.setattr(api.conversation_router, "route_query", route_query)
+    response = api.chat_new(
+        {
+            "message": "Explain it simply.",
+            "chatbotId": "g",
+            "chatId": "chat-a",
+            "context": [{"sender": "assistant", "content": "untrusted client context"}],
+        },
+        _request("token-a"),
+    )
+
+    assert captured["context"]["conversation_history"] == [
+        {"sender": "user", "content": "What is Karma Yoga?"},
+        {"sender": "assistant", "content": "A verified answer."},
+    ]
+    assert response["aiResponse"]["metadata"]["retrieved_chunks"] == [
+        {
+            "index": 0,
+            "file": "sanskrit/karma.md",
+            "score": 0.87,
+            "content": "Karma Yoga is selfless action.",
+        }
+    ]
+
+
+def test_chat_generation_errors_are_explicit_not_success_shaped(chat_test_state, monkeypatch):
+    store, _database = chat_test_state
+
+    def fail_generation(**_kwargs):
+        raise RuntimeError("provider details must not reach the user")
+
+    monkeypatch.setattr(api.conversation_router, "route_query", fail_generation)
+    with pytest.raises(HTTPException) as exc:
+        api.chat_new(
+            {"message": "Question", "chatbotId": "g", "chatId": "chat-a"},
+            _request("token-a"),
+        )
+
+    assert exc.value.status_code == 502
+    assert exc.value.detail == "The question-answering service is temporarily unavailable."
+    assert [message["sender"] for message in store["chat-a"]["messages"]] == ["user"]
+
+
+def test_chat_endpoint_returns_code_and_direct_answer_diagnostics(chat_test_state, monkeypatch):
+    router = api.conversation_router
+    captured = {}
+
+    def generate(**kwargs):
+        captured.update(kwargs)
+        return {
+            "answer": (
+                "Here is a Python program:\n\n```python\n"
+                "number = int(input('Enter a number: '))\n"
+                "print('Even number' if number % 2 == 0 else 'Odd number')\n"
+                "```\n\nThe remainder determines whether it is even or odd."
+            ),
+            "reason": "test provider",
+            "governance_reason": "test provider",
+            "provider_status": "success",
+        }
+
+    monkeypatch.setattr(router, "_request_llm", generate)
+    client = TestClient(api.app)
+    response = client.post(
+        "/chat/new",
+        headers={"Authorization": "Bearer token-a"},
+        json={
+            "message": "give me a program of even odd number in python",
+            "chatbotId": "g",
+            "chatId": "chat-a",
+        },
+    )
+
+    assert response.status_code == 200
+    payload = response.json()["aiResponse"]
+    assert captured["query"] == "give me a program of even odd number in python"
+    assert "```python" in payload["content"]
+    diagnostics = payload["metadata"]["processing_diagnostics"]
+    assert diagnostics["retrieval"]["status"] == "skipped"
+    assert diagnostics["interpretation"]["intent"] == "CODE_QUERY"
+    assert diagnostics["generation"]["status"] == "success"
+    assert diagnostics["trace_id"] == payload["metadata"]["trace_id"]
 
 
 def test_auth_missing_or_invalid_token_is_denied(monkeypatch):

@@ -109,6 +109,7 @@ class DebugRetrievalRequest(BaseModel):
 @asynccontextmanager
 async def _app_lifespan(_app):
     from retrieval.retriever import warm_rag_index
+    from service.mongodb import close_mongo_client
 
     try:
         if await asyncio.to_thread(warm_rag_index):
@@ -117,7 +118,10 @@ async def _app_lifespan(_app):
             logger.warning("Active vector index unavailable; lexical retrieval remains enabled.")
     except Exception:
         logger.exception("RAG startup warmup failed; lexical retrieval remains enabled.")
-    yield
+    try:
+        yield
+    finally:
+        await asyncio.to_thread(close_mongo_client)
 
 
 app = FastAPI(
@@ -1722,6 +1726,27 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
         with _CHAT_LOCK:
             chat = _CHAT_SESSIONS[chat_id]
 
+    conversation_history = []
+    history_characters = 0
+    for previous_message in reversed(chat.get("messages", [])[-8:]):
+        if not isinstance(previous_message, dict):
+            continue
+        sender = str(previous_message.get("sender") or "")
+        content = str(previous_message.get("content") or "").strip()
+        if sender not in {"user", "bot", "assistant"} or not content:
+            continue
+        content = content[:2000]
+        if history_characters + len(content) > 8000:
+            break
+        conversation_history.append(
+            {
+                "sender": "assistant" if sender in {"bot", "assistant"} else "user",
+                "content": content,
+            }
+        )
+        history_characters += len(content)
+    conversation_history.reverse()
+
     user_msg = {"sender": "user", "content": message, "timestamp": _utc_now_iso()}
     with _CHAT_LOCK:
         chat["messages"].append(user_msg)
@@ -1741,17 +1766,22 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
                 "session_id": chat_id,
                 "source_language": adapted.source_language,
                 "allow_web": False,
+                "conversation_history": conversation_history,
             },
         )
         router_response = language_adapter.localize_response(
             router_response,
             source_language=adapted.source_language,
         )
-        answer = str(router_response.get("answer") or "I could not generate a response.")
+        answer = str(router_response.get("answer") or "").strip()
+        if not answer:
+            raise RuntimeError("Question-answering pipeline returned an empty answer.")
     except Exception as exc:
-        logger.exception("chat_new ask pipeline failed: %s", exc)
-        router_response = {}
-        answer = "I am still learning this topic, please try again."
+        logger.exception("chat_new answer generation failed.")
+        raise HTTPException(
+            status_code=502,
+            detail="The question-answering service is temporarily unavailable.",
+        ) from exc
 
     ai_metadata = {
         "retrieved_chunks": [],
@@ -1775,8 +1805,40 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
         "bucket_proof": router_response.get("bucket_proof"),
         "output_contract": router_response.get("output_contract"),
         "retrieval_trace": router_response.get("retrieval_trace"),
+        "processing_diagnostics": router_response.get("processing_diagnostics"),
         "language_adapter": router_response.get("language_adapter"),
     }
+    if isinstance(ai_metadata["processing_diagnostics"], dict):
+        ai_metadata["processing_diagnostics"]["trace_id"] = ai_metadata["trace_id"]
+    retrieval_trace = router_response.get("retrieval_trace") or {}
+    source_evidence = router_response.get("retrieved_evidence")
+    if not isinstance(source_evidence, list):
+        source_evidence = retrieval_trace.get("evidence_sources") or []
+    retrieved_chunks = []
+    for index, evidence in enumerate(source_evidence):
+        if not isinstance(evidence, dict):
+            continue
+        content = str(evidence.get("excerpt") or evidence.get("content") or "").strip()
+        source = str(
+            evidence.get("path") or evidence.get("file") or evidence.get("source") or ""
+        ).strip()
+        if not content or not source:
+            continue
+        raw_score = (
+            evidence.get("reranker_score")
+            or evidence.get("score")
+            or evidence.get("retrieval_score")
+            or evidence.get("evidence_coverage")
+            or 0
+        )
+        try:
+            score = float(raw_score)
+        except (TypeError, ValueError):
+            score = 0.0
+        retrieved_chunks.append(
+            {"index": index, "file": source, "score": score, "content": content}
+        )
+    ai_metadata["retrieved_chunks"] = retrieved_chunks
     ai_msg = {"sender": "bot", "content": answer, "timestamp": _utc_now_iso(), "metadata": ai_metadata}
     with _CHAT_LOCK:
         chat["messages"].append(ai_msg)

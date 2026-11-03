@@ -197,6 +197,7 @@ class UniversalOrchestrator:
             "confidence": result_payload.get("confidence", 0.95),
             "citations": result_payload.get("citations", []),
             "sources_consulted": result_payload.get("sources_consulted", []),
+            "retrieval_trace": result_payload.get("retrieval_trace"),
             "session_id": session.session_id,
             "user_name": session.user_name,
             "latency_ms": round(latency_ms, 2),
@@ -350,13 +351,26 @@ class UniversalOrchestrator:
             rag_res = self.rag_engine.answer_query(query)
             v_status = rag_res.get("verification_status", "UNVERIFIED")
             if v_status == "VERIFIED":
+                evidence = rag_res.get("evidence", [])
                 return {
                     "answer": rag_res.get("answer"),
                     "verification_status": "VERIFIED",
                     "confidence": rag_res.get("confidence", 0.90),
                     "citations": rag_res.get("citations", []),
                     "sources_consulted": rag_res.get("sources_consulted", []),
-                    "evidence": rag_res.get("evidence", []),
+                    "evidence": evidence,
+                    "retrieval_trace": {
+                        "evidence_sources": [
+                            {
+                                "file": item.get("file_name") or item.get("book"),
+                                "source": item.get("source_name"),
+                                "reranker_score": item.get("composite_score"),
+                                "retrieval_score": item.get("rrf_score"),
+                            }
+                            for item in evidence
+                            if isinstance(item, dict)
+                        ],
+                    },
                     "topic": query,
                 }
 
