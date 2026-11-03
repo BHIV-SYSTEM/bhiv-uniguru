@@ -146,6 +146,22 @@ def test_8_missing_canonical_evidence(runtime: KnowledgeConvergenceRuntime):
     assert record.claim_bindings[0].verification_status == ClaimVerificationStatus.UNVERIFIED_FALLBACK
 
 
+def test_unmatched_answer_claim_is_not_bound_to_unrelated_evidence(runtime: KnowledgeConvergenceRuntime):
+    record, _ = runtime.process_query_run(
+        query="What is dharma?",
+        candidates=[{"content": "Dharma is duty.", "source": "MASTERDB", "concept": "dharma"}],
+        synthesized_answer="Dharma is duty. Quantum entanglement has a phase.",
+    )
+
+    assert record.verification_status == "PARTIAL_VERIFIED"
+    assert record.claim_bindings[0].verification_status == ClaimVerificationStatus.VERIFIED
+    unverified_claim = record.claim_bindings[1]
+    assert unverified_claim.verification_status == ClaimVerificationStatus.UNVERIFIED_FALLBACK
+    assert unverified_claim.canonical_object_id == "uko:none:unverified"
+    assert unverified_claim.source_id == "LLM_FALLBACK"
+    assert unverified_claim.confidence == 0.0
+
+
 def test_9_fallback_invocation_visibility(runtime: KnowledgeConvergenceRuntime):
     candidates = [
         {"content": "Unverified LLM draft text.", "source": "LLM_FALLBACK", "concept": "unverified", "authority_tier": "FALLBACK"},

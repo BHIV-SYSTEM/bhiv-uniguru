@@ -95,13 +95,27 @@ def test_verify_chain_detects_tampered_entry(tmp_path):
     lines[0] = json.dumps(first, sort_keys=True)
     log_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-    em2 = AuditEmitter(log_path=log_path)
-    result = em2.verify_chain()
-    assert result["valid"] is False
+    with pytest.raises(ValueError, match="hash mismatch"):
+        AuditEmitter(log_path=log_path)
+
+
+def test_verify_chain_detects_tampered_single_entry(tmp_path):
+    from security.audit_emitter import AuditEmitter
+
+    log_path = tmp_path / "single-tamper.jsonl"
+    emitter = AuditEmitter(log_path=log_path)
+    emitter.emit(event="e1", actor="a", resource="r", outcome="ALLOW")
+
+    row = json.loads(log_path.read_text(encoding="utf-8"))
+    row["outcome"] = "DENY"
+    log_path.write_text(json.dumps(row) + "\n", encoding="utf-8")
+
+    with pytest.raises(ValueError, match="hash mismatch"):
+        AuditEmitter(log_path=log_path)
 
 
 def test_verify_chain_detects_broken_prev_hash(tmp_path):
-    from security.audit_emitter import AuditEmitter
+    from security.audit_emitter import AuditEmitter, AuditEntry
     log_path = tmp_path / "broken.jsonl"
     em = AuditEmitter(log_path=log_path)
     em.emit(event="e1", actor="a", resource="r", outcome="ALLOW")
@@ -110,13 +124,35 @@ def test_verify_chain_detects_broken_prev_hash(tmp_path):
     lines = log_path.read_text(encoding="utf-8").splitlines()
     second = json.loads(lines[1])
     second["prev_hash"] = "0" * 64  # break the chain link
-    lines[1] = json.dumps(second, sort_keys=True)
+    lines[1] = json.dumps(
+        AuditEntry(
+            seq=second["seq"],
+            event=second["event"],
+            actor=second["actor"],
+            resource=second["resource"],
+            outcome=second["outcome"],
+            metadata=second["metadata"],
+            timestamp=second["timestamp"],
+            prev_hash=second["prev_hash"],
+        ).to_dict(),
+        sort_keys=True,
+    )
     log_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     em2 = AuditEmitter(log_path=log_path)
     result = em2.verify_chain()
     assert result["valid"] is False
     assert result["broken_at_seq"] == 1
+
+
+def test_malformed_persisted_audit_log_fails_closed(tmp_path):
+    from security.audit_emitter import AuditEmitter
+
+    log_path = tmp_path / "malformed-audit.jsonl"
+    log_path.write_text("{not-json}\n", encoding="utf-8")
+
+    with pytest.raises(json.JSONDecodeError):
+        AuditEmitter(log_path=log_path)
 
 
 # ---------------------------------------------------------------------------

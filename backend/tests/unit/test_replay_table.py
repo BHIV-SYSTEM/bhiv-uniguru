@@ -120,3 +120,13 @@ def test_persist_expired_entries_not_reloaded(tmp_path):
     time.sleep(0.05)
     t2 = ReplayMitigationTable(persist_path=path, leeway_seconds=0)
     assert t2.is_replayed(jti) is False
+
+
+def test_corrupt_persisted_replay_store_fails_closed(tmp_path):
+    from security.replay_table import ReplayMitigationTable
+
+    path = tmp_path / "corrupt-replay.json"
+    path.write_text("{not-json", encoding="utf-8")
+
+    with pytest.raises(RuntimeError, match="refusing requests"):
+        ReplayMitigationTable(persist_path=str(path))

@@ -107,7 +107,7 @@ class KnowledgeAuthorityMap:
                 influences_answers=True,
                 has_provenance=True,
                 rebuildable=True,
-                rebuild_path="scripts/rebuild_faiss_index.py",
+                rebuild_path="backend/scripts/build_rag_index.py",
                 governance_owner="Vijay (Search Engine)",
                 description="Derived vector index for candidate retrieval acceleration.",
             ),
@@ -131,9 +131,9 @@ class KnowledgeAuthorityMap:
                 influences_answers=False,
                 has_provenance=True,
                 rebuildable=True,
-                rebuild_path="backend/tests/fixtures/",
+                rebuild_path="backend/tests/",
                 governance_owner="Isha",
-                description="Test mocks forbidden from production query runs.",
+                description="Inline test fixtures forbidden from production query runs.",
             ),
         ]
         for src in sources:

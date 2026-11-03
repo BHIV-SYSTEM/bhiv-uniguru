@@ -133,8 +133,10 @@ class ReplayMitigationTable:
     def _load(self) -> None:
         try:
             raw = json.loads(self._persist_path.read_text(encoding="utf-8"))  # type: ignore[union-attr]
+            if not isinstance(raw, dict):
+                raise ValueError("replay store must contain a JSON object")
             now = time.time()
             with self._lock:
                 self._seen = {k: float(v) for k, v in raw.items() if float(v) > now}
-        except (OSError, json.JSONDecodeError, ValueError):
-            pass
+        except (OSError, json.JSONDecodeError, TypeError, ValueError) as exc:
+            raise RuntimeError("Replay store could not be loaded; refusing requests until repaired.") from exc

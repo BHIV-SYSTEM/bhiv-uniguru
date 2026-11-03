@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional, Tuple
 
 REQUIRED_SANSKRIT_FIELDS = {"concept_id", "canonical_name", "sanskrit", "transliteration", "shabda", "dhatu", "vyakarana", "nirukta", "beeja", "tattva", "shakti", "functional_meaning", "related_concepts", "ontology_version", "semantic_version"}
 
@@ -12,8 +12,11 @@ class SanskritConcept:
     concept_id: str; canonical_name: str; sanskrit: str; transliteration: str
     shabda: str; dhatu: str; vyakarana: str; nirukta: str
     beeja: Optional[str]; tattva: Optional[str]; shakti: Optional[str]
-    functional_meaning: str; related_concepts: List[str]
+    functional_meaning: str; related_concepts: Tuple[str, ...]
     ontology_version: str; semantic_version: str
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "related_concepts", tuple(self.related_concepts))
 
 
 def validate_sanskrit_concept_dict(data: Dict[str, Any]) -> None:
@@ -35,4 +38,7 @@ def sanskrit_concept_from_dict(data: Dict[str, Any]) -> SanskritConcept:
 
 
 def sanskrit_concept_to_dict(concept: SanskritConcept) -> Dict[str, Any]:
-    return {field: getattr(concept, field) for field in REQUIRED_SANSKRIT_FIELDS}
+    return {
+        field: list(concept.related_concepts) if field == "related_concepts" else getattr(concept, field)
+        for field in REQUIRED_SANSKRIT_FIELDS
+    }

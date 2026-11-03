@@ -205,12 +205,12 @@ class KnowledgeConvergenceRuntime:
                 binding = ClaimEvidenceBinding(
                     claim_id=cid,
                     claim_text=sentence,
-                    canonical_object_id=selected_items[0].canonical_object_id,
-                    source_id=selected_items[0].source_id,
-                    text_span=selected_items[0].text_span,
-                    verification_status=ClaimVerificationStatus.DERIVED,
-                    confidence=0.5,
-                    provenance_hash=selected_items[0].provenance_hash,
+                    canonical_object_id="uko:none:unverified",
+                    source_id="LLM_FALLBACK",
+                    text_span=sentence,
+                    verification_status=ClaimVerificationStatus.UNVERIFIED_FALLBACK,
+                    confidence=0.0,
+                    provenance_hash=stable_hash({"unverified": True, "claim": sentence}),
                 )
             bindings.append(binding)
 

@@ -72,6 +72,29 @@ def test_authority_map_tier_classifications_are_correct():
     assert amap.get_tier("TEST_FIXTURE") == AuthorityTier.TEST_FIXTURE
 
 
+def test_faiss_authority_map_rebuild_path_points_to_existing_builder():
+    from pathlib import Path
+
+    from convergence.authority_contract import get_authority_map
+
+    source = get_authority_map().get_source("FAISS_VECTOR_INDEX")
+    builder_path = Path(__file__).resolve().parents[2] / source.rebuild_path
+
+    assert source.rebuildable is True
+    assert builder_path.is_file()
+
+
+def test_rebuildable_authority_sources_have_existing_paths():
+    from pathlib import Path
+
+    from convergence.authority_contract import get_authority_map
+
+    repository_root = Path(__file__).resolve().parents[2]
+    for source in get_authority_map().to_dict().values():
+        if source["rebuildable"]:
+            assert (repository_root / source["rebuild_path"]).exists(), source["source_key"]
+
+
 def test_authority_map_unknown_source_defaults_to_fallback():
     from convergence.authority_contract import get_authority_map, AuthorityTier
     amap = get_authority_map()

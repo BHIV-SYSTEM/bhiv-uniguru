@@ -199,8 +199,6 @@ def find_top_matches(
         and (medium is None or str(record.get("medium") or "").lower() == str(medium).lower())
         and (subject is None or str(record.get("subject") or "").lower() == str(subject).lower())
     ]
-    if not candidate_records:
-        candidate_records = records
 
     scored = [
         {

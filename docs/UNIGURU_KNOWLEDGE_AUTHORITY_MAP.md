@@ -24,13 +24,15 @@ This document establishes the official **Knowledge Authority Hierarchy**. Vector
 | Knowledge Source | Active Query Path | Authority Status | Contains Data | Influences Output | Provenance | Rebuild Path | Governance Owner |
 |---|---|---|---|---|---|---|---|
 | **MASTERDB** (`masterdb/balbharti/`) | YES | `CANONICAL` | Balbharti textbook curriculum, grade/subject metadata | YES | Source record ID, chapter lineage | Ground truth ingest pipeline | MDU / Isha |
-| **AKASHIC** (`data/kosha/`) | YES | `CANONICAL` | Primary Kosha knowledge records, classical texts | YES | Knowledge ID, text hash, domain tag | Ingest & purification script | MDU / Isha |
+| **AKASHIC** (`backend/data/kosha/`) | YES | `CANONICAL` | Primary Kosha knowledge records, classical texts | YES | Knowledge ID, text hash, domain tag | Ingest & purification script | MDU / Isha |
 | **KNOWLEDGE_GRAPH** (`ontology/`) | YES | `CANONICAL` | Entity relations, Darśana matrix, Pāṇini sūtras | YES | Graph node ID, edge classification | Ontology build & snapshot loader | Isha / Sanskar |
-| **KOSHA_JSON** (`data/kosha/entries/`) | YES | `CANONICAL` | Validated Kosha entries | YES | Entry ID, source text span | Kosha Enforcer | Isha |
+| **KOSHA_JSON** (`backend/data/kosha/`) | YES | `CANONICAL` | Validated Kosha entries | YES | Entry ID, source text span | Kosha Enforcer | Isha |
 | **MARKDOWN_CORPUS** (`backend/knowledge/`) | YES | `CANONICAL` | Domain markdowns (Sanskrit, Quantum, Jain, etc.) | YES | Content hash, path | Knowledge ingest parser | Isha |
-| **FAISS_VECTOR_INDEX** (`backend/retrieval/`) | YES | `DERIVED` | Dense embedding vectors for candidate search | YES (Candidate stage only) | Vector ID → Canonical Object ID | Rebuild script `scripts/rebuild_faiss_index.py` | Vijay (Search Engine) |
+| **FAISS_VECTOR_INDEX** (`backend/RAG/`) | YES | `DERIVED` | Dense embedding vectors for candidate search | YES (Candidate stage only) | Indexed Markdown path and chunk metadata | Builder `backend/scripts/build_rag_index.py` | Vijay (Search Engine) |
 | **LLM_FALLBACK** (`service/api.py`) | CONDITIONAL | `FALLBACK` | Generative completion | ONLY when unverified fallback allowed | Explicit fallback tag + warning | N/A (generative) | Vijay / Isha |
-| **TEST_FIXTURE** (`tests/fixtures/`) | TESTS ONLY | `TEST_FIXTURE` | Mock test payloads | NO (Excluded in production) | Fixture hash | Static code fixture | Isha |
+| **TEST_FIXTURE** (`backend/tests/`, inline fixtures) | TESTS ONLY | `TEST_FIXTURE` | Mock test payloads | NO (Excluded in production) | Fixture hash | Test source code | Isha |
+
+These are policy classifications and declared paths, not live verification results. In this archive, the MasterDB validator rejects all 42 canonical-dataset rows because `source_lineage.source_reference` is missing.
 
 ---
 
@@ -51,12 +53,13 @@ This document establishes the official **Knowledge Authority Hierarchy**. Vector
 Vector embeddings (FAISS) are **retrieval accelerators**, not truth providers.
 
 ### Rebuild Specification:
-1. **Trigger**: Any modification to `MASTERDB`, `AKASHIC`, or `backend/knowledge/`.
+1. **Trigger**: Any modification to `backend/knowledge/` Markdown sources.
 2. **Process**:
-   - `scripts/rebuild_faiss_index.py` reads all `CANONICAL` objects.
-   - Extracts clean text spans and generates embeddings via `EmbeddingProvider`.
-   - Stores candidate metadata mapping `vector_id → canonical_object_id`.
-3. **Validation**: Every vector candidate retrieved during query execution must be resolved back to its `canonical_object_id`. Unresolved vectors are discarded as index drift.
+   - `backend/scripts/build_rag_index.py` reads Markdown files below `backend/knowledge/`.
+   - Extracts chunks and generates embeddings through `SentenceTransformer`.
+   - Stores indexed file paths and chunk metadata in SQLite alongside the FAISS index.
+   - This builder does not currently ingest `MASTERDB` or Kosha records, and its chunk schema does not store a `canonical_object_id`.
+3. **Validation target (not yet implemented by this builder)**: Vector candidates should resolve to stable canonical object IDs, and unresolved candidates should be discarded. The current Markdown chunk schema stores file and chunk metadata but no `canonical_object_id`, so this requirement must not be reported as satisfied.
 
 ---
 

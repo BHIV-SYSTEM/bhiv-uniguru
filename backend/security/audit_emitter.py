@@ -109,6 +109,8 @@ class AuditEntry:
             timestamp=str(data["timestamp"]),
             prev_hash=str(data["prev_hash"]),
         )
+        if data.get("entry_hash") != entry.entry_hash:
+            raise ValueError(f"Audit entry hash mismatch at sequence {entry.seq}.")
         return entry
 
 
@@ -208,15 +210,12 @@ class AuditEmitter:
         if not self._path.exists():
             return []
         entries: List[AuditEntry] = []
-        try:
-            with self._path.open("r", encoding="utf-8") as fh:
-                for line in fh:
-                    line = line.strip()
-                    if not line:
-                        continue
-                    entries.append(AuditEntry.from_dict(json.loads(line)))
-        except OSError:
-            pass
+        with self._path.open("r", encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if not line:
+                    continue
+                entries.append(AuditEntry.from_dict(json.loads(line)))
         return entries
 
     @staticmethod
