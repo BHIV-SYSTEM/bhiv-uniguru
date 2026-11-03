@@ -106,6 +106,7 @@ jobs:
             -f frontend/Dockerfile \
             frontend
 
+
   # ==========================================================
   # 2. BUILD + PUSH
   # ==========================================================
@@ -194,6 +195,7 @@ jobs:
         if: always()
         run: docker logout || true
 
+
   # ==========================================================
   # 3. DEPLOY
   # ==========================================================
@@ -237,6 +239,7 @@ jobs:
             UNIGURU_ENV_FILE
           do
             value="${!name:-}"
+
             if [ -z "$value" ]; then
               echo "ERROR: Missing GitHub secret: $name"
               exit 1
@@ -355,7 +358,11 @@ jobs:
           # Docker Hub login
           # -----------------------------------------------
 
-          echo "$DOCKER_PASSWORD_B64"             | base64 -d             | docker login                 -u "${{ secrets.DOCKER_USERNAME }}"                 --password-stdin
+          echo "$DOCKER_PASSWORD_B64" \
+            | base64 -d \
+            | docker login \
+                -u "${{ secrets.DOCKER_USERNAME }}" \
+                --password-stdin
 
           # -----------------------------------------------
           # Generate exact release Compose file
@@ -369,6 +376,7 @@ jobs:
             > docker-compose.production.yml
 
           echo "Images selected for release:"
+
           grep -E "image:.*(uniguru-2-api|uniguru-2-frontend)" \
             docker-compose.production.yml
 
@@ -384,6 +392,7 @@ jobs:
             IMAGE="\$1"
 
             for ATTEMPT in 1 2 3 4 5; do
+
               echo "-----------------------------------------"
               echo "Pulling \$IMAGE"
               echo "Attempt \$ATTEMPT/5"
@@ -396,11 +405,10 @@ jobs:
 
               if [ "\$ATTEMPT" -lt 5 ]; then
                 echo "Pull failed."
-
-                # Restart Docker only after repeated pull failures.
                 echo "Docker pull failed; waiting before retry..."
                 sleep 20
               fi
+
             done
 
             echo "ERROR: Failed to pull \$IMAGE"
@@ -413,12 +421,30 @@ jobs:
 
           # -----------------------------------------------
           # Start deployment
+          #
+          # IMPORTANT:
+          # --force-recreate ensures nginx is recreated too.
+          # This prevents stale Docker service IPs from being
+          # retained by nginx after frontend/bridge recreation.
           # -----------------------------------------------
+
+          echo "Starting UniGuru deployment..."
 
           docker compose \
             -f docker-compose.production.yml \
             up -d \
+            --force-recreate \
             --remove-orphans
+
+          # -----------------------------------------------
+          # Validate Nginx configuration after recreation
+          # -----------------------------------------------
+
+          echo "Validating Nginx configuration..."
+
+          docker exec uniguru-nginx nginx -t
+
+          echo "Nginx configuration is valid."
 
           # -----------------------------------------------
           # Health check
@@ -482,10 +508,12 @@ jobs:
               echo "Release: \$SHORT_SHA"
               echo "URL: http://VM_IP:\${PUBLIC_PORT}"
               echo "========================================="
+
               break
             fi
 
             if [ "\$i" -eq 18 ]; then
+
               echo "========================================="
               echo "Deployment health check FAILED."
               echo "========================================="
@@ -502,6 +530,7 @@ jobs:
             fi
 
             sleep 10
+
           done
 
           docker logout || true
@@ -511,12 +540,14 @@ jobs:
           # -----------------------------------------------
 
           if [ ! -f release_history/RELEASE_HISTORY.md ]; then
+
             printf '%s\n' \
               '# UniGuru Release History' \
               '' \
               '| Timestamp | Image Tag | Status | Description |' \
               '|---|---|---|---|' \
               > release_history/RELEASE_HISTORY.md
+
           fi
 
           echo \
@@ -531,6 +562,7 @@ jobs:
         run: |
           echo "UniGuru deployment completed successfully."
           echo "Production URL: http://163.128.209.18:${{ env.UNIGURU_PUBLIC_PORT }}"
+
 
   # ==========================================================
   # 4. AUTOMATIC ROLLBACK
@@ -547,6 +579,7 @@ jobs:
     if: always() && needs.deploy.result == 'failure'
 
     steps:
+
       - name: Install sshpass
         run: |
           sudo apt-get update
@@ -574,28 +607,44 @@ jobs:
           PUBLIC_PORT="${{ env.UNIGURU_PUBLIC_PORT }}"
           DOCKER_PASSWORD_B64="${DOCKER_PASSWORD_B64}"
 
-          cd "$APP_DIR"
+          cd "\$APP_DIR"
+
+          # -----------------------------------------------
+          # Validate last known-good release
+          # -----------------------------------------------
 
           if [ ! -f release_history/LAST_GOOD_TAG ]; then
             echo "No last known-good release exists."
             exit 1
           fi
 
-          LAST_GOOD_TAG="$(cat release_history/LAST_GOOD_TAG)"
+          LAST_GOOD_TAG="\$(cat release_history/LAST_GOOD_TAG)"
 
-          if [ -z "$LAST_GOOD_TAG" ]; then
+          if [ -z "\$LAST_GOOD_TAG" ]; then
             echo "Last known-good tag is empty."
             exit 1
           fi
 
-          echo "Rolling back to: $LAST_GOOD_TAG"
+          echo "Rolling back to: \$LAST_GOOD_TAG"
 
-          echo "$DOCKER_PASSWORD_B64"             | base64 -d             | docker login                 -u "${{ secrets.DOCKER_USERNAME }}"                 --password-stdin
+          # -----------------------------------------------
+          # Docker Hub login
+          # -----------------------------------------------
+
+          echo "$DOCKER_PASSWORD_B64" \
+            | base64 -d \
+            | docker login \
+                -u "${{ secrets.DOCKER_USERNAME }}" \
+                --password-stdin
+
+          # -----------------------------------------------
+          # Generate rollback Compose file
+          # -----------------------------------------------
 
           sed \
-            -e "s|IMG_TAG|$LAST_GOOD_TAG|g" \
-            -e "s|bhiv/uniguru-2-api:latest|bhiv/uniguru-2-api:$LAST_GOOD_TAG|g" \
-            -e "s|bhiv/uniguru-2-frontend:latest|bhiv/uniguru-2-frontend:$LAST_GOOD_TAG|g" \
+            -e "s|IMG_TAG|\$LAST_GOOD_TAG|g" \
+            -e "s|bhiv/uniguru-2-api:latest|bhiv/uniguru-2-api:\$LAST_GOOD_TAG|g" \
+            -e "s|bhiv/uniguru-2-frontend:latest|bhiv/uniguru-2-frontend:\$LAST_GOOD_TAG|g" \
             docker-compose.production.template.yml \
             > docker-compose.production.yml
 
@@ -603,69 +652,101 @@ jobs:
             -f docker-compose.production.yml \
             config >/dev/null
 
-          docker pull "bhiv/uniguru-2-api:$LAST_GOOD_TAG"
-          docker pull "bhiv/uniguru-2-frontend:$LAST_GOOD_TAG"
+          # -----------------------------------------------
+          # Pull rollback images
+          # -----------------------------------------------
+
+          docker pull "bhiv/uniguru-2-api:\$LAST_GOOD_TAG"
+          docker pull "bhiv/uniguru-2-frontend:\$LAST_GOOD_TAG"
           docker pull "nginx:1.27-alpine"
+
+          # -----------------------------------------------
+          # Roll back
+          #
+          # IMPORTANT:
+          # Force recreation also refreshes Nginx so it
+          # resolves current frontend/bridge service IPs.
+          # -----------------------------------------------
 
           docker compose \
             -f docker-compose.production.yml \
             up -d \
+            --force-recreate \
             --remove-orphans
+
+          # -----------------------------------------------
+          # Validate Nginx configuration
+          # -----------------------------------------------
+
+          docker exec uniguru-nginx nginx -t
 
           echo "Waiting for rollback health..."
 
-          for i in $(seq 1 18); do
-            API_HEALTH=$(docker inspect \
+          # -----------------------------------------------
+          # Rollback health check
+          # -----------------------------------------------
+
+          for i in \$(seq 1 18); do
+
+            API_HEALTH=\$(docker inspect \
               --format='{{.State.Health.Status}}' \
               uniguru-api 2>/dev/null || echo "not-found")
 
-            BRIDGE_HEALTH=$(docker inspect \
+            BRIDGE_HEALTH=\$(docker inspect \
               --format='{{.State.Health.Status}}' \
               uniguru-bridge 2>/dev/null || echo "not-found")
 
-            FRONTEND_HEALTH=$(docker inspect \
+            FRONTEND_HEALTH=\$(docker inspect \
               --format='{{.State.Health.Status}}' \
               uniguru-frontend 2>/dev/null || echo "not-found")
 
-            NGINX_HEALTH=$(docker inspect \
+            NGINX_HEALTH=\$(docker inspect \
               --format='{{.State.Health.Status}}' \
               uniguru-nginx 2>/dev/null || echo "not-found")
 
             PUBLIC_HEALTH=0
             PUBLIC_READY=0
+            PUBLIC_FRONTEND=0
 
             curl -fsS --max-time 10 \
-              "http://127.0.0.1:${PUBLIC_PORT}/health" \
+              "http://127.0.0.1:\${PUBLIC_PORT}/health" \
               >/dev/null 2>&1 && PUBLIC_HEALTH=1 || true
 
             curl -fsS --max-time 10 \
-              "http://127.0.0.1:${PUBLIC_PORT}/ready" \
+              "http://127.0.0.1:\${PUBLIC_PORT}/ready" \
               >/dev/null 2>&1 && PUBLIC_READY=1 || true
 
-            echo \
-              "rollback_attempt=$i api=$API_HEALTH bridge=$BRIDGE_HEALTH frontend=$FRONTEND_HEALTH nginx=$NGINX_HEALTH health=$PUBLIC_HEALTH ready=$PUBLIC_READY"
+            curl -fsS --max-time 10 \
+              "http://127.0.0.1:\${PUBLIC_PORT}/" \
+              >/dev/null 2>&1 && PUBLIC_FRONTEND=1 || true
 
-            if [ "$API_HEALTH" = "healthy" ] && \
-               [ "$BRIDGE_HEALTH" = "healthy" ] && \
-               [ "$FRONTEND_HEALTH" = "healthy" ] && \
-               [ "$NGINX_HEALTH" = "healthy" ] && \
-               [ "$PUBLIC_HEALTH" -eq 1 ] && \
-               [ "$PUBLIC_READY" -eq 1 ]; then
+            echo \
+              "rollback_attempt=\$i api=\$API_HEALTH bridge=\$BRIDGE_HEALTH frontend=\$FRONTEND_HEALTH nginx=\$NGINX_HEALTH health=\$PUBLIC_HEALTH ready=\$PUBLIC_READY frontend_http=\$PUBLIC_FRONTEND"
+
+            if [ "\$API_HEALTH" = "healthy" ] && \
+               [ "\$BRIDGE_HEALTH" = "healthy" ] && \
+               [ "\$FRONTEND_HEALTH" = "healthy" ] && \
+               [ "\$NGINX_HEALTH" = "healthy" ] && \
+               [ "\$PUBLIC_HEALTH" -eq 1 ] && \
+               [ "\$PUBLIC_READY" -eq 1 ] && \
+               [ "\$PUBLIC_FRONTEND" -eq 1 ]; then
 
               if [ ! -f release_history/RELEASE_HISTORY.md ]; then
+
                 printf '%s\n' \
                   '# UniGuru Release History' \
                   '' \
                   '| Timestamp | Image Tag | Status | Description |' \
                   '|---|---|---|---|' \
                   > release_history/RELEASE_HISTORY.md
+
               fi
 
               echo \
-                "| $(date -u '+%Y-%m-%d %H:%M:%S UTC') | $LAST_GOOD_TAG | ROLLBACK_SUCCESS | Automatic rollback |" \
+                "| \$(date -u '+%Y-%m-%d %H:%M:%S UTC') | \$LAST_GOOD_TAG | ROLLBACK_SUCCESS | Automatic rollback |" \
                 >> release_history/RELEASE_HISTORY.md
 
-              echo "$LAST_GOOD_TAG" > release_history/LAST_GOOD_TAG
+              echo "\$LAST_GOOD_TAG" > release_history/LAST_GOOD_TAG
 
               docker logout || true
 
@@ -673,7 +754,8 @@ jobs:
               exit 0
             fi
 
-            if [ "$i" -eq 18 ]; then
+            if [ "\$i" -eq 18 ]; then
+
               docker compose \
                 -f docker-compose.production.yml \
                 ps
@@ -687,6 +769,7 @@ jobs:
             fi
 
             sleep 10
+
           done
 
           EOF

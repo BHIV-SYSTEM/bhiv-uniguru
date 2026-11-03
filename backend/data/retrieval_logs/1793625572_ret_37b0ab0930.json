@@ -1,0 +1,21 @@
+{
+  "log_id": "ret_37b0ab0930",
+  "timestamp": 1793625572.0615237,
+  "query": "What is Qubit in quantum computing?",
+  "verification_status": "VERIFIED",
+  "confidence": 0.8783,
+  "citations": [
+    "[1] quantum/Quantum_Computing/quantum_information_core.md (Source: quantum/Quantum_Computing/quantum_information_core.md, Page 1, Section: 'quantum')",
+    "[2] quantum/grover_algorithm.md (Source: quantum/grover_algorithm.md, Page 1, Section: 'grover_algorithm')",
+    "[3] quantum/superposition.md (Source: quantum/superposition.md, Page 1, Section: 'superposition')",
+    "[4] quantum/KB_INDEX.md (Source: quantum/KB_INDEX.md, Page 1, Section: 'KB_INDEX')"
+  ],
+  "sources_consulted": [
+    "quantum/KB_INDEX.md",
+    "quantum/Quantum_Computing/quantum_information_core.md",
+    "quantum/grover_algorithm.md",
+    "quantum/superposition.md"
+  ],
+  "latency_ms": 30.3,
+  "evidence_count": 4
+}

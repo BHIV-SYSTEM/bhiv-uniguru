@@ -37,6 +37,17 @@ You will need to open **two** separate terminal windows to run both the frontend
    ```
 *(This starts the user interface locally, usually at `http://localhost:5173`. Open this URL in your web browser.)*
 
+### MongoDB persistence
+The backend stores accounts, login sessions, and chat history in MongoDB. Copy
+`backend/.env.example` to `backend/.env`, then set `MONGODB_URI` to the rotated
+MongoDB Atlas connection string and `MONGODB_DATABASE` to the database name
+(defaults to `uniguru`). Keep the URI only in the ignored backend `.env` file or
+your deployment's secret store; never put it in a frontend `VITE_` variable.
+
+On first use, existing SQLite users, sessions, and chats are imported
+idempotently into MongoDB. The original SQLite files are left untouched as
+backups. Check backend logs for connection or migration errors.
+
 ---
 
 ## 🧠 Using the `/new_rag` Endpoint

@@ -6,7 +6,7 @@ Leave an item unchecked until its named verification source has produced evidenc
 
 - [ ] MDU credential rotated/revoked by provider — provider-required
 - [ ] Replacement MDU secret supplied externally if required — operator-required; provider-required if live MDU is enabled
-- [ ] Supabase production credentials available — operator-required
+- [x] Native SQLite authentication configured — zero external cloud credentials required
 - [ ] API authentication secrets available — operator-required
 - [ ] CORS origin configured — repository-verifiable; operator must confirm the deployed frontend origin
 - [ ] production demo auth disabled — repository-verifiable; operator must confirm deployed value

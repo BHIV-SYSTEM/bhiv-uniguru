@@ -3,7 +3,7 @@
 ## 1. Frontend Layer (React/Vite)
 - **Framework**: Vite + React
 - **Styling**: Tailwind CSS
-- **Authentication**: Firebase / Supabase Integration
+- **Authentication**: Native SQLite Authentication
 - **Key Routes**: `/chatpage`, Dashboard, User Profiles
 - **Communication**: Interacts heavily with `localhost:8000/new_rag` and `localhost:8000/ask`
 

@@ -57,7 +57,7 @@ https://uniguru-v2.onrender.com
 uvicorn service.api:app
 ```
 
-2. Supabase auth is now optional when Supabase is not configured, so Mitra API startup is not blocked by missing Supabase auth packages in no-auth deployments.
+2. Native local SQLite authentication is used; startup is not blocked by any external authentication packages or cloud service availability.
 
 3. Backend retrieval imports now explicitly use `backend.retrieval.*` where required, avoiding collision with the top-level curriculum `retrieval/` package.
 

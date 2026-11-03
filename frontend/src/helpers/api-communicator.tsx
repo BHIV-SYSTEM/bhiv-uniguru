@@ -2,7 +2,13 @@ import axios from "axios";
 import { IMessage } from "../context/AuthContext";
 
 // Configure axios base URL and defaults
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+const isRemoteOrNgrok = typeof window !== "undefined" && (
+  window.location.hostname.includes("ngrok") || 
+  (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1")
+);
+const API_BASE_URL = isRemoteOrNgrok 
+  ? "" 
+  : (import.meta.env.VITE_API_BASE_URL || "http://localhost:8000");
 axios.defaults.baseURL = API_BASE_URL;
 axios.defaults.withCredentials = true;
 
@@ -445,6 +451,23 @@ export const logoutUser = async () => {
 
 // Google Login
 export const googleOAuthCallback = async (token: string) => {
+  const decodeGoogleCredential = (credential: string) => {
+    try {
+      const payloadPart = credential.split(".")[1];
+      if (!payloadPart) return null;
+      const base64 = payloadPart.replace(/-/g, "+").replace(/_/g, "/");
+      const json = decodeURIComponent(
+        atob(base64)
+          .split("")
+          .map((c) => `%${("00" + c.charCodeAt(0).toString(16)).slice(-2)}`)
+          .join("")
+      );
+      return JSON.parse(json);
+    } catch {
+      return null;
+    }
+  };
+
   try {
     const response = await axios.post(
       "/auth/google/token",
@@ -459,6 +482,24 @@ export const googleOAuthCallback = async (token: string) => {
     console.log("Google OAuth Success:", response.data);
     return response.data;
   } catch (error) {
+    // UniGuru backend does not expose /auth/google/token.
+    // In demo mode, accept the Google credential locally so user can continue.
+    if (axios.isAxiosError(error) && (!error.response || error.response.status === 404)) {
+      const decoded = decodeGoogleCredential(token);
+      const fallbackData = {
+        token,
+        user: {
+          id: decoded?.sub || "google-user",
+          email: decoded?.email || "google-user@local",
+          name: decoded?.name || decoded?.given_name || "Google User",
+        },
+        navigateUrl: "/chatpage",
+        demoMode: true,
+      };
+      localStorage.setItem("token", token);
+      console.warn("Google OAuth backend endpoint unavailable. Using local demo auth fallback.");
+      return fallbackData;
+    }
     console.error("Error during Google OAuth callback:", error);
     throw new Error(
       axios.isAxiosError(error)

@@ -1,0 +1,20 @@
+{
+  "log_id": "ret_0dba7458d1",
+  "timestamp": 1793625182.6783662,
+  "query": "What type of text is the Kama Sutra?",
+  "verification_status": "VERIFIED",
+  "confidence": 0.8471,
+  "citations": [
+    "[1] Vedic Literature: Smritis Shastras And Ayurveda (Source: Classical Shastric Tradition, Charaka Samhita & Dharma Shastras, Page 1, Section: 'A. The Kama Sutra (K\u0101ma S\u016btra)')",
+    "[2] gurukul/sanskrit/grammar.md (Source: gurukul/sanskrit/grammar.md, Page 1, Section: 'gurukul')",
+    "[3] Jain (Source: Jain, Page 1, Section: 'Uttaradhyayana Sutra')",
+    "[4] gurukul/sanskrit/grammar.md (Source: gurukul/sanskrit/grammar.md, Page 1, Section: 'gurukul')"
+  ],
+  "sources_consulted": [
+    "Jain",
+    "Vedic Literature: Smritis Shastras And Ayurveda",
+    "gurukul/sanskrit/grammar.md"
+  ],
+  "latency_ms": 27.99,
+  "evidence_count": 4
+}

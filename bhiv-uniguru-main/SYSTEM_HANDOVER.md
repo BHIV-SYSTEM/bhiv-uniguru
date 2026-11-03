@@ -149,7 +149,7 @@ pip install -r backend/requirements.txt
 
 # Set environment variables
 cp .env.example .env
-# Edit .env: set UNIGURU_API_TOKEN, GROQ_API_KEY, SUPABASE_URL etc.
+# Edit .env: set UNIGURU_API_TOKEN, GROQ_API_KEY etc.
 
 # Run the API
 .\run_local_api.ps1
@@ -181,8 +181,6 @@ Set environment variables in the Render dashboard under Environment.
 | `UNIGURU_API_TOKENS` | No | — | Comma-separated additional tokens |
 | `UNIGURU_API_AUTH_REQUIRED` | No | `true` | Set `false` for demo mode |
 | `GROQ_API_KEY` | Yes* | — | Groq LLM key (*required for LLM fallback) |
-| `SUPABASE_URL` | No | — | Supabase project URL |
-| `SUPABASE_ANON_KEY` | No | — | Supabase anon key |
 | `UNIGURU_LOG_LEVEL` | No | `INFO` | Logging verbosity |
 | `UNIGURU_RATE_LIMIT_MAX_REQUESTS` | No | `60` | Requests per minute per IP |
 | `UNIGURU_KB_CONFIDENCE_THRESHOLD` | No | `0.45` | Min confidence to accept KB result |
@@ -246,7 +244,7 @@ curl -H "X-Api-Token: <token>" http://localhost:8000/monitoring/dashboard
 |------------|--------|-----------|
 | Only 4 Balbharti textbooks ingested (37 Kosha entries) | Low recall on many valid curriculum queries | Add more licensed textbook data to `backend/data/kosha/` |
 | LLM fallback requires external API (Groq) | Fallback responses unavailable offline | System works without LLM — returns "no verified knowledge" |
-| No persistent session storage | Chat history lost on restart | Supabase integration available but optional |
+| Durable SQLite storage | Chat history and users persisted | Native SQLite storage at `/var/lib/uniguru` |
 | In-memory metrics only | Metrics reset on restart (unless snapshot file configured) | Set `UNIGURU_METRICS_STATE_FILE` to persist across restarts |
 | Structured log file size | JSONL file grows unbounded | Set up log rotation (e.g., logrotate or Loki) |
 | STT requires audio format support | Voice queries may fail on unsupported formats | WAV/MP3 tested; other formats depend on STT engine |

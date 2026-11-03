@@ -1,0 +1,226 @@
+[
+  {
+    "id": "comp_001",
+    "domain": "Mathematics",
+    "question": "What is the Fundamental Theorem of Calculus?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Calculus",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_002",
+    "domain": "Mathematics",
+    "question": "Explain Bayes Theorem in probability theory.",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Bayes",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_003",
+    "domain": "Physics",
+    "question": "What is Faraday's Law of Electromagnetic Induction?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Faraday",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_004",
+    "domain": "Physics",
+    "question": "Explain Maxwell's equations and electromagnetic waves.",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Maxwell",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_005",
+    "domain": "Chemistry",
+    "question": "What is the difference between SN1 and SN2 reaction mechanisms?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "SN1",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_006",
+    "domain": "Chemistry",
+    "question": "What is the Arrhenius equation for chemical reaction rates?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Arrhenius",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_007",
+    "domain": "Biology",
+    "question": "Explain the Central Dogma of Molecular Biology.",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Central Dogma",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_008",
+    "domain": "Biology",
+    "question": "What is the light-independent Calvin cycle in photosynthesis?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Calvin",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_009",
+    "domain": "Computer Science",
+    "question": "Explain the difference between a process and a thread in operating systems.",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Thread",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_010",
+    "domain": "Computer Science",
+    "question": "What are the ACID properties in database management systems?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "ACID",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_011",
+    "domain": "Programming",
+    "question": "What is the Global Interpreter Lock (GIL) in Python?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "GIL",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_012",
+    "domain": "Programming",
+    "question": "Explain RAII and smart pointers in modern C++.",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "RAII",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_013",
+    "domain": "Programming",
+    "question": "How does Rust ensure memory safety without a garbage collector?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Ownership",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_014",
+    "domain": "AI / Machine Learning",
+    "question": "How does multi-head self-attention work in Transformer models?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Attention",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_015",
+    "domain": "AI / Machine Learning",
+    "question": "Explain hybrid search in Retrieval-Augmented Generation (RAG).",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "RAG",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_016",
+    "domain": "History of India",
+    "question": "What are the major urban planning features of the Indus Valley Civilization?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Indus",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_017",
+    "domain": "History of India",
+    "question": "What were the administrative achievements of Emperor Ashoka and the Mauryan Empire?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Ashoka",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_018",
+    "domain": "Vedas & Upanishads",
+    "question": "What are the four Vedas and their primary subject matter?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Rigveda",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_019",
+    "domain": "Vedas & Upanishads",
+    "question": "What is the core philosophical teaching of the Principal Upanishads regarding Atman and Brahman?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Brahman",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_020",
+    "domain": "Geography",
+    "question": "Explain the mechanism of the Indian Southwest Monsoon.",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Monsoon",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_021",
+    "domain": "Geography",
+    "question": "What is plate tectonics and what are the three types of plate boundaries?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Tectonic",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_022",
+    "domain": "Languages",
+    "question": "Explain subject-verb agreement rules in English grammar.",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Agreement",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_023",
+    "domain": "Languages",
+    "question": "मराठी व्याकरणात समास म्हणजे काय आणि त्याचे प्रकार कोणते?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "समास",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_024",
+    "domain": "Languages",
+    "question": "हिंदी व्याकरण में संधि के कितने भेद होते हैं?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "संधि",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_025",
+    "domain": "General Knowledge",
+    "question": "What are the Fundamental Rights guaranteed by the Constitution of India?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Constitution",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_026",
+    "domain": "PDF Ingested Citations",
+    "question": "Explain Faraday's experiment and induced electromotive force from NCERT Physics.",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "NCERT",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_027",
+    "domain": "PDF Ingested Citations",
+    "question": "What is the Riemann sum definition of definite integrals in OpenStax Calculus?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "Calculus",
+    "requires_provenance": true
+  },
+  {
+    "id": "comp_028",
+    "domain": "Calibrated Abstention",
+    "question": "What agricultural practices are mentioned in the Padma Purana?",
+    "expected_capability": "KNOWLEDGE_BASE",
+    "expected_snippet": "does not contain verified",
+    "requires_provenance": false
+  }
+]

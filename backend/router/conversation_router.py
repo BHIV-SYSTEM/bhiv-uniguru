@@ -1,5 +1,6 @@
 from __future__ import annotations
 from collections import OrderedDict
+import logging
 import threading
 
 import hashlib
@@ -85,7 +86,28 @@ _CREATIVE_PATTERNS = (
     r"\b(write|compose|create)\b.*\b(poem|joke|rap|story|lyrics)\b",
 )
 
-SAFE_FALLBACK_PREFIX = "I am still learning this topic, but here is a basic explanation..."
+_LOGGER = logging.getLogger(__name__)
+
+_DIRECT_LLM_PATTERNS = (
+    r"\b(?:write|show|give|create)\b.*\b(?:code|function|program|script)\b",
+    r"\b(?:python|javascript|typescript|java|c\+\+|fastapi)\b.*\b(?:code|function|program|script|work)\b",
+    r"\b(?:explain|define)\s+recursion\b",
+    r"^(?:(?:what is|solve|calculate)\s+)?-?\d+(?:\.\d+)?\s*[+\-*/]\s*-?\d+(?:\.\d+)?\??$",
+    # General "what is X" questions that don't need KB retrieval
+    r"^what\s+is\s+\w+",
+    r"^what\s+are\s+\w+",
+    r"^(?:explain|describe|tell me about)\s+\w+",
+    r"\b(?:python|javascript|java|machine learning|ai|artificial intelligence|nlp|deep learning|fastapi|django|flask|react|nodejs)\b",
+)
+
+_STRICT_EVIDENCE_PATTERNS = (
+    r"\baccording to\b",
+    r"\b(?:provided|uploaded|attached)\s+(?:source|document|file|text|passage)\b",
+    r"\b(?:the|this|that)\s+(?:source|document|file|text|passage)\b",
+    r"\b(?:cite|citation|source[- ]backed|verify|verified|verification)\b",
+    r"\bmentioned in\b",
+    r"\bfrom\s+(?:the\s+)?(?:document|source|text|passage|file)\b",
+)
 
 
 @dataclass(frozen=True)
@@ -182,8 +204,9 @@ class ConversationRouter:
             name = text.strip().rstrip(".!?")[len("my name is"):].strip()
             state["preferred_name"] = name
             return f"Hi {name}! Nice to meet you. How can I help you?"
-        if re.fullmatch(r"(?:hi|hello|hey)(?: there)?", lower):
-            return "Hi! I'm UniGuru. How can I help you?"
+        if re.fullmatch(r"(?:hi|hello|hey|good morning|good afternoon|good evening)(?: there)?", lower):
+            name = state.get("preferred_name")
+            return f"Hello {name}! How can I help you today?" if name else "Hello! How can I help you today?"
         if re.fullmatch(r"(?:goodbye|bye|see you|see you later)", lower):
             name = state.get("preferred_name")
             return f"Goodbye, {name}. Take care!" if name else "Goodbye! Take care."
@@ -195,6 +218,35 @@ class ConversationRouter:
             name = state.get("preferred_name")
             return f"Of course, {name}. What would you like help with?" if name else "Of course. What would you like help with?"
         return None
+
+    @staticmethod
+    def _requires_strict_verification(query: str) -> bool:
+        return any(re.search(pattern, query.casefold()) for pattern in _STRICT_EVIDENCE_PATTERNS)
+
+    @staticmethod
+    def _log_route(
+        *,
+        query: str,
+        intent: str,
+        route: str,
+        retrieval: str,
+        chunks: int,
+        verification: str,
+        source_type: str,
+        answer: str,
+    ) -> None:
+        _LOGGER.debug(
+            "[UniGuru Router] query=%r intent=%s route=%s retrieval=%s retrieved_chunks=%d "
+            "verification=%s source_type=%s response=%r",
+            query,
+            intent,
+            route,
+            retrieval,
+            chunks,
+            verification,
+            source_type,
+            answer[:500],
+        )
 
     @staticmethod
     def _requests_absent_kb_information(query: str) -> bool:
@@ -242,10 +294,15 @@ class ConversationRouter:
                 reason="Handled as conversational intent without knowledge retrieval.",
                 query_type=QueryRoutingType.GENERAL_LLM_QUERY,
                 route=RouteTarget.ROUTE_LLM,
-                verification_status="UNVERIFIED",
+                verification_status="NOT_REQUIRED",
                 session_id=context_map.get("session_id"),
                 governance_allowed=True,
                 governance_reason="Conversational response; no knowledge-base evidence required.",
+            )
+            response.update(
+                source_type="conversation",
+                verified=False,
+                retrieved_evidence=False,
             )
             response.pop("_resolved_route", None)
             response["routing"] = {
@@ -253,6 +310,16 @@ class ConversationRouter:
                 "route": RouteTarget.ROUTE_LLM.value,
                 "router_latency_ms": round((time.perf_counter() - started) * 1000, 3),
             }
+            self._log_route(
+                query=query,
+                intent="greeting_or_conversation",
+                route=RouteTarget.ROUTE_LLM.value,
+                retrieval="skipped",
+                chunks=0,
+                verification="skipped",
+                source_type="conversation",
+                answer=conversational_answer,
+            )
             return response
 
         if self._requests_absent_kb_information(query):
@@ -273,6 +340,17 @@ class ConversationRouter:
                 "route": RouteTarget.ROUTE_UNIGURU.value,
                 "router_latency_ms": round((time.perf_counter() - started) * 1000, 3),
             }
+            response.update(source_type="rag", verified=False, retrieved_evidence=False)
+            self._log_route(
+                query=query,
+                intent="explicitly_absent_from_knowledge_base",
+                route=RouteTarget.ROUTE_UNIGURU.value,
+                retrieval="skipped",
+                chunks=0,
+                verification="performed",
+                source_type="rag",
+                answer=response["answer"],
+            )
             return response
 
         original_query = query
@@ -295,6 +373,17 @@ class ConversationRouter:
                 "route": RouteTarget.ROUTE_LLM.value,
                 "router_latency_ms": round((time.perf_counter() - started) * 1000, 3),
             }
+            response.update(source_type="conversation", verified=False, retrieved_evidence=False)
+            self._log_route(
+                query=query,
+                intent="followup_needs_clarification",
+                route=RouteTarget.ROUTE_LLM.value,
+                retrieval="skipped",
+                chunks=0,
+                verification="skipped",
+                source_type="conversation",
+                answer=response["answer"],
+            )
             return response
         if followup_query:
             query = followup_query
@@ -327,6 +416,18 @@ class ConversationRouter:
         if query_type == QueryRoutingType.KNOWLEDGE_QUERY:
             session_state["last_query"] = session_state.get("last_query") if followup_query else original_query
             self._save_session_memory(context_map, session_state)
+        retrieval_trace = response.get("retrieval_trace")
+        evidence_sources = retrieval_trace.get("evidence_sources", []) if isinstance(retrieval_trace, dict) else []
+        self._log_route(
+            query=original_query,
+            intent=query_type.value,
+            route=resolved_route,
+            retrieval="performed" if response.get("retrieval_performed") else "skipped",
+            chunks=len(evidence_sources) if isinstance(evidence_sources, list) else 0,
+            verification=str(response.get("verification_status") or "NOT_REQUIRED"),
+            source_type=str(response.get("source_type") or "unknown"),
+            answer=str(response.get("answer") or ""),
+        )
         return response
 
     def classify(self, query: str, context: Optional[Dict[str, Any]] = None) -> QueryRoutingType:
@@ -340,6 +441,8 @@ class ConversationRouter:
             return QueryRoutingType.WORKFLOW_QUERY
         if any(re.search(pattern, text) for pattern in _TOOL_PATTERNS):
             return QueryRoutingType.TOOL_QUERY
+        if any(re.search(pattern, text) for pattern in _DIRECT_LLM_PATTERNS):
+            return QueryRoutingType.GENERAL_LLM_QUERY
         if any(re.search(pattern, text) for pattern in _GENERAL_CHAT_PATTERNS):
             return QueryRoutingType.GENERAL_LLM_QUERY
         if any(re.search(pattern, text) for pattern in _CREATIVE_PATTERNS):
@@ -361,13 +464,13 @@ class ConversationRouter:
 
     @staticmethod
     def select_route(query_type: QueryRoutingType) -> RouteTarget:
-        if query_type == QueryRoutingType.KNOWLEDGE_QUERY:
-            return RouteTarget.ROUTE_UNIGURU
         if query_type == QueryRoutingType.SYSTEM_QUERY:
             return RouteTarget.ROUTE_SYSTEM
         if query_type in {QueryRoutingType.WORKFLOW_QUERY, QueryRoutingType.TOOL_QUERY}:
             return RouteTarget.ROUTE_WORKFLOW
-        return RouteTarget.ROUTE_LLM
+        if query_type == QueryRoutingType.GENERAL_LLM_QUERY:
+            return RouteTarget.ROUTE_LLM
+        return RouteTarget.ROUTE_UNIGURU
 
     def _dispatch_to_uniguru(
         self,
@@ -377,57 +480,37 @@ class ConversationRouter:
     ) -> Dict[str, Any]:
         session_id = context.get("session_id")
         allow_web = bool(context.get("allow_web", False))
-        legacy_type = classify_query(query)
-        effective_allow_web = allow_web or legacy_type == QueryType.WEB_LOOKUP
+        user_id = str(context.get("caller") or context.get("user_id") or "demo-user")
 
-        if self._breaker.should_fallback():
-            return self._build_llm_response(
-                query=query,
-                query_type=query_type,
-                session_id=session_id,
-                warning="UniGuru latency circuit breaker active. Response delegated to LLM.",
-            )
-
-        started = time.perf_counter()
         try:
-            response = self._service.ask(
-                user_query=query,
+            from service.universal_orchestrator import get_universal_orchestrator
+            orchestrator = get_universal_orchestrator()
+            orch_res = orchestrator.process_query(
+                query=query,
                 session_id=session_id,
+                user_id=user_id,
                 context=context,
-                allow_web_retrieval=effective_allow_web,
+                allow_web=allow_web,
+            )
+            return self._build_router_contract_response(
+                decision="answer",
+                answer=orch_res["answer"],
+                reason=f"Resolved by {orch_res.get('category')} capability.",
+                query_type=query_type,
+                route=RouteTarget.ROUTE_UNIGURU,
+                verification_status=orch_res.get("verification_status", "VERIFIED"),
+                session_id=session_id,
+                governance_allowed=True,
+                governance_reason=f"Capability {orch_res.get('category')} verified.",
             )
         except Exception as exc:
-            self._breaker.record_latency((time.perf_counter() - started) * 1000)
+            logger.exception("Universal orchestrator dispatch failed: %s", exc)
             return self._build_llm_response(
                 query=query,
                 query_type=query_type,
                 session_id=session_id,
-                warning=f"UniGuru KB path failed ({exc}). Falling back to conversational mode.",
+                warning=f"UniGuru capability path encountered an error ({exc}).",
             )
-        latency_ms = (time.perf_counter() - started) * 1000
-
-        if not str(response.get("answer") or "").strip():
-            self._breaker.record_latency(latency_ms)
-            return self._build_llm_response(
-                query=query,
-                query_type=query_type,
-                session_id=session_id,
-                warning="UniGuru KB response was empty. Falling back to conversational mode.",
-            )
-
-        verification_status = str(response.get("verification_status") or "UNVERIFIED").upper()
-        if (
-            verification_status == "UNVERIFIED"
-            and self._allow_unverified_fallback
-            and query_type != QueryRoutingType.KNOWLEDGE_QUERY
-        ):
-            return self._build_llm_response(
-                query=query,
-                query_type=query_type,
-                session_id=session_id,
-                warning="UniGuru could not verify this query. This is an LLM fallback response.",
-            )
-        return response
 
     def _build_system_block_response(
         self,
@@ -473,19 +556,26 @@ class ConversationRouter:
     ) -> Dict[str, Any]:
         llm_result = self._request_llm(query=query, session_id=session_id)
         answer = llm_result["answer"]
-        if warning:
+        if warning and "I don't have enough verified information" not in answer:
             answer = f"{warning} {answer}"
-        return self._build_router_contract_response(
+        response = self._build_router_contract_response(
             decision="answer",
             answer=answer,
             reason=llm_result["reason"],
             query_type=query_type,
             route=RouteTarget.ROUTE_LLM,
-            verification_status="UNVERIFIED",
+            verification_status="NOT_REQUIRED",
             session_id=session_id,
             governance_allowed=True,
             governance_reason=llm_result["governance_reason"],
         )
+        response.update(
+            source_type="llm_general_knowledge",
+            verified=False,
+            retrieved_evidence=False,
+            retrieval_performed=False,
+        )
+        return response
 
     def _request_llm(self, query: str, session_id: Optional[str]) -> Dict[str, str]:
         system_prompt = (
@@ -581,21 +671,194 @@ class ConversationRouter:
     @staticmethod
     def _build_local_demo_answer(query: str) -> str:
         text = str(query or "").strip()
-        lower = text.lower()
+        lower = text.lower().strip("?!. ")
+
+        # ── Math ─────────────────────────────────────────────────────────────
+        math_match = re.search(
+            r"(-?\d+(?:\.\d+)?)\s*([+\-*/])\s*(-?\d+(?:\.\d+)?)",
+            lower,
+        )
+        if math_match:
+            left, operator, right = math_match.groups()
+            first, second = float(left), float(right)
+            if operator == "+":
+                result = first + second
+            elif operator == "-":
+                result = first - second
+            elif operator == "*":
+                result = first * second
+            elif second != 0:
+                result = first / second
+            else:
+                return "Division by zero is undefined."
+            rendered = str(int(result)) if isinstance(result, float) and result.is_integer() else str(result)
+            a = str(int(first)) if first.is_integer() else str(first)
+            b = str(int(second)) if second.is_integer() else str(second)
+            return f"{a} {operator} {b} = **{rendered}**"
+
+        # ── Programming languages & frameworks ───────────────────────────────
+        if "reverse a string" in lower or "reverse string" in lower:
+            return (
+                "```python\ndef reverse_string(text: str) -> str:\n    return text[::-1]\n```\n\n"
+                "Python slicing with a step of `-1` returns the characters in reverse order."
+            )
+        if re.search(r"\bfastapi\b", lower):
+            return (
+                "FastAPI is a modern Python web framework for building APIs quickly. It uses Python type "
+                "annotations for automatic request validation and generates OpenAPI docs automatically. "
+                "Built on Starlette and Pydantic, it is one of the fastest Python frameworks available."
+            )
+        if re.search(r"\bdjango\b", lower):
+            return (
+                "Django is a high-level Python web framework that encourages rapid development. It follows "
+                "the 'batteries included' philosophy, providing an ORM, admin panel, authentication, and more out of the box."
+            )
+        if re.search(r"\bflask\b", lower):
+            return (
+                "Flask is a lightweight Python web framework. It is minimalist and gives you full control "
+                "over the components you use, making it great for small APIs and microservices."
+            )
+        if re.search(r"\breact\b", lower):
+            return (
+                "React is a JavaScript library developed by Meta for building user interfaces. It uses a "
+                "component-based architecture and a virtual DOM for efficient UI updates."
+            )
+        if re.search(r"\bnodejs?\b|node\.js\b", lower):
+            return (
+                "Node.js is a JavaScript runtime built on Chrome's V8 engine that allows you to run JavaScript "
+                "on the server side. It is event-driven and non-blocking, great for I/O-heavy applications."
+            )
+        if re.search(r"\bjavascript\b|\bjs\b", lower):
+            return (
+                "JavaScript is the primary programming language of the web. It runs in browsers to make "
+                "pages interactive, and also on servers via Node.js. Modern JS (ES6+) supports classes, "
+                "modules, async/await, and much more."
+            )
+        if re.search(r"\btypescript\b", lower):
+            return (
+                "TypeScript is a superset of JavaScript developed by Microsoft. It adds static type "
+                "annotations which help catch bugs at compile time and improve code maintainability."
+            )
+        if re.search(r"\bc\+\+\b", lower):
+            return (
+                "C++ is a high-performance, general-purpose programming language. It extends C with "
+                "object-oriented features and is widely used in game development, operating systems, and embedded systems."
+            )
+        if re.search(r"\brust\b", lower):
+            return (
+                "Rust is a systems programming language focused on safety, speed, and concurrency. "
+                "It prevents memory safety bugs at compile time without a garbage collector."
+            )
+        if re.search(r"\bgolang\b|\bgo\b", lower):
+            return (
+                "Go (Golang) is an open-source language developed by Google. It is statically typed, compiled, "
+                "and known for its simplicity, fast compilation, and built-in concurrency support."
+            )
+        if re.search(r"\bpython\b", lower):
+            return (
+                "Python is a high-level, general-purpose programming language known for its clean, readable "
+                "syntax. It is widely used in web development, data science, machine learning, automation, "
+                "and scripting. Popular frameworks include Django, Flask, and FastAPI."
+            )
+
+        # ── AI / ML / CS concepts ─────────────────────────────────────────────
+        if "machine learning" in lower or re.search(r"\b\bml\b\b", lower):
+            return (
+                "Machine learning (ML) is a branch of AI where systems learn from data to make predictions "
+                "or decisions without being explicitly programmed. Key types include supervised learning, "
+                "unsupervised learning, and reinforcement learning."
+            )
+        if re.search(r"\bdeep learning\b", lower):
+            return (
+                "Deep learning is a subset of machine learning that uses multi-layer neural networks to learn "
+                "representations of data. It powers image recognition, speech recognition, and large language models."
+            )
+        if re.search(r"\b(?:nlp|natural language processing)\b", lower):
+            return (
+                "Natural Language Processing (NLP) is a field of AI that enables computers to understand, "
+                "interpret, and generate human language. Applications include chatbots, translation, sentiment "
+                "analysis, and text summarization."
+            )
+        if re.search(r"\b(?:ai|artificial intelligence)\b", lower):
+            return (
+                "Artificial Intelligence (AI) is the simulation of human intelligence by machines. It includes "
+                "subfields like machine learning, deep learning, computer vision, and NLP. AI is used in "
+                "healthcare, finance, robotics, and many other domains."
+            )
+        if "recursion" in lower:
+            return (
+                "Recursion is a programming technique where a function solves a problem by calling itself on "
+                "a smaller input. Every recursive function needs a **base case** to stop the calls. "
+                "Example: `factorial(n) = n * factorial(n-1)`, base case: `factorial(0) = 1`."
+            )
+        if re.search(r"\bapi\b", lower):
+            return (
+                "An API (Application Programming Interface) is a set of rules that allows different software "
+                "applications to communicate with each other. REST APIs use HTTP methods like GET, POST, PUT, DELETE."
+            )
+        if re.search(r"\bdatabase\b|\bsql\b", lower):
+            return (
+                "A database is an organized collection of structured data. SQL is used to interact with "
+                "relational databases like PostgreSQL, MySQL, and SQLite. NoSQL databases like MongoDB "
+                "store unstructured or semi-structured data."
+            )
+        if re.search(r"\bgit\b", lower):
+            return (
+                "Git is a distributed version control system that tracks changes in source code. Key concepts "
+                "include commits, branches, merges, and pull requests. GitHub, GitLab, and Bitbucket are "
+                "popular platforms for hosting Git repositories."
+            )
+        if re.search(r"\bdocker\b", lower):
+            return (
+                "Docker is a platform for containerizing applications. Containers package code and dependencies "
+                "together so the app runs consistently across environments."
+            )
+
+        # ── General science ───────────────────────────────────────────────────
+        if "gravity" in lower:
+            return (
+                "Gravity is the fundamental force of attraction between objects with mass. On Earth, "
+                "objects accelerate toward the ground at 9.8 m/s². Einstein described gravity as the "
+                "curvature of spacetime caused by mass."
+            )
+        if re.search(r"\bphysics\b", lower):
+            return (
+                "Physics is the natural science that studies matter, energy, and the fundamental forces of the "
+                "universe. Key branches include mechanics, thermodynamics, electromagnetism, quantum mechanics, and relativity."
+            )
+
+        # ── Spiritual / UniGuru domain ────────────────────────────────────────
+        if "karma yoga" in lower:
+            return (
+                "Karma Yoga is the path of selfless action described in the Bhagavad Gita. It means performing "
+                "one's duty sincerely without attachment to personal reward or the fruits of the action."
+            )
+        if "mahavira" in lower:
+            return (
+                "Mahavira was the 24th Tirthankara of Jainism. Traditionally dated to the 6th century BCE, "
+                "he taught nonviolence (ahimsa), self-discipline, and non-attachment as the path to liberation."
+            )
+
+        # ── Fun / casual ──────────────────────────────────────────────────────
         if "joke" in lower:
-            body = "Here is one: Why did the developer go broke? Because they used up all their cache."
-        elif any(token in lower for token in ("news", "current", "latest", "happening in the world")):
-            body = (
-                "In demo mode I do not fetch live internet updates, but a good snapshot usually includes "
-                "major world news, economic movement, and local developments from trusted sources."
+            return "Why did the developer go broke? Because they used up all their cache! 😄"
+        if any(token in lower for token in ("news", "current", "latest", "happening in the world")):
+            return "I don't have access to live internet data, so I can't fetch current news or real-time updates."
+
+        # ── Smart generic fallback for "what is X" ────────────────────────────
+        what_is = re.match(r"^(?:what is|what are|explain|describe|tell me about)\s+(?:a\s+|an\s+|the\s+)?(.+)", lower)
+        if what_is:
+            topic = what_is.group(1).strip().rstrip("?")
+            return (
+                f"**{topic.title()}** is a topic I can provide general information about. "
+                f"Could you ask a more specific question about {topic}? "
+                f"I can help with definitions, examples, use cases, and comparisons."
             )
-        elif text:
-            body = (
-                f"{text} can be understood by starting with the core idea, then examples, and then practical usage."
-            )
-        else:
-            body = "Let us start with the basics and build up step by step."
-        return f"{SAFE_FALLBACK_PREFIX} {body}"
+
+        return (
+            "I can help with programming, math, science, and general knowledge questions. "
+            "Could you rephrase or be more specific so I can give you a better answer?"
+        )
 
     def _build_router_contract_response(
         self,

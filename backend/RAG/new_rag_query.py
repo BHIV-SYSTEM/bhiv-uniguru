@@ -1,128 +1,64 @@
-import sqlite3
+"""
+UniGuru Production RAG Engine Integration Adapter
+=================================================
+Connects legacy and external RAG entry points to the unified
+hybrid retrieval and grounded intelligence engine.
+"""
+
+from __future__ import annotations
+
 import os
-import json
+from typing import Any, Dict, List, Optional
+from retrieval.unified_rag_engine import get_unified_engine
 
-base_dir = os.path.dirname(os.path.abspath(__file__))
-db_path = os.path.join(base_dir, "chunks.db")
-faiss_path = os.path.join(base_dir, "faiss_index.bin")
+_engine_instance = None
 
-engine = None
 
 class NewRAGEngine:
-    def __init__(self, model_name="all-MiniLM-L6-v2"):
-        import faiss
-        import numpy as np
-        from sentence_transformers import SentenceTransformer
-        
-        self.model = SentenceTransformer(model_name)
-        # Note: Index is created using IndexFlatIP in combination with IndexIDMap in notebook.
-        # This means FAISS returns the actual SQLite ID.
-        self.index = faiss.read_index(faiss_path)
-        self.db_path = db_path
-        self._faiss = faiss
-        
-        # Setup Groq for generation
-        try:
-            from groq import Groq
-            from dotenv import load_dotenv
-            
-            _env_path = os.path.join(base_dir, "..", ".env")
-            if os.path.exists(_env_path):
-                load_dotenv(_env_path)
-            
-            # The API key was saved as UNIGURU_LLM_API_KEY or GROQ_API_KEY
-            groq_key = os.getenv("GROQ_API_KEY") or os.getenv("UNIGURU_LLM_API_KEY")
-            if groq_key:
-                self.groq_client = Groq(api_key=groq_key)
-            else:
-                self.groq_client = None
-        except ImportError:
-            self.groq_client = None
+    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
+        self.unified_engine = get_unified_engine()
 
-    def retrieve(self, query: str, top_k: int = 5):
-        query_emb = self.model.encode([query])
-        
-        # Normalize L2 so that inner product becomes equivalent to cosine similarity
-        self._faiss.normalize_L2(query_emb)
-        
-        scores, ids = self.index.search(query_emb, top_k)
-        
-        results = []
-        with sqlite3.connect(self.db_path) as conn:
-            cur = conn.cursor()
-            for score, doc_id in zip(scores[0], ids[0]):
-                if doc_id != -1:
-                    cur.execute("SELECT file_name, page_number, text FROM chunks WHERE id = ?", (int(doc_id),))
-                    row = cur.fetchone()
-                    if row:
-                        results.append({
-                            "text": row[2],
-                            "metadata": {
-                                "file_name": row[0],
-                                "page_number": row[1]
-                            },
-                            "score": float(score)
-                        })
-        return results
+    def retrieve(self, query: str, top_k: int = 5) -> List[Dict[str, Any]]:
+        result = self.unified_engine.retrieve(query, top_k=top_k)
+        evidence = result.get("top_evidence", [])
+        output = []
+        for ev in evidence:
+            output.append({
+                "text": ev["text"],
+                "metadata": {
+                    "file_name": ev.get("file_name"),
+                    "page_number": ev.get("page", 1),
+                    "grade": ev.get("grade"),
+                    "subject": ev.get("subject"),
+                    "chapter": ev.get("chapter"),
+                    "domain": ev.get("domain"),
+                },
+                "score": float(ev.get("composite_score", ev.get("dense_similarity", 0.0))),
+            })
+        return output
 
-    def answer_question(self, query: str, max_context_chars: int = 4000, top_k: int = 5):
-        retrieved = self.retrieve(query, top_k=top_k)
-        
-        if not retrieved:
-            return {
-                "answer": "No relevant context found.",
-                "retrieved": retrieved
-            }
-        
-        if not self.groq_client:
-            return {
-                "answer": "Groq client is not initialized. Cannot generate answer.",
-                "retrieved": retrieved
-            }
-        
-        context_parts = []
-        citations = []
-        for i, chunk in enumerate(retrieved):
-            meta = chunk["metadata"]
-            citations.append(f"[{i+1}] {meta['file_name']} (page {meta.get('page_number','?')})")
-            context_parts.append(f"--- [{i+1}] ---\n{chunk['text']}")
-        
-        context = "\n\n".join(context_parts)
-        if len(context) > max_context_chars:
-            context = context[:max_context_chars] + "\n...[truncated]"
-        
-        system_prompt = (
-            "You are an intelligent knowledge assistant. "
-            "Your Answer MUST be constructed ONLY from the provided context signals.\n"
-            "Rules:\n"
-            "1. No hallucination whatsoever\n"
-            "2. No extra information outside the provided text\n"
-            "3. Only use signal-derived facts\n"
-            "If the context cannot answer the question, simply reply 'I don't know'."
-        )
-        user_prompt = f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"
-        
-        try:
-            response = self.groq_client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                temperature=0.2,
-                max_tokens=800
-            )
-            answer = response.choices[0].message.content
-        except Exception as e:
-            answer = f"Error calling Grq API: {str(e)}"
-            
+    def answer_question(self, query: str, max_context_chars: int = 4000, top_k: int = 5) -> Dict[str, Any]:
+        result = self.unified_engine.answer_query(query=query, top_k=top_k)
+        retrieved = []
+        for ev in result.get("evidence", []):
+            retrieved.append({
+                "text": ev["text"],
+                "metadata": {
+                    "file_name": ev.get("file_name"),
+                    "page_number": ev.get("page", 1),
+                },
+                "score": float(ev.get("composite_score", 0.0)),
+            })
         return {
-            "answer": answer,
-            "retrieved": retrieved
+            "answer": result.get("answer", "No relevant context found."),
+            "retrieved": retrieved,
+            "verification_status": result.get("verification_status", "UNVERIFIED"),
+            "citations": result.get("citations", []),
         }
 
-def get_engine():
-    global engine
-    if engine is None:
-        engine = NewRAGEngine()
-    return engine
+
+def get_engine() -> NewRAGEngine:
+    global _engine_instance
+    if _engine_instance is None:
+        _engine_instance = NewRAGEngine()
+    return _engine_instance

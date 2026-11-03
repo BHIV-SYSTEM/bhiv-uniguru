@@ -286,9 +286,13 @@ class ConstitutionalSemanticMemory:
             return []
         events: List[Dict[str, Any]] = []
         for line in self.event_log_path.read_text(encoding="utf-8").splitlines():
-            if not line.strip():
+            line_str = line.strip()
+            if not line_str or line_str.startswith(("<", "=", ">")):
                 continue
-            events.append(json.loads(line))
+            try:
+                events.append(json.loads(line_str))
+            except Exception:
+                continue
         return events
 
     def write_checkpoint(self, reconstruction: Dict[str, Any]) -> None:

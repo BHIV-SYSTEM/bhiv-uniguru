@@ -48,10 +48,6 @@ That which is upheld; that which upholds. The sustaining principle.
 
 Dharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. It operates simultaneously at four levels: Ṛta (cosmic order), Varṇāśrama-dharma (social order), Svadharma (individual duty), and Sādhāraṇa-dharma (universal ethics applicable to all beings).
 
-## Marathi Summary
-
-धर्म म्हणजे योग्य आचरण, सामाजिक कर्तव्य, वैश्विक व्यवस्था आणि सर्वांसाठी लागू होणारी नैतिकता टिकवून ठेवणारे तत्त्व.
-
 ## Ontology
 
 In Vaiśeṣika: Dharma is a padārtha (category of reality) — the cause of abhyudaya (worldly prosperity) and niḥśreyasa (liberation). In Mīmāṃsā: Dharma is codanā-lakṣaṇa — that which is enjoined by Vedic injunction. In Advaita Vedānta: Dharma at the vyāvahārika (conventional) level is real and necessary; at the pāramārthika (absolute) level, only Brahman exists.

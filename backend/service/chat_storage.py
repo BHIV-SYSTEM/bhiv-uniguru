@@ -1,15 +1,21 @@
-"""Durable, owner-scoped storage for chat sessions."""
+"""Durable, owner-scoped MongoDB storage for chat sessions."""
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import sqlite3
 from collections.abc import Iterator, MutableMapping
 from pathlib import Path
+from threading import Lock
 from typing import Any
 
+from pymongo.database import Database
 
-def default_chat_db_path() -> Path:
+from service.mongodb import get_mongo_database, migration_marker, record_migration
+
+
+def default_legacy_chat_db_path() -> Path:
     configured = os.getenv("UNIGURU_CHAT_DB_PATH", "").strip()
     if configured:
         return Path(configured)
@@ -19,67 +25,111 @@ def default_chat_db_path() -> Path:
 
 
 class ChatSessionStore(MutableMapping[str, dict[str, Any]]):
-    """Mapping-compatible SQLite store so existing API response shapes remain stable."""
+    """Mapping-compatible MongoDB store preserving existing API response shapes."""
 
-    def __init__(self, path: str | Path | None = None):
-        self.path = Path(path or default_chat_db_path())
-        self.path.parent.mkdir(parents=True, exist_ok=True)
-        with self._connect() as connection:
-            connection.execute(
-                """CREATE TABLE IF NOT EXISTS chat_sessions (
-                    chat_id TEXT PRIMARY KEY,
-                    owner_id TEXT NOT NULL,
-                    payload TEXT NOT NULL,
-                    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
-                )"""
-            )
-            connection.execute(
-                "CREATE INDEX IF NOT EXISTS idx_chat_sessions_owner ON chat_sessions(owner_id)"
-            )
+    def __init__(
+        self,
+        database: Database | None = None,
+        legacy_db_path: str | Path | None = None,
+    ) -> None:
+        self._database = database
+        self._legacy_db_path = (
+            Path(legacy_db_path)
+            if legacy_db_path is not None
+            else default_legacy_chat_db_path() if database is None else None
+        )
+        self._ready = False
+        self._initialization_lock = Lock()
 
-    def _connect(self) -> sqlite3.Connection:
-        connection = sqlite3.connect(self.path, timeout=10)
-        connection.row_factory = sqlite3.Row
-        return connection
+    def _ensure_ready(self) -> Database:
+        database = (
+            self._database if self._database is not None else get_mongo_database()
+        )
+        if self._ready:
+            return database
+
+        with self._initialization_lock:
+            if self._ready:
+                return database
+
+            database["chat_sessions"].create_index("owner_id")
+            if self._legacy_db_path is not None:
+                self._migrate_legacy_data(database, self._legacy_db_path)
+            self._ready = True
+        return database
+
+    @staticmethod
+    def _migration_id(path: Path) -> str:
+        path_hash = hashlib.sha256(str(path.resolve()).encode("utf-8")).hexdigest()
+        return f"sqlite-chats-v1:{path_hash}"
+
+    @classmethod
+    def _migrate_legacy_data(cls, database: Database, path: Path) -> None:
+        marker = cls._migration_id(path)
+        if migration_marker(database, marker) or not path.is_file():
+            return
+
+        with sqlite3.connect(path) as connection:
+            connection.row_factory = sqlite3.Row
+            table = connection.execute(
+                "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'chat_sessions'"
+            ).fetchone()
+            if table is not None:
+                for row in connection.execute(
+                    "SELECT chat_id, owner_id, payload, updated_at FROM chat_sessions"
+                ):
+                    payload = json.loads(row["payload"])
+                    if not isinstance(payload, dict):
+                        raise ValueError(
+                            f"Legacy chat {row['chat_id']} has a non-object payload."
+                        )
+                    document = {
+                        "_id": str(row["chat_id"]),
+                        "owner_id": str(row["owner_id"]),
+                        "payload": payload,
+                        "updated_at": row["updated_at"],
+                    }
+                    database["chat_sessions"].replace_one(
+                        {"_id": document["_id"]}, document, upsert=True
+                    )
+
+        record_migration(database, marker)
 
     def __getitem__(self, key: str) -> dict[str, Any]:
-        with self._connect() as connection:
-            row = connection.execute(
-                "SELECT payload FROM chat_sessions WHERE chat_id = ?", (key,)
-            ).fetchone()
-        if row is None:
+        document = self._ensure_ready()["chat_sessions"].find_one(
+            {"_id": key}, {"payload": 1}
+        )
+        if document is None:
             raise KeyError(key)
-        return json.loads(row["payload"])
+        return document["payload"]
 
     def __setitem__(self, key: str, value: dict[str, Any]) -> None:
         owner_id = str(value.get("userId") or "").strip()
         if not owner_id:
             raise ValueError("chat session must have an owner")
-        payload = json.dumps(value, ensure_ascii=False, separators=(",", ":"))
-        with self._connect() as connection:
-            connection.execute(
-                """INSERT INTO chat_sessions(chat_id, owner_id, payload, updated_at)
-                   VALUES (?, ?, ?, CURRENT_TIMESTAMP)
-                   ON CONFLICT(chat_id) DO UPDATE SET
-                     owner_id=excluded.owner_id,
-                     payload=excluded.payload,
-                     updated_at=CURRENT_TIMESTAMP""",
-                (key, owner_id, payload),
-            )
+
+        self._ensure_ready()["chat_sessions"].update_one(
+            {"_id": key},
+            {
+                "$set": {
+                    "owner_id": owner_id,
+                    "payload": value,
+                    "updated_at": value.get("lastActivity") or "",
+                }
+            },
+            upsert=True,
+        )
 
     def __delitem__(self, key: str) -> None:
-        with self._connect() as connection:
-            cursor = connection.execute("DELETE FROM chat_sessions WHERE chat_id = ?", (key,))
-        if cursor.rowcount == 0:
+        result = self._ensure_ready()["chat_sessions"].delete_one({"_id": key})
+        if result.deleted_count == 0:
             raise KeyError(key)
 
     def __iter__(self) -> Iterator[str]:
-        with self._connect() as connection:
-            rows = connection.execute("SELECT chat_id FROM chat_sessions ORDER BY updated_at").fetchall()
-        return iter([row["chat_id"] for row in rows])
+        cursor = self._ensure_ready()["chat_sessions"].find(
+            {}, {"_id": 1}
+        ).sort("updated_at", 1)
+        return iter([str(document["_id"]) for document in cursor])
 
     def __len__(self) -> int:
-        with self._connect() as connection:
-            row = connection.execute("SELECT COUNT(*) AS n FROM chat_sessions").fetchone()
-        return int(row["n"])
-
+        return self._ensure_ready()["chat_sessions"].count_documents({})
