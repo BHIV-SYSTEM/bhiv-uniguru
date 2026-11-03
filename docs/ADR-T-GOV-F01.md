@@ -6,7 +6,11 @@
 - **Date:** 2026-11-03 (updated 2026-11-06)
 - **Author:** Isha Singh
 - **Parikshak prior score:** 1/100 (schema_violation)
+<<<<<<< Updated upstream
 - **Remediation target:** ≥ 85/100
+=======
+- **Remediation score target:** ≥ 85/100
+>>>>>>> Stashed changes
 
 ---
 
@@ -193,6 +197,7 @@ python -m pytest -v -p no:cacheprovider --basetemp="$env:TEMP\tgov-int" tests\in
 python -m pytest -v -p no:cacheprovider --basetemp="$env:TEMP\tgov-full" tests\unit tests\integration
 ```
 
+<<<<<<< Updated upstream
 ---
 
 ## Production Acceptance Checklist (Vijay/BHIV)
@@ -208,3 +213,39 @@ python -m pytest -v -p no:cacheprovider --basetemp="$env:TEMP\tgov-full" tests\u
 | Configure `UNIGURU_BRIDGE_AUDIT_PATH` with durable storage | Vijay/BHIV operations | Not verified |
 | Reconcile `requirements.tantra.txt` with production dependency baseline | Vijay/BHIV release | Not verified |
 | Run staging acceptance: 422/401/403/409/HTTPS/audit | Vijay/BHIV service owner | Not run |
+=======
+## Verified Execution Results (live, 2026-11-06)
+
+```
+platform win32 -- Python 3.12.10, pytest-9.0.3
+
+tests/unit/test_bridge_schemas.py        39 passed
+tests/unit/test_jwt_rs256.py             16 passed
+tests/unit/test_replay_table.py          13 passed
+tests/unit/test_audit_emitter.py         14 passed
+tests/integration/test_bridge_route_governance.py   21 passed
+tests/integration/test_rbac_audit_integration.py     8 passed
+
+Total: 111 passed in 8.81s — 0 failures, 0 errors
+```
+
+50-run SHA-256 determinism gates:
+- `test_sealer_fifty_runs_deterministic` — PASSED
+- `test_fifty_consecutive_runs_produce_identical_audit_hashes` — PASSED
+- `test_fifty_end_to_end_runs_have_identical_controlled_responses` — PASSED
+
+## BHIV PKB Dependency Compliance
+
+| Package | BHIV PKB required | Installed | TANTRA file | Status |
+|---|---|---|---|---|
+| `fastapi` | `==0.115.8` | `0.135.1` | `==0.115.8` | ⚠ runtime uses newer; TANTRA file pins PKB version |
+| `pydantic` | `==2.13.3` | `2.12.5` | `==2.13.3` | ⚠ runtime uses older; TANTRA file pins PKB version |
+| `pytest` | `==9.0.3` | `9.0.3` | `==9.0.3` | ✅ exact match |
+| `python-dotenv` | `==1.2.2` | `1.2.2` | `==1.2.2` | ✅ exact match |
+
+All four BHIV PKB packages are pinned with `==` in `backend/requirements.tantra.txt`.
+The production `backend/requirements.txt` retains its runtime versions to avoid breaking
+the existing ML/embedding stack. Vijay/BHIV release owner must reconcile before deployment.
+
+These are local results, not deployment or production-acceptance evidence.
+>>>>>>> Stashed changes
