@@ -27,13 +27,13 @@
       "memory_classification": "transient",
       "trace_id": "phase2_replay_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-11-03T10:05:39.241152Z",
+      "updated_at": "2026-11-03T15:06:17.552186Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [],
     "retrieval_truth_hash": "10ddf99c662922663abc407fc65ee92c53c588d49453bc5b1c0bcf6e8bb004ed",
     "semantic_path": [],
-    "timestamp": "2026-11-03T10:05:37.067550Z",
+    "timestamp": "2026-11-03T15:06:16.215738Z",
     "trace_continuity": {
       "bucket_proof": "phase2_replay_test",
       "contract_emission": "phase2_replay_test",
@@ -93,12 +93,12 @@
   },
   "enforcement_stats": {
     "rejected_entries": 19,
-    "total_entries": 77,
-    "valid_entries": 58
+    "total_entries": 74,
+    "valid_entries": 55
   },
   "evidence_signal_ids": [],
   "fallback_to_llm": false,
-  "generated_at": "2026-11-03T10:05:37.067550Z",
+  "generated_at": "2026-11-03T15:06:16.215738Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
     "artifact_hash": "768f4cc8b41ea096584934a53204f2073c0731c7ec0ed81a05accbd0a4c3ebb6",
@@ -142,7 +142,7 @@
     "deterministic": true,
     "max_hops": 5,
     "paths": [],
-    "source": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/backend/ontology/seed_entities.json",
+    "source": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/backend/ontology/seed_entities.json",
     "start_nodes": [
       "bhagavad gita"
     ],
@@ -207,7 +207,7 @@
       "domain": "gitas",
       "method": "retriever"
     },
-    "generated_at": "2026-11-03T10:05:37.067550Z",
+    "generated_at": "2026-11-03T15:06:16.215738Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -314,7 +314,7 @@
         "Yoga",
         "Yuga"
       ],
-      "checkpoint_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
+      "checkpoint_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_checkpoint.json",
       "contradiction_event_count": 92,
       "event": {
         "canonical_authority_granted": false,
@@ -326,7 +326,7 @@
         "updated_at": "2026-10-02T13:26:12.499684Z"
       },
       "event_hash": "75219e4f150ecb338ac7836c22d3e62465970bfb26d83163fc48535f6854e664",
-      "event_log_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_events.jsonl",
+      "event_log_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_events.jsonl",
       "governance_decision": {
         "canonical_authority_granted": false,
         "confidence_floor": 0.55,
@@ -351,18 +351,18 @@
       "idempotent_replay": true,
       "lineage_traceable": true,
       "mutation_id": "bdd7eca3b2576587f1faf180b46d2006ab789b41bb89f76c89ad57932005fe46",
-      "observability_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/constitutional_semantic_observability.json",
+      "observability_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/constitutional_semantic_observability.json",
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "8fb9102f1cfc8fa9dc55960bd09c9fa150f33ebba8ed286972f33ce43289c333",
+        "last_event_hash": "5568f69c6d4c81fb3c49eb25af021d9641511b6f3a99908c398087fe9ba45524",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "0a8985fee111025166f93f29763e4c72c6d16f2af1b4d3122d5f410b4f09e6f3",
-      "transient_event_count": 1074
+      "state_hash": "134b239b2441a79100ea67dbeb0b454e97a18ea9beb4b0837b82e7b73241f28a",
+      "transient_event_count": 1028
     },
     "entity_continuity": {},
     "event": {
@@ -374,13 +374,13 @@
       "memory_classification": "transient",
       "trace_id": "phase2_replay_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-11-03T10:05:39.241152Z",
+      "updated_at": "2026-11-03T15:06:17.552186Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
     "replayable": true,
     "schema": "UNIGURU_SEMANTIC_MEMORY_V1",
-    "state_path": "C:/Users/vijay/OneDrive/Desktop/bhiv-uniguru-main (1)/review_packets/proof_logs/semantic_memory_state.json",
+    "state_path": "C:/Users/Isha Singh/Desktop/uniguru 3/uniguru/review_packets/proof_logs/semantic_memory_state.json",
     "unresolved_threads": [
       {
         "contradiction_pressure": 0.0,
@@ -388,22 +388,45 @@
         "rejected_signal_count": 0,
         "state": "open",
         "trace_id": "phase2_replay_test",
-        "updated_at": "2026-11-03T10:05:39.241152Z",
+        "updated_at": "2026-11-03T15:06:17.552186Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
-      "continuity_score": 0.4,
-      "last_seen": "2026-11-03T10:05:39.241152Z",
-      "queries": 8,
+      "continuity_score": 1.0,
+      "last_seen": "2026-11-03T15:06:17.552186Z",
+      "queries": 343,
       "trace_ids": [
-        "ecosystem_c3cf30354a6e",
-        "ecosystem_2ef36abefc28",
+        "ecosystem_c6be6c9f77bb",
         "ecosystem_replay_test",
         "ecosystem_mitra_test",
         "phase2_e2e_test",
-        "phase2_replay_test"
+        "phase2_replay_test",
+        "phase2_mitra_test",
+        "phase2_proof_emit_test",
+        "phase2_replay_emit_test",
+        "contract_trace_abc",
+        "mitra_trace_xyz",
+        "phase2_determinism_test",
+        "phase2_hash_chain_test",
+        "schema_stable_1",
+        "test_sanskrit_dharma",
+        "tantra_sdk_runtime_test",
+        "ecosystem_2554e662d14b",
+        "ecosystem_72d478d16131",
+        "ecosystem_0aa936879971",
+        "ecosystem_39b58ec827ea",
+        "ecosystem_fcedf28aa7e1",
+        "ecosystem_a7ae4b8dd276",
+        "ecosystem_19cb53df65e6",
+        "ecosystem_8760b9a49002",
+        "ecosystem_4f9d655629ac",
+        "ecosystem_53b2b66ab6c5",
+        "ecosystem_f7808f2d2942",
+        "ecosystem_f01a0a3ac6dd",
+        "ecosystem_21374062ef62",
+        "ecosystem_6c38162b7a68"
       ]
     }
   },
