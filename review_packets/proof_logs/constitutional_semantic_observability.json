@@ -1,23 +1,11 @@
 {
-<<<<<<< HEAD
   "canonical_entity_count": 89,
   "contradiction_event_count": 92,
-  "event_count": 1773,
-  "generated_at": "2026-10-06T11:58:21.029446Z",
+  "event_count": 1836,
+  "generated_at": "2026-10-31T07:11:40.276604Z",
   "hash_chain_ok": false,
-  "last_event_hash": "3ac58dff0a4e1fc9c7a5c78a2e9b772e67026582f33d820d7f1e58d5b88eb026",
+  "last_event_hash": "6629cf7b242ba3305677e05211f84bd88d8b188c7a2364d6d662036b709fa7b5",
   "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_OBSERVABILITY_V1",
-  "state_hash": "6b0842cf1627066bf7171d90c43fa52b0d8efdbdbcf354ead9d58941c858c402",
-  "transient_event_count": 1017
-=======
-  "canonical_entity_count": 15,
-  "contradiction_event_count": 1,
-  "event_count": 763,
-  "generated_at": "2026-10-07T07:15:16.146948Z",
-  "hash_chain_ok": false,
-  "last_event_hash": "0eef03c336d96ac3951b49ffa012815e07a4aee257bc1ab1bd5d6d5dccac29bf",
-  "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_OBSERVABILITY_V1",
-  "state_hash": "98e6bc6b3682c327748c1c67a0c6d0c06acfa572c626c31cc448210584fd004a",
-  "transient_event_count": 604
->>>>>>> e244267 (Fix UniGuru RAG response routing)
+  "state_hash": "9b6f503f1957454c157bf6033af8884fd6a667d0c7a91967ca1fe6e1e68d138c",
+  "transient_event_count": 1073
 }

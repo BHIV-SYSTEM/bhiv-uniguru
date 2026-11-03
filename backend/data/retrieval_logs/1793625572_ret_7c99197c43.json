@@ -1,0 +1,21 @@
+{
+  "log_id": "ret_7c99197c43",
+  "timestamp": 1793625572.2545145,
+  "query": "Which texts describe stories of gods and creation?",
+  "verification_status": "VERIFIED",
+  "confidence": 0.7549,
+  "citations": [
+    "[1] Vedic Literature: Smritis Shastras And Ayurveda (Source: Classical Shastric Tradition, Charaka Samhita & Dharma Shastras, Page 1, Section: 'B. The Puranas: Stories of Gods, Cosmology, and Dynasties')",
+    "[2] Vedic Literature: Vedas (Source: Vedic Canon, National Mission for Manuscripts & IGNCA, Page 1, Section: 'A. Rigveda (\u1e5agveda)')",
+    "[3] sanskrit/puranas.md (Source: sanskrit/puranas.md, Page 1, Section: 'puranas')",
+    "[4] Vedic Literature: Upanishads (Source: Upanishadic Canon & Muktika Upanishad, Page 1, Section: '1. Introduction to the Upanishads')"
+  ],
+  "sources_consulted": [
+    "Vedic Literature: Smritis Shastras And Ayurveda",
+    "Vedic Literature: Upanishads",
+    "Vedic Literature: Vedas",
+    "sanskrit/puranas.md"
+  ],
+  "latency_ms": 28.82,
+  "evidence_count": 4
+}

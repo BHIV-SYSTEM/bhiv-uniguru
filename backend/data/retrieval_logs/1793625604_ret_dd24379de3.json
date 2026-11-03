@@ -1,0 +1,21 @@
+{
+  "log_id": "ret_dd24379de3",
+  "timestamp": 1793625604.9256818,
+  "query": "What is quantum entanglement?",
+  "verification_status": "VERIFIED",
+  "confidence": 0.914,
+  "citations": [
+    "[1] quantum/Quantum_Computing/quantum_information_core.md (Source: quantum/Quantum_Computing/quantum_information_core.md, Page 1, Section: 'quantum')",
+    "[2] quantum/superposition.md (Source: quantum/superposition.md, Page 1, Section: 'superposition')",
+    "[3] quantum/grover_algorithm.md (Source: quantum/grover_algorithm.md, Page 1, Section: 'grover_algorithm')",
+    "[4] Quantum (Source: Quantum, Page 1, Section: 'Density Matrix')"
+  ],
+  "sources_consulted": [
+    "Quantum",
+    "quantum/Quantum_Computing/quantum_information_core.md",
+    "quantum/grover_algorithm.md",
+    "quantum/superposition.md"
+  ],
+  "latency_ms": 23.38,
+  "evidence_count": 4
+}

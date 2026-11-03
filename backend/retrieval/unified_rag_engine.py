@@ -32,9 +32,54 @@ from typing import Any, Dict, List, Optional, Tuple
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 BACKEND_DIR = ROOT_DIR / "backend"
 RAG_DIR = BACKEND_DIR / "RAG"
-DB_PATH = RAG_DIR / "chunks.db"
-FAISS_PATH = RAG_DIR / "faiss_index.bin"
-METADATA_PATH = RAG_DIR / "index_metadata.json"
+def _resolve_rag_paths() -> Tuple[Path, Path, Path]:
+    """Resolve active database, FAISS index, and metadata paths dynamically."""
+    env_db = os.getenv("UNIGURU_RAG_DB_PATH")
+    env_index = os.getenv("UNIGURU_RAG_INDEX_PATH")
+    env_meta = os.getenv("UNIGURU_RAG_METADATA_PATH")
+
+    pointer_path = RAG_DIR / "active_index.json"
+    pointer = {}
+    if pointer_path.is_file():
+        try:
+            pointer = json.loads(pointer_path.read_text(encoding="utf-8"))
+        except Exception:
+            pointer = {}
+
+    db_rel = pointer.get("database_path", "chunks.db")
+    index_rel = pointer.get("index_path", "faiss_index.bin")
+    meta_rel = pointer.get("metadata_path", "index_metadata.json")
+
+    db_candidates = [
+        Path(env_db) if env_db else None,
+        RAG_DIR / "chunks.db",
+        RAG_DIR / db_rel,
+        ROOT_DIR / "bhiv-uniguru-main" / "backend" / "RAG" / "chunks.db",
+    ]
+    index_candidates = [
+        Path(env_index) if env_index else None,
+        RAG_DIR / "faiss_index.bin",
+        RAG_DIR / index_rel,
+        ROOT_DIR / "bhiv-uniguru-main" / "backend" / "RAG" / "faiss_index.bin",
+    ]
+    indices_dir = RAG_DIR / "indices"
+    if indices_dir.exists():
+        subdirs = sorted([d for d in indices_dir.iterdir() if d.is_dir()], reverse=True)
+        for sd in subdirs:
+            db_candidates.append(sd / "chunks.db")
+            index_candidates.append(sd / "faiss_index.bin")
+
+    resolved_db = next((p for p in db_candidates if p and p.is_file()), RAG_DIR / "chunks.db")
+    resolved_index = next((p for p in index_candidates if p and p.is_file()), RAG_DIR / "faiss_index.bin")
+    resolved_meta = RAG_DIR / meta_rel if (RAG_DIR / meta_rel).is_file() else RAG_DIR / "index_metadata.json"
+
+    return resolved_db, resolved_index, resolved_meta
+
+
+_RESOLVED_DB, _RESOLVED_INDEX, _RESOLVED_META = _resolve_rag_paths()
+DB_PATH = _RESOLVED_DB
+FAISS_PATH = _RESOLVED_INDEX
+METADATA_PATH = _RESOLVED_META
 LOGS_DIR = BACKEND_DIR / "data" / "retrieval_logs"
 
 # Multilingual term mapping (Marathi, Hindi, Sanskrit -> Canonical search concepts)
@@ -261,37 +306,47 @@ class UnifiedRAGEngine:
         return results
 
     def _fallback_lexical_search(self, query: str, top_k: int = 25) -> List[Tuple[int, float]]:
-        """Fallback lexical substring matching."""
+        """Fallback lexical substring matching with schema-adaptive column detection."""
         tokens = [t.lower() for t in re.findall(r"[a-zA-Z0-9\u0900-\u097F]+", query) if len(t) > 2 and t.lower() not in _STOPWORDS]
         if not tokens:
             return []
 
         results = []
         with sqlite3.connect(self.db_path) as conn:
+            conn.row_factory = sqlite3.Row
             cur = conn.cursor()
+            available_cols = {col[1] for col in cur.execute("PRAGMA table_info(chunks)").fetchall()}
+            searchable_cols = [c for c in ["concept", "topic", "chapter", "subject", "category", "domain", "text", "file_name"] if c in available_cols]
+            if not searchable_cols:
+                searchable_cols = ["text"] if "text" in available_cols else list(available_cols)
+
             query_parts = []
             params = []
             for t in tokens[:6]:
-                query_parts.append("(concept LIKE ? OR chapter LIKE ? OR text LIKE ?)")
+                clause = " OR ".join(f"{c} LIKE ?" for c in searchable_cols)
+                query_parts.append(f"({clause})")
                 p = f"%{t}%"
-                params.extend([p, p, p])
+                params.extend([p] * len(searchable_cols))
 
-            sql = f"SELECT id, concept, chapter, subject, text FROM chunks WHERE {' OR '.join(query_parts)} LIMIT 100"
+            sql = f"SELECT * FROM chunks WHERE {' OR '.join(query_parts)} LIMIT 100"
             cur.execute(sql, params)
             rows = cur.fetchall()
 
-            for row in rows:
-                c_id, c_concept, c_chapter, c_subject, c_text = row
-                haystack = f"{c_concept or ''} {c_chapter or ''} {c_subject or ''} {c_text or ''}".lower()
+            for r in rows:
+                row_dict = dict(r)
+                c_id = row_dict.get("id")
+                if c_id is None:
+                    continue
+                haystack = " ".join(str(row_dict.get(c) or "") for c in searchable_cols).lower()
                 matches = sum(1 for t in tokens if t in haystack)
-                concept_exact = sum(1 for t in tokens if t in str(c_concept or "").lower())
+                c_concept = str(row_dict.get("concept") or row_dict.get("topic") or "").lower()
+                concept_exact = sum(1 for t in tokens if t in c_concept)
                 score = (matches / len(tokens)) * 0.7 + (0.3 if concept_exact else 0.0)
                 if score > 0:
                     results.append((int(c_id), float(score)))
 
         results.sort(key=lambda x: x[1], reverse=True)
         return results[:top_k]
-
     def retrieve(self, query: str, top_k: int = 5) -> Dict[str, Any]:
         """
         Execute full hybrid retrieval pipeline:
@@ -326,78 +381,81 @@ class UnifiedRAGEngine:
                 "latency_ms": round((time.perf_counter() - start_time) * 1000, 2),
             }
 
-        # 4. Fetch chunk records and authority scores from SQLite
+        # 4. Fetch chunk records and authority scores from SQLite (schema-adaptive)
         candidates = []
         with sqlite3.connect(self.db_path) as conn:
+            conn.row_factory = sqlite3.Row
             cur = conn.cursor()
             placeholders = ",".join("?" for _ in all_candidate_ids)
-            sql = f"""
-                SELECT id, document_id, file_name, domain, book, board, grade,
-                       subject, chapter, section, concept, page, language, text, content_hash,
-                       authority_score, source_name, source_url
-                FROM chunks WHERE id IN ({placeholders})
-            """
+            sql = f"SELECT * FROM chunks WHERE id IN ({placeholders})"
             cur.execute(sql, all_candidate_ids)
-            for row in cur.fetchall():
-                c_id = row[0]
+            for r in cur.fetchall():
+                row = dict(r)
+                c_id = row.get("id")
                 dense_score = dense_scores_map.get(c_id, 0.0)
                 bm25_score = bm25_scores_map.get(c_id, 0.0)
                 rrf_score = rrf_scores.get(c_id, 0.0)
-                auth_score = float(row[15]) if row[15] is not None else 0.95
+                auth_score = float(row.get("authority_score") or 0.95)
 
                 # Balanced composite reranker score: Dense (50%) + BM25 (30%) + Authority (20%)
                 composite_score = (dense_score * 0.50) + (bm25_score * 0.30) + (auth_score * 0.20)
 
+                # Normalize field values across different chunk schemas
+                c_domain = str(row.get("domain") or "general")
+                c_grade = row.get("grade") or row.get("class_level") or row.get("category")
+                c_subject = str(row.get("subject") or row.get("category") or "")
+                c_concept = str(row.get("concept") or row.get("topic") or "")
+                c_chapter = str(row.get("chapter") or "")
+                c_section = str(row.get("section") or row.get("subcategory") or "")
+                c_file = str(row.get("file_name") or "").replace(".md", "").replace(".pdf", "").replace("_", " ")
+                c_page = row.get("page") or row.get("page_number") or 1
+                c_book = row.get("book") or row.get("source") or row.get("file_name") or "Curriculum Knowledge"
+                c_text = row.get("text") or ""
+                c_hash = row.get("content_hash") or hashlib.sha256(c_text.encode("utf-8")).hexdigest()
+
                 # Metadata alignment boosts
-                if scope["grade"] is not None and row[6] == scope["grade"]:
+                if scope.get("grade") is not None and str(c_grade) == str(scope["grade"]):
                     composite_score += 0.15
-                if scope["subject"] and str(row[7] or "").lower() == scope["subject"].lower():
+                if scope.get("subject") and c_subject.lower() == scope["subject"].lower():
                     composite_score += 0.12
-                if scope["domain"] and str(row[3] or "").lower() == scope["domain"].lower():
+                if scope.get("domain") and c_domain.lower() == scope["domain"].lower():
                     composite_score += 0.10
 
                 # Concept/Entity exact match boost
-                c_concept = str(row[10] or "").lower()
-                c_chapter = str(row[8] or "").lower()
-                c_section = str(row[9] or "").lower()
-                c_file = str(row[2] or "").lower().replace(".md", "").replace(".pdf", "").replace("_", " ")
                 q_lower = query.lower()
-                if c_concept and len(c_concept) > 2 and c_concept in q_lower:
+                if c_concept and len(c_concept) > 2 and c_concept.lower() in q_lower:
                     composite_score += 0.25
-                elif c_chapter and len(c_chapter) > 2 and c_chapter in q_lower:
+                elif c_chapter and len(c_chapter) > 2 and c_chapter.lower() in q_lower:
                     composite_score += 0.18
-                elif c_file and len(c_file) > 2 and c_file in q_lower:
+                elif c_file and len(c_file) > 2 and c_file.lower() in q_lower:
                     composite_score += 0.15
 
-                # Section words match boost: count how many distinct keywords match section words
+                # Section words match boost
                 if c_section:
                     sec_words = [w for w in re.findall(r"[\w\u0900-\u097F]+", c_section) if len(w) > 2 and w.lower() not in _STOPWORDS]
                     sec_matches = sum(1 for w in sec_words if w in q_lower)
                     if sec_matches > 0:
                         composite_score += 0.15 + (0.10 * min(3, sec_matches))
 
-
-
-
                 candidates.append({
                     "id": c_id,
-                    "document_id": row[1],
-                    "file_name": row[2],
-                    "domain": row[3],
-                    "book": row[4],
-                    "board": row[5],
-                    "grade": row[6],
-                    "subject": row[7],
-                    "chapter": row[8],
-                    "section": row[9],
-                    "concept": row[10],
-                    "page": row[11],
-                    "language": row[12],
-                    "text": row[13],
-                    "content_hash": row[14],
+                    "document_id": row.get("document_id") or f"doc_{c_id}",
+                    "file_name": row.get("file_name") or "",
+                    "domain": c_domain,
+                    "book": c_book,
+                    "board": row.get("board") or "Maharashtra State Board / Gurukul",
+                    "grade": c_grade,
+                    "subject": c_subject,
+                    "chapter": c_chapter,
+                    "section": c_section,
+                    "concept": c_concept,
+                    "page": c_page,
+                    "language": row.get("language") or "English",
+                    "text": c_text,
+                    "content_hash": c_hash,
                     "authority_score": auth_score,
-                    "source_name": row[16] or "Authoritative Source",
-                    "source_url": row[17] or "",
+                    "source_name": row.get("source_name") or row.get("source") or "Authoritative Source",
+                    "source_url": row.get("source_url") or "",
                     "dense_similarity": round(dense_score, 4),
                     "bm25_score": round(bm25_score, 4),
                     "rrf_score": round(rrf_score, 6),

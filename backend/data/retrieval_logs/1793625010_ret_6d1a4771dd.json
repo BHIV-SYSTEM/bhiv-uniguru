@@ -1,0 +1,19 @@
+{
+  "log_id": "ret_6d1a4771dd",
+  "timestamp": 1793625010.0430515,
+  "query": "What type of text is the Kama Sutra?",
+  "verification_status": "VERIFIED",
+  "confidence": 0.71,
+  "citations": [
+    "[1] gurukul/sanskrit/grammar.md (Source: gurukul/sanskrit/grammar.md, Page 1, Section: 'gurukul')",
+    "[2] Jain (Source: Jain, Page 1, Section: 'Uttaradhyayana Sutra')",
+    "[3] gurukul/sanskrit/grammar.md (Source: gurukul/sanskrit/grammar.md, Page 1, Section: 'gurukul')",
+    "[4] Jain (Source: Jain, Page 1, Section: 'Tattvartha Sutra')"
+  ],
+  "sources_consulted": [
+    "Jain",
+    "gurukul/sanskrit/grammar.md"
+  ],
+  "latency_ms": 31.01,
+  "evidence_count": 4
+}

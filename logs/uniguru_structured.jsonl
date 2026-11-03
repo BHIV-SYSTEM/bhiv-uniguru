@@ -1471,3 +1471,5 @@
 {"timestamp":"2026-10-12T08:05:32.550887Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"99cd5ed7-21b6-42ce-bc3e-9f07e9ef3a84","method":"POST","route":"/chat/new","status_code":200,"latency_ms":71.716}
 {"timestamp":"2026-10-12T08:07:52.059974Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"0055f391-0506-4624-9847-764d1560f07b","method":"POST","route":"/chat/new","status_code":200,"latency_ms":158.865}
 {"timestamp":"2026-10-12T08:26:28.426405Z","service":"uniguru-live-reasoning","level":"WARN","request_id":"01bbe0e2-f9de-4ed0-a751-0df7f82381a9","method":"GET","route":"/chatpage","status_code":404,"latency_ms":1.92}
+{"timestamp":"2026-11-03T07:50:41.113718Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"31c040a8-2ccc-4ee1-868c-9f34f4fcf241","method":"GET","route":"/docs","status_code":200,"latency_ms":1.802}
+{"timestamp":"2026-11-03T07:50:56.389830Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"f892aeda-e2e3-407d-aa67-7102f0265637","method":"GET","route":"/docs","status_code":200,"latency_ms":0.901}
