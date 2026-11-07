@@ -1,0 +1,76 @@
+# ==============================================================================
+# UniGuru LLM Fine-Tuning Configuration
+# Model: Qwen 2.5 7B Instruct (4-bit QLoRA via Unsloth)
+# Target Hardware: NVIDIA GeForce RTX 3060 (12GB VRAM)
+# ==============================================================================
+
+model:
+  # Pre-quantized 4-bit model checkpoint (Apache 2.0 / Qwen Community License)
+  name_or_path: "unsloth/Qwen2.5-7B-Instruct-bnb-4bit"
+  max_seq_length: 2048
+  dtype: null  # null = auto-detect BF16 or FP16 based on GPU capability
+  load_in_4bit: true
+
+qlora:
+  # Parameter-Efficient LoRA Adapter Settings
+  r: 16
+  lora_alpha: 16
+  lora_dropout: 0
+  bias: "none"
+  use_gradient_checkpointing: "unsloth"
+  random_state: 3407
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+training:
+  # Batch & Gradient Accumulation baseline for 12GB VRAM
+  per_device_train_batch_size: 2
+  gradient_accumulation_steps: 4
+  learning_rate: 0.0002  # 2e-4
+  num_train_epochs: 3
+  max_steps: -1  # -1 uses num_train_epochs
+  warmup_ratio: 0.05
+  logging_steps: 1
+  save_strategy: "epoch"
+  save_total_limit: 2
+  optim: "adamw_8bit"
+  weight_decay: 0.01
+  lr_scheduler_type: "linear"
+  seed: 3407
+  dataset_num_proc: 2
+  packing: false  # Can make training 5x faster for short sequences
+
+hardware:
+  # RTX 3060 12GB Memory Protection & Recovery
+  target_device: "cuda"
+  min_required_vram_gb: 10.5
+  fallback_batch_size: 1
+  fallback_gradient_accumulation_steps: 8
+  mixed_precision_detection: true
+
+dataset:
+  train_path: "data/training/train.json"
+  validation_path: "data/validation/validation.json"
+  validation_split: 0.1
+  random_seed: 42
+  max_context_length_chars: 6000
+  max_question_length_chars: 1000
+
+paths:
+  checkpoints_dir: "checkpoints"
+  adapter_dir: "models/adapters/qwen2.5-7b-rag-adapter"
+  logs_dir: "logs/training"
+
+inference:
+  max_new_tokens: 512
+  temperature: 0.3
+  top_p: 0.9
+  repetition_penalty: 1.1
+  do_sample: true
+

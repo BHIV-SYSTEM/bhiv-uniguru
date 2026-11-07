@@ -26,7 +26,48 @@ backend/RAG/chroma.sqlite3
 backend/RAG/indices/
 backend/RAG/active_index.json
 
+# Preprocessing Pipeline Data
+backend/data/raw/*
+!backend/data/raw/.gitkeep
+!backend/data/raw/sample_*
+backend/data/extracted/*
+!backend/data/extracted/.gitkeep
+backend/data/cleaned/*
+!backend/data/cleaned/.gitkeep
+backend/data/processed/*
+!backend/data/processed/.gitkeep
+backend/data/chunks/*
+!backend/data/chunks/.gitkeep
+backend/data/rejected/*
+!backend/data/rejected/.gitkeep
+
 # Node
 node_modules/
 dist/
 build/
+
+# LLM Fine-Tuning & Weights
+venv-training/
+models/adapters/
+models/checkpoints/
+models/exported/
+checkpoints/
+*.safetensors
+*.pt
+*.bin
+!data/training/sample_*.json
+!data/training/sample_*.jsonl
+!data/training/sample_*.csv
+!data/validation/sample_*.json
+data/training/*
+!data/training/sample_*
+!data/training/.gitkeep
+data/validation/*
+!data/validation/sample_*
+!data/validation/.gitkeep
+data/evaluation/*
+!data/evaluation/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+runs/
+logs/training/
