@@ -23,6 +23,7 @@ os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 import re
 import json
 import hashlib
+import logging
 import sqlite3
 import threading
 import time
@@ -61,6 +62,7 @@ DB_PATH = _RESOLVED_DB
 FAISS_PATH = _RESOLVED_INDEX
 METADATA_PATH = _RESOLVED_META
 LOGS_DIR = BACKEND_DIR / "data" / "retrieval_logs"
+_LOGGER = logging.getLogger(__name__)
 
 # Multilingual term mapping (Marathi, Hindi, Sanskrit -> Canonical search concepts)
 _TRANSLITERATION_MAP = {
@@ -377,9 +379,9 @@ class UnifiedRAGEngine:
 
         # 3. Reciprocal Rank Fusion (RRF)
         rrf_scores: Dict[int, float] = {}
-        for rank, (doc_id, _) in enumerate(dense_results):
+        for rank, (doc_id, _) in enumerate(dense_results, start=1):
             rrf_scores[doc_id] = rrf_scores.get(doc_id, 0.0) + (0.6 / (60.0 + rank))
-        for rank, (doc_id, _) in enumerate(bm25_results):
+        for rank, (doc_id, _) in enumerate(bm25_results, start=1):
             rrf_scores[doc_id] = rrf_scores.get(doc_id, 0.0) + (0.4 / (60.0 + rank))
 
         all_candidate_ids = list(rrf_scores.keys())
@@ -392,6 +394,7 @@ class UnifiedRAGEngine:
                 "is_grounded": False,
                 "latency_ms": round((time.perf_counter() - start_time) * 1000, 2),
             }
+        max_rrf_score = max(rrf_scores.values())
 
         # 4. Fetch chunk records and authority scores from SQLite (schema-adaptive)
         candidates = []
@@ -409,8 +412,8 @@ class UnifiedRAGEngine:
                 rrf_score = rrf_scores.get(c_id, 0.0)
                 auth_score = float(row.get("authority_score") or 0.95)
 
-                # Balanced composite reranker score: Dense (50%) + BM25 (30%) + Authority (20%)
-                composite_score = (dense_score * 0.50) + (bm25_score * 0.30) + (auth_score * 0.20)
+                normalized_rrf = rrf_score / max_rrf_score if max_rrf_score else 0.0
+                normalized_authority = min(1.0, max(0.0, auth_score))
 
                 # Normalize field values across different chunk schemas
                 c_domain = str(row.get("domain") or "general")
@@ -426,34 +429,31 @@ class UnifiedRAGEngine:
                 c_chapter = str(row.get("chapter") or "")
                 c_section = str(row.get("section") or row.get("subcategory") or "")
                 c_file = str(row.get("file_name") or "").replace(".md", "").replace(".pdf", "").replace("_", " ")
-                c_page = row.get("page") or row.get("page_number") or 1
-                c_book = row.get("book") or row.get("source") or row.get("file_name") or "Curriculum Knowledge"
+                c_page = row.get("page") or row.get("page_number")
+                c_book = row.get("book") or row.get("source") or row.get("file_name") or ""
                 c_text = row.get("text") or ""
                 c_hash = row.get("content_hash") or hashlib.sha256(c_text.encode("utf-8")).hexdigest()
 
-                # Metadata alignment boosts
-                if scope.get("grade") is not None and str(c_grade) == str(scope["grade"]):
-                    composite_score += 0.15
-                if scope.get("subject") and c_subject.lower() == scope["subject"].lower():
-                    composite_score += 0.12
-                if scope.get("domain") and c_domain.lower() == scope["domain"].lower():
-                    composite_score += 0.10
-
-                # Concept/Entity exact match boost
+                alignment_score = 0.0
                 q_lower = query.lower()
                 if c_concept and len(c_concept) > 2 and c_concept.lower() in q_lower:
-                    composite_score += 0.25
+                    alignment_score = 1.0
                 elif c_chapter and len(c_chapter) > 2 and c_chapter.lower() in q_lower:
-                    composite_score += 0.18
+                    alignment_score = 0.8
                 elif c_file and len(c_file) > 2 and c_file.lower() in q_lower:
-                    composite_score += 0.15
+                    alignment_score = 0.7
 
-                # Section words match boost
                 if c_section:
                     sec_words = [w for w in re.findall(r"[\w\u0900-\u097F]+", c_section) if len(w) > 2 and w.lower() not in _STOPWORDS]
                     sec_matches = sum(1 for w in sec_words if w in q_lower)
                     if sec_matches > 0:
-                        composite_score += 0.15 + (0.10 * min(3, sec_matches))
+                        alignment_score = max(alignment_score, 0.2 + (0.15 * min(3, sec_matches)))
+
+                composite_score = (
+                    0.60 * normalized_rrf
+                    + 0.20 * normalized_authority
+                    + 0.20 * alignment_score
+                )
 
                 candidates.append({
                     "id": c_id,
@@ -461,7 +461,7 @@ class UnifiedRAGEngine:
                     "file_name": row.get("file_name") or "",
                     "domain": c_domain,
                     "book": c_book,
-                    "board": row.get("board") or "Maharashtra State Board / Gurukul",
+                    "board": row.get("board") or "",
                     "grade": c_grade,
                     "subject": c_subject,
                     "chapter": c_chapter,
@@ -472,11 +472,13 @@ class UnifiedRAGEngine:
                     "text": c_text,
                     "content_hash": c_hash,
                     "authority_score": auth_score,
-                    "source_name": row.get("source_name") or row.get("source") or "Authoritative Source",
+                    "source_name": row.get("source_name") or row.get("source") or "",
                     "source_url": row.get("source_url") or "",
                     "dense_similarity": round(dense_score, 4),
                     "bm25_score": round(bm25_score, 4),
                     "rrf_score": round(rrf_score, 6),
+                    "rrf_normalized_score": round(normalized_rrf, 4),
+                    "alignment_score": round(alignment_score, 4),
                     "composite_score": round(composite_score, 4),
                 })
 
@@ -546,13 +548,79 @@ class UnifiedRAGEngine:
                 return f"Note: Sources {years[0][0]} and {years[1][0]} cite different historical chronologies."
         return None
 
+    @staticmethod
+    def _format_citation(evidence: Dict[str, Any]) -> Optional[Tuple[str, str]]:
+        title = str(
+            evidence.get("book") or evidence.get("file_name") or evidence.get("source_name")
+            or evidence.get("source") or evidence.get("source_url") or ""
+        ).strip()
+        if not title:
+            return None
+
+        details = []
+        source_name = str(evidence.get("source_name") or evidence.get("source") or "").strip()
+        if source_name and source_name.casefold() != title.casefold():
+            details.append(f"Source: {source_name}")
+        page = evidence.get("page") or evidence.get("page_number")
+        if page is not None and str(page).strip():
+            details.append(f"Page {page}")
+        section = str(
+            evidence.get("section") or evidence.get("concept") or evidence.get("chapter") or ""
+        ).strip()
+        if section:
+            details.append(f"Section: {section}")
+        citation = f"{title} ({', '.join(details)})" if details else title
+        return title, citation
+
+    @staticmethod
+    def _extractive_summary(query: str, evidence: List[Dict[str, Any]]) -> Optional[str]:
+        query_terms = {
+            token.casefold()
+            for token in re.findall(r"[\w\u0900-\u097F]+", query)
+            if len(token) > 2 and token.casefold() not in _STOPWORDS
+        }
+        if not query_terms:
+            return None
+
+        candidates = []
+        seen_sentences = set()
+        for source_rank, item in enumerate(evidence):
+            text = str(item.get("text") or "")
+            lines = [
+                line.strip() for line in text.splitlines()
+                if line.strip()
+                and not line.startswith(("Document:", "Board:", "Chapter:", "Source:"))
+            ]
+            for sentence_rank, raw_sentence in enumerate(
+                re.split(r"(?<=[.!?।])\s+|\n+", " ".join(lines))
+            ):
+                sentence = raw_sentence.strip()
+                sentence_tokens = {
+                    token.casefold()
+                    for token in re.findall(r"[\w\u0900-\u097F]+", sentence)
+                }
+                normalized = " ".join(sorted(sentence_tokens))
+                overlap = len(query_terms & sentence_tokens)
+                if len(sentence) < 20 or not overlap or normalized in seen_sentences:
+                    continue
+                seen_sentences.add(normalized)
+                candidates.append((overlap, -source_rank, -sentence_rank, sentence))
+
+        selected = sorted(candidates, reverse=True)[:4]
+        if not selected:
+            return None
+        return " ".join(item[3] for item in selected)[:1200]
+
     def answer_query(self, query: str, top_k: int = 4) -> Dict[str, Any]:
         """
         Generate grounded answer with strict provenance citations (Document -> Page -> Section).
         """
         start_t = time.perf_counter()
         retrieval_res = self.retrieve(query, top_k=top_k)
-        evidence = retrieval_res["top_evidence"]
+        evidence = [
+            item for item in retrieval_res["top_evidence"]
+            if self._format_citation(item) is not None
+        ]
         is_grounded = retrieval_res["is_grounded"]
         max_sim = retrieval_res["max_similarity"]
 
@@ -577,12 +645,10 @@ class UnifiedRAGEngine:
         citations = []
         sources_consulted = []
         for i, ev in enumerate(evidence, 1):
-            doc_title = ev.get("book") or ev.get("file_name") or "Verified Document"
-            page_num = ev.get("page") or 1
-            section = ev.get("section") or ev.get("concept") or "Overview"
-            source_name = ev.get("source_name") or "Authoritative Publication"
-            # Format: Document -> Page -> Section
-            citation = f"{doc_title} (Source: {source_name}, Page {page_num}, Section: '{section}')"
+            formatted = self._format_citation(ev)
+            if formatted is None:
+                continue
+            doc_title, citation = formatted
             citations.append(f"[{i}] {citation}")
             sources_consulted.append(doc_title)
 
@@ -617,31 +683,31 @@ class UnifiedRAGEngine:
                     max_tokens=800,
                 )
                 llm_answer = response.choices[0].message.content.strip()
-            except Exception:
+            except Exception as exc:
+                _LOGGER.warning("Grounded LLM synthesis failed (%s).", type(exc).__name__)
                 llm_answer = None
 
-        # Deterministic factual synthesis fallback
+        # Return a short query-relevant extract rather than concatenating stored chunks.
         if not llm_answer:
+            combined_summary = self._extractive_summary(query, evidence)
+            if not combined_summary:
+                result = {
+                    "query": query,
+                    "answer": ABSTENTION_MESSAGE,
+                    "verification_status": "NO_VERIFIED_KNOWLEDGE",
+                    "confidence": 0.0,
+                    "citations": [],
+                    "sources_consulted": [],
+                    "evidence": [],
+                    "conflict_note": None,
+                    "debug": retrieval_res,
+                }
+                self._log_retrieval(query, result, latency_ms=(time.perf_counter() - start_t) * 1000)
+                return result
             primary = evidence[0]
-            sec_texts = []
-            for ev in evidence[:3]:
-                lines = ev["text"].splitlines()
-                content_lines = [
-                    l for l in lines
-                    if not l.startswith("Document:") and not l.startswith("Board:")
-                    and not l.startswith("Chapter:") and not l.startswith("Source:")
-                ]
-                c_text = " ".join(content_lines).strip()
-                if c_text and c_text not in sec_texts:
-                    sec_texts.append(c_text)
-
-            combined_summary = " ".join(sec_texts)
-            if len(combined_summary) > 1800:
-                combined_summary = combined_summary[:1800].rsplit(".", 1)[0] + "."
-
             answer_lines = [
                 f"**{primary.get('concept') or primary.get('chapter') or primary.get('book')}**:\n",
-                combined_summary,
+                "**Evidence-based summary:** " + combined_summary,
             ]
             if conflict_note:
                 answer_lines.append(f"\n*{conflict_note}*")
@@ -681,7 +747,7 @@ class UnifiedRAGEngine:
             log_entry = {
                 "log_id": log_id,
                 "timestamp": time.time(),
-                "query": query,
+                "query_fingerprint": hashlib.sha256(query.encode("utf-8")).hexdigest(),
                 "verification_status": result.get("verification_status"),
                 "confidence": result.get("confidence"),
                 "citations": result.get("citations", []),
@@ -691,8 +757,8 @@ class UnifiedRAGEngine:
             }
             log_file = LOGS_DIR / f"{int(time.time())}_{log_id}.json"
             log_file.write_text(json.dumps(log_entry, indent=2), encoding="utf-8")
-        except Exception:
-            pass
+        except Exception as exc:
+            _LOGGER.warning("Unable to persist retrieval audit log (%s).", type(exc).__name__)
 
 
 def get_unified_engine() -> UnifiedRAGEngine:
@@ -700,4 +766,3 @@ def get_unified_engine() -> UnifiedRAGEngine:
 
 
 get_unified_rag_engine = get_unified_engine
-

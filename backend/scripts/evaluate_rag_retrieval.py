@@ -17,8 +17,10 @@ if str(BACKEND_ROOT) not in sys.path:
 
 from retrieval import retriever as retrieval_module  # noqa: E402
 from retrieval.retriever import AdvancedRetriever  # noqa: E402
+from integrations.language_adapter import LanguageAdapter  # noqa: E402
 
 DEFAULT_CASES = BACKEND_ROOT / "tests" / "data" / "retrieval_eval_cases.json"
+_LANGUAGE_ADAPTER = LanguageAdapter()
 
 
 def _normalize(value: str) -> str:
@@ -27,7 +29,8 @@ def _normalize(value: str) -> str:
 
 def _evaluate_case(retriever: AdvancedRetriever, case: dict[str, Any], k: int) -> dict[str, Any]:
     start = time.perf_counter()
-    results = retriever.retrieve_multi(case["query"])
+    retrieval_query = _LANGUAGE_ADAPTER.normalize_query(case["query"]).normalized_query
+    results = retriever.retrieve_multi(retrieval_query)
     elapsed_ms = (time.perf_counter() - start) * 1000
     top = results[:k]
     expected_sources = set(case.get("expected_sources", []))
@@ -56,6 +59,7 @@ def _evaluate_case(retriever: AdvancedRetriever, case: dict[str, Any], k: int) -
         "id": case["id"],
         "category": case["category"],
         "query": case["query"],
+        "retrieval_query": retrieval_query,
         "retrieved_sources": [row.get("path") for row in top],
         "source_recall_at_k": recall,
         "first_relevant_rank": rank,
@@ -75,7 +79,7 @@ def _mean(rows: list[dict[str, Any]], field: str) -> float | None:
 
 def _summarize(rows: list[dict[str, Any]]) -> dict[str, Any]:
     latencies = [row["latency_ms"] for row in rows]
-    supported = [row for row in rows if row["category"] in {"factual", "multi_document", "misspelled"}]
+    supported = [row for row in rows if row["category"] in {"factual", "multi_document", "misspelled", "multilingual"}]
     unsupported = [row for row in rows if row["category"] in {"underspecified_unanswerable", "unrelated"}]
     return {
         "queries": len(rows),
@@ -154,7 +158,7 @@ def run_evaluation(cases_path: Path = DEFAULT_CASES, k: int = 5) -> dict[str, An
     baseline = _summarize(baseline_rows)
     current = _summarize(current_rows)
     return {
-        "evaluation": "retrieval-only; no answer generation or model judging",
+        "evaluation": "retrieval-only; language-adapter normalization applied; no answer generation or model judging",
         "k": k,
         "corpus": str(knowledge_root),
         "corpus_markdown_files": sum(1 for path in knowledge_root.rglob("*.md") if path.is_file()),
@@ -165,7 +169,7 @@ def run_evaluation(cases_path: Path = DEFAULT_CASES, k: int = 5) -> dict[str, An
             "summary": baseline,
             "limitations": "Reference emulates the old missing-manifest fallback on the same KB; it is not a full historical checkout replay.",
         },
-        "current": {"name": "current AdvancedRetriever path", "summary": current},
+        "current": {"name": "current language-adapted AdvancedRetriever path", "summary": current},
         "delta_current_minus_baseline": {
             field: round(current[field] - baseline[field], 4)
             if current[field] is not None and baseline[field] is not None else None

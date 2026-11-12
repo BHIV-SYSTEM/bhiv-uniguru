@@ -60,6 +60,10 @@ Karma drives the cycle of saṃsāra across all fourteen lokas. The Purāṇas d
 
 In Yoga psychology: karma creates saṃskāras (mental impressions) and vāsanās (latent tendencies) that condition future experience. Patañjali's Yoga Sūtras 2.12-14 describe the karma-āśaya (karma-store) as the root of birth, lifespan, and experience. Karma operates through the kāraṇa-śarīra (causal body). Karma yoga (the yoga of action) transforms karma from bondage to liberation by eliminating the sense of doership (ahaṃkāra).
 
+## Marathi Summary
+
+कर्मयोग म्हणजे कृती करताना तिच्या फलाची आसक्ती आणि कर्तेपणाचा अहंकार सोडून कर्मबंधनातून मुक्तीकडे जाण्याचा मार्ग.
+
 ## Governance
 
 Karma as social principle: the concept of karma-phala (fruit of action) underlies Indian jurisprudence. Kauṭilya's Arthaśāstra recognizes that rulers accumulate karma through their governance. The concept of rāja-dharma (royal duty) is the karmic responsibility of the king. Historical Indian governance was explicitly framed in karmic terms — Aśoka's dhamma edicts reflect karmic accountability.

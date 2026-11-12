@@ -1,6 +1,7 @@
 from pathlib import Path
 from unittest.mock import patch
 
+from integrations.language_adapter import LanguageAdapter
 from retrieval.retriever import AdvancedRetriever, KB_PATHS
 
 
@@ -104,7 +105,7 @@ def test_sanskrit_knowledge_tree_is_loaded():
     assert retriever.file_map["brahman"] == "brahman.md"
 
 
-def test_synthesis_failure_falls_back_to_primary_document():
+def test_synthesis_failure_does_not_return_raw_primary_document():
     retriever = _retriever_with_documents(
         {"brahman": "Brahman is supported by this complete source document."}
     )
@@ -114,7 +115,9 @@ def test_synthesis_failure_falls_back_to_primary_document():
     with patch.object(AdvancedRetriever, "_synthesize_evidence", side_effect=RuntimeError("forced failure")):
         response = retriever.reason_and_compare(results, "What is Brahman?")
 
-    assert response["content"] == primary_content
+    assert response["content"] is None
+    assert response["decision"] == "error"
+    assert primary_content not in str(response)
 
 
 def test_specific_source_and_topic_must_both_have_evidence():
@@ -131,6 +134,22 @@ def test_conversational_filler_does_not_retrieve_unrelated_documents():
     retriever = AdvancedRetriever()
 
     assert retriever.retrieve_multi("Explain it simply.") == []
+
+
+def test_underspecified_and_unrelated_questions_do_not_retrieve_weak_matches():
+    retriever = AdvancedRetriever()
+
+    queries = [
+        "What does it mean?",
+        "Explain the model.",
+        "How do I make a lasagna?",
+        "Who won today's football match?",
+        "What will the weather be tomorrow in Tokyo?",
+        "Recommend a beach hotel in Bali.",
+        "How do I repair a leaking kitchen faucet?",
+    ]
+
+    assert all(not retriever.retrieve_multi(query) for query in queries)
 
 
 def test_exact_concept_title_is_ranked_first():
@@ -164,6 +183,16 @@ def test_python_and_its_history_are_retrievable_from_active_kb():
     assert history
     assert history[0]["path"] == "programming/python.md"
     assert "late 1980s" in history[0]["content"]
+
+
+def test_marathi_query_normalization_retrieves_the_expected_kb_source():
+    adapted = LanguageAdapter().normalize_query("धर्म म्हणजे काय?")
+    results = AdvancedRetriever().retrieve_multi(adapted.normalized_query)
+
+    assert adapted.source_language == "mr"
+    assert adapted.normalized_query == "dharma what is?"
+    assert results
+    assert results[0]["path"] == "sanskrit/dharma.md"
 
 
 def test_india_prime_minister_query_returns_officially_sourced_history():

@@ -737,14 +737,132 @@ def _process_router_request(
     context_map["allow_web"] = bool(allow_web)
     context_map["source_language"] = adapted.source_language
 
-    result = _execute_kosha_pipeline(
-        query=normalized_query,
-        domain_hint=None,
-        top_k=5,
-        trace_id=str(uuid.uuid4()),
-        user_id=caller_name,
-    )
-    candidate_signals = result.get("matched_signals") or []
+    result: Dict[str, Any]
+    deterministic_result: Optional[Dict[str, Any]] = None
+    from router.universal_query_router import get_universal_router
+    route_info = get_universal_router().route(normalized_query, context=context_map)
+    if route_info.get("category") == "MATHEMATICS":
+        from capabilities.math_engine import MathEngine
+
+        math_result = MathEngine().solve(normalized_query)
+        if math_result:
+            result = {
+                "answer": str(math_result.get("result") or math_result.get("answer") or ""),
+                "verification_status": "NOT_REQUIRED",
+                "confidence": 1.0,
+                "confidence_breakdown": {"overall": 1.0},
+                "matched_signals": [],
+                "rejected_signals": [],
+                "reasoning": "Solved with the deterministic mathematics engine.",
+                "source_type": "llm_general_knowledge",
+            }
+        else:
+            result = {
+                "answer": "I do not have verified knowledge to answer this question.",
+                "verification_status": "NO_VERIFIED_KNOWLEDGE",
+                "confidence": 0.0,
+                "confidence_breakdown": {"overall": 0.0},
+                "matched_signals": [],
+                "rejected_signals": [],
+                "reasoning": "The deterministic mathematics engine could not solve this query.",
+                "source_type": "llm_general_knowledge",
+            }
+        candidate_signals = []
+    else:
+        candidate_signals = []
+    from kosha.deterministic_pipeline import run_deterministic_pipeline
+    from kosha.signal_validator import CanonicalEntityResolver
+
+    if route_info.get("category") != "MATHEMATICS":
+        requires_kosha_validation = bool(CanonicalEntityResolver().extract(normalized_query)) or (
+            conversation_router._requires_strict_verification(normalized_query)
+        )
+        if requires_kosha_validation:
+            deterministic_result = run_deterministic_pipeline(
+                query=normalized_query,
+                trace_id=str(uuid.uuid4()),
+                user_id=caller_name,
+            )
+        if deterministic_result and deterministic_result.get("verification_status") == "VERIFIED":
+            result = deterministic_result
+            selected_ids = set(result.get("evidence_signal_ids") or [])
+            candidate_signals = [
+                signal for signal in result.get("matched_signals") or []
+                if signal.get("signal_id") in selected_ids
+            ]
+        elif (
+            deterministic_result
+            and (
+                conversation_router._requires_strict_verification(normalized_query)
+                or query_type == QueryType.WEB_LOOKUP
+                or re.match(r"^\s*who\s+won\b", normalized_query, re.IGNORECASE)
+            )
+        ):
+            result = deterministic_result
+            candidate_signals = []
+        else:
+            shared_response = service.ask(
+                user_query=normalized_query,
+                session_id=session_id,
+                context=context_map,
+                allow_web_retrieval=False,
+            )
+            shared_trace = shared_response.get("retrieval_trace") or {}
+            shared_evidence = shared_trace.get("evidence_sources") or []
+            if (
+                shared_response.get("verification_status") == "VERIFIED"
+                and shared_trace.get("match_found")
+                and shared_evidence
+            ):
+                candidate_signals = [
+                    {
+                        "signal_id": f"rag_{index + 1}",
+                        "source": evidence.get("path") or evidence.get("file"),
+                        "confidence": evidence.get("evidence_coverage") or shared_trace.get("confidence"),
+                        "content": evidence.get("excerpt") or "",
+                        "domain": "knowledge_base",
+                        "knowledge_id": evidence.get("chunk_id") or evidence.get("path"),
+                        "trace": {"knowledge_id": evidence.get("chunk_id") or evidence.get("path")},
+                    }
+                    for index, evidence in enumerate(shared_evidence)
+                    if isinstance(evidence, dict)
+                    and str(evidence.get("excerpt") or "").strip()
+                    and str(evidence.get("path") or evidence.get("file") or "").strip()
+                ]
+                result = {
+                    "answer": shared_response.get("answer"),
+                    "verification_status": shared_response.get("verification_status"),
+                    "confidence": shared_response.get("confidence", 0.0),
+                    "confidence_breakdown": {"overall": shared_trace.get("confidence", 0.0)},
+                    "matched_signals": candidate_signals,
+                    "rejected_signals": [],
+                    "reasoning": shared_response.get("reason"),
+                    "retrieval_trace": shared_trace,
+                    "source_type": "rag",
+                }
+            elif (
+                query_type == QueryType.WEB_LOOKUP
+                or conversation_router._requires_strict_verification(normalized_query)
+                or re.match(r"^\s*who\s+won\b", normalized_query, re.IGNORECASE)
+            ):
+                result = deterministic_result or {
+                    "answer": "I do not have verified knowledge to answer this question.",
+                    "verification_status": "NO_VERIFIED_KNOWLEDGE",
+                    "confidence": 0.0,
+                    "matched_signals": [],
+                    "rejected_signals": [],
+                    "confidence_breakdown": {"overall": 0.0},
+                }
+                candidate_signals = []
+            else:
+                result = _execute_kosha_pipeline(
+                    query=normalized_query,
+                    domain_hint=None,
+                    top_k=5,
+                    trace_id=str(uuid.uuid4()),
+                    user_id=caller_name,
+                )
+                candidate_signals = result.get("matched_signals") or []
     answer = str(result.get("answer") or "I do not have verified knowledge to answer this question.")
     answer_claims = [
         " ".join(claim.casefold().split())
@@ -793,6 +911,9 @@ def _process_router_request(
         "verification_status": verification_status,
         "session_id": session_id,
         "confidence": result.get("confidence", 0.0),
+        "source_type": result.get("source_type") or (
+            "rag" if evidence_sources and verification_status == "VERIFIED" else "llm_general_knowledge"
+        ),
         "confidence_breakdown": confidence_breakdown,
         "reasoning": result.get("reasoning"),
         "reasoning_path": result.get("reasoning_path", []),
@@ -802,10 +923,16 @@ def _process_router_request(
         "fallback_to_llm": False,
         "routing": {"route": "DETERMINISTIC_KOSHA", "query_type": query_type.value},
         "retrieval_trace": {
-            "engine": "DeterministicKoshaPipeline",
-            "method": "entity_domain_validated_keyword_retrieval",
+            "engine": (result.get("retrieval_trace") or {}).get("engine", "DeterministicKoshaPipeline"),
+            "method": (result.get("retrieval_trace") or {}).get(
+                "method", "entity_domain_validated_keyword_retrieval"
+            ),
             "match_found": verification_status == "VERIFIED" and bool(matched_signals),
-            "confidence": float(confidence_breakdown.get("overall") or 0.0),
+            "confidence": float(
+                confidence_breakdown.get("overall")
+                or (result.get("retrieval_trace") or {}).get("confidence")
+                or 0.0
+            ),
             "evidence_sources": evidence_sources,
         },
     }
@@ -1758,14 +1885,23 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
     try:
         trace_id = f"chat_{chat_id}_{uuid.uuid5(uuid.NAMESPACE_URL, message).hex[:12]}"
         adapted = language_adapter.normalize_query(message)
+        query_type = classify_query(adapted.normalized_query)
+        prefer_verified_rag = query_type == QueryType.KNOWLEDGE_QUERY
+        if query_type in {QueryType.CONCEPT_QUERY, QueryType.EXPLANATION_QUERY}:
+            from router.universal_query_router import get_universal_router
+            prefer_verified_rag = bool(
+                get_universal_router().route(adapted.normalized_query).get("requires_rag")
+            )
         router_response = conversation_router.route_query(
             query=adapted.normalized_query,
             context={
                 "caller": user_id,
                 "user_id": user_id,
                 "session_id": chat_id,
+                "trace_id": trace_id,
                 "source_language": adapted.source_language,
                 "allow_web": False,
+                "prefer_verified_rag": prefer_verified_rag,
                 "conversation_history": conversation_history,
             },
         )
@@ -2790,6 +2926,8 @@ def new_rag_endpoint(request: NewRagRequest, token: HTTPAuthorizationCredentials
         if is_conversational:
             conversational = conversation_router.route_query(request.query, conversation_context)
             answer = str(conversational.get("answer") or "").strip()
+            if "uniguru" not in answer.casefold():
+                answer = f"I'm UniGuru. {answer}"
             return {
                 "query": request.query,
                 "answer": answer,
@@ -2803,13 +2941,13 @@ def new_rag_endpoint(request: NewRagRequest, token: HTTPAuthorizationCredentials
                 "routing": conversational.get("routing"),
             }
 
+        adapted = language_adapter.normalize_query(request.query)
         kosha_result = _execute_kosha_pipeline(
-            query=request.query,
+            query=adapted.normalized_query,
             domain_hint=request.domain,
             top_k=5,
             allow_generated_verse=bool(request.allow_generated_verse),
         )
-        adapted = language_adapter.normalize_query(request.query)
         kosha_result.setdefault("normalized_query", adapted.normalized_query)
         # Keep the legacy /new_rag field name while deriving it only from the
         # evidence actually used by deterministic synthesis.
@@ -2827,17 +2965,21 @@ def new_rag_endpoint(request: NewRagRequest, token: HTTPAuthorizationCredentials
                 compatible_signal["source"] = normalized_source[marker_index + len(knowledge_marker):]
             legacy_signals.append(compatible_signal)
         kosha_result["signals"] = legacy_signals
-        if kosha_result.get("verification_status") == "NO_VERIFIED_KNOWLEDGE":
+        if not legacy_signals:
             hybrid_response = service.ask(
-                user_query=request.query,
+                user_query=adapted.normalized_query,
                 session_id=request.session_id,
-                context={"caller": request.caller or "new_rag"},
+                context={
+                    "caller": request.caller or "new_rag",
+                    "source_language": adapted.source_language,
+                },
                 allow_web_retrieval=False,
             )
             retrieval_trace = hybrid_response.get("retrieval_trace") or {}
             if (
                 hybrid_response.get("verification_status") in {"VERIFIED", "VERIFIED_PARTIAL", "PARTIAL"}
                 and retrieval_trace.get("match_found")
+                and retrieval_trace.get("evidence_sources")
                 and str(hybrid_response.get("answer") or "").strip()
             ):
                 evidence_sources = retrieval_trace.get("evidence_sources") or []
@@ -2858,10 +3000,15 @@ def new_rag_endpoint(request: NewRagRequest, token: HTTPAuthorizationCredentials
                     for index, evidence in enumerate(evidence_sources)
                     if isinstance(evidence, dict) and str(evidence.get("excerpt") or "").strip()
                 ]
+                localized_response = language_adapter.localize_response(
+                    hybrid_response,
+                    source_language=adapted.source_language,
+                )
                 return {
                     "query": request.query,
-                    "answer": hybrid_response["answer"],
-                    "final_answer": hybrid_response["answer"],
+                    "normalized_query": adapted.normalized_query,
+                    "answer": localized_response["answer"],
+                    "final_answer": localized_response["answer"],
                     "confidence": None,
                     "confidence_breakdown": {
                         "retrieval_score": retrieval_trace.get("retrieval_score"),
@@ -2877,6 +3024,7 @@ def new_rag_endpoint(request: NewRagRequest, token: HTTPAuthorizationCredentials
                     "fallback_to_llm": False,
                     "fallback_reason": "no_valid_kosha_signals; verified_hybrid_kb_evidence_found",
                     "retrieval_trace": retrieval_trace,
+                    "language_adapter": localized_response.get("language_adapter"),
                     "kosha_result": kosha_result,
                     "output_contract": {
                         "schema": "UNIGURU_HYBRID_RAG_CONTRACT_V1",

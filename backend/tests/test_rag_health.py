@@ -153,11 +153,18 @@ def test_ask_answers_general_questions_without_making_verification_mandatory():
     assert math["source_type"] == "llm_general_knowledge"
 
 
-def test_chat_new_uses_conversation_routing_for_greetings_and_provenance():
+def test_chat_new_uses_conversation_routing_for_greetings_and_provenance(monkeypatch):
+    monkeypatch.setattr(api, "_DEMO_AUTH_ENABLED", True)
+    monkeypatch.setattr(
+        api,
+        "_DEMO_AUTH_TOKENS",
+        {"greeting-test-token": {"id": "greeting-user", "email": "greeting@example.test", "name": "Greeting"}},
+    )
     client = TestClient(app)
     response = client.post(
         "/chat/new",
         json={"message": "hi", "chatbotId": "test-guru", "userId": "greeting-user"},
+        headers={"Authorization": "Bearer greeting-test-token"},
     )
 
     assert response.status_code == 200

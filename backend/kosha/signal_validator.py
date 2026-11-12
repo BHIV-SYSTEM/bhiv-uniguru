@@ -399,6 +399,8 @@ class AnswerSynthesizer:
             for part in re.split(r"\s+(?:and|or)\s+", subject_text, flags=re.IGNORECASE)
         ]
         text = re.sub(r"\[\d+\]", "", str(content or ""))
+        text = re.sub(r"\A---\s*\n.*?\n---\s*", "", text, flags=re.DOTALL)
+        text = re.sub(r"(?m)^\s*#{1,6}\s+.*$", "", text)
         # Keep a colon lead-in with its following line so the selected evidence
         # is a complete sentence (for example, a phrase followed by its gloss).
         text = re.sub(r":\s*\n+\s*", ": ", text)
@@ -531,6 +533,21 @@ class AnswerSynthesizer:
         used_signals = []
         answer_sentences = []
         name_query = bool(re.search(r"\bname\b|\bwhich\s+text\b", query.casefold()))
+        if name_query:
+            accepted = sorted(
+                accepted,
+                key=lambda signal: not any(
+                    re.search(
+                        r"\b(?:contains?|includes?|related to|deals with|covers?)\b",
+                        sentence,
+                        re.IGNORECASE,
+                    )
+                    for sentence in AnswerSynthesizer._relevant_sentences(
+                        query=query,
+                        content=str(signal.get("content") or ""),
+                    )
+                ),
+            )
         for signal in accepted:
             for sentence in AnswerSynthesizer._relevant_sentences(
                 query=query,

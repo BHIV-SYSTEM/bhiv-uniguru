@@ -302,6 +302,57 @@ def test_provider_failure_is_not_replaced_by_canned_success(monkeypatch):
     assert router.llm_status()["available"] is False
 
 
+def test_provider_retries_are_bounded_and_fallback_provider_is_used(monkeypatch):
+    router = ConversationRouter()
+    router._llm_url = "https://primary.example/v1/chat/completions"
+    router._llm_model = "primary-model"
+    router._llm_fallback_url = "https://secondary.example/v1/chat/completions"
+    router._llm_fallback_model = "secondary-model"
+    router._llm_fallback_api_key = "fallback-secret"
+    calls = []
+
+    class Response:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"choices": [{"message": {"content": "Secondary answer."}}]}
+
+    def post(url, **kwargs):
+        calls.append((url, kwargs))
+        if url == router._llm_url:
+            raise requests.Timeout("timeout")
+        return Response()
+
+    monkeypatch.setattr(router_module.requests, "post", post)
+    monkeypatch.setattr(router_module.time, "sleep", lambda _seconds: None)
+
+    result = router._request_llm("Current question", None)
+
+    assert result["provider_status"] == "success"
+    assert result["answer"] == "Secondary answer."
+    assert [url for url, _ in calls] == [
+        router._llm_url,
+        router._llm_url,
+        router._llm_fallback_url,
+    ]
+    assert calls[-1][1]["headers"]["Authorization"] == "Bearer fallback-secret"
+    assert calls[-1][1]["timeout"] == router._llm_timeout
+
+
+def test_retry_limit_can_be_disabled(monkeypatch):
+    router = ConversationRouter()
+    router._llm_url = "https://primary.example/v1/chat/completions"
+    router._llm_max_retries = 0
+    calls = []
+    monkeypatch.setattr(router_module.requests, "post", lambda *args, **kwargs: calls.append(args) or (_ for _ in ()).throw(requests.Timeout("timeout")))
+
+    result = router._request_llm("Current question", None)
+
+    assert result["provider_status"] == "failed"
+    assert len(calls) == 1
+
+
 def test_empty_provider_response_is_failure_not_canned_answer(monkeypatch):
     router = ConversationRouter()
     router._llm_url = "https://llm.example/v1/chat/completions"

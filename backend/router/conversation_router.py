@@ -400,12 +400,14 @@ class ConversationRouter:
         return f"{previous_query} {query}"
 
     def llm_status(self) -> Dict[str, Any]:
-        configured = bool(self._llm_url) and not self._llm_url.startswith("internal://")
-        internal_demo = self._llm_url.startswith("internal://")
+        primary_configured = bool(self._llm_url) and not self._llm_url.startswith("internal://")
+        fallback_configured = bool(self._llm_fallback_url) and not self._llm_fallback_url.startswith("internal://")
+        configured = primary_configured or fallback_configured
+        internal_demo = self._llm_url.startswith("internal://") and not fallback_configured
         return {
             "configured": configured,
-            "endpoint": self._llm_url or None,
-            "model": self._llm_model or None,
+            "endpoint": self._llm_url or self._llm_fallback_url or None,
+            "model": self._llm_model or self._llm_fallback_model or None,
             "internal_demo_mode": internal_demo,
             "available": configured and self._llm_available is True,
             "last_request_succeeded": self._llm_available,
@@ -620,6 +622,9 @@ class ConversationRouter:
         if any(re.search(pattern, text) for pattern in _CREATIVE_PATTERNS):
             return QueryRoutingType.GENERAL_LLM_QUERY
 
+        if context and context.get("prefer_verified_rag"):
+            return QueryRoutingType.KNOWLEDGE_QUERY
+
         if self._requires_strict_verification(query):
             return QueryRoutingType.KNOWLEDGE_QUERY
 
@@ -666,6 +671,29 @@ class ConversationRouter:
         user_id = str(context.get("caller") or context.get("user_id") or "demo-user")
 
         try:
+            if query_type == QueryRoutingType.KNOWLEDGE_QUERY and context.get("prefer_verified_rag"):
+                shared_response = self._service.ask(
+                    user_query=query,
+                    session_id=session_id,
+                    context=context,
+                    allow_web_retrieval=allow_web,
+                )
+                shared_trace = shared_response.get("retrieval_trace") or {}
+                if (
+                    shared_response.get("verification_status")
+                    in {"VERIFIED", "VERIFIED_PARTIAL", "PARTIAL"}
+                    and shared_trace.get("match_found")
+                    and str(shared_response.get("answer") or "").strip()
+                ):
+                    shared_response.update(
+                        source_type="rag",
+                        verified=True,
+                        retrieved_evidence=bool(shared_trace.get("evidence_sources")),
+                        retrieval_performed=True,
+                        retrieval_status="success",
+                    )
+                    return shared_response
+
             from service.universal_orchestrator import get_universal_orchestrator
             orchestrator = get_universal_orchestrator()
             orch_res = orchestrator.process_query(
@@ -906,6 +934,85 @@ class ConversationRouter:
                 "provider_status": "unconfigured",
             }
 
+        last_failure = {
+            "answer": "I couldn't get a response from the configured language-model provider. Please try again later.",
+            "reason": "ROUTE_LLM request to configured provider failed.",
+            "governance_reason": "Provider request failed; no canned answer was substituted.",
+            "provider_status": "failed",
+        }
+        for provider in providers:
+            result = self._request_llm_provider(
+                query=query,
+                session_id=session_id,
+                history=history,
+                verified_context=verified_context,
+                verification_status=verification_status,
+                provider_url=provider["url"],
+                provider_model=provider["model"],
+                provider_api_key=provider["api_key"],
+                provider_name=provider["name"],
+            )
+            if result.get("provider_status") == "success":
+                return result
+            last_failure = result
+
+        self._llm_available = False
+        return last_failure
+
+    def _post_llm_with_retries(
+        self,
+        provider_url: str,
+        payload: Dict[str, Any],
+        headers: Dict[str, str],
+        provider_name: str,
+    ) -> Dict[str, Any]:
+        for attempt in range(self._llm_max_retries + 1):
+            response = None
+            try:
+                response = requests.post(
+                    provider_url,
+                    json=payload,
+                    headers=headers,
+                    timeout=self._llm_timeout,
+                )
+                response.raise_for_status()
+                data = response.json()
+                if not isinstance(data, dict):
+                    raise ValueError("LLM provider response was not a JSON object.")
+                return data
+            except Exception as exc:
+                status_code = getattr(response, "status_code", None)
+                if status_code is None:
+                    status_code = getattr(getattr(exc, "response", None), "status_code", None)
+                retryable = (
+                    isinstance(exc, (requests.Timeout, requests.ConnectionError))
+                    or status_code == 429
+                    or (isinstance(status_code, int) and status_code >= 500)
+                )
+                if not retryable or attempt >= self._llm_max_retries:
+                    raise
+                _LOGGER.warning(
+                    "Transient LLM provider failure (%s; status=%s; provider=%s; attempt=%s); retrying.",
+                    type(exc).__name__,
+                    status_code,
+                    provider_name,
+                    attempt + 1,
+                )
+                time.sleep(min(0.25 * (2 ** attempt), 1.0))
+        raise RuntimeError("LLM retry loop exited without a response.")
+
+    def _request_llm_provider(
+        self,
+        query: str,
+        session_id: Optional[str],
+        history: Optional[list[Dict[str, str]]],
+        verified_context: str,
+        verification_status: str,
+        provider_url: str,
+        provider_model: str,
+        provider_api_key: str,
+        provider_name: str,
+    ) -> Dict[str, str]:
         evidence = str(verified_context or "").strip()[:6000]
         if verification_status != "VERIFIED":
             evidence = ""
@@ -932,16 +1039,16 @@ class ConversationRouter:
         bounded_history = self._bounded_history(history or [])[-6:]
         messages = [{"role": "system", "content": system_prompt}, *bounded_history, {"role": "user", "content": query}]
 
-        llm_url_lower = self._llm_url.lower()
+        llm_url_lower = provider_url.lower()
         is_openai_chat_style = "/openai/v1/chat/completions" in llm_url_lower or llm_url_lower.endswith("/chat/completions")
         if is_openai_chat_style:
-            sanitized_payload = {"model": self._llm_model, "messages": messages, "stream": False}
+            sanitized_payload = {"model": provider_model, "messages": messages, "stream": False}
         else:
             rendered_prompt = "\n\n".join(
                 f"{message['role'].capitalize()}:\n{message['content']}" for message in messages
             ) + "\n\nAssistant:"
             sanitized_payload = {
-                "model": self._llm_model or None,
+                "model": provider_model or None,
                 "messages": messages,
                 "system": system_prompt,
                 "prompt": rendered_prompt,
@@ -955,6 +1062,10 @@ class ConversationRouter:
         if self._llm_api_key:
             headers["Authorization"] = f"Bearer {self._llm_api_key}"
 
+        headers.pop("Authorization", None)
+        if provider_api_key:
+            headers["Authorization"] = "Bearer " + provider_api_key
+
         retry_messages = messages
         for attempt in range(2 if code_generation else 1):
             payload = dict(sanitized_payload)
@@ -965,17 +1076,18 @@ class ConversationRouter:
                     for message in retry_messages
                 ) + "\n\nAssistant:"
             try:
-                response = requests.post(
-                    self._llm_url,
-                    json=payload,
+                data = self._post_llm_with_retries(
+                    provider_url=provider_url,
+                    payload=payload,
                     headers=headers,
-                    timeout=self._llm_timeout,
+                    provider_name=provider_name,
                 )
-                response.raise_for_status()
-                data = response.json()
             except Exception as exc:
-                self._llm_available = False
-                _LOGGER.warning("LLM provider request failed (%s).", type(exc).__name__)
+                _LOGGER.warning(
+                    "LLM provider request failed (%s; provider=%s).",
+                    type(exc).__name__,
+                    provider_name,
+                )
                 return {
                     "answer": "I couldn't get a response from the configured language-model provider. Please try again later.",
                     "reason": "ROUTE_LLM request to configured provider failed.",
@@ -984,11 +1096,19 @@ class ConversationRouter:
                 }
 
             answer = str(
-                data.get("answer") or data.get("response") or data.get("output") or data.get("content")
-                or (data.get("message") or {}).get("content") or ""
+                data.get("answer") or data.get("response") or data.get("output") or data.get("content") or ""
             ).strip()
-            if not answer and isinstance(data.get("choices"), list) and data["choices"]:
-                answer = str((data["choices"][0].get("message") or {}).get("content") or data["choices"][0].get("text") or "").strip()
+            message_data = data.get("message")
+            if not answer and isinstance(message_data, dict):
+                answer = str(message_data.get("content") or "").strip()
+            choices = data.get("choices")
+            if not answer and isinstance(choices, list) and choices and isinstance(choices[0], dict):
+                choice = choices[0]
+                choice_message = choice.get("message")
+                if isinstance(choice_message, dict):
+                    answer = str(choice_message.get("content") or "").strip()
+                if not answer:
+                    answer = str(choice.get("text") or "").strip()
             if not answer:
                 self._llm_available = False
                 return {

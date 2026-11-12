@@ -389,6 +389,41 @@
       "query": "Recommend a beach hotel in Bali.",
       "expected_sources": [],
       "expected_topics": []
+    },
+    {
+      "id": "rag-37",
+      "category": "multilingual",
+      "query": "धर्म म्हणजे काय?",
+      "expected_sources": [
+        "sanskrit/dharma.md"
+      ],
+      "expected_topics": [
+        "dharma",
+        "duty"
+      ]
+    },
+    {
+      "id": "rag-38",
+      "category": "multilingual",
+      "query": "कर्म योग म्हणजे काय?",
+      "expected_sources": [
+        "sanskrit/karma.md"
+      ],
+      "expected_topics": [
+        "karma yoga",
+        "action"
+      ]
+    },
+    {
+      "id": "rag-39",
+      "category": "multilingual",
+      "query": "क्वांटम एंटॅंगलमेंट म्हणजे काय?",
+      "expected_sources": [
+        "quantum/entanglement.md"
+      ],
+      "expected_topics": [
+        "entanglement"
+      ]
     }
   ]
 }

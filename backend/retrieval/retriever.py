@@ -4,6 +4,7 @@ import logging
 import os
 import math
 import re
+from difflib import SequenceMatcher
 import unicodedata
 import threading
 from typing import Any, Dict, List, Optional, Tuple
@@ -310,8 +311,23 @@ STOPWORDS = {
     "make",
     "repair",
     "recommend",
+    "model",
+    "history",
     "in",
     "there",
+    "compare",
+    "approach",
+    "approaches",
+    "simple",
+    "terms",
+    "role",
+    "roles",
+    "as",
+    "knowledge",
+    "sources",
+    "source",
+    "thought",
+    "philosophy",
 }
 
 
@@ -327,6 +343,8 @@ class AdvancedRetriever:
         self.source_map: Dict[str, str] = {}
         self.file_map: Dict[str, str] = {}
         self.path_map: Dict[str, str] = {}
+        self._vocabulary_by_initial: Dict[str, set[str]] = {}
+        self._token_documents: Dict[str, set[str]] = {}
         self._load_memory()
 
     def _load_memory(self) -> None:
@@ -352,6 +370,17 @@ class AdvancedRetriever:
                 self.file_map[key] = file_name
                 self.path_map[key] = relative_path
 
+        vocabulary_by_initial: Dict[str, set[str]] = {}
+        token_documents: Dict[str, set[str]] = {}
+        for key, content in self.knowledge_map.items():
+            document_tokens = set(self._tokens(f"{key} {content}"))
+            for token in document_tokens:
+                token_documents.setdefault(token, set()).add(key)
+                if token.isascii() and token.isalpha() and len(token) >= 6:
+                    vocabulary_by_initial.setdefault(token[0], set()).add(token)
+        self._vocabulary_by_initial = vocabulary_by_initial
+        self._token_documents = token_documents
+
     @staticmethod
     def _tokens(text: str) -> List[str]:
         normalized = unicodedata.normalize("NFKC", str(text or "")).casefold()
@@ -360,7 +389,13 @@ class AdvancedRetriever:
     @staticmethod
     def _token_forms(token: str) -> set[str]:
         forms = {token}
-        if token == "agriculture":
+        if token == "nonviolence":
+            forms.update({"non", "violence"})
+        elif token == "ethics":
+            forms.add("ethical")
+        elif token == "ethical":
+            forms.add("ethics")
+        elif token == "agriculture":
             forms.add("agricultural")
         elif token == "agricultural":
             forms.add("agriculture")
@@ -380,23 +415,69 @@ class AdvancedRetriever:
             if token not in STOPWORDS
         ))
 
-    def _rare_topic_terms(self, terms: List[str]) -> set[str]:
-        documents = getattr(self, "knowledge_map", {})
-        if len(documents) < 20 or not terms:
+    def _correct_query_terms(self, terms: List[str]) -> List[str]:
+        vocabulary = getattr(self, "_vocabulary_by_initial", None)
+        token_documents = getattr(self, "_token_documents", None)
+        if vocabulary is None or token_documents is None:
+            vocabulary = {}
+            token_documents = {}
+            for key, content in getattr(self, "knowledge_map", {}).items():
+                document_tokens = set(self._tokens(f"{key} {content}"))
+                for token in document_tokens:
+                    token_documents.setdefault(token, set()).add(key)
+                    if token.isascii() and token.isalpha() and len(token) >= 6:
+                        vocabulary.setdefault(token[0], set()).add(token)
+            self._vocabulary_by_initial = vocabulary
+            self._token_documents = token_documents
+
+        corrected = []
+        for term in terms:
+            if len(term) < 6 or not term.isascii() or not term.isalpha():
+                corrected.append(term)
+                continue
+            if any(term in words for words in vocabulary.values()):
+                corrected.append(term)
+                continue
+            candidates = [
+                candidate for candidate in vocabulary.get(term[0], set())
+                if abs(len(candidate) - len(term)) <= 2
+            ]
+            other_terms = [other for other in terms if other != term]
+            supporting_documents = set()
+            for other in other_terms:
+                for form in self._token_forms(other):
+                    supporting_documents.update(token_documents.get(form, set()))
+
+            supported_candidates = []
+            for candidate in candidates:
+                cooccurring_documents = token_documents.get(candidate, set()) & supporting_documents
+                if not cooccurring_documents:
+                    continue
+                similarity = SequenceMatcher(None, term, candidate).ratio()
+                if similarity >= 0.82:
+                    support_count = sum(
+                        bool(token_documents.get(form, set()) & cooccurring_documents)
+                        for other in other_terms
+                        for form in self._token_forms(other)
+                    )
+                    supported_candidates.append((support_count, similarity, candidate))
+            corrected.append(max(supported_candidates)[2] if supported_candidates else term)
+        return list(dict.fromkeys(corrected))
+
+    def _distinctive_query_terms(self, terms: List[str]) -> set[str]:
+        token_documents = getattr(self, "_token_documents", {})
+        document_count = len(getattr(self, "knowledge_map", {}))
+        if not token_documents or not document_count:
             return set()
-
-        frequencies = {term: 0 for term in terms}
-        for key, content in documents.items():
-            document_tokens = set(self._tokens(f"{key} {content}"))
-            for term in terms:
-                if self._token_forms(term) & document_tokens:
-                    frequencies[term] += 1
-
-        max_document_frequency = max(2, math.ceil(len(documents) * 0.05))
-        return {
-            term for term, frequency in frequencies.items()
-            if frequency <= max_document_frequency
-        }
+        max_frequency = max(2, math.ceil(document_count * 0.2))
+        distinctive = set()
+        for term in terms:
+            matched_documents = set()
+            for form in self._token_forms(term):
+                matched_documents.update(token_documents.get(form, set()))
+            if matched_documents and len(matched_documents) <= max_frequency:
+                distinctive.add(term)
+        return distinctive
 
     @staticmethod
     def _source_entity_terms(query: str) -> set[str]:
@@ -411,7 +492,7 @@ class AdvancedRetriever:
 
     def retrieve_multi(self, query: str) -> List[Dict[str, Any]]:
         """Retrieve topic-supported documents and honor explicit source entities."""
-        tokens = self._query_terms(query)
+        tokens = self._correct_query_terms(self._query_terms(query))
         if not tokens:
             return []
 
@@ -422,7 +503,6 @@ class AdvancedRetriever:
             and re.search(r"\b(?:weather|temperature|price|score|won|forecast)\b", query.casefold())
         ):
             return []
-        rare_topic_terms = self._rare_topic_terms(topic_terms)
         query_forms = {token: self._token_forms(token) for token in tokens}
         document_rows = []
         dense_by_key: Dict[str, Dict[str, Any]] = {}
@@ -443,8 +523,6 @@ class AdvancedRetriever:
             ]
             minimum_dense_score = float(os.getenv("UNIGURU_DENSE_SCORE_MIN", "0.35"))
             if source_terms and topic_terms and not matched_topics:
-                continue
-            if rare_topic_terms and not rare_topic_terms.intersection(matched_topics):
                 continue
             if not matched_topics and float(chunk["score"]) < minimum_dense_score:
                 continue
@@ -493,8 +571,6 @@ class AdvancedRetriever:
                 if query_forms[token] & (content_token_set | title_tokens)
             ]
             if not matched_terms or (source_terms and topic_terms and not matched_topics):
-                continue
-            if rare_topic_terms and not rare_topic_terms.intersection(matched_topics):
                 continue
 
             source_path = getattr(self, "path_map", {}).get(keyword)
@@ -558,6 +634,7 @@ class AdvancedRetriever:
             )
             dense_scores[keyword] = float(row.get("dense_score", 0.0))
 
+        max_entity_score = max(entity_scores.values(), default=0.0)
         fused_scores: Dict[str, float] = {}
         for ranking in (
             sorted(lexical_scores, key=lexical_scores.get, reverse=True),
@@ -568,6 +645,7 @@ class AdvancedRetriever:
                 fused_scores[keyword] = fused_scores.get(keyword, 0.0) + 1.0 / (60 + rank)
 
         rows_by_key = {row["keyword"]: row for row in document_rows}
+        max_fusion_score = max(fused_scores.values(), default=0.0)
         results = []
         for keyword in sorted(fused_scores, key=fused_scores.get, reverse=True):
             row = rows_by_key[keyword]
@@ -577,12 +655,26 @@ class AdvancedRetriever:
             )
             if coverage < MIN_EVIDENCE_COVERAGE:
                 continue
+            normalized_fusion = (
+                fused_scores[keyword] / max_fusion_score if max_fusion_score else 0.0
+            )
+            normalized_entity = (
+                entity_scores[keyword] / max_entity_score if max_entity_score else 0.0
+            )
+            reranker_score = (
+                (0.7 * coverage)
+                + (0.15 * normalized_fusion)
+                + (0.15 * normalized_entity)
+            )
             results.append(
                 {
                     "content": row["content"],
                     "confidence": coverage,
                     "retrieval_score": fused_scores[keyword],
                     "fusion_score": fused_scores[keyword],
+                    "normalized_fusion_score": normalized_fusion,
+                    "normalized_entity_score": normalized_entity,
+                    "reranker_score": reranker_score,
                     "bm25_score": lexical_scores[keyword],
                     "entity_score": entity_scores[keyword],
                     "dense_score": dense_scores[keyword],
@@ -594,21 +686,43 @@ class AdvancedRetriever:
                     "file": row.get("file", self.file_map.get(keyword, "unknown")),
                     "path": row.get("source_path", getattr(self, "path_map", {}).get(keyword, keyword)),
                     "matched_terms": row["matched_terms"],
+                    "matched_topics": row["matched_topics"],
                     "dense_chunk": row.get("dense_chunk"),
                 }
             )
-            if len(results) >= self.top_n:
-                break
-        results.sort(
-            key=lambda row: (
+        ranking_key = lambda row: (
+                row["reranker_score"],
                 row["fusion_score"],
                 row["evidence_coverage"],
                 row["entity_score"],
                 row["bm25_score"],
-            ),
-            reverse=True,
-        )
-        return results
+            )
+        results.sort(key=ranking_key, reverse=True)
+
+        distinctive_terms = self._distinctive_query_terms(topic_terms)
+        anchor_rows = []
+        for term in topic_terms:
+            if term not in distinctive_terms:
+                continue
+            term_forms = self._token_forms(term)
+            matching_row = next(
+                (
+                    row for row in results
+                    if term_forms.intersection(set(row["matched_terms"]) | set(row["matched_topics"]))
+                ),
+                None,
+            )
+            if matching_row and matching_row not in anchor_rows:
+                anchor_rows.append(matching_row)
+
+        selected = anchor_rows[: self.top_n]
+        for row in results:
+            if len(selected) >= self.top_n:
+                break
+            if row not in selected:
+                selected.append(row)
+        selected.sort(key=ranking_key, reverse=True)
+        return selected
 
     @staticmethod
     def _combine_evidence(results: List[Dict[str, Any]], max_chars: int = 6000) -> str:
@@ -906,6 +1020,24 @@ def retrieve_knowledge_with_trace(query: str) -> Tuple[Optional[str], Dict[str, 
         if unified_res.get("verification_status") == "VERIFIED":
             content = unified_res.get("answer")
             top_src = unified_res.get("sources_consulted", ["unified_kb"])[0] if unified_res.get("sources_consulted") else "unified_kb"
+            evidence_sources = [
+                {
+                    "path": str(item.get("file_name") or item.get("file") or ""),
+                    "file": str(item.get("file_name") or item.get("file") or ""),
+                    "source": item.get("source_name") or item.get("book"),
+                    "excerpt": str(item.get("text") or "")[:1200],
+                    "chapter": item.get("chapter"),
+                    "page_number": item.get("page") or item.get("page_number"),
+                    "chunk_id": item.get("id") or item.get("document_id"),
+                    "reranker_score": item.get("composite_score"),
+                    "retrieval_score": item.get("rrf_score"),
+                    "evidence_coverage": item.get("composite_score"),
+                }
+                for item in unified_res.get("evidence", [])
+                if isinstance(item, dict)
+                and str(item.get("file_name") or item.get("file") or "").strip()
+                and str(item.get("text") or "").strip()
+            ]
             trace = {
                 "engine": "UnifiedRAGEngine_v3",
                 "kb_path": _KB_ROOT,
@@ -917,6 +1049,7 @@ def retrieve_knowledge_with_trace(query: str) -> Tuple[Optional[str], Dict[str, 
                 "query_token_count": len(query.split()),
                 "sources_consulted": unified_res.get("sources_consulted", [top_src]),
                 "citations": unified_res.get("citations", []),
+                "evidence_sources": evidence_sources,
             }
             return content, trace
     except Exception:
