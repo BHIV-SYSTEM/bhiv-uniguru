@@ -6,7 +6,7 @@
 **Product:** UniGuru  
 **Author / Builder:** Vijay Dhawan  
 **BHIV Organisation:** BHIV Central Depository (`BHIV-Engineering-Exchange`)  
-**Target Repository:** `https://github.com/BHIV-Engineering-Exchange/bhiv-uniguru.git`  
+**Target Repository:** `https://github.com/BHIV-SYSTEM/bhiv-uniguru.git`  
 **Handover Branch:** `ug-ho-01-infrastructure-handover`  
 
 ---
@@ -22,7 +22,7 @@ This document formalizes the repository handover of UniGuru to the BHIV Central 
 ### 2.1 Origin & Organization Details
 - **Central Depository Organization:** `BHIV-Engineering-Exchange`
 - **Product Repository:** `bhiv-uniguru`
-- **Remote Origin URL:** `https://github.com/BHIV-Engineering-Exchange/bhiv-uniguru.git`
+- **Remote Origin URL:** `https://github.com/BHIV-SYSTEM/bhiv-uniguru.git`
 - **Remote Default Branch:** `main` (Latest SHA: `ecd9658`)
 - **Remote Feature / Handover Branches:**
   - `origin/ug-ho-01-infrastructure-handover` (Current handover branch)
@@ -77,7 +77,7 @@ An incoming BHIV engineer can reproduce the full operational baseline using the 
 ### Step 1: Environment Initialization
 ```powershell
 # Clone the repository
-git clone https://github.com/BHIV-Engineering-Exchange/bhiv-uniguru.git
+git clone https://github.com/BHIV-SYSTEM/bhiv-uniguru.git
 cd bhiv-uniguru
 
 # Checkout the handover branch
@@ -139,3 +139,10 @@ If any unforeseen incompatibility arises, the repository can be restored to the 
 - **Prior Head Commit:** `d6bb956`
 - **Prior Remote Head Commit:** `ecd9658`
 - **Prior Release Tag:** `v1.1.0` (commit `10184df`)
+
+
+### 2.3 Pull Request & Review Access
+- **Review PR Link:** [Create / View PR](https://github.com/BHIV-SYSTEM/bhiv-uniguru/pull/new/ug-ho-01-infrastructure-handover)
+- **Handover Commit SHA:** `d1c142d`
+- **Origin Base Commit SHA:** `ecd9658`
+

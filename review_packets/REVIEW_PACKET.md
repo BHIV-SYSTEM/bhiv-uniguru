@@ -6,7 +6,7 @@
 **Product:** UniGuru  
 **Owner:** Vijay Dhawan  
 **BHIV Organisation:** BHIV Central Depository (`BHIV-Engineering-Exchange`)  
-**Target Repository:** `https://github.com/BHIV-Engineering-Exchange/bhiv-uniguru.git`  
+**Target Repository:** `https://github.com/BHIV-SYSTEM/bhiv-uniguru.git`  
 **Handover Branch:** `ug-ho-01-infrastructure-handover`  
 **Verification Baseline Commit:** `d6bb956` (+ verified RAG & router enhancements)  
 
@@ -108,3 +108,4 @@ All authoritative documentation has been authored and committed to `docs/handove
 - `docs/handover/KNOWN_BLOCKERS_AND_TECHNICAL_DEBT.md`: Comprehensive risk and technical debt register.
 - `docs/handover/NEXT_BUILD_PLAN.md`: Hypervelocity 3-task execution plan with owners and acceptance criteria.
 - `review_packets/REVIEW_PACKET.md`: This executive synthesis.
+
