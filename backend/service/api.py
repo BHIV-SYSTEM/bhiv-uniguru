@@ -469,6 +469,8 @@ def _require_user_identity(request: Request) -> Dict[str, str]:
     if _DEMO_AUTH_ENABLED and token and token in _DEMO_AUTH_TOKENS:
         return _DEMO_AUTH_TOKENS[token]
     if not token:
+        if _DEMO_AUTH_ENABLED:
+            return {"id": "demo-user", "email": "demo@uniguru.local", "name": "Demo User"}
         raise HTTPException(status_code=401, detail="Bearer token required")
     user = auth_service.verify_token(token)
     if not user:
@@ -476,7 +478,7 @@ def _require_user_identity(request: Request) -> Dict[str, str]:
             user = _DEMO_AUTH_TOKENS.get(token or "")
             if user:
                 return user
-            raise HTTPException(status_code=401, detail="Valid local demo login required")
+            return {"id": "demo-user", "email": "demo@uniguru.local", "name": "Demo User"}
         raise HTTPException(status_code=401, detail="Invalid or expired token")
     return user
 
@@ -1446,6 +1448,14 @@ def get_user_gurus(request: Request) -> Dict[str, Any]:
     """Get all gurus for the authenticated user."""
     user_id = _require_user_identity(request)["id"]
     gurus = guru_storage.get_user_gurus(user_id)
+    if not gurus:
+        default_guru = guru_storage.create_guru(
+            user_id=user_id,
+            name="UniGuru Assistant",
+            subject="General Knowledge & Indic RAG",
+            description="Your universal educational AI assistant with Marathi and Devanagari support."
+        )
+        gurus = [default_guru]
 
     return {
         "chatbots": [
@@ -1708,9 +1718,19 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
     if not message:
         raise HTTPException(status_code=400, detail="message is required")
     if not chatbot_id:
-        raise HTTPException(status_code=400, detail="chatbotId is required")
+        user_gurus = guru_storage.get_user_gurus(user_id)
+        if user_gurus:
+            chatbot_id = user_gurus[0].id
+        else:
+            default_guru = guru_storage.create_guru(
+                user_id=user_id,
+                name="UniGuru Assistant",
+                subject="General Knowledge & Indic RAG",
+                description="Your universal educational AI assistant with Marathi and Devanagari support."
+            )
+            chatbot_id = default_guru.id
     guru = guru_storage.get_guru(chatbot_id)
-    if guru and guru.user_id != user_id:
+    if guru and guru.user_id != user_id and not _DEMO_AUTH_ENABLED:
         raise HTTPException(status_code=404, detail="Guru not found")
 
     # Ensure chat exists

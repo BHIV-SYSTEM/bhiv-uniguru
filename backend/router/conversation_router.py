@@ -3,6 +3,8 @@ from collections import OrderedDict
 import logging
 import threading
 
+logger = logging.getLogger("uniguru.conversation_router")
+
 import hashlib
 import os
 import re
