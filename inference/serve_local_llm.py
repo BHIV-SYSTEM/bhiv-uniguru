@@ -53,6 +53,18 @@ def load_model(model_name_or_path: str, max_seq_length: int = 1536):
     import torch
     from unsloth import FastLanguageModel
 
+    target_path = Path(model_name_or_path)
+    # If a local adapter path is specified but weights are not present, auto-download from Hugging Face
+    if not target_path.exists() or not (target_path / "adapter_model.safetensors").exists():
+        if "adapters" in model_name_or_path or "qwen" in model_name_or_path.lower():
+            logger.info(f"Model weights not found at '{model_name_or_path}'. Auto-downloading from Hugging Face: shivam159/qwen2.5-7b-marathi-indic-squad...")
+            try:
+                from huggingface_hub import snapshot_download
+                snapshot_download(repo_id="shivam159/qwen2.5-7b-marathi-indic-squad", local_dir=str(target_path))
+                logger.info("Successfully downloaded fine-tuned weights from Hugging Face.")
+            except Exception as e:
+                logger.warning(f"Auto-download from Hugging Face failed: {e}. Falling back to direct load.")
+
     logger.info(f"Loading model/adapter from: {model_name_or_path}...")
     _MODEL, _TOKENIZER = FastLanguageModel.from_pretrained(
         model_name=model_name_or_path,
