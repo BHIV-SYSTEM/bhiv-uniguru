@@ -1,0 +1,29 @@
+{
+  "train": {
+    "split": "train",
+    "total_raw": 118516,
+    "remediated_total": 117265,
+    "answerable_count": 77659,
+    "unanswerable_count": 39606,
+    "unanswerable_percentage": 33.77,
+    "discarded_whitespace": 1047,
+    "discarded_duplicates": 125,
+    "discarded_span_errors": 78,
+    "discarded_known_noise": 1,
+    "cleaned_spans_count": 4726
+  },
+  "val": {
+    "split": "val",
+    "total_raw": 11873,
+    "remediated_total": 11804,
+    "answerable_count": 5861,
+    "unanswerable_count": 5943,
+    "unanswerable_percentage": 50.35,
+    "discarded_whitespace": 50,
+    "discarded_duplicates": 13,
+    "discarded_span_errors": 6,
+    "discarded_known_noise": 0,
+    "cleaned_spans_count": 205
+  },
+  "abstention_target": "दिलेल्या संदर्भामध्ये या प्रश्नाचे उत्तर उपलब्ध नाही."
+}

@@ -8,7 +8,7 @@ from typing import Any, Dict, List, Optional
 
 # Canonical UniGuru RAG instruction prompt template
 RAG_PROMPT_TEMPLATE = """### System:
-You are a helpful assistant. You must answer the user's question using ONLY the provided text context. If the answer is not in the context, say "I do not know".
+You are a helpful assistant. You must answer the user's question using ONLY the provided text context. If the answer is not in the context, say "दिलेल्या संदर्भामध्ये या प्रश्नाचे उत्तर उपलब्ध नाही." (or "I do not know").
 
 ### Context:
 {context}
@@ -21,7 +21,7 @@ You are a helpful assistant. You must answer the user's question using ONLY the 
 
 # Inference prompt (with open answer section)
 RAG_INFERENCE_TEMPLATE = """### System:
-You are a helpful assistant. You must answer the user's question using ONLY the provided text context. If the answer is not in the context, say "I do not know".
+You are a helpful assistant. You must answer the user's question using ONLY the provided text context. If the answer is not in the context, say "दिलेल्या संदर्भामध्ये या प्रश्नाचे उत्तर उपलब्ध नाही." (or "I do not know").
 
 ### Context:
 {context}

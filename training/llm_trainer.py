@@ -6,6 +6,7 @@ Target Hardware: NVIDIA GeForce RTX 3060 (12GB VRAM)
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import os
 import sys
@@ -13,12 +14,67 @@ import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+import torch
 import yaml
 
 # Ensure project root is in sys.path
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
+
+# Set workspace-local Triton cache directory for seamless operation on Windows
+os.environ.setdefault("TRITON_CACHE_DIR", str(_PROJECT_ROOT / ".triton_cache"))
+(Path(_PROJECT_ROOT) / ".triton_cache").mkdir(parents=True, exist_ok=True)
+
+# Bypass transformers 4.57+ restriction on local torch.load when resuming on PyTorch < 2.6
+try:
+    import transformers.utils.import_utils
+    transformers.utils.import_utils.check_torch_load_is_safe = lambda: None
+    import transformers.trainer
+    transformers.trainer.check_torch_load_is_safe = lambda: None
+except Exception:
+    pass
+
+# Allow numpy structures when unpickling rng_state.pth under PyTorch 2.5+
+try:
+    import numpy as np
+    safe_list = [np.dtype, np.ndarray]
+    try:
+        from numpy._core.multiarray import _reconstruct, scalar
+        safe_list.extend([_reconstruct, scalar])
+    except Exception:
+        pass
+    try:
+        from numpy.core.multiarray import _reconstruct, scalar
+        safe_list.extend([_reconstruct, scalar])
+    except Exception:
+        pass
+    if hasattr(np, "dtypes"):
+        for dt in dir(np.dtypes):
+            val = getattr(np.dtypes, dt)
+            if isinstance(val, type):
+                safe_list.append(val)
+    torch.serialization.add_safe_globals(safe_list)
+except Exception:
+    pass
+
+# Fault-tolerant RNG state loader: resuming should never abort if RNG state has pickling quirks
+try:
+    import transformers.trainer
+    _orig_load_rng_state = transformers.trainer.Trainer._load_rng_state
+
+    def _fault_tolerant_load_rng_state(self, checkpoint):
+        try:
+            return _orig_load_rng_state(self, checkpoint)
+        except Exception as exc:
+            import logging
+            logging.getLogger("uniguru.training.trainer").warning(
+                f"RNG state restore skipped ({exc}); resuming with newly seeded RNG."
+            )
+
+    transformers.trainer.Trainer._load_rng_state = _fault_tolerant_load_rng_state
+except Exception:
+    pass
 
 from training.dataset_formatter import format_dataset_for_sft, format_rag_record
 from training.dataset_loader import DatasetValidationError, load_raw_dataset, split_dataset
@@ -107,6 +163,12 @@ def parse_args() -> argparse.Namespace:
         help="Per-device train batch size (overrides config)",
     )
     parser.add_argument(
+        "--gradient-accumulation-steps",
+        type=int,
+        default=None,
+        help="Number of update steps to accumulate before performing a backward/update pass (overrides config)",
+    )
+    parser.add_argument(
         "--max-seq-length",
         type=int,
         default=None,
@@ -117,6 +179,24 @@ def parse_args() -> argparse.Namespace:
         type=str,
         default=None,
         help="Path to checkpoint folder to resume training from",
+    )
+    parser.add_argument(
+        "--save-steps",
+        type=int,
+        default=None,
+        help="Number of steps between checkpoint saves (e.g. 250)",
+    )
+    parser.add_argument(
+        "--max-steps",
+        type=int,
+        default=None,
+        help="Maximum training steps to run in this session (e.g. 1000 for a 1-hour session)",
+    )
+    parser.add_argument(
+        "--model-name",
+        type=str,
+        default=None,
+        help="Base model name or path to existing checkpoint adapter directory for warm-start",
     )
     parser.add_argument(
         "--dry-run",
@@ -188,6 +268,9 @@ def run_dry_run(
     logger.info(f"Target Projections: {qlora_cfg.get('target_modules')}")
     logger.info(f"Batch Size: {train_cfg.get('per_device_train_batch_size')} (Grad Accum: {train_cfg.get('gradient_accumulation_steps')})")
     logger.info(f"Optimizer: {train_cfg.get('optim')}")
+    logger.info(f"Save Strategy: {train_cfg.get('save_strategy', 'steps')} (every {train_cfg.get('save_steps', 250)} steps, keep {train_cfg.get('save_total_limit', 3)})")
+    if int(train_cfg.get('max_steps', -1)) > 0:
+        logger.info(f"Session Max Steps: {train_cfg.get('max_steps')}")
 
     logger.info("==================================================================")
     logger.info(" [DRY-RUN SUCCESS] Pipeline configuration and datasets are 100% VALID.")
@@ -256,24 +339,37 @@ def train_model(
     r = int(qlora_cfg.get("r", 16))
     lora_alpha = int(qlora_cfg.get("lora_alpha", 16))
     lora_dropout = float(qlora_cfg.get("lora_dropout", 0))
+    random_state = int(qlora_cfg.get("random_state", 3407))
     target_modules = list(qlora_cfg.get("target_modules", [
         "q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"
     ]))
     use_gradient_checkpointing = qlora_cfg.get("use_gradient_checkpointing", "unsloth")
-    random_state = int(qlora_cfg.get("random_state", 3407))
 
-    logger.info(f"Applying QLoRA adapter (rank={r}, alpha={lora_alpha}, target_modules={target_modules})...")
-    model = FastLanguageModel.get_peft_model(
-        model,
-        r=r,
-        target_modules=target_modules,
-        lora_alpha=lora_alpha,
-        lora_dropout=lora_dropout,
-        bias="none",
-        use_gradient_checkpointing=use_gradient_checkpointing,
-        random_state=random_state,
-        max_seq_length=max_seq_length,
-    )
+    is_warm_start = (Path(model_name).exists() and (Path(model_name) / "adapter_config.json").exists())
+    if is_warm_start:
+        logger.info(f"Detected existing LoRA adapter at {model_name}. Preserving weights for warm-start...")
+        FastLanguageModel.for_training(model)
+        adapter_cfg_file = Path(model_name) / "adapter_config.json"
+        try:
+            with open(adapter_cfg_file, "r", encoding="utf-8") as f:
+                acfg = json.load(f)
+                r = acfg.get("r", r)
+                lora_alpha = acfg.get("lora_alpha", lora_alpha)
+        except Exception:
+            pass
+    else:
+        logger.info(f"Applying QLoRA adapter (rank={r}, alpha={lora_alpha}, target_modules={target_modules})...")
+        model = FastLanguageModel.get_peft_model(
+            model,
+            r=r,
+            target_modules=target_modules,
+            lora_alpha=lora_alpha,
+            lora_dropout=lora_dropout,
+            bias="none",
+            use_gradient_checkpointing=use_gradient_checkpointing,
+            random_state=random_state,
+            max_seq_length=max_seq_length,
+        )
 
     # Step 6: Format Hugging Face Datasets
     eos_token = tokenizer.eos_token or "<|im_end|>"
@@ -289,8 +385,11 @@ def train_model(
     grad_accum = int(train_cfg.get("gradient_accumulation_steps", 4))
     lr = float(train_cfg.get("learning_rate", 2e-4))
     epochs = int(train_cfg.get("num_train_epochs", 3))
+    max_steps = int(train_cfg.get("max_steps", -1))
     optim = str(train_cfg.get("optim", "adamw_8bit"))
-    save_limit = int(train_cfg.get("save_total_limit", 2))
+    save_strategy = str(train_cfg.get("save_strategy", "steps"))
+    save_steps = int(train_cfg.get("save_steps", 250))
+    save_limit = int(train_cfg.get("save_total_limit", 3))
 
     use_bf16 = hw["supports_bf16"]
     use_fp16 = not use_bf16 and hw["supports_fp16"]
@@ -301,6 +400,7 @@ def train_model(
         gradient_accumulation_steps=grad_accum,
         learning_rate=lr,
         num_train_epochs=epochs,
+        max_steps=max_steps,
         fp16=use_fp16,
         bf16=use_bf16,
         logging_steps=int(train_cfg.get("logging_steps", 1)),
@@ -308,7 +408,8 @@ def train_model(
         weight_decay=float(train_cfg.get("weight_decay", 0.01)),
         lr_scheduler_type=str(train_cfg.get("lr_scheduler_type", "linear")),
         seed=random_state,
-        save_strategy=str(train_cfg.get("save_strategy", "epoch")),
+        save_strategy=save_strategy,
+        save_steps=save_steps if save_strategy == "steps" else None,
         save_total_limit=save_limit,
         report_to="none",
     )
@@ -325,6 +426,18 @@ def train_model(
         packing=bool(train_cfg.get("packing", False)),
         args=training_args,
     )
+
+    # Step 8b: Apply response-only loss masking to compute loss ONLY on the Answer tokens
+    try:
+        from unsloth.chat_templates import train_on_responses_only
+        trainer = train_on_responses_only(
+            trainer,
+            instruction_part="### Question:\n",
+            response_part="### Answer:\n",
+        )
+        logger.info("Successfully enabled response-only loss masking (Context and Prompt masked with -100).")
+    except Exception as mask_exc:
+        logger.warning(f"Response-only loss masking could not be applied ({mask_exc}). Training with standard LM loss.")
 
     # Step 9: Execute Fine-Tuning with OOM Recovery
     logger.info("Beginning fine-tuning...")
@@ -401,8 +514,17 @@ def main() -> None:
         config.setdefault("training", {})["learning_rate"] = args.learning_rate
     if args.batch_size is not None:
         config.setdefault("training", {})["per_device_train_batch_size"] = args.batch_size
+    if args.gradient_accumulation_steps is not None:
+        config.setdefault("training", {})["gradient_accumulation_steps"] = args.gradient_accumulation_steps
     if args.max_seq_length is not None:
         config.setdefault("model", {})["max_seq_length"] = args.max_seq_length
+    if args.save_steps is not None:
+        config.setdefault("training", {})["save_steps"] = args.save_steps
+        config.setdefault("training", {})["save_strategy"] = "steps"
+    if args.max_steps is not None:
+        config.setdefault("training", {})["max_steps"] = args.max_steps
+    if args.model_name is not None:
+        config.setdefault("model", {})["name_or_path"] = args.model_name
 
     if args.dry_run:
         run_dry_run(

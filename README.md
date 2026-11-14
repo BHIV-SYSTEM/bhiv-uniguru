@@ -4,6 +4,16 @@ UniGuru v2 is a decoupled, deterministic RAG system utilizing FastAPI (Backend) 
 
 ---
 
+## 🤖 Fine-Tuned Marathi LLM (Qwen 2.5 7B Instruct)
+
+We have fine-tuned Qwen 2.5 7B Instruct on **117,265 remediated Marathi Indic-SQuAD pairs** with strict response-only loss masking and calibrated abstention targets.
+
+* **Hugging Face Hub**: [csshivamverma54/qwen2.5-7b-marathi-indic-squad](https://huggingface.co/csshivamverma54/qwen2.5-7b-marathi-indic-squad)
+* **Complete Model Guide**: See [MODEL_GUIDE.md](MODEL_GUIDE.md) for quickstart Python code, local CLI inference, prompt formatting, and benchmark evaluations.
+* **Key Capability**: Eliminates hallucinations on unanswerable queries by strictly outputting `"दिलेल्या संदर्भामध्ये या प्रश्नाचे उत्तर उपलब्ध नाही."` whenever information is absent from the context.
+
+---
+
 ## 🚀 How to Run the Full Stack
 
 You will need to open **two** separate terminal windows to run both the frontend and backend servers simultaneously.

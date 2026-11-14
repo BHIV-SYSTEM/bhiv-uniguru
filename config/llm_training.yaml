@@ -37,8 +37,9 @@ training:
   max_steps: -1  # -1 uses num_train_epochs
   warmup_ratio: 0.05
   logging_steps: 1
-  save_strategy: "epoch"
-  save_total_limit: 2
+  save_strategy: "steps"
+  save_steps: 250
+  save_total_limit: 3
   optim: "adamw_8bit"
   weight_decay: 0.01
   lr_scheduler_type: "linear"

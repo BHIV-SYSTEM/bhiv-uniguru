@@ -1894,36 +1894,7 @@ def user_login(request_body: Dict[str, Any]) -> Dict[str, Any]:
 
     if not email or not password:
         raise HTTPException(status_code=400, detail="Email and password are required")
-<<<<<<< HEAD
 
-    # Try Supabase authentication first
-    if supabase_auth.enabled:
-        try:
-            result = supabase_auth.login_with_email(email, password)
-            return {
-                "token": result["token"],
-                "id": result["user"]["id"],
-                "email": result["user"]["email"],
-                "name": result["user"]["name"]
-            }
-        except Exception as e:
-            logger.error(f"Supabase login failed: {e}")
-            raise HTTPException(status_code=401, detail=str(e))
-
-    if not _DEMO_AUTH_ENABLED:
-        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
-
-    normalized_email = email.lower()
-    stored_user = _DEMO_AUTH_USERS.get(normalized_email)
-    if not stored_user:
-        raise HTTPException(status_code=401, detail="Invalid email or password")
-    if stored_user.get("password_hash") != _hash_demo_password(password):
-        raise HTTPException(status_code=401, detail="Invalid email or password")
-
-    demo_user = _issue_demo_user(stored_user["id"], stored_user["email"], stored_user["name"])
-    return demo_user
-=======
-    
     try:
         result = auth_service.login_with_email(email, password)
         return {
@@ -1938,7 +1909,6 @@ def user_login(request_body: Dict[str, Any]) -> Dict[str, Any]:
             demo_user = _issue_demo_user(email.strip().lower(), email.strip(), email.split('@')[0].title())
             return demo_user
         raise HTTPException(status_code=401, detail=str(e))
->>>>>>> c14ef2153b7e8a1ee2b26d334bda8e9462510eb1
 
 
 @app.post(
@@ -1955,14 +1925,7 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
 
     if not email or not password or not name:
         raise HTTPException(status_code=400, detail="Name, email, and password are required")
-<<<<<<< HEAD
 
-    # Try Supabase authentication first
-    if supabase_auth.enabled:
-        try:
-            result = supabase_auth.signup_with_email(email, password, name)
-=======
-    
     try:
         result = auth_service.signup_with_email(email, password, name)
         return {
@@ -1980,7 +1943,6 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
         detail = str(e)
         if _DEMO_AUTH_ENABLED:
             demo_user = _issue_demo_user(email.strip().lower(), email.strip(), name.strip())
->>>>>>> c14ef2153b7e8a1ee2b26d334bda8e9462510eb1
             return {
                 "success": True,
                 "token": demo_user["token"],
@@ -1989,38 +1951,7 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
                 "name": demo_user["name"],
                 "navigateUrl": "/chatpage"
             }
-<<<<<<< HEAD
-        except Exception as e:
-            logger.error(f"Supabase signup failed: {e}")
-            detail = str(e)
-            status_code = 429 if "rate limit" in detail.lower() else 400
-            raise HTTPException(status_code=status_code, detail=detail)
-
-    if not _DEMO_AUTH_ENABLED:
-        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
-
-    normalized_email = email.lower()
-    if normalized_email in _DEMO_AUTH_USERS:
-        raise HTTPException(status_code=409, detail="User already exists")
-
-    _DEMO_AUTH_USERS[normalized_email] = {
-        "id": normalized_email,
-        "email": email,
-        "name": name,
-        "password_hash": _hash_demo_password(password),
-    }
-    demo_user = _issue_demo_user(normalized_email, email, name)
-    return {
-        "success": True,
-        "token": demo_user["token"],
-        "id": demo_user["id"],
-        "email": demo_user["email"],
-        "name": demo_user["name"],
-        "navigateUrl": "/chatpage"
-    }
-=======
         raise HTTPException(status_code=400, detail=detail)
->>>>>>> c14ef2153b7e8a1ee2b26d334bda8e9462510eb1
 
 
 class NewRagRequest(BaseModel):
