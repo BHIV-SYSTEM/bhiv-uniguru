@@ -165,9 +165,8 @@ python -m venv venv
 # Linux / macOS:
 source venv/bin/activate
 
-# Install dependencies
+# Install all backend, document RAG & LLM dependencies
 pip install -r requirements.txt
-pip install pypdf python-multipart python-docx
 ```
 
 ---
@@ -197,16 +196,18 @@ This automatically boots all 3 servers in dedicated windows and opens `http://lo
 #### Option B: Separate Terminals (Cross-Platform)
 
 ##### Terminal 1: Local Fine-Tuned LLM Microservice (Port 8001)
+The LLM microservice features **Automated Model Weight Detection & Zero-Config Auto-Download**:
+- When launched, it automatically checks if `models/adapters/qwen2.5-7b-indic-squad-mr-remediated` exists locally.
+- **If weights are missing**, it automatically pulls them directly from Hugging Face ([shivam159/qwen2.5-7b-marathi-indic-squad](https://huggingface.co/shivam159/qwen2.5-7b-marathi-indic-squad)) and saves them to the adapter directory.
+- **If weights are present**, it verifies the model files and immediately boots the inference server on port `8001` with 4-bit quantization on GPU (CUDA) or CPU fallback.
+
 ```bash
-# Windows:
+# Windows (recommended):
 run_llm_service.bat
-# Or manually:
+
+# Or manually (Cross-Platform):
 python inference/serve_local_llm.py --model models/adapters/qwen2.5-7b-indic-squad-mr-remediated --port 8001
 ```
-> **Note**: If you haven't downloaded the fine-tuned weights yet, you can pull them from Hugging Face:
-> ```bash
-> python -c "from huggingface_hub import snapshot_download; snapshot_download(repo_id='shivam159/qwen2.5-7b-marathi-indic-squad', local_dir='models/adapters/qwen2.5-7b-indic-squad-mr-remediated')"
-> ```
 
 ##### Terminal 2: FastAPI Backend Server (Port 8000)
 ```bash
