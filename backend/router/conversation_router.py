@@ -672,6 +672,7 @@ class ConversationRouter:
                 json=sanitized_payload,
                 headers=headers,
                 timeout=self._llm_timeout,
+                proxies={"http": None, "https": None},
             )
             response.raise_for_status()
             data = response.json()

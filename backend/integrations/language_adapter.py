@@ -172,6 +172,7 @@ class LanguageAdapter:
                             llm_url,
                             json={"query": prompt, "language": "mr", "max_new_tokens": 300},
                             timeout=15,
+                            proxies={"http": None, "https": None},
                         )
                         if res.status_code == 200:
                             candidate = res.json().get("answer", "").strip()
@@ -195,6 +196,7 @@ class LanguageAdapter:
                             llm_url,
                             json={"query": prompt, "language": "en", "max_new_tokens": 300},
                             timeout=15,
+                            proxies={"http": None, "https": None},
                         )
                         if res.status_code == 200:
                             candidate = res.json().get("answer", "").strip()

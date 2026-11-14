@@ -3,11 +3,11 @@ import { IMessage } from "../context/AuthContext";
 
 // Configure axios base URL and defaults
 const isRemoteOrNgrok = typeof window !== "undefined" && (
-  window.location.hostname.includes("ngrok") || 
+  window.location.hostname.includes("ngrok") ||
   (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1")
 );
-const API_BASE_URL = isRemoteOrNgrok 
-  ? "" 
+const API_BASE_URL = isRemoteOrNgrok
+  ? ""
   : (import.meta.env.VITE_API_BASE_URL || "http://localhost:8000");
 axios.defaults.baseURL = API_BASE_URL;
 axios.defaults.withCredentials = true;
@@ -71,7 +71,7 @@ axios.interceptors.response.use(
             toast.error('Your session has expired. Please log in again.', { id: 'auth-expired' });
           }
         });
-      } catch {}
+      } catch { }
 
       if (!onAuthPage) {
         console.log('Token expired, consider redirecting to login.');
@@ -531,6 +531,23 @@ export const loginWithGoogle = async (credential: string) => {
     } else {
       throw new Error("An unexpected error occurred during Google login");
     }
+  }
+};
+
+export const uploadDocumentFile = async (file: File, chatId?: string) => {
+  try {
+    const formData = new FormData();
+    formData.append("file", file);
+    if (chatId) {
+      formData.append("chatId", chatId);
+    }
+    const response = await axios.post("/chat/upload", formData, {
+      headers: { "Content-Type": "multipart/form-data" },
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Error uploading document:", error);
+    throw error;
   }
 };
 

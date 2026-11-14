@@ -14,6 +14,7 @@ logs/*.sqlite3*
 *.sqlite3*
 logs/*.jsonl
 backend/data/retrieval_logs/
+backend/data/uploaded_docs/
 .pytest_cache/
 
 # Local archives & clones

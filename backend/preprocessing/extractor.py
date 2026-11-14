@@ -73,25 +73,44 @@ class DocumentExtractor:
 
     @classmethod
     def _extract_pdf(cls, path: Path, doc_id: str, file_size: int) -> ExtractedDocument:
-        import fitz  # PyMuPDF
-
-        doc = fitz.open(str(path))
         pages: List[ExtractedPage] = []
         full_text_parts: List[str] = []
         total_text_chars = 0
+        pdf_meta: Dict[str, Any] = {}
+        num_pages = 0
 
-        for page_idx, page in enumerate(doc, start=1):
-            text = page.get_text() or ""
-            char_count = len(text.strip())
-            total_text_chars += char_count
-            pages.append(ExtractedPage(page_number=page_idx, raw_text=text, char_count=char_count))
-            full_text_parts.append(text)
+        try:
+            from pypdf import PdfReader
+            reader = PdfReader(str(path))
+            num_pages = len(reader.pages)
+            for page_idx, page in enumerate(reader.pages, start=1):
+                text = page.extract_text() or ""
+                char_count = len(text.strip())
+                total_text_chars += char_count
+                pages.append(ExtractedPage(page_number=page_idx, raw_text=text, char_count=char_count))
+                full_text_parts.append(text)
+            if reader.metadata:
+                pdf_meta = {
+                    "author": getattr(reader.metadata, "author", None),
+                    "title": getattr(reader.metadata, "title", None),
+                    "producer": getattr(reader.metadata, "producer", None),
+                }
+        except ImportError:
+            import fitz  # PyMuPDF fallback
+            doc = fitz.open(str(path))
+            num_pages = len(doc)
+            for page_idx, page in enumerate(doc, start=1):
+                text = page.get_text() or ""
+                char_count = len(text.strip())
+                total_text_chars += char_count
+                pages.append(ExtractedPage(page_number=page_idx, raw_text=text, char_count=char_count))
+                full_text_parts.append(text)
+            pdf_meta = doc.metadata or {}
 
-        avg_chars_per_page = total_text_chars / max(1, len(doc))
-        is_scanned = avg_chars_per_page < 30 and len(doc) > 0
+        avg_chars_per_page = total_text_chars / max(1, num_pages)
+        is_scanned = avg_chars_per_page < 30 and num_pages > 0
 
-        pdf_meta = doc.metadata or {}
-        title = pdf_meta.get("title") or path.stem.replace("_", " ").title()
+        title = (pdf_meta.get("title") if isinstance(pdf_meta, dict) else None) or path.stem.replace("_", " ").title()
 
         return ExtractedDocument(
             document_id=doc_id,
@@ -104,9 +123,9 @@ class DocumentExtractor:
             raw_text="\n\n".join(full_text_parts),
             is_scanned=is_scanned,
             metadata={
-                "author": pdf_meta.get("author", "Unknown"),
-                "producer": pdf_meta.get("producer", "Unknown"),
-                "total_pages": len(doc),
+                "author": pdf_meta.get("author", "Unknown") if isinstance(pdf_meta, dict) else "Unknown",
+                "producer": pdf_meta.get("producer", "Unknown") if isinstance(pdf_meta, dict) else "Unknown",
+                "total_pages": num_pages,
                 "avg_chars_per_page": round(avg_chars_per_page, 2),
             },
         )

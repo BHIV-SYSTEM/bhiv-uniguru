@@ -15,7 +15,7 @@
 // import { useAuth } from "../context/AuthContext";
 // import { useChat } from "../context/ChatContext";
 // import { useGuru } from "../context/GuruContext";
-// import { sendChatRequest, getChatSessionById, scanImageText, readPdf } from "../helpers/api-communicator";
+// import { sendChatRequest, getChatSessionById, scanImageText, readPdf, uploadDocumentFile } from "../helpers/api-communicator";
 
 // interface Message {
 //   text: string;
@@ -756,7 +756,7 @@
 // import { useAuth } from "../context/AuthContext";
 // import { useChat } from "../context/ChatContext";
 // import { useGuru } from "../context/GuruContext";
-// import { sendChatRequest, getChatSessionById, scanImageText, readPdf } from "../helpers/api-communicator";
+// import { sendChatRequest, getChatSessionById, scanImageText, readPdf, uploadDocumentFile } from "../helpers/api-communicator";
 
 // interface Message {
 //   text: string;
@@ -1484,7 +1484,7 @@
 // import { useAuth } from "../context/AuthContext";
 // import { useChat } from "../context/ChatContext";
 // import { useGuru } from "../context/GuruContext";
-// import { sendChatRequest, getChatSessionById, scanImageText, readPdf } from "../helpers/api-communicator";
+// import { sendChatRequest, getChatSessionById, scanImageText, readPdf, uploadDocumentFile } from "../helpers/api-communicator";
 
 // interface Message {
 //   text: string;
@@ -2201,7 +2201,7 @@
 // import { useAuth } from "../context/AuthContext";
 // import { useChat } from "../context/ChatContext";
 // import { useGuru } from "../context/GuruContext";
-// import { sendChatRequest, getChatSessionById, scanImageText, readPdf } from "../helpers/api-communicator";
+// import { sendChatRequest, getChatSessionById, scanImageText, readPdf, uploadDocumentFile } from "../helpers/api-communicator";
 
 // interface Message {
 //   text: string;
@@ -2921,7 +2921,7 @@ import toast from "react-hot-toast";
 import { useAuth } from "../context/AuthContext";
 import { useChat } from "../context/ChatContext";
 import { useGuru } from "../context/GuruContext";
-import { sendChatRequest, getChatSessionById, scanImageText, readPdf } from "../helpers/api-communicator";
+import { sendChatRequest, getChatSessionById, scanImageText, readPdf, uploadDocumentFile } from "../helpers/api-communicator";
 
 interface Message {
   text: string;
@@ -3494,19 +3494,31 @@ const ChatContainer: React.FC = () => {
 
     for (const attachment of attachments) {
       try {
+        toast.loading(`Processing ${attachment.file.name}...`, { id: `process-${attachment.id}` });
+        const fname = attachment.file.name.toLowerCase();
+
         if (attachment.type === 'image') {
-          toast.loading(`Processing ${attachment.file.name}...`, { id: `process-${attachment.id}` });
           const result = await scanImageText(attachment.file);
-          if (result.extractedText) {
+          if (result && result.extractedText) {
             extractedContent += `\n\n[Image: ${attachment.file.name}]\n${result.extractedText}`;
             toast.success(`Image processed successfully!`, { id: `process-${attachment.id}`, icon: '🖼️' });
           }
-        } else if (attachment.type === 'pdf') {
-          toast.loading(`Processing ${attachment.file.name}...`, { id: `process-${attachment.id}` });
+        } else if (attachment.type === 'pdf' || fname.endsWith('.pdf')) {
           const result = await readPdf(attachment.file);
-          if (result.extractedText) {
+          if (result && result.extractedText) {
             extractedContent += `\n\n[PDF: ${attachment.file.name}]\n${result.extractedText}`;
             toast.success(`PDF processed successfully!`, { id: `process-${attachment.id}`, icon: '📄' });
+          }
+        } else if (fname.endsWith('.txt') || fname.endsWith('.md')) {
+          const text = await attachment.file.text();
+          extractedContent += `\n\n[Document: ${attachment.file.name}]\n${text}`;
+          toast.success(`Document processed successfully!`, { id: `process-${attachment.id}`, icon: '📎' });
+        } else {
+          // DOCX or other document formats
+          const result = await uploadDocumentFile(attachment.file, currentChatId || undefined);
+          if (result && result.extractedText) {
+            extractedContent += `\n\n[Document: ${attachment.file.name}]\n${result.extractedText}`;
+            toast.success(`Document processed successfully!`, { id: `process-${attachment.id}`, icon: '📎' });
           }
         }
       } catch (error) {
