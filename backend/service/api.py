@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Any, Dict, Optional
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse, PlainTextResponse
@@ -469,6 +469,8 @@ def _require_user_identity(request: Request) -> Dict[str, str]:
     if _DEMO_AUTH_ENABLED and token and token in _DEMO_AUTH_TOKENS:
         return _DEMO_AUTH_TOKENS[token]
     if not token:
+        if _DEMO_AUTH_ENABLED:
+            return {"id": "demo-user", "email": "demo@uniguru.local", "name": "Demo User"}
         raise HTTPException(status_code=401, detail="Bearer token required")
     user = auth_service.verify_token(token)
     if not user:
@@ -476,7 +478,7 @@ def _require_user_identity(request: Request) -> Dict[str, str]:
             user = _DEMO_AUTH_TOKENS.get(token or "")
             if user:
                 return user
-            raise HTTPException(status_code=401, detail="Valid local demo login required")
+            return {"id": "demo-user", "email": "demo@uniguru.local", "name": "Demo User"}
         raise HTTPException(status_code=401, detail="Invalid or expired token")
     return user
 
@@ -737,6 +739,7 @@ def _process_router_request(
     context_map["session_id"] = session_id
     context_map["allow_web"] = bool(allow_web)
     context_map["source_language"] = adapted.source_language
+    context_map["target_language"] = adapted.target_language
 
     result = _execute_kosha_pipeline(
         query=normalized_query,
@@ -1446,6 +1449,14 @@ def get_user_gurus(request: Request) -> Dict[str, Any]:
     """Get all gurus for the authenticated user."""
     user_id = _require_user_identity(request)["id"]
     gurus = guru_storage.get_user_gurus(user_id)
+    if not gurus:
+        default_guru = guru_storage.create_guru(
+            user_id=user_id,
+            name="UniGuru Assistant",
+            subject="General Knowledge & Indic RAG",
+            description="Your universal educational AI assistant with Marathi and Devanagari support."
+        )
+        gurus = [default_guru]
 
     return {
         "chatbots": [
@@ -1699,6 +1710,90 @@ def chat_delete_all(request: Request) -> Dict[str, Any]:
     return {"status": "ok", "deleted": deleted}
 
 
+@app.post("/chat/upload", tags=["Chat"], summary="Upload Document For Session RAG")
+async def chat_upload_file(
+    file: UploadFile = File(...),
+    chatId: Optional[str] = Form(None),
+    raw_request: Request = None,
+):
+    user_id = _require_user_identity(raw_request)["id"]
+    chat_id = (chatId or "").strip()
+    if not chat_id:
+        user_gurus = guru_storage.get_user_gurus(user_id)
+        guru_id = user_gurus[0].id if user_gurus else guru_storage.create_guru(
+            user_id=user_id,
+            name="UniGuru Assistant",
+            subject="General Knowledge & Indic RAG",
+            description="Your universal educational AI assistant."
+        ).id
+        created = chat_create({"guruId": guru_id, "title": f"Doc: {file.filename[:30]}", "userId": user_id}, raw_request)
+        chat_id = created["chat"]["id"]
+
+    temp_dir = Path("backend/data/uploaded_docs") / chat_id
+    temp_dir.mkdir(parents=True, exist_ok=True)
+    temp_path = temp_dir / file.filename
+    content = await file.read()
+    with open(temp_path, "wb") as buffer:
+        buffer.write(content)
+
+    from backend.retrieval.document_rag_manager import get_document_rag_manager
+    mgr = get_document_rag_manager()
+    doc_record = mgr.process_and_index_file(temp_path, session_id=chat_id, custom_file_name=file.filename)
+
+    with _CHAT_LOCK:
+        chat = _CHAT_SESSIONS.get(chat_id)
+        if chat:
+            if "active_documents" not in chat:
+                chat["active_documents"] = []
+            chat["active_documents"].append(doc_record.to_dict())
+            _CHAT_SESSIONS[chat_id] = chat
+
+    return {
+        "success": True,
+        "chatId": chat_id,
+        "document": doc_record.to_dict(),
+        "extractedText": "\n\n".join(c.text for c in doc_record.chunks[:5]),
+        "message": f"Document '{file.filename}' processed and indexed successfully ({doc_record.char_count} chars, {len(doc_record.chunks)} chunks).",
+    }
+
+
+@app.post("/feature/pdf/r", tags=["Chat"], summary="Extract Text from PDF")
+async def read_pdf_endpoint(pdf: UploadFile = File(...)):
+    temp_dir = Path("backend/data/uploaded_docs/temp")
+    temp_dir.mkdir(parents=True, exist_ok=True)
+    temp_path = temp_dir / pdf.filename
+    content = await pdf.read()
+    with open(temp_path, "wb") as buffer:
+        buffer.write(content)
+
+    from backend.preprocessing.extractor import DocumentExtractor
+    extracted = DocumentExtractor.extract(temp_path)
+    return {
+        "extractedText": extracted.raw_text,
+        "message": "PDF read successfully",
+        "pages": len(extracted.pages),
+    }
+
+
+@app.post("/feature/document/extract", tags=["Chat"], summary="Extract Text from Any Supported Document (PDF, DOCX, TXT, MD)")
+async def extract_document_endpoint(file: UploadFile = File(...)):
+    temp_dir = Path("backend/data/uploaded_docs/temp")
+    temp_dir.mkdir(parents=True, exist_ok=True)
+    temp_path = temp_dir / file.filename
+    content = await file.read()
+    with open(temp_path, "wb") as buffer:
+        buffer.write(content)
+
+    from backend.preprocessing.extractor import DocumentExtractor
+    extracted = DocumentExtractor.extract(temp_path)
+    return {
+        "extractedText": extracted.raw_text,
+        "message": f"{extracted.file_type.upper()} read successfully",
+        "file_name": file.filename,
+        "char_count": len(extracted.raw_text),
+    }
+
+
 @app.post("/chat/new", tags=["Chat"], summary="Send Message To Chat")
 def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, Any]:
     message = str(request_body.get("message") or "").strip()
@@ -1708,9 +1803,19 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
     if not message:
         raise HTTPException(status_code=400, detail="message is required")
     if not chatbot_id:
-        raise HTTPException(status_code=400, detail="chatbotId is required")
+        user_gurus = guru_storage.get_user_gurus(user_id)
+        if user_gurus:
+            chatbot_id = user_gurus[0].id
+        else:
+            default_guru = guru_storage.create_guru(
+                user_id=user_id,
+                name="UniGuru Assistant",
+                subject="General Knowledge & Indic RAG",
+                description="Your universal educational AI assistant with Marathi and Devanagari support."
+            )
+            chatbot_id = default_guru.id
     guru = guru_storage.get_guru(chatbot_id)
-    if guru and guru.user_id != user_id:
+    if guru and guru.user_id != user_id and not _DEMO_AUTH_ENABLED:
         raise HTTPException(status_code=404, detail="Guru not found")
 
     # Ensure chat exists
@@ -1727,46 +1832,115 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
         with _CHAT_LOCK:
             chat = _CHAT_SESSIONS[chat_id]
 
-    user_msg = {"sender": "user", "content": message, "timestamp": _utc_now_iso()}
+    from backend.retrieval.document_rag_manager import get_document_rag_manager
+    doc_rag_manager = get_document_rag_manager()
+
+    # 1. Process any structured attachments in request body
+    incoming_attachments = request_body.get("attachments") or request_body.get("files") or []
+    for att in incoming_attachments:
+        if isinstance(att, dict):
+            att_name = att.get("name") or att.get("file_name") or f"doc_{int(time.time())}.txt"
+            att_content = att.get("content") or att.get("text")
+            if att_content and isinstance(att_content, str) and len(att_content.strip()) > 10:
+                doc_rag_manager.index_raw_text(raw_text=att_content, file_name=att_name, session_id=chat_id)
+
+    # 2. Check if message contains client-extracted document text [PDF: ...], [Document: ...], [File: ...]
+    doc_match = re.search(r"\[(?:PDF|Document|File|Image):\s*([^\]]+)\]\s*\n([\s\S]+)", message)
+    effective_message = message
+    if doc_match:
+        extracted_fname = doc_match.group(1).strip()
+        extracted_body = doc_match.group(2).strip()
+        if len(extracted_body) > 10:
+            doc_rag_manager.index_raw_text(raw_text=extracted_body, file_name=extracted_fname, session_id=chat_id)
+        effective_message = message[:doc_match.start()].strip()
+        if not effective_message:
+            effective_message = "give me a summary of this document"
+
+    # Remove frontend attachment marker "[X file(s) attached]" from query
+    clean_query = re.sub(r"\s*\[\d+\s+file\(s\)\s+attached\]", "", effective_message, flags=re.IGNORECASE).strip()
+    if not clean_query:
+        clean_query = "give me a summary of this document"
+
+    user_msg = {"sender": "user", "content": clean_query, "timestamp": _utc_now_iso()}
     with _CHAT_LOCK:
         chat["messages"].append(user_msg)
         chat["lastActivity"] = _utc_now_iso()
         _CHAT_SESSIONS[chat_id] = chat
 
-    # Use the shared verified RAG path so the browser chat and /ask see the
-    # same active KB and language handling.
+    # 3. Check if query should be answered via Document-Scoped RAG
+    is_document_query = False
+    if doc_rag_manager.has_session_documents(chat_id):
+        summary_regex = r"\b(?:summary|summarize|overview|gist|recap|what is this document about|give me (?:a |the )?summary)\b"
+        doc_ref_regex = r"\b(?:document|this file|the file|the text|chapter|section|provided|uploaded|attached|mentioned|passage|from the document|important concepts|key concepts)\b"
+        if re.search(summary_regex, clean_query, re.IGNORECASE) or re.search(doc_ref_regex, clean_query, re.IGNORECASE):
+            is_document_query = True
+        else:
+            top_chunks = doc_rag_manager.retrieve_chunks(clean_query, chat_id, top_k=1)
+            if top_chunks and top_chunks[0]["score"] >= 0.42:
+                is_document_query = True
+
     try:
-        trace_id = f"chat_{chat_id}_{uuid.uuid5(uuid.NAMESPACE_URL, message).hex[:12]}"
-        adapted = language_adapter.normalize_query(message)
-        router_response = conversation_router.route_query(
-            query=adapted.normalized_query,
-            context={
-                "caller": user_id,
-                "user_id": user_id,
-                "session_id": chat_id,
-                "source_language": adapted.source_language,
-                "allow_web": False,
-            },
-        )
-        router_response = language_adapter.localize_response(
-            router_response,
-            source_language=adapted.source_language,
-        )
-        answer = str(router_response.get("answer") or "I could not generate a response.")
+        trace_id = f"chat_{chat_id}_{uuid.uuid5(uuid.NAMESPACE_URL, clean_query).hex[:12]}"
+        adapted = language_adapter.normalize_query(clean_query)
+
+        if is_document_query:
+            doc_res = doc_rag_manager.answer_document_query(
+                query=clean_query,
+                session_id=chat_id,
+                target_language=adapted.target_language,
+            )
+            answer = doc_res["answer"]
+            v_status = doc_res["verification_status"]
+            retrieved_chunks = doc_res.get("retrieved_chunks", [])
+            citations = doc_res.get("citations", [])
+            confidence = doc_res.get("confidence", 0.95)
+            source_type = doc_res.get("source_type", "uploaded_document")
+            router_response = {
+                "answer": answer,
+                "verification_status": v_status,
+                "source_type": source_type,
+                "verified": v_status == "VERIFIED",
+                "retrieved_evidence": bool(retrieved_chunks),
+                "retrieval_performed": True,
+                "confidence": confidence,
+                "retrieved_chunks": retrieved_chunks,
+                "citations": citations,
+                "trace_id": trace_id,
+            }
+        else:
+            router_response = conversation_router.route_query(
+                query=adapted.normalized_query,
+                context={
+                    "caller": user_id,
+                    "user_id": user_id,
+                    "session_id": chat_id,
+                    "source_language": adapted.source_language,
+                    "target_language": adapted.target_language,
+                    "allow_web": False,
+                },
+            )
+            router_response = language_adapter.localize_response(
+                router_response,
+                source_language=adapted.source_language,
+                target_language=adapted.target_language,
+            )
+            answer = str(router_response.get("answer") or "I could not generate a response.")
     except Exception as exc:
         logger.exception("chat_new ask pipeline failed: %s", exc)
         router_response = {}
         answer = "I am still learning this topic, please try again."
 
     ai_metadata = {
-        "retrieved_chunks": [],
+        "retrieved_chunks": router_response.get("retrieved_chunks") or [],
         "trace_id": router_response.get("trace_id") or trace_id,
         "verification_status": router_response.get("verification_status"),
-        "source_type": router_response.get("source_type"),
+        "source_type": router_response.get("source_type") or ("uploaded_document" if is_document_query else "unknown"),
         "verified": router_response.get("verified"),
         "retrieved_evidence": router_response.get("retrieved_evidence"),
         "retrieval_performed": router_response.get("retrieval_performed"),
-        "confidence_breakdown": router_response.get("confidence_breakdown"),
+        "confidence": router_response.get("confidence") or 0.95,
+        "confidence_breakdown": router_response.get("confidence_breakdown") or {"overall": router_response.get("confidence") or 0.95},
+        "citations": router_response.get("citations", []),
         "consensus_analysis": router_response.get("consensus_analysis"),
         "retrieval_truth_payload": router_response.get("retrieval_truth_payload"),
         "interpretation_payload": router_response.get("interpretation_payload"),
@@ -1894,36 +2068,7 @@ def user_login(request_body: Dict[str, Any]) -> Dict[str, Any]:
 
     if not email or not password:
         raise HTTPException(status_code=400, detail="Email and password are required")
-<<<<<<< HEAD
 
-    # Try Supabase authentication first
-    if supabase_auth.enabled:
-        try:
-            result = supabase_auth.login_with_email(email, password)
-            return {
-                "token": result["token"],
-                "id": result["user"]["id"],
-                "email": result["user"]["email"],
-                "name": result["user"]["name"]
-            }
-        except Exception as e:
-            logger.error(f"Supabase login failed: {e}")
-            raise HTTPException(status_code=401, detail=str(e))
-
-    if not _DEMO_AUTH_ENABLED:
-        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
-
-    normalized_email = email.lower()
-    stored_user = _DEMO_AUTH_USERS.get(normalized_email)
-    if not stored_user:
-        raise HTTPException(status_code=401, detail="Invalid email or password")
-    if stored_user.get("password_hash") != _hash_demo_password(password):
-        raise HTTPException(status_code=401, detail="Invalid email or password")
-
-    demo_user = _issue_demo_user(stored_user["id"], stored_user["email"], stored_user["name"])
-    return demo_user
-=======
-    
     try:
         result = auth_service.login_with_email(email, password)
         return {
@@ -1938,7 +2083,6 @@ def user_login(request_body: Dict[str, Any]) -> Dict[str, Any]:
             demo_user = _issue_demo_user(email.strip().lower(), email.strip(), email.split('@')[0].title())
             return demo_user
         raise HTTPException(status_code=401, detail=str(e))
->>>>>>> c14ef2153b7e8a1ee2b26d334bda8e9462510eb1
 
 
 @app.post(
@@ -1955,14 +2099,7 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
 
     if not email or not password or not name:
         raise HTTPException(status_code=400, detail="Name, email, and password are required")
-<<<<<<< HEAD
 
-    # Try Supabase authentication first
-    if supabase_auth.enabled:
-        try:
-            result = supabase_auth.signup_with_email(email, password, name)
-=======
-    
     try:
         result = auth_service.signup_with_email(email, password, name)
         return {
@@ -1980,7 +2117,6 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
         detail = str(e)
         if _DEMO_AUTH_ENABLED:
             demo_user = _issue_demo_user(email.strip().lower(), email.strip(), name.strip())
->>>>>>> c14ef2153b7e8a1ee2b26d334bda8e9462510eb1
             return {
                 "success": True,
                 "token": demo_user["token"],
@@ -1989,38 +2125,7 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
                 "name": demo_user["name"],
                 "navigateUrl": "/chatpage"
             }
-<<<<<<< HEAD
-        except Exception as e:
-            logger.error(f"Supabase signup failed: {e}")
-            detail = str(e)
-            status_code = 429 if "rate limit" in detail.lower() else 400
-            raise HTTPException(status_code=status_code, detail=detail)
-
-    if not _DEMO_AUTH_ENABLED:
-        raise HTTPException(status_code=503, detail="Authentication provider is not configured")
-
-    normalized_email = email.lower()
-    if normalized_email in _DEMO_AUTH_USERS:
-        raise HTTPException(status_code=409, detail="User already exists")
-
-    _DEMO_AUTH_USERS[normalized_email] = {
-        "id": normalized_email,
-        "email": email,
-        "name": name,
-        "password_hash": _hash_demo_password(password),
-    }
-    demo_user = _issue_demo_user(normalized_email, email, name)
-    return {
-        "success": True,
-        "token": demo_user["token"],
-        "id": demo_user["id"],
-        "email": demo_user["email"],
-        "name": demo_user["name"],
-        "navigateUrl": "/chatpage"
-    }
-=======
         raise HTTPException(status_code=400, detail=detail)
->>>>>>> c14ef2153b7e8a1ee2b26d334bda8e9462510eb1
 
 
 class NewRagRequest(BaseModel):

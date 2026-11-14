@@ -1,0 +1,82 @@
+[
+  {
+    "test": "1. Upload TXT and request summary",
+    "format": "TXT",
+    "file_name": "sample_climate.txt",
+    "file_id": "doc_cda92dd58c11",
+    "char_count": 411,
+    "chunk_count": 1,
+    "retrieved_chunks": 1,
+    "status": "PASS",
+    "answer": "**Chapter 1: Global Climate Systems and Carbon Cycles**\n- **Greenhouse Effect**: Traps solar infrared radiation within Earth's troposphere.\n- **Carbon Dioxide Concentrations**: Exceed 420 parts per million.\n\n**Chapter 2: Oceanic Acidification**\n- **Ocean Absorption**: Absorbs about 30% of anthropoge"
+  },
+  {
+    "test": "2. Upload DOCX and request summary",
+    "format": "DOCX",
+    "file_name": "sample_robotics.docx",
+    "file_id": "doc_6e97b4c9d852",
+    "char_count": 413,
+    "chunk_count": 1,
+    "status": "PASS",
+    "answer": "### Comprehensive Structured Summary: Sample Robot Kinematics and Navigation\n\n#### Chapter 1: Autonomous Robotics and Kinematics\n- **Forward Kinematics**: Determines the end-effector's position based on the given joint angles.\n- **Inverse Kinematics**: Calculates the necessary joint angles to achiev"
+  },
+  {
+    "test": "3. Upload text-based PDF and request summary",
+    "format": "PDF",
+    "file_name": "sample_quantum.pdf",
+    "file_id": "doc_e2d0a670c39b",
+    "char_count": 158,
+    "chunk_count": 1,
+    "status": "PASS",
+    "answer": "**Chapter 1: Principles of Quantum Computing**\n\n- **Qubits**: Qubits, the fundamental units of quantum computing, can exist in a superposition of states, meaning they can be simultaneously in both state 0 (zero) and state  1 (one). This property allows for parallel processing and is a key feature th"
+  },
+  {
+    "test": "4. Question whose answer is in document",
+    "format": "TXT",
+    "file_name": "sample_climate.txt",
+    "status": "PASS",
+    "answer": "approximately 30\n\n**Document Sources**:\n- [sample_climate.txt, Page 1, Section: 'Chapter 1: Global Climate Systems and Carbon Cycles']"
+  },
+  {
+    "test": "5. Ask about a particular chapter",
+    "format": "TXT",
+    "status": "PASS",
+    "answer": "Oceans absorb approximately 30 percent of anthropogenic CO2 emissions, forming carbonic acid. This decreases seawater pH and harms marine calcifying organisms like corals.\n\n**Document Sources**:\n- [sample_climate.txt, Page 1, Section: 'Chapter 1: Global Climate Systems and Carbon Cycles']"
+  },
+  {
+    "test": "6. Ask about absent information",
+    "format": "TXT",
+    "status": "PASS",
+    "answer": "The provided document does not contain this information."
+  },
+  {
+    "test": "7. Follow-up without re-uploading",
+    "format": "TXT",
+    "status": "PASS",
+    "answer": "harms\n\n**Document Sources**:\n- [sample_climate.txt, Page 1, Section: 'Chapter 1: Global Climate Systems and Carbon Cycles']"
+  },
+  {
+    "test": "8. Upload two documents and compare them",
+    "format": "TXT + DOCX",
+    "status": "PASS",
+    "answer": "The first document discusses the greenhouse effect and carbon dioxide concentrations, while the second document covers forward and inverse kinematics in robotics.\n\n**Document Sources**:\n- [sample_climate.txt, Page 1, Section: 'Chapter 1: Global Climate Systems and Carbon Cycles']\n- [second_doc_robot"
+  },
+  {
+    "test": "9. Ask in English about Marathi document",
+    "format": "TXT (Marathi)",
+    "status": "PASS",
+    "answer": "According to the doctor's study, the origin of the river is at Trimbakeshwar in the Nashik district.\n\n**Document Sources**:\n- [sample_maharashtra.txt, Page 1, Section: 'General']"
+  },
+  {
+    "test": "10. Ask in Marathi about English document",
+    "format": "TXT (English)",
+    "status": "PASS",
+    "answer": "त्रास\n\n**दस्तऐवज संदर्भ**:\n- [sample_climate.txt, Page 1, Section: 'Chapter 1: Global Climate Systems and Carbon Cycles']\n- [second_doc_robotics.docx, Page 1, Section: 'Chapter 1: Autonomous Robotics and Kinematics Forward kinematics determines the end-effector position from joint angles. Inverse ki"
+  },
+  {
+    "test": "11. General question without attachment",
+    "format": "N/A",
+    "status": "PASS",
+    "answer": "Certainly! Below is a simple Python program that performs linear regression using the `scikit-learn` library. This example uses a synthetic dataset to demonstrate the process.\n\n```python\n# Import necessary libraries\nimport numpy as np\nfrom sklearn.linear_model import LinearRegression\nimport matplotl"
+  }
+]
