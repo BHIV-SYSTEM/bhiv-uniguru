@@ -122,18 +122,28 @@ class DocumentRAGManager:
             self._embedder = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
         return self._embedder
 
-    def _index_document_chunks(
+    def process_and_index_file(
         self,
-        raw_text: str,
-        doc_id: str,
-        file_name: str,
-        file_type: str,
-        file_path: str,
-        file_size_bytes: int,
-        pages_list: Optional[List[Any]] = None,
-        session_id: str = "default",
+        file_path: Path | str,
+        session_id: str,
+        custom_file_name: Optional[str] = None,
     ) -> UploadedDocumentRecord:
-        """Internal helper to chunk, embed, and store document records."""
+        """Parse, extract, chunk, embed, and register an uploaded file for a session."""
+        path = Path(file_path)
+        if not path.is_file():
+            raise FileNotFoundError(f"File not found: {path}")
+
+        file_name = custom_file_name or path.name
+        logger.info(f"Indexing uploaded document '{file_name}' for session '{session_id}'...")
+
+        # 1. Extraction
+        extracted_doc: ExtractedDocument = DocumentExtractor.extract(path)
+        raw_text = extracted_doc.raw_text.strip()
+        if not raw_text:
+            raise ValueError(f"Extracted document '{file_name}' contains no readable text.")
+
+        doc_id = extracted_doc.document_id
+
         # 2. Chunking
         raw_chunks: List[TextChunk] = self._chunker.chunk_document(
             text=raw_text,
@@ -166,8 +176,9 @@ class DocumentRAGManager:
         for i, chunk in enumerate(raw_chunks):
             # Attempt page attribution if pages exist
             page_no = 1
-            if pages_list:
-                for p in pages_list:
+            if extracted_doc.pages:
+                # Find approximate page matching chunk text
+                for p in extracted_doc.pages:
                     if chunk.text[:40] in p.raw_text:
                         page_no = p.page_number
                         break
@@ -203,12 +214,12 @@ class DocumentRAGManager:
         record = UploadedDocumentRecord(
             document_id=doc_id,
             file_name=file_name,
-            file_type=file_type,
-            file_path=file_path,
-            file_size_bytes=file_size_bytes,
+            file_type=extracted_doc.file_type,
+            file_path=str(path.resolve()),
+            file_size_bytes=extracted_doc.file_size_bytes,
             char_count=len(raw_text),
-            page_count=len(pages_list) if pages_list else 1,
-            title=file_name,
+            page_count=len(extracted_doc.pages) if extracted_doc.pages else 1,
+            title=extracted_doc.title or file_name,
             chunks=indexed_chunks,
         )
         self._documents[doc_id] = record
@@ -225,37 +236,6 @@ class DocumentRAGManager:
         )
         return record
 
-    def process_and_index_file(
-        self,
-        file_path: Path | str,
-        session_id: str,
-        custom_file_name: Optional[str] = None,
-    ) -> UploadedDocumentRecord:
-        """Parse, extract, chunk, embed, and register an uploaded file for a session."""
-        path = Path(file_path)
-        if not path.is_file():
-            raise FileNotFoundError(f"File not found: {path}")
-
-        file_name = custom_file_name or path.name
-        logger.info(f"Indexing uploaded document '{file_name}' for session '{session_id}'...")
-
-        # 1. Extraction
-        extracted_doc: ExtractedDocument = DocumentExtractor.extract(path)
-        raw_text = extracted_doc.raw_text.strip()
-        if not raw_text:
-            raise ValueError(f"Extracted document '{file_name}' contains no readable text.")
-
-        return self._index_document_chunks(
-            raw_text=raw_text,
-            doc_id=extracted_doc.document_id,
-            file_name=file_name,
-            file_type=extracted_doc.file_type,
-            file_path=str(path.resolve()),
-            file_size_bytes=extracted_doc.file_size_bytes,
-            pages_list=extracted_doc.pages,
-            session_id=session_id,
-        )
-
     def index_raw_text(
         self,
         raw_text: str,
@@ -267,35 +247,13 @@ class DocumentRAGManager:
         if not clean_text:
             raise ValueError("Raw document text cannot be empty.")
 
-        # Check if document already indexed in this session
-        for existing in self.get_session_documents(session_id):
-            if existing.file_name == file_name:
-                return existing
-
+        # Save to disk for durability
         session_dir = UPLOAD_DOCS_DIR / session_id
         session_dir.mkdir(parents=True, exist_ok=True)
-        txt_path = session_dir / f"{file_name}.txt"
-        try:
-            txt_path.write_text(clean_text, encoding="utf-8")
-        except Exception:
-            pass
+        file_path = session_dir / file_name
+        file_path.write_text(clean_text, encoding="utf-8")
 
-        import hashlib
-        doc_id = f"doc_{hashlib.sha256((session_id + file_name + clean_text[:200]).encode('utf-8')).hexdigest()[:12]}"
-
-        if doc_id in self._documents and doc_id in self._session_docs.get(session_id, []):
-            return self._documents[doc_id]
-
-        return self._index_document_chunks(
-            raw_text=clean_text,
-            doc_id=doc_id,
-            file_name=file_name,
-            file_type="document",
-            file_path=str(txt_path.resolve()) if txt_path.exists() else "",
-            file_size_bytes=len(clean_text.encode("utf-8")),
-            pages_list=None,
-            session_id=session_id,
-        )
+        return self.process_and_index_file(file_path=file_path, session_id=session_id, custom_file_name=file_name)
 
     def get_session_documents(self, session_id: str) -> List[UploadedDocumentRecord]:
         """Returns all active documents registered for a given session."""
@@ -555,8 +513,7 @@ class DocumentRAGManager:
         query_words = [w for w in re.findall(r"\w+", q_lower) if len(w) > 3]
         has_keyword_overlap = any(any(w in c["text"].lower() for w in query_words) for c in chunks[:3])
 
-        min_threshold = 0.22 if same_script else 0.05
-        if top_score < min_threshold or (same_script and top_score < 0.25 and not has_keyword_overlap):
+        if top_score < 0.22 and not has_keyword_overlap:
             abstention = (
                 "दिलेल्या दस्तऐवजामध्ये या प्रश्नाचे उत्तर उपलब्ध नाही."
                 if target_language == "mr"
@@ -597,9 +554,8 @@ class DocumentRAGManager:
 
         # Append citations cleanly
         unique_citations = list(dict.fromkeys(citations))
-        citations_header = "**दस्तऐवज संदर्भ**:" if target_language == "mr" else "**Document Sources**:"
-        citations_block = f"\n\n{citations_header}\n" + "\n".join(f"- {c}" for c in unique_citations[:2])
-        if "Document Sources" not in answer and "दस्तऐवज संदर्भ" not in answer:
+        citations_block = "\n\n**Document Sources**:\n" + "\n".join(f"- {c}" for c in unique_citations[:3])
+        if "Document Sources" not in answer:
             answer = f"{answer}{citations_block}"
 
         return {
@@ -659,7 +615,6 @@ class DocumentRAGManager:
                     "max_new_tokens": 512,
                 },
                 timeout=30,
-                proxies={"http": None, "https": None},
             )
             if res.status_code == 200:
                 ans = res.json().get("answer", "").strip()
@@ -681,7 +636,6 @@ class DocumentRAGManager:
                                     "max_new_tokens": 256,
                                 },
                                 timeout=15,
-                                proxies={"http": None, "https": None},
                             )
                             if trans_res.status_code == 200:
                                 trans_text = trans_res.json().get("answer", "").strip()
@@ -702,7 +656,6 @@ class DocumentRAGManager:
                                     "max_new_tokens": 256,
                                 },
                                 timeout=15,
-                                proxies={"http": None, "https": None},
                             )
                             if trans_res.status_code == 200:
                                 trans_text = trans_res.json().get("answer", "").strip()
@@ -727,65 +680,16 @@ class DocumentRAGManager:
     ) -> str:
         """Invokes local Qwen 2.5 service to answer questions grounded strictly in context."""
         llm_url = os.environ.get("UNIGURU_LLM_URL", "http://127.0.0.1:8001/generate")
-        lat_ctx = len(re.findall(r"[A-Za-z]", context))
-        dev_ctx = len(re.findall(r"[\u0900-\u097f]", context))
-        context_is_devanagari = dev_ctx > lat_ctx
 
-        # Case 1: Cross-lingual Marathi request for English context
-        if target_language == "mr" and not context_is_devanagari:
-            try:
-                import requests
-                # 1. Extract grounded English answer from English context
-                res_en = requests.post(
-                    llm_url,
-                    json={
-                        "messages": [
-                            {"role": "system", "content": "You are UniGuru. Answer the question directly using ONLY the provided document context."},
-                            {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"}
-                        ],
-                        "language": "en",
-                        "max_new_tokens": 256,
-                    },
-                    timeout=20,
-                    proxies={"http": None, "https": None},
-                )
-                en_ans = ""
-                if res_en.status_code == 200:
-                    en_ans = res_en.json().get("answer", "").strip()
-                if not en_ans:
-                    en_ans = context.split("\n\n")[0] if "\n\n" in context else context[:300]
-
-                # 2. Translate English answer into clear Marathi
-                res_mr = requests.post(
-                    llm_url,
-                    json={
-                        "messages": [
-                            {"role": "system", "content": "You are a professional translator. Translate the text into clear, accurate Marathi."},
-                            {"role": "user", "content": f"Translate to Marathi:\n{en_ans}"}
-                        ],
-                        "language": "mr",
-                        "max_new_tokens": 256,
-                    },
-                    timeout=20,
-                    proxies={"http": None, "https": None},
-                )
-                if res_mr.status_code == 200:
-                    mr_ans = res_mr.json().get("answer", "").strip()
-                    if mr_ans and len(re.findall(r"[\u0900-\u097f]", mr_ans)) > len(re.findall(r"[A-Za-z]", mr_ans)):
-                        return mr_ans
-            except Exception as e:
-                logger.warning(f"Cross-lingual MR grounded answer failed: {e}")
-
-        # Case 2: Standard Grounded Q&A
         if target_language == "mr":
             system_msg = (
                 "तुम्ही UniGuru आहात. दिलेल्या दस्तऐवज संदर्भाचा वापर करून वापरकर्त्याच्या प्रश्नाचे थेट आणि अचूक उत्तर मराठीत द्या. "
-                "जर उत्तर संदर्भामध्ये नसेल, तर सांगा की माहिती उपलब्ध नाही."
+                "जर उत्तर संदर्भामध्ये नसेल, तर सांगा की माहिती उपलब्ध नाही. खोटे संदर्भ तयार करू नका."
             )
             user_msg = (
                 f"दस्तऐवज संदर्भ:\n{context}\n\n"
                 f"प्रश्न: {query}\n\n"
-                "थेट मराठी उत्तर:"
+                "अचूक मराठी उत्तर:"
             )
         else:
             system_msg = (
@@ -814,7 +718,6 @@ class DocumentRAGManager:
                     "max_new_tokens": 512,
                 },
                 timeout=30,
-                proxies={"http": None, "https": None},
             )
             if res.status_code == 200:
                 ans = res.json().get("answer", "").strip()
@@ -836,7 +739,6 @@ class DocumentRAGManager:
                                     "max_new_tokens": 256,
                                 },
                                 timeout=15,
-                                proxies={"http": None, "https": None},
                             )
                             if trans_res.status_code == 200:
                                 trans_text = trans_res.json().get("answer", "").strip()
@@ -857,7 +759,6 @@ class DocumentRAGManager:
                                     "max_new_tokens": 256,
                                 },
                                 timeout=15,
-                                proxies={"http": None, "https": None},
                             )
                             if trans_res.status_code == 200:
                                 trans_text = trans_res.json().get("answer", "").strip()

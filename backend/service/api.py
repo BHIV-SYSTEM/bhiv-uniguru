@@ -1752,7 +1752,7 @@ async def chat_upload_file(
         "success": True,
         "chatId": chat_id,
         "document": doc_record.to_dict(),
-        "extractedText": "\n\n".join(c.text for c in doc_record.chunks),
+        "extractedText": "\n\n".join(c.text for c in doc_record.chunks[:5]),
         "message": f"Document '{file.filename}' processed and indexed successfully ({doc_record.char_count} chars, {len(doc_record.chunks)} chunks).",
     }
 

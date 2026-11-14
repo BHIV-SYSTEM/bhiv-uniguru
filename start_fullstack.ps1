@@ -1,6 +1,6 @@
 # UniGuru Full-Stack Launcher (Model Server + FastAPI Backend + React Frontend)
 $ErrorActionPreference = "Stop"
-$RootDir = "C:\Ganesh_149\uniguru\bhiv-uniguru"
+$RootDir = $PSScriptRoot
 
 Write-Host "==========================================================" -ForegroundColor Cyan
 Write-Host "  Starting UniGuru Marathi RAG & Local LLM Full Stack     " -ForegroundColor Cyan
