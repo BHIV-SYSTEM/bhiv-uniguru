@@ -373,39 +373,20 @@ class UniversalOrchestrator:
             }
 
         # 11. If query is a general knowledge query not matched earlier and not in KB,
-        # provide a structured educational answer rather than an abrupt abstention.
-        if "what is" in query.lower() or "who is" in query.lower() or "explain" in query.lower():
-            # Check if this was a specific request for non-existent KB book/chapter (like Padma Purana agriculture)
-            if "padma" in query.lower() and ("agri" in query.lower() or "farm" in query.lower()):
-                return {
-                    "answer": "The current knowledge base does not contain verified records on agricultural practices in the Padma Purana.",
-                    "verification_status": "NO_VERIFIED_KNOWLEDGE",
-                    "confidence": 0.0,
-                    "citations": [],
-                    "sources_consulted": [],
-                }
-            
-            # General educational response
-            term = query.replace("What is", "").replace("what is", "").strip(" ?.")
-            answer = (
-                f"**{term.title()}**:\n\n"
-                f"This topic refers to an educational concept. "
-                f"If you have specific questions about its mathematical properties, physical laws, or application, feel free to ask!"
-            )
+        # return unverified so conversation router dispatches to General LLM (Path B).
+        if "padma" in query.lower() and ("agri" in query.lower() or "farm" in query.lower()):
             return {
-                "answer": answer,
-                "verification_status": "VERIFIED",
-                "confidence": 0.85,
-                "citations": ["General Educational Reference"],
-                "sources_consulted": ["educational_reference"],
-                "topic": term,
+                "answer": "The current knowledge base does not contain verified records on agricultural practices in the Padma Purana.",
+                "verification_status": "NO_VERIFIED_KNOWLEDGE",
+                "confidence": 0.0,
+                "citations": [],
+                "sources_consulted": [],
             }
 
-        # Graceful fallback
         return {
-            "answer": "I'm UniGuru, your educational AI assistant. You can ask me questions about mathematics, physics, science, programming, Sanskrit, philosophy, language translation, and more. How can I assist you?",
-            "verification_status": "VERIFIED",
-            "confidence": 0.90,
+            "answer": "No verified knowledge base evidence found for this query.",
+            "verification_status": "UNVERIFIED",
+            "confidence": 0.0,
             "citations": [],
             "sources_consulted": ["uniguru_assistant"],
         }

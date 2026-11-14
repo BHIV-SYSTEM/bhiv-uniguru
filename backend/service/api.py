@@ -739,6 +739,7 @@ def _process_router_request(
     context_map["session_id"] = session_id
     context_map["allow_web"] = bool(allow_web)
     context_map["source_language"] = adapted.source_language
+    context_map["target_language"] = adapted.target_language
 
     result = _execute_kosha_pipeline(
         query=normalized_query,
@@ -1765,12 +1766,14 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
                 "user_id": user_id,
                 "session_id": chat_id,
                 "source_language": adapted.source_language,
+                "target_language": adapted.target_language,
                 "allow_web": False,
             },
         )
         router_response = language_adapter.localize_response(
             router_response,
             source_language=adapted.source_language,
+            target_language=adapted.target_language,
         )
         answer = str(router_response.get("answer") or "I could not generate a response.")
     except Exception as exc:

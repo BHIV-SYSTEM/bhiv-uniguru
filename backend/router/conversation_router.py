@@ -404,6 +404,7 @@ class ConversationRouter:
                 query_type=query_type,
                 session_id=session_id,
                 warning=None,
+                context=context_map,
             )
         else:
             response = self._dispatch_to_uniguru(query=query, context=context_map, query_type=query_type)
@@ -494,6 +495,23 @@ class ConversationRouter:
                 context=context,
                 allow_web=allow_web,
             )
+
+            v_status = orch_res.get("verification_status", "VERIFIED")
+            is_canned = (
+                orch_res.get("sources_consulted") in (["uniguru_assistant"], ["educational_reference"])
+                or "I'm UniGuru, your educational AI assistant" in orch_res.get("answer", "")
+                or "This topic refers to an educational concept" in orch_res.get("answer", "")
+            )
+            has_strict_evidence = any(re.search(p, query.lower()) for p in _STRICT_EVIDENCE_PATTERNS)
+            if (v_status in {"UNVERIFIED", "NO_VERIFIED_KNOWLEDGE"} or is_canned) and not has_strict_evidence:
+                return self._build_llm_response(
+                    query=query,
+                    query_type=query_type,
+                    session_id=session_id,
+                    warning=None,
+                    context=context,
+                )
+
             return self._build_router_contract_response(
                 decision="answer",
                 answer=orch_res["answer"],
@@ -506,12 +524,13 @@ class ConversationRouter:
                 governance_reason=f"Capability {orch_res.get('category')} verified.",
             )
         except Exception as exc:
-            logger.exception("Universal orchestrator dispatch failed: %s", exc)
+            _LOGGER.exception("Universal orchestrator dispatch failed: %s", exc)
             return self._build_llm_response(
                 query=query,
                 query_type=query_type,
                 session_id=session_id,
                 warning=f"UniGuru capability path encountered an error ({exc}).",
+                context=context,
             )
 
     def _build_system_block_response(
@@ -554,9 +573,10 @@ class ConversationRouter:
         query: str,
         query_type: QueryRoutingType,
         session_id: Optional[str],
-        warning: Optional[str],
+        warning: Optional[str] = None,
+        context: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
-        llm_result = self._request_llm(query=query, session_id=session_id)
+        llm_result = self._request_llm(query=query, session_id=session_id, context=context)
         answer = llm_result["answer"]
         if warning and "I don't have enough verified information" not in answer:
             answer = f"{warning} {answer}"
@@ -579,12 +599,26 @@ class ConversationRouter:
         )
         return response
 
-    def _request_llm(self, query: str, session_id: Optional[str]) -> Dict[str, str]:
-        system_prompt = (
-            "You are UniGuru, a helpful conversational AI assistant. Answer the user's actual question directly. "
-            "For casual conversation, respond naturally. Do not invent knowledge-base facts, citations, or sources; "
-            "when evidence is unavailable, say so clearly."
-        )
+    def _request_llm(
+        self,
+        query: str,
+        session_id: Optional[str],
+        context: Optional[Dict[str, Any]] = None,
+    ) -> Dict[str, str]:
+        context = context or {}
+        target_lang = str(context.get("target_language") or context.get("source_language") or "en").lower()
+
+        if target_lang == "mr":
+            system_prompt = (
+                "You are UniGuru, a helpful educational AI assistant. Answer the user's question directly and comprehensively in Marathi (मराठी). "
+                "Provide accurate explanations, formulas, or code as requested. Do not invent false citations."
+            )
+        else:
+            system_prompt = (
+                "You are UniGuru, a helpful educational AI assistant. Answer the user's question directly and comprehensively in English. "
+                "Provide clear, working code and detailed explanations where requested. Do not invent false citations."
+            )
+
         if self._llm_url.startswith("internal://"):
             return {
                 "answer": self._build_local_demo_answer(query),
@@ -623,6 +657,8 @@ class ConversationRouter:
                 "query": query,
                 "input": query,
                 "session_id": session_id,
+                "language": target_lang,
+                "max_new_tokens": 512,
                 "stream": False,
             }
             sanitized_payload = {key: value for key, value in payload.items() if value is not None}

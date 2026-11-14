@@ -114,3 +114,4 @@ Whenever the backend router decides a query needs LLM generation (either for ope
 | `UNIGURU_LLM_TIMEOUT_SECONDS` | `45` | Protects router from hanging if GPU stalls |
 | `UNIGURU_CORS_ORIGINS` | `https://uni-guru.vercel.app` | Restricts cross-origin requests to production UI |
 | `MONGODB_URI` | `mongodb+srv://...` | Persistent chat sessions and user storage |
+
