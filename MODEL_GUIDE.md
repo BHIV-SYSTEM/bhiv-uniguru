@@ -135,3 +135,4 @@ You are a helpful assistant. You must answer the user's question using ONLY the 
    Applied native Unsloth `train_on_responses_only`, masking prompt tokens with `-100` so parameter updates focus 100% on factual answer tokens rather than memorizing passage backgrounds.
 3. **Warm-Start Continuity:**  
    Preserved and stabilized weights across multiple training runs from step 1 through 3,000 without learning rate spikes or catastrophic forgetting.
+
