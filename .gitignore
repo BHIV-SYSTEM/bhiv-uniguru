@@ -7,6 +7,8 @@ env/
 .env
 .env.*
 !.env.example
+backend/.env
+!backend/.env.example
 tests/.tmp/
 .pytest_tmp/
 logs/chats.sqlite3*

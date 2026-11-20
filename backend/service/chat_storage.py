@@ -54,7 +54,8 @@ class ChatSessionStore(MutableMapping[str, dict[str, Any]]):
                 return self._database
 
             uri = os.getenv("MONGODB_URI", "").strip()
-            if self._database is not None or uri:
+            # Fall back cleanly to SQLite if MONGODB_URI is empty/placeholder and no explicit database is supplied.
+            if self._database is not None or (uri and uri.lower() not in ("none", "false", "null", "undefined")):
                 try:
                     db = self._database if self._database is not None else get_mongo_database()
                     db["chat_sessions"].create_index("owner_id")

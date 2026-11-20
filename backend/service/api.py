@@ -10,6 +10,7 @@ import re
 import sys
 import threading
 import time
+import traceback
 import unicodedata
 import uuid
 from collections import defaultdict, deque
@@ -25,11 +26,23 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse, PlainTextResponse
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
-# Load .env file at module import time
-_env_path = Path(__file__).parent.parent / ".env"
-if _env_path.exists():
-    load_dotenv(_env_path)
-    print(f"[OK] Loaded environment from: {_env_path}")
+try:
+    from pymongo.errors import PyMongoError
+except ImportError:
+    class PyMongoError(Exception):  # type: ignore[no-redef]
+        pass
+
+# Load .env file at module import time (backend/.env takes precedence over repo-root .env)
+_backend_env_path = Path(__file__).resolve().parents[1] / ".env"
+_root_env_path = Path(__file__).resolve().parents[2] / ".env"
+
+if _backend_env_path.exists():
+    load_dotenv(_backend_env_path, override=False)
+    print(f"[OK] Loaded environment from: {_backend_env_path}")
+
+if _root_env_path.exists():
+    load_dotenv(_root_env_path, override=False)
+    print(f"[OK] Loaded environment from: {_root_env_path}")
 
 from ontology.registry import OntologyRegistry
 from router.conversation_router import ConversationRouter
@@ -1618,9 +1631,25 @@ def chat_create(request_body: Dict[str, Any], request: Request) -> Dict[str, Any
         "isActive": True,
         "messages": [],
     }
-    with _CHAT_LOCK:
-        _CHAT_SESSIONS[chat_id] = chat
-    return {"chat": _serialize_chat_session(chat, include_messages=False)}
+    try:
+        with _CHAT_LOCK:
+            _CHAT_SESSIONS[chat_id] = chat
+        return {"chat": _serialize_chat_session(chat, include_messages=False)}
+    except HTTPException:
+        raise
+    except PyMongoError as err:
+        logger.exception("Database error while creating chat session: %s", err)
+        raise HTTPException(
+            status_code=503,
+            detail="Chat storage service is temporarily unavailable. Please try again later.",
+        ) from err
+    except KeyError as err:
+        missing_key = err.args[0] if err.args else "unknown"
+        logger.exception("Data integrity error while creating chat session (missing field: %s)", missing_key)
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to initialize chat session due to missing data attribute: {missing_key}.",
+        ) from err
 
 
 @app.get("/chat/list", tags=["Chat"], summary="List Chat Sessions")
@@ -1795,8 +1824,7 @@ async def extract_document_endpoint(file: UploadFile = File(...)):
     }
 
 
-@app.post("/chat/new", tags=["Chat"], summary="Send Message To Chat")
-def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, Any]:
+def _chat_new_impl(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, Any]:
     message = str(request_body.get("message") or "").strip()
     chatbot_id = str(request_body.get("chatbotId") or "").strip()
     user_id = _require_user_identity(raw_request)["id"]
@@ -1972,6 +2000,33 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
             "vaani_audio": None,
         },
     }
+
+
+@app.post("/chat/new", tags=["Chat"], summary="Send Message To Chat")
+def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, Any]:
+    try:
+        return _chat_new_impl(request_body, raw_request)
+    except HTTPException:
+        raise
+    except PyMongoError as err:
+        logger.exception("Database error in /chat/new: %s", err)
+        raise HTTPException(
+            status_code=503,
+            detail="Chat storage service is temporarily unavailable. Please try again later.",
+        ) from err
+    except KeyError as err:
+        missing_key = err.args[0] if err.args else "unknown"
+        frames = traceback.extract_tb(err.__traceback__)
+        raising_func = frames[-1].name if frames else "unknown"
+        logger.exception(
+            "Data integrity error in /chat/new: missing legacy field '%s' raised by %s",
+            missing_key,
+            raising_func,
+        )
+        raise HTTPException(
+            status_code=500,
+            detail=f"Chat session is corrupted or missing required field: {missing_key}.",
+        ) from err
 
 def _send_password_reset_email(email: str, token: str) -> None:
     """Send a password reset link using configured SMTP credentials."""
