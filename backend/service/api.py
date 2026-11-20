@@ -1,5 +1,6 @@
 from __future__ import annotations
-
+import smtplib
+from email.message import EmailMessage
 import hashlib
 import asyncio
 import json
@@ -1972,6 +1973,47 @@ def chat_new(request_body: Dict[str, Any], raw_request: Request) -> Dict[str, An
         },
     }
 
+def _send_password_reset_email(email: str, token: str) -> None:
+    """Send a password reset link using configured SMTP credentials."""
+    smtp_host = os.getenv("SMTP_HOST", "").strip()
+    smtp_port = int(os.getenv("SMTP_PORT", "587"))
+    smtp_username = os.getenv("SMTP_USERNAME", "").strip()
+    smtp_password = os.getenv("SMTP_PASSWORD", "")
+    from_email = os.getenv("SMTP_FROM_EMAIL", "").strip() or smtp_username
+    frontend_url = os.getenv(
+        "PASSWORD_RESET_URL",
+        "https://uniguru.blackholeinfiverse.com/reset-password",
+    ).strip()
+
+    if not smtp_host or not from_email:
+        raise RuntimeError("SMTP_HOST and SMTP_FROM_EMAIL must be configured")
+
+    reset_link = f"{frontend_url}?token={token}"
+
+    message = EmailMessage()
+    message["Subject"] = "Reset your UniGuru password"
+    message["From"] = from_email
+    message["To"] = email
+    message.set_content(
+        "We received a request to reset your UniGuru password.\n\n"
+        f"Use this link within 30 minutes:\n{reset_link}\n\n"
+        "If you did not request this, ignore this email."
+    )
+
+    if smtp_port == 465:
+        with smtplib.SMTP_SSL(smtp_host, smtp_port, timeout=15) as server:
+            if smtp_username:
+                server.login(smtp_username, smtp_password)
+            server.send_message(message)
+    else:
+        with smtplib.SMTP(smtp_host, smtp_port, timeout=15) as server:
+            if os.getenv("SMTP_USE_TLS", "true").lower() in {
+                "1", "true", "yes", "on"
+            }:
+                server.starttls()
+            if smtp_username:
+                server.login(smtp_username, smtp_password)
+            server.send_message(message)
 
 # ============================================================================
 # USER AUTH ENDPOINTS (Demo mode stubs for frontend compatibility)
@@ -2126,6 +2168,93 @@ def user_signup(request_body: Dict[str, Any]) -> Dict[str, Any]:
                 "navigateUrl": "/chatpage"
             }
         raise HTTPException(status_code=400, detail=detail)
+
+@app.post(
+    "/user/forgot-password",
+    tags=["Authentication"],
+    summary="Request Password Reset",
+)
+def user_forgot_password(request_body: Dict[str, Any]) -> Dict[str, Any]:
+    email = str(request_body.get("email") or "").strip().lower()
+
+    if not email or "@" not in email:
+        raise HTTPException(status_code=400, detail="A valid email is required")
+
+    try:
+        token = auth_service.create_password_reset_token(email)
+
+        if token:
+            try:
+                _send_password_reset_email(email, token)
+            except Exception:
+                # Do not expose account existence or SMTP errors to the caller.
+                logger.exception("Password reset email delivery failed")
+
+                # Invalidate the token if delivery failed.
+                # The token is hashed in storage, so use the service's
+                # reset-token cleanup method added below if required.
+                token_hash = hashlib.sha256(token.encode("utf-8")).hexdigest()
+                try:
+                    auth_service.delete_password_reset_token(token_hash)
+                except Exception:
+                    logger.exception("Could not invalidate undelivered reset token")
+
+        return {
+            "success": True,
+            "message": "If an account exists for this email, a password reset link will be sent."
+        }
+
+    except Exception:
+        logger.exception("Password reset request failed")
+        raise HTTPException(
+            status_code=500,
+            detail="Unable to process password reset request"
+        )
+
+
+@app.post(
+    "/user/reset-password",
+    tags=["Authentication"],
+    summary="Reset Password",
+)
+def user_reset_password(request_body: Dict[str, Any]) -> Dict[str, Any]:
+    token = str(request_body.get("token") or "").strip()
+    password = str(request_body.get("password") or "")
+
+    if not token or not password:
+        raise HTTPException(
+            status_code=400,
+            detail="Reset token and new password are required"
+        )
+
+    if len(password) < 6:
+        raise HTTPException(
+            status_code=400,
+            detail="Password must be at least 6 characters"
+        )
+
+    try:
+        success = auth_service.reset_password(token, password)
+
+        if not success:
+            raise HTTPException(
+                status_code=400,
+                detail="Reset link is invalid or has expired"
+            )
+
+        return {
+            "success": True,
+            "message": "Password reset successfully. Please log in again."
+        }
+
+    except HTTPException:
+        raise
+    except Exception:
+        logger.exception("Password reset failed")
+        raise HTTPException(
+            status_code=500,
+            detail="Unable to reset password"
+        )
 
 
 class NewRagRequest(BaseModel):
