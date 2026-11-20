@@ -111,6 +111,15 @@ class LocalAuthService:
                     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
                 )"""
             )
+            conn.execute(
+                """CREATE TABLE IF NOT EXISTS password_reset_tokens (
+                    token_hash TEXT PRIMARY KEY,
+                    user_id TEXT NOT NULL,
+                    expires_at TEXT NOT NULL,
+                    created_at TEXT NOT NULL,
+                    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+                )"""
+            )
 
     def _connect_sqlite(self) -> sqlite3.Connection:
         path = self._legacy_db_path or default_legacy_user_db_path()
@@ -477,6 +486,141 @@ class LocalAuthService:
             except Exception as exc:
                 logger.warning("Session token verification failed: %s", exc)
             return None
+    
+    def create_password_reset_token(self, email: str) -> Optional[str]:
+        """Create a hashed, single-use password reset token."""
+        norm_email = email.strip().lower()
+        if not norm_email:
+            return None
+
+        self._ensure_ready()
+
+        now = datetime.now(timezone.utc)
+        expires_at = now.timestamp() + 30 * 60
+        token = secrets.token_urlsafe(32)
+        token_hash = hashlib.sha256(token.encode("utf-8")).hexdigest()
+
+        if self._use_mongo and self._database is not None:
+            user = self._database["users"].find_one(
+                {"email": norm_email, "is_active": True},
+                {"_id": 1},
+            )
+            if not user:
+                return None
+
+            self._database["password_reset_tokens"].insert_one({
+                "_id": token_hash,
+                "user_id": user["_id"],
+                "created_at": now,
+                "expires_at": datetime.fromtimestamp(expires_at, timezone.utc),
+            })
+        else:
+            expiry = datetime.fromtimestamp(
+                expires_at, timezone.utc
+            ).isoformat()
+
+            with self._connect_sqlite() as conn:
+                user = conn.execute(
+                    "SELECT id FROM users WHERE email = ? AND is_active = 1",
+                    (norm_email,),
+                ).fetchone()
+
+                if not user:
+                    return None
+
+                conn.execute(
+                    """INSERT INTO password_reset_tokens
+                       (token_hash, user_id, expires_at, created_at)
+                       VALUES (?, ?, ?, ?)""",
+                    (token_hash, user["id"], expiry, now.isoformat()),
+                )
+                conn.commit()
+
+        return token
+
+    def reset_password(self, token: str, new_password: str) -> bool:
+        """Consume a valid reset token and update the user's password."""
+        if not token or len(new_password) < 6:
+            raise ValueError("Invalid token or password must be at least 6 characters")
+
+        self._ensure_ready()
+
+        token_hash = hashlib.sha256(token.encode("utf-8")).hexdigest()
+        now = datetime.now(timezone.utc)
+        password_hash = self._hash_password(new_password)
+
+        if self._use_mongo and self._database is not None:
+            # Atomically consume the token so it cannot be reused.
+            reset_record = self._database["password_reset_tokens"].find_one_and_delete({
+                "_id": token_hash,
+                "expires_at": {"$gt": now},
+            })
+
+            if not reset_record:
+                return False
+
+            result = self._database["users"].update_one(
+                {"_id": reset_record["user_id"], "is_active": True},
+                {"$set": {"password_hash": password_hash}},
+            )
+
+            if result.modified_count != 1:
+                return False
+
+            # Invalidate existing sessions after a password change.
+            self._database["sessions"].delete_many(
+                {"user_id": reset_record["user_id"]}
+            )
+            return True
+
+        with self._connect_sqlite() as conn:
+            try:
+                conn.execute("BEGIN IMMEDIATE")
+
+                reset_record = conn.execute(
+                    """SELECT user_id, expires_at
+                       FROM password_reset_tokens
+                       WHERE token_hash = ?""",
+                    (token_hash,),
+                ).fetchone()
+
+                if not reset_record:
+                    conn.rollback()
+                    return False
+
+                expiry = datetime.fromisoformat(reset_record["expires_at"])
+                if expiry <= now:
+                    conn.execute(
+                        "DELETE FROM password_reset_tokens WHERE token_hash = ?",
+                        (token_hash,),
+                    )
+                    conn.commit()
+                    return False
+
+                user_update = conn.execute(
+                    """UPDATE users SET password_hash = ?
+                       WHERE id = ? AND is_active = 1""",
+                    (password_hash, reset_record["user_id"]),
+                )
+
+                if user_update.rowcount != 1:
+                    conn.rollback()
+                    return False
+
+                conn.execute(
+                    "DELETE FROM password_reset_tokens WHERE token_hash = ?",
+                    (token_hash,),
+                )
+                conn.execute(
+                    "DELETE FROM sessions WHERE user_id = ?",
+                    (reset_record["user_id"],),
+                )
+                conn.commit()
+                return True
+
+            except Exception:
+                conn.rollback()
+                raise
 
     def logout(self, token: str) -> bool:
         """Invalidate a session token."""
